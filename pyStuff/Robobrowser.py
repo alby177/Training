@@ -3,6 +3,13 @@
 # For the function of robobrowser go to this link: http://robobrowser.readthedocs.io/en/latest/api.html#module-robobrowser.browser
 from robobrowser import RoboBrowser
 import re
+import sys
+
+# Add the path where the file with login credentials are
+sys.path.append('/Volumes/StorEDGE/Alby/Python/Sensible_documents')
+
+# Import the file with the credentials
+import Data
 
 # Get login page url
 url = 'https://forum.codesys.com/ucp.php?mode=login&sid=fd0b74beb56684de55973af7096462d7'
@@ -16,9 +23,9 @@ br.open(url)
 # Get the part of the page where to put the login information identified as "form"
 form =br.get_form()
 
-# Insert username and password in the
-form['username'] = ''
-form['password'] = ''
+# Insert username and password in the form
+form['username'] = Data.CodesysUser
+form['password'] = Data.CodesysPassword
 
 # Click the button to log as user
 br.submit_form(form)
