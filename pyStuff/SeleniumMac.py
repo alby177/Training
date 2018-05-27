@@ -1,4 +1,5 @@
 # Script to take the free book from packtPub with selenium
+# selenium API at http://selenium-python.readthedocs.io/api.html
 import os
 import sys
 import selenium

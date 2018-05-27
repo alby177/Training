@@ -76,7 +76,7 @@ for i in forumPages:
             urlPage = 'https://forum.codesys.com' + i3
 
             # Create the string which will be saved in the file
-            str = ''
+            stringa = ''
 
             # Examine all the pages of the current discussion
             while True:
@@ -111,7 +111,8 @@ for i in forumPages:
 
                     # Save into the string str all the users posts
                     for i4 in pageElems:
-                        str = str + i4.getText() + '\n\n'
+                        stringa = stringa + i4.getText() + '\n\n'
+
                 try:
 
                     # Look for the string "next" among the a tags, which leads to the next page
@@ -132,19 +133,20 @@ for i in forumPages:
 
             # Check for invalid character for a file name
             if topicName2.find(':') != -1:
-                topicName = topicName2.replace(':','_')
-            elif topicName2.find('/') != -1:
-                topicName = topicName2.replace('/','_')
-            elif topicName2.find('?') != -1:
-                topicName = topicName2.replace('?','_')
-            else:
-                topicName = topicName2
+                topicName2 = topicName2.replace(':','_')
+            if topicName2.find('/') != -1:
+                topicName2 = topicName2.replace('/','_')
+            if topicName2.find('?') != -1:
+                topicName2 = topicName2.replace('?','_')
 
-            # Create the file inside the current topic path
-            forumFile = open(os.path.join('codesysForum/{}'.format(forumTitles[indice]), topicName + '.txt'), 'w')
+            # Save the offical topicName
+            topicName = topicName2
+
+            # Create the file inside the current topic path. Specify encoding to avoid decoding problems with write
+            forumFile = open(os.path.join('codesysForum/{}'.format(forumTitles[indice]), topicName + '.txt'), 'w', encoding="utf-8")
 
             # Write the text in the file
-            forumFile.write(str)
+            forumFile.write(stringa)
 
             # Close the file
             forumFile.close()

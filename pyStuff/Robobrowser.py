@@ -21,7 +21,7 @@ br = RoboBrowser(parser='html.parser', user_agent ='Mozilla/5.0')
 br.open(url)
 
 # Get the part of the page where to put the login information identified as "form"
-form =br.get_form()
+form = br.get_form()
 
 # Insert username and password in the form
 form['username'] = Data.CodesysUser
