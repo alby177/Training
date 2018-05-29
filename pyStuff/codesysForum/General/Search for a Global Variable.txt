@@ -1,0 +1,4 @@
+Hai
+
+I had declared a variable in global that variable i had used in the parameter manager and what i need is to at run time i need to search weather that variable is available in the glbal variables or not....
+

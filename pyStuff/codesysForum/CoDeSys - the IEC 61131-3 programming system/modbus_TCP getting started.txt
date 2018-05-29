@@ -1,0 +1,28 @@
+Hi,
+
+I'm planning to control and read values of a proprietary controller throgh a Modbus/TCP connection.
+
+I want to use the Wago 750-841 ethernet controller.
+
+I know the IP adress of the controller and the Modbus registers of the parameters that I want to change. 
+How do I setup a connection and how to treat it?
+
+Regards,
+
+_________________ing Gwen Stouthuysen
+Application development engineer
+
+Tyco Thermal Controls nv
+gwen.stouthuysen@tycothermal.com
+
+tel: +32.16.213.593
+
+Controlling another device via Modbus/TCP (UDP) with the WAgo 750-841 controller is very simple. There is a function block (Modbus Master TCP (UDP) that can be loaded into the Codesys project that will take care of the connection to the other device. You will simply identify the IP address, function code, and address' that you wish to read from or write to. Note that the UDP version of the function block is quicker for transmission.
+
+You can look on the WAGO website under technical documentation/applications/sorted accod. WAGO series/wago 750 series.
+There you will find an applicaiton note for Modbus Master control using 750-842 (works the same as with the 750-841). There is also example codesys programs, and the library files required. I have attached the same files here.
+
+Regards,
+
+Mike M.
+

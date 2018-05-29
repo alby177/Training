@@ -1,0 +1,2 @@
+Hi, my name is mathieu,I'm currently new in the usage of CODESYS. I did installed it on my home computer under win10. The software look working properly but when I install the UNIPI package, 31 error occurs. This just like the package was missing some files. When I look for the package, I click on download missing files. Few files have been downloaded but Raspberry Driver are at failed download status. Is there something i miss?thank for your helps in advance
+

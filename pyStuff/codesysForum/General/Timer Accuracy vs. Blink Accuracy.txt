@@ -1,0 +1,40 @@
+Hello allI'm using CoDeSys on an ABB 500eCo system in a lab.When teaching PLCs, I cover using timer/timer cascading and timer/counter cascading to extend preset values and create flashers.In CoDeSys, I was looking at making an equivalent to an RTO by using a timer that resets itself every 0.1 seconds coupled with a counter.  I knew I would lose a little accuracy when the user stopped and restarted the RTO but figured this would be the simplest implementation of an RTO.When running the program, I noticed I was losing accuracy just when the RTO was running, without starts and stops.  When compared to a regular TON, my RTO would be at about 17 seconds when the TON was at 20.When I replaced the self-resetting TON with a BLINK, accuracy was restored.Is there any particular reason for this?  Is the CoDeSys or the scan-time of the PLC?On a similar note, one of my standard lab assignments is to create a 4-bit binary counter using multiple timers.  When the counter reaches 1111, the timer that controls the MSB resets all the timers to keep everything synchronized.  I've noticed that with CoDeSys, the TONs will get out of synchronization even with the master reset.  I tried using a BLINK for this as well, but there is no way (that I've seen) to make all of the BLINKS start timing at the same time (no type of master reset or master enable), so I am no longer counting from 0000 to 1111 in sequence.Any thoughts?thanks
+
+This problem is for any PLC the same.put your POU in a cyclic task and run it every t#100msThis will show your problem even more.When done with TON it takes a tasktime to update so you loose this every time the timer is ended.when using BLINK the delay is only the time of running three lines of code (is embedded in the library, the timer is stopped and started again and the PT is set after this so you should see a small delay.The solution lies in this tasktime.When you use a task for every t#1s and make all this with simple ADD or even counters you will stay better on target time.This internal clock is coming from the frequency of the crystal.better is to use an RTC device( in half the cases intern in PLC).a 4 bit counter should be done with old fashioned ports like AND OR NOT and FlipFlop  and a clock pulse coming from a programmable( make the PT a variable and put it on a visualisation) timer with a flank detection behind it.with blink it keeps runningif you send the EXP file we will ahve a look on it. (only when everything is in english with plenty of comments.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Attached is a zip containing one export file for the binary counter and 2 jpgs for the simple RTOs using TON and BLINK.   The bottom timer in the two RTO files is for accuracy comparison.
+
+your ton program will never start as the input gets never high.learn to use triggers.and yes we discussed above about times.your 4 bit counter is just a display, it does not count, it is just a blinker.find a shift counter in a book, and make it correct.use a blink and evry time you see a rising edge add one to a word vartake the bits apartlike wordvar AND bit0(is value one)wordvar AND bit1(value two)wordvar AND bit2 (value four)etc
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Although it is very difficult to see in that scan, those are NC contacts tied to TON2.Q in the TON program, so it does work.  The purpose of the binary counter program is for the outputs to count in binary from 0000 to 1111, which it does.  This program is to cover the basics of timers and to show that it is possible to have multiple timed applications working at the same time. I use this lab as an introduction to a traffic light, which can be viewed as multiple flashed outputs working at the same time.In an introductory class, I typically do not cover shift registers or word operations.  If that is necessary in CoDeSys, then I'll have to revise the class accordingly.Thanks for the input.
+
+sorry could not see them.I still have problems with your view of the counter/timer.As you can see the times will not be in sync.So i can imagine a student with his traffic light will say that he has two fases of green at same time.and you do not control this fact.a simple traffic light works with a sequence like a SFC, however in LD it is also possible to make it.Then use a step/ or a counter.then if counter is 2 do subroutine 2etc.In the subroutine you can change the PT of a timer.We have an experiment running with a downtimer in the yellow light of the signal. It counts back from 3 to 1 to able the cars to shift gear.looks like it is the yellow in germany, but gives more info.the bikers have a analog signal with round dial of leds going down. the speed is dependent of the greentime of the cars. Initially it is the max greentime from whole cycle, but when max is not used the biketime is actual divided by max.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Attached is more-or-less what I would have as a "basic" traffic light lab (with a visualization).I would also use a sequencer for this, but usually not in the introductory class.From the basic lab, I would have the students add a turn signal with various requirements on it.The traffic light is able to stay in synch probably since there is only a single master reset.It was only where I tried making an RTO with a timer-counter or used multiple timer-timer cascades that they started getting out of synch.
+
+Yes nice traffic light (missing the visualisation but it works great.)Make the times as a variable.So greentime1 will be 10 sec.yellowtime2 will be 2 sec.on the timer2 use time1+time2and so onnow you will be sure the unit stays in sync and you can change the times without stopping the program.you can add a turn signal now without problems, just add a timer for it. out of sync is a problem you have to explain the students as this is not basic.make this same traffic in SFC, all transitions set to true and timed blocks.The modern programmer works a lot in graphic.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Did you eventually build a good RTO Function Block?  I'm new to codesys and the Allen-Bradley RTO instruction is one I can see I'll miss.
+
+yes it is for long in oscat lib. so you can use that one.There are several possibilities here, you can use a timer that is always active (sort of global timer)In most cases timers are always active, only in SFC they are stopped, and you can not see the situation correct.As the AB is also mentioning secondcounters etc. If you want a stoppable timer look into oscat. However be aware these blocks depend on scantime.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Did you have a specific oscat function I should look into, I flipped through the documentation for the Basic Library and didn't see what I'm looking for.
+
+yes for example ontime.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+This can be easily realized with the following implement FB.  Since this was posted in V2.3 I will only post a screenshot from V3.Attachment:RTO.jpg
+
+_________________The Original SoMachine Ninja
+

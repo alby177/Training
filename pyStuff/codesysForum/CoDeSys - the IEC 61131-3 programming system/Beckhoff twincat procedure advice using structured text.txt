@@ -1,0 +1,6 @@
+Hi, i'm relatively new to Twincat but not structured text. Can anyone help me in approach to build a project in twincat using structured text?? i need help with general setup of a project e.g. hardware address configuration in twincat and then using structured text to locate these addresses. then use them through my code.Stu
+
+go to the left bottom and find resources (4)then use plc configuration.here you can put the hardware in.when doubleclick on an address you can give it a global name.you can also do this in the VAR list on top of screen, by using %IX0.0 for binary input 0switch to table and it is easier as you just fill a table instead of using : and . and ;a analog word is %IW0outputs are %QW0 and %QX0.0markers are %MW0
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

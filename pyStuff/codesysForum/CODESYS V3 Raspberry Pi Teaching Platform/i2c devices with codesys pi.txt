@@ -1,0 +1,18 @@
+Hi,if anyone want to use I2C devices please add in /etc/modulesi2c-devthen this should work.Will be added to the next release.cuE.Schwellinger
+
+Hi Edwin,For my project I'm using multiple Adafruit INA219 Current Sensors.Do I have to install separate drivers or will the application detect their presence?Cheers,Sean.
+
+Hello everyone! Can I connect to the raspberry DS1307 real-time clock?
+
+Someone have a DS1307 I2C library and example?Best Regards.
+
+Hello, can anyone help me? I changed the XML file using Raspi codesys instructions. More likely I need to rewrite data processing method in bus for DS1307?
+
+Hi Ledrunner,for me this link sounds that you could use it but this is more a Linux issue beside CODESYS.Guess you Need nothing special in CODESYS using some Linux commands will manage this with loading a kernel modul etchttp://www.forum-raspberrypi.de/Thread- ... -betreibenMaybe you find a better description in englisch but for me this seems to work with that.BREdwin
+
+Hello Edwin. I little didn't understand, I need the hardware real time clock. If I do all in Linux, Can I use this RTC which i set in Linux through the Codesys? Will it be possible to synchronize the time and get the time and data in Codesys project?BR,Osman.
+
+Hi Osman,In general:-HW Clock is only needed if you are not in an network, otherwise the pi synchronize the time by ntp protocoll (nothing to do for it - this is Default configuration i guess)-if you have a mobile application without a network connection , hardware clock would be great to set the time on startup of the pi-> to synchronize the clock once at startup (maybe you could add this to a Linux startscript - or in the startscript where the plc starts)Nothing else is needed.In CODESYS you use the time functions to have the Information in IEC, but this is independet from your hw clock and from my Point of view itis not really needed to give the synchronize hw clock with Pi clock from IEC - if you do this on Startup of the Pi this would never be needed.Even timezone setting or automatic changeover between summertime and wintertime is everthing covered for example if you use the OSCAT library from store. (beside the functionblocks which are in SystimeRTC library)so for the your rtc you need:1. load the kernelmodule rtc-ds13072. check the hwclock by echo ds1307 0x68 > /sys/class/i2c-adapter/i2c-1/new_device3. hwclock -r4. this is what you need to add either in /etc/rc.local or before the runtime startsecho ds1307 0x68 > /sys/class/i2c-adapter/i2c-1/new_devicesudo hwclock -sBREdwin
+
+Thank you Edwin I understand clock conception. I configured RTC under Linux, deleted fake software clock and  used DTUtility in Codesys to make calendar in web visualization. I used two MOS transistor for i2c bus matching levels 5v-3,3V.
+

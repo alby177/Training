@@ -1,0 +1,2 @@
+Hi, i want to redirect all addresses to the webvisu... I did this whit dnsmasq and it works well, but i have to add always the index.htm or whatever.htm, otherwise it doesent work.. I have tried to change the name of index.htm in index.html but no luck... Somone knows the fix?
+

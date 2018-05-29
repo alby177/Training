@@ -1,0 +1,2 @@
+Hi you all,I am trying to tests Elau drives with a C200 controller. I am using the program suggested by this topic:http://forum.codesys.com/viewtopic.php?t=2024#p4130I have no errors in the program and the axis state shows: ''no power / 1''I am trying to change the ''controllerenableset'' to activate it without success. I have tried several drivesso I am pretty sure that it is in the program itself.I am new to using Epas4 (CodeSys) so excuse my ignorance.Does anybody  have an idea?Thanks
+

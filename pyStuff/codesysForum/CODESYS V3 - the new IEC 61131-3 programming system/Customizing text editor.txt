@@ -1,0 +1,2 @@
+Greetings,My preference is dark background with bright text.I attempt to achieve this through Tools/Options/Text Editor and Syntax Highlighting and there appears to be no setting for text background.  There is however a setting for each individual syntax item background but even if I change it for every item remaining space is still white.  Is there a setting that I am missing that I can change background for text editor?  I am using Codesys V3.5 SP9 +Thanks,Mantequilla
+

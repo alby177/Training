@@ -1,0 +1,8 @@
+Hello,I have a problem with importing textlists into my project. I'm using CoDeSys 3.5 SP6 Patch 4.Just for testing purposes, I made the following textlist and tried to import it into a blanc textlist.Textlist I want to import:Code:Id;Default;deutsch;english1;default 1;deutsch 1;english 12;default 2;deutsch 2;english 23;default 3;deutsch 3;english 3;;;Then I created a textlist in CoDeSys without changing anything about it and then tried to import the textlist above via "right click -> Import/Export Textlist -> selected my .csv file -> selected import -> the only thing that happens is that it adds the two column headers "deutsch" and "english".Is there anybody who might know what I am doing wrong?Thanks in advance!  
+
+Hi actually the Textfile you create should look something like thisTextList	Id	Default	EnglishTextList	1	Off	OffTextList	2	Init	InitTextList	3	Disconnect	DisconnectTextList	4	Starting	Startingso the first column should have the Name of the textlist. As in my case my textlist is named 'TextList' in my CoDeSys Program. So if you Name your textlist 'Parameters' then the first column should have 'Parameters'.hope this helps..
+
+Hi learnetk,just tried it out and it works perfectly fine. I really wasn't aware that I have to put the name of the text list in front of each line.Thank you very much!
+
+More info:Attachment:TextList process.jpg
+

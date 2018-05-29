@@ -1,0 +1,8 @@
+Hey Guys, I'm using Codesys for the Raspberry Pi and searching for an option to configure my own device for the SPI/I2C bus? (it's a DA-Converter, MCP4725) The SPI-master just offers a few prepared devices and no option for custom settings.2. question: There are lots of posts explaining how to control Codesys via Python script but is it possible to start a Python script in codesys projects? - condition = true then starting python_script(a,b,..) Thank you for helping!Photon
+
+Hvae you had any luck getting some information, i am also trying to connect a devicewhere there is no specific device driver
+
+I've got the same problem. Does really no one can help us? With the I2C-examples, you can only control the example devices, are there a bib for I2C devices in general?
+
+Hi,a good startpoint is to read RaspberryPI_CodesysV3_FirstSteps_EN.pdf:"c:\Users\<YourWindowsUserName>\CODESYS Control for Raspberry PI\3.5.8.10\Documentation\RaspberryPI_CodesysV3_FirstSteps_EN.pdf" In Chapter 4 'Connecting additional devices via I²C and SPI' there is a Basic description how it works.See after reading this the 'open' libraries and devices here:"c:\Users\<YourWindowsUserName>\CODESYS Control for Raspberry PI\3.5.8.10\Libraries\" I2C_AdafruitPWM.library I2C_Gyroscopes.library I2C_SRF02.library IoDrvGPIO.library open these libraries with CODESYS and check how they are implemented.They use the I2C/SPI FB's from Raspberry Pi Periphials Library.you need to implement a own device description for your device and install it then to the device repository"c:\Users\<YourWindowsUserName>\CODESYS Control for Raspberry PI\3.5.8.10\Devices\" The best practice how to work/debug/install... with libraries you'll find here:viewtopic.php?f=22&t=5641&p=10677#p10677BREdwin
+

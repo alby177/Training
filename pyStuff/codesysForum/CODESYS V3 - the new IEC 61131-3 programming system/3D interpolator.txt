@@ -1,0 +1,6 @@
+Hi guys,I need to interpolate in 3D way! I should use a CNC program (G-code) with 3 axes. Usually the interpolation is between X and Y, and the others axes follow them interpolation, right?Which should I use?Thanks in advance!
+
+you can also do a x,z interpolation.first thing you have to find out what has the highest speed?
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

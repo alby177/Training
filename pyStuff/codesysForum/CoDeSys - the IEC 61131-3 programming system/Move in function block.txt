@@ -1,0 +1,8 @@
+Hi all,        Am doing code in FBD.After AND gate i would like to have a MOVE block with EN but am not able to find it please help me out.Thanks
+
+as enable is not working like you would like several options are available.use SELwith 1 your enable input2 your output3 your new value4 the outputjump over your move when bool is false.digital 0  I---> L
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Good one shooter thanks
+

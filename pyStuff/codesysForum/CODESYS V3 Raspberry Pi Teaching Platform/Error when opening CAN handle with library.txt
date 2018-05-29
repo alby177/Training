@@ -1,0 +1,20 @@
+With The B+ model I could use this code for opening a CAN handle with the CL2 library. Since I migrated for our test system to model 3B it is not functioning anymore. When opening the handle there is an error. I am using the lastest versions 3.5.9.30. On the Pi is the package 3.5.9.20.	IF (hDriver = CAA.gc_hINVALID) THEN		hDriver := CL2.DriverOpenH(	usiNetId		:= usiNetwork, 							uiBaudrate		:= uiBaudrate, 							xSupport29Bits	:= xSupport29Bits, 							ctMessages		:= ctMessages, 							peError		:= ADR(eErrorInternal));I always get eErrorInternal = 1. This number is not in te list of errors. The errors list is starting from 10xxx.I hope someone has a clue to fix this problem.
+
+I found in the Codesyscontrol.log an error about the rts_set_baud.sh:1474024643: Cmp=CM, Class=1, Error=0, Info=10, pszInfo= System: <cmp>SysMem</cmp>, <id>0x00000108</id> <ver>3.5.8.10</ver>1474024643: Cmp=CM, Class=1, Error=0, Info=10, pszInfo= System: <cmp>SysOut</cmp>, <id>0x0000010b</id> <ver>3.5.8.10</ver>1474024643: Cmp=CM, Class=1, Error=0, Info=10, pszInfo= System: <cmp>SysModule</cmp>, <id>0x000001.//rts_set_baud.sh: 3: .//rts_set_baud.sh: ./pcan: not found09</id> <ver>3.5.8.10</ver>1474024643: Cmp=CM, Class=1, Error=0, Info=10, pszInfo= System: <cmp>SysCom</cmp>, <id>0x00000100</id> <ver>3.5.8.10</ver>1474024643: Cmp=CM, Class=1, Error=0, Info=10, pszInfo= System: <cmp>SysDir</cmp>, <id>0x0000011b</id> <ver>3.5.8.10</ver>1474024643: Cmp=CM, Class=1, Error=0, Info=10, pszInfo= System: <cmp>SysEvent</cmp>, <id>0x00000102</id> <ver>3.5.8.10</ver>1474024643: Cmp=CM, Class=1, Error=0, Info=10, pszInfo= System: <cmp>SysInternalLib</cmp>, <id>0x00000107</id> <ver>3.5.8.10</ver>1474024We use the MCp2515 cjip connected via the SPI interface. I think we need to change this file.#!/bin/shCAN_NUM=$(echo $1 | sed 's,^can\([0-9]*\).*,\1,')./pcan /dev/pcanusb$CAN_NUM $2Any help will be highly appreciated!
+
+Have you test baudrate=16#1400 (1 MHz). The codes which expects by sja1000.
+
+#!/bin/shBITRATE=`expr $2 \\* 1000`ifconfig $1 downecho ip link set $1 type can bitrate $BITRATEip link set $1 type can bitrate $BITRATEifconfig $1 up
+
+I found the reason of the problem. When I load both can0 and can1 overlays in de config.txt than it will not function anymore. With only the can0 overlay loaded everything works fine.I have two mcp2515 chips added to the system, on interrupt 23 and 24. With the Pi B+ I had no problem. Now I have the Pi 3 and it does not work anymore for 2 can busses.
+
+in config .txt putdtparam=spi=ondtoverlay=mcp2515-can0,oscillator=16000000,interrupt=23 dtoverlay=mcp2515-can1,oscillator=16000000,interrupt=24i must to verified  the oscillator fervency this setting is for last Linux kernel
+
+Thanks for the tip. We already tried to add that setting to the config.txt maar it does not help anything. We get messages in Linux when we look with ifconfig. We only do NOT get the CAN messages in Codesys. When we use 1 can layer it is functioning. It does not function with two layers loaded.
+
+In my setup I have two Raspberry Pi 3, both with CanberryDual. I could not get CANopen working from CODESYS, but after trying your tip of only adding the first CAN overlay it now works! If anyone has some clue or directions how to get it working with both CAN ports, it would be very welcome!
+
+I tried several settings in the config.txt and interfaces files but cannot find a solution. The strange phenomena is that ifconfig can0 shows that messages are coming in and that Codesys is not seeing any messages with 2 CAN overlays loaded. With 1 CAN overlay loaded everything is fine.It looks that the problem is inside the Codesys run-time.
+
+Today I installed the Codesys package V3.5.9.40 en now the CAN bus isfunctioning when 2 CAN overlays are loaded.
+

@@ -1,0 +1,4 @@
+Hello,I have been working on a project where i need to connect Raspberry Pi to codesys.My old Raspberry pi 2 seems to work fine with codesys. Recently i bought a new Raspberry pi 3. I tried to update the Pi with codesys runtime, but i get an error saying that "connection could not be established to RPI, target computer rejected to connect"  Is there anything that i am not aware of?
+
+Hi,you need to enable ssh on the current sd Image.Attention: this is new you need to activate ssh if you use current SD Image from RaspberryPI.org https://www.raspberrypi.org/blog/page/2 ... bian-pixelBREdwin
+

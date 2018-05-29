@@ -1,0 +1,10 @@
+Hi Everyone,I'm trying to insert a Cold Reset of an application with the Appreset function.Of course, if I start this from an application, it is stopped and I have to take control over Codesys to Restart it.So I implemented a new Application that will only manage the Reset and restart of the main application.This is well working 'manually', meaning that when I'm connected with Codesys and PC.I would like now to be able to 'set' a bit on my main application that will trigged the reset abnd start sequence.Unfortunately I can't find the way to exchange 'global' data from one application to the other one in the same PLC.Does someone know how to perform this?Thanks by advance
+
+I found the definition of the Dataserver that seems to be the solution.But when I try to implement it, I have the message 'no selected Provider'. for the datasource.Do I need special library? Device?
+
+Hi,here in the FAQ section: viewtopic.php?f=22&t=5641&p=14007#p14007but to be honest, usually this shound like a workaorund for restart fieldbus or for which use case is this exactly the Workaround for? BREdwin
+
+Thanks for the feedback, I will check this... you are a really good source for my question...Yes, you're right this is a workAround for restarting the Fieldbus in my case.in fact, depending on our drives / devices, the Stop / Restart of the Ethercat may work or not. Sometimes, the ethercat of the drives restart well, but they stay in mode Drive interface Error...I did not find a 'proper' way to restart the Ethercat in all the case.So the reset Cold is a better way to do this. It has the advantage of resetting all the data for a clean new start.
+
+Unfortunately, the example show a reset cold of all the application present...but when an application is reset cold, it is stopped... so a restart is not possible anymore, because the program is not running anymore.I can't now test it for real because it involves Codesys 3.5.8 and our soft is released in 3.5.5, but when I translate it in my case, it stay in stop mode.
+

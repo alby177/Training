@@ -1,0 +1,4 @@
+I somehow something clicked wrong that I lost of my scrolling in IDE. Does somebody knows what disable mouse scrolling in editor.Codesys 3.5.4.2regards,Alex
+
+Never mind, It just started to work again... angry 
+

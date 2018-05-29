@@ -1,0 +1,8 @@
+Hi,as you can see at http://www.instructables.com/id/Raspber ... -Telegram/it is possible to request information or execute action with telegram installed on raspberry via lua script.Is it possible to do the same using codesys instead lua script?Thank you.BR
+
+Is it my question with no sense? 
+
+Hi,no question is clear.I would recommend to use Sys_Execute_Process2 check the following example:viewtopic.php?f=23&t=6247#p12711BREdwin
+
+Thank you very much!!! you are very kind
+

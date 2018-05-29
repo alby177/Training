@@ -1,0 +1,8 @@
+Hi,Is it possible get char from keyboard to CODESYS to  string variable ?Can you give me a hint how do it?
+
+Well, you can use default hotkeys configuration in Visualization Manager.Simple example:Attachment:29-11-2017 8-51-38.pngKeep in mind that it not works in CDS IDE service visu. Check it in web-visualization with CODESYS Control Win V3.
+
+I am thinking about  text input to CODESYS string variable, for example from  barcode scanner, it is possible ?
+
+It's other task, but yep, it's possible, if you could connect to this scanner (for example, through RS-232).Use CAA SerialCom library to work with COM-port directly (send data/receive data).
+

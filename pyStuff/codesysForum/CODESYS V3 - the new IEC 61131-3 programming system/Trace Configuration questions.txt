@@ -1,0 +1,4 @@
+Can somebody explain why in "Trace configuration" "Post trigger samples" number always is changing after power off?I mean I can't keep it more than 300 samples, if I put more it remains till the next power up, than it changes to some value <300. There is no word about it in Help!
+
+By the way I figured out the Trace configuration (the picture attached)It much easier to understand Trace parameters when it's depicted in some diagram, I wonder why it is absent in Help. I still don't understand why we have both "trigger" and "record" condition? What is the purpose of "record condition"?
+

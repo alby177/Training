@@ -1,0 +1,4 @@
+Hi!I´m trying to find out if there is support for CoDeSys Control runtime system on the new Cortex-M4 MCU:s but haven’t found anything official yet. Cortex-M4 in general but Freescale M4 running with or without MQX RTOS in particular. Any ideas wheter or not this is supported?BR
+
+I think this is something you should directly ask 3S-Smart Software Solutions (support@3s-software.com).Please inform us about their answer.
+

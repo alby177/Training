@@ -1,0 +1,4 @@
+Lately，I met a problem when testing Canopen functionality under CoDeSys V3.5.In a canopen network, I want a function to set the networdId and nodeID ,not modify on the GUI.Did the cia405 lib can do it? Best regards
+
+Pangwei,In my project, I find:- The 3S CANopen slave has a NodeId function. The NetId is fixed.- With the 3S CANopen master, NodeId and NetId are fixed.Regards,Edwin.
+

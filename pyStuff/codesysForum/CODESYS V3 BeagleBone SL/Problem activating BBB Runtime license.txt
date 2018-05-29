@@ -1,0 +1,14 @@
+Hi,i putted the ticket into BBB and i still have no runtime license.Any suggestion?BRStraccio80
+
+Hi,isn't there later in the log a message like:switching to unlimited mode (thes should occure on the cyclic license checks)BREdwin
+
+Hi,I wated several minuts but nothing.Thanks for replayBRStraccio80
+
+Hi,Right now i don't have on line ticket anymore, i don't have a licensed runtime and i don't have a valid backup file for restoring.Please help meBRStraccio80
+
+Hi,I'll send you an email to you for the nexts steps.BREdwin
+
+I think I have a same problem, could you please send me the info too please?
+
+Hi,I'll send you an email...In general the faqs is a great help we will update them with more details. Link will follow.I recommend always to save the license update file after activation -> CMLicenseNew.WibuCmRaU  via plc filebrowser.With this Update file you could restore the license for this device after new Installation (beside the mothod with the tar file)BREdwin
+

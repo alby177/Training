@@ -1,0 +1,6 @@
+Good afternoon,We have a PLC/HMI product that will run a shareware pdf reader called FoxIt.  Does anyone know if there is a way to use a button in Visu that will open this reader, maybe to a specified document?
+
+Hi,in which Visu type do you want to see this pdf viewer?Internal Visu CODESYS , TargetVisu on the plc, Webvisu in the Browser ?BREdwin
+
+Good afternoon Edwin,My apologies, I got away from this project for a while.I am using the TargetVisu on the PLC.I almost have it working  - I can activate the PDF viewer.  My only issue is that I can only specify a document to open that is in the same folder as the pdf viewer.  Is there a way, with the 2nd parameter when you activate a file, to specify a file path to the document to be opened??  I have attached a picture below.Thank you!Attachment:Execute Program.jpg
+

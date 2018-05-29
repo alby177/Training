@@ -1,0 +1,4 @@
+Hi all, I need to communicate between simatic and codesys running on raspberry pi.The communication needs to be of the event-triggered/acknowledged type (not polling), which means "ag_send" on the simatic side. What options do I have?Thank you
+
+simatic plc 1200 1500 support modbus master tcp
+

@@ -1,0 +1,6 @@
+Hey, is it possible to change Version Numbers seen in Project Information.For example creating a branch (new Major Version Number,... needed). Thanks, MaGu
+
+Hi MaGu.Use the method "get_project_info()" to get the project info and get an System.Version instance from the property "version". If the object is "None" there is no version stored. Create a new instance of Version with the required values.Code:proj = projects.primaryinfo = proj.get_project_info()version = info.versionif version == None:    info.version = Version(10, 0, 0, 0) # Create new versionelse:    info.version = Version(10, version.Minor, version.Build, version.Revision)BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

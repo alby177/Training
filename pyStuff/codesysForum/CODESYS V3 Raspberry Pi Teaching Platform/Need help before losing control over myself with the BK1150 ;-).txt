@@ -1,0 +1,28 @@
+Hi there,I have seen some posts about the fieldbus coupler BK1150 from Beckhoff. None has helped. The provided MPD file only included BK1120. My scan in CoDeSys for attached components succeeds but I cannot get them running. I do not know why and would appreciate any hint or help.Have a look at the attached image ...Attachment:Screen Shot 2017-05-19 at 17.46.41.png
+
+Hi,hm... does this configuration reflext your real Hardware?Is the `k-bus end terminal connected too?BREdwin
+
+Yes, though I have more modules available but they are not installed. The K bus is 'closed' by a KL9010.If I get this running successfully it will turn out into a new job for me. So thanks for your efforts. Greetz Nicholas
+
+No one? The coupler is connected to eth0 (on board) and TCP network to eth1 with a USB-Ethernet adaptor. Can I use any type of CAT cable for the EtherCAT connection? I need this running. Thanks
+
+Hi,you need to check this emergency message from screenshot  in post 1Maybe you get more informations in the plc logger...  check the documentation what this Emergency from the BK1150 reports.BREdwin
+
+Unfortunately the ordinary manual does not provide that information. I am hoping for someone who could give me an example project. As far as I know I do not need to provide any startup parameters to the BK1150, right? Nicholas
+
+Hi Nicholas,if you give me the full Emergency Information from PLC Logger... we could maybe check.0x0E mean something PDO length is wrong (not really sure)BREdwin
+
+I cannot expand that message in CoDeSys. So that emergency message is all I have. The logs of the PLC show:Attachment:Screen Shot 2017-05-23 at 20.25.27.png
+
+_________________GreetzNicholas
+
+Hi,AL Status  0x001EError Code 0x001EMeaning:Invalid Input Configuration Description SM configuration for input process data is invalidCurrent State (or state change)O, S, O, P→SResulting StateS + EBREdwin
+
+Hi Edwin, your help is great. But it leaves me as a CoDeSys rookie still behind. So do I have to provide startup parameters? And if what kind of. Sorry that I am lost. I really want to get into it.Here is some more details on the error:Attachment:Screen Shot 2017-05-24 at 03.24.09.png
+
+_________________GreetzNicholas
+
+Mission accomplished! The coupler does not run with the normal BK1150 declaration from Beckhoff. It then throws the errors. What did help was to use the MDP variant of the BK1120 (!) and to disable the product ID check. The reason why I did not succeeded before was because of the confusing fact that some elements on the bus need two attached virtual devices per element in CODESYS, e.g. KL3458.Finally all is up and running.
+
+_________________GreetzNicholas
+

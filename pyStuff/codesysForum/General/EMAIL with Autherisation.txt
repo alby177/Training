@@ -1,0 +1,6 @@
+Can anybody assist me with getting a fb that can send emails that requires authorisation. I found one in the oscat netlib112 library but the library gives me errros when I compile so I can't use it. Would really appreciate any help. I am using a ABB PLC
+
+the oscat lib is good, however if having problems use the txt version it is better, or make your own library from pieces of the oscat lib.(beware that you take all the functions and blocks needed as oscat is all modular)do not mind the _ with a virus in the same subject.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

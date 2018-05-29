@@ -1,0 +1,4 @@
+Did exist a function like block move ! All variable are addressed ( %MW ... ). If i want to move %MW0 and the next 20 register to %MW100 ! I know that i can use pointer, addr, sizeof  ... Can i use direct call like ... MOVE %MW0:20 -> %MW100 ?
+
+Hello, you can add the sysmem library to your project and use the memory move command to do a block move starting at a pointer value and then the number of bytes to move.You can use the ADR function to get the pointer to %MW0 and then use the number of bytes.  Just remember that a word is 2 bytes.  Or you can use the sizeof() function to get the size in bytes of a variable or structural that you want to move.
+

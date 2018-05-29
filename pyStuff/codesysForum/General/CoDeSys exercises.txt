@@ -1,0 +1,4 @@
+Hi!I'm new with the CoDeSys program and I want tutorials, examples o some exercises with explanations to learn how to use it.If you have something that could it help me, thanks!
+
+HelloYou can find examples of programs on the website of 3S :http://www.3s-software.com/index.shtml?sample_projects 
+

@@ -1,0 +1,8 @@
+HelloSo, this morning, this error appeared from no where.Everything working ok for weeks.Does anyone have a suggestion?Thank you
+
+Hi There - was curious if you had found out anything on your question?  If something like this happens, I normally do a "Clean All" followed by a "Rebuild".
+
+HiThanks for the suggestion. No luck though. Paul
+
+Hi,either update device on the plc device to have everything in current version or dowload missing libraries in LibraryManager should fix it.(and check if current comiler and visuprofile is set)BREdwin
+

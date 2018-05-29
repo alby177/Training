@@ -1,0 +1,14 @@
+My question is ragarding the limitations of loging in to a gateway if a sourcecode download was not performed.  I found that if a project is moved to a different folder (even if it was not changed) the datestamp changes and when one tries to login, a "different program" message comes on.  Is there a way around this other than sourcecode download?
+
+Thanks,
+Tom
+
+Good question.
+
+As long as no changes were made and no re-compile of the code you can select no to the download of the code and everything should work fine. 
+
+If for some reason a change was made and now the compiled files on the PLC are different from the computer and you select no to downloading the code you will find that the address tables generated that allow CoDeSys to access the data from the PLC online and display them on your laptop will not match and you will see strange things on your computer due to this miss-alignment.
+
+_________________Thanks,
+Steve Pfeifenroth
+

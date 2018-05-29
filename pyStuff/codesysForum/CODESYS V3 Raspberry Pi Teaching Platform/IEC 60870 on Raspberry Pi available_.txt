@@ -1,0 +1,8 @@
+Here it is statet that CoDeSys supports the IEC 60870 stack. Is this also available on the Raspberry Pi? If so how to add it to a project?I want to configure the Raspi as a server with IEC60870-5-104.
+
+Hello.. i have solution thats work on all device with SysSockLib.. I have realisation of 60870-5-104 protocol. If you interesting write me down on dmitriy.murashov@automation-engineering.ru
+
+Did you get any 60870 support on Pi?
+
+Hello.. i have solution thats work on all device with SysSockLib.. I have realisation of 60870-5-104 protocol. If you interesting write me down on dmitriy.murashov@automation-engineering.ru
+

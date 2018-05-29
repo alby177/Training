@@ -1,0 +1,6 @@
+I am new to CoDeSys but have experience with other PLC programming systems (TwinCAT, etc.).  I am trying to set up an application that will allow the user to dynamically set up ModBus slave ports (up to 8 ) to communicate with devices that use reads (function 3) and writes (function 6, 16) to holding registers.  These devices have a fixed "ModBus Map" that are the same accross all products but have significantly more than 40 registers (about 2400)that can be accessed by more than 10 channels (about 40 read channels and 15 write channels).  Is there a way to modify the operation of the library modules to allow this or am I going to have to write my own?If there are any examples for version 3 CoDeSys that demonstrate this ability, it would be ver usefull.Thanks in advance.
+
+Either this question is too dumb for anyone to answer or no one has any interest in replying.  Either way it looks like I am on my own.  Would still like to hear if anyone has an idea as to how to approach the problem.
+
+Unfortunatly you cannot modify the 3S-Software library.This is used in combination with the I/O configuration.To use more variables (channels in the I/O configuration) for a slave, you can add the device another time with the same node number.I tried this once a long time ago and it worked.
+

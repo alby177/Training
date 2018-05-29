@@ -1,0 +1,2 @@
+Hi all,how can I get the status of runtime (run, stop, link error, etc)  under Raspbian with an external application, and how is it possible control the runtime mode (halt/run, reset, etc )? Is there a data base for it?Thank for answers
+

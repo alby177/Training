@@ -1,0 +1,6 @@
+I have developed a CodeSys 2.3 project and my customer has requested to be able to re-load the code onto the PLC to allow them to recover from hardware disasters. Is there a way to ship the binary files to the customer without the source code? If so, what software tools would they need to allow them to download the program to the PLC (as a boot project) ?Thanks
+
+yes that is possible on many plc types, however maybe a spare controller is better.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

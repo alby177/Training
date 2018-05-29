@@ -1,0 +1,6 @@
+Hello. I have a next problem of raspberry pi. My sd card was broken-down, so I change it. I write new image on SD card and I innstall codesys.deb. Now Raspberry work about 2 hour and stop answer. I restart device and ... nothing. I have a codesys key and RPi codesys license. What I should to do ?
+
+Hi,hope you have a backup of the license.See this link (viewtopic.php?f=21&t=5827#p10770)how to restore it and you find this important Information in the "c:\Users\<yourWindowUserName>\CODESYS Control for Raspberry PI\2.1.1.0\RaspberryPI_de.pdf" BREdwin
+
+HelloNo, I forgot ... is any solution ? or I must buy new license ?
+

@@ -1,0 +1,10 @@
+Hello, I'm quite newest in the Codesys and I'm trying to write data to the csv file but I can't find any information how to add another line in the file  this is my code and here I just simple writing stTestLine in to the file but how to write another line? Code:PROGRAM PLC_PRGVAR   rte: RTS_IEC_RESULT;   fh: RTS_IEC_HANDLE;   fileName: STRING:= 'd:/dir/Test1.csv';   xStart: BOOL;   stTestLine: STRING;   udiWrite: __XWORD;   udiWriteError1: RTS_IEC_RESULT;  //write file   udiCloseError1: RTS_IEC_RESULT; // close file    iState: INT;END_VARstTestLine := '1, 2, 3, 4, 5';IF xStart THEN   CASE iState OF   0:    // open or create file       fh:= SysFileOpen(fileName, AM_WRITE, ADR(rte));   1:    // write data to the file      udiWrite := SysFileWrite(hFile:=fh,             pbyBuffer:=ADR(stTestLine),            ulSize:=INT_TO_UDINT(LEN(stTestLine)),            pResult:=ADR(udiWriteError1));                  udiCloseError1 := SysFileClose(fh); //close file    END_CASE   END_IF
+
+For your access mode look at AM_APPEND_PLUS or AM_APPEND instead of AM_WRITE.Append will add your information to the file. Then use $N to signal a newline in your string that you are writing to the file. Without $N you will just have one long line of text.
+
+Comingback4u wrote:For your access mode look at AM_APPEND_PLUS or AM_APPEND instead of AM_WRITE.Append will add your information to the file. Then use $N to signal a newline in your string that you are writing to the file. Without $N you will just have one long line of text.Thanks Comingback4u it help me   May be somebody know where I can find info (book, www ) about how to work with CSV file in codesys or something like that?
+
+If you speak russian language feel free to check this.
+
+e.kislov wrote:If you speak russian language feel free to check this.ok. thanks e.kislov   
+

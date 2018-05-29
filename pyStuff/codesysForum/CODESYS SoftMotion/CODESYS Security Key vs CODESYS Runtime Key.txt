@@ -1,0 +1,4 @@
+What is the difference between CODESYS Security Key and CODESYS Runtime Key?Can I use CODESYS Runtime key dongle  for licencing CODESYS Control RTE SL  or CODESYS Control SoftMotion RTE SL?Best RegardsJovan Mirilovic
+
+Hi,runtime key has additional the feature to decrypt the bootapplication.Sure should be used for Control RTE, SoftMotion RTE , Control Win.but even does work with Raspberry PI and Beaglebone to have a portable license.BREdwin
+

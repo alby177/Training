@@ -1,0 +1,6 @@
+Hi,how can the function "Reset to values form project information" (Application - Properties - Information) be triggered from a python script. Or how can I access this information from Python (information form current application, not the POU project information)?Thanks
+
+Hi feragfh6.feragfh6 wrote:Hi,how can the function "Reset to values form project information" (Application - Properties - Information) be triggered from a python script. Or how can I access this information from Python (information form current application, not the POU project information)?ThanksSorry, not possible at the moment. You can read and write the project information but not the Information in the properties of the application object.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

@@ -1,0 +1,4 @@
+Under CoDeSys V3.5，How the library is arranged, what is the directory where the library is located？Under V2.3 the directory  is “\3S Software\CoDeSys V2.3\Library\",and there is a directory setting entry at Project\options\Directories。Is the library files still *.lib or something else? and how to install libraries?
+
+The libraries in V3 are installed in a Library repository.To add a library to your project you only have to open the Library Manager (part of your project tree) and add your required library.If you want to add a library which is not yet available in the Repository you have to install it.To do this you need to go to Tools-Install Library (or Library Repository with the professional feature set enabled).
+

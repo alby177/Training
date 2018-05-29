@@ -1,0 +1,28 @@
+Hello all,I need to use Double instead of Float in Codesys 2.3.As I tested, CoDeSys uses float standard for REAL and LREAL. The difference is that the mantissa in LREAL is bigger, but not the exponent, as it should be in Double.Bellow you find examples of what it should be.http://www.binaryconvert.com/result_dou ... 0048048048http://www.binaryconvert.com/result_flo ... 0048048048The problem is I need to send the data over a serial connection, and thus, the reception device accepts only Double.Is there a library where I can convert LREAL in Double?Or does anybody know a function to do so?Is it a CoDeSys bug, or it should work like this?Thanks in advance,Ariel
+
+few ways to solve this.make your output a string and add some characters needed.look www.oscat.de and find REAL2make yourself a datatype in codesys
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks for you reply shooter, but that was not exactly what I need.Imagine the scenario I have a display that only accepts double precision numbers (IEEE754), via serial comm, to display.If I send REAL or even REAL2 from oscat, I won't have the same byte configuration and I'll display a completely wrong number.Because REAL is float1 bit sign8 bits exponent23 bits mantissaREAL2 is something based on REAL, so same config, and what I need is1 bit sign11 bits exponent52 bits mantissaI've done a brute force conversion, not really sure it will work always.Ariel
+
+If needed more help, then contact me or put it in oscat forum.I can make conversion, however it will need some calcs.how did you make it now?
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Follow the file where it's done.Got some info from here:http://kipirvine.com/asm/workbook/floating_tut.htmAriel
+
+It looks working good.If you need to do calcs on your doublereal just give a shout.btw i saw some differences between the digital one and the binary so be aware of your numbers.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi shooter, thanks for your reply and for testing the functions.What do you mean by Quote:differences between the digital one and the binaryI didn't get it.
+
+sorry i meant the decimal and binary one.I am working on function block real calculation with very high precision and any number system, so from 2 (being 0..1) to 16 (0..F) including 10 (0..9).to have calcs like plus/minus/div/mul.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Yes, the difference is because it's single precision, so it's not that good.Cool the project you're working on.Cheers,Ariel
+
+Imagine the scenario I have a display that only accepts double precision numbers (IEEE754), via serial comm, to display.If I send REAL or even REAL2 from oscat, I won't have the same byte configuration and I'll display a completely wrong number.Because REAL is float1 bit sign8 bits exponent23 bits mantissa-------------------------------Escort Bayan
+

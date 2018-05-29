@@ -1,0 +1,8 @@
+Dear All, Am very new to PLC industry........  i want to asl how to establish communication between CoDeSys and ABB PLC AC 500 with PM581 controller.Best Regards!!
+
+Is it PM581 or PM581-eth ? PM581 has only serial ports while PM581-Eth has ethernet also
+
+it is PM581-Eth
+
+From Codesys Select Online/Communication ParameterSelect Gateway TCP/IP, if not available create new gatewayIn IP give PLC IPPort No : 1201Motorola Byte: SWAPUpdate and exitConnect PLC and Your PC through Ethernet Cable (Straight cable through switch)Select Online/Login from Codesys Menu
+

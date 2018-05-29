@@ -1,0 +1,16 @@
+Hi,
+I have make the bootproject and set the auto-start and run of the boot project after boot the PC.
+The RTservice always starts but the boot project sometimes doesn't start and i have to click to "Reset" and after click "start cycle" and so the program starts correctly.
+when the program doesn't start i open codesys and when i do the login a message error appear "task violation in <main>". After the procedure "Reset and Run" the program starts correctly.
+What does mean the error  "task violation"??
+
+Another question:
+I need to launch and run after codesys project a visual basic project.exe:
+Is possible to launch by codesys an external program for example ".exe" of visual basic??
+
+Sorry for bad english,
+Regards
+Stefano
+
+Yes,It is possible to launch an "exe" via codesys program.For example attached file showsn command which launches "lrae" binary in linux.Regards,Winy
+

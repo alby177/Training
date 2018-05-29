@@ -1,0 +1,2 @@
+What is the minimum internet speed required for the normal operation of the CoDeSys Web server?Will it work normally in 64 kB ISDN Internet?
+

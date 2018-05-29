@@ -1,0 +1,2 @@
+Hello,I want to use CoDeSys V2.3 together with _ from Vector. Which communication setting I have to choose?
+

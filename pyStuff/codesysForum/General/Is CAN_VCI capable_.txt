@@ -1,0 +1,18 @@
+Gentlemen:
+
+I'm trying to use Can@net II, which is a CAN to Ethernet device, to communicate Codesys with my controller, without any luck.
+Normally, I use my USB to CAN compact (IXXAT) and this works ok. 
+
+I'm able to use this CAN to Ethernet, with another software, and shows a window where I can specify which interface to use (USB compact or Ethernet), and like I said works ok.
+
+Maybe the CAN_VCI driver is not capable of use this hardware.
+
+Any information to share?
+
+Thanks and Best regards
+
+Be carefull. Maybe someone from CoDeSys can be more specific but IXXAT has multiple versions of the VCI driver. As far as I am aware with CoDeSys V2.3 it supports V2.16 VCI. IXXAT latter released a V3 driver which I believe is not compatible with CoDeSys V2.3 because the driver interface changed. So check and make sure if the CAN @ net supports V2.16 driver and make sure you are using the V2.16 driver. IXXAT allows you to install V2.16 along side V3 driver.
+
+_________________Thanks,
+Steve Pfeifenroth
+

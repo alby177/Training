@@ -1,0 +1,14 @@
+Hello,I have sevo on CANOpen bus. It is configured from interpolation position mode with SDO, and can control with position register from PLC POU. How i can conver my servo to SoftMotion device Like SM_Drive_CAN_xxxxx?Project in attachment URL dropbox. (https://www.dropbox.com/s/ej1rvgbcimecg ... chive?dl=0)
+
+Hi,if this device is CIA402 compliant, you could add by rightlick a SoftMotion drive.(SoftMotion need a realtime capable plc) keep this is mind- > you need to use SoftMotion RTEBREdwin
+
+Thank for advice. Yes with 1ms SYNC - on Codesys V3 Win SoftMotion - ESTUN Pronet drive working couple second and then appear alarm on drive SYNC error.. look like becuse not RTE. If change SYNC time to 10ms.. woking fine. (without SoftMotion features.. and with PEAK USB adapter) With SoftMotion MC_Power and so on still no success. I add SML Axis on drive and add mapping for all nesary registers (Index Subsindex in PDO and map this to Auto mapping) Any idea why it can not working? May be somebody have some log from BUS for MC_Power function. (at least) .. must be somethink like Index 6040 = 16#6,6040 = 16#7,6040 = 16#F to put drive in operational mode.
+
+Hi,I would play around with the pdo mapping,disable this IPO / cyclic stuff for SoftMotion light.BREdwin
+
+i change ...  PDO as described. But still have no success. Chek in Controll Word - log this. Codesys set 16#80 , 16#A0, 16#20, 16#120 as on screen shot. But drive not going in operational mode. In status work i have 16#450 all time.Check ESTUN CanOpen docs. And see control word. If i just set Controll Word  manual - 16#06, 16#07, 16#0F - drive going in operational mode.Is Any way to change (or modify) SML_Drive_CAN_GenericDSP402 class lib. To change startup sequince in control word to another one? (As i see another driver description have adaopted class with it is own startup features or somethink)Or i can add after controlword 16#120 - next sequence 16#06, 16#07, 16#0F ?
+
+Some aditional screens
+
+If just using Virtual Axis.Trafo. and provide position (with scaling in program) to CANOpen servo drive (not throw 402 Generic Axis) It will working ?
+

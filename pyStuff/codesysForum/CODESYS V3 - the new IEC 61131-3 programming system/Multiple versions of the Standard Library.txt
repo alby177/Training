@@ -1,0 +1,8 @@
+HelloI'd like to use the Oscat Basic library. The latest is 3.3.3My target has a runtime of 3.5.10.10, and uses the Standard library 3.5.9.0The Oscat library references 3.3.0.10 of the Standard Library. Is this a problem? I'm sure that I've read that there can only be one version.Please see the screen shot for a clear explanation.Thanks
+
+I have solved the problem oppening osct library, changing standard librry and recompiling.But I it is possible that the problem could be solved in easiest form
+
+Hi,I would uninstall your 3.31 Version OSCAT lib from your library repository and install the Version from CODESYS store.In this Version this is correct.BREdwin
+
+Thanks guys for the replies.@Edwin - perfect 
+

@@ -1,0 +1,10 @@
+]HelloI hope I can get some help.I've been running with a WAGO 750-841, and need a read a value from a Modbus slave.I seemed to have tried everything, does anyone have an idea for how I do?I have attached a picture that shows a Modbus connection from a PC, so klientet works[attachment=0]Capture.JPG[/attachmentI'm new to Modbus best Regardsjens
+
+It depends on how the Wago implements a Modbus mater (client).  It is possible that you have to use a library function to do this.  Does Wago have any documentation on Modbus or examples?
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+Hi allThis is my first project where I'm using Modbus
+

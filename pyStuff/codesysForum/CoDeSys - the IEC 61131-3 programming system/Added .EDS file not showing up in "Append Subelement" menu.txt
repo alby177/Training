@@ -1,0 +1,4 @@
+I am trying to add an .EDS file to my PLC configuration. I am able to add it to my configuration folder using "Extras > Add configuration file...", but it does not show up in the "Append Subelement" menu to actually add it to the configuration. I've confirmed that the configuration directory in "Project Options" is correct, and I've confirmed that the EDS file is indeed in the folder. I've also rebuilt the project, and closed/reopened Codesys.Any ideas?ThanksEDIT - I'm pretty sure the issue was trying to add a DeviceNet eds file to CANOpen. I'll confirm once I get the CANOpen EDS file.
+
+Issue solved. See edit in previous post.
+

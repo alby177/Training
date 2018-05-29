@@ -1,0 +1,4 @@
+It is possible. Add RTS - set when write to port.. And RTS clear when read Serial Port with IoDrvModbusComPort?
+
+only one way that foud ... make modbus with libs. Is anyway add RTS_Toggle as default on IoDrvModbusComPort or can adjust with CodesysContorl.cfg?
+

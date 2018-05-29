@@ -1,0 +1,14 @@
+Hi,I have problems communicating with Siemens IM 151-3 PN v7.0 using Control Win 3.5.8.4.Can you tell me what the codes from "Station Status" means?Attached are pictures with Station Status and Diag Data.
+
+Hello, I got the same issue but I don't know how to solve it?Did you have any solution or the something in order to fix this problem? Thanks in advance
+
+Yes, you can try to increase the Send Clock and the Reduction Ratio.Hope this will help you.
+
+Thanks for your reply.It works, but now I got some problem about the Siemens device. I don't have the file .xml of 6ES7-315-2FJ14-0AB0. I also created by Simatic Manager but it does not work. Error: The correct import filter for the file could be not detected.hope your help. thanks
+
+I don't have Simatic Manager installed but I made a test using TIA Portal. I created an xml file for CPU315F-2 PN/DP + 1 DIx16 and it worked to import in Codesys. What version of Codesys are you using?
+
+Hi,I am using PFC200 and Wago's Profinet modules (five of them). I had to slow down Send Clock ...I still have problem with loosing "Online" after downloading new version of application.It seems that CPU doesn't have enough time to handle two Ethernet.
+
+Hi,yes I agree that PFC200 is from CPU performance limited to do profinet.In this case it is usually better to work for example with Ethercat and 350-354BREdwin
+

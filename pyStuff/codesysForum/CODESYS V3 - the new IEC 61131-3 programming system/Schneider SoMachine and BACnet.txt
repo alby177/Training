@@ -1,0 +1,2 @@
+Has anyone successfully implemented a BACnet driver in Schneider SoMachine?  I have played around with the Codesys BACnet SL product (in demo mode) in pure Codesys, but I haven't been able to figure out how to get it into SoMachine.  It seems to be connected to the hardware somehow--I don't think it's just a library.  I'm willing to purchase it, I just want to know if it will work first.Or, has anyone found any other libraries that would work?  I've heard that Wago has something, but again, I think it's paid, and I'm not sure if it's specific to their hardware.thanksTim
+

@@ -1,0 +1,57 @@
+Hi all,
+
+Here's a question:
+
+I've got a program with a couple hundred variables. For our customer it is important 
+to be able to save those settings to a file, and load new settings from a file. I'm 
+looking for the easiest way to program this. 
+
+Is it possible to read the name of a variable as a string? 
+For example: I've got a variable: rPitch with a value of 3. I would like to
+program something like this:
+
+Code:CONCAT(CONCAT(NAME_OF(rPitch),'='),rPitch);with the result: 'rPitch=3'Only thing is, the NAME_OF command does not exist Anybody got any idea's?One more thing: I've got the library: 'ini_file_v10'. It allows me to create .ini files. Has anybody got any experience with this library? Or does it only come with my PLC (Berghof)?Thanks!Code:
+
+There is no NAME_OF function in Berghof libraries.
+IMHO the Name of your variable has to be hard coded as string.
+
+The easiest way is to convert your variables with functions like UINT_TO_STRING.
+
+By pressing F2 in a source file you'll get all the available conversion functions implemented in CoDeSys
+
+the INI lib should come with your Berghof Target.
+I use this lib very frequently. But until now I haven't found a way to automatically generate Names and parse them back again. This still has to be done manually.
+
+
+hope this helps  
+
+Thanks for your reply!
+Now I know I've got a lot of work to do 
+
+I've done some testing and I think this method works the best:
+Code:   strKey := 'Parking.rSpeedPercent';   strValue := DINT_TO_STRING(Parking.rSpeedPercent);   INI_Setkey_STRING(strFilename, strSection, strKey, strValue);
+
+One more note: When I want to read the data from a file the INI_Getkey_STRING function works correctly. 
+Only the other functions (INI_Getkey_BIN, INI_Getkey_DINT, INI_Getkey_DWORD) all crash the PLC. 
+The PLC gives the error: 
+Runtime error #81 (Access violation
+Task = PLC_PRG_TASK)
+
+I think I will keep using the INI_Getkey_STRING function.
+
+good idea,
+
+i do type conversion after reading KeyValue as string, this works
+
+Do you care what the format of the saved file is? In other words do you need to open it and have the file immediately human readable like your INI file or read by another PC program that uses ini files? The reason I ask is reading and writing files is easy with the SysLibFile. You can create a structure in CoDeSys then read and write the data of the structure to a file.
+
+Code:TYPE Parameters :STRUCT   rSpeedPercent      :REAL;   rPitch         :REAL;   uID            :BYTE;   sSpeed_Ref      :INT;END_STRUCTEND_TYPE
+
+Now you can use the address operator to point to the structure and set the number of bytes = 11 and the library will automatically read these variables from the file and populate the structure correctly. Working with strings in a PLC is not optimal and I would strongly discourage it unless absolutely necessary.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+The INI format is my exchange format (PC and/or human), internally I use the same method like you.
+Increases speed dramatically 
+

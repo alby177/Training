@@ -1,0 +1,6 @@
+I am trying to run a script which accesses the project and does manipulations to it. This is run through command line. When I run it with --noUI option projects.primary returns None in the script.It runs fine when run with UI. Am I missing something here.It can be recreated with the project and script attached and the following command:Code:"C:\Program Files (x86)\3S CODESYS\CODESYS\Common\Codesys.exe" --noUI --project="UnitTests.project" --profile="CODESYS V3.5 SP9 Patch 5" --runscript="t1.py"
+
+Hi Shabroz.Gill.Shabroz.Gill wrote:Code:"C:\Program Files (x86)\3S CODESYS\CODESYS\Common\Codesys.exe" --noUI --project="UnitTests.project" --profile="CODESYS V3.5 SP9 Patch 5" --runscript="t1.py"First you can try to put the --noUI at the end of the parameters, in the case the order of the parameters causes your problem.If you always open the same project why not open the project from within the python script. When you have to open different projects, you can open the project from within the python script but use the parameter --scriptargs to transfer the project path to the script.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

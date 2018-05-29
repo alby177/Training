@@ -1,0 +1,22 @@
+As it is so much easier to display the variables from the Wago 750-841 controller using Codesys CAA HMI and computer/LCD instead of the expensive HMI that needs to go through Modbus protocol addressing. 
+
+As such, I have the intention to purchase a HMI license. However, before I do that, can I check if the Codesys CAA HMI able to work in a touch panel PC that is running on XP embedded or Win CE? 
+
+Hope to hear from any experts soon and Thanks you very much in advance.
+
+Hello,
+
+CoDeSys HMI (I assume you're talking about CoDeSys 2.3) works with XP Embedded. I'm quite sure it doesn't work with CE. 
+
+A touch panel pc should also be fine. 
+
+We've used it on a Kontron Microclient running XP Embedded connected to a 750-841.
+
+Best regards,
+Kristian Berlin
+SDT AB, Sweden
+
+Thanks for the kind reply. It does help to clear my worries. I could go ahead with the HMI license now.
+
+Best Regards
+

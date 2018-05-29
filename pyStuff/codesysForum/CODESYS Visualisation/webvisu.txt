@@ -1,0 +1,30 @@
+Hello
+J'm trying for training to use CoDeSys SP PLCWinNT and CoDeSys Webserver on a PC.
+I Explain my idea : I have 2 PC. One, called PC1 with CoDeSys V2.3 and one other PC i want to use as Target (With CoDeSys SP PLCWinNT and CoDeSys Webserver, all of them are in demo mode).
+PC1 and PC2 are connected on the same Ethernet LAN with goods address.
+I can transfert my program (and the visualisation page which is called PLC_VISu) from PC1 to PC2 (target). My program works well !
+But when i use my internet explorer(on PC1) to see the web visu (URL = http:/PC2 address:8080/webvisu.htm) i get an error message "Acces error : page not found - cannot start page for URL". 
+
+I tried 2 explore : IE and Firefox, the result is the same.
+
+Some questions :
+1°) Is my idea possible ?
+2°) When I look at the screen Webserver, I see 2 different addresses. One is the address of the webserver, the other is the address of the PLC. I have to edit the file "webserver_conf.xml" ?
+3)) Someone has he already done that ?
+
+Thank you in advance for any ideas.
+Best regards
+
+J found the error.
+There is something wrong in the 
+C:\Program Files\3S Software\CoDeSys V2.3\Visu\ webserver_conf.xml file 
+--------------------------------------------------
+<webserver-configuration>
+<webserver-port-nr> 8080 </webserver-port-nr>
+<target-port-nr> 1200 </target-port-nr>
+<target-ip-address> localhost </target-ip-address>
+<use-file-upload-dir> true </use-file-upload-dir>
+<file-upload-dir> C:\Programme\CoDeSysV23\ </file-upload-dir> to be replaced by <file-upload-dir> C:\Program files\CoDeSysV23\ </file-upload-dir>
+--------------------------------------------------
+And its works perfectly !!
+

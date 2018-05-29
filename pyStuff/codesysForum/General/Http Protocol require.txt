@@ -1,0 +1,2 @@
+Hi, sir I want to control a device by HTTP.Does the CoDeSys V2.3 Products have function support HTTP Protocol ?? thanks.
+

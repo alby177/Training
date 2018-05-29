@@ -1,0 +1,6 @@
+Hello,I installed CODESYS V3.4 SP10 Patch 2 + and CODESYS Control for Raspberry PI 3.5.10.20.When creating a project, I get 5 error messages about missing libraries (CmpApp, CAA Callback Extern, CAA Device Diagnosis, CAA Behaviour Model and CAA Ressource Manager Extern).How can I solve this issue?Thanks in advance.Steve
+
+Hi,either:1) goto the Library Manager and download the missing libraries (there should ne a button to do this)or:2) udate everthing to current Version (3.5SP11Patch1) in this caseExisting projects need to be updated to (rightclick on device -> update device in the deivce tree - also need for fieldbus in some cases)BREdwin
+
+Hello,I discover CODESYS and was not aware about the need to download each libraries before compiling application.Many thanks for your help.Regards,Steve
+

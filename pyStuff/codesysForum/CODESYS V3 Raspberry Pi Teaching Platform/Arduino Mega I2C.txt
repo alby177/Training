@@ -1,0 +1,12 @@
+Do you have the I2C  .library and devdesc.xml for Arduino Mega ?I found 24VDC Industrial PLC based on Arduino Mega like http://controllino.cc/I do not know how to build new libraries for I2C, maybe you have some links just to start writing new library and devdesc.xml or instruction?,but a kind of I2C with ModBus  Write 10words  and Read10words should be very useful.Thank you
+
+UP  
+
+A question maybe very stupid   But if I modify the ArduinoUNO.devdesc.xml file by adding additional lines that refer to additional inputs and outputs it will not work ...... is it true?Sorry the stupidity of the question !!  Thanks, Alberto
+
+hello, any news? does it function?
+
+alverman wrote:A question maybe very stupid   But if I modify the ArduinoUNO.devdesc.xml file by adding additional lines that refer to additional inputs and outputs it will not work ...... is it true?Sorry the stupidity of the question !!  Thanks, AlbertoI think that only modifying ArduinoUNO.devdesc.xml is not enought. I think that we need to modify also IoDrvArduinoUNO.library and the program inside Arduino. Who are able to do so?Massimo
+
+UP!
+

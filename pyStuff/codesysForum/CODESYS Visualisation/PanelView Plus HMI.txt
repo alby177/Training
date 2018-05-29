@@ -1,0 +1,6 @@
+Is it possible to target the Allen Bradley HMI for visualization? The HMI has OPC capability as well.
+
+Wrong place. Can an admin move this over to visualization? Thanks
+
+So the easy route is to actually set the URL in the PanelView's web object and point it to your device's webpage (i.e. IP:8080/webvisu.htm). This way, there's no need to create another HMI interface.
+

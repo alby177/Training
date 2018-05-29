@@ -1,0 +1,4 @@
+Could you please confirm if the Network Functionality (UDP) is compatible with SP PLCWinNT V2.4 or SP RTE (Codesys V2.3) in DEMO version?I am preparing a laboratory in my class connecting two PCs. I tried two alternatives:1- 2 PCs connected via crossover cable: the pNetVarPDO var reports the following message (TX): "NetVarUDPError_UDPNETWORKMANAGER_NOT_READY"!2- 2 PCs in a LAN (wifi) network: no error reported, but the variables in the application (SoftPLC READ) have not changed their values.Thanks in advance for your reply.Regards,
+
+Hi,for sure compatible..check if the transmission is ok when you the ip of the receiver pc instead 255.255.255.255 some times broadcasts are not allowed by the OSand deactivate the firewall for testing purpose.BREdwin
+

@@ -1,0 +1,26 @@
+Hi, Where can I find codesys projects examples?
+
+a lot of programming examples in st are in the open source library OSCAT
+you can download the library from www.oscat.de
+open the lib as a project and you can see all the source code
+
+_________________freie sps bibliothek unter www.oscat.de
+
+If you have used any Programming languages before like C/C++ then ST is very simlar. I found when I was starting off, opening up the library was useful to see what tools I had at my fingertips.
+
+I realise I haven't directly answered your question but I hope the advice helps
+
+yes anyone who has used a high level language before should be fine
+ST is pretty much pascal
+
+_________________freie sps bibliothek unter www.oscat.de
+
+Unfortunatly all the topics are in German.So,as any chance to get it in english?
+
+the main documentation not right now,
+but all commentrs and short descriptions in the code are english
+
+_________________freie sps bibliothek unter www.oscat.de
+
+See http://www.3s-software.com/index.shtml?sample_projects
+

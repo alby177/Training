@@ -1,0 +1,2 @@
+Hello Experts,I had inquiry in CODESYS related to Softmotion which is about FUN called 'SMC_IsAxisReadyForMotion'.But I couldn't found detailed information about that.My question is in which case it will give the output?when communication is established or when motor was enabled.Looking forward to see your feedback. Thanks.
+

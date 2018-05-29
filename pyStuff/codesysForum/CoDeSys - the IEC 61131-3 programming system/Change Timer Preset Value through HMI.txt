@@ -1,0 +1,16 @@
+Hi,
+
+I am trying to change the preset of a timer on delay through an HMI.  I am doing everthing in simulation mode.  I can get to the part where  i click on the preset time to change it, and a  num pad will appear.  The problem is the preset time wont change when i hit ok on the numpad window.
+
+Hi logix,
+
+to change a value from type TIME you must use the keypad because you must type in the IEC format like T#5s500ms. If you want to change a time value by using the visualization i suggest 
+1. use a INT variable
+2. use in your Visualization this Variable
+3. multiply the INT by 1000 (if you want to have seconds as unit)
+4. use Typecast INT_TO_TIME
+5. connect the result to the PT input of the timer
+
+regards
+Ralph
+

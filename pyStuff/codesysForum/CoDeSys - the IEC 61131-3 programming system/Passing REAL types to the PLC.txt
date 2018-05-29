@@ -1,0 +1,23 @@
+Hi,
+
+This might be off topic but I need to pass REAL values to my IEC61131 application but the Wago PLC only supports integral values (BYTE, WORD and DWORD) values on the Fieldbus.
+
+Does anyone have any suggestions how I might do the conversion, other than say scaling the values up, then down again?
+
+Thanks
+
+Tony
+
+Hi Tony,
+I would suggest 
+1. on sending device to convert REAL to be sent to INT, multiplying it by 10 or 100 or ... (factor depends on the number of positions after decimal point you need), and then using the TRUNC or REAL_TO_INT function to discard the needless positions after decimal point
+2. on receiving device to reconvert INT to REAL, dividing it by the same factor
+
+Example sending device:
+Code:VAR  RealToSend : REAL;  IntToSend  : INT;  Factor     : REAL := 10.0; (* This will transmit one position after decimal point, 100.0 will transmit two positions *)BEGIN    IntToSend := TRUNC (RealToSend * Factor);Example receiving device:Code:VAR  IntReceived  : INT;  RealReceived : REAL;  Factor       : REAL := 10.0;BEGIN    RealReceived := INT_TO_REAL (IntReceived) * Factor;
+
+Keep in mind, that the range of values available for transmission depends on the size of Factor. INT range is from -32768 to +32767, so a factor of 10 reduces the REAL transmission range from -3276.8 to +3276.7. If you need a wider range, you will have to use a DINT.
+
+Regards,
+Rolf
+

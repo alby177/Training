@@ -1,0 +1,8 @@
+Hi, everyone! I'm on a project to deal with some CANopen applications, using Automata's OptinJect as controller. Now I have two sets of libraries independent to each other: one set is from 3S, e.g. 3S_CANopenMaster.lib, 3S_CanDrv.lib, etc; the other set is from the PLC manufacturer, e.g. mcmlib.lib, mcmapplicationlib.lib etc.These two sets are different systems, so I want to choose one of them to use. I heard that mcm.lib doesnot deal with eds files, so I want to choose libs from 3S. My question is: Is the CANopen libs from 3S is powerful enough to deal with any application? or I should use the two set libs at the same time?Thanks for caution!
+
+Well, no one replied. I think 3S company's lib is enough, have a try.
+
+have a look at www.oscat.de this is independent library.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

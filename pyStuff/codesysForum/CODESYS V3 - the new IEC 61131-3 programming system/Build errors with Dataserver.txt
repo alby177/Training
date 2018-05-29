@@ -1,0 +1,2 @@
+I have a project with a main PLC and a few remote devices that communicate with dataserver where the PLC is the master.When I do "build", i get errors that the source application is not yet compiled and i have to download it first.I want to run a simulation of the PLC without the remote devices. How can I disable these errors?
+

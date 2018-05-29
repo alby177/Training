@@ -1,0 +1,2 @@
+hi,I ran into a situation where I need to hook up a Gateway Interface Communicator CG150-2 CAN/USB (http://files.danfoss.com/documents/l1412468.pdf) to CoDeSys v2.3. The ecu is a Hydac TTC device. Can anyone suggest me the appropriate driver and common parameters? Haven't dealt with the cable and CoDeSys combo before. Thanks a ton. Really appreciate any pointers.Cheers,RW
+

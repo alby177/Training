@@ -1,0 +1,15 @@
+Generally speaking it is not fast in XP either, but at least one can make a "Get all latest versions" without having to go to eat something in the middle.
+
+In windows 7 it is slow to death.
+
+Is something out there that could make it work faster?
+
+Any configuration trick, any patch, any tool or advice?
+
+PS: 
+Versions:
+ENI CONTROL v. 1.1.2.0 (2004)
+ENI ADMIN 1.1.4.0 (2005)
+
+Thank you in advance.
+

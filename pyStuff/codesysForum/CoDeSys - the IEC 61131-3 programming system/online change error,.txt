@@ -1,0 +1,2 @@
+i used beckhoff twincat software, when i try to download new program, use online change, often display the error below.Reorganisation after last Online change still in progress. Please retry later. question is can i just modify some parameter to let the error disappear? best regardguojun lu
+

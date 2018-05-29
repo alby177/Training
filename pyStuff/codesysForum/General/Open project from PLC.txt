@@ -1,0 +1,8 @@
+Hello!I have rexroth IndraControl L10 PLC. I need to modify the program (i dont have backup), but i cant "open project from PLC". I have teraget file and can connet to PLC, the process ended here because the ENI server stop me. I try to modify the admin password, or create the new user, but it was not succesfull.Error messages:ENI server [project opject] "Socket is not connected".Thanks in advance!David
+
+it is not possible to get the original program out of a plc 20 years ago the plc was a interpreter unit, nowadays it is all compiled in machinelanguage and it is not possible to get the program back, or the original programmer must have saved his program somewhere in the PLC.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Ohh this is sad. Thanks for the reply!
+

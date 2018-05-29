@@ -1,0 +1,6 @@
+HelloDoes anybody know how to tap a variable in visualisation when a text input is done, with the same boutton?
+
+instead of using toggle use tap.its in the list of inputs.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

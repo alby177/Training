@@ -1,0 +1,4 @@
+Hi,I am using Codesys V3.5 SP9 on BeagleBone Black with a Mitsubishi A800 inverter with ethercat card.In the manual they use EtherCAT master V3.5.3 and it says further on the set the Task to be triggered externally with the event name"EVENT_ECM_DC"I am using etherCAT master version V3.5.9 and I don't have this option. What can I do?attached is the image with the information about this task configuration.without this, the ethercat doesn't work.RegardsRotem
+
+Hi,this is not possible..to add in beaglebone and even not Raspi.It is not needed to do, if you have a rt_preemt pacthed kernel on bbb it is accurate enough even to support distributed clocks on ethercat.From my point of view really not needed.BREdwin
+

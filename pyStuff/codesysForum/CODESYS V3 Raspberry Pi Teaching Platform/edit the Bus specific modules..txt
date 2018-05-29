@@ -1,0 +1,12 @@
+how to edit the Bus specific modules in soft ware codesys ???What is located part the software?Marker address, and a Variable name.What is located part the software?
+
+Use the appropriate and put it in V2.3 unless you have a version 3, and it is not raspberry so please post again, and give a lot more details as we will not guess.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+I did not say raspberry  (MR SHOOTER Pears)1-Is it possible File Conversion HEX to PRG ? by the CODESYS2-I'm programming for truck cranes . truck cranes have a  have several sensors (pressure sensor / length / angle, etc.) NO PLC, NO WAGO ,NO ABB ,No nothing else   ONLY PROGRAM  WHIT CODESYS V2.3 How do I identify the software sensors CODESYS?How should I define the ID of the sensor to the software? Software should go where?
+
+again please post in general V2.3 as you will not receive an answer here.Some units are running V3 so if that is case please put in V3 general
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

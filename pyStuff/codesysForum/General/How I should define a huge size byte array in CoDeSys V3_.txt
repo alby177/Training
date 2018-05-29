@@ -1,0 +1,2 @@
+Hello, allI need to save a huge size(~255Mbyte) testing temp data in byte array, and after testing finished, will send them to remote PC by TCP for analysing.My question is:How I define this size byte array in CoDeSys V3 could be resonable and safe? Should I assign any adress for it(AT %...)? Thanks.br/listenyang
+

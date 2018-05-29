@@ -1,0 +1,18 @@
+I have declared an FB with VAR_IN and VAR_OUT data types I call the FB from a _MAIN having declared the FB data typeAttachment:codesys_fb_query_1.jpgWhen I call the FB from _MAIN why am I required to provide an Input parameter and not an output parameter ?Attachment:codesys_fb_query_2.jpgI am sure there is a simple answer to this, but the CODESYS help files do not ( to me at least ) reveal the answer as quickly as one might expect.
+
+OK, the input isn't required. Attachment:codesys_fb_query_3.jpgBut it does look a bit like that when you first create the rung ?
+
+Just enjoy the fact it doesn't need all arguments passing.Pp
+
+Hi moggsie,moggsie wrote:OK, the input isn't required. codesys_fb_query_3.jpgBut it does look a bit like that when you first create the rung ?You can remove ??? either. RegardsRoman
+
+Roman,Thanks for the reply   Yes, the ??? can be removed.It's just that I was confused that the output from the FB never prompted for an output parameter, whereas the input parameter looked like it was required ( though in the end not necessary ).In fact, it was not even possible to enter an output parameter on the highest output row/position.Try it, and you will see what I mean.It does not appear to be logical or consistent behaviour, which always makes me think about what else could cause fun.
+
+Drag an 'assignment' from the toolbox
+
+where's that in the online manual ?Just asking. I know it's probably in there, but you've obviously a lot more experience than I have.
+
+Attachment:fb_assigment.wmvHere's a little video to show how "assigments" seem to me behave non-intuitively. I'm sure there's  trick, but it's not obvious for the simple-minded.
+
+To put it bluntly, though I applaud CODESYS for striving to develop an open(ish) platform , it seems to me that there are a few too many "features" that will make this programming environment a niche product. It needs more "polish" before it enters the mainstream.That said, TIAPortal, RSLogix, Proworx, Unity et al have all been through this pain. Some are still there ( and for balance throw in GE CIMPLICITY Control too ! )
+

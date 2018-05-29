@@ -1,0 +1,9 @@
+Hello,
+could you help me with Codesys programming in ST. I would like to put e.g. velocity to analog output. 
+
+c3.AnalogOutputDemandValue:=C3.statusSpeedDemandValue;
+
+but the output is still 0V. Should I enable outputs in C3 Servomanager and set some extra scaling factors? 
+
+Thank you very much. PepCa
+

@@ -1,0 +1,42 @@
+Hi
+
+I am new here, I just downloaded V3.3 and I was searching for a user manual, is there a user manual available for this version?
+if so, can I download it?
+if not, is there an older version of user manual I could use?
+
+one more thing, I just started trying out the ladder editor, but
+I am haveing trouble getting the "line"  to connect to the right side?
+(from the right coil and of to the vertical right side (end line))
+
+hope these questions make some sence
+
+Thanks
+Óli
+
+Hello,
+first steps document is installed in the installation folder,
+there is no manual, just the onlinehelp available.
+
+Also take a look to the following link:
+http://www.3s-software.com/index.shtml?en_news_homepage&news=V3_en_Quickst
+
+_________________Good Better CoDeSys
+Boris Schuster
+
+Hi Boris
+
+Thanks for the reply 
+
+I did notice this first step .pdf but I was looking for something more,
+I just found this manual for V2.3  http://www.scribd.com/doc/19350819/Smart-Software-Solutions-User-Manual-for-PLC-Programming-With-CoDeSys-23-2005  ... will give that a try.
+
+Thanks for the link to the example project, I had not seen that and I am going to give that a try now 
+
+regards,
+Óli
+
+You mean they still haven't got rid of ladder logic yet?  
+
+_________________Thanks,
+Steve Pfeifenroth
+

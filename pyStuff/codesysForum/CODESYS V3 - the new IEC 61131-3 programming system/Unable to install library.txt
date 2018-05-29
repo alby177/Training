@@ -1,0 +1,6 @@
+Hello, i try to install CAA_Memory library but i cannot find it. It is appear only if i check simulation mode.How i can install this library in normal mode.
+
+Hi,navigate to "Tools --> Options --> Features" and uncheck "Enable simplified library handling" and probably also "Hide system libraries".This should solve your problem.
+
+singleton wrote:Hi,navigate to "Tools --> Options --> Features" and uncheck "Enable simplified library handling" and probably also "Hide system libraries".This should solve your problem.Both are unchecked and the problemm is still occurs.
+

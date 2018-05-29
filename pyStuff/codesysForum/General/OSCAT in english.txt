@@ -1,0 +1,14 @@
+Dear users, some of you are probably aware and using OSCAT the free SPS library in open source.
+we are looking for help to translate our manual in english.
+pls have a look at www.oscat.de
+
+_________________freie sps bibliothek unter www.oscat.de
+
+SPS library = PLC library
+SPS=Speicherprogrammierbare Steuerung
+PLC=programmable Logic Controller
+
+thx of course i meant plc and not sps
+
+_________________freie sps bibliothek unter www.oscat.de
+

@@ -1,0 +1,4 @@
+When we are troubleshooting EtherCAT networks due to noise/faulty installations, we usually end up studying the working counter of the AWRM command in the returning EtherCAT datagrams.I assume the EtherCAT driver makes use of this as well. Is it possible to access this little piece of information somehow? It would save us quite some time if we could monitor it without the need of capturing the traffic and analyze it with WireShark Kim HansenBeijer Electronics Automation
+
+Hi Kim,this will be released with 3.5SP10DeviceEditor Ethercat: give more detailed diagnosis information , frame loss, send ErrorsThis will be accesible by the Masterdevice Editor pages and even in IEC Code you wll have access to this Information see screenshot.BREdwin
+

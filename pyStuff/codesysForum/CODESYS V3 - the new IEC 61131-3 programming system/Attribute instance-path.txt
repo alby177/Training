@@ -1,0 +1,6 @@
+Dears atribute instance path works in static class instances.In instances created via __new not assign any name (as it had to be).But if that instance creates another instance via __new, the name field is filled with extrange characters, not empty.
+
+If I remember correctly the noinit attribute must also be specified so that initialization doesn't overwrite the string value created by the compiler.  In the case of _NEW the compiler has no chance to set the value and th noinit attribute also prevents writing during initialization so the string would naturally contain random memory content.
+
+_________________Rick
+

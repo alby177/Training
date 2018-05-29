@@ -1,0 +1,12 @@
+HelloI'm new to Codesys software and i have tried to find an answer in the earlier topics.In my application I'm communicating with a top system via a serial interface, the top system uses the PLC as a database to read and write data, I want to use a 4 byte ASC with the adress value e.g 0100 which i will translate to %R0.100 which is the actual adress to be written or read.Can I extract the string value and use it as a pointer?  RegardsSvante
+
+no you can not make a variable, however you can use an array like arrayQ[100].
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+have a look at www.oscat.de for a library with lots of functions with pointers etc.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Ok thanks for the reply, OSCAT seems to a goldmine to be explored.
+

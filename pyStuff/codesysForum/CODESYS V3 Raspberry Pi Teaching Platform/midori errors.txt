@@ -1,0 +1,4 @@
+Hi, i am trying to set up midori in kiosk mode but the webvisu doesent start..It shows me this errors:Code:** Message: console message: http://localhost:8080/webvisu.js @79: Triing to reconnect after error** Message: console message: http://localhost:8080/webvisu.js @79: Loading the imagepool failed for the following reason: TypeError: undefined is not an object (evaluating 'c.gd'). Images will not work at all.** Message: console message: http://localhost:8080/webvisu.htm @0: ArrayBuffer is deprecated in XMLHttpRequest.send(). Use ArrayBufferView instead.** Message: console message: http://localhost:8080/webvisu.js @79: Connection failed: Exception during readOpenConnectionResult: RangeError: Out of bounds access** Message: console message: http://localhost:8080/webvisu.js @79: Will restart in 10000msSomeone knows how to fix it?
+
+Hello! I have the same problem. But everything works via Epiphany....
+

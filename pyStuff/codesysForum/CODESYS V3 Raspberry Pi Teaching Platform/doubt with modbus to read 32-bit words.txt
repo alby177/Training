@@ -1,0 +1,6 @@
+First of all I say I just started with codesys and although I love it I am very newbie.I have a doubt and managed to read modbus both ip and rtu. But the records I use are usually double records, now what I do is that I read them individually and put them together in a function that multiplies by 65536 the high part and the low part. Can you do this codesys only in some way ???Greetings, excuse my bad English.greetings and congratulations on the product and forumregards,
+
+Hi.You can use a union.UnionByte1:usint:Byte2:usint;Int:uint;EndKnowYou can write to byte1 and byte2 and read int.It could be some sintax errors
+
+You can also use a pointer to an array of word and stick the high and low word in there and then have a pointer do dword with the address of the low word.And I think there are functions blocks in the OSCAT library for that or from some manufacturers e.g. Wago.Sent from my SM-G935F using Tapatalk
+

@@ -1,0 +1,2 @@
+Hi,I use SoMachine software by Schneider for M254 PLC, which is based on CODESYS.I would like to add button on web page to open an external link, but in SoMachine, function "NavigateUrl" on button does exist.How can I do the same function with ST code or other ways ?Thanks for your answers.
+

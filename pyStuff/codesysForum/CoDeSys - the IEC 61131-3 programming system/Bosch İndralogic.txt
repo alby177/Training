@@ -1,0 +1,4 @@
+Hi;I wanna ask a question.Im using Codesys at Bosch Indralogic..ANd i need cam procedure.How can i use cam at codesys..First u set cam profile in special program of bosch software then i need use it in Codesys( indralogic)  can anybody help me?
+
+oferdi wrote:Hi;I wanna ask a question.Im using Codesys at Bosch Indralogic..ANd i need cam procedure.How can i use cam at codesys..First u set cam profile in special program of bosch software then i need use it in Codesys( indralogic)  can anybody help me?Assuming you are running indradrive, you can just pass it over sercos to the drive.  You can both build the cam in indralogic, or you can just call it to run if it is stored in the drive.If not list your hardware, and I can send you an example.  Also stat the comm type, or if it is running the PLC onboard.
+

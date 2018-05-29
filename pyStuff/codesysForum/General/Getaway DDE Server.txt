@@ -1,0 +1,4 @@
+there is somebody who has succeeded to change values of the variables of the PLC with the  Gateway DDe Server? ( for example using Excel).
+I can reed values with Excel ( with the comand =CODESYS|'C:\dev\PLC\INTERFACE.PRO'!Actual_Position ) but I can't set or change them.
+I need help  
+

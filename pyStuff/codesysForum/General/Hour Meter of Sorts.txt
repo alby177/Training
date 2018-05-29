@@ -1,0 +1,14 @@
+Does anyone know a way i can keep track of time?  I have done many searches and found the RTC function but this is not what i need.I need an hour meter which will keep track of ON time which one of my devices are on.  Once i shut down the system, i will store this time in a retains.I undertand all parts, except the time portion?  Any help would be great!
+
+two ways to do this:use a timed POU in a task running every second or minute and add one to it in a retained variableor have a look in www.oscat.de for a lot of functions that can be used in codesys
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Codesys bob,Did you get any satisfaction on making a machine run hour meter?I take it that you need to start and stop like a stopwatch and reset?Started with time() FUNCTION?.
+
+I have not had any luck.  I even tried making time by using timers but my program is freewheeling so timers wont work as the cycle time is not always the same.  I tried the oscat website seen below and cant seem to get it in english.  Has anyone else run into this?  I simply need to start keeping track of time once a signal i receive goes high.Thanks in advance for all replies.  I dont want to have to put an old school hour meter in when i have a $5K touch screen which i would think SHOULD be able to keep track of time!!
+
+within oscat goto downloadmanagerthen you need to accept it on the bottom and you will get a list with lots of languages and possibilities.here are the links:http://www.oscat.de/downloadmanager/fin ... t-2-x.htmlhttp://www.oscat.de/downloadmanager/fin ... glish.htmlhttp://www.oscat.de/downloadmanager/fin ... -text.htmlhttp://www.oscat.de/downloadmanager/fin ... glish.htmllook for ontime that is a simple secondmetersee explanation the VAR should be persistent and retain.in the text version you can have a look at how it is done in structerd text.and timers are independant of the looptime. however not a good choice to use.an easier way is to run a task every second and when motor running time is added 1 (and it should be remanent obvious.when you change the software it will need to be on paper, as the location will be different.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,25 @@
+Hi,
+
+I'm using CoDeSys 2.3.9.7 with webvisu on a 750-841 target.
+
+I'm displaying data by using this kind of data access: (following is an extract of the generated xml visu file)
+
+Code:      <expr-invisible>         <expr>            <var>DALI_RUNNING_IN_PRG.OPT_Line[DALI_RUNNING_IN_PRG.VisuLine][3].Status</var>            <var>.OPT_ADDRESS_NOT_AVAILABLE</var>            <op>=(2)</op>         </expr>      </expr-invisible>
+
+It's working fine in CoDeSys but not in the java applet due to the double array. (I tried with a pointer to array and I have the same problem). How can I fix this issue?
+
+Is there an updated webvisu.jar somewhere ?
+
+Dynamic indexing within an array is not supported in web-visualisation.
+See Restrictions and Special Features part in Codesys webvisu manual.
+
+Quote:Accessing variablesDynamic indexing within an Array „Array1[Index].a“ is not possible, however „Array1[10].a“ is possible. The diynamic indexing will be realized with CoDeSys 3.0. Replacing placeholders containing an expression Placeholder: $abc$ + 5Replacement: PLC_PRG.n + 500-> should result in PLC_PRG.n + 500 +  5, this however is not possible in the Web-Visualization.This function will be realized with CoDeSys 3.0. Pointer variables Pointer variables like PLC_PRG.pdw2^ cannot be monitored. This function will be realized with CoDeSys 3.0.
+
+Thank you, I miss this part of the documentation. I will have to find a workaround with a static array.
+
+Right! I think the best way is to write special program for visualisation. Cycle time = update time of visualisation.
+Code:<param name="UPDATETIME" value="1000">
+In this program copy your data to structure or array and visualize it in webvisu.
+
+Just a "tip", checking "Replace constants" do not replace constants in visu xml files
+

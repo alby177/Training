@@ -1,0 +1,2 @@
+Hi. I declare string variable with byte-defined values:Code:VAR   sVar: STRING:= '$10'; // HEXEND_VAR   In online monitoring this value shows as '$16' (DEC). Is this possible to show it as HEX?I try Display Mode menu, but it's not working in this case.
+

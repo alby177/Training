@@ -1,0 +1,24 @@
+Pretty much a newb question I guess, but yea..
+
+For a school assignment, I'm currently working on using an USB I/O controller with CodeSys 2.3. (v2.3.3.6)
+
+I'm using a kit from Velleman, k8055. It comes shipped with a DLL file that contains all communication routines.
+For more technical details on the board and the dll, visit the velleman website (specified link)
+
+Another group used this controller with Visual Basic last year, no problems there.
+
+My problem is that I can't find information about how to use this DLL (or dll's in general for that matter) in codesys exactly. DLLCALL is neither explained in the helpfile, the website or anywhere on the web (according to various search engines). Most likely because it's rather new (?).
+
+I can define the in- and output addresses, the in- and output buffersizes, the function name etc, but frankly I don't have a clue how I would send MyVar to the dll/desired output.
+
+All help would be greatly appreciated.
+
+Thanks in advance, 
+Luuk Spijkman.
+
+Forgot to sign in 
+
+(bump)
+
+Replies, anyone?
+

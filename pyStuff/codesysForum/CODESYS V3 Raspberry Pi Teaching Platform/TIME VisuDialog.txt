@@ -1,0 +1,16 @@
+Is there any ready VisuDialog for edit Time variables like TOD,TIME,DATE,DATETIME ?Regards
+
+Hi,use attached example.BREdwin
+
+Hi EdwinI try to use the "DATE and TIME PICKER" visualization element.When i use it with your example works OK.When i try to insert it in my project that have updated from old version "3.5.8.0" i take the follow errors:Attachment:DateTimeElemErr.pngAny help?Regards
+
+Hi,you need to CODESYS 3.5.9.x -if you are still working with it use current Compiler Version 3.5.9.x and Visuprofile 3.5.9.xBREdwin
+
+HiI use Compiler Version 3.5.9.1 and Visuprofile 3.5.9.1 but the problem exists.Regards
+
+Hi,is it possible to add your project or parts of it to check.BREdwin
+
+Here we are...Attachment:Test_Time.zipRegards
+
+hi,this is a bug, the only workaround is to deactivate the property handling for the visualisation.Hope you could work without.BREdwin
+

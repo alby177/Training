@@ -1,0 +1,35 @@
+Hi  
+I'm trying to make a visualisation with analogue inputs. This application has previousely been presentet in MoviconX.
+The input values from Wago 750-466, is treated this way: AI_1 * 1000 / 32760.
+This results in a analogue range of 0-1000.
+In Movicon this is formatted as 0.0 to 100.0 °C.
+Using %3.1f in CoDeSys does'nt display this value with one decimal
+I assume that the input should have been in REAL format but a block with the name LIMITALARM needs this input in INT format.
+
+I can change the formula to get the range to 0-100 but a temperature monitoring system is'nt usable with that lousy resolution.
+
+Is there a way to format the analogue value only in the visualisation or is there another way to solve this issue? 
+Any replay is higly appreciated  
+
+Vis. element configuration:
+
+Text: %3.1f 
+
+Variables, Textdisplay:  (.AI_1 /REAL#32760) * 100
+
+Regards  
+
+__________________IP_
+
+Yes, that did it
+
+Thanks   
+
+_________________Best regardsrudolf
+
+that rocksthank YOU:)
+
+it looks correct but it is not correct.you must first take off the 3 lower bits and then divide by resolution (12 bits )is 4096.the lower bits are used as status bits.the highest is not usedthe minimum is 8 and the maximum is 32760 so division is 32752if status, changes the value is changing when using your way.hope you got it.not clear in manual.in oscat function block ain1 explains this
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

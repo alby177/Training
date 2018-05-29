@@ -1,0 +1,12 @@
+Hi allNot sure if this is just me or if others face the same issues.I understand PLCs but am new to actually programming them.From the sparse resources I was able to find for V3.5 SP8.2 I was finally able to create a user defined Ladder FUNCTION after about 8 hours; whereas this should really have taken me 15 minutes with a decent "howto".My main guidance was by watching Wago 2.3 demos using ST.Now I am trying to make a user defined FUNCTION BLOCK using LD.I have run into some problems and do not want to spend the next 8 hours being frustrated, so thought I would ask for some help.For my test example I want to make a simple Stop/Start latching relay circuit.I tried pasting the screen shot as an image, but its not working... so I have:A n/o Start PB in series with a n/c Stop PB in series with a Relay coil; and a n/o Relay contact in parallel with the Start PB.So how do I make a function block out of this sothat I can use the status of the Relay as a BOOL "switch"?Please note the point of this is to simply learn how to create a user defined function block.Any help or links would be appreciated.Edit: Oh and one more thing...Any tips on searching this forum?It often reports it is ignoring the search terms which is not really useful.2nd: EditFWIW I now have a ST UDFB working - not LD yet.
+
+_________________Computer Setup:- Windows 7 Professional- CodeSys V.5 SP8 Patch 2PLC Setup:- Pi2 (running headless via Putty)- Jessie Lite.
+
+Create a new POU, select FUNCTION BLOCK. Now define your variable you want to see (relay coil) as a VAR OUTPUT. Local variables are not visible outside the function block.  The start and stop variables should be VAR INPUTS so you can sent them into the function block. In your main code, create an instance (variable) of type your function block. In the end, your function block should look like:FUNCTION_BLOCK DemoVAR INPUT   Start : BOOL;   Stop : BOOL;END VARVAR OUTPUT   Coil: BOOL;END VARIf you are comfortable in one of the other programming languages, I would suggest using it. LD can be difficult for people who use C, BASIC, JAVA or other PC languages. ST works best for people with that comfort level (I am one of those people...)
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Thanks. I have it sorted.
+
+_________________Computer Setup:- Windows 7 Professional- CodeSys V.5 SP8 Patch 2PLC Setup:- Pi2 (running headless via Putty)- Jessie Lite.
+

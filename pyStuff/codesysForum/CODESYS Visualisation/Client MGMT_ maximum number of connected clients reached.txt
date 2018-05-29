@@ -1,0 +1,8 @@
+This massage appears on running CoDeSys Web Server and the server stops working correctly.What is the maximum number of connected clients, what defines them?This error sometimes occurs even when I'm the only one client connected to server (I'm sure)?![attachment=0]CoDeSysWWW_Err01.PNG[/attachment]
+
+?!The problem still remains!
+
+sorry not enough info to find the problem.what are you running, what is configuration etc.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

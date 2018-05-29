@@ -1,0 +1,7 @@
+How can I send a PDO to a slave device at a pre-determined period?In V2.3 it was possible to access the global CANopen array and and enable and set the PDO timer of the CoDeSys Master stack. This would send the PDO to the slave at the configured period. Code:(* Example *)pCanOpenPDO_Tx[4].RepeatTimer.IN := TRUE;       (* Enable the event timer if FALSE then COS*)pCanOpenPDO_Tx[4].RepeatTimer.PT := T#100ms; (* Send PDO every 100ms*)But in V3 I don't have access to this stack? I only seem to have FB for SDO, NMT, and EMGY. How can I setup a PDO to be sent at a periodic rate? One way to cheat is toggle a bit that is un-used in the PDO to force CoDeSys to send the data. but I don't like this hack.Unfortunately some slaves require data at a certain rate.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+I have never used this method. Normally I set this in the PLC configuration throught the properties of the PDO.The default settings is "Device Profile specific" which results in sending a PDO when the data changes.You can also set this to cyclic synchronous which results in sending the PDO every sync.By changing the Sync period you can determine how often the PDO is send.Does this work with your CANOpen device?
+

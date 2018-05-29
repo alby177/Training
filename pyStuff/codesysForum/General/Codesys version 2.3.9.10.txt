@@ -1,0 +1,32 @@
+I have been using Codesys version 2.3.9.0 for the better part of a year now. I was recently browsing the site and I found a new version (2.3.9.10). 
+
+My question is: Do I need to uninstall the previous version before I install the new one? And also, where can I see a list of changes or improvements in these new builds? 
+
+Thanks,
+Stefan
+
+Hello Stefan!
+
+Just install it over the existing one, the installer will ask if you want to update!
+
+I have done like this for several version without problem.
+
+/Torbjörn
+
+Be vary careful when performing this upgrade. The big issue is CoDeSys libraries maintain the same names for backward compatibility. So if they did a revision on a library POU but now introduced a bug when you upgrade CoDeSys this will over write the old version POU replace it with the bugged POU. You should back up any CoDeSys libraries before you upgrade.
+
+I hope that CoDeSys will one day automatically do this for us by determining which version we currently have installed and create a backup directory with the versions libraries then proceed to perform the new install. Or be able to run libraries side by side and a versioning system is used that selects which version of the library/POU to use. Then we can decide which version from the Project options. Something like that.
+
+I have been bitten by this before. What is worst is if you use the project archive and mail the project out you now have infected every person that extracts that archive. Then you never know who has what.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+I just upgraded (again) to CoDeSys version 2.3.9.12 (Build March 3 2009). I did not run into any problems with for example updated libraries.
+
+But I would like to know why I am updating. I don't notice any changes with the new version. Is there a list of changes / bug fixes / new features somewhere?
+
+Welcome to my world. I have been wondering the same thing myself. I have not found any information from CoDeSys but I sometimes get a little insight from my PLC manufacturer. If you find anything let us know.
+
+_________________Thanks,Steve Pfeifenroth
+

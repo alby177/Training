@@ -1,0 +1,2 @@
+Hello.I would like to read ut the actual busload from CanOpen. (and the error counters)I was thinking is it possible to use the block from CAA Can Low Level Extern -- GetDiagnosis?If that is possible how would i do? hDriver??
+

@@ -1,0 +1,8 @@
+CoDeSys has Gateway DDE Server component.
+How it can be used by an application developed in Visual Basic or Visual C++?
+Is there any documentation and sample code to develop such an interface?
+Many of our PLC users develop PC based applications using Visual Basic and need a standard interface to access the data from PLC.
+We can furnish them sample codes to access PLC data through Gateway DDE server.
+
+_________________Santosh Athanikar
+

@@ -1,0 +1,11 @@
+Hello
+Is it possible to use directly %MX20.0 for example as an entry of a box, as an Action in SFC, or is it necessary to declare a variable with a name and so on ? I would like to use it (or a byte, a word...) like a memento with Step7.
+Thanks
+G. Thomas
+
+Yes, of course, it is possible.
+Just try it, there is no risk.
+
+_________________Good Better CoDeSys
+Boris Schuster
+

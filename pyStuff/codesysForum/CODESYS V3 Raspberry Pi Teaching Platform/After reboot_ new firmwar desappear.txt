@@ -1,0 +1,14 @@
+I use CODESYS 3.5 SP11 and raspberry pi.When I update firmwar to 3.5.11 I have error and after rebbot, new firmwar desappear and old one come back.Error is :"Error output: codesyscontrol.bin: aucun processus trouvé insserv: script codesyscontrol is not an executable regular file, skipped ! tar: Suppression de "/" au début des noms des membres update-rc.d: warning : default stop run levelarguments (0 1 6) do not match codesyscontrol Default-Stop Values (none)"How can I resolve it ?Thanks for your helps.
+
+Hi,could you please login by ssh,update manuallyby executing: (the debian file should be already copied there to /home/pi)sudo dpkg -i codesyscontrol_arm_raspberry_V3.5.11.0.debor (depending on which Version you try to install)sudo dpkg -i codesyscontrol_arm_raspberry_V3.5.11.10.debBREdwin
+
+I have a similar problem:Code:pi@raspberrypi ~ $ sudo dpkg -i codesyscontrol_arm_raspberry_V3.5.11.0.deb(Lecture de la base de données... 78926 fichiers et répertoires déjà installés.)Préparation du remplacement de codesyscontrol 3.5.11.0 (en utilisant codesyscontrol_arm_raspberry_V3.5.11.0.deb) ...preinst finishedDépaquetage de la mise à jour de codesyscontrol ...make_daemonrcupdate-rc.d: using dependency based boot sequencinginsserv: script codesyscontrol is not an executable regular file, skipped!Paramétrage de codesyscontrol (3.5.11.0) ...make_touchmake_blacklistmake etc modulesmake_daemonBackup licensestar: Suppression de « / » au début des noms des membrespid 3057's current affinity mask: fpid 3057's new affinity mask: 1codesyscontrol startedupdate-rc.d: using dependency based boot sequencingupdate-rc.d: warning: default stop runlevel arguments (0 1 6) do not match codesyscontrol Default-Stop values (none)postinst finishedWhen I put package 3.5.1.0 on home, after reboot, it disappear. When I erase file , after reboot, it reappear ....It is problem sd card ?
+
+hi,which debian version is this...guess this is not a CODESYS related problem do you agree?BREdwin
+
+Hi galexis.galexis wrote:When I put package 3.5.1.0 on home, after reboot, it disappear. When I erase file , after reboot, it reappear ....It is problem sd card ?This is just a guess but the big SD cards had an mechanical switch at the side to make the card read-only. I'm not sure if the micro SD cards still have one but that could be the reason why the new files disappear and deleted files re-appear.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Raspbian is 4.11.19.I think sd card is dead. I have order a new one.
+

@@ -1,0 +1,8 @@
+Is there a way that when tapping or text displaying TON  make this look like (00:00) instead of (TOD#00:00:00) If I program a controller so as to someone can change time schedules the might not now what TOD# or T# means, I have tried many ways and It does not work, Can someone help me!
+
+you will need some conversion from DWORD_TO_TIME or use real text and convert that in timesee www.oscat.de for this type of actions he made lots of time functions.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks Shooter, That was very helpful!
+

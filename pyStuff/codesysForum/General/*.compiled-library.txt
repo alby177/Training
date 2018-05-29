@@ -1,0 +1,4 @@
+Hello Edwin,how can I save a library as *.compiled-library?Under "save as.."  there only is the option *.library.Thank you!Best regards,Oleg
+
+Hi,see screenshot.BREdwin
+

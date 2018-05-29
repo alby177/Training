@@ -1,0 +1,2 @@
+Is it possible to open a CODESYS project and automatically open a certain POU from a script?The idea is to help developers when they need to work on a certain issue to automatically help them to open the CODESYS project at a certain location in the project tree.
+

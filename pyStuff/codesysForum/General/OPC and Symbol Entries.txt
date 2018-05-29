@@ -1,0 +1,12 @@
+Hi,
+
+Is it possible to edit the *.sym files manually without downloading to the PLC? Will the gateway compile the *.sym file into *.sdb automatically? I want to add some more symbols, but I do not want to download a new project to the PLC everytime.
+
+I am using CoDeSys V2.3.
+
+-AP
+
+As far as I know, it is not possible to do this.
+
+Al.
+

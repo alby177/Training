@@ -1,0 +1,16 @@
+Hello!I have a problem with conversion data type REAL to integers DWORD. In visualization i have input field of type: %3.1f mm with numpad dialog. So my (%3.1f mm) input has a decimal/ float point. When conversion is made to DWORD type floating point dissapears from value. I input value 123.9 converted DWORD value is 124.I have to convert somehow with floating point it because I'm sending it to SDO protocol which has 4 BYTE send buffer.Any Idea how to solve my problem?I have attached online pictures of conversion.regards Alex
+
+REAL_TO_DWORD does a truncation and then converting.You have to multiply the real value with a factor of 10 to get the "decimals":
+
+_________________Andreashttp://www.boschrexroth.com
+
+Of, course!Thank you Andreas!You save my time studying.Regards, Alex
+
+Well not so good, then. Now I have another problem. After Multiply the REAL value by 10 (eg 1234.5 * 10 i got 12345) then I use WORD TO BCD (within util.lib) which converts values from 0 to 9999 BCD. Now there is another problem after conversion i get 2345 without 1. At this point I can't divide back by 10.Any idea?
+
+Realized, I won't need 5 BCD digits only 4. But still interesting problem.regards, Alex
+
+It depends on what you want to send. If the receiver expects a floating point variable, then it still doesn't work.A floating point variable is stored according to the IEEE 754 standard which you can transfer as 4 bytes, but not by the REAL_TO_WORD conversion.What you need to send is the "real binairy value" of the REAL.This can be done with a trick to add a "Union" Data Unit Type (DUT) to the application. A Union shares the memory for different variables:Code:TYPE unionDwReal :UNION   dwDword : DWORD;   rReal : REAL;END_UNIONEND_TYPEWhen you declare this in your application as variable you can write your real to the real variable of the union, but then send the DWORD with the SDO. This off course only works correctly if the receiver also expects to receive a floating point variable according to the IEEE 754 standard (which almost all do).Code:PROGRAM PLC_PRGVAR   uDwR : unionDwReal;   dwSDO : DWORD;END_VARCode:uDwR.rReal := 23.1234;dwSDO := uDwR.dwDword;PS, another similar method is by using pointers. This would be the way to do it with V2.3.
+
+Very interesting Timvh!In my case I need to send a BCD digits, because receiver displays it directly on remote char display. And expects floating point at (_ _ _ . _) after third place. Problem is convertng BCD for (_ _ _ _ . _) 5 places, because WORD_TO_BCD converts only to 4 digits (9999).regards,Alex
+

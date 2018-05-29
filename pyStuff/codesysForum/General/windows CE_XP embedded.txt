@@ -1,0 +1,4 @@
+Is it possible to run a CoDesys Gateway and OPC server on a Windows CE or Windows XP embedded platform?I'm considering using such a HMI with Indusoft IWS embedded talking to a PLC that uses CoDeSys 2.3.
+
+With XP embedded this should not be a problem.WinCE will be tricky and for this you will need to buy the specific WinCE OPC server. For a few applications a year XP embedded will be a much easier and cost effective solution.
+

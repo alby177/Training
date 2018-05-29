@@ -1,0 +1,2 @@
+I have configure an alarm table in the codesys visualization and it is working fine on the pc. It ables to display the alarm history and create alarm file in the pc. In order to display the alarm table in the web-visualization, I have configured the alarm handling in the plc accordingly. The alarm file has been created successfully in the plc. In the Web-Visualization, the alarm table ables to display the triggered alarm but it is not able to display the alarm history. So how do I configure the alarm table to display the alarm history in the web-visualization?
+

@@ -1,0 +1,6 @@
+Hi to the forum,someone knows how I can scan the bits of one WORD variable?For example:I have the WORD variable that contains the axes mask (1=axle X, 2=Y, 3=XY, 4=Z and so).Now I want to take this variable and analyze it to know how many axes I have to move, so I have to see each bit of the WORD and see if it is TRUE or FALSE.I saw that I can refer to the specific bit with the instruction:IF myAxesMask.0 THEN    AxesToMove := AxesToMove + 1;END_IFBut in this way I have to do 16 of this instructions.My idea was to do something like that:FOR i := 0 TO 15 DO    IF myAxesMask.i THEN        AxesToMove := AxesToMove + 1;    END_IFEND_FORUnfortunately this won't be acepted by the compiler.Someone knows is there is a "clean" solution similar with the FOR instruction?
+
+do:if((wordVar and rlc(16h1,i))<>0)then ....Rlc moves the settted bit (1) i positions..I don t remember the instruction name exactly, possibly rlc moves the bit to right and you want to move to left... Look at online help to find the exact instruction
+
+OK,it was a good input.I found the function "EXTRACT" from the util library so I can do what I want.Thx
+

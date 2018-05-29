@@ -1,0 +1,8 @@
+Good morning,I've built my home with a domotic system based to a Wago 750-871 CPU and developed with codesys 2.3.9.43Yesterday the program have crash and after restart I cannot open again my project, the message is "Could not open project/library (no valid project/library file).I haven't backup projects (me damned) and now I'm desperate because this project had taken a lot of my time for the development  ;(What I can try to do?Please, someone help me.     If someone need the project I can send by mail, ask to me.Thank you very much, have a nice day to all.
+
+send it over to me, and i will have a look.no backup, is a shame.i always put it on a sticky.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+shooter wrote:send it over to me, and i will have a look.no backup, is a shame.i always put it on a sticky.Thank you very much, I've sent to you a .rar fileYes, I know, is stupid not have a backup copy     now I've learn the lesson...
+

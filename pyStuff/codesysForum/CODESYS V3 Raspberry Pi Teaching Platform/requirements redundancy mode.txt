@@ -1,0 +1,4 @@
+HiWhat are the requirements for the redundancy mode? I was trying it on 2 raspberrys whitout success.Is it possible with the modbus tcp?I cant find any documentation about the redundancy mode.Regards Chris
+
+Hi,an additional component in the runtime would be needed.But at the moment not available.>Is it possible with the modbus tcp?only Ethercat..BREdwin
+

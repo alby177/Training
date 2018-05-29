@@ -1,0 +1,8 @@
+Hi,I want to store temperatures and times datas in a file. I have codesys and raspberry module.How I can to do ?
+
+Hi c.man,check out the CAA File library, it's very well described and there is also an example available.The example can be found in the library tree. BR,KevinR
+
+_________________Building & Process Automation with HVAC Library for CODESYS© - www.hvac-automation.com
+
+If you want to log periodically or at specific events then you may want to check the Oscat libraries. The Network library has a set of logging components. DLOG_STORE_FILE_CSV is for logging to file on a filesystem on the PLC itself. An example project is embedded in the lib. Use network lib v1.3.5 for best results. The Oscat forum has additional information.
+

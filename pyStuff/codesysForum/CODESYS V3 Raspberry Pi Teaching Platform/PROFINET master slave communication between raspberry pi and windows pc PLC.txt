@@ -1,0 +1,4 @@
+Hi,I purchased license for Raspberry Pi CoDeSys and I wan to implement PROFINET communication between a Pi and windows pc PLC. I am unable to find a good tutorial on this topic can anyone direct me to a good tutorial or guide me through the steps. I tried several times but with no success so far.
+
+Hi,viewtopic.php?f=23&t=6247use the example section and check the Profinet Slave example.There are two applications in the Project just rightclick on the one (and update device to Control Win - for the profinet Controller plc)BREdwin
+

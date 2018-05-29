@@ -1,0 +1,2 @@
+What does the uiDelayus parameter mean in SPI transfer method? Is it delay before of after SPI frame? There is no code source available because it is in the compiled library.I write my library for SPI device and I need the delay between first and second SPI frames 100us. Is below code is fine in this case?Code://first framestransfer(pabyTxBuffer:=ADR(aby) , pabyRxBuffer:=ADR(aby) , udiLen:=1 , uiDelayus:=100)...//second and others framestransfer(pabyTxBuffer:=ADR(aby) , pabyRxBuffer:=ADR(aby) , udiLen:=8 , uiDelayus:=0)
+

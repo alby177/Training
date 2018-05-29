@@ -1,0 +1,12 @@
+Is it possibile to plot X-Y trend in CODESYS?X is position of axis 1 and Y is position of axis 2.
+
+yes that is possible, however it means a lot of memory has to be used for array, if possible use vectorpoints, it saves on memory, and it is faster.It is depending of the precision needed.i used a vector array, and the points were connected with a polygonline.on the graph i had put 100 points all on same place (with a texteditor, and i can change the relative points with the software.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi Paul,Thanks a lot for your response.
+
+if needed more info, please give more info.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

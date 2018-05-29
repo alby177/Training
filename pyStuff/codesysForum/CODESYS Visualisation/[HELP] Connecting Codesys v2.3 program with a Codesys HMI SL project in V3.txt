@@ -1,0 +1,6 @@
+Hi everyone,I'm trying to make a little proof of concept with this setup: - I make a silly program in Codesys v2.3 with an XC-CPU201-EC256K from EATON as Target. - I simulate the PLC with Codesys v2.3. - I make a HMI project with Codesys Development System v3 in order to create a visualization of the PLC that works with Codesys HMI SL (like shown in this webinar https://youtu.be/mIvH7L6U5P0).But I can't add the PLC as Datasource to the HMI project. I've tried changing the Communications Parameters but I don't know how to link the simulated PLC with the HMI project.Here you can see two screenshots of the situation:I would be very grateful if someone point me in the right direction.Thank very much in advance for your help.
+
+Hi,hm.. you write:Quote:'- I simulate the PLC with Codesys v2.3.' this is the point I guess.You need to use a real plc, even if it is running under Windows for example PLCWinNT which is part of the CODESYS V2.3 installation .Then it should workBREdwin
+
+I've just tried with PLCWinNT and now it works.Thank you very much, Edwin.
+

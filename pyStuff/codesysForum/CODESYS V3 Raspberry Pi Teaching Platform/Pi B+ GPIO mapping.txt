@@ -1,0 +1,2 @@
+Hi all,I'm trying to map digital input and digital out from GPIo in model B but still not able..I this viewtopic.php?f=21&t=5832&hilit=GPIO but cannot understand why my raspberry show this independently from the 3.3V i connect to input pins..
+

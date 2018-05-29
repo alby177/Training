@@ -1,0 +1,26 @@
+Hello,
+
+I am writing a program that will be reading data from a modem over the serial port.  I have the program up and mostly functional.  Currently I have a feeling that the data I am reading is not contiguous.  
+
+dwSizeOfBuffer := SysComRead(iComPort, ADR(chInBuffer), SIZEOF(chInBuffer), 10);strInBuf := pInBuffer^;IF(dwSizeOfBuffer > 0) THEN          dwSizeHistory[j] := dwSizeOfBuffer;          strArrInBuffer[j] := pInBuffer^;	(* 512 strings *)          j := j + 1;          IF(j = 32) THEN                j:=0;          END_IFEND_IF
+
+
+It seems that the strings will sometimes be located in two element of the strArrInBuffer[] and this causes a problem when trying to parse out the information.  If I have to I can add the strings together, but I would prefer to have a clean read into one variable.  Any ideas on what I am doing incorrectly?
+
+_________________Kind Regards / Mit freundlichen GrüssenDoug Rilee
+
+Hello,
+
+The problem or what I think it is problem is that I am receiving multiple sizes from the function SysComRead().  An example would be:
+
+
+Expected:
+$R$N+SBDIX: 18, 245, 2, 0, 0, 0$R$N$R$NOK$R$N 
+
+Actual:
+$R$N+SBDIX
+: 18, 245, 2, 0,
+ 0, 0$R$N$R$NOK$R$N
+
+_________________Kind Regards / Mit freundlichen GrüssenDoug Rilee
+

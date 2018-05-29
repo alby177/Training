@@ -1,0 +1,6 @@
+Can I switch language by a variable in my program just the “CurrentVisu” variable，but not by mouse event configured in the "Input Configuration" of Change the language?
+
+Code:IF  xChinese THENVisuElems.CURRENTLANGUAGE := ‘Chinese‘;xChinese := FALSE;END_IFChinese has to be available as Language in the application.
+
+thank you！
+

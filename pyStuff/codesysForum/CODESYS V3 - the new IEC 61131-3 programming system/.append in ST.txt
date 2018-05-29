@@ -1,0 +1,12 @@
+Hi everyone,I'm trying to do a small programm which send a sms each time that an alarm occur (with some exception for criticical alarm)So this is my ideaFirst: I  Browse my array where the alarm can occur with a for loop, if a or some alarms have occured, I'd like to stock the number of these inside an arraySo this is why I'd like to have an .append functionOnce I would have this new array, I just have to give it to my function block to send the sms in FIFOSo someone knows how could I use a similar function than append in ST?Many thanks in advance
+
+With .append you mean a dynamic array? If so you can't, codesys does not manage dynamic arrays.With static arrays you can simply use a global variable as index and update it whenever you need.
+
+In Codesys 3, using __NEW, __DELETE and some pointers you could create a linked list (or a double linked list).In TwinCAT you have FB_LinkedListCtrl (that creates the linked list automatically for you, but the linked list implementation is easy and you need only the aforementioned instructions).Dynamic arrays are not an option in Codesys...Hope this helps.
+
+_________________http://www.robotecnik.com - robots, CNC and PLC programming.
+
+A simple solution:  define a large byte array or large string of 5000 chars (you probably have lots of RAM space on your target) and just byte copy and keep track of the number of bytes. Then you do not need to worry about dynamic memory allocation, trash collection, etc.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+

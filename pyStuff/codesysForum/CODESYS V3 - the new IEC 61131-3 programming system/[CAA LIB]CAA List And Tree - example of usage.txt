@@ -1,0 +1,2 @@
+Hi guys.Is somewhere an example how to use "CAA List And Tree" library?I assume that my object which I want to put to list should exdends Element, or implement IElement. Am I right?In order to pick elements from list should I use PopEkem, PopBackElem HeadElem, TailElem which return me an IElement which I have to cast to my prime type using __QUERYINTERFACE()?Any code snippets will be very helpfull.
+

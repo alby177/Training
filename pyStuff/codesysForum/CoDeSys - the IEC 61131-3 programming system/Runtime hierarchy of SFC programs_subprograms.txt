@@ -1,0 +1,14 @@
+Hi!
+I am writting a "main" program (prgA) in SFC and each one of the actions of this diagram has an internal "subprogram" (sprgB) also in SFC. I want that prgA don't jump to the next step until the sprgB hasn't finished. 
+
+The problem is that, during the transitions of sprgB, the main prgA jumps to the next step and, consequently, the sprgB is deactivated without having arrived to its goal. I solved this problem with a series of boolean variables that indicate if a process is active or not in order to be checked at the transitions of the main program.
+
+But now the same problem seems to happen when I call a customized function block in the main program witten in ST and the subprogram is a SFC: the SFC only goes one step further (but not to the end) when I call it once.
+
+Thanks for your help!
+
+watch the conditions when to step and when block is completed.
+make a global boolean to jump when step is dependend of more then one condition.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,18 @@
+I want to have some base class FB as a member of another FB. The way I though this could be achieved was through an Interface. My application compiles and loads, but when I try to access one of the FB/Interface properties I get an exception. Code is something like this:INTERFACE ITF_Device EXTENDS __SYSTEM.IQueryInterfacePROPERTY CID : UDINTFUNCTION_BLOCK fbDevice IMPLEMENTS ITF_DevicePROPERTY CID : UDINTGET: CID := THIS^._dParams.ComponentID;FUNCTION_BLOCK fbALARMVAR	_device: REFERENCE TO ITF_Device;END_VARMETHOD GetDataComponentNumber := THIS^._device.CID;
+
+Who has to implement itf is alarm. Inside alarm you has an reference which points to no anybody.As all fb can return his id, instead implement _device you can extend fb_device. Which is not necessary that implements _device. You can treat all your fb as fb_device.Be healty!Enviat des del meu Aquaris M5.5 usant Tapatalk
+
+You get an exception because your _device ref variable is never assigned to an actual object. When you use “myvar : REFERENCE TO MyInterface” you are telling the compiler to expect the object to implement the interface MyInterface, but you haven’t actually defined the actual object.  These types of errors really only appear when you actually run the project, although you may be able to active a compiler warning - check the options. Interfaces are basically a template of what an object is required to code or implement when that object (Finction Block) implements The interface.You can use the keyword EXTEND to extend a function block.  Then you can use the SUPER^ keyword to access the base FB variables and methods.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Hi.A question.What is _dParams, is an structure that you have created?ThanksEnviat des del meu Aquaris M5.5 usant Tapatalk
+
+Yes, _dParams is a STRUCT.I'm sorry, but the language barrier is making it hard for me to understand your earlier reply.Maybe you could post a working example?Thanks!
+
+scott_cunningham wrote:You get an exception because your _device ref variable is never assigned to an actual object. When you use “myvar : REFERENCE TO MyInterface” you are telling the compiler to expect the object to implement the interface MyInterface, but you haven’t actually defined the actual object.  These types of errors really only appear when you actually run the project, although you may be able to active a compiler warning - check the options. Interfaces are basically a template of what an object is required to code or implement when that object (Finction Block) implements The interface.You can use the keyword EXTEND to extend a function block.  Then you can use the SUPER^ keyword to access the base FB variables and methods.My bad. I didn't include the the part where I assign the object ... but I do. Could the issue be that the FB's and Interfaces' are defined in a library? The help file contains the following: Quote:The requirement for the explicit conversion is that both the ITF_Source and ITF_Dest are derived from Interface __System.IQueryInterface. This interface is implicitly available does not require a library. 
+
+I am out and i cannot send an example.Simply extend fbalarm with fbdevice.Fbalarm extends fbdevice.You can erase all references to any interface.You can think about interfaces or fb extension more or less:Fb extension: when  diferents fb have a method with the same code inside and the same name.Interface:when diferents fb have a method with the same name and diferent code inside.Enviat des del meu Aquaris M5.5 usant Tapatalk
+
+_dParams is a system struct or is filled by you?Enviat des del meu Aquaris M5.5 usant Tapatalk
+

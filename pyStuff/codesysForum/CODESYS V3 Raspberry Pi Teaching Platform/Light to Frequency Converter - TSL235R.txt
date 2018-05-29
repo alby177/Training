@@ -1,0 +1,4 @@
+Can Codesys take the direct input of a Light to Frequency Converter - TSL235R?https://www.sparkfun.com/products/9768I wish to use one directly connected to the Raspberry Pi without losing signal resolution or accuracy.Thank you for any replies.
+
+Never mind. I got it working by executing c code with codesys and taking the print result as my value.
+

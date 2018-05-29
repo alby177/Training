@@ -1,0 +1,4 @@
+Is possible make new style. Define elements with font, color.Can I assigned properties for each element? I can't change column UsedBy.Have somebody experience with this?
+
+I have the same problem，does any know？
+

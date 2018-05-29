@@ -1,0 +1,35 @@
+Hi !
+
+(First: sry for my bad english)
+
+I'm using a WAGO controller 750-841 with a barometer.
+Every 10 seconds it measures the air pressure and adds the value in a diagram (trend).
+Unfortunately the measurement doesn't work when there is activated a trend-file on the WAGO.
+The value is just 0 but a file is written (i checked via ftp).
+
+(Hope you understand what I mean; it's hard to explain when you use a german version of CoDeSys...)
+
+Maybe somebody knows the problem and can help me. Thank you!
+
+
+malef
+
+I am amazed nobody has replied to this!
+
+I am also having huge anominalies with trend in a visualisation, including total PLC lockup.  There seems no logic behind this.  Sometimes it works, sometimes it crashes, sometimes it does not work at all.
+
+I also using a Wago (758-870) so it could be a Wago issue or a CoDeSys issue.  I am working through it at the moment and if I find the answers I will reply again.
+
+Hi,
+I have same problem with a wago 750-849
+
+When i set an trend (in my case measure of external temperature), the graph still empty when running and visual by web view, even if i wait 1 hours for refresh of the trend
+
+On the other hand, when connected via codesys software (not in simulation mode), i open this view and datas lines are presents ?
+
+A bug ? a specific parameter to set i forget ?
+
+Ps: option data are stored online and not on a file. hope it is ok.
+
+Any others experiences with wago and trend to share with us ?
+

@@ -1,0 +1,2 @@
+Hi,it is possible to define by code IO of Mobus tcp slave ?Each slaves are set to the same custom ARRAY : only index of array change ( first slave = index 1, second slave= index 2, etc ...) and i search easier solution for customer to add other slave.Thanks for your help.
+

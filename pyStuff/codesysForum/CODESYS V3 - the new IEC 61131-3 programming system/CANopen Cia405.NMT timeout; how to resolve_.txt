@@ -1,0 +1,10 @@
+Hi all,In my application, in a particular situation, the NMT function keeps giving a time-out error. The CANopen master processes the PDO succesfully. And the other functions. Once the time-out occurs once. It never goes away! How can I resolve the time-outs?The NMT function does not have any "reset" posibility. Can I "reset" the NMT function.I checked the CANopen master reset / re-init function: StkClose and StkOpen function.StkClose is OK. But the StkOpen function, with the correct parameters, results in a PLC exception!Regards,Edwin.
+
+Hi Edwin,the NMT fb will be aborted with a falling edge on the ENABLE Input.does'nt this solve your problem?If it does not abort even with falling edge you will see a timeout which means  another fb blocks the internal  SDO channel. Rule: Never execute  StkClose and StkOpen function -> this should never executed by the application.BR E.Schwellinger
+
+Thank you for the relation between MNT and SDO (both in the Cia405 library).I resolved the issue by implemneting only one instance of the Cia405 functionblocks.(One NMT function block and one SDO function block.)And added a semaphore to allow the NMT or SDO function block enabled.(Both function blocks are executed! Only one is allowed to be enabled.) In addition, I added an 'error handler' which resets both function blocks, when an error occurs.Testing was succesful.
+
+Long time no see,The application with this work-around, has the issue again.The NMT function results in a TIME-OUT.Both NMT- and SDO- function are called with DISABLE, if a TIME-OUT occurs.But still the NMT keeps resulting in TIME-OUT.Can the CANopen Manager / stack keep the SDO queue blocked?And how can I reset the CANopen Manager / stack?Regards,Edwin
+
+Hi,please do not workaround these issues you will never have a reliable working system,if you do not solve the root cause, the non reliable working CAN mini driver.It is not needed to protect the queue with semaphore!This CAN mini driver functionality need to be proved by the CAN-Echo projectIf SDO's stuck in the queue it might be a problem of wrong executed SDO fb's, but semaphores are never needed..BREdwin
+

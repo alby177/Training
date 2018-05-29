@@ -1,0 +1,12 @@
+Hi,Is it possible to get information which object/ device editor is currently active in CODESYS or which device/ object is selected in device tree.I want to write a script which changes some parameters in the current open device or selected device in device tree.Thanks
+
+Hi.No, it's not possible but I see the use case. I added the improvement CDS-45354 to our bug-tracking.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi Martin,I need also this functionnality.Is it still planned  or available in 3.5.9 ?Thanks.
+
+Hi rsprich.rsprich wrote:Hi Martin,I need also this functionnality.Is it still planned  or available in 3.5.9 ?Thanks.Sorry, but the Jira is not planned for any release at the moment.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

@@ -1,0 +1,24 @@
+The Codesys manual states: "Enumeration values are recognized in all areas of the project even if they were declared within aPOU. It is best to create your enumerations as objects in the Object Organizer under the register card Data types."But how would you do if you want to create the enumerations outside the Object Organizer? What kind of POU can hold TYPE/Enumerations? And where to put them?
+
+Bump. No-one knows?
+
+You can not write a POU outside the organizer, so why should you need to make a enumeration outside it?You can use libraries thou.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+No, that's not what I mean. I want to define an enum inside a POU (for example a function block). The documentation states that this should be possible, but still this does not work for me. The only way that works is to define ENUMS under the tab "Data types".Br,Peter
+
+I can not find what you say in the docs, however i can find a story about subranges, but TYPE can only be used in the datatypes tab. You can make a subrange in a POU, but enumeration is not direct possible.You can make variables a value like red:=0 orange:=1 green:=10;what would you like to make?an enumeration is just making a variable a constant value just like a global is doing.if you do it inside a POU the variable can only be used inside this pou as it is a local one.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+shooter wrote:I can not find what you say in the docs, however i can find a story about subranges, but TYPE can only be used in the datatypes tab. The statement is in the "User Manual for PLC Programming with CoDeSys 2.3", Document Version 6.0, CoDeSys V.2.3.9.2, page 335, 10-35. Br,Peter
+
+can you please send this manual version as page 335 is inside libraries in my manual, manuals are written for specific machines like beckhoff, wago schneider.i prefer using wetransfer.I do not have all manuals of all versions.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+aha you mean this line:Enumeration values are recognized in all areas of the project even if they were declared within aPOU. It is best to create your enumerations as objects in the Object Organizer under the register cardYou read it a little too strict. They will always be global, wherever you declare them.i can not put type in a varlistwhy would you do it?i will put it in the checklist to codesys
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

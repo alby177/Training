@@ -1,0 +1,12 @@
+Dears.Do you know if the local variables of a functions or methods are created everytime the funtion is called?That is, if I call a function from two diferent tasks simultaneously, or if I call a function from himself, every call has his own local variables created?
+
+Hi Josep!That's an interesting question.There is TestAndSet in TwinCAT (I guess it is also in Codesys) which is used to block other tasks to access a code fragment... something along the lines of a critical section in C++.See: viewtopic.php?t=5042They speak about CAA.TaskLock(); and CAA.TaskUnlock(); which look interesting.Probably looking for information about those functions will lead you to the main point of your question.Hope this helps even it is only a little.Good luck and please, post the answer if you find it!Best regards!
+
+_________________http://www.robotecnik.com - robots, CNC and PLC programming.
+
+The question has two parts.One is to know if it is possible to use functions which can call himself (usefull when working with tree arrays for example)The other is that I m not sure if I could use the same function (system time functions like getSystemTimeNs, if there exist a copy of his local variables in each call it is possible that there not exist any problem) in a hard real time task and in a freewheel task.
+
+Hi Josep,Variables created within the scope of a method or function are dynamically created and destroyed with each invocation, making them reentrant.  Exceptions to this are variables declared in a VAR_STAT section and pointers or references to statically defined variables.  If a function or method recursively calls itself the compiler will complain about not being able to calculate stack usage but there is an attribute pragma that can be used to control/suppress the warning.  Presumably you know to limit call depth.Variables created within the scope of a FB or PROG are statically created an maintain their values between invocations.
+
+_________________Rick
+

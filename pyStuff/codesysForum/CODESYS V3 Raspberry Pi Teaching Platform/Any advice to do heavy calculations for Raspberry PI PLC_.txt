@@ -1,0 +1,2 @@
+Hi!Let's say that I going to estimate a mathematical model to compute proportional gains (control engineering), But I can't do that in Codesys because it's to much and a PC is much better in this case. But I still want to have the PLC.Is there a way to do heavy calculations for Raspberry PI? I have an idea and that is that the PLC send values over the Internet to the PC and then the PC do the heavy calculations and then send the results back to the PLC.But I don't know which tool I need to use. I know C#/Java. Can I use that to communicate with Raspberry PI PLC?
+

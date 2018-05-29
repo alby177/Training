@@ -1,0 +1,6 @@
+Hello.I can connect with a remote raspberry pi and program this if I use ip in number xx.xx.xx.xx when I create the gateway but if I write dns name ip it not work.Is possible use a DNS ip?Best regards.
+
+Hello,I have the same problem. I can enter a DNS name as gateway but it doesn't work, with the IP there is no problem.How can we use a DNS name if there is no fixed IP address possible?My workaround is to ping the DNS name and make a new gateway with this IP address,but this is a terrible way to do on industry 4.0   Thanks for your response.
+
+Hi,there is an open issue for this, but see not release date at the moment.BREdwin
+

@@ -1,0 +1,10 @@
+I know that through TaskConfiguration I can configure or Monitor when i'm online the task cycle ( average, time... in micro sec ). How can I get those informations through program ?
+
+Hi,     Use SysIECTaskGetInfo function of type BOOL from SysLibIECTasks.lib to get the information of an IEC task.   Have a GOOD DAY 
+
+use a time() and when same routine is done again (main loop subtracte newtime with oldtime.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi,you could use the implcit generated instance which is used by SyslibTaskinfo.lib_callTask+'Name of the Task'Example:Your Task is called ErsteTask then use _callTaskErsteTask cuEdwin
+

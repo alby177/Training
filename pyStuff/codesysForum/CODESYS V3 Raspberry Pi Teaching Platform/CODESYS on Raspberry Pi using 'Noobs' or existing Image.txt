@@ -1,0 +1,2 @@
+Hi,if anyone need a debian package to install the plc please let me knowsupport@codesys.comEdwin Schwellinger
+

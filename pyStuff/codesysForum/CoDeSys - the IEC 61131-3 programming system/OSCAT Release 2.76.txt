@@ -1,0 +1,13 @@
+OSCAt Release 2.76 is available under www.oscat.de.
+
+this Release contains multiple enhancements and new modules:
+
+- new blind input with extended functionality
+- different timing modules
+- decoders for multiple clicks
+- Julian Date function
+- new timers
+- calculation of atmospheric refraction
+
+_________________freie sps bibliothek unter www.oscat.de
+

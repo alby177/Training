@@ -1,0 +1,6 @@
+I want to create and map custom boolean variable list to point to MCP23S17 input/output pins. Only what I figure out is this.I have created global variable list like this:Code:VAR_GLOBAL   in1:BOOL (MCP23S17.byInputsA.0);   out1:BOOL (MCP23S17.byOutputsA.0);      END_VARThen in POU's ST code this:Code:out1:=in1Is this syntax ok?  What is the "proper" way to create variable map list to mpc's pins ?Thank you !
+
+If you want something that works, it may not be exactly what you want but I would just instantiate the device in the globals, like so:Code:MCP1: MCP23S17;in1: BOOL;out1: BOOL;and then use in the ST code of the POU like this:Code:in1:=MCP1.byInputsA.0;out1 := in1;MCP1.byOutputsA.0 := out1:or this:Code:MCP1.byOutputsA.0 := MCP1.byInputsA.0;Not sure if you can define like you want to in the globals somehow, but I could be wrong..
+
+.....My intention was to declare all inputs and outputs boolean variables in one (global) place, so I can use it on several POU's. I know I can use this code MCP1.byOutputsA.0 := MCP1.byInputsA.0; but i'd like to use more meaningful input/output names. However I still  don't know is thisCode:VAR_GLOBAL   in1:BOOL (MCP23S17.byInputsA.0);   out1:BOOL (MCP23S17.byOutputsA.0);      END_VARcorrect or not ?
+

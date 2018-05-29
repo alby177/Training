@@ -1,0 +1,4 @@
+Hello to all, i'm trying to store some data to a mySQL database from Codesys on raspberry pi.I haven't found some solution but i create a php page to call with some parameter, like data to store, that insert these data into mySQL; so i need to call this page from codesys with something like HTTP GET; can somebody suggest me how to do this?and an easy example?Thank you in advance for answers
+
+Hello i have HTTP POST and HTTP GET lib for codesys.. if you interesing in that write on dmitriy.murashov@automation-engineering.ru
+

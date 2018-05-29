@@ -1,0 +1,8 @@
+Hi, there is some ready to use CoDeSys Runtime for ARM Cortex-M3? If so, there is a list brands and microcontrollers of them?I'm looking to implement the runtime in a TI Stellaris Cortex-M3, maybe using its CAN support and and other peripherals. It's possible?And how does the runtime for this kind of application are licensed, it has a fixed price by uC selled? Something like that?Thank's in advance,André Müller
+
+This is Version3 question so ask it again but a little higher, and yes there is a list on the site of codesys.com
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Yes ist is! See herehttp://www.codesys.com/products/codesys-runtime/runtime-toolkit.htmlRegardsRalph
+

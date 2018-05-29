@@ -1,0 +1,6 @@
+Hi,does somebody have experience with Simatic CP5611 as DP master in CoDeSys V3.x? Is it possible to import in the device repository using a device description (gsd file)?Thanks.
+
+Or at least does a list of compatible Profibus cards exist?Thanks!
+
+As far as I know this is not supported. What I do know is that the Hilscher CIFX cards are supported.
+

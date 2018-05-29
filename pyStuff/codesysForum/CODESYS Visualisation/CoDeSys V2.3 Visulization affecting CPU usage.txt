@@ -1,0 +1,8 @@
+I am using CoDeSys V2.3 with Visulization and target is SP RTE.  I am using Windows XP box.  I am looking for tune up parameter using which i can control Visulization Screen refresh/ update time because what i have observed is, some time it takes upto 95% of CPU usage and stays there for a long time which affects other applications. As soon as i close visu screen or go offline then immidiately it reduces CPU usage and come back to normal level. I have done two improvments so far to make graphics more efficient.#1 : Usage of pointers which will work as indirect tagging to graphics and thru which i am able to handle more visu objects on screen.#2 : In my SP RTE System config i configured only 25% for RTE instead of default 50% believing that it will help to load and run other application.Any help regarding improving CPU usage while Online Visu mode will be highly appreciated.Thanks in advance.
+
+do not move graphics but switch them on/off if needed.slow down the updater for the screenuse simple graphics, without bmp but simple colors.use a new java versiondo not use simulation as this slows down very much. better is use a dedicated PLC for the process.slow down the PLC program by using eventtimers this way the plc is not active all the time.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks Paul,How can you slow down screen updater ? I could not find that setting.  I am using CoDeSys 2.3 Pro with Visulization.Best regards,Niraj
+

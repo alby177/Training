@@ -1,0 +1,10 @@
+I am trying to find a solution for a problem I have with CoDeSys 2.3 and a Linux based controller (Berghof's DC 10xx).There is an FTP client which updates an image inside controller's FTP server in regular time intervals. I want to show this image whenever it is updated in target visualization.I used the bitmap tool and I uploaded a sample photo from local hard disk. Then I located the photo inside the controller and updated it via FTP client.Sadly the image updates only on boot of the controller. I tried change between two identical visualizations but it doesn’t work. Is there any function or parameter I can use in order to dynamically change the bitmap?Achilleas
+
+with a link this should be possible, not when you put it in your code, lets try this.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+shooter wrote:with a link this should be possible, not when you put it in your code, lets try this.If by "link" you mean "Link to file" option in the Bitmap Configuration menu, this is already there. I tried with bitmap variable and bitmap list but no solution...Thank you anywayAchilleas
+
+ hello from France,i have the same problem i create a bmp file from a ethernet camerabut i don't know how to display the camera.bmp imageit does not run throught bmp picture under codesysindeed bmp images are load only when the plc starts...even in bmp listso how can we refresh in real time?can we use an activeX but how?Who has the know-how?regards
+

@@ -1,0 +1,12 @@
+Hello all,
+
+I have the project that need to develop on the industrial ethernet field bus, Could you recommend about the hardware for the Master (CodeSys SP RTE V3.3) please. During develop the project, can I use the standard ethernet port on the labtop? If yes, how to config it?
+
+My plan, I need to use the Profinet and connect with the WAGO 750-340 because we use the 750 IO system (Now Profibus with V 2.3).
+
+More question, how about the idea price for CIFX 90-RE ?
+Anyone experience about this?
+
+Best regards,
+Wisut.
+

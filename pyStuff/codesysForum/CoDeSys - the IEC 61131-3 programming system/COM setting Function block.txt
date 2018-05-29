@@ -1,0 +1,5 @@
+Hi I am a new user of Codesys. I am trying to COM with an controller byRS232. I am using COM Function blocks Lib for programming. But I cant able to Declare the variables. If anyone have an sample PRG?
+
+_________________Regards
+Chandru. R
+

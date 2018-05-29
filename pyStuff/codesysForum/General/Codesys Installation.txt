@@ -1,0 +1,16 @@
+Hallo everybody,
+Using win xp embedded I have space disk problem.
+
+Question is :
+
+Is it possible change the path of extracting files on the installation initial phases ?
+
+Thankyou very much 
+
+if you are talking o the 2.x Version, you can extrakt the files with a normal unzipper. If you have a zip-program installed like 7-zip,... just right-click on the exe and choose the directoy you want the files to be unzipped.
+Best Regards
+
+Thank You Very much !!!!!
+
+I didn't know this stuff
+

@@ -1,0 +1,6 @@
+Hai all,I want to open a dialog on onmousclick in a colomn.When i add 'Open Dialog' the compiler comes with error 'C0046:  Identifier 'genvInput' not defined'If i open the dialog with a button its works fine.Please advise.Thanks Ton.
+
+make table cells custom
+
+I use the option Template.Therefore these option(s) are available.It looks like a bug..Thanks for you're reply.
+

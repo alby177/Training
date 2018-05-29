@@ -1,0 +1,46 @@
+When using ActiveX components in CoDeSys visualization, I need to attach a self-made Dynamic Linked Library (DLL).
+
+It was written (using Borland C++ Builder 5) and attached as described in CoDeSys Help, but function (named "ExecuteActiveXCall") and all text included in this DLL don't execute. (When I start (Login & Run) my project in CoDeSys, DLL attaches statically to my project, but it doesn't execute).
+
+If anybody faced this problem, tell me, please, how to fix this.
+
+Thank you.
+
+Hello Alexxx,
+
+one Problem could be that the function is not exported from the dll with its correct name. If you compile a Dll with a C++-Compiler there may be problems because the compiler exports different names of functions than a C-Compiler does. 
+Are you sure that you have used the correct declaration of the exported function:
+Code:extern "C" __declspec (dllexport) void ExecuteActiveXCall ( IUnknown* pUnk, char* pszId, char* pszParam, char* pszReturnBuffer, intnReturnBufferSize, DWORD* pdwReturnFlag)
+The statement Quote:extern "C" is important because this statement forces the compiler to export the function by its real name from the dll.
+
+I hope that helps,
+Michael Pfob
+
+Yes, I exported this function as you had shown, but the problem remains. I.e. this function doesn't execute when I run my project in CoDeSys.
+
+Ok, then please tell me if your Dll is loaded by codesys. 
+If this is true, then make sure (eg. by toggling the configured trigger variable) that the triggervariable changes its state from false to true as described in the documentation.
+
+I'm sure, that dll is loaded, because when I run my project, I can't delete it. And the trigger variable changes its state from false to true.
+
+There is one more problem: I can't build my DLL with "stdafx.h" included, because there are many errors in different header files, included in "stdafx.h". So tell me please if I really need this header file to properly run my project, or I don't need to include it in my DLL (without this header file the DLL builds properly).
+
+Hello Alexxx,
+
+you do not need the header stdafx.h. You must build a valid Win32 dll that exports the correct function "ExecuteActiveXCall", but how you do this, there are no more conditions.
+
+Do you have a tool that shows the exported functions of a dll? With the VisualStudio there comes a tool called Depends. This tool shows all the functions that are exported from a dll with their export names. Using such a tool you could check if the function is exported with a correct name.
+
+Good day, Michael!
+Thanks to you I have solved this problem: if DLL is built in Borland C++ Builder it exports function named "_ExecuteActiveXCall", and if DLL is built in Microsoft Visual C++ it exports "ExecuteActiveXCall" function, as it should be.
+But there is another problem: when I call method "GoBack" for Shell.Explorer.2 (web browser) component in CoDeSys, it executes several times.
+
+Hello Alexxx,
+
+glad to hear that you were successful. Are you sure that a method gets called multiple times if you only siwtch a variable from false to true for triggering this call?
+
+If you are doing everything correctly, then this sounds like an error. The method should of course be called only once. If it is called more often then please tell this problem or bug to out support. 
+support@3s-software.com
+
+OK. Thank you for your help!
+

@@ -1,0 +1,172 @@
+The Raspberry Pi has many interfaces and the 3S Target support many of them.But how connect simple serial devices ?On the pole pin connector of the raspberry pi there are these serial signals.With the additional RasPiComm board these signals are available on a DSUB9 RS232 interface connector.Do the 3S Target support this now or in the future ?Is it possible to use the 2 USB Ports with "PL2303HX USB to TTL UART RS232 COM Kabel-Modul Converter" to connect simple serial devices ?
+
+Hi,this works already but you need to add your configuration:1. you need to check on linux side which tty port is available.For my tests I've used a USB to serial converter:Check under Linux with 'dmesg' which port is used:in my case it reports: ttyUSB0so you need to add in /etc/CODESYSControl.cfg(Attention you need to remove the 0 from USB0)[SysCom]Linux.Devicefile=/dev/ttyUSBthis was the pi side under Linux2. then after reboot or restart plc, you could communicate via serial com from your IEC application see attached screenshot and attached projectarchive (this is an application example from store slightly modified)BR Edwin
+
+Thank you Edwin !I use a PL2303 usb-serial-adapter together with your example project and the standard configuration is working well.But if I change the Baud rate to 300 Bd (exactly 1200 Bd or slower) the comOpen method throws an UNKNOWN_ERROR.I need the 300 Baud to communicate with an IEC61107 electronic meter.Do you have a solution ? At the moment I don't know if it is a problem of the usb-serial-adapter, the RPI or in the CODESYS function block ?Thank you for your support.BR Martin
+
+Hi Martin,could you please check if These baudrates are possible with plain Linux use?configurestty -F /dev/ttyUSB0 1200stty -F /dev/ttyUSB0 rawnow read from the port by:cat /dev/ttyUSB0sending:echo Hello Raspberry > /dev/ttyUSB0or use a terminal on Linux:sudo apt-get install minicomminicom -b 1200 -D /dev/ttyUSB0Let me know the results of this tests,if this works on your Pi, this should be a problem in the libraries.BR Edwin
+
+Hello Edwin,I tried your recommendations, but there was no responds on cat /dev/ttyUSB0 (see attachments).Does this work on your raspberry ?The identical CODESYS program ist running on a WinV3 soft plc with 300 Baud.Therefore I think the USB-Serial-Adapter isn't the problem.Do you have any further ideas (after easter hollidays) ?Best Regards Martin
+
+Hi Martin,in my case it works under Linux see screenshot,anyway it seems there is a problem in CODESYS.We need to investigate this.BR Edwin
+
+Hi Martin,i've added an JIRA for this at the moment baudrate below 4800 are not possible.Could you change the reciving device to an hight baudrate as a workaround?BR Edwin
+
+Yet I can also reproduce this. I agree Raspberry Serial communication on 300 Baud is possible, but CODESYS below 4800 Baud not (on a raspberry only).I can't change the baud rate of the corresponding device, because it's an electonic meter from EON Westfalen Weser  .IEC61107 electronic meter get requests with 300 Baud and answer with 9600 Baud. This challange is handled by my codesys program and is running successfully on a WinV3 soft plc but I wan't do it on a raspberry ...Thank you for your Support and maybe for the bugfix in the future.BR  Martin
+
+Hi,I tested USB/RS-485 adapter. I set up Raspberry just like Edwin described. It works perfectly from the start. I tested modbus RTU communication with room thermostat. There is only one thing which I don't like. If I break connection on RS-485 side (I leave USB adapter connected in Rpi), bus goes to Failure status:But even if I connect RS-485 line again, bus don't recover. Only Rpi reboot helps. Is there a way to auto recover the bus after failure?Thank you.Best regards,Zdenko.
+
+Hi,check if:Device.Application.Modbus_Master_COM_Port.xResetComPortDevice.Application.Slave3.xResetdoes solve the restart problem.BR Edwin
+
+Thank you Edwin,yes, Device.Application.Slave3.xReset does helps. Modbus communication works ok after reset. How can we make this works automatically?I think, Modbus RTU should work also in this case:-PLC as a Modbus master-10x modbus slave devices on the same RS-485 bus.-If one of this 10 slave devices won't respond, the communication with other devices should work normally.-Also if some slave device will not reply to one specific request from master, master should repeat this request (number of retries).Regarding this, is there a usable solution to make this work properly?Best regards,Zdenko.
+
+Hi Zdenko,this is a open point which will be fixed to 3.5SP5 (release July 2014).At the moment you need to do this manually in the application.How?The Workaround is, always to check modbus error in modbus master function block and if error happens, restart the communicationBR Edwin
+
+Hi Edwin,thank you.I am trying this declaration:	IF Device.Application.Modbus_Slave_COM_Port.xError THEN		Device.Application.Modbus_Slave_COM_Port.xReset := TRUE;	END_IFBut I think I am not doing this right. I get this exception: [ERROR]         MB485_230414: PLC_PRG [Device: Plc Logic: Application](Line 10, Column 1 (Impl)): C0062:  'Device.Application.Modbus_Slave_COM_Port' is no structured variableI also tried with FBD, but I also don't find Modbus master FB. Can you point me in the right direction, please.I understand that you will integrate the additional Modbus RTU master functionality in version V3.5. So this means, that this problem is in all controllers which uses Codesys for programming?Best regards,Zdenko.
+
+Hi,IF Modbus_Slave_COM_Port.xError THEN   Modbus_Slave_COM_Port.xReset := TRUE;END_IFBREdwin
+
+Hi,thank you. This works.Is there a way to read and write the same Modbus holding register to the same Raspberry variable? This have to used if we like to change some modbus slave setpoint on the both  devices (master and slave).Best regards,Zdenko.
+
+Hi Zdenko,check this:viewtopic.php?f=21&t=5713#p10314this should work for modbus_rtu too (sure with the modbus serial fb too)BR Edwin
+
+Hi Edwin,In this case Raspberry have to be Modbus master. Can we use the same FB here?Best regards,Zdenko
+
+HelloI am trying to use Edwins project SerialComWithVisuRaspi.projectarchive. I want to use the Pi’s internal serial port, I guess this is ttyAMA0. Where can I allocate ttyAMA0 to the project. By now I am getting the message UNKNOWN_ERROR, and now data at the serial port. Can anyone help me in the right direction here?"Edit":I se that I have used ttyAMA0 insted og ttyAMA in the config file  /etc/CODESYSControl.cfg:[SysCom]Linux.Devicefile=/dev/ttyAMAportnum := COM.SysCom.SYS_COMPORT1;Data is now sendt from the Pi and CoDeSys. But it seems  like the baudrate is wrong. Do I have to configure the baudrate also in the /etc/CODESYSControl.cfg file?
+
+Hi,which baudrate are you using exactly?there is a problem on baudrates <2400, this will be fixed in the next version..coming with 3.5SP5 release which should be on July.BREdwin
+
+Hi,Is there a fix for auto reconnection on RS-485 after COM error in version 3.5.SP5? Best regards,Zdenko.
+
+Hi Zdenko,I would give a yes 'auto-restart communication'BR Edwin
+
+Hi,yes, it works   !Thank you Edwin.Best regards,Zdenko.
+
+Hello,Edwin has described how to connect one serial device and it works well.Edwin Schwellinger wrote:this works already but you need to add your configuration:1. you need to check on linux side which tty port is available.For my tests I've used a USB to serial converter:Check under Linux with 'dmesg' which port is used:in my case it reports: ttyUSB0so you need to add in /etc/CODESYSControl.cfg(Attention you need to remove the 0 from USB0)[SysCom]Linux.Devicefile=/dev/ttyUSBportnum := COM.SysCom.SYS_COMPORT1;this was the pi side under Linux2. then after reboot or restart plc, you could communicate via serial com from your IEC applicationWhat I have to do to connect a second serial device in parallel ?If I plug the second device then it known (using dmesg) as ttyUSB1.How the changes in the CODESYSControl.cfg looks like to use two Serial devices in paralell ?Thank you for your Support !
+
+Hi,I have a same question - how can I use two Serial devices in parallel (with USB-serial adapter)?Thank you!Best regards,Zdenko.
+
+Hi,it should work if you have for example two adapters of the same manufacturerthen you get USB0 and USB1 for example which then lead to com1 and com2 in CODESYYS, but if you have two different like for example USB0 should be your com1 and tty2 your com2:I would give the following a try:Use the settings as done in my description,then make a symlink under Linux to the next serial Interface. (in that example from tty2 to USB1)BR Edwin
+
+Hello,I have tested 2 serial adapters, connected on the same time. They are from different manufacturer, but I still get USB0 and USB1 on Raspberry.I made nothing more than described in Edwin’s description:Code:[SysCom]Linux.Devicefile=/dev/ttyUSBportnum := COM.SysCom.SYS_COMPORT1;And it works on COM1 and COM2 in Codesys.But there is another question:For example:-we have 2 adapters connected. -first one on Raspberry USB socket 1 and second one on Raspberry USB socket 2.-first one will be ttyUSB0, which is COM1 in Codesys, second one is  ttyUSB1, which is COM2 in Codesys.-if we disconnect first adapter or it has a fault, the second one will become ttyUSB0 - COM1 in Codesys, which is wrong.How can we fix specific USB/serial adapter to specific COM in Codesys, that first adapter will always be COM1 and second one will always be COM2?Best regards,Zdenko.
+
+Hi Zdenko,please google for udev rules raspberry pi,guess this should show you, how you could link a specific device to always the same devicemaybe links like:http://superuser.com/questions/536478/h ... -addressescould help on this issue.BREdwin
+
+Hi Edwin,Thank you very much. I will try this asap.Best regards,Zdenko.
+
+Hello Edwin,I tried to use your project "SerialComWithVisu.project" with one USB to serial cable but It doesn't work.My Codesys release is V3.5 SP5 patch 2 and on Raspberry it's 2.0.1.0I have the error ERROR_UNKNOW.--> I set :                udiPort:= 0, 		udiBaudrate:= 9600,		paParity:= COM.PARITY.NONE,		sbStopBits:= COM.STOPBIT.ONESTOPBIT,		udiByteSize := 8 );I tested my connection directly from the Raspberry with Minicom (thru dev/ttyUSB0) and it was working perfectly (emission & reception).my baudrate is 9600bds.I checked on the CODESYScontrol.cfg but the [SYSCOM] § doesn't exist !!!Do you have an idea about what's wrong ?Thank you for your helpChristian
+
+Hi,you need to add the comport device depending on your used connection ( USB / TTY / whatever )in /etc/CODESYSControl.cfg please add manually[SysCom]Linux.Devicefile=/dev/ttyUSBaccording to your used interface /ttyAMS .... /tty ...Regards Edwin
+
+Hello Edwin,Thank you for your prompt answer.I modified the file CODESYSControl.cfg (I have just understood that I had to do the modification on the Raspberry side, sorry...).Now, it's done.I added 0 to ttyUSB to have ttyUSB0 but it doesn't work anymore (I tested again with minicom & it was working on ttyUSB0 !)on a window side (in Codesys) I tested                 - udiPort:= 0, and                - udiPort:= 1,without success, I have  the same ERROR_UNKNOW !Do you have another suggestion or idea where the issue comes from ?thank youChristian,
+
+Hi Christian,if your serial port is ttyUSB0your config fileCODESYSControl.cfg should be without the '0'[SysCom]Linux.Devicefile=/dev/ttyUSBthat's it.RegardsEdwin
+
+Hi Edwin,thank you for your patience, now it works very well.thank you again,
+
+Hi,I managed to fix COM port numbers COM1-COM4 to USB sockets on Raspberry Pi B+   .This is the procedure:-sudo nano /etc/CODESYSControl.cfg Add this: Code:[SysCom]Linux.Devicefile=/dev/tty-RPIportnum := COM.SysCom.SYS_COMPORT1;-sudo nano /etc/udev/rules.d/serial-symlinks.rules Add this:Code:SUBSYSTEM=="tty", ENV{ID_PATH}=="platform-bcm2708_usb-usb-0:1.2:1.0", SYMLINK+="tty-RPI0"SUBSYSTEM=="tty", ENV{ID_PATH}=="platform-bcm2708_usb-usb-0:1.3:1.0", SYMLINK+="tty-RPI1"SUBSYSTEM=="tty", ENV{ID_PATH}=="platform-bcm2708_usb-usb-0:1.4:1.0", SYMLINK+="tty-RPI2"SUBSYSTEM=="tty", ENV{ID_PATH}=="platform-bcm2708_usb-usb-0:1.5:1.0", SYMLINK+="tty-RPI3"-RebootThat's it!   Best regards,Zdenko.
+
+Hi,How can I get Error status bit for Modbus_COM_1?Best regards,Zdenko
+
+Sorry, posted in other topic...viewtopic.php?f=21&t=5986&p=12004#p12004BROsman
+
+Hello,i have problems to read from COM in Codesys.I modified the Project from this thread. I´ve connected a PILZ PNOZmulti with USB to the Raspberry. The USB-Serial Converter works with an FTDI chip. The comWrite send the hex string i want to the PILZ. When i use the Terminal with:stty -F /dev/ttyUSB0 192000stty -F /dev/ttyUSB0 rawcat /dev/ttyUSB0 | od -tx1the right answer comes back in hex. But i can´t get codesys to recognise it. The ReadBuffer is always empty. Whether i use a timer after the comWrite or not.Any suggestions?Best regards,Daniel
+
+Hi nosi,could you attach /etc/CODESYSControl.cfg to this post or at least check if your entry for your SerialComdevice is in. (This is what you need to add manually)in your case it is:[SysCom]Linux.Devicefile=/dev/ttyUSBBREdwin
+
+Hello Edwin,thank you for answering. I checked the .cfg . But i added the lines manually before.I found the problem. Somehow another programm cut the connection. Best Regards,Daniel
+
+Hi everyone! How to configure the RAspberry UART port in Linux?I did only this:sudo nano /etc/CODESYSControl.cfg[SysCom]Linux.Devicefile=/dev/ttyAMAportnum := COM.SysCom.SYS_COMPORT1;But have an error;
+
+Hi,more details... which error an where do you see the error ?Could you use AMA0 in the console in Linux?BREdwin
+
+Edwin Schwellinger wrote:Hi,more Details... which error an where do you see the error ?Could you use AMA0 in the console in Linux?BREdwinGood afternoon. I can't attach a screenshot at this topic, have some error;I use handmade converter on ST485 and npn transistors wich switch direction of USART transmission data. In Raspbian I'm configuring only this - sudo nano /etc/CODESYSControl.cfgLinux.Devicefile=/dev/ttyAMAportnum := COM.SysCom.SYS_COMPORT1;I have configured afterMaster device modbus config in Codesys: 9600, 8E1;Settings in slave device: adress#1, 9600, 8E1  When I login via Codesys, mastes device is run ok (green circle near Master device in Codesys), but slave not response and i have an erron "Bus is not run";Auto reconection on bus enabled;How can I check UART in Linux console? And what I must configure in Raspbian for working USART?BR. Osman
+
+Hi Osman,use a terminal and the following: (sure in your case you need a USB-RS485 converter on Windows to test )viewtopic.php?f=21&t=5699#p10300next step could be - use the serial example and a terminal.Last step is use modbus with your deviceBREdwin
+
+Edwin Schwellinger wrote:Hi Osman,use a terminal and the following: (sure in your case you need a USB-RS485 converter on Windows to test )BREdwinI conect USB-RS485 converter on Win PC and raspberry...ttyAMA0 does not transfere the data;
+
+Hi everyone I've solved problem. Problem was in electronic circuit on ST485. I've deleted one transistor and connected PIN4 to the GND. On Raspberry I did this: cp /boot/cmdline.txt /boot/cmdline.bakcp /etc/inittab /etc/inittab.bakNext: sudo nano /boot/cmdline.txtdelete this string "console=ttyAMA0,115200" и "kgdboc=ttyAMA0,115200"Next: sudo nano /etc/inittaband change string: T0:23:respawn:/sbin/getty -L ttyAMA0 115200 vt100 to #T0:23:respawn:/sbin/getty -L ttyAMA0 115200 vt100Thank you very much for help!BR Osman.
+
+Hi,I have an USB-Serial-Adapter and followed Edwin's instructions but when I listen to the port (cat /dev/ttyUSB0) there is no response(sending data via sencond terminal).Any idea what I do wrong?Best regards,Oleg
+
+Hi Oleg,you need to show the /etc/CODESYSControl.cfgBREdwin
+
+Hello Edwin,thank you for your support!Best regards,OlegLast line of dmesg:[ 1399.272505] usb 1-1.2: FTDI USB Serial Device converter now attached to ttyUSB0Last few lines of CODESYSControl.cfg:[CmpCodeMeter]InitLicenseFile.0=3SLicense.wbb[SysEthernet]Linux.ProtocolFilter=3[SysCom]Linux.Devicefile=/dev/ttyUSBportnum := COM.SysCom.SYS_COMPORT1;
+
+adding [SysCom]Linux.Devicefile=/dev/ttyUSBportnum := COM.SysCom.SYS_COMPORT1;in CODESYSControl.cfgthe runtime return STOP - program loaded exception...why?version is 3.5.8.0Removing the [SysCom] lines and rebooting it comes back running good (without serial communication of course)
+
+Hello Edwin,I am trying to use the project from this forum "http://forum.codesys.com/download/file.php?id=604"(SerialComWithVisuRaspi.projectarchive). After updating all necessary components There is still an error in ComOpen function parameter "usiListLength:= SIZEOF(aParameter) / SIZEOF(COM.PARAMETER)". Can not convert type UINT to type USINT. Where is a problem?Peter
+
+Hi Peter,attached an updated Version to current 3.5.8.10BREdwin
+
+Hi Edwin,I downloaded suggested version, but the error still persist. There is a mismatch between types UINT AND USINT. See ComOpen function parameter "usiListLength:= SIZEOF(aParameter) / SIZEOF(COM.PARAMETER)". Can not convert type UINT to type USINT.
+
+Hi,which CODESYS Version are you using?Which Raspberry PI Package Version?BREdwin
+
+I use CODESYS V3.5 SP8 and CODESYS Control for Raspberry PI_3.5.8.0.packagePeter
+
+Hello. I want to use internal serial port AND extrnal usb-com adapter.I tried to add this to  /etc/udev/rules.d/serial-symlinks.rulesCode:SUBSYSTEM=="tty", ENV{DEVPATH}=="/devices/platform/soc/20201000.uart/tty/ttyAMA0", SYMLINK+="tty-RPI0"SUBSYSTEM=="tty", ENV{ID_PATH}=="platform-bcm2708_usb-usb-0:1.2:1.0", SYMLINK+="tty-RPI1"SUBSYSTEM=="tty", ENV{ID_PATH}=="platform-bcm2708_usb-usb-0:1.3:1.0", SYMLINK+="tty-RPI2"SUBSYSTEM=="tty", ENV{ID_PATH}=="platform-bcm2708_usb-usb-0:1.4:1.0", SYMLINK+="tty-RPI3"SUBSYSTEM=="tty", ENV{ID_PATH}=="platform-bcm2708_usb-usb-0:1.5:1.0", SYMLINK+="tty-RPI4"And this to /etc/CODESYSControl.cfgCode:[SysCom]Linux.Devicefile=/dev/tty-RPIportnum := COM.SysCom.SYS_COMPORT1But it doesn't work(
+
+Hi,does a cat /dev/tty-RPI0 and cat /dev/tty-RPI1work under Linux?(If you connect a terminal to port and send....)BREdwin
+
+Hello. Now everything working.I changed platform-bcm2708_usb-usb-0:1.2:1.0 to platform-20980000.usb-usb-0:1.2:1.0 for my RPI B+sudo nano /etc/udev/rules.d/serial-symlinks.rulesCode:SUBSYSTEM=="tty", ENV{DEVPATH}=="/devices/platform/soc/20201000.uart/tty/ttyAMA0", SYMLINK+="tty-RPI0"SUBSYSTEM=="tty", ENV{ID_PATH}=="platform-20980000.usb-usb-0:1.2:1.0", SYMLINK+="tty-RPI1"SUBSYSTEM=="tty", ENV{ID_PATH}=="platform-20980000.usb-usb-0:1.3:1.0", SYMLINK+="tty-RPI2"SUBSYSTEM=="tty", ENV{ID_PATH}=="platform-20980000.usb-usb-0:1.4:1.0", SYMLINK+="tty-RPI3"SUBSYSTEM=="tty", ENV{ID_PATH}=="platform-20980000.usb-usb-0:1.5:1.0", SYMLINK+="tty-RPI4"sudo nano /etc/CODESYSControl.cfgCode:[SysCom]Linux.Devicefile=/dev/tty-RPIportnum := COM.SysCom.SYS_COMPORT1
+
+Thanks for the feedback,helpful for others too.BREdwin
+
+Hello Edwin,i open the project linked in your last post with attachement (SerialComWithVisu.project),wehn i open it i become lot of errors: Library SM3 is not available.I use the last version of Codesys 3.5 and Raspi Package 3.5.8.10 .Can you Help me?Serghei
+
+Hi Serghei,open older Projects should allways followed by the following procedure:1. Update the plc device in the device tree (right click update device)2. if there are fieldbus stacks used in the Project (update them too)2. set current compiler version3 set current visu profileThis usually give a error free - updated project ready for using it.BREdwin
+
+Question from my colleague — AlexanderGood time, experts CDS.I will try to describe more the problem.Experiences spend on PI-2 mod.BThere is a controller that has only RS-232, with fixed settings ID 16, 115200,8,N,1.There is such piece of iron - USR-TCP232-2 http://www.usriot.com/p/rs232-to-ethernet-modules/. Works perfectly in mode RTU over TCP.But, as You know, CDS are not able to understand this format. Or serial, or TCP.To solve this problem, I tried to use the socat program http://www.dest-unreach.org/socat/ team socat PTY,link=/dev/ttyCOM tcp:192.168.3.55:502, which creates the most symbolic file /dev/ttyCOM, (lrwxrwxrwx 1 root root 10 Jul 26 10:56 /dev/ttyCOM -> /dev/pts/0)When experimenting with OpenHab, also had to add the permission to the specified "port" in start.sh -Dgnu.io.rxtx.SerialPorts=/dev/ttyCOM. Although, everything is perfectly functioning.Now. By analogy with these often change CODESYSControl.cfg to work with RS-485/USB Converter I tried to add /dev/ttyCOM in the file /etc/CODESYSControl.cfg Code:[SysCom]Linux.Devicefile=/dev/ttyCOMportnum := COM.SysCom.SYS_COMPORT1;however, nothing happens, not picks up data CoDeSys...What needs to be done in the /etc/CODESYSControl.cfg [SysCom]It seems that clearly outlined the problem.I hope for understanding and help.
+
+HI,your symlinc should be:/dev/ttyCOM0 -> /dev/pts/0then it will work.BREdwin
+
+Thank You, Edwin. I used to try, but nothing worked. (ttyCOM0) After Your comment I started to study the problem deeper and found out gateway was created later than the start CoDeSys. The problem was fixed - it works great!Decided July 30.
+
+hi,Modbus RTU is bus-faillure(red) when i restart or turn on my rpi, i need to connect with Codesys development and download the app and run. I made Create Boot App and Sourcecode download.I tried,IF Modbus_Slave_COM_Port.xError THENModbus_Slave_COM_Port.xReset := TRUE;END_IFbut this doesn't work only change to orange from red.Thank you.
+
+Hi, I've two usb-serial devices from the same manufacturer. I've created udev rules to assing different names for both devices. Names are motor_up and motor_down. Both devices are listed in the /dev folder and both are working fine with minicom. I've added both devices to CODESYSControl.cfg:[SysCom]Linux.Devicefile=/dev/motor_upportnum := COM.SysCom.SYS_COMPORT1;Linux.Devicefile=/dev/motor_downportnum := COM.SysCom.SYS_COMPORT2;No way to make it work    I appreciate your uggestions..
+
+dosnova wrote:Hi, I've two usb-serial devices from the same manufacturer. I've created udev rules to assing different names for both devices. Names are motor_up and motor_down. Both devices are listed in the /dev folder and both are working fine with minicom. I've added both devices to CODESYSControl.cfg:[SysCom]Linux.Devicefile=/dev/motor_upportnum := COM.SysCom.SYS_COMPORT1;Linux.Devicefile=/dev/motor_downportnum := COM.SysCom.SYS_COMPORT2;No way to make it work    I appreciate your uggestions..You can try one by one, with codesys check. Can you show us result about this?
+
+Hi,I would set symbolic links in Linux/dev/motor_up -> /dev/ttyMotor0/dev/motor_down-> /dev/ttyMotor1and then in /etc/CODESYSControl.cfg only this line will be needed:[SysCom]Linux.Devicefile=/dev/ttyMotorIn CODESYS you'll then access com1 for Motor0(Motor_up) and com2 is Motor1(Motor down)BREdwin
+
+Thanks Edwin, now it appears to be working. I've a new question... how to add a line feed + carriage return at the end of the string I am sendig to serial device??
+
+Hi,$L and $RBREdwin
+
+ 
+
+I have a Modbus Com Error when i reboot my RPI. I share a video. Can you help me pls?https://drive.google.com/open?id=0B92kE ... nZ2aFYxSmsBRHector
+
+Hi,guess you need to set the autorestart flag?BREdwin
+
+Edwin Schwellinger wrote:Hi,guess you need to set the autorestart flag?BREdwinThanks you Edwin,I tried with autorestart flag too. (bad lucky   )I'm thinking in reset warm, but I don't know set autoplay after reset.BRHector
+
+Dear All,This topic was so helpfull for me about getting data from usb via codesys.I used, Edwin's example it works well. I can read data from my usb GPS receiver.But, i wonder what if i have 2 usb device at the same time.How we can control both of them at the same time ? It is possible to do it?For example;For one usb device we can use FirstSerialLine(		slMode:= SL_READWRITE, 		udiPort:= 1, 		udiBaudrate:= 4800,		paParity:= COM.PARITY.NONE,		sbStopBits:= COM.STOPBIT.ONESTOPBIT,		udiByteSize := ;what we need to do for 2 usb device at the same time.Thank you for your help.
+
+ekmekci wrote:Dear All,This topic was so helpfull for me about getting data from usb via codesys.I used, Edwin's example it works well. I can read data from my usb GPS receiver.But, i wonder what if i have 2 usb device at the same time.How we can control both of them at the same time ? It is possible to do it?For example;For one usb device we can use FirstSerialLine(		slMode:= SL_READWRITE, 		udiPort:= 1, 		udiBaudrate:= 4800,		paParity:= COM.PARITY.NONE,		sbStopBits:= COM.STOPBIT.ONESTOPBIT,		udiByteSize := ;what we need to do for 2 usb device at the same time.Thank you for your help.if 2 usb are the same manufacture, you can change udiport:=2 for second device. You can create  news string i/o for the second device.Lucky!BRHector.
+
+HTejada wrote:ekmekci wrote:Dear All,This topic was so helpfull for me about getting data from usb via codesys.I used, Edwin's example it works well. I can read data from my usb GPS receiver.But, i wonder what if i have 2 usb device at the same time.How we can control both of them at the same time ? It is possible to do it?For example;For one usb device we can use FirstSerialLine(		slMode:= SL_READWRITE, 		udiPort:= 1, 		udiBaudrate:= 4800,		paParity:= COM.PARITY.NONE,		sbStopBits:= COM.STOPBIT.ONESTOPBIT,		udiByteSize := ;what we need to do for 2 usb device at the same time.Thank you for your help.if 2 usb are the same manufacture, you can change udiport:=2 for second device. You can create  news string i/o for the second device.Lucky!BRHector.Thank you for your help. But  what if i use 2 usb devices which different manufacture ?What i need to do.Also, what is the mean "same manufacture" ? Could you please give example ?
+
+Hi,set symbolic links in LinuxExample:/dev/ttyUSB0 -> /dev/USBCDS0/dev/ttyAMA0 -> /dev/USBCDS1and then in /etc/CODESYSControl.cfg only this line will be needed:[SysCom]Linux.Devicefile=/dev/USBCDSBREdwin
+
+Edwin Schwellinger wrote:Hi,set symbolic links in LinuxExample:/dev/ttyUSB0 -> /dev/USBCDS0/dev/ttyAMA0 -> /dev/USBCDS1and then in /etc/CODESYSControl.cfg only this line will be needed:[SysCom]Linux.Devicefile=/dev/USBCDSBREdwinThank you Edwin,I will try and i will let you know,
+
+Edwin Schwellinger wrote:Hi,set symbolic links in LinuxExample:/dev/ttyUSB0 -> /dev/USBCDS0/dev/ttyAMA0 -> /dev/USBCDS1and then in /etc/CODESYSControl.cfg only this line will be needed:[SysCom]Linux.Devicefile=/dev/USBCDSBREdwinDear Edwin,I did what you said.Everything works perfect now.But i have one question about serial com structure.For example, i have GPS receiver. When i power up the receiver, gps datas comes regularly every one second.I wonder, it is possible to understand there is data which coming or not.I mean, according to your example we alwasys try to reading comport every 250ms randomly. If there is data we can get the data if there isnot data we still read comport every 250ms.Is there any indicator which tell us data is coming or data has come.I hope i explained well.
+
+Changes in Raspberry Pi 3 related to using the on-board UART:On PI3, ttyAMA0 is now connected to Bluetooth. In latest Jessie version /dev/serial0 is the on-board UART (serial).So, in /etc/codesys.cfg, you must add the line   Linux.Devicefile = /dev/serialAlso, it seems that sometimes the UART is disabled in Kernel.To enable it, edit /boot/config.txt and set enable_uart=1Finally, remember to disable the Linux console mode (the serial port is default used by Linux console)
+
+HiI would like to connect the internal UART from my Raspberry over a MAX485 RS-485 Module from eb.. to an arduino so that i can send data over modbus rtu.I have done the change in the CODESYSControl.cfg [SysCom]Linux.Devicefile=/dev/ttyAMAportnum := COM.SysCom.SYS_COMPORT1;Now i have the problem that i dont know how to connect the module to the raspberry I tried it like on this page. LINKWithout successI have a Modbus COM PORT in my Projekt with a green symbol.The modbus Master is also green.But the Modbus Slave is changing between red and orange Maybe someone can help Chris
+
+Hi, We are trying to connect a serial device via FTDI to Serial USB cable. Communication works fine with minicom but, after following all the steps to link the serial port to Codesys, nothing happens. An Error 5004 (unknown error) is showed. We are trying with the sample project SerialcomwithVisu provided in the Codesys store.The serial port is identified as "ttyUSB0" and I've added the following lines to CODESYSControl.cfg:[SysCom]Linux.Devicefile=/dev/ttyUSBportnum := COM.SysCom.SYS_COMPORT1;Speed, parity, and all the serial parameters have been introduced correctly.Raspberry version is 3.5.12.0, working with Cedesys 3.5 SP12 x64We apprecciate your suggestions.
+
+Hi,Check if the entry is maybe dublicated or different in CODESYSControl.cfg and CODESYSControl_User.cfgIn the /etc/BREdwin
+
+Thanks Edwin, I've removed the entry from CODESYSControl.cfg and added it to CODESYSControl_User.cfg and now its working fine. 
+
+Hi:I want to connect two USB slave devices for MODBUS,The first is a speed variator with a USB / RS485 converterusb 1-1.5: ch341-uart converter now atachmend to tty USB0Is Ok.The second one would be an ARDUINO ONEcdm-acm 1-1.3: 1.0: ttyACM0: USB ACM device.Is a ttyUSB1 possible?Thank youFernando
+
+Hi,you need to google for "udev rules" or "serial-symlinks.rules"for CODESYS you need a configuration like:ch341-uart converter is attachmend to ttyUSB0and your USBAMA0 should then attached  to ttyUSB1BREdwin
+

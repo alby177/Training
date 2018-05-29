@@ -1,0 +1,4 @@
+I am trying to build a C# or Labwindos/CVI(C-Based programming software from National Instruments) to develop HMI sreens and communicate beween CoDeSys and HMI through OPC UA . Now I need driver,library whicn can used in C# or CVI.Please support if anyone has an Idea.Regards,Kumar.E
+
+Hi guys,Any help.....Regards,Kumar E
+

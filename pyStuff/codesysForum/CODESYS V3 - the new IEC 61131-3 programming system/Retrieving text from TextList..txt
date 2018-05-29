@@ -1,0 +1,18 @@
+Hello!Does anybody have an IDEA how could I retrieve text from TextList in my programm?I have a list, for example:0:a2:b54:ci saw function DynamicTextGetText, but I have no idea how to use it. It always returns '';Thank you!
+
+up
+
+It returns nothing if no language has been selected yet.If you want to get the "default" text, then use:Code:VisuElems.cmpDynamictext.DynamicTextGetDefaultText(ADR(sTextList), ADR(sTextListID))^If the user has selected a language, or if this is set in the application you can use:Code:VisuElems.cmpDynamictext.DynamicTextGetText(ADR(sTextList), ADR(sTextListID))^What you can do is remember the latest selected language and load that at the start of the application.Code:// At start-up: initialise the actual language with the last selected languageIF xInit THEN   visuElems.CURRENTLANGUAGE := gvlPersistent.sSelectedLanguage;   xInit := FALSE;END_IF// Remember the selected language (if it is changed it needs to be activated again during start-up)gvlPersistent.sSelectedLanguage := visuElems.CURRENTLANGUAGE;
+
+Thank you for your response!
+
+Does somebody have an programing example, how to use DynamicTextGetText, because it dont Work for me.
+
+Try this one
+
+Does anybody know, if it's possible to retrieve Text from enums with textlist Support? The data is also saved as .txt file, but in UTF-8 which doesn't work with "DynamicTextGetText" etc..
+
+lst_tech wrote:Does anybody know, if it's possible to retrieve Text from enums with textlist Support? The data is also saved as .txt file, but in UTF-8 which doesn't work with "DynamicTextGetText" etc..Did you try to use "DynamicTextGetTextW"?
+
+Yes, I tried this one. The Problem is, that the file coding differs from "normal" text list (utf-8 / ANSI).It seems that UTF-8 isn't working with DynamicTextGet... My solution is to read it manually with FileOpen/FileGets (According to the CSV reader example).Thanks for your support
+

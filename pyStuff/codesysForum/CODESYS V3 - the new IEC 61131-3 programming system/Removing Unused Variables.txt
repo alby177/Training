@@ -1,0 +1,10 @@
+Hi Being new to Codesys Version 3.5 Patch 8, how do you remove unused variables when using Structured Text.Peter
+
+Run Static Analysis (light). See the help of CODESYS for all the details.
+
+Hi All.Thanks TimvH for your reply.I have been aware of Static Analysis Settings but I don't see the unused variables being shown or listed. May be I should explain what I am doing.    I use Codesys to write individual programs for a specific task then transfer them into the Danfos Plus 1 Programing Environment as a POU.Reasons for this it is much easier to write and test a program in Codesys under Simulation then trying to test it directly in Danfoss Plus 1.I am not sure if others do this, but I would like to know. But debugging a ST POU in Plus1 is time consuming and difficult even with there debugger program.By applying a simulation to the code may produce different results, ie; unused variables. to that of a generated code to a specific PLC type.That I would like to know else I may still be doing something wrong. Being able to remove unused variable during program development in Codesys is much more practicable then in Plus 1 ST Editor.Thanks for your help and looking forward to others suggestions.peter
+
+Actually you should use 'Build --> Generate Code' Option to see the Static Analysis work.
+
+learnetk wrote:Actually you should use 'Build --> Generate Code' Option to see the Static Analysis work.Thanks learnetk. I was using Build (F11) only, No problem is seeing the unused variable list when using " Generate Code".Thanks.
+

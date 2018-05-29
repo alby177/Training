@@ -1,0 +1,4 @@
+I have found a similar topic but that wasn`t helpful and more than a year old.Is it possible to run Codesys on Orange Pi at today`s date? If yes, what can and what cannot (interfaces, GPIO etc...) be controlled?I have tested the Codesys V3 on Raspberry PI and I was wondering what are the differences with the Orange PI, is this the kernel modules for hardware dependence?Thank you to everyone for reading and answering to this topic.
+
+Hi,no no this is not possible at the moment and even not planned.BREdwin
+

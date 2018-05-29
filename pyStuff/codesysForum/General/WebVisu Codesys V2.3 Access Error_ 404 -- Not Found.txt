@@ -1,0 +1,2 @@
+Dear Sirs: I am running an application of Codesys V2.3.9.46 on SP PLCWinNT V2.4. There is a visualization named PLC_VISU. The Codesys Webserver indicates that "Socket to PLC opened successful", but the browser command (http://localhost:8080/webvisu.htm) returns Access Error: 404 -- Not Found!!!Could you help me on that?Thanks,New information: I have "killed" the process NI Application Web Server and the error message changed to "ERR_CONNECTION_REFUSED"!
+

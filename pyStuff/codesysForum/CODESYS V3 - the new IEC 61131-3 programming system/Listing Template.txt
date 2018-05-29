@@ -1,0 +1,8 @@
+I'm trying to use the Project > Document function, but can't find any way to change the font/tab size to allow a single line of code to print on a single print line.At present it prints over two making the listing hard to follow as well as taking twice as much paper.
+
+Hi PJE.PJE wrote:I'm trying to use the Project > Document function, but can't find any way to change the font/tab size to allow a single line of code to print on a single print line.At present it prints over two making the listing hard to follow as well as taking twice as much paper.Open the Project Settings, select "Page Setup" and open the tab "Document".BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi,All I can seem to adjust are the heading levels and the table of contents, not the actual listing... I'm using the Eaton XSOFT 3.5.8 version of the editor.PJE
+

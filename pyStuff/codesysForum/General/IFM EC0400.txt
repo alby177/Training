@@ -1,0 +1,4 @@
+Hi, I got my hands on an IFM basic starter set wich includes IFM cr0403 PLC and IFM cr0451 Display.It is loaded with the demo starter program and works fine. The .resx files where included on the dvd but not the code. I´m looking for templates were the PLC and Display are communicating. Like the demostart program, the Display controls the outputs on the PLC. Best regards
+
+Sign up for IFM's download area (takes about 8 hours for the username and password to come through!!). Browse to the CAN Communications area and download the Library files there. These give you all of the standard functions for communication between two IFM units.It's not the nicest of communications as it will only transfer information in BYTE format (or at least that's all I've ever been able to get it to do) so you need to break up real numbers ect in to Byte format.Once you've got the library files you'll be able to mess about with it a bit more and learn it much easier
+

@@ -1,0 +1,16 @@
+Dear forum members!Have anyone installed a Codesys V3 or maybe even v2.3 (we al have some projects on 2.3  ) on windows 8. I bought new computer and I'm now deciding which OS to install win7 or win8.I've both V3 and V2 on win 7 and they are working perfectly. I have also never tried to install on 64 bit.Any useful info would be very helpful.regards,Alex
+
+CODESYS V2.3 and V3 run perfect on Windows 7 (also 64 bit).The only thing which is not yet supported is to run the RTE on a a 64 bit platform.What I have understood from others is that it also runs fine on Windows 8, except the following:**********In Windows 8 the Start menu does not exist anymore (at least for the default user). Instead, all the entries of the Programs section of the startmenu, created by the setup, are just put plainly on the screen - without any folder structure, one tile per shortcut. So after installing CODESYS, the screen is cluttered with a lot of tiles.**********This is already reported to 3S-Smart Software Solutions.
+
+Well, if so it is worth trying.I will install win8-64bit. And try Codesys V3.5.2.2 & V2.3.I will let you know, about issues after installation.regards,Alex
+
+Hello!So, I have installed Windows 8 pro (original) x64 bit and Codesys 3.5.0.4 and 3.5.2.2 and the last SP3 3.5.3.0 all three verions. It simply works perfect!!! So happy.I have installed also a SSD disk for my c: and computer is a ROCKET!As you said TimvH Quote:Instead, all the entries of the Programs section of the startmenu, created by the setup, are just put plainly on the screen - without any folder structure, one tile per shortcut. So after installing CODESYS, the screen is cluttered with a lot of tiles.There is NO kind of issue. I attached prinscreen of "new start" and codesys logined to PLC.
+
+Have you had a chance to try CoDeSys 2.3  on Win8 x64 yet?
+
+Yes, grunkles I have and works like charm. I've installed 2.3.9.38 (build jan 17 2013). regards,Alex
+
+It seems microsoft have written drivers/emulators for x86 progs nicely so far...
+
+both 2.3 and 3.5 are no problem under win8 x64. they work well!
+

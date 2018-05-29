@@ -1,0 +1,10 @@
+Hello,i want to add lib in placeholder by using following script:Code:Library_Manager.add_placeholder("testlib","testlib, 1.1 (xxx xxx GmbH)") Here Library_Manager is a  IScriptLibManObject. and "testlib" is the name of library "testlib.library", which was pre installed by Script :Code:librepository = librarymanager.repositories[0]librarymanager.install_library (r"C:\testlib.library",librepository,True)The lib was not correctly added, just shown a error in Message windows "Could not open library 'testlib'. (Reason: The placeholder library "testlib" could not be resolved.)"Any idea or solution?Thanks!
+
+Hi hhz.hhz wrote:The lib was not correctly added, just shown a error in Message windows "Could not open library 'testlib'. (Reason: The placeholder library "testlib" could not be resolved.)"Which version of CODESYS do you use?Does the problem also occure if you manually add the placeholder after the python script has added the library to the library repository?BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi Martin,thanks for your  reply! Quote:Which version of CODESYS do you use?CoDeSYs v3.5 SP11 was used.Quote:Does the problem also occure if you manually add the placeholder after the python script has added the library to the library repository?manually add the placeholder has not this problem before and after the python script has added the library. The error is not for all lib occurred. For example, it works well, when i add lib "Util". But adding lib "CAA Type Extern", problem occurred. Additional infor.： The same issue can be reproduced with Script function "add_library" BRhhz
+
+OK, the problem was now clean: some of lib can only use method "add_library" but not "add_placeholder".  But was is difference between library and placehoder. Have any idea/description?BR.Huizong
+

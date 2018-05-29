@@ -1,0 +1,40 @@
+I'm configuring OPC-server and "talk" to this from Intouch via OPCLink (Wonderware). The log-file at the OPC-server looks to be fine, I can browse all items from OPCLink, but get no values. Any out there have any ideas? Bryn.     OPC-logfile looks like this:
+
+Filter=0xffffffff
+(26.10.2005, 09:44:43.484) Server 2.3.9.1 started
+(26.10.2005, 09:44:43.484) UpdateRate[ms]=500, PublicGroups=1, SyncInit=1, LogEvents=1
+(26.10.2005, 09:44:43.484) 1. Reconnect to <PLC1>
+(26.10.2005, 09:44:43.500) [PLC1]: ::ConnectGateway(): m_ulGatewayChannels=1
+(26.10.2005, 09:44:43.500) Gateway Version: 2.3.5.1
+(26.10.2005, 09:44:45.343) <PLC1> Reconnect successful, ProjectName='BSY1.pro'
+(26.10.2005, 09:44:45.343) Timeout[ms]=10000, BufferSize[B]=0, Waitime[s]=10, Reconnecttime[s]=15
+(26.10.2005, 09:44:45.343) Motorola=0, NoLogin=0
+(26.10.2005, 09:44:47.531) <PLC1> ProjectID matched, Project <BSY1.pro>: PLC=519306, SYM=519306
+(26.10.2005, 09:44:47.531) <PLC1> 7 symbols loaded
+(26.10.2005, 09:44:47.546) Client attached to server
+
+The logfile looks good, but there are no active items requested by the client.
+Do you have added the items into a group in OPCLink? Then you should see number of active items > 0 in the opc-server logfile and you should see the item values.
+
+Regards,
+Armin
+
+Here are some stuff from the WWLogger 
+
+1550	04.11.2005	08:07:44	1504	1556	Info	VIEW	Wonderware I/O Server Toolkit for Windows NT - Version 7,2,0,0
+1551	04.11.2005	08:07:45	1620	1492	Info	OPClink	TRACE: add OPC group (hClientGroup=0x00000002, hServerGroup=0x00000001) to: test.pro on CoDeSys.OPC.02
+1552	04.11.2005	08:07:45	1620	1492	Info	OPClink	TRACE: attaching group to: test.pro
+1553	04.11.2005	08:07:45	1620	1492	Info	OPClink	ERROR: cannot add OPC item: PLC_PRG.VERDI1 (type=0x0003, hr=0xc0040008, hCli=0x01000000, hSrv=0x00000000)  to group on topic: test.pro 
+1554	04.11.2005	08:07:45	1620	1492	Info	OPClink	The item ID doesn't conform to the server's syntax.
+1555	04.11.2005	08:07:45	1620	1492	Info	OPClink	ERROR: cannot add OPC item: VERDI0 (type=0x0004, hr=0xc0040008, hCli=0x01000001, hSrv=0x00000000)  to group on topic: test.pro 
+1556	04.11.2005	08:07:45	1620	1492	Info	OPClink	The item ID doesn't conform to the server's syntax.
+1557	04.11.2005	08:07:49	1620	1492	Info	OPClink	Build Information for Server "CoDeSys.OPC.02": Build Number=9. Version Number: Major=2; Minor=3.
+1558	04.11.2005	08:07:54	1620	1492	Info	OPClink	GetStatus for server "CoDeSys.OPC.02": state: 1
+
+As you can see there are some problems with the item-syntax written in Intouch. Corresponding to thes error messages I use the following item-syntax:
+VERDI0 use rVERDI0
+VERDI1 use iPLC_PRG.VERDI1
+STATUS use STATUS
+
+I've used Intouch a lot of times with OPSLink against other OPC-servers and prefix the items with i - r - d - m according to the OPCLink-rules of addressing items.
+

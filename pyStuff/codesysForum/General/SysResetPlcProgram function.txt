@@ -1,0 +1,2 @@
+Hello everyone,I am working on a project and need a little bit of help. I am trying to use the reset funtion in the SysLibPlcCtrl library. I have tried using SysResetPlcProgram(RESET_WARM); and SysResetPlcProgram(0); but the plc does not reset itself. I debugged so i could make sure the call was made but i see no effect, no reset. Im using a Wago 750-842 PLC. Could someone tell me what im doing wrong? Any help would be appreciated.
+

@@ -1,0 +1,26 @@
+Hallo forum,does somebody know how to edit variables in codesys. When i say edit i mean change an existing one. Maybe set the Input_3 to AT%IX100.0:BOOL. Or add new variable Output_3. For example if i have:Code:VAR_GLOBAL   (* ---------------- INPUT ----------------*)   Input_1         AT%IX10.0:   BOOL;   Input_2         AT%IX10.1:   BOOL;   Input_3         AT%IX10.2:   BOOL;   (* ---------------- OUTPUTS ---------------- *)   Output_1       AT%QX10.0:   BOOL;   Output_2       AT%QX10.1:   BOOL;   Output_3       AT%QX10.2:   BOOL;END_VAR
+
+Hi sarma_men.Look at the thread Modify GVL constant variable in this forum.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+M.Keller wrote:Hi sarma_men.Look at the thread Modify GVL constant variable in this forum.BRMartinThank you for your answer. The thing is, i dont get it, what people are talking about in that thread you linked. when i export the input/output variables to IO_export.xml i am able to search variables with:Code:import xml.etree.ElementTree as etreetree = etree.parse('IO_export.xml')root = tree.getroot()just a normal xml parse-ing. but i want to run this script directily in codesys. how can i get access to the object of the IO variables?
+
+Hi,If you use pou.textual_declaration.text and pou.textual_implementation.text, you do not need to parse XML.
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+
+I am getting the error Name 'pou' is not defined.Can you please write few lines to show me how to use "pou.textual_declaration.text" and"pou.textual_implementation.text" to read from my example file Input_1?
+
+Code:project_path = r"C:\Project\test.project"  #project.close(project_path);if projects.primary:    projects.primary.close() p = projects.open(project_path);pou = p.find('Main_Program', True)[0]# read and print the declaration of the programdecl = pou.get_interface_text()print(decl) I've almoust did it  but i need sugestions from you. I cant implement "pou.textual_declaration.text and pou.textual_implementation.text". I am getting error when i try with those two. But in the help i have found few sample codes, and i got it to work.But with this piece of code i can only get to the local variables from the POU. Can i change something to get to the global varibales?
+
+Hi sarma_men.sarma_men wrote:But with this piece of code i can only get to the local variables from the POU. Can i change something to get to the global varibales?Global variables in CODESYS are declared in GVL object(s) which is short for "Global Variable List". See the online help of CODESYS.In the scripting you have to find your GVL object(s) by name or by the type Guid for GVL objects. If you have the script object you can access the variables through textual_declaration.text.The following code shows how to find the GVL objects by the type Guid:Code:from System import GuidtypeGuid = Guid("{FFBFA93A-B94D-45fc-A329-229860183B1D}")children = projects.primary.get_children(True)for child in children:   if child.type == typeGuid:      print("GVL: " + child.get_name(True)Import: With the specified type Guid you will also find other objects which declare global variables! For example the "Persistent Variables" and NVL/"Network Variable List" sender(s).BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Didnt want to open a new topic only for  one question. Is it possible to get project path and project name? when i doCode:proj = projects.primaryprint proji getCode:Project(Project=2175, stPath=C:\Project\test\test123.project)can i somehow extract from "proj":Code:my_path=C:\Project\testmy_name=test123.project
+
+Hi, sarma_men,sarma_men wrote:Didnt want to open a new topic only for  one question. Is it possible to get project path and project name? If the question is totally unrelated to the existing topic, you actually should open a new topic. This will help other users to find your question if they have the same problem, and avoid disturbing the users which are only interested in this topic. sarma_men wrote:when i doCode:proj = projects.primaryprint proji getCode:Project(Project=2175, stPath=C:\Project\test\test123.project)can i somehow extract from "proj":Code:my_path=C:\Project\testmy_name=test123.projectWith the path property, you can extract the project path as a whole:Code:file_path = proj.pathThis should give you "C:\Project\test\test123.project" in the above example.Then you can use standard path manipulation functions from the python standard library or the .NET framework to split it into directory path and file name.HTH,Markus
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+

@@ -1,0 +1,4 @@
+Hi,Can install multiple version of codesys v3 inside one windows?For example i install codesys v3.5.6 , v3.5.8 and v3.5.9 in windows 7. Will it cause any side effect?
+
+No absolutely fine. Sent from my SM-N9005 using Tapatalk
+

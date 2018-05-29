@@ -1,0 +1,12 @@
+Hi,While compiling my program using CodeSys 2.3, I have noticed that it reports "Size of used data: -249509 of 249856 (-99.86%)" but it is not shown as an error.What does this mean? Does it mean there isn't enough memory in my target system (Wago 750-841)?Thanks  
+
+please send your program, and i will have a look what happens.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks for the reply. Unfortunately, the code cannot be released into the public domain due to confidentiality issues but I really appreciate your offer to look at it. Strangely, as I continued to develop the program, the fault seems to have disappeared but I am not sure when it happened or what I did.Could you please tell me what exactly the "used data" is so that perhaps I can figure out what I did to "fix" it?Thanks again for your kind offer of help.Tony  
+
+you may sent it to shooter@home.nl (please as export file)the calculation can be faulty due to compilation, do not worry too much, as it probably is just because the program is different size as calcs do expect, like when you do global vars, and local vars with same name.check for unused and double things.and 99.86 % is very close to 100 %.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,4 @@
+Hi,Is it possible to purchase and install the CNC+Robotics SL on the Raspberry Pi?Thanks
+
+Hi,This is not needed this is included in the Pi licence, just use it!BREdwin
+

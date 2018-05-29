@@ -1,0 +1,44 @@
+Hi,
+
+I am trying to make broadcast network server for sharing 'global' data among a number of PLCs.
+
+I had a search of the forum and found the WagoEthernetServer example and it looks like an ideal starting point.  Unfortunately I can not find a copy of the Ethernet.lib library that it uses.
+
+I am using Moeller PLCs.  Is this library limited to the Wago PLCs?  If not, where can I get it?
+
+Geoff,
+
+I would think that most ethernet libraries are specific to hardware.
+
+Ethernet communications generally require a connection between the two devices be established.  I was thinking you might be able to use Modbus/TCP to do this but couldn't be a broadcast.  It could, however, be set up as a loop and all that would have to change with each loop would be the IP address of the slave station.
+
+The modbus libraries are explained in Moeller Applicaiton note AN27K22 which can be found at www.moeller.net.
+
+I have set up an XC201 as a Modbus TCP slave connected to an HMI that was the Modbus master but never set up a Modbus Master on the PLC.
+
+Hope this helps
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+Hello,
+
+you need a modbusTCP-client library based on Syslibsockets.lib.
+Ask moeller if they deliver this with their targets.
+You could also buy one from 3S or somebody here in the forum will send you this lib is maybe in some other targets (WAGO?)  
+
+I must be stupid.
+
+The functionality I am looking for is exactly what the network global variables do.
+
+Geoff White wrote:I must be stupid.The functionality I am looking for is exactly what the network global variables do.
+
+Do note, that you can use UDP broadcast, wich is server to multiple-clients. This however can load a large network with a lot of broadcast traffic, as it is transmitted on all segments of a layer-two ethernet network.
+
+If broadcast is not wanted, you can use direct udp between two PLC.
+This is of course needed if the PLC's are not on the same layer-2 segment.
+
+Regards 
+  Nicolai Hanssing
+

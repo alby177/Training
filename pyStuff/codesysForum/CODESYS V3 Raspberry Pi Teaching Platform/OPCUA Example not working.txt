@@ -1,0 +1,10 @@
+Hi.I just downloaded CODESYS 3.5 SP8 and the 3.5.8.0 package for RPi.Fresh install of Raspbian Jessie LITE on a RPi 2 B. Installed codesys using "Update Rapberry PI" I opened the OPCUA Example project. Upgraded all part of the project to 3.5.8.0 Updated the device to 3.5.80 Checked that iCounter and iValue was checked in the Symbol Configuration. Clean rebuild without any messages  Logged on and started the application.I can see that the iCounter value changes in CODESYS.If I now upen UaExpert (version 1.4.1)  I can connect to the pi but when I browse to Root/Objects/DeviceSet/Raspberry Pi/Resources/Application I can not see any exported values but I can see stuff like Root/Objects/Server/ServerStatus/CurrentTime without any issue.What am I doing wrong?Thanks in advance.Peter
+
+Hi,seems that you are right, looks like an accidedent to 3.5SP8 release...The workaround is at the moment to use 3.5.7.10 release (plc version) on Pi.BREdwin
+
+Edwin Schwellinger wrote:Hi,seems that you are right, looks like an accidedent to 3.5SP8 release...The workaround is at the moment to use 3.5.7.10 release (plc version) on Pi.BREdwinOk, where could I get that then? The shop seems to only shows the latest.
+
+Hi,see screenhot...BREdwin
+
+Thanks...
+

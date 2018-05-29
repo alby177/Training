@@ -1,0 +1,6 @@
+Is there any possibility to scan for devices like the GUI command ("Geräte suchen") for a fieldbus?As alternative there is a command available "Geräte suchen" in system.commands. Is there any information about the 2 parameters device and scan for this command ?
+
+Hi PLKM.PLKM wrote:Is there any possibility to scan for devices like the GUI command ("Geräte suchen") for a fieldbus?As alternative there is a command available "Geräte suchen" in system.commands. Is there any information about the 2 parameters device and scan for this command ?If it is the command with the GUID "73B2CA6F-8B4E-45cb-9533-EAA108AAF7F7", it has an non-interactive mode which would execute the scan on a device which is selected in the Devices view. The problem is that you can't selected an object in the Navigator views through Scripting.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

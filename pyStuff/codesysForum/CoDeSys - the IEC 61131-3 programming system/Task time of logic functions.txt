@@ -1,0 +1,10 @@
+I´m using Codesys v4.0 in an ABB product called COM600 http://www05.abb.com/global/scot/scot229.nsf/veritydisplay/04a937b04ea99cb3c1257aad0031463f/$file/COM600_pg_756764_ENe.pdf. I´d like to know what is the task time of logic functions such as ADD, AND, EQ.Thanks!
+
+the tasktime is very short and the main programs are running in interupt.so the only way to check this is make a loop with your instruction and let it compute 100 times and 1000 times check the time on the task confihguration.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+addition and check the tasktime in resources. Here you can set the cyclic time, you should use freewheeling.This however is dependant of the system as there are more tasks running but you can not see them like visualisation communication I/O etc.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

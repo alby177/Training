@@ -1,0 +1,14 @@
+Hey,I updated my Pi to V2.2.0.2.When I download my application, the Pi runs just a few seconds, then the CodesysControl stops.Any idea?After downgrade to V2.2.0.1 again everthing runs smooth as usual. Best regardsOleg
+
+Hi Oleg,could not believe...  could you show this to me?BREdwin
+
+Hi!I got the same/similar Problem as OW_RPi.after Upgrade to V2.2.0.2 i can't log in with CODESYS 3.5 SP7 anymore...the (old) Application what is downloaded before Update is runningit seems that the codesyscontrol on the Raspi chrashes if i try to loginThe last entry in /tmp/codesyscontrol.log isCode:ooops... this runtime was built for raspberry pi (-20, 0x00000BB8, 0xFFFFFFFB)i'm using an Pi 2 Model Bif i downgrade to V2.2.0.1 everything runs smooth...BR Daniel
+
+Same problem and for me.Any hep?
+
+Hi,an update to the latest kernel will solve this.sudo apt-get updatesudo apt-get dist-upgradesudo rpi-updateBREdwin
+
+I can work when the Raspberry and my Pc connected to a network where exist Router with or without static ip but when i try a direct connection of Raspberry and my PC with static ip i connect for a while and after some seconds i lose connection from Codesys Gateway.If i try to find the Raspberry from update scan tool i can see the ip of Raspberry.If i try to connect from "putty" i can connect and work with Raspberry.The problem exist only with Device Scan Network of Codesys platform.----------------------------------sudo nano /etc/network/interfacesauto loiface lo inet loopbackauto eth0iface eth0 inet staticaddress 192.168.1.123netmask 255.255.255.0network 192.168.1.0broadcast 192.168.1.255gateway 192.168.1.1----------------------------------Regards
+
+Hi,I do not see the reason at the moment but in your case a reliable Workaroundwould be to use the Gateway of the Raspberry Pi to connect.Add the IP of the Pi in the Gateway Dialog and swicht to this Gateway and scan by the Pi Gateway the Pi.This is even the method you use if the PI is connected by VPN then I would recommend to use the "remote" Gateway too.BREdwin
+

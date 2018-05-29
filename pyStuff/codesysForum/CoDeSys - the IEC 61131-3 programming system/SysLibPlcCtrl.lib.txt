@@ -1,0 +1,21 @@
+Hello,
+
+I've got a question about the function SysResetPlcProgram.
+In my application i want to do a plc reset when some plc specific events occour and then do a SysStartPlcProgram. In the help it only says that the reset function creates a task! How do i start the plc when its reset?
+
+Regards
+
+Hasse
+
+Hello Hasse,
+
+A Restart is only possible in the code of the runtime systeme. Such things are typically done in I/O driver. And must be done by the hadrware- manufacturer.
+
+I think this is possible by handling the "after_reset" system event with a callback POU. Something like:
+
+Code:FUNCTION CallbackRestart : DWORDVAR_INPUT   dwEvent : DWORD;   dwFilter : DWORD;   dwSource : DWORD;END_VARVAREND_VARSysStartPlcProgram(0);
+
+After a reset of the POU, the controller will be restarted.
+
+I did something like this with PlcWinNt for handling execptions: I reset the PLC and I restart it. It was Ok
+

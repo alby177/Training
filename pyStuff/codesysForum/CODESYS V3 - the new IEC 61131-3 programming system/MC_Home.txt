@@ -1,0 +1,4 @@
+Hello,someone know which is the meaning of error nr 174 in the SMC_Error FB?I try to check on the help but is missing.This error goes on when I try to perform an Axis homing using FB MC_home.Thanks
+
+Hi,check the SMC_Error from SM3_Basic library.BREdwin
+

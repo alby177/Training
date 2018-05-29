@@ -1,0 +1,10 @@
+I just down loaded the latest version and tried to run it in simulation mode with one of the included example projects.  Once the project is loaded it runs fine, until I try to open one of the visualizations.  Then I immediately get a "Program Loaded Exception" error flashing red at the bottom of the screen...  When I look in the log I see the following:*SOURCEPOSTION* App=[Sim.Device.Application] area=0, offset=3926786*EXEPTION* [AccessViolation] occured: App=[Sim.Device.Application], Task=[VISU_TASK]What am I doing wrong?? ... I tried an earlier version of codedesys using its version of the example projects and it works fine.RegardsKen
+
+Did anyone have a solution to this?We have the exact same issue. Works fine with older versions but not in 3.5 SP7 Patch 1 or 2. Without a visualization it works ok too.Thanks
+
+Hi,you need to set 'VISU_NO_EXCEPTION_HANDLING' on rightlick to application und 'Build'  as Compiler define (as workaround)This will be solved to 3.5SP7Patch3 Release (29.10)BREdwin
+
+Thank you very much!  
+
+Edwin Schwellinger wrote:Hi,you need to set 'VISU_NO_EXCEPTION_HANDLING' on rightlick to application und 'Build'  as Compiler define (as workaround)This will be solved to 3.5SP7Patch3 Release (29.10)BREdwinThanks Edwin It does work
+

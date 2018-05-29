@@ -1,0 +1,10 @@
+Hi all,Trying to update my rPi with the latest image, but having no luck.When I scan for a device, it says none is discovered. I am connected to SSH and can connect with VNC, but no luck with CodeSYS. Any pointers?Thank you!
+
+Hi,if you are connected for example by wifi (or and third party usb-to-ethernet adapter)... just use the ip and deploy the runtimeThe scan does not work because the wifi interface has a different mac address... (this will be solved with 3.5SP11)If you just use the knowm ip.... it will should work.BREdwin
+
+Hello Edwin,Thank you for your response. Weird thing is that I cannot find the device, but when I check installed packages on the graphical UI in my PI, the latest version shows.I am now trying with another PC, and was able to find it that way.Another question. How can I check if my license is still present on the rPI?
+
+Hi,just check it here in PLC settingsBREdwin
+
+Thank you so much!Seems that I have lost my license during numerous updates, I should have a back-up somewhere, but not sure where to look for it. Is there any way to receive a new license? I am still using the same rPi I originally used and have the original confirmation email with license code.
+

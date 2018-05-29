@@ -1,0 +1,2 @@
+Dear all,I'm currently getting confidence with CODESYS safety package in combination with EL6900 safety controller from Beckhoff. I'm wondering if it would be possible to implement proprietary safety function blocks: I mean blocks with special safety logic by using the blocks belonging to the native safety library from CODESYS.Thanks.
+

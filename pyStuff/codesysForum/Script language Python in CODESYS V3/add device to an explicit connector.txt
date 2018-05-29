@@ -1,0 +1,6 @@
+Hello,Is it possible to add a device to an explicit connector?I tried the following step but it doesn't work:Code:connector.add("NewDevice",device_type,device_id,device_version)CODESYS puts the message: 'ScriptDeviceConnector' object has no attribute 'add'
+
+Hi.Explicit connectors are special device objects which can be found in the normal object tree.Here some example code which adds a SoftMotion device and plugs a camera into a slot:Code:proj = projects.primarydev = proj.find("Device")[0]conn = dev.find("SoftMotion General Axis Pool")[0]if conn.is_explicit_connector:   print("add SM device")   conn.add("SM_Drive_PosControl", 1025, "0000 0001", "3.5.7.0")conn = dev.find("Camera device")[0]if conn.is_explicit_connector:   camDev = conn.find("<Empty>")[0]   print("plug camera")   camDev.plug("MyCam", 502, "0000 0002", "1.0.0.0")BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

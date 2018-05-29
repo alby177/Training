@@ -1,0 +1,21 @@
+Hello,
+
+Is there a way to delete an object from a project like it is done for a library?
+library delete [<library1> <library2> .. <libraryN>]
+
+
+Good day,
+Yann Papouin.
+
+Hello,
+no, its not possible to delete an object with the command-file
+
+_________________Good Better CoDeSys
+Boris Schuster
+
+ That's not a good news...
+
+I was planning to do a quick script to convert my project to a library by removing some PRG. 
+
+Apparently, the PLC_PRG one is auto removed, I will go with it.
+

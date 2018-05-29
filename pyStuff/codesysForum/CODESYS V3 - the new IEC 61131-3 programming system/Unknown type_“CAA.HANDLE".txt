@@ -1,0 +1,10 @@
+I have add the library CAA File,3.5.0.0(CAA Technical Workgroup) to the Library Manager, but the system can not recognize ”CAA.HANDLE“.I then add the library of ”CAA Real Time Clock Extern“,and CAA TickUtil Extern,but it still does not work.Untile I add the library of CANBus,3.4.1.0. Who can tell me the reason?
+
+I got it; it should be ”file.CAA.HANDLE“。
+
+too much difference from the old version！
+
+I hope you understand the reason behind it.With these improvements in the library/compiler you are always 100% sure you have the correct variable and not another from another library.Off course it is a change from 3.4, but better a change with improvements than no changes at all.
+
+yes,you are right
+

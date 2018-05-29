@@ -1,0 +1,66 @@
+I have a few questions regarding the alarm visualization.
+1.  For time/date stamp, is it possible to set the time resolution finer than 1 second?  We have an application in which we'd like to have a record of timing in mS range.
+2.  In the alarm handler, It's possible to call an external executable or batch file.  Is there any way to call a POU.  I don't see how to do this, although It does seem like it would be useful.  For example, perhaps I'd like to call a function if a particular type of fault occurs that also logs numerous signal values to another file. 
+3.  Is it possible to call a function or create a function that determines fault statistics.  i.e.  (# of active faults in a fault class). i.e.  If # active Severe faults >0 ==> Sound buzzer/LED := true.
+
+1. It seems like question one is not pertaining to the alarm handler? But if you want more resolution on the time then log the data yourself and you can use the syslibtime library see the documents folder under the CoDeSys installation directory.
+
+If supported by the target system, the function blocks described below can be used to read the realtime clock of the local system. The processing is synchronous. The library is needed for displaying the task time evaluation in the Task Configuration editor in CoDeSys.
+CurTime provides the value of the realtime clock of the local system in milliseconds.
+nd CurTimeEx provides extended information on the current value of the realtime clock of the local system.
+Used structures: SystemTime, SysTime64
+CurTime
+This function block provides the realtime of the local system in microseconds; using the structure SysTime64.
+VARINOUT Variable
+Data type
+Description
+SystemTime
+SysTime64
+Realtime we are reading from the local system in microseconds, see structure SysTime64
+
+
+2. Why would you need the alarm handler to call a POU? The alarm activation is already caused  by some variable in your CoDeSys application. The alarm table doesn't need to call back to the CoDeSys application error handling should be handled by the application directly. The Alarm table is basically a simple View/Reporting application. You can do what you are asking to without the Alarm handler use the syslibfile:
+
+This library supports a file system on the target computer. If the target supports the functionality, the library
+functions can be used to open, close, delete, rename, write to or read from files. Further functions are
+available for getting the file size or the date of the last access, as well as for reading or modifying the
+offset. The execution is synchronous.
+The functions:
+• SysFileOpen Open file
+• SysFileClose Close file
+• SysFileWrite Write to file
+• SysFileRead Read from file
+• SysFileDelete Delete file
+• SysFileGetPos Get currently set offset within the file
+• SysFileSetPos Set offset in file
+• SysFileEOF Check, whether the end of the file is reached
+• SysFileGetSize Get size of the file
+• SysFileGetTime Get info on dates of creation, last change, last access
+• SysFileCopy Copy file
+• SysFileRename Rename file
+
+So you can write an application that does all the saving when a fault occurs. No need for the Alarm table.
+
+3. That is what YOU the software engineer will need to write in your application. CoDeSys is very open and very powerful.
+
+Let me know if you need help with this.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+Thanks Steve,
+
+We actually have our own Fault Handling written, however it's a little cumbersome.  The one from 3S at first glance seems much easier to maintain.  I'm just trying to determine if it's worth using the one provided by 3S.
+
+1.  The question was more to the flexibility of the Alarm handler.  Looks like we'll have to handle this differently.
+2.  Not a matter of need...  It's more a matter of want.  One would want the Alarm handler to call a POU for the following among other reasons.
+     a.  So that Alarm analog setpoint values only have to be maintained in one place.  For example, if I only need to maintain a few analog faults, it's not difficult to maintain having the setpoints in 2 places.  To handle 200+, it becomes much more complicated.
+     b.  The same reasons you would want to subscribe to an event in other programming languages.  (Vis C++, c#).
+     c.  Simplifies code.  (Ex.  Items 1 & 3 would be quite simple to implement and maintain if this were possible).
+My understanding is that this functionality is available in Codesys 3. One would want it for the same reasons 3S has made this available in this version.  
+3.  Not available...No problem...  I was pointed to the SysLibAlarmTrend.lib.  Looks like this functionality is not available but won't be too difficult to implemented in a generic way.
+
+Good points. I admit as well the alarm handler is weak. Some PLC's don't have the alarm handler present on the PLC itself. So a lot of the functionality doesn't really apply until you login to the PLC. The alarm handler is better suited when running on a soft PLC. I guess I am used to adding my own faulting / HI/ LOW limits and set Boolean variables so that the alarm handler is only referencing data so it is maintained in only one location. All limits are set within PLC software not the alarm handler. If you start using the alarm handler with analog signals then you have to do some configuration in the PLC software and then the Alarm table. I can't rely on the alarm table because it is not running on my target so alarming has to be preformed internal to the PLC software.
+
+_________________Thanks,Steve Pfeifenroth
+

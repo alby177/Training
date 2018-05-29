@@ -1,0 +1,19 @@
+Gentleman:
+
+I'm working with a XV-230,  from Moeller. The target is configured with 100 bytes of retain memory. I would like to push it to 4K, or even more, if this don't harm the controller. My application is very simple, and only uses 1.6 % of 256K.
+
+Your help is greatly appreciated!.
+
+Best regards
+
+hi 
+
+
+I have changed the retain memory of my 750 841 and made it contigious with the INPUT memory location. So far I have had no problems.
+
+As long as there is no overlapping of the address space and the minimum memory requirements is satisfied for each section of memory there will not be any problem.
+
+Also overlapping memory areas can be checked in  codesys
+
+Project->Options-> Build
+

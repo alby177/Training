@@ -1,0 +1,20 @@
+Is it possible to get intellisense in PTVS for the Codesys Objects like "projects" ... ?
+
+Hi,Right now, this is not yet possible (except if you create the files yourself).However, we plan to Implement generating a stub scriptengine.py as part of CDS-23713, which could then be used as a source for intellisense.
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+
+Thank you for the fast reply !
+
+Thanks, that would be very helpful!
+
+Hello!Might I ask if there is any news on this? I can't access the Jira, so I don't know what the status of the mentioned ticket is.BRWouter
+
+Hello WousV,Jira ticket is closed - topic is solved.Solution is in V3.5 SP10 Patch 1.Greetings,Matthias
+
+Hello,I've looked very thoroughly in both V3.5 SP10 Patch1 and V3.5 SP11 Patch 2 and I just can't find what or where this source for Intellisense for PTVS is. Could you please help me?BR,Wouter
+
+HelloI would also be interested in this.Is it possible to create a (python) project in visual studio, add a scriptengine to the project and use it as every other .NET assembly with intellisense? Or with some other way. The documentation online is just not very helpfull I think, and the link is broken since ages.Thanks for the informations.Greetings
+
+I am also very interested in this topic, is there any new updated information?
+

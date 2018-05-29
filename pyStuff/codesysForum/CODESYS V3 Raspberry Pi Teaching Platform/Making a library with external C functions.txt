@@ -1,0 +1,12 @@
+HelloI want to make a library to access code written in C.Is this posible on the Raspberry Pi? As an example and test, how to make a "Hello world" function in C and access it in CoDeSys on the Raspberry Pi.
+
+Hi,this is not possible with Raspberry Pi, (Runtime Toolkit would be needed -> this is not free of charge )there is coming up a "C-Integration" with 3.5SP7 (July)Maybe this would be then an option... not clear if this will be available with the PI.BREdwin
+
+Since we now have 3.5.9.10 are there any news on the C-Integration?
+
+Yes, I would like to know more about this as well.  I am an independent developer and would like to make a robot interface library for a startup company's product who has agreed to cooperate.  They would provide an API through a binary c library that I would have to call.I have read on the website this only possible or your OEM partners.  But then I read Edwin's comments here and now I am not sure this is the case in the future.[edit]C-Integration is only possible with OEM Kit.  Claruification in this thread:viewtopic.php?f=11&t=7116
+
+_________________Rick
+
+someone help me please,i have this problem when i try to use my c library in CODESYS project.the traduction of error in english :"The device version on the hardware seems to diverge from that used within the project. Try to synchronize the version of the device in the project with that currently on the hardware using an upgrade or downgrade"
+

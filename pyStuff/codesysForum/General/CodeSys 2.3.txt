@@ -1,0 +1,38 @@
+Hi CoDeSys Forumers,This is my first time using CodeSys and just enter the company. My boss give a project which was left by somebody before. My problems is,  Currently there is only one computer that can run the CodeSys Project and this project is already finished in 2008. I copied and try to run in my computer but failed to connect. My problems are:1. how to set the channel in tree view?2. how to set the project newsubstation.pro in the communication parameter? (as attached)3. do i have to create ini file?4. do i have to set the opc configurator?5. Is it the ini file created after I configure the OPC Configurator?I already read the manual but it is also failed.i try to load the projects in the PLCWinNT but there is no project loaded. I already set the target setting configurator as PLCWinNT. Your helps are greatly appreciated.
+
+Hi MizzRose!When you install a CodeSys on a new computer you need to install a target file that matches the hardware, this file is supplied with hardware or downloadble from supplier. File ends with .trg and codesys have a standalone program to install targets. 'InstallTarget.exe' 1. don't understand2. This communication parameters are for that project, I think the only way is to change the name of the project is to save with a new. Usually I only set localhost IP and login. Port is normaly 1200.3. No4. I don't know, never used OPC. Normaly not.5. There is somthing called DumpSymbol in the Project menu this is for HMI, OPC and so on this has to be choosen. And during compile or after you will get this file.I hope this info helpt you a little./Torbjörn
+
+This is my first time using CodeSys and just enter the company. My boss give a project which was left by somebody before. My problems is, Currently there is only one computer that can run the CodeSys Project and this project is already finished in 2008. I copied and try to run in my computer but failed to connect. My problems are:1. how to set the channel in tree view?find the program ethernet settingscheck with the cable on old computer what the settings are, or change them to a new setup. You will need the small cable for it (depending on the PLC)2. how to set the project newsubstation.pro in the communication parameter? (as attached)tap the new button3. do i have to create ini file?no it is automade4. do i have to set the opc configurator?yes 5. Is it the ini file created after I configure the OPC Configurator?autoDid you install the old software or a newer version on the new computer.(it must have an old rs232 connection. for the cable)You must have the correct *.pro file to see what is happening in the PLC.in ethernet you can setup a ethernet port in the PLC. if you use 192.168.1.105 for example, set the computer also near this like 192.168.1.102now you can talk to the PLC.just give the address in a webbrowser and the PLC will give you a screen.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi t.lundahl,Thanks for the replyactually we are using our own hardware. Do I need to connect it to hardware to make it working because the old computer also not connected to the hardware but still can connect at codesys. Currently I did not connect any hardware to my computer just codesys project.The treeview means that under the 'localhost' via Tcp/Ip there is sub-branch.Hi shooter,Thanks for the replydo you mean the ethernet setting to the hardware? currently there is no hardware connected to my computer. the old computer also not connected to the hardware but still running. I already tab the new button but I can't the project.what do you mean auto is it created after I save the project?I am using old software and the ethernet port that u suggest is it setup to the hardware or I need to setup in codesys?
+
+does your hardware have a etehrnet port if so and its running codesys then you must be able to see the settings in some sort of way.What type is the PLC?does it have codesys?the PLC will work without any connection to a computer?
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi Mizz  1).Check whether in your old computer  you have connected in simulation mode. 2).If you go to online tab you will find it,you can run the program,but there is a limitation of program size.Have a good day
+
+Hi shooter,there is no hardware it is just a software we are using PLCWinNT to load the program.Hi sarathbabu,Yes it is in simulation, when I run the program at my own computer in simulation mode the codesys is running. there should be no problem in connection is it?currently we using Codesys as api in VB and there is an ini file that always return value which means not connected to the PLC. the ini file as attached. how to configure the ini file?oh and also i set the target settings at the Resources -> Configuration -> CodeSys SP PLCWinNT V2.4
+
+this is how i set CodeSys 2.3 based on this tutorialhttp://translate.googleusercontent.com/ ... A2oRRHNFyw
+
+the computers should be same address, as names are not working.so your computer must be something like 172.16.2.101
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi Mizz,Please also check if both  symbols are matching,if the symbols are not matching then it will not communicate.
+
+Hi shooter,I already try my own IP and others IP too but still not working.Hi sarathbabu,Mind to share which symbols?? is it the .sym file and .sdb file? which one to compare?
+
+Hi Mizz          The common variables you share between codesys and your API should be same.Have a good day
+
+Thanks sarathbabu, shooter and t.lundahl for the reply and helping me. I can run the project now.  and may I know how to retrieve the .ini file as I attached above.
+
+Hi Mizz          Find the folder location where your API is installed,you can find the .ini file
+
+Hi sarathbabu,Is it CodesSys.ini and CodeSysHMI.ini. I just found those files only.
+
+I can run the project in codesys now and i found the ini file. thanks those who helped me.    
+

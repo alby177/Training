@@ -1,0 +1,10 @@
+If I add SysAlarmtrendLib, I can not compile my project. It seems that the structures are not imported. Any idea?
+Thanks
+
+I need help on the SyslibAlarmTrend.lib library specifically for alarm sort functions.
+Please provide some help files.
+Regard,
+Rajat Bansal
+
+Typically, SysLibAlarmTrend is automatically imported when Resources:Target Settings:Visualization:Alarmhandling in the PLC is checked. When this happens, various other supporting libraries are imported at the same time:SysLibSocketsSysLibFileSysLibMemSysLibTimeTry importing these manually, or let Codesys handle everything for you by checking Alarmhandling in the PLC.
+

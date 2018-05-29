@@ -1,0 +1,6 @@
+someone know what's the limit to the number of elements in an array? 65535? more?
+
+Use a VAR CONST to define the max value.  Determine which data types the compiler will accept for this and you will have your answer.
+
+_________________Rick
+

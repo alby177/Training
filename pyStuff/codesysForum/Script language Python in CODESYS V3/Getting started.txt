@@ -1,0 +1,14 @@
+Our company has recently started evaluated CoDeSys for programming our PLCs.As a step in our evaluation, we need to look at creating certain scripts for our needs.But we have been able to find no information on how to get started or any kind of documentation on the available APIs in Codesys.Any help, samples or even direction would be great.
+
+Hi energymachines.energymachines wrote:But we have been able to find no information on how to get started or any kind of documentation on the available APIs in Codesys.The documentation of the Scripting API is in the file "ScriptEngine.chm" which is in the sub directory "Online Help" of the CODESYS directory.For now you can search for examples and ask for help in this forum but we will release a tutorial with examples in a few months.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi,Thanks for the information. That file does indeed look like an API reference. This should prove useful later on.I did a quick search and found a hello world example on how to create, modify and delete POUs. Very helpful. I do have another question, though. Is there a way to read or write external files not in the Codesys project?Any help, samples or even direction would be great.
+
+Hi energymachines.energymachines wrote:I did a quick search and found a hello world example on how to create, modify and delete POUs. Very helpful. I do have another question, though. Is there a way to read or write external files not in the Codesys project?The ScriptEngine uses the IronPython v2.7, which is mostly compatible to (C)Python v2.7, so you can use one of the many solutions available.Some of the ways to open a file for reading or writing: built-in methods, e.g. open(...) one of the included python modules, e.g. codecs.open(...) .Net API, e.g. File.Open(...)BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Thanks!You've been a great help.
+

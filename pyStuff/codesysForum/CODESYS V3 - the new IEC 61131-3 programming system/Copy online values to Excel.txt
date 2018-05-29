@@ -1,0 +1,6 @@
+Hello,I have an array of real and I want to try to copy the values from the array to Excel. I can go online with CoDeSys and see the values but when I try to copy them I get the tag names but not the values of the tags.If I just highlight a value and copy it, I get the value I want but this is just a single value.  The array has 75 elements and I want to get the values into excel for analysis.I am using CoDeSys 3.5.8PLC is an Eaton XC202Is this possible?Thanks,
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+

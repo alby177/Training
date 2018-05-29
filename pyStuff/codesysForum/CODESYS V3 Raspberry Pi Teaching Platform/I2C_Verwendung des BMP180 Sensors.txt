@@ -1,0 +1,10 @@
+Hallo an das Forum,im Rahmen einer kleinen, ich nenne es mal Beschäftigungstherapie, befasse ich mich damit die I2C Schnittstelle des Raspberry Pi´s zu nutzen.Das erstellen der XML und Bibliotheksdatei macht mir dabei keine Bauchschmerzen, allerdings bin ich Neuling auf dem Gebiet der I2C Nutzung und wollten einfach mal ins Forum Fragen:Kann einer von euch zeigen was man schreiben muss bzw. wie die Library bearbeitet werden muss um einfach nur die Temperatur auszulesen? Eine Dokumentation zu diesem Thema habe ich leider nicht gefunden...Ich hoffe sehr das ihr mir weiterhelfen könnt.   Link Datenblatt BMP180: http://www.mouser.com/ds/2/783/BST-BMP1 ... 786481.pdf
+
+Hallo,zum Thema Library gibt es ein Video bei YouTube..Vielleicht kannst du den Sensor unter Linux bzw über die Konsole zum Laufen bringen bzw. mit den Skrips von AdaFruit und dann über SysProcess die Daten in Codesys laden. Vielleicht nicht besonders schnell aber sollte funktionieren.Alternativ selber ein FB in Codesys schreiben oder evt. mit Phython ein Skript schrieben das die I2C Schnittstelle ausliest...  (Kenn ich mich aber nicht aus)Falls du selber eine FB entwickelst bitte hier Teilen GrüßeJan
+
+_________________Raspberry Pi V2Raspberry Pi V3 Allnet ALL3073 Raspberry-Runtime-Version: V3.5.8.10Version: CODESYS V3.5 SP8 & 9
+
+Danke für deinen Beitrag. Du hast mein Problem quasi perfekt erkannt. Eine kleine Anleitung wie man einen FB gestaltet ist genau das was ich suche. Ich schau mir mal deine Tipps an. Wenn ich was brauchbares gefunden habe, werde ich das umgehend hier reinstellen.  
+
+Beim Pi sind Beispiele mitgeliefert für verschiedene Geräte. Zum Beispiel I2C_AdafruitPWM.library. Dort mal nach write8, write() und read() ausschau halten. Das sind I2C Aufrufe (der FB erbt von i2c).
+

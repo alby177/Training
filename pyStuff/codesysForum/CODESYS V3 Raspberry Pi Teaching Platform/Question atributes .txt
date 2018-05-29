@@ -1,0 +1,2 @@
+Hello:How you can give attributes to a variable to transfer them by opc (units, limits, etc)Best Regards, Enviado desde mi Plus E mediante Tapatalk
+

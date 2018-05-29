@@ -1,0 +1,37 @@
+Hi,
+
+I am trying to create an external C library with Visual C++ 2005 Express. To test the process I am using the following code:
+
+TEST_LIB2.h
+/* Enum definitions *//* The Prototypes */int LIB_FUN1(void);
+
+TEST_LIB2.c
+#include "D:\temp\codesys\TEST_LIB2.h"/* The implemenation templates */int LIB_FUN1(void){	return 2;}
+
+I have done configuration of Visual C++ as explained in the document "C_IN_32Bit_E.doc". I had no error during compilation.
+
+I have copied the file TEST_LIB2.obj in the directory of TEST_LIB2.lib, and  I have added the library to my Codesys project.
+The target of my project is "3S CoDeSys SP PLCWinNT V2.4".
+
+When I tried to compile in Codesys, I had the warning 1902 and was unable to upload my project in PLCWinNT.
+
+I think the problem is in configuration of Visual C++ project because the function LIB_FUN1 is very simple. 
+
+Does somebody have any information about such a warning? Is there a more precise explanation about configuration of visual C++ options?
+
+Thank you
+
+Regards
+Laurent
+
+Maybe you have solved this problem, but may I help you...
+
+Well, I´ve been trying do the same thing. 
+Your code in .c has a problem. The return type function was declared as 'int'. This type has 32 bits in the visual c++ and this type in CodeSys may have less bits than 32.
+I guess you need to make one specific '#define' to solve it.
+
+For example:
+#define INT short 
+
+So, you can use 'INT' and not 'int' to build your obj file...
+

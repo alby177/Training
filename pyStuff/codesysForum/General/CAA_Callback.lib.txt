@@ -1,0 +1,23 @@
+Hallo zusammen
+
+ich versuche mich gerade an der CAA_Callback.lib was soweit funktioniert bis ich das Projekt auf die Zielplattform lade. Dann bekomme ich die Meldung: Folgende Funktionen konnten nicht gebunden werden. Mit allen Funktionen in der CAA_Callback.lib
+
+Hat jemand eine Idee was da schief läuft???
+
+Gruss & Danke
+Jürgen
+
+Hi Juergen
+this is the CoDeSys forum in english language so please use the german forum if you want to post in german. 
+Your problem seems like you are using libraries which are not usable by your target. Because calback libraries need to be part of the runtime. So ask your  PLC manufacturer if your target supports the CAA-Libraries. - Or tell us what  kind is your PLC.
+
+Regards
+Ralph
+
+Sorry about that confusion,
+
+but anyway im using CodeSYS SP RTE on a Win XP SP2 environment. I currently work on a project an evaluate CoDeSys as a possible automation solution. I'm shure that these libs are target specific but I have expected that the libs should work on a XP system.
+
+Regards 
+Jürgen
+

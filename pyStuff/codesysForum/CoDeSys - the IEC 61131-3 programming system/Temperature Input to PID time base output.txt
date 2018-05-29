@@ -1,0 +1,35 @@
+Hello, We are using a wago 750-841 and CoDeSys for the first time and have a PID application in which we need help. We will use a 750-469 Type J T/C module and would like PID control to output an on/off pulse (750-530) based on percent output of the function block. In other words...no output at 0 percent and full on output at 100%. At 50% with a 1 second cycle time the pulse width would be .5 sec on and .5 sec off. Is the PID_Fixcycle function block the best choice? What is the output units of the function block; 0-100% or 0-32767 16 bit range? Has anyone ever done the math for converting the function block output demand to a time based pulse width? TIA
+
+You probably should read about duty cycle.
+
+http://en.wikipedia.org/wiki/Duty_cycle
+
+Regards, Frank
+
+frankwim wrote:Hello, We are using a wago 750-841 and CoDeSys for the first time and have a PID application in which we need help. We will use a 750-469 Type J T/C module and would like PID control to output an on/off pulse (750-530) based on percent output of the function block. In other words...no output at 0 percent and full on output at 100%. At 50% with a 1 second cycle time the pulse width would be .5 sec on and .5 sec off. Is the PID_Fixcycle function block the best choice? What is the output units of the function block; 0-100% or 0-32767 16 bit range? Has anyone ever done the math for converting the function block output demand to a time based pulse width? TIA
+
+The PID-fixed cycle is just a PID-controlle wher eit has to be called with a fixed time-interval, nothing else. Its still an analog output.
+
+Converting a analog signal to PWM when using fixed scanrate is very simple, and only takes few lines if code.
+
+SAy fixed cycltime for the PLC-scan of 10ms, dutycycle of 1sec:
+
+AO <-- Analog output to be converted [0..100%]
+cnt <- cyclecounter
+DO <-- Digital PWM-output for heating-coil
+
+cnt:=cnt+1;
+if count>=100 then; cnt:=0; end_if
+DO := AO>cnt
+
+Can be done with more finesse (among other things using residuals).
+
+Regards
+  Nicolai Hanssing
+
+you can find everything you need in source code on
+
+www.oscat.de
+
+_________________freie sps bibliothek unter www.oscat.de
+

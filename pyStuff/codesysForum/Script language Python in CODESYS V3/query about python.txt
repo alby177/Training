@@ -1,0 +1,12 @@
+hello:excuse my ignorance but I'm trying to do something with python to prove how it works and I'm unable. From what I understand, I need to install Scriptengine and I can not find it anywhere, could someone tell me where to get it.Thank you
+
+Hi jbarrio.jbarrio wrote:From what I understand, I need to install Scriptengine and I can not find it anywhere, could someone tell me where to get it:The ScriptEngine is part of the default installation of CODESYS V3.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Like what I want to do is not possible.I'm working with raspberry. Is it possible to access variables read their value or write it from the same raspberry in python?any example to go see please?
+
+Hi jbarrio.jbarrio wrote:Like what I want to do is not possible.I'm working with raspberry. Is it possible to access variables read their value or write it from the same raspberry in python?any example to go see please?The ScriptEngine is part of development environment (IDE) and not of the runtime, which is on the Raspberry Pi. The Scripting is used for testing or automating tasks, like for example create a project from an external configuration.If I remember correctly there were some threads about reading and writing values from/to your IEC application on the Raspberry Pi. I think the options were to use a fieldbus protocol, TCP/IP socket or OPC UA. Look in our sub forum for the Raspberry Pi.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

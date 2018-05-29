@@ -1,0 +1,21 @@
+I'm consistently getting run time errors in Gateway.exe:
+
+R6025
+- pure virtual function
+
+After that, Gateway.exe crashes, so no communication with target possible.
+
+Is there anyone that knows what's causing them?
+
+AFAIK calling pure virtual functions is a programming error in the Gateway.exe.
+
+Arie N. Verheul
+
+It seems that the problem has to do with installation/configuration of my PC. On another PC there's no problem.
+
+Is there any list of DLLs (including versions), registry entries that are used by Gateway.exe, so that I can check a few things?
+
+Thanks,
+
+Arie N. Verheul
+

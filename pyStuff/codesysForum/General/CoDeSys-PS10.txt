@@ -1,0 +1,19 @@
+Hi there,
+
+I have been using CodeSys 2.3 to download a PLC code to PS10 of Multitron company. The communication is RS232. I have written the code and built it but the download button isnt active. Do I have to initialize the PS10 hardware. 
+
+Also I am not sure if I need additional driver card because there are memory adress assignments in the  CodeSys program and I have no idea what they are for. Is it for to use the PC as a PLC?  
+
+Any help about these topics will be wonderful for me.
+
+Hi,
+you need a target file for the Multiron device.
+This is like a driver telling CoDeSys all the PS10 specific characteristics like "I have a serial port", "I have x bytes of code meory" etc.
+
+You get the target file from the vendor of the hardware (in your case Multitron). 
+
+I hope this solves your problem.
+
+best regards, 
+Manfred Werner
+

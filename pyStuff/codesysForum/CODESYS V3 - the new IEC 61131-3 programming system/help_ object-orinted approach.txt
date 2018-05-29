@@ -1,0 +1,10 @@
+Hello!Could someone help me to understand how to use the object-oriented approach with codesys, please?That's the firs year I am using Codesys environment in my study project (management  for the automation warehouse).Thank you
+
+Hi,please check the following examples:http://store.codesys.com/object-oriente ... mming.htmlandhttp://store.codesys.com/object-oriente ... ended.htmlBREdwin
+
+Thank you! 
+
+After the files are downloaded asks me to perform the installation . how to do?
+
+Hi,use the store cart button in CODESYS.Then search your example and download it in CODESYS see screenshot.After this install you'll find the examples here:"c:\Users\<YourWindowsUserName>\CODESYS Examples" Sure you could download the examples by any browser and install them by the CODESYS Package Manager too.But the more easy way is to do it in the embedded browser in CODESYS.BREdwin
+

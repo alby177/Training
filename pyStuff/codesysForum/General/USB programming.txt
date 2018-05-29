@@ -1,0 +1,8 @@
+Hi,Is there any library for USB in codesys to use for data transfer instead of rs485 comm port.all comm ports in my controller are used.Iam left with 2 USB ports,which am planning to use.Help needed. 
+
+Hi,I did not get how to use USB.But am using an Ethernet to serial converter to use for my application.
+
+USB can be used to flash the source code program or firmware like OS, But there is no way to configure the USB inside the codesys.can i know which brand of PLC you are using??then i will let you know completely
+
+Hi         May be I should say USB port and of course USB is flash device.What I require is USB port programming.  Thanks
+

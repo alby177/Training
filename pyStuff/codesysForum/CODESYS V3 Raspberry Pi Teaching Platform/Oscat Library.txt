@@ -1,0 +1,6 @@
+Hello I,m traing to use  OSCAT library in my project.  OSCAT  building library is  added  to   project  but  I can't  use  them. When  I  trying define  variable like  in the  pictrue  bellow - CLICK  is  one  of  the  function  block  from  libray  OSCAT building.
+
+Try the full namespace, OSCAT_BUILDING.CLICKSent from my SM-G935F using Tapatalk
+
+It works. Thanks a lot.
+

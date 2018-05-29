@@ -1,0 +1,12 @@
+Hello,Is it possible to use the hotkey configuration function in a visualization?  I would like to use a keyboard on the Pi, and control a bool tag with a key-press such as W,A,S,D.Is this possible?Thank you.
+
+Hi,have you tried this?BREdwin
+
+Actually, all I saw is this..Attachment:codesys_screen1.jpgI had not seen the other.  Its the visualization manager, and I will try this tonight.  Thank you!
+
+Hello, I'm facing some trouble with hotkeys: after I have created a simple boolean variable which I configure to be toggle with the F3 key, each time I connect to the web page of my raspberry I need first to click once on the screen before the hotkey works otherwise nothing happens. Each time I want to toggle the boolean I need first to click on the screen before the event is taking in account.Does someone have an idea ?PLC: Rasperry 1 BCodesys: V3.5 sp10Intenet explorer: Firefox or IEPC: Win 10
+
+Probably because if you don't click the focus is on the browser (which intercepts the button) and not on your application. Did you try with another not F# key?
+
+Yes I did but whichever hotkey you choose it is the same thing. I don't know how to keep the web browser focus on the webvisualisation.
+

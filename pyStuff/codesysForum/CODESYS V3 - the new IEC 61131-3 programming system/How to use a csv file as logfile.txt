@@ -1,0 +1,14 @@
+Hello,I'm trying to create a csv-file as a logfile. I want to write string variables at some times using the SysFile.lib. Unfortunately I don't know the standard procedure to do this.Regards,Malcolm
+
+Hi,there is this store product csv utility - is that possible with your plc?BR
+
+Hi,it is possible but I don't want to buy the license.BR
+
+And how could I know that my PLC supports the CSV utility?Where are those features specified? I would also like to know for other features eg. Alarm manager, Recipe manager, Gradient in visualization...For example I'm using JanzTec RTE 3.5 SP2, WinCE. I figured out that in visu gradient and vertical oriented text  is not possible.Where is that written? These info should know before you buy plc.regards,Alex
+
+Hi,>And how could I know that my PLC supports the CSV utility?on every plc which has a filesystem the CSV utility should work and you have this system requirement overview in the store for the product which give the version information.For the other features you should get them from your plc manufacturer - we publish the features all in the release note which is availabe for every new version.>For example I'm using JanzTec RTE 3.5 SP2, WinCE. I figured out that in visu gradient and vertical oriented text is not possible.>Where is that written? These info should know before you buy plc.would recommend to ask JanzeTec for an update to the current Version, vertical oriented text have been released to 3.5SP4 additional you could rotate Images since this Version. (Interior rotation)BR Edwin
+
+Malcolm,Check out the OsCat Library it has FB's for reading and writing csv files.  There are attachments in the in the forum link but you have to make an account for them to show.  Also you can get documentation for the main OsCat website.http://www.oscat.de/community/index.php ... 784.0.html
+
+_________________The Original SoMachine Ninja
+

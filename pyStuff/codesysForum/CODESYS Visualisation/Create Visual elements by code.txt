@@ -1,0 +1,6 @@
+Hello,Is there a way to avoid using the Visualization designer and dynamically create visual content like rectangles, buttons, or images? I want to have a lot of similar elements (probably in the future the number will depend on a config file), but creating them one by one for the worst case scenario and hide the unnecessary seems very tedious and overkill.Maybe a placeholder can be created on the visu and then somehow instantiated and configured several times by code?Thanks in advance,Miguel.
+
+Hi,this is not possible... no plans to implement it at the moment.All objects should exist, but could be hidden and appear if needed.BREdwin
+
+Oh, that's a pity. I guess I will have to do all the manual work then...Thanks!Miguel.
+

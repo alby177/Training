@@ -1,0 +1,4 @@
+hello com_mod_mast blog about the programs I want to create communication between the PLC-ACS550 DRIVES help
+
+Hello,Reading speed is from adress 4 ( or 5) with the command 3. 20000 = 100%. Writing control word is from adress 0. The basic commands are :  1150  = stop, 1151 = start. Writing speed referance is from adress 2. 20000 = 100%.
+

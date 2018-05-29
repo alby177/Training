@@ -1,0 +1,20 @@
+HelloI'm trying to write a function block (in ST) that shall do some operation on an array.Preferbly the size of the array should be defined by a VAR_INPUTCurrently the variable declarations are as follows.VAR_INPUT	Ellements:INT;	NewVal:INT;END_VARVAR_IN_OUT	History: ARRAY [1.. 10] OF INT;END_VARMy intention is to replace the fixed size ARRAY[1..10] to [1..Ellements] e.g. a programaticallychangeable number of ellements in the array.Anyone ?
+
+use a integer pointer as input;Code:VAR_INPUT  Size:INT;  Value:INT;  History: POINTER TO INT;END_VARVAR  Item: POINTER TO INT;END_VAR...Item:= Temp;FOR I:= 1 to Size do  Temp^:= Value;  Temp:= Temp + SIZEOF(Temp^);END_FOR;
+
+_________________Andreashttp://www.boschrexroth.com
+
+I've never thought to accomplish an array this way. Would you mind clearing up a few details?1. What is the purpose of the input variable, History?2. Where are you defining "temp" and is it another Pointer?3. If you wouldn't mind briefly explaining what's going on in your example, that'd be very helpful; it'd be great to really understand what's going on here.Thanks! 
+
+HelloI've not tried the suggestion by Andreas yet, will do when time let me.The variable History is a set of samples of an input. I want to do some calculation on themand treat the array as a FIFO. All this is not a problem.The question is related to how to declear an input as an array of unknown size at compile time.All I've tried so far is not valid syntax
+
+jason.the.adams wrote:I've never thought to accomplish an array this way. Would you mind clearing up a few details?1. What is the purpose of the input variable, History?2. Where are you defining "temp" and is it another Pointer?3. If you wouldn't mind briefly explaining what's going on in your example, that'd be very helpful; it'd be great to really understand what's going on here.Thanks! #1: It's the same as the history in your example, a input array of values, but instead of just writing History as the input you write Adr(History[0])#2: My bad, all Temp should be Item#3: Basically my example just fills the input history with the value;Code:VAR_INPUT  Size:INT; (* Size of the array *)  Value:INT;   History: POINTER TO INT; (* Same as History: ARRAY[0..Size-1] OF INT; *)END_VARVAR  Item: POINTER TO INT;END_VAR...(* Just save a local copy of History[0] *) Item:= History;FOR I:= 1 to Size do  (* History[I]:= Value; *)  Item^:= Value;  (* Goto the next item in the array *)  Item:= Item+ SIZEOF(Temp^);END_FOR;
+
+_________________Andreashttp://www.boschrexroth.com
+
+if you are interested you can find many array functions in the open source library OSCAT.many of the array functions use pointer to operate on unknown size of arrays.you can use our source code as sample to develop your own functions
+
+_________________freie sps bibliothek unter www.oscat.de
+
+Code:VAR_INPUT   NewVal:INT;END_VARVAR_IN_OUT CONSTANT   Ellements:INT;END_VARVAR_IN_OUT   History: ARRAY [1..Ellements] OF INT;END_VAR
+

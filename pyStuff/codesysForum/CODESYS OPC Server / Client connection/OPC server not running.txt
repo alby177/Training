@@ -1,0 +1,4 @@
+I'm  using the CoDeSYS OPC V3 server with PAM from PARKER. I have a client library code from techno software. The OPC server is registered in the registry but does not appear in system components service  DCOM config. I'm using window 10 pro 64bit. Does anyone know how I can get the server to run?
+
+I have the exact same problem, except that I have tried to install the software on Win2012R2, Win2012, Win10 and win8.1 and in none of these DCOM are registered.The actual server we want to work are a Win2012R2. We get test clients to work but other clients don't. In our case we have a local client that is based on API from OPCLabs. Other OPC servers on the server do work and do have DCOM settings.I don't know if the missing DCOm registration is just a symptom or the actual cause as this is local connections.
+

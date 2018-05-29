@@ -1,0 +1,24 @@
+As part of my daily job I support customers that use CoDeSys Ladder.  I am starting this thread in hopes of common requests make it into further versions of CoDeSys.  Please comment and add any requests to the improve ladder editor.Thanks
+
+_________________The Original SoMachine Ninja
+
+Wire tool for parallel rungs.  I know that the "Branch set point" was added but user should click on wire and branch around contacts
+
+_________________The Original SoMachine Ninja
+
+In Parallel rungs you should be able to add any FB that has IN and Out pins bool.  For example TON, GE, LT,  R_TRIG....and so on.
+
+_________________The Original SoMachine Ninja
+
+Right mouse click to insert or delete Enable pins
+
+_________________The Original SoMachine Ninja
+
+On right mouse button click add an option to remove undefines but not remove pin
+
+_________________The Original SoMachine Ninja
+
+Hi,thanks for reporting this,I will add this issues as improvement to our tracking database.BREdwin
+
+Nice ideas Mr. Z.
+

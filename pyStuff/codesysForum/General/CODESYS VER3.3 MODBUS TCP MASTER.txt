@@ -1,0 +1,19 @@
+If I use as target SP WIN 3 and I define in the project an Ethernet device and this as MODBUS TCP master, is it possible to configure the PC's ethernet card as master or I need special hardware?
+In Ethernet configuration it seems not possible to select standard adapter of the PC.
+Thanks for help. I'm newer on VER3.3.
+
+No answer.
+Is it a stupid question?
+ 
+
+I try to explain shortly: to use codesy 3.3 as modbus TCP master I need a special ethernet card or canI use the PC's standard Ethernet
+Thanks for attention
+
+The Soft PLC can use the hardware of the computer such as the Ethernet port with no special configuration.
+
+After you add the Soft PLC device, right click on the Soft PLC and select add object.  From there, you can select "Fieldbusses" and then "Ethernet Adapter" and then add the Ethernet object.
+
+From there, you should be able to add the Modbus TCP master or slave as an object to the Ethernet adapter.
+
+Good luck!
+

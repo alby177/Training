@@ -1,0 +1,4 @@
+I am trying to migrate my current Codesys project which has  the target device as Codesys WIN control 32 bit to Codesys RTE Control 64 bit. This has generated several errors in my project that didn’t exist before. One  of the issues that came to my notice is that all my memory allocation variables needed to be switched from a UDINT to a ULINT. Another problem I am facing is some of my libraries are not compatible such as the Modbus library. I have  attached a screen shot of the errors generated.Please Advise.
+
+Hi,at the Moment to fix this is scheduled for 3.5SP9BREdwin
+

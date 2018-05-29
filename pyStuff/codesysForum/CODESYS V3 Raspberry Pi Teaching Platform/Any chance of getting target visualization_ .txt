@@ -1,0 +1,6 @@
+What I'm looking for is a target visualization on the raspberry pi that let me use a vnc client. Like Berghof for example. Any plans?
+
+Hi,at the moment still no plans for doing that.BREdwin
+
+Ok, thanks for the status.Not that the HTML visu is bad, but options are always nice to have.
+

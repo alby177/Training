@@ -1,0 +1,65 @@
+OSCAT has released a new version of its Open Source Library for Codesys
+The Library is available for Download at www.oscat.de
+
+_________________freie sps bibliothek unter www.oscat.de
+
+Just wondering.  Is there any documentation in English?
+
+Thank You
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+nufortunately not
+we have all comments in the source code and a short description in the headers in english.
+but sorry the manual is only in german at this moment
+we have not found the manpower to translate so far
+
+_________________freie sps bibliothek unter www.oscat.de
+
+hugo,
+
+Thank you for the reply.  Knowing that the comments are in english is very helpful.  I'm just happy someone has taken the time to make an open source library for CoDeSys.
+
+I will download and look around.
+
+Thanks!
+
+_________________nOrM=====nOrM = Norman Dziedzic Jr.
+
+Would you be looking for free help on English translation?
+
+_________________Thanks,
+Steve Pfeifenroth
+
+yes of course we would be very interested to have the manual in english.
+
+my english is extensive business and technical english, so i would not have a problem reviewing any translations
+
+however i have decided to do only german because i am already very busy to maintain the library and write the manual in german.
+
+If anyone (or maybe a group of people) would decide to translate i could certainly do all reviews and releases
+
+_________________freie sps bibliothek unter www.oscat.de
+
+Hello Hugo,
+
+It appears to me that the oscat help is in PDF format? Is it possible to format the help in *.chm files for direct inclusion in CoDeSys Help menu? It may be possible to create a tool that can read the header information from FB and convert it directly into Help files? I would be concerned though that using *.chm files might lock you into Windows instead of Linux or something else. What are your thoughts on this?
+
+_________________Thanks,Steve Pfeifenroth
+
+the manual is written with open office.
+i have no experience with .chm files but there should be a simple way to convert
+
+_________________freie sps bibliothek unter www.oscat.de
+
+I use open office as well. I will investigate the help file conversion if you think it is something worth investigating?
+
+_________________Thanks,Steve Pfeifenroth
+
+of course that would be helpful
+pls contact me at info(at)oscat.de so i can send you the open office file
+
+_________________freie sps bibliothek unter www.oscat.de
+

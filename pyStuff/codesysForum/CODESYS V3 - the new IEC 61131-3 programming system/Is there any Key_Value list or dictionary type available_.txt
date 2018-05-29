@@ -1,0 +1,2 @@
+Is there any Key/Value list or dictionary type available in codesys.Or for that matter any type of dynamic list would probably do as well.I would like to be able to store a dynamic length list of string keys that corresponds to string values or pointers to values.Is there any ready made such library/fb or anything.
+

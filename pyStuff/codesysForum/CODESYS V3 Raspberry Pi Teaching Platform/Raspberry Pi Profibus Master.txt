@@ -1,0 +1,8 @@
+Hi,is it possible to control a profibus slave, like siemens ET200S, with Raspberry?How can I connect them?Thanks for any help.Straccio80
+
+Hi,the only way to connect Profibus slaves at the moment, would beto use Ethercat and an EL6731 Gateway ...  technical possible but the questions isif this is not to expensive. (There is an additional package needed in CODESYS for that solution)BREdwin
+
+Other way to use proxi profinet of Hilscher and to connect profibus dp slave below. In codesys you must use profinet IO Controller
+
+Thank you Edwin and Luca.I have to check the cost.Thank you again
+

@@ -1,0 +1,8 @@
+The problem is that：1、We know that Pointer is the type of DWORD，But how can we define a Pointer to a fucntion，a function block or a method?2、Then how can we execute the pointer?
+
+HiHas your problem been resolved?  how can i pass a pointer to function to my external library?
+
+A pointer occupies the space a DWORD occupies (depending on the platform).But the DWORD is the address, not the pointer itself... when you create a pointer you create it giving it's type:a : pointer to fbxxx;Then you could simply call a:a^();Hope this helps.
+
+_________________http://www.robotecnik.com - robots, CNC and PLC programming.
+

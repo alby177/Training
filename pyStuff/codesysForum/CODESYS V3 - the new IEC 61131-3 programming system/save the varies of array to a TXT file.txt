@@ -1,0 +1,4 @@
+HI FAE: the question is that I want to save an array to a TXT on the disk. How to do? expect to your replay, thanks.
+
+Hi,you could use the SysFile.lib.Regards,Malcolm
+

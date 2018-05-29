@@ -1,0 +1,2 @@
+Hi,I would like to activate a output of raspberry.soft codesys 3.5 SP7.connection is OKHow write the program to active a output for the raspberry ?thanks for your help.CC
+

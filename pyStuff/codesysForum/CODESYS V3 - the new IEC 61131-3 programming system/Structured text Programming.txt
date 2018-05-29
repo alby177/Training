@@ -1,0 +1,26 @@
+Hi, Im new in Structured Text Programming, and Im looking for a JUMP command. What is the code for jump in ST?
+
+I don't know if there is a jump and if there is I don't think I would ever use it. Within a single POU the way to conditionally run code is to put it into a IF/END_IF block. If you want to call another POU as a subroutine then you put the name followed by parenthesis:OTHERPOU( parameters);PLCs work best when there is a clear line of code execution and Jumps disrupt that.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+ricardorbinar,All machine programing is based on states.  The easiest way to create a state machine in ST is using a case statement.  Please understand the example below is only an example to show how you can expand on the idea.  The example does not jump states but that is easy to do by changing the step to a different number.Code:VAR   Step:   INT;   Delay:   TON;   Enable:   BOOL;   OUTPUT:   BOOL;END_VARCASE Step OF0:   (* Wait / Disable*)   IF Enable THEN      Step:=10;   END_IF10:     (* TURN ON OUTPUT DELAY 10s)   OUTPUT:=TRUE;   Delay(IN:=TRUE, PT:=T#10s);   IF Delay.Q THEN      Delay(IN:=FALSE, PT:=T#10s);      Step:=20;   END_IF20:     (* TURN OFF OUTPUT DELAY 10s)   OUTPUT:=FALSE;   Delay(IN:=TRUE, PT:=T#10s);   IF Delay.Q THEN      Delay(IN:=FALSE, PT:=T#10s);      Step:=0;   END_IF   END_CASE
+
+_________________The Original SoMachine Ninja
+
+ricardorbinar wrote:Hi, Im new in Structured Text Programming, and Im looking for a JUMP command. What is the code for jump in ST?IF NOT(Jump Condition) THEN   <Code to be jumped over>END_IF<Code to be jumped to>This is not how I typically program. I tend to implement SFC type code using a state variable and a CASE statement. PJESent from my SM-G900V using Tapatalk
+
+JUMP is not directly supported in ST. You have RETURN available like in LD, but you have to use IF statements or other techniques. Note that the just released programming guidelines from the PLCopen group recommend not using JUMPs and RETURNS for debugging reasons. I agree and suggest to avoid JUMPS. There are times I like to use returns (at the beginning of a POU - IF NOT Enabled THEN RETURN).
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Hi ricardorbinar.ricardorbinar wrote:Hi, Im new in Structured Text Programming, and Im looking for a JUMP command. What is the code for jump in ST?Look for JMP in the CODESYS online help. Be careful not to build an endless loop!BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Dear Ricardo,Since you are new to ST, you may find some of the videos below useful:http://www.youtube.com/user/talizadeh?s ... irmation=1Regards,Tohid
+
+_________________TA
+

@@ -1,0 +1,12 @@
+Could you please explain some more about the difference between the EtherCAT Master and the EtherCAT Master SoftMotion device found in SP7?We've tried out both but haven't been able to spot any difference in the behaviour so far.RegardsKim HansenBeijer Electronics Automation AB
+
+Hi I  have the same question .Any body know what is the difference?Hero ss lin
+
+Hi,the only difference is the FrameAtTaskStart Parameter which is set to true on the SoftMotion EthercatMaster.This is needed for the drives to have less Jitter in receiving the ethercatframes.(otherwise if you do not set it, your iec Task time detemines the Point when the frames are send...depending on the load of your task)BREdwin
+
+Thank you Edwin, please take a look at this as well since FrameAtTaskStart seems to be the issue there.viewtopic.php?f=6&t=6385
+
+Hi Edwin :I  could not see "EtherCAT Parameter" setting Tab when i add "EtherCAT Master Softotion "Device .Can you how me how to do that .Thanks
+
+Hi,you need to enable it under Tools-Options....BREdwin
+

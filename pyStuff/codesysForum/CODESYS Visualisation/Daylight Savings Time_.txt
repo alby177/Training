@@ -1,0 +1,24 @@
+Anyway to set automatic daylight savings time in North America?I have the oscat library which is good for European DST only as far as i'm aware.If it helps i'm using the wago 750-841 with the 750-640 rtc card.
+
+did you find my mail in plcs.netif not reply and i will send it again.the days here are last in march and last in oktober.yours are 2 sunday in march and first in november correct?if you reply i will make the change for you.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+I saw your reply, with this link http://www.oscat.de/downloadmanager/fin ... -text.htmland i found the text you were referring to, but i cannot figure out how to relate it to my daylight savings time, or what goes in to modifying itthanks btw you've been a great help so far with my posts!
+
+also, do you have any idea why when DST is triggered, it puts my clock back an hour and not ahead? This change is only seen in the wago ethernet settings software, and not on the http site, or on the "SysRtcGetTime" function block
+
+I've been emailing wago and they sent me the updated library with USA DST settings!I tried to attach it to this post but it wouldn't let me attach a .lib file.But i'm still having the problem of it going back an hour instead of ahead.. very frustrating. I don't see why it would do that, and ONLY in the wago ethernet settings and not on the program itself. The time doesn't change at all anywhere else.If it helps, here is my exact scenario:In my visualization, I set the time to march 11, 2012 at 1:59:40 to simulate how the clock would act at the beginning of summer time.In my prg, the time does not change – just rolls through 2:00 and continues counting.When I go to the http site and go to “clock”, daylight savings gets checked off at 2, but again the time counts as if no summer time was activated.In the Wago Ethernet Settings software, when I go to Time and Date, the time and date of the controller goes back one hour.So when all my other clocks hit 2:00, this one goes back to 1:00, when it, and all the other clocks, should go to 3:00.
+
+programming is difficult.Leave the RTC clock running on UTC time as you dont change it at all time, only once to set it.Then If summertime is active the display time should be -1 etc.Same for timezone set a timezone like +6 and add it to your RTC time.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+I'm not sure if I understand.. I want the clock to automatically change an hour ahead in the summer and an hour back in the winter.Since the daylightsavings block from codesys is somehow reversed, I fed that output to the SysRtcSetDS block with a "not", so now it is how it should be.But the problem is that the time changes in the wago ethernet settings software but not on codesys.I thought SysRtcGetTime would give me that value, but it does not. If there is even a way to add or subtract 1 hour whenever daylightsavings is TRUE, that would be a great help. Any ideas?
+
+The time with ethernet settings is coming from computer not the PLC.Leave the RTC just running as it is. do not update it at all have your displayed time running if DST is on with add one hour and otherwise with add zero.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+I think this might help your problem of having the hour off:You said you had the PrgDaylightSavingUSA from Wago, and that is the first step.1- Next configure a type "DT" variable in a program that has a cyclic or freewheeling task. Call it anything, e.g refDateTime:DT; 2- configure an R_TRIG and an F_TRIG: 	dstOnPulse:R_TRIG; dstOffPulse:F_TRIG;3- write this logic:PrgDaylightSavingUSA();dstOnPulse(CLK:=PrgDaylightSavingUSA.xDaylightSavingTime);dstOffPulse(CLK:=PrgDaylightSavingUSA.xDaylightSavingTime);IF ((dstOnPulse.Q) OR (dstOffPulse.Q)) THEN	setTime:=TRUE;END_IF;IF setTime THEN	refDateTime:=SysRtcGetTime(setTime);	SysRtcSetTime(refDateTime);	setTime:=FALSE;END_IF;Lastly, for your visualization I didn't understand exactly what you are doing, but if all you care is to show date and/or time then there is an easy way for the visualization to get the time from the PC where it is launched from: %t%A, %B %d, %Y%I:%M:%S %pThis gives date + time, and adjusts to any changes (DST on/off) since it takes the time from the PC.Hope it helps.
+

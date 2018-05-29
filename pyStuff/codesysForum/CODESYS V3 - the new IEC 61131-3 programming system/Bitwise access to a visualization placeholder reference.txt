@@ -1,0 +1,6 @@
+I'm trying to do bitwise access to a visualization placeholder reference. In the "subvisu" called WordBreakupSet I've made an interface with a word wToBreakup. I've got sixteen (in the attached test just three) buttons and sets the property variable for each button to wToBreakup.0, wToBreakup.1 and so on.In the main visualization I add a frame and select WordBreakupSet. As the reference for this frame I select a word that is declared in PLC_PRG.The problem is that no matter which button I press it's just bit zero that is changed.Is this the way it is supposed to be or have I done something wrong?[Edit: I'm having problems uploading my project but I hope the explanation is clear enough]Best regards,Kristian Berlin
+
+Hello Kristian,this is pretty simple. I added a small example. It is important that you declare the variable in the visualization as in-out.The example works fine. @Admin: Why it is not allowed to add *.project files  
+
+Thank you, your example works for me. I've got a theory that the problem is that I'm using the new fancy looking "Push switch" instead a regular button. I will test that theory.The problem with .project file might be to get you to choose .projectarchive instead. I had problems uploading that too though.
+

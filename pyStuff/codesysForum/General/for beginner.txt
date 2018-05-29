@@ -1,0 +1,13 @@
+hi friends 
+      myself siva from india , please let me know how to start to learn 
+IEC-61131-3 programming . i am new to this i have expereince in LD & IL .. i dont have hands on experience in ST & SFC .. help me
+
+The simplest and rapid way is 3S training courses. 
+Otherwise you can download CoDeSys demo and try to read documentations and repeat examples. You can get example with detailed step by step instructions in the "First Steps with CoDeSys V23.pdf".
+
+For beginning: See CoDeSys product tour
+
+Regards!
+
+__________________IP_
+

@@ -1,0 +1,2 @@
+Hello,Does someone know if "I2C Arduino UNO IO Device Description and Library " is available for BeagleBone?Jonathan
+

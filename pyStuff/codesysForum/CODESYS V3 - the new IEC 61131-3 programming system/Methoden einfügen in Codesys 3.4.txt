@@ -1,0 +1,6 @@
+Leider kann ich einem Funktionsbaustein nicht mehr wie in V3.3 über Objekt hinzufügen neue Methoden zuweisen. Mit Objekt hinzufügen ist nur die Einrichtung von Aktionen und Transitionen möglich. Ist irgendwo etwas falsch eingestellt oder geht das jetzt anders?Für eine hilfreiche Antwort wäre ich sehr dankbar.
+
+In CoDeSys V3.4 a new option is introduced which probably blocks this option.Go to the menu: Tools => Options => Features.At the bottom you can press the button "Predefined Feature Sets".Press this and select "Professional".Sometimes you have to restart CoDeSys before this is activated.Now you can add methods again to FB's.
+
+ja jetzt geht es. Vielen Dank!
+

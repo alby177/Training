@@ -1,0 +1,10 @@
+Hi,in a visualization screen, I need to display some text description (string) according to a variable value.My idea is to use a text field in which in such a way must be displayed a description depending on a variable, but I don't know as I can achieve this.For example:0={empty field}1=ERROR2=CONNECTED3=........How can I make this possibile?
+
+You need to create an array of type string and tie that to your text variable so it would be something like:Code:VAR    ConnectionStatus : USINT; //1 = error, 2 = connected    aConnectionStatus :    ARRAY[0..MAXSTATUSSIZE] OF STRING := ['','ERROR','CONNECTED'];END_VARVAR CONSTANT    MAXSTATUSSIZE : USINT := 2;END_VARThen for the properties of your text field you would use the following settings:Attachment:connectionstatussettings.PNG
+
+Thanks for your support but something goes wrong.
+
+In the setting for your text field you have setup the text variable wrong. It should be arrayName[index] and not index[arrayName]. So it would look like POU.ModbusDescription[POU.ModbusStatus]. https://help.codesys.com/api-content/2/codesys/3.5.12.0/en/_cds_datatype_array/As for the 3rd error MODBUSTCPCOMSTATE is not of type USINT so you need to look at it and find out the type of MODBUSTCPCOMSTATE. I don't have this in the older version I use so I can't help on that error.
+
+Yeah!It functions!Many Thanks!
+

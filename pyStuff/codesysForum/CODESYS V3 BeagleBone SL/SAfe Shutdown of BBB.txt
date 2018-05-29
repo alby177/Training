@@ -1,0 +1,2 @@
+Hi,I am testing with BBB+CoDeSys+EtherCATIO. Works fine. I need to have automatic shutdown of BBB while switch off the system. Anyone done, please suggest.Regards,Kumar.E
+

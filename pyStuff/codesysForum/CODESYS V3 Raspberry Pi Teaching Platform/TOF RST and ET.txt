@@ -1,0 +1,6 @@
+hello, I need a TOF that has RST and ETOSCAT has a TOF with RST but does not have ETStandard TOF has ET but has no RSTHow can I solve ?Thanks, Alberto
+
+Just make your own: (Should work but needs to be tested)Code:FUNCTION_BLOCK TOF_AdvancedVAR_INPUT    IN:BOOL;    PT:TIME;    RST:BOOL;END_VARVAR_OUTPUT    ET:TIME;    Q:BOOL;END_VARVAR    tStartTime : TIME;    tCurrentTime : TIME;END_VAR//Read system timetCurrentTime := TIME();//Set Q based off IN and PTIF RST THEN    Q := FALSE;    ET := T#0MS; //You can reset ET here also if wantedELSIF IN THEN    Q := TRUE;    ET := T#0MS;    tStartTime := tCurrentTime;ELSIF tCurrentTime - tStartTime >= PT AND Q THEN    ET := tCurrentTime - tStartTime;    Q := FALSE;    tCurrentTime := T#0MS;ELSIF Q AND NOT IN THEN    ET := tCurrentTime - tStartTime;END_IFAttachment:TOF_Advanced.PNG
+
+WooooooWWork very fine   Thanks
+

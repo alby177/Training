@@ -1,0 +1,70 @@
+I have to plot an x-y profile (graph) in visualisation. How can I do it?
+
+You could prepare an array Y1[X1], Y2[X2]...etc. Next use Histogram with presentation options Curve. You will see the x-y spline curve.
+
+Hello Igor, I'm interested about the x,y profile plot.
+I try to do a curve histogram with an array like 
+	Y:ARRAY[1..10] OF INT:=1,2,3,5,6,8,1,2,4,8;
+but I see an empty histogram.
+can you explain how it works.
+
+
+thanks.
+
+bye
+
+I would do it with pieces of line and put them in an array.
+much like your histogram but i can make drawings and even openings.
+i made example with array and rectangles. changed them to lines so i have begin and endpoint.
+also possible with line command with scale and direction.
+scale is length of line
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+hello everybody, I try to do it in this way 
+
+scale start 0
+scale end 10
+mainscale 1
+subscale 1
+unit 
+variable Y[1]
+
+type curve
+arraybegin 1
+arrayend 10
+bandwidth 90
+
+
+Y:ARRAY[1..10] OF INT:=1,2,3,5,6,8,1,2,4,8;
+
+
+
+
+but in run mode the graph is empty...
+
+can you help me?
+
+thanks a lot.
+
+Bye
+
+See attached picture and project (V2.3.9):
+
+
+
+PROJECT
+
+Thanks a lot.
+It works. in my example was wrong only the variable.
+I set "variable Y[1]" , the first item of the array and not the array
+"variable Y"...
+
+I will use it!
+
+Bye
+
+Have example for codesys 3 ?
+
+Hi,XY Element will be released with 3.5SP12 (December)BREdwin
+

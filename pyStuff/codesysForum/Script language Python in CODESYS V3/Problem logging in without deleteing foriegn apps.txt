@@ -1,0 +1,8 @@
+I have two apps running on a PLC. I want to redownload one of the applications without affecting the other running application. I use some thing like the following in teh scriptCode:app = projects.primary.active_applicationonline_app = online.create_online_application(app)online_app.login(OnlineChangeOption.Never, False)This should force download the code and not disturb the "foriegn app"When ever I try this I get a Login Failed error. Where as when I tryCode:online_app.login(OnlineChangeOption.Never, False)This works and it goes ahead and deletes the other application.Any help is appreciated
+
+Hi,As it's some time without a reply: has your problem been solved in the meantime?Regards,Markus
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+
+No the problem described above is still there. I have split my script into two scripts, where the user runs the first script then manually logs in properly and then runs the second script. But this is a clunky way to do it.
+

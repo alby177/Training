@@ -1,0 +1,29 @@
+hello
+
+    I am the new user of codesys software. Infact i have start using codesys just a month ago.....My Objective is to run the machine by using CNC editor.... I have tried to read the mannul but it will be great help for me if anyone of you who is doing work in this area can give me the solved example............   thankx
+
+ Regards
+
+Tahir
+
+Hi,
+
+you can use the demo example which is installed with the standard setup of CoDeSys. Normally it is installed under C:\Programs\3S Software\CoDeSys V2.3\Projects\Motion\4examples. In this example project you will find sample code for every method of using CoDeSys SoftMotion, thus CNC as well. Of course this is no realistic application, nevertheless this example is running on installations with 2 physical axis on different PLCs.
+
+I hope this will help you further.
+
+_________________Roland WagnerModerator
+
+Thankx for helping me Roland Wagner. Now i have made little bit more progress. I have managed to run my machine in X, Y & Z direction by using the MC_Moveabsolute and MC_Moverealive function blocks. 
+
+But for every motion i have to use indivisual function block for them. Is it possible that i define my all data ( X, Y & Z cordinate ) in array form and call that array in my Function block to do the motion?. If yes, can you please tell me how it can be possible? 
+
+secondly, right now i am moving my spining axis by using MC_MoveVelocity function block. But i have no control on the angular movement. Is that any Module available so that i can control the rotation angle??
+
+One demand from my side:
+Please use the threads for the special topics and do not repeat them in other topics. Otherwise it will be hard to follow!
+
+Thank you in advance
+
+_________________Roland WagnerModerator
+

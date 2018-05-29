@@ -1,0 +1,2 @@
+Hi Everyone,I am new to Codesys platform. Please anybody help me in this forum will be greatful. I like to learn from Basic. I triedto understand platform, I am ok with using software , but am facing mail problem in developing application.
+

@@ -1,0 +1,8 @@
+Good afternoon,To which variable of EL2521 axis I have to put EL5101 encoder value tohave an axis in close loop mode?For the moment only moves in velocity.thanks, regardsIvan
+
+Hi Ivan,I would use the available driver for thw EL2521But even if you use a Raspberry PI without realtime patch, this drivers might work, check with this Settings from the screenshot( & an enbaled DC)check this example:"c:\Program Files\3S CODESYS\CODESYS\Projects\SoftMotion\4.x.x.0\Examples\Tutorial\PosControl.project" BREdwin
+
+Dear Edwin,thanks, it works.When is necessary if I use Softmotion with raspberry realtime patch?How could I know if my raspberry pi2 is in realtime? I am using EMLID realtime image.Raspberry Softmotion is compatible with CNC blocks?thanks, regards,Ivan
+
+Hi,check the jitter in the taskmonitor, highes prio task should be <80us I would say for Raspberry PI is good enough...BREdwin
+

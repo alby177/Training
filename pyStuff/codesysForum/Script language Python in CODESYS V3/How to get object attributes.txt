@@ -1,0 +1,2 @@
+For example I've declared POU attribute like so:Code:{attribute 'Test:TRUE'}PROGRAM PLC_PRGIs there any way to get this attribute from python script?
+

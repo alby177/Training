@@ -1,0 +1,38 @@
+Does anyone know, why a string variable takes one bytes more in ODEntries[] array, than it is defined in code?
+
+I have a CANopen OD object, which is four characters long. Like this: variableName:STRING(4):='ABCD'. 
+
+But in ODEntries[] array its length is 5 (ODEntries[].wLen=5). Why is it like this? 
+
+I would like to read this object by expedited SDO, and now it doesn't fit in four bytes. Damn.
+
+And I'am working with CoDeSys 2.3.9.4
+
+I am not anywhere where I can test it but in most programming languages a sting will have a null character (0x00) as a deliminator so that the processor knows where the string ends.
+
+Can you move the object character by character?  Whatever is reading it would have to know that it doesn't contain a null delimiter but it should be possible.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+Yes, it is a NULL character, the fifth one I mean.
+
+So, it looks like the OD needs to have that extra place too, to have the memory organized. It works if I manually set the ODEntries[].wLen=4. Then I can send it by expedited SDO. Or maybe just limit the object to 3 characters. 
+
+Thanks nOrM!
+
+If you declare an array as array[4] the size will be 5 (0-4).
+
+It is not an array. It is a STRING type variable, with length 4.
+
+But wait a moment, does STRING(4) mean same as an ARRAY[0..4] OF BYTE, when thinking it with memory space needs? 
+
+Wasn't The ODEntries[] an array. 
+
+I made an declaration yesterday with STRING[255] it's became 256 in length.
+
+ODEntries is an ARRAY OF STRUCT.
+
+But that was a valid test, thanks!
+

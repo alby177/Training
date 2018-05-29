@@ -1,0 +1,22 @@
+Hi,I have a WAGO 750-881 with 2 digital outputs.  I would launch a program that runs only at start.I make a simple test program to understand when the system event is fired:A program PLC_PRG() sets to TRUE the first output.A second program SETOUTPUT2() sets to TRUE the second output. I branch it to the system event 'start'.When the program launch, the second output never activates and means that start event is not fired !I even branch the SETOUTPUT2() to all system events but none of these events activates my second output.Reset, Cold reset or power on/off don't make better resultsDo my WAGO understand system events or I make something wrong ?
+
+yes but you look wrong.click on left bottom resources and then tasks.here you put a new one in, and give your POU to this task.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi,When I said 'I branch' that means I do the following things: In the resource tab I click Tasks and then I see system events.I check 'start' which means this event is called when program starts and then I specify a POU.This is the correct procedure for making a POU that is launched when program starts.But nothing happens !Is somewhere any sample project with a working system event start ?Regards.
+
+task configurationsystem events    check start and set the POU to eventstartstarttask  triggered by event    eventstart  your pou that runs when plc is startednormal    PLC_PRG this may be any name only this is defaultthis must be added as this is lost when you fiddle with tasks.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Perhaps I'm completely stupid but I do the declaration of start event as shown in the attached file.For the next step that you specify  I completely lost.I can put a task triggered by event but what do I put as the event property ?Regards,Christophe HELFER
+
+Hi Cristophe,an event is not a task! A task refreshes the process Image - means in other words it reads the physical inputs and it writes the physical outputs. An event does not. Give another thing a trial, try a simple cycle counter and you will see it will count up on every start.BRRalph
+
+Hi         I have written a simple one and it works.Can u put up u r pgm here
+
+what type of plc is specified, in most cases simulation does not work, so it will only happen when the event is done in the PLC, in simulation it is simulated, same as for tasktiming.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

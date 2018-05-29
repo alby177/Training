@@ -1,0 +1,8 @@
+Hi,I have defined some string arrays, for example,saProgPhase:ARRAY[0..5] OF STRING(14) := '0ABCDEFG', '1ABCDEFG', '2ABCDEFG', '3ABCDEFG', '4ABCDEFG', '5ABCDEFG';	saSubAssy:ARRAY[0..9] OF STRING(18):='6ABCDEFG ','7ABCDEFG','8ABCDEFG','9ABCDEFG','10ABCDEFG','11ABCDEFG','12ABCDEFG','13ABCDEFG','14ABCDEFG','15ABCDEFG';When accessing these arrays, for example,zzz:=saProgPhase[iProgPhaseCode];zz1:=saSubAssy[iSubAssyCode];the contents of strings zzz and zz1 are a mixture of parts of the two arrays, as if a pointer has got corrupt somewhere.Both iProgPhaseCode and iSubAssyCode are integers within the array range. There are (0) errors and (0) warnings.I am using Windows 7 with CoDeSys from Festo.Any ideas as to the cause of the corruption?
+
+with me it works as it is supposed, so please send your prog or a little more info.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+It works OK for me too with a new programme. I have experimented a lot to try and diagnose the cause. Even deleted all of the logic, just leaving the globals vars and still the list shows "Invalid 16#nn". I don't think this is a specific problem with string arrays now - there is something deeper which causes a fault and then the fault stays even though the original cause is removed.The work around I have chosen for the time being is to use discrete strings and a CASE statement to sort out which one to use.
+

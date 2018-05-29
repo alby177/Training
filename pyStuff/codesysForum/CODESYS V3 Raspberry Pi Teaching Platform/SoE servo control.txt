@@ -1,0 +1,12 @@
+Hi! I've been working with an BECKHOFF AX5203 servo drive. I've ported all needed startup parameters from TwinCAT and I'm able to get the drive to op mode. In the device tree I've attached two SM_Drive_ETC_SoE_Standard drives but they don't work. One of them have running status and the other have status "Wrong Config". Non of the drives works with mc_power (Power.status never becomes true) in PLCopenSingle test project. But in commissioning mode I can read the position but not power the drives. Any idea what I'm doing wrong? Or is it just that the Pi does'n have the real time capabilities needed to power up the drive properly? If so, is there another way to control the drive?BRSimon
+
+_________________SC student from Sweden
+
+Hi Simon,if the Pi is not accurate enough you should get probably an error in the drive.Do you see any error in the drive?(In case you try to enable them)You check the following variables in the Watchwindow?YourDriveName.wCommunicationStateYourDriveName.strDriveInterfaceErrorBREdwin
+
+Hi Edwin,I can't find any of the variables you mentioned but from time to time I do get errors in the drive. Either out of sync or internal communication errors. I think this might be an edge case for the Pi, maybe it's able to take the drive to Op-mode but not starting the motors?BR Simon
+
+_________________SC student from Sweden
+
+Hi Simon,it sounds like the realtime capabilties are not good enough.I would recommend to check this with SoftMotion RTE (http://store.codesys.com/systeme/codesy ... te-sl.html )This will should work for sure. (Just install it an use it for 2h) Change your project by update device to the SoftMotion RTE.Which nic is needed for using Ethercat and SoftMotion RTE?viewtopic.php?f=24&t=6065BREdwin
+

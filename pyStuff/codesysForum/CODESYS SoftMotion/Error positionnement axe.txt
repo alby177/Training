@@ -1,0 +1,4 @@
+Can handle an error rating that adds up or subtracts each time the axis changes direction of rotation.This can be useful when the ball screw has a particularly painful play when doing Circles on a machining center.thank you in advance
+
+HiLook for a parameter named backlash. I think that I have seen this parameter in some configuration.It is possible that I have seen it in Lenze Copesys implementation, but I am not sure.I am sorry becaise the answer is not so clear as you need, but...
+

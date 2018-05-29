@@ -1,0 +1,18 @@
+I am an independent developer and have been asked to implement a function block library that interfaces to a robot through API calls to a c library.  I found a very old Raspberry thread about a c-integration feature being added in SP7 but the implications were not clear.  Can someone confirm that interfacing to a c library is only possible for OEM partners or if the is now otherwise available?  If it's not possible then I can pursue a network based solution but I would like to know my options before taking a decision.  Thanks in advance for your input.
+
+_________________Rick
+
+I thought I saw it available in the CoDeSys store, but it's not there - maybe they took it off?  They only offer it now to manufacturers of machine controllers (https://www.codesys.com/products/codesys-engineering/c-integration.html).  You are right about >=SP7.  Looks like you are going down the "plan B" route.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Thanks Scott but it would be nice to know or certain.  It's disappointing that someone from 3S hasn't simply replied YES or NO.
+
+_________________Rick
+
+Only for OEM's and not for Raspberry Pi possible.This is the official statement.BREdwin
+
+Edwin,Thank you very much for the clarification, it's greatly appreciated and very helpful.Best Regards
+
+_________________Rick
+

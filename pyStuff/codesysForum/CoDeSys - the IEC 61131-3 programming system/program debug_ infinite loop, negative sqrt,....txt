@@ -1,0 +1,8 @@
+Is there in Codesys something like in Simatic "cpu stacks"? a log that show the cause of CPU stop (like infinite loop, negative square root,...)I had infinite loop caused by a function in a library, but call stack was empty and not warning message appear..(I'm using WAGO PFC 750-8202)
+
+Hi,which CODESYS Version?You are posting in the V2.3 section is it really CODESYS V2.3BREdwin
+
+yes, 2.3.9.53
+
+Hi,Quote:I'm using WAGO PFC 750-8202Quote:like infinite loop, negative square roothm.. in CODESYS V2.3 there is only the watchdog (on the task) which you could activate to prevent endless loop detectionsure you could add the implicit check functions to check for 'Division by zero' or check bounds etc... check the help for this.Sure in CODESYS V3 or eCOCKPIT there are additional mechanism , plcload supervision (for the whole plc not only for one Task a watchdog) impilcit check functions etcAnyway I would recommend to use CODESYS V3 no matter if you use CODESYS V3 or eCockbit.There are so many Features available - which are from my Point of view mandatory to have - plc logger - html5 webvisu and many more - all Ethernet based fieldbus / ethercat ..BREdwin
+

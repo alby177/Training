@@ -1,0 +1,22 @@
+I had a couple of questions related to LD features from 2.3 that seem not to be available in in codesys 3:
+1) When will option 'Networks with line breaks' be available?
+2) Why is it not possible have function blocks in parallel rungs?
+
+Thanks
+
+The required feature (networks with line breaks and parallel networks) is scheduled for the next CoDeSys version (V3.4).
+
+_________________Roland WagnerModerator
+
+Is there an estimated timeline for version v3.4?
+
+CoDeSys V3.4 is scheduled for spring 2010.
+
+_________________Roland WagnerModerator
+
+I download the V3.4 and i note that in LD editor there ins't option "add/remove EN/ENO" when i insert box  but in version 3.3 this option there was.
+In the online help of V3.4 there is the description of this option but i can't found it.
+
+Best Regards .
+Stefano
+

@@ -1,0 +1,6 @@
+Hello everyone,I have a eaotn XN-322-16DIO-PC05 modul. And there is 2 counter inputs.So when i recieve 10000 pulses form counter input  it means that i have 1 lt water.But my counter input is one byte. And it returns to 0 after 255.Is there is any way to change my byte counter to ınt or word?Thank you.
+
+Make a small FB that has an UINT. Add 256 to the UINT whenever you see counter < old counter. Set old counter = counter.  This will catch the rollover.  Then when UINT > 10000, you have 1 liter.  You could even make a liter counter and roll over your UINT every 10000 counts.   This way you can make a FB give you liters instead of worrying about counting.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+

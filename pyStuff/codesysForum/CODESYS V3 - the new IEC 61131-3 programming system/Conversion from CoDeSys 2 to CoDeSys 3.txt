@@ -1,0 +1,16 @@
+Hello guys,there is the possibilty to "convert" automatically a project from CoDeSys2 to CoDeSys3?If yes, how to do that?...I suppose that it is impossible... but the hope is last to die!   Thank you for your answer
+
+Hi! I know that Festo have a converting tool in there pakage, but I have not used it or even started it.I also think that this is something that 3S have made.You can download Codesys V3 ISO from Festo./Torbjörn
+
+Does it works also in demo mode?Or Festo's CoDeSys is free?
+
+Festo is free like 3S.
+
+It is very easy. You can open the V2.3 project in V3. V3 then automatically converts it.Choose, "file open" and select the V2.3 project (project before 3.0).
+
+Is there anything special with the libraries? I can open some projects, but some of them are not working. It reminds me that i have to convert libraries/open existing one...
+
+Yes, off course there will be changes necessary.You will need to understand how your application is setup and which libraries need to be added/changed.Besides this you will probably need to configure your I/O again.
+
+Thank you at all for your reply!
+

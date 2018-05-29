@@ -1,0 +1,12 @@
+Hi,
+We are looking at buliding a PC104 platform running QNX but its unclear to me how we get the CoDeSys runtime environment working.  
+
+Does S3 Software maintain a list of compatible or certified configurations?  
+
+The website states:
+Quote:CoDeSys is a ready product available off-the-shelf and simply needs to be adapted to your hardware. The customization is thus quick and easy to realise: Short time to market. 
+
+I presume this adaptation needs to be done by S3Software - any ballpark on costs?
+
+Thank you
+

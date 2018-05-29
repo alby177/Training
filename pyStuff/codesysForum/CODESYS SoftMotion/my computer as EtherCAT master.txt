@@ -1,0 +1,4 @@
+HelloI'm having a real hard time making my computer as an EtherCAT master in RTE program.I have a motherboard by ASUS type P5QPL-AM. I followed all the insrtuctions that appear in the RTE manual section 4.2.1I've disabled all I can in the BIOS but i was told by ASUS that a self check of the BIOS is automatic and cannot be disabled.Anything else I can check or do?
+
+hi,then next check how accurate your pc act after performing these changes.First I would propose to check how stable the cpu clock is now.Therefor a useful tool is cpuz. (find it with google)As result of that you must have a stable clock of the cpu (if not speedstep whatever seems to be active -> bios)Then:check jitter in the task configuration.Then use ethercat and distributed clocks, should work now.cuEdwin
+

@@ -1,0 +1,6 @@
+So, I have a CTD with current value being displayed on a display (modbus). I want to be able to change this value in the display and then load it into the CTD whenever needed. How would I go about doing this?Attachment:codesys_mar_ctd_amount.png
+
+I think the clearest way would be to use a separate variable for the desired starting value.  If you try your solution, then your AmountDisp value is updated (written to) every PLC scan.  Most likely the user entered value is being overwritten before the LOAD input can be set true.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+

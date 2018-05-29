@@ -1,0 +1,4 @@
+I have downloaded V3.5 SP9 current version but havn't yet installed it as a notice in red states that CODESYS static analysis add on needs to a current version otherwise problems can be expected. What is the static analysis, does it need a separate download or is it part of the CODESYS download.Thanks
+
+It needs a separate download and installation of the package.See http://store.codesys.com/codesys-static-analysis.html for further information.If you haven't installed it yet, you can install SP9 without problem.
+

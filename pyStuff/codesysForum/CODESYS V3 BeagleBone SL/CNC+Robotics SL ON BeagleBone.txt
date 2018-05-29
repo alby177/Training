@@ -1,0 +1,4 @@
+Hi,Is it possible to purchase and install the CNC+Robotics SL on the BeagleBone?Thanks
+
+Hi,SM Basic means PLCopen  functionality is licensed,CNC, Robotic needs extra license on BBB.BREdwin
+

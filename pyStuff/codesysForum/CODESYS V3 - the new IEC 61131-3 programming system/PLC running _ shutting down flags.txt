@@ -1,0 +1,8 @@
+Are there any flags or events for retrieving the running state of the PLC? Like "Shutting down" and "running"?Leo
+
+Depending on the PLC you are using if you double click "Task Configuration" then select "System Events" you can find events like you are talking about. You can then use those events to call a POU to perform a certain task. A better description can be found in the help under "System Events".If there is a way to find these events outside of the task configuration I would also like to know as a group of PLCs we use doesn't offer any system events under the task configuration.
+
+If you open the Task Configuration (double click), you can go to the Tab "System Events". Here you can add function calls in case a specific system event occurs.Besides this, the Application Manager example project in the store can be usefull to retrieve general Application info.
+
+Thanks, this helped 
+

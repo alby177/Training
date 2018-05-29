@@ -1,0 +1,4 @@
+HI,I'm using CAA_FILE.lib of CoDeSys V3.5 to create files in a HMI Turck VT250. I'm writing data in this file but I can't visulize it so how can I find the file to see what I'm writing.thank you.
+
+Hallo,use the filebrowser in CODESYS to check if the file exists.BREdwin
+

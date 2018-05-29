@@ -1,0 +1,76 @@
+Hi.
+
+I try to implement an array of struct in IEC61131-3 ST language. 
+
+The C code look like this:
+
+Code:Struct BDD{Unsigned char a1;Unsigned int a2;Unsigned int a3;Unsigned int a4;} struct BDD BDD_table[4] = {{'X', 1, 1, 2},{'a', 0, 100, 0},{'a', 1, 100, 2},{'X', 2, 5, 4}};
+
+So:
+How to declare array of struct and fill inn data in array in ST language?
+
+Thanks!
+
+Best Regards
+Hans Pettersson
+
+I believe you got a reply at PLCS.net.
+
+Did that address your problem or do you need more help?
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+To declare a structure:
+
+TYPE BDD :
+STRUCT
+	a1 : BYTE;
+	a2 : INT;
+	a3 : INT;
+	a4 : INT
+END_STRUCT
+END_TYPE
+
+To declare an instance of an array of structures:
+VAR
+	BDD_Table : ARRAY[0..3] OF BDD;
+END_VAR
+
+To initialise the array in ST:
+BDD_Table[0].a1 := 'X';
+BDD_Table[0].a2 := 1;
+BDD_Table[0].a3 := 1;
+BDD_Table[0].a4 := 2;
+
+BDD_Table[1].a1 := 'a';
+BDD_Table[1].a2 := 0;
+BDD_Table[1].a3 := 100
+BDD_Table[1].a4 := 0;
+
+BDD_Table[2].a1 := 'a';
+BDD_Table[2].a2 := 1;
+BDD_Table[2].a3 := 100
+BDD_Table[2].a4 := 2;
+
+BDD_Table[3].a1 := 'X';
+BDD_Table[3].a2 := 2;
+BDD_Table[3].a3 := 5;
+BDD_Table[3].a4 := 4
+
+There is a way of declaring initialisation values with the variable declaration, but I can never remember the syntax (bit fussy!)
+
+Regards
+
+Roger
+
+Sorry but you mentioned initialize the array you can also do it directly in the declarations by using:
+
+BDD_Table : ARRAY[0..3] OF BDD = (a1 := 'X',a2 :=1,a3 :=2, a4:=3),(a1:='Y',a2 := 2,a3:= 3,a4:= 4); etc...
+
+Just another way.
+
+_________________Thanks,
+Steve Pfeifenroth
+

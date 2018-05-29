@@ -1,0 +1,15 @@
+HelloI have make a small program, working well with wago 750 I/O Ethernet IP.Parameters enter in webvisu, are not saved at each raspberry daily boot.I have put them in "persistent vars", but they seem not be so persistents....How to have persistent var on rapsberry ?i have seen this post but i'am looking for a a quick an simple solution :viewtopic.php?f=21&t=8275i have found a lot of other post, but i don't find to esay my information.In my program (for this moment) i have got 2 parameters :People, enter this parameters in th webvisu. I would like to have a subrutine, looking if parameter saved are same in the screen, if yes, nothing appened, if no save them.Thanks
+
+Hi,the message is:If you want to use retains on raspberry you need a UPS, which triggers a proper/graceful shutdown of theLinux system.BREdwin
+
+Can you explain me plz ?Thanks
+
+https://r.tapatalk.com/shareLink?url=ht ... are_type=t
+Raspberry retain variables
+
+A question if the retain variables are saved in a USB device can also be corrupted by an unexpected closure?best regards
+
+Hi,yes,if you just remove the power supply without a graceful shutdown - yesfor both retains on sd or other media the only solution is to have an UPS.BREdwin
+
+Hi Thanks for request.Not existing nothing hardware for raspberry, to add memory not volatile to raspberry? Enviado desde mi Plus E mediante Tapatalk
+

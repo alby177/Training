@@ -1,0 +1,6 @@
+Hello,I have in mind a project consisting into managing DALI lights with a Raspberry. I was thinking to doing it with: Raspberry/Beckhoff BK1120/ Beckhoff KL6811, but no xml description is available for the KL6811 (as far as I saw), and I've tried to import *.lib libraries from TwinCAT directories without success (maybe I didn't it well).Any idea of the way to do ? I guess I'm in the wrong way .....Thank you
+
+Hi,nice approach to have DALI on Raspi You need to use the 'MDP' version of the BECKHOFF Esi files.These esi files you'll get on request from Beckhoff support. (Twincat does not need the MDP version)I've attached the esi files-> better ask Beckhoff to be sure to have the latest version.If you use these XML files you could add the KL6811 and you could access the process data. (See screenshot)Sure a library for this is not available and you could not use the libraries provided by Beckhoff.Please let the community know, if this works.BREdwin
+
+Thanks a lot for your accurate reply Edwin   Be sure that I'll advise about the progression of the project, but it should take a bit of time: I'm a teacher and this project have to be done with my students !Thank you again.
+

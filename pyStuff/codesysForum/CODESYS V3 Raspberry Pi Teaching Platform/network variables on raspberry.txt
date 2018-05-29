@@ -1,0 +1,6 @@
+Hi ,Is it possible to use network variables on raspberry pi  ?  When I try to convert the example from the store to work on raspberry I got the error " Unable to insert required library 'NetVarUdp.library' !"Regards
+
+Hi,which CODESYS version are you using?if it is the current version 3.5.5.40 and current Pi store package version (2.0.1.0) this should not happen.Project archive will follow.BREdwin
+
+HiThanks for the reply  , I have installed sp 3.55 4 , it works now . Thank you
+

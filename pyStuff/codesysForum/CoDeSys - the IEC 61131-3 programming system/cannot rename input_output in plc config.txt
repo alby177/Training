@@ -1,0 +1,6 @@
+heyi have a weird problem, recently we upgraded our codesys to version 2.3.9.25since then i cant rename inputs/outputs in Resources / PLC Configurationit gets weirder..in resources/plc configuration i have some modules under K-Bus (FIX) and there are also other modules connected with profibusi cant rename only the ones under k-bus (those modules connected via profibus i can rename just fine)before the upgrade i was able to rename by simple double-clicknow i got a hint that i should right click on k-bus, append subelement and in the new window, tab ínput/output, i can rename therewell, i can enter new names for input/outputs also for modules under k-bus but when i click OK i get this error:'The command could not be executed!'any help please??? i don want to redo the whole thing, its HUGE!
+
+did you name any outside contact inside an pou?something like in1 at %IX0.1 :bool;check if anywhere outside the global something is addressed.or double address.check all names for allowance like no spaces not starting with numbers etc.check for double namescopy project and delete all cards and check if this is working, then you can check all the names.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

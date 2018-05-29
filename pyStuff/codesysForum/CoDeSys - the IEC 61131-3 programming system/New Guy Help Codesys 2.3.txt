@@ -1,0 +1,4 @@
+I have never used a plc or programmed one but ive now been challenged by my boss to figure it out. I would love a language break down example BOOL=???, TON=???, AND=???. I have watched 50+ youtube videos about this and cant figure that out. Is there anyone who could write a program on a contract or Purchase Order you might have to sign a N.D.A. I have a program wrote and running already but i need to edit it. It runs two relays and i need to add a third. I would like to be trained or shown basic know how so i can program this myself so i can reprogram as this changes per instance. Please help with anything you think will be helpful. School training is out of the picture for now unless i can find an online training class. Anyone ever do the PLC Boot Camp? Thanks Shawn
+
+Please contact me at pop (at) eik (dot) bme (dot) hu to discuss your questions in detail.P.Peter
+

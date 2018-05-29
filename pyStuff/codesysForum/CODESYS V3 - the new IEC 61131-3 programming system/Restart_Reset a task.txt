@@ -1,0 +1,6 @@
+Is there a way to reset a task from another task?In one Task i have an SFC Program running. Now i would like to to stop its action from another task (by changing the status tag) and set the task back to the beginning, so that the next time i start the task it starts again from the first command of the SFC and not where it stopped before.Any idea?
+
+Hi You have sfc_init bool bariable which reinit sfc and take it to inis step.Possibly Restarting task (that i don t know if you can do) not  reinit grafcet.
+
+cool. thanks!
+

@@ -1,0 +1,2 @@
+Hi,In the attempt of writing a library, I face the "unbound placeholder" message in Library manager (when referencing it).I've read some documentation about placeholders and I barely understand the concept, but I'm unable to solve my issue.I suppose that the unbound message is generated because I target specific version of other libraries in my librairy.Where should I act to solve that referencing issue ?Regards,dFx
+

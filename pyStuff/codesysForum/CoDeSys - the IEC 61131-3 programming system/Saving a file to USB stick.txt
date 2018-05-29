@@ -1,0 +1,37 @@
+Hi all,
+
+Here's another programming question. I am using a linux based PLC (Berghof) and I want to save a file to an attached USB stick. 
+
+I can save a file to the program directory ( /flash/plc/applications/ ) but I need to save the file to /media/usb0/
+
+How can I change the location of the file?
+
+This does not work:
+StLogFile := '/media/usb0/LogFile.txt'
+SysFileOpen(StLogFile, 'w');
+
+Thanks!
+
+Hello,
+
+Do you get any error code?
+
+I've done a project on a Berghof Dialog Controller where I saved to a USB-memory.
+
+The line:
+
+dwFileNumber:=SysFileOpen(sFileName,'w');
+
+where sFileName was /media/usb0/filename.csv worked fine for me. It could be possible that the path to the file had a ending /
+
+If you telnet to the device can you access /media/usb0 then?
+
+Another tip is to use something like
+xUSBPlugged:=INT_TO_BOOL(BGH_USB_GETPLUGSTATUS(0));
+to make sure that the USB-key is plugged in. The function is available in the BghSysInfo_Vxx.lib library (xx=the version number).
+
+Thanks for your tips, I found the problem!
+
+I was using uppercase letters (like: /Media/USB0 )
+When I tried lowercase text the problem was fixed.
+

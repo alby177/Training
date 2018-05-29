@@ -1,0 +1,11 @@
+Hi all.Is there ANYTHING in CodeSys that allows you to force a for loop block to move to the next iteration?  Like the "continue" command in most other languages?  Is there an equivalent?Elric.
+
+If you put the var higher as the to value it will not enter the loop, (except when to value is 127 in SINT, then it will never end.)and you can check with IF statement. (in some cases RETURN works as it will leave a POU)
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+There if you want to leave a loop you can also use the EXIT command.Code:FOR scounter := 0 to 100 DO    IF (data[scounter] <> 255 THEN        data[scounter] := data[scounter] + 1;    ELSE        EXIT;      (* This will terminate the for loop *)    END_IFEND_FOR
+
+_________________Thanks,
+Steve Pfeifenroth
+

@@ -1,0 +1,10 @@
+Hello Again,
+
+I am wondering if anybody has library files they are interested in sharing for PLC based controls. 
+
+I am interested in anything to do with industrial controls which also us to expand codesys environment.
+
+R.
+
+_________________Thanks, Rob.
+

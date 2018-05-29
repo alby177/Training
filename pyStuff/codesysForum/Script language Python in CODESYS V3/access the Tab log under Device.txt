@@ -1,0 +1,6 @@
+Hi there,does anybody know, if it is possible to access the messages under the 'LOG' Tab in the device configuration?I'm using Codesys V3.5 SP7 Patch2.THX
+
+Hi cf2017.cf2017 wrote:does anybody know, if it is possible to access the messages under the 'LOG' Tab in the device configuration?Right now, this is not yet possible, but this improvement is already listed in our Jira tracker CDS-31928, so it will be implemented eventually.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

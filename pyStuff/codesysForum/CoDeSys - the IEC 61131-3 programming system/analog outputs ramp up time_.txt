@@ -1,0 +1,6 @@
+Hi,i have a program programmed in CoDeSys V2.3.i have a problem with my analog output (%QW134).it seems to have a ramp up time.it starts at 0mA and go's slowly (+/- 3sec) up to te preconfigured value (stroom_kanaal_5 & 6).i have a HMI screen on my system as wel where i can read my actual mA on the output and i can see from the moment i activate my input (logische_sturing_boren.boorkop_draaien_rechts_actief) the current starts at 0 and go's up to the preconfigured value between 200mA and 550mA. it takes like 3 sec.i really need the proconfigured value immediatly on my output. is this programmable or it this rather a hardware problem?regards,Gvanroey
+
+what type of module is connected to this %QW134?and what is on analog_01 ?for rest i do not trust DINT_to_WORD as the sign is lost so the MSB is not correct.btw as i am also dutch you may email me in nederlands.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

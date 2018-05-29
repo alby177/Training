@@ -1,0 +1,6 @@
+Hello, please, Î’m looking for your help, someone knows how to connect, a Raspberry with a arduino via Codesys? My idea is to transfert a Raspberry signal to the arduino witch contrôl a motors. For that I want to use, I2C protocol, but I don’t know how to configurate it. Please help. Thanks
+
+You can use this modbus library for arduino: Modbus-Master-Slave-for-Arduino
+
+Oh thank’s. So Î’ve just had to configurate Arduino as a slave, and then, it will execute Codesys program via Raspberry? For example, how can I do, to transmit a signal from Raspberry to Arduino to make functionning the left motor for example. Thank’s a lot
+

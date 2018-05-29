@@ -1,0 +1,23 @@
+Hi again,
+
+I'm attempting to create a smooth motion like a sliding motion using visualisation, I've used the "motion relative" menu to slide the top of a rectangle up. I set the rate of change of number to 60Hz so it will jump a short distance once every 1/60th of a second however both when I simulate it and when it is on the screen it's self, it only refreshes the object roughly 3 times a second making the 'slide' motion look extremely jumpy.
+
+Does anyone have any ideas of how to overcome this in CoDeSys or whether I have to switch to a different platform?
+
+Many thanks
+Keith
+
+no possibility under windows. it is too slow.
+only possible in a visual program or in scada, however the update coming from the PLC is also slow.
+a simple program is only 100 Hz without any graphics.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+would Visual Studio be a better platform to write my GUI in then?
+
+yes
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+thanks shooter
+

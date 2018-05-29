@@ -1,0 +1,2 @@
+View this messages about CoDeSys program1) The file 'Config.ccf:' could not be sent2) The file 'FlexConf.ini:' could not be sentWhat's the problem? Its comunication error? The PLC cannot run  Thank you in advance
+

@@ -1,0 +1,18 @@
+Hi,I have a programming problem (CFC) that I can't figure out how to solve.As a part of the program for my house, I want to integrate pulses from an energy-meter. The energy-meter has two outputs, that I want to connect to to two digital inputs on my Wago 750 PLC to get info about how much Power that's imported or exported from my household.The meter has a pulse-factor of 100 pulses per kWh. I thought that if I instead of counting pulses over a fixed time-period rather Count the time between pulses I get a much faster  and more accurate momentary Power consumption/export monitoring. I later on want to use this to Control a waterheater while I have an over-production of Power on my solar panels.Then, to my problem:See the attached Picture, I can't get "momentan_konsumption" and "momentan_produktion" (momentary consumption/pruduction) to stay at the calculated value.I am trying to calculate the elapsed time from the TON-blocks to a momentary Power-consumption/production by converting time to dword, divide 36 000 000 by the elapsed time in miliseconds and hopefully get a momentary Power-value in watts. With the conditions on the EN-connectors I hoped that the calculation should only be done with an elapsed time anything else than 0 so that the calculation couldn't be resetted right away.Can you see any obvious faults?
+
+By the way, the variables connected to the ENO-connectors are not in use. They are only leftovers from a Little experiment.
+
+arrange the execution order of the elements of cfc.Enviat des del meu Aquaris M5.5 usant Tapatalk
+
+I'm not sure I understand what you mean. In which order should they be executed?
+
+jos is talking about a command to change in which sequence all the blocks are calculated.I am missing more software like a trigger when you receive a pulse, and oke you can use the time between pulses for the actual, however you will also need to store the total pulses.if you also store the starttime and the actual time you can get a average of power.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+I don't really think I need to store the total pulses. The meter itself keeps track of the total energy-consumption. That's enough for me. Here I just want to see consumption/pruduction for the moment.The variables "Konsumption" and "Produktion" is the variables for the digital inputs that "listen" for pulses.I am sorry, but I still don't understand how to change the sequence the blocks are calculated. Can you give an example?
+
+jos is talking about the sequence of the blocks the AND is now 3 and should be 0this is done automatically check order (after right clicking.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

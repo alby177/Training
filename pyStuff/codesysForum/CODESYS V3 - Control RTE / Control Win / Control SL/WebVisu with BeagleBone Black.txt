@@ -1,0 +1,4 @@
+hello!i use BeagleBone Black (debian image 2015-07-28) with CODESYS Control for BeagleBone SL (in demo mode : 2 hours).In my program, i use Webvisu.I download program to BeagleBone -> OKWebVisu to debug Codesys ->  OKWebvisu In Internet Explorer, with IP localhost address (exemple : http://192.168.1.8:8080/webvisu.htm) -> Error HTTP 404 (no find web site).how can I run the WebVisu with internet explorer?you must configure the Web server on the BeagleBone ?Thank You!
+
+Hi Davidos,sorry port 8080 is already used on BBB so we decided to use port 9090 for webvisu.BREdwin
+

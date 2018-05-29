@@ -1,0 +1,24 @@
+Hi
+
+I have a project in school where we have to program a oil separator. The program has 5 different alarms. The control of the separator has only one alarm led and therefore we would like this alarm led to make different blinking sequences so the specific alarm is know to the operator. We have tried the "Blink" function blok but with little luck. The blinking sequency we would like to be like: on for 5 sec. and then short blinking of maybe ½ sec. and then 5 sec continous on again. illustrated: --------------- 5sec ()-()-()-() ---------------- 5sec
+
+Hope you can help us.
+-Thanks
+
+Hi,
+
+please find a small solution attached. Surely there are a hundred of other solutions possible .
+
+I hope this helps you nevertheless
+
+_________________Roland WagnerModerator
+
+Here is a code for your project in ST.
+
+you could easly do an function_block for this...
+
+Variables
+Code:PROGRAM PLC_PRGVAR   Timer_LED_On         : TON;   Timer_Led_Off         : TON;   Timer_five_Sec_Pause   : TON;   LED_Output            : BOOL;   Start_Blink_seq         : BOOL;   Alarm_counter         : BYTE;   Alarm_Type            : BYTE;END_VARThe code...Code:(* Activation of 5 sec. timer  *)Timer_five_Sec_Pause(IN:=TRUE,PT:=T#5s);(* After 5 sec. activate the blink function. *)IF Timer_Five_Sec_Pause.Q = TRUE THEN   Start_Blink_Seq := TRUE;END_IF(* How many blinks will we have on the LED? *)Alarm_Type := 3; (* For instance 3 blinks every 5 sec... *)(* Here is the sequence for the blinking... Checking if the 5 sec. timer has been reached *)(* Also checking if the alarmtype is more than 0. 0= No alarm = No blinking *)IF (Start_Blink_seq = TRUE) AND (Alarm_Type > 0) THEN   (* First we activate the timer to lighten up the LED *)   Timer_LED_On(IN:=TRUE, PT:= T#250ms);   IF Timer_LED_On.Q = TRUE THEN      (* counting how many times the LED has been blinking *)      IF LED_Output = FALSE THEN Alarm_counter := Alarm_Counter + 1; END_IF      (* Activation of the LED e.g DigitalOut1 *)      LED_Output := TRUE;      (* When the LED is on we starting the timer to turn it off *)      Timer_Led_Off(IN:=TRUE, PT:=T#250ms);      IF Timer_LED_Off.Q = TRUE THEN         (* Turning off the LED *)         LED_Output := FALSE;         (* Resetting both timers for on and off *)         Timer_LED_On(IN:=FALSE);         Timer_LED_Off(IN:=FALSE);         (* Also checking if we have blinked enough... *)         IF Alarm_Counter >= Alarm_Type THEN            (* Resetting the 5 sec. timer... *)            Timer_Five_sec_Pause(IN := FALSE);            (* Setting the routine to false and waiting for the 5 sec. timer again *)            Start_Blink_Seq := FALSE;            (* Resetting the counter for how many blinks that we had been doing with the LED. *)            Alarm_Counter := 0;         END_IF      END_IF   END_IFEND_IF
+
+_________________A Programmers worst enemy is his own ego...
+

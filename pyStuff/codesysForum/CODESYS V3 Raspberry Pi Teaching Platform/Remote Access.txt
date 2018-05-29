@@ -1,0 +1,12 @@
+For raspberry pi ;How to use the TCP block driver to get connected over a firewall using the Codesys IDE? Should I use the port 11740 instead of 1217? does anybody have more information for this topic?
+
+Hi,see the description in the security white-paper:https://de.codesys.com/fileadmin/data/c ... epaper.pdfTCPBlockdriver will be used if you just type the plc's ip-adress in the address fieldthen TCP Port: 11740 is neededUDPBlockdriver is used if you use the scan Dialog to scan the plc's in your Networkthen UDP Ports: 1740 -1743 are neededfor the Gateayway 1217BREdwin
+
+Thanks for the detailed manual and explanations. Unfortunately with all with that knowledge in mind, I am trying to use the Remot3.it to connect the raspberry pi remotely with Codesys IDE over internet with no success. Fortunately I have a success in getting connected to the Webvisu.htm. But with the Codesys IDE no success.I write the ip address and port number given by the Remot3 to the place where you have pointed in the IDE but it does not get connected. I defined and tried  both 1217 and 11740 port numbers in Remot3 but could not get through. I tried to add a new gate way with IP address and port number again no success. Is there any security restriction to get connected over the internet using this service?Is it a better idea to use the OPENVPN for such a purpose?Thanks for any help in advance.
+
+Hi,is this remote3 free for privat user?I would try to use the Pi Gateway.So use 1217 and then add a new Gateway in CODESYS with the remote address of your Pi.Then scan.. via this remote Gateway(which is embeeded in the Pi runtime)BREdwin
+
+Remot3 looks free for personal use. Could you please test this gateway issue and send the solution with Remot3. I have tried almost everthing but no use. But behind a firewall using Remot3 could not succeed, it looks like it is blocked some how. Best Regards
+
+Hi,took some time to check,the problem on this is that proxy51.yoics.net could not be resolved by the  IDE,which means if you add the ipaddress in the blockdriver or in the Gateway it will work.This need to be fixed.So the workaround is:1. Ping proxy51.yoics.net2. use the IP address and add it either to the address field (including the port number from remot3) on the right side / or add a new Gateway with the IP address and port no from remot3BREdwin
+

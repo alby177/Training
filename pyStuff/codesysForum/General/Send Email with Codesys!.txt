@@ -1,0 +1,5 @@
+Could I use the pop.gmail.com as my Pop3 Server and smtp.gmail.com as my Smtp server to send email? while I am using a 750-841 wago controller with mail_02.lib and ethernet.lib. please take a look at the screen shot. 
+thanks. 
+
+Or you can recommend me to use other type of Smtp and pop3 server .
+

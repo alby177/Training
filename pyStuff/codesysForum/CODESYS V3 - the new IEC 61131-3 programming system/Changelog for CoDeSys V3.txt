@@ -1,0 +1,4 @@
+Hello CoDeSys Forum,the new CoDeSys V3.5 SP1 and the Hotfix 1 were recently released.Is there a changelog for the new features of the Hotfix and the Servicepack?Thank you in advance for your help.Matthias
+
+Hi,you'll find this information in the customer download area,there is a change list and releaseinformation to each version. RegardsEdwin
+

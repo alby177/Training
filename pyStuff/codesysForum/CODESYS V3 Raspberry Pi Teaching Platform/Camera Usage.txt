@@ -1,0 +1,4 @@
+Is there any example of camera usage?Can we use real time image proccessing inside Codesys Platform from Pi_Camera or any USB Camera?Regards
+
+Hi,a simple project example is here:"c:\Users\<yourUsername>\CODESYS Control for Raspberry PI\2.0.1.0\Camera.project" but sure a lot more is possible like timelapse videos, slow motion videos, everything what is supported by the PiCamRealtime Image processing is possible by OPENCV but, this is more Linux related at the moment not availablein iec code.BR Edwin
+

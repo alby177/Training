@@ -1,0 +1,2 @@
+HalloI need to connect two machines, the first is in Ethercat, the second is in Profibus DP.I plan to use a Beckhoff EL6731_0010  (slave profibus device) in my Ethercat configuration,but don't know how to configure the EL6731My master Ethercat uses a runtime Codesys Ver.3.5 SP4 Patch4 , in this version I see a library "IoDrvEl6731",but I don't know how it's working.Is there anyone with an example or able to explain me how to configure EL6731_0010 ?Thanks in advance
+

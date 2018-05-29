@@ -1,0 +1,6 @@
+I write code for serial communication to read and write data from the external device in Twin CAT. I use the moduels Ek1100,EL6010 and EL 9001. The programme is all right and the programme is getting string too as answer which is correct. Problem is, I don’t need whole string but i want only some data from that. For that I used the some string function like MID.Find the code below for this:Example : LastReceivedString = 'xyz45.23abc'Here, LastReceivedString is variable and it's data is 'xyz45.23abc'. Code:----------------------VARsTemp : STRING;END_VAR------------------------...sTemp := MID(LastReceivedString, 5, 4); When i am using this function as per above example, the problem is it's not acting on the data from the device which is here 'xyz45.23abc' insted of it's acting on variable name 'LastReceivedString'. So, what i am getting result with this is , =tRece insted of 45.23.Can you help me how to read out specific required data through the whole string?Thanks.
+
+you have a typo: you say lastreceivedstring= 'xyz45.23abc'it should be :=what is the string when running monitor?
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

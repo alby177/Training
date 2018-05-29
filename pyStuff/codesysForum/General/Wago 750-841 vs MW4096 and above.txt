@@ -1,0 +1,6 @@
+Hi,on a Wago 750-841 PLC, I need to access MW4096 and above both via Modbus and via PLC.In a factory default PLC, trying to define a variable like thisCode:mw4096 AT %MW4096: WORD;I obtain the error Invalid address: '%MW4096'.The only solution I found is to change memory layout of PLC in this way:Memory, Size = 16#2000 -> 16#4000Retain, Base = 16#30002000 -> 16#30004000Retain, Size = 16#4000 -> 16#2000So, NOVRAM size is still 24 kB (0x4000 + 0x2000), but flags area grows from 8 kB to 16 kB (0x2000 -> 0x4000) and retain area decreases from 16 kB to 8 kB.Now I can access both via Modbus and via PLC up to MW8191.Is this procedure correct? Are settings right?Thanks
+
+will try but first i would say no not this way.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

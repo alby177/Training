@@ -1,0 +1,6 @@
+Hello,in my SSH I cannot find PlcLogic dir.But in the CODESYS IDE in can see that this directory exists.Any ideas?I sometimes need to delete the Bootproject when CoDeSys loses connection with runtime.Best regards,Oleg
+
+Hi Oleg,you could delete the bootproject by using the Update tool.Since 3.5SP11 release the runtime Directory is:/var/opt/codesys/so you'll find PlcLogic here:/var/opt/codesys/PlcLogic/BREdwin
+
+Thank You!
+

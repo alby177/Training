@@ -1,0 +1,4 @@
+Hello,does someone knows how to use I2C with repeated start condition? I need to communicate with temp sensor MLX90614 which is using this protocol.I am using Codesys 3.5 SP10 with Raspberry Runtime 3.5.10.20Weist jemand wie kann mann I2C Schnittstelle mit s.g. repeated start condition nutzen.Ich brauche eine Komunikation mit Tem. Sensor MLX90614 zu erstellen aber der Sensor nutzt wie besprochen I2C mit repeates start condition.Ich nutze Codesys 3.5 SP10 mit Raspberry Runtime 3.5.10.20Best regardsPASK
+
+I still did not find a solution how to set i2c in Codesys but i solved the problem in another way.I wrote a java program with Pi4J library that is reading the sensor and then i am sending the result to RPi through MOdbus TCP.The RPi is configured as a Modbus slave and the Java program as Modbus TCP Master.
+

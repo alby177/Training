@@ -1,0 +1,4 @@
+Good day, How delete this warning?
+
+In Imagepool - i cant delete or rename image "ControlPanel"
+

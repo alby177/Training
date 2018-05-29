@@ -1,0 +1,4 @@
+Good day, help me with Recipe.I downloaded example from CoDeSys store and try create in my project Recipe.1. Add to application - recipe manager2. In Recipe manager add object - RecipeDefinition with name - 'Rec'3. In 'Rec' add one variable and add new recipe (right click mouse) with name 'Stair'4. In visualization create button with function "Execute command" - "Write Recipe" (name def - 'Rec'   name - 'Stair')Compile load Run . Push the button and not affect. I think current means of  selected variable must be write in recipe Stair.What my mistakes may be in this case?p.s. screen in attach
+
+If I use global variables of type String as the name, in this case it works.
+

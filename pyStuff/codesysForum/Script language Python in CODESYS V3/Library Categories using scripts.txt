@@ -1,0 +1,30 @@
+Hello all, We are currently building and deploying container libraries with the help of scripts. But when the libraries are installed, they always fall under the miscellaneous category in the selected repository. We have the library category information in a libcat.xml file and this can be normally loaded by projectinformation-> LibraryCategories Dialog -> Add from description file / from other library and then choose the description file (libcat.xml). Is it possible to perform the same operation using scripts? .Any code snippet to perform the same will help a lot!    Thanks in advance Regards,SK
+
+Hi codesys_sig_forum.codesys_sig_forum wrote:We have the library category information in a libcat.xml file and this can be normally loaded by projectinformation-> LibraryCategories Dialog -> Add from description file / from other library and then choose the description file (libcat.xml). Is it possible to perform the same operation using scripts?You can use the library manager to get a list of all available categories or get the category by its Guid. Look for ILibManager in the Scripting API documentation.Code:from System import Guidfor lib in librarymanager.categories:   print("Lib: {} V{} Guid {}".format(lib.name, lib.version, lib.guid))caaLibCat = librarymanager.get_category(Guid("d2c47c8c-760e-440c-9147-4468a3c03edb"))assert(caaLibCat is not None, 'No such category')print("Guid of CAA library category: " + str(caaLibCat.guid)BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Dear Martin, Thank you for your quick response. Can you provide a similar code snippet to "SET" a library category using py scripts?. Thanks in advance  Regards,SK
+
+Hi codesys_sig_forum.codesys_sig_forum wrote:Thank you for your quick response. Can you provide a similar code snippet to "SET" a library category using py scripts?.Here some example code:Code:from System import GuidcaaLibCat = librarymanager.get_category(Guid("d2c47c8c-760e-440c-9147-4468a3c03edb"))assert(caaLibCat is not None, 'No such category')print("Guid of CAA library category: " + str(caaLibCat.guid))info = projects.primary.get_project_info()assert(info is not None, 'No project info')cats = info.categoriesif caaLibCat not in cats:   cats.Add(caaLibCat)   print('Added library category')print("Found lib categories:")for cat in cats:   print(cat.name)BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi Martin, Thank you for the code snippet. I performed the following steps:I) created a new library project (The error seems to occur more frequently with newly created library projects)II)I tried using the snippet, but I got the following ErrorException:"At least one element in the source array could not be cast down to the destination array type" Would be interesting to know why the elements in the array object (LibCategory object) are not of the same type or are empty. I have herewith attached the py script and the error message as attachments. Looking forward to your reply.Best Regards,SK
+
+Hi SK.codesys_sig_forum wrote:II)I tried using the snippet, but I got the following ErrorException:"At least one element in the source array could not be cast down to the destination array type" In which line of your code snippet does the exception happen?BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi Martin,In the method call (last line)"cats.Add(libcat)"Best Regards,SK
+
+Hi SK.I tried your python script with CODESYS but there was no exception. For the moment we can only guess that the content of the project information object contains values for the library categories which we don't expect.Does the button Details of the dialog in the screenshot provide a CallStack? If yes, please add it here.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi Martin, I have herewith attached a screenshot of the traceback for the error. The errors are shown in the SoMM Logic Builder environment.I  attempted the same with the CoDeSys v 3.5sp 9, there were no error messages, but the script also did not add the library category to the project information object.Best Regards,SK
+
+Hi SK.codesys_sig_forum wrote:I  attempted the same with the CoDeSys v 3.5sp 9, there were no error messages, but the script also did not add the library category to the project information object.I discovered this bug during my investigation of your problem. The library category is added but the editor does not show it. If you use Scripting you will find it. I added the Jira CDS-50292 to our bug tracking, so it will be fixed eventually.codesys_sig_forum wrote:I have herewith attached a screenshot of the traceback for the error. The errors are shown in the SoMM Logic Builder environment.The additional information does not give me any further hints for the reason. Please contact the Schneider support for further help.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

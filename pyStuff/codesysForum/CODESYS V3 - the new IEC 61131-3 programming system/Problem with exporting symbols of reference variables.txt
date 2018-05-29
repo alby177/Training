@@ -1,0 +1,2 @@
+If I create a reference to a structure variable and make it a symbol by using the attribute {attribute 'symbol' := 'read'}it does not seem to be exported properly. OPC client complains of bad data/ bad nodes. If I export the symbols of the structure directly, I am able to access the variables. Looking at the exported symbols configuration xml, I can see that the type of the exported node is not of the reference type but of the type of the original variable.Is this a bug, or am I missing something here.Thanks in advance.
+

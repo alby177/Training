@@ -1,0 +1,4 @@
+Hello,I would like to ask if it is possible in Codesys to assign an initial value in the output of a function block when you call it.I know that according to IEC standard an output can only be read outside the function block but because there is a possibility of assigning an initialization value in other software I wanted to know if that is possible also here.Thank you!
+
+Finally I found you can do it in the variables declaration (where the instance of the FB is declared e.g GVL)when you have tabular view and click the initialization or just TestInstance: TestFB := (out := 6);!
+

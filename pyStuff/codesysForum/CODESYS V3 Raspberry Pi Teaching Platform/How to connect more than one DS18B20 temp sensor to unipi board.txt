@@ -1,0 +1,16 @@
+Hi to all,my question is:I'd like to connect more than one DS18B20 temp. sensor to unipi board, controlled with raspberry pi board (the complete system is raspberri pi + unipi boards).I can connect one temp. sensor, which works perfectly.To connect multiple sensors, I have a RJ45 hub.When i connect only one sensor, I can read the sensor ID by write in raspbian: cd/sys/bus/w1/devicesand after: ls.But when I connect more than one temp. sensor with RJ45 hub, and I write cd/sys/bus/w1/devicesand after: ls, I not read the ID sensors.How can I fix the problem (how can i read the temp. sensor IDs)?Thanks, best regards.
+
+Does anyone know how I can solve the problem?
+
+Hi,guess this is not really CODESYS related:http://www.reuk.co.uk/wordpress/raspber ... pberry-pi/BREdwin
+
+Hi,I got this problem many times ago.Fastest ways to resolve your issue, Connect seperately each DS18B20 and check the unique address. For this I used the program example gived by CODESYS for scanning the address.Once you have the Unique adress of each DS18B20, you have to add the correct number of instance of DS18B20.Click Left on your DS18B20 MasterBus and add device.Then on each DS18B20 instance, you write the correct address. Once this done, you can read the value of each DS18B20.If you still having issue, I can send you step by step picture later.
+
+And by the way, when you are using the UNIPI DS18B20 Masterbus, the adress are managed from the UNIPI Bus unstead of Raspberri PI Bus. Have you used the script gave by UNIPI?
+
+Hi Edwin and lefrank,I try with your suggestion, and I'll let you know.Lefrank, if I do not solve the problem I will ask you kindly the graphical steps Thanks!
+
+I followed step-by-step procedures but it does not work, while the individual sensors work perfectly. Lefrank, can you send me the step-by-step picture?Thanks!
+
+I have solved. thank you all!  
+

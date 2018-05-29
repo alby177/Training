@@ -1,0 +1,2 @@
+Running windows 8 (x64, enterprise) with CodeSys 3.5 SP2, added SysSocket library 3.5.2.0 and download/run on Control Win V3  Version 3.5.2.0.Do anyone know (sample ?) how to use SysSocket library for tcp (or udp) communication.Is it at all supported on Control Win ? 
+

@@ -1,0 +1,8 @@
+Hello, i have a strange behavior with an janz tec emPC imx6 and i use the last codesys  control 3.5.11.20 for it , i want some data exchange with an Schneider M251. The behavior is  :read 1 holding  reg - OK, read n holding reg not working, all values are set zero..., with an modbus tcp scaner modscan32  i can  read well from M251, In M251 i use builtin modbus server..any suggestions??? please...
+
+tried also on raspberry the same behavior (
+
+Hi,Could you attach the project or at least screenshots?Are you using the io varisbles in the pou's otherwise they will not be will updated.BREdwin
+
+thank you Edwin now works.
+

@@ -1,0 +1,14 @@
+Dear,I have installed the current Codesys V3.5 SP 9 Patch 3 and the Rasbperry package V 3.5.9.20.After downloading the package to Raspberry, I can connect to the runtime only once.After one connection or a little time the runtime will stop working with the message"ooops... this runtime was build for raspberry pi (-16,0x00000BB8,0xFFFFFFFB)".So it seems as the runtime doesn't detect my Raspberry A+ as a "Raspberry".With a Raspberry Model 3 it works, but I can not use it because of the bigger size.Is this a known but and if yes, how can I fix it?How does the detection of the device as a Raspberry work?thanks for your response,krriel
+
+Dear,is there is no one with the same problem?Or is there a fix for using Codesys with the Raspberry A+?Thanks for your response,krriel
+
+Hi,see this post here:viewtopic.php?f=21&t=6551&hilit=ZEROBREdwin
+
+Hi,thanks for you link.But this is a shameful behavior of Codesys developers,because the A+ and Zero devices are made for embedded and low power solutions:https://www.raspberrypi.org/products/model-a-plus/Possibly there will be a rethink in the future?   krriel
+
+I think that is a bit harsh on the codesys people. The system requirements clearly state what models Pi should work. Specs and system requirements should be about the first thing to read when acquiring hardware and software. As for the embedded/low power solutions: this runtime is aimed at teaching, learning and testing. For embedded and low power solutions a full tilt PLC is overkill. I would suggest microcontrollers for those applications.Last but not least: by providing a runtime for the pi, we don't have to buy an expensive industrial PLC for home use or training purposes, hence can get our feet wet at a modest price point. I can live with this and appreciate the offer.
+
+Yes thats right, the Codesys developer have done a good job by porting it to Raspberry.But for my application (home control) the A+ would be the better solution and the A+has the same CPU as the normal B model.So I thought it will be run on the a+ model too   krriel
+
+Hi all,there are rumors, with 3.5SP11 (July release) all Raspberry Pi models will be supported.Model A+, Raspbery PI Zero, Zero Wlan, Compute Module 1 and Compute Module 3will be possible to use then with CODESYS.  BREdwin
+

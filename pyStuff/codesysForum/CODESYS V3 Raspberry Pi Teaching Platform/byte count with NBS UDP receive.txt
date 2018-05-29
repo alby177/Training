@@ -1,0 +1,18 @@
+Hi,UDP communication with raspberry pi2 work fine, but I need to count byte in input. There is szCount variable, but it remain to zero. Can I do something?BR
+
+Hi,could you give this a try andand you need to wait till xReady = TRUE, after that data's are valid and  szCount should be <> 0.BREdwin
+
+Hi,as you advice me I tried but the result is the same. No change.BR
+
+Please,can you say me something?BR
+
+Edwin, the time pass but the problem remain? Can you tell me somethink abut this problem?
+
+Hi,Could you attach your project to check?BREdwin
+
+Sure.https://dl.dropboxusercontent.com/u/152 ... ectarchivePlease, let me know.BE
+
+Hi,if you Change  FB_UDP_RECEIVE.xDone to FB_UDP_RECEIVE.xReady in Network 4 it should workBREdwin
+
+It work Edwin.Thank you!
+

@@ -1,0 +1,4 @@
+Hi all,I was wondering where could I find the IEC870 library, a protocol library for file exchange. From the manual, it requires me to only add SysLibCom.lib. But none of the function block in the manual can be used even after adding the above mentioned library. See the below link (German version):Protokoll-Bibliothek IEC870-105.LIBAny help on this library is appreciated.Thanks!
+
+Hi izzarshah,I dont know about requested "IEC870-105.lib" from 3S-Software, but ...Check WAGO TeleController 750-872:- IEC870-101 (Serial)- IEC870-105 (Ethernet)- CoDeSys-BuildIn-Configurator (Generate the Communication-Program)Regards Christoph
+

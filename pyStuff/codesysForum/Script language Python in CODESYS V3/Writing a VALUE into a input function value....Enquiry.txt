@@ -1,0 +1,6 @@
+Hi there,I have a question, 1. How to write a value into a input Function Block(e,g CHxInput) via Test Manager.scripting -> ExecuteScript using Python command?Many Thanks.
+
+Hi.To write one or more values through the monitoring you need to get the online application, set/prepare the values and write them through the online application.The following example prepares one value and writes it to the device:Code:onlineApp = online.create_online_application()onlineApp.set_prepared_value("PLC_PRG.counter", "5")onlineApp.write_prepared_values()If you want all the prepared values to be forced you have to use the method force_prepared_values(). For more details you should have a look at the ScriptEngine online help which you can find in the directory "CODESYS\Online Help" of the CODESYS installation directory.Regards,Martin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

@@ -1,0 +1,19 @@
+Hello!
+
+I have one new question about a library.
+I have make correctly a lib from a C code (follow the 'C_IN_32Bit_E.doc'). In simulation mode my function not work (now I haven't a PLC). Is it correct?
+
+I need to creata a 16 a 16Bit lib from a C file, is It possible? I need this lib for a WAGO 750-806 CPU.
+
+Thanks
+
+In the simulation mode there is a PLC simulated. Thus no external libraries (C libraries) are linked to the application and executed.
+
+In order to have at least a simulation of the external library functions in the simulation mode, you can of course write a simulation code  .
+What does this mean?
+In order to realize an external library you have to generate a library with FBs, PRGs or FUNs which only contain the declaration part as an interface to your C functions. In case you want to have a simulated function of these objects in the simulation mode, you can add a simulation code in the code part of that functions. So in case you have implemented the object in ST, you can add instead of a pure ";" in the code part some lines of code e.g. for the variable handling of the original C code.
+O.K. 
+ 
+
+_________________Roland WagnerModerator
+

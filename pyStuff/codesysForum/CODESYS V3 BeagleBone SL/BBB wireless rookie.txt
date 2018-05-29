@@ -1,0 +1,4 @@
+hi dears,I’m waiting my new Beaglebone black wireless, but have some questions:Codesys is compatible with BBB wireless? or only BBB (eth)Witch library recommended using Modbus TCP?I need to manage 2-3 slaves to take measures and 1 serverMany thanks in advance
+
+Hi,till now, we did not test the BBB Wireless.Expect that this will not be supported by default.Feel free to give us the feedback and hopefully i'm wrong with it and will work.BREdwin
+

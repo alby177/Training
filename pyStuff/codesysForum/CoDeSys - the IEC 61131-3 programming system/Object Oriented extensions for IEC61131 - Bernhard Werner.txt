@@ -1,0 +1,21 @@
+Did anyone read this article from Bernhard Werner posted on the 3S Home web site? Great article.
+
+It seems there is a mistake in the article in figure 4 code. it was defined :
+
+Code:Var MyRoom1 : LightRoom; MyRoom2 : LightRoom; MyRoomCtrl : ROOM_CTRL;end_varI believe it should be:Code:Var MyRoom1 : LightRoom; MyRoom2 : Light2Room; MyRoomCtrl : ROOM_CTRL;end_var
+
+What do you think? In the example in figure 4 the outcome of calling MyRoomCtrl would have been the same with Room1 and Room2. The inheritance and polymorphism was skipped by not declaring Room2 as Light2Room. If have that wrong please explain.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+I believe you are right. Both rooms implement the same interface ROOM, but off course the objective was to show that 2 different rooms can be declared and used as input for the ROOM_CTRL Function Block.
+
+Hi,Where can I find illustrations/examples on using OOPs extensions of Codesys. I need help understanding the usage of Interface, methods, property etc. What is IMPLEMENTS?And spfeifYou mentioned"Did anyone read this article from Bernhard Werner posted on the 3S Home web site? Great article."Can you paste the link to this article. I tried to locate but no luck   Some help would be really appreciated.Regards,Rahul.
+
+See the following link for the article:http://www.3s-software.com/index.shtml?en_publications&news=IEEE_BW_2010See the following link for an example with OOP.http://www.3s-software.com/index.shtml?sample_projects/Further on you can see the CoDeSys V3 help for general information.
+
+TimvH wrote:See the following link for the article:http://www.3s-software.com/index.shtml?en_publications&news=IEEE_BW_2010See the following link for an example with OOP.http://www.3s-software.com/index.shtml?sample_projects/Hi guys,I know it's very old topic, but probably still useful. Unfortunately those links are invalid. Does somebody have a copy of this article?Thanks a lot.
+
+FPawlak,Check out this post:http://forum.codesys.com/viewtopic.php?f=11&t=7170
+

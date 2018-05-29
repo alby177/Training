@@ -1,0 +1,2 @@
+Halo everybody, i have a problem with last update of codesyscontrol for raspberry, after accidentally loaded application, i made a mistake with a property property.set:THIS^.property:= property; codesys service crashed, won't start, restart.how can i remove manually application from pc.?Thanks.
+

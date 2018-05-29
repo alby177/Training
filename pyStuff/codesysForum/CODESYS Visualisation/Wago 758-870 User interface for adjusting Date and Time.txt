@@ -1,0 +1,13 @@
+I'm having problem creating a visualisation to enable the end user to adjust the date and time on the target visualisation (Wago IPC 758-870 FW 1.09). 
+I need a solution regarding the HMI to show the end user input text boxes which is filled with present year, month, day, hour and minutes. 
+The user then make his/her changes and click a button to save the setting to the rtc.  
+by using the SysLibRtc.lib it seems to neccessary to concatenate all date-time values to a long string (DT#2008-06-16-14:45) before updating the RTC. to retrieve individual date-time to fill into the input fields it must be extracted from the DT-string I suppose.
+I'm amazed that there is'nt any examples or code from CoDeSys to show how this fundamental function can be done; to adjust date and time.
+
+Does anybody have a code/visualisation to share with me where this functionality is present?  
+
+_________________Best regardsrudolf
+
+The oscat library has functions for changing time and date
+www.oscat.de
+

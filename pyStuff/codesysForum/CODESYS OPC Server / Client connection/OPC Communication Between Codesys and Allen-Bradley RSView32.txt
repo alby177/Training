@@ -1,0 +1,2 @@
+I have about 40 Turck controllers running V2.3 CoDeSys and need to monitor their status via OPC to a central PC running RSViwe32 to allow production to monitor status. Is this possible, and if so what is the best way to do so?
+

@@ -1,0 +1,12 @@
+I have an application inCodesys that automatically start with windows and also do a login to the PLC, it works nicely.But now and then my network is unstable (or overloaded) and the application lose connection to the PLC, so I wounder if there is a way to make the application trying to re-login to the PLC if connection is lost?
+
+what is the PC running is it also codesys running or only a visualisation coming from the PLC.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+shooter wrote:what is the PC running is it also codesys running or only a visualisation coming from the PLC.The PC is only running codesys, the start of codesys go like this:Code:"C:\Programmer\3S Software\CoDeSys V2.3\Codesys.exe" "C:\PLCprogram\MyPLCprogram.pro" /online /run /noinfo
+
+the simplest way is to use a watchdog in the PLC, and switch off the PC when it happens, if only comms fail you can reboot the system with software boot program.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

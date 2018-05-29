@@ -1,0 +1,8 @@
+Hello there,i have a device object in my python script which has user-defined parameters which are shown in the codesys gui in the "general" tab of said device. how can i access and modify these in my python script? i already found the Code:myDevice.device_parameters list, but Code:len(myDevice.device_parameters) equals zero.what is the right name for the list of user-defined parameters?Greetings
+
+Hi AndreasDeDeDe.There are device parameters and there are host parameters. Maybe your device has no device parameters.Look at my example in my previous post.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+I found the correct parameters:device.connectors[0].host_parametersand the concrete parameters are accessible overmasterParams = master.connectors[0].host_parametersmasterParams.by_id(id)and id can be found with the printtree function (i guess, or it was another tree func, it's been a while. anyway, it's helpful):Code:def printtree_rec(treeobj, depth=0):   name = treeobj.get_name(False)       if treeobj.is_device:      deviceid = treeobj.get_device_identification()      print("{0} - {1} {2}".format("--"*depth, name, deviceid))   for child in treeobj.get_children(False):      printtree_rec(child, depth+1)def printTree(proj):   for obj in proj.get_children():      printtree_rec(obj)
+

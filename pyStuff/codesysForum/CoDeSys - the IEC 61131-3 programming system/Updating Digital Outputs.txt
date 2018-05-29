@@ -1,0 +1,29 @@
+I'm having a problem updating the Digital Outputs through the code.  If I monitor the outputs in Online-PLC Configuration the squares turn blue as if the output is switching, but it doesn't.
+
+If I use the Online-PLC Configuration (clicking on the blue square) to switch the outputs the turn on/off correctly.  Also when I do this the ones already turned On by the code switch.
+
+Is there something needed in the code to force an update of the digital outs?
+
+I'm running CodeSys 2.3 on a Kontron ThinkIO-P.
+
+Outputs will turn on and off if you force them only if the variable is not being called any where else in the code. If a variable is being called in the code, ie the variable bMotorStart := false; and you try to force it from the PLC configuration  then it will never turn on. Forcing outputs from variables being called in code as far as I am aware of is an art. Normally the control code is broken into at least three sections. Input section, control section, output section. When there is a need to force the outputs then a bit is set in such a way that no longer calls that output variable so you can manually turn it on and off.
+
+if (bForceMode = False) then
+  bMotorStart := bStartEnable;
+end_if
+
+To force the variable bMotorStart set bForceMode = True;
+
+As for your outputs not coming on perform a global search for the variable and make sure it's not being called some where else in your code. There is also an option in Project-Options-Build-Multiple write access on outputs menu to force CoDeSys to check for this situation at compile time an report in the message window.
+
+Hope this helps.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+Thanks for the response.
+
+It turns out there was a hardware problem with the PLC and a certain combination of IO modules.  
+
+I have since switched to a Moeller PLC and the same code works fine.
+

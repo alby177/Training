@@ -1,0 +1,22 @@
+hello,
+i have a little problem,when i program a transition in SFC language.
+if i write the logic statement on the transition itself everything is all right,
+but when i click the transition itself and choose the ladder language then i write the same transition's logic statement it doesn't work ( even if the logic statement is true it doesn't pass to the next step)
+
+please look at the attached project,
+in order to make the statement true i used the logic at the step3.
+
+_________________thank you!
+sahar zafrir
+
+I just tested this with a recent CoDeSys version (2.3.6.0) and seems that there is no problem. Please find the projetc attached.
+
+Unfortunately your project was not attached thus I could not test it.
+
+_________________Roland WagnerModerator
+
+Hello
+
+i have a problem with the logic statement on the transition. i want active transition when previous step (S2) pass 1sec active. i write in ST language S2.t > t#1s;  into transition, but not working.
+what is the problem?
+

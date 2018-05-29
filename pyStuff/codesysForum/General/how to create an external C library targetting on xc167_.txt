@@ -1,0 +1,3 @@
+I would like to create an external C library according to the instructions in the document "C_IN_166_E.pdf"; however, it is not mentioned in the document which compiler can be used to generate the hex-document. I do not know whether it is possible to use keil.
+  If keil is used,how to create the hex file?
+

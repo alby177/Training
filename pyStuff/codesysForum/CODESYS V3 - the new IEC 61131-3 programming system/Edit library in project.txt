@@ -1,0 +1,4 @@
+Hello,i'm working on my first own library. However, problem is: how do I edit the library from my test-project without switching between the *project and the *library file every time? Is it possible to load both projects the same time?Thanks in advance.GreetsThomas
+
+Hi,See the faqs:viewtopic.php?f=22&t=5641&p=10677#p10677BREdwin
+

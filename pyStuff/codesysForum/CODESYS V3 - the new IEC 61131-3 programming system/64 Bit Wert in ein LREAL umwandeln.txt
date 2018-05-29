@@ -1,0 +1,8 @@
+Hallo,ich habe ein Problem mit einer Wertkonvertierung. Auf dem Modbus Offset Adresse sind 4 Register die gelesen werden, zusammen 64 Bit.Ich möchte einen kWh Wert herausholen. Der Wert kommt von einem Siemens PAC 4200 Messgerät.Ich hatte schon mit OSCAT probiert, komme aber nicht dahinter. Ich habe 64 Bit, diese müssten sich so zusammenbauen.1 Bit Vorzeichen, 11 Bit Exponent , 52 Bit Mantisse. Verstehe aber nicht, wie man diese 64 Bit zusammenbaut.SpannungL1N:=OSCAT_BASIC.DW_TO_REAL(OSCAT_BASIC.DWORD_OF_WORD(W1:=%IW0 , W0:=%IW1));Spannung holen klappt auch sind aber immer 2 Register.Ich kann auch den 32 Bit Wert, in einem anderen Register, holen. Dann habe ich die 0.28kWh.  Die 4 Register%IW2 = 16497;%IW3 = 36235;%IW4 = 3964;%IW5 = 8192;Dann sollte 0.28 kWh herauskommen.Wäre sehr schön, wenn mir jemand damit helfen könnte. Grüße Norman
+
+Something is wrong with you first two word data.  Try reading the data until you get you Modbus words to match below.  Then you can move the words in the right order by using the word array mappped on the same memory space of REAL variable.
+
+_________________The Original SoMachine Ninja
+
+Attachment:codesyswordarray.jpgHi jzhvymetal,first i have to say, many thx for your reply.Your Notice worked, i tried this in LREAL;I found out that the registers must be read in the correct order. I have the numbers a little twisted in the Array to Test it.This should be a Big endian, if I am not mistaken. That the Word order may read from the last register to the first register.I have live test from the PAC. I read the Inputs into the Array. Best Regards Norman
+

@@ -1,0 +1,16 @@
+Our company has a 10 year history in applying OO-design techniques to PLC-controlled machines. We use the UML intensively to be able to structure our thougths, and communicate them to other disciplines during development phase.
+
+Although implementation of the OO-techniques is not possible in traditional PLC's, we created some coding patterns more or less 'emulating' these techniques to be able to translate our designs into real code. This has been done for S7, Bachmann, Rockwell, and it is succesfully applied in several production lines around the world. 
+
+We did not have a chance to use CodeSys V3 in a real project (reason: customers decided on the hardware to use), but of course we tried it out with the demo-versions. Enthousiasm all around the place.....
+
+I was very pleased to find (for the first time) some reports on the internet about applying UML and code-generation to PLC-code (by dr. B. Vogel-Heusser et al.). I wonder if there is a chance to get involved in these research projects, or be able to exchange thoughts on these themes. We would of course be very interested in the prototype version of "V3-with UML", but I can imagine that it is not a distributable yet.
+
+Thanks,
+
+Tom
+
+Hi,I want to animate this topic because there are news:As of December 2011 with the release of CoDeSys V3.5 there will be a new product line offered: the CoDeSys Professional Developer Edition.The idea is to integrate tools, which are well known and accepted from the development of C/C++ software into the IEC 61131-3 programming environment of CoDeSys.The first tools to be released are* Integration of a Subversion conncetion* Static Code Analysis* Integration of UML: class diagram, activity diagram and state diagramFurther tools sucha as a test manager and a profiler are scheduled.
+
+_________________Roland WagnerModerator
+

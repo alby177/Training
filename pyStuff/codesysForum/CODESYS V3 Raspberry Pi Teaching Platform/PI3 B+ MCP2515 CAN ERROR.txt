@@ -1,0 +1,6 @@
+Can interface communication is all right in the terminal, but it is wrong in the codesys.I have configured the can interface in the way in the forum, but the problem couldn't be solved. I have no way to deal with the problem, please help !
+
+Hi,is this 3.5SP12 Version?Guess you need an entry in your /etc/CODESYSControl_User.cfg for example the following entrywhere the script is located (this is like it is the beaglebone black done) :[CmpSocketCanDrv]ScriptPath=/opt/codesys/scripts/ScriptName=rts_set_baud.shBREdwn
+
+Thank you very much!  The problem seems to have been solved!  And I'll test it in detail later.
+

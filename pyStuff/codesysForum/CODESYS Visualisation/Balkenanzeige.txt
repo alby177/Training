@@ -1,0 +1,8 @@
+Hallo miteinander,ist es irgendwie möglich die Balkenanzeige nicht immer bei 0 beginnen zu lassen?Beispielsweise hat meine Balkenanzeige einen Bereich von 0 bis 24. Nun möchte ich den Bereich/Balken von 12 bis 16 angezeigt haben.Ist dieses möglich?Für euere Antworten bedanke ich mich schon einmal im Vorraus!Gruß fkoenig
+
+Hi,müsste doch gehen mit SP12.GrüßeEdwin
+
+Hallo Edwin,ja das stimmt.Ich habe es ein bisschen undeutlich formuliert.Ich möchte den Bereich der Skala immer ("fest") von 0 bis 24 haben.Der Balken welcher angezeigt wird sollte jetzt aber nicht bei 0 beginnen sondern beispielsweise von 10 bis 15 angezeigt werden, jedoch sollte das Balkendiagramm die Skala von 0 bis 24 beibehalten.Ist dies irgendwie möglich?Gruß fkoenig
+
+J not good in English, but J don't understand what you say !!
+

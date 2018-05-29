@@ -1,0 +1,2 @@
+Hello everyoneAt this moment I'm creating log files on my plc but I want to know how much disk space on the plc is leftSo that I can remove based on that information the oldest log files.Is there a standard library available with a function or function block to get this dataI'm working with Wago PlcAlready thanks for your help
+

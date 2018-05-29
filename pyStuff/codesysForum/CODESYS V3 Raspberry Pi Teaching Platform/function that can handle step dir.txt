@@ -1,0 +1,2 @@
+Also I am interested in  a function that can handle step dir, the best shuld be  for a motor with encoder ? grazie
+

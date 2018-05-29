@@ -1,0 +1,6 @@
+Is it possible to show grid on the page?
+
+it is possible .go to tools -> options -> visualization -> grid tab -> active grid . you can also change grid size there
+
+Thank you, barkamharikrishna
+

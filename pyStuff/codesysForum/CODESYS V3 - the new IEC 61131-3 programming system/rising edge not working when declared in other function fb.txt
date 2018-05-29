@@ -1,0 +1,6 @@
+Hello all,can anyone please help me on this issue.I had developed an Fb and it is working fine.Some code of FB I Need to run only once . So i am using Function block R_TRIG:unfortunately when my R_TRIG Input is false,then R_TRIG output suppose to be false , but it is not Happening .    Many thanks in advance
+
+Hi The Output of R_Trig is active only for 1 cycle so you would Need to do something like thisFUNCTION_BLOCK FB_TestVAR_INPUT	xInTrigger	: BOOL;END_VARVAR	fbRTrig	: R_Trig;END_VARfbRTrig(clk := xInTrigger);IF fbRTrig.Q THEN // the code that Needs to work only on TriggerEND_IF
+
+hi learnetkthnaks for the reply,i had placed R_Trig in if condition and the condition is not true to reset the R_Trig .i had chnaged the code and works fine.        many thánks
+

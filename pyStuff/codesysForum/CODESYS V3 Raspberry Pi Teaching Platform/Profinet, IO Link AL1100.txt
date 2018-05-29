@@ -1,0 +1,6 @@
+Hi,I am trying t get an ifm AL1100 profinet IO link master connected to my Pi. I knw it can be done as have seen a demo doing just that. Here's where I am struggling. I have loaded the GSDML file in my library, I create my Profinet network. Under the Profinet Controller I go to Topology, press the green arrows to scan for Profinet Devices, I can see my AL1100, I nominate this device, the right hand click, scan and copy all devices to project. I disconnect, ensure that the Port and Peer Station match the Profinet controller, I reconnect but I just cannot get the network to connect to the AL1100, I just have the Red triangle and the connection status is Unknown.   Any ideas where I am going wrong?Thanks
+
+Hi,would recommend to ask IFM (manufaturer of the device) for an woorking example Project.BREdwin
+
+Hi Edwin,They haven't been able to provide this unfortunately. Do you have any example project of integrating any other generic profinet IO Link devices?
+

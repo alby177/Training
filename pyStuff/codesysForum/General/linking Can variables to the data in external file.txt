@@ -1,0 +1,24 @@
+Hello evry1..
+I want to link real time can variables to the signals and its various parameters present in some other external file say txt , csv or excel; within Codesys project using codesys programming system or some other method. 
+
+for eg. 
+ i am feching CAN data in my project using CAN config. in Global variables and on the other side I am also fetchin various signals and its parameters from external txt file into codesys programming system. And now I want to link both of them such that if there is some changes in my external text file it is reflected dynamically to corresponding global variable also carrying CAN data.
+
+Can some1 tell me how to do this Dynamically.
+
+Any reply or ideas will be appreciated.
+
+Cheers n Regards,
+Rajat Bansal
+
+If you want to assign variables dynamicly from a file (CVS or TXT)
+you can use an array of a structure, the struct looks like this:
+Code:TYPE FileVars:   STRUCT      sName:STRING(40); (*name or number (same as used in the file)*)      dwDataPTR:DWORD; (*pointer to where the data needs to be stored*)   END_STRUCTEND_TYPEuse the name or number to search for the correct variable, this name/number is read from the fileassigning vars:Code:Declare an array of the structastFileVars:ARRAY[0..XX] of FileVars;initialize var system:astFileVars[0].sName:='var1';astFileVars[0].dwDataPTR:=ADR(a_var);astFileVars[1].sName:='var2';astFileVars[1].dwDataPTR:=ADR(another_var);...
+
+read a varname from the file (like var1) find the name in the struct of filevars and save the index
+
+now read the data from the file to the actual var
+SysFileRead(dwFileHandle,astFileVars[INDEX].dwDataPTR,XXbytes);
+
+I hope this is what you where looking for and that you can make heads or tails of it :p
+

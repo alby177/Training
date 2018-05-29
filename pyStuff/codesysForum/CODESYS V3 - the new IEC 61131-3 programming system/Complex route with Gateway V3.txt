@@ -1,0 +1,4 @@
+Hello everyone,I have an embeded ECU which uses Codesys and is used on a vehicle, I would like to set up a remote programming tool for me to be able to update the software remotely (I already have that but right now its a Windows based PC and it not cost effective).I am thinking of using a raspberry pi as a Client that would be connected to the Ethernet port of my ECU AND to a 3G connexion to the internet. I already have a setup in which I can connect to this RPI but I would like to be able to connect my CodeSys gateway on my PC at the Office to that particular ECU in the field. So I can remote debug the software if needed and update it.SO my question is, How can I set the route of the gateway if the connexion is not local and not in the same subnet. For me being able to set the route manually would work.
+
+I am thinking of using a virtual ethernet adapter with a VPN connection, if that make sense.
+

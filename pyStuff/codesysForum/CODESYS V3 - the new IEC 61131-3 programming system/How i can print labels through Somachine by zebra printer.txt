@@ -1,0 +1,2 @@
+Hi,I have a plc Schneider M241 and I would like to print labels through  Zebra printer 2844.Does anybody know how to do it?Help pls! Στάλθηκε από το SM-A500FU μου χρησιμοποιώντας Tapatalk
+

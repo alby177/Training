@@ -1,0 +1,4 @@
+Hello,is it possible to connect a IBH Link S7++ (Profibus Netlink) to Raspi for Profibus communication with S7 Slaves (like ET200)?regardsTakko
+
+Hi,guess not, no driver available.One possible way to do this is using EL6731 Profibus Master Gateway (Ethercat-Profibus).BREdwin
+

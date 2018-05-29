@@ -1,0 +1,22 @@
+Hello!
+I'm trying to use a activex object on codesys CE based panel.
+I want to use internet explorer on a panel and open a web page containing a activex.
+I didn't find any example on the manual.
+can, someone help me pls.
+
+I insert a activex element on a page and select microsoft web browser control data.
+
+What I must insert on methodcalls?
+
+condition of call: a variable to trigger the activex
+variable of url : a string variable  with initial value like 'www.google.it' or with the address of a offline web page. 
+
+what is wrong?
+
+after compiling I receive 3 or more error.
+
+some library missing?
+
+
+thx bye
+

@@ -1,0 +1,6 @@
+Is there a way to retain the value of "VisuElems.CurrentLanguage" after switch off the PLC?I know how to do it in Codesys V2.3, but it doesn't work in V3.5:Quote:Implicit variables as remanent variables:The implicit variables CurrentLanguage, CurrentUserLevel and CurrentPasswords[0..7] can bedeclared as remanent variables for the use in a Target-Visualization.For this purpose the variables must be declared explicitly as global variables. This declaration MUSTbe done in the topmost global variables list in folder 'Global Variables' in the Resources tab. If thedeclaration is placed in another global variable list, a compile error will occur.Is there a way to do the same in CODESYS V3.5?Thanks in advance,
+
+http://forum.codesys.com/viewtopic.php?f=11&t=5129&p=8529&hilit=currentlanguage#p8529
+
+Thanks!
+

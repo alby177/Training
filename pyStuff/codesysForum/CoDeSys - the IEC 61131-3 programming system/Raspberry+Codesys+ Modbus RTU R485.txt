@@ -1,0 +1,6 @@
+Hi everyone, i am new to codesys and Raspberry.I downloaded codesys V3.5 sp8 and also codesys control for raspberry SL. i also update the raspberry pi from codesys.i need to use the Pi like a modbus master and to configure it in the way that it can communicate with other modbus slave devices over the physical layer RTU RS485 and send commands and receive responses.i created a project in codesys and i added a modbus master object and a modbus slave object.so now the question is what should i do next.- should i download some library to codesys?- how to configure the pi I/Os to use them as RS485 interface- i guess i don't need to write any program in codesys for such usecase, is that true?any help is greatly apreciated and thank in advanced.
+
+This is version 2 box so move over to V3 raspberry
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

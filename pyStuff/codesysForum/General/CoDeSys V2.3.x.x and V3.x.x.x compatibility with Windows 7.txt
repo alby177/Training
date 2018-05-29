@@ -1,0 +1,18 @@
+Hello,
+
+As Microsoft has recently launched Windows 7 and has already declared End of Support dates for Windows Xp, so we need to know compatibility of CoDeSys V2.3.x.x and V3.x.x.x with Windows 7.
+
+_________________Santosh Athanikar
+
+Recently, a basic test with CoDeSys V2.3 and V3 was successfully realized under Win7 (32 Bit). Even if we intend to run a regression test soon, we are fully convínced that CoDeSys can be used under Win7.
+
+Please note that the 64 bit platforms are NOT yet supported.
+
+_________________Roland WagnerModerator
+
+Hi.What about compatibility of CoDeSys V2.3.x.x with Windows 7 x64?
+
+Hi,since CoDeSys V2.3.9.24 there was a release for Win7 (64 bit) under certain restrictions.
+
+_________________Roland WagnerModerator
+

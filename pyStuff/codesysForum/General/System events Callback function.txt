@@ -1,0 +1,2 @@
+I have some issues with a cycletime Overflow. In Order to get more Information about this Problem I use the excpt_cycletime_overflow System Event. Can anybody provide some Information about the dwEvent, dwFilter and dwOwner variable. The codesys help just Shows Information about dwEvent.
+

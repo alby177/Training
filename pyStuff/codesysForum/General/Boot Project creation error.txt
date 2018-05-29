@@ -1,0 +1,43 @@
+Hi Guys,
+
+I am getting this error when trying to create a boot project:
+
+The last online service has not been executed correctly!
+Service number: 47, Error number: 80
+File 'DEFAULT.PRG' could not be written.
+
+Let me know if anyone can help!
+
+Thanks!
+Tariq
+
+Hi Tariq,
+
+What controller are you using?  Do you need to have a memory card present but the card is not there or perhaps write protected?  Those are the main things that come to mind for me.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+Hi Norm,
+
+I am using Turck BL67-PG-DP programmable gateway.  The unit has built in memory for boot project storage.  I was suspecting that the memory might be corrupted, but I was not sure.  
+
+Let me know if there any other way to fix this.
+
+Thanks!
+
+Tariq
+
+I know this may sound simple but have you tried a Project-Clean All then a rebuild and a download? Does Turck give you a way to "reset" the PLC like back to a bootloader or something to start from scratch?
+
+_________________Thanks,
+Steve Pfeifenroth
+
+empty your plc, the files that are not overwritten are kept in memory of plc, thus filling it up.
+got same shit with wago, however after a reset it worked fine again.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+tariq_ghuman wrote:Hi Norm,I am using Turck BL67-PG-DP programmable gateway.  The unit has built in memory for boot project storage.  I was suspecting that the memory might be corrupted, but I was not sure.  Let me know if there any other way to fix this.Thanks!TariqCiao.You managed to solve the problem ? I use the BL20-PG-EN-IP. I have the same problem. The firmware update does not help. This is my third controller with a mistake in the last month . What to do?
+

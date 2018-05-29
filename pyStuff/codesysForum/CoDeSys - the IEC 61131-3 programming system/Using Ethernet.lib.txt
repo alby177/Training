@@ -1,0 +1,43 @@
+Hello all.
+
+I'm trying to use the Ethernet.lib library with a 750-842 controller. I want to make an UDP server listenning to UDP packet wich are broadcasted on the network.
+
+I'm doing this:
+
+Code:VARsocket: ETHERNET_SERVER_OPEN;Read: ETHERNET_READ;END_VARIF (socket.SOCKET = 0) THEN    socket(EN:=1, TYP:=SOCK_DGRAM, PROTO:=IPPROTO_UDP, PORT:=4545);END_IFRead(EN:=1, SOCKET:=socket.SOCKET, DATA:=buffer);Read(EN:=0, DATA:=buffer);IF (Read.LEN_OUT > 0) THEN    (* Do somthing *)END_IF
+
+The socket is successfully created with no error, but when a packet comes nothing is read from the ETHERNET_READ function block...
+Why? Does anybody know if I've done something wrong?
+
+Thank
+Raoul
+
+Hi
+Did you try it like this:
+
+Read(EN:=1, SOCKET:=socket.SOCKET, DATA:=buffer); 
+IF (Read.LEN_OUT > 0) THEN 
+    Read(EN:=0, DATA:=buffer); 
+    (* Do somthing *) 
+END_IF
+
+_________________Wer Rechtschreibfehler findet darf sie behalten...
+
+Yes I tried that, but It's exactly the same...
+
+Raoul
+
+Hi
+I have a (fully working and tested) Sample for you.
+
+Maybe it helps you to understand the mechanism.
+
+Greets
+Erik
+
+_________________Wer Rechtschreibfehler findet darf sie behalten...
+
+Thank you, I'll try this example...
+
+Raoul
+

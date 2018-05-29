@@ -1,0 +1,2 @@
+When using an embedded visualzation what are the ways to view the graphics?  If my embedded product is not a PC what is required of it to include the visu functionality?  What display can i use?  How do i connect the display to my embedded product? Thanks.
+

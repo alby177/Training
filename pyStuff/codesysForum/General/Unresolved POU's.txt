@@ -1,0 +1,14 @@
+Hello to all. This is my first post on the forum.I am using Xsoft-CoDeSys V2.3.9 SP2 from eaton.The target is  a microinnovation screen (XV-2xx-V2.3.9 SP2)The screen is about 2 years old and had an old project on it I wanted to modify.The original program was wrote with V2.3.3On opening the original code, 3 libraries were not found. I have referenced these in the library directory's.The project compiles ok but on download I get " Unresolved external POUs:xSysComClosexSysComOopen ...etc"listing all the pou's in the syslibcom library.The libraries are the original ones as far as I'm aware,Can anybody help?
+
+change the compile program to your old one 2.3.3Use the libs of 2 years ago.and it says it can not find the pou in the lib (other name or check the lib in the window library using two libs with same functionsetc.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks for the quick reply.Unfortunately I do not have the original V2.3.3 installed on this PC.I tried to install but for some reason corrupted the V2.3.9 setup and so I deleted it and reinstalled V2.3.9The POU's are all in the library when viewed. I tried installing another Comms lib with the same functions but no luck.
+
+with 2.3.9 you can compile to 2.3.3 just set the compiler to a different version.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Many thanks Shooter,I didn't know you could do that!Ill give it a try.Cheers 
+

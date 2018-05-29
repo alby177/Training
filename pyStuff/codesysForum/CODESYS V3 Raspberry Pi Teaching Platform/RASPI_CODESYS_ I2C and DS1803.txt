@@ -1,0 +1,2 @@
+Hi,anybody have solution to do work i2c output potentiometer DS1803 ?Thanks.
+

@@ -1,0 +1,4 @@
+I'm trying to connect am Elmo Driver via CANopen "IXXAT USB-to-CAN II," but I do not understand how to set the communication. I need help.I am to communicate with the device with "Composer", its software, so I think the driver and the cable is ok.In a new "Codesys Control Win V3" project I have added the a "CANBus" device, set the baudrate to 1000000. Added a "CANopen_Manager". Where I "say" at Codesys which device it have to use for Canopen communication?Where I select at which port of the "Usb-to-Can II" this communication is associated?If on "CANopen_Manager" I "Scan for Devices.." In the Log page report an error: No driver. Scan not possible!.. Why if with Composer I can comunicate with the driver?
+
+No one help??
+

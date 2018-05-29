@@ -1,0 +1,11 @@
+Hi, i wonder if anybody has run into similar problem?
+
+For some reason the buttons in the visu stay pressed if the click is not slow enough... if you click on it fast it wont do it...
+
+im wondering is it still sending a loop of data while its pressed or is it a gui error????
+
+any help would be appreciated
+
+Regards,
+Ricardo.
+

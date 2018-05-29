@@ -1,0 +1,4 @@
+Dear Sir,           I have developed some Programs(POU's) in codesysV3.5. Some POU's were developed on another workstation . so we have exported them from that Workstation and then imported them in our project. Now when we build the ,it gives no errors but all pages  get  disabled(turn grey). Because of this i am unable to test the pages for the logic when we login and start.why is this happening? how can i solve this problem.with regardspraveenaAttachment:img4.png
+
+Hi,you need to call them either in your pou which is called  (Pou or PLC_PRG)pou_name1();pou_name2();pou_name3();or you add them to the taskconfig (drag an drop is possible) -> drag pou_name1 , drop it below where your existing POU is called.Regeardsplcmax
+

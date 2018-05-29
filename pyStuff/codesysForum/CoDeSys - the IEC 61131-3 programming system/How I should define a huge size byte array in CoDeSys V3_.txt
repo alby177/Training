@@ -1,0 +1,4 @@
+Hello, allI need to save a huge size(~255Mbyte) testing temp data in byte array, and after testing finished, will send them to remote PC by TCP for analysing.My question is:How I define this size byte array in CoDeSys V3 could be resonable and safe?Should I assign any adress for it(AT %...)?Thanks.br/listenyang
+
+Hello listenyang,Handling the huge data in the controller is bit risky. The controller may get into insufficient memory. I suggest you to implement data logging in the controller or usb stick and transfer the data through FTP protocol for post processing.Thanks,S. Parthiban
+

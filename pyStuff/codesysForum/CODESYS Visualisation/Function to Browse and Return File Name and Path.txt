@@ -1,0 +1,8 @@
+I am trying to get the name and path of a file located on the hard disk from a Visualization button. This string could then be used to load the file or open, add data and close a file dynamically.
+
+For example, and operator would like to save certain values of an array to a CSV file. The CSV file should be selected by way of the typical Window browse or "open file" command. Then the returned string could be used in the FB_FileOpen function block. The values could then be written with the FB_FilePuts function block and then the file closed with the FB_FileClose function block.
+
+How can I get the file and path in string form from Visualization? Thanks!
+
+Well, I have the same problem here.Did you find some solution ?I only want to write file to PLC with my visualization, not using the link: "Online/Write files to PLC".Is there a way to create a shortcut, a macro or another solution to do it ? Thanks.Best Regards.Felipe
+

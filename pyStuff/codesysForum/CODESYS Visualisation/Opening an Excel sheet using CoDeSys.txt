@@ -1,0 +1,19 @@
+Can we open an Excel sheet to log the updating data?
+
+How to do it?
+
+It is possible to write into a comma-separated *.csv file .
+
+on both questions the answer is yes.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+yes i sorted it out for you.
+
+the line starts with codesys | c:\program files\codesys\program.pro ! variablename
+
+to make a log i did compare the time minute(now()) with 0 to 59 if true i make the cell the update variable if not i make it the old one.
+if you reply i will send in the excel sheet.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

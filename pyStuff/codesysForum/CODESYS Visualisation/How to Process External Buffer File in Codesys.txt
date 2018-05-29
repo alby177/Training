@@ -1,0 +1,10 @@
+hai Everybody.
+
+                    In my project I can able to read from an external file which will be dumped into a buffer. I want to process the Buffer which contains different datatypes. From the buffer I need to read the data in a predefined format.How can i do this.Please let me know how to aechive this 
+
+
+ Any response is apprectiated.
+
+
+          Thanks and regards.
+

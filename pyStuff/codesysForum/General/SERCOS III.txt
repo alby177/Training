@@ -1,0 +1,5 @@
+hello all,
+i'll have to start an application using Sercos III with a netSWICTH for the EthernetIP frame.
+As anybody done it and maybe have an example program?
+thanks
+

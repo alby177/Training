@@ -1,0 +1,6 @@
+Hi,for a project, I need to program in CODESYS about 10 PLC based on Raspberry Pi.The PLCs need a unique identification code and some other parameters so I thought to use a text file (like a configuration file) that carry on the whole set of configuration parameters for different PLCs.I think of something like this:[Configuration File]ID=xxxxxxPORT=yyyyyyNAME=ssssssssand so on...I need to read this file and extract the parameters to be used in PLC application.I can save the file via FTP directly into a directory but I need to read its content in CODESYS PLC application side.Could someone help me?Thanks
+
+Hi,there is a ready to use product in the CODESYS store:https://store.codesys.com/ini-file-utility.htmlSure you could implement it by Sysfile library too.BREdwin
+
+Thank you.But how I could extract that data by myself?
+

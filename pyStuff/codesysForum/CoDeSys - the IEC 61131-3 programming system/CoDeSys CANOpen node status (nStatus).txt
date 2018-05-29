@@ -1,0 +1,94 @@
+I have been using V2.3.7.1 and previous versions as well.
+
+I have about 10-12 nodes on my CAN buss. To monitor the status of these nodes I relie on the use of the CoDeSys array pCANOpenNode.
+
+So a quick sample is:
+
+FOR sEachNode := 0 TO MAX_NODEINDEX DO
+   IF ((pCanOpenNode[sEachNode].nStatus = 99) OR (pCanOpenNode[sEachNode].nStatus = 97) OR (pCanOpenNode[sEachNode].nStatus = 127))THEN
+      uFault	:= pCanOpenNode[sEachNode].ucNodeNr;
+   END_IF
+end_for
+
+but what I have noticed is the array reports incorrectly at times which caues this loop to fault. In other words a node that is working perfectly ( I moniotr it through a can dongle) will have an in accurate value appear in the pCANOpenNode.nStatus. Normally I'll see 97 pop in there. Sometimes for 1 PLC cycle sometimes for as many as 5 to 10. (PLC running at ~20msec cycle times) I have ran tests to see and trap the odd data and try to see how often or predictable it is. It will fail on random nodes (not the same node type or number) every time. It will also fail in random time, (not like every 100 PLC cycles). I have three different types of nodes from 3 different manufacturers and it reports incorrectly on any of them.
+
+Has any one seen this?
+
+_________________Thanks,
+Steve Pfeifenroth
+
+I've also seen this!!! I also monitor the states of the slaves using the pCANOpenNode array, and i also have a CAN dongle so i see the heartbeats on the bus but the runtime seems to miss them!!!
+
+I've also tried to "fool" the runtime by doubling the frequency of the heartbeats but i still reports the wrong states of the slaves!!!
+
+Same here.  I eventually lost patience with the unreliable 'nStatus' property and coded a less-than-ideal work-around.  If anyone comes up with a robust solution, please let us know!
+
+Try to increase the cycle time of the PLC to 50ms and check if it is happening less often. We have the same occurence. We noticed that in some cases increasing the cycle time is filtering out this event. In some other cases we filtering out the faulty nStatus between two consequent cycles using a shift register.
+
+Yes my work around is adding a timer to the error so that the error must be present for x amount of time. That is a crappy patch. There is already a timer on the heartbeat or node guard and now I am adding more time to it. Actually though I never want to increase my PLC cycle time. First off I wouldn't know how to reliably, except make some big for loops. I want my PLC to control as fast as possible. This is a bug with the 3S CAN stack. hopefully they fix it.
+
+_________________Thanks,Steve Pfeifenroth
+
+Hi,
+
+I used this method in my program, it works fine, but where can I find documentation describing the members of the canOpenNode variable?
+
+I would like to know what the meaning is of the values of the nstatus member...
+
+thx
+
+Tony send me an email and I can share that with you. The file will not upload because of file size restrictions.
+
+_________________Thanks,Steve Pfeifenroth
+
+Hi,
+I am facing the same problem too.
+I have activated heartbeat monitoring for the slaves. 
+I expect for the slaves;
+pcanopennode[xx].nstatus = 5; since all the conditions are ideal. 
+Yet the value of above variable toggles between 99 and 5. 
+I have no idea why. The heartbeat monitoring time is about 25 ms, and PLC scan time is 1ms.
+
+Can you guys indicate if there could be something wrong with the configuration ?
+or is it that I am experiencing similar behavior like you guys?
+
+Hello,
+
+Been experiencing the same problem as you all describe.
+
+We found two things.
+
+1. On our PLC the CAN driver buffer where to small. We could miss messages if the load where to high.
+
+2. That the configured Hbeat time in CoDeSys is to "narrow". 
+If im not remebering wrong CoDeSys multiplies the time by 1.5.
+
+We found that by extending the time by 3 the problems went away for good. 
+
+FOR i:= 0 TO MAX_NODEINDEX BY 1 DO
+(*Calculate the original Heartbeat time that is entered in PLC Configuration *)
+dwOriginalHeartbeatTime := REAL_TO_DWORD(DWORD_TO_REAL(pCanOpenNode[i].dwHeartbeatTime) / 1.5);
+	(*Set the new Timeout factor*)
+	pCanOpenNode[i].dwHeartbeatTime := dwOriginalHeartbeatTime * HEARTBEAT_SCALE_FACTOR;
+END_FOR
+
+Hope that this fix helps you out
+
+I haven't seen a Heartbeat message TX at 25ms. Why do you need it so fast?
+
+_________________Thanks,Steve Pfeifenroth
+
+Hi,
+Thankyou for the reply Steve.
+I am not aware of the typical monitoring times of heartbeat.
+
+My intention/requirement is
+- To monitor as accurately as possible, the communication interruption with the device or to say telegram failure. 
+- The CAN master shall be notified immediately if there is a loss of slave on the bus, and certainly a confirmation, that the failed slave is back online after reset of the communication fault.
+
+It would be kind of you if you can direct me to some kind of documentation, if possible, regarding the above.
+
+Thanks in advance.
+Cheers.
+Rahul.
+

@@ -1,0 +1,6 @@
+Hello,when I create a rectangle in the visualization, is the position x and y stored in a variable somewhere so I can use this in my program?Thanks in advance.
+
+yes it is.objectname.xpos etc.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

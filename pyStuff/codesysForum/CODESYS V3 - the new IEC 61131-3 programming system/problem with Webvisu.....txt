@@ -1,0 +1,4 @@
+Hi,i converted a old V2.x sample program tetris to CodesysV3.5Sp9.Patch1.Everthing runs fine in the 'internal' Codesys Visualisation.But, when i try to activate the webvisualisation, i get the following error :Attachment:why.PNGim my program a excluded the webvisu from compilation, so thet the program is able to run.any ideas ?I appreciate your help !Attachment:Tetris.zip
+
+problem is solved.Thanks a lot.http://forum-de.codesys.com/viewtopic.php?f=18&t=5112
+

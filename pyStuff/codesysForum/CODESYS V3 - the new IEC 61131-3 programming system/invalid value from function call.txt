@@ -1,0 +1,12 @@
+I've created a function for linear interpolation and depending on how I call it either works or doesn't.  Using the shorter method of function call doesn't work.  I'm using Codesys 3.5 SP8 Patch 4.interp_in := 7;// function call - linear interpolationlin_interp(	x0:= 0, x1:= 100, y0:= 0, y1:= 50, in:= interp_in, out=> interp_out0 );// function call - linear interpolation (same as above, different format)interp_out1 := lin_interp( 0, 100, 0, 100, interp_in );		//this format is not working correctly, I don't know why
+
+Are you sure it is a function?It seems to be a function block, which is different.Try this:lin_interp( 0, 100, 0, 100, interp_in );interp_out1 := lin_interp.out;This should work if it is a function block.
+
+This doesn't work:  interp_out1 := lin_interp.out;It doesn't like the .outIt says 'out' is no input of 'lin_interp'The function in the tree menu shows, lin_interp (FUN).  This would be a function or not necessarily?
+
+If you only have one output for the function, don't define it as a var out. Don't:Code:FUNCTION MyFunctionVAR_INPUT   VarIn : BOOL;   Var2 : INT;END_VARVAR_OUTPUT   Out1 : BOOL;END_VAROut1 := VarIn;Do:Code:FUNCTION MyFunction : BOOLVAR_INPUT   VarIn : BOOL;   Var2 : INT;END_VARMyFunction := VarInNow you can call it in the way you want:Code:Answer := MyFunction(TRUE, 27);If you define one or more VAR_OUTPUTs, then you have to use the full notation so the compiler knows which output you want.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+This worked thanks!I changed the function by removing the out var, and setting the function name := (equation).And then updated the code to:// function call - linear interpolationinterp_out0 := lin_interp( x0:= 0, x1:= 100, y0:= 0, y1:= 50, in:= interp_in);// function call - linear interpolation (same as above, different format)interp_out1 := lin_interp( 0, 100, 0, 100, interp_in );	I believe I found the old method in the help file too, not so helpful!
+

@@ -1,0 +1,2 @@
+I got error when ı tried to add new component visualisation toolkit. "an item with the same key has already been addedHow can I fix it ?I created to new extension but problem still continue. Is there another solution that you know ?
+

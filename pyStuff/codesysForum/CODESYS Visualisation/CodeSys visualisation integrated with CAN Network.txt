@@ -1,0 +1,36 @@
+Hi,
+ i am new to codesys programming and presently i am working on a project where i need to develope some visualisations using codesys and communicate directly with CAN network  with PLC logic not being an intermediate.let me know if it is possible in codesys and if possbile how? 
+
+Any help or ideas would be appreciated. 
+
+Best regards, 
+Bharath Reddy
+
+Sure you can as long as your target supports CAN. Are you trying to use CAN Layer2 or CANOpen? If you are using CANOpen are you trying to be a master or slave? Look over the help under PLC configuration and the resources section. Please be more specific in order to get a better response.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+Thank steve for your response.
+
+I am  developing one stand alone visualisation application using CodeSys. In our project many subsytems are connected using CANOpen network and each subsystem broadcast the data in CAN .Now i want to communicate my visualisation with CAN directly and receive that broadcasted data of various subsystems and display it to the user accordingly. We are not concerned with the CAN master or slave configuration according to my information.
+
+       looking forward to get further response,    
+
+Best regards,
+Bharath Reddy
+
+So I am guessing that you are using CoDeSys running on a PC since it sounds like you have no target. My guess would be since you are not going to be a Master or slave than you can just use CAN layer 2 function calls. This requires a FB CanOpenPDO_RX for each COBID in your system. The data can then be displayed on the visualization. You should look at the libraries 3S_CANopenManager.lib and 3S_CanDriver.lib. Try reading over this manual as a starter. Not sure though if you can start the services without being a master or slave.
+
+_________________Thanks,Steve Pfeifenroth
+
+Hi,
+
+In our project PLC code is written using other tool and the PLC. PLC and my visualizations application (developed using Codesys) running on a touch screen are connected in CAN. And I want to communicate with PLC using CAN and able to display the data accordingly in my visualization which is broadcasted by PLC.
+
+
+ Looking forward to get further response,
+
+Best regards,
+Bharath Reddy
+

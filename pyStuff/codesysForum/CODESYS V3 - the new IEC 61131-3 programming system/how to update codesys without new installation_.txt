@@ -1,0 +1,4 @@
+is there some way to update Codesys IDE (patch or service pack) without install new version and to uninstall the old one? just an "upgrade"
+
+Hi,uninstall is not needed,I would recommend install the new version in the same directory as the old one exists.Afterdoing that both versions are possible to use.BREdwin
+

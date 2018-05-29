@@ -1,0 +1,12 @@
+I am sucessfull in running machine by using CNC editor. 
+But i just want to ask you that how can we again empty the machine buffer for next CNC program.
+
+After going in online mode, i make some movement by my machine. But when i do "log out" and make some changes in CNC editor (ie X,Y & Z cordinates) my machine does not understand new cordinate and it runs on the previous coordinates. But when i completely shut down my machine and switched it back on than it understand my new coordinate data. This could because of the prevous data does't delete.
+
+Probability i have delivered my problem very clearly. If anyone knows how to solve it than please let me know .
+
+Thankx
+
+Best Regards
+Tahir
+

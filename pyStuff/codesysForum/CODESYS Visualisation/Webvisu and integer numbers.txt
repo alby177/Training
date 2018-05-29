@@ -1,0 +1,2 @@
+Hello, with webvisu the %i format doesn't work. I just get i as numeric value.  I have replaced %i with %d and everything works well.  Is it a bug?
+

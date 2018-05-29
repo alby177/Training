@@ -1,0 +1,12 @@
+Hi there,I wonder if it is possible now to set up the gateway and device by IP address and device address?I have looked up on the forum and in the ScriptEngine.chm. The only way I found was to use the device name, shown below.Quote:projects.primary.find("Device name", True)get_gateway() get_address() set_gateway_and_address(gateway, address) Thank you in advance  
+
+Hi chenhe.chenhe wrote:I wonder if it is possible now to set up the gateway and device by IP address and device address?I have looked up on the forum and in the ScriptEngine.chm. The only way I found was to use the device name, shown below.With CODESYS V3.5 SP9 or newer you can use the method set_gateway_and_ip_address(...) to specify the IP address for the device. You can find your gateway object by its name with the following code:Code:gw = online.gateways['Gateway-1']If you don't have a gateway you can create one with online.gateways.add_new_gateway(...). You need to create a dictionary with the parameters required by the gateway driver. Each parameter must be converted to match the required type in the driver. I can provide an example if you need one.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hello M.Keller,I'd like to have the example for creating new gateway. Thanks again.   M.Keller wrote:If you don't have a gateway you can create one with online.gateways.add_new_gateway(...). You need to create a dictionary with the parameters required by the gateway driver. Each parameter must be converted to match the required type in the driver. I can provide an example if you need one.
+
+Hi chenhe.chenhe wrote:I'd like to have the example for creating new gateway.I attached an example for creating a gateway.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

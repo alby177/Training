@@ -1,0 +1,12 @@
+Hey, is there a way to use the " copy (branch/tag) " command ... and some steps following (switch to new location, increment version numbers, Placeholders...) within python (CODESYS). Thanks!
+
+Hi.The branch/tag commands were simply forgotten for the script interface. We have already an entry in our bugtracking. See SVN-162.There are two workaronds:- Use the following command where the second parameter (as boolean) specifies if you want to switch to the new branch:Quote:system.commands["svn", "copy"].execute("svn://new/destination/url", "false", "commit message")- Use the SharpSVN library directly (see attached python file)BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+thanks, works fine. One thing. How to switch to the new location? I tried sharpsvn and i tried script interface. What is the best way? I am a little bit confused... path, uri, string, SvnUriTarget...
+
+Hi  MaGu.If you use the Copy command you can change the second parameter to "true" for switching immediately after the copy:Code:system.commands["svn", "copy"].execute("svn://new/destination/url", "true", "commit message")Otherwise you can use one of the switch methods of the project object. Look for IVersionedProject in the scripting documenation.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

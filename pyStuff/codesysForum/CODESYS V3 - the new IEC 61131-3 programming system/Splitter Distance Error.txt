@@ -1,0 +1,2 @@
+Anyone see a "splitterdistance must be between panel1minsize and width - panel2minsize" when trying to modify the alarm configuration in the application tree?  It seems like a windows problem - I've uninstalled and reinstalled and updated my .net frame work - but to no success.Cheerslee
+

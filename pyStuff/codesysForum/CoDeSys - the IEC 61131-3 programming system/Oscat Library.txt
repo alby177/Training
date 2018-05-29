@@ -1,0 +1,6 @@
+Hi all,I downloaded Codesys v3.5 and have installed some of the libraries provided by Oscat.Included with the library are demos.One demo in particular DLOG_FILE_CSV I have been trying to run it in simulation.However when I click on Library Manager>OSCAT Network 1.2.1>POUS>DEMOSI can't seem to run the demo in simulation.Do I have to type the code in myself and if so how do I find the code for the demo in the library?Many thanks in advance-darnbar
+
+file operations are not possible in simulation as the target is different from the PC.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

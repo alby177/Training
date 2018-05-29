@@ -1,0 +1,4 @@
+Is there a simple way to get device IP address in ST code?For example: Device.GetIPAddress();
+
+Hi,guess this IP Address example you should find here: viewtopic.php?f=23&t=6247&p=13230#p13230GrüßeEdwin
+

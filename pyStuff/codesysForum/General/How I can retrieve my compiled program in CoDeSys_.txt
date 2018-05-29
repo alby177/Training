@@ -1,0 +1,4 @@
+After a program in CoDeSys project I did a boot of it and I've uploaded it (a .bin file) in a PLC (WAGO 750-842).The problem is that I did not copy the program and now if I do an upload from the PLC. Now I have a .bin file but I can not open it.Does anyone know how the CoDeSys can open a . bin and that you can edit it again?Thanks in advance
+
+HelloYou can not retrieve a compiled program from the PLC.You only can retrieve the source code of the program from the PLC, provided having previously loaded.It also requires that the controller allows this load. Indeed some PLC manufacturers do not provide the memory necessary.The only solution is to keep his treasured source code.Best regards
+

@@ -1,0 +1,2 @@
+Problem:If I rename a file that is controlled by ENI-Project-Management, other users are not informed about the new name. Reopening the project, the file is retrieved with the new name from the Database and the old version is made local. Afterwords I have two files with the same code inside. Very bad for declarations.Any ideas?(ENI 1.1.2.0 may be to old? never change a running system...)
+

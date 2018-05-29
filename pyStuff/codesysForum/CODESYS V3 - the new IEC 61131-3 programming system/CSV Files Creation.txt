@@ -1,0 +1,20 @@
+I am writing a Data Logger application to run using CoDeSys Win SL. Is there a chance that you could direct me to examples of CSV creation, reading and writing routines using CoDeSys?Thanks
+
+http://store.codesys.com/file-utilities.htmlORhttp://store.codesys.com/csv-utility.html
+
+Thanks TimvH,The File-Utilities example did help a lot, but now I do not seem to find the right source of information to properly structure the CoDeSys expression that allows "linking" strings separated by commas. I have unsuccessfully attempted different variations to the Pascal expression:      String_Chain := String_1 + ' , ' + String_2 + ' , ' + String_3;where all the variables are declared as strings.Any additional suggestion will be appreciated.
+
+You can use the function CONCAT for this:String_Chain := CONCAT(String1, ',');
+
+Thanks again TimvH,I believe that will work.
+
+Can someone please send me a sample code for implementing read/write/open/close .txt or .csv or .bin files. I tried implementing it, but could not read the .txt and .csv files at all.
+
+See the help files they have good example..pic attached
+
+Does this work for variables of all datatypes or just Strings? I tried doing it with REAL datatypes, read and write works fine, but I cannot see the data when I open the text file (.txt). Is there a work around?
+
+Actually the file created is a stream of ASCII chars. You could convert the real to string and write.
+
+learnetkThank you. I really appreciate your prompt response. I tested it out and works great.
+

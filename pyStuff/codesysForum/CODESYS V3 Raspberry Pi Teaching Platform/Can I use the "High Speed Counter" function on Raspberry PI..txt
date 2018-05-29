@@ -1,0 +1,2 @@
+Hi,Can I use the "High Speed Counter" function on Raspberry PI.
+

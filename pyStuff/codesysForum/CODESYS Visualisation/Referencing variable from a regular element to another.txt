@@ -1,0 +1,6 @@
+HelloI am creating a visu to control a function block. I would like to have one visu and be able to select what instance of the function block to control.I would like to have one "Regular element" where I could enter the path(possible a drop down) of the fb instance and then reference this path in all the other buttons and "elements" of the visu.So my question is; if it is possible to reference the value of a "regular element" to another "element" within the visu.Kim
+
+not sure what your problem is but have a look in $ref$ and when you put a visualisation inside another in help file there is a story about referencing a visualisation
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

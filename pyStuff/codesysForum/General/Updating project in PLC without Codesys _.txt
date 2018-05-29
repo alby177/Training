@@ -1,0 +1,6 @@
+Hi,is it possible to update a Codesys 2.3 project in the PLC without having Codesys installed?I mean I make some changes in the project, compile it on my laptop, then email what Codesys generated (I guess *.ci and/or *.ri file) to someone - can he somehow update the project in the PLC without Codesys ?Thanks
+
+pnn wrote:Hi,is it possible to update a Codesys 2.3 project in the PLC without having Codesys installed?I mean I make some changes in the project, compile it on my laptop, then email what Codesys generated (I guess *.ci and/or *.ri file) to someone - can he somehow update the project in the PLC without Codesys ?ThanksHi,U should have CoDeSys software at the time of downloading the PLC code.Regaurds,
+
+This depends on if the PLC manufacturer has implemented any such feature. For example the ABB AC500 has the possibility to transfer boot project with an SD-card.See the documentation for the PLC that you're using.I haven't been working with V2.3 for some time, but for a V3 PLC it is possible to manually change the project if you have access to the file system (if there is a file system).Best regards,Kristian Berlin
+

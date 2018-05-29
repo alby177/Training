@@ -1,0 +1,6 @@
+Hi everyone,I'm doing a small programm with a wago which is able to send sms. I'm browsing an array which contains alarm message and alarm status, but the problem is due to the delay of the sending (between 2 and 5 secondes), it's possible that my loop has been increased by one or two so I've an offset between the sent sms So my question is: is there a way to force the programm to wait untill the sms is sent?Many thanks in advance for your help
+
+When programming PLCs you are in front of deterministic and realtime systems, this means that you can't pause or loop infinitely till an event happens,But, you can do this like:Code:sms := 0;CASE state of1: send the current sms.    state := state + 1;2: if (sms is sent)    then      sms:=sms+1;      state := 1;    end_ifThat will allow you to wait the needed amount of time without locking the task as any PLC task will automatically start from the beginning again once it has finished.PS: If you are interested on knowing the flags or so that can be used to know if the sms has been sent... then you should give us more information about the instructions you are using...Hope this helps.
+
+_________________http://www.robotecnik.com - robots, CNC and PLC programming.
+

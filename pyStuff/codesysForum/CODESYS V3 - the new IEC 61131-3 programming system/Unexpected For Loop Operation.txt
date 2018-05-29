@@ -1,0 +1,32 @@
+I'm using the following For loop:Code:FOR i:= 0 TO 1 DO   X:=i;END_FORThe code ends up with "i" and "X" equaling 2.Can someone explain why? I'm expecting the code to flip between i=0 and i=1?Thanks
+
+The FOR loop goes like this: assign the starting value, execute code, increment "i", return to FOR, check if in range, etc. So at the end, "i" always will be one step outside the range. (That's why the loop stops executing). A FOR loop is basically a WHILE loop with the starting assignment and incrementer built in.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Are you sure that at the end X value is 2?The value of i must be 2 at the end, but X must always be 1 at the end.
+
+_________________http://www.robotecnik.com - robots, CNC and PLC programming.
+
+The last executed value of x is 1, but on hitting the FOR again, X will be 2 and the loop is exited.  So, yes, X will be 2 when viewed after the loop.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+It is mandatory to put by 1. In other case it is possible that the loop dont know if increases or decreases.Two more things:Loops ending with the variable equals to...Arrays beguinning at 1. (But if you are running for an space of memory created with __new has to beguin with 0)..
+
+It would be wiser to skip FOR and WHILE  loops unless you initialise something during the initialisation phase of the software.Maybe my thoughts on this are old fashioned but my experience is that incorrect use of FOR and WHILE loops during execution cause too much jitter/ consume too much cpu cycle time. Thus resulting in overall degraded performance of the controll application.Some empiric tips, so no guarantees on them;Never call FOR /WHILE loops cyclic and synchronous,Define a low priority task for the FOR /WHILE loops and call it on EVENT base (asynchonous with callback),Define initialisation phase which call FOR/WHILE loops only (synchonous /asynchronous),Check start and endpoint (eg array boundries check) beforehand.Good luck  !
+
+Hi all,I was really curious on that as it had not much sense at all...I've tried it and no, X value at the end is not 2 is 1.See the attachment.The attachment is a capture of the code the original poster sent after the loop complete execution and waiting on a breakpoint afterwards. The loop has ended already.So, X value is 1 and i value is 2 after the execution.The way for loops is read is something along:Set the loop variable to a specific value (in this case to 0).If that value is smaller than a limit (in this case 1).Execute the loop.Increase the value by the specified step (if no step is specified then 1 is used).At the end is normal that the loop variable is higher than the limit variable and when this happens the loop is considered as ended as the condition is not met and therefore the code inside the loop is not processed again.Hope this helps and remove any doubt in the execution of a for loop out there.PS: At least this is what happens using Beckhoff TWinCAT.
+
+_________________http://www.robotecnik.com - robots, CNC and PLC programming.
+
+@Hermsen:You are right, if you have a loop that consumes too much CPU time and it needs more time than the time the task has been configured, then you will have undesired results...In order to avoid that in cases in which looping is needed (*1) then you can always split the looping in parts which will always be a good solution in some cases...(*1) i.e.: Now I'm working on an XTS solution and I do have two circuits with more than 40 motors in each circuit... I need looping from the first motor to the last one in each cycle to parameterize each motor depending on the position... in cases like this having a nice processor and a loop helps a lot.
+
+_________________http://www.robotecnik.com - robots, CNC and PLC programming.
+
+@ Joan M - sorry, I meant "i".  I am always using X for my loop variable, so I was thinking X was the loop variable.  X = 1, i = 2 at the end of the loop.@ Hermsen - loops with constant start/end values don't cause jitter (assuming they are executed every PLC scan).  Jitter is from IF/THENs where code isn't executed sometimes, but executed other times.  Jitter can also happen if you use a variable as the start/stop point (don't do - bad idea).  If you need to shift data, or copy 100 pieces of data to a modbus array, then a FOR X := 1 TO 100 is used and you add consistent execution time every scan.  FOR/NEXT loops can be very bad for PLC scan time when used incorrectly, but how else do you copy data from one place to another?  Having 100 discrete lines of code has the same result.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Dear Scott,I am not too old to learn something new, good addition! 
+

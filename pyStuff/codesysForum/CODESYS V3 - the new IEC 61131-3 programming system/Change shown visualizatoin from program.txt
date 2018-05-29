@@ -1,0 +1,8 @@
+Hello!Anybody knows how to change a shown visualization or frame within a program?  I tried:IF xSomething THENVisuElems.CURRENTVISU := 'Motor';END_IF But doesn't works, seems that you can't assign value to VisuElems.CURRENTVISU variable.Works only for output,like:IF  VisuElems.CURRENTVISU = 'Motor' THEN	xSomething:=TRUE;END_IFregards, alex
+
+Hello Alex,if you have a couple of visualisations inside a Frame, they are numbered from 0 to n. With a related integer variable you can select one of the visualisations. The Name in the Frame properties is "Switch Frame".Original text from CODESYS help:Enter a integer variable, which value contains the ID of the displaying visualization. The ID of a visualization is defined by the order of the visualization selection list of the frame configuration in dialog “Frame configuration”. For the first item in the list “Selected visualizations” the ID is 0, for the second the ID is 1 and so on.
+
+Thanx Rudolf! And I also figured out how to switch main visualizations, Here's tiny example:/// Switch visualizations via program./// Important: This program must be called in the VISU_TASKPROGRAM SwitchVisuVAR	pClient: POINTER TO VisuElems.VisuElemBase.VisuStructClientData; // Pointer to the client	xSomething: BOOL;END_VAR//programIF xSomething THEN	VisuElems.VisuElemBase.g_VisuManager.SetMainVisu(pClient , 'Visualization_1');END_IFIF xSomething=FALSE THEN	VisuElems.VisuElemBase.g_VisuManager.SetMainVisu(pClient , 'Visualization');END_IFregards,Alex
+
+Hmm, there's a tiny issue with this solution: It doesn't work when you are online on PLC. Don't know why??? Anyway works perfect when in runtime .regards,Alex
+

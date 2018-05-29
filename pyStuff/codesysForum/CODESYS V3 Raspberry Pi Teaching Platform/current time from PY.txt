@@ -1,0 +1,8 @@
+Hello toghether,how take a current date,hour and minute from Raspberry ?Thank you in advance !!    
+
+Hello,for me this example here give the Information how to realize this.viewtopic.php?f=23&t=6247&p=12387#p12396BRplcmax
+
+Ok thx !!!If i don't have an RTC module...but i need to get data from ethernet connection ?Thank you !
+
+hi,you do not need o have a rtc module,by default as I understand pi does sync his time by network connection. Just use this project and the time should be up to date.Regardsplcmax
+

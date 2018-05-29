@@ -1,0 +1,10 @@
+Hi,Are there any WSTRING functions in the library? Things like LEN() MID() REPLACE() ect. Or do I have to write my own?ThanksDave
+
+Yes, there is the Standard64 library (category Application=>Common).This contains WSTRING functions.
+
+if needed extra functions have a look at www.oscat.de
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks Tim, and Thanks ShooterStandard64 is what I need
+

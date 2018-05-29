@@ -1,0 +1,9 @@
+I'm new to CoDeSys...
+
+What's the advantges of using a gateway connection or an ARTI connection? 
+
+Do either have limitations (other than OS / connection type)?
+
+The advantaage of using the gateway is this enable the possibility to connect both with the CoDeSys workbench and at the same time with e.g. the OPC server, because the gateway handles the data communication from several "clients" with the PLC.
+The ARTI has the advantage that you have direct access to the PLC and don't need to start up the gateway.
+

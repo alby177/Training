@@ -1,0 +1,18 @@
+Hi support team,is it possible to add a POU (e.g. prg_myCalls) call via python script to a dadicated task "task03" within the task configuration?Thanks in advance._
+
+Hi DBaur.DBaur wrote:Hi support team,is it possible to add a POU (e.g. prg_myCalls) call via python script to a dadicated task "task03" within the task configuration?Thanks in advance._There is no Scripting API for creating and manipulating the task configuration at the moment, but it is already listed in our Jira tracker CDS-34234. It is requested for CODESYS V3.5 SP10 so maybe it will be released with the SP10 release.If you really need it now, you could export the task configuration with PLCopenXML, change the configuration in the XML and import it.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+M.Keller wrote:Hi DBaur.DBaur wrote:Hi support team,is it possible to add a POU (e.g. prg_myCalls) call via python script to a dadicated task "task03" within the task configuration?Thanks in advance._There is no Scripting API for creating and manipulating the task configuration at the moment, but it is already listed in our Jira tracker CDS-34234. It is requested for CODESYS V3.5 SP10 so maybe it will be released with the SP10 release.If you really need it now, you could export the task configuration with PLCopenXML, change the configuration in the XML and import it.BRMartinIn the JIRA ticket the resolution is fixed for SP 10, but i can't find anything in the online help. Could you provide me an example for adding and manipulating tasks ?
+
+Hi PLKM.PLKM wrote:In the JIRA ticket the resolution is fixed for SP 10, but i can't find anything in the online help. Could you provide me an example for adding and manipulating tasks ?It seems the Scripting API documentation was not updated.I attached an example which prints the tasks of the application "Application" and create a set of task below the application "App" which has no task configuration. See screenshot.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+M.Keller wrote:Hi PLKM.PLKM wrote:In the JIRA ticket the resolution is fixed for SP 10, but i can't find anything in the online help. Could you provide me an example for adding and manipulating tasks ?It seems the Scripting API documentation was not updated.I attached an example which prints the tasks of the application "Application" and create a set of task below the application "App" which has no task configuration. See screenshot.BRMartinHi Martin,thank you for the example. But the part of adding/getting POUs within the tasks is missing. Could you provide the method ?
+
+Hi PLKM.PLKM wrote:But the part of adding/getting POUs within the tasks is missing. Could you provide the method ?Code:def printTaskPOUs(pous):   if pous and len(pous) > 0:      for pou in pous:         print("POU: " + pou)   else:      print("No POUs")Code:print("Add to two POUs ...")task.pous.add("MyPRG")task.pous.add("MyPRG2")printTaskPOUs(task.pous)print("Insert POU 'PLC_PRG' at the top ...")task.pous.insert(0, "PLC_PRG")printTaskPOUs(task.pous)BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

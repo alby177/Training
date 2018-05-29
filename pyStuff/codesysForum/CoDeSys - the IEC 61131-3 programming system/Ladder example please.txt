@@ -1,0 +1,8 @@
+Hi, has anyone got a good example of ladder using functions and function blocks? please.Stu
+
+you can use user function blocks in ladder when the first input and output are boolsif you use the Enable block (just right from this one, you can use any function and block.just fill in the ??? fields with vars.and you will have to give each block its own name.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+shooter wrote:you can use user function blocks in ladder when the first input and output are boolsif you use the Enable block (just right from this one, you can use any function and block.just fill in the ??? fields with vars.and you will have to give each block its own name.So if created a function block declared the inputs and outputs. Would i be able to use a contacts and coils to create an AND(well aware there is a standard function block). Reason why i ask just need to know the rules when creating my own function blocks,can you contact and coils or only boxes?
+

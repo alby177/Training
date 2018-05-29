@@ -1,0 +1,6 @@
+CodeSys v2.3... Is there a way to hide the global variables of an internal library? {library private} does not hide them. Is Access Rights the way to hide them? I would like to distribute this library password protected; and also want the global variables to be hidden.
+
+global variables can not be hidden. as only one long list is available for them.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

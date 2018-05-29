@@ -1,0 +1,12 @@
+Hi everybody!
+
+I have a task: to fix discrete events with highest possible precision (1msec or better). 
+
+Frankly speaking I have a solution on another platform - industrial PC with good old DOS. My programm scans digital inputs using timer interrupt - 6 Khz or higher (it can be configured). So it is possible to determine time intervals between discrete events.
+
+So, I would like to ask. How it is possible to do the same on WAGO 758-870 in CoDeSys environment? 
+
+Many thanks in advance!
+
+I have had need to do something similar.  5ms is the best I could get and the code in that task needed to be very small.  If you go much less than this 5ms task (cyclic) you may have difficulity logging into the device when it is running.
+

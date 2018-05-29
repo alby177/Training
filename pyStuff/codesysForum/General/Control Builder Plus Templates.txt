@@ -1,0 +1,6 @@
+Hi, I've got an AC500 PM581 and Control Builder Plus V2.0.2 but I don't seem to be able to set up a new project with PM581 or PM581-ETH as a template or even add the PM581 as a device. Does anyone know if the PM581 is compatable with Control Builder Plus?CheersDom
+
+Hi Dom,If it's still relevant to you, PM581 cannot be programmed using CBP. You will have to run CoDeSys v2.3 (not from CBP) and select PM581 as target.Hope that helps!
+
+_________________AC500 Application and Technical SupportABB Private Limited (Singapore)No. 2, Ayer Rajah Crescent, S139935SG Support Mobile: +65 9733 086624x7 Call Center: +65 6222 7778
+

@@ -1,0 +1,5 @@
+Please can somebody help?I want to be able to monitor and change variables in my project without using the CoDeSys online debugging. There is a symbol configuration object that I can add to my device tree where I can put all the symbols I like to monitor. But does anyone know of an example project where the symbol configuration object is used? Or how do I use it to display lists of variables and their values.Best RegardsDaveW
+
+_________________David Warren
+Luscher UK
+

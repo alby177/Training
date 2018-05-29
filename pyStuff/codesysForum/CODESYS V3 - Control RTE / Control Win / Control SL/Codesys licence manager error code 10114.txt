@@ -1,0 +1,6 @@
+Hi.I bought three licences for the raspberry pi.Per email i got the licence keys and wanted to add them in the engineering system to put them on the raspberrys.But i can´t do this. I got an Internal Error 10114: "context could not be properly read (No FirmUpdateCounter found for firm code 101597)".The engineering system is a virtual machine with hyperV.Programming and Updating of the raspberry pi was no problem.The first problem occured by installing the licences.I found no info about this error.What's the reason for this?Thanks!
+
+I've contacted Bug Support and have an open ticket for the same issue. Have you been able to solve your issue? I will gladly update if/when I find the fix.
+
+I was able to install the licenses directly to device instead of the License Manager method. Edit Licenses... option is available in PLC Settings of Device. Hope this helps.
+

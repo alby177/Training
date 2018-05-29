@@ -1,0 +1,16 @@
+I don't know if anyone is interested but I decided to release my MQTT code on GitHub.https://github.com/kmpm/OSC-MQTTIt's probably usable for more than on Raspberry Pi. As far as I know it's CODESYS V3 compatible but I haven't tested it that much.
+
+Maby i revive this topic. But do you gonna make a update? Or is it working perfectly? Thanks.
+
+It's not dead but somewhat dormant.Sending strings is working but I would like to be able to configure mqtt subscriptions as well but I haven't found a good way of doing it yet.I would love to figure out how to do callbacks in codesys but haven't succeeded so far.If you are willing to help out I would be more than happy.
+
+Hi kmpm,Thanks for sharing your MQTT code. I'm a MQTT and CODESYS newbie so please forgive any silly questions. I was able to write a little of my own code w/yours for the CODESYS Control Win V3 SoftPLC (rather than a raspberry pi). I could compile and download it, but I'm missing something. I don't see where my call to your "Publish" function actually does a TCP/IP send. I set a breakpoint in the _Send and never hit it, Wireshark shows no packets going out.  Where/how does the send get called? Thinking I might need a "connect" in here to before I do the Publish? Suggestions for this newbie?Thank you!
+
+@mstjohn I will try to make an example project as well. Keep looking at the github page.
+
+@mstjohn,I have checked this lib on Raspberry - as far as I understood, you need to instantiate call MQTTClient function in your task and call it periodically. This function sends publish messages from buffer if there any. It also sends keepalive requests. To write the new paket to send buffer you call MQTTPub with pointer to your MQTTClient instance, topic and payload. So at least it connects to broker and publishes topics for me, but it looks like it calculates wrongly the length of publish message, so that part of topic (2 characters) goes to payload. Personally I don't like the way the publish message is generated in lib - sorry for crtitics. In my opinion it can be done in easier way. I have some simple implementation of MQTT client for another platform, so can port it here, including subscribing. The only problem I'm the same newbie in Codesys as you, so I need to find out how to modify libraries first.  I also didn't work with Github, so it would be complex to update the branch there - I'm more common to SVN. What I also would like to learn - is how to send publish messages only when some variable is changed. I think there should be build in mechanism for that - like some event callback or whatever. Offcourse it's always possible to monitor change in program, but I guess there should be easier way. Maybe alarms, or something like this. Any hints?
+
+@kmpm, are you still working on MQTT project?
+
+viewtopic.php?f=20&t=6913&p=17177#p17177
+

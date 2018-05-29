@@ -1,0 +1,11 @@
+Hello,
+I am very new to CoDeSys and do not find the CoDeSys-help very helpful, hope that you can help me instead   . 
+
+I want to record the time in my POU in order to determine how often it receives indata. How is this done?
+
+Thanking you in anticipation!!
+
+I guess you need function block timer with input PAUSE. It gives you possibility to measure time intervals sum. See attached example TM FB.
+
+__________________IP_
+

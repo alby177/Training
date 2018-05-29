@@ -1,0 +1,6 @@
+Hi, I want to write the prepared values for multiple variables in Controller (HFX) using python script.I have been using the command "onlineapp.write_prepared_values()" for it. It is working fine when in simulation but it gives me an error when using for actual hardware controller.
+
+Hi Archana121.Archana121 wrote:Hi, I want to write the prepared values for multiple variables in Controller (HFX) using python script.I have been using the command "onlineapp.write_prepared_values()" for it. It is working fine when in simulation but it gives me an error when using for actual hardware controller.A few more details would be helpful otherwise we can only speculate what the problem is.What error? What version of CODESYS do you use? If possible the python script or the relevant part of it would be also helpful.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

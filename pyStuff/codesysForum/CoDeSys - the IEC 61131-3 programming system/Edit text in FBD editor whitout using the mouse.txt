@@ -1,0 +1,8 @@
+When jumping between text fields using the arrow keys the entire field becomes highlighted. To change only a portion of text, you have to then double click the mouse to drop the selection and just get cursor in edit mode.This is very irritating as it is much faster to only working with keyboard. Is there any way to get the cursor inside the text field for editing without mark the whole text? In other system its usually F2, SPACE or ENTER.RegardsJohan
+
+yes there is use home key and end keyhome gets you to the start of the variable and end gets you to ...... the end   F2 is used to open an assist to variable and functions etc.and Enter gets you to the next one
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+ SOLVEDThanks, this will make may day.
+

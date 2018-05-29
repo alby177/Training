@@ -1,0 +1,6 @@
+All,What is the 'default' method to synchronize tasks, to get data consistency?Regards,Edwin.
+
+Semaphores? When one task starts to manipulate data, it sets semaphore to block others accessing it, and when it is done it leaves it and releases the semaphore / data for others.Check SysSem or SysSemProcess libraries.BR.,Jay
+
+Thank you.
+

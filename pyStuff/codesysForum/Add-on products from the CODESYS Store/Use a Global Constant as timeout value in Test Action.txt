@@ -1,0 +1,8 @@
+Hi All,How can I use a Global Constant as timeout value in Test Script?I have a Test Action, with a TestManager.Monitoring CompareVariable command and there I must specify a Timeout value. This value is different when I test on the Hardware or on the SoftPLC.Now I set "$GLOBALS.iTimeout" which I set as Assignment at top of the Test script.But when the test run I get the error: "Required parameter should be a value of an integer type"The next software is used: Codesys V3.5 SP7 Patch 2 and Test Manager 4.0.1.1.
+
+Hi Bakkertje.If you want to use variables in input fields of the test action you have to use the placeholder syntax. There are only a few special input fields which accept the name of a parameter without the curly brackets.In your case you have to write the following text: {$GLOBALS.iTimeout}Important: Global variables of the parent test script are not available in the "REMOTE CALL"-ed test script.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi Martin,That works. Thanks  
+

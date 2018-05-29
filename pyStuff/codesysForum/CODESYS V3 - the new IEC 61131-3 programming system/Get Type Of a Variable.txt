@@ -1,0 +1,20 @@
+Hi all,Is it possible to get the type of a variable during runtime?Something like : typeof in C# ?Thank you.
+
+Code://DeclarationVAR   MyVarInfo: __SYSTEM.VAR_INFO;   MyTestVar: INT;END_VAR//CodeMyVarInfo:= __VARINFO(MyTestVar);//after this line of code MyVarInfo contains all information obout this variable - just watch in online mode and you will understandBRRalph
+
+Thanks, it works fine!But how can someone get some info about these special functions?I cannot find anything about it in the help.Thank you.
+
+Hi Ralph,Thanks for the tip. This is very useful!Tim
+
+yannickasselin1 wrote:Thanks, it works fine!But how can someone get some info about these special functions?I cannot find anything about it in the help.Thank you.Type "System." e.g. inside a ST Editor to come to those fancy stuff 
+
+Ralph Holz wrote:Code://DeclarationVAR   MyVarInfo: __SYSTEM.VAR_INFO;   MyTestVar: INT;END_VAR//CodeMyVarInfo:= __VARINFO(MyTestVar);//after this line of code MyVarInfo contains all information obout this variable - just watch in online mode and you will understandBRRalphIs there anyway to get a structures variables members without knowing them?  Meaning if you pass a structure to _VARINFO how can you get info about it members?
+
+_________________The Original SoMachine Ninja
+
+If internals variables are exported to symbolic comunication, I am thinking that you want is posible via cmpiecvaracces.But i have not found information about that library.I have could see information, using cmpiecvaraccesd, of program variables but not about fb members
+
+Josep M. Rams wrote:If internals variables are exported to symbolic comunication, I am thinking that you want is posible via cmpiecvaracces.But i have not found information about that library.I have could see information, using cmpiecvaraccesd, of program variables but not about fb membersHi, would you please post how to use iecvaraccess.Thanks
+
+jzhvymetal wrote:Ralph Holz wrote:Code://DeclarationVAR   MyVarInfo: __SYSTEM.VAR_INFO;   MyTestVar: INT;END_VAR//CodeMyVarInfo:= __VARINFO(MyTestVar);//after this line of code MyVarInfo contains all information obout this variable - just watch in online mode and you will understandBRRalphIs there anyway to get a structures variables members without knowing them?  Meaning if you pass a structure to _VARINFO how can you get info about it members?Hi,This is exactly what i need, did you find any workaround?Thank you
+

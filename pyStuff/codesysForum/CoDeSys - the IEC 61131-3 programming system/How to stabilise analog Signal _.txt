@@ -1,0 +1,25 @@
+Dear Friends,
+
+I am taking feedback from a Hollow shaft Potentiometer which is mouted on shaft of motor to take angle feedback.
+Voltage level in 0 to 5 VDC. PLC is of 10 bit resolution.So values varies from 0 to 1024.
+
+I have to perform different task with base of varous angle position of Motor shaft.
+Motor speed is around 70 rpm.
+Now How to stabilise the signal so as to get exact Angle valur.Because feedback value varies dynamically as motor rotates.
+
+Awaiting for your valuable replay.
+
+Regards,
+Amit
+
+Of course it does that is because it's moving. Just use a low pass filter.
+
+Code:sLopass :int;  (* from 1024 to 1, 1024 means no filter, 1= means very heavy filter Try it at 700*)lInput := lInput + SHR(((i_lFeedback - lInput) * sLopass), 10);
+
+_________________Thanks,
+Steve Pfeifenroth
+
+when using filter it is impossible to get exact angle value due to the nature of the filter and if it runs this high speed it wil be impossible to react on it in time, use a optosensor with a disc on the shaft to get exact positions, use an interrupt in the software when sensor is on.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,2 @@
+hello ForumMy question is regarding CanOpen in CoDeSys V3.I undertand the Sync signal can be Enabled from CoDeSys V3 with the 'Enable Sync Producing'. But is it possible to send the Sync Signal only after a Slave has responded to be in Operational State. Maybe using a function or with some settings.Thanks
+

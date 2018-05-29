@@ -1,0 +1,2 @@
+Is there a way to do function callbacks in V3.What I wan't is to call a function when data arrives on TCP and are parsed and ready.It's sort of an event handler where I want to "subscribe" for different types of data and when they arrive I would like to call the provided function.The "subscription" could be initiated with something like this...MyFancyFB.Subscribe(sFilter:='I Listen For', pFunc := ADR(MyReceivingFunction));I'v looked at CAA_Callback but that seems to be for just specific system events, but I might be wrong.Anyone have suggestions...Is it at all possible?
+

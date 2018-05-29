@@ -1,0 +1,8 @@
+I am looking for simple examples for using counters in SFC. Is there anyone who can help meI just tried to introduce counters with structured text but it doesn't work. I can use function blocks but there should be a more simple way. It is very hard to find examples.
+
+hey,what is the problem ?can you tell , what you really want do to ?Example :var  counter : DINT;endvarIF (xxx = true)THEN  counter := counter + 1;END_IFIF (counter > 3)THEN   ;(* do something *)ELSE   ;(* do another thing *)END_IF 
+
+Thank you very much for your reply !What I want to do:Develop Codesys lessons (simulation with hardware) with PLC's for second year students at applied sciences level, mechanical engineering.A simple assignment with three pneumatic cylinders who move in a machine-simulating sequence, with some delay (timer) and some repetition (counter). That's all. (cylinders move in and out, and sensors detect start and end positioning)I am relatively new (just work for about a year with Codesys) and work with SFC, which I understand now more or less.Can you specify the sentence "do something" ? could that be a SFC transition, for instance cilinder B is 'in' and sensor b0 is active.And how to reset the counter ?
+
+look at the small sample i made, maybe it is helpfull...Attachment:sfc.projectAttachment:sfc.JPG Although usefull : search in CODESYS Documentation for SFC Flags...Attachment:sfcflags.JPG
+

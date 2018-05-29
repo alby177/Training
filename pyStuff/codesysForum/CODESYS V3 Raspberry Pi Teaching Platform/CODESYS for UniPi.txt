@@ -1,0 +1,4 @@
+I have released a package of drivers for the UniPi extension board available for free download from the CODESYS store http://store.codesys.com/codesys-for-unipi.html
+
+Does anyone know if there is a way of using the UniPi 1Wire Extension Modules in a Codesys Project?
+

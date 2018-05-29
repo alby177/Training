@@ -1,0 +1,22 @@
+Hi,I am trying to set the gateway path and device address using Python script.To set the gateway path I should first have the GUID of the Gateway.I tried to get the guid using following code.for dev in proj.get_children():   if dev.is_device:       tmpDevice = dev.get_device_identification()             strGateWay = dev.get_gateway()       print strGateWayHowever, I am getting GUID value as 00000000-0000-0000-0000-000000000000.Could you please help me in getting the proper GUID value for gateway.Regards,Mangesh
+
+The empty guid "00000000-0000-0000-0000-000000000000" is set when no gateway is configured for the device yet.If you manually configure the gateway and network path to the device once (so you can login to the PLC), the gateway guid will be set, and you can print it using your script.Then you can set it in other projects.
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+
+Hi,Thanks for the reply.We want to automate a following scenario and we have script to perform following operations1. Create an empty project using Python script.2. Import a PLCOpenxml file for the project with device information.3. Now I want to go online by setting the gateway path programmatically.Is it possible without any manual intervention? I will not like to set the Gateway path manually.Regards,Mangesh
+
+Hi, Magesh,Just configure it manually once, and print out the value. Then use the printed value within your script to configure the other projects non-interactively.
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+
+Just another note: Our issue database has the improvement CDS-24285 to enable configuration of gateways by name, gateway management, and to start network scans. However, this issue is not yet scheduled for implementation. If you work for a CODESYS OEM, you can contact our support department so they register your companys name with that issue, that will raise the priority. (If you don't work for an CODESYS OEM, but you bought some hardware which ships with codesys, you can ask your hardware vendor to register their name with CDS-24285.)
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+
+Hi,Thanks for the reply.Printed the value manually once and used the same guid for setting the Gateway Path.This worked Regards,Mangesh
+
+Hi, Mangesh,The Guid is valid for the same installation of codesys, but it will be a different one on a different machine.
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+

@@ -1,0 +1,39 @@
+So they added a 3S store. Very cool. They added some free software/ examples. Cool again. But in order to gain access I have to have a VAT number? What's up with that? So I can not gain access to free stuff unless I own a business because I have the potential of buying online? Please help me understand this? But they do allow me to help their company for free by answering questions on their forum   , Interesting?
+
+_________________Thanks,
+Steve Pfeifenroth
+
+Quote:So they added a 3S store. Very cool. They added some free software/ examples. Cool again.Thank you for the feedback .Concerning the VAT:"It's not a bug, it's a feature" . You will understand that only if you know some basics of the German fiscal law : In Germany there is a VAT of 19% on any dealed goods and products This tax concerns at first step every business with partners inside Germany and abroad B2B business is excluded from this tax In order to be identified as B2B customer you need a VAT numberYou can OF COURSE register without entering a VAT number. But this will cause that the tax will be added as soon as you decide to purchase a product within the store. You might ask: "But I do not want to buy a product but just to download one of the free examples. Why do I need the VAT number therefore?" You are of course right, if you ask like this. But how should we know? And what if, one day, you decide to purchase a product, anyway? You might probably not be happy to pay taxes if you are not obliged to   .So please register with our without VAT number. In case it is necessary we can even add VAT later on. But therefore it is necessary to contact us directly, this might take a few working days. Please take that into consideration.I hope this clarifies the idea of the VAT number a little bit.
+
+_________________Roland WagnerModerator
+
+I have tried to register without entering a VAT but it stops me and highlights the VAT boxes (EU / NON-EU) red and does not proceed with the registration. So I tricked it. Today I used the EU VAT box and filled it in with all 11111111111111111 and it worked. Is that what you meant by you don't need one? I didn't see on the site a disclaimer or something that says if you don't have a VAT enter this? I completely understood why but I would have guessed that you could label products as free / or VAT required. Thank you.
+
+_________________Thanks,Steve Pfeifenroth
+
+I just tried it without entering anything in any VAT field - and it worked.   We will check that ...
+
+_________________Roland WagnerModerator
+
+FYI - I was using the google chrome browser. In case it is browser dependent.
+
+_________________Thanks,Steve Pfeifenroth
+
+Thank you for the feedback. I used Mozilla Firefox. We will test it...
+
+_________________Roland WagnerModerator
+
+We told our service provioder to check that.By the way:There is a check box field below the VAT text boxes which asks if this VAT number shall be used for all further transfers. In case this box is activated, there is of course a VAT number necessary for the registration. But I am sure that you have not activated it...
+
+_________________Roland WagnerModerator
+
+Hi Roland,I like what I have seen with the store and have downloaded a few packages just to see how the store operates within CODESYS.But I cannot figure out how to use any of the example projects that I downloaded.  I see that the package is installed, so now what do I do?  How do I access those projects?
+
+Hi,this is something we are still in discussions . I fully agree with you - there could be a hint for the location of the installed files   .But here you are:The files are installed underc:\Users\[username]\CODESYS Examplesc:\Users\[username]\CODESYS Gamesdepending on what you have downloaded.I hope that now everything works fine and you can use the examples you have downloaded. And of course we would be happy to seeing the first ratings in the store. By the way: you will be reminded to rate directly by CODESYS one or two weeks after installation  
+
+_________________Roland WagnerModerator
+
+Ahhh! Much better.Thank you for the reply.I will see what I can do about some ratings  
+
+Hi all,I really like the store concept, and looking forward to publish some utilities, ideas I wrote myself.Beside that, I think a kind of "Code-Safe" service would be great. For customers / end users it's a big risk to pick a programmer, system integrator to develop a proprietary system. Years later the small company or the developer might disappear, and there is nobody to fix the broken system / in most cases the source code is not available or lost...Might be a good idea to provide "time capsule" like archives (here including the programming system, libraries, etc...) to be accessible for the end user, or the new contractor in case of a disaster or simple ignorance. Providing projects on CD is not really safe, beside in some cases it can violate licenses, and rights. For me as a system integrator / developer it's a big help and advantage, because I could assure my clients, that the archive of their system is in a safe place, and in case of any accidents happening to me they can hire another engineer to take over the project as it was. And also, I don't have to keep track of my 5-10 years old, untouched developments, I can reproduce them whenever needed.P.
+

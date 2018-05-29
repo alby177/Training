@@ -1,0 +1,28 @@
+I'm sure this is very obvious, but I'm new to CodeSys trying the Traffic Signal tutorial program and I'm stuck on this error:
+Error 4024:Variable_Configuration(1) Expecting VAR_GLOBAL before 'VAR_INPUT'
+
+My config is:
+
+VAR_INPUT
+   STATUS:INT;
+VAR_OUTPUT
+  GREEN:BOOL;
+  YELLOW:BOOL;
+  RED:BOOL;
+END_VAR
+
+No matter where I insert VAR_GLOBAL, it still fails. Any ideas?
+
+global variables are in a special section on resources.
+easier way is when you type in a vriable name and auto is on the first field is where it should go and give it global.
+
+i always make first work of these global variables.
+i put all real inputs from %IX and %QX on these global ones so i can find them allways.
+btw system does same when you config it.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+In "Variables Configuration" section, the keyword VAR_CONFIG is expected.
+
+Putting them in Global Variables solved the problem, thanks for the help!
+

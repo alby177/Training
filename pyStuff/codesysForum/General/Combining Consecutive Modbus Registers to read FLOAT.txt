@@ -1,0 +1,12 @@
+Hi,I am using a 750-842 FBC to communicate with several other devices on a Modbus TCP network setup.  I have a 352 Remote I/O, 2 Power Monitors through a Gateway, and a Generator controller.For some registers within the Power Monitors, The floating point value occupies 2 consecutive registers (i.e. 4002, 4003).How can I combine these two so that I can read the value?  Im using the Ethernet_Modbusmaster_TCP function block to retrieve data from each of these devices.  Thanks in advance,Jason
+
+You can try something like:Code:VAR  awWords      : ARRAY[1..2] OF WORD;  pReal : POINTER TO REAL;  rReal : REAL;END_VARawWords[1] := (* whatever code is needed to read the register *);awWords[2] := (* whatever code is needed to read the register *);pReal := ADR(awWords);rReal := pReal^;
+
+It is easy if you can map the variables to fixed memory.  This is done in CoDeSys with the keyword AT.   Below are examples where the head address of the array is mapped to individual address for float variables.HOLD_REG AT %MW0: ARRAY[0..20] OF WORD;	POS_X AT %ML0 : LREAL;POS_Y AT %ML1 : LREAL;POS_Z AT %ML2 : LREAL;POS_S AT %ML3 : LREAL;With this method there is no copying and it works bidirectionally if the address are read/write. There is more information in this thread for mapping other variables types to fixed address http://forum.codesys.com/viewtopic.php?f=2&t=5045
+
+_________________The Original SoMachine Ninja
+
+%ML0 does not exist.if the float is same as real in definition you only have to do a dword_to_real
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

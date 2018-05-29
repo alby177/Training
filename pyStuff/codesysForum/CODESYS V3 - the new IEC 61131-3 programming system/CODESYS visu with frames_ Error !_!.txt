@@ -1,0 +1,12 @@
+Hello - I get no response in the German part of this forum, so I will request it here:I have build a visualisation with a frame. This frame holds 4 different visualisations.Each visu has a groupbox with some controls inside.At the 1st visu the description text of the groupbox is shown correctly. All other groupbox descriptions are an unreadable 2-character part, they are not correctly shown.It looks like a problem of 3S?The attached file holds an example.
+
+looks like you have 2 boxes one over the other, but you should insert it into the first (visualisation)
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+I tested it with 4 visu's in one frame, but after selecting the various visu's, I saw the correct groupbox text.I tested this with V3.5 SP3 P3 with the Control Win.It seems like a problem in your application.
+
+To TimvH: Hello Tim, you did some work to identify my Problem - thank you!!But your conclusion does'nt help - my Problem stays until today. Like you, I have written a small Project with one main-visu, which holds the frame, and 4 sub-visus, each holds a GroupBox and a Label to explain the Frame number.This small quick-and-ditry projekt has the same behaviour: only the description of visu 1 is shown correctly.A possible difference to yours: I spend a Switching variable for the Frame as an Integer in a global variable area.  So I see no error in my Project - but what are the next step?System: CODESYS V3.5 SP3 Patch 3 (the newest - I hope).This Forum does'nt allow to attach a Project or an Export. But I could it send by mail - if it makes sense.
+
+Today I have given the Problem to Edwin Schwellinger from the 3S Company. If there is a result, it will be posted here.
+

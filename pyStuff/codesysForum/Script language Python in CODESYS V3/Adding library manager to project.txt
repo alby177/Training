@@ -1,0 +1,14 @@
+Hi,I am wondering if there is a way to add a library manager to a project using scripts. I saw M.Schaber's example to find managers:Code:Find all library managers in the project:Code:objects = proj.get_children(recursive=True)for candidate in objects:    if candidate.is_libman:           print(candidate)I also see the "add_library" in API help, but this methods is for libman objects, so if I have a project without libman I need to create one first. Any tips on how to do this?Background: I am trying to convert V2.3 libs to V3 using scripts, and after running Code:proj = projects.convert(oldlib, newlib, "{941937BF-9A12-4174-814E-63D1523C94CC}") I need to create Library Manager and add necessary libraries.Best regards,Frank
+
+Hi, Frank,Frank Jepsen wrote:I am wondering if there is a way to add a library manager to a project using scripts.Currently, there's no direct way, but it is possible to add a library manager using import_native or import_xml. Just manually create one in an empty project and export it using "Project/Export..." or "Project/Export PLCOpenXML...", and then import that file on the application object.With import_xml, you can also provide the XML inline in the script as a string, without the need for a temporary file.HTH,Markus
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+
+Hi Markus,Thanks. It worked with import_xml function using the exported XML. I have a little trouble using inline XML; how much of the xml is needed - the complete xml found in exported xml or can I use a shorter syntax? It would be great if you can provide a small example.Regards,Frank
+
+Hi, Frank,Frank Jepsen wrote:Thanks. It worked with import_xml function using the exported XML. I have a little trouble using inline XML; how much of the xml is needed - the complete xml found in exported xml or can I use a shorter syntax? It would be great if you can provide a small example.I'm not an PLCOpenXML expert, so I can't give a definitive answer to that question. Either you use try-and-error to find out which elements can be dropped, or maybe you check the PLCOpenXML Standard.HTH,Markus
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+
+Hi Markus,Ok. Thanks for the answer (and all your other support) anyway. I just went with having the PLCopenXML in a separate file. Best regards,Frank
+

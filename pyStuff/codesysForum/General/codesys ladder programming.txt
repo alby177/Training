@@ -1,0 +1,8 @@
+hi..i am new to codesys..i want help with addressing formats in codesys LD logics..ex.addressing of timers,counters etc..also how a simulator/emulator works in codesys?thanks in advance..
+
+question one is simple press F2 (autoinsert) giving you all possibilities on topic.you do not have to adres anything when simulating. only when you have real hardware etc.simulation is under the head online almost at bottom.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+thank you....expecting more assistance in future..
+

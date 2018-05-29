@@ -1,0 +1,2 @@
+HelloCurrenlty I am evaluating SVN Plugin under CODESYS V3.5 SP2. In the "Options" dialogue unter SVN Setting/Locking I can select    "Only lock the items which don't support merging"Which objects do not support merging?I cannot find a list of these objects within online help.Or different way: which objects can be merged?Regardscsp
+

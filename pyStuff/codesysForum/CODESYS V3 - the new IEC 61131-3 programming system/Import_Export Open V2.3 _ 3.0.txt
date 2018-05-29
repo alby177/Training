@@ -1,0 +1,11 @@
+Am I crazy or is the best import/export of V2.3 to V3.0 or vice versa cut copy paste (CCC)? The open project of V3.0 and the conversion wizard just doesn't work. I understand the changes in V3.0 over V2.3 but now since I have to support both it is getting confusing which version I should start with especially if the FB/Library needs to work in both systems? Maybe I should write my own FB/library converter? Any thoughts? Has anyone had good success with this yet?
+
+_________________Thanks,
+Steve Pfeifenroth
+
+The only problem I had when opening a V2.3 application in V3 was that I needed to have a PLC (or device) chosen as target. When the V2.3 application had the target "none" the conversion did not work (correctly). These projects contained all programming languages.
+
+Yes you are correct. I may have posted too quickly. I found that when testing the open project with an empty V3.0 project the conversion task told me there were errors and I was only seeing the main name of the project in the tree view. I made a dumb mistake that all I needed to do was change the view and all the FB showed up.It seems the only conversion is through opening a project/lib? I was not able to use the import function.Is there anything that can't be imported from V2.3 to V3? Do visualizations still work? I have imported them but I question if they still function.So yes I take back my earlier statement about the conversion of V2.3 to V3. It seems to be working well enough.But there is no way to go from V3 to V2.3 at least with FB and libraries that are user created? Assuming because a few main reasons are new Keywords and export file is in XML format? I'm trying to figure out which environment to develop FB and libraries to do my best to make them cross compatible.
+
+_________________Thanks,Steve Pfeifenroth
+

@@ -1,0 +1,32 @@
+Hi thereIt would be nice to have native support for MQTT Client in Codesys or as Add-on. Using this protocol users could use Codesys-powered controllers for home automation.So far there are only two realizations knownhttps://github.com/kmpm/OSC-MQTThttps://github.com/FieldFox/Codesys-Mqtt-libBoth are neither good written, nor working. Is there anything planned in future?
+
+Really looking Forward to it!!!
+
+I have one working version MQTT for Codesys 3, only publisjing is suppoted for now
+
+From my first post there is MQTT add-on available in Codesys Storehttps://store.codesys.com/janz-tec-mqtt-library.htmlBut price is a bit too high.
+
+There is a very good alternative built in the image of Raspbian for the Raspberry - node-red.I added the library node-red-contrib-modbus, created in codesys tcp slave several functions to convert a string-float-integer.Code:var newMsg = { payload:0.1+parseFloat( msg.payload) * 10 } ;return newMsg;Set up a local mqtt-mosquitto broker.To publish data to mqtt broker using the opposite function of the digit to the string.Code:var strok = { payload:String( msg.payload/10)} ;return strok;10 in the formula is a coefficient for conversion int_to_real and real_to_int.Works flawlessly, supports simultaneous work with multiple mqtt brokers!!!With javascript you can create any functions. I poison in codesys function fc16, so pre-create a number array.Write in Russian - translation of a program, sorry.P.S. https://store.codesys.com/janz-tec-mqtt-library.html - €590.00 ????!!! Then you just bring to mind this: http://www.owen.ru/forum/attachment.php?attachmentid=28723&d=1484413963.Tried it, slightly tweaked, works.
+
+@Sancho.Thank you for sharing this!!Just another question, does the mqtt-mosquitto Broker support SSL? I need to communicate with Amazon AWS IoT which only allows MQTT with SSL support. It would be a nice community project, to build a MQTT Lib with TLS/SSL support   . The new SysSocket2 Lib now supports secure connections, so we've all requirements to realise this. Regards,Kevin
+
+_________________Building & Process Automation with HVAC Library for CODESYS© - www.hvac-automation.com
+
+Can you please share again the MQTT client that is working ?Thanks !!
+
+And where is version for Codesys V2 here http://www.owen.ru/forum/attachment.php ... 1479291988
+
+KevinR, Node-Red mqtt supports SSL.
+
+I spent some euro's on the Janz Tec implementation, it's very solid!But beware: no TLS/SSL support, no last will implemented.
+
+I see that node-red can be used to convert MQTT to modbus TCP - that's great and I'm using it, but would be nice to have native support in Codesys. I even start thinking of Logi.CAD 3 for RPi, where MQTT Support is implemented. It's sad, that Codesys doesn't have good alternative.I attach archive with MQTT client from russian link above, as I'm registered there as well. Not sure how to use it thoughSancho is it possible for you to share MQTT Owen library, tweaked by you for RPi?But...Quote:I spent some euro's on the Janz Tec implementation, it's very solid!Oh, wtf? It seems those guys recently reduced their wish-list from 590€ to just 49€! Definitely need to try.Did it work problem-free on RPi? Do they have evaluation license?What I don't like reading the datasheet is that publishing is done on some trigger, but it would be easier if it would be done by changing the payload.
+
+On the janz-tec library, see store/read the pdf for details;Did it work problem-free on RPi? -> yes, i think it's solid, however it misses some features which I personally do not miss.Do they have evaluation license? -> yes, without a license it runs 30 min in demo mode.Be ware that this is a "SL", just like your Pi license you need a license per CPU.PS.Be aware that PLC's in general are by design *not* very well suited to do loads of string handling.In general, string handling causes the CPU lots of overhead. One should therefore try minimize the use of string handling in a plc or use it in smart way's via initialising etc etc. This is why the trigger in the MQTT  library is not implemented in the way you would like it to be, on a payload difference. However, if you wish to implement the payload string detection mechanism, you are free to do so;I.E. pseudocodeCode:rPayloadTrigger.Q( sLastPayLoad <> sCurPayload );Then connect rPayloadTrigger.Q to the .xPublish parameter of the appropriate publish functionblock.Good luck
+
+I would be great if there would be native support for MQTT in Codesys. MQTT is a lightweight messaging protocol for small sensors so that would be a improvement if this would be implemented (with TLS ) in Codesys
+
+Did anybody ever found and tried the "new" free MQTT-Library found on Sourceforge?[url]codesys-mqtt-library.sourceforge.net[/url]I just found it last weekend and did not have any time to try it out.But i had e-mail contact with the Author of the library.Acc to the Author:You can publish multiple topics by change the pubtopic before publishing.To subscribe to multiple topics you have to use the wildcard.This library also supports last will mesage. (to see if the device is online or offline)I still think CODESYS should support MQTT native without any library (maybe some topic to variable mapping list....)
+
+The new version of JanzTec now supports SSL too 
+

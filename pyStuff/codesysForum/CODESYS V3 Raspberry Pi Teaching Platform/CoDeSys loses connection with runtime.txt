@@ -1,0 +1,8 @@
+RaspberryPi B, CoDeSys 3.5.10.xExample project.You can try keyboard for example (you need to change path, see: ls /dev/input/by-path on your device): Code:fileName: string := '/dev/input/by-path/platform-3f980000.usb-usb-0:1.3:1.0-event-kbd';Steps to reproduce the problem:1. Login and download the project.2. Run project.3. Logout.4. Build/Clean.5. Login ... CoDeSys loses connection with runtime.Worked with all events and not only with SysFileAsync library (CAA File with the same result).So the question: Why CoDeSys 3.5.10.x loses connection in this case?How to restore connection:Code:sudo /etc/init.d/codesyscontrol stopsudo rm -R /root/PlcLogicsudo /etc/init.d/codesyscontrol start
+
+Video: https://youtu.be/bGNL8n5qV64
+
+A temporary solution to the problem. You need to create a global Boolean flag. Use it to free the file handle manually without leaving debugging (assign a hotkey, for example). When the handle is released, you can exit debugging.This means that the runtime cannot properly close the handle of such file.
+
+Undocumented solution (rus).There I show a trick which will help to solve this problem, but the runtime developers should not relax and must correct the connection loss bug. I need this not for raspberry pi. This is just an example which works not only for raspberry but for other linux platforms too.
+

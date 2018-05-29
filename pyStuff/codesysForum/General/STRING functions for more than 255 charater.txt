@@ -1,0 +1,22 @@
+Hi, I need to handle a string(10000). Does string functions available to handle strings having more than 255 characters?-SID
+
+look at oscat.de
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+I would advise you to handle this in an array of bytes.
+
+The oscat.de again calls for the builtin string functions. However am trying it with array of bytes. But the problem is it becomes necessary to insert a termination char at the end of the string to get the length of a string.
+
+You could start a loop to go through all the bytes until you find the value 0.0 is the terminator of the string.If you find it, then your index (loopcounter) is the length of the string.
+
+I started working with the Codesys strings a few weeks ago, and I was also surprised to see how limited they are. The length limit of 255 is only one of several major shortcomings. For example, I've noticed:* With STRING_TO_integer conversions, you cannot tell if the resulting zero is because you actually had a zero, or if the conversion failed. The fact that the conversion fails on trailing non-digits (ie '123abc') is also not very practical. * The documentation states that "You may also enter blank spaces and special characters (umlauts for instance)", but what does this mean in practice? I'm sure I cannot use all Unicode characters in the world... * There's no information on how strings are actually implemented, so one does not know how to arrange for best performance. For example, is it necessary for LEN() to search the entire string for a trailing terminator or not? * The FIND function does not allow you to specify an offset. Thus, if you have string 'aaa,bbb,ccc' and want to retrieve the offset for the last word, you have to create a new (sub)string, which I assume needs to copy stuff. * Because the STRING is so opaque, it's difficult to create new helper functions. The documentation could also be a lot better. It would be interesting to create a new string library. http://bstring.sourceforge.net/ could be used as inspiration. But then again, how would you solve compatibility with existing STRING variables?
+
+Hi, below some remarks which might be usefull:- in V2.3 the functions described in the PLCopen specifications are implemented. I agree they are basic, but they cover most (simple) string handling functions. String handling has become more important with all the advanced functionality a "PLC" has to handle, therefore there have been many more string functions and functionality implemented in V3 (WSTRING, StringUtil library, etc.).- You could create some code to first check the length of the string LEN(). If it is > 0 then you can do the conversion. In this case the value could also be 0.- Offcours you cannot use all Unicode characters. In V2.3 a string is made up off bytes (maximum 255 characters). In V3 you can use WSTRING variables which are based on UTF16. In this case you can use (almost) all Unicode characters.- If you define a string with length 10, then there are 11 bytes/characters reserved in memory. This means you always have a trailing NULL character at the end.Maybe this helps.
+
+HI.I have the same problem.Are there any news regarding this issues? The only result I currently see is to arrange the data into an array of chars, and write all the manipulating functions my self...    Does anyone knows why do the string functions has this ridiculous size bound?
+
+what version are you using and what type of PLC.have a look at oscat.de for a nice library of functions, including strings.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

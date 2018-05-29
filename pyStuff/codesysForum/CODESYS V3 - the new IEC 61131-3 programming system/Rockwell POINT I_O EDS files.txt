@@ -1,0 +1,4 @@
+I want to use Rockwell's POINT I/O as remote I/O with ControlWin PLC.Can I install the Rockwell's EDS files? I got an error when I tried to do it.
+
+Typically you'd need to upload the EDS file and the error message. Without any info, it's pretty much impossible to help you
+

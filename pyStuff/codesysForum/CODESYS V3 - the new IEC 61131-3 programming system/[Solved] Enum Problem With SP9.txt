@@ -1,0 +1,10 @@
+I have been using an ASCII table of characters defined as a enum for several years.  However, after installing SP9 I  get pre-compile errors that suggest that the enum values are being interpreted as bit numbers. I have attached a screenie and the project.Attachment:EnumProblemSP9.png
+
+_________________Rick
+
+Try {attribute 'qualified_only'} in enumTon.
+
+Thank you.  It should have that specified anyway.
+
+_________________Rick
+

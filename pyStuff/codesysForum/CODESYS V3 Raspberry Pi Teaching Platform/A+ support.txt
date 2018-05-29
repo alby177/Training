@@ -1,0 +1,14 @@
+Hello,Is the A+ supported?
+
+Hi,at the moment not, there is no ethernet onboard and we have no requests to support ittill now.BREdwin
+
+I would use the a USB hub and wireless ethernet with this.
+
+Good afternoon!I join a question about the support of A +.Model A + works fine through USB-Ethernet adapter. Photos are attached.After starting the system while it's OK.But after approximately a minute process codesyscontrol.bin  loaded CPU to 100 percent. Also photos are attached.And all versions of the runtime behave identically.Is it possible to add support for this wonderful module?Best Regards, Michael.
+
+Hi,we need to add A+ Support in the runtime to solve this.I have ordered a device we will do this.BREdwin
+
+That is great!  I had exactly the same issue.  It worked fine for about a minute.  I had it working with just a wireless dongle also.
+
+Is the support for Raspberry Pi  A+ available in the newest Codesys version? Unfortunately i still have above problem
+

@@ -1,0 +1,2 @@
+Hello,I'm wondering if anyone knows where you can put global variables and not, and where the CANopen USB to CAN is.I also found a picture that says SDOs are from 580h to 680h. Attachment:Bilde COB id.pngI've had problems to log in to some modules (IFM CR0403). (And using CANfox EC2112)When I used a CAN Monitor on another computer i found "ID hex" [5E4] and [664] and the Boolean variable [A] that i forced true and false. what i monitor is basically: 5E4 --> 664 --> 5E4 (see picture).Attachment:ID Hex.pngSendarix
+

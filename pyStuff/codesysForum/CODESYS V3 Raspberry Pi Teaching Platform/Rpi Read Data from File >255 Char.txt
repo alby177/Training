@@ -1,0 +1,6 @@
+Hi, I tested out the sample (from Codesys HP "FileUtilitiesPI.project") to read / write Data from a file, it works fine, but how can I read Line by line (till $r/$n) or how can I handle the data bigger than 255 char? (e.g. store in a string Array?) My Problem is that I get all data from the file with the funkction "Caa File.Read". with the size of the destination string (max. 255) So please, is there  sombody who can give a small sample, or description to me? THX for your help
+
+You can define a variable with a different string length such as s := STRING(5000). Additionally there is a read function where you can define the number of chars to read and create a Plc loop (read 200 chars, do something, every Plc scan).  Note: longer string lengths take more processing power/time.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+

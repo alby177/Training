@@ -1,0 +1,4 @@
+Hello like many others visiting this site I am new to codesys. I would like to find out more about CAN and how to setup comms for CAN. I am a ladder person but have been teaching myself ST IL FB etc but would like to know how to use CAN in a project. From reading other peoples comments I can see you can create a library but am unclear what exactly to put in it. Can I download a library? any suggested reading or websites for info?Thanks in advance
+
+The 3S' ftp site has some CAN and CANopen samples:ftp://ftp2.3s-software.com/pub/ExamplesAlso see "CoDeSys sample projects" page:http://www.3s-software.com/index.shtml?sample_projects
+

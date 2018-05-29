@@ -1,0 +1,4 @@
+I would like to know how to get new libraries for V3? I can only access few ones. I would like to access SysLibFile. I can only convert the old ones and there it seems to be problem. I tried tools-->install library-->select library from V2 and then it converts it. But when i try just to compile with even using it i got errors.
+
+Most libraries are changed.For compatibility reason several V2.3 libraries are still available.See e.g. the library SysFile23, or SysCom23.Besides this, there are various CAA Use Case libraries which follow the CAA Behaviour Model. The advise is to use these instead of the system libraries.Off course if you use these you need to modify (improve) your application.
+

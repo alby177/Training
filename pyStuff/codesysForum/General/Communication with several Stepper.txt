@@ -1,0 +1,13 @@
+Hello, 
+
+I'm actually working on a project that implies 4 stepper controller from WAGO (750-671) and I have a quite big problem...
+
+I don't know how to communicate with several stepper controller, indeed, I know how to work with 1 stepper, but when I plug two of them and I try to drive them, I just can have the same move on both the 2 motors...Does anyone know how to fix that? 
+
+I'm sorry for my english, I'm not so familiar with technical words so it's difficult to explain, but I hope someone will be able to help me...
+
+it are words you send to the blocks so just add some words maybe 8 do not know see manual.
+so use qw0 and for next use qw7
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

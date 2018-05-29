@@ -1,0 +1,4 @@
+Hi all.  First post here and all that jazz.Can anyone point me to a decent tutorial or guide of some sort for "getting started with CODESYS visualisations"?  I have programmed HMI's before now so have a little bit of a clue, but the Codesys stuff is an order of magnitude more complex than a Beijers screen.  I want to be able to ask sensible questions on here rather than utterly basic stuff that makes everyone roll their eyes.Thanks in advance.
+
+Hello,I would watchs some clips on YouTube to start:https://www.youtube.com/watch?v=YwNdvfFiPJIhttps://www.youtube.com/watch?v=r3NBG8ICCk0many more are availbale just google them.After that I would open visu example applications in the CODESYS store.Regardsplcmax
+

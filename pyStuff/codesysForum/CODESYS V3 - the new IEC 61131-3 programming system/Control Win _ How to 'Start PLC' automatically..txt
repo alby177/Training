@@ -1,0 +1,4 @@
+I need 'CoDeSys Control Win Systray' 'Start PLC' automatically with PC power on and Windows boot up to put this 'Control Win' into 'running' status. I couldn't find a place to set this up.Anyone can help me with this ?
+
+Hi Chipwand,you need to change the service 'CODESYS Control Win V3' to automatic start type (default is manual).plcmax
+

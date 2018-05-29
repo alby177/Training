@@ -1,0 +1,6 @@
+Anyone have any luck running Codesys on a Beaglebone Black derivative?  I'm running a Beaglebone Green wireless.  I can send the runtime, and connect and download.  However, after running, it stops working after about 3-5 seconds.  After that I can't connect to the runtime anymore from Codesys.   If I reboot, I can connect again from Codesys, but it stops working again after about 5 seconds or so.Any ideas?  Anybody try this?  I would like to use this, since it has the built in Grove ports, and the wireless.I don't have these issues on a normal Beaglebone Black.
+
+Hi,at the moment the BBB Green is not supported.You need to write to CODESYS support. (We need to check if it is possible and how)BREdwin
+
+Thanks Edwin.
+

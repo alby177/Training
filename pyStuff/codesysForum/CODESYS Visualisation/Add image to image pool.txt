@@ -1,0 +1,6 @@
+I am stuck trying to figure out how to add my own images to the image pool so that I can add them to my visualization, can someone point me in the right direction?
+
+hi guy,quite simple.On Application, right click, add imagepool.Attachment:imagepoll1.PNGThen click on the image pool, and select the image, which you wish.I would use as link type the embedded option.Attachment:imagepoll2.PNGwollvieh,
+
+wollvieh wrote:hi guy,quite simple.On Application, right click, add imagepool.imagepoll1.PNGThen click on the image pool, and select the image, which you wish.I would use as link type the embedded option.imagepoll2.PNGwollvieh,Amazing! Thanks!
+

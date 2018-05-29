@@ -1,0 +1,6 @@
+Hello,
+How can I give some specials characters as 02 in a text box?
+With standard visualisation I give $02, but with webvisu the $ is bypassed.
+$R for the carriage return works well.
+Thanks for your advice
+

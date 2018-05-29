@@ -1,0 +1,12 @@
+Hi,I created a simple project in ST that make a logic AND   (c:=a AND b).I'd like to test the four combination of entry variable verifying the correct exit values. (Like a truth table).How I can do it with Test Manager?Thanks
+
+Hi SaSystem.You have the following options:* Use the test actions for the monitoring, see TestManager.Monitoring* Use the ScriptEngine and write a small python script which is execute with ExecuteScript from TestManager.Scripting* Create an IEC Unit Test and execute it with the IecUnitTest element of the Test ManagerThe Test Manager comes with examples for the first and third option. The project files are in the directory "c:\ProgramData\CODESYS Test Manager" and the test scripts are installed in the test repository "Default Test Repository". Take a look.We are currently implementing something like a truth table for the Test Manager but there is no release date defined yet.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi,I tried the third way but it shows me that it can't find the POU. How I can resolve it?P.S. I set a Load Project Action before launch the IECTest.Thanks
+
+Hi SaSystem.SaSystem wrote:I tried the third way but it shows me that it can't find the POU. How I can resolve it?The Test Manager searches FBs and programs which have the attribute 'test'.Code:{attribute 'test'}Search the online help for "IEC Unit Test" and select the result "Editor IEC Unit Test".SaSystem wrote:P.S. I set a Load Project Action before launch the IECTest.That's okay. While developing an IEC Unit test you can use a test script, which only contains the IecUnitTest element, because the project is already loaded and configured for a PLC.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

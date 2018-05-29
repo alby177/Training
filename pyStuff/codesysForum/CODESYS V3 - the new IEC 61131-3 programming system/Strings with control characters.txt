@@ -1,0 +1,6 @@
+Is there an elegant way to construct strings with control characters (e.g. ascii TAB, ETX, STX etc)?I have used "POINTER TO BYTE" to set byte values on specific positions in a string, in essence treating it like an array of bytes. But it seems to me there must be more elegant ways to construct a string holding quite some of these characters.Just in case someone wonders what I'm up to: this is used to send strings over RS485 to a LED display. The display requires a substantial number of additional control characters in front of and after the text that is to be shown.
+
+Check this:https://help.codesys.com/webapp/cds-ope ... n=3.5.11.0
+
+That's just what I needed. Thank you, much appreciated.
+

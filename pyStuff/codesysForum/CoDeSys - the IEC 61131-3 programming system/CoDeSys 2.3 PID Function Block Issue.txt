@@ -1,0 +1,4 @@
+We use the PID block from Util.lib with an ABB AC500 eCo to control one of our pumps. We haven't had an issue with it before, but now when "MANUAL" is true, the output remains at 0 and doesn't push the "Y_MANUAL" value through. Any thoughts on this?
+
+Solved. At least Kp and/or Tn need a value to push Y_MANUAL to the output, despite the controller not affecting it.
+

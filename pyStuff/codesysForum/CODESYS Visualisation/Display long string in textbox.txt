@@ -1,0 +1,2 @@
+Is there a way to display a long string (>500 characters) in a textbox? In other languages,  for example C#, you can use something like a RichTextBox to handle this.Thanks
+

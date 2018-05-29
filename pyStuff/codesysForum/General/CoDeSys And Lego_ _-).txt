@@ -1,0 +1,14 @@
+Now, I do like CoDeSys. But I would truly love it if there was something like this:http://www.copadata.com/index.php?id=1838but with CoDeSys instead 
+
+you can run codesys as softplc and run something with remotecontrol.have you tried an arduino? works great.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+I haven't tried an Arduino yet but I'm waiting for the RaspberyPi I ordered It would be nice to see a demo (usual one hour at a time) version of CoDeSys for the RaspberryPi together with an I/O expansion board (for example the Gertboard or the one from UT Electronics) or directly using the GPIOs.
+
+the raspberry is popular as it is cheap, however the production is limited, and has lots of copyrights, the arduino is fully open, even the print is free.oke it looks nice, and the features are oke, but waiting for a raspberry is not worth it.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Well an Arduino and a RasperryPi has different fields of applications. An Arduino (or why not "just" a PIC or similar) is a good choice for doing "I/O stuff". With a RaspberryPi you can run a rather advanced Linux system. And since CoDeSys is available for ARM/Linux it tickles the PLC-part of my brain.
+

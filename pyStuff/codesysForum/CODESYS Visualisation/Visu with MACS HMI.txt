@@ -1,0 +1,2 @@
+Has anyone successfully run MACS HMI from their target without the use of a PC running MACS connected via ethernet. Our target has a PCI bus which we hope to connect a graphics driver to a display
+

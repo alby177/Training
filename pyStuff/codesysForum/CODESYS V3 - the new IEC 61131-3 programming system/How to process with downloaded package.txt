@@ -1,0 +1,8 @@
+Hi.I am new to codesys so excuse my ignorance, since I feel quite stupid that I can not solve this problem. I have downloaded a sample from the codesys download area:http://store.codesys.com/network-variables.htmlThe downloaded file comes in a package which I have installed in my codesys v3,5 SP3 Patch 2 pfb (provided by Festo)How shall I process with this package. At the webiste (codesys) it explains that the packages contains a sample. How can I open/view this sample.\Morton.
+
+Installing packages requires you to start CODESYS as Administrator.Go to your Windows start menu, Go to Programs=>3S-CODESYS/CODESYS and right click on your required CODESYS version. When you right click you can choose to run it as Administrator.After CODESYS has been started you can go to the menu Tools=>Package Manager.Choose install to install the package. In this case it will extract the package, which will also contain the demo application.Then you can open it from your selected folder where you extracted it to.
+
+Hi TimvHThanks for your post. I always run the CodeSys sw in admin mode. This solve some other issues also. My problem was to find out what to do after installation of package. I search the computer for *.project files and found the project in some odd location. Thanks for clarifying that I had to open a project file after package installation.\Morten.
+
+I have windows 8.1 x64. I have solved this anoying problem my way, forever. It also works for all other programs.In attached picture is explanation.regards,Alex
+

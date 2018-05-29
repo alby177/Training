@@ -1,0 +1,8 @@
+Hey All,So I have device that does a simple echo to a webpage. For example, the device echos the value of 3000 (attached snippet). There's no header or body or any HTML tag...just a plain value of 3000. With this in mind, can the HTTPClient library get the info? I tried using it, but no success. I get HTTP response of 200, which is OK. Maybe I'm doing something wrong?Thanks.
+
+I'm getting this for header, which looks correct due to content length:"Date: Sun, 23 Jul 2017 20:09:02 GMT$NExpires: Sun, 23 Jul 2017 20:09:02 GMT$NContent-type: text/html;charset=iso-8859-1$R$NContent-length: 4"Edit: I guess the closest thing to what I'm trying to read would be this page:view-source:http://httpbin.org/denyHow can I modify the HTTPClient to read this page?Thanks
+
+Use $R$N instead of $N in the http header.
+
+r.lang wrote:Use $R$N instead of $N in the http header.Hi r.lang,Thanks for your response. Not sure if I follow you. Where could you modify this in the header though?Thanks,
+

@@ -1,0 +1,2 @@
+Hi all,I can arrange my variables and collapse them by using several VAR sections in the declarations editor.When I go online, every variable is flat in one long list. How can I get collapsing of variables in online mode?Thanks
+

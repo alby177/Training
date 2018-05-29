@@ -1,0 +1,24 @@
+Hello,I'm using the following setup:- Raspberrry Pi 3 (Modbus RTU Master)- Codesys Runtime (Current Version)- Arduino UNO (Modbus RTU Slave)The Raspberry Pi controls the logic and the Arduino uno is for the periphery. They're connected per USB. Communication over modbus rtu works between these two and I testet it with different bitrates. Modbus RTU works after every code upload quite well.But after every cold boot, codesys does not recognize the Arduino as Slave.In this case, a "cold reboot" helps to fix the the problem in most cases.Have anyone an idea where the problem is or a guess how to fix it? Thanks 
+
+_________________Ist da noch Strom drauf?
+
+Hi,I would recommend to check:1. If the startup is done and the communication stucks with modbus rtu, Login with CODESYS and check the device tree- which components have a green\red sign (Modbus Master / Modbus Slave / Modbus Comport)- Then add the name of the slave (the name in the devicetree) to the watchwindow and check the communications states, if there is an slave error you should see thisMaybe you give us a few screenshots of these states to see what happensBREdwin
+
+Hello marv_nene,Would You like to post screen how you connect raspberry with arduino and how you configure it?I want to do the same to control my homeRegards,Marcys
+
+@Edwin, thanks for your response, but I figured out a solution:Code:IF (xInit = FALSE) THEN   ...   Modbus_Slave_COM_Port.xReset := FALSE;END_IF...xInit := TRUE;...IF Modbus_Slave_COM_Port.xError THEN   Modbus_Slave_COM_Port.xReset := TRUE;   Modbus_Master_COM_Port.xResetComPort := TRUE;   Modbus_Master_COM_Port.xStop := TRUE;ELSE   Modbus_Slave_COM_Port.xReset := FALSE;   Modbus_Master_COM_Port.xResetComPort := FALSE;   Modbus_Master_COM_Port.xStop := FALSE;END_IFI guess, the problem is the following: When the raspberry boots, the COM port for the arduino is initialized after the start of the codesys runtime, or it seems it needs longer then expected. So, the automatic reconnection doesn't work for me. When I do it manually, it works. This code is executed every 5 seconds.@marcysI will respond you later.
+
+_________________Ist da noch Strom drauf?
+
+Hi marv_nene,Ok, Thank You. I will wait for response.
+
+Hello Marcys,so, first you have to configure the USB Com Port of your connected Arduino described in thishttp://forum.codesys.com/viewtopic.php?f=21&t=6755&p=14284&hilit=modbus+rtu#p14284For ModBus on Arduino, you can use the ModBusIno Library from stephane @[url]https://github.com/stephane/modbusino[/url]. It works for me with Baud : 38400Parity: noneData Bits: 8Stop bits: 2In Codesys add a Com-Port-> Modbus RTU Master-> Modbus SlaveIn the Modbus Master deactivate the "auto reconnect" and use my code above.A good idea is, to create a task for it, which circles all 30 sec.Hope, this will help you.
+
+_________________Ist da noch Strom drauf?
+
+Hello marv_nene,Would you like to post some screenshot and code example. I did what you wrote but it does not work for me:-(Regards,Marcys
+
+Hi,You need to set .xResetComPort and .xStop flags for a minimun of 5 sec.Hope, this will help you.BRSandro
+
+Hi,I tried inserting the code in a task to check the status of the arduino connection but it does not work automatically.When I unplug the arduino usb cable I can not see Modbus_Slave_COM_Port.xError switched from FALSE to TRUE so when connecting the cable the connection is not restored.If I force the state of xError to TRUE and then put it back to FALSE the connection re-establishes.Where am I wrong?Thank you, Alberto
+

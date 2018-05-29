@@ -1,0 +1,2 @@
+Has anyone tested the Powerlink for Codesys from BE.Services?Is it possible to integrate the io-Driver to other targets? Like other PLCs (or Soft Controls) with ethernet interface. Or has it to be done by the developer of the target?The configurator package is free. The Powerlink Stack can be build from open source. But where do you get the io-Driver?
+

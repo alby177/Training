@@ -1,0 +1,17 @@
+Hello,
+
+I'm new with WAGO PLC and I want to conect an absolute encoder with CAN-open.
+The WAGO said that the 750-837 can't be used to create a CAN newtwork, and if i want to connect any device to my PLC i have to do the mapping of the network manually.
+I searched everyware for an example but nothing clear.
+I know that wago has a libraty CIA405 but my encoder use CIA406
+
+Can someone give me some advices? I don't know where to look any more.
+
+Thanks in advanced,
+Florin Anghel
+
+I don't know the WAGO line but something sounds funny. You obviously have a CAN card? But what I think you are trying to say is the WAGO PLC is not capable of being a CANopen Master ("create a CAN newtwork"). Since you make mention of can access then they must give you CAN Layer 2 function blocks like CAN_Receive and CAN_Transmit? If so then the "mapping" of the encoder position data is in COBID 180xh+ nodeID of the encoder. If you need to write SDO to configure the encoder than you need to do this by hand if I understand your stituation correctly. Also you need to Master the encoder. you need commands like NMT "Start" to set the encoder into the operational state. Please add more detail so I can help further. Are you sure it doesn't have CANopen Master functionality? Maybe you only need to add the eds file?
+
+_________________Thanks,
+Steve Pfeifenroth
+

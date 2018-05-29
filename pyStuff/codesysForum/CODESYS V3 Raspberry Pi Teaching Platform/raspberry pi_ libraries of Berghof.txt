@@ -1,0 +1,6 @@
+Hi allI can use the raspberry pi with ethercad modules Berghof ?.http://www.berghof.com/en/products/cont ... tional-io/These modules are programmed using the PLC (Berghof) under CoDeSys, but I can not find the libraries of this manufacturer in my CoDeSys.Thank you in advance for your help
+
+Hi,you need to install the ethercat slave xml into the device repository.After that you could scan and add these devices to the master.The ethercat slave files you should downlod from the slave manufacturer Webpage.BREdwin
+
+Thank You. It has not been easy because they are my first steps with raspberry and CoDeSys. Looking at the forum I have seen is the manufacturer who has to provide me the libraries. Downloaded and installed.
+

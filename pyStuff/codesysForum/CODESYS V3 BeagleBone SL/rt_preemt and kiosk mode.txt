@@ -1,0 +1,2 @@
+Is it possible to use a browser in kiosk mode with a kernel in rt_preemt?I am trying to use a touchpanel from 4d systems as hmi.I use kernel 4.4.39-bone-rt-r15.It seems that chromium is not installed, and can't be installed?Allan
+

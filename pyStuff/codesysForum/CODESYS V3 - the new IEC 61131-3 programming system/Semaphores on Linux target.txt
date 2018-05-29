@@ -1,0 +1,16 @@
+Hi,I need a way to use sems on my V3.4.2.0 arm-linux target.Using SysSemProcess lib makes segmentation fault when attempting to start the runtime, I think the lib might not be implemented on Linux in my current runtime version.Using SysSem, SysSemEnter or SysSemTry always return ERR_OK, no matter if the sem is locked or not!Code:IF pSemHandle^ = RTS_INVALID_HANDLE THEN   pSemHandle^ := SysSemCreate(ADR(semCreateResult));END_IFsemTryResult:=SysSemTry(pSemHandle^);semEnterResult:=SysSemEnter(pSemHandle^);pSemHandle is a pointer to a udint declared in a GVL.Obviously I have more code that later releases the sem when not needed anymore, but my problem is that I cannot check if the resource is free or not!I dont what to use SW FB for that because I want to make sure that the P and V functions will be "atomic".Anyone had any luck with this lib on an arm-linux target?Thanks!
+
+There is an old bug report CDS-7499 that just says "Linux: Semaphores are not working correctly". But I think it would be best if you contacted 3S support directly.Best regards,Kristian Berlin
+
+Which Linux distro are you using? I noticed that Codesys (V. 3.4.x.x) Semaphores work if your Linux supports POSIX IPC Semaphores, but not with System V semaphores. Your Linux distro should support POSIX if you can find /dev/shm directory.
+
+Interesting point, I am running linux-davinci, which support POSIX sems.I compiled a small c application that uses semaphores.h and sem_init, wait, post, destroy to test on the target and it runs smoothly, so I gess I'll have to upgrade my runtime to make it works.Anyway, thanks for your help!
+
+Hi       I would like to know whether codesys can be used for programming embedded controllers and can I know one example how it is done for this linux and one embedded applicationThanks
+
+To use CoDeSys on your own embedded controller, you will need the CoDeSys Runtime Toolkit.Together with 3S-Smart Software Solutions you can then implement and adapt the runtime to your hardware.Please contact the sales team of 3S-Smart Software Solutions for further information.
+
+Thanks for the info.Can I you give me a link for any existing embedded controller using codesys.It will be helpful for me. 
+
+I don't understand exactly what you mean:- If you want to buy an existing controller which can be programmed with CoDeSys you can go to the CoDeSys Device Directory and search http://www.3s-software.com/index.shtml? ... _directory- If you want to build your own controller you could choose any platform. See http://www.3s-software.com/index.shtml?en_CoDeSysSP_OEM (click on Linux) to see the details and requirements.I cannot advise you which platform is best.
+

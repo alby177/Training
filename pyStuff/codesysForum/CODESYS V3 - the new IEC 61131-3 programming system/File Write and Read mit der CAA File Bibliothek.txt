@@ -1,0 +1,2 @@
+Hi,besteht die möglichkeit auch Binäre daten zuschreiben?Wie schaff ich es, dass nur die "wirklichen" Daten geschrieben werden und nicht der komplette Datentyp?Danke
+

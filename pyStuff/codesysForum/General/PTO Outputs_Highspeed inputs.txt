@@ -1,0 +1,6 @@
+Can anyone help me to create a program for PTO output and reading Encoder Input to the PLC.
+
+yes sure we will help you, what do you mean with PTO (on a tractor i know it is a shaft) but i think you have other meaning for this.For an encoder there are existing modules depending on the type of PLC is being used.(btw) this is a lot easier inside a cheap Arduino)
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

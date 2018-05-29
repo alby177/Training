@@ -1,0 +1,41 @@
+Hi people!
+
+I have some questions about running PLC under QNX.
+I would like to know what I´m doing wrong, because I can´t connect with the runtime.
+First of all, I created de TSP for QNX and installed the target successfully.
+I have the runtime system running in the QNX computer.
+Then I configured the communication parameters. I´m using local gateway server and TCP/IP communication channel.
+When I try to LOGIN, this messages shows up "The selected PLC profile does not match the profile of the target! The connection will be canceled.".
+I noticed that the runtime accept the client, but then reject the connection because of this problem.
+
+It´s clear that I´m doing some crap! hehehehe
+What else I have to do to fix it??? I read the manual but I can´t figure out the problem.
+
+Best regards!
+
+Marcio Maeda Fukase
+
+Hi Marcio,
+
+The message means the target ID inside your runtime and the target ID inside your target files are different.
+
+Regards 
+Ralph
+
+Hi Ralph,
+
+Thanks for helping me!
+Well, I received a target range from 3s-software and the QNX runtime(binary only). From this range I choosed a target ID and created the target file. How can I set the target ID that I choosed inside my runtime? Do I have to edit rts3s.cfg???
+As you can see I´m quite lost...hehehe
+
+Regards!
+
+That seems my help was not really helpfull. But your question seems like getting started questions. You schould ask them to your dedicatet 3S developer. 
+OK - He is currently in holidays  but will be back at the beginning of september.  
+
+Things are really confused!!! I don´t want to flood you with questions! I will wait for Mr. Zauner come back from vacation.
+Thanks a lot anyway Ralph!
+Regards
+
+Dont mention it. It wasn't really helful
+

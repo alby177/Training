@@ -1,0 +1,37 @@
+Hello,
+
+FYI I use CoDeSys product with Wago plc, but I ask a more
+general question below.
+
+Is it possible to import xml file to codesys, e.g. Xml PLCopen (TC6) format ?
+
+Thanks for your answers,
+
+Th
+
+Hello Thierry,
+
+from which tool does the export come? I still know none, which supports the XML PLCopen export. At this time is it not possible.
+
+Regards
+
+Hi,
+
+It seems ControlBuild, from "TNI-software", can do that.
+
+http://www.tni-software.com/en/produits ... /index.php
+
+see you,
+Th
+
+KW-Software's Multiprog also exports this xml. OpenPCS advertises the same feature, but their export is a bit more limited in terms of the supported 1131 languages (at least in last spring's demo version).
+
+In academia it would be important to have tools that import this xml. This way we would have mature and realistic runtimes to demonstrate whatever ways we figure out to imrove the early (pre function block) design using some new methods. Later, if something useful comes up, commercial tool providers hopefully benefit from these developments. 
+
+Do you plan to publish plcopen tc6 or some other similar xml import in near future? For us, compatibility with other tools' exported xml is not the issue, because we will develop our own export.
+
+BR,
+
+Jupe
+TKK
+

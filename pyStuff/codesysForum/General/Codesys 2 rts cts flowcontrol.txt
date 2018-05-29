@@ -1,0 +1,2 @@
+Hello everyone,I am trying to communicate with cc6100 coinchanger via rs232.For communicate with coinchanger i should activate rts and cts.But i dont know how to activate it. I have a fb for serial com data sending and receiving.And i cant activate it from there.Also ı have serial port monitoring software and i can send data from there. And i can communicate withcoinchanger when i send data from there. But there is problem when i send form plcCan anyone help
+

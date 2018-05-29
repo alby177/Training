@@ -1,0 +1,10 @@
+Does anybody know if there is some Codesys OOP variant of the WITH statement?This type of statement would be usefull when initiliasing objects or setting more then one property at the same time.pseudocode example;WITH <object> DO   .<PROPERTY1> := Value1;   .<PROPERTY2> := Value2;   .<PROPERTY3> := Value3;   .<PROPERTY4> := Value4;END_WITH;
+
+Hermsen wrote:Does anybody know if there is some Codesys OOP variant of the WITH statement?This type of statement would be usefull when initiliasing objects or setting more then one property at the same time.pseudocode example;WITH <object> DO   .<PROPERTY1> := Value1;   .<PROPERTY2> := Value2;   .<PROPERTY3> := Value3;   .<PROPERTY4> := Value4;END_WITH;
+
+Code:var    obj: <object>;    p: pointer to <object>;end_varp := adr( <object> );p^.<PROPERTY1> := Value1;p^.<PROPERTY2> := Value2;p^.<PROPERTY3> := Value3;p^.<PROPERTY4> := Value4;
+
+You could also use the REFERENCE data type instead of POINTERCode:var    obj: <object>;    R: REFERENCE TO to <object>;end_varR REF= obj;R.<PROPERTY1> := Value1;R.<PROPERTY2> := Value2;R.<PROPERTY3> := Value3;R.<PROPERTY4> := Value4;
+
+The above options will do the trick I guess! thank you for the response!
+

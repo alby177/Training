@@ -1,0 +1,4 @@
+HelloV3.5.7Codesys crashed yesterday. SInce then, I get a 'CodeSys has stopped working' message when I try to start.I've uninstalled/reinstalled and get the same problem.Anyone help?Thanks
+
+Hi,could you start "c:\Program Files (x86)\3S CODESYS\CODESYS\Common\DiagnosisToolLauncher.exe" In this DiagnosisToolLauncher you call CODESYS.This should generate a log file which contains information which we need.Please send this log file to support@codesys.comBREdwin
+

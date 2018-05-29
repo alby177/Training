@@ -1,0 +1,10 @@
+Hello to all I have a problem with codesys, on having connected with AC500eCo this mistake goes out for me: Mistake of communication (*0) to disconnected.Can to say to me that it can be.
+
+Eduardo84 wrote:Hello to all I have a problem with codesys, on having connected with AC500eCo this mistake goes out for me:Mistake of communication (#0) to disconnected.Can to say to me that it can be.
+
+It seems that the communication parameters are not correctly configured.Please try to open the dialog under Online/Communication Parameters and to modify the settings.
+
+_________________Roland WagnerModerator
+
+Hello,After oppenning communication parameters, delete all of the configurations. Click new and select serial. Select your com port, boudrate:19200, parity:no, stopbit : 1, motorola byte order : yes, flow control n. Click update and then click ok. It should work.
+

@@ -1,0 +1,10 @@
+Hi all,
+
+Is it possible to create an instance dynamically as the 'new' keyword in other languages like C++ or JAVA ?
+
+Romuald.
+
+I could be wrong here, but I haven't figured out how to dynamically allocate memory. I think we cant.
+
+Hello,In Version 3 Codesys supports a new Operator (__NEW, __DELETE) for dynamic creation of function blocks.You should use it carefully, because all the problems with leaks, duplicate delete or pointer to freed memory have to be considered.In Version 2.3 you can allocate memory if your target supports the library SysLibMem. And once you have allocated the memory you can use it via pointer as any type you want.Like for example:Code:VAR    pinst : POINTER TO FBTest;END_VARIF bInit THEN   bInit := FALSE;   pinst := SysMemAlloc(SIZEOF(pinst^));   (*allocation of bytes*)   bDummy := INI(pinst^, TRUE);         (*initialisation of instance*)END_IFpinst^(a := l, b := m, c := n, x => l, y => m, z => n);So, in principle, its possible. One Problem is, that you have to take care that the memory is freed again, and that's a problem, because on the next download SysMemFree won't be called automatically.An online change on FBTest by changing the Interface would lead to a crash.I really can't recommend to use it.BernhardBernhard
+

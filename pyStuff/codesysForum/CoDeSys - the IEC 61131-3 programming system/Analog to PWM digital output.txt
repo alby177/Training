@@ -1,0 +1,13 @@
+Is there any standard block in CoDeSys regarding analog conversion to PWM ouput.?
+If not where I can get the algorithm for that.
+
+please find attached an example, which i took from a hardware-schematic with NE555 and OPs and "translated" this to FUP as an programming exercise.
+
+Hope this helps.
+
+pls check the oscat opeb source library
+which you can download under www.oscat.de
+there different pwm blocks to use with source code
+
+_________________freie sps bibliothek unter www.oscat.de
+

@@ -1,0 +1,2 @@
+I have some massive problems if I use the "Flow Control" from the Debug menue. If within the code a statement is placed, which refers to a library variable the flow control function is not working.  eg:Code:IF xFoo THEN    iLibFoo:= iLibFoo+1;ELSE    // Comment this to show the flowcontrol again!!!    FLOW.Variables.g_iDummy:= iLibFoo;// Access to the variable from lib with namespace "FLOW"    ;    END_IF
+

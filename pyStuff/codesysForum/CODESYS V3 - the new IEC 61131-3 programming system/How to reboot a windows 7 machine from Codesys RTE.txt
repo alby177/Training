@@ -1,0 +1,6 @@
+Hi All,I am trying to introduce some diagnostic code into my Codesys program to monitor each task and reboot the machine if the task doesn't run. Is this possible?If not, can we atleast reboot the RTE from codesys?
+
+Hi,for Taskinfo:http://store.codesys.com/task-manager-example.htmland reboot -> see screenshotBREdwin
+
+Edwin Schwellinger wrote:Hi,for Taskinfo:http://store.codesys.com/task-manager-example.htmland reboot -> see screenshotBREdwinThanks for the link to the Task Manager example. Very useful.For any body looking to use this example in the new libraries, be sure to use the placenames. See below:
+

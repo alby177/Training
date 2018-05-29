@@ -1,0 +1,43 @@
+Hi everyone,
+
+i have problem to configure the hardware with CoDeSys 3.0 SP. In the Hardware side i want to use FC3102 PCI card from Beckhoff as master and CDD3000 from Lust Antriebstechnik GmbH as slave. First problem is that i cannot get gsd file for FC310x PCI card to make it master so i tried for other gsd file available on internet since the parameter are same for mater then i tried to read gsd file for CD3000 which is available from company website but when i load it using Add Object function its gives error message "REFERENCE OBJECT IS NOT SET TO INSTANT OF OBJECT" And i am unable to configer the hardware to new CoDeSys 3.0 SP
+
+I will be greatfull if someone help me out  if possible with some tutorial as i am new for using CoDeSys:
+
+Thanks
+
+MUSSAB
+
+Dear Mussad
+
+As far as i know, no driver is currently available for the FC3102 that is usable with CoDeSys 3.x. If there is, you should get a separate device description file (.devdesc.xml) along with the gsd file, which you should use instead of the gsd file directly. 
+I had a look at the CDD3000 GSD file. IMHO it uses a construct not completely compliant to the GSD specification and which causes pain to CoDeSys:
+Code:ExtUserPrmData      = 1 "..."Prm_Text_Ref        = 1Bit (7)               0 0-1EndExtUserPrmDataFrom my understanding of the specification, the lineCode:Bit (7)... should be the first line after ExtUserPrmData So, if you move the Bit line in before the [Prm_Text_Ref] line it works fine in CoDeSys (there is also a second ExtUserPrmData section which must be changed accordingly): Code:ExtUserPrmData      = 1 "..."Bit (7)               0 0-1Prm_Text_Ref        = 1EndExtUserPrmData
+
+Don't forget to reimport the gsd file after your changes.
+
+Hope that helps,
+Bernhard
+
+Dear Bernhard
+
+Thank you for your reply but i have still some problems in communication. As you said CoDeSys 3 does not have driver for FC3102. So now i try CoDeSys SP RTE 2.3 .This version has a driver for FC3102 and PLC Configration tag i am able to add FC310x as master and LUST CDD3000 as slave . I also modified GSD file as you suggest . Now it does not have previous error. But when i try to login "Communication Error; Logout Performed" error come. I read help to get out from this error but fail to produce result. Can you help me you again? I also want to ask you what will be the parameter for Communication Parameter tab since PCI card is connected to the Local PC. Does i need to use Gateway server? 
+
+Thanks in advance
+
+mussab
+
+Hi Mussab
+
+I hope you performed the following steps before you tried to download the program:
+
+- configuration of the FC310x driver and the RTE (description in the document 'CoDeSys SP RTE_E.pdf' which is part of the RTE installation)
+- starting RTE (inclusive 'Start System')
+- setting valid communication settings in CoDeSys (Online -> Communication parameters...), exemplary > Gateway - Local < and > Device - Shared memory (Kernel) <
+
+After that the download should work.
+
+Best regards, Frank
+
+_________________Qualitätssicherung
+

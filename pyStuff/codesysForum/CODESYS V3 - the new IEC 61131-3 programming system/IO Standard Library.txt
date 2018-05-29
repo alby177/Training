@@ -1,0 +1,10 @@
+HelloCan  someone clarify this for me...My target controller has V3.5.7.10The version of the Codesys developer I'm using is the latest (3.5.9.3?)I've created projects for my target controllers using previous versions, so I think I have all libraries on my pc somewhere.If a new user installs 3.5.9.3 developer and sets the compiler version to 3.5.7.10 to create a new project, we see a 'Failed to insert IO Standard library' message. I understand why this happens, and I can fix the problem by giving him a *.projectarchive.BUT...should he be able to use the 'Download missing libraries' to fix his problem?Thank you
+
+The idea is probably that it should be possible to download but I have had the same issue with the library IODrvEtherCAT.The only thing that fixed it was sending the customer a project archive containing the correct version.Hopefully a Codesys representative can explain some more.
+
+Kim wrote:Hopefully a Codesys representative can explain some more.Hopefully...
+
+Hi, I agree to Kim.If you use Projectarchives instead of projects this will work.Sure he could use 'download missing libraries and devices' but I would recomend to use projectarchives to exchanges projects with your customer.BREdwin
+
+Thanks guys
+

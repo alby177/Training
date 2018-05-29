@@ -1,0 +1,6 @@
+Installed CODESYS Control Win SL (Full) but when the application runs the DEMO tag is displayed:Attachment:License 1.JPGAlso getting a visualization error:Attachment:License.JPGHere is the installed license:Attachment:License 2.JPGHow do I remedy these problems?
+
+Hi,you have a license for Control WinWebvisu oder Targetvisu are not included in this license.See these licenses:1.Control WIn2.TargetVisu3.Webvisuhttp://store.codesys.com/systeme.html?p=2BREdwin
+
+Thanks
+

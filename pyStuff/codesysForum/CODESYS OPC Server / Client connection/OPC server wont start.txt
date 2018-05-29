@@ -1,0 +1,12 @@
+Hello Everybody,I have the problem that if i want to connect to the OPC server from the client that I get the message from the codemeter license tool:2018-01-22 10:54:23: Entry (5000304:8772) not found - Event WB0200 (ENTRY NOT FOUND), Request IP-Address local(IPV6)(******,WinCoDeSysOPC.exe) with NoUserLimit2018-01-22 10:54:23: API Error 200 (ENTRY NOT FOUND) occurred!I assume that there is something wrong with the licensing but I have no idea how to solve this.A reinstallation of the OPC server does no help.I have the Wago e!Cockpit installed as well which also uses the codemeter licensing which works fine.Best regardsBastian
+
+Hi,you need a license for OPC DA:either DEMO version:https://store.codesys.com/codesys-opc-d ... -demo.htmlFull:https://store.codesys.com/codesys-opc-da-server-sl.htmlBREdwin
+
+Ok thanks for the info, now it works.Nevertheless the Codesys Homepage states:Quote:The CODESYS OPC Server    is free of charge and delivered along with the CODESYS Development System  
+
+Thank you for the hint.In fact we changed the Business model of the CODESYS OPC Server with the latest Service Pack, but the update of the Website is not yet ready.Thus in fact the CODESYS OPC Server is still delivered with the CODESYS Development System, but from CODESYS V3.5 SP12 there is a license necessary for it.Thank you for your understanding.
+
+_________________Roland WagnerModerator
+
+Will codesys provide a license for the OPC server that (as with other features) will stop working after 2 hours of usage?We use the codesys environment for teaching purpose at our Univeristy of applied science and such a license would be very convenient for us.Peter Dingemans
+

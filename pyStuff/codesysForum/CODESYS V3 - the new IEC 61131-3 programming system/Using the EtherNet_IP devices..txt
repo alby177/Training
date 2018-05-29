@@ -1,0 +1,2 @@
+I have two machines that use CAN bus to talk internally. Both busses have a CAN to Ethernet converter that sends 60 byte encapsulated CAN messages to the control computer. The control computer is loaded with CODESYS Control Win SL. My device tree and globals are attached.How do I get the 60 byte message into the global variable?
+

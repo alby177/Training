@@ -1,0 +1,2 @@
+I want to connect a thermosensor to beaglebone and use codesys to control it, thermosensor uses i2c bus, is there any way to connect this thermosensor to beaglebone using codesys?
+

@@ -1,0 +1,6 @@
+Dear Codesys Familly,Is there any possibility to enable XML HTTP communication with OPCUA server in Codesys?I am currently running Raspberry Pi version.Kind Regards,Michal Rutkowski
+
+Hi,this is ot possible even more: not planned to Supportby the OPCUA server.Which OPCUA Client are you using?BREdwin
+
+UAExpert and a bunch of other scripts that use binary protocol.My goal is to integrate data from OPCUA server to other tools like Pentaho Data Integration, XML via HTTP is natively supported in many of these tools...
+

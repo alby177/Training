@@ -1,0 +1,4 @@
+I am using the SysComRead() function and I am seeing that it takes a lot of processor to when called.  Is there a technique to use to reduce this amount of proessor time it uses.
+
+_________________Kind Regards / Mit freundlichen GrüssenDoug Rilee
+

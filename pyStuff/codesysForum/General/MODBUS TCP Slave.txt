@@ -1,0 +1,4 @@
+Hello,I have Codesys 3.5 patch10 and a Berghof screen.I want to use Modbus TCP slave device but I don't know how to change the type of variable. Automatically the device sends WORD. Can we send DWORD or REAL? It's so weird that it's %IW and not %MW...   Some idea?Thanks.   [/color]
+
+Modbus is 16 bit words, you will need to split/combine multiple words on each end of the modbus path to get your DINTs and REALs.
+

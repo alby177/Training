@@ -1,0 +1,7 @@
+Hi,
+
+How can I use an 'USB to CAN interface' with CodeSys?
+Where/How I have to configure a USB target device?
+
+Thanks. 
+

@@ -1,0 +1,19 @@
+Is it possible to fix the address of each element of a structure ?
+Something like this:
+
+TYPE MyStruct :
+STRUCT
+ B1: BOOL;
+ B2: BOOL; 
+END_STRUCT
+END_TYPE
+
+MyVar AT [%IX0.0, %IX0.1]: MyStruct;
+
+Thanks.
+
+No. for various reasons all components of a structure must be located in a sequence.
+
+A related feature 3S implemented is Var_Config. It allows to put local variables of function block instances to different I/O locations.
+please have a look at [size=18]Variable Configuration[/size] in the Online help.
+

@@ -1,0 +1,8 @@
+In V2.x references which I found online, a user defined FB could easily be added as a "library" and recalled for reuse.I have perused the V3.5 online library help and it refers to creating full blown libraries.How do I add my user defined FB in V3.5.8.2 so that I can easily select it and add an instance of it to whatever I am programming.Appreciate any pointers.
+
+_________________Computer Setup:- Windows 7 Professional- CodeSys V.5 SP8 Patch 2PLC Setup:- Pi2 (running headless via Putty)- Jessie Lite.
+
+You can also easily create a library in version 3.5.  Open a new library project, pastry from from block inside and save it as a .library file. Install the library file into your repository. There should be an icon in your toolbar that looks like a file cabinet, and that is save library and install to repository.    Then you can include this library into any of your projects. With a .library file, you can still debug The library code (it opens and you can go step by step).  If you want a protected library, then you should save your library as a compiled library. Just change the extension from .library to .compiledlibrary
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+

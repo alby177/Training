@@ -1,0 +1,2 @@
+Are there any rules (description) for updating the project in offline? What should I do if trends or alarms changed?How to do it without codesys IDE?
+

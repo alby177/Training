@@ -1,0 +1,12 @@
+I would like to control the new Schneider Electric Lexium mDrive with Profinet interface (stepper motors of different sizes). In the list of devices I found only the Lexium32. Is there a way to get devices to work that are not in Codesys?
+
+Hi,in which list did you found this?We provide with the CODESYS Setup SoftMotion ethercat drivers for Lexium32.Everthing else you need to add by importing the profinet gsdml xml files which you install into the devicerepository.That's the procedure on every fieldbus.Probably you have this xml's from Schneider and you need to impoert them.BREdwin
+
+Great! Those files can be downloaded from Schneider: http://motion.schneider-electric.com/lmd/downloads/firmware/Profinet_3_0_0_2.zip
+
+I am stuck. Tried to modify the softmotion example in order to control the Lexium mDrive but despite installing the GSDML I get an error, see attached picture. When I right-click the last item in the mdrive tree Codesys suggests to download the missing device information. But when I click on that I just get an error "Download fehlgeschlagen". Intrestingly it looks like Codesys tries to download the missing information from the codesys store. What did I miss?
+
+Hi,the download does only work for devices which are from 3Snot for fieldbus slaves / ESI /EDS / GSDML files... These slave files need to be imported into the device repository.In your example you need to set the device by "Gerät setzen".BREdwin
+
+OK, but I do not see anything specific to a drive. Will have to ask the guys from Schneider on how to proceed further.
+

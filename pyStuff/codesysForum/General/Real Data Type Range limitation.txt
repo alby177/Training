@@ -1,0 +1,33 @@
+We are using codesys as a development tool for GUI application. We developed a function that displays real data type value to user. We are facing problem of displaying / processing the real values after certain limit.
+
+For e.g refer the attached project.
+
+ In the attached project we are adding two real values 33554442.5 + 2.5 and the result was 33554448.00, So could you please help us to get correct value 33554445.00.
+
+
+Regards
+Rajesh G
+
+use LREAL type, i've checked  up it works.
+
+Our target will not support LREAL.
+
+
+
+Regards
+Rajesh G
+
+Real type has 32 bits, but mantissa of real type has only 23 bits. It’s a reason of limits data accuracy about 7 decimal numbers. Your values of variables acquire 8 numbers, and last number is wrong.
+LREAL type has twice more bits of mantissa then REAL type.
+If you don’t have LREAL you should write special function (IMHO) which would be able to work with “compound” data.
+
+Could you please provide more information on IMHO function. How to implement?
+
+
+Regards
+Rajesh G
+
+IMHO - In My Humble Opinion. You misunderstood me. It’s my fault, sorry. 
+
+Ok, do you have DINT ( UDINT ) type? This type has 32 bits and you could use 10 numbers. You can convert REAL type  into UDINT (or DINT if you need “-“) by multiplying  to integer. After that it becomes possible to operate without missing accuracy.
+

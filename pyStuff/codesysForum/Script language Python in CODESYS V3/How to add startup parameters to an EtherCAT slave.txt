@@ -1,0 +1,10 @@
+Hello,I want to add startup parameters e.g. to the Beckhoff EL6631. I tried this one:Code:proj.find("EL6631_1", True)[0].connectors.by_id(1).host_parameters.Insert(1627394048,x)-> I get the error message: "Collection is read only"Any other idea?Thanks
+
+Hi.The device parameter set does not allow you to add, insert or remove a parameter or clear the whole collection. You are only allowed to change the value of an existing parameter. The documentation of the ScriptEngine should mention that.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi,The set of device parameters is determined by the device description file and cannot be modified via the scripting API.Adding arbitrary host parameters would not be helpful if neither the device nor the device editor honor them...HTH,Markus
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+

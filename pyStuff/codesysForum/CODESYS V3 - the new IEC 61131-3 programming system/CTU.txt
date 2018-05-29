@@ -1,0 +1,10 @@
+Please can anybody tell me how to create counter up with math instructions??
+
+Hi, do you mean structured text?If yes, you can use it like this:Code:PROGRAM PLC_PRGVAR   fbCTU1: CTU;   xCountUp1: BOOL;   uiCounter1: UINT;   xReset1: BOOL;   xCountUp2: BOOL;   uiCounter2: UINT;   xReset2: BOOL;END_VARCode:// CTU Function-blockfbCTU1(   CU:= xCountUp1,    RESET:= xReset1,    PV:= 100,    Q=> ,    CV=> uiCounter1);   // OrIF xCountUp2 THEN   uiCounter2 := uiCounter2 + 1;   xCountUp2 := FALSE;END_IFIF xReset2 THEN   uiCounter2 := 0;END_IF
+
+Thank for that, but I must do CTU in ladder diagram only with math and compare instruction!
+
+Everytime when I put "1" on my firt input some memory registar must increase for 1.
+
+See screenshot for an example
+

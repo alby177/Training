@@ -1,0 +1,12 @@
+Hi!Is there any SMTP / POP library, or have anyone created code for mail handling?/U
+
+See store.codesys.com
+
+TimvH wrote:See store.codesys.comThe one in store needs a hardware dongle.. Will that work on a Raspberry Pi?/U
+
+Hi Urban,the key is needed on CODESYS Development System, not on runtime / plc.Would recommend to use this compact key:http://store.codesys.com/accessories/co ... mpakt.htmlAdditional advantage you could test every available demo Version available in the store which needs a license as demo with that key.So this mail / Pop library / example will work with the raspberry pi too.brEdwin
+
+Are there any demo for the SMTP library?
+
+Hi Urban,yes http://store.codesys.com/mail-service-1.htmlbut yo'llu need a security key to use the demoshttp://store.codesys.com/accessories/co ... mpakt.htmlso once you have this stick you could use all Demos in the store SVN / Static Analysis and all these products which offer demo mode.BR
+

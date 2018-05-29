@@ -1,0 +1,4 @@
+Hello, Has Codesys removed the free 2 hour trial you get before you have to purchase the license for softmotion and softmotion light? Since upgrading to V3 SP8 I can no longer drive a softmotion axis without the license.
+
+Hi,no if this is true it is an accident and will be fixed.Could you check the plc logger for more details?BREdwin
+

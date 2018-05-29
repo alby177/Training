@@ -1,0 +1,6 @@
+Hi, my company develops projects of electronic controllers for agricultural machines. There is a demand from some customers for us to make a controller that would be possible to program with CoDeSys. Where can I find documentation to guide me in this project? Is there a recommendation hardware design to interface with CoDeSys? Our controllers are based on ARM Cortex-M3 and ARM Cortex-M4.Thank you
+
+Contact the boys in the office.and yes have a look at the raspi, probably this is a very good point to start. It is version 3 and is very cheap to develop and program.buy yourself a rasPi and the codesys program (direct from codesys website)and yes assistance is possible.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

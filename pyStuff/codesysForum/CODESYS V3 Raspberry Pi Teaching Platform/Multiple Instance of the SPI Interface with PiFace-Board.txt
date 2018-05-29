@@ -1,0 +1,24 @@
+Hallo CoDeSys,First of all, thank you for the great job. I’m sure you’re going to win a lot of enthusiast people switching to PLC programming. …As for my question:I'm having trouble using multiple instance of the SPI interface.I got the Codesys for Pi running on my RasPi as describe by 3S support. It works fine!I’m using the board with 3 PiFace-Board and 1 PiFace-Rack.On every PiFace I set the SPI address and set the jumper on the rack also.In my Project if I only have one instance of the ISP Interface, everything is fine and I can talk to the designated (SPI Address 0..3) PiFace board.But if I have more then one instance of the SPI interface, I can only talk to a single PiFace board (SPI Address).Does the Implementation in Codesys support multiple instance of the SPI or not? If true, can you tell me what I'm doing wrong?ThanksDeborah
+
+Hi Deborah, we have tested this, this should work,how is your setting on JP1 on the Piface?BREdwin
+
+Hallo Edwin,Thank you for your support.Jumpers on the PiFace-Rack are set as follow to allow external power: JP9: 2+3JP10: 2+3JP11: 2+3JP12: 2+3Jumpers on the PiFace-Rack are set as follow to allow external Default SPI CE:JP1: 2+3	JP2: 2+3JP3: 2+3	JP4: 2+3JP5: 2+3	JP6: 2+3JP7: 2+3	JP8: 2+3Jumpers on the PiFace are set as follow to set address for every SPI chip: PiFace_0:	JP1: 2+3		JP2: 2+3PiFace_1:	JP1: 1+2		JP2: 2+3PiFace_3:	JP1: 2+3		JP2: 1+2Please check the attached PDF for more detailsThanksDeborah
+
+Hello,I have the same problem. As i have got only 2 PiFace on the PiRack, the problem seems to appear with at least 2 PiFace.I can leave my hardware configuration untouched (jumpers as in first post).If I disable one of the two SPI devices in the CoDeSys software, the active device interacts as it should.Both devices activated, only the first device (lowest hardware adress) is reacting.By the way, I get a library error on every startup of a project (CmpIecTask, sm3_Basic, sm3_CNC not found).Is there any context?Konstantin
+
+Hi,Piface isseu we need to investigate this, did not find the time... will do a.s.a.p@Konstantin which library Versions does CODESYS try to add for CmpIecTask, sm3_Basic, sm3_CNC ??for CmpIecTask there is a solution to use this devicedescription:viewtopic.php?f=21&t=5621please use the device description from that post,could you please check if this solves your Problem?BREdwin
+
+Hi, allcould you please check if the SPI kernel drivers are loaded,(lsmod) there should be a spi-bcm2708 loadedif not use:sudo modprobe spi-bcm2708 to insert the SPI Driver.. then it will workprobably you need to add this to /etc/modules (we will do that on next release)cheers Edwin
+
+Hi Edwin,the library errors are gone with the new devicedescription. Thanks for the hint.I will test psi module with lsmod tomorrow and will try to load the module manually if not present.Feedback follows.Konstantin
+
+Hi Edwin,the module spi-bcm2708 is being loaded at startup. The problem with the two SPI interfaces persists.Konstantin
+
+Hi Konstantin,if you load the Project, do you see the piface in the devicetree with agreen circle or red triangles? (like in my scrennshot in previous post)could you please check if in /etc/modprobe.d/raspi-blacklist.conf the modules are not in-> Comment out blacklisted items "spi-bcm2708" and "i2c-bcm2708"And which Project do you use, the one from the CODESYS store which comes with the pi package ?maybe helpful is if you send your project archive to support@codesys.comBR Edwin
+
+Hallo, Im not sure if Konstantin sent its project jet. If not here is a project showing the problem we are having.in Google Drivehttps://drive.google.com/file/d/0B3o1_R ... sp=sharingThanks for your helpDeborah
+
+Hi,you are right, there is an error on our side,we will fix this with next release (should be available soon)BR Edwin
+
+Hi,this open point is now solved with the release 1.1.0.0You could update with the PackageManager to the new available version.BR Edwin
+

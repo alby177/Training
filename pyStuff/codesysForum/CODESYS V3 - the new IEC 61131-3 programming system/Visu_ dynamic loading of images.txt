@@ -1,0 +1,2 @@
+Is there any way that images, either bitmap or SVG, can be dynamically loaded by CODESYS from a file at runtime?  I am specifically looking at cases where the image file is not available at build-time.  For example, when my display fetches an image from a different device at runtime and needs to show it.-David.
+

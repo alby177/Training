@@ -1,0 +1,8 @@
+I can add eds file to the selection list by Extras/ Add configuration file/Select configuration file.How can remove or replace eds file  from this list?
+
+this is a version 3 question so please do same in proper forum.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+The question concerns V2.3. Meanwhile the problem is resolved. It was Windows 7.Normally, when add eds file, it is copying to the target directory, and can be removed from selection list by simple deleting from there. In my application:  C:\Program Files (x86)\CoDeSys V2.3\Targets\my_plc.  The problem is that by default Windows 7 prevents from writing Program files, and saves files to the “Virtual store”:C:\Users\myself\AppData\Local\VirtualStore\Program Files (x86)\CoDeSys V2.3\Targets\my_plcAs a result the eds file is not there, where must be.When changed security properties of Codesys directory to Full control, the problem is cleared.
+

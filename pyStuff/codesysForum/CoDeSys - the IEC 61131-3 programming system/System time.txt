@@ -1,0 +1,88 @@
+Please help. 
+
+I don't know how to read System date and time. I supose that SysLibTime.lib is answer but I don't know how to use this library. 
+I would like to set value in variable X of system date and time in ST. 
+
+Thanx. 
+
+
+try
+
+ActDateAndTime := SysRtcGetTime(dummy);
+
+with ActDateAndTime as DT
+and dummy as BOOL.
+SysRtcGetTime ist a function from SysLibRtc.lib
+
+Thanx for reply but I don't have library SysLibRtc.lib.
+
+I search whole 3s folder but cannot find it. Can you post it here or mail it to me? Please?  
+
+Maybe some other way?
+Please help my deadline is comming...
+
+cica_draza wrote: ... I don't have library SysLibRtc.lib. 
+
+Indeed, System Libs are external libraries with realizations inside runtime system. 
+
+If yours PLC has RTC and manufacturer (OEM) support appropriate library then CoDeSys Library Manger will discover SysLibRtc.lib without any trick.
+
+OEM may develop specialized library for system time access. 
+
+The questions are: 
+Does yours PLC have RTC hardware? 
+How OEM supports the RTC?
+
+__________________IP_
+
+I'm just a student and I don't have PLC. 
+
+I'm doing some project for my exam and I need to make ST program only for virtual PLC.  
+
+I have ST program, visualization and that's it. 
+
+I realize it! 
+
+
+It is simple.  
+
+Just used RTC block. 
+It has 4 variables:
+enable 
+InputDateAndTime as DT
+Q as bool
+OutDateAndTime as DT
+
+As soon as EN becomes TRUE, the time of InputDateAndTime is set, is counted up in seconds and returned in OutDateAndTime as long as EN is TRUE. As soon as EN is reset to FALSE, OutDateAndTime is reset to the initial value DT#1970-01-01-00:00:00.
+
+InputDateAndTime can be left out and than time and date are readen from the System. 
+
+Finally. 
+
+You are right. It is good solution for emulation mode.
+
+  By the way, you may download our free TimeExp.lib http://www.prolog-plc.ru/docs/timeexp.zip includes effective date and time manipulation functions.
+
+__________________IP_
+
+Thanx 
+
+I have downloaded but I have a problem. I don't know Russian (only few words I know are something like ya tebya lyublyu for my girlfriend )
+Big procent of that lib I figured out what is going on inside but not all. 
+
+have you some version in english?
+
+Indeed the project was an appendix for our rather big article in Russian . It would be rather difficult to translate it to English completely   . 
+The project file comments translation would bring you nothing since the library includes the same functions with English comments.
+
+Main functions: 
+
+ExtractDate   Input: DATE; Output: year, month, day of the monthExtractTime   Input: TIME; Output: hour, minute, second, msPackDate      Input: year, month, day of the month; Output: DATEPackTime      Input: hour, minute, second, ms; Output: TIMECONCAT_DATE_TOD Input: DATE, TIME_OF_DAY; Output: TDDiffTOD        Input: TOD1, TOD2; Output: TIMEExtYear        Input: UINT 2 digits year; Output:  UINT 4 digits yearIsLeapYear   Input: UINT year; Output: BOOLWeekDay     Input: DATE; Output: UINT weekday numberfbRTC        standard RTC realization example, based on TON
+
+Outer functions are only auxiliary for main functions. 
+Conversions based on fast algorithms without cycles.
+
+Just tell me if you have problems to understand some functions or algorithms. I will try to describe it in details.
+
+__________________IP_
+

@@ -1,0 +1,12 @@
+Hi all,Usually I login with "full download" as I use extensively pointers and I don't want to have problems with a bad address after adding variables.Now a customer is asking me to be able to use the "online change" method to avoid needing to stop the machine to apply changes.Is there any way to automatically reassign all the pointers after an online change?PS: I've been able to detect the online change and then I've reassigned the pointers (mostly inputs and outputs and some variables).But I'm also using __NEW to create some function blocks inside other function blocks...What would happen in those cases?I've not seen any mistake with that, but I can't be sure of that as the help files doesn't seem clear to me about that.Any advice?Thank you in advance.
+
+_________________http://www.robotecnik.com - robots, CNC and PLC programming.
+
+Joan M wrote:Hi all,Usually I login with "full download" as I use extensively pointers and I don't want to have problems with a bad address after adding variables.Now a customer is asking me to be able to use the "online change" method to avoid needing to stop the machine to apply changes.Is there any way to automatically reassign all the pointers after an online change?PS: I've been able to detect the online change and then I've reassigned the pointers (mostly inputs and outputs and some variables).But I'm also using __NEW to create some function blocks inside other function blocks...What would happen in those cases?I've not seen any mistake with that, but I can't be sure of that as the help files doesn't seem clear to me about that.Any advice?Thank you in advance.Hi Joan. Could you share of how you're detecting online change and reassigning the pointers? Thanks
+
+In soMachine from Schneider, using the library PD_Template, call the function block FB_DetectOnlineChange.Once this is done reassigning the pointers is easy using ADR() again.
+
+_________________http://www.robotecnik.com - robots, CNC and PLC programming.
+
+PD_Template , is this Schneider only or Codesys?How about interfaces and online change? E.g. an array of interfaces assigned different instances of the interface. It says somewhere in the manual that interfaces are realized using references.How does interfaces and references behave during an online change?
+

@@ -1,0 +1,24 @@
+Questions about creating your own library1 how to hide the contents of the library, so that users can not view the code2 how call the library without writing the namespace, like TON, without the need to write Standard.TONTks in advance.BR Junfeng.Li
+
+     
+
+A compiled library (save as compiled library) should keep your code hidden. You can also password protect it. Be sure to test!Whether or not the namespace has to be included depends on the user setting of the system. If you want to shut off include namespace, check your CoDeSys options either under the Project tab or the Tools tab (sorry not in front of my system to know the exact lik).
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Hi,yes Scott thanks for this.Detail: If you set:LanguageModelAttribute(Text) := 'qualified-access-only' effects that the symbols of the library are only accessible via the namespace.Access by using the Namespace is mandatory.BREdwin
+
+scott_cunningham wrote:A compiled library (save as compiled library) should keep your code hidden. You can also password protect it. Be sure to test!Whether or not the namespace has to be included depends on the user setting of the system. If you want to shut off include namespace, check your CoDeSys options either under the Project tab or the Tools tab (sorry not in front of my system to know the exact lik).As the jpg shows.Where can I find the menu (Save as compiled library)?And if you mind tell where can find the docuement shows the setting about the security.Just in the codesys help?Tks any way!
+
+Edwin Schwellinger wrote:Hi,yes Scott thanks for this.Detail: If you set:LanguageModelAttribute(Text) := 'qualified-access-only' effects that the symbols of the library are only accessible via the namespace.Access by using the Namespace is mandatory.BREdwinMuch tks to Edwin!And I am new one on codesys.So     What I should do?
+
+Hi,if you would use current Version this will be available as Default.In older Versions (<SP8) you need to Change Tools->Options-Feature-Sets-Switch to ProfessionalBREdwin
+
+Ah, OK, the term "Project" is used with two meanings...In general, project means the CoDeSys file (Open Project, Save Project, New Project).  But then there is a difference below that: If you are making a coding solution for a PLC or RaspPi, etc. - this is a "project" that has the extension of .project. If you want to make a library, then you have to create a "Library project" and they can have either a .library or .compiledlibraryYou cannot save a project as a library.  You must choose to create a library (File -> New -> Empty library).  All is not lost, since you can easily copy the whole POU(s) from one "project" to another.Open your existing code (.project file) - copy the POU.Create a new empty libraryPaste your POU into the librarySave library as either a .library or a .compiledlibrary fileInstall your library to your repositoryFor easy use, the last two step above can be replaced simply with: File -> Save project and install into library repository
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+scott_cunningham wrote:Ah, OK, the term "Project" is used with two meanings...In general, project means the CoDeSys file (Open Project, Save Project, New Project).  But then there is a difference below that: If you are making a coding solution for a PLC or RaspPi, etc. - this is a "project" that has the extension of .project. If you want to make a library, then you have to create a "Library project" and they can have either a .library or .compiledlibraryYou cannot save a project as a library.  You must choose to create a library (File -> New -> Empty library).  All is not lost, since you can easily copy the whole POU(s) from one "project" to another.Open your existing code (.project file) - copy the POU.Create a new empty libraryPaste your POU into the librarySave library as either a .library or a .compiledlibrary fileInstall your library to your repositoryFor easy use, the last two step above can be replaced simply with: File -> Save project and install into library repositoryI did create a library not a project,and my version is SP5And I find the settings as jpg shows.Maybe not same to SP8.After change to profesional I can find save as compiledlibrary.Another question?How I need not write namespace,like TON without Standard.TONTks very much.
+
+If you want hide namespace,just following the jpg shows!Tks to Edwin and scott!
+

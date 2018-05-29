@@ -1,0 +1,22 @@
+Greetings everyone,
+
+I am logging in an monitoring multiple projects (3 at the moment) running on three different PLC's using a network hub.  Once I start running I lose communication after a period of time (< 15 - 20 s) to one of the PLC's.  All 3 applications are running fine, just no communications (LOGIN) to one of them.  Any ideas or is this not possible due to limitations of TCP/IP or CoDeSys?
+
+
+Doug
+
+Doug,
+I am monitoring 3 PLC's using CoDeSys on this computer as I write this with no trouble.  I sometimes monitor 5.
+
+There's no problem with CoDeSys or TCP/IP.  It may be that you're using a hub.  I found that using a switch insteadof a hub works better.
+
+_________________Bob
+
+Make sure all devices have different IP adresses.
+
+TimvH wrote:Make sure all devices have different IP adresses.Hi,I just wanted to know what are the limitations of TCP or UDP protocol:DistanceNo of bytes for each frameNo of nodes and other limitations if any .Regards,
+
+does this mean you have 3 instances of codesys running on the PC?yes that is a bit much.better use visualisation or ODP.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

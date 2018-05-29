@@ -1,0 +1,16 @@
+Of course, everyone will be curious... When will Codesys be supporting the new Pi 2?
+
+Hi,we will check and let all of you know if this works with Pi2 a.s.a.pBREdwin
+
+Any more info? Will it be like one week or some months?
+
+Hi,yes it will work with 3.5SP6 release.& one week.BREdwin
+
+Will it be possible to assign tasks to cpu cores?Or does it behave like a single core (like b+) ?
+
+Hi,this is an open point on the roadmap... at the moment it behave like single core.BREdwin
+
+It's finally released! Including Profinet Master. See http://store.codesys.com/codesys-control-for-raspberry-pi-sl.html
+
+I am very happy with the embedded streaming video on visu! It works great! Thank you for this!
+

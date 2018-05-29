@@ -1,0 +1,2 @@
+Please can you explain me how can i use the hardware interrupt functionality of some siemens remote i/o with profinet.
+

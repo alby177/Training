@@ -1,0 +1,6 @@
+Good day.I have a PD control block that i want to put in manual and open the output to a certain value. This must me done from a faceplate that was build. The switching between auto and manual on the faceplate works 100%. Do any one have any suggestions?Regards
+
+use SEL for example to switch between both outputs, or you could have a look at oscat.de for several PID controllers.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

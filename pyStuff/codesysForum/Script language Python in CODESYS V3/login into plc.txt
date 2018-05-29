@@ -1,0 +1,6 @@
+Hello ... to login into "my PLC" I must enter "Alt + F" via keyboard ... possible to do this automatically ?
+
+Hi,this dialog seems to be SoMachine-Specific and not standard CODESYS.So I guess the support people at Schneider should be able to help you with this.Of course, the easiest way to get rid of this dialog is to stop using direct adressing modes.  One thing you could try is to hook into the System.Windows.Forms.Application.Idle event, and check for the currently active window using the Windows Forms or WPF APIs, and when it is the right dialog, send the key press there using SendKey() or similar functions of the .NET or Win32 API. I'm not sure whether the dialog window is Windows Forms or WPF, as far as I know, Schneider is using WPF for some of their own UI.HTH,Markus
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+

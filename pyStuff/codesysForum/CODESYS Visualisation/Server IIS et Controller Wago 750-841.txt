@@ -1,0 +1,4 @@
+Hellois it possible to create a website locally on an IIS server using the build files of the Comptroller wago 750-841 so that the site points to the address of the controller.For now, I do happen to see the page in my web browser (IE, Mozilla) with the address http://localhost:8080/webvisu.htm because the IIS server points to 8080, the animation does not work in the status of the browser there is "Bad request".Poiuvez you help me a bit more .. ?ThanksBest regard
+
+Try to check the file webserver_conf.xml in <Codesys installation folder>\CoDeSys V2.3\Visu. There is the option <webserver-port-nr> 8080 </webserver-port-nr>. Try to change it and maybe it helps...I don't quite sure, because Wago 750-841 has it's own webserver in linux and maybe you should tune up some linux system files.Good luck!
+

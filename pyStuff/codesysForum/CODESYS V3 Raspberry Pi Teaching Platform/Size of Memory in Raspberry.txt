@@ -1,0 +1,2 @@
+I'm testing a program on raspberry with the following sizes:Size generate code = 3,020,520 bytesSize global data = 1,383,289 bytesTotal allocated memory = 4,213,566 bytes.With this memory size, the CPU does not go into run mode.I am using version 3.5.101. The problem is the size of the program?2. If so, what is the maximum memory size for Raspberry?Att
+

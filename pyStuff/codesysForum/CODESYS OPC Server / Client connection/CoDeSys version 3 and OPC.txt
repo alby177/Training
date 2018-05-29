@@ -1,0 +1,28 @@
+Hi,
+
+We're starting to look again at moving forward and upgrading our current proprietary PLC to IEC 61131-3.
+
+I've been looking at the new version of CoDeSys and cannot see how to use OPC.  Is the old OPC server from version 2.3 adequate or do I require a newer version? I've looked but cannot see a download link for a newer version.
+
+In version 2.3 I had to enable symbol entries but in version 3 I can't find a similar option.  I imagine I'm just getting confused with the new interface.  Is the copy of CoDeSys 3 that is available for download a cut down demo or is it the full release?
+
+Can someone please tell me (or direct me to a procedure) how to configure OPC with CoDeSys version 3.0??
+
+Thanks,
+Michael.
+
+Hi Michael,
+
+you are right.
+The OPC server for CoDeSys 3.0 is not yet included. As you probably know CoDeSys 3.0 is a complete new development and thus not all known modules from CoDeSys V.2.3 are yet available. Nevertheless the release of CoDeSys 3.0 is ready for our OEM customers for the start of the implementation of the corresponding CoDeSys SP runtime system.
+I just checked the schedule for the further development. Concerning to my information the OPC server in CoDeSys 3.0 will be availlable at the end of 2006. It will work similar to the V.2.3 one, the handling will be made easier.
+
+_________________Roland WagnerModerator
+
+Hi Roland,
+
+Thanks for your reply.  I thought that might be the case.  Is the developement schedule available for public viewing?
+
+Thanks,
+Michael.
+

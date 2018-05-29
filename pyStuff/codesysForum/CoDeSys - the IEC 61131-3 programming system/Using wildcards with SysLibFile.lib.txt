@@ -1,0 +1,2 @@
+Hello,I am trying to open (and subsequently write to) a file on SD card using a standard path.So instead of:Code:FileName:=CONCAT('/media/SA08G_0x4431264e/77616767/Logs/PLC_log',PLC_DATE);FileName:=CONCAT(FileName,'.log');FileID := SysFileOpen(FileName,'a');I would like to use something like:Code:FileName:=CONCAT('/media/*/*/Logs/PLC_log',PLC_DATE);FileName:=CONCAT(FileName,'.log');FileID := SysFileOpen(FileName,'a');Is this at all possible using SysLibFile.lib.If not, does anyone know of another library which I may use which provides for this functionality?Thanks.
+

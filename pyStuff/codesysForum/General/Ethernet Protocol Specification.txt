@@ -1,0 +1,2 @@
+I need to read values of variables in CodeSys based systems (Bosch, Wago, Turck, etc) over Ethernet in .NET (Visual Studio). I do not want to use OPC or any DLLs such as PLCHandler. I need to write a driver from scratch. Is the protocol part of codeSys or vendor specific? In other words do the various CodeSys based controllers such as Bosch and Wago use the same Ethernet protocol? If so, where can I find the protocol specifications?
+

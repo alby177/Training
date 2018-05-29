@@ -1,0 +1,2 @@
+Hello, I would like to set up a 1734-OE2V card as a generic componentand connect it to a Raspberry via a 1734-AENTR coupler.I understood what I had to put in "config"but I did not figure out how much byte of input and output I had to assign to it ..For an IB8 it takes 1 input byte.For an OB8 this takes 1 input bytes and 1 output byte.With these two cards I'm ok.If any one could explain, I would be very grateful.thank you !Thomas.B
+

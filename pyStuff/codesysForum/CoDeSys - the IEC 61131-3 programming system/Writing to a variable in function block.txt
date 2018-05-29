@@ -1,0 +1,132 @@
+I have a function block with several variables declared
+
+Example (of the function block):
+
+Quote:FUNCTION_BLOCK ExperimentalBlockVAR   test1:INT;   test2:INT;VAR_ENDIs there any way of declaring these variables to be writable from the calling/parent function block or program ?Example (of the instance declaration, function block call and access attempt):Quote:FUNCTION_BLOCK MasterBlockVAR  Instance_ExperimentalBlock:ExperimentalBlock;END_VARInstance_ExperimentalBlock.test1:=2;
+
+This produces an error when compiling
+"Operands of 'ST','STN','S','R' must be variables with write access or direct address."
+
+
+I know the meaning of the error, but does anyone know a way of circumventing this ? That is, how to write to a variable declared in a function block ? Declaring "test1" as IN or IN_OUT is not an option here.
+
+make it global
+
+when using the same block again you can also use block1.variable
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+IF you want to write value from your program and use it into you FB, you must declare this var as Input for the FB.
+
+@JAPIB: Due to programming conventions I can't declare that variable as an input or input_output (as already stated in the first post). The function blocks that I work with all have standardized input / output / input_output interfaces which cannot / must not be changed.
+
+@shooter: What do you mean by "make them global" ? 
+Whether I declare the Instance of the function block locally or globally makes no difference. I get the same error. Declaring a global variable within the function block is not possible.
+
+declaring is not pssible but using it is.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+OK, I know using global variables is possible in a function block, but again that's not the point. 
+
+In my first post I wrote:
+Quote:That is, how to write to a variable declared in a function block ?
+
+You see, it's not a problem of transporting data into the function block. I can do that in an almost unlimited ways. The problem is I have to respect the defined programming conventions, which in short define the Input / Output / Input_Output interface of any function block call and define everything around the function block (main task calling, global variables etc.). In other words "don't touch anything else but the function block".
+
+I know how to READ from variables declared in function blocks, that's easy, but since the source of data is dynamic (changes during runtime), I'm trying to somehow WRITE to a variable declared WITHIN a function block.
+
+Hope this explains a little better the constraints I'm dealing with.
+
+It's a little frustrating, since on the other had the visualization can read/write to any variable within the blocks, but the program itself cannot.  
+
+You can always cheat using pointers:
+
+test1: POINTER TO INT;
+
+pTest1:= Adr(Instance_ExperimentalBlock.test1);
+pTest1^:= 2;
+
+_________________Andreashttp://www.boschrexroth.com
+
+aha but a plc is working like read inputs
+work program
+set outputs.
+if you are changing when the program is asking you do not know what happens.
+like reading a word while it is typed. in random order also.
+yes we do understand what you like but that is more against the rules as putting a extra input, or use in other way.
+like setpoint =actual minus someexternal.
+even a cfc is done first all inputs etc.
+it does make it unstable and as the processor is working with a stack your idea will fail.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+maauto wrote:I have a function block with several variables declaredExample (of the function block):Quote:FUNCTION_BLOCK ExperimentalBlockVAR   test1:INT;   test2:INT;VAR_ENDIs there any way of declaring these variables to be writable from the calling/parent function block or program ?Example (of the instance declaration, function block call and access attempt):Quote:FUNCTION_BLOCK MasterBlockVAR  Instance_ExperimentalBlock:ExperimentalBlock;END_VARInstance_ExperimentalBlock.test1:=2;
+
+I think th best way is to use an 'action' (like a method in OOP).
+Add an input variable on your function block and call your FB's action with this input variable.
+Code:FUNCTION_BLOCK ExperimentalBlockVAR_INPUTiTest1: INT;END_VARVARtest1:INT;test2:INT;VAR_ENDaction 'setTest1'Code:test1 := iTest1;Then call the actionCode:Instance_ExperimentalBlock.setTest1(iTest1 := 2);
+
+@Andreaz: Thanks, that's a valid idea.
+
+@shooter: Thanks..I'm sorry, but i don't really understand. The variable in the function block will be set before the function block is called, not while it is being executed (from another task for example), so I don't see a synchronization problem. Or maybe you meant some other situation ?
+
+@Romuald: Thanks, that's another good way about it.
+
+yes that is what i meant, can you not manipulate any input to give correct results.
+and we would like to see the block so we can direct comment on it.
+best in Structured text.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+@Romuald: I spoke too quickly. Using actions is a good idea, alas, again you have to declare "iTest1" as an input variable of the function block. This cannot be done as it changes the interface of the function block.
+
+@shooter: I'll check what information about the source I can post give my firm restrictions.
+
+It sound to me like you are trying to make a function block do something it was not originally intended to do.  The whole idea or purpose for a function block is to break up Programs into small, manageable, reusable chunks. 
+
+I think you have to ask yourself or the person that gave you this task if it is really the right way to accomplish your goals.   If a block doesnt do what you need you should really only have three choices. 
+1. Change the block to add the required features
+2. Write a different block to accomplish your task. This is especially important if the task really doesn't have a lot in common with the first block
+3. Perform the task in the main or calling program and forget about the blocks. 
+
+Function blocks are not perfect but they are the way they are for specific reasons.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+@ndzied1: I really appreciate your opinion and suggestions, but the facts are as they are. I am writing a function block (or to be precise a number of function blocks). That is my current task . It is only part of a project. Designing the software project is not my task, neither is my task, nor in my power to change the "architecture" of the software project. The software is in operational state,in other words it is deployed on site. I am doing some upgrading and optimizations. All I wanted to know is how to pass data to a variable inside a function block's instance; without changing function block interfaces, or touching the main program. This is all I am allowed to do on this occasion.
+
+All the interfaces of the function blocks in this project (input, output input_output variables), global variables and some other things are fixed, predetermined and already in place. The "insides" of the function blocks I am working on can be changed freely as desired (variables, logic, calls etc).
+
+This is how the project was planned, constructed and deployed. This way function blocks can be upgraded, regardless of the algorithm (or even programming language) used to solve a problem. Upgrading/fixing/improving logic requires only changing the "insides" of the function blocks and recompiling the project. Everything else (function block names, instance names, the main program) remain the same.
+When en improved function block is written by me or anyone else it can easily be deployed. This methodology has been used for a long while and it has been proved extremely cost and time effective (service time), so it's not going to be changed whether I like it or not.
+
+The main program is basically a sequence of function blocks being called and signal interconnections between the function blocks. Not much logic resides in the main program.
+
+Since I am writing a number of function blocks, I can optimize the process by passing some additional data from one function block to another, but this goes way beyond what can be passed by the already defined (and not to be changed) function block interfaces.
+
+Here the already mentioned two function blocks came into play.
+The definitins are not complete, but enough to be understandable (I can't divulge more)
+
+
+Quote:FUNCTION_BLOCK MasterBlockVAR_INPUT      FIXED INPUT VARIABLESEND_VARVAR_OUTPUT      FIXED OUTPUT VARIABLESEND_VARVAR_IN_OUT     FIXED IN OUT VARIABLESEND_VARVAR (*This is changeable*)      Instance_ExperimentalBlock:ExperimentalBlock;END_VAR...Instance_ExperimentalBlock.test1:=2;ExperimentalBlock( (*parameters*) )...ExperimentalBlock( (*parameters*) )...ExperimentalBlock( (*parameters*) )...Quote:FUNCTION_BLOCK ExperimentalBlockVAR_INPUT      FIXED INPUT VARIABLESEND_VARVAR_OUTPUT      FIXED OUTPUT VARIABLESEND_VARVAR_IN_OUT     FIXED IN OUT VARIABLESEND_VARVAR(*This is changeable*)   test1:INT;   test2:INT;VAR_END...(*logic*)...
+
+
+Both function blocks "ExperimentalBlock" and "MasterBlock" must adhere to the already defined interface (remember that these function blocks already exist, I'm upgrading them). "ExperimentalBlock" gets called multiple times from within "MasterBlock" with the same instance. "MasterBlock" has sometimes data (intermediate calculation results) for "ExperimentalBlock" that makes it perform it's algorithm much faster, but it resides in various variables, depending on process situation. "ExperimentalBlock" can work without this data but in a suboptimal fashion. "ExperimentalBlock" does not know where to get this data (from its parent function block). Preparing this data in "MasterBlock" on a fixed place in a fixed structure for it to be available to be read is not viable (time/memory constraints and the data itself changes in amount). "MasterBlock"   does however know where it has its relevant temporary data at a certain moment and where it should be written inside the "ExperimentalBlock" to make it work faster. "MasterBlock" must write to "ExperimentalBlock", not the other way around ("ExperimentalBlock" cannot read from "MasterBlock"). 
+
+Not that it makes any difference (since the architecture of the project is already defined), but I do think using function blocks the way they are used in this project is "the whole idea or purpose for a function block"  The project is divided into logically self-contained assignments/problems. Each assignment/problem is covered by one function block (which might be even further subdivided into other function blocks). And I am doing just what you think should be done with function blocks, I am writing a "small" manageable and reusable chunk; not the whole software package. 
+
+
+Anyway,
+Andreaz's tip to use pointers works. The whole deal might not be the most "elegant" solution, but it still works.
+
+Thank you all for your inputs. If any other ideas arise, please let me know. I'm still working on this and won't be finished soon, so any future improvements are more than welcome.
+
+The only other thing I can think of is coming up with a code system where you send data into one available VAR_IN and then a code into another VAR_IN to let the internal code which internal to update. 
+
+This would depend on having at least 2 VAR_IN's available.
+
+_________________nOrM=====nOrM = Norman Dziedzic Jr.
+

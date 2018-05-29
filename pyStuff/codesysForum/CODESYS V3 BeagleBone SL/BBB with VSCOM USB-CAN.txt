@@ -1,0 +1,4 @@
+Hello, support!Is it possible to use USB-CAN converter with BeagleBone Black?Producer of this device is VSCOM http://www.vscom.de/usb-to-can.htmStandard Phillips controller SJA1000 and transceiver TJ1000 are used for data transmit. But from OS side it emulate serial port.Thank you.
+
+Hi,if you manage to run a socket can implementation on this maybe yes.But would recommend to use for CAN the local onboard CAN. Only the bus Transceiver need to be on an additional cape for example this here(maybe many others are possible to use:http://www.waveshare.com/wiki/RS485_CAN_CAPEBREdwin
+

@@ -1,0 +1,6 @@
+Hi,i was browsing the forum to find a way to get the cursor position for implementing a "live" scrollbar.So i could drag up and down the scrollbar with the cursor.I found some informations related to SysLibTargetVisu.lib in CodeSys v2.3, there was a function GetLastMouseDownEvent that give you the position of the cursor.Link to pdf : http://forum.codesys.com/download/file.php?id=100 (See page 22)Is this still available in CodeSys v3 or maybe something similar ?Regards,Dave
+
+Hi Dave,would recommend to check the following example in the CODESYS store:http://store.codesys.com/visu-event-handler.htmlRegards,Edwin
+
+Thank you very much Edwin!That's exactly what i was looking forRegards,Dave
+

@@ -1,0 +1,2 @@
+Hello All,I am using Ifm controller CR1055 with IO CR2016. I created New from template but I got 13 errors. Could you help me how to solve these issues?Thanks a head.Regards, Siavash
+

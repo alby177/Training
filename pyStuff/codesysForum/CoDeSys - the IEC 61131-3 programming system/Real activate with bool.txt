@@ -1,0 +1,6 @@
+Hi I have a real value that i want to write to the visulization if i active a bool . Any sugestions on how to do this
+
+it is called invisible in the configure element list.just leave it writing to your vis but make it invisible. fast and easy.you can not activate a real, but you can put another number in with select.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,8 @@
+Hi,this should be useful for many user:viewtopic.php?f=23&t=6247&p=12711#p12711stout from comand Shell to IEC code.BREdwin
+
+Hallo EdwinLeider funktioniert das Beispiel auf dem PI2 nicht.Es tut sich nichts in der Visu.Gruß Herbert[SysProcess]Command=AllowAllCommand.0=shutdown
+
+Hallo,das muss gehen.mach mal nur:Command=AllowAllnicht den shutdown extra... wenn du Allowall rein ins config machst, sind ja alle Kommandos freigegeben.GrüßeEdwin
+
+Danke. Funktioniert jetztSent from my iPhone using Tapatalk
+

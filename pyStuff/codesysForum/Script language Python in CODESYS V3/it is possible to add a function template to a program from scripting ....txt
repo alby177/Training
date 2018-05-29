@@ -1,0 +1,2 @@
+We want to add function template to a program, can we call function template from Script and pass parameter to the configuration ?
+

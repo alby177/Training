@@ -1,0 +1,14 @@
+Hi,How can I create a submodule and add it in a plugged in Profinet slave?Steffen_R.
+
+Hi Steffen_R.Steffen_R. wrote:How can I create a submodule and add it in a plugged in Profinet slave?I'm not sure what you mean with "create a submodule".If you want to add a module below your Profinet slave you just have to use the method add(...) but also specify the module ID parameter.There are some devices which have so called slots. For slots you use the method plug(...) of the slot object instead of add(...) of the parent device object.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi Martin,I've got it so far. Thank you for that. But the problem I mentioned i my other thread still exists. After adding everything i go online und run the application. But there are still connection(?) problems....Attachment:fehler3.PNGThen i have to stop and logout, open the et200s treeobject, go online again and it runs.Attachment:geht.PNGI recognized that before i do that, the hostparameter id=1025 Name=slaveoptions is missing...I tried it with disable and enable the device but nothing works... Is there something i can do??Thank youSteffen
+
+Hi Steffen.Steffen_R. wrote:But the problem I mentioned i my other thread still exists. After adding everything i go online und run the application. But there are still connection(?) problems....That has nothing to do with the topic so please don't mix them.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+I'm sorry
+

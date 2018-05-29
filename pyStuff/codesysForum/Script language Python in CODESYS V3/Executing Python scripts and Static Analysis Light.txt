@@ -1,0 +1,6 @@
+Hi,I'm wondering if anyone knows if it's possible to turn on the Static Analysis Light options (available in the IDE when editing Project Settings) via Python.  I'd like to be able to execute a script that changes the Static Analysis Light options for a project.  Any time and information or thoughts anyone has would be great!  Thanks very much!
+
+Hi, Branrigg,branrigg wrote:I'm wondering if anyone knows if it's possible to turn on the Static Analysis Light options (available in the IDE when editing Project Settings) via Python. I'd like to be able to execute a script that changes the Static Analysis Light options for a project.  Any time and information or thoughts anyone has would be great!Right now, this is not yet possible, but this improvement is already listed in our Jira tracker SAN-22, so it will be implemented eventually.HTH,Markus
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+

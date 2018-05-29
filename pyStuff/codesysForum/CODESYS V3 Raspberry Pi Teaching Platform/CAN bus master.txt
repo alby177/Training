@@ -1,0 +1,2 @@
+Hi all,I have working CAN on raspberry, with protocol CANopen - that was easy.Now, I would like to implement different protocol, which is not supported by CoDeSys - and for this I would need to be able to send raw CAN data and recieve them.Any idea how to do this? I cannot find any library function for direct CAN access...Thanks!RegardsJan.Edit: Case solved, found library CAN API and example on CoDeSys website. Sorry for stupid question  
+

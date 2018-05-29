@@ -1,0 +1,2 @@
+Hi, i wanted to ask if there is a Codesys Runtime i can install on a virtualized Linux guest? Or is there some decent linux based hardware supported? Realy dont want to play around whit windows updates..cheerzGesendet von meinem Lenovo TAB 2 A10-70F mit Tapatalk
+

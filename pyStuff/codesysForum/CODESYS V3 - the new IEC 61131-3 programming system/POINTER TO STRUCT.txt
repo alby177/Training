@@ -1,0 +1,16 @@
+Do someone have some sample to using POINTER TO STRUCT operand?ex: I neeed to map a STRUCT of 32 BOOL  to a DWORD (%MD)Thanks
+
+Here you go   Code:VAR   dwValue      : DWORD;   pStruct      : POINTER TO DWORD;   stMyStruct   : Test; // Struct with 32 Boolean variablesEND_VARCode:pStruct   := ADR(stMyStruct);dwValue := pStruct^;
+
+mmm..it doesn't work properly..the code map like this bit->bytestMyStruct  -->  dwValue      bit0=true   -->     Byte 0 =1bit1=true   -->     Byte 1 =1bit2=true   -->     Byte 2 =1bit3=true   -->     Byte 3 =1bit4=true   -->     not mappedbit5=true   -->     not mapped...........
+
+BOOL is byte packed in a structure so this will not work
+
+_________________The Original SoMachine Ninja
+
+so there's no way to map 32-BOOL-structure to DWORD
+
+sort of...if you can modify the original structure and want to recreate a structure each time with different fixed memory addresses.  See the following post http://forum.codesys.com/viewtopic.php?f=1&t=4783Also if you need help with address use the attach excel sheet.Attachment:SoM Modbus Table V3.xlsAlso the following below will work if you are using CoDeSys v3 and do not want to use fixed addressing.  In CoDesys V3 they added BIT Type and Unions but which not part of the original IEC61131 spec.TYPE DUT_16bit :STRUCT	BIT00 :BIT; //Boolean Type	BIT01 :BIT; //Boolean Type	BIT02 :BIT; //Boolean Type;	BIT03 :BIT; //Boolean Type	BIT04 :BIT; //Boolean Type	BIT05 :BIT; //Boolean Type	BIT06 :BIT; //Boolean Type	BIT07 :BIT; //Boolean Type	BIT08 :BIT; //Boolean Type	BIT09 :BIT; //Boolean Type	BIT10 :BIT; //Boolean Type	BIT11 :BIT; //Boolean Type	BIT12 :BIT; //Boolean Type	BIT13 :BIT; //Boolean Type	BIT14 :BIT; //Boolean Type	BIT15 :BIT; //Boolean TypeEND_STRUCTEND_TYPETYPE DUT_REG16 :UNION	Reg_Word: WORD;	Reg_BITS: DUT_16bit;END_UNIONEND_TYPE
+
+_________________The Original SoMachine Ninja
+

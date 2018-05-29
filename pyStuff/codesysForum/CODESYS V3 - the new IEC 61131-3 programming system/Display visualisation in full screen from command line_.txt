@@ -1,0 +1,10 @@
+Hi,I wonder if it's possible to open a project in Codesys 3.5, logon to the PLC, and display a particular visualisation in full screen, without a menu bar or toolbars - all this from command line, as I want to do it automatically when a PC starts.Thanks
+
+You can use the HMI for this.
+
+"C:\Program Files\Internet Explorer\IEXPLORE.EXE"  -k http://192.168.2.201/plc/webvisu.htmthe letter -k makes it full display, look it up for your explorer.you must have java installed.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi,yes this opens IE in Fullscreen,one remark - Java is not needed in CODESYS V3 webvisu - this is html5 basedcuE.Schwellinger
+

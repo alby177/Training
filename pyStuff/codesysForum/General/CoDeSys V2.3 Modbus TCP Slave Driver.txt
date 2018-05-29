@@ -1,0 +1,6 @@
+We have an application where end user wants to access data from CoDeSys V2.3 using ModBus TCP Client.  They do not prefer OPC.Is there any ModBus TCP Slave driver which can be used with CoDeSys V2.3 ?Thanking you,Niraj Shah
+
+What PLC are you using?
+
+SEL1102 Linux
+

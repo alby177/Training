@@ -1,0 +1,19 @@
+Hi there, 
+I need to start excel from a button in the visualisation or run a batch file from another button.  I have looked at using the program feature of a button but it doesnt seem to run a batch file when pressed.
+
+I have also tried the function _ and not had luck with this can any one help with this command.
+
+Thanks, Russell
+
+Hi,
+
+I just tried it myself. In fact it is quite simple:
+
+Insert e.g. a rectangular box in the visualization, double click on it, choose the category "Input", activate "Execute program" and copy your link into the text box.
+
+In fact it seems that Excel needs to have the link in quotation marks.
+
+Please find an example attached.
+
+_________________Roland WagnerModerator
+

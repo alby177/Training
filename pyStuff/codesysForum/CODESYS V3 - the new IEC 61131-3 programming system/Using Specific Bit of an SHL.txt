@@ -1,0 +1,10 @@
+Hi Guys,Could anyone please let me know how to do this? I have double word variable called dwHighSensor that I use it with SHL. Through my program I'm using it by calling it dwHighSensor.x (let say x is 10, and I'm calling it multiple times through my program). I created int variable called xHighBit that I would like to use instead of x. So when I need to look at bit 5 instead of bit 10 in dwHighSensor I would like to change xHighBit from 10 to 5, instead of going through program and changing all instances of dwHighSensor.10 to dwHighSensor.5. Is there a way to do this?Thank You
+
+I'd make a simple function that returns the value.  Something like the following:Code:function XDWord : BoolVAR_INPUT   IN   : DWORD;   XN   : INT;END_VARCASE [b][i]XN[/i][/b] OF      // *** Edit - Changed IN to XN   0: XDWord := IN.0   1: XDWord := IN.1   2: XDWord := IN.2   3: XDWord := IN.3      :   31: XDWord := IN.31END_CASE
+
+_________________Rick
+
+One of the advantages of Using CoDeSys is you don't have to use bit level logic as often as C coders do for small embedded devices. Please always create a Function block (object) that decodes bit logic "things" and provides outputs that "speak".  For example, when working with motor controls, status words can tell you when the drive is faulted. But which bit that is is brand and model specific. By having a FB decode the status word and provide BOOL outputs (e.g. Faulted), only that FB needs a small change to adapt to different drives. A nice side affect is the downstream code is easier to understand (seeing IF StatusWord.Faulted... is much clearer than IF StatusWord.5...Hard coding bit level access of a global variable breaks so many rules at our company, continued use of this technique would result in job loss!
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+

@@ -1,0 +1,8 @@
+I have managed to run my machine in X, Y & Z direction by using the MC_Moveabsolute and MC_Moverealive function blocks. 
+
+But for every motion i have to use indivisual function block for them. Is it possible that i define my all data ( X, Y & Z cordinate ) in array form and call that array in my Function block to do the motion?. If yes, can you please tell me how it can be possible? 
+
+secondly, right now i am moving my spining axis by using MC_MoveVelocity function block. But i have no control on the angular movement. Is that any Module available so that i can control the rotation angle??
+
+see the answer in the section motion
+

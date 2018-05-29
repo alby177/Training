@@ -1,0 +1,14 @@
+Hello,Is it possible to prompt messages in the Visualization? If yes, how can I do that? Or which library can I use?What  I want to do is to send a message in the Visualization in case the "start button" haven't pressed.Something like...IF xStart THEN   xStartProcess := TRUE;ELSE  XStartPorcess := FALSE;   //PROMPT MESSAGE IN VISUALIZATION ('Please press start button to start')END_IF
+
+Hello,I'm doing this by button element field which is hidden / shown as specific value says.Look for "State variables" then "invisible" and "Deactivate input". Default is TRUE = HIDDEN / DEACTIVATED, so if do you want FALSE for HIDDEN you have to put "!" after variable, like "XStartPorcess!"
+
+Hello,I tried what you said but it didnt work. I have done a screenshot in the places where you said I should put "!".
+
+Hello,its OK, if g_Stop is FALSE you have to see your element visible and active for touch (click) event.g_Stop must be BOOLEAN type.Have you any error message in log?
+
+Hello,Sorry, because I answered you too late.  It is true that the initial status TRUE = HIDDEN but with  "!" has no effect. Still TRUE := HIDDEN.
+
+It's long time when I used it, I dot'n remember exact type. And I have not CODESYS on this computer right now.Maybe it required ( ).
+
+hi please used NOT before your variable .its works
+

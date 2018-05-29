@@ -1,0 +1,6 @@
+I have set up a CR1082 (ifm PDM LCD display) and start to upload a simple visualization program on it.The ping command works ok.The simulation mode is fineBut when I try to login on the PDM, shows me "Communication Error (#0) Logout Performed"Can some body advise me how to solve this
+
+try to set your computer to address close to this one 192.168.82.245the address in the software communications should be  192.168.82.247
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

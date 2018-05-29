@@ -1,0 +1,8 @@
+Hi every body,I looking for a solution to link an RFID tag with an user account on VisuUserMgmt library  It is possible?
+
+Hi,you mean, using RFID to Switch the user which is logged in?BREdwin
+
+Yes Edwin.
+
+Hi,viewtopic.php?f=23&t=6247&p=20740#p20740you need add the RFID part..BREdwin
+

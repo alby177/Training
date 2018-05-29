@@ -1,0 +1,8 @@
+At this moment i'm logging alarms in a file on the plcbut I want to limit the maximum file sizeto avoid the problem that the plc runs out of disk spaceSo when the file reaches the maximum file size and I want to apend a new text line to the file I want alsoremove the oldest (first text line in the file ), first in first out principleIs this posible ??And can sombody give me a hint kind regardsMerlijn
+
+two ways to do this.make a file and when reaching max size start another file, when this reaches the end start filling file 1 again.another way is by removing last line while copying and adding first line.this means always diskactivity.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+hello ShooterI solved the problemfirst i scan the directory and save from all file's in that directory the name, creation date and the size in a arrayand find out witch file is the newest and witch file is the oldest and how big the directory isthen i check or the newest file is bigger then the maximum size setif that is the case i create a new file with a name based on the system time Example ( 2013-08-08-09-47-25.log )after that i check or the directory has reached the maximum size set ithat is the caseI will delete the oldest filesto do this i use the library's syslibfile.lib and the library syslibdir.libbut thanks for your support
+

@@ -1,0 +1,4 @@
+I have a text list where all the texts are under "default".Now I want to add another language and to be able to switch between them.When I create a bottun in the visualization and choose "change the language" I have only the option of the new language I added but I don't have the option to switch back to default.How can I cahnge the "default" to be a specific language?
+
+Copy the default to your other language.
+

@@ -1,0 +1,27 @@
+Hello everybody,
+
+I want to do that.
+
+I have a program in CoDeSys and I want to save some variable in a database (access). 
+It's possible to do that?
+And how?
+
+Thank you for your response.
+
+If you are looking at getting process data (i.e. from the running system) I think the way to do this would be with some sort of OPC client that could get the information from the OPC Server
+
+Something like this should work:
+http://www.matrikonopc.com/opc-drivers/1695/index.aspx
+although I've never used it.
+
+You could write your own Visual Basic program to do this which I know can be done because one of my engineers has done it.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+Besides OPC, CoDeSys still has DDE. I had positive experience supplying MS Excel from the Gateway <- RS232 <- PLC. If yours data is changing not too fast it could approach yours requirement. 
+Otherwise, use OPC and if you still need more fast and flexible solution then draw attention on PLC Handler from 3S.
+
+__________________IP_
+

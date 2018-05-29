@@ -1,0 +1,38 @@
+Hi,
+
+I would appreciate to discuss some CoDeSys OPC server detailed questions/problems either inside or outside this forum.
+
+Earlier posts to this forum did not result in any answers (not from 3S and not from anyone else)
+
+Is there anyone using the CodeSys OPC server in combination with VB, C, C#, C++, Delphi client programs? 
+
+If so I would like to get in contact to discuss the questions/problems I have.
+
+Regards,
+
+Arie N. Verheul - The Netherlands
+
+Arie N. Verheul wrote:Is there anyone using the CodeSys OPC server in combination with VB, C, C#, C++, Delphi client programs? 
+
+We have done a couple jobs using OPC server with VB.  I did not personally program the VB, another engineer did it.  
+
+It always seemed like a little bit of a pain to get going but worked after that.
+
+What are your quesions?
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+Norman,
+
+Basically I think I'm struggling with COM security issues.
+
+My OPC client is running as an NT Win32 service. This seems to require some COM security settings to take care of the fact that different threads may communicate with the OPC server.
+
+I'm told that I've to call CoInitializeSecurity, but I can't get it to work. If I don't call this COM function, the code hangs inside the function to add groups to the OPC server (which is basically the function doing something with the OPC server after connecting).
+
+Any experience in this area?
+
+Arie N. Verheul
+

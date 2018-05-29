@@ -1,0 +1,6 @@
+HelloWhere I can find to download PLC Handler CodeSys Library. I guess I need the library for communication driver for Indusoft web Studio. I would like to try comunicate over Cosys driver I guess it is faster than OPC and more stable. I use Eaton X-soft Codesys.Thanks Saso
+
+I foud that is not free of charge, is there any demo ?
+
+Yeh, euro8000 for essentially doing what OPC does seems a bit steep.Why would they do that???
+

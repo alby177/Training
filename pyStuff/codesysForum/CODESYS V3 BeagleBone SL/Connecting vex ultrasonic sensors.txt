@@ -1,0 +1,2 @@
+Hello guys. I am a new to the codesys and beaglebone black. So I am having some problems with it. Is there a way to connect the vex ultrasonic sensors to beaglebone black and use it in codesys? I would appreciate amy help.
+

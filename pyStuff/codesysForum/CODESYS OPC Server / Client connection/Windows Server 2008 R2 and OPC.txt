@@ -1,0 +1,2 @@
+Is Codesys OPC V3 compatible with Windows Server 2008 64-bit?I tried to install the version provided by Festo but got an error message.1628: Failed to complete installation.And how about OPC V2.3?
+

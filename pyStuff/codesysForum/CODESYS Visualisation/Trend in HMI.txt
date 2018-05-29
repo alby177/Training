@@ -1,0 +1,7 @@
+I have two troubles with trends.
+First: Data value in marker varible is not the same as position of marker line (data value older then graph, difference depends on the scale choosen).
+Second: I choose history mode and save files on PC. The problem is trend starts every time online from th begining and old data are not erased (i choose delete old data after 1 hour). What does it mean? Delete old files or delete old data in the file?
+I work with CoDeSys 2.3.6.0 and OWEN-150  PLC.
+Owen supply answers me, that these problems are CoDeSys couse. 
+Excuse my english.
+

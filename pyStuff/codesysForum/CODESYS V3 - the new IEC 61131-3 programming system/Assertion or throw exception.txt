@@ -1,0 +1,6 @@
+Hi guys,I'm looking for some kind of assertion or exception mechanism. I know __try, __catch, __finally. But i don't know how "throw" an exception when something happened. I have seen in help definition of ExceptionCode type, which contains:Code:_ _USER _EXCEPTION _BASE := 16#00010000So maybe it is possible somehow to throw an exception.Do we have some kind of assertion mechanism in order to stop whole application if some requirements are not fulfilled?Now I have dummy function to do that:Code:FUNCTION assert : BOOLVAR_INPUT   stopProgram : BOOL;END_VARVAR   tmp : INT := 0;END_VARIF stopProgram THEN   tmp := 1 / tmp;END_IF
+
+Same question here! Any new findings?
+
+You can do this:PROGRAM PLC_PRGVAR	result : INT;	number5 : INT := 5;END_VARresult := 5 / (number5-number5);It will then "automatically" raise an exception . I had to define a variable because codesys is so unbelievably smart it can detect a division by zero if provided with int literals -.-.Ofcourse there was nothing useful in the helpfile about throwing an exception...
+

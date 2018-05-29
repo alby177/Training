@@ -1,0 +1,2 @@
+Hello,check this:http://www.youtube.com/watch?v=oDha-2y3pH4control up to 16 rc servos with CODESYS SoftMotion / PLCopen / CNC with Raspberry Pi.BR
+

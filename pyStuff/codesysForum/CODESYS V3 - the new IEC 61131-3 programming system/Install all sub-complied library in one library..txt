@@ -1,0 +1,14 @@
+Hi, I've got a problem, I've generate a complied library as "Lib_A.complied-library", which contains "Lib_B.complied-library" and "Lib_C.complied-library" in the library manager in POU.After I distribute "Lib_A.complied-library" to colleague and he has installed it on his laptop, he found informaton in library manager "Warining" sign, which means "Lib_B.complied-library" and "Lib_C.complied-library" are not found in his machine. Then he has to install both separately.Which means if I distribute "Lib_A.complied-library" to customer, I have to distribute "Lib_B.complied-library" and "Lib_C.complied-library" as well, all these three need to be installed separately.Question:Is it possible to generate a  "Lib_A.complied-library" which automatically contains used sub library after installtion in repository (in this case "Lib_B.complied-library" and "Lib_C.complied-library")?thanks a lot
+
+When you created library "A", did you add a library object and include library "B" and library "C" as libraries needed?  I am not sure if that results in library "A" automatically including libraries "B" and "C", but you should do it anyway because "A" requires "B" and "C"...
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+hi scott_cunningham,thank you for your reply, I've added a screenshot for the librarymanager in codesys, both Lib_B and Lib_C are contained inside of Lib_A.
+
+You need to send each library.  Dependent libraries are not included.  Or, you could make one combined library.If you are giving somebody your project which uses these special libraries, you should save your project as a project archive.  The project archive will include your libraries.  So when you send someone your project archive, all libraries and drivers are included.  This is very important for when you need to edit a project that is 3 years old (current CoDeSys install libraries will be too new for a 3 year old project).
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Alternatively you can create a package.Like almost all store products are provided as packages.These can contain you libraries, but optionally also example projects or help files (and any other files you would like to add).Just download the package designer from the store: http://store.codesys.com/package-designer.htmlAfter installation in CODESYS (Tools - package manager), you can start it through Tools - Package Designer.It will require some testing to create a correct package, but it is a nice way to share your libraries and add any additional (required) libraries.What can help, is to open another package (e.g. a library from the store), but make sure you use your own GUID and get one from an online guid generator.
+

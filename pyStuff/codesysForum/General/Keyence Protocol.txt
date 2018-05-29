@@ -1,0 +1,2 @@
+Hello all,Anyone written a communications protocol for a Keyence KV-1000?  If so I'd appreciate hearing from you.Thanks!
+

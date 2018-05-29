@@ -1,0 +1,17 @@
+I am having trouble with the DDE server.  I am trying both of the following in Excel:
+
+=GATEWAYDDESERVER|'project'.pro!'variable'
+and
+=CODESYS|'project'.pro!'variable'
+
+I get the following errors in Excel:
+"Connot run 'GATEWAYD.EXE'.  The program or one of its componenets is damaged or missing."
+and
+"Connot run 'CODESYS.EXE'.  The program or one of its componenets is damaged or missing."
+
+I am using CoDeSys version 2.3.5.8.
+
+Any help would be greatly appreciated.
+
+Problem solved.  The settings in the Gateway DDE Server software had to be switched to Motorolla byteorder (hardware specific)
+

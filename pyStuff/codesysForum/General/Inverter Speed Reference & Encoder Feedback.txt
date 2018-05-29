@@ -1,0 +1,2 @@
+I'm trying to get a speed reference & encoder feed back from https://www.clrwtr.com/Products/ESV222N04TXC ? Do you know of a CanOpen/SERCOS interface or CoDeSys controller that will send out a +/-10 speed reference and encoder feedback?
+

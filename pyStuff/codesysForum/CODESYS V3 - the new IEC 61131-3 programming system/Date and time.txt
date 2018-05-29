@@ -1,0 +1,8 @@
+I used the "GetDateAndTime" function to read the current date and time but I get the time as one hour earlier than the real time.Where does the PLC read the time from? How can I set it to read the real local time?
+
+Hi Raz,what does the example dateandtime from CODESYS Store report?BREdwin
+
+I used this example, I just don't understand how can I set the time zone to my local time.It always give my the time as CET. I need it to be CET+1
+
+hello Raz,which plc are you using?Guess this is a Setting in the OS.BREdwin
+

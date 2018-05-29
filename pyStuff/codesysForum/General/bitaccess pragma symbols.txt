@@ -1,0 +1,2 @@
+Is there a way to get bitaccess pragmas to show up in the symbol files?
+

@@ -1,0 +1,2 @@
+Hi everyone ! I'm trying to link a Beckhoff EL7047 to softmotion but I don't know ho to do that. I alredy added the XML Files, but there is some variables to map and link and I don't know hot to do that.Thank you all.DPzINSANITY
+

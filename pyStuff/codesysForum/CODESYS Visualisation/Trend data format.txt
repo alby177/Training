@@ -1,0 +1,6 @@
+Hi,Is that a way to change the file format of trend.trd to this form format? "26-10-2011;00:42:52;PLC_PRG.DATA1;2;PLC_PRG.DATA2;4.000000;PLC_PRG.DATA3;8.000000;"rather than (Original file format)"1319589773;2573151;26-10-2011;00:42:53;PLC_PRG.DATA1;2;PLC_PRG.DATA2;4.000000;PLC_PRG.DATA3;8.000000;"We want to remove the first two column data "1319589773;2573151".Regards,hcchin
+
+why change just use it inside any program, and discard the first two data.in excel just use two columns for this.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

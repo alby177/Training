@@ -1,0 +1,4 @@
+Hello, I am stuck in my project where I need to read an actual line of interpolated G-Code. I used the function block SM_GCodeViever. I am afraid that I am competly lost in declaration of FB variables. Exacly variable: Gcode: ARRAY [0..c_uiLines] OF STRING; (please see attached part of my project)Is there available some example of using SM_GCodeViever?Peter
+
+Hi,guess there is simply missing the namespace... in the declarationasGCode : ARRAY[0..viewer.c_uiLines] OF STRING ;BREdwin
+

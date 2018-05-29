@@ -1,0 +1,10 @@
+Hello everyone, I have to put in communication two RPI with Codesys.The two have to exchange some variables between them.What is the simplest and cheapest solution?Thankyou in advance   Serghei
+
+hi,cheapest... -> none of them have extra costs every licenses included!The options are: Networkvariables (UDP) ProfinetController - Profinet Device Modbus TCP / Master - Slave Ethernet/IP Scanner and Adpater Netbase Services (see store example plc chat)BREdwin
+
+Hi Edwin,Thankyou for the Answer   Ok i understand but if i want use ModBus TCP i need one Master License like this:[url]http://store.codesys.com/codesys-modbus-master-tcp.html[/url]And this license is included or no?!?!For me i understand is not included, then i need one for master and slave is included.Serghei
+
+Hi,no, not needed if you read this FirstSteps pdf:"c:\Users\<YourWindowsUserName>\CODESYS Control for Raspberry PI\3.5.10.0\Documentation\RaspberryPI_CodesysV3_FirstSteps_EN.pdf" here you should find this section:This product supports the following functionalities:-CODESYS EtherCAT Master-CODESYS Profinet Master / Slave since SP10-CODESYS Modbus TCP Master / Slave-CODESYS Modbus RTU Master / Slave (serial interface must be supported by and installed in the OS)-CODESYS WebVisu-CODESYS SoftMotion CNC-CODESYS OPC/UA Server-CANopen via EL6751 Gateway-CODESYS EtherNet/IP Scanner-CODESYS EtherNet/IP AdapterBREdwin
+
+Very Cool    Thank You  
+

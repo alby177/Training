@@ -1,0 +1,6 @@
+I installed the oscat basic package from the store, but it is not in the library manager I do not see any new libraries. Should I do something else?
+
+Kristof wrote:I installed the oscat basic package from the store, but it is not in the library manager I do not see any new libraries. Should I do something else?In Library Manager use search with key "BASIC".
+
+Thank you.
+

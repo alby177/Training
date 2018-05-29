@@ -1,0 +1,36 @@
+Hello CodeSys Forum,First I must say Thank You for the CodeSys runtime for RaspberryPi! It is amazing and is the perfect mix of my personal hobby and work. I have spent some time converting the python code to control the Adafruit LCD Plate (http://www.adafruit.com/products/1110). I have not finished testing all of the functionality yet and I need to "clean up" the library a bit but when I am finished I will post it on here.For now, attached is a picture of it running!
+
+Hi,this would be great to share it here in the forum.Many thanks.BR Edwin
+
+The demo project scrolls the date and time across the screen. Make sure to install the devdesc.xml and library file. Let me know if you have any problems.
+
+Happy Pi Day Everyone!
+
+Hi jjsmith88,Good job! Thanks!As I see it's a compiled-library what's not possible to re-open. Can you share also the *.library with me? I could learn a lot if I see how to progam it.BR, Francesco
+
+Hello jjsmith88,Is it possible that you update the LCDPlate library with the new 3.5 compiler and share it again? Thanks,
+
+Hello All,Sorry for taking my sweet time in getting back to you but I have been super busy at work. I have updated the project with the 1.1.0.0 version of CodeSys control for Raspberry Pi and updated the other libraries to CodeSys 3.5 SP5. Also, since you have all been asking nicely I will release the source code of the library. There is really nothing special to it because I tried to mirror it to the python library supplied by Adafruit.Let me know if I forgot something!
+
+thanks so much!we appreciate it!We have published it now in this section here:viewtopic.php?f=23&t=5872&p=10867#p108673SModerator
+
+Thanks for sharing it again!   
+
+Hi,first of all thank you for publishing this libary.  Unfortunately I'm not able to run your test project on my System.I use Codesis V3.5 Sp5 Patch 2 and Raspberry Control 2.0.1.0. When i try to open the project Codesys tells me that a lot of libaries (41) can't be loaded e.g. IoStandard, SysTime, CAA File. Does it work under Codesis V3.5 Sp5 Patch 2 and Raspberry Control 2.0.1.0? Do I have to install something else?BRMario
+
+Hi,please open attached projectarchive.BREdwin
+
+it's working  thanks for the fast replyBRMario
+
+Mario,Sorry I missed your post last week and thank you Edwin for getting him a working version! I will try to keep a better eye on this so I can help out.
+
+Hi everyone! Has Anyone used only 16x2 LCD display like this?  http://www.winstar.com.tw/products_deta ... p?ProID=22Have anyone demo code or examples for this type displays?
+
+Ledrunner,I have not tried this out before. Ideally it is similar to the Adafruit LCD library I wrote with one big difference, the Adafruit LCD has a built in I2C module that controls I/Os. The screen you linked does not have such a chip and will require the use of digital I/Os (from the Raspberry Pi) to control the LCD. The toggling of the bits should be similar to what I did in the library but it may be tricky to decode since I am doing all the bit shifting through an IC over I2C. Libraries and example code for controlling these types of LCDs are online and can be recreate using one of those as a template. The is basically what I did for this library ... I used the python code released by Adafruit and coded it into CodeSys.
+
+Hello everyone! I connected my handmade Adafruit PCB via I2C. Thank you very much jjsmith88! https://www.youtube.com/watch?v=GV67IDA4zD4
+
+Hello everyone! I have questions for you jj smith88. Does your library supported Unicode. If not, what can be done?
+
+Hi! Same problem. How to use this library with Unicode symbols? I tried to compile library with Standart64 and WSTRING type, but no result, incorrect displaying
+

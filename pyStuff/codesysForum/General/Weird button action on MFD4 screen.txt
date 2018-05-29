@@ -1,0 +1,15 @@
+Hello,
+
+When I press a button on my MFD4 screen it begins to live its own life. Once pressed you can see the button going down, after releasing it goes up and down and up several times, whilst I am not touching the touch panel. In the PLC program the variable that is changed by pressing the button is not altered, only the state is read. What is going wrong? Have I missed a setting in my target settings? Please help me.
+
+Regards, 
+
+Paul Kok
+
+Hello,
+
+there can be a few possible problems:
+* The input timing in the task configuration is too high or too low
+* The display (can't remember the real name) timing is too fast in the task configuration or the plc program takes too much time
+* or you are displaying another screen over the button and by that loosing foccus on the button then it starts doing weird stuff (happend to me)
+

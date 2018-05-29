@@ -1,0 +1,2 @@
+How can i check if the Modbus channel request done and finish ok or not?
+

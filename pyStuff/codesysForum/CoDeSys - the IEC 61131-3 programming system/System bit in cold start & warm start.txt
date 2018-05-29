@@ -1,0 +1,12 @@
+Using Codesys 2.3 and PLC is wago 750-873 , how do find the system bit cold start and warm start?
+
+see page 216
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi shooter do you mean the user manual for PLC programming with codesys 2.3 ?? Or other manual can you send me the link? Page 216 is that talk about parameter manager?
+
+http://www.wago.com/wagoweb/documentation/750/eng_manu/coupler_controller/m07500873_00000000_0en.pdf
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

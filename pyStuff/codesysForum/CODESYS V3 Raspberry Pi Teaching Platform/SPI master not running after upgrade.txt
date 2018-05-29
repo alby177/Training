@@ -1,0 +1,8 @@
+Dear allSPI master is not working any more after installing the latest raspbian-2017-12-01. It runs perfectly well with previous version (https://downloads.raspberrypi.org/raspb ... 017-09-08/ kernel 4.9.41-v7+).It seems that the SPI kernel 4.9.59-v7+ interface has changed in RPi side creating the need for a change in CODESYS run time. Something to do with clock divider, maybe. I tried setting SPI master parameter _dMaxSpeed to several different values, no effect.I have tested with Piface OI driver, but all hardware using SPI interface would be affected and that is why I would like to 3S personal to take measures.ThanksL.P.Laus
+
+Hi,yes, the workaround is to reduce the SPI maxspeed inthe CODESYS configuration.BREdwin
+
+HiI have tried it, but it did not work. Even reloading the application. Any additional hint?
+
+Hi,I use:- PI3 & PIFACE- Version 3.5.12.10 CODESYS and Raspberry PI runtime- Rasbian Stretch from 11-29-2017- enable the SPI under raspi-config- specify the maxspeed to 100000 in the CODESYS Project (PIFace IOdriver exampe)this works for me! BREdwin
+

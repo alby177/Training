@@ -1,0 +1,8 @@
+Ive looked at the SDK help file, and Im trying to figure out how to make an instance of "_3S.CoDeSys.ProjectArchive.IProjectArchiveService"so I can Archive the currently loaded project.Can some one help or send me an example.Ive tried the following, which didnt work (C#)var archiveService = ComponentManager.Singleton.InstanceFactory.GetSystemInstance(typeof(_3S.CoDeSys.ProjectArchive.IProjectArchiveService).FullName);
+
+Hi BobbieB.There is no system instance for IProjectArchiveService in CODESYS. You have to create your own instance of the "service" with CreateInstance(). For CODESYS V3.5 SP5 or older:Code:IProjectArchiveService pas = (IProjectArchiveService)ComponentManager.Singleton.CreateInstance(new Guid("{F23B52AD-F5EC-4785-BC13-F1FB7F998DB5}"));For CODESYS V3.5 SP6 or newer:Code:IProjectArchiveService pas = ComponentManager.Singleton.CreateInstance<IProjectArchiveService>(new Guid("{F23B52AD-F5EC-4785-BC13-F1FB7F998DB5}"));BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Thanks for your help. Ive figure out how to create an archive and it appears to work well.
+

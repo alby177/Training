@@ -1,0 +1,6 @@
+Greetings,Please allow me to start by saying I am new to Codesys having specialized in Siemens S7 for many years. Because of this please forgive me if I ask a "stupid" question I know "pointers" are a touchy subject with some people. However they do have their place. I noticed something that was a bit disturbing when attempting to setup and use a pointer. I setup variables in a "global" variable table. It was something like the following:ABC : WORD;XYZ : ARRAY [1..20] OF WORD;I setup the pointer to begin at "ABC" and transfer values from there to the end of "XYZ". The result I saw was that "ABC" was being filled with "value" but not "XYZ". I then used ADR() to find out what was going on. This revealed that in memory "ABC" was not contiguous in memory with "XYZ".My question is, is there some way (other than declaring a DUT (UDT) or ARRAY) that memory locations in a function or function block can be forced into memory in the order that they are declared?
+
+See attribute {attribute 'subsequent'}.I have not test it.Enviat des del meu Aquaris M5.5 usant Tapatalk
+
+Thank you, I will check that!
+

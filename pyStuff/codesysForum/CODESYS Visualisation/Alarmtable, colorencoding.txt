@@ -1,0 +1,10 @@
+Hi,I've created a table where I display an array with alarms. Is it possible to color-code each row separatly in the table depending on values in the alarmarray? Either font-color or background-color would be fine. //Luetin
+
+yes that is possiblesend me your program and i will look into it. (please as an rarred export file)it is dependent how you organized the table.and you can always use a rectangle having a color.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Please specify how to change the background color of the a given row, based on some condition.Similarly how to change text font color in a given cell of row based on some condition.Thanks,Winy Kakani
+
+inkakawi wrote:Please specify how to change the background color of the a given row, based on some condition.Similarly how to change text font color in a given cell of row based on some condition.Thanks,Winy Kakani
+

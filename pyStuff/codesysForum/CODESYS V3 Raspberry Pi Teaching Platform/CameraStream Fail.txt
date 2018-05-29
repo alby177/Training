@@ -1,0 +1,12 @@
+Hi,I tried using the camerastream example and not get it to work. (Example camera OK)In the attachment I show the process followed.Please help
+
+Solved. With the new installation of Apache, the working directory is / var / www / html, so replacing the progam code '/ var / www' to '/ var / www / html', the file video.htm will be copied  in this directory. It works perfectly both photo and video.Since the installer must "start" the camera.
+
+Hi,follow these instructions here:http://elinux.org/RPi-Cam-Web-Interface ... stallationseems that on installing this on Jessie is slightly different.In the stream example ("c:\Users\<YourWindowsUsername>\CODESYS Control for Raspberry PI\2.2.0.2\Examples\CameraStream.project" ) you need to add the pathIF xStart THEN//copy video.htm to the webserver	SysFileCopy('/var/www/html/video.htm', 'PlcLogic/Application/video.htm', ADR(dwCopySize));BREdwin
+
+HiI just started digesting the codesys  and trying to connect the  USB camera to the jitter on raspberry pi  ,use an example for streaming, but I do not turn on the camera.The question is, can I connect the usb  camera  and watch the video?if yes , how to do it ?
+
+Hello Ernest,this heavily depends on the chip, which is used in the USB cam. Then it depends, if there is a linux driver, and if this driver is included in your kernel. The example which Edwin mentioned uses Video4Linux. So virtually every camera which supports v4l can be used in the Web Visu in the way, which is proposed by the example project.Sorry if I can't help you more with the specific one.BR,IngoGesendet von meinem LG-H870 mit Tapatalk
+
+Thank you very much for the answer, I connected )))
+

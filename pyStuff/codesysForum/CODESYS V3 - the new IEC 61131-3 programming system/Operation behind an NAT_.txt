@@ -1,0 +1,2 @@
+What does it take to get the CoDeSys development environment to run behind an NAT router?  Is it even possible?What ports have to be opened, etc?In my particular case, I would be in a VMware virtual machine, but the more general case might a home office behind an NAT router to the internet.Thanks for any help or advice.Dennis
+

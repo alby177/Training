@@ -1,0 +1,4 @@
+Hi all,I have a problem with the OPC communication. I'm trying to install a communication between two devices, a PLC and an HMI.I create a Datasource Manager and then a Datasource. If I use the option "Application V3" I have a problem with the arrays (see image attached).If I create the same configuration but with Symbolic access I don't have any problem and all values are correct.Is this a known issue or I misconfigured something?Thank you, regards.Massimo.
+
+No one can help me?
+

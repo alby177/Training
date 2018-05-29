@@ -1,0 +1,6 @@
+Hello,Is it possible to access the user LED's on the front of the PFC200 with the CODESYS V3 runtime installed?  I know in e!Cockpit they have function blocks to access them.Thanks,Raymond.
+
+Hi,"c:\Users\<YourWindowsUserName>\CODESYS Control for PFC200 SL\3.5.11.0\Examples\HowToControlUserLEDs.project"this does work for the PFC100 too. You need just Change the plc in the device tree to PFC100.BREdwin
+
+Ah! I didn't even think of looking in the examples folder. Thank you.
+

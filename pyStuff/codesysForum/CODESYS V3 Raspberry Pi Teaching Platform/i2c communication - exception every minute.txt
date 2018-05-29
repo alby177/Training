@@ -1,0 +1,14 @@
+I have written the library and description file for a new device with communication by i2c. It works perfectly except it invoke exceptions almost every minute. Exception log is attached. Always on the same place in memory.How to debug such problems?
+
+Hi,is it possible by right clicking on the exception tn the plc logger to get the source code Position?BREdwin
+
+The source code position is indicated in the last value of the error string at the log. What to do with it?
+
+hi,rightclick to the line in the logger - >CODESYS should open the exact position happens in your source code.BREdwin
+
+It return me the error:The source is not available for "IoConfigBeforeTask_0".
+
+Hi,could you send a projectarchive?BREdwin
+
+When I removed all functionality connected with RS232 communication it started works fine.
+

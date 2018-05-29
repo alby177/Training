@@ -1,0 +1,12 @@
+Hi, when i try to compare two projects I get the message "Die Objekt-GUID xxxxx ist ungültig". Is there a way to find out which Object is it? What does it mean? Thanks
+
+Hi,Can you give some more details?How do you try to compare the projects? Using a script, or using the normal Project compare?
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+
+Hi, right now it was a normal compare project->svn->compare to server project. I made a copy branch abd switch by script and the next step is to compare it to the project in /trunk. Then i get the message when i compare /branch to /trunk.
+
+MaGu wrote:Hi, right now it was a normal compare project->svn->compare to server project. I made a copy branch abd switch by script and the next step is to compare it to the project in /trunk. Then i get the message when i compare /branch to /trunk.Strange.Is there a stacktrace available?(If the script ends with the exception not being caught, the error dialog which appears has a "Details..." button which should show the stack trace.)
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+

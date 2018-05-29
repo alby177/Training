@@ -1,0 +1,8 @@
+Hello everyone and all the best for the new year.I recently got the Raspberry Pi 2B.I made an example like Mr. Kurt Braunin the next video (https://www.youtube.com/watch?v=_MeQBfQObgk).Visualization is working on my PC but does not work on my Android smartphone.I've connected smartphone via Wi-Fi on ADSL router (error occurs reading web visualisation link).Searching the web via smartphone works this way.What's the problem?
+
+Hi,check the plc logger for more InformationBREdwin
+
+banzai35 wrote:Hello everyone and all the best for the new year.I recently got the Raspberry Pi 2B.I made an example like Mr. Kurt Braunin the next video (https://www.youtube.com/watch?v=_MeQBfQObgk).Visualization is working on my PC but does not work on my Android smartphone.I've connected smartphone via Wi-Fi on ADSL router (error occurs reading web visualisation link).Searching the web via smartphone works this way.What's the problem?Turn off Win firewall, run the adsl router setting and insert the adress like http://your IP adress:8080/webvisu.htm into adress string on your Android browser;
+
+Hello everyone. I have the problem. Web visualization does not work in Midori on Raspbian Jessie - I have a message on white screen an error happened will automatically restart . In epiphany browser works great.... Previus project works great in midori on Raspberry Pi B+ and Raspbian Whezzy...
+

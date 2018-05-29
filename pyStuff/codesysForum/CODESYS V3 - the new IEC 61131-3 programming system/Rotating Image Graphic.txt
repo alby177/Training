@@ -1,0 +1,6 @@
+Is there a way to do a Interior Rotation on a image.  The property only appears for a polygon an few othe objects, but I have image that  I want to rotate around its center.  I can't really duplicate the image as a polygon or another object that does have the interior rotation property.   Thank you!
+
+There's a simple example called "Analog clock" in Codesys Store, which rotates a clock thicks around it's center.Link: http://store.codesys.com/bubble-breaker-1.htmlregardsAlex
+
+Alex, thanks for the link but the clock example uses polygons, which has the Interior Rotation Property.  As a newbie to CodeSys I found it very odd that images would not have the Interior Rotation property as well. It just seem like a natural thing to do in many applications.  Anyhow, I simplified the image a bit and made it out of polygons so that I could rotate it about its geometric center point.
+

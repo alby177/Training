@@ -1,0 +1,4 @@
+Hi There,does anybody know if there is an update on 2 axis (two variable and not "time") chart/graph element in CodeSys V3.5Thanks,Pinal
+
+No. Check this: viewtopic.php?f=25&t=6836
+

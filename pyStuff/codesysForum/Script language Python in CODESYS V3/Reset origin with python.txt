@@ -1,0 +1,6 @@
+Hi!I'm trying to make a test script which removes the existing application from the PLC by using the Reset Origin function.Attachment:Capture.JPGIn the image, dev is of IScriptDeviceObject type. When this script is executed the following exception is thrown: "Exception: Cannot read beyond the end of the tag", from line 21. What is it that I'm missing?Thanks! 
+
+Hi,I did discuss your issue with our communication experts. This exception seems to be a mismatch between what the runtime sends and what CODESYS expects to receive.This behaviour is not expected, and in our tests, resetting a device this way works fine.Could you give us as much information as possible to reproduce or analzye the issue? (e. G. Exact versions and platforms of Runtime and CDS, which things are executed on the runtime before, and maybe a network dump using WireShark or similar tools.)Also, I think those details might be better handled via our support contact, than in this fourm. (We can still post the resolution here. )
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+

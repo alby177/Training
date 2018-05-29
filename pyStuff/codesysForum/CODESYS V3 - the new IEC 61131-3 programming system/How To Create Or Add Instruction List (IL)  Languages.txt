@@ -1,0 +1,6 @@
+Hi every bodyPls help me I use codesys v3.5 sp10 but this software is not contain Instruction List (IL)  LanguagesHow To Create Or Add Instruction List (IL)  Languagestank for help me
+
+Hi mehdijamshidi,the IL is removed from the list of available languages and is no more recommended language to use. To enable it go to Options->FBD/LD/IL options to IL tab and activate the corresponding check.Regards Roman
+
+r.evbatyrov wrote:Hi mehdijamshidi,the IL is removed from the list of available languages and is no more recommended language to use. To enable it go to Options->FBD/LD/IL options to IL tab and activate the corresponding check.Regards Romantank you verrrrrrrrrrrrrrrrrrrrry muccccccccccch  The problem was solvedyou very enginnerbest regard
+

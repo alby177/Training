@@ -1,0 +1,12 @@
+Hello, i've got a simple DC motor with its little drive that works in 24Vdc.The encoder and the voltage reference output are on a Can module.I'm asking you if there is some library that can help me to make one basic motion control (speed/position control, and homing) on codesys 2.3I've took a look on OSCAT library but I didn't find documentation of it.There is a documentation of purpose of its library, or some other simple library?Thank you
+
+Hi,who is the supplier of the drive you are using?Maybe there you will get a library.If not use a drive from www.schneider-electric-motion.comThey have a big range from small DC and Stepper-motors up to powerful servo-drives andlibraries for Codesys based on Canopen.
+
+the driver is controlled in analog signal +10/-10Vdc, it's an axor but is not important what's the drive, it could be also an home made "H" bridge.I'm asking just about the software.
+
+will get back to you next week.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks!
+

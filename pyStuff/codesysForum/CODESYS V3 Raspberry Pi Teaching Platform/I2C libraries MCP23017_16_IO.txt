@@ -1,0 +1,4 @@
+Good afternoon,i try to configure a I/O I2C Board with 8 input and 8 output.In this moment i can see the board, but i have no idea how force the output.In the exaple of MCP23017 library for me is not clear how to use a instructions.There is a other documentation or some forum user that have use this library ?Thank you all !
+
+Hello I also try to use library from this post:https://forum.codesys.com/viewtopic.php?f=23&t=5872&p=10868#p11014Unfortunately I am not able to force output even IO variable is set to "16#00"(I am using RPi v3)------------------------------------Update:There is a problem with IO configuration -> its fixed FF (all inputs)Maybe I cannot call init procedure properly....I change it in library to 16#F0 to have half port as in and half as out and it works..Can someone change it during operation??
+

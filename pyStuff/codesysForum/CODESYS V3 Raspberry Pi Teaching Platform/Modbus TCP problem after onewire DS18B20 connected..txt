@@ -1,0 +1,6 @@
+Hey,I have connected Beckhoff BK9000 to raspberry via modbus tcp and everything works fine. But when I connect onewire temperature sensor ds18b20 to raspberry GPio pins modbus stops working, ds18b20 works fine and gives right values.What might be the reason for modbus tcp dropping out after ds18b20 connection?
+
+Hi,you need to have for the Onewire an own Task. (and specify this Task in the OneWire IOMapping)Then it will work without influending the modbus taskBREdwin
+
+JPakka wrote:Hey,I have connected Beckhoff BK9000 to raspberry via modbus tcp and everything works fine. But when I connect onewire temperature sensor ds18b20 to raspberry GPio pins modbus stops working, ds18b20 works fine and gives right values.What might be the reason for modbus tcp dropping out after ds18b20 connection?How did you connected the BK9000, did put it on device list, or did you created a generic slave module?I made that with generic slave module, and I cannot set the outputs to true, i set and then it turn back to false.
+

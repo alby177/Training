@@ -1,0 +1,4 @@
+HelloWhat determines which Global Variable list appears in the Symbol Configuration list? Is it the first one that was created?ThanksPaul
+
+All should appear...What might be a reason that you don't see them, is that your application doesn't use any of the variables in the GVL.Then the compiler doesn't add it to your compiled project and they won't be available for e.g. an OPC server.Add a line to your code which uses one of the variables from you GVL, build the application and check again if they appear in the Symbol Configurator.
+

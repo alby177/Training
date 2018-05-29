@@ -1,0 +1,2 @@
+Hi all.I'm working on a project for a Opc client using OpenOPC Client and it I will read the tags in a csv file separated by commas, in this csv file must have the tag name, the address of this tag, the data type of this tag, type Permissions read or write and refresh rate.how I could export the symbol file of my project and pass these values ​​to a csv?Thank you.
+

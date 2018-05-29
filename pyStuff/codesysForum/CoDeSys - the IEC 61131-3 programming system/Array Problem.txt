@@ -1,0 +1,10 @@
+Hi, 
+I'm new to codesys and I'm having difficulty programming my array. I have 5 machines running i would like to visualize the number of cycles each machine produces every day of the week (reset on sunday evening 00:00)
+
+I have a table ready in my visualisation with 5 rows (5 machines) and 7 collumns (7 days of the week). Is there a way to visualise the number of cycles of each machine in the right cell, save this number at twelve o' clock at night and shift to the next collumn (next day).
+
+Kind Regards.
+
+
+Thomas
+

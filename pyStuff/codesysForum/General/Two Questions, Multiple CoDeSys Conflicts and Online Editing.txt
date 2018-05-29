@@ -1,0 +1,12 @@
+I am new to the CoDeSys world and only have a limited amount of ladder logic and structured text programming experience.  Question 1) I am working with three hardware vendors using CoDeSys - Turck, ABB, and EmersonCT.  It appears as though when I install the CoDeSys programming SW from these companies, they all have things that auto-start on startup and occupy the system tray (whether the application is being used or not).  Is it possible for these to conflict with each other?  Should I disable all of these auto-startup behaviors?Question 2) Does CoDeSys support online editing?  Meaning - in the ladder environment - can I modify a rung of logic and then make that "go live" rather than downloading?Thanks in advance for the replies.  I look forward to learning more.Jim
+
+1 there is a communicator driver running, yes you can disable it in the startup menu, however it will be needed when you want to talk to a machine.2 No online edit, is very difficult, as the program is being compiled, however you can conditionally compile (exclude from build)The variabeles can be saved during a software update.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks for the reply.Assuming I remove the CoDeSys platforms from my startup list, will the comms driver start when I start the application anyway, or is that another thing that needs to be started before you start the programming environment?I wonder if CoDeSys has plans for online editing?  I don't know how all companies do it, but one of my vendors divides controller memory in half and uses half for the "active program" and half for the "program being edited" and allows you to make changes and switch "live".   It is very handy.
+
+no the comms only start when in startup, as it is separate program.as codesys is platform INdependent, IT would need lots of tricks.codesys is running from a raspberry Pi up to a big Siemens system.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

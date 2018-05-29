@@ -1,0 +1,28 @@
+1) is there a way of determining which button on a visualisation has been clicked by the user (kinda like the 'this' reference in C/C#?)2) when assigning a variable to the input->toggle variable field, does it HAVE to be a boolean?  Or can it be any variable that uses true/false values?  The bits in a dword, for instance?Thanks.Elric
+
+1) is there a way of determining which button on a visualisation has been clicked by the user (kinda like the 'this' reference in C/C#?)I think that the answer is no, but I do not pretend to know everything !      2) when assigning a variable to the input->toggle variable field, does it HAVE to be a boolean? Or can it be any variable that uses true/false values? The bits in a dword, for instance?The variable must be a boolean, but you ca use a bit from a word, dword, int, ...For exemple, if you declare :Value1:INT;You can use Value1.0 witch is the first bit of this variable (You can use from Value1.0 to Value1.15) 
+
+1: yes you can in several waysyou can use toggle and tap for simple inputsor if you use the vis.lib then you can even see if the mouse is hovering above a button (to give it a color or even switch to another vis)2: yes it must be a boolean, however you can use this boolean in a SEL to change from real value.In the util.lib is a function to put a lot boolean into one word.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks for getting back to me on this.The whole value.0 thing was EXACTLY what I had in mind when I asked this question, so I'm glad it worked when I tried it yesterday.    Regarding the "determining-which-button-had-been-pressed" query, what I meant was, when the user clicks on a button, how does codesys know what button you've pressed, and is there a way for the programmer to access that information?  I know about the programmability and the toggle/tap options, but I don't much like the idea of declaring and polling a bunch of variables just to see which button was pressed....Or is that the only way TO do it....?
+
+yes its the only way, Only by having an active display (SCADA program) you can have a workaround.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Ah right.  Thanks for all of your help.
+
+Ok, one more thing:  is there some kind of limit regarding the number of controls one can have on a visualisation?And more to the point, is there a limit on the number of VisualObjectType variables you can have in your program?Reason why I'm asking is because I need quite a few(one for each button, and there are 64 buttons), but when I to assign each button its own VisualObjectType and then try to run the code after compiling, the visualisation does not display like it should (lack of memory?).But when I only set up 1 button with an VOT it works fine... :SOh, and I'm using a Wago 750 881, if that matters at all.Thanks.Elric
+
+64 buttons should not be a big problem.did you switch on webvisualisation?In simulation it will be slow, however in the wago loaded it should be working good.Please use the placeholdermake a vis for one button as a separate vis.then on a workscreen, use a visualisation, next to it use same vis again,now you can use these placeholders with $ signs.then set up a array with items you like to change like button.color or button.tap etc.in button 1 you say $button$ is button1 for 2 you say button2 etc.if you have 8 machines with 8 buttons  do $machine1$ $button1$ etc.each button must have its own name and yes after loading it takes time before the screen is built.If not clear send me a design and a program for it, and i will make a start for you.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Yeah I tried the web visualisation.  Still the same outcome. Thanks for the advice.  I'll look into placeholders (never used them before) and hopefully that'll help with things.Elric
+
+send the .pro file to me and i will have a look.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

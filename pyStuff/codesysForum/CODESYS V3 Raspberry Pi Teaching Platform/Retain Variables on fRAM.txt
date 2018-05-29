@@ -1,0 +1,2 @@
+I would like to build a raspberry pi hat that has some non-volatile fRam on it. What are the option for using this for retain variables? The fRam would be interfaced from the raspberry pi by either spi or i2c.
+

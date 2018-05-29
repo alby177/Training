@@ -1,0 +1,22 @@
+Hi Everybody,I'm trying to insert Axis Structure in Structure like this:TYPE Axis_Structure :STRUCT	_AXis : AXIS_REF_VIRTUAL_SM3;	_Power : MC_Power;		bOn : BOOL;		bStart : BOOL; END_STRUCTEND_TYPEThen I declare a virtual axis in the SoftMotion General Axis Pool as Axe_Virtuel1In the POU PLC_PRG this declaration_test: Axis_Structure;And _Test.axis := Axe_Virtuel1;But when I want to use this axis in a MC_POWER for example, the axis can't be started, it seems not being reactiong on the MC_POWER input.It means I'm doing something wrong...Can Someone show me the right way?Thanks
+
+In your structure, I think it should be REFERENCE TO AXIS_REF_VIRTUAL_SM3 because your assignment of Axe_Virtua1 to _Test_Axis is a one way data transfer. Soft motion axes are VAR_IN_OUT types, which means data is assigned in both ways. With REFERENCE TO, you only need to make the assignment once, and your _Test_Axis will actually be a pointer to your Axe_Virtual1 (which is what you were looking to do, if I understand correctly).
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Hi Scott,Thanks for your answer...What you write makes a lot of sense because the Axis should be writable in the structure. I have tried what you suggested, unfortunately, it creates exception in my PLC.I have try with Pointer too without any success...If you have any other Idea, I will read them with pleasureMy structure declaration is TYPE  Axis_Structure :STRUCT	_Axis:  REFERENCE TO AXIS_REF_SM3;	_Power : MC_Power;		bOn : BOOL;		bStart : BOOL; END_STRUCTEND_TYPEBuild is okBut when I login and start the project...I have this
+
+Try _Test_Axis._Axis instead. SM_Drive_vritual is not your axis steucture type, only of your _Axis member....
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+I'm sorry I don't get what you mean.I have to link the Axis of my structure to the virtual axis...In order to do that I have to link the virtual axis to the name of my structure.It means at some point, I have to have something like _Test.Axis := SM_Drive_Virtual;But as this lin,k should be bidierctional, maybe I have to go through pointer?I try to figure how to do this, but without success up to now...
+
+I Got it !!!Structure declarationTYPE Axis_Structure :STRUCT	_Axis:  POINTER TO AXIS_REF_SM3;	_Power : MC_Power;		bOn : BOOL;		bStart : BOOL; END_STRUCTEND_TYPEThen a link to set _Test._Axis := ADR(SM8Drive_Virtual) , it links the drive to the structure nameThen the MC_power input axis should be _Test._Axis^ to link the adresse content...Thanks for your help...
+
+Since you are using reference, this is better:  _Test._Axis REF= SM_Drive_Virtual.It's the same idea as pointers and ADR, without having to dereference with ^ all the time.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+once again thanks.I didn't know the REF principle... and command "REF="Works well too...
+

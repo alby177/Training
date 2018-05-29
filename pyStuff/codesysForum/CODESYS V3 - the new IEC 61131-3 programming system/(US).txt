@@ -1,0 +1,36 @@
+Hi,I noticed recently that in the store I can download "CODESYS Development System V3" or "CODESYS Development System V3 (US)".What does the (US) stand for? What is the difference between the two? Same thing for all the runtimes (BBB, RasPi, etc...)?Thank you.
+
+Hi,check the following link:https://www.codesys.com/news-events/pro ... iants.htmlBREdwin
+
+What is in the international version that is not allowed in the USA version?  The USA version can be used anywhere in the world, but the international version cannot be used in the US and if I do, it's my problem?
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+This is quite interesting. The release doesn't really say why this is being done. It can't be easier to support more versions so why the US single out?This smells of lawyers and the Rockwell V. 3S case.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+I don't see WebVisu in US versions... 
+
+I bet your right.
+
+The Rockwell vs 3S lawsuit is a patent infringement (if it's connected to this).  Patents are patents.  Infringement is infringement.  I do not have a problem with a big or small company protecting their ideas.I would just like to know a little more than just "You have to use a US version now.  That is all.  Bye".
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+fixstuff555 wrote:and is suing 3S since they can't win in the marketplace, I'm not sure where you are based but I can assure you, Rockwell is winning the marketplace in the US.  And, in all fairness, my opinion is that they have the best ladder editing and tag database software by a large margin.  In fact, I believe this is part of why the US has been very slow to adopt ST and FB programming.  The Rockwell ladder is much more capable than any other ladder I have seen and there is rarely a reason to leave it.That said, my language of choice is ST for most logic with Ladder driving the physical outputs.I didn't mean to stir the pot (too much) but with a real lack of information provided, people are going to draw their own conclusions.  3S probably can't comment on this as the case is ongoing.I have also glanced at the law suit and some of the patents cited and I must say most of them seem like they shouldn't have been patents in the first place to me.  Most are issues that have been standard practice in general computer science and not novel techniques.  The patents mostly focus on using these techniques on machine controllers which we all know, under the hood, are just computers.  But, I'm not a patent attorney so this is all just personal opinion.
+
+_________________nOrM=====nOrM = Norman Dziedzic Jr.
+
+3S could certainly state "due to a pending agreement, the following functionality is only available in our non-US installations...".  Having customers downloading both versions and looking for what's missing is, plain silly....
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+AB ladder is good.  No arguments there.I disagree on your statement of AB "winning" the US market, as more of AB "owning" the US market.  As in captive.I'm more irritated with the fact that yet again, our broken US patent system, is causing me grief, in that I must purchase a gimped version of Codesys in the US to satisfy legal trolls and their spawn.Yes, we can all pat ourselves on the back and say how wonderful our IP protection is, but in reality its a crock.  We play by the rules, and the rest of the world moves on, and we basically take it in the tailpipe.  I want the best software with the most capabilities, and that is in my opinion is NOT AB.  If I wanted to drink that Koolaid, I would.
+
+I agree with Scott that it would be nice to know what's missing.  I'm hopeful, however, that it's of little technical importance given AB's limitations. I'll give a +1 to fixstuff555 for his comments as well 
+
+_________________Rick
+

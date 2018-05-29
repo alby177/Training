@@ -1,0 +1,32 @@
+Sir, could you explain this code? i need more advice on the ADR fucntion.
+and I don't familiar with ST code, so how can i apply this code (ptArray := ADR(strDate);) in ladder diagram? i have attached the project file and screen shot for your reference. please advise.
+thanks.
+
+ptArray := ADR(strDate);
+
+(* TAG *)
+ptArray^[0] := SHR(IN.Day, 4) OR 16#30;
+ptArray^[1] := (IN.Day AND 16#0F) OR 16#30;
+ptArray^[2] := 16#20;  (* SPACE *)
+ptArray^[3] := 16#2F;  (* / *)
+ptArray^[4] := 16#20;  (* SPACE *)
+
+(* MONAT *)
+ptArray^[5] := SHR(IN.Month,4) OR 16#30;
+ptArray^[6] := (IN.Month AND 16#0F) OR 16#30;
+ptArray^[7] := 16#20;  (* SPACE *)
+ptArray^[8] := 16#2F;  (* / *)
+ptArray^[9] := 16#20;  (* SPACE *)
+
+(* JAHR *)
+ptArray^[10] := SHR(IN.Year,4) OR 16#30;
+ptArray^[11] := (IN.Year AND 16#0F) OR 16#30;
+
+ptArray^[12] := 16#00; (* String terminieren *)
+SMS_GET_DATE := strDate;
+
+Try this? I do not know what the structure IN is so I guessed.I could be an enumeration? I don't know why you would modify the orignial strDate then pass it back out of the function but I am only following what you gave us.
+
+_________________Thanks,
+Steve Pfeifenroth
+

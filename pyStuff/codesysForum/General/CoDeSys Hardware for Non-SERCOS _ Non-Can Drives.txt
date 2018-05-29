@@ -1,0 +1,22 @@
+I have applications that use Large Vector AC Drives / DC Drives with encoder feedback.
+
+Does anyone know of a CanOpen / SERCOS interface or CoDeSys Controller that will send out a +/-10 Speed Reference and Encoder Feedback.  So I can interface with these drive or not older servo drives?  I'm looking for upto 8-axis of motion.
+
+Thanks...
+
+_________________Erik Soeder
+
+Hi,
+If your goal is a pc based system, i would use a automata sercos card,Sercos Terminal BK7500, incremental encoder input terminal, an analogoutput terminal. From software side, RTE and Softmotion (Analogdrive.lib)
+Advantage: you could mix up the old analog drives even with new sercos driven drives /devices -> all controlled with plcopen fb's & other Softmotion functions blocks.
+->8 Axis are possible with a bunch of terminals. 
+
+Regards
+Edwin
+
+Next time please use the Motion section for Motion questions.
+
+Thank you in advance!
+
+_________________Roland WagnerModerator
+

@@ -1,0 +1,2 @@
+Project created using Codesys 3.5.10.40. I run it on Codesys 3.5.12.0 and get an error message when trying to download. Runtime version is 3.5.10.20. Gateway 3.5.11.40.P.S. New project not working too with the same error.What does it mean?
+

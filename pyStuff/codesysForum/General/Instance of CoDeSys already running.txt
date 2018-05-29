@@ -1,0 +1,15 @@
+I use the IFM PLC and have a question about an annoyance. The IFM PLC has two PLC cards in one box. We often have to switch between the two cards. When you go online with the PLC and physically disconnect the communication cable you get a communication time out. If you try to log back in to the PLC after the communication time out without using LOGOUT through CoDeSys then you get an error message that states "An instance of CoDeSys is already running on the target system".  Is this handled from the PLC manufacturer, CoDeSys IDE/gateway, or the CoDeSys firmware on the PLC? It seems the PLC does not delete the lost communication socket. In other words it should time out so that you can log in again. The only way to login is by cycling PLC power. If it is the responsibility of 3s it would be nice if the lose of communication on the PLC could reset the socket so you don't have to cycle power. Is there another way that I don't know about?
+
+_________________Thanks,
+Steve Pfeifenroth
+
+That seems to be a problem of the runtime system on the PLC. Therefore please contact IFM. Normally it behaves as you expected it (instance is freed after timeout).
+
+_________________Qualitätssicherung
+
+It is indeed a problem with the controller's firmware. I have the same problem in a CAN network of multiple controllers. The only solution is to turn off or soft-reset the controller.
+
+Hopefully ifm brings out new firmware's w/o this bug.
+
+- Martin
+

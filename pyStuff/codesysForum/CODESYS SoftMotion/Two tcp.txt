@@ -1,0 +1,2 @@
+Dears.I have to develop a robot wich recives two planning trajectories. Like it would have two tcp.Both tcp are linked and the tcp1 position  afects the tcp2 position.There exist any example of this?Enviat des del meu HUAWEI LYO-L21 usant Tapatalk
+

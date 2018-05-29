@@ -1,0 +1,12 @@
+send the program as an export file.send the configuration of the plca quick counterinput is needed (on its card there is a counter.) is it not used as timer?what is setup of card etc.are you using the input on other places or the output is written somewhere else?short the input and check your program.is input giving nice signal? use a resistor of 10k to gnd. (it helps to get rid of noise.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+btw you have to use zip as exp file will not be transfered.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+on the input and on the ground.? is the zero connected? this is gnd from flowmeter to plcis it a puls output or a quadrate  (two outputs same like a old mousewheel).your problem is thus electric obviousslow down the input speed as the flowmeter could give a bounce signal (try this by stopping the wheel of the flowmeter and when you move it the counter goes crazy.is signal stable just measure the voltage if the fluke changes even a bit the input has too much impedance for the flowmeter.what is voltage when doing nothing? and when turning?
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

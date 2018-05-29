@@ -1,0 +1,18 @@
+Hi AllCan some one share with me about the codesys pricing.it is i need to paid for development software , and from the development software i am able to create run time that load into embedded system X number of time.Any one know the estimated price for 1000 run time price ?What if i only need to develop for my owe use for PC control , can i buy just 10 license for each of my machine ?I also notice that there are V3 and V2 , does it mean that i should start with the latest version ? what it the reasons there are 2 diff version. I though V3 should be new version and V2 is the old version. am i right ?Paul
+
+for pricing contact office via email or phone.You can develop everything on the free version, however if you want it longer to run as 1 hour you need to pay.V2 is well established and running on many devices.V3 is very good when having several devices needing communication.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi SirThank you for your reply , so V3 are not going to take over V2 it is ? look like both serve different purpose . depend on my requirement. Most of the supplier start with V2 then move to V3 it is ? when move from V2 to V3 does it mean that customer don't need to pay extra . Hope you can enlighten me.
+
+V2 is now implemented in many existing plc machinesThey will not switch over the old machines to V3. (many of them are in running processes and work just fine.V3 will be used in new development PLCsame story is for S5 to S7
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi Sir The example you give now i fully understand.And know which ver i should start.Does it mean that next time codesys come out ver 4 , and they will stop support ver 2 ?
+
+stopping support is dependent of their oem clients.If the client pays they will do anything.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

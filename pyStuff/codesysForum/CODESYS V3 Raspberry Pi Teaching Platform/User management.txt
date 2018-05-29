@@ -1,0 +1,2 @@
+Hi,I'm using a user management in the visualization.Is there a variable with the value of logged user?Thanks for any help.Straccio80
+

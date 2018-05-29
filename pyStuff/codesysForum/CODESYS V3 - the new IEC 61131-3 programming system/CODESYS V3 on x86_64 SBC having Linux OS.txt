@@ -1,0 +1,10 @@
+Hello,     I have Single Board Controller of configuration x86,64 bit processor,4GB Ram,intel i7 processor,max 16Gb Compact flash for the Operating System.On this Compact Flash i am going to use Linux OS(preferably Real time RedHat7.X).There are 7 Field IO Modules(BeckOff).I want to control these IO Modules directly from the SBC processor(without PLC Controller).Which Softwares i need to be installed on the target SBC or on the developement host machine?please suggest me the software tools required for this project.I am newer to the PLC programming......
+
+Hi,there will be a Linux SL (X86) release on 3.5SP13.This is probably exactly what you are looking for.BREdwin
+
+Can't wait to test it!
+
+Thanks Edwin,             Please suggest me existing available software tools for the same....
+
+Hi,this will be available in June with the release of 3.5SSP13... as CODESYS Store SL productmeans - at the moment not possible without waiting on this release.BREdwin
+

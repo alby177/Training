@@ -1,0 +1,19 @@
+I'm using a PLC which I'd like to take inputs/outputs from a series of switches. before we used an AT13 module which works by the CAN addressing system (I think). unfortunately the module could only handle 12 switches and 12 LED's. my new design needs 14 of each and I'd like to know if I can use the same addressing system to run the CR2016 cabinet module and achieve the same results and If I can't use the same addressing system, is it possible to achieve?
+
+It might help if you give a manufacturer name or links to some documentation or pictures.  There are a lot of different companies that make CoDeSys controls.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+http://www.ifm-electronic.co.uk/ifmuk/w ... R2016.html
+
+The manufacturer is called IFM electronics (The link gives it away =) )
+
+The link will also give you access to the data sheet
+
+Lets start by making some assumptions. You are using a PLC that uses CoDeSys that is a CANopen master. Based on your question you don't know much about CoDeSys or even CANopen. Another assumption based on your comments you are asking if you can directly replace the two modules and they will continue to work? What did you mean by addressing system? The PLC absolute addressing system like %IX, %QX or CANopen addressing system? If you want to interchange the two on CANopen you need to see that they both support the same communication parameters among countless others. One thing in your favor is that at least they both support the DS401 device profile. But be aware that the 2016 has analog inputs that will be mapped to a different CANopen ADDRESS then digital inputs. One might use node guarding while the other doesn't support it but supports heartbeat. If you want to try and use the same CoDeSys addressing system then you need to try and align the eds files that you would import into the CoDeSys PLC configuration. If you mapped variables to the direct addressing of the CAN device then you need to re-map them to the new device. If you use absolute addressing then you will probably need to change the IO in the code to match the new addressing because the eds files will not be the same.  If you can give more detail I can be a better help. If you don't know anything about programming via CoDeSys and need help making the change let me know and we can get it done.
+
+_________________Thanks,
+Steve Pfeifenroth
+

@@ -1,0 +1,38 @@
+Hello all,
+
+Is there any documentation on the 3S CANOpen libraries:
+
+3S_CanDrv.lib
+
+3S_CanOpenManager.lib
+
+3S_CanOpenDevice.lib
+
+How can I aquire this information?
+
+In the help file it states that there is a BUSDiag.lib? In my install I don't have this. Where can I get a copy?
+
+Thanks
+
+_________________Thanks,
+Steve Pfeifenroth
+
+Hello
+
+There is a document containing all information about the 3S CANopen stack called 'CanOpen for 3S runtimesystems.pdf'. But you only can get it if you are a customer or on demand.
+I attached the BusDiag library and an example project for the CoDeSys SP RTE to this entry.
+
+Bye, Frank Hailer
+
+_________________Qualitätssicherung
+
+Thank you,
+
+Yes, I did acquire this document. The last thing I was looking for was information on the implicit variables. I was told this would be available in February when service pack 5 is released?
+
+_________________Thanks,Steve Pfeifenroth
+
+3S_CanDrv.lib 3S_CanOpenManager.lib 3S_CanOpenDevice.lib Can I put it in free access for the test?
+
+_________________...
+

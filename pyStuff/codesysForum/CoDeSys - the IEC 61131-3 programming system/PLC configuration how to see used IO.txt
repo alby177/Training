@@ -1,0 +1,12 @@
+Hi I need to know what IO in PLC configuration are effectvely used by a tag or variable in the project. How to do this with codesys V 2.3.9 ? If the programmer hasn't assigned variable name to the IO I imagine there isn't a way to know  the total used and free IO channels of a device in IO bus....
+
+under resources you can find the configuration, here should be a list of used i/oyou can also export this check the global vars as i/o are always global.if they are in the POU declared, you will have to make a list yourself.if you export the program and all POU you can easy search them with an external editor.internal also ctrl F with simple %I and %Q
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+shooter wrote:under resources you can find the configuration, here should be a list of used i/oyou can also export this check the global vars as i/o are always global.if they are in the POU declared, you will have to make a list yourself.if you export the program and all POU you can easy search them with an external editor.internal also ctrl F with simple %I and %QOk thank you very much !!And how to know the code/ram memory usage ?
+
+when compiling you will see memory usage in the report
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,8 @@
+We have a device that uses the CoDeSys system and uses a hardware PEAK PCAN the two channels for communication with servo drive and a 5 plcA WAGO after booting the computer resets itself.This system was working perfectly, there was no change in software or hardware, can you help me? Is there some setting system CoDeSys which may be doing this?
+
+Hello,which version you are using exactly?If V3? There was a bug in the SJA Peak driver,which had a similar symptom (rebooting)If yes (V3) please contact the 3S support.cuEdwin
+
+Hello EdwinThe version is V2.3!Canyou help us ?Best regards;Adilson Medeiros
+
+hm.. the best option is probably to ask your supplierhe knows his industrial pc and i'm sure he know the settings.Did you tried to contact them?Edwin
+

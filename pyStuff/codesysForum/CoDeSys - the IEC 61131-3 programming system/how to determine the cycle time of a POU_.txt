@@ -1,0 +1,21 @@
+if there is a POU(PLC_PRG) is running on a controller, how to determine the cycle time of a POU? Some of the controllers has returned in the datasheet that about 1000 statement in 3ms. but i just want to know how much time has been taken for a cycle time in a POU?  Please advise.
+
+Function TIME() returns the CPU time stamp. Call it on POU entry, store the result in a local variable, then call it before exiting the POU again. The difference to first call ist the execution time of this POU:
+Code:VAR  EntryTmStmp: TIME;  ExecutionTime: TIME;END_VAREntryTmStmp := TIME();... (* the contents of your POU here *)ExecutionTime := TIME() - EntryTmStmp;
+In the same way you can check the task cycle.
+
+Thank you for your valuable information. by the way what do you mean the task cycle? Do you mean I can check the task cycle of that particular POU in the codesys software?
+
+Rolf_Geisler wrote:Function TIME() returns the CPU time stamp. Call it on POU entry, store the result in a local variable, then call it before exiting the POU again. The difference to first call ist the execution time of this POU:Code:VAR  EntryTmStmp: TIME;  ExecutionTime: TIME;END_VAREntryTmStmp := TIME();... (* the contents of your POU here *)ExecutionTime := TIME() - EntryTmStmp;In the same way you can check the task cycle.
+
+
+Thank you for your valuable information. by the way what do you mean the task cycle? Do you mean I can check the task cycle of that particular POU in the codesys software?
+
+Hi,
+the little exampe I gave shows how to find the execution time of a POU (i.ethe time between starting it's execution and it's end).
+
+The "task cycle" is the time between two consecutive calls of a POU. Sometimes it is useful to know it, particularly in multitasking applications. The way to calculate is similar to the POU execution time:
+Code:VAR  EntryTmStmp: TIME;  ExecutionTime: TIME;  TaskCycle: TIME;END_VARTaskCycle := TIME() - EntryTimeStmp;EntryTmStmp := TIME();... (* the contents of your POU here *)ExecutionTime := TIME() - EntryTmStmp;
+Hope this makes it clear.
+Regards
+

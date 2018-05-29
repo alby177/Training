@@ -1,0 +1,4 @@
+Hi,t looks like CODESYS when i watch the video of the link below.https://www.youtube.com/watch?v=NAiKjZhZW8sIs CODESYS adapted to TMDXIDK5728? (AM57xx)I want to know how to experience programming in the same environment. Is there a SL for TMDXIDK5728?If you do not have that product, do you any plan to release it?Thanks.
+
+Yes this is codesys. It will be the same as using the raspberry pi or beagle bone black by the looks of things. For more info I would contact the manufacturer of the device. (Texas instruments by the look of things). Codesys is just the programming environment. Sent from my SM-N9005 using Tapatalk
+

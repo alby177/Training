@@ -1,0 +1,2 @@
+In CoDeSys V3 it is possible to export/import files in xml format. Have someones suggestion about software that can handle this xml file (modifications, read, insert new code, ecc... ecc...) and the reimport the file in CoDeSys ?
+

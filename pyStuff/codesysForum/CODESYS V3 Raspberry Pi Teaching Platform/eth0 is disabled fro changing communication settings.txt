@@ -1,0 +1,6 @@
+Hello,is here any documented way how to change IP settings of eth0 interface from Codesys?There is a possibility in Ethernet / General (see the screenshot please) but after login/run nothing change and I just got an error message in the device log "eth0 is disabled fro changing communication settings"Any ideas?Thanks,RegardsJan.
+
+Hi,you need to add in /etc/CODESYSControl.cfg the following section to enable this:[SysSocket]Adapter.0.Name="eth0"Adapter.0.EnableSetIpAndMask=1BREdwin
+
+Hi Edwin,perfect, works fine. Thanks.By the way - it is very often when somebody ask you about a feature, there is usually a solution via this mysterious file CODESYScontol.cfg.Is it somewhere documented and possible to read all variables and meanings?Thanks again,Kind RegardsJan.
+

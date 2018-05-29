@@ -1,0 +1,2 @@
+Does anyone know how to set a username and password to access from ftp to you PLC? I am using Eaton XVS PLC-s and it is very easy to access the files over ftp. I began to worry that anyone who knows the IP of my PLC and is connected to it can access all my files over the FTP. I am using the ftp to access the .csv file (measurements) that I am creating on my sdcard.So back to my question, does anyone know how to password protect my files?
+

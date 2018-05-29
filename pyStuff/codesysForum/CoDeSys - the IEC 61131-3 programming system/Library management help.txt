@@ -1,0 +1,16 @@
+Still not real sure what i"m doing but i"m trying. The error you get when you load a project/program when it tells you something like ( cannot find 4 of 5 libraries. change library directory? ). I saw a youtube video about it and I can't seem to get it correctly.1. I click Resources2. click Workspace3. choose Directories4. under Project I click Libraries5. under Libraries I dont know what to type or how to find out where to save it to.  ( the youtube video shows the guy typing .\lib\ ) but when I do it I get no results.Thanks for any help from anyone sorry for wasting anyone's time.
+
+Hi           Go to library manager and insert what ever files you want.And one more thing\;c:\program files\3s software\codesys v2.3\library\The above directory should be there for you alsohave a good day 
+
+Usually, you don't need to touch the things in Resources:Workspace:Directories. Like sarathbabu said, it's easier to add libraries with the Library Manager.
+
+I'm trying to put everything on a flash drive so I can take it to another computer. How do I do that?
+
+To transfer the whole project:You will need to copy the *.pro file and any 3rd-party *.lib files you are using. You can just choose Save as... for the *.pro, but I think you will have to hunt down the *.libs. To see where the .libs are, right click on each one in the Library Manager and choose Properties... . You can copy/paste the Directory field into the address bar of a Windows Explorer window. You will probably have to correct the paths to the libs on the new computer, unless you put them in exactly the same place as before.To transfer individual parts of the project:You can right-click things like functions, POUs, data types and global variable declarations and choose Export object... . Unfortunately, this doesn't work for things embedded inside libraries, but you probably want to copy the whole library anyway, as above.
+
+when in library window right click in the files and you will see some red lines, these libs were not found in the directory.so you will have to find them on your computer and copy them into the correct lib.or you can delete the red entries and then add the library via right click and add lib.version control is a problem in 2.3 as it does not see any changes in libs, but when you go online and something is changed you can not view your program anymore.so be carefull with this. i always put everything under a project name (including the libs used.) i know i have standard.lib lots under the projects dir. but now i only copy one project and i am sure it is the installed one.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks everyone for all the help SHOOTER your good. This really isn't to hard after i've played with it for a week of so now. When I started a few weeks ago I had no idea what I doing.Thanks again guys
+

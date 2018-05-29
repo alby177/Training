@@ -1,0 +1,24 @@
+Did anybody used BC9000 from Beckhoff so far? I have a little project with that and there is no BC9000 in Target settings.I have TwinCat installed (from Beckhoff same as CodeSys 2.3 ) but this one is time limited. I was searching on the net if there is TNF or TRG file to install available...but Nothing I found.
+
+If someone has it share it with me PLEASE.
+
+THNX
+
+Gulyware
+
+I have used the BC9000 in multiple occasions.
+
+When you start a new project in TwinCAT PLC Control, select BC via AMS for ethernet comms. If you have the serial programming cable then slect BC via serial.
+
+arj3090 wrote:I have used the BC9000 in multiple occasions.When you start a new project in TwinCAT PLC Control, select BC via AMS for ethernet comms. If you have the serial programming cable then slect BC via serial.
+
+THX.
+
+But this one I knew already...I thought it's possible to use Codesys from 3S instead of the Twincat program.
+
+Anyway, I made the test with Twincat and was fine.
+
+Regards
+
+Gulyware
+

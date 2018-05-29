@@ -1,0 +1,12 @@
+Hello.I have rpi with licensed runtime.My application is not responding after some time and i can't connect to it with codesys.How can i investigate why this happens?I have this error.
+
+Hi,Login by ssh to the Pi and then:cat /tmp/codesyscontrol.log BREdwin
+
+Hello, this is last errorQuote:1487516444: Cmp=CmpCodeMeter, Class=16, Error=263, Info=0, pszInfo= CodeMOpen() lasterror=263, ### broken container detected! ###Do you have any idea why this happens?
+
+After updating from v3.5.8.0 to 3.5.10.0_P2 im running in the same error...
+
+Hi,for me it looks like you have changed the hardware... is this possible?Licensed Pi... or Image of the sd card -> broken container.If not, please send the original ticket number of the license to the Support department.BREdwin
+
+No, same hardware, i just tried to update to newest Codesys RTE.But what i did: When i bought a new Raspberry for a second/third/... setup i use a clone of the SD-Card from first setup but with a NEW and PURCHASED licence to save work for the software setup. Now I have determined that I have two soft-containers with different serial numbers. In the second one is the valid license for this rasperry.
+

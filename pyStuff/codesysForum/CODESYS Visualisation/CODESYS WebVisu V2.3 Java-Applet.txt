@@ -1,0 +1,6 @@
+As browsers are not supporting java into the future, this information was of interest to me:https://www.codesys.com/rss-detail/arti ... pplet.htmlHowever, following the download links, I am led to a page that has no downloads. Is this the same for others, or are the files not available yet?Chrome has killed java plugin support as of the last update.Regards
+
+I concur. I don't get any links to download either of the zip files. All I get is "Sie befinden sich hier: Customer-Portal » Download" and nothing else. Could it be because I'm in North America and should be getting it through another site?UPDATE: I decided to contact Codesys directly and their tech support department sent me different links to the two files. I just checked the original link and it still doesn't go anywhere useful.
+
+Thank you for confirming that. I will contact support directly for the link to those files. The original link is still a dead end.
+

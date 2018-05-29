@@ -1,0 +1,2 @@
+Hi,i consider to use CODESYS on a micro controller system. But there are no detailed information on hardware and software requirements. I like to know about the complexity of implementing a the realtime environment (by using the toolkit) on micro controller. Additionally, I need a step by step guide to the connection between CODESYS IDE and the controller. The documentation on codesys.com is not satisfying.Regards
+

@@ -1,0 +1,16 @@
+HiI am trying to establisch a communication between 2 of my libs using TwinCat 3 Built 4020.10. For that I tried to pass a pointer to a program of lib1 to lib 2 and save it there.But during built of the program which is using both libs I get the following error #3580:"Internal error in _IStatement (maybe try to simplify expressions): GVL.pLog^.Fatal(Caller:=sFuncName,Msg:=strLogMsg): System.NullReferenceException: ..."By the way the above line of code is inside lib 2 and "pLog" is the pointer i passed to lib2...Any ideas?Thanks!
+
+Maybe I have to explain my problem a little bit more... This is how my program looks like:Library1:Logging.prgLibrary2:GVL holds the pointer:pLog : pointer to Library1.Logging();Program.prg with M_DoSomething().Inside the method the foloowing code exists:pLog^.Fatal('Caller','LogMsg');Main.prg:1. Set the pointer to Library2: "Library2.Initialize(pLog := ADR(Library1.Logging());"2. Execute "Library2.Program();"3. call: "Library2.M_DoSomething();)The error comes while building the solution as soon as I implement the execution "Library2.Program();" or call "Library2.M_DoSomething();).If i do not implment this into main, there is no compiling error.
+
+Welcome to the community,sorry - but your question is hard to understand. Maybe it helps, if you can post all of your code or upload an example project. Best Regards,Kevin
+
+_________________Building & Process Automation with HVAC Library for CODESYS© - www.hvac-automation.com
+
+The error list you show looks, to me, like a compiler crash.  Also isn't "GVL" a reserved word?
+
+_________________Rick
+
+Instead of trying to pass a pointer, try having your library 2 require library 1. Then from within library 2, you can call any PRGs or FBs in library1.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+

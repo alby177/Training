@@ -1,0 +1,6 @@
+When calling the CIA405.NMT function block,I met prblems.PLC_PRG    CanopenNMT:CIA405.NMT;    tmr:TON;ENDVARtmr(IN:=TRUE,PT:=t#1s);IF tmr.Q THEN    CanopenNMT(NETWORK:=1,ENABLE:=TRUE,TIMEOUT:=1,DEVICE:=0,STATE:=CIA405.TRANSITION_STATE.START_REMOTE_NODE);END_IF I want the Canopen manager to send the message of "0x000 01 00" every second,but I faild.If there is no remote canopen device added to bellow the Canopen manager, then only 2 piece of such message is sent but not cyclicly per second.If there are remote canopen devices added to bellow the Canopen manager, then there is no shch message as "0x000 01 00" sent with the Error of "CANOPEN_REQUEST_ERROR".and I don't know why.
+
+I tried it and it works fine:Code:fbNmtStart(   NETWORK:= 1,    ENABLE:= xEnableStartAll,    TIMEOUT:= 1,    CONFIRM=> ,    ERROR=> ,    DEVICE:= 0,    STATE:= CIA405.TRANSITION_STATE.START_REMOTE_NODE);The way you have coded the timer function actually only functions once when 1 second has passed.The enable is a trigger to send the message. In the code you should handle the confirm or error  reply.
+
+Thanks,you are right.I test,and find that the first NMT message should be sent several senconds after the PLC reboot, if you send the NMT message too soon(no longer than 2s) after the PLC reboot,then you will get the Error of "CANOPEN_REQUEST_ERROR".Our target is Wachendorrf Display.
+

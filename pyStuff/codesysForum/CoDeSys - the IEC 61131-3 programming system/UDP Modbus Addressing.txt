@@ -1,0 +1,39 @@
+Hello All:
+
+I've been programming software and home automation systems for years now, but I'm rather new to CoDeSys and PLC driven systems. Presently I find myself trying to communicate with a Parker Hannifin HMI with a WAGO PLC via Ethernet Modbus, and it's driving me bananas.
+
+WAGO provides great documentation, and CoDeSys great function blocks, for communicating between a couple of like-minded devices. I've controlled outputs on a coupler via Modbus without problem, and never really had to worry about the coil/register addressing system. Now, however, I find myself trying to communicate with an HMI using the Kepler driver, and just can't find what the heck I'm changing. With those specs out of the way, let me break it down a bit.
+
+According to the HMI software—Interact Xpress—Modbus addresses (somehow) on a 1-65536 range. What confuses me about this is that I find nowhere what the units of said range are: bits? bytes? words? Just the same, I have a spreadsheet that says the word 256 on the PLC is holding register 400257 (per offset). I then tagged a couple of buttons on the HMI to toggle the first couple of bits in said word. It sounds great, but when I view the 256-511 word range on the PLC I see absolutely no sign of changing bits; I have, in fact, not been able to produce the slightest sign of communication in said scenario. The HMI reports that the buttons are reading and writing correctly to their assigned address, but no where else do I find signs of this to be true.
+
+Does it sound like I'm merely addressing incorrectly? What is the unit of measurement for the Modbus range? Has anyone succeeded in this endeavor already? Would someone mind explaining the basic of Modbus communication? (The documentation makes a great reference if one already has an idea of what they're looking at.)
+
+Any or all information would be greatly appreciated. Thanks!
+
+Hi,
+
+what type of WAGO PLC ?
+
+Greets Volker
+
+_________________Die Fähigkeit sprechen zu können macht nicht unbedingt intelligent. (Qui-Gon Jinn)
+
+Hello Volker,
+
+I'm using a 750-871.
+
+hi,
+
+have you check the io-addresses in the controller configuration ?
+the modbus-address 400257 is correct if your first in/output is
+locatet at IX0.0 /QX0.0 otherwise you must add the plc-addressoffset to the modbus-address.
+
+for testing the communication in general, you can add following code to your controller
+Code:VAR_GLOBAL   BIT_0      AT %MX0.0:   BOOL;   (* Modbus Adresse 412289 *)   BIT_1      AT %MX0.1:   BOOL;   BIT_2      AT %MX0.2:   BOOL;   BIT_3      AT %MX0.3:   BOOL;   BIT_4      AT %MX0.4:   BOOL;   BIT_5      AT %MX0.5:   BOOL;   BIT_6      AT %MX0.6:   BOOL;   BIT_7      AT %MX0.7:   BOOL;   BIT_8      AT %MX0.8:   BOOL;   BIT_9      AT %MX0.9:   BOOL;   BIT_10      AT %MX0.10:   BOOL;   BIT_11      AT %MX0.11:   BOOL;   BIT_12      AT %MX0.12:   BOOL;   BIT_13      AT %MX0.13:   BOOL;   BIT_14      AT %MX0.14:   BOOL;   BIT_15      AT %MX0.15:   BOOL;   WORD_1   AT %MW2:      WORD; (* Modbus Adresse 412291*)   WORD_2   AT %MW4:      WORD; (* Modbus Adresse 412293*)END_VAR
+
+hope that helps
+
+Volker
+
+_________________Die Fähigkeit sprechen zu können macht nicht unbedingt intelligent. (Qui-Gon Jinn)
+

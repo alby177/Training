@@ -1,0 +1,2 @@
+I want to limit the user access to only a few libraries of the CoDeSys V3 base repository.How can I do that from the "device desciption" file?I know how to force to load some propietary libraries (via <RequiredLib> tag), but I also need to restrict the access to the whole repository.Thanks in advance.
+

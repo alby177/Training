@@ -1,0 +1,10 @@
+Hello. I need to troubleshoot ethercat.I have found that RT-Preempt is not installed when I search the forum. Is that right?I could not find a solution to this problem, so I searched for the material and found this homepage. Does it matter if I run it like this?https://github.com/koppi/mk/blob/master ... mpt-RPI.mdI'll wait for the good news.
+
+Hi,please connect your ethercat slaves to eth0 1:1 connection -  not wlan,wifi for the CODESYS connection.BREdwin
+
+Status when connecting to Ethernet.
+
+Thank you. Success after retrying. It was a problem with KL2184. This is because I can not find the XML or MDP file of this module and can not register itI can not find the file in this file on beckhoff. If not, where should I find the material in this file?Thanks again. This problem hurt my head for a week.    
+
+Hi,yes could confirm, if you have an chance to use ELxxxx and EKxxxxinstead of Kbus - I would do it.BREdwin
+

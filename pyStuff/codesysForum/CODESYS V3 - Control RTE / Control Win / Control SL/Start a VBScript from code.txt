@@ -1,0 +1,22 @@
+I have done a VBScript that works if I launch it by prompt, but if I try to start the script from code I can see wscript.exe starts but looks like that the execution is blocked.BR
+
+Hi,which plc are you using?Guess an entry in CODESYSControl.cfg[SysProcess] Command.0=xxxxxis probably needed.BREdwin
+
+Thanks for replay,I am using a Codesys Control Win V3 on a PCBR
+
+On CODESYSControl.cfg I have this:Quote:[SysProcess]BasePriority=RealtimeCommand=AllowAllUsing Codesys 3.5 SP9 Patch8, I have tryed SysProcess library 3.5.7.0 and SyOS23 3.5.8.0 library but each time I can see that starts wscript.exe but is not executed the code inside the script (using the prompt works, so the vbs script is ok).BR
+
+Any Suggestion?
+
+Hi,I would try:and check the reaturn value.BREdwin
+
+Hi,using the "SysProcess._" function I got 1 as Result
+
+Hi,and copy your script which you want to execute to the runtime directory.BREdwin
+
+I have attached the vbscript that I want to execute (I have modified the extension from .vbs to .txt due to forum restriction)BR
+
+Hi,stop the plc by tasktray, then execute the Control Win in debug mode:c:\Program Files (x86)\3S CODESYS\GatewayPLC\CODESYSControlService.exe -dcheck the the log there if you execute your scriptBREdwin
+
+I have done this procedure, and I don't know why, but if I keep the service in debug mode the script works.Whitout the "-d" parameter the service doesn't work  Launching the script in debug mode doesn't generate any verbose message on debug panel.BR
+

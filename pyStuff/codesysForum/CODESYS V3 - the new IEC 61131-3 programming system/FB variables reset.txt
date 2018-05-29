@@ -1,0 +1,26 @@
+Hello everyone.I need to call a particular user FB many times in my main program "PLC_PRG".When i first call the FB it works fine, but the next time i call it, it does not work. The input and output variables are latched to the last state.The FB block is called via a EN/ENO box in a ladder language program.Is there a way to reset the FB  before a call it so that every time it will do the job? I make some reading for a FB_Init() methode but how can i use this in a ladder language program?
+
+Create a new instance for each FB call.If you need to share variables then VAR_STAT is your friend.
+
+Thank you for the reply.The FB do a specific job, a sequence of pneumatic actuators, movements and some motors turn on and off. This job is needed to be done by the activating of a button, and this can be activated hundreds of times during the day.How can i make a new instance every time the button is activated?
+
+Can you explain better what you are trying to do.  While it's possible to create instances in response to events, I susspect that it wouldn't be helpful in your case.
+
+I will make it very simple what i want to do.Lets say i have a FB which by the activation of an input variable bIn1, for example, starts a timer T_ON and after 3sec a coil bOut1 activates.This FB is activated by a button bBTN1, and a box EN/ENO.I want every time i activate the button that the timer will start from zero and after 3sec turn on the coil.Now this works only ones. The timer does not reset when the FB is disabled.Attached is the FB.
+
+The timer is reset when bIn1 goes false but it never sees bIn1 go false, because it executes within the context of a FB that is disabled when bIn1 is false.  Try EN=TRUE and pass bIn1 as a parameter.
+
+Thank you for the reply, but this is not the solution i want. I need the FB to be disabled when the button is not active. Is there a way to reset the bIn1 variable every time the FB is activated?
+
+I am not clear on what you are asking but this is what I gather.You are trying to turn the output off for 5 seconds any time the button is initially pressed then, after 5 seconds, turn the output on? Any time the button is pressed it will reset the output leaving it off for 5 seconds after the last button pressed.If so something like this I think is what you are looking for: (Not  a ladder logic guy so hopefully this makes sense)Attachment:Reset Timer Example.PNG
+
+If the TON timer is not executed when bIn1 is false then it will not reset itself to zero.  Neither the the FB container  or the TON timer have any way of knowing they have been previously disabled.  The same goes for the TRIG function.   Many function blocks in the standard library and in 3S examples use Execute and Done parameters rather than EN/ENO for this same reason.You haven't said why it's necessary to disable the container FB.  If you really want to do such a thing then you will need to use system libraries for functions that return the current system time and the task schedule time.  The FB would need to remember the time when it last executed, compare that to the current time, and if the difference is greater than the task schedule time (by more than jitter) you could assume that previously the FB was disabled and reset the timer.  Presumably one would need a good reason to go  to all the trouble.
+
+Quote:I am not clear on what you are askingI want every time i activate the bBTN1, after 3s to activate the bOut1, and stays so, until bBTN1 activates again.Every time bBTN1 activates the bOut1 should deactivate and after 3s activate.The actual FB would be more complicated, but this is the general idea of what i want to do.Quote:You haven't said why it's necessary to disable the container FBBecause the FB would hold the M100 for example active and i don't want to do that. So when FB is disabled the M100 would be driven from another FB.  I was thinking something like that with an extra variable bInit, but i was hoping if there is another more simple approach to the resetting a FBs variables.
+
+Well, then I guess  you'll have to ... Quote:use system libraries for functions that return the current system time and the task schedule time. The FB would need to remember the time when it last executed, compare that to the current time, and if the difference is greater than the task schedule time (by more than jitter) you could assume that previously the FB was disabled and reset the timer. Presumably one would need a good reason to go to all the trouble.I'm not working on  a codesys platform at the moment, so I won't be able to tell you which ones.  You'll have to search for yourself or wait for someone else to make a recommendation.
+
+cnc_freak,I believe this is what you are looking for. Just tie bIn1 to your button and bOut1 will turn on 3 seconds later. If you press your button anytime after bOut1 is on it will turn off bOut1 for 3 seconds before turning on again.Attachment:Delay On Example.PNG
+
+Thank you all for your answers, i find something which is how i want it, but i have to use ST, instead of LD, at least of how i call the FB. I not sure that i use it correctly at least in simulation it works.
+

@@ -1,0 +1,6 @@
+hello:There is some way to delay the start of codesys so that it takes longer to start??my problem is that I receive this exception sometimes if and sometimes not when the controller starts.Attachment:Captura.PNGbest regards,
+
+Hi,Sound like the following problem:viewtopic.php?f=26&t=8454&p=20133#p20082BREdwin
+
+Hello:I have made several tests and it seems that it has to do with the system is stopped by power failure or by license time when restarting raspberry the time is in an old value and the record manager fails.regards
+

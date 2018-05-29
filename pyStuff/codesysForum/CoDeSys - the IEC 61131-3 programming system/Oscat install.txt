@@ -1,0 +1,32 @@
+Hi, I have downloaded and attempted to install the Oscat271 Library
+( I needed a FIFO function)
+
+It seems to install OK and I can access all of the POU's and put a FIFO into my program.
+
+However, when I compile the program I now get an error as follows...
+Erro7 3700:INT_TO_BCD (2): A POU with name "INT_TO_BCD" is already in library "oscat271.lib"
+
+I also get a second error message, as above but for "BCD_TO_INT
+
+PLC is an ABB AC500
+CodeSys is V2.3.8.5    Oct 2007
+
+Any help or advice would be appreciated
+Alan
+
+Hi,
+this happens, if you have a POU of same name in another library again. Check the other libraries included into your project.
+Rolf
+
+As Rolf already told you two different libs using the same name.
+
+check if you really need all the libraries,
+if yes you could exclude portions of the oscat lib from compilation
+you could also open the oscat lib as a project with file open and modify it as you wish
+
+_________________freie sps bibliothek unter www.oscat.de
+
+Thanks Guys
+
+alan
+

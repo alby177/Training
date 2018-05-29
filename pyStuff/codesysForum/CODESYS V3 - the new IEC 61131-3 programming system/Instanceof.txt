@@ -1,0 +1,28 @@
+Dears.Do you know if it exist any function like instanceof oj java.OrIt is possible to pass a class as a parameter ( like __new).OrCould be possible to declare static methods which will be called with className.method (like in java)
+
+Hello Josep,I believe that the closest to java instanceof is __QUERYINTERFACE and __QUERYPOINTER.Regarding passing a class as parameter, you could pass a pointer or a reference (needing to know the type which probably is not desired)... or you could make all your classes of the "same kind" to implement from a common interface and then use that interface where you need it... you will be able only to use methods and properties implemented in all the classes, but less is nothing.The worst part of this is that in case you need to access the specialized part of the class then you will need the pointer to the class instance, loosing the flexibility.Using __New requires the result to be copied into a pointer so you can't send it directly as a parameter, but you can make the two steps easily... (the problem here appears only if you want to be able to cast to different types as this is not allowed in Codesys (at least I've not found the way to do it)).You can set functions that are global and then pass a pointer to the element you want to work with, or you could reuse the last comment and simply call the implementation functions...Of course you could extend your new function blocks from a "base class" and then call the base class functions by using SUPER^.Hope any of those comments help you!PS: Where are you from? now you will tell me you are living in China, but your name sounds like catalan.   Best regards from Artés.
+
+_________________http://www.robotecnik.com - robots, CNC and PLC programming.
+
+Ei Joan.All my classes derives from a basic class named object which only has 2 string attributes nameinstance and nameclass. Nameinstance is inserted automatically, but classname is hand filled.After that, I have integer, lreal, bool classes which derives all from an abstract class named basictype. ( Similar to Integer class in java).In one application i have an arraylist of basictypes, and when i runs by the array i have to know if the object is typeof Integer, BoolEx...At the moment I can know the type via string attribute classname, but I dont like string comparations.PS: Salut des de La Selva del Camp (Baix Camp)
+
+I've seen some examples on the Internet which used a string to define the KindOf... as you say it is not the best option here...You can always substitute the string for a constant, enum... but it will always be something artificial and prone to errors...I can't help you about that... if it is possible to achieve it, I don't know how to do it.  Salut!
+
+_________________http://www.robotecnik.com - robots, CNC and PLC programming.
+
+Perhaps you may find VARINFO helpful.  viewtopic.php?t=6788
+
+_________________Rick
+
+Varinfo gives information about the pointer. If you have pointer to dword pointing to an lreal, varinfo says that it is an dword, but I already know that
+
+Ah, it works differently for me.  There is a struct named MetaData in the following example.  Varinfo correctly get the typename of the struct "MetaData".   Isn't that what you were trying to do?Attachment:Capture.JPG
+
+_________________Rick
+
+I have an array of BasicType, BasicType is an abstract class which is the super of IntegerEx, LRealEx, BoolEx,...The elements in the array are inserted as BasicType class instances, but its really are IntegerEx, BoolEx...I take one array element, inserted as BasicType, I will pass to varinfo a pointer to BasicType, and varinfo will says to me that the instanceName is 'BasicType'. But I want to know if the instance is IntegerEx, LRealEx or else
+
+Instance are created at compile time not at runtime as is done in interpreted languages. Varinfo correctly reports details of such instances. Presumably it would also work correctly with instances created at runtime using __NEW, I have never tried so can't say for certain.
+
+_________________Rick
+

@@ -1,0 +1,6 @@
+HelloI am having a issue  with codesyscontrol demo version for raspberry Pi.My aplication contains only a I2C devices (Gyro_MPU6050) working at 400kHz I2C bus speed and a webvisualization.Sometimes when I restart codesyscontrol via command (service codesyscontrol start), works normaly around 33 seconds and then the process going to the state D, (TASK_UNINTERRUPTIBLE)  , and the only way to put to work again is removing the power from the raspberry (kill the process or reboot it's not effective). I already tried to reduce de I2C bus speed, but still happend.Linux version 3.18.11-v7+ (dc4@dc4-XPS13-9333) (gcc version 4.8.3 20140303 (prerelease) (crosstool-NG linaro-1.13.1+bzr2650 - Linaro GCC 2014.03) ) #781 SMP PREEMPT Tue Apr 21 18:07:59 BST 2015Codesys V3.5 SP7+Codesyscontrol V3.5.7.10The log (image below) shows the codesyscontrol process going down. This issue always occurs about 33 seconds after the start of codesyscontrol .Any ideas?
+
+Hi,please try this:connect by ssh to the Pi(putty)thensudo apt-get updatesudo apt-get dist-upgradesudo rpi-updateIf this does not solve this let me know.BREdwin
+
+Thank Edwin , working perfectly !BRJSchmitz
+

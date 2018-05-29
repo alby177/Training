@@ -1,0 +1,42 @@
+Hello
+I have a small problem with the Webvisualisation, when i add a alarmtable
+with show statusline in visu and when i use visualisation in CoDeSys to view the text in the buttons are in English (OK).
+When connect my webbrowser to view the alarmtable then the text is in German? I wish to translate it to English or even better to Swedish.
+How do i do?
+ (I use CoDeSys with WAGO 841 )
+
+Olle.T
+
+You are right - this is a general problem.
+
+Working in the CoDeSys programming system with the visualisation editor the tool knows which language you have selected fo the desktop (menu projekt/options/desktop) and thus shows the buttons in english. The webvisualisation is (and has to be) independent from that information.
+
+This means that you have to manually generate the statusline instead of automatically generating it. In case you switch "Show statusline" off you can place your self defined buttons and connect them to variables e.g. for acknowledgement.  Doing so the buttons are part of the language file that can be translated and switched into any other language.
+
+_________________Roland WagnerModerator
+
+Thanks for the answer.
+There is problem with timestamp in visualation in alarmtable  this is in 12hours format, how did I change it to 24hours format?
+
+Roland Wagner wrote:You are right - this is a general problem.Working in the CoDeSys programming system with the visualisation editor the tool knows which language you have selected fo the desktop (menu projekt/options/desktop) and thus shows the buttons in english. The webvisualisation is (and has to be) independent from that information................
+
+Can you gave link to the software? ( for download current version )
+
+Working the CoDeSys with NET, ASP, Java, PHP software technology?
+
+I made a text box in the visualization with a variable a , incrementing on each scan. Everything looks as expected on the visualisation (CoDeSys development) and CoDeSys HMI, once i target this onto the Web Visualisation I do not see the variable updating
+
+Roland Wagner wrote:You are right - this is a general problem.Working in the CoDeSys programming system with the visualisation editor the tool knows which language you have selected fo the desktop (menu projekt/options/desktop) and thus shows the buttons in english. The webvisualisation is (and has to be) independent from that information.This means that you have to manually generate the statusline instead of automatically generating it. In case you switch "Show statusline" off you can place your self defined buttons and connect them to variables e.g. for acknowledgement.  Doing so the buttons are part of the language file that can be translated and switched into any other language.
+
+
+I know this subject is quite long ago.. but I would like to check with you that whether can I view the alarm history on an alarm table by using webbrowser? I hope you can reply.. thanks..
+
+Hello,
+
+The webvisualization is able to display the alarm history when this feature is supported by the used webserver and when the targetsetting "Alarmhandling in the PLC" is activated.
+
+Michael Pfob wrote:Hello,The webvisualization is able to display the alarm history when this feature is supported by the used webserver and when the targetsetting "Alarmhandling in the PLC" is activated.
+
+
+Can I know what type of the PLC have you tried?
+

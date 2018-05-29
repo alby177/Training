@@ -1,0 +1,10 @@
+I consider writing a softmotion driver for a project.Can you provide me some tutorial or examples?
+
+Hi,read this FAQ here:viewtopic.php?f=22&t=5645#p14392BREdwin
+
+Thanks for the quick response.But, I do not want to have the driver publicly released, nor do I want to spend money for 5days of engineering.Simply need a basic softmotion driver for a smaller project, thus I can have the motor running (counter)ClockWise.
+
+Hi,guess this is not possible we do not have a template nor documention for doing this...Let me ask what is possible.BREdwin
+
+Hi.I dont know if you have solved the problem. But in any case...You can use driver device manager as an input output standard and command drive directly.You need 3 drive parameters ( see drive mapping). Cia control word, target speed antd ddrive motion mode.Normally putting cia control word to 0×f enables the drive. 0x6 disables it.In target spped you can write the motor desired sppeed ( normally in milirpm).The drive mode has to be put at speed mode (normally 0x6 or 9 not remmember)Firtst put the drive in speed mode. After that disables it ( for enbaling has to pass by 0x6) and enble . At this moment you can write to speed target the deaired sppeed.
+

@@ -1,0 +1,4 @@
+Hi Is there someone how have used EL3356 in V3 SP8. Startup parameters that will not be downloader in a proper way.Have been recommended by our supplier write parameters using ETC_CO_SdoWriteDword.It works but I also need to Read parameters when doing a sequence for Calibration.Here I nee some help.
+
+hi,this should point you in the right directionhttp://store.codesys.com/ethercat-example.htmlBREdwin
+

@@ -1,0 +1,6 @@
+Hi,I'am new to Codesys as for your information.Currently I have a Laptop already installed with Beckhoff TwinCat for my automation engineer and I've got another new laptop that I've just bought, if I want this one also can do some works as the previous one, do I have to also install the TwinCat or I can just download the Codesys 3.5 SP8? and if I choose to only Install Codesys, does it's need another thing to have/buy?thank you for any Information's that can help
+
+Hi,no, twincat plc's should be used/programmed by Twincat and CODESYS plc's should be used/programmed by CODESYS.It is possible to install a CODESYS runtime on Beckhoff CX devices  (http://store.codesys.com/mixedsearch/mi ... duct_area= ) and use them with CODESYS V3. But not vice versa... (using Twincat and programm CODESYS V3 plc's)BREdwin
+
+Thank you very much for the information
+

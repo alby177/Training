@@ -1,0 +1,6 @@
+Ich versuche mit Hilfe der Option "Geräte suchen..." des PN_Controllers mein angeschlossenes IO-Device (Siemens ET 200S) zu finden (GSDML-Gerätebeschreibungsdatei ist implementiert). Leider meistens erfolglos. Da es mir allerdings bereits einige Male gelungen ist, frage ich mich, wo das Problem liegt. Ich kann die erfolgreichen Versuche nicht reproduzieren. An der Ethernet-Schnittstelle schickt der Pi zyklisch DCP-Pakete an die Adresse 01:80:c2...  Liegt das Problem möglicherweise auf der Seite des IO-Device?Hat jemand ähnliche Probleme?GrußWilfried Buck
+
+Meine weiteren Versuche haben ergeben, dass nach einem Neustart der Runtime die Suche nach dem IO-Device funktioniert. Offenbar darf während der Laufzeit der Runtime das Projekt nicht gewechselt werden.GrußWilfried Buck
+
+I connected Pilz PN Remote Safety IOs....without problem...
+

@@ -1,0 +1,4 @@
+In CoDeSys ver. 2.3.9.25:Command:    Project->Project database->Show Version History.Result:    ENI Server [project objects]:This operation is not supported by the database.ENI database driver:ENIDrvFileSystem.edd
+
+You are using the default free ENI server database driver for file system, right? I believe it is all what we can get from it. If you look at the actual ENI directory, you won't see anything but project files. No history, and I don't think it is hidden somewhere. Just a bare files set.I believe we need a real VCS server and a driver for it to view the history.
+

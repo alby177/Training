@@ -1,0 +1,8 @@
+Hi all, I am new to codesys. I met some problems when trying to communicate between the PLC and codesys.what I did is:1.first I install the target (.tnf file), it seems no problem.2. Then I open the online-> communication parameter and set the port and baud rate.3. Then I powered my PlC and connect it with PC by a CAN to USB connector4.Then I try to log in, and there appears a communication error?
+
+Hi,Could you please specify the communication error more precisely?As there are two communication ways between the CoDeSys programming environment and the PLC this is necessary to know.There is one communication from CoDeSys to the so called CoDeSys Gateway server - you can configure this communication by clicking on the Gateway button inside the Communication parameters dialog.And the second communication is between the Gateway server and the PLC, represented by the communication channel you have set by changing the baud rate etc.And there might be one more possible cause: You have to choose the right target system in the 4th register card "resources" of the object organizer on the left side.And of course that might be indeed a physical problem (cable, interface). Perhaps you can fix this cause by the use of other software (terminal etc.).
+
+_________________Roland WagnerModerator
+
+Thanks for your reply, the problem is now settled.However, when I try to connect my PLC with PC today, the communication error occurs again. I do not know why, because till this morning, it all works okay, I do not changed anything of the connections, code etc. what's the problem?Thanks
+

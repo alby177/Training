@@ -1,0 +1,2 @@
+Hi,Is there a chance to convert REAL value to 2 Octet Floating Point, like KNX use it.I like to have 2 Octet Floating Point saved in 2 bytes. Thank you!
+

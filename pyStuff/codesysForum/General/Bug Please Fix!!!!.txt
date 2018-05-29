@@ -1,0 +1,14 @@
+I have had this happen many times in many CoDeSys versions.
+
+Here are the steps I believe you can use to recreate it.
+
+1. Keep CoDeSys application closed.
+2. Open a help file *.chm from a CD. Windows will use it's default reader. I was looking at help files for other PLC manufacturers on a target CD.
+3. Remove the CD from the drive.
+4. Open CoDeSys and go to the help menu or press F1.
+5. You will get the following screen capture but you can not get rid of the message box. You are stuck. Pressing any button will not close the message box.
+6. If you put the CD back in you can then move on. Not sure if you can use any CD or the one you used to view the other help files. I used the one I opened before.
+
+_________________Thanks,
+Steve Pfeifenroth
+

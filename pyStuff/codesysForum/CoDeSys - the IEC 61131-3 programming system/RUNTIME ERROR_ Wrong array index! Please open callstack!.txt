@@ -1,0 +1,6 @@
+I have a program and the only change I made was add 3 global variables, each a string and as soon as I try to run the program in simulation mode I receive this error. These three variable are included in the write file from the master (PLC) to the slave (Screen), as soon as I remove them I can run the program no problem. When I go to Online> Show Call stack... there is nothing in there.I can get it to run a single cycle, as soon as I try to get it to run another cycle I receive the error.
+
+you redefine an array (or make the same arrayname double, check the variable with ctrl F3it should only be one write.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

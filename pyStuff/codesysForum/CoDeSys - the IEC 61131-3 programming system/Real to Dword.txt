@@ -1,0 +1,12 @@
+Hello. I must represent real value as 4 bytes. I am doing this as follows:	Real_var   AT  %MD0: REAL;	Word_var  AT  %MD0: DWORD;For instance if Real_var=5, then Word_var =16#40A00000.Does someone know more elegant way to doing this?
+
+it depends on what is next step. and yes it works
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+shooter wrote:it depends on what is next step. and yes it worksnext step is:	Array_of_byte[1]:= WORD_TO_BYTE(Word_var);        Array_of_byte[2]:= WORD_TO_BYTE(SHR(Word_var,8));        Array_of_byte[3]:= WORD_TO_BYTE(SHR(Word_var,16));        Array_of_byte[4]:= WORD_TO_BYTE(SHR(Word_var,24));	CANOPEN_SDOWRITE_real(	EXECUTE:= execute,	CHANNEL:= 1,	NODE:= slave_node,	IDX:= index,	SUBIDX:= subindex,	LEN:= 4,	DATA:= Array_of_byte,	Timeout:= t#200ms,	RESULT=> );
+
+check oscat.de he made special communication functions.also for canopen
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

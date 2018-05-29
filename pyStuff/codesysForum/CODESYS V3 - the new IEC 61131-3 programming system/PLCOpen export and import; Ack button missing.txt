@@ -1,0 +1,6 @@
+I use the PLCOpen fileformat in a project. I noticed that a project that is exported in PLCOpen fileformat and imported again, does not result in the same project.For example, the CAN_Local_Device has a Status Acknowledge button. This button can be used during run-time. After an export and import, the 'last diagnostic message' and the Acknowledge button are missing!(I use CoDeSys V3.4 SP4 Patch 1)Is this a known problem? Or did somebody else notice similar behavior with the PLCOpen fileformat?
+
+Hi,I can confirm this behavior. I also tested this with CoDeSys V3.4 SP4 Patch 1.
+
+Thank you.Do you know similar issues e.g. with other devices, other buttons or items, ...?
+

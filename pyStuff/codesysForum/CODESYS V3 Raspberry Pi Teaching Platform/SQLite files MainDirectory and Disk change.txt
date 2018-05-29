@@ -1,0 +1,26 @@
+Is there any way to change the main directory and disk of alarm and trend files?I want to write these files at ram disk because if i have an unexpected shutdown of Raspberry the files produce a problem to run again the application after reboot.Regards
+
+Hi,yes, this could be done:[SysFile] FilePath.1=/etc/, 3S.dat FilePath.2=/yourRamDisk/, *.sqlite, *sqlite.metadatathe same with alarm files, you need to specify the path redirection.BREdwin
+
+Hi EdwinI try:[SysFile]FilePath.1=/rts/, 3S.dat, *.app, *.crcFilePath.2=/etc/, *.sqlite, *sqlite.metadatabut when i try to download the application i take error:"Received invalid answer from device"My default configuration that works is:[SysFile]FilePath.1=/rts/, 3S.datFilePath.2=/rts/, *.app, *.crcHelp Please
+
+Hi,i've found the time now to test this and it works for me with the following settings:[SysFile]FilePath.1=/etc/, 3S.datFilePath.2=/home/pi/, *.sqlite, *sqlite.metadata,  *sqlite-journalAttention:Guess before you redirect the path there should not be a bootproject on your pi with have some trend implemented.So the procedure is:Clean Pi (Reset Original)stop the plc bysudo Service codesyscontrol stopRedirect the path by changig the /etc/CODESYSControl.cfgsudo service codesyscontrol startdownload your trendapplication and check in the log if there are Errors and check your new Directory if These sqlite files exist in thenew Directory Environment(redirected)BREdwin
+
+Hi,Need to do one additional remark:If you Redirect to another drive (USB whatever) you need to add *sqlite.tmp[SysFile]FilePath.1=/etc/, 3S.datFilePath.2=/media/xxxx/, *.sqlite, *sqlite.metadata, *sqlite-journal, *sqlite.tmpBREdwin
+
+Edwin Schwellinger wrote:Hi,Need to do one additional remark:If you redirect to another drive (USB whatever..) you need to add *sqlite.tmp[SysFile]FilePath.1=/etc/, 3S.datFilePath.2=/media/xxxx/, *.sqlite, *sqlite.metadata, *sqlite-journal, *sqlite.tmpBREdwin
+
+Please tell us how we can do the same trend files redirection to USB Flash with Codesys RTE 64bit.Regards
+
+Hi,since SP8 you need to do this by the follwing:C:\Program Files\3S CODESYS\CODESYS Control RTE3\CODESYSControl.cfg[SysFile]PlcLogicPrefix=1PlaceholderFilePath.1=d:\yourdir, $trend$BREdwin
+
+We need the same for alarms and recipes ?From SP8 change and for the Raspberry ?Regards
+
+Are you sure?Attachment:TrendPrj.png
+
+Hi,yes i'm pretty  sure please just do it in the config file by using my snippetnot in this configuration menu (tasktray), this leads to a path redirection for all files.This is not what you need in that case.BREw
+
+Hi EdwinWorks OK for trends.Can i do the same with Raspberry?How can i do the same with Alarms and Recipes?Regards
+
+Hi,this is the same:Example for Raspberry Pi[SysFile]FilePath.1=/etc/, 3S.datPlcLogicPrefix=1PlaceholderFilePath.1=/home/pi/trend, $trend$PlaceholderFilePath.2=/home/pi/alarms, $alarms$on recipe you give the location to save them in CODESYS project on the recipemanager, this is differentBREdwin
+

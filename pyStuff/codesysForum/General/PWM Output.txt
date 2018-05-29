@@ -1,0 +1,6 @@
+Can anyone help me to get PWM output from the PLC
+
+same story as your freq measurement, only with special modules.For this type i use the Arduino processing, is a simple processor and i use it to convert a 4-20 mA signal into a PWM of 2 Amps, 24 Volt.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

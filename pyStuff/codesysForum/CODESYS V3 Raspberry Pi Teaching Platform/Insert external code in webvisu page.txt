@@ -1,0 +1,2 @@
+Hi,is possible insert external code in codesys webpage to insert ipcam stream code ?If yes where ?Thanks, Alberto
+

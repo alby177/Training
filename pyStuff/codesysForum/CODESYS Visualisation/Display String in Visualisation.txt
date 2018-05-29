@@ -1,0 +1,30 @@
+Hi All,I've a simple ST:Code:PROGRAM ertVAR   DEUR_WC_OPEN_TOE: STRING;   DEUR_WC_OPEN_TOE_2: BOOL;   STATUS_DEUR: STRING;END_VARIF Module1Input1=TRUETHENDEUR_WC_OPEN_TOE :='--Open--';DEUR_WC_OPEN_TOE_2 := FALSE;STATUS_DEUR :='OPEN';ELSEDEUR_WC_OPEN_TOE :='--Toe--';DEUR_WC_OPEN_TOE_2 := TRUE;STATUS_DEUR :='TOE';END_IF;However on the Visualisation the string text is not displayed the booleans are displayed correctly Anything that I'm doing wrong?Thanks for your help
+
+Hello,J tried you little programm and it works well.I think there is an error in the configuration of your display element.For my test, I configured a rectangle, with the following settings :- Category Texte : %s (use lowercase s, not uppercase S)- Category : variables : text display : ERT.DEUR_WC_OPEN_TOE (Using the F2 key shows the variable)Hope this helps you  
+
+Hi JABIP,I've still the same problem, I've added some screen shots to explain how I configured it.In the PLC_VISU, I've created a box where I putted a copy of the ST and next to it different blocks of each Variablethe first variable .Module1Input1 is the inputthe next 3 are the outputs of the IF statementBlock 2 and 3 are also configured to change colour depending on the status.my problem:If I display a string coming from a Boolean -> no problem, it displays FALSE or TRUEWhen I want to display a string variable -> it doesn't display anything, although the colour is changing correctly ... I'm using CoDeSys 2.3.9.25I do remember that in the beginning it displayed only the first letter of the string and then some symbols, but now it doesn't show anything any more as you can see on the screen shot.The same result I have in my browser btw.thanks you for your support so far  
+
+I do not understand. I have exactly the same as you and it works well.Just a silly question again! Is the "ert" program called in the program PLC_PRG ?   Like that :PLC_PROGRAMVAREND_VARert(); I'm sorry for the silly question but sometimes we forget the main thing!  
+
+Hi JAPIB,I don't really understand your question, hence I've made a screen shot of the codepage.Is that what you mean?Thanks
+
+Hello PhilIf you want your program"ert" is running, you have to call it in the PLC_PRG.Have à look to the following screen.Attachment:Image 1.jpg 
+
+Hi JAPIB,Thanks for pointing out on that, I didn't know.but ...The main program is FBD type see screen shot, how do I let the ert running?however, the booleans are working fine, it is just the Strings that don't get displayed 
+
+Hello Phil,Operating principle : Only the "PLC_PRG" program is running by your PLC.All other program modules are executed only if they are called by the PLC_PRG, or if they are called by a module called himself  by PLC_PRG.For example : If you have : PLC_PRG, Prog1, Prog2, Prog3, Prog4If PLC_PRG call Prog1 and Prog 2, and Prog1 call Prog 3.In this case Prog4 is never executed, because it is never called.In your case the only variable that is processed by the PLC is the boolean. String variables are processed in the "ert" module , but as it is not executed by the PLC, they are not positioned !Your program is written in CFC language.If you want to call "ert" program (and you have to do   ) Just had a box (it wwill be a AND one) and name it ERT !Like this :Attachment:Image 2.jpgI think it will be better   I think you have many things to learn and you might consider training.Best regards  
+
+Hi JAPIB,Thank you for pointing out, it is working fine now! Merci beaucoup!And indeed as I'm new to this, I can use some training  do you have any recommandations?bàtPhil
+
+For trainings you can have a look to 3S internet site http://www.3s-software.comIf you live in Germany see the trainings offered by 3S.If you live in another country see the trainings offered by the CoDeSys System Partners.Best regards.  
+
+Phil if you like you can talk to me in dutch,do not use very long variable names as they are confusing and the length plays a role in the compiler.btw look for examples at www.oscat.degreetings paul,s-hertogenbosch
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hey Paul,Thank you for the feedback and pointing me in the right direction.Thanks to JAPIB that part is working now but ... I'm still struggling with 2 other issues1. displaying real time clock of the device (if that's possible on my 750-849)2. cyclic updating my MySQL with some values received on the PLCbtw how did you know I speak Dutch? is my English that bad 
+
+in the program it says deur open thats why.if liked you can phone me anytime.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

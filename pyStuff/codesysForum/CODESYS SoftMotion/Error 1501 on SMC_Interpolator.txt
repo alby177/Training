@@ -1,0 +1,6 @@
+Hi to all, I was trying to operate the CNC examples under the directory ...\3S Software\CoDeSys V2.3\Projects\Motion\Tutorial\on the CNC direct example, when I execute the SMC_Interpolator block, I get an error 1501 which is stating that outqueue has a problem. When I reset the execute input, the error code turns into a wErrorId=1006I have a direct pointer to the CNC program name as an input to poqDataIn input of the block, goes something like> Interpolator.poqDataIn:=ADR(CNC_ProgramName);I can't figure out the source of the problem, the project builds without errors or warnings.  I try to do this using a Schneider Electric LMC20 controler.has anybody experienced problems like this?  Can you help me?
+
+Hello Syncrotry to use a MC_ncdecoder followed by MC_checkvelocities and feed the MC_checkvelocities.poqdataout to SMC_Interpolator.poqdatain see attached pic
+
+Thanks, ZeRon. It works fine, I was just not able to operate it without using the SMC_NCDecoder block.
+

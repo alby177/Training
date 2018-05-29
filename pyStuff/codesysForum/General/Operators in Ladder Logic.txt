@@ -1,0 +1,22 @@
+I am working in V2.3I want to insert an operator such as MUL, MOVE or DIV in a ladder logic program.If I insert a Function Block it opens the input assistant but the operators don´t appear. When I hit F2 in the block then the Input assistant appears but this way the operators do appear.Can you help me to find out what is wrong? I would like the operators to be available when I select the Function Block button since this way is more intuitive for a beginner.Thanks
+
+You can also insert a blank box and just type in ADD, SUB, MUL, etc
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+use box with enable, gives you more possibilities
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+and F2 is dependant of where the cursor is highlighted.so you need to click on the ADD to see what is possible.In Ladder the topline MUST be a TRUE/FALSE and the result also.however it is possible to use analog values in lower lines. it is NOT possible to put more functions in a line.For this FBC is a lot better. just try it.You may use a function block in ladder and put all the needed calcs into a FB.next step is CFC, when used once (it looks like labview) you will like it.in between is also ST, however function blocks are not easy in ST.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Good tips, Shooter!  Also F2 can insert an FB into ST with all of the arguments.  Some of us who grew up programming PCs instead of PLCs find ST way easier than LD/FBD.  Just a different flow thought!
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+ST with these function blocks , yes i do use it however when there are many vars i loose the proper thinking. with CFC it is a lot easier to keep the overview.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

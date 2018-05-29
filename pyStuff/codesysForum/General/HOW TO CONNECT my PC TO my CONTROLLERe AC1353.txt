@@ -1,0 +1,6 @@
+HI!I'd like to connect a PLC  AC1353 (IFM Electronic) to my PC but that is impossible after setting the IP adress and the SubNet-Mask , to get access to the PLC.Normally the name of my PLC sould appear on the menu. This was not appenning! Please I need your help!I added some documents explaining the location of the problem.Best regards!Nice day!!
+
+if computer is 192.168.1.21 then plc should be 192.168.1.22 or any other numberthe communicatons should be set accordingly in the PCdo a ping to your plc and to your pc
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

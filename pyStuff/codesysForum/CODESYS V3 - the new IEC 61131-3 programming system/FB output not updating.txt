@@ -1,0 +1,12 @@
+This is my first function block I am trying to create.FB Variables:Code:FUNCTION_BLOCK DG_FBVAR_INPUT   Status_CB_InService: BOOL;   Status_CB_Healthy: BOOL;   Status_CB_Trip: BOOL;   Status_DG_Running: BOOL;   Status_DG_Fault: BOOL;   Status_DG_Online: BOOL;END_VARVAR_OUTPUT   Coil_CB_InService: BOOL;   Coil_CB_Healthy: BOOL;   Coil_CB_Trip: BOOL;   Coil_DG_Running: BOOL;   Coil_DG_Fault: BOOL;   Coil_DG_Online: BOOL;END_VARVAREND_VARST FB Code:Code:IF Status_CB_Trip = TRUE   THEN Coil_CB_Trip := TRUE;END_IF;IF Status_CB_InService = TRUE   THEN Coil_CB_InService := TRUE;END_IF;IF Coil_CB_Trip = FALSE AND Coil_CB_InService = TRUE AND Status_CB_Healthy = TRUE   THEN Coil_CB_Healthy := TRUE;END_IF;IF Status_DG_Fault = TRUE   THEN Coil_DG_Fault := TRUE;END_IF;IF Coil_DG_Fault = FALSE AND Coil_CB_Healthy = TRUE AND Status_DG_Running = TRUE   THEN Coil_DG_Running := TRUE;END_IF;IF Coil_DG_Running = TRUE AND Status_DG_Online = TRUE   THEN Coil_DG_Online := TRUE;END_IF;I have also done a visualization with buttons for the inputs and lamps for the outputs.When I toggle the inputs, the inputs status changes, but the output status is not updating.Appreciate if someone can tell me where I am going wrong.
+
+_________________Computer Setup:- Windows 7 Professional- CodeSys V.5 SP8 Patch 2PLC Setup:- Pi2 (running headless via Putty)- Jessie Lite.
+
+I think the first problem is your variable settings inside the IF statements. Please note that if an IF statement goes true once, your variable is set to TRUE and not set to FALSE unless you set it to false somewhere!  I see a lot of your code setting variables but not resetting them. Second, be sure your program is running!  Many times I have clicked buttons in the visualization and wondered why nothing is "happening", only to see the red Stopped notice at the bottom.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Thanks Scott.I did not realize I had to explicitly set the False condition - but it makes sense.
+
+_________________Computer Setup:- Windows 7 Professional- CodeSys V.5 SP8 Patch 2PLC Setup:- Pi2 (running headless via Putty)- Jessie Lite.
+

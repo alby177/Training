@@ -1,0 +1,4 @@
+Hi,I have never seen the "Download missing library" in real work. Should I set it somewhere???
+
+Do you connect to internet via proxy? If so go to "Tools > Options > Proxy settings" and configure it
+

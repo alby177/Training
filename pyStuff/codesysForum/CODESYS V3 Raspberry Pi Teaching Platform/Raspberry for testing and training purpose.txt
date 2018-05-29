@@ -1,0 +1,4 @@
+On codesys web site I found:"This product is provided for testing and training purpose and may not be used in the field."Why? What is the raspberry's limit?
+
+You can... But the Pi, they believe, is not built to industrial specs, and they do not recommend it for actual "real" applications.  Not to say you can't though..
+

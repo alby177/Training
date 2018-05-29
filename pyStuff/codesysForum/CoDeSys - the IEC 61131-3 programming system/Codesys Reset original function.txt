@@ -1,0 +1,16 @@
+Hi I am looking for a program or procedure to reset retain memory in Wago unit 750-880.this unit can update the application program at boot with a SD-card.updating this way does not reset the retain/persistent values allready in the PLC.so if the new program has different organisation of retain/persistent variables or are a totally new program the update will fail.existing retain data is corrupted.then the only possible way to get the PLC to run the new program/or update is to do it online with codesys. online - Reset (cold) or Reset (original).for me this is wery problematic.  I send updates by email to customer and she/he copy the backup to the SD-card and boot the unit.no high tech equipment or setup, just normal user computer knowledge.has anyone a solution to this, resetting this memory in PLC?  
+
+_________________Best regardsrudolf
+
+there is a button behind the small cover for the programming cable, this switch has several functions.it is called operating mode switch.instruct to switch down to bottom and then push the button. this causes a hardware reset (this can be detected by your program, and then you can reset some markers you want, (probably you do not want to reset all (like hourcounter should not be reset).
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+shooter wrote:there is a button behind the small cover for the programming cable, this switch has several functions.it is called operating mode switch.instruct to switch down to bottom and then push the button. this causes a hardware reset (this can be detected by your program, and then you can reset some markers you want, (probably you do not want to reset all (like hourcounter should not be reset).Hi shooter.I'm afraid this reset switch does not reset retain memory.however I have got my hands on a wago program called wagoupload. the latest version of this program can perform many tasks including Reset, Reset(cold) and Reset(original) with ethernet connection to the PLC.So at the moment my hart beat is back to normal  
+
+_________________Best regardsrudolf
+
+yeah however the machine needs a internet connection for this.I tend to send a complete unit to the customer (not happened yet, this way he does not to have any knowledge (mine are russian crewmembers on board ships, always in chile or on route on the big sea
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

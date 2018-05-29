@@ -1,0 +1,12 @@
+I would like to know, how I can get the current visualization page that I have anytime.Thanks in advance
+
+Hi,if you pose your question more concrete, it will be easier to answer  .You have designed a visualisation page/object and want to display it? Where? How?
+
+_________________Roland WagnerModerator
+
+I have an application with different screens, so I would like to know everytime on which screen I am. I mean the screen that I am visualizating actually.Is there any method, function or whatever that can do this?
+
+You can use this variable called Currentvisu (String[40]).from online help :Name of the currently opened visualization. If the name gets changed, a change to another visualization will be done. Note: With compiler versions < V2.3.7.0 the name string MUST be defined in capital letters. With compiler versions as from V2.3.7.0 the string can be defined in small letters IF the library SysLibStr.lib is included in the project.Depending on the target system this variable can be activated/deactivated in the Target Settings dialog, category Visualization.it is possible that this does not work with all targets !Best regards
+
+Thank you very much JAPIB!I will work on it!
+

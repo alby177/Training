@@ -1,0 +1,29 @@
+Is there any function block for path planning in CoDeSys software.
+
+Thanks.
+
+The attached Projekt is an implementation of the Dijkstra algorithm.
+
+_________________föniglicher Gruß
+
+vom Fönig
+
+I don't need Dijkstra algorithm, I need path planning for industrial robots
+:How to calculate path between point p1(x,y,z) and point p2(x1,y1,z1)
+and how to calculate acceleration, deceleration and speed?
+Regards
+
+Yes Leonard !
+
+You have got solution of above? I am also looking for same.
+what is solution of this?.
+
+_________________prabhakar
+
+A quick google search comes up with the following:
+
+http://ieeexplore.ieee.org/iel3/1090/74 ... ber=299163
+
+And check the section Motion Profiles under
+http://www.a-m-c.com/content/m101/mco.html
+

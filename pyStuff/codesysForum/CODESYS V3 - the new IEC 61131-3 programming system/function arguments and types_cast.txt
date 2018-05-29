@@ -1,0 +1,8 @@
+I have a problem with types when passing arguments involving direct numerical value.The function definition:FUNCTION myFunc: BOOLVAR_IN_OUT	i : INT;	r1: REAL;        r2: REAL;...If in PLC_PRG I call the function like this:myFunc(i:=2, r1:=11.1, r2:=800);It gives me a compile error because 2 is seen as a SINT and not an INT, 11.1 is seen as LREAL, while 800 is seen as REAL (OK for compiler).But if I declare variables in PLC_PRG and then call the function myFunc it works. Like this:VARi : INT;r1: REAL;r2: REAL;END_VARi:=2;r1:=11.1;r2:=800;myFunc(i,r1,r2);I would really like to have the one-liner written above working for compactness in big programs. Can you please help me figure out how to do that? The idea is to be able to set many parameters to constants with one line.
+
+Have you tried: MyFunc(I:=(TO_INT)2, r1:=(TO_REAL)11.1, r2:=(TO_REAL)20);Also, in the project settings there may be a setting to treat LREAL as a REAL.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Isn't using VAR_IN_OUT referencing the memory location of the variable being passed in? If you pass direct values in there is no memory location to reference. VAR_INPUT should be used if you don't want to use variables.
+

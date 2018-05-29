@@ -1,0 +1,4 @@
+Hello, Has anyone tested what the fastest cycle time you can achieve on the raspberry pi/Beaglebone with stability. I want to log somevariables to file at >= 2000Hz (0.5ms). This is achievable with say Beckhoff controller but does anyone know if they have done this with Raspberry Pi or Beaglebone?Thanks, Chris
+
+Hi Chris,Raspberry PI:think with a Pi2 or Pi3 this is sure possible (would apply an rt_preemt pacth or use a SD Image with already patched kernel)BBB:did not test this... it depends what else you application is doingIf i find the time I'll give this a try.Sure for both you need for sure two Tasks - logtask - buffer - highspeed Task (500us)BREdwin
+

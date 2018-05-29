@@ -1,0 +1,31 @@
+Hello,
+
+I have followed  the steps in 'C_IN_32Bit_E.pdf' to make a obj file to link  a lib made in CodeSys. It works very well when the '.c' file doesn´t use a function made in another  '.c' file. 
+However when it happens, the lib from codesys needs more than one obj file to link all functions. 
+I would like to know if to build a lib in CodeSys with more than one obj file    from visual c is possible. 
+If not, has anybory any alternative or clue to make it?
+
+I´m looking forward to know any clue...
+
+Thanks a lot,
+Daniel
+
+Hi Daniel
+
+Have you managed to make a C external library work in CoDeSys?
+
+I tried to compile a simple function that does nothing but return a single short. 
+I followed the steps in 'C_IN_32Bit_E.pdf' and everything went ok, I copied the .lib and .obj files to the same folder and the project built with no warnings. 
+But when I try to test it on a real PLC I get the message during download of the program: Quote:Unresolved External POUs: LIB_FUN1
+The PLC runs on a SH4 processor architecture, I think this could be a reason to the problem as I compiled the code on Visual C++ 2008 EE.
+
+Here is my file lib_fun.h
+
+Code:/* Enum definitions *//* The Prototypes */short LIB_FUN1(void);Here is my file lib_fun.cCode:#include "C:\Libs\Test\lib_fun.h"/* The implemenation templates */short LIB_FUN1(void){   return 42;} 
+
+Thanks for any help,
+
+Danilo
+
+Try by placing the .dll file.
+

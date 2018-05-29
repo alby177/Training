@@ -1,0 +1,2 @@
+Hello.I have Codesys 3.5 SP8 with Raspberry plugin. I Wonder how i can write a library to communicate with SPI and I2C chip ?I want that library to run in the background but i can set values to it to change output/input.I have made code for MCP3008 A/D converter in structure text. Now i want that code to be a library.
+

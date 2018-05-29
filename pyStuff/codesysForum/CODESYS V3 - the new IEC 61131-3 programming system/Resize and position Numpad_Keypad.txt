@@ -1,0 +1,16 @@
+I guess it should be simple but didn't figure it out yet.Is it possible to define the position or size of the predefined numpad or keypad?How to do so?Thanks
+
+hi,at the least the position is possible to set. See attached example. (You need to use at least V3.5.5.x)To customize the dialogs feel free to change them according your requirements (size etc)"c:\Program Files (x86)\3S CODESYS\CODESYS\Projects\Visu\Dialogs\VisuDialogs.library" is part of the CODESYS installationBREdwin
+
+I am digging out this post as I do have troubel to follow the instructionsMy intention ist to open the Numpad at a fixed position.What I did:a) I included the VisuDialogs Libb) I created a new visu page "NUM" (as Dialog) and inserted a numpad inside a Framec) I call the NUM visu through an other visu page via "Open Dialog".As a result the numpad opens nicely. My problems arise with regards to catch the feedback from the dialog and closing the Numpad.Testwise, I defined in b) an INOUT variable of type string and linked it to the reference variable stVariableValue of the numpad inside NUM. The variable I linked the variable to a variable in the Project.I also checked in the "Open Dialog" the checkmarks "OK, Cancel..".My project variable never gets the value I enter in the numpad. Also, the dialog doesn't close.I can use a Workaround to Close the numpad by putting a hidden field over the OK and call from there the Close-Dialog but....Can anyone bring me up to date how to proceed.Thanks
+
+Hello Edwin,Could you please send me the program once again, i am trying to open the program sent by you but not working.Also, when i clock on "Open Dialogue" ; it only shows two option... 1. FileOpenSave and 2. Login dialogue. how can i get NumPad and KeyPad in this section.thanks,PinalEdwin Schwellinger wrote:hi,at the least the position is possible to set. See attached example. (You need to use at least V3.5.5.x)To customize the dialogs feel free to change them according your requirements (size etc)"c:\Program Files (x86)\3S CODESYS\CODESYS\Projects\Visu\Dialogs\VisuDialogs.library" is part of the CODESYS installationBREdwin
+
+I'm interested too, to know how to change the position of a numpad or keypad.I'm using Codesys 3.5 SP8, but when I try to modify a value by VisuDialogs.Numpad I do not see the possibility to change the x and y position.
+
+I called 3S Software team. Unfortunately the feature to Reposition Numpad is not possible at the moment (as if on 20.10.2016).   They will consider this option in next versions. So wait and watch...    You can choose the position of "Login" or "FileOpenSave" Dialogues so far.
+
+What about for reposition of User Managment dialogs? Seems like they should fixed it too.
+
+Hi,See attached example since 3.5SP11 maybe this is not needed anymore to customize the size of the dialogs.BREdwin
+

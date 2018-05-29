@@ -1,0 +1,4 @@
+Hi, expertsWe have a device for JSON format.Does the CoDeSys v2.3 has lib for JSON Write/Ready?? About JSON : http://www.json.org/index.htmlthanks.
+
+Hi,no, I think you need to use CODESYS Version 3 plc....and then this:https://store.codesys.com/json-utilities.htmlBREdwin
+

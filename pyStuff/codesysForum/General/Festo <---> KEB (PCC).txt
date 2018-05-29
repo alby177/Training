@@ -1,0 +1,11 @@
+Hello,
+
+I have a Festo PLC (programmed in FST language) and a KEB controller (programmed in CoDeSys)
+
+I will make communication between PLC and KEB controller.
+
+Can someone help me?  (I'am a dummy)
+
+
+Greets Kris
+

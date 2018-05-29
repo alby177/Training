@@ -1,0 +1,9 @@
+I have done this in the past(years ago) but i can't remember how to get a variable equal to the current hour and current minute.  I want to be able have the operator input an hour value and a minute value that i can then do a simple compare and run controls based on this enable. I am also communicating over radio so the input values from the operator will be in Word or Integer.
+
+First of all, you have to use a function which returns the date and time from the realtime clock of your PLC. It can be RtcGetTime(TRUE). The other one function should be used for you task is DELETE. See code:
+Code:PROGRAM PLC_PRGVAR   strTime, strDate: STRING (12);   iDay, iMonth, iYear, iHour, iMinute, iSecond: INT;END_VAR(*getting date and time*)strDate := DATE_TO_STRING(DT_TO_DATE(RtcGetTime(TRUE)));strTime := TOD_TO_STRING(DT_TO_TOD(RtcGetTime(TRUE)));(*date*)iYear  := STRING_TO_INT(DELETE(DELETE(strDate, 2, 1), 10, 5));iMonth := STRING_TO_INT(DELETE(DELETE(strDate, 7, 1), 5, 3));iDay   := STRING_TO_INT(DELETE(strDate, 10, 1));(*time*)iHour := STRING_TO_INT(DELETE(DELETE(strTime, 4, 1), 6, 3));iMinute := STRING_TO_INT(DELETE(DELETE(strTime, 7, 1), 5, 3));iSecond := STRING_TO_INT(DELETE(strTime, 10, 1));For my tasks I've created a FB:Code:FUNCTION_BLOCK fbGetTimeVAR_INPUT   todTime: TOD;END_VARVAR_OUTPUT   iHour, iMinute, iSecond: INT;   END_VARVAREND_VARiHour := STRING_TO_INT(DELETE(DELETE(TOD_TO_STRING(todTime), 4, 1), 6, 3));iMinute := STRING_TO_INT(DELETE(DELETE(TOD_TO_STRING(todTime), 7, 1), 5, 3));iSecond := STRING_TO_INT(DELETE(TOD_TO_STRING(todTime), 10, 1));You can insert it into your project and call in PLC_PRG:Code:PROGRAM PLC_PRGVAR   fbTimeExtract: fbGetTime;END_VARfbTimeExtract (todTime := DT_TO_TOD(RtcGetTime(TRUE)), iHour => , iMinute => , iSecond => );
+
+Thanks for the info.  I will give it a try right away.
+
+Oops, I'm sorry. There was a mistake in the last one line of the code I pasted. Now, it has been fixed.
+

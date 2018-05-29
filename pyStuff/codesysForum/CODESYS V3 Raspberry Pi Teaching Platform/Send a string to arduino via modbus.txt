@@ -1,0 +1,6 @@
+Good morning,how can you send a string using modbus to arduino?It would be possible ?Thank you, Alberto
+
+I don’t think you can - at least I’ve never seen it.  Modbus registers are WORDs.  When I need to send a message, I create an enumeration on the logic side.  Of course this means I am only sending a number, but I then take the enumeration and make a look up function on the visualization side that takes the number and assigns a string based off of the enumeration text. The other option would be to block off say 10 WORDs on Modbus to pack in 20 chars.  A bit of work to create the FB on both devices...
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+

@@ -1,0 +1,6 @@
+I've tried several things, but always with errors during compiling.in Global variables I tried:Code:VAR_GLOBAL   TYPE framedata:      STRUCT         COB_ID:DWORD;         extended:BOOL;         interval:TIME;         data:ARRAY[1..8] OF INT;      END_STRUCT   END_TYPE        TX_CAN_frame: ARRAY [0..30] OF framedata;END_VARResults in the following errors:Error 3781: Global_Variables (3): 'END_VAR' or identifier expectedError 3781: Global_Variables (9): 'END_VAR' or identifier expectedand of course the variable type is of unknown typeplacing the struct before VAR_GLOBAL either after END_VARresults in following errorError 4024: Global_variables(2): Expecting VAR_GLOBAL before 'TYPE'me confused. It's not an option to declare anything locally
+
+Hi! Construct the struct under 'Data types' tab (remove old from GVL).And declare the TX_CAN_frame in GVL in 'Resource' tab (like you did already) orlocally./Torbjörn
+
+thank you, that solved my mystery
+

@@ -1,0 +1,16 @@
+Hello,I just installed CODESYS V3.5 SP8 and updated the RPi Runtime (V3.5.8.0) on my Raspberry B+.When I start a new project, I get the following Warning in "Application":"Funktionsblock 'IoDrvGPIO' muss für den Zugriff instanziert werden"Can someone tell me what to do?Thanks!Best regards,Oleg
+
+Hi Oleg,this is a bug and will be solved for 3.5SP8Patch1 4BRBREdwin
+
+Edwin Schwellinger wrote:Hi Oleg,this is a bug and will be solved for 3.5SP8Patch1 4BRBREdwinI have the same error, do you know when patch 2 will be released?
+
+Hi,18th February (which will include this fix)BREdwin
+
+Hallo,versuche gerade mich in das Beispielsprogramm "I2CExamples" für den Raspberry einzuarbeiten und verwende CoDeSys V3.5 SP8. Ich bekomme die MeldungenC0080: Funktionsblock 'IoDrvGPIO' muss für den Zugriff instanziert werdenC0080: Funktionsblock 'AdafruitPwm' muss für den Zugriff instanziert werden.Was kann ich tun?
+
+Hi,this is only a precompile error, you could download the applicaton without any functional restriction.This error will be removed to 3.5SP8Patch1 (next release)BREdwin
+
+Hello Edwin,thank you very much for your answer. I have know zero errors and two more questions running the program I2CExamples:1. The address of Adafruit 16-channel/12-Bit PWM is 16#40. Where can I put it in the example?2. Since I can control 16 servos, where can I fix the output of a single servo?Best regardsJoachim
+
+Hi,a) screenshotb) you mean you want to manually control each servo by value?From this example here:"c:\Users\<YourWindowsUserName>\CODESYS Control for Raspberry PI\3.5.8.0\Examples\I2CExamples.project" Adafruit_PWM.alrPWM[0] := lrMyValueforServo0Adafruit_PWM.alrPWM[1] := lrMyValueforServo1Adafruit_PWM.alrPWM[2] := lrMyValueforServo2Adafruit_PWM.alrPWM[3] := lrMyValueforServo3...BREdwin
+

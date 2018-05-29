@@ -1,0 +1,12 @@
+Hello!I've read CoDeSys can work with pointers to functions. Unfortunately i can't figure it out well. I'll try to illustrate what i need.I have functions - fun1 and fun2and i want to call fun2 through the fun1 by the pointer to fun2. somehow like below:PLC_PRG:fun1( ADR(fun2) );The question is how to declare the parameter of fun1?("pointer to function" doesn't work - i've tried  )
+
+Hello Mouse,a pointer to a function is not possible and makes also no sense. A function is not instantiated, so it is not available in the memory. If a functions is called it is on the stack and will be removed after the call. If you would like to do such operations (and I would propose not to do that) use function blocks.The call is what you already posted:Code:fun1(i_pfbMyFunctionBlock := ADR(fbMyInstance));The usage inside the function is:Code:i_pfbMyFunctionBlock^(i_input1 := xxx, i_input2:= xxx);Hope this was helpful!
+
+Thanks for respond.I create some object. This object has its own logic but it needs to give capability to react on    some events (inside object) from outside. i know, CoDeSys has similar system to handle services in IEC. for instance:hEvent := EventOpen(EVT_StopDone, CMPID_CmpApp, Result);Result := EventRegisterCallbackFunction(hEvent, ADR(myFunction));Where myFunction is the FUNCTION which is called if EVT_StopDone happens.and i need something the same.Inst1:myObject;Inst1.WhatDoYouWantFromMe(IfSomethingHappensCallPlease, adr(myFunction));no possible?  I'll think about different ways... inheritance and addition maybe...
+
+Hi Mouse:      Has your problem been resolved?
+
+See the help of CODESYS regarding Pointers:"This pointers can be passed to external libraries, but there is no possibility to call a function pointer within an application in the programming system!"A suggestion could be to use Function Blocks and call the methods (possibly through the interface of the function block), but I'm not sure if this fits with your application.
+
+Hello,Can you give me an example for this:so how can i declare a pointer to function in my library.and how can i pass a pointer to function to my external library?thank you 
+

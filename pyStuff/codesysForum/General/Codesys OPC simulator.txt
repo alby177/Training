@@ -1,0 +1,4 @@
+HiWas wondering if anyone has managed to get codesys simulator working with a standard OPC server like Matrikon or Kepware?I am trying to build some graphics off line from an ABB PLC running v2.3 of codesys and although I can run the program in simulate getting it to talk to an OPC server has eluded me so far. I think it may only be possible to do this with a live PLC but I would be interested in hearing if anyone has managed to accomplish this without using active hardwareregardsShaun
+
+Hello,I think this is impossible because simulation do not communicate with anything.But you can use the soft PLC PLCWinNT installed on your PC when you have installed CoDeSys V2.This soft PLC is full operational during 2 hours and after you only have to start it again to use again during 2 hours.I use this solution to communicate between CoDeSys V2 (or V3) and an OPC client like Matricon or other.With CODESYS V3 there is an OPC simulator.Best regard
+

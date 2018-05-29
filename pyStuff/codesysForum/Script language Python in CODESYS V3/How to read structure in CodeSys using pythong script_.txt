@@ -1,0 +1,6 @@
+Hi all,I have some question about python for CodeSys:1. How can I read all structure without knowledge of fields inside this structure using python?2. Does CodeSys has some alternatives for tkFileDialog library? How can I create some dialog boxes for opening/clothing files?
+
+Hi SashaSasha.SashaSasha wrote:1. How can I read all structure without knowledge of fields inside this structure using python?What do you mean with "read all structure..."? Read the online value through Monitoring or finding and reading the DUT objects?SashaSasha wrote:2. Does CodeSys has some alternatives for tkFileDialog library? How can I create some dialog boxes for opening/clothing files?Look in the Scripting API documenation for the interface/class IScriptUI which contains methods to open dialogs.Here some example code:Code:print("Now, the user can select files and directories")res = system.ui.open_file_dialog("Choose multiple files:", filter="Text files (*.txt)|*.txt|Image Files(*.BMP;*.JPG;*.GIF)|*.BMP;*.JPG;*.GIF|All files (*.*)|*.*", filter_index = 0, multiselect=True)print("The user did choose: '%s'" % str(res)) # res is a tuple as multiselect is true.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

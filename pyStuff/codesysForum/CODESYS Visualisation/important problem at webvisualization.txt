@@ -1,0 +1,6 @@
+hi all,i have a problem at webvisualization. my project has 6 page. (main_page,alarm,panel1,panel2,pid1,pid2) but i can not see last page that is name 'pid2' at webbrowser (int.exp). separately my pages of pid1 and pid2 have same .bmp file and i can not see the .bmp file at pid1 page. i cant understand this problem. can u help me at this subject? 
+
+Most probable you have pid2 used double.give the alarm page another name as alarm is prohibited.Did you put the name for the bmp on both pages as the background can be different for each page.if you put ypur .pro on forum we can give you better hints.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

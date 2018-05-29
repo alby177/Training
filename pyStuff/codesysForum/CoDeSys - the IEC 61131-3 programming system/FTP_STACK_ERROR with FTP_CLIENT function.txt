@@ -1,0 +1,10 @@
+Hi,I am currently trying to send a file from my controller to my FTP server but I get this error: ERROR = FTP_STACK_ERRORI have tried with two different FTP. Do you know where it could come from?Thank you
+
+Hi,I had the same error.What are the FTP server and controler IP's ? Because I had that problem when my controler (with IP 192.168.1.223) tried to reach a FTP server (with IP 10.0.0.7) applying a subnet mask 255.255.255.0.With those IP's, the controler is unable to reach the server since the controler can only reach addresses like 192.168.1.XXX if applying the 255.255.255.0 mask.Make sure the IP addresses are ok.Hope I could help.
+
+I've got the same problem, but all the parameters in my PLC are correct...Does anyone have any idea?
+
+Is a direct connection with your FTP server? Does your FTP server have a firewall that may be blocking FTP? Some people use windows as their remote FTP server and the firewall needs to be disabled for those communications.Also, make sure your IP Addresses and Subnet Masks are all in the proper ranges. IP: xxx.xxx.xxx.1 - 254SUB: 255.255.255.0
+
+_________________Craig ChamberlinApplications EngineerInformation Technology ManagerPrecision Electric, Inc.1508 West Sixth Street, Mishawaka IN 46544P: 574.256.1000F: 574.255.7394E: craig@precision-elec.comS: http://www.precision-elec.com
+

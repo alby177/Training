@@ -1,0 +1,8 @@
+I have added an Image Pool to a project which is checked-out from SVN.In the image pool the images are inserted as "embedded".When this project is committed, other users cannot see the embedded images when an SVN update is executed.The images in the image pool have a property that the image is linked to a file with a hard path reference to where I got the images from:C:\...\...\imagename.pngThis is strange, because I inserted them as "embedded"My question:How should an image pool be used in combination with SVN to make sure the other users get the correct images when updating the application from SVN?PS, I am working with CODESYS V3.5.7.2 and SVN 4.0.3.0.
+
+Hi,When you commit the image pool, make sure you also commit the hidden object which actually contains the embedded image. I have to admit that this is not obvious, especially when the image pool is defined within the application, and you open the commit dialog via the context menu of the image pool, the hidden image object will not show up in the dialog (it only shows when you open the commit dialog from the root node of the project). Attachment:SelectHidenImageFiles.pngWe filed CDS-46729 in our Jira database to improve this situation, so when you commit a modified image pool, the corresponding hidden objects will be automatically selected.(We already have such a mechanism in place for the device objects.)HTH,Markus
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+
+Hi Markus,Perfect. Thank you very much!Regards,Tim
+

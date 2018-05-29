@@ -1,0 +1,17 @@
+Is it possible to control the "Sampling Trace" from code rather than the GUI? For example I want the trace to always be runing and when a certain signal goes high it should write the content of the trace buffer to disk.
+
+What I'm looking for is a bit like a blackbox in an airplane, I want signal changes to be recorded and if something goes wrong (signaled by a incoming signal) it should save this so that the error can be traced. It should be automaticaly and not requier human intervention.
+
+Can I do this with the "Sampling Trace"? If not is there some other way I can implement this?
+
+Thanks in advance
+Leon Ljunggren
+
+Hi,
+I'm afraid the CoDeSys sampling trace will not work for that purpose.
+You need to store the wanted signals / values into a ring buffer, e.g. an array with a revolving index. Array members may be STRUCTs.
+Regards
+Rolf
+
+Yea, I ended up going with a ringbuffer. Thanks for the reply. 
+

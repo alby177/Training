@@ -1,0 +1,12 @@
+Hallo,Ich bin auf ein Problem gestossen mit Codesys 2.3.9.7, und zwar mit der Version, die ich von Wago bekommen habe, zusammen mit einer CPU 750-873 Wenn ich ein SFC Programm schreibe (dabei benutze ich IEC Steps), habe ich die Möglichkeit Entry- und Exit- Aktionen zu scheiben.Wenn ich aber auf einzelne "E" clicke, um die Entry Aktion zu beobachten, dann wird sie zwar angezeigt, wird aber als Exit- Aktion beschrieben (Im Fensterrahmen). Siehe beigelegte pdf Datei.Ist das ein bekanntes Anzeigefehler oder ist es ein Zeichen, das irgendewas in mein Projekt nicht stimmt?Vielen Dank für die Mithilfe.
+
+ich sehe es gut also ohne fehler.bitte senden sie die pro oder das teil in EXP.bitte einen art verwenden also mit IEC aber dan keine Entry und exit.oder keine IEC.weil dann alles durcheinander lauft also nicht bekannt ist was zuerst geht.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+It is not quite clear for me: according to the documentation, entry- and exit actions are specified only for "simple" steps, not for IEC steps, but actually codesys allows to write such actions in IEC steps. I find this situation quite curious Do you have any experience with that?  If I want to use IEC steps, should I absolutely avoid entry en exit actions? (I use them for example for initializing some variables at before the step's action are running)By the way, I installed the latest codesys version specified for my Wago: 2.3.9.35, and the problem is the same.
+
+yes avoid them when you want to be IEC only the actions should be used.you can change the behaviour with the N letter.because entry and exit are not specified in the IEC.and i think it is a subprogram in a step so it will be very difficult to see the flow.(i use entry and exit and not iec as i find iec very hard to read by newbies.all actionstypes are on a letter and the actions are calls to a subprogramwhat i like is you have to write only once this action and can be used several times in a sfc.this is same when you call a block from within.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

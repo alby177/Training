@@ -1,0 +1,14 @@
+Hi All,How can I add some result values to a Test Report?With the command "TestManager.Testreport" and "AddResultInformation" can I add text. How can I add a variable value which is read with the "ReadVariable" command.The next software is used: Codesys V3.5 SP7 Patch 2 and Test Manager 4.0.1.1.
+
+Hi Bakkertje.1. Configure a output parameter for ReadVariable and copy the parameter name into the field "Test script variable"2. Configure a input parameter for AddResultInformation and add the parameter name in curly brackets (placeholder) in your text for the test reportBRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi Martin,Thanks that works fine.What is the syntax to use a Carriage Return and Line Feed?I try this:Code:Test project on target: {sTargetName} {\r\n}With a timeout setting: {iTimeout} "\r\n"An other line \r\nBut it is all printed on the same line.
+
+Hi Bakkertje.You can use XHTML tags for formatting. For a new line you have to use: <br/>BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi Martin,Thanks that works fine. 
+

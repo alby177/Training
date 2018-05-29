@@ -1,0 +1,6 @@
+Hi ! I have more than one PPC controller and I want to use only one screen installed over one controller in order to control all of them. I want  to know which is the best way to control all the PPC without the monitor, i mean which is the best visualization mode that I can use (webvisu, HMI, ….) ….Can someone of you give me this information?Thanks in advance Marcus
+
+if you use webvisu than the control is in master PPCif using a HMI then control is at this HMI.(meaning the HMI must always run.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

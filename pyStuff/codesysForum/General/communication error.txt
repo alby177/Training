@@ -1,0 +1,20 @@
+I've exported an IO Pro 32 program used for an 842 and would like to put it into an 841 controller.  I am using the port 2455 like I was before but I keep getting an Error (#0) when trying to login and download the program.  Here is some data from the attempted download.
+
+
+---------- Start driver initialization ---------- 
+Socket successfully created
+Transmit buffer size was set
+Receive buffer size was set
+connect: Connection timed out
+Write attempt from invalid socket
+Write attempt from invalid socket
+Write attempt from invalid socket
+Write attempt from invalid socket
+Write attempt from invalid socket
+Write attempt from invalid socket
+Write attempt from invalid socket
+
+What am I doing wrong?
+
+JSHAW
+

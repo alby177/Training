@@ -1,0 +1,4 @@
+Hi! engineers    I know we can use C or C++ to programme in CODESYS, but I can't find enough references to make development. So who can give me some references about them. You can send them to my email.Email-Address: lintian47@gmail.com
+
+You can extend the runtime with external libraries or I/O drivers which are written in C/C++.To be able to do this you need to be the OEM of the device and have the runtime toolkit.
+

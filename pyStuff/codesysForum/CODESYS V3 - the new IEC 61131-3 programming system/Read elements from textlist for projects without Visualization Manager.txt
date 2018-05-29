@@ -1,0 +1,2 @@
+Hi Everyonei would like to read Text from a Textlist. i understand this could be done using the CmpDynamicText Library. But unfortunatly for me this works only with the Visualization Manager. Is there any other way to read the elements from textlist when used in a Project without visualization or in a library.Thanks
+

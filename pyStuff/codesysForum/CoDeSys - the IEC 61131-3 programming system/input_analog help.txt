@@ -1,0 +1,9 @@
+Okay, I have a question, I am using V2.3, with ifm cr0232.  I have an analog input from a pressure sensor 4-20ma.  I am trying to use input_analog function block but I am not getting an output.  I dont understand what Mode should be and what Channel this should be on.  I am unable to put the analog input channel in the Channel field because it requires a byte and not a word input.  I have tried, 07, 7, analog07, ect with no success.Any thoughts.
+
+My question was solved on the IFM Forum.  Thank you.  I had to use the block input_analog_E instead of input_analog.
+
+What IFM forum?
+
+_________________Thanks,
+Steve Pfeifenroth
+

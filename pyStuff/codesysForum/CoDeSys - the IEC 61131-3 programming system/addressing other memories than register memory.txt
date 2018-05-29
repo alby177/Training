@@ -1,0 +1,48 @@
+hello
+
+im a new into all this kind of stuff so ill try to explain my problem the best i can. we have a few wago modules so far. and we are developing our own application to work with it. 
+
+our goal is to be able to read anything from the wago itself. i managed to get working the jamod library, so now i can read/write digital/analog registers. this is very good, but what is more, i need to be able to also read (somehow, anyhow) the variables of program running in wago. meaning, that i made a program in codesys, that's measuring temperature for example. i put this value into some retain variable, but dont put it on some register. 
+
+my question is, how can i read the variable in retain memory, i think its a different type of memory then the one u can address like %IX2.0 etc..
+as well as any other type of memory thats included in wago modules..
+
+im sure there is a way how u can do this, because codesys itself reads the variable for example from retain memory when u open the program, connect to wago and run it..
+
+well..i hope i made sense 
+
+please i really need your help!
+
+thanx in advance!
+
+Hello tw0face,
+
+i don’t know the jamod library but i think you use modbus TCP.
+
+With modbus you have access for some memory areas.
+If you want to get a variable from the plc then you have to place this variable at 
+a defined memory address.
+Example
+VAR
+speed   AT%MW0   :    INT;
+temp    AT%MW1   :    INT:
+END_VAR
+
+Note : 
+You have to administrate the used addresses by yourself and 
+you have to pay attention for the wordalignment. 
+
+With your jamod library you have access to the %M area from address 12288 (0x3000)  up to
+16383 (0x3FFF)  means  %MW0 …%MW4095  
+
+For more information see the follow link
+http://www.wago.com/wagoweb/documentation/app_note/a3000/a300003e.pdf
+
+Uwe
+
+awsome  thanx for ur reply it helped alot, now i can define variable in that memory, put anything i need there and read it with jamod 
+
+u made my day 
+
+thanx again!
+

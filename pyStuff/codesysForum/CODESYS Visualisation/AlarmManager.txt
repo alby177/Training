@@ -1,0 +1,6 @@
+HelloThe Alarm Manager has a good example. But I do not see why I got it not to run...My Problem is:Example to set a Error is described..Alarmmanager.AlarmGlobals.g_AlarmHandler.RaiseEvent(Alm_AlarmConfiguration_Alarmgroup_IDs.ID_AlarmGroup1, Alm_AlarmGroup1_Alarm_IDs.ID_0); the thing is.. if I push F2 to see the variables I can only see the Alarm_ID's and not the AlarmGroup_ID's.Why is that?In the table example it is the same but not in the AlarmManager example.I do not want to copy the hole example of the AlarmManager to my projectWhat do I have to do to make it work???Attached you will find the Picture from the InputAssistant which is in the example.I can see number 2 but not number 1.Thank you for any help
+
+I had the same problem with 3.5.9.40.What I did as work-around is change my project to use compiler version 3.5.7.70 and visualisation profile 3.5.7.4 (changing nothing else). Then I could choose them.See the "project settings" of your project to change this (temporarily).At 3S-Smart Software Solutions this is a known issue and registered as Jira issue CDS-52260.
+
+You might have figured it out by now, but just click on "Set all to newest" and AlarmManager project will load fine
+

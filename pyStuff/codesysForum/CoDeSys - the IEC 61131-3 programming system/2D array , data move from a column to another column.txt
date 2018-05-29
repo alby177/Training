@@ -1,0 +1,6 @@
+I am trying to move data from one column of a 2D array to another column or one row to another row of the same array. Is there a way to perform this in one shot ? I am trying to avoid a FOR loop.   For exampleMove Data from Column 4 to Column 3 in the Array[1..10,1..60]
+
+I think you declare your array likemyArray	:  ARRAY[1..10, 1..60] OF WORD;but if you declare your array asmyArray    :   ARRAY[1..10] OF ARRAY[1..60] OF WORD;then you have a 2D array too.In this case you have access for a cell withmyArray[1][7]and for a column withmyArray[1]so you can write for copy column 4 to column 3myArray[3] := myArray[4];
+
+Thank you !I tried the " SysMemMove " and was able to move blocks of data . But , your method is easier  PArray : ARRAY[1..4];SysMemMove(pDest := ADR(PArray) + SIZEOF(PArray[1]), pSrc := ADR(PArray)   , udiCount := SIZEOF(PArray)- SIZEOF(PArray[1]));
+

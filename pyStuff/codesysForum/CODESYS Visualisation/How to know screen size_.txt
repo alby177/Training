@@ -1,0 +1,4 @@
+I need to know width and height in pixels for current display. How to do that?
+
+In this post I mentioned how to do that.Using the g_ClientManager you can list all the active clients and then get the ".rClientRect.ptBottomRight.iX" and ".rClientRect.ptBottomRight.iY" for each one from their VisuElems.VisuStructClientData structure.
+

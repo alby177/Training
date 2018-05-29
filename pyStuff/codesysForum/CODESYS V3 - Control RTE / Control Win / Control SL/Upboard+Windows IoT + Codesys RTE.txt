@@ -1,0 +1,12 @@
+Hi,I am trying to integrate UPBoard(www.up-board.org) installed with Windows IoT Enterprises +Codesys RTE.PLC is not starting.Please share your experience.Regards,Kumar.E
+
+Hi,never tried (have no board available to test it)you need to check:1. Does it have bios settings like ipc's if yes:disable speedstep c-states etc all Features which have influence on the cpu core speed ( RTE need a stable CPU core clock speed to be hard realtime capable)2. on 64bit - to deactivate hyperthreading is mandatoryBREdwin
+
+Edwin,i am not sure, I assume as follows...while we disable the hyperthreading, the processor will work as singe core. using the quad core motherboard is as googd as using single corePlease confirm..Kumar.E
+
+Hi,which processor is build in in this board (they offer several boards I could not really see which is yours)BREdwin
+
+Edwin,Processor used in this board ..Intel® Celeron™ N3350 (up to 2.4 GHz)Intel® Pentium™ N4200 (up to 2.5 GHz)Intel® Atom ™ E3940 (up to 1.8Ghz )LAN ..2x Gb Ethernet (full speed, Realtek 8111G) RJ-45
+
+Hi,from my point of view this should work on all these 3 boards.How could we check them?Could we get hardware or by remote session?BREdwin
+

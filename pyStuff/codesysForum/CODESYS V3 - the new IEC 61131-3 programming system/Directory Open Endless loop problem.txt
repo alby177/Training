@@ -1,0 +1,8 @@
+If I want to open some directory by the following way:   PROGRAM PLC_PRG   VAR      xDirOpen:BOOL;      DirOpen:FILE.DirOpen;   END_VAR  ===================  IF  xDirOpen THEN      REPEAT          DirOpen(xExecute:=xDirOpen,sDirName:='D:\myTestDir';          IF DirOpen.xDone OR DirOpen.xError THEN             xDirOpen:=FALSE;              DirOpen(xExecute:=FALSE);          END_IF      UNTIL NOT xDirOpen      END_REPEAT  END_IF  When the program is running,I change the value of xDirOpen from FALSE to TURE,but the result is endless loop!   Can someone give some explaination?
+
+Remove the repeat / untill loopIt could take some scans before the OS returns a result.Wait for the done/error and then set a condition to handle the next step.
+
+TimvH wrote:Remove the repeat / untill loopIt could take some scans before the OS returns a result.Wait for the done/error and then set a condition to handle the next step.====================================================Do you mean that the scan cannot be excute during a PLC cycle even if the PLC cycle takes a long time? but must be execute during the intervals between two PLC cycles?
+
+Yes, that is my experience.It is made like this to make sure it is non-blocking.With the SysFile library the PLC execution halted untill the OS returned a result, but this was not good for time critical applications.I don't know the exact reason behind it (internal operation) why it takes at least 2 scans.
+

@@ -1,0 +1,6 @@
+Hi!Simple question, is it possible to delete the trend-file to force a clean log?Thanks!
+
+Hi,reset original on the device see screenshot.BREdwin
+
+Thanks for the great help as always Edwin!
+

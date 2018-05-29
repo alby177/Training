@@ -1,0 +1,10 @@
+I have a EDS from Pneumax valve manufacturer. When i import in an other PLC software my output valve are available in PDO but when i import in Codesys ( no PDO are display ). When i remove the last part of the EDS ( optionnal input ) the PDO for the output appear. I supect that the optional input have something that Codesys didn't like ! See in the EDS file if you see what can be the problem with Codesys V3....Thank you .
+
+I don't know the details of the contents of .eds files, but I do know that CoDeSys V3 checks it better than CoDeSys V2.3.With other .eds files CoDeSys V3 works OK. Therefore it must be related to an incorrect or incomplete .eds file.I think you should contact your valve supplier for a file which conforms to the standard better.
+
+You could run the EDS checker program from this site to see what may be the issue:http://www.can-cia.org/index.php?id=841
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+

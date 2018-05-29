@@ -1,0 +1,22 @@
+Dear community,i'm using VAR_GLOBAL CONSTANTS in an Library to define upper and lowerbound of an array. All VAR_GLOBAL CONSTANTS, have an predefined init value.Now i want to predefine the init value from my Project, where i'm using the Library. I tried to override the VAR_GLOBAL CONSTANTS in the Library from the project, but it doesn't work. Is there any solution or work arround?Thank you in advance!
+
+You may find this thread of some useviewtopic.php?f=11&t=6971
+
+_________________Rick
+
+For libraries, add a library "Parameter list" object (screenshot below).  This will allow you to define a constant that can be changed when the library is used in a project.  The online help should give more information - topic parameter list and then sub-subject GVL.Attachment:lib-props.png
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Hello scott,thank you for the fast reply. I added an Parameter list "Param_XY" in the library:Code:VAR_GLOBAL CONSTANT   // Array Param   gc_UpBound : INT := 10;   gc_Length     : INT := 100;      // Timeout Param   gc_TimeOut    :TIME := T#10S;END_VARFB in Library with Array Code: VAR_INPUT   arrTest : ARRAY [0..gc_UpBound] OF STRING(gc_Length);END_VAR PRG in Project:Code:VAR   arrXXX: ARRAY [0..gc_UpBound] OF STRING(gc_Length);END_VARIn the PRG i fill the arrXXX (within the range) and then i call the FB in the library and use the declared arrXXX as Input. This works all fine. But I can't change the CONSTANT Vars in the Paramter List "Param_XY". I tried to add an GVL in the Project:Code:VAR_GLOBAL CONSTANT   // Array Param   {attribute 'const_replaced'}   gc_UpBound : INT := 20;   {attribute 'const_replaced'}   gc_Length     : INT := 200;      // Timeout Param   {attribute 'const_replaced'}   gc_TimeOut    :TIME := T#50S;END_VARbut it doesnt override the paramters in the library and it allways use the parameters from the lib. I can't find anything in the help file about that topic expect the attribute 'const_replaced'.What I'm doing wrong?Thank you in advance.
+
+_________________Building & Process Automation with HVAC Library for CODESYS© - www.hvac-automation.com
+
+Everything was good until your last step. Don't define the variable again in your main project. Instead, from your project, open the library object (like you are going to add a library to your project) and then highlight your library and look at the available objects - you will see you "parameters" and you can insert the value you want.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Scott - thank you so much for your support!This was exactly the right thing what I was looking for. Have a nice day! cheers
+
+_________________Building & Process Automation with HVAC Library for CODESYS© - www.hvac-automation.com
+

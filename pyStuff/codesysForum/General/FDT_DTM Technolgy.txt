@@ -1,0 +1,14 @@
+Hello,
+
+I heard a rumor that CoDeSys 3.0 uses/supports FDT/DTM technology.  Is this correct or is this just a rumor?  Thanks,
+
+Tom
+
+Hello,
+
+CoDeSys V3 (as we call CoDeSys 3.0 and the following versions right now) is NOT based on FDT/DTM technology. This means the configurators for all the multiple fieldbuses and real time Ethernet systems are based on the CoDeSys Automation Platform. See http://www.3s-software.com/index.shtml?en_automation_platform_e for further details on this topic.
+
+Nevertheless it is more than a rumor: we are actually working on an implementation of FDT/DTM on the base of the CoDeSys Automation Platform. This is a quite new development for CoDeSys V3, we plan to have a release in 2009.
+
+_________________Roland WagnerModerator
+

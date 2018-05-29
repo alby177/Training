@@ -1,0 +1,6 @@
+Pressing one button from my HMI, I would like to launch another application in my windows embedded CPU (adobe, word, ultravnc....)in order to read documents, make remote connections...I am trying to do using _ and SysCreateProcess but I am not reaching to any concluding point.Could anybody help me, please?Thanks in advance!
+
+This is very easy.In the property "inputConfiguration" of your button in the HMI (e.g. OnMouseUp), you can select "execute command".One of the commands is "execute program on client" (CoDeSys HMI or Target Visualization).Now give as parameter the path and name of the program you want to execute.E.g. 'notepad.exe'PS, don't forget the quotes, otherwise the compiler expects a reference to a string variable.
+
+I did not know that. I have tested it and works!Thank you very much!
+

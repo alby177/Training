@@ -1,0 +1,8 @@
+Hi all, i'm newi'm using an HMI exor with a soft plc with codesys 2.3The instruction of the support of this HMI suggest :to upgrade or change a running CoDeSys Project on Panel internal PLC is necessary to retrive these files about CoDeSys project< filename >.CHK< filename >.PRG< filename >.SDBwhere "filename" is usually the project name.These files are generated on PC running CoDeSys after made actions below:Project > Rebuild AllOnline > Create Boot ProjectAfter i copy the files on usb memory pen and i program an action on HMI .When the action is launched the project files will be automatically copied into the apposite location on panel, the PLC is stopped, and then restarted using the new application files.Everything is fine and it's easy update the CoDeSys program without a pc just using a normal usb memory pen.So, my question is : if someone have these 3 file is possible read an modify my program plc or not ?I don't wont other competing companies have my program just copying the usb pen.thanks
+
+No worries, they only have a compiled version of the software, and are not able to change anything. All my projects receive the original software, so somebody else can make changes (when i die) if they are making a copy of the installation, fine by me, they will run into problems, and at that time they will contact you (if your contact is on the screen).At that moment charge double.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+thank you very much !
+

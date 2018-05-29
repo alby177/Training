@@ -1,0 +1,2 @@
+Hello there!I am trying to choose the right data type system to use for my bool value buttons, etc...I just want to be able to show my items on HMI screens. For this purpose, my communication is pure ModBus. I am trying to find the right equivalent of the M flags.I am currently using %MX0.0, %MX0.1, but they are not usable as I have to set the whole flag, rather than a bit of it.To summarize, what is equal to ModBus M in Codesys?
+

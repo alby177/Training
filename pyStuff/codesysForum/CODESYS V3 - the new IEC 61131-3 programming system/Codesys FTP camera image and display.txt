@@ -1,0 +1,12 @@
+Codesys FTP camera image to local hardisk, but bmp picture under codesysare load only when the plc starts, any function or setting can dynamically update the bitmap image and display it. Had tried "BmpPoolRegister" and "BmpPoolUnRegister", it doesn't work. Please help
+
+Hi,since 3.5SP8:The image element now has a bitmap version property. The image will be reloaded when this version changes.  BREdwin
+
+Hi Edwin,I try to update image using version but not success, please advise which portion went wrong.Thanks in advice!
+
+Hi,looks ok, should work... compiler version, visuprofile and runtime version are all 3.5SP8?In my application it works, could you please test it with 'Control Win' plc?if we exchange the Bitmap in "c:\Program Files (x86)\3S CODESYS\GatewayPLC\visu\ftpbitmap.png" and then we set the Version to a new one... Bitmap will be refreshed with the new version.The question is in which visu you want to see this?-internalvisu in CODESYS developmentsystem-webvisu-targetvisuBREdwin
+
+compiler version, visuprofile and runtime version are all 3.5SP8.After install 3.5SP8, modify example program and it work perfectly  , then I back up and modify on my project, it doesn't work , I run the example program, it become never update the image after change the image version. 
+
+Hi,this sounds strange,I would remove the VisuMananger / Visupage and add it again in your project where the problem still existsto solve it.BREdwin
+

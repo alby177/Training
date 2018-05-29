@@ -1,0 +1,14 @@
+I want to know if Codesys supports ARM Cortex A8 (AM 3354) with Linux.Thanks,Manas
+
+Hi Manas,yes sure.But you need to have a runtime toolkit for it.http://www.codesys.com/products/codesys ... olkit.htmlBREdwin
+
+Thanks Edwin.I have the hardware in which Linux is running.So once I get the Runtime toolkit, I need some support to enable CODESYS on my hardware.How can i get that support?Thanks & Regards,Manas
+
+Hi,The CODESYS Runtime Toolkit includes:- a comprehensive integration manual for the implementation of the runtime System and- a workshop for developers who are responsible for the porting of the runtime systemBREdwin
+
+Hi Edwin,One last question before I ask for Codesys License, Is there any CODESYS runtime toolkit evaluation version which i can use for Linux and Arm Cortex A8 (may be vary basic, just to prove the concept)?regards,manas
+
+for this you need to contact our sales department.BREdwin
+
+Hi,by the way, for Evaluation purpose you might use the raspberry pi instead:http://store.codesys.com/systeme/codesy ... pi-sl.htmlSure this runtime does not run on your AM3354 Hardware, but for evaluation what is possible, this should be suitable.The advantage on that:This is immediately available -> just download it and buy a Pi Hardware - I would recommend to use PI2BREdwin
+

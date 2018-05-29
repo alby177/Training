@@ -1,0 +1,10 @@
+I'm making web visualization. I don't know how to use save and load option at trace element. I don't know what to put in variable of type string...Save trace(variable to save the trace to a file)???It is just written that it has to be string. Does it save it in some directory in the PLC?Is history option working in V2.3.9? I mean trends.I would like to make a web visualization with trends/trace with a history option of the data..
+
+Histrorical trends are not yet supported by V3. As far as I know this will be introduced with 3.5 SP4 (end of 2013), but you have to check with your PLC vendor if this will be supported by the hardware you use.
+
+I manage to save data to my PLC. But when i tried to load it back it won't work.path:STRING:='/InternalStorage/Trends';When i want to load it i use the variable path(the same like when i'm saving data).
+
+Are you sure you are saving the trend variable data?Please upload this file and check the contents. I think you are saving the trend configuration.
+
+The file is Trends.trace. I'm not sure what it is saving. I can't open this file. It is possible that this is only trend configuration. I don't know how to check it since i can't open this file.
+

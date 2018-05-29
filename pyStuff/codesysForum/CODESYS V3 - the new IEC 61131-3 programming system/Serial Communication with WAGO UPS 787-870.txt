@@ -1,0 +1,2 @@
+Hi everyoneI have CODESYS v3.5.9. Is it possible to connect UPS charger (787-870) to PLC (WAGO PFC200 750-8207) and read the parameters of UPS by serial interface RS 232 module (750-652)?The serial interface module asks for parity, baud rate and stop bit,.... But there is no similar configurations about UPS in it's software configurator!!!  Thanks in advance
+

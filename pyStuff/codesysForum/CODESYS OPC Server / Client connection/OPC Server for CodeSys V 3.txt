@@ -1,0 +1,11 @@
+Hello
+
+It is possible to use Codesys OPC server V2 with CodeSys V3x?
+If its possible how its done?
+Where is CodeSys OPC server V3?
+
+Best Regards
+Jovan Mirilovic
+
+The OPC server for V3 is already available. You should ask 3S or your distributor for it.
+

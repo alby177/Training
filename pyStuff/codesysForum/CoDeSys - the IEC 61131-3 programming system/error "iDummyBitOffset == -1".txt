@@ -1,0 +1,11 @@
+Hi,I am using Codesys for ABB.The editor crashes and I find this error when, in simulation mode, I just try to open and visualize a module containing a vector with size 0. The error appears even when you login in simulation, without running the project.The reason why I have a vector with size 0 is simply because I want to generalize the modules of my own library: I set the size of the vector to 0 on the PLCs where I don't need to use that vector, instead of commenting code around the imported module.Here there is a simple code that reproduces the crash:VAR CONSTANT	size : INT := 0;	(* size >= 1: no problems *)END_VARVAR	i 	: INT;	v	: ARRAY[1..size] OF INT;END_VAR(* PLC_PRG: *)IF size>0 THEN				(* this IF should be enough to avoid an erroneous access to v[1] e v[0] *)	FOR i:=1 TO size DO		(* but codesys crashes anyway when you login *)		v[i] := 1;	END_FOREND_IFStrange is that this error appears only when I debug the code: I manage to download this code on a PLC and the program run! Only the editor crashes..I would really appreciate every opinion on this matter!Thank's!
+
+LOLyou define an array with -1 membersif size = 0 then this is fault.v : ARRAY[1..size] OF INT;if you change the 1 to a zero always 1 member will be made.that is the minimum.you can not create an array with 0
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Might I add one thing you are checking a constant "size" defined as 0 if it is greater than > 0  ? The constant will not change?
+
+_________________Thanks,
+Steve Pfeifenroth
+

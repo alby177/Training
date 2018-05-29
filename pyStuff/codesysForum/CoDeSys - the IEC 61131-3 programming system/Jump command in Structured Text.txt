@@ -1,0 +1,6 @@
+Hi, anyone know what the "JUMP" command is? So i can jump lines of code.Stu
+
+Hi,       There is no  jump in ST language u have to use CASE statementHave a good day 
+
+sarathbabu wrote:Hi,       There is no  jump in ST language u have to use CASE statementHave a good day Thank you  makes sense now, why they use case structures in the code i'm editing at the moment.Stu
+

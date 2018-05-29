@@ -1,0 +1,2 @@
+Hello.I use Internet browser like Chrome or Firefox to display WebVisualisation from Control Win Runtine ou Raspberry runtime.Usualy i use the keyboard key F11 to enter in full screen, but for a new apllication i use a touch screen without keyboard.I'm looking for a method to send the key F11 into the keyboard  input stream.Some langage like  VB or C allow to do that with the command "sendkey"Is anyone know how to do that on linux platform (raspberry).Thank you
+

@@ -1,0 +1,8 @@
+I am new to codesys. I just wanted to change the locally declared variable to a global variable. Thaks and regards
+
+Cut it from the local list and add it into resources, global varlist.when defining a variable you can click on the VAR in the input assistent, and here you can choose where it should be declared.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks very much Pete
+

@@ -1,0 +1,12 @@
+Hi,This is probably not possible to do but I’m asking anyway.I like to declare array size using a constant like this:  myArray :  ARRAY [0..(c_iMyConstant – 1)] OF INT;It works fine as long as c_iMyConstant is declared as a constant and initialized to a certain value.Now what I would like to do is this:Declare the array inside a FB. Still No problem as long as c_iMyConstant is declared as a constant and initialized to a certain value.I now would like to have an instance of the FB with c_iMyConstant initialized to a value of X and another instance of the FB with c_iMyConstant initialized to a value of Y.So that different instances of the FB could have different array size.I tried with FB_Init and VAR_INPUT CONSTANT without luck.Is this possible to do?Thank you
+
+Is it possible to do?
+
+In TwinCAT 3 (so I guess that also in Codesys V.3) you could use __NEW and __DELETE and reserve the right amount of memory dynamically as needed.Hope this helps...
+
+The just released PLCopen programming guidelines recommends to never use dynamic memory allocation with machine control due to the possibility of causing some kind of exception error during machine operation. Several hardware platforms also don't support it, but if you are using a full PC or iPC, then these platforms most likely support dynamic memory. CoDeSys requires an array bound to be a constant, whether it is a local or global constant.  I've never been able to get around it. When I actually need to use the same FB with two different local array sizes, I just define the largest size I need and waste the space when only the smaller amount is used. I typically don't run out of RAM even on small embedded hardware platforms.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Thanks for the replies.I had already tried with __NEW. It works well but the problem is that you cannot create arrays of Structures or FBs. You can only create arrays of basic data types like int, dint, bool, etc...Another thing I noticed with __NEW is that when you create an array of INT for exemple, the array is not initialized with zeros. You have to take care of initializing it yourself or you end up having garbage in the array. When creating FB, it is different, it seems to be initialized with zeros.  Is this normal behavior?In the Codesys help, it says that you can use a semaphore (SysSemEnter) to prevent two tasks from allocating memory at the same time.How do you do that?By the way, I'm working in TwinCAT 3.
+

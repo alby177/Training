@@ -1,0 +1,2 @@
+Hello,is it possible to lock some graphical object (for example one rectangle) in graphical editor? The main purpose of this is not to allow accidently move it during configuration.Best regards,Zdenko.
+

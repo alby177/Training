@@ -1,0 +1,12 @@
+Hello!I'm fairly new to programming and I'm struggling using Functions. I'm writing a piece of code that will use one timer for 4 applications within the program... I understand FB's but it's functions I'm unsure of. I'm not sure how to call the function, or how to get a result out of it...The idea is to have a variable pulsed signal from the function, then use that multiple times and they will have their own setpoints... I've hit a wall at the moment, so any help will be appreciated.ThanksKarl
+
+Functions do not keep memory - they are made to do some quick thing and that's it - no timers, no counters, etc. (there are ways around this, but avoid this - functions are for "a+b = c" type operations)Use one FB to be your signal generator. You can then link the output to all four other FBs inputs.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Hi,Thanks for the reply!In the end I used a function block exactly like you recommended! It took a while for the penny to drop where I was going wrong, but I guess that the point of learning something new! I'm really getting into ST and IEC 61131-3!ThanksKarl
+
+you can also time a task, i am running a standard blinker with a task on 100 ms.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,18 @@
+Hello,
+
+How to install Target device file in codesys 3.3? I target file is available with me.
+
+At first you have to be sure that you have format of your target-file like this plc.devdesc.xml
+Start up your CoDeSys V3 and go to the Tools->Device Repository->Install and choose your file. Your device will appear  in PLCs branch of Device Repository.
+After that you can add your deviñe in project.
+
+How can I define new target? I have some old open frame PLC on 8051 platform programmed with C, but I'm not familiar with C. How can I change compiler?
+
+The CoDeSys Suite consists of the IDE (development environment) and Runtime system.This Runtime system needs to be implemented on your device.This is done in cooperation with 3S-Smart Software Solutions.I think you should contact them directly to get a price for your hardware (CPU + OS) and the amount of runtime licenses you need.If it is only for one application I think you should look for devices which already have this Runtime implemented.
+
+We have only one machine with this PLC, so buying some licenses is too expensive (I think). Have you any idea of price for basic functionality (w/o HMI and buses)?We must change some functions and add 2 operations. Because don't have original documentation, we download program from MCU and decompile, but this version is without comments. Very difficult for us to find parts/modules in program what we need. I make many PLC applications before, and for me is easier to write new program, then I analyze old C/ASM code.
+
+I think it is better to buy a new PLC and replace the current controller.
+
+Thanks!!!
+

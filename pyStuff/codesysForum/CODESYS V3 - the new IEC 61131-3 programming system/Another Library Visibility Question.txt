@@ -1,0 +1,28 @@
+I have some questions about controlling the visibility of specific function blocks, methods and properties within a compiled library.  I am using {attribute 'show_conditional'} to do this, which now seems to be  working (interestingly it didn't seem to work initially). Code:{attribute 'hide_all_locals'} {attribute 'conditionalshow'}FUNCTION_BLOCK INTERNAL OBJ_AdminThe remaining issue is that a couple of folders containing these "no longer visible" items still appear in the documentation tree.  Is there a way of excluding these folders from the documentation as well.Attachment:2016-06-13_11-03-53.png
+
+_________________Rick
+
+Hello Rick,that's a known bugCDS-16886: Libman: it is not possible to hide folders in librariesRegards,Roman
+
+Ok, thank you for the info.  I will have to think of a clever work around.Btw, I initially had another problem with "conditionalshow" entities similarly showing up in the navigation tree (and with the "no documentation here" message).  Then somehow magically these items have disappeared from the tree as they should.  I have no idea what I did to get this to work correctly.  Just wondering if anyone had a similar experience or knows something about it?
+
+_________________Rick
+
+The other problem I mention above, that had disappeared, has re-emerged after deleting and then adding the library back into the project.  A function block in the library is give the 'conditionalshow' attribute as follows ...Code:{attribute 'hide_all_locals'} {attribute 'conditionalshow'}FUNCTION_BLOCK INTERNAL OBJ_AdminIn the documentation there is a listing of the block and all its methods and properties as shown below.Attachment:Lib_Visibility.pngI expected that the attribute would have suppressed this listing.  At one point the listing became suppressed but I don't know how or why it started working correctly.  I am using SP8.  Can anyone  shed some light on this issue or advise on the correct method keeping internal function blocks out of the documentation (auto complete also).  Thanks in advance.
+
+_________________Rick
+
+I have noticed that the problem of conditionalshow objects showing up in the document tree disappears if you select another library in library manager and then do a "Clean ALL" and build.  Perhaps this is a minor bug related to the folder issue?
+
+_________________Rick
+
+Hi Rick,I think the problems you describe are all related to aforementioned CDS-16886: Libman: it is not possible to hide folders in librariesThe attributes that control the object's visibility cause that documentation will not be generated at all. The Documentation window just shows the HTML content located in LibDoc repository (the structure of the library has no more influence on Documentation). A tree, in turn, reflects an actual structure of the library (and not its documentation) and unfortunately ignores the fact that everything is invisible. Probably you have updated the compiler version after project has been loaded, causing the attributes are evaluated properly. Then delete-and-re-insert technique can fix the problem you've observed in former compiler version. Another possible reason could be that your library is resolved by a placeholder mechanism that has had a problem in the version the library was inserted. Could your please check these issues with SP9 - there was several bugfixes concerning placeholder resolution mechanics.Regards,Roman
+
+Thank you Roman.  I will upgrade and check the things you mention and then let you know what I find.  I suspected that this may have been related to the folder issue and so your explanation makes sense.
+
+_________________Rick
+
+Thanks Roman.  The information you provided helped me resolve the problem.  It seems that when I created the library I used the EmptyLibrary template and that that template is missing the following properties:IsEndUserLibraryLanguageModelAttributePlaceholderSo I created a new library using the CODESYS Library template.  I deleted all the CAA stuff, modified the project settings and info with my library's information, and then cut/pa ted the code into the new library.  It all works fine now.  I am using version 3.5.8.4 and didn't need to change compiler versions or anything.Btw, how can I make my own library and project templates?  I would also like to ask if it's possible to create templates for new/added objects (i.e. FBs, Methods, STRUCTs, etc)?Thanks for your help
+
+_________________Rick
+

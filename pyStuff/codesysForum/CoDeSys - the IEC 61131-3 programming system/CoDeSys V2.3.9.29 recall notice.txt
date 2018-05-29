@@ -1,0 +1,4 @@
+3S-Smart Software Solutions has to recall CoDeSys V2.3.9.29 due to a major software defect: Projects containing a trace are saved incorrectly and can then no longer be opened, meaning they are destroyed.We therefore urgently advise you not to install CoDeSys V2.3.9.29 and if you have already done so to uninstall it from your system. We are currently working on a new version and will provide you with CoDeSys V2.3.9.30 as soon as possible.We apologize for any inconveniences this defect may have caused.Should you have any questions concerning this notification, please contact support@3s-software.com.
+
+_________________Roland WagnerModerator
+

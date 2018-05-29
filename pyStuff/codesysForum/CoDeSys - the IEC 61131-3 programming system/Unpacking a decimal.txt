@@ -1,0 +1,14 @@
+HelloGot a word containing a decimal number which refers to some modbus registers on another plc.I'm aware I can use unpack for the first 8 byte, but what about those comming after?
+
+check oscat.de for a nice bundle of functions.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+I recently needed to do something similar to what you are doing now. I checked the Oscat libraries, but ended up writing my own FB. However, I was shifting an array, not a register. You will most likely need to write your own function block using either BSR/BSL or the rotate command (ROL and another one, I think).
+
+probably you mean bits instead of bytes.you can use a word breaker (makes 2 bytes out of it, or you can use the wordvariable.0 etc.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+somlioy wrote:HelloGot a word containing a decimal number which refers to some modbus registers on another plc.I'm aware I can use unpack for the first 8 byte, but what about those comming after?Assign the word to a memory location such as %MW0. MYWORD at %MW0:WORD;Then assign variable names to each bit within %MW0. MYWORD_BIT_00 at %MX0.0:Bool;MYWORD_BIT_01 at %MX0.1:Bool;etc.Then each bit of your word is accessible and visible.
+

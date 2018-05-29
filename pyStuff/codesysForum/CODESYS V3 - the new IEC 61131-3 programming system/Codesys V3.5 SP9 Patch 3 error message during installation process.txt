@@ -1,0 +1,4 @@
+Dear Community,I tried to install the new Patch 3, but I always get an error message. After I confirm the error, the installation continues and at the end it says, that the software was successfully installed. But if I want to open the program, it doesn't start (see attached message).PC Info: Win 10 x64 bit, all previous codesys versions are still starting correctly... .Is there any workaround, to get the new version working on my pc?Thank you in advanceBest Regards,Kevin
+
+_________________Building & Process Automation with HVAC Library for CODESYS© - www.hvac-automation.com
+

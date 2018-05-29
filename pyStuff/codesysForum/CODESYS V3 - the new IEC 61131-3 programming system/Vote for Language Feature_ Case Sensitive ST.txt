@@ -1,0 +1,10 @@
+Dear 3S Smart Software TeamCan you please make your IDE for Structured Text code case sensitive? (Just ignore the IEC-61131-3 standard).Thank you!Cheers, merry X-Mas!
+
+I would just vote against it!Why moving away from IEC 61131-3 standard?I would rather see every manufacturer moving towards IEC 61131-3 standard so that it would be easier to move ST code between platforms.
+
+yannickasselin1 wrote:I would just vote against it!Why moving away from IEC 61131-3 standard?I would rather see every manufacturer moving towards IEC 61131-3 standard so that it would be easier to move ST code between platforms.It was actually kind of a joke even if I would like to see it 
+
+I would not want to be that guy standing next to a broken machine, called in on Christmas, only to find out that variable MoveDrive was used instead of moveDrive!A big part of what I like about IEC61131 over C language is lack of small syntax bugs!
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+

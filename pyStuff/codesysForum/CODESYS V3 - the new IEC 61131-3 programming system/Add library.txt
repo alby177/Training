@@ -1,0 +1,4 @@
+Hi,   i  have downloaded the project PLC_CHAT on Codesys  store.When i try to run it on my system, it shows that some libraries are missing .When i try to add them, i observe that they are not availble on my system. How can i solve this? from where can i download themwith regards,Praveena
+
+Hi,usually on this kind of errors, go to the plc device in your project tree and then 'update device' to current version,should solve the problem.Regardsplcmax
+

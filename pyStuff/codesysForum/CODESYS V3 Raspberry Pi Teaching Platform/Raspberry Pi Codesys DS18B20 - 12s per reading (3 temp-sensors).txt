@@ -1,0 +1,8 @@
+Hello! Readings from my sensors are very slow. 12-16s per reading.I have three DS18B20-sensors wired to GPIO 4.I used the example program which came with Codesys - then built my program in there.I've read something about putting the onewire-stuff in another POU/task but I don't get it.What goes inside the onewire-task? This code?Code:PROGRAM PLC_PRGVAR   astrID: ARRAY[1..20] OF STRING;   ui: uINT;   x: BOOL;   rTemp: REAL;END_VARCode:IF NOT x THEN   x := TRUE;   //scan function   FOR ui:=1 TO MIN(Onewire_master.uiScannedDevices, 20) DO      astrID[ui] := Onewire_master.pasScannedDevices^[ui-1].StringRepresentation;   END_FOREND_IFI'm ok with 750ms delay per sensor but 12-16s is too much. I am using the temperaturs to control some relays. With only one sensor configured it works fine.
+
+BUMP
+
+Anyone, please?    
+
+Hi,for temprature reading this should never be a problem... what application do you have which need faster temp?We just read then onewire via kernel modul which is providey by RaspberryPI.orgso each reading is like for example:cat /sys/bus/w1/devices/10-000802cfb15d/w1_slaveIf you so this manually via console with your sensors guess you will see these delays too.BREdwin
+

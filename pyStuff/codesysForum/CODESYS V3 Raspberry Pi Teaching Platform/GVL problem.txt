@@ -1,0 +1,10 @@
+Hi,variable declared in "GVL" are not recognised in POU without prefix GVL.variable ... I don't know why ... Marian
+
+This is by design. By including the GVL.xxx you as telling the compiler your scope.  In bigger applications, you may have several "variable1"s.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Hi,by default this is added (qualified-only) if you add a new GVL.If you remove the attribute it will work without.(would not recommend)But better style is to use it. Not declaring Enums and GVLs qualified_only may result in ambiguities, unintended shadowing and potentially other problems. These problems could be simply avoided if enums and GVLs were decorated with the attribute by default. This would also improve overall code quality, readabilty and explicitness. This is since SP8 default.BREdwin
+
+helloIs it possible to change these default settings ??and can somebody tell me howAlready thanks
+

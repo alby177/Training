@@ -1,0 +1,7 @@
+Hi, 
+Is it possible to hide in the CFC or SFC  function return output by using pragma?
+
+or change it's name
+
+for example I did a  function, what returns value, in diagram this output pin name is the sama as function, I would like to change this name.
+

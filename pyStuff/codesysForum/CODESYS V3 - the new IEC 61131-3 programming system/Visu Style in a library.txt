@@ -1,0 +1,8 @@
+Hallo Group,How could i add this Visu style for my library which has few Visu Templete.I need to add this library to a Project which uses a Visu Style that is not the default Visu Style.Thanks.
+
+Actually i found it...the Visu in the library can be in Default Style, but when ist added to the Project it takes the Style defined in the ProjectThanks
+
+See also Tools, Options, Visualization Styles...
+
+Thanks Tim.
+

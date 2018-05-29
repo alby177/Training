@@ -1,0 +1,12 @@
+Is there a CoDeSys function to convert an integer value to a time value? i.e. I need to set a timer interval in seconds to a specific integer value  received over CAN
+
+HelloThere are a lot of conversion operators if you press F2.Just a small example, in ST :--------------------------VAR     Val:INT;     Mytime:TIME;END_VAR--------------------------Program :MyTime:=INT_TO_TIME(Val);--------------------------After running the program :For Val=100 ==> MyTime=T#100msFor Val=1000 ==>MyTime=T#1s 0msHoping to be helpful  
+
+or have a look at www.oscat.deand yes i know if you do INT_TO_TIME is good.keep in mind the max.if needed more use a INT_TO_REAL then multiply it and make a convert to time by REAL_TO_TIMEdependiong of version the rounding is false. but it works
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks Guys.   I did find a way of making the conversion via pointers just after I posted. However the INT_TO.. conversion is much neater.
+
+One more hint: DINT_TO_TIME converts a double integer into the time format.As in INT_TO_TIME, "100" will be converted into 100 ms. However, the DINT range is much wider. 2,147,483,647 milliseconds are equal to 596 and a half hours. Is that enough?
+

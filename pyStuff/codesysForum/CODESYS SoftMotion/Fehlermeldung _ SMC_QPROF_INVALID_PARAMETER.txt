@@ -1,0 +1,2 @@
+Attachment:Programm.jpgSehr geehrtes CodeSyS Forum.Wir haben bei unserer Diplomarbeit die Aufgabe einen 6 Achsen Roboter anzusteuern. Wir haben nun ein Beispielprogramm erstellt um die grundlegenden Funktionenen zu testen und bekommen folgene Fehlermeldung: SMC_QPROF_INVALID_PARAMETER. Diese wird am Programmbaustein : MC_MoveDirectAbsolute ausgegebn. Leider konnten wir bisher keine Erklärung für diese Fehlermeldung finden. Uns wäre sehr geholfen wenn jemand diese Fehlermeldung versteht und uns unseren Fehler erklären könnnte.Vielen Dank im Vorraus 
+

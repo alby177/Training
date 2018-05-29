@@ -1,0 +1,19 @@
+Hi,
+
+I am absolutely new to OPC so if anyone could help me with this i would be very happy:
+
+I want to write a C++ client application that monitors some variables from a project running on a softPLC (under windows xp). As far as i understood from documentation OPC is the solution for this. 
+I get the OPC server running but can anyone tell me how i can communicate with the OPC server now from my client application??
+Someone maybe has an example in C++?
+
+thanks a lot in advance!
+wouter
+
+You can connect opc server to your program by using PLCHandler.
+This PLCHandler can be used in c or in vb.If you want to use in vb,you can 
+use .ocx file.If you want to use with c,you can use dll file.
+
+www.izabil.com
+
+_________________zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+

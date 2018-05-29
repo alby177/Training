@@ -1,0 +1,72 @@
+What Modbus Functions does the Rpi support?  I'm trying to use a package to write data to the Pi over modbus but I keep getting exceptions.Thanks
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+I found out that they are using function 22 mask write register.   I'm guessing that is not supported.
+
+_________________nOrM=====nOrM = Norman Dziedzic Jr.
+
+Hi,here the overview, if you are Master (ModBusMaster.jpg ) and you try to add slave functions codes you see them.in case the plc is modbus slave (ModbusSlave_FC-Code.jpg):Supported Function CodesIf not restricted by a special type of the controller, the slave generally supports the following function codes:See the description in the online help:FC03 Read Holding RegistersFC04 Read Input RegistersFC06 Write Single RegisterFC16 Write Multiple RegistersFC23 Read/Write Multiple RegistersBREdwin
+
+Thanks Edwin.Is there a way for my controller to be a slave and support Coil Data?Thanks,Norm
+
+_________________nOrM=====nOrM = Norman Dziedzic Jr.
+
+Hi,I am using Raspberry as as Modbus TCP slave device.I like to write holding registers in Raspberry (%IW0) from Modbus master (PC).When I write new value into the register, I can shortly see this new value in raspberry, but immediately after this, something override this with value 0.Any idea?I also like to use modbus coils and discrete inputs. Is this not supported?Thank you.BRZdenko.
+
+Hi,you need to remove the tag timeout in the modbus slave... see screenshotFrom online help see supported function codes.BR Edwin
+
+Thank you Edwin   . This works great!I have another question. Rassberry is still configured as modbus slave.I like to use holding registers for read and write variables value. The problem is that I can't write value to modbus holding registers variable within the program execution. For example: I like to read and write temperature setpoint from Modbus master (PC). This setpoint can also be set within the program execution on Raspberry. In this case, Modbus master have to read this changed value. How can I make this work?Best regards,Zdenko.
+
+You need to use the Modbus Input Registers for that.  I was very confused by this as well.
+
+_________________nOrM=====nOrM = Norman Dziedzic Jr.
+
+Thank you Norman.But I am not sure if I understand your suggestion.Input register is only allowed to be read from Master. We can not write to it.I think holding register have to be used. With function 03 we can read and with 06 we can write to it.The main idea (and demand) is that we can read and write the same holding register from Modbus Master and in PLC (Raspberry in this case).Any idea?Best regards,Zdenko.
+
+Sorry for the confusion.  I have not been able to find a way to read and write to the same holding registers.   I used a combination of holding registers and input registers for getting my sample application working.  I have seen this in other systems and I believe they are trying to avoid confusion over which is the proper data.
+
+_________________nOrM=====nOrM = Norman Dziedzic Jr.
+
+To have  Holding registers read/write use CoDeSys ModbusTCP Slave library.  See the screen shot for the example how to use it.
+
+_________________The Original SoMachine Ninja
+
+Thank you very much. I added Modbus TCP slave library from Intern/ModbusTCP Slave.It is strange that I don't have the same function block:Best regards,Zdenko.
+
+Hi,I created new project. In this project is Modbus server function block is shown as it should be. Why it was shown different in my first project I don't know... Maybe can someone help us and explain this situation.Anyway, this version works perfect! I can read and write modbus holding registers with master and slave devices.Best regards,Zdenko.
+
+Hi,there are two ModbusServer fb's available one for Modbus TCP the other for Modbus RTU...See screenshots:BREdwin
+
+Thank you. Yes, RTU is different as TCP. But it is strange that I insert TCP FB and there is RTU.This is added libraries. Here it TCP, which is correct:Here is Input Assistant to choose Modvus server TCP:And this is result, which is not correct:Best regards,Zdenko.
+
+Hi,i've tried to reproduce that...for me the correct fb occure after insert it with input assistent.But anyway if you have steps to repeat to reprocude it please let me know.BR Edwin
+
+Thank you Edwin.Enclosed I am sending the project. Maybe you can try the same. When I am adding TCP Modbus server function block in MB_FBD, inserted block is not right.Best regards,Zdenko.
+
+Hi,on 3.5SP5 Release (July 2014) there is an solution for this issue,because we recommend to have all in the configuration it should not be needed to use modbus fb's and call themmanually. (Sure this will be always possible but the easy way is to have everything called implicit by the system)Holding Registers (Slave %I) can be configured to overlay Input Registers (Slave %Q).  This way they can be made updateable by the Slave's application code. See Screenshot.BREdwin
+
+Hi,this will be great. Thank you.Best regards,Zdenko.
+
+Edwin Schwellinger wrote:Hi,on 3.5SP5 Release (July 2014) there is an solution for this issue,because we recommend to have all in the configuration it should not be needed to use modbus fb's and call themmanually. (Sure this will be always possible but the easy way is to have everything called implicit by the system)Holding Registers (Slave %I) can be configured to overlay Input Registers (Slave %Q).  This way they can be made updateable by the Slave's application code. See Screenshot.BREdwinThat is great news.  Keep up the good work!
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+Hi All,Is it possible to have a Modbus TCP server with the same port number per each slave ID and a unique I/O mapping for each of the slaves ? I'm not a very experienced Codesys user, just wondering whether there is a possibility to amend a TCP message processing somewhere in Codesys, which could allow me to point specific slave ID's to specific data maps ?At the moment, if we have a one ModbusTCP_Slave _Device added to the devices structure it allows to have (simulate) all 255 slaves on the same port (as I understand this functionality comes by default). Each slave has the same I/O mapping. Now, under "ModbusTCP --> Configuration Parameters" there is an option which should allow to apply a Unit ID, tried to use it expecting to have just one slave active, but looks like it makes no difference at all - am I thinking correctly about the usage of this option ?.Besides, tried to add two ModbusTCP_Slace_Devices with different port number and only in this way I did managed to get different I/O mapping for slaves.Thanks
+
+Hi all,I like new Modbus functions support in 3.5SP5 (coils and discrete inputs).@Edwin:I like to change holding registers with RPi application. I made a configuration with overlay input and holding registers like you suggest. But unforunately it doesn’t work for me. Can you please suggest how to configure this to make it work.Thank you.BRZdenko.
+
+Hi Zdenko,please send me your project.BREdwin
+
+Hi Zdenko,see attached example, this should show how it works, Pi is ModbusMaser and Modbus Slave at the same time (only for me to test purpose),in case you use this with you Modbus Master which is running on you windows machine, please remove the Modbus Master from this project example.BREdwin
+
+Thank you very much Edwin,I understand the solution. It can be done. I tested it and works ok. But I must say that this is more like a work-around. It is not so easy to define all needed helping variables and program functionality if we have bigger project with a lot of holding registers. I think it is easiest to use MB server function block from Modbus lib. In this case this functionality works ok. But unfortunately there are no coils and discrete inputs integrated. It will be the best if you integrate this functionality directly in Modbus driver. It is normally used in industrial devices on the market. Do you have a plan to integrate this in the next Codesys release?Best regards,Zdenko.
+
+Any updates on this? /U
+
+Edwin Schwellinger wrote:Hi Zdenko,see attached example, this should show how it works, Pi is ModbusMaser and Modbus Slave at the same time (only for me to test purpose),in case you use this with you Modbus Master which is running on you windows machine, please remove the Modbus Master from this project example.BREdwinHey Edwin, Can you explain what's this part is doing? I can't understand what's it doing. Thank you
+

@@ -1,0 +1,6 @@
+Hi,in Codesys v.2 help there is a warning that string functions are not thread safe and the same function shouldn't be used in different tasks because there is a danger of overwriting. My question is, does this apply to all string functions - including LEN and FIND, which return INT - or only to the rest (LEFT, CONCAT etc.) that return STRING ? Can I safely use LEN and FIND from different tasks or they may return a wrong number?Thanks.--BTW is it possible a task switching to occur while a function executes, if there are no tasks triggered by events?
+
+dont worry to much.it indeed has to do with interupts etc. However just dont change a string in a interupt.when doing a for next loop it can be interupted. but if you have no interupts running it is no problem, as a function is completed (or a rung is done, however multilines are not obvious)
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

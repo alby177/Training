@@ -1,0 +1,4 @@
+I recently added a feature to change the language on static and dynamic variables. The problem I am facing is that German/Russian take up a lot more space than English. Is there a way to add a scaling factor to each language so that when I switch from English to another language it shrinks the text on my visualization? I am using version 3.5 Service pack 3.
+
+Inside the visualization manager options:
+

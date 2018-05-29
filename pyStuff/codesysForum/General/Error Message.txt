@@ -1,0 +1,8 @@
+  I have an error in a programe that has been working for some time! 
+The error is "INVALID 16#OF" and "INVALID 16#80" Can not find any reference to this.
+
+Thanks
+Les L
+
+Those are the memory address in hex I believe. If you look at yor target memory layout you should be able to determine in what area the error occured. If it occrured on a long time running unit == Bad memory
+

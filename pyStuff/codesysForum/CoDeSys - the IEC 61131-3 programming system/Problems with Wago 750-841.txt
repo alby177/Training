@@ -1,0 +1,6 @@
+I have a project which was made few years ago with a V2.3 version of Codesys.We don't have anymore this computer with the Codesys version which used towork.Now, I would like to use this project, I made a new install of Codesys V2.3.The project can be opened but I can't upload it in a Wago 750-841 becauseCodesys tell that the selected PLC profil doesn't match. I saw that thereis sometimes incompatibility versions between 750-841 firmwares and Codesys versionand I set ''Use alternative target ID'' on web server PLC settings but it still not work.In Codesys, in my target settings, I don't have the 750-841. What can I do?Thank you for your help
+
+Ask Wago. You need the target discriptions and it is typical to get them from the manufaturer of the hardware.Regards,Ralph
+
+I contacted Wago, they send me a link to download a Codesys special version with 750-841 targets installed (CoDeSys_2.3.9.28).It works now.regardsFerdez
+

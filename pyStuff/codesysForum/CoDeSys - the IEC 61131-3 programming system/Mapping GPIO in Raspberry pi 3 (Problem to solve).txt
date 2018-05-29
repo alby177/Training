@@ -1,0 +1,8 @@
+Hello,i just burned a new Raspberry Pi 3 because i put output with ouput, so before i do any thing else i must know what im doing.it's very hard to undestand the Mapping GPIO in Codesys for Raspberry Pi 3, what meanse Bits 0-31? Is that a register? I have looked on the Datasheet there is no trace of such mapping.Please share with me you experience how to connect/convert GPIO presentation in Codesys to standard GPIO.(See Screenshots in Attachments)Thank you and best regards.
+
+Hi,hm.. did you ever open one ogf the example projects? In this case the following Project should help:"c:\Users\<YourWindowsUserName>\CODESYS Control for Raspberry PI\3.5.11.10\Examples\GPIO.project" BREdwin
+
+Hey, thank you for your replyYes of course but i still could not understand the schema, in my project for example i used QX0.0-4 (not important which one) what's the equivalant GPIO on the image that you sent?Thank you
+
+If I don't need to use QX and IX what i should use alternative for GPIO?
+

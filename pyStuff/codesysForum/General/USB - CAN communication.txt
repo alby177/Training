@@ -1,0 +1,22 @@
+Hello.
+I have red few topics about communication via CAN but i did not find answer on my problem.
+I want to program PLC controller (IFM CR7505) using CAN interface. I have module USB to CAN (IFM EC2071).
+Things that i have tried:
+CODESYS: Communication Parameters - NodeID 1 (my master works on ID1), can baudrate 125, CAN card driver: (i tried ifmcan, CAN_VCI), rest default
+DOWNLOADER: interface - CAN : boudrate 125, ID 1, VC1 and VC2...
+
+Is there something that you can sugest to do? Did someone know how to do it?
+
+Here are a few of your problems. The first is you should have used an IXXAT or Peak instead of an IFM USB tool (RM product). But that asside there are two CAN ID's associated with your PLC. 
+
+1. The first one is the CANopen slave/master ID that you set in the 3S can stack under the PLC configuration. This is the ID I think you are referring to below = 1.
+
+2. Second is the secret trick one. There is another one that IFM calls the DOWNLOADID. This is a special ID that allows CoDeSys to communicate directly to the CoDeSys software. This is built into the firmware. Check your manual that came with the safety PLC. They may have changed it but the default DOWNLOADID = 32. You can change it within your application with the FB in the CR 7505 library DOWNLOADID. Do not make it the same as the CANopen ID. 
+
+Now when you want to communicate via the downloader or CoDeSys you use the DOWNLOADID not the CANopen ID.
+
+By the way the baud rate is still the same as what you set with the CANopen interface or function block. If you are having trouble you can contact me directly. We'll get it going.
+
+_________________Thanks,
+Steve Pfeifenroth
+

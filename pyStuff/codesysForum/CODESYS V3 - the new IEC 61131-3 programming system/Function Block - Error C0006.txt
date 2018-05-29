@@ -1,0 +1,14 @@
+New to Codesys and expect that this is a syntax error. Tried to use the Oscat FB lib but the FB's do not have an output to them for some strange reason (maybe someone could help me here as well). From here I tried to build a new function but I get C0006 errors for the Var designation text. The text I wrote is as follows.FUNCTION HR_Of_DT : INTVAR_INPUT	XDT: DATE_AND_TIME;END_VARVAR_OUTPUT	Hour_Of_DT : INTEND_VARThe specific errors I have are as follows. [ERROR]         Test: HR_Of_DT [Device: PLC Logic: Application](Line 6 (Decl)): C0006:  'END_VAR' expected instead of ''[ERROR]         Test: HR_Of_DT [Device: PLC Logic: Application](Line 7 (Decl)): C0006:  ';, :=, REF=, ( or [' expected instead of 'END_VAR'
+
+Missing semicolon after Hour_Of_DT : INTHope this helps...
+
+_________________http://www.robotecnik.com - robots, CNC and PLC programming.
+
+This fixed it thanks! On a side note, is there any reference materials for error codes? I had zero luck searching the web and the Codesys manual.
+
+See the error itself:[ERROR] Test: HR_Of_DT [Device: PLC Logic: Application](Line 6 (Decl)): C0006: 'END_VAR' expected instead of ''HR_OF_DT, 6th line on the declaration section. END_VAR is missing.Of course END_VAR is not missing, but this is due the way compilers handle the check stage.If you are not ending the line using a semicolon then the next line belongs to the current one and therefore END_VAR is understood not as the reserved statement it is but as part of your declarations...There are codes that can be found in the help system, there are other codes that force you to understand what you are doing...A good tip is to search at the line it tells you and before as the error can be in a previous line but the compiler can't say it...Hope this helps.
+
+_________________http://www.robotecnik.com - robots, CNC and PLC programming.
+
+I'd say just double click on the error next time. The IDE typically brings you to the exact line where it think it has encountered a fault.
+

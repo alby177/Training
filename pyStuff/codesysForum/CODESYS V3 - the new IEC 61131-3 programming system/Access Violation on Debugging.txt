@@ -1,0 +1,8 @@
+Hi,I am getting an Access Violation Exception in CmpIecTask when a breakpoint is hit in the IEC application code. Dave has already mentioned this problem in his post:viewtopic.php?f=11&t=6213&p=12694#p12694There is not any answer to that post, so I am reproducing this new post with some more information.When I tried to debug the Codesys code, I stop at the following function:Here pApp does not have any value (or at lease I dont see any value). The same variable has correct value when the application starts (without hitting the breakpoint). Any comments or hint, please  suggest.RegardsIrfan
+
+_________________IM
+
+Hi,I already posted the solution that works for us at the following url:posting.php?mode=reply&f=11&t=6213Regards.
+
+_________________IM
+

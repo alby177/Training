@@ -1,0 +1,14 @@
+Hi Guys,New here and a little quick question.Is there a FB that will convert a letter, say "A" to number so it can be sent via BYTE then changed from BYTE back to the letter?Cheers,
+
+Hi,you can use STRING_TO_BYTE() and BYTE_TO_STRING()....or any other STRING_TO_.... Function.
+
+you can even send the string as it will be in ascii bytes.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Another easy method,Just map a memory address to var string and read the same memory address in var byte you will get the ASCII value for the stringfor exampleVar1 At %MB100 : String;Var2 At %MB100 : Byte;what ever the character in var1 the corresponding ASCII value will be displayed in Var2RegardsBalaji
+
+yes balaji it works in codesys, however this is not standard 61131-3 so i am reluctant to use it.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

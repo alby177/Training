@@ -1,0 +1,12 @@
+Hello,I want to display 10 elements of an array of structure strucTab that has got 1000 elements using a table. I have then defined an pointer to an array of 10 elements of my structure and filled the Configure table/Table settings/Data Array with PLC_PRG.ptar1^Code:PROGRAM PLC_PRGVAR   arr1:ARRAY [1..1000] OF strucTab;   ptar1: POINTER TO ARRAY [1..10]  OF strucTab;...ptar1:=ADR(arr1[k]);I can then display 10 elements from index k.This code works fine in the Codesys environement but the table remains desperately empty with the webvisualisation, any idea ?Thank for your help
+
+a web vis is in java, and can not have pointers, as they must be in memeory and a webvis is on the PC.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks for this quick reply, though I would have preferred another one ..
+
+there are ways to get it done, without pointers.I always avoid pointers and try it to make it just in pure 61131 and some libraries (like oscat, not used in vis)make it yourself with placeholders.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

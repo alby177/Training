@@ -1,0 +1,6 @@
+I try to do the GUI part with a raspberry and am having a handwriting font problem.the raspberry runs Raspbian and Ice weasel ( firefox ) .t it is a solution to have the same font on windows ?
+
+hello,You need the same font’s which you have specified in the CODESYS IDE.So please try to install the missing fonts on your Raspberry PI by sudo apt-get install  ttf-mscorefonts-installer https://packages.debian.org/search?sear ... -installer
+
+Hi,thanks for sharing this information to the community.BREdwin
+

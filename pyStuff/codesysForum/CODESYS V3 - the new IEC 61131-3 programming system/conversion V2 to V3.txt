@@ -1,0 +1,2 @@
+I'm trying to open projects (saved in V2) in V3. There are some problems in libraries. I don't know what should i do:convert or use the library that have allready been installed? Do i have to set some things before trying to open V2 project in V3?
+

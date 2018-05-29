@@ -1,0 +1,6 @@
+Hello, here I can show example of saving INT values int txt file on Raspberry Pi SDI have used pymodbus TCP to create modbusMaster(client) on port 503, with 10 holdt_register and 10 input_registersin Cosesys v3 create ModBusSlave TCP also with  10 holdt_register and 10 input_registers,if raspberry pi shut down , at start you can get 10 int values from file vars.txt on SD
+
+How to make start at boot pymodbus master(client)using PuTTY:#sudo nano /etc/init.d/autorunand paste text from autorun.txtCtrl + xyEnter#sudo chmod 777 /etc/init.d/autorun#sudo update-rc.d /etc/init.d/autorun defaults#cd /home/pi/Documents/pymodbus/examples/commonroot@raspberrypi:/home/pi/Documents/pymodbus/examples/common# sudo nano test.pyand paste text from test.py.txtCtrl + xyEnterbefore ShutDown RaspberryPi Download CodesysProject and try:#sudo /etc/init.d/autorun start output:Starting autorundonewait to start ethernet ,                 wait for Codesys Slave to start 20sec          cycle:  1Input0:  57648Input1:  57649Input2:  57650Input3:  57651Input4:  57652Input5:  57653Input6:  57654Input7:  57655Input8:  57656Input9:  57657line0:  57648line1:  57649line2:  57650line3:  57651line4:  57652line5:  57653line6:  57654line7:  57655line8:  57656line9:  57657          cycle:  2
+
+thanks for sharing the application!It is now available here:viewtopic.php?f=23&t=6247&p=13503#p13719
+

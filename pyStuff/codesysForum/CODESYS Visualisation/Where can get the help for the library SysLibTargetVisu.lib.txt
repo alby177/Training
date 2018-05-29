@@ -1,0 +1,15 @@
+Hi everyone,
+   I want to use the function block in the library "SysLibTargetVisu.Lib", but I don't know how to use? what's the meaning for the parameter?
+where can i get the help?
+
+ Thanks,
+
+ Andy
+
+Hi Andy,
+
+pls find attached the requested document
+
+regards 
+Ralph
+

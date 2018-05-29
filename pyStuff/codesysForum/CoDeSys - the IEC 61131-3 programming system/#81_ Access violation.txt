@@ -1,0 +1,8 @@
+Hi All,I am a CoDeSyS V2.3 user and the following error sometimes occurs on my application :#81: Access violation in "Access violation Task=PLC_PRG_TASK".It is obviously related to memory allocation but I wonder if :- a more precise root cause is associated to this error message #81- the overall allocated memory in Targer parameters may be involved (not enough memory allocated)- there is a tool that would help to determine in which part of the application the error occurs (the error does not occur when I run the application step by step !). PLC Browser may help in this case ?Does anybody know ?Thanks for your help.Regards,RET
+
+i have the same problem, does anybody have any hints??Thank you,Efrain
+
+I got the same error message with Error# 151003302, even there is no any explanation about it in help files. maybe codesys programmers do not know what it is. 
+
+Hi Guys,                    Go to online and select show call stack,it shows which part of your code is having problem.Most probably the data type mismatch during can cause this,so check in your programs.  Have a good daySarath
+

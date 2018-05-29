@@ -1,0 +1,17 @@
+Hello All,
+
+I am new to Codesys so please pardon my ignorance.
+
+If I have the project file for a controller, how do I use the visualization component of Codesys to view the status of inputs and outputs of the PLC when it is running?
+
+Thank you in advance for your time.
+
+Kyle
+
+Online - Login. Once CoDeSys establishes a communication connection you now have access to all the information. Go to the visu screens and open them you will see the data is populated automatically.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+Thank you very much for your reply spfeif.  I will give that a try.
+

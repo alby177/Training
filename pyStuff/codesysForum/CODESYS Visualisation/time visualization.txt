@@ -1,0 +1,16 @@
+I have a "TIME" variable to count how much time is working the PLC.What should I write into the "Text" field to have the time divided in hours, minutes and seconds?I have tried with %t but it does not work.Actually I am doing it with %s and I just see the values on minutes and seconds.Thanks for your help
+
+With your visualization open, choose Extras:Settings:Date/Time. What do you see for the TIME/TOD field? Is Formatted time display checked?
+
+Where is that "Extras" tab? I am working with a CoDeSys v3.4Thanks Musashi Aharon
+
+in 2.3 it is %t this will give system time.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Andoni Crespo wrote:Where is that "Extras" tab? I am working with a CoDeSys v3.4Ah, sorry. I'm on V2.3.
+
+Do not worry, it´s OK.I have tried %t but it does not work on v3.4, in the visualization appears a "t"
+
+Is this problem solved?Im also facing this issue...Kindly help me solve this.Thanksarrvvii
+

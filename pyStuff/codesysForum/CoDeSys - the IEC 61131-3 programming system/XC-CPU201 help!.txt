@@ -1,0 +1,6 @@
+I have an XC-CPU201 and i want to send/recive commands from other devices all connected in the same network (having TCP IP support) using TCP IP. Exactly when i have a "1" on a digital input (in my plc), the PLC needs to send a start command (send a bit) using TCP IP to a device from the network which address it's for example 192.168.1.x.Can someone help me with a blueprint to achieve that?Thank you!
+
+Hello,Have a look to the application note "AN2700K33.zip" you can get here :ftp://ftp.moeller.net/AUTOMATION/DOWNLO ... ERNET/FTP/In this application note there are : libraries (TCPClient and TCP Server), an example of programme (export file) and a documentation (pdf).Best regards  
+
+Thank you very much!
+

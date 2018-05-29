@@ -1,0 +1,18 @@
+Hey Guys,I want to control the MCP23017 Port Expander via Codesys on the Raspberry Pi. But I don't really know how to relize it.Is there somebody, who did this or any similar projects before?For me it's necessary to know, how to work with any I2C Devices in Codesys (MCP23017 is not yet supported from Horter & Kalb)Please give me an short instruction. Thanks!Antworten auf Deutsch und Englisch sind okay.Datasheet MCP23017http://ww1.microchip.com/downloads/en/DeviceDoc/21952b.pdf
+
+I'm in the same situation.... 
+
+HI;did you check the forum section:'CODESYS V3 Raspberry Pi share your devices & libraries & applications'or use the forum search.Guess you will find a ready to use library and devicedescription:viewtopic.php?f=23&t=5872&p=10868#p11014BREdwin
+
+Where can we find instruction how to make i2c slave device driver? Exist any template?
+
+Hi,no template this far, but I hope that we have that in the future. But I can recommend you to have a look into the existing driver libraries. Those are provided in source, in the hope that they are usefull.Everyone seriously interested in driver development on the Pi is welcome to leave me a PM.BR,IngoGesendet von meinem LG-H870 mit Tapatalk
+
+I'm not sure how to pm but Ingo Hornberger, can you send me a message? I'd like to create a driver for the raspberry pi.
+
+Hi!Currently I only have some draft documentation for SPI. If you have some time left, I can provide you the first I2C draft as soon as it is available (via E-Mail).If not, I can try to assist you in the creation of your specific driver.Just let me know what you prefer.BR,IngoGesendet von meinem LG-H870 mit Tapatalk
+
+Hey Ingo, you can email me and I can go from there for the time being. my email is simple, its my username here then gmail. Thanks for your help. I found a bit of documentation in the manual that I think would get me by, through lots of trial and error. On another note, my Raspberry Pi Zero just fried, I will need to get another board, do i have any luck getting the license on the new board that you or anyone here knows of?
+
+Ingo Hornberger wrote:Hi!Currently I only have some draft documentation for SPI. If you have some time left, I can provide you the first I2C draft as soon as it is available (via E-Mail).If not, I can try to assist you in the creation of your specific driver.IngoI would like to create a driver for a INA226 device, would you be able to give me some quick guidance on how I create the library?  I have seemed to figure out how to Add an existing Library, but how would I go about actually creating a new one?
+

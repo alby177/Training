@@ -1,0 +1,4 @@
+When I try to login with WinNT External POUs cannot be resolved error is coming withMC_Home extra blocks name  in message
+
+Vendor software problemUpdated with hotfix issue resolved
+

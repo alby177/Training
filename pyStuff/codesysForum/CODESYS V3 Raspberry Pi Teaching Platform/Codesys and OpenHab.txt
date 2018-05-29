@@ -1,0 +1,4 @@
+Hi,How to Integrate Codesys code with OpenHab webserver ?
+
+In few words only Modbus TCP is possible. E.g. OpenHAB is a Modbus client and Codesys runs Modbus Server. I tried this setup and it's worked. But anyway I'm dreaming of MQTT...
+

@@ -1,0 +1,2 @@
+I want to design a web application for that i need to create a SQL database in an sql server using codesys v2.3 but i am not sure if MySQL or maria db or some other tool,Also a very stupid question that simply giving a port and ip adress of the server is enough to make the database in server since i have watched a you-tube video about sql using wago plc. Please help me out guys how can i achieve this step by step.
+

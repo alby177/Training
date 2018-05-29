@@ -1,0 +1,24 @@
+Hello,
+In laser marker protocol i have to send to it with serial comunication three string null ($00) but when i concact three $00 the result is only one string null.
+
+Ex:
+
+StringExample:STRING:='$00$00$00';
+
+the result string before send is StringExample:='';
+
+Regards
+Stefano
+
+In string operations, the null character signifies the end of the string when displaying the string the first null tells the program the string is done. 
+
+I'm not sure if the concat will work or not. 
+
+I would try to send three BYTEs with a value of 0 (which is the same as the null character.
+
+Thanks,
+
+i'll try it
+
+StringExample:STRING:='$00$00$00' is equal to StringExample:='' (null string) and Code:SysComWrite(dwHandleCom,ADR(StringExample),LEN(StringExample),0) send NOTHING to COM port.You have to use array of bytes instead of string.For example:Code:VAR arr1:ARRAY[1..3] OF BYTE:=3(0); writed:DWORD;END_VARwrited:=SysComWrite(dwHandleCom,ADR(arr1),3,50);
+

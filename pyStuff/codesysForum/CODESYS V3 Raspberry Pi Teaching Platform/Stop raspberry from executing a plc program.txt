@@ -1,0 +1,6 @@
+Hi all,I am new to codesys and raspberry pi. I'd like to ask if there are any specific commands to control raspberry's plc program execution. How can I stop, for example, raspberry from executing a plc program that is downloaded on it.Thank you!BR
+
+Hi,stopping/starting the plc:sudo /etc/init.d/codesyscontrol stopsudo /etc/init.d/codesyscontrol startorsudo systemctl stop codesyscontrolsudo systemctl start codesyscontrolBREdwin
+
+Alternatively, if you just want to stop outputs, you can modify the behavior of outputs while in Stop. Found in the Device- PLC Settings configuration.
+

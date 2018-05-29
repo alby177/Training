@@ -1,0 +1,16 @@
+Does anyone have experence to implemet a CANOpen Master under CoDeSys V3.5?I have no idea to begin with. Is it necessary to Inster a CANOpen Manager? Is it enough only by configurating the CANOpen Maanager? anyone can give some tips?
+
+Right click on your device (PLC) and choose Add Device.Select the CANbus.When the CAN bus is added, click on it and add the CANopen_Manager.To this CANopen Manager you can add your CAN nodes.When your device is not selectable, you should first install it (Tools=> Install Device or Tools=>Device Repository).Every CANopen node normally has an .eds file which you need to install.When it is installed you can select it as node.You don't have to add any libraries, this is automatically done.
+
+Thanks,So after I Add a Canopen manager,and want to use this node as a master, how to configurate this local node to Rx and Tx PDOs?
+
+You don't have to do this in the "Master".This is done in the "Slave" configuration.The configuration in the slave is used by the master.
+
+I mean that I want the same PLC to be a Master to manage the CAN Network,and can also implement PDO sending and receiving.      To manage the CAN Network,I add a "CANbus\CANOpen Manager" device.      At the same time,I want this PLC to receive a process data (e.g. an angle value from a CANOpen angular sensor),and sending a process data to all the slave node(e.g. a height value that the PLC measures).       Then how should I cofigure the CANbus? do I need to add a "CANbus\CANOpen Local Device" on the same PLC?
+
+No, as mentioned, just add the .eds file of the sensor.
+
+Thanks,you are right.      Another question is that, On the Canopen Master (Canopen manager),if I want to send a process data to a slave, I can configurate it in the "CANOpen I/O mapping" window to an application variable. The PDO will send whenever the variable changes. What should I do if I want PDO to be sent cyclicly?      I know that on the Canopen Slave, if you want a PDO to be sent cyclicly,you can configurate the "bus cycle options" in the "CANOpen I/O mapping" window,but there is no such an option in the Canopen Master (Canopen manager).
+
+When you enable the expert settings in the configuration of the CANopen Remote Device, you will get to see the Tab "Receive PDO mapping" and "Send PDO mapping".When you select an RPDO of TPDO, you can click on Edit (right bottom side of the screen).Here you can edit the Transmission type for the specific PDO and set it for example to "cyclic- synchronous".
+

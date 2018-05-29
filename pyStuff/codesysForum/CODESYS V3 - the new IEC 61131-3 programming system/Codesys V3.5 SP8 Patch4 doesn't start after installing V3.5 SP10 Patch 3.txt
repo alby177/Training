@@ -1,0 +1,2 @@
+Hi,after I installed V3.5 SP10 Patch 3, the version V3.5 SP8 Patch 4 installed on the same PC doesn't start anymore and following error comes up. "Failed to instantiate the frame window. Exception has been thrown by the target of an invocation. The application will be terminated"I rebooted my PC after the installation of the new version without success. To repair V3.5 SP8 Patch 4 didn't help and failed with "Exception has been thrown by the target of an invocation" when initialising the package manager.  Any suggestions? thanks!
+

@@ -1,0 +1,4 @@
+AnyViz is probably the easiest way to monitor, operate and analyze your CODESYS PLC remotely, thanks to the Cloud from any location.Use the free AnyViz Cloud Adapter to connect your PLC within minutes to the AnyViz cloud.Functions:Real-time process data visualization with just a few clicksRecord and analyze machine data easilyTargeted Condition MonitoringRemote control - from anywhere in the worldConnecting machines, beyond location boundariesAccess with any modern browser and any kind of device like notebook or smartphoneAfter registration in the AnyViz Portal, it can be tested free of charge.Have a look at our YouTube Channel to see AnyViz in action.
+
+I accidentally reported your contribution as spam. I was tired and wasn't looking in which forum your message was placed and that it is perfectly fine to post this information here. My sincere apologies for rashly hitting the report button.
+

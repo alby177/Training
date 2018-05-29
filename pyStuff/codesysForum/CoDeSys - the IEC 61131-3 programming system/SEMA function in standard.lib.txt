@@ -1,0 +1,8 @@
+Hey,I have a questing concerning the SEMA function in Standard.libSemaInstance.BUSY becomes true when the SEMA function is called with CLAIM := true, but this only after the second cycle. Not the first.Does anybody knows if this is normal?Declarations:Code:PROGRAM PLC_PRGVAR   SemaInstance : SEMA;       (* instance van SEMA in standard.lid *)   xVar1: BOOL;   xVar2: BOOL;   xVar3: BOOL;END_VARProgram:Code:SemaInstance(CLAIM := xVar1, RELEASE := xVar2);xVar3 := SemaInstance.BUSY;
+
+BUSY = SEMA(CLAIM, RELEASE) means:BUSY := X;IF CLAIM THEN X:=TRUE;ELSE IF RELEASE THEN BUSY := FALSE; X:= FALSE;END_IF(from manual)meaning the busy output is starting with FALSE (normal as default of all bools is false.now when claim gets TRUE the busy stays FALSE, as it is defined above the claim.the next round it sees x TRUE so busy gets also TRUE.think of a semaphore, the signal only gets red after the train is passed, if you would arrive at the signal and claim it the signal would change from green to red immediately, so the driver has no time to pass the signal.as the block is public you can change it to what you like, or try the oscat.lib as it has many FBC for all types of functions.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks
+

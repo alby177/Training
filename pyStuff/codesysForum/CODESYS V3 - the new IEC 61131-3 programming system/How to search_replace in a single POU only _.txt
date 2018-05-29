@@ -1,0 +1,6 @@
+Hi,today I tried to modify some variable names in a single SFC POU via find/replace, and to my surprise this seems impossible (or, no surprise, I missed something).  What I want is to replace string 'D5' with 'D9' in the code of one SFC POU named 'Station9'. After CTRL+F, I see a Find dialog. If for 'Search:' I select 'Entire project' it's OK- all occurrences of what I look for are correctly listed - but all the occurrences in the entire project, and I want in a single POU only. If I select 'Active Editor' with active editor being my SFC POU, it finds only matches in var declarations and step & transition names. Matches in step/transition code are missed.If I click ... button, select 'Within the following objects', tick ALL the boxes, and set Name filter  to *Station9* - again it works as in the 'Active Editor' case - finds matches in vars & step/transition names, but not in code.So how to do what I want? In v.2.3 it's possible to select one or more POUs as a target for a global find/replace, can this be done in v.3.5 ?Thanks
+
+What about using the Refactoring functionality?  Highlight D5 and right-click and choose Refactoring (or EDIT -> Refactoring) - replace with D9.  This handles scope much better.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+

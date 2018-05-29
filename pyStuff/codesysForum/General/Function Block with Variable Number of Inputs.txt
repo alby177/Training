@@ -1,0 +1,28 @@
+Can anyone tell me how I can create a function block that has a variable number of inputs?  For example, in the online documentation for V2.3 it says:
+
+> 'Insert' 'Input of box' in CFC 
+> Shortcut: <Ctrl> + <U>
+> 
+> This command is used to insert an input at a box. The number of inputs > is variable for many operators (e.g. ADD can have two or more inputs). 
+> 
+> To increase the number of inputs for such an operator by one, the box > itself must be selected 
+
+Is it possible for me to create a function in my own library that has the same type of functionality, where the user can select the number of inputs?
+
+No impossible as the compiler looks at how many inputs are used.
+
+There is a work around it.
+
+when using AND for example
+
+You can make your own functionblock with many inputs and the unused ones fill with true.
+result:=inp1 and inp2 and inp3  etc.
+you must declare all inputs
+inp2:bool:=true; will not work.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+You can create a functionblock with "variable" amount of input by using an array and an index number
+
+Code:FUNCTION_BLOCK VarInputVAR_INPUT   awInput:ARRAY[0..255] OF WORD; (*255 free asignable inputs*)   byAmount:BYTE; (*for use in a for loop to know when to stop, for example*)END_VAR
+

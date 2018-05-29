@@ -1,0 +1,6 @@
+Hi,I have made a project with visualisations with a resolution of 2560 x 1024.I have two monitors, both resolution 1280 x 1024Now I want to run Codesys HMI and show my visualisation entirely on both screens. I wonder how I can do this? Can anybody help me?thank you!Nico.
+
+this is completely dependent of your graphics card and driver not from any 3s software.go to your settings of the videoscreen like intel graphics adapter.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

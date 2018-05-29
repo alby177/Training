@@ -1,0 +1,6 @@
+Dear all,
+
+ is there an available version of the clearcase driver for the ENI Server ?
+ Version 2.3 codesys
+ Many thanks
+

@@ -1,0 +1,10 @@
+Hi all,I'm trying to open a custom dialog in my project (Codesys 3.5.9.30) without success.I created a "Visualization" set as dialog with a couple of buttons and a rectangle with text.In my main page, when the user click a button, I have to perform some operations and then, if the operations are completed, I need to open this dialog.I tried with this code:Code:VAR_GLOBAL    dialogMan : VisuElems.IDialogManager; // Dialog manager    openSaveDialogConfirm : VisuElems.IVisualisationDialog; // Reference to the custom dialog    pClientData : POINTER TO VisuElems.VisuStructClientData;    visuRect : POINTER TO VisuElems.VisuStructSimpleRectangle;END_VAR// In my PLC_PRGIF dwOperationResult = 0 THEN // The file already exist. Ask for overwrite    GVL.openSaveDialogConfirm := GVL.dialogMan.GetDialog('Dialogs.ConfirmDialog'); // Get the reference to the FileOpenSave dialog    (* Check if the dialog exist, if so try to open it *)    IF GVL.openSaveDialogConfirm <> 0 THEN        GVL.visuRect := ADR(GVL.pClientData^.rClientRect);                    xResult := GVL.dialogMan.OpenDialog(GVL.openSaveDialogConfirm,ADR(GVL.pClientData),TRUE,GVL.visuRect);    END_IFEND_IFAll references to the objects are set, the variable xResult becomes true but the dialog is not displayed.I have no clue because the documentation is missing, can you help me?Thank you,Massimo
+
+Take a look here viewtopic.php?f=25&t=7385You can open dialog for each "logged" users on certain application event
+
+Yes, you copied the example from codesys store; I did the same thing.Actually my question becomes: why should I use OpenDialog4? What are the other three functions used for?
+
+Here is simplified
+
+Thank you
+

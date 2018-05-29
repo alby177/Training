@@ -1,0 +1,4 @@
+Whenever I add a visualization object, I get a screen with an "Active" tick box.What is the difference between proceeding with or without "ticking" the box?I have tried ticking and not ticking but not noticed any difference in the result.Is there some subtle difference I am missing?
+
+_________________Computer Setup:- Windows 7 Professional- CodeSys V.5 SP8 Patch 2PLC Setup:- Pi2 (running headless via Putty)- Jessie Lite.
+

@@ -1,0 +1,4 @@
+Hi,I have thermostat in network which communicates over Modbus TCP/IP protocol and i'm successfuly reading values but i have problems writing anything.Can anyone help me?
+
+Hi,without having the project - not reallyBREdwin
+

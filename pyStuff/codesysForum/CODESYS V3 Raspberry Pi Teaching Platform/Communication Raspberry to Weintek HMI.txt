@@ -1,0 +1,6 @@
+Good morning,Has anyone tried to connect a weintek panel to the raspberry with codesys? I'm trying to communicate with the "Codesys V3 ethernet" protocol, but communication has big problems. Does anyone know how to suggest the right direction for the Hmi Weintek and the Raspberry to communicate?ThanksMassimo
+
+Hi,Which OS is running on the Wintek?BREdwin
+
+http://www.weintek.com/Download/MT8000i ... et_ENG.pdfThis is a HMI that I use to connect to Schneider, Siemens, Beckhoff and Codesys Plc, but I'm in trouble to connect to Raspberry/codesys.
+

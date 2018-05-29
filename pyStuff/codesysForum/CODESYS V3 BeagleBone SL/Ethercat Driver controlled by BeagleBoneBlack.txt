@@ -1,0 +1,8 @@
+Hi,I'm trying to control an ethercat driver by BBB.I'm using the MC_Power block of SM3_Basic library 4.0.0.0The block sets the .0 .1 .2 bit of the control word to true.The driver i'm using (phase TW03) requires also the .3 bit to enable operation mode.Do I need another block to set this bit? Otherwise can i modify the library?ThanksBest RegardsStraccio80
+
+Hi,you are using DS402 generic driver for using this drive?BREdwin
+
+Attachment:CODESYS_DS402.jpgHi,Thank you Edwin for your replay.I'm using DSP402 generic drive.What Can you suggest ?ThanksBRStraccio80
+
+Hi,this is not possible, (this is not really DS402 standard if this need to be set )The only possible paramter on generic DS402 are there is the attached screenshot.But this does not help in your case.BREdwin
+

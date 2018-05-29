@@ -1,0 +1,10 @@
+hello,
+is there anyone who can give me some advice on round path functionality?
+I mean connection to the others FB like NCDecoder, Check velocity.
+is it necessary to set the Radius and angle? 
+I've try to use it whitout any result.
+regards
+MS
+
+Round_Path -> NC_Decoder -> Check_Velocity -> Interpolator
+

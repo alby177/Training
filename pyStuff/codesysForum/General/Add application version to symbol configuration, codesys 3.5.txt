@@ -1,0 +1,2 @@
+I can't find any way to add application version information to symbol configuration.I need to show PLC application version on HMI.Best regardsVitor Martins
+

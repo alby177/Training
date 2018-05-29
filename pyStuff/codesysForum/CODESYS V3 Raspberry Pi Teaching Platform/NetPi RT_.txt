@@ -1,0 +1,4 @@
+Is there plan to release a RT version for the industrialized version of the Pi? https://www.netiot.com/netpi/industrial-raspberry-pi-3/.
+
+There are so many such derivates coming up, that it is hard to say which of its features might or might not work. In general you can use our package on every RPI based controler. But please use the demo period to check if it fits for you.Some feedback about your experience would be appreciated.Gesendet von meinem LG-H870 mit Tapatalk
+

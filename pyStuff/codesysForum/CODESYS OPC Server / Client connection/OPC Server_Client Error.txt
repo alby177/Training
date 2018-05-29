@@ -1,0 +1,2 @@
+I would like to know what this error means in the OPC Server Log:(14.01.2013, 07:00:16.459) File E:\OPCServer_SRC_Release\CodesysSpExt\OPC-Server\Version 3.1\ServerToolkit3_1\ServerToolkit\RuntimeLIB\opcchannel.cpp  line 234 exception occurredThanks
+

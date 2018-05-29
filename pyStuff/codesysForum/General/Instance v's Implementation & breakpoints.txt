@@ -1,0 +1,31 @@
+Hi,
+
+We're currently in the process of trying to port our existing PLC into the CoDeSys environment.  Our machines have several access doors, therefore we're instantiating 4 instances of Door_POU.
+
+That is fine but there are times during developement when one of the doors isn't working correctly and we'd like to see why.  When I log into the runtime and double click on the POU the help manager window appears and lists all the instances and the implementation.  I can open for example the 3rd instance but I cannot set any breakpoints within it.  I can however open up the IMPLEMENTATION and set breakpoints within that.  This "implementation" code appears to represent the first instance which does not help if my problem is only experianced by the 3rd instance.
+
+I guess in my mind this seems wrong for two reasons.  The implementation window should just contain the code like it would if you were logged out and editing.  It isn't an instance.  The instances should be able to have breakpoints set as they are actually being executed.
+
+What are your thoughts ?
+
+Thanks,
+Michael.
+
+You are right:
+Breakpoints in FB instances is a feature that is missing. And it will not be supported in CoDeSys V. 2.3. But 3S will implement breakpoints in FB instances in CoDeSys 3.0, which will be released at the end of 2005.
+
+But there is a workaround you could use:
+Define one more input variable in the implementation (a dummy variable), e.g. a boolean variable and initialise it whith TRUE when calling the FB instance from your main POU. In the FB code you insert a conditional operation, e.g. something (in ST) like
+
+IF DUMMY THEN
+DUMMY := FALSE;
+END_IF
+
+and position your breakpoint to the code line with the assignment. In the other IEC languages you can solve the same by using the operator MOVE and an additional EN (enable) input (e.g. in LD or CFC).
+
+I hope this will help you to debug the problem. Of course you should remove the additional code after you have found the bug.
+
+_________________Roland WagnerModerator
+
+oh ok, yep that works.  I haddn't thought of doing that.  Thanks !
+

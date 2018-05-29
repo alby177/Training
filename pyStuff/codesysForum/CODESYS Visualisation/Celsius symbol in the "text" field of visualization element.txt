@@ -1,0 +1,10 @@
+Is this posible to display celsius simbol in visu-element?Currently I use only "C" (e.g. - [b]Room Temperature %s C[/b]).
+
+It is no problem to display "°C" in a vis. The german "qwertz" keyboard offers the sign left to the "1" key.
+
+start with a symbol ALT 167 the a simple C.easy and fast.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+[quote="singleton"]It is no problem to display "°C" in a vis. The german "qwertz" keyboard offers the sign left to the "1" key.[/quote][quote="shooter"]start with a symbol ALT 167 the a simple C.easy and fast.[/quote]10х you people, both sulution works fine, I found "ALT 248" (°C) is great for me!
+

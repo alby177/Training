@@ -1,0 +1,80 @@
+EDIT2 : Hello everydoby, I want to convert a BYTE to is corresponding ASCII string :
+example :
+
+a : INT ;
+b : STRING;
+
+
+a := 65; (*ASCII code => A*)
+
+I would like the string 'A' in my var b ?
+How can i do this ?
+
+thank you
+
+---------------------------------------
+
+Hello, have you got examples using the library SysLibFileStream ?
+Does it works with every PLC (can't find the corresponding document  SysLibs_Overview.pdf) (In my case Moeller/Micro Innovation PLC)? 
+
+I've tried regarding ansi c definition but without any success  
+
+thank you  
+
+
+EDIT: On SysLibs_Overview.pdf from Moeller, they don't speak about SysLibFileStream, so I guess it doesn't work with ?
+
+Regarding to my first question, I guess I may process like that
+
+Code:ascii:ARRAY[0..255] OF STRING(1):=33(' '), '!', '"','#','$$' ,'%' ,'&' ,'´','(' ,')' ,'*' ,'+' ,',' ,'-' ,'.' ,'/' ,'0' ,'1' ,'2' ,'3' ,'4' ,'5' ,'6' ,'7' ,'8' ,'9' ,':' ,';' ,'<' ,'=' ,'>' ,'?' , '@','A' ,'B' ,'C' ,'D' ,'E' ,'F' ,'G' ,'H' ,'I' ,'J' ,'K' ,'L' ,'M' ,'N' ,'O' ,'P' ,'Q' ,'R' ,'S' ,'T' ,'U' ,'V' ,'W' ,'X' ,'Y' ,'Z' ,'[','\' ,']' ,'^' ,'_' ,'`' ,'a' ,'b' ,'c' ,'d' ,'e' ,'f' ,'g' ,'h' ,'i' ,'j' ,'k' ,'l' ,'m' ,'n' ,'o' ,'p' ,'q' ,'r' ,'s' ,'t' ,'u' ,'v' ,'w' ,'x' ,'y' ,'z' ,'{' ,'|' ,'}' ,'~' ;
+
+Hi,
+
+you are right. SysLibFileStream is not supported by Moeller PLCs.
+If you have only 1 byte which holds the corresponding ASCII value you can copy it directly to the string:
+
+s1 : string;
+b1 : byte;
+p1 : pointer to byte;
+
+p1 := ADR(s1);
+if ( b1 > 32 ) then
+ p1^ := b1;
+else
+ p1^ := 32;  (* blank *)
+end_if
+ p1 := p1 + 1;
+ p1^ := 0;      (* terminating zero *)
+
+This is alternative to your string table which works too.
+
+regards
+  Klaus
+
+in the open source library from oscat you can find such routines
+www.oscat.de
+
+_________________freie sps bibliothek unter www.oscat.de
+
+thank you for your answers
+
+Softwerker59, I don't understand this part :
+
+p1 := p1 + 1; 
+p1^ := 0; (* terminating zero *) 
+
+(I'm not realy fond of pointers)
+
+
+hugo, thank you and great job, is there english documentation ?
+
+Strings need a terminating character (0) so that the functions that use them know where the end of information contained within the string buffer is.
+
+By moving a zero to the location that p1 is pointing at, you are putting that terminating character where it belongs in the string.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+thank you  
+

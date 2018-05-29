@@ -1,0 +1,14 @@
+Hi,
+
+Is there a way to create a combo to select a list of choices ? I'm very confused, it's a basic widget.
+If there is nothing to do that, what alternative we can used ?
+I'm using CoDeSys 2.3.9.13.
+
+Thanks,
+Romuald.
+
+you can use table for this and if you click on a cell you can see which cell is clicked.
+a pull down is impossible. (however when invisible is used also possible)
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

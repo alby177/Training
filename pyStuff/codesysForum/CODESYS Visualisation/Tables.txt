@@ -1,0 +1,12 @@
+Hi,I have put a Table-element into my visualisation in which I show a certain array. (50 rows, 6 columns).I was wondering a few things:1: Is it possible to change column names so it doesnt show "ArrayVARIABLE[Index].columnname" ?    I would just like to show "Columnname" instead! how can I do this?2: Is it possible to allow data entry for the user as well?thank you for your time!Nico.
+
+double click the table. In the Configure Table dialog click Columns on the left. Double click a column on the right (under Selected columns). In the box type any name you like and it will appear in the header. Then click Edit Template button below the header text and in the new window click Input on the left -> tick 'Text input of ...'
+
+That works.Thank you very much!
+
+Is it possible to make data entries? Or i have to change directly array which is connected to table.
+
+yes you can change it in the array, however i use a separate function block for this.you can get the x and y from the table then use the keyboard to change and write it back.i had problems with writing it into the table again as it is always scanning.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

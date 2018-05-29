@@ -1,0 +1,24 @@
+Excuse for my basic question. As you can see in the LADDER link I wrote a PRG in ladder and it work fine(ON and OFF the BUZZER_ON bit). I want to translate in ST, as you can see in the second link, but it does not work. Please can you suggest where I fail?BR
+
+In ST, S= and R= are hardly used, if ever (I never used them over the last 10+ years).  The following statement is effectively the same as a set coil in ladder:Code:IF Timer.Q THEN   Buzzer = True;END_IFThis is because the variable is set when the IF is TRUE and is never reset to FALSE because there is no code line Buzzer = FALSE. Go back through your ST with this knowledge and see what luck you have. PS. I would suggest attaching your screen shots to your post and not use external locations like drop box - these links will fail after some years and some viewers will avoid following the links.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Hi,thank you very much for your answer.Quote:I would suggest attaching your screen shots to your postHow is possible to include image in my post? With img tag, as you can see above, I link always to dropbox.BR
+
+Just below the submit button on the post, there is an "Upload attachment" section to attach files.  Once you attach the file, you can add an IMG link in your post if you want to have the graphic inline.Here is roughly what your ST code could look like (not tested):Code:Timer_Buzzer_Off(IN:=NOT(Buzzer_On), PT:=T#5S);Timer_Buzzer_On(IN:=Buzzer_On, PT:=T#100MS);IF Timer_Buzzer_Off.Q THEN   Buzzer_On := TRUE;END_IFIF Timer_Buzzer_On.Q THEN   Buzzer_On := FALSE;END_IFTest1 := Buzzer_On;The IF statements act like the SET/RESET functionality.  Definitely not the only way to do it!!! (See TP() pulse timer, RS latches, etc).  Just note this will not be exactly a 5.1 second cycle - it takes a PLC scan or two to reset/restart TONs (i.e. it will be longer than 5.1 seconds...).
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+I have a bit of a different take on this.  Below is what I would do.  I try to avoid using IF statements to turn on logic bools because many times there are issues with, where, how they get reset.Code:VAR   BuzzerTimer:    TON;   BuzzerOffTime:  TIME:= T#5S;   BuzzerOnTime:   TIME:= T#100MS;   Buzzer_ON:      BOOL;END_VAR// Continuous Running Timer (Preset = Ontime + Offtime)BuzzerTimer(IN:= NOT(BuzzerTimer.Q) , PT:= (BuzzerOnTime+BuzzerOffTime));// Turn the Buzzer on if the elapsed time is less than the ONtimeBuzzer_ON := BuzzerTimer.ET <= BuzzerOnTime;
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+Nice, n0rm!
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Thank you very much!  
+

@@ -1,0 +1,10 @@
+Hi,I'm looking for an "ini_file" library for Codesys 2.3.x. (I'm using Wago's PLC).I found a thread talking about a 'ini_file_v10' here : viewtopic.php?f=2&t=1229&hilit=ini+file#p2179It seems to be a Berghof library...Does anyone knows about a similar library generic for codesys, or for Wago's PLC ?Thank you very much for your help.
+
+Hi,Have a look at the Oscat library www.oscat.de. Especially at tje NET part http://www.oscat.de/downloadmanager/vie ... twork.htmlThis has a some functionality for parsing ini-files. I haven't used it myself though.
+
+Hi,Thank you for your help.This library seems to be exactly what I'm looking for.I will not have time today to take a look on it, but I will next week.Bye.
+
+Happy to help. Let me know how it went.Have a nice weekend,Kristian Berlin
+
+Hi,I took a look at this library yesterday : I was able to read ini files in my codesys project with Wago hardware. (I need to remove some elements from the library because there were too much functions blocks for my target (about 1300 for a max of 1023...)Thank you once again for the link.
+

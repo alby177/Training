@@ -1,0 +1,8 @@
+Hello,How can I write a file in a specific directory on my Wago PLC?I have the functions from SysLibFile and SysLibDir which allow me to create, open and read a directory and also to read and write a file but I can't find a way to write a file in the directory I created...My final purpose is actually to write on my SD card (and for that I need to write in the folder '/s')Thank you for any help.Benoit.
+
+Hello bmattletWhen you use this function : SysFileOpen(FileName, Mode)File name is name and path to the file, for examle "C:\mydir\yourdir\test.csv" or "s:\mydir\..." 
+
+Mais vous êtes partout   Ahah  !Bon, je vais continuer en Francais : donc quand j'utilise SysFileOpen et que je ne met rien (sauf le nom du fichier mais pas plus) pourquoi écrit-il par défaut dans le dossier de l'automate /PLC ?
+
+Je suis effectivement partout (forum CoDeSys, Automatica, et quelques autres moins régulièrement ! J'aime aider mon prochain   ).On peut effectivement continuer en français et utiliser pour cela le nouveau forum en français que nos amis de 3S on mis à notre disposition.Pour répondre à votre question, je pense qu'il doit y avoir un dossier de base (ou racine, comme C: sur un PC) et que systématiquement le système l'utilise si on ne lui indique rien de plus. Avez vous essayer ma proposition précédente ?Cordialement.  
+

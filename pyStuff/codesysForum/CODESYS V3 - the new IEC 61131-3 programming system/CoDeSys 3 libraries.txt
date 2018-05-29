@@ -1,0 +1,8 @@
+Good afternoon,I am somewhat new to the CoDeSys 3 world.  A couple of nice advantages are - I like the ability to make my own functions/function blocks and the ability to use the different languages.One issue I really struggle with is the documentation for the different instructions and different libraries and which instructions are in what libraries.  Online help does help some, but the explanations are broad, and few examples.  Is there some sort of overview manual that lists the libraries, their purpose, and the instructions in them.  Does each library have an .pdf or word document explaining the instructions in it?Thank you!
+
+Usually in the library itself, each function has some documentation with it. If you open an empty project and attach several libraries, you can then use the library manager to view the different function blocks that are available within each library and the comments / documentation for each function. If the library is written well, the documentation should be good enough.  In some cases I found some libraries have poor documentation and either some experimentation or contacting the vendor is the only solution.  Unfortunately, that is about the best solution you have.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Thanks for the answer.  Not the answer I was hoping for  but I was sort of expecting it.Take Care!
+

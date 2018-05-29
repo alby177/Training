@@ -1,0 +1,4 @@
+Dear all, I want to communicate with a TCP Server on another workstation in the same network. How can I build a TCP Client in my Codesys Project. I have added an Ethernet Adapter to my device. How I can add a client now?What libraries do I have to include?.praveena
+
+You need to add the CAA netbase library.This contains function blocks for opening sockets and sending/receiving packages.
+

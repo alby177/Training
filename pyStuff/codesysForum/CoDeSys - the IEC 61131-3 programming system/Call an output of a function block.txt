@@ -1,0 +1,36 @@
+Hi, how do you do this in twincat? I know how to call an inputs e.g. mZ1_OpenLock (Direction:=TRUE,BackEnable:=TRUE,);. But how do you call outputs??Stu
+
+do you mean  mZ1_OpenLock.output?where output is defined in the varlist.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi, i'm calling a function block from a function block. What I'm want to know is how to access the output value of the function block i will be calling from my current function block.I mainly need to know what the syntax looks like.This is my prg, its very simple. I'm wanting to get my syntax correct, before i create larger programs.PROGRAM MAINVAR	DigIn_1 AT %IX0.0 : BOOL;	DigOut_1 AT %QX0.0 : BOOL;	Numbers:One;(my FB)	NumberTotal:INT;END_VARDigOut_1:=DigIn_1;NumberTotal:=Numbers.Number1 + Numbers.Number2;(my code to get FB output values, is it correct? Is there any other way of doing Call FB)FUNCTION_BLOCK OneVAR_INPUT	DigIn_1 AT %I* : BOOL;END_VARVAR_OUTPUT	DigOut_1 AT %Q* : BOOL;	Number1 :INT;	Number2 :INT;END_VARVAREND_VARIF DigOut_1 THENNumber1:=3;Number2:=5;END_IFThanks Stu
+
+here you goit is depending of the languageif using ST here you see some examples in the exp filein another language like IL you put CAL in front.you must declare every function block in the VAR list. (it will make an copy of the block and use it.i saw the helpfile still a lot of german language sorry for that.made you an example(* @NESTEDCOMMENTS := 'Yes' *)(* @PATH := '' *)(* @OBJECTFLAGS := '0, 8' *)(* @SYMFILEFLAGS := '2048' *)FUNCTION_BLOCK firstblockVAR_INPUT	firstin: INT;END_VARVAR_OUTPUT	firstout1: INT;END_VARVAR	secondin: INT;	secondout: INT;	block2:secondblock;END_VAR(* @END_DECLARATION := '0' *)secondin:= firstin*10;block2(in1:=secondin , out1=>secondout );firstout1:=secondout+10;END_FUNCTION_BLOCK(* @NESTEDCOMMENTS := 'Yes' *)(* @PATH := '' *)(* @OBJECTFLAGS := '0, 8' *)(* @SYMFILEFLAGS := '2048' *)PROGRAM PLC_PRGVAR	in1: INT;	out1: INT;	result: INT;	block1:firstblock;	END_VAR(* @END_DECLARATION := '0' *)in1:=100;block1(firstin:=in1 , firstout1=> );result:=block1.firstout1;END_PROGRAM(* @NESTEDCOMMENTS := 'Yes' *)(* @PATH := '' *)(* @OBJECTFLAGS := '0, 8' *)(* @SYMFILEFLAGS := '2048' *)FUNCTION_BLOCK secondblockVAR_INPUT	in1: INT;END_VARVAR_OUTPUT	out1: INT;END_VARVAREND_VAR(* @END_DECLARATION := '0' *)out1:=in1+1;END_FUNCTION_BLOCKimport in an empty codesysi can not attach files as extensions are not allowed.In FBD it is most easy and when you translate it to ST you will see the structure easily.greetings paul,
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks very much   this clears up a few syntax issues. I presume when calling "Functions" the same syntax is used?Stu
+
+almost same you do not have to declare functions in the var.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+shooter wrote:almost same you do not have to declare functions in the var.So you call them directly, no name change?
+
+yes correct see help file
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+made you an example(* @NESTEDCOMMENTS := 'Yes' *)(* @PATH := '' *)(* @OBJECTFLAGS := '0, 8' *)(* @SYMFILEFLAGS := '2048' *)FUNCTION functionname : REALVAR_INPUT	in1: REAL;	in2: REAL;	in3: REAL;END_VARVAR	work1: REAL;	work2: REAL;	work3: REAL;END_VAR(* @END_DECLARATION := '0' *)(* average with a twist*)work1:=in1*3;work2:=in2*2;work3:=in3*1;functionname:= (work1+work2+work3)/6;END_FUNCTION(* @NESTEDCOMMENTS := 'Yes' *)(* @PATH := '' *)(* @OBJECTFLAGS := '0, 8' *)(* @SYMFILEFLAGS := '2048' *)PROGRAM showfunctionVAR	result: REAL;	inp1: REAL;	inp2: REAL;	inp3: REAL;END_VAR(* @END_DECLARATION := '0' *)inp1:=3;inp2:=2;inp3:=1;result:=functionname(inp1, inp2, inp3);END_PROGRAMthere is only one result and it should be in a variable with the same name as the function is. watch the declaration of the vartype in line 1take this and make it an .exp filethen import it to codesysstill getting alarm not able to receive exp extension.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thank you, your help is very appreciated    just one thing your "in" variables are different in the function compared to the program.
+
+yes because the position is important not the name, the first name is from the caller and the name in the function can be different.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+shooter wrote:yes because the position is important not the name, the first name is from the caller and the name in the function can be different.Cool, something new i've learnt   . Although i think i may keep the name of the function the same, maybe less confusing  
+

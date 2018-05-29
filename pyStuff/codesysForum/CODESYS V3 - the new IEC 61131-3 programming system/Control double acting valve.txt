@@ -1,0 +1,22 @@
+HiI am going to make a small program to control a double acting hydraulic valve (controlling a hydraulic cylinder) using an analog potentiometer, in order to set the cylinder in a desired position.The cylinder have an analog position feedback.This will be done using a PID and PWM outputs to the double acting hydraulic valve.Since the potentiometer is one analog signal, indicating the desired position, and the PID has one output, trying to match the analog position feedback with the potentiometer value, but the hydraulic valve needs two PWM-outputs, I am a bit puzzled on how to set that part up. How do I generate the two outputs from the one PID signal?I assume only one of the two outputs will be active at a time, depending on the direction of the cylinder movement.Does anyone have some example code to share? I guess this must be a very common thing to do, right?Thanks, Thomasx
+
+The valbe is standard or proportional?. If it is proportional the signal which contols his oberture controls his direction.If the valbe is standard i dont know if you can apply a pwm directly to it. The valb needs 1 A to conmutate too.I recomends to control the speed and sense controlling the speed and sense of the pump motor.
+
+Yes, the valve is proportional.The pump is fixed displacement.
+
+Quote:I assume only one of the two outputs will be active at a time, depending on the direction of the cylinder movement.I have only worked with Moog servo valves but the above sound like a reasonable assumption.The hydraulic controllers I have built in the past consisted of a proportional controller with lead/lag compensation to boost frequency response.  If the control loops sample period is fast enough lead/lag may not be unnecessary.
+
+_________________Rick
+
+Hi Thomas, I would set up your PID block to have an output range of -100 to 100 (100 being 100% PWM to coil A, -100 being 100% PWM to coil B). Then just look at the sign of the output value of the PID block. If the value is positive, pass it to the variable that is mapped to the output to coil A. If it is negative, take the absolute value of it and pass it to the variable that is mapped to the output to coil B. See the picture below.I work with a lot of double acting Hawe valves, and though I do not use PID control, I run into a similar scenario.Let me know if this solves your issue.Cheers,Max
+
+Thanks Max, it is actually the way I did it already  in ST though.Came to the conclusion it was the only reasonable way 
+
+You have to be careful that the integrator does not wind up in this application.  Also, in the example given, it looks like YMIN and YMAX should be -100/+100Derivative gain is usually not very useful in a simple PID loop for hydraulic control.  Depending on how dynamic or accurate your system needs to be, this approach may not work well enough.  Some other considerations that a simple PID block does not address are:Spool overlap of the hydraulic valveDifferent areas on each side of the cylinderValves with non-linear flow curvesThe faster and more accurate your system needs to be, the more important these factors are and it may be necessary to move to a dedicated closed loop controller that is optimized for hydraulic control.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+Windup is handled.I'm aware of the other factors, to begin with we'll see how well it works as is.
+

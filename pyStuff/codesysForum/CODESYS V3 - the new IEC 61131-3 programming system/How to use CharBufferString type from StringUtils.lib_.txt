@@ -1,0 +1,2 @@
+Where I can read something about usage CharBufferString type from StringUtils.lib (m.b. some examples)?
+

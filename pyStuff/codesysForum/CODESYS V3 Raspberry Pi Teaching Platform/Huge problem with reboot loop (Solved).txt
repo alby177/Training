@@ -1,0 +1,6 @@
+Hi @ all,I have produced a really bad issue... I had set a button to reboot the Raspberry with Code:SysProcess._('sudo reboot', ADR(Result));.After reorganisation of my program I commented the wrong thing out and now the Raspberry gets rebootet every time Codesys starts, which is directly after starting the raspberry. So in the moment I am not having a chance to stop codesyscontrol during startup of the raspberry causing another reboot.Can someone please help   ??? Thank you very much and greetingsAndreas
+
+Hi,you need to remove the bootapplication somehow:the Application files are /root/Application.app or/root/PlcLogic/Application.appso either Login by shh (not sure if you have enough time till the runtime starts, never tried this)or plug the SD Card by cardreader to another PI and delete this file(or mount the sd card to an Linux pc)BREdwin
+
+Hi Edwin,thank you for the fast response! For ssh was not enough time, but I made an Ubuntu USB-stick and managed to mount the SD-card on my PC running the Ubuntu USB-Stick.I then entered the root with sudo -i and then deleted the PlcLogic file. Unfortunatly this corrupted the SD-card, but after entering root on the raspberry pi in emergency mode I ran a fast fsck and it worked like a charm .Thank you for the fast help and GreetingsAndreas
+

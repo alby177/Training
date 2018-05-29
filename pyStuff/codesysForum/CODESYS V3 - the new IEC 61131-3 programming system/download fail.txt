@@ -1,0 +1,8 @@
+hi FAE   there was a problem when I downloaded the programming. the messagebox displayed as following :'download failed: not enough memory on device'. But the project I had run usually on the another PC.   So I don't find the reason and hope to get help from the FAE. thanks!
+
+Hi,check your project if retains are used.. and maybe screenshot from Messagebox & Error message would be greatBREdwin
+
+Today I also have a problem like yours, because my HDD disk failed and I have to reinstall everything and Codesys. But I figured out that problem caused device description file *.devdesc of my PLC. Which is strange because I extracted the project and device description should be inside the archive... maybe is bug...So I made a lesson, in further i will pack everything in zip beside archived project, for sure.regards,Alex
+
+I had this error message before. For me, it helped to clean up the project and make a fresh download to the device.
+

@@ -1,0 +1,59 @@
+Hi there,
+
+I have a problem with Wago 750-841 and CoDeSys V2.3.
+
+When I try to run WebServer and then visit localhost (127.0.0.1:8080) shows:
+- (under Opera) Access Error: Page not found
+- (under IE) same just other error message
+Well, its HTTP error 400.
+
+The CoDeSys is installed under directory: 
+Code:D:\Program Files\Wago Software\CoDeSys V2.3\Webserver:Code:D:\Program Files\Wago Software\CoDeSys V2.3\Visu\The PLC is configured with such parameters:Code:IP: 192.168.1.23Port:  2455Gateway: 1210Transport protocol: tcpI'm running WebServer (demo mode) under cmd.exe, file webserver_conf.xml is renamed to _webserver_conft.xmlCode:D:\Program Files\WAGO Software\CoDeSys V2.3\Visu>webserver 8080 2455 192.168.1.23 D:\Program Files\WAGO Software\CoDeSys V2.3The message from CoDeSys is:Code:Web-Server started on:   Hostname: localhost   IP-Address: 127.0.0.1   Port: 8080   Root directory: D:\Program Files\WAGO Software\CoDeSys V2.3\Connected to PLC:   IP-Address: 192.168.1.23   Port: 2455   Byte order: intel************************************************SysSockConnecte to PLC.But I can't see the Wago visualization that was downloaded to the PLC.I also tried Code:http://127.0.0.1:8080/webvisu.htm
+Changing WebServers port doesn't help.
+
+Can you help me? What I'm doing wrong. 
+Thanks.
+
+J posted the same problem, in the topic "Visualisation".
+
+My version of CoDeSys is installed on the C disk
+There is something wrong in the C:\Program Files\3S Software\CoDeSys V2.3\Visu\ webserver_conf.xml file
+--------------------------------------------------
+<webserver-configuration>
+<webserver-port-nr> 8080 </webserver-port-nr>
+<target-port-nr> 1200 </target-port-nr>
+<target-ip-address> localhost </target-ip-address>
+<use-file-upload-dir> true </use-file-upload-dir>
+<file-upload-dir> C:\Programme\CoDeSysV23\ </file-upload-dir> to be replaced by <file-upload-dir> C:\Program files\CoDeSysV23\ </file-upload-dir>
+--------------------------------------------------
+And its works perfectly !!
+
+I hope this can help you 
+
+Thank you for reply.
+
+I read that topic, but I thought, I just need to change the path for the right one, not for some fictional.
+
+I'll check this solution, next week. 
+I'll write you back if it worked.
+
+Hi,
+It didn't work in my case.
+But I found another solution in some cases.
+
+The PLC has it own IP address so i forwarded ports to it. Unfortunately I haven't find how to do this under Windows XP using only cmd.exe
+
+The program i used was AnalogX PortMapper.
+
+If we have a router, it's even easier.
+If any one know how to do it under windows console, please PM me.
+
+Thanks for help.
+
+You shoudn't run webserver on your PC. WAGO 750-841 has own webserver. It's installed and runned in PLC OS context.
+1) Connect to your PLC from Web-configuration page. In your case:
+Code:http://192.168.1.232) Create webvisu and activate webvisu in target options.3) Install java-machine4) TypeCode:http://192.168.1.23:8080/webvisu.htm in browser. Enjoy!
+
+As well, quote from WAGO manual
+Quote: Information for Programming and Web Visualization Further information Detailed Information about the programming and visualization, especial the Web Visualization, please refer to the manuals „WAGO-I/O-PRO CAA (CoDeSys)“. You can find these manuals on the CD-ROM „WAGO-I/O-PRO CAA“  
+

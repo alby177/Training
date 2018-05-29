@@ -1,0 +1,6 @@
+I want to create a UDP listener that is non-blocking.To do so I use SysSockSelect function. The problem is that the value diReady (Number of sockets that are ready for IO) never becomes 1.The code I have is:tvTimeout.tv_sec:= 0;tvTimeout.tv_usec:= 0;fdRead.fd_count:= 1;fdRead.fd_array[0]:= hListenSocket;Socket_Result := NBS.SysSockSelect(NBS.SOCKET_FD_SETSIZE, ADR(fdRead), 0, 0, ADR(tvTimeout), ADR(diReady));I am sure data is ready for IO because when I call the function SysSockRecv data is read.The same code I use in CoDeSys v2.3 and there it works.Does anyone know why this doesn't work in v3.5 SP10?Thanks,Richard
+
+Hi Richard,I would recommend to use this project from that forum post based on netbase services:viewtopic.php?f=21&t=6625&hilit=UDP+raspberry#p13743BREdwin
+
+Hi Edwin,Function block UDP_Receive is also blocking.But I have used UDP_Receive in a separate task so now it doesn't matter that is it blocking.Thanks,Richard
+

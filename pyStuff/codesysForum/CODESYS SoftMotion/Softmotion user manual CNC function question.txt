@@ -1,0 +1,6 @@
+Hello:I have a question when read softmotion user manual,As red words,it means CNC function can do 9D motion control???or just means 9 Axes motion control???And could You kindly explain me more about 2nd sentense start from whereby only two di..?Basically up to 9-dimensional motions can be realized, whereby only two dimensions are not interpolated linearly.
+
+It can do 7D in the meaning that all axes will move according the interpolation.or simpler, when the main is moving one percent the other 6 are also moving one percent to their goal.2 axes can not be interpolated, for example spindlespeed and cooling,
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

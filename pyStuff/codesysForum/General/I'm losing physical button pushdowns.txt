@@ -1,0 +1,11 @@
+I've got a hardware-button connected to a CANOpen-slave which sends messages when the button is pressed asynchronously. In my master PLC application I have a loop polling to see whether the button bit-value has the value true or false. (It's bit number 4 of the first data byte in the frame with ID: 0x290) 
+
+     Clearly this is not how it should be done. It should be associated to an asynchronous interrupt. How do you fire an interrupt when frame 0x290 arrives with the databit set to TRUE in CoDeSys? I work mostly in Structured Text and VISU.
+
+To get an real idea its necessary to get more information. Wich PLC is used and if you which CanOpen stack. What's your cycletime.
+
+By the way did you build a real loop inside your program. If So it is quite nore to get no reaktion of your input. Physical in and outputs (also In/Out on Can) are mapped to the so called Process Image. This Process image is refresched every beginn of the PLC Cycle in an outer loop. So if you bild a loop you never reach this refreshing.
+
+Regards 
+Ralph
+

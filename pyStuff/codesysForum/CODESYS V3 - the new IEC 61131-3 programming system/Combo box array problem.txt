@@ -1,0 +1,12 @@
+Hi, i tried to use the combo box array with the following array from the online help StringTabelle : ARRAY [0..2, 0..4] OF STRING := ['BMW','Audi','Mercedes','VW','Fiat', '150','150','150','150','100','blau','grau','silber','blau','rot'];and simulated it with CoDeSys Control Win V3, when i start the program, i will see the first row in the box, which is [BMW 150  blau],but the Drop Down List doesn't show up in Visualization when i clicked on it. How can i solve this problem?
+
+I tried it, but with me it works fine. I use 3.5 SP1 P3.
+
+See the screenshot:Attachment:ScreenShot.jpg
+
+the size of the combo box array that I set was too small so the drop down list doesn't appear for the first time.thanks for your help anyway.
+
+I can not find the combo box control in my IDE, but just find ComboBoxInteger control, and can find nowhere to set the Array but just a textlist.
+
+Which version do you have. I use 3.5 SP1 P3.
+

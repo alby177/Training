@@ -1,0 +1,24 @@
+Hi guys !I`m new here and trying to build a small project with one pulse on input wich will turn "ON" and "OFF" a lamp every time a new pulse input will come.I will appreciate any advice or link of a existing topic like thisThanks in advance
+
+_________________let make it work !!!
+
+for this type goto www.plcs.netor to your bookit is a little depending on what type of program like ST or LD you want it, and type of PLC.go find R_TRIG block which will give one pulse when the button is pushed.and SET to switch on your relais.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+thanks; I will try it and let you know
+
+_________________let make it work !!!
+
+Hi again, I have tried on wago 750-841 the tips in LD from PLCnet but not working, instead of DIFU I have put R_TRIG and so on....Will be better tomorrow... 
+
+_________________let make it work !!!
+
+i am not going to tell you exact as it must be a learning curve for you.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+problem solved !Thanks
+
+_________________let make it work !!!
+

@@ -1,0 +1,4 @@
+Hello,I try to communicate my PI2 with OTB  SCHNEIDER TCP / IP Modbus card.OTB config:1st module: OTB 1E0DM9LP - V2.xx2nd module: OTB TM2AMI4LT - V2.xxConfig CoDeSys:Modbus_TCP_slave_1IP: 192.168.1.11Unit_ID: 127reading code 23:read address: 2000Writing address: 2100Modbus_TCP_slave_2IP: 192.168.1.11Unit_ID: 1code reading 3:read address: 2001When I want to write an output map (2100) no problemThe problem is that I can not at all to read the analog channel 2001In Advantys,the first card is on UNIT_ID: 127 and the next is on UNIT_ID: 1Does someone has already tested CoDeSys 3.5 SP6 Patch 1 with material SCHNEIDER OTB?What way can we configure OTB cards SCHNEIDER CoDeSys ??????Thank you for your helpLudo
+
+Hi,I finally found the solution.As the cards do not have the same ID_unit , we must separate the reading framesSee attached image
+

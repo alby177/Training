@@ -1,0 +1,4 @@
+Hi,During my holidays, I just wanted to post you some python-related links from my private bookmark collection:Python weekly newsletterA few things to remember while coding in python.Python built-in functions are awesome. Use them!Understanding '*', '*args', '**' and '**kwargs'Most of this information also applies to IronPython, and thus to the ScriptEngine in CoDeSys.
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+

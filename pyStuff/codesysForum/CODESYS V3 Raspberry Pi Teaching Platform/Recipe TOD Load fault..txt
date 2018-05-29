@@ -1,0 +1,8 @@
+When i write recipe to file that include TOD variables all are written correct.When read the same file then the TOD variables load the part of hour but not the minutes part.Is there any solution for the problem?Regards
+
+hi,yes I agree that this is a bug, but if you change to binary storage mode it will work. (Workaround)BREdwin
+
+When change to binary mode i have problem with download.At 98% the download stops because i lose connection with runtime.After a while i can see again the runtime.If i change back to text mode i can do download ok but with the problem of recipes.Any suggestion?And something strange, the files of recipes in binary mode are smaller but need much time to write them.About 2-3 seconds every file.
+
+I found solution for now.If use semicolon(;) as separator in text mode works OK.Regards
+

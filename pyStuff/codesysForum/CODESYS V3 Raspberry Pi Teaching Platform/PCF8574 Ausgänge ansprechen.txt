@@ -1,0 +1,2 @@
+Hallo Forum, ich kann die Ausgänge am PCF8574 (I2C, Adresse 16#26) nicht ansprechen. Wenn ich auf  PCF8574.OUT einen Wert setze, dann bekomme ich auf PCF8574.IN den gleichen Wert.Es wird aber kein Ausgang am Expander geschaltet, wenn ich in Putty "sudo i2cget -y 1 0x38" eingebe, ändert sich nichts.Allerdings kann ich mit i2cset -y 1 0x38 0x?? alle Ausgänge steuern. Wo in der Konfiguration kann der Fehler liegen?Grußandi_rasp
+

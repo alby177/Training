@@ -1,0 +1,22 @@
+Hi, I am very new to CodesysI am trying to write a code which has lots of mathematical subfunctions. The problem is that I can not use function outputs. I can explain that as a C code, for example (as a basic one) As a pesudo codedouble amplified;amplified=Amp(input,amplification_constant,output);Amp(double,double,double){output=amplification_constant*input;return output;}I want to write a function, then send it parameters and use its return value.It may be a very easy problem. But I don't know how to do it in ST language.If anyone may help me I would be glad.
+
+Either you can use Function or Function Blocks to write this code, And you can use as many times as you need.If you are using function the return value should be an array variable, But if you are using FB the return value will be either array or individuals as you decide.The example of sample codes can be seen in Codesys help.Search for Function or Function Block
+
+In IL it is like this.Declaration part:FUNCTION Fct: INTVAR_INPUTPAR1:INT;PAR2:INT;PAR3:INT;END_VARImplementation part:LD PAR1MUL PAR2DIV PAR3ST Fctand in ST it is almost sameFUNCTION Fct: realVAR_INPUTPAR1:real;PAR2:real;END_VARFct:=par1*par2;go to www.oscat.de download the library as LIB and as TXT file and you will be complete flabbergasted with knowledge.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+I am able to call Function Blocks in PLC_PRG and use their outputs in PLC_PRG but I couldn't call them in another function block. Do you have any experience or idea about this?
+
+please download a file on http://www.oscat.deyou will need the LIB file and the TXT versionfor explain take the english PDFor read simple the help file.a function only has one output max.you call it by using the function namein STresult := functionname(input1,input2);a function block can have more inputs and outputs.but they need to be in the VAR list like functionblockalias: functionblockname ; (this can be done with F2
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+in ST you express that result := functionname(input1,input2);But what I can write in function to return the value that I want,For example I am writing the sample code attached as the picture.(I know I can not call the function result same as the return variable in function but I dont know how to do it) but when I simulte it result can not be send to PLC_PRG as shown in the second picture.How can I solve this problem?
+
+oke i have added a program with some explanation for you.In IL this is a little rusty for me.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+It's now clear, I understand my fault. In my functions I see that had been trying to store the values in different variables. I understand that now we must store the return value as the same as the function name.Thank you very much. 
+

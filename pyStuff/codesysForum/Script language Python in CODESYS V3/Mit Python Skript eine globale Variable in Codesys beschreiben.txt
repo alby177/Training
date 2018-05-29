@@ -1,0 +1,12 @@
+Hallo liebes Forum,ist es möglich mit einem Python Skript eine globale Variable in Codesys zu beschreiben ?Vielen Dank im Voraus für die Antworten.Schöne Grüße
+
+Hi Basta87.Basta87 wrote:ist es möglich mit einem Python Skript eine globale Variable in Codesys zu beschreiben ?Das hängt davon ab, was genau man will. Willst du den Wert im Projekt ändern oder den Wert auf der SPS?Den Wert im Projekt kann man über folgendes ändern:- Export und Import von PLCopenXML- Text der GVL direkt verändern (benötigt CODESYS V3.5 SP6 oder neuer)Den Online-Wert auf der SPS kann man über das Monitor ändern.Welche dieser Möglichkeiten trifft den zu?BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Vielen Dank für die Antwort. Für mich kommt die Variante Monitor in Frage. Den Wert einer Variable online zu verändern.Haben Sie dadür ein Beispiel?Schöne Grüße
+
+Hi Basta87.Basta87 wrote:Vielen Dank für die Antwort. Für mich kommt die Variante Monitor in Frage. Den Wert einer Variable online zu verändern.Haben Sie dadür ein Beispiel?Hier ein Beispiel von mir:Code:onlineApp = online.create_online_application()onlineApp.set_prepared_value("PLC_PRG.iVal", "20")onlineApp.set_prepared_value("PLC_PRG.iResult", "42")onlineApp.set_prepared_value("PLC_PRG.diVal2", "12")onlineApp.write_prepared_values()BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

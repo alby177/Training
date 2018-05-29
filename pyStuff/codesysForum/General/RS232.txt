@@ -1,0 +1,16 @@
+Hello,
+How to use a RS232 modul with codesys? I found a FB about this module, but the help doesn't allusion the use.
+May I get some example about RS232?
+
+Thanks,
+Dokee
+
+It fully depends on which device you have, but in general attached code should give you an idea on how to use the standard serial communication library. Import it in a new project and add the syslibcom library to this project.
+You manually have to set the bits to execute the FB's.
+
+Why can't I open this file? I have the same problem, I am trying to do a simple program where the device would open the RS232 port and read it. Of course also displaying somehow what it was read. I am working with Eatons XVS440 panel and trying to use the RS232 port.
+
+this post is 8 years old so check codesys site direct.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

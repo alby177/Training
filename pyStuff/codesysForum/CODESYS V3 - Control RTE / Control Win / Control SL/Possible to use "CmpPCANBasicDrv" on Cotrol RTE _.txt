@@ -1,0 +1,4 @@
+It is possible to use "CmpPCANBasicDrv" on Cotrol RTE ? I add CmpPCANBasicDrv in config file.. then try to start RTE.. and have message on image in attachment?Or it is possible to using only in Control Win SL?
+
+Hi,no this is not possible to use the USB CAN Peak,this must be a PCI/PCIExpress Interface for using with Control RTE.USB devices are only possible to use with Control Win (non realtime)BREdwin
+

@@ -1,0 +1,12 @@
+Hi, could anyone provide me a working link to the Scriptengine documentation? It is neither in my Codesys installation nor does the link in help.codesys.com work (error 500 always).I really would appreciate your help.Thank you in advanceBrJochen
+
+Not sure, but maybe it helps:http://dropmefiles.com/iVUUw
+
+Thank you so much, I think, that is the file I was looking for. It is kinda hard to read and understand though.... I was expecting something like a whole CoDeSys Python reference documentation.BrJochen
+
+Well, you can find Python basic documenatation in Online help:https://help.codesys.com/webapp/cds-cre ... n=3.5.11.0+ ScriptEngine as API+ this forum for additional examples and guidelines
+
+Hi.Before CODESYS V3.5 SP11 the ScriptEngine.chm was in the directory "Online Help" of the CODESYS installation path. With CODESYS V3.5 SP11 we created a more Python like API documentation which you can find in the file ScriptEngine.chm in the sub directory for the individual language of the directory "Online Help".We will switch back to the old format for CODESYS V3.5 SP12 because the new API documetation is missing important information. We will rework the new API documentation and, when it is finished, it will be also released in our Web Help.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

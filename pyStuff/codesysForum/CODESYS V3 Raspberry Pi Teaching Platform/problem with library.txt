@@ -1,0 +1,10 @@
+Hello,I was able to get a version of the I2C slave driver running for my device, but I have a bit of an issue.When I add another device, it deletes my library, and I have to add it back in.After that, I have to exit the project, and then reload it, in order for it to recognize the driver library.  Is this a known issue with the Codesys for the Pi?  Perhaps I did not create the device config file correctly or save it in the right spot?Any ideas?
+
+Hello,which driver library exactly,could you attach your projectarchive?BREdwin
+
+Here is a link to the projectarchive.  https://www.dropbox.com/s/7507oxl5m72nat9/Proptest1_1-30-15.projectarchive?dl=0Its 22MB.  Not sure what your posting limits are.  Tried to add it to the post but it dumped it.Basically, what happens is that it will compile, and go online, and work just fine.  When I go to add another device, say a Modbus or SPI device, it will remove the Fixstuff library, and subsequently not recognize the propi2c device and use in the code.If I re-add the library, save it and exit and restart Codesys, I have both my library, and the new one, and it works fine.Its very repeatable, which leads me to think its either something I have done wrong in say the device config file, or its a bug.
+
+Hi,there is a mismatch in the version between library and devicedescription see screenshot.BREdwin
+
+thanks for finding that. It was driving me nuts.
+

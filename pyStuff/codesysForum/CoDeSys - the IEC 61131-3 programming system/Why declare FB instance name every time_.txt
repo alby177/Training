@@ -1,0 +1,27 @@
+
+It is very inconvenient to declare the name to every FB instance. Many times we use and refer to the FB instance only once in the entire project. It should be as easy as using FUN without compulsary declaration. 
+
+As per IEC definition, it is necessary, but there is a wayout too. If the user wants to reference it elsewhere, then he shall name it else he need not. In such case, the CoDeSys compiler shall assign some internal number and compile it. 
+
+This will help reduce the keystrokes drastically while programming FBs. I have observed this feature in IsaGraph and KW software. Why do we lag?
+
+Is 3S doing something in V3.0?
+
+_________________Devdatta Hambardikar, 
+Messung Systems, 
+Pune, India
+
+IMHO it is not a problem with CoDeSys V2.3:
+1)	‘Auto declaration’ + ‘Intelligence input Function’ are useful tools.
+2)	We can use programs instead FBs for our POUs without instances.
+3)	FBs with actions in CoDeSys yield to clear organized projects without superfluous declarations, like OOP technique.
+
+dbh wrote::idea: Is 3S doing something in V3.0?
+
+Perhaps it is really useful idea for fast programming. But I preferred to control all declarations evidently and precisely. It would be better to add such functionality only as option   .
+
+Igor Petrov,
+Prolog, Russia
+
+__________________IP_
+

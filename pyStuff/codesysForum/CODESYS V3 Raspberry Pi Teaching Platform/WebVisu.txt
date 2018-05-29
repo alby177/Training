@@ -1,0 +1,10 @@
+Hi gents...I tried to prepare sample project with very easy graphic (circles, lamps and buttons only) and try to start, but I see only white screen...in VMWare with WinXP, also in Win7 with IE11 and Chrome...still the same white screenComplied, downloaded, WebVisu activated, used port 8080...Do you have an idea what could be wrong ?
+
+Hi,1. have you checked if the example does work on your system:'c:\Users\<YourUserName>\CODESYS Control for Raspberry PI\2.1.0.0\Webvisu.project'2. if this works but still with your project it does not work, you need to check the plc logger.BREdwin
+
+This project, sample for WebVisu, I tried after I found it`s not working....the same result...only white screen...but if I take a look to web develope, I can see calling java files...
+
+two points to check:1. How do you call the webvisu?http://IPAddress_of_the_pi:8080/webvisu.htm2. is your 8080 port by another program on Linux side?BREdwin
+
+1) Yes, I`m using "http://10.0.190.121:8080/webvisu.htm"2) I tried it...but it looks, it`s only for CodeSys (I have clear installed microSD)
+

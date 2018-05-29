@@ -1,0 +1,4 @@
+Hi! engineers I know we can use C or C++ to programme in CODESYS, but I can't find enough references to make development. So who can give me some references about them. You can send them to my email.Email-Address: lintian47@163.com
+
+There is no C/C++ editor/compiler to create a CODESYS application.An OEM (provider of device who purchased the Runtime Toolkit) can add external libraries and drivers written in C/C++ and link them to the runtime system. These can be called from the CODESYS application.
+

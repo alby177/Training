@@ -1,0 +1,51 @@
+Hi I am new to CoDeSys 3.3
+
+Where do I find any docs on for example SysSocket.lib. The built in document only gives a list of in and out and their types. Nothing on what to use or even examples of using each function.
+
+What do I do ?
+
+best regards
+
+_________________David Warren
+Luscher UK
+
+very good question this is from old days same problem, i have same. That is why i use oscat and i write a lot myself.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks for the reply shooter
+
+So you have the same problem.
+
+How does anyone ever use CoDeSys anyway if there is no documentation?
+
+Also the S3 people can not even give simple answers on their own forum
+
+Not impressed so far   
+
+_________________David WarrenLuscher UK
+
+the overall use of codesys is very easy, but the blocks used are without any example and i think a lot of software is reinvented on many places.
+
+i would like to have a forum with bits of software on codesys.
+something like oscat has now.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hello,
+
+please check the following link
+http://www.3s-software.com/index.shtml?sample_projects
+
+or send a request to the 3S support
+support@3s-software.com
+
+_________________Good Better CoDeSys
+Boris Schuster
+
+Thanks to email to support I have the answer.
+
+C:\Program Files\3S CoDeSys\CoDeSys\Documentation\en
+
+_________________David WarrenLuscher UK
+

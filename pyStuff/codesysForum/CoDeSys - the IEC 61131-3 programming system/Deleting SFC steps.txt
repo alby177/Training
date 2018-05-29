@@ -1,0 +1,14 @@
+For some reason I am having trouble deleting the sequential function chart steps. I've tried pressing delete, backspace, and clearing, but nothing seems to work. I must be missing something simple.thanksMartino
+
+Are you online?
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+change the word trans2 into TRUE (so this makes the transition correct (an incorrect transition can not be deleted.now selct the action and an transition (above or below) with your mouse or use the shift key.now you can delete them.If error in the trans no deletion possible.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+thanks! got it now
+

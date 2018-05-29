@@ -1,0 +1,4 @@
+Hello i have an Overdigit PLC WP240 CPU with EX-1608DD with 15 Digital inputs and 7 Digital outputs, i have it all connected with an ethernet cable , i would like to know how can i configure my PLC . The only guides i can find are for RS485 connections I am a noob in automation , i had only experience with simatic manager in school .Thank You For your time
+
+1. Install Codesys 2.32. Install your Overdigit PLC target.   -You have to have a target info file   -Instal with C:\Program Files (x86)\3S Software\CoDeSys V2.3\InstallTarget.exe3. If target succesefuly instaled open new project and configure online parameters for your PLC and you have to know your PLC IP address4. Online>Communication Parameters...5. Correct configuration should look like (Picture Attached)6. Add at least 1 object PLC_PRG, write at least 1 statment. Set task and apend program call PLC_PRG.7. Online>Login8. Online>Runready to go, you have a lot of work to do...regards,Alex
+

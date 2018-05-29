@@ -1,0 +1,2 @@
+I am attaching the project done with M-DUINO and Raspberry Pi 3.In this project Raspberry with Touch Screen 7 ", is ModBus TCP master function,and M-Duino (Arduino Mega) has ModBus TCP Slave function.http://www.industrialshields.com/en/sho ... g-digital/The CodeSys project are including :1. Alarm Manger2. Language manager3. Data Base (like retain variable) is a file on Raspberry SD card   {if Raspberry suddenly turns off, the configuration data is retrieved from SD.}4. Visualization 5. Ladder function example6. ModBus TCP Master
+

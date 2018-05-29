@@ -1,0 +1,12 @@
+Is there a summary of CoDeSys 2.3 compliance to IEC 61131-3? That is, a list of implementation-specific features and standard unsupported features. The more comprehensive, the better.
+
+yes there is a list, but it is not explaining.in the help file you can see what is standard 61131-3, and what is codesys specific, however as most of the companies have it extended, they mostly use the same syntaxis, so do not worry to much .
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+I already know there are sporadic notes scattered across the help file. So, no comprehensive list then? That's a shame.Quote:most of the companies have it extended, they mostly use the same syntaxisThere are different syntaxes even within this company:Code:arr: ARRAY[0..2] OF INT := [1, 2, 3]; (* Codesys 3 *)arr: ARRAY[0..2] OF INT := 1, 2, 3; (* Codesys 2.3 *)Or how about this?Code:(* i: INT *)i.FALSE := i.TRUE; (* This will compile in 2.3 *)Or this?Code:VAR CONSTANT RETAIN (* This will compile in 2.3 *)Or this?Code:TYPE type1: TON... (* Will compile, too *)Or this?Code:VAR CONSTANT    fb: USER_FB; (* Constant function block - sic! *)END_VARfb();How come all these are allowed?
+
+its all because this 61131 is just a guideline, not a syntaxcheck, just a guide a pssibility to write your code.and yes a check on syntax would be good, however it has its own problems as it must be complete and that is almost impossible.it still will be possible to make complete chaos and still compile great.It is not a norm to prohibit, it is one to allow people going in the same direction.Still every programmer will make its own programs, and they will still be hard to read by others.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

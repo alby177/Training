@@ -1,0 +1,6 @@
+Does anyone have any information about SMC3_PersistPosition?Best regardsVitor Martins
+
+Hi,please check the online helpf for more informarion:An axis, which has got a absolute encoder can store a position so that it retains its previous position after a restart of the controller. Homing is unnecessary. The function blocks SMC3_PersistPosition, SMC3_PersistPositionLogical and SMC3_PersistPositionSingleTurn provide the functionality for storage. The position data are stored in SMC3_PersistPosition_Data, SMC3_PersistPositionLogical_Data and SMC3_PersistPositionSingleTurn_Data.The output bPositionStored indicates whether the changed data have been stored in PersistentData. Depending on the type of persisting the signal is sent in different frequency. The position of a virtual axis can not be persisted with this function blocks.BREdwin
+
+My online help do not provide any information about SMC3_PersistPosition!I'm using PLC3 designer 3.8.0.106 from Lenze.
+

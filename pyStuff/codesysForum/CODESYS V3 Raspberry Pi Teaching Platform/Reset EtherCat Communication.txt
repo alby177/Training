@@ -1,0 +1,6 @@
+Hi,how can I reset/restart EtherCat-Communication when I get an error (e.g. Timeout of a slave)?Till now I did a reset cold   Best regards,Oleg
+
+Hi Oleg,see the online help:Ethercat_Master.xRestart:=xReinitMaster;	Ethercat_Master();BREdwin
+
+Thank You!
+

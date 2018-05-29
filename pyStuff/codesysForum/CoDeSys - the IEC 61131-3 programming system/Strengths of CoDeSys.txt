@@ -1,0 +1,49 @@
+Hi, somebody could tell me what are the strengths of CoDeSys being compared with another branchs like RSLogix 5000 or Microwin? or maybe could send me a web link where this topic is explained.
+
+Thanks
+
+Hi,
+
+we have prepared a power point presentation for that topic which I will send you via email. Of course this is coming from the manufacturer of CoDeSys. I hope you will find some more arguments here from other CoDeSys users   . Anyway - there are lot of points ...  
+
+_________________Roland WagnerModerator
+
+Hi,
+we are the authors of an open source library for iec61131
+we have found codesys the most compatible to the standard and the most open system to port to other systems if necessary.
+
+you can also have a look at our library which is availablke for codesys 2.3 and 3.0
+
+for download at www.oscat.de
+
+_________________freie sps bibliothek unter www.oscat.de
+
+Hi,
+
+I see that this topic is rather old, but I think that here is the place for my question. I need a comparison between different IDEs for PLC. I know CoDeSys quite well, because I use it several years, but I don't know too much for the other existing IDEs. I need this comparison, because I make a PhD work and everything is based on CoDeSys. I have to prove why I choose it. Can you help me? The mentioned above presentation maybe is useful for me. Can I get it?
+
+Thank you in advance!
+
+Dear Roland Wagner ,
+if u dont mind,can you send to me too that power point.
+
+www.izabil.com
+
+_________________zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+
+hugo wrote:Hi,we are the authors of an open source library for iec61131we have found codesys the most compatible to the standard and the most open system to port to other systems if necessary.you can also have a look at our library which is availablke for codesys 2.3 and 3.0for download at www.oscat.de
+
+Hi Hugo,
+
+do you have an English version of that website?  google translate is a little hard to follow at times!
+
+thanks.
+
+_________________-- 
+Iain
+
+Yes Roland can you post the power point or make it a pdf?
+
+_________________Thanks,
+Steve Pfeifenroth
+

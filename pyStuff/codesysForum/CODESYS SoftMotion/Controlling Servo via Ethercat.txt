@@ -1,0 +1,6 @@
+Hello,I have 1- Kuhnke Scout/Econox06 TV WV CNC controller          2- Three Metronix Ars 2105 FS ervo drives.And i want to control this three servo drives with Kuhnke controller.But when i download program to controller there is warnings like'MİSSED HPET EVENTS'.What this error means?Can anyone help.
+
+Hi,I would ask Kuhnke/Kendrion for support...Maybe you need to setup a external triggered Task for WINCEBREdwin
+
+Hi Edwin,We solved the problem.It is as you said we used external task for ethercat.Thank you for your answer.
+

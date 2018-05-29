@@ -1,0 +1,2 @@
+Hi,is it possible to use/access the current plcload from iec code?yes, that way:declareResult		 : RTS_IEC_RESULT;udiProzessorLoad: UDINT;Result:=SchedGetProcessorLoad(udiProzessorLoad);you need to add CmpSchedule.library and SysTypes2 Interfaces in LibraryManager.by the way what is an easy way to find and add the libraries and fb's: Enter the library name or fb name in the fulltext search on add library, if you the select the fb the library will be added by placeholder to the librarymanager.BREdwin
+

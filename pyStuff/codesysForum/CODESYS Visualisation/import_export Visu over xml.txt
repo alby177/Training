@@ -1,0 +1,2 @@
+Hi,is it possible to import a visualization over PLCopenxml or something else? the target is to create a Project via python script and import the visualization over a XML file... I think there's no way to create the VISU with a python script. Thank youSteffen
+

@@ -1,0 +1,6 @@
+On a trend or trace, is it possible to disable (hidden) a variable? Would be a nice feature if possible.Thanks,
+
+nothinrandom wrote:On a trend or trace, is it possible to disable (hidden) a variable? Would be a nice feature if possible.Thanks,Yes its possible. In the properties of the trend you can asign a visibility variable for each variable you've added to the trend.See attached.
+
+Araforn wrote:nothinrandom wrote:On a trend or trace, is it possible to disable (hidden) a variable? Would be a nice feature if possible.Thanks,Yes its possible. In the properties of the trend you can asign a visibility variable for each variable you've added to the trend.See attached.Nice! New SP12 finally has it. I don't believe the old SP I was working with had this feature.
+

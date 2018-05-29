@@ -1,0 +1,4 @@
+Hi, For some reason my CodeSys application is asking me to confirm when ever I download a project, run or stop it. This has just started happening. Is there some flag I have accidentally clicked on?
+
+It was under network configuration. Confirm login.
+

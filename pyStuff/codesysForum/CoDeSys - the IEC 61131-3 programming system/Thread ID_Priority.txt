@@ -1,0 +1,7 @@
+Hi,
+Is there any way of getting the ID (or even better the priority) of a thread (task) during run time?
+The reason I want this is that I have several threads (tasks) in CoDeSys that feeds data to a C-thread (in a DLL) and it would be useful in order to ensure that the data is handled in the right order.
+
+Regards
+Leon Ljunggren
+

@@ -1,0 +1,13 @@
+I checked my profile settings and FAQ and there doesn't seem to be a way to receive email notifications in the event that anyone in any forum posts a new message? This way you don't have to look through forums to see if there are new posts. There is only a setting to receive email notifications if your post is responded to. Am I right or wrong?
+
+_________________Thanks,
+Steve Pfeifenroth
+
+You are right - seems to be the restriction of the forum software.
+
+There is one possibility: If you login you will have the option to view all the new posted messages after your last visit on the right side of the window below the header commands.
+
+I hope this will help you to get a faster overview of the new posts.
+
+_________________Roland WagnerModerator
+

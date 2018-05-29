@@ -1,0 +1,8 @@
+hello,I would like to know if it's possible to compare 2 variables when they are 2 structures.For exemple, I have a structureTYPE ST_HmiToPlc :STRUCT  B1 : bool;  B2 : bool;  A3 : array[1..9] of bool;  I4 : int;END_STRUCTEND_TYPEI declare 2 variables Var1 : ST_HmiToPlc;Var2 : ST_HmiToPlc;And know I would like to know if values in VAR1 are différents than values in VAR2I wrote  if VAR1<>VAR2 then TOTO:=TRUE; end_ifBut it's not correct, I have the fault ERROR 4011: Type mismatch in parameter 1 of ''<>'' : Cannot convert 'ST_HmiToPlc' to 'ANY_NUM'Do you have a solution ? I don't want to compare each value of the structure because I have near 200 values in my structure.I know you can do this :VAR1 := VAR2;without fault, so I think it's possible to make some calcul on the VAR1
+
+you will have to use pointers in this case.off course you can compare the internal of the structures like VAR1.A3[1] etc.In the oscat.lib is a function to do this.however it is not 61131, but it works.http://forum.codesys.com/viewtopic.php?f=11&t=5962was also about this subject
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks for your help.I found some information on oscat to solve my problem.
+

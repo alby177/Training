@@ -1,0 +1,6 @@
+Is it possible to change with a Python script the SymbolConfiguration?
+
+Hi Kohls.Kohls wrote:Is it possible to change with a Python script the SymbolConfiguration?With CODESYS V3.5 SP10 the Scripting will contain an API to create and modify the SymbolConfiguration.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

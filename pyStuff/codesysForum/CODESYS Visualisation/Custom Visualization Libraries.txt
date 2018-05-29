@@ -1,0 +1,19 @@
+Is there any way to create user controls or ActiveX controls for CoDeSys version 2 or 3 ?
+
+I am looking at using CoDeSys in the future and want to create Vista looking interfaces without having to make custom BMP's for each control.
+
+Another option I would consider is third party controls, however it would be nice to use Visual Studio to develop custom controls.
+
+Any thoughts?
+
+_________________Erik Soeder
+
+What CoDeSys are you using? Are you using the Soft Realtime or embedded in a PLC?
+
+You can call external programs using visualization controls. So if you are using the Soft Realtime you can make screens in any language and you could not tell the difference whether you are in CoDeSys or not. If you need access to the CoDeSys Tags/variables by an external program that is possible but may be a lot of work. You would need to contact 3S or your PLC manufacturer to get the needed information. 
+
+BeckHoff uses a company for visualization called InduSoft that does some integration with 3S. You may want to consult with them.
+
+_________________Thanks,
+Steve Pfeifenroth
+

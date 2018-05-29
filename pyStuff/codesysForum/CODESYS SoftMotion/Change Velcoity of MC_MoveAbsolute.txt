@@ -1,0 +1,4 @@
+HiI want to manage axis with absolute move velocity from analog pot while in movement.I start to move an axis by MC_MoveAbsolute to target position with a velocity. While in movement (not arrive at target position), i want to change executed velocity in runtime.  Is there any command or something like that or do i have to apply same MC_MoveAbsolute command again?Thanks
+
+Hi You can compare the actual potentiometer value with the value of the past cycle (with certain hysteresis). If the value has changed change execute from false to true.D ont forget the hysteresis if not there will be continuous changes in move absolute. Have in count that every change  will be applyçied with the moveabsolute ramp.Be healty!
+

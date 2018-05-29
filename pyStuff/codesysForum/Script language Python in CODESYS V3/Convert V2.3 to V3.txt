@@ -1,0 +1,10 @@
+Hi,Is there a command to open and convert V2.3 binary libraries from the script engine?I have tried to run 'projects.open("c:\oldlib.lib")', but I get:[INFORMATION]   convert.py(2): Begin of script[INFORMATION]   convert.py(2): proj = projects.open("c:\oldlib.lib")[INFORMATION]   convert.py(2): exception (<type 'exceptions.Exception'>, Exception('not a zip file',), None)[INFORMATION]   convert.py(2): proj = projects.open("c:\oldlib.lib")[INFORMATION]   convert.py(2): exception (<type 'exceptions.Exception'>, Exception('not a zip file',), None)[INFORMATION]   convert.py(2): proj = projects.open("c:\oldlib.lib")[INFORMATION]   convert.py(2): Return from script[INFORMATION]   convert.py(2): proj = projects.open("c:\oldlib.lib")I know this was a long shot because the documentation says nothing about converting... Only opening:IExtendedObject<IScriptProject> open(                             string path,                             string password,                             bool primary)I am using CoDeSys V3.4 SP3 Patch 1.Best regards,Frank Jepsenkk-electronic a/s
+
+Hi,Currently, there is no such command. This feature is already on our TODO list, but we do not have any planned release date yet.Markus
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+
+Hi Markus,Thanks for the quick answer. Not the answer I hoped for, but glad that the feature is on your TODO.// Frank
+
+Hi,Just to help other people who are looking for it. In V3.5 Patch 3 the following command will do the conversion from V2.3 to V3 library for you:Code:proj = projects.convert("c:\myfunction.lib", "c:\myfunction.library", "{941937BF-9A12-4174-814E-63D1523C94CC}")Regards,Frank
+

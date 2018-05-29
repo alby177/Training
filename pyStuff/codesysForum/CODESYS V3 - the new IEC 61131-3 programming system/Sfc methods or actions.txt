@@ -1,0 +1,6 @@
+Dears.I supose that this question is for codesys people.Testing sfc we have attached methods to steps and it seems that works.Will This feature be in future versions?Can we use methods with inputs?Enviat des del meu Aquaris M5.5 usant Tapatalk
+
+Hi Josep,did you mean, your steps calls methods instead of actions?That is somewhat unusual, but legal. There is no reason to block this. Also it is possible to call instances of function blocks (even if that is not explicitely specified in the documentation). That a step does - it just tries to call that expression. If that pattern works as desired, you're free to use it.Hovewer passing arguments is not currently supported.RegardsRoman
+
+Hi Roman.Thanks a lot.Another question.My objective is to concentrate, as i can, the code of a step inside the step.As the transition af a step is normally decided inside a step (f ex. If i made a mc_moveabsolute inside a step, is normal to finish the step with the mc_move... Done)For block transition, now i am blocking step._x inside step and enabling it outside grafcet on grafcet finishing. Could be posible that you change the sfc algorithm and that dont work in future?
+

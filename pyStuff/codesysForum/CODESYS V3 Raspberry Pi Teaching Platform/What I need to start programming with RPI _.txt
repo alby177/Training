@@ -1,0 +1,8 @@
+Hi!I have expirience with Codesys 2.3.  But I never used ver. 3. What all I need to start programming RPI with CodeSys 3 ?  Beside RPI, I know I have to download  CODESYS V3.5 SP4 Patch 1 and install it. Do I need licence since I can't find this product in codesys store (?).Regards !Mladen
+
+Hi mbruck,I'm on the same situation than you: experienced with codesys 2.3 only, I get this morning my raspberry  and try now to run my 1st.So I download the codesys 3.5 latest release and install it (it's free), then I download the SD card os for the raspberry customized for Codesys from here http://store.codesys.com/codesys-contro ... ry-pi.html . Follow the instruction into the pdf guide (I attached, but it's on the link I sent)And the end take a look to this video..very helpful http://www.youtube.com/watch?v=JkWkPA1zEYcenjoy!
+
+Hi,i found this on YouTube:http://www.youtube.com/watch?v=_MeQBfQObgkplcmax
+
+Thank you ! This is basic what I needed.  I still waiting for my RPI to come. More question folow when succesfully connect to...Regards !Mladen
+

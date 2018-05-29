@@ -1,0 +1,19 @@
+I would like to "pause" a TON during its operation.  When the timer is "unpaused i would like to start from where it was, not from Zero.  
+
+It appears the EN/ENO is close although it appears that the elapsed time recomences at a time that would have been if not paused at all,i.e it is still actually counting although not ENabled? 
+
+Is there any other timers apart from TON that i can use?
+
+Hi
+
+You could save the value of Timer.PT - Timer.ET at the moment you want to pause it, and call the Timer afterwards with this Value as PT.
+
+Best Regards
+Erik
+
+_________________Wer Rechtschreibfehler findet darf sie behalten...
+
+See example here
+
+__________________IP_
+

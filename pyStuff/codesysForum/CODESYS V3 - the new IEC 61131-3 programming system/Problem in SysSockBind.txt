@@ -1,0 +1,8 @@
+I am trying to implement a TCP/IP application in codesys using the SysLibSocket.lib.Here is my piece of code for creating the socket and binding it. But the bind function always return False. Can any one pls help me to find out whats wrong or missing in the code.SocketCreateHandle := SysSockCreate(SOCKET_AF_INET, SOCKET_STREAM, 0); SocketAddress.sin_family := SOCKET_AF_INET ; InetAddr := '201.65.32.177';  SocketAddress.sin_addr := SysSockInetAddr(InetAddr); SocketAddress.sin_port := SysSockHtons(3000); bResult := SysSockBind(SocketCreateHandle, ADR(SocketAddress), SIZEOF(SocketAddress)); IF bResult THEN // here it always returns falseEND_IF If anyone has any sample program for implementing TCP/IP server or client in Codesys, pls share with me or any useful link would be highly appreciated.Thanks in advance
+
+I think you should have posted this in the V2.3 section, because you are looking for a .lib example.Anyway, a very good example can be found through the website www.3s-software.com.Select the menu Download=>CoDeSys Sample Projects.Go to the ftp site and choose: /Projects/CoDeSysV2.3/Communication/TcpIp/See the pdf file and example project.
+
+Thanks for ur help.I tried the ftp link, but it says the link is either down or has beem moved to some other location.Can u pls provide me some other info about it.
+
+I just visited it???Try: ftp://3s1-ftppub:stangste@ftp2.3s-softw ... b/Examples(copy and paste in your webbrowser).
+

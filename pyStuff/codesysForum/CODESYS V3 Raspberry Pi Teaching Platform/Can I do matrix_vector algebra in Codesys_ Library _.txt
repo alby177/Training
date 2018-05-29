@@ -1,0 +1,14 @@
+Hello!I wonder if there is any way to do matrix and vector algebra in Codesys. Is there any free library?I'm not seeking after inverse matrix, determinant, LQ-factorization.Only adding, subtracting and multiplying.
+
+I have seen something in library basic from codesys (used for motion).I think that they uses it for making kinematic and cartesian transfotmations in coordinated motion.
+
+Hi.The libraries are:Sm3_rbase, and sm3_math.Or, do it yourself. A nice job.
+
+Josep M. Rams wrote:Hi.The libraries are:Sm3_rbase, and sm3_math.Or, do it yourself. A nice job.Hi!So are  sm3_math and Sm3_rbase free and I can do matrix stuff with it?
+
+I don t know. It has to be answered by 3s people.At the moment it works for me... But I don t know if in future it disapears.Some codesys plc manufacturers (for ex lenze).  Use his own motion libraries, and it is posdible that acvess to that libraries be not easy.In any case you can create your own lobrary thinking on:A point is not a vector.Use varinouts in operations.Some matrix calculations needs a lot of time.
+
+Josep M. Rams wrote:I don t know. It has to be answered by 3s people.At the moment it works for me... But I don t know if in future it disapears.Some codesys plc manufacturers (for ex lenze).  Use his own motion libraries, and it is posdible that acvess to that libraries be not easy.In any case you can create your own lobrary thinking on:A point is not a vector.Use varinouts in operations.Some matrix calculations needs a lot of time.How do I create own library?
+
+It is not necessary to create a library at beguining.Create a folder in your project (vectorSpace may be?)Inside create two fb with as many variables as dimensions your space needs called Vector and  Point.Inside the folder you can create the functions with operations needed:CrossProductvar_inout   Vin:Vector    Vin2:Vector     Result:VectorScalarProductAddVectorPoint.....
+

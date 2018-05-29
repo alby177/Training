@@ -1,0 +1,4 @@
+Hello Edwin,I have a codeys application that runs on raspberry for 2 years now. I am fully satisfied with the codesys software.However for 1 week I have the web application which is very slow to load and the navigation is also very slow. Do you know the problem? How can I diagnose the problem and solve it?thank you in advance
+
+Hi,I would recommend to check the plcload:use the PLC Shell for this.Other info could be:exectute by ssh in Linux:topBREdwin
+

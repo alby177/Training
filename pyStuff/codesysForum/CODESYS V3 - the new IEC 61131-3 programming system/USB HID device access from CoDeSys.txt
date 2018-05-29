@@ -1,0 +1,8 @@
+Did anyone implemented such thing (on Windows, or Windows CE platform) ? Plans? Ideas?
+
+Hello!What kind of HID class device have you in mind? For example mouse and keyboard works fine with codesys V3 without any codesys implementation, because they run on win driver/kernel, also tuchscreen.specify, regards,Alex
+
+I know, that general windows human interface is solved, can be used in visualizations.However, there are many devices using HID but with different purposes.For example, I have an RF communication USB stick, with a proprietary protocol. I've written an API once for this device in Windows .NET. One workaround could be to run a service on the controller, and simply forward all communication to a socket (TCP or local)...One opportunity is to develop a wrapper library (external) around the windows HID API... But I don't know if 3S folks are planning something...
+
+Maybe this could be done trough installed *.dll on RTE device. This *.dll must then be added in CodesysControl.cfg file in place below [ComponentManager]. And then device *.xml file must be imported in Codesys IDE. Like that, as far as I know, the PLC producers add theirs IO extensions eg. PCI inputs/outputs or another ethernet port for EtherCAT...But for detailed explanation you should ask support.regards,Alex
+

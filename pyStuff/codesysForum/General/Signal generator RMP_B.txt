@@ -1,0 +1,10 @@
+I want to run up and slow down motor with RMP_B function blockfrom Oscat library. Can some one give me a hint how can I use sloping up and sloping down of RMP_B function block for changingdirection of motor (CW/CCW).Thanks.
+
+i did give somewhere you an answer on this one, if not received please send message asi can help you very simple with this one.enable should be on.the time can be set with a time like T#30s (better in variable tramptime:time:=t#30s;)the direction is true for ramp up and false for ramp down. as it is starting on zero you only see something happening when this is true.set is used to put it full byte so 255. this should be false.etc
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+since you already know oscat, pls check SRAMP which i believe is what you are looking for.
+
+_________________freie sps bibliothek unter www.oscat.de
+

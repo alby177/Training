@@ -1,0 +1,14 @@
+Hello,Is there a possibility to overload a function block to accept a REAL, an INT or a BOOL variable type input?I mean 'one block to rule them all', so that no different FB names are required.
+
+You can make a function block with several inputs of different types, and internally knot them to something making sense, but it is impossible that one input accepts different types of variables.then it is just a matter of correct connecting, and you will have only one type of FB.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Your idea is completely opposite to my concept. If I wanted to do that, I would rather make multiple function blocks, one per each data type.But really the case is to have one function or function block that serves multiple data types, because the function/function block will not know which data is passed.
+
+Use input type any.
+
+you can use a pointer to the input and jst grab anything that is on your pointer.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

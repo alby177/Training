@@ -1,0 +1,6 @@
+Dears.I am beguining to work with SDK client to C# from opcfoundation with codesys server for raspberry.When I try an browsing filtering with nodeclassmask=Object from a program, the instances of the fb not apears, I have to use Variable filter to make appear FB instances, but when its appears its shows a nodeclass=Object. I am doing something wrong?.It is a Codesys server problem?Thanks
+
+Hi Josep,this is a bug I'll add a bug tracking entry in our database.BREdwin
+
+Thanks Edwin.At the moment I have solved the problem postfiltering the results, but I am waiting for next releases.
+

@@ -1,0 +1,6 @@
+Dear all,I'm trying to connect the XV-440 micro panel to Eaton PLC XC-201.The main problem that I can't connect to the XV440 from Mxpro or Codesys2.3 even that I can ping it successfully The following error appears when I try to login."Communication error (#0):logout performed" The second problem that I can't found  useful manuals to help me through this .Regards.
+
+Hello, abdulhamid.First of all, by default, the XV440 doesn't have a PLC integrated, but it can be retrofitted. So, if you don't buy extra-licence points to have the PLC functionality in the XV, you cannot connect DIRECTLY to the XV with Codesys.However, if you want only a visualization on the XV and the logic back in the XC201, you don't need to connect to it with COdesys.You just have to create a Codesys visualization in the XC201 and connect the XV440 to it, and you will have that visualization shown on the HMI panel.If you can give me more details of what you are trying to do, maybe I can provide more help.Regards,Lucian
+
+Also, here are 2 useful manuals:HMI-PLC XV400 5.7"/8.4" ftp://ftp.moeller.net/DOCUMENTATION/AWB ... 09Z_EN.pdfXSoft-CoDeSys-2: PLC programming XV400ftp://ftp.moeller.net/DOCUMENTATION/AWB ... 93Z_EN.pdfYou can find other manuals by searching on the Eaton Support site:http://www.moeller.net/en/support/index.jspRegards,Lucian
+

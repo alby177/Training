@@ -1,0 +1,26 @@
+Good evening,I'm still trying to get my Beckhoff servo in motion.......  (quite frustrating)My config:The Real Time kernel on the RPi is  -4.4.9-rt17 /patch Preempt_RT (may be not correctly configurated ?)Servo / Drive Beckhoff EL7201 and AM3111The only answer is : EtherCAT not running Is it possible that the RT abilities of the patched kernel are not good enough ?Attached the Task_configuration with Jitter ...Is the POU (Ipo) correctly declared?Do I have to change in the EtherCAT_Master config. ?Can I reset the drive (Beckhoff EL7201) ... may be it will be helpful ?Should I invest in CODESYS Control RTE ? thank you in advance, Any help much appreciated!
+
+Hi,if the the whole tree is red... fist I would check the plc logger...BREdwin
+
+Thank you Edwin but I'm not sure to know what it is !   Can I read information from the PLC logger ? Where shall I find it ?Is it the attached second file ?Sometime, EK1100 is running !I also saw you were asking people with similar difficulties (RTE / EtherCAT) to "scan the devices" from the EtherCAT _Master tree.I get this attached answer: Attention, Device was not found in the repository  ... 
+
+Hi,did you Change the device to DS402?-> See the pdf in the SM3_Drive_ETC_Beckhoff_EL72x1.library:snippet:The device is delivered with MDP742 profile, whereas this driver requires the CiA402 profile.Therefore the EEprom of the device must be written.Please see the help files of the manufacturer and the CODESYS EtherCAT master stack.Short description how this can be done:-	Configure the EtherCAT device structure using the CiA402 variant (-0001 or -0011). Enable the “expert settings” in the EtherCAT device configuration, “General” tab-	Download and start the application (the devices will stay in error state, because their current profile does not match the configuration)-	Open the device configuration, online tab. Execute “write E²prom xml”. Wait until this is done.-	Re-power device-	Restart application....BREdwin
+
+Ho ! .... Indeed , I was not aware of this.Thank you Edwin.Where shall I find this .pdf ? -> See the pdf in the SM3_Drive_ETC_Beckhoff_EL72x1.library:Is it a Beckhoff or CODESYS document ?
+
+Hi,it is a CODESYS document, which is embedded in the drive library as a pdfBREdwin
+
+Why is everything difficult ? ... (you dont have to answer this   )I can't find / open the pdf from SM3_Drive_ETC_Beckhoff_EL72x1.library (see attached)May be I'm not looking at the right place ? I need to understand the way to modify the drive config.Did someone already change the setting of a drive profile from MDP742 to CiA402 ? (with Codesys )As the profil ex factory of a Beckhoff EL701 is MPD742, how is it possible to communicate with the drive and to change the profile ?
+
+Hi,this is a bug in the library.Attached the Beckhoff document how to change to DS402, the last snipped which i have posted last time is in the library but there is no more Information.So change the frinware of the drive... thats all you need I guess. https://www.google.de/url?sa=t&rct=j&q= ... yuhkzxVtcYel72x1en.pdfBREdwin
+
+Hi Edwin, I really think I'm cursed !   Command : "write E²prom xml" is not possible: Process start and stops after 1/10 sec, sometimes 1 sec...Maybe is it due to the wifi connection RPi / router ? ... ... or should I not first download the new ESI (with "File access over EtherCAT" / choose the right firmware and then write the modification on the EEprom ?It's not clear for me. I have to change the ESI, not really need to UpDate On the manufacturer site, I can see that the setting are changed from the CoE Online Tab. ?Thank you.
+
+Hi,you Need to download the firmware here:and additional after doing this the EEPROM need to be written.Change Profile...BREdwin
+
+Ok Edwin, Thank you.I have read almost all the documentation from "the constructor" and it's clear...But I still do not know where to find the right firmware ?I need a .efw file , something like: "EL7201_05.efw" This file is not included in the "Beckhoff_EtherCAT_XML.zip" ...?.... or at least, I can't find itShould this file already be included in the Library repository ?
+
+Dear Massaproduxy,I have a same problem as you mentioned and I solved it. But I solved this problem using twincat 3. This servo driver has a 2 type of profile. One is MDP 742 , other one is DS 402. If you want to control this servo driver with codesys, you must change profile to DS 402.  I have attached screenshot. I hope , this will help you.Best Regards.
+
+Thank you Poncik, really kind of you.I'll try as soon as possible.
+

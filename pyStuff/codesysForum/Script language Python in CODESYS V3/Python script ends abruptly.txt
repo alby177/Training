@@ -1,0 +1,18 @@
+Hi,I have developed a python script for performing a series of tasks and this script is being called from TestManager using System command "ExecuteExternalCommand". The script runs well for a while, but after sometime it stops execution and the test manager times out. However the script works well and executes till the end when executed from Windows command line. I want to know if there is way to debug the python script execution status or any way to know the reason behind the script execution being stalled after a while.Many Thanks,Mazahar S
+
+Hi.Without further information I can only guess but the configuration entry "Wait for exit" is empty? Otherwise the program is terminated after the specified time.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi Martin,The Wait for exit is configured to 20 mins. The test program is terminated after 20 mins. But the python script when executed from Windows command line finishes execution well within 20 mins.Many Thanks,Mazahar S
+
+Hi Mazahar,could it be that your python script writes quite a lot to the standard output and/or standard error?If that's the case then one of the streams, which are used to redirect the output of the process, could be full and block the process until its terminated.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi Martin,Thank you for the quick response. My python script indeed had some prints to the standard output. Deleting them fixed the issue.Many Thanks,Mazahar S
+
+Hi Mazahar.Your problem was filed on our Jira Database as issue TM-232, so it will be fixed eventually.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

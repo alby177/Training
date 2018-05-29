@@ -1,0 +1,6 @@
+I'm making a trace function block meant to be used with our HMI.Amongst other things, I need to pass a trigger variable and what to trace.The problem is that these variables could be of any base type, unknown to me at design time.From my understanding, I can only declare a pointer to a specific base type.I could ofc make a struct with one pointer of each base type and then have another variable stating what type is used, but surely there must be a better way of doing this?How can I solve this in a nice way?
+
+Create a union of the various pointer types instead of a structure.  You may also want to consider using  REFERENCE instead of POINTER; it may or may not be easier to use dending on your specific usage.
+
+_________________Rick
+

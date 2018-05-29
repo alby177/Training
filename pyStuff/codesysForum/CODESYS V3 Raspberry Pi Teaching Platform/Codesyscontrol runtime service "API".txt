@@ -1,0 +1,4 @@
+Hey community, is there an API available to get some useful information about the codesys control runtime? I would like to check which application is running on the runtime system and I also would like to get some information about the app, for example, I want to check if the app is in running or stop mode.Thank you in advanceBR,Kevin Rohn
+
+_________________Building & Process Automation with HVAC Library for CODESYS© - www.hvac-automation.com
+

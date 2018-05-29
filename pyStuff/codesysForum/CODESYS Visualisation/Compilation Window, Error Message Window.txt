@@ -1,0 +1,2 @@
+hi All,I dont know, somehow, after compilation it does not show the message window in my codesys. I have tried to double click on the status bar as well as i have tried to use ALT+F3, but is still not working. Could somebody help me with this. Because if i wont be able to know what is the errors in my program, i wont be able to resolve themThanks in advance.
+

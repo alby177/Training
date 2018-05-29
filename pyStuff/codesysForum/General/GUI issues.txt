@@ -1,0 +1,25 @@
+Howdy,
+
+I used to get this problem A LOT but it hasn't been an issue for a while.  Often when editing a project the GUI gets corrupted and requires the computer to be restarted.  This only happens when running CoDeSys and affects the rest of windows.
+
+I've attached a screen capture.
+
+My machine details are as follows:
+Windows XP SP1
+Intel P4, 3 GHz
+512 MB RAM (shared with graphics adaptor)
+On board video (82865G)
+Directx 8.1
+CoDeSys version 2.3.1.4
+
+Does anyone else experiance this problem ?
+
+Regards,
+Michael.
+
+The version you use, is about 2 years old. Since then we fixed a lot of bugs and did a lot of changes that might affect this behavior. I would recommend you to download the current version and try again.
+
+I suspected that could be the case but unfortunately we cannot upgrade due to the backwards compatibility issues I raised in my other post.
+
+Michael.
+

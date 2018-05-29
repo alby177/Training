@@ -1,0 +1,12 @@
+Dears. The pointer passed to delete has to be same tye as type used in __new?I have an FB called BasicType. And others wich derives from him:FB BasicTypeFB IntegerEx extends BasicTypeFB LRealEx extends BasicTypeAfter that I have instantiate via _new IntegerEx and LRealEx and I have store its in an array of BasicTypes.On FB_exit i delete all array elements via a pointer to BasicType.I have to delete its as LRealEx or IntegerEx pointers or memory manager knows the memory size to free via the pointer value, and I can delete its as BasicType?Thanks
+
+Hi Josep,The ZEN code "delete This;" works in high level languages.  This should work in your case too...The trick here will be knowing if Codesys is capable to go deep enough into your variables to see that the variable you are trying to delete has been allocated previously and moreover it is capable to identify which of the instances has to delete in the memory allocation table.This will be tricky without memory managing functions (i.e. if you are not capable to see if the memory is being occupied/freed as you wish).  I'm not aware of functions like those...Three thoughts on that:1. Without functions that allow you to monitor if the memory is getting freed or not the only way to monitor that is to start allocating and freeing memory continuously to see if there is any memory leak that ends up blocking the device.  Having a soft plc like TwinCAT would avoid any damage.2. You can always call a specific method inside the pointer that calls "__Delete this;" or even a specific call for delete passing the right  pointer there which should not be needed...3.  Even this is not saying a lot, see: https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_plc_intro/9007199391178891.html&id=, it seems the help systems are different from one manufacturer to the other one but at the end those functionalities seem to be the same.Hope this helps.
+
+_________________http://www.robotecnik.com - robots, CNC and PLC programming.
+
+Thanks Joan.It seems that via pointer __delete has to know how much memory has to free (if not how it release memory in case __new(int,100)).But I have not thougt on outern Fb_exit call (as Beckhoff people explains).Ostres, Joan, la qüestió de la documentació, a cops cansa...
+
+Glad it helped... somehow...   Si, és força lamentable...
+
+_________________http://www.robotecnik.com - robots, CNC and PLC programming.
+

@@ -1,0 +1,10 @@
+Hi,I've made a new Standard project, using Codesys Control Win V3, version 3.5.9.40.Downloading to SoftPLC works fine.Add an empty Visu.Now, download generates "10 unresolved references".Is this a bug or is something wrong with my installation?My co-worker has the exact same issue.
+
+Download messages dump:[FATAL ERROR]   Unresolved reference: 'DYNAMICTEXTUNREGISTERFILE'[FATAL ERROR]   Unresolved reference: 'DYNAMICTEXTREGISTERFILE'[FATAL ERROR]   Unresolved reference: 'DYNAMICTEXTGETTEXT'[FATAL ERROR]   Unresolved reference: 'DYNAMICTEXTGETDEFAULTTEXT'[FATAL ERROR]   Unresolved reference: 'DYNAMICTEXTLOADDEFAULTTEXTS'[FATAL ERROR]   Unresolved reference: 'DYNAMICTEXTRELOADTEXTS'[FATAL ERROR]   Unresolved reference: 'DYNAMICTEXTGETCURRENTLANGUAGE'[FATAL ERROR]   Unresolved reference: 'DYNAMICTEXTCHANGELANGUAGE'[FATAL ERROR]   Unresolved reference: 'DYNAMICTEXTGETTEXTW'[FATAL ERROR]   Unresolved reference: 'DYNAMICTEXTGETDEFAULTTEXTW'
+
+Problem solved.I had both SP8 and SP9 installed. Uninstalled SP8 and reinstalled SP9 build 4, works now.
+
+Hi,in case others have the same issue:"c:\Program Files (x86)\3S CODESYS\GatewayPLC\CODESYSControl.cfg" add CmpDynamicText to the ComponentManager in CODESYSControl.cfg[ComponentManager]Component.1=CmpTargetVisuStubComponent.2=CmpCodeMeterComponent.3=CmpWebServerComponent.4=CmpWebServerHandlerV3Component.5=SysEthernetComponent.6=CmpPCANBasicDrvComponent.7=CmpBACnetComponent.8=CmpDynamicTextthen reinstalling CODESYS is not needed.BREdwin
+
+Thanks for the input! 
+

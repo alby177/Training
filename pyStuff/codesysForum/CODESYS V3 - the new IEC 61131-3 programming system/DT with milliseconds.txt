@@ -1,0 +1,14 @@
+Hi Everyone,  Is there a function that could give me DT with MS ex : DT#2016-06-02-06:00:00:200. Thanks
+
+Install the SysTime library.  Open the Library Manager and click on the "Add Library" tab.  In the popup dialog select the SysTime library and add it (Advanced->System->SysLibs-SysTime).  Check out the high resolution function blocks.
+
+_________________Rick
+
+Thanks..That really helped .
+
+You're welcome.  Glad I could help.
+
+_________________Rick
+
+Hello,this is really good.I'm using to get current System timeSysTimeRtcHighResGet(pTimeStamp);SysTimeRtcConvertHighResToDate(pTimeStamp,pTDate); There is a quick way to convert it to string?I need to to the conversion to write it into a MySQL server.Thank you!
+

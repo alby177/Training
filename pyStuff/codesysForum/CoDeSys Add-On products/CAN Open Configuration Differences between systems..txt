@@ -1,0 +1,19 @@
+Please see the attached files Screenshot1.jpg and Screenshot2.jpg
+
+The first project (ScreenShot1.jpg) seems to handle CAN Open communication much better than the second(ScreenShot2.jpg).  The Codesys versions are the same (V2.3.6.1).  One of the biggest difference I See is that the first one (ScreenShot1.jpg) doesn’t have a base parameters window.  When I was given the original project (ScreenShot2.jpg), the window looked the same.  By deleting and re-adding the entries (EDS Files), I ended up with the different appearance.  My colleague’s pc (ScreenShot2.jpg) is unable to make these same changes.
+
+Also in Screenshot1 PC the "CAN Parameters Tab"  Has More options.
+
+Does anyone have a similar experience. 
+
+There are settings in the configurator, that are configurable and some of them are stored in the project.
+The configuration of the PLC-Configuration-editor is stored in the .cfg-File that is shipped with the target-description, provided by the PLC vendor.
+If the target (so the .cfg-File) while a project exists, the appearance will first stay the same but when you add a new node for example, the view may change.
+Or in other words: You may have changed on one of the PCs the target installation.
+
+
+
+Seems to answer the question.
+
+Thanks
+

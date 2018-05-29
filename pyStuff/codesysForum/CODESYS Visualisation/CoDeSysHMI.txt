@@ -1,0 +1,51 @@
+Hello,
+Please I need Help, I downloaded the demo of CoDesys 2.3 ( with also CodeSysHMI), but I can't Open my visualization (wich I created with Codesys) with CodeSysHMI.
+must I add some instructions at CoDeSysHMI.ini file?
+
+There is anyone who know how to do that?
+
+thanks
+
+Hi!
+
+I got my HMI working after I had read instructions (CoDeSys_Visu_V23_E.pdf). HMI should work if you write to windows command shell:
+
+"C:\Program Files\3S Software\CoDeSys V2.3\CoDeSysHMI\CoDeSysHMI" /target D:\PROJECTS\PROJECT.PRO
+
+Opens PLC_VISU visualization screen, if it exists in project. First path is where your CodesysHMI.exe is, and the second path is your project.
+
+Hello 
+The problem that I can't find the windows command shell, I put instructions in CoDeSysHMI.ini  but it doesn't work.
+
+I don't know much about CodesysChip.ini, but command shell can be found from windows Start-menu.
+Menu: Start/Run...    type cmd
+
+
+I made my HMI starting from desktop icon. Pretty easy way. 
+1)Open Notepad and write:"C:\Program Files\3S Software\CoDeSys V2.3\CoDeSysHMI\CoDeSysHMI" /target c:\Projects\Myproject.PRO
+2) save as "LaserHMI.bat"
+
+thanks Antti,
+your information was very useful to me   
+
+I have the same problem, and doing before suggest but i not get any result.
+The following error occurred:
+
+Could not open project/library (not valid project/library file)
+
+I was verify the library file in CoDeSysHMI.ini file and this correct.
+What more are doing???
+
+I sorry my english. 
+
+kariasg wrote:I have the same problem, and doing before suggest but i not get any result.The following error occurred:Could not open project/library (not valid project/library file)I was verify the library file in CoDeSysHMI.ini file and this correct.What more are doing???I sorry my english. 
+
+Could it be there are blank spaces in the target string? In that case you will recieve this message. Add quotes before and after the target string.
+
+Not working: "C:\Program Files\3S Software\CoDeSys V2.3\CoDeSysHMI\CoDeSysHMI" /target c:\My Projects\Myproject.PRO
+Working: "C:\Program Files\3S Software\CoDeSys V2.3\CoDeSysHMI\CoDeSysHMI" /target "c:\My Projects\Myproject.PRO"
+
+There is a blank space between My and Projects. You have to add the quotes to make this work.
+
+I probe that and this ok. Thanks for your response.
+

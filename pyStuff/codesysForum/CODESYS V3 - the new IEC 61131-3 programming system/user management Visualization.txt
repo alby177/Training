@@ -1,0 +1,12 @@
+I would like to do simple user management. Like certain users have certains rights(to access some elements). I was trying to make a logging dialog but i failed. I've checked help but it's still not working. Can you help me with some tips what exactly to do?
+
+Add User Management in the Visualisation Manager.You can choose a default configuration.A login dialog is not required. Just place a button and use as input the command User Management Login.That's it.Then off course you need to specify the access rights for the individual elements (full, visible, hidden, ..).See the last property of the elements to specify which group has which access rights.
+
+I've done everything you mentioned, but when i type in the login dialog username and password then i got "User management file not found".
+
+Is it  possible that user management is not working only on some specific devices? I can't find what could be wrong-i have tried a lot of things. When i try to log in i'm allways getting 'User management file not found'.
+
+Please try it first with the Control Win (softplc) on your own PC. This must work.If this works and it doesn't on your hardware, then please contact the vendor of your hardware for specific information.(you used the latest CODESYS version, right?)
+
+When i tried to run it on Codesys Control Win V3 i don't the the mentioned error but i still can't log in. I'm using Codesys 3.5.2.
+

@@ -1,0 +1,4 @@
+Is there a step-by-step tutorial for using Raspberry pi 3 with codesys v3.5? What do I have to buy to use the Raspberry with PLC?
+
+Hi,see this small description and attached pdf from the package:1. Download the CODESYS Development Systemhttps://store.codesys.com/engineering/codesys.html2. Install the Raspberry PI Package by clicking on the shopping cart in CODESYS3. Restart CODESYS (to get the 'Update Raspberry Pi' command under Tools) - this is used to deploy the plc runtime to the PI(ssh need to be eabled on Pi side see: https://www.raspberrypi.org/blog/a-secu ... ian-pixel/)Now you find all examples and attached pdf documentation here:"c:\Users\<yourWindowsUserName>\CODESYS Control for Raspberry PI\3.5.x.x\Documentation\RaspberryPI_CodesysV3_FirstSteps_EN.pdf" How to activate the license faq:viewtopic.php?f=22&t=5641&p=10688#p10688BREdwin
+

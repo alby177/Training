@@ -1,0 +1,14 @@
+Hi!I need tips on how to convert a REAL to 2 WORDS.I have some real variables I want to put into my modbus-slave-config, but it only supports Words, are there any built functions in codesys to do the convertion?/U
+
+You could do it by using pointers. See below for an example to put the real value in a DWORD.Then you can split your dword into two single words and put them on the bus.I believe there is a library with a function which can do this more userfriendly, but I cannot find it that quickly. Maybe somebody else will respond with a better suggestion.VAR	dwDword: DWORD;	pDword: POINTER TO DWORD;	rReal1: REAL;	pReal: POINTER TO REAL;	rReal2: REAL;END_VARpDword := ADR(rReal1);dwDword := pDword^;(*conversion back, just for testingpReal := ADR(dwDword);rReal2 := pReal^;*)
+
+There is an open source library by Oscat that has the REAL_TO_DW function which is written the same way as TimvH's example.There is a lot of good stuff in the libraryhttp://www.oscat.de/Another way I have done this is with overlapping marker addresses.Code:VAR   MyReal AT %MW0: REAL;   MyBytes AT %MW0: ARRAY [0..3] OF BYTE;END_VARBecause both variables above are declared at the same marker address, you can write to MyReal with a real value and then send the array MyBytes to the modbus function as an array of byte values.You must make sure that your slave will understand that the real value is packed into 4 bytes.  Also, I have had to use trial and error to determine which Word or Byte swapping the Modbus devices use.  You may need to change the order of the byte elements so that the slave will understand them.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+Check in the manual for: UNIONI think this was made for two variable types to share same memory space./Torbjörn Lundahl
+
+Hey I was also dealing with Modbus and words only.Overlapping addresses is a general approach ... but you should let the system take care of addresses for you.Think in bytes :WORD   2 bytesDWORD 4 bytesREAL     4 bytesLREAL   8 bytesREAL to 2 WORD or 4 BYTES:Code:RealValue : REAL;WordArray : ARRAY[0..1] OF WORD; (* array of 2 words *)MEMCPY( ADR(WordArray[0]), ADR(RealValue), 4); (* where 4 is number of bytes for REAL *)LREAL to 4 WORD or 8 BYTES:Code:RealValue : LREAL;WordArray : ARRAY[0..3] OF WORD; (* array of 4 words *)MEMCPY( ADR(WordArray[0]), ADR(RealValue), 8); (* where 8 is number of bytes for LREAL *)
+

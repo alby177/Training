@@ -1,0 +1,4 @@
+Hello everyone! Anyone know about RTOS for raspberry supported by codesys? Some links, exaples etc..
+
+Hi,not planned at the moment, what would be the advantage for you in compareusing a rt_prempt pacthed kernel, which is available as image?BREdwin
+

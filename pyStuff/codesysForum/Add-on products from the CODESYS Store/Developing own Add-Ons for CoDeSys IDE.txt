@@ -1,0 +1,6 @@
+I'm unsure whether this is the right place for this question, but I give it a try.Is there an SDK or API description which shows me how to develop own Add-Ons for the CoDeSys IDE?We use some special code generators in our company projects and I want to integrate them into the IDE directly. Currently I have built an external tool which generates PLCopenXML files. These files are imported into the projects afterwards. However it would be more efficient when this could be done in the IDE directly.So I had the idea of writing an own Add-On for the IDE which contains the code generator functionality.Is there an SDK, samples or documentation which shows me how to do it?
+
+Hi,please contact the sales department for doing this.BREdwin
+
+Ok, Vielen Dank!
+

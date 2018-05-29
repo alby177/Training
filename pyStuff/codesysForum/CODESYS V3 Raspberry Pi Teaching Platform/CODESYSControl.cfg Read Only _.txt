@@ -1,0 +1,8 @@
+HalloMöchte die Erweiterung ("Reboot", viewtopic.php?f=21&t=5714) ergänzen,kann diese aber nicht überschreiben da geschützt.Grüsse 
+
+Hi,wie versuchst du es denn genau?sudo nano /etc/CODESYSControl.cfgGrüßeEdwin
+
+Hallo Edwinalles klar, typisch Linux-Anfänger   . Leider bekomme als Result 25.Eigentlich kommt das nicht mehr hierhin, wäre aber froh um eine Lösung.Grüsse
+
+Hallo EdwinHat sich erledigt ...Habe die Einträge zusätzlich eingetragen anstatt anzupassen.Grüsse  
+

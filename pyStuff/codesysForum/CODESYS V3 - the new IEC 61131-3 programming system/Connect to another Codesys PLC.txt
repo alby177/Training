@@ -1,0 +1,8 @@
+I have 2 Raspberry PI running Codesys programs. And I want program A running on rpi A to read and write data to program B on rpi B.I've been been Googling and trying but I can not find a suitable solution for this.Does anyone have a neat solution?
+
+Hello,J think the most simple way to communicate between 2 PLC (Raspberry PI or other !) is to use Network Variables.You create A application for RAspberryA and B Application for RaspberryB in the same project.In RaspberryA you add Network Variable List (Sender) and in RaspberryB you create Network Variable List (Receiver). Please see the online Help to know how to set these Lists.BR  
+
+Thank you.Network variables did work, and I could use them in two separate projects as well.But I found in the docs in the section after network variables about Data Source Manager https://help.codesys.com/webapp/_cds_f_datasourcesmanager;product=codesys;version=3.5.12.0 which seem to solve my problem.
+
+Yes, Data Source Manager seems to be another way to do what you want.I spoke about network variables, because I use more than Daa Source Manager  
+

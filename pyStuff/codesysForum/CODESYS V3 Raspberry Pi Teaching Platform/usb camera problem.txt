@@ -1,0 +1,2 @@
+Hello I connected the usb camera to the raspberry  and configured the address 192.168.1.9:7070, everything worksIn the codesys , I set up the web browser element for the camera After that, when I go to the web visualization address, the motion  4  screen opens in my place (see photo)The program writes a refresh page when I click to update, a window opens for downloading a not known fileWhat I did wrong and how to solve the problem
+

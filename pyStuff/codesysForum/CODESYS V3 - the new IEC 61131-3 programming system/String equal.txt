@@ -1,0 +1,10 @@
+Hi all.There are two string:Str1:STRING;Str2:string;When we do:Str1:=str2Str2 is copied on str1, or str2 points to the str2.Anyone knows?Enviat des del meu Aquaris M5.5 usant Tapatalk
+
+I don't understand what is the meaning of "or str2 points to the str2".   When you write :Str2:=Str1;Str1 is copied into Str2. For example if str1 is 'Hello', Str2 will be 'Hello' too.:= is an affectation, it is to say that the right part is tranfered in the left part.You can easily test it with siulation.  
+
+As JAPIB saysWhen you write :Str2:=Str1;Str1 is copied into Str2
+
+_________________Rick
+
+Thanks guys. I test it and you are true. After the equal, if the first string is modified the second does not change.Comming from Java and c the sintaxis is a little bit diferentEnviat des del meu Aquaris M5.5 usant Tapatalk
+

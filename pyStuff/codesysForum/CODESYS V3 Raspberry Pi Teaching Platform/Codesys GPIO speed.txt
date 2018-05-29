@@ -1,0 +1,4 @@
+I am working on a project which I need to send GPIO commands very fast. Is it possible to speedup the GPIO read/write? E.g using WiringPi library rather than using sysfs or /dev/memWhat are the current way codesys interact with GPIO and is there any way to improve its speed?
+
+Hi,how fast do you expect it?At the Moment it depends on how fast you setup your taskcycle.BREdwin
+

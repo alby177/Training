@@ -1,0 +1,2 @@
+Hi Folks, haven't been here for a while but good to be back I have a python script that is using Modbus to read data out of a PLC and publish it to a message queue using AMQT. I am using the PLC solely as a data collector reading input pulses and temperatures etc. If I got rid of the PLC hardware and replaced it with CODESYS running on the Pi, could I access the values in counters or normal registers in CODESYS from my python script?Regards Simon
+

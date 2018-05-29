@@ -1,0 +1,2 @@
+Dears.Trying to use functions from cmpscheduler library, compiler tells me "unresolved reference" to the func name.I don t know if i am doing something wrong, or...Anyone using twincat ca test it?Pd: the library is added without errors.
+

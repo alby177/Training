@@ -1,0 +1,228 @@
+When I write FUNCTION I come  across a proble.
+
+First I defination a function IADD
+---------------------------------------------------------
+FUNCTION IADD : UINT
+VAR_INPUT
+     Enable:BOOL;
+END_VAR
+VAR
+      i:UINT;
+END_VAR
+--------------------------------------------------------
+      I:=SEL(Enable,0,SEL(I<=100,100,I+1));
+      IADD:=I;
+---------------------------------------------------------
+
+THEN I CALL THIS IADD IN PRG
+------------------------
+VAR
+     IAD1: UINT;
+     EN: BOOL := TRUE;
+END_VAR
+-----------------------
+    IAD1:=IADD(Enable:=EN);
+
+    1.BUT IAD1 always equels 1, Why IAD1 can't add up by 1. May be 'i' will be initlized 0 every cycle But how can I make it  RETAIN OR PERSISTANT such as STATIC VARIABLE IN C-LANGUAGE.
+    2.When I rewrite this IADD in FOUNCTION_BLOCK. It works. But what is different between FOUNCTION and FOUNCTION_BLOCK.
+
+You discribed it very well, thats exactly how FUNCTIONS work. The behavior of  FUNTION and Function Block is defined by IEC 61131. You can find some information at http://www.plcopen.org or read the CoDeSys Manual.
+
+Ralph
+
+You mean is that CoDeSys Funciton Can't realize STATIC varialbe!
+
+I load to plcopen.org but can't find the information about the different between the FUNCTION and FUNCTION_BLOCK,also I don't have CoDeSys Manual.
+
+If there someone can give me some data(DOC,PPT,PDF). I will be appreciate.
+
+A function is located in only one place in memory. It is static by nature. All inputs are evaluated at each call and the internal algorithm executed and the output is set. The same input always leads to the same return output.
+
+A function must not contain any of the following:
+No decleration of retentive variables
+No calling of function blocks
+No decleration of global variables
+No recursive calls (you can't call the same function from with the function)
+No VAR_External
+No edge detection
+No Programs
+
+A function block is an instance of the declared POU which has it's own memory location for each instance. Thus it can maintain state. The same input may not always lead to the same output. 
+
+A function block must not contain any of the following:
+No programs
+No decleration of global variables
+No VAR_External
+No EN/ENO when used with LD
+No recursive calls 
+
+Hope this helps.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+A function is located in only one place in memory. It is static by nature. All inputs are evaluated at each call and the internal algorithm executed and the output is set. The same input always leads to the same return output. 
+
+A function block is an instance of the declared POU which has it's own memory location for each instance. Thus it can maintain state. The same input may not always lead to the same output. 
+
+
+FUNCTION ISUM : UINT
+VAR_INPUT
+	uiX,
+	uiY:UINT;
+	X:BOOL;
+END_VAR
+------------------------------
+	IF X THEN
+	ISUM:=uiX+uiY;
+	ELSE
+	ISUM:=0;
+	END_IF
+----------------------------------------------------------------
+FUNCTION_BLOCK ISUMF
+VAR_INPUT
+	in1: UINT;
+	in2: UINT;
+	x: BOOL;
+END_VAR
+VAR_OUTPUT
+	out: UINT;
+END_VAR
+-------------------------
+	IF X THEN
+	OUT:=IN1+IN2;
+	ELSE
+	OUT:=0;
+	END_IF
+----------------------------------------------------
+
+VAR
+	Z1: UINT;
+	Z2: UINT;
+	ISUMF1: ISUMF;
+	ZF1: UINT;
+	ISUMF2: ISUMF;
+	ZF2: UINT;
+	X1: BOOL;
+	X2: BOOL:=TRUE;
+END_VAR
+-------------------------------------------
+
+	Z1:=ISUM(uiX:=10, uiY:=20,X:=X1);
+	Z2:=ISUM(uiX:=1, uiY:=2,X:=X2);
+	ISUMF1(in1:=10 , in2:=20,X:=X1 , out=>ZF1 );
+	ISUMF2(in1:=1 , in2:=2 , X:=X2,out=>ZF2 );
+-----------------------------------------------------------------------
+But both FUNCTION and FUNCTION_BLOCK works fine.
+
+Of course they will both work. This is part of software engineering. You created two places in memory for ISUMF1 and ISUMF2 where ISUM is in only one place. Using a FB for this algorithm would be a poor choice because you have no need to maintain any state in the FB.
+
+But since you don't understand the difference between functions and FB remove the ISUMF1 and ISUMF2 and compile. look at the compile statistics that CoDeSys shows and see the memory size and POU's used. Then add the FB's back and see the difference.
+
+Also try this and tell me what happens, change your function and FB to the following:
+
+FUNCTION ISUM : UINT 
+VAR_INPUT 
+uiX, 
+uiY:UINT; 
+X:BOOL; 
+END_VAR 
+var
+ lastValue :unit;
+end_var
+------------------------------ 
+IF X THEN 
+ISUM:=uiX+uiY + lastValue ;
+lastValue :=  ISUM;
+ELSE 
+ISUM:=0; 
+END_IF 
+
+FUNCTION_BLOCK ISUMF 
+VAR_INPUT 
+in1: UINT; 
+in2: UINT; 
+x: BOOL; 
+END_VAR 
+VAR_OUTPUT 
+out: UINT; 
+END_VAR 
+var
+ lastValue :unit;
+end_var
+
+------------------------- 
+IF X THEN 
+OUT:=IN1+IN2 + lastValue ; 
+lastValue := OUT;
+ELSE 
+OUT:=0; 
+END_IF 
+
+Set X a few times during the same program run and tell me what the output of each was? Use the same input variables for the function and FB. Did you notice that the outputs of the function and FB are not equal anymore after succesive setting of X? Do you know why?
+
+_________________Thanks,Steve Pfeifenroth
+
+hi,spfeif
+
+     I try the prg and the result just as you says.
+
+     thank you very much for your kindly help.
+
+
+   Snow.Ma
+
+As a very basic rule of thumb if your POU doesn't rely on saving any prior state internally then use a function, else use a FB.
+
+_________________Thanks,Steve Pfeifenroth
+
+you will have to tell the function what 100 is. i do it normal to make also the statics to be in a variable so hundred:=100:uint;
+for example.
+100 is no type.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+This may be a perversion of the 'standard', and I don't know if this is a Beckhoff-ONLY implementation or standard across Codesys v2, but you could use a global var in a function to achieve a static var capability. (...or cross-function comms or other dirty tricks... )
+
+I can write one thus:
+
+Code:FUNCTION F_TestFunGlobals : BOOLVAR_INPUTEND_VARVAREND_VARIF bTest1 THEN   iTest3 := iTest3 + 1;ELSE   iTest4 := iTest4 + 1;END_IF;bTest2 := bTest1;F_TestFunGlobals := bTest1;MAIN.bTest := FALSE;
+
+Every var above is global, declared in the main global var resource, except for var_input MAIN.bTest, which is a bool in MAIN that permits the function to be called from MAIN, and the function itself resets it (another test of to what a function can write).
+
+So if bTest1 global is true, the function outputs true, bTest2 is set true, and iTest3 is incremented. If bTest1 is false, the function outputs false, bTest2 is set false, iTest4 is incremented. Finally the function resets the bool that is used to conditionally execute the function, resulting in a single run through the function for each setting of MAIN.bTest.
+
+Is this the path to the dark side of programming, or a useful technique?
+
+  or  
+
+It reminds me of why I don't like anyone using SET and RESET outputs in ladder.
+
+_________________- Jay
+
+Interesting but I would considered it poor programming practice. As described above you can not "DECLARE a global variable". You declared global variables else where in Main so it is legal. But now you have a function that is not reusable unless you have the global variables defined in main that are referenced in the function. The only time I see a need to use a global in a function would be a GLOABL CONSTANT. Like MAX_FAULTS = 32 to define an array bound. There is a SIZEOF in CoDeSys but if you are a stickler for pure IEC61131 then sizeof is not a part of the standard.
+
+_________________Thanks,Steve Pfeifenroth
+
+I had forgotten also that the function is confusing to a user. A function is suppose to have action and the same input will yield the same output. If I were the end user what would I expect as the output especially if there are no inputs? How would I be aware of what the function is doing unless I had access to the internal code. What if I made a function like:
+Code:FUNCTION ADD :WORDADD := 1;
+
+What would the end user think when using this function? I would like to ADD something but what, there are no inputs? In your case calling that global function will cause an action that the end user will not even know about and cause all kinds of havoc.
+
+_________________Thanks,Steve Pfeifenroth
+
+Yes, I agree that it is a perversion of the intention of 61131 function, the key being that a function should always return the same output with a given input, but if accessing global variables that are essentially static, then the function, possibly by design, will NOT return the same output every time for a given input.
+
+I might be tempted to use such a function if it actually made the programming clearer and simpler. From reading a version of the 61131 spec, I assumed the above code wasn't even possible until I decided to test it.
+
+_________________- Jay
+
+Maybe good to know is that CoDeSys V3 will support the new variable type VAR_STAT. This feature is an extension to the IEC 61131-3 standard. This can also be used in Functions.
+Your PLC should have the CoDeSys V3 runtime to be able to use this.
+
+Hi        That means we can declare as a global variable and use that one in a function?Because function is just a machine which gives output for different recipes differently. of course memory allocation is only once even though reused.
+
+hi,       how to declare 100? and y 100 is not recognized as it is an integer?Thanks  
+
+It is not really clear what you mean.Static variables in functions are not available in V2.3. In V3 you can define them.What you could do is use function blocks, or use global variables (which is not really good programming).If you mean how you need to declare a variable you could use:VAR     y : INT := 100;END_VAROrVAR CONSTANT     y : INT := 100;END_VAR
+

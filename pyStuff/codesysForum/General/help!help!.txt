@@ -1,0 +1,17 @@
+Hello,friends
+
+  This is the first time I come here. my english is not well.
+  I have a little question
+  In the SM_PLCopen.lib ,there is a function  MC_POWER,its input 
+bRegulation and bDrivestart, I don't know what's the difference between them.
+  please help!
+  thank you very much!
+
+Hello,
+
+bRegulation -> enable the drive
+bDrivestart -> release the brake, if there is one
+
+Regards
+Edwin
+

@@ -1,0 +1,2 @@
+HiI'm trying to use placeholder reference within libraries - I have tried using library version starting with a zero (for example, 0.5.3.1, as in a development version) but this library is unrecognised when pulled into another library. However, if I change the version to 3.5.3.1, all is ok). Does anyone know of any restrictions on the version numbers thatcan be used? Is there anything special about the first digit being a zero?Any help would be much appreciatedPaul
+

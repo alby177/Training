@@ -1,0 +1,10 @@
+I have a question,what is a projectarchive file,and how to use this file?
+
+A projectarchive file save more than just your code. It includes the libraries, devices and a few more items. It is important to use this with your "released" code. Without it, five years from now, you will may not have the same version of libraries or device drivers available. It is basically a fancy zip file that saves everything needed so any PC will become your PC when it downloaded the code.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Some information about importing/exporting projects:https://www.youtube.com/watch?v=oId-M91KFL4
+
+_________________TA
+

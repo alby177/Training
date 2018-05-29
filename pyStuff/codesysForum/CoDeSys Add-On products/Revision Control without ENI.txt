@@ -1,0 +1,2 @@
+Hi,we want to use our own revision control system (Sourcegear Vault) with CoDeSys.  As far as I know there is not an adapter for this, and even if there was, I doubt if we would want to do it this way.    Quite simply, what is the minimum set of files that we need to control?  I think that in addition to the project file, the .ci and .ri need to be saved to allow the PDT to connect to the target without the "project has changed" message.Andy
+

@@ -1,0 +1,12 @@
+I have a program that I need to hit an exact spot well 4 spots. I have it running true right now but I now need to hit those spots and at the same time I need to hit the spots with 14 lbs of force. How can I do that. Attachment:BOX5-24-13.PROIm very new at this still and most of this was wrote by someone before me. If you need more from me please let me know. Also if you help please use simple terms so i can understand or pictures. Thank you very much.
+
+As i do not have the correct libraries i can not look inside the blocks, but in general i can see the program.One thing in front is to have only one Movement controller, and give that the positions needed.You will have to make an array with positions and then send these to a controller.now you have to switch everytime between controllers and that gives no good control of the axes.second make your program in pieces to make it easier visible.Or make every step in a vertical way.You can use SFC for this purpose.If speed is important, and precision you will need to have two settings for the way the movement is controlled one for each load.Another way is to use a CAM engine.For each axes you will need a setting for each load.You could use FUZZY, but for now please use what you know.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+What is a cam engine? can you show me an example? I emailed you this morning to see if you could make sense of what i've got going on.
+
+I think you want some gripper moving to 4 places with speed and accuracy, with or without load.A CAM is old fashioned a wheel with a shape to follow the route.It can also be done in software with a virtual shaft.So the position of the gripper is direct connected to this master shaft, but all is in software.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

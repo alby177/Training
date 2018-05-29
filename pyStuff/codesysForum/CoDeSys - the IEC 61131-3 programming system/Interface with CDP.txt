@@ -1,0 +1,3 @@
+Hi,
+has anyone any experience of running a CoDeSys program in a middleware platform called CDP.  CDP is produced by Norwegian firm ICD.  If you have had any success please can you give me some pointers as I am floundering at the moment to get the two systems to interface.  The documentation provided by ICD isn't helping me either.
+

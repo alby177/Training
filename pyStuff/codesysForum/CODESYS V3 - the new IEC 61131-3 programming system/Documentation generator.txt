@@ -1,0 +1,10 @@
+Hello,I'd like to know if there is any way to use a documentation generator with codesys (like Doxygen?).This could be very handful for documenting code that is rather large or complex...Thanks!
+
+You can use the menu item: Project => Document.This generates a document of your project.Is this what you mean?
+
+What I mean is more something like Doxygen.It automatically generates documentation, not only doing a "print out" of the project.Thanks for answering tho.Any other ideas ?
+
+Perhaps exporting the project into PLCopenXML format and then having some parser to Doxygen would be an alternative? I have never used Doxygen so I'm not sure what it's capable of. Also, it's not possible to get all the project information to PLCopenXML.
+
+francois wrote:Hello,I'd like to know if there is any way to use a documentation generator with codesys (like Doxygen?).This could be very handful for documenting code that is rather large or complex...Hi have you solved in any way?
+

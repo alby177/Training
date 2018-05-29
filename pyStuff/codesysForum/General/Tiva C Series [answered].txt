@@ -1,0 +1,6 @@
+Has anyone had any experience working with any of the LaunchPad controllers in CodeSys? In particular the TM4C1294XL?After some research, it appears that the Tiva C series are not IEC 61131-3 compatible. The TMS32028 DSP's and the Hercules processors are compatible and able to be programmed via CodeSys.Texas Instruments says:Quote:Otherwise customers should contact 3S directly for any support questions. I am sure they are happy to answer. CoDeSys runtime usually needs to be adapted and configured for a system. While base ports for ARM, C2000 and Stellaris exist, it is a matter of exact customer requirements. That also defines the cost of the software. Usually that can only be done by 3S or a 3rd party working with them.So is there a 'base port' here somewhere?
+
+Yes, there is, but it's not available to end users.
+
+That's really too bad because for $100 I can get a LabView compiler for the Arduino line.
+

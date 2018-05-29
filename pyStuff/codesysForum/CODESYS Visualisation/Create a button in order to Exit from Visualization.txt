@@ -1,0 +1,2 @@
+Dear all,I would like to create into CoDeSys V3 "Visualization" page a "button" in order to exit from VISU during cpu is in RUN Mode. (I need this function in case I would change something configuration into Windows Operating System).I want to exit ONLY from Visualization page but RTE must still remain in "Running" mode.Also I need a "Shortcut" (for example into Dekstop of Windows) in order to able to Restart the VISU HMI.I'm working with cpu PANEL HMI.How can I have this functions?Regards 
+

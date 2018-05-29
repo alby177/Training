@@ -1,0 +1,21 @@
+I have just configured the CoDeSys alarm system to run on a Moeller XC200 and it seems to be working more or less correctly. The only thing that I can not get to work is the email function.
+
+When an alarm with email triggers, one of two things happens:
+
+1. If I am 'Online' to the PLC at the time, CoDeSys tries to start a mail client on the PC. I dont have mail on this PC so it fails.
+
+2. If not 'Online', the alarm is indicated via a lamp/sounder and an entry is saved to the log file but no email is sent. no errors appear in the event or error lists.
+
+I can send emails from the PLC using the sysMail.lib so I am certain that Internet access and the mail server are OK.
+
+Any ideas ???
+
+Hi,
+
+I have manage to get the alarm logging using visualization. I would appreciate if you could share how do you perform the data logging at your controller. 
+
+Regards,
+ssyap
+
+Also how do we check if the running alarm logging in PLC is possible? Any list  of compatible PLC?
+

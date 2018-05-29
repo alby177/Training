@@ -1,0 +1,2 @@
+HelloWe are using Codesys V 3.5.10.50 on Raspberry PI model 3 to communicate with a Modbus RTU device through a Modbus TCP gateway.In the Slave configuration, it´s possible to define the Unity-ID address, besides the IP address and IP port of the TCP Gateway.However, the library only allows us to change the IP addresses and port, using the TCP-Slave.ComSettings function.Is there any way to swap Unity-ID via program???Sergio
+

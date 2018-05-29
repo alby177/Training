@@ -1,0 +1,6 @@
+Dear,  Edwin,I am creating webvisu, and can access it through the laptop I am sharing internet with BBB, but cannot access the webvisu from other laptop or mobile phobe connected to the same network. What could be the problem? BBB is connected to internet an I can ping 8.8.8.8 and I am trying to connect 192.168.7.2:9090/webvisu.htmBest Regards
+
+Hi,you need to callhttp://8.8.8.8:9090/webvisu.htmand add a port forwarding (in your router) from 8.8.8.8 to 192.168.7.2 , did you add this ?Is 192.168.7.2 (the real eth0 Interface on bbb? or USB connected interface)BREdwin
+
+Thanks for your replay, Edwin,I am sharing the internet over usb, I did add the default gateway to 192.168.7.1, and tried to call 8.8.8.8:9090/webvisu.htm, but still I cannot access the webvisu, onyl can access the webvisu from the laptop that I have connected BBB and shared internet with it.Best Regards
+

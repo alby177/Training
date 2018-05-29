@@ -1,0 +1,34 @@
+My computer is without serial port. How can I download the program? If possible for CAN, what should I do ?
+
+
+The controller is CR2500 from IFM
+
+CoDeSys supports different bus physics, OEM may even create their own drivers for other interaces. Thus please contact your ifm dealer and ask him, which interface(s) are supported. 
+
+The most common interfaces are TCP/IP, CAN and serial.
+
+_________________Roland WagnerModerator
+
+To do Programming of PLC through CAN interface you can use EC2071 module it has USB port at PC side while CAN interface on other.
+Please find following link for details:
+
+http://www.ifm.com/ifmind/web/dsfs!EC2071.html
+
+With IFM via CAN and CoDeSys you need either IXXAT CAN hardware or PEAK USB. 3S supports almost all IXXAT hardware but only PEAK USB. If using PEAK there is a special setup I have the info but never tried it. If using IXXAT here is how to configure an IFM PLC for use with CAN:
+
+The IFM PLC has two Node ID's one for it's identity on the CANopen network and one for use with 3S gateway. The one used with the 3S gateway is called by IFM the download ID and can be change with an IFM library function. By defualt the value is 32.
+
+Go to CoDeSys menu ONLINE-COMMUNICATION PARAMETERS. A new window will appear. Select the "NEW" button on the right hand side, give it a name and select in the list "CANopen DSP302". You need to change the NODE ID to whatever your PLC is configured to and the baudrate. But for clearity here are the settings:
+
+NODE ID: 32 (Default for IFM )
+Node Send Offset: 1536
+Node Recv Offset:  1408
+Can bus baudrate: 125 ( Whatever your bus baud rate)
+Can card driver: CAN_VCI ( This is for IXXAT only, I don't know PEAK)
+Motorola byte order: NO
+
+hope this helps
+
+_________________Thanks,
+Steve Pfeifenroth
+

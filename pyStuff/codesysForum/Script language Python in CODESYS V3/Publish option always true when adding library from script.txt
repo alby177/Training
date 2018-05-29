@@ -1,0 +1,8 @@
+Hi,I have a problem when I want to add a library from script. When I add a library using the following script I always get the option "Publish all IEC symbols..." checked, and I do not want this option to be checked.  Even in CoDeSys Help file it says that you should be very cautions when checking this option, so I do not understand why it is checked as default.Is there a nice way I can avoid this or maybe change the property after adding library? I cannot find such options or objects in the script engine documentation.Code:proj = projects.primaryfor member in proj.get_children():    if member.is_libman:        libman = memberlibman.add_library("LibraryA, 0.1 (kk-electronic)")       My current workaround is that I have to export a library manager manually with the desired libraries and I can then import it later using script. To change libraries I can then edit the .export using a text editor.  I have attached demo libraries, scripts, and screendump of publish option, if anyone wants to see exact files.Regards,Frank
+
+Hi, Frank,It seems that the publish option is true by default in the internal API, and the script driver just does not bother to set that option.As I'm currently out of office, and don't have access to our infrastructure, could you file this issue via the support contact?Thanks, and sorry for the inconvenience!Markus
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+
+Hi Markus,Thanks for your answer - I am glad that you are able to reproduce the issue.  I have filed it to 3-S support by mail now.Best regards,Frank
+

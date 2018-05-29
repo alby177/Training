@@ -1,0 +1,4 @@
+Good morning,I've been trying to figure out how this chat works, for days, so I can change it for my needs but I can not.My intent is to connect an arduino client to the server but I can not understand how to connect to the server by adding the client username.Virtually the arduino client connects to the server but when sending text is written in the sendername field and not in the message.Can you help me please.Another thing I wanted to ask is whether it's possible to send a message from the server without even loading the client in codesys.Thanks for the help, AlbertoP.S.Although there is no need to attach the original design without the client
+
+I understand the server can send   But I just can not understand how to send the arduino connection string with the username.Please help   
+

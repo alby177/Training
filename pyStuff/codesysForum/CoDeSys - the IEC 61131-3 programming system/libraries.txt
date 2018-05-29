@@ -1,0 +1,6 @@
+Hi everybody.I tried to save a project as library.This project is composed by some FB, with one that call the others.I need that the users of this library see only the 'main' FB, and not the 'slaves'.I tried to declare a slave FB inside the main BF, but I can't.I discover (not documented) that exist END_FUNCTION keyword (codesys identify it and coloured it blue), so I imagine that is possible.I am also interested to receive documentation for create libraries in codesys.Somebody can help me?Thanks in advance
+
+If you set a user group to no access and give the user group a password then nobody can see inside function you have created.it works in library and in pou.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

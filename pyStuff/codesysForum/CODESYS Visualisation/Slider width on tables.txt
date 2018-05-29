@@ -1,0 +1,9 @@
+Hello,
+
+I am using a TABLE and it seems that everytime I exit the project and reload it, it resets the slider size to 15.  Anyone know if there is a fix for this?
+
+Kind regards,
+Doug Rilee
+
+CoDeSys 2.3.9.6
+

@@ -1,0 +1,8 @@
+Hi,please advise what touch panel to use with a Codesys 2.3 PLC (PLC is FESTO CPX-CEC-C1)I need about 10" (or between 8" and 12") touch panel with the following features: - connection to PLC via Ethernet - easy to setup communication  - [preferably free] software for programming, including a panel emulator - so that I can test the connectivity with the PLC and work on/test the panel project without having the panel.Thanks for any suggestions
+
+Hi,The two things that come to mind are:1. Try CoDeSys HMI http://3s-software.com/index.shtml?en_CoDeSys_HMI. You can download a trial version for Windows and it's programmed with the same CoDeSys tool as you use for the PLC. However you have to get some hardware, a license and do some installation work to get a production version running. I haven't seen anything like a pre-configured touchscreen with CoDeSys HMI yet. 2. Use modbus to communicate and try a Weintek (or some other manufacturer) HMI. I've had experience with Weintek, the software can be downloaded for free and there is an emulator. See http://www.weintek.com/global/Hope that helps!
+
+I use visualisation inside the PLC (WAGO)and a touchscreen (in real a simple PanelPC) from winmate 10"panelmountsetup is very easy just put explorer on a fixed address.simulation is working as i have codesys running on a PC and i can see the vis on same computer.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,8 @@
+hicheck this:http://www.youtube.com/watch?v=GFN9T_cXLEUthis is a small demo on SPS/IPC/Drives 2013Send twitter msg from CODESYS plc... and many more.cuEdwin
+
+That's really neat.    I was actually wondering if this was possible as I could think that this could be an interesting application. Will the runtime be made available to anybody?
+
+Hiwe will publish after 3.5SP4 release (december) a runtime version for the pi in the CODESYS storelike other 3S runtimes it will run for 2h in demo mode.Later (next year) a licensable version will follow.For universities, schools everyone who is interested learning / using CODESYS a very good opportunityRegardsEdwin
+
+Edwin Schwellinger wrote:Hiwe will publish after 3.5SP4 release (december) a runtime version for the pi in the CODESYS storelike other 3S runtimes it will run for 2h in demo mode.EdwinThis is great news. I think a lot of people will be interesting in that.
+

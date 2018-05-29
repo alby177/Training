@@ -1,0 +1,15 @@
+Hi, all, i am starter for codesys system.Now i have read the 8 bytes array from canbus.but i need the data byte1 and 2, i have no idea how to get these data. please help.
+
+Hi!Is it this you need?Your arrCAN probably have from [0]-[7]arrCANbus[0] = byte 1arrCANbus[1] = byte 2arrCANbus[x] = anybyte in the range see above./Torbjörn
+
+thank you very much!
+
+Since you are that new I would like to be clear. It appears that you said you want to read the data then you would do the following:Byte0 := CanDataRec[0];Byte1 := CanDataRec[1];Byte2 := CanDataRec[2];Byte3 := CanDataRec[3];Byte4 := CanDataRec[4];Byte5 := CanDataRec[5];Byte6 := CanDataRec[6];Byte7 := CanDataRec[7];Now a few things: You don't need to add them to anther variable you already have them in the array but from my experience you will want to know how to read a 16 bit variable and 32 bit variable from your data array:Code:FUNCTION IO_BYTES_To_WORD : WORD(*   IN0 = LSB   IN1 = MSB*)VAR_INPUT   In0      :BYTE;   In1      :BYTE;END_VARVAR   wTemp   :WORD;END_VARwTemp   := In1;wTemp   := SHL(wTemp,8) OR In0;IO_BYTES_To_WORD   := wTemp;So if you did the following:word1 := IO_BYTES_TO_WORD(IN0:= Byte0, IN1:= Byte1); (* this will give you a word / int 16 bit from your two data bytes *)Follow the same logic for getting a DWORD 32bit from 4 bytes.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+Is that any option to Insert / delete the element from Array?
+
+I don't think so. Usually your are dealying with non dynamic variables in PLC's.I don't know how it is the Codesys 3 with C/C++ code./Torbjörn
+

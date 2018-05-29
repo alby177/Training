@@ -1,0 +1,4 @@
+I have a library which contains a function block with some math formulas in it.  I still get division by 0 exceptions, even though I have the "CheckDivReal" implicit check function installed.  CheckDivReal is called if I divide two numbers in a normal POU, but if it's within a function block from the library, it is not called.  I guess that makes sense because the library can't see the functions in my project, but it doesn't seem to be possible to install the implicit check function blocks in a library.  Is there a way to do this?thanksTim
+
+Hi,you could only check libs in library format/source available not compiled libs.To do this you need to set the compiler define:checks_in_libs in your application.BREdwin
+

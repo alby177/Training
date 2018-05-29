@@ -1,0 +1,4 @@
+I have a problem with FB_SoERead application in order to read amplifier temperature or motor temperature. Could you please assist me especially how to put the size of the address to be read and pointer for this address.Thanks for your help.
+
+hello,sorry for the lack of documentation, please check the COE FB's they are identical except the IDN input,but there is documentation in the help.Think this should help.Edwin
+

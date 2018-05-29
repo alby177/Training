@@ -1,0 +1,2 @@
+I would like to know that how to save .csv file in SD card by capital letter format  by using 750-880 ( for example ( config.csv ----> CONFIG.csv ). Now i try a lot of method but still remain small letter format . My reason is now that third parity (FTP software script ) can't read capital letter format . If everybody knows, please share knowledge for me .. Thanks a lot
+

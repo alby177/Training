@@ -1,0 +1,2 @@
+Hello, guys!I'm currently writing device driver and I want to extend ModbusSlaveComPort;I wrote devdesc file, and now I'm trying to write a library for my driver.Tall me, please: how could I write my functional block extending ModbusSlaveComPort (and could I do this thing, or I should write my own modbus driver from 0)? How could I receive parameter data, that ModBusSlaveComPort reads?
+

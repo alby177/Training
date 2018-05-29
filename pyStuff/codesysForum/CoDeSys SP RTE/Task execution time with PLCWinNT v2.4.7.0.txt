@@ -1,0 +1,18 @@
+Hallo
+
+I'm experiencing problems in the "task" execution on the a.m. softplc version of cedesys integrated in Wizcon (ControlMaestro) SCADA system.
+
+The problem is that I defined an execution time for tasks but real excution is not respected.
+For instance, I assigned 12 second execution time for a task that recall few programs but the real execution time is about double of that and not the same every time.
+I'm sure that required execution time of programs is very far from occupying the available time between one task and the following, because it requires only few milliseconds.
+
+Who can give me an advice how to fix the problem?
+
+Thanks
+
+Edoardo
+
+The CoDeSys version of Wizcon is not the realtime version.
+If you need realtime control you need to use the CoDeSys SP RTE. You are able to connect Wizcon to this RTE by an OPC server/client connection. You need to check which function you use. If you use Synchronous functions it might be that CoDeSys is waiting.
+CoDeSys SP RTE won't be able to use the special WizPLC (CMsoftPLC) library functions for e.g. loading recipies or starting Wizcon macro's.
+

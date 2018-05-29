@@ -1,0 +1,23 @@
+Hi.
+
+I have been trying the Trafficsignal program, with sequence and wait and all. I kind of get that, but what I want to make is:
+A sensor for light/dark (analog output) and an on/off button.
+The on/off button you can turn a light on/off, if in on mode for 30 minutes, the sensor will take over. If it's getting dark and output value gets below X, then a timer should start and if it stays dark enough during 10 minutes, the light should come on. Then it should stay on until it gets light again, or until 11:30pm.
+
+I have no idea where to start or how to start. I am a complete newbie and these kind of technics are not really my cup of tea. So anyone, any idea? O, I use v2.3 of CoDeSys by ABB.
+
+Anybody that can help with some of the parts??
+If someone could just help me a little, I'll be probably on my way again.
+
+use select (SEL) in a fiunction block program.
+just start it as PLC_PRG as a function block program
+put in a block press F2 and find SEL
+put TRUE
+on line 1
+put value1 (fill in what you like)
+put value2 same
+ouput1 fill ib the blanks espesccially the port something like %QW0
+and try to run it in simulation first.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

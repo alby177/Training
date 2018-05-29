@@ -1,0 +1,2 @@
+Hi to all once again.This time my question is it possible to send NMEA messages (in my case I have to send 4 messages continuously) from Modicon PLC, for example M241, to not yet defined recipient.And if it is possible how make proper configuration in PLC. As I explored so far maybe it would be possible via RS232 and 'ASCII Manager'.If anyone has any experiences with NMEA messages and PLCs I would appreciate any kind of help.BR
+

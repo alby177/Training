@@ -1,0 +1,2 @@
+Hi, does anybody know how to implement an application done in CoDeSys with a system (plc) that uses MVB bus, whose is use in railway industry?I know that CoDeSys doesn't support this bus, but they said me that we can implement it by ourself.If anybody knows something about how create the driver or configurator's plugins to implement an application in CoDeSys with a system that uses other type of bus, I will be grateful.
+

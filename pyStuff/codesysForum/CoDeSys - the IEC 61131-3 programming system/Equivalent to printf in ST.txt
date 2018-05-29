@@ -1,0 +1,10 @@
+Hi is there an equivalent to printf in Structured Text. I have to currently create strings by nested CONCAT statements. Is there a better way?
+
+Use a simple UDP protocol.Alex
+
+UDP - are you talking about User Datagram Protocol...can't quite see the relevance with writing several strings into a single string.Could you elaborate??? 
+
+There is no variant types in codesys so creating a real printf with placeholders like %.3f and so will be tricky.I have made this function though that takes a input string and replaces all # characters with a value.Note that this is written for CodeSys 3 so uses // as comments.Code:FUNCTION FormatString : STRINGVAR_INPUT   Format: POINTER TO STRING;   Value : POINTER TO STRING;END_VARVAR   CurResult: POINTER TO BYTE;   CurValue : POINTER TO BYTE;END_VAR// Make a copy of the input stringFormatString:= Format^;CurValue := Value;CurResult:= ADR(FormatString);WHILE (CurResult^ <> 0) AND (CurValue^ <> 0) DO      // Found a placeholder (#)   IF CurResult^ = 35 THEN      CurResult^:= CurValue^;      CurValue:= CurValue + 1;         END_IF;         CurResult:= CurResult + 1;END_WHILEExample:Code:a:= 'Hello ####';b:= 'World';c:= FormatString(Adr(a), Adr(b));String c will contain "Hello World" after this.Note that if there are more # in the format string then the value it wont replace them with spaces. It would be an idea to add code for replacing the remaining, connected # with spaces.
+
+_________________Andreashttp://www.boschrexroth.com
+

@@ -1,0 +1,6 @@
+Hi,I'm working on a project with a rpi3B, with licence and MySQL lib with licence and I'm facing an issue when using multitouch.The lcds are 7inch raspberry official and another hdmi with usb touch support.Both works fine on any element in webvisu such as multiple sliders etc. The only time I'm getting an exception is on tables with array data and combo boxes with array.The issue is after 5th selection without changing the wisu or the tab/frame container so if I remain in one frame or full screen visualization and select more then 5 elements one at the time the frame or visu stops working and can't change it anymore.From log I've fount the exception : "No free space for capturing events; Too many parallel inputs?" as a warning.  Can anyone give me some idea on how to solve this issue?
+
+Hi,at the moment only five simultaneously touch events are supported (this explains the log message)If could send your Project/projecrarchive as bug report to the CODESYS store Helpdesk (-> Login and then my question)we will investigate the problem.BREdwin
+
+Hi,OK, I will do that, but there is a way to reset events after 5 or less inputs?
+

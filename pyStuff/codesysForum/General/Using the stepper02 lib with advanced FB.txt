@@ -1,0 +1,55 @@
+Hello, 
+
+I'm still having some serious with an application that I'm developping in order to pilot several stepper thanks to a Wago controller with 4 stepper cards 750-671. In order to drive motors, Wago offers us a specific library called Stepper02, and we have a nice tutorial on how to use one of the FB that is inside, called MC1_ControlStepperBasic. The thing is that this FB is not complete enough and I'd like to try the other one that is available, called MC1_ControlStepperAdvanced. Bue without any tutorial, I can't have anything good with this FB. I tried to put the input as I thought I should be, but I can't even enable the motor...
+
+I'm facing a lot of problem with my project and I think (hope?) that using this FB, I could solve them, but I really need help for that, and the Wago's _ for this product is not working since few days and for some days, so I can't have informations from them. And I really need these informations. That's why I was wondering if any of you have ever tried to use this FB, and, if it's the case, if he could help me by telling me what should be the inputs of my FB, or even a screenshot from his application, I'm sure I could reproduct it with my own variables...
+
+Thanks for your help, 
+
+Frazz
+
+hi,
+
+i've programmed a little application wirh MC1_ControlStepperBasic and 
+it works fine.
+
+1. is the problem from your previous post solved ?
+2. what type of controller is used ?
+3. what's the applications goal ?
+
+greets Nitro
+
+_________________Die Fähigkeit sprechen zu können macht nicht unbedingt intelligent. (Qui-Gon Jinn)
+
+Hi, 
+
+
+The controller used is a 750-873 and let's say that the goal of the application is to control the rotation's speed of one motor, and the 3 others have to move sometime in order to move the piece where the first motor is...
+
+The previous problem that I had is not solve so I tried to use another FB in order to have more options. So that's why I'm now trying to use the FB Advanced. But I made other tests and the results are weirds:
+
+I tried to make a prg with 3 blocks: The 2 blocks that are used to drive the steppers in Basic mode PLUs the FB MC1_StepperControlAdvanced. I put as input and output of the FB some new variables in order to see if the FB is able to read the position etc etc. It works erfectly when I change the inputs of the Basic FB (for exemple, I can use the velocityCtrl mode without any problems, and I can even see the position changes in the second FB (Advanced). So I conclude that my outputs, at least, are correct. But the problem is that when I try to use the inputs of the Advanced FB, the potors doesn't move, which I find very weird, knowing that in order to 'link' the FB to the stepper, I just need array of 11 Bytes, and I can't really make any mistakes with these one, and the variables that I use are the same than the one used for the basic FB...
+
+I have someone at Wago that is taking care of this problem, but dunno if it will be very efficient so if anyone has a little piece of advice, I'll take it and be very glad...
+
+Greats, 
+Frazzzz
+
+hi,
+
+i tried it with a 671 Controller today, and you are right.
+Basic_FB works fine, but with the Advanced_FB motor don't move e.g.
+no power on the line.
+sorry, i've no solution at the moment --- but a project that needs to set 
+Zero- and ActPosition  .
+
+Nitro
+
+_________________Die Fähigkeit sprechen zu können macht nicht unbedingt intelligent. (Qui-Gon Jinn)
+
+I had Wago on phone and they sent me some files, I can send it to you if you need them, or I can tell you when my project is working...They use the Advanced FB in a very particular way that I don't understand for now but I'll have my device tomorrow so that I can continue to test it and I'll let you know if I manage to use the FB...
+
+well any luck or do you need more expertise.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

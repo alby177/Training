@@ -165,3 +165,4 @@ for i in forumPages:
         # If the button "Next" is not there, exit the cycle
         except TypeError:
             break
+print('Done!')

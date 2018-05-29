@@ -1,0 +1,14 @@
+Currently I have an encoder wired to a high-speed wago card, which counts the number of pulses (low and high bytes)currently i have the block word_of_byte which is calculating the total value of the high and low bytes that have passed. I then have it converted to degrees.The problem is that I want to limit this to stop at 0 and 360. The limit function won't work for this because sometimes it may skip over 0 and go to an extremely high degree and think that it's at it's max (360) any ideas?thanksMartino
+
+Found a solution.May not be the most efficient, but if you have any other ideas i'd like to knowI just converted the degrees to radians using RAD, which will correct the angle so that it is between 360, then converted back to degrees with the DEG function
+
+why do you convert and test it.just test in digital (word wise )and only the display use a conversion.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+shooter wrote:why do you convert and test it.just test in digital (word wise )and only the display use a conversion.not sure what you mean by just test in digitalIf there is a function block to just keep the value between 0-360 degrees without converting it to radians then back to degrees, that would be perfect
+
+You are receiving a value from a decoder giving you for example 11 pulses /degreeyou have a setpoint for example 12.5 degreesthis is simple math giving you 137 pulses.Just test if decoder > 137 then reached else notyet.This way you do not have to do your math very fast but only when the setpoint changes.and if the decoder is higher as 360*11=3600+360=3960 then subtract 3960.if lower then zero add 3960 obvious.This you can also do with a multiturn but then make the limits higher.be aware that the counter keeps on counting even when you subtract, so get new values and keep on getting.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

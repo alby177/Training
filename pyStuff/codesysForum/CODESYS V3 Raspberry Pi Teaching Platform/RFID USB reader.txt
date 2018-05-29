@@ -1,0 +1,8 @@
+Hi, I have an RFID Unique 125 kHz reader on USB. I found examples of how to communicate with a PLC https://program-plc.blogspot.com/2015/02/build-rfid-system-for-plc-using.html but how can I read the data in codesys? I am building a small parts store and will try to restrict access ,all control will be based on RPI without PLC.Did any of you do similar projects?
+
+Hi,I use attached project.Keep in mind the visutask is called in 5ms to be fast enough to receive all events fromthe USB/RFID Reader and you need webvisualisation in your project + browser which is accessing it.This is the used RFID USB device for reading the RFID's:https://www.amazon.de/gp/product/B011XI ... UTF8&psc=1BREdwin
+
+Hallo, ich habe das Beispielprojekt hier aus dem Forum und habe genau den RFID Reader bei Amazon aus dem Link oben gekauft, jedoch haut die ganze Sache bei mir nicht wirklich hin. Wenn ich auf dem Raspberry ein Texteditor aufmache, sehe ich die RFID Tags jedoch landen diese nicht im Codesys. Woran kann das liegen?Mit freundlichen GrüßenChris
+
+Hi,Keep in mind that the Event handler from visu is used.So open a webvisu (in the browser) then it should work.If you need this without visu / independet from it you need to implement the RFID's :"Sends a 10 digit string to current window or console as if it was a keyboard. Can be captured independently of keyboard using Linux event interface (/dev/input)"You maybe could read from there...BREdwin
+

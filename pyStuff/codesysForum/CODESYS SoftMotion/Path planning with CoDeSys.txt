@@ -1,0 +1,31 @@
+Is there any function block for path planning in CoDeSys software.
+
+Thanks.
+
+what should this function block do ?
+
+_________________freie sps bibliothek unter www.oscat.de
+
+This function block has to calculate trajectory between 2 points in 2D or 3D :position and then indirect speed and acceleration.
+
+Thers the Multi-Axis CNC profiler, wich as far as I know uses G-Code.
+
+Sadly there's not a simple MoveAbs2D()-FB nor a MoveAbs3D()-FB wich is really annoying. You could make one yourself building upon the single-axis MoveAbs, but you will not have real synchronous movement.
+
+Nicolai
+
+I need real synchronous movement (In Sercos Cycle)
+
+Leonard wrote:I need real synchronous movement (In Sercos Cycle)
+Then use either Cambox or CNC-profiler.
+
+Regards
+  Nicolai Hanssing
+
+hi guyz........i was using the Function blocks for x,y and z motions but i have to make many motions. Right now, for every motion i am using individual function block which is very annoying  . 
+
+Is there another way to define these motions( X,Y & Z) in function blocks? 
+
+Best Regards
+Tahir
+

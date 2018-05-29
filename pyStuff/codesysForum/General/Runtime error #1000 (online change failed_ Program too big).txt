@@ -1,0 +1,42 @@
+Hallo everybody,
+I'm starting to use the network variable (UDP protocol) between two PLC with codesys installed.
+The communication is ok and the project is running.
+
+When I make a small modification in one PLC (like change contact NO to NC or change set to reset) and after login perform a online change, the compiler answer with an error.
+
+  
+
+Runtime error #1000 (online change failed: Program too big)
+
+but the program is not big!
+If,  after login perform a online change using "load all", no error, but I need to restart the plc, homing the machine and so on...
+
+Someone have experience on this?!?
+
+
+thankyou 
+
+Bye
+
+ 
+
+It might depend on the processor you are using but what is likely happening is that to do an online change, you need 2 x the memory.  
+
+There is a program in memory running.  Then you need to transfer over the new program while the existing one is running so you need twice the memory.  Then, the processor switches control from the old program to the new program.  Only then can it delete the old program from memory.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+Please check your memory setting, how many POU's, size of segments for code, max segments... in target settings.
+What target did you select ?
+
+_________________Good Better CoDeSys
+Boris Schuster
+
+[quote="Boris Schuster"]Please check your memory setting, how many POU's, size of segments for code, max segments... in target settings.
+What target did you select ?[/quote]
+
+
+Thankyou  for the information, increasing the memory setting, all is ok.
+

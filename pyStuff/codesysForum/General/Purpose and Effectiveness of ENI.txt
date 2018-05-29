@@ -1,0 +1,27 @@
+I'm working on a project right now that has heavy number crunching, and I need a way to get data (1 real / hour) to a machine as to be stored in a database/spreadsheet for further mathematical analysis and storage.
+
+The documentation for ENI and DDE are really not impressing me too much. It feels like the writer was trying hard to say as much as possible on the range of functionality, and neglected to really explain what it's really for. My background hints to me that I'm missing the basic concept behind ENI, especially.
+
+So I was hoping someone here could point me in the right direction. For my purpose, is ENI the way to go? or should I go with DDE? Is there an alternative method I'm missing? Really, I'm just looking for a lead, so anything is appreciated.
+
+Thanks!
+
+In retrospect, I realize my post is rather vague, for which I apologize. If I may, however, I would appreciate even if someone would ask me a question as to what the heck I'm talking about; like I said I'm having difficulty even approaching this issue, so I would appreciate even constructive questions or vague direction.
+
+All in all, I just want to get REAL data from the PLC to a spreadsheet on some system.
+
+Thanks!
+
+If you want to get real data from the PLC to a spreadsheet, I recommend to use OPC.  OPC is free and built into the CoDeSys software.  For importing into a spreadsheet, you will need some sort of program that links with Excel to do it.  I have been playing with a tool from Matrikon and it was really simple to drop in a piece of data and have it accessed live and create graphs, etc with it.
+
+You can also use DDE is you are using V2.3 of CoDeSys, I don't know all of the details, but there is a DDE version of the gateway that you can download and then you make special DDE formuas in Excel and it just pulls it right in.  There are some pretty good examples on the 3S ftp site for V2 and V3 of CoDeSys using OPC.
+
+here you go with a dde example going to excel (yes old version)
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Why does it need to be real data type? Just use a DWORD and scale it latter in excel or something. There are not to many things that you can't do with a non-floating point number like int,word,dword. Are you using a 16bit or 32bit PLC processor? Also if you are passing one value or even more you can always push it out your serial port/Ethernet port and read it by hyperterminal excel etc..
+
+_________________Thanks,
+Steve Pfeifenroth
+

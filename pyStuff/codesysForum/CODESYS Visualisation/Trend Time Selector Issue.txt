@@ -1,0 +1,2 @@
+Hi,Whenever I try to add the TimeSelector (Time Range Picker) to my Trend i get the following error and a "Drawing Error" Icon appears in the place of the TimeSelector.The element of type 'VisuFbElemTimeSelector' could not be updated. Reason: Unable to determine constant value of expression OffUsing Codesys 3.5 SP10. Has anyone come across this issue or have any ideas to resolve the issue? Thank you.SK
+

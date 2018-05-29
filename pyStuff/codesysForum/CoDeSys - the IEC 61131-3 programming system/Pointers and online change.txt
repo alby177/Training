@@ -1,0 +1,6 @@
+HiIn the help file there is a warning regarding the pointer content when making online changes. Were can i find more infomation about this subject? I wont to know exactly what the issues might be and how to avoid them."Attention: Online Change might change the contents on addresses. Please regard this when using pointers on addresses !"regardsJohan
+
+if you change a pointer the address is not correct anymore, so you could end up with garbage as usual.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

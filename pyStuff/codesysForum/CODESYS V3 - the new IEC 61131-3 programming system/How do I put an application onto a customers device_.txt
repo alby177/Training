@@ -1,0 +1,4 @@
+I am using CODESYS Control Win SL with TargetVisu SL Option on a PC. Where do I place the Application.app file so that CODESYS Control WIN V3 knows where it is?
+
+Hi,CODESYS does this implicit on each download - or if you execute create bootapplication (bus this is usually not needed because the default is - CODESYS generate it on download of the application)The Directory where the files are stored is:"c:\Program Files (x86)\3S CODESYS\GatewayPLC\"BREdwin
+

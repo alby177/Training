@@ -1,0 +1,4 @@
+Hi,I update my raspberry pi and receive an error[ERROR]         Error output: codesyscontrol.bin: no process found insserv: script codesyscontrol is not an executable regular file, skipped! I don't know what this is about and it may be causing an issue with my program.Thanks.
+
+Hi,guess not, just check if codesyscontrol is available if you execute 'top' in the linuxshellYou could call systeminfo in the update tool too.BREdwin
+

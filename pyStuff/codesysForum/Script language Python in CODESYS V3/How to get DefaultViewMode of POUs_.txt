@@ -1,0 +1,6 @@
+Hi there!I am working on a more comfortable export dialog and want to set the icons of the POUs according to their DefaultView setting (FBD/IL/LD)(please refer to the attached screenshot).In the Automation Platform help I found the DefaultViewMode property in the INWLImplementationObject interface.Actually I don't know how to get access via Python to this property.Is this generally possible?Kind regards,AlexAttachment:Treeview_ExportDialog.PNG
+
+Right now, there's no scripting access to the default view mode setting for the NWL POUs.The information is partially covered by the embedded_object_types property of the script object, where you can get the type GUID of the implementation part - this allows you to differenciate between ST, SFC, CFC, UML state diagram and NWL. However, it does not allow you to distinguish between the three different languages supported by the NWL object (FBD/IL/LD).As a workaround, you could use export_xml and then parse the PLCOpenXML string to check whether the object is FBD, IL or LD.
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+

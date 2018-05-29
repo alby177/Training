@@ -1,0 +1,10 @@
+Hello,I use a trinamic 3313 by ethercat.I have an error at start when i add SMLAttachment:Trinamic SML error1.jpgAnd if after i put to Acknowledge, the Driver is OK.Attachment:Trinamic SML No error driver but error SML.jpgHave you already use this driver model with codesys?thks
+
+Hi,no, but try to figure out what this emergency message of the drive means...BREdwin
+
+Ok, I will to check the error.ML_CompatibilityCheck_DS402.project for Raspberry exist?thanks
+
+SoftMotion Light is compatible with Beckhoff EK1100+EL7041?thanks
+
+Hi,Quote:ML_CompatibilityCheck_DS402.project for Raspberry exist?just openn it an update the the plc to the PI in the device tree by update device.Quote:SoftMotion Light is compatible with Beckhoff EK1100+EL7041?not sure hm... check the DS402 -standard objects ..... BREdwin
+

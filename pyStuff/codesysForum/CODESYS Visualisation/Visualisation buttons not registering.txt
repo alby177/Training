@@ -1,0 +1,6 @@
+HiI have a visualisation in a program of mine which I use as a sort of software HMI.  I can manually toggle outputs for testing and set-up purposes and generally works quite well.However, I cannot get the reset and E-stop buttons to register when clicking on them in on-line mode.  When testing the visualisation in simulation mode, it works.  These buttons are hard-wired, so I wouldn't be able to E-stop the machine via the visualisation (as expected), but it doesn't even register that I am pressing the reset button (which I would expect it to).Anyone have any ideas why I am seeing this behaviour?
+
+estop is hardwired as you say , so it will overwrite whatever you have in your simulation.btw it is bad practice to mix hard and soft switches.better to make an parallel between both or even better make them in series so if anyone is activated the machine stops.Emergency stop should stop a machine hardwise so it must be wired to the big contactors.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

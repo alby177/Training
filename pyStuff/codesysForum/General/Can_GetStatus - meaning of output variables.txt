@@ -1,0 +1,24 @@
+Hi @ all members!
+
+I am new in CoDeSys and I am trying to connect a "Beck IPC@CHIP" SPS and an "Beckhoff BK5120" Bus coupler with CANopen.
+
+I wanna check the Bus status in my programm. I ve found the Lib 3S_CanDrv.lib with the FB Can_GetStatus. Does anybody know where or how I can find a description what the output variable Can_GetStatus (DWORD) means?
+
+Thanks a lot!
+
+Jan
+
+Hello,
+
+below are the bit informations of return value,
+
+bit 0 : hwOvrnCntr increasing
+bit 1 : busWarnCntr increasing
+bit 2 : busOffCntr increasing
+bit 3 : rxFifoOvrnCntr increasing
+bit 4 : txFailCntr increasing
+
+if any knows about other (5-31) bits please update.
+
+According to the BECK-IPC support: This FB is without function and returns nothing useable.
+

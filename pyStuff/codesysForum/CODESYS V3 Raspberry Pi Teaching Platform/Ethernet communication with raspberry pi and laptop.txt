@@ -1,0 +1,6 @@
+Hello!I am trying to establish an ethernet communication with two softPLC, a master and slave. I would like to implement the master to an raspberry pi and the slave to the laptop I am using. Unfortunately I am getting 2 mysterious errors (see attached file) when I am adding the ethernet scanner to the raspberry pi device tree.Do you know how to fix it?/Mattias
+
+Hi,you need to set the placeholders manually like in my screenshot.This will be solved when we release 3.5.9.10 Package for Raspeberry Pi in the Store.(The problem happens because you are using 3.5SP9 CODESYS and PI release 3.5.8.10)BREdwin
+
+Thank you Edwin now it runs perfectly.BRMattias
+

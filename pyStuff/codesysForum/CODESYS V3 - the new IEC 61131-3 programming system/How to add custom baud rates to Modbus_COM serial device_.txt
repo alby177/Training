@@ -1,0 +1,4 @@
+Is it possible to add more "standard" baud rates to modbus_COM device? For example 460800 baud. Now the highest baud rate that can be selected is 115200. I'm using Codesys V3.5 SP11 Patch 3 and external USB serial device (/dev/ttyUSB0).
+
+Not sure what you want to go that high, but you can look under Modbus RTU library or whatever Modbus you are using; but try that to see if it works;
+

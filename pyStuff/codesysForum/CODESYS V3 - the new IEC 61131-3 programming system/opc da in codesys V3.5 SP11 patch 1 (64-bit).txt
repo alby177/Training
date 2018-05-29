@@ -1,0 +1,4 @@
+Hi all,Do you confirm opc da was removed from version V3.5 SP11 patch 1 (64-bit)?BR
+
+Hi,confirmed.BREdwin
+

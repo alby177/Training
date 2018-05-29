@@ -1,0 +1,16 @@
+Please explain us how we can take return result in Plc application of system commands like:"cat /proc/cpuinfo "?Regards
+
+Hi,use this project from this link, and feel free to modify it to your needs:viewtopic.php?f=21&t=5923#p11084change szFilename: STRING := '/proc/cpuinfo';and somehow you need to get your information from the buffer which contains then /proc/cpuinfo ... see screenshotBREdwin
+
+I try your solution but it gives a result string of 278 characters only, not include the serial number.Is there any solution to call from codesys runtime a shell command and take the result?Regards.
+
+Hi,you need to specify your startpos to read see screenshot.BREdwin
+
+Is there any other way to run OS command and take back the result?Because if I use your solution I can't run commands like in shell mode.Regards
+
+Hi,you can call every shell command but you do not get the result/output of them back to the iec world.that's the point, so you need in this case to use the char device example.RegardsEdwin
+
+How can I use the command "grep -i serial /proc/cpuinfo | cut -d" " -f2" with chardevice and take the result?Regards
+
+that's what I already said:It is not possible to get the result to the iec world...but you have a workaround!BR Edwin
+

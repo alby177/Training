@@ -1,0 +1,4 @@
+Hello I heard there is a CODESYS-Runtime for the raspberrypi in development.Has someone expieriences with it and when will it official available?
+
+And how much of it is going to be open source? 
+

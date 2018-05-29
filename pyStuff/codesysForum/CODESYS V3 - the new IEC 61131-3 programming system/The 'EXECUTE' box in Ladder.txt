@@ -1,0 +1,6 @@
+HelloWhat am I missing with the EXECUTE block?I've put a box in the ladder, but the code inside doesn't execute.ThanksPaul
+
+Hello Paul,I've just tried in with CODESYS V3.5 SP7. It works as expected - the value of HMIInverter... will be copied to MyInverterSpeedCommand if InverterCycling ist FALSE. May be the code in other networks (or in other POUs) changes the InverterCycling somehow?Regards, Roman
+
+Hello RomanThanks for the reply.You are right...I changed the compiler to 3.5.7.0 the EXECUTE block works as expected.My controller's RTE is 3.5.1.40 and this doesn't work (in the simulator anyway).It's a shame as this is very useful.RegardsPaul
+

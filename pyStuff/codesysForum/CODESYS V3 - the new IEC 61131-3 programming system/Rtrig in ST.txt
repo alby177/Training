@@ -1,0 +1,22 @@
+Hi everyone,I'm trying to build a program which scan an alarm table and if an alarm occurs, it send a sms but I've a trouble with my Rtrig, so this is the piece of programm which give me problems:For i:=0 to 200 by 1 DO             Rtrig(alarme[i].state)             If(Rtrig(alarme[i].state) THEN                          buffer[j].mesage:=alarme[i].message;                          J:=J+1;             END_IFEND_FORSo the problem is when a RTrig occurs, my programme continue stay in the IF, so it continues to store the same message in my buffer and it continues to increase the J variableSo I made a small test,  after the for, I put a Test:=Test+1; and my variable Test increase continually until I release my variable Alarme[i].StateAfter that, I made a trial, I write a function in ladder language, with a R trig contact and a coil, and here it's workingAny help?Thank in advance
+
+If alarme(i-1) is false and alarme(i) is true rtrig returns true.You would need an rtrig by every i
+
+And you are calling the block twice, should be If rtrig[i].q then ... So use an array of r_trig one for each alarm Sent from my SM-G935F using Tapatalk
+
+Teichhei, Sorry, but your solution is too convoluted (difficult). Usualy simpler is better, so try this;Code:For i:=0 to 200 by 1 DO   Rtrig( CLK := alarme[i].state); Run trigger function call   If  RTrig.Q THEN      // .Q is the output of the trigger       buffer[j].mesage:=alarme[i].message;       J:=J+1;   END_IFEND_FOR
+
+Hermsen,The problem with this is that you are using the same R_TRIG for 201 values. So like teichhei says you would need an array of R_TRIG. For example if you had the following:Code:alarm[0] := FALSE;Rtrig(CLK:=alarm[0]);      //Rtrig.Q would = false;alarm[1] := TRUE;Rtrig(CLK:=alarm[1]);      //Rtrig.Q would ALWAYS get triggered to TRUE because you are calling the same function block as in line 2;So every cycle would trip the rising trigger.You would need to do something likeCode://SUDO untestedVAR   alarm:ARRAY[0..200] OF BOOL;   alarmTrig:ARRAY[0..200] OF R_TRIG;   i:INT;END_VARFOR i:=0 to 200 by 1 DO   alarmTrig[i](CLK:=alarm[i]);   IF alarmTrig[i].Q THEN      //do work here if alarm triggered   END_IFEND_FOR
+
+Good feedback!  
+
+Hi.But the oop solution is create an fb alarm with three attributes.Private bool alarm, edge.Amd two methodsSetAlarm(bool value)If(value<>alarmOld)then   Edge=trueElse  Edge=falseEndifAlarm=valueAnd two gets, one for alarm, and one for value
+
+That would work to.
+
+Hermsen wrote:Teichhei, Sorry, but your solution is too convoluted (difficult). Usualy simpler is better, so try this;Code:For i:=0 to 200 by 1 DO   Rtrig( CLK := alarme[i].state); Run trigger function call   If  RTrig.Q THEN      // .Q is the output of the trigger       buffer[j].mesage:=alarme[i].message;       J:=J+1;   END_IFEND_FORDon't think that would work because in every loop run you call the same instance of rtrig again, 200 times in a cycle, causing it to look at the previous condition in the previous call. But you need to trigger on the previous cycle state foe the same [i]. You are looking at a different value from one i to the next.Sent from my SM-G935F using Tapatalk
+
+I like the OOP version too...Sent from my SM-G935F using Tapatalk
+
+Well after reading the feedback on my posting I see why my solution will not work.However, the anwser Joseph proposes seems very sound. Good luck and sorry for the misdirection =) never too old to learn.
+

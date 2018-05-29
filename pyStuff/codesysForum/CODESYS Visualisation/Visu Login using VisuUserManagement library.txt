@@ -1,0 +1,2 @@
+Hello, I'm trying to login to a WebVisu by my own dialog window. Getting the entries in the dialog box is handled by the VisuElems library. Does anyone know how to login to the usermanagement of the WebVisu using ST code?I found the integrated library VisuUserManagement but I cannot handle it. Is there any documentation or information how to handle?Thanks in advance Joerg
+

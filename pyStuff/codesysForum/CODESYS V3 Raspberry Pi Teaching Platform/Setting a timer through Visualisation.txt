@@ -1,0 +1,6 @@
+Hi,Is it possible to set a time via an input box in the visualisation? So for exampleCode:VARTime1: TON;Trig1: BOOL;TimeVariable: ???;END_VARTime1(IN:=Trig1, PT:= TimeVariable);Where TimeVariable is the variable to set the time delay on the Time1: TON;. Can I edit TimeVariable via a Text Field Input configuration, WRITE TO VARIABLE? If so, what sort of variable would I need to set TimeVariable to? When editing the variable via the text box, would the format of the input have to be something like "T#2s"? Any help appreciated  
+
+Yes it is possible. One way to do it would be to declare your TimeVariable as type real.For your visualization you can use a rectangle with the following settings     text = %0.3f seconds.     text variable = POU.TimeVariable. //POU is the name of your POU where TimeVariable is initialized.     OnMouse* (InputConfiguration) = Write a variable and setup the min/max and the input type.Then your call to the TON FB would look like:     Time1(IN:=Trig1, PT:=REAL_TO_TIME(TimeVariable * 1000)); //time is in msHope this helps.
+
+Hello,That is perfect! exactly what I wanted to know.Thanks for your help  
+

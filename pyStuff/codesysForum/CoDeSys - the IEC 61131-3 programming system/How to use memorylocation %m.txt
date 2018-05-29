@@ -1,0 +1,20 @@
+Hi,      Can any give me an example of how %M is used in the program,means where I have to declare this ?Thanks
+
+same place as you would do with the in and outputsI tend to put them all global so i can see and change them anywhere.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+They can declared anywhere in declaration.  Below are examples myBool  AT %MX0.0 : BOOL; //Boolean TypemyInput AT %IX0.0 : BOOL;myOut   AT %QX0.0 : BOOL;myByte  AT %MB0   : BYTE; //Byte TypemySINT  AT %MB0   : SINT;myUSINT AT %MB0   : USINT;myByteArary AT %MB0 : ARRAY[0..10] OF BYTE; myWORD  AT %MW0   : WORD; //16 bit typesmyINT   AT %MW0   : INT;myUINT  AT %MW0   : UINT;myWordArary AT %MW0 : ARRAY[0..10] OF WORD; myDWORD AT %MD0   : DWORD; //32bit TypesmyDINT  AT %MD0   : DINT;myUDINT AT %MD0   : UDINT;myReal  AT %MD0   : REAL;myDwordArray AT %MD0 : ARRAY[0..10] OF DWORD;mySTRING AT %MB0 : STRING;  //STRING
+
+_________________The Original SoMachine Ninja
+
+Hi,     Thanks for the reply.What is the difference betweensarath:array [1..10] of DWORD; and  myDwordArray AT %MD0 : ARRAY[0..10] OF DWORD; Is it just that %MD0 is known location?Thanks 
+
+yes it is a known location , and you when having several PLC in a communication like the old MODBUS you can ask any plc for a memory location and get its results.Many HMI displays work with these MARKERS.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Maybe this will help.  This is an excel sheet with how the memory is aligned.  Like Shooter said not all PLC/HMI align the memory the same.  This sheet is based off SoMachine/Vijeo hardware built by SE.
+
+_________________The Original SoMachine Ninja
+

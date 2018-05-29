@@ -1,0 +1,2 @@
+Does Codesys 3 offer any tools to import / convert Siemens S7 programs to Codesys?  I know Codesys 2.3 allowed you to import S5 projects.  Is there anything like this in Codesys 3?  Thanks.
+

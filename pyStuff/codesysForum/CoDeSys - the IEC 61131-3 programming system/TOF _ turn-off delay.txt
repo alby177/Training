@@ -1,0 +1,31 @@
+Hi all,
+
+Want to reset a TOF (turn-off delay) timer in my code. Any suggestions on the easiest way to implement this ?
+
+Usually you just drop the .IN bit of the timer.   The accumulator will go to zero.
+
+If you want a timer that keeps resetting itself, then use the NOT of the .DN bit.
+
+
+ Exact forms depend on whether you are using ST, or FB, of IL, or LD...
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+In typical TOF, the Q output will continune to be ON till the time elapses. 
+If your problem is to reset the Q output forcefully, bypassing the time then you need to make a trick. This may be required in some emergencies. 
+
+
+In such cases, just move t#0s to PT (with emergency condition, of course) and Q shall go OFF.
+
+I hope this answers your problem.
+
+_________________Devdatta Hambardikar, 
+Messung Systems, 
+Pune, India
+
+Use a trigger on the input with your reset a negate input on an and gate together with your normal input.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,14 @@
+Good afternoon.I am trying to write a program in sfc V3.5 and find it hard to create an alternative branch which would include more then one step.Kind regards Sam
+
+first put the parrallel transition in.then put a step on top of this transition.you can do same with synchron steps.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks for your quick reply ShooterMy problem is that I already have finish programing all the steps in one branch and trying to add an alternative branch. When I create this branch it is connected to one transition of the already programmed branch and I wanted it to be connected to several steps and transitions. I don't know how to change the connection of the recently created alternative branch with the already programed one. I hope this is clear. Thanks again for your help.Sam
+
+go to the transition you need to break up and add a transition with a jump.that will break up the connection to the left branch.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks much apprecciatedMy regards
+

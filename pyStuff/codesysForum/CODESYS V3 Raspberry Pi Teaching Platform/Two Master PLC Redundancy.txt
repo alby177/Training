@@ -1,0 +1,4 @@
+Hello,Somebody have experience with it on Codesys V3. It is possible to do it with software PLC programm? (just send all time with tcp/ip Master image to Slave) and when master going down start Slave program from same state as Master was (working with Ethercat IO or Modbus TCP IO for example)?
+
+I have tried doing this with Modbus TCP, but i didn't a get satisfactory result.Modbus TCP communication is not the most reliable.I usally solve this by hardwireing a digital output from the primary master to an input on the secondary master.
+

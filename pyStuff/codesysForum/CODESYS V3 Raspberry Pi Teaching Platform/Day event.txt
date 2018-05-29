@@ -1,0 +1,16 @@
+Hi at all,if I wanted to do one operation every day at the same time as I could make in LD?Many thanks, Alberto
+
+Hi,there is already an example here: viewtopic.php?f=23&t=6247#p12396 a little more details, one option would beyou could use timer2 from Oscat building library.Install these two OSCAT libs Basic and Building in CODESYS (->shopping cart and then install by clicking in the embedded browser in CODESYS - download - sure you need to login to the store)Then use attached Project example (not LD but CFC should be reasonable or at least you could easily translate this to LD)BREdwin
+
+Thanks for the info, but I do not know how to insert the timer 2 graphic in my ladder.how can I do ?
+
+I managed to implement the code in my project by copying and pasting what I needed.Now I do not know how to connect the Q output of timer 2 to a contact of my ladder.Can you tell me how can I do?Thank you, Alberto
+
+Hi,BREdwin
+
+many many thanks !!
+
+it is normal that when you start the application on the active plc, timer2 the Q output even if the time is not the trigger?alberto
+
+Hi alberto,guess yes, think this is 'as designed' - once a day you get this day event.. on first even if the time is already over-> once a day - Q -> True.Sure on the following days the time and Q does fit.BREdwin
+

@@ -1,0 +1,8 @@
+Hi, with the new release of the Pi 3 B+, will codesys still work?
+
+From the specifications released I don't see any reason why it would not work.Sent from my iPhone using Tapatalk Pro
+
+Hi,as soon we have this pice of new PI3 B+ hardware in our hands we let you know ifit works or not BREdwin
+
+Hi,this new PI3B+ works - from my point of view without any restriction.Using:  Raspbian Stretch 2018-03-13 and 3.5.12.10 CODESYS Raspberry PI Package.https://youtu.be/IgwDBPoJBekFeel free to share your experiance with using this new PI.BREdwin
+

@@ -1,0 +1,6 @@
+Hello togetherBy default Codesys 3.5 SP11 (resp. all Versions) only compile and check code thats actually called. Is there a way to tell it to compile "everything"?Thanks for your informations!
+
+Hi,I have several possibilities in mind:1. Put all objects in the POU tree and call "Check all pool objects"2. Enable in the properties of an object "Link always"3. Create a global variable list and create an instance of those objects
+
+Perfect, thanks for all the solutions!
+

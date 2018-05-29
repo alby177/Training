@@ -1,0 +1,6 @@
+Please, I need help!! I tried to install the OSCAT library, I got so many errors so I decided to delete it, since then I can't get back into my PLC. I get the ERROR Unresolved external POU's. Even if I go back to a previously saved project, I get the same error. I can't access my plc, and it isn't in RUN. My whole house is paralyzed.please see attachment.Hope you can help me out here.
+
+go to setup and change the number of POU, oscat is very big, so needs a lot of space.If keeping problems, try to minimize the functions, check the TXT version.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

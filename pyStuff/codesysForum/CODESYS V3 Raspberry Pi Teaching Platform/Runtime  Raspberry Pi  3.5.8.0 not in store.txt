@@ -1,0 +1,8 @@
+HelloTried to download CODESYS Control for Raspberry Pi SL but this download includes only .package components for development IDE (8.4 MB total). Where I can download CODESYS runtime (SD card image) for Raspberry Pi?Aleksander
+
+Hi Aleksander,we do not deliver an Image for the sd card anymore,you just need to download it from raspberrypi.org and install the debian package either by the CODESYS environment - update Raspberry Pi command.check this link for more details:viewtopic.php?f=22&t=6345BREdwin
+
+There is a problem if Codesys development IDE is installed in custom location (or maybe with Win 7 64 bit). Even if Raspberry PI run time package install into IDE log shows that additional menu item was installed, menu is not available. Install on other PC (with everything on default) has solved the problem.Aleksander
+
+Hi,sounds strange,but anyway you could add the command manually by->Tools->Customize->select Tools and where you want to have the udate command -> then add command -> RaspberryPi - UpdateRasperryPi After doing this you will find the update command manually added in your CODESYS Version.BREdwin
+

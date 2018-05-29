@@ -1,0 +1,11 @@
+I have a PCAN-USB from PEAK in hand, I read somewhere in this forum saying that ifm controller like CR0020 can use PCAN-USB as an CAN bus adapter. While in CoDeSys communication parameter setup dialog, clicking button "new" can't bing up PCAN-USB option in the driver list. I believe PCAN-USB should appear in that list by means of some other way which I haven't figured out because I see in the installation package there is a directory called "gateway" that contains PCAN_USB.dll.Can someone help me with this ？
+
+Dear freindI had the same problem , no one here has helped . I bought an omega usb to serial converter which has communicated easily with my cr0020. You can pose your question from IFM support group too.whish you lock.
+
+I always use usb-to-serial converter with CR0020 controllers. And it is very interesting about PCAN-USB.Have you any result? Does it work?
+
+Have you seen this manual? It's in German but put CCP into Babble fish. I thought I had an English version. I'll look. I have been using IXXAT for years so I don't know if it works.
+
+_________________Thanks,
+Steve Pfeifenroth
+

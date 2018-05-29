@@ -1,0 +1,2 @@
+Hi all,I need to access to the "Recipe Manager" storage informations (see attachments) via code.For example I want to know which "Separator" is currently used or the columns selected etc.Is that possible? Thank you,Regards.Massimo
+

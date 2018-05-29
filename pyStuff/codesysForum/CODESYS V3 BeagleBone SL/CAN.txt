@@ -1,0 +1,4 @@
+Greetings,I would like to use BeagleBone Black with CoDeSys communicating by CANopen with other devices. In the document First steps, you describe how to use CAN with CAN/serial cape. Isn´t it possible to use the CAN interface on BBB or do I need the cape for it to work? The only e-shop in my country that offers CAN cape for BBB will have it in like 6 weeks... Best regardsFilip Stec
+
+for why should i use a can cape (w/ transceiver) => http://electronics.stackexchange.com/qu ... -a-can-busSame problem here (argentina), i bought mine from aliexpress and still waitingregards,ivp
+

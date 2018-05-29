@@ -1,0 +1,2 @@
+the problem about packaging a library.I package a library about Interpolator for three axises. When I use the same steps and components to make a project, this project can work correctly. But if I change those components to library, this library can't work when it's put into a new project.I don't know! why????  Please help !
+

@@ -1,0 +1,10 @@
+I have a Wago PLC and would like to connect with modbus TCP.It is possible to create READ/WRITE variable?Gianni
+
+I use the function FC23 but i can't use the same variable in read and writeGianni
+
+Hi Poix.I had the same problem that I needed to read and write to the same variable from an HMI using ModbusTCP.But unfortunately, it seems that this is not possible anymore in Codesys 3.5.In my solution, i changed the driver to OPC UA, but this might nog be possible for you.Jesper
+
+Thank's for your replay, but I have to connect to a Wago PLC.Gianni
+
+May be possible to use Network Variable instead of MB protocol.  CoDeSys doesnt handle RW variables in MB registers any longer.
+

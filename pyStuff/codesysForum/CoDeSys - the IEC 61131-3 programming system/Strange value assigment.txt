@@ -1,0 +1,45 @@
+Hi,
+I have fund something very strange. The value in a variable follow the value in an other variable without assigment bettween there.
+
+Focus on code:
+In global variable:
+VAR_GLOBAL
+	StateLanguage: INT:=0;
+END_VAR
+In a POU:
+VAR
+	LastLanguageTime: INT;
+	change_Language: BOOL;
+END_VAR
+
+IF StateLanguage<>LastLanguageTime THEN
+	LastLanguageTime:=StateLanguage;
+	change_Language:=TRUE;
+END_IF
+
+IF change_Language=TRUE THEN
+	(*lot of things*)
+	change_Language:=FALSE;
+END_IF
+
+Describe of the problem:
+The 2 local variable are not used in other part of the project (not 2 times the same name).
+I download the program in the board and go in debug mode.
+When StateLanguage is 1, LastLanguageTime become 1 and change_Language is lock at TRUE.
+When StateLanguage is 2, LastLanguageTime become 2 and change_Language become "*** INVALID: 16#02 ***".
+If I forced change_Language to FALSE, LastLanguageTime was locked to 0 and StateLanguage continu to evoluate in function of other part of the program.
+
+Tried things:
+Change names of variables.
+Change position of declaration of these variables.
+
+Precision:
+My code use almost all the memory. What append with CoDeSys if we need more variables than possible in memory?
+CoDeSys 2.3.4.1 and Target Controler Inside
+
+Thanks,
+
+_________________Riwal Le Callonnec
+STIE
+Automation Engineer
+

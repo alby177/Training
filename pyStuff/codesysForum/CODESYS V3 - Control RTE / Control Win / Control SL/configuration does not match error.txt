@@ -1,0 +1,2 @@
+Hi,I am using Hilscher profibus master with codesys rte v3.5.6.2 to link with dupline G38910120 but it show error: configuration does not match.Attachment:Untitled1.jpgAttach is the gsd file of the device. However i tried to link with another dupline model G38910021 which can be link successfully.
+

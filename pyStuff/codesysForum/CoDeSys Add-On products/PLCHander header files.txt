@@ -1,0 +1,4 @@
+Has anybody managed to access the PLCHandler.dll directly? (Not the ActiveX control). To make it more interesting, I'm having to convert the headers to Pascal format.
+
+Unfortunately the examples are very thin on the ground, the documentation largely incomplete (i.e. missing information or with a note "to be filled in later"). This isn't making it exactly easy! Is there updated or up to date information anywhere?
+

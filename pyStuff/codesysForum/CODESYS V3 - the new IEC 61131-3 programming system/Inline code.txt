@@ -1,0 +1,2 @@
+Hi all.Does anybody know if it is possible to pack some instructions like c does with  #define
+

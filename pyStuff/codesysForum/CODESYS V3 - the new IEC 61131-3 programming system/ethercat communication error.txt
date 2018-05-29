@@ -1,0 +1,4 @@
+Can anyone help me with the diagnostics of the ethercat network, because I have some errors on it and I do not know where it is, another problem I get cards in error not all the time and every turn
+
+Hi,strange seems that you are loosing frames... this might be the reason.-check wiring?-remove slaves tills this problems disapear ( you could set parts in the device tree as optional or disable them)BREdwin
+

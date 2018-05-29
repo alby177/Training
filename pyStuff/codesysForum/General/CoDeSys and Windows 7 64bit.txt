@@ -1,0 +1,2 @@
+After installing CoDeSys V2.3.9.37 on a particular PC with Windows 7 - 64 bit an error is encountered after clicking on the menu for configuring communication. The warning says that the MFCO42D.DLL file is not present. This problem instead is not present on another PC with Windows 7 - 64 bit.Does anyone have similar experiences of installing on Windows 7 64 bit.There are some notes and precautions relating to the installation on such systems?
+

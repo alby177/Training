@@ -1,0 +1,16 @@
+Hello,Has anyone had experience with the android sensors add on. I have a raspberry pi with codesys. I can't for the life of me get the android phone to send updated values to the codesys controller. If anyone has a basic example or has done this please show me the way.
+
+Hi,just use the Project from CODESYS store.Install it here:After install you'll find the project here:"c:\Users\<YourWindowsUserName>\CODESYS Examples\SensorAppForAndroid\1.4.0.0\AndroidSensorApp.project" -> then update the Project by rightclick to the project tree to your plc - set current compiler and current visu Profile.one remark you need to remove the library netvarupd 3.5.5.0 from the Project (this seems to be a bug) it pulls automatcally current Version on compile after doing this.BREdwin
+
+One problem I have been having with the example program is that it includes two devices, Datagenerator and receiver. Do I load both devices to the raspberry pi and which one do I run?
+
+Hi,You just need to download the second one... first one is only placeholder for the netvarlist. BREdwin
+
+Thanks for the help so far but I am still unable to get it to work. I am getting a bunch of errors when I try to download to the device. Lets say I wanted to create a new project and just monitor screen rotation. How would I go about setting that up?
+
+Hi,the most important is this list here:This must 100% fit, because These liste is exactly used in the android app to send the values:The upper Application is only a dummy application to have this list accessible as receive list.//This gobal variable list is received via the network.//Sender: NVL [SensorDataGenerator: PLC Logic: DataGenerator]//Protocol: UDPCode:VAR_GLOBAL   wVersion: WORD := 16#00_01;   wCounter: WORD;   dwFeatures: DWORD;   Data: SensorValues;   strCommand: STRING(70);END_VARBREdwin
+
+Do I have to use the devices hotspot to connect the controller, or can they both just be on the same network interface?
+
+Hi,they need to be in the same network (android and plc)BREdwin
+

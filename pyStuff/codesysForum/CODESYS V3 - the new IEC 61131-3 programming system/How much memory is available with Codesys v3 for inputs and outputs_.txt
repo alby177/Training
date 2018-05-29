@@ -1,0 +1,4 @@
+Hello guys,In codesys v2 I can see in the target settings how much memory is used for Code, Global, Memory, Input, Output and Retain.In codesys v3 I cannot find the target settings.In the internet I fould that there are 20 MB for DAata, Input, Ouput, Memory and Code. But I am not sure if this information is valid.http://www.jmobile.net/webpage?ReadForm ... MOI-8MSA73Maybe someone knows for sure.Best RegardsMartin
+
+Hi Martin,Defaults for this are defined by the device manufactuer,usually (this depend on the device manufacturer - if they allow it too) you could increase this settings here:BREdwin
+

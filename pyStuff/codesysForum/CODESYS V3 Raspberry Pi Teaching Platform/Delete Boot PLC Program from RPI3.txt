@@ -1,0 +1,6 @@
+Hello,  how and where do I delete the boot PLC project off a RPI3 (I'm using Codesys 3.5 SP11 patch 2) so the PLC does not run on rebooting the RPI3?
+
+Hi,use the update tool in CODESYS.(bootproject is located in /var/opt/codesys/PlcLogic  since 3.5SP11)BREdwin
+
+Thank you,
+

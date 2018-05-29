@@ -1,0 +1,2 @@
+I have read that there are two ways to get SFC retain:1. Declare all Stepnames used in SFC as RETAIN variable 2. Define your POU istead of a PROGRAM as FUNCTION BLOCK and declare the FUNCTION BLOCK as RETAINI have tested nr. 2 and it works fine, but I can't get nr. 1 to work.Where and how do I declare the stepname?Is it StepName: BOOL; or what? 
+

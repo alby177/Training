@@ -1,0 +1,14 @@
+Here are 2 different ways to access the output variable of a FB. It looks similar but it seems that the 2nd one cause crash.
+I had the problem with REAL variables. It is Ok with the 1st method.
+I am using the Coldfire compiler.
+Is the 2nd way correct? 
+
+Code:MyFunctionBlock(VarInput1:='aa', VarInput2:=22, VarOutput1=>LocalVar1, VarOutput2=>LocalVar2);IF LocalVar1 THEN  x := LocalVar2 * 3;  ...END_IF...Code:MyFunctionBlock(VarInput1:='aa', VarInput2:=22);IF MyFunctionBlock.VarOutput1 THEN  x := MyFunctionBlock.VarOutput2 * 3;  ...END_IF...
+
+Both codes look correct and should be possible. Did you check your project by changing the Target to another type of PLC PLCWinNT for example?
+
+Regards Ralph
+
+This problem has been fixed with CoDeSys 2.3.9.0
+Thanks
+

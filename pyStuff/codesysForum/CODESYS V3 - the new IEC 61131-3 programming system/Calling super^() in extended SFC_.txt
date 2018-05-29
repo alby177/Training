@@ -1,0 +1,16 @@
+HelloI got two function blocks programmed in SFC where one extends the other.How can I call SUPER^(); without placing it in every action-step?
+
+Hello,I have FB_A and FB_B, and FB_B extends FB_A.I call FB_B countinuosly from one task, but inside FB_B I have to write on his body super^() to get the base functionality of FB_A running.Then When I call the FB_B methods from some point of the program, all the code is able to work.Question is, maybe there is another way to achieve this without access the super pointer.Someone know another way ? Thanks.
+
+Quote:I have to write on his body super^() to get the base functionality of FB_A running.Put the desired functionality into a FB_A method, which is inherited by FB_B.  Then simply  call the method, from FB_B. No need for ^super.
+
+Yes, but what if the funtionality needs more than one scan cycle ? most of the time you need call another FBs and need several cycles.My point is, seems that, on the contrary of OOP standar languages, in Codesys you have to call explicitly super function to execute the base code.
+
+Hi. Somlioy.Create in extended fb an action where you will implements the sfc. From the main program you can call the action with the grafcet, super, and any other action you want run parallel to sfc.Be healty!
+
+I'm not quite sure I understand what you mean.To clarify I have two fbs; FB_A and FB_B, both programmed with SFC where FB_B extends FB_A,and I need to have FB_A running cyclically. Do you mean I should create an action in FB_A with SUPER^() as content, and run that action in main program?
+
+Hi.Not. Fb extends from Fa. And Fb will be programed in st.Create in Fb an action to be programed in sfc mode.From the main of fb call super^() and call his sfcAction...
+
+Oh I see. Thought it didnt work with SFC in actions but turned out that's only the case if the fb is programmed in sfc.
+

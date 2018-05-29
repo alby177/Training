@@ -1,0 +1,7 @@
+Hi to everyone,I´m new here so if I make a mistake please forgive me  . I begin to learn programing on Codesys V2.3, AC500. I haven´t had any expiriance before with ABB PLCs, only with Simatic S7, and I work in ladder language. Can anyone tell me, where I can find some tutorials for programing, but in ladder language, and some video tutorials? Because everything that I got is for ST Language, or some basic video tutorials.I want to learn more, for example, how to make HW configuration, how can I use memory variables, does it has DB variables (where I can save some values etc).Thanks in advanced
+
+Why not try asking one question at a time. Let me know what you are trying to do and I can help. If you have control over what style of language to use I would highly suggest ST. You can contact me offline if you like.
+
+_________________Thanks,
+Steve Pfeifenroth
+

@@ -1,0 +1,8 @@
+Hello guys, I'm new to codesys platform. I cannot use add block in LD, CFC and in ST. Output is enabled as you see in the pic, but the output coil is not energized and output value is not reflected. Please guide me. Thanks, Arrvvii
+
+Hello Arrvvii,most probably something in your code overwrites xEnHum to TRUE and then back to FALSE. The value of variables is obtained for monitoring and evaluation at different times. The ADD box is not executed, since at the moment of evaluation the xEnHum was FALSE. The output line just repeats the last known value of xEnHum. Make sure the HUM_PRG is called in every cycle (e.g. by setting a breakpoint during run).Try to deactivate other PRGs/Visualizations by excluding from build one after another to determine which one can produce that sideeffect.RegardsRoman
+
+HiAs Roman says it is possible that xEnHum be overwritted, but rOut could be overwited too.To test that insert an breakpoint on add block and see whats happens.
+
+Hi evbatyrov and Josep,I've not used any variables used in HUM_PRG anywhere else in the project. And I've tried this in a new project, with ADD block. Still I got the output. Then Checked task configuration. The type was chosen as 'External' automatically. I changed it to cyclic and interval as t#100ms. Checked the output. It worked fine.Check the Screenshot. Thank you very much. Thanks & Regards,Arrvvii
+

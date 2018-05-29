@@ -1,0 +1,2 @@
+I'm looking to make a bridge controller between a legacy system consisting of GE DMC controller's and Siltron drives.  I would like to connect a bridge controller via CBUS to DMCs.  So I am looking for hardware compatible with C-BUS and it would be fantastic ifcodesys ran on such hardware.  Any ideas or suggestions are welcome.
+

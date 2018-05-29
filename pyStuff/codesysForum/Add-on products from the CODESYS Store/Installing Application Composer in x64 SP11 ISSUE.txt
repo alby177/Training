@@ -1,0 +1,6 @@
+Dear Support,I have tried to install the application composer add-on, however, the installer refuses to install it into the new x64 platform. The package says it cannot run in an x64 environment.Some other packages seem to have these issues too, not all. Have you got some workaround for this?Hoping to hear from you soon!
+
+Hi,this is not needed to install Composer is embedded in CODESYS without install anything.You could jus try by installing 'Application Composer Examples' - (sure if you have no license you Need either demo liecense on securit key pr full license) for using/validating this examplesThe non 64Bit packages (only a few) will come a.s.a.p for the 64Bit CODESYS Version. (SVN and TestManager will come this month)BREdwin
+
+Thanks for the anwser.
+

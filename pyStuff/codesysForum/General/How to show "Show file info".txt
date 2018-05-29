@@ -1,0 +1,6 @@
+Hi all, How to show "Show file information" in the online menu? I use the 2.3.9.26 version... I don't know when is visible or not.. In the 2.3.9.49 version of COdesys I can see or not this menu item in the online menu..  Is target depedent??Thanks a lot. 
+
+yes it is target dependent as some controllers dont have a file system.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,2 @@
+Hi,for an application, I need to access the directory of the Neuron to write down remotely a file in a folder.I found this:https://www.raspberrypi.org/documentati ... sh/sftp.mdWith Filezilla it works but I get always access denied when I tried to modify a file (copy it into a directory, delete it, rename it). I can only copy it from Neuron to my local PC and no more.Could someone help me?Thanks
+

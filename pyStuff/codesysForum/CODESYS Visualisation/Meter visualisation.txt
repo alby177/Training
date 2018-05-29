@@ -1,0 +1,4 @@
+Can somebody help with this please?I am using Codesys V3.5.7 (EATON version) with web visualisation.I have a rounded rectangle with gradient fill as a background.On creating any meter from the measurement controls section as the foreground, the meter is placed at the back and only the pointer is visible in the foreground.Is this a bug and is there any other way of doing this?Many thanks.
+
+Hi There,I have faced this issue, but i usually ungroup them first.i click on meter... go to properties of the element ----> background image; which shows <default>..... i clear this section and no image for this meter. I add other circluar image.then right click on the circular bmp and click on order ---> send to back.then right click on meter and click on order -----> send to front.then adjust the meter and circular image in such a way that their centre match...
+

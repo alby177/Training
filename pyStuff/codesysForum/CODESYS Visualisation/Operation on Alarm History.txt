@@ -1,0 +1,2 @@
+I have a ControlWin 32bit (Codesys 3.5 SP12) with TargetVisu. I'd like to select a range of alarms from SQLite Codesys database. Is it possible?It will be very usefull if it is possible to send any kind of query to the alarm table of SQLite database.
+

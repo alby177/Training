@@ -1,0 +1,8 @@
+Hello,Could somebody explain me how to get access to codesys ftp?I want to see example project, e.g.:ftp://ftp2.3s-software.com/pub/Examples ... swordVisu/but I don't have username and password.How can I get it?
+
+write email to codesysoffice
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi,we do not maintain these example projects section on the ftp server.All project examples are available in the CODESYS store.(sure only CODESYS V3 based)BREdwin
+

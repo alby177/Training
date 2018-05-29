@@ -1,0 +1,2 @@
+Hello,I'm looking for a way to update my persistent variables without having to close the codeys kernel of raspberry pi.By a touch on the webvisu for example.is there a way?thank you in advance
+

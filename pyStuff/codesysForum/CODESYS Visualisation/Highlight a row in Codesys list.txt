@@ -1,0 +1,2 @@
+Hello,  I'm using Codesys 3.5SP8. Is it possible to highlight a row in a list by code?Thanks
+

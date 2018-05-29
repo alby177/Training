@@ -1,0 +1,6 @@
+Hi all,i was wondering why some of my PGR, POU, FB and Function appears in blue in my project. I was able to find the meaning for those colors :- Gray : Object is unused (Is also affected by Active Application)- Green / Turquoise : Object is marked as excluded from build (From object Properties -> Build -> Exclude from build)For those colors, I was able to find the information from this threadviewtopic.php?f=1&t=5133&hilit=unused+functionBut i can't find any infos why some objects are marked blueAny ideas ?Regards,Dave
+
+When you make any changes and rebuild your application, the changed POU's are blue.These will be updated with the next online change.
+
+Thank you TimvH,your reply is greatly appreciatedi thought there was something wrong with my code   Regards,Dave
+

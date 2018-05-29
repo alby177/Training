@@ -1,0 +1,29 @@
+Hello:
+
+i have a program and i want to trial-on it in simulation mode, but it displayed "runtime error: wrong array index! please open callstack"
+
+Hello,
+
+Have you tried to check the value of the index that you use to browse your ARRAY ?
+
+For exemple :
+VAR
+  TAB1 ARRAY[1..10] OF INT;
+  Index:INT;
+  VAR1:INT;
+END_VAR
+
+Program
+ Index:=12;
+  VAR1:=TAB1[Index]; <= error because the index is bigger than 10
+
+
+If it is this problem, To avoid this error you can use a function called "CheckBounds" in the library Check.lib. 
+Just add this library in the library manager and the value of index will be limited from 1 to 10.
+Best regards 
+
+I have the same issue. Are you trying to run older projects from a newer build of CoDeSys? The reason I ask is I have template files that I know work with the CoDeSys version 2.3.9.4 the PLC MFG  gave me. With out adding any code I try to run it in simulation mode and get the same error you are describing above but I am using 2.3.9.13. I have changed the compiler build in the project options but that didn't seem to work. I feel it's a CoDeSys library/application versioning thing. Let me know if you find a solution. I am going to post about not being able to install multiple versions of CoDeSys.
+
+_________________Thanks,
+Steve Pfeifenroth
+

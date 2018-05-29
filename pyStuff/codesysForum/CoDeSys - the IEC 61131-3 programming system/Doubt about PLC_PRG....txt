@@ -1,0 +1,33 @@
+I have a doubt about PLC_PRG in the codesys sofware, why do need 2 PLC_PRG? what is the main function for the second PLC_PRG?
+
+I don't think you "need" 2.  It looks like you accidentally added another object and the default name is PLC_PRG but since, by default, there is one already there, you got a number appended to yours.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+my question is when do we need two PLC_Prg?
+
+OK,
+
+If you would like to break up your project into logical elements then it would make sense to have more than one POU.
+
+Also, different programming languages are more suited to certain tasks than others.
+
+If you are controlling a lot of outputs with logic statements, then Ladder Diagram or Instruction List  might make the most sense.
+
+If, on the same machine you need to do some math calculations then Structured Text should be considered.
+
+_________________nOrM=====nOrM = Norman Dziedzic Jr.
+
+Just to be clear do you understand the need of PLC_PRG? This is the main entry point of any CoDeSys application. It is synonymous to Main() in a C application. Without an entry point the CoDeSys application will generate a error. When would you ever need a PLC_PRG2? Well the point of a program is that it is a self contained object that has only one instance of that program in memory. Please ask more questions if still not clear or refer to "IEC61131-3: Programming Idustrial Automation Systems" book.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+Hi speif,
+
+By default, yes, PLC_PRG is the entry point.  If your processor/installation of CoDeSys supports tasks then any POU can be made to run cyclicly so you don't necessarily need a PLC_PRG but it would be very confusing to have a main program with a different name as CoDeSys users are all used to the PLC_PRG convention.
+
+_________________nOrM=====nOrM = Norman Dziedzic Jr.
+

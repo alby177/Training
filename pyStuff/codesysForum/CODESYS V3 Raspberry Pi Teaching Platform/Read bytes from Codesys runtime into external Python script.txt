@@ -1,0 +1,8 @@
+Hello there!I'd like to have a function in a python script, maybe looking like this:Code: data = readBytesFromCodesys(someDataSourceIdentification) with which i could read bytes from the Codesys runtime, for example, from a Profinet slave that runs in the currently running codesys Project.The best solution i came up with would involve writing and reading a shared file, and maybe synchronizing the data transfer between codesys and python via 4 GPIOs.is there another way to do this? Greetings
+
+I have found a solution: Shared Memory. There is a free package to download from the codesys store, and for linux + python, google "posix_ipc" for a lib that implements shared memory in Python. There is example code on the download site. Also note, for ARM and Intel CPUs, you can use the shared memory without any mutexes. If you share the memory between only two processes (Here: codesys and my python script), and one only reads and the other only writes, they can do that asynchronously and simultaneously. For communicating into the other direction, just add another shared memory.Another possibility is modbus, but i didn't delve too deep into that subject.
+
+Hi,Could you share your example? I would like to do something similar but with C++It will be highly appreciated.Thanks
+
+Hi,a really nice option is for sure to use OPCUA Client on python side:viewtopic.php?f=23&t=6247&p=19932#p19932BREdwin
+

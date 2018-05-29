@@ -1,0 +1,11 @@
+1.  I have a question about the functions sysrestoreretains and syssaveretains.  I am using these functions to save the retain data and to restore the retain using a usb port on my PLC.  These functions work on my PLC.  HOWEVER, they do NOT work if the file doesn't already exist at the target location.  This is only a small nuisance.  Does anyone who has used these functions know if this limitation is due to my PLC or CoDeSys 2.3?   2. Related question - Once I save my retain data to my USB, I am not able to do any more reads or writes to the USB unless I remove the USB thumbdrive and re-insert the drive.  Any ideas why this might be? Thank you!
+
+What PLC?
+
+_________________Thanks,
+Steve Pfeifenroth
+
+Festo CECX-X-M1Thanks.
+
+It turns out that the firmware in the PLC was very old.  When this PLC is returned to me, I will try updating the firmware and trying it again.  Thank you for your input!
+

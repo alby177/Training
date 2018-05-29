@@ -1,0 +1,2 @@
+Hello everyone!Did somebody already used DeviceTrace object, that one can add to a device, under CODESYS V3.5 SP3 Patch 3. If so, how?   Thank you in advance for your answers.  Best regards  
+

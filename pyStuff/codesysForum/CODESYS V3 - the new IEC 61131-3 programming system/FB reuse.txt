@@ -1,0 +1,8 @@
+If I have made some FBs in a project and would like to use them in other projects as well - how do I save/export only the FBs? In version 2.3 it was possible to save as ..., but in version 3 its only possible to save project files.
+
+menu Project => Export. Then select the FB's you would like to export. In the other project you can import these again.Better might be to develop a library for your FB's. This is much easier for reuse, but also for managing them.See the help for creating libraries.
+
+I think you need to stand at the top of the project tree otherwise the import will not be placed right in the project.
+
+TimvH wrote:menu Project => Export. Then select the FB's you would like to export. In the other project you can import these again.Better might be to develop a library for your FB's. This is much easier for reuse, but also for managing them.See the help for creating libraries.Thanks. I just select the FBs in the project for export.
+

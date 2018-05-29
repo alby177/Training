@@ -1,0 +1,6 @@
+Dear Sir:May i know below my thank point ,1.) Does the softmotion based on the EtherCAT  protocol can support how many EtherCAT slave motor axes andHow many Ethercat node io device?2.) Does the can use dual protocol EtherCAT + EtherNet IP in control RTE or softmotion?3.) Does the Control RTE support and  free charge easy  lightweight version motion control function for EtherCAT "position" motion control?br,Peter
+
+Quote:Hi Peter,1.) Does the softmotion based on the EtherCAT protocol can support how many EtherCAT slave motor axes andHow many Ethercat node io device?Usually the Limitation is the performance of your pc which is running the RTE,there are applications which runs more than 200 axis at one master and additional Ethercat IO'sQuote:2.) Does the can use dual protocol EtherCAT + EtherNet IP in control RTE or softmotion?Yes you Need to use an own Interface for each fieldbusQuote:3.) Does the Control RTE support and free charge easy lightweight version motion control function for EtherCAT "position" motion control?free of charge is possible, but then you need to implement it in the application (DS402 statemachine etc - OP mode Switch start of the movement)Much more comftable is SoftMotion Light then you have the posibilty to use PLCopen Fb'sBREdwin
+
+Hi Edwin,Can i know how to determine limitation performance of a pc ?
+

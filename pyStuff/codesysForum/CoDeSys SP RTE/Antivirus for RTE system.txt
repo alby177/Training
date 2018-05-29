@@ -1,0 +1,12 @@
+Is any antivirus suggested or already tested for RTE system running on Windows OS's?
+
+There is no special requirement, you could use what ever you want,The antivirus program does not touch the realtime capabilities!
+
+Thanks!
+
+When RTE is running an antivirus program will not check anything, but as soon as RTE is stopped it will check your computer.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+shooter wrote:When RTE is running an antivirus program will not check anything, but as soon as RTE is stopped it will check your computer.no, even if RTE is running the antivir checks the computer!
+

@@ -1,0 +1,2 @@
+Hello.The help file for CoDeSys V2.3 mentions the SysLibSymbols.lib under the index entry, "symbol address."  Is this library freely available, and, if so, where can I get it?  It does not appear to have been included with the standard download.  Also, is this library supported by either the SP PLCWinNT V2.4 or the SP RTE?If the SysLibSymbols.lib is not available, is there a programming alternative that I might use to obtain memory addresses of symbols in my project?Thanks,The Captive Engineer
+

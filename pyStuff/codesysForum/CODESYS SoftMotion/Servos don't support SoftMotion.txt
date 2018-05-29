@@ -1,0 +1,6 @@
+Hi, in 3S website, there's a saying:The standard 3S-Smart Software Solutions interfaces currently support the following drives:CAN/CANopen:Infranor cd1-k, XtrapulsPacJAT Ecovario, Ecostep, EcoDualKEB F5Metronix ARS 2000-SerieNanotec SMCI47SSchneider Electric Lexium05, Lexium32, SD-3EtherCAT:Beckhoff EL2521, EL5101, AX2000, AX51**Control Techniques Digitax, Mentor, UnidriveCopley AccelnetDanaher Servostar 300, 400, 600, 700Infranor XtrapulsPacKEB F5, H6Metronix ARS 2000-SerieParker compax3Stöber PosidriveThen if I have to use a servo not included, and I would like to use SoftMotion with it, If that possible？ if possible, what should I do to achieve that? thanks!
+
+Hi,check if the servo supports the following operating modes which are defined in the CANopen drive profile DS402:either7 Interpolated position mode or8 Cyclic sync position modeshould be supported by your new servo drive,if yes contact 3S for a driver interface offer.cuEdwin
+
+Hi,Ask the manufacturer for a matching PLCopen library. I'm sure, every supplier has.Regards,Rolf
+

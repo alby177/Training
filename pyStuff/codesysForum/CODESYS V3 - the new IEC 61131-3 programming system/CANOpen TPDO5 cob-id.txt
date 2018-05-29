@@ -1,0 +1,6 @@
+I use the CAN_Local_Device (CANOpen slave).PDO1 to 4 use the "pre-defined connection set".When adding the 5th PDO, I noticed that the cob-id equals 0x681. WITHOUT the $NODEID part as with PDO1-4.Other CANOpen devices use "$NODEID+0x180 + 0x40" often.Is it possible to make the "Generic cob-id" depend on the $NODEID. (So the "Settings cob-id" is has a good value, when multiple devices are used. And not both 0x681.)A second remark:The "Generic cob-id" is fixed and cannot be changed! (The "Settings cob-id" can be changed of course. But that is extra work.)It would be really nice if the  "Generic cob-id" is user changeable. So an own "cob-id algorithm" can be used.Regards,Ed.
+
+This is CANOpen related. You cannot freely use COB IDs for PDO's.CANOpen defines only 4 PDO's for sending and 4 PDO's for receiving (each node).Cob id 681 is not pre-defined and therefore you might be able to use it, but I doubt your CAN node accepts this.
+
+The Cob id 681 is CoDeSys' standard value for PDO5.(0x681 is the free range after the SDO area.)
+

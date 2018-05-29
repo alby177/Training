@@ -1,0 +1,2 @@
+Hi. I'm looking for examples of work with PLC timezones (CODEYS Help can't help me).I want to change timezone of CODESYS Control Win V3 and read new value from application.
+

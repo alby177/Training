@@ -1,0 +1,2 @@
+Is there a summary of CoDeSys 3.x compliance to IEC 61131-3? That is, a list of implementation-specific features and standard unsupported features. The more comprehensive, the better.
+

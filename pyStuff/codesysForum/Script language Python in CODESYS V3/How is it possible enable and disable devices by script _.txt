@@ -1,0 +1,14 @@
+Hello everybodyI need into a project to disable few device and enable some other using a Python script, but I’m a beginner with this language and I can’t find a solution.Someone could help me?Thank you
+
+Hi Luke.Here my sample code:Code:proj = projects.primaryobjs = proj.find('Device_1', recursive = True)assert(len(objs) == 1, 'no or more than one object found')assert(objs[0].is_device, 'object is not a device')device = objs[0]if device.is_enabled():   print('disable device...')   device.disable()else:   print('enable device...')   device.enable()BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Thank You so much MartinYour code works fineExcuse a last question, something stupid,  where can I find the syntax code integrated in Python to handle CoDeSys ? example 'is_device'BRLuke
+
+Hi Luke.The documentation is in the file "ScriptEngine.chm" in the sub directory "Online Help" of CODESYS. It's not linked to the online help which you can reach directly from CODESYS.The scripting interface is in the book "_3S.CoDeSys.ScriptEngine.BasicFunctionality Namespace".BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Thank You another time Martin 
+

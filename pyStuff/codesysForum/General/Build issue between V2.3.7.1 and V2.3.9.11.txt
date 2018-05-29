@@ -1,0 +1,11 @@
+I had a project that was currently built using V2.3.9.6 and has been used with V2.3.7.1 before in the past with no issues. I recently upgraded to V2.3.9.11. There was a bug with the project so I fixed it (changed a TRUE to FALSE), recompiled and then sent the project and all libraries to a colleague who had V2.3.7.1. The project will not compile on the V2.3.7.1 box, I get the following error.
+
+"Error 4011: CanOpenNode(4): Type mismatch in parameter 0 of 'SHR'. Can not convert 'Time' to 'Time'.
+
+So I changed my development compiler from 2.3.9.11 to use V2.3.7.1 (Project-Options-Build-Compiler Version) as well and I get the same error? Does this mean that the libraries / compilers are not compatible between V2.3.7.1 and V2.3.9.11?
+
+Please advise because I don't want to open other projects and not have them compatible with older CoDeSys versions.
+
+_________________Thanks,
+Steve Pfeifenroth
+

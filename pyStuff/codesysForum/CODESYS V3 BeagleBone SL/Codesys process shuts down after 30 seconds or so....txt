@@ -1,0 +1,4 @@
+Hi.I just installed Codesys on a brand new BBB Wireless with Debian 8 "IoT" image.I updated kernel with real-time one (v. 4.8.15-bone-rt-r2) and changed governor mode to "performance".Sadly, after updating my BBB board I am able to connect to it (through my local gateway) for 30 seconds or so. After that, I lose connection and I have to re-update package in order to be able to connect to it once more.Is there any log I can take a look at?Thanks!
+
+...looking at /tmp/codesyscontrol.log I spotted that check for proper device type complains with:ooops... this runtime was built for beaglebone black (-16, 0x00000BB8, 0xFFFFFFFB)Is there anything I can do to use BBB Wireless?
+

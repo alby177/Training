@@ -1,0 +1,14 @@
+Hi all,
+
+I need to configure the PDO mapping Dynamically is that passible in Codesys..
+
+I had created the EDS file for my project and i tried to import the EDS filewhich i was not able to do that...
+
+My aim is to do Dynamic PDO mapping.....
+
+Can any one explain the arguments passed to the function which are defined in the 3sCANopenManager.Lib  i need more information about the "CanOpenPDO_Rx"   "CanOpenPDO_Tx"  Function Blocks....
+
+I wrote to 3s support also but there is no use at all writting to support...
+
+have you how to use this FB ?would you please give me some guidance?
+

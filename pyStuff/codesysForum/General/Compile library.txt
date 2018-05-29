@@ -1,0 +1,4 @@
+Hi,What is the proper way to create a "compiled library". I need to create a library file which can be used by others, but I do not want to expose the source code!I tried password protection, but i needed to enter password to open the using project, so really what was the point.Any thoughts?
+
+Hi,this only possible with CODESYS V3... you could decide with V3 either use .library then you could debug itor use compiled-library with this source code is not visible.In CODESYS V2.3 this is not possible.BREdwin
+

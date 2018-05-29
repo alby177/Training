@@ -1,0 +1,17 @@
+People help, I have BECK 61 and CoDeSys v2.3 all fine works but, how to see the program working on the controller, I can not understand, or it is absolutely not possible.
+
+I shall alter a question how to download the program from the controller.
+
+Hi,
+
+at first step you have to choose the right target: Open the "Target Settings" in the register card "Resources" in the object organizer (left part of the CoDeSys window). There you should find a target for the DK61 board or the Beck IPC@Chip. In case you have none please use the files in the attached ZIP (it includes the target file, the adequate runtime system and an easy CoDeSys project for that runtime system - please note that you have to copy the runtime system to the controller by the means of the FTP client provided in the @CHIP tool).
+
+The second step is to choose the right communication parameters in the dialog under "Online". You can use e.g. the local Gateway server (press "Gateway" and select the connection "local" or "TCP/IP" with "localhost" in the address field). After confirming you can add a new communication channel by pressing "New", select "TCP/IP" as the device and name the channel with any name you like. After confirming your new channel is listed and highlighted. Now you can change the value of the Address to the IP address of the DK61 board. In order to find out which address it has please use the @CHIP tool from Beck.
+
+If everything is installed as mentioned above you can login with the command "Login" in the "Online" menu of CoDeSys. CoDeSys now compiles the project and tries to login the controller. After a succesful login you will be asked whether you want to download the application. You can confirm and after the download excute the project with "Online"/"Start".
+
+_________________Roland WagnerModerator
+
+Hi,
+Thanks for files, but it at me all is, with a computer connection on 232, I can create the program and load her into the controller, all this works. Me another interests, for example on the controller the program created not me as her to see in CoDeSys is carried out.
+

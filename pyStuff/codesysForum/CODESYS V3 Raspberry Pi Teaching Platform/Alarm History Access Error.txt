@@ -1,0 +1,14 @@
+When access for the first time the alarm history i get the following error.Attachment:AlarmHistoryError.pngAfter restarting of visualization all works fine.Any suggestion?Regards
+
+Hi,if you rightclick on this exception line in the logger you could go to the source line in the codewhere the problem happens.Cold you please try to do this and give us this Information if this happens in the application or library?BREdwin
+
+HiOnly this Exception have right click function and give this MSG.Attachment:AlarmHistoryErr.pngRegards
+
+Hi,not really sure, there is an entry in the tracking database which describe this.It happens if you had already downloaded a alarm table (project which uses alarming) and now you download a new appliaction with new  and different alarm configuratin.So for me it sounds like the workaround would be:Delete the alarmtable by a reset origin or by using the CODESYS file bowser then this should not happen.Could you verify this workaround?BREdwin
+
+NOPAfter many tries with clear download and with deleting the old alarm files i take the same error.Attachment:AlarmHistoryErr.pngWhere can i find this command because i can't find it?Regards
+
+Hi,you need to set by rightclick to your application -properties-build- compiler define;Code:VISU_NO_EXCEPTION_HANDLINGMaybe you need to send the projectarchive for further investigations.BREdwin
+
+I think the problem exists when the speed of file opening is slow.Because i see the problem exists most of times when we have some alarms in history not in an empty alarm history.If i use the same project with Control Win runtime all works OK without problem.Regards
+

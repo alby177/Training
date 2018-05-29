@@ -1,0 +1,6 @@
+HiI use the "ROL" function but gets a warning (1510) that I should use "Typed Literal". How do I do that on a variable that its not a constant?Example code:Code:VAR   STATUS:WORD:=16#0;END_VARSTATUS:=ROL(8,STATUS);RegardsJohan
+
+Code:Status:= ROL(Status,8) --> means Status is rotated by 8Code:Status:= ROL(WORD#8,Status) --> means 8 is rotated by StatusbrRalph
+
+My mistake, sorry. 
+

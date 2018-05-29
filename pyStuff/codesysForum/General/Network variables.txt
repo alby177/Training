@@ -1,0 +1,24 @@
+I don't think I have a full understanding of global network variables, how the variables are passed on the CAN bus and how they are created? Can some one explain or point me to information on Network variables?
+
+Thank you
+
+_________________Thanks,
+Steve Pfeifenroth
+
+The basic idea of network variables is simple:
+A number of PLC share some data. The user can define, on which events (periodically, on change) the variables are updated, which PLC is allowed to write, which one to read.
+
+In CoDeSys, you have to declare a new global variable list and press the add network button (only available if the target allows network variables, which many targets do, and if in the target settings, support network variables is checked.
+
+Then you link the variables to a file which you share for all PLCs which should use these variables. The protocols supported so far are UDP nd CANOpen (CAN).
+
+From the user point of view, this is all you have to know and its documented in the online help (key: network variables). 
+
+A technical description on how and when we exchange the data, and how it works you can find you can find in the attached document.
+
+Hello,
+here again the documentation
+
+_________________Good Better CoDeSys
+Boris Schuster
+

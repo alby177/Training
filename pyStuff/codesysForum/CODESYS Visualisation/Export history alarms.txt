@@ -1,0 +1,16 @@
+Hello,  is it possible to export the history alarms (stored in sqlite) to a csv file?
+
+Log into the application > Right click on AlarmStorage > CSV export of Alarm Storage
+
+Thank you very much for answer.This option is available for each device? I have a Wachendorff HMI but I have not the same menu.Is it possible to execute the export procedure also by software. I'd like to export alarm history to a usb drive.Best regards
+
+I'd like to know as well if it is possible to execute the export procedure by software to usb. Any ideas?ThanksBR,SK
+
+I also suggest this function for Trend.And I think there is should be option "Record format": .sqlite or .csv with selected path (for example, I need to write it to USB flash).
+
+I used Eaton PLC and this way didn't work with this brandSo I wrote a small programm which catches alarms and store them automatically in a csv file on the memory card of the plc
+
+freedumz wrote:I used Eaton PLC and this way didn't work with this brandSo I wrote a small programm which catches alarms and store them automatically in a csv file on the memory card of the plcCould you upload that program so we can see the approach that you've used? Thank you very much in advance.
+
+If someone could post a program to catch alarms for logging (probably as an array of strings) that would be greatly appreciated.Thank you.
+

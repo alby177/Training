@@ -1,0 +1,4 @@
+Hello.My hardware running Codesys is of an older version than the latest Codesys IDE. But I still want to use the latest IDE.As I see it there shouldn't be a problem as long as I don't choose to use the latest compiler etc(The window is shown when I extract an archive done in earlier version). Am I correct?
+
+Quote:Ok tested and it failed..Exception couldnt create iec task.So I guess I have to have every version of codesys that the different hardware manufacturer have their codesys runtime....?? Not fun or good.Was to quick to judge.. Had an earlier error.. The project was compiled with version 3.5.10, runtime is 3.5.8.10.. This worked in Codesys 3.5.10 but not in 3.5.12..Changed the compile version to the right one and now its working.
+

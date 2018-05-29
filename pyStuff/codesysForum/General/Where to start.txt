@@ -1,0 +1,22 @@
+I have zero experience with programming and CoDeSys.  I'm currentlly on a project that will be using a CoDeSys controller and the J1939 protocol.
+Luckily there will be an engineer starting the project and then handing off to me.
+I hope someone can point me in the right direction to get started.  
+
+Hello,
+In the manual (pdf) of CoDeSys V3 you have a chapter called "Fisrt Start" and in version 2 manual a chapter called "write a small program".
+
+Please read these books if you have time ! 
+
+Best regards
+
+I have a lot of experience with both. Is that MT Rainier?  If you are using CoDeSys and J1939 then I am going to guess you are in mobile hydraulics and possibly using STW,IFM,EATON,DIGSYS,CCSystems. I have found that reading CoDeSys manuals/help is too disjointed. There are little snippets of information scattered all over the place. Also a lot of uncirculated stuff we never get to see. It can be down right confusing.
+
+Start with a good foundation read "IEC61131: Programming Industrial Automation Systems" by John and Tiegelkamp. Currently I consider it the bible. It's the K&R (Kernighan and Ritchie C) of IEC61131 programming.
+
+After/or during then you can get to understand the CoDeSys software and how it is structured. But 85% of your development will involve IEC61131. CoDeSys is only an interface to develop it. Like you really don't need to know too much about Visual Studio but you really need to know a lot about C#,VB.net and the .net Framework.  
+
+So feel free to ask questions. If they don't pertain to CoDeSys and you don't think it is applicable to the forum contact me directly.
+
+_________________Thanks,
+Steve Pfeifenroth
+

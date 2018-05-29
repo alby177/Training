@@ -1,0 +1,6 @@
+Hello,I would like to set by Python script the PLC setting "Always update variables" to "Enabled 2 (always in bus cycle task)". Is there a way?In the attachment a screenshot of the UI equivalent.Thanks in advance.Best Regards,Daniele
+
+Hi Daniele.danielesdei wrote:I would like to set by Python script the PLC setting "Always update variables" to "Enabled 2 (always in bus cycle task)". Is there a way?I added some example code which changes the setting but it does not work at the moment because of a bug. When CDS-53974 is fixed the example will work but it is not on the roadmap at the moment.Code:proj = projects.primaryfound = proj.find('Device', True)if not found:   raise Exception('No device found')dev = found[0]driverinfo = dev.driver_infoif not driverinfo:   raise Exception('No driver info present')driverinfo.always_update_variables = AlwaysUpdateVariablesMode.AlwaysInBusCycleBRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

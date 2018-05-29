@@ -1,0 +1,6 @@
+Hi,I made a backup license file and I like to restore it to the new SD-card on the same Raspberry.I can backup license file to the Restore directory:I made RPi reboot after this.But after this I still see no active license:Please advise if I doing something wrong.Best regards,Zdenko.
+
+Hi Zdenko,please send the files to support@codesys.comThen we could check.BREdwin
+
+Hi all,in this case it was needed to clean up the whole cmact_licenses directory (delete this by file Browser in CODESYS)after that copy the backup license to the restore directory - reboot - then the restore process had been successful.Just in case other users having similar problems on the restore of the license process.BR
+

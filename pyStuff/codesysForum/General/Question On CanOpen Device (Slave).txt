@@ -1,0 +1,25 @@
+Now I have configured a PLC for CanOpen Slave in PLC configuration. How can I change the node number of the Slave in the CanOpem Master by using SDO service etc?
+
+ Many Thanks,
+
+That is a good question and I am not sure where the responsibility of handling that task lies. In 3S or the PLC manufacturer that implemented the CANOpen Slave.
+
+It is my understanding that according to CANOpen DS301 there is no mandatory OD entry for the Device ID. If this is true it may be part of the manufacturer specific area of the Device Profile, and thus 3S would not implement it.
+
+You should have a SDO RX/TX FB. Set Up the changing of the ID yourself. Because device ID's do not take effect until you cycle power it makes sense that 3S would not implement this functionality but leave the shutdown/restart to the end user.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+From my reading of the original post it sounds like the PLC is the slave and andy2008 wants to be able to change the node ID of the PLC from some other, master device.
+
+Normally, slaves are set up offline with DIP switches for NodeID or their own configuration software.
+
+I have tried to use a device that supports something called LMT (Layer Management Services) that is supposed to let you send messages to it to change the node ID.  I have never gotten this to work.  I believe it would require your master to send and interpret raw can messages and to only be connected to the single device you are trying to configure.
+
+This doesn't appear to be part of DS301 so it is probably mfg. specific as steve suggests.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+

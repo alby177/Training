@@ -1,0 +1,18 @@
+Hello
+
+I have opcserver (opcserver connects to easy moeller) on computer in my lan network.
+
+I want to connect codesys to opcserver. In my opinion I need opc client.
+This opc cilent will connect to opcserver and "show" datas to codesys.
+
+please indicate me opcclient or explain me how connect codesys to opcserver via lan.
+
+Best Regards
+Łukasz
+
+If I understand it correctly you want to use CoDeSys and be able to access the Moeller PLC through a LAN. In that case you don't need the OPC client/server connection.
+You need to install the CoDeSys Gateway on the other PC.
+On your development PC, open CoDeSys and go to the Communication Parameters. Click on Gateway and set the TCP/IP address of the other PC which is connected to the Moeller PLC. Now try to go online.
+
+Please check your firewall. This could block your communication.
+

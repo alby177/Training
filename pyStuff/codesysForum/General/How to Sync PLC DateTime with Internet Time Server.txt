@@ -1,0 +1,6 @@
+Hi,I am wondering if somebody will help me to synchronise PLC time with the Internet time server. I know how to do this on HMI+PLC but in this case its only PLC.The model is Eaton XC-CPU201-EC256k and I am using CoDeSys 2.3.5Thanks
+
+Look at OsCat Library and the FB called SNTP_CLIENThttp://www.oscat.de/BR
+
+_________________The Original SoMachine Ninja
+

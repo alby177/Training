@@ -1,0 +1,51 @@
+Hello..!!
+
+I have used a platform built on CoDeSys for several years and now I'm about to use a IPC with standard CoDeSys.
+
+Anyway I think that I was a little spoilt with the already done FB´s on the other platform and are now missing some of them.  
+
+So my first question on this forum is if there are som .lib´s to download anywere??  
+
+Some of the blocks I´m missing at the moment:
+PWM, PID and different kinds of integraters for positioning.
+
+I know I could build them myself but it realy could save alot of time if there was some "opened" .lib´s 
+
+Regards
+
+/DaLorD
+
+Hi,
+
+the FunctionBlock you mentioned are dependet of functions of your PLC, so it's quite normal that they are missing if they are not suported.
+
+Regards Ralph
+
+Hi.
+
+Of course...  that’s why I turn to this forum.
+The functionblocks I'm looking for must be pretty much standard for Industrial PC's and PLC's..  
+
+These kinds of applications can I see everywhere in the industries I visit on my daily basis...   So someone... somewhere..  must have done these FB's..   But on the other hand they just might want to keep them for them self because they put some effort in doing them.
+
+Probably I have to do them myself.... but thanks anyway..
+
+Hi,
+I've been working on the PWM function block the yesterday. I don't have it in a library so I can't send it to you but I can tell you how I did it. 
+Using FBL, feed an inverted signal through a TON function block from Q back to IN. this will provide a constant pulse with time between pulses of whatever you feed into PT.
+
+On the second line, feed TON.Q of the first line into the IN of a TP function block. the width of the PWM is now determined by what you feed into the PT and the result comes out of Q.
+
+I'm testing this one today to see if it works, I think I may need to convert the analogue into a period of time first between zero and TON.PT but I can do that using TO REAL function blocks then a bit of maths before converting back to time.
+
+If any1 has an easier way or can spot any flaws in my logic then please let me know.
+
+otherwise I'm more than happy for you to use that logic.
+
+Regards, 
+Keith.
+
+Maybe you can use the oscat lib from: http://www.oscat.de
+
+YOU MAY USE BLINK IN uitl.lib
+

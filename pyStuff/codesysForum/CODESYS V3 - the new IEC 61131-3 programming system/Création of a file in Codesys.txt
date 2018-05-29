@@ -1,0 +1,4 @@
+Hello, then I joined on this site because I look since a moment for a solution for a problem. In fact I created a small program with Raspberry on Codesys. this program puts me a bolléen to 1 when the speed is a top of 50 and 0 down. I want to go farther by creating a file where will be stored the state of my boolean. And I do not too much know how to take myself there. Thank you for your help.
+
+Hi,there is an example available:https://store.codesys.com/file-utilitie ... re=default
+

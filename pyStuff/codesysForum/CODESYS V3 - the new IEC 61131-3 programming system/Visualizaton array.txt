@@ -1,0 +1,2 @@
+After changed to version 10.xxx passing an array of strings to a ta ble or combo box via var_in_out to the visualization doesn't works.In version 9.xxx works fine.I am doing something wrong.Attachment:Captura de 2017-05-05 15-46-38.png
+

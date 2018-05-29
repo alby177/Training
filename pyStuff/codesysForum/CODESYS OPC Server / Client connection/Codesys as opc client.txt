@@ -1,0 +1,4 @@
+Hi,I have just started explore Codesys and I'm wondering.Instead of regular I/O, i would like to use codesys as an OPC client connected to one or more opc servers and use the data from the server(s) directly inside of the codesys project.O
+
+This would be very useful.At the moment we have to use a third party server to server connector to acheive this
+

@@ -1,0 +1,6 @@
+Hi.I have a CNC program with an virtual axis with the dynamic limits Vel= 1000, Acc and Dec=10000.When I call the function block ControlAxisByPos I notice that small position Changes are applied without the set fGapVelocity, fGapAcceleration and fGapAcceleration resuting in very rough behavior. As soon as the position step is big enough, > about 1 mm then the set acc and dec is applied. I have tried both with and without bAvoidGaps. Please see the atttached trace when I use very low fGapAcceleration and fGapAcceleration (2 mm/s2).Has anyone else noticed the same behavior and knows what to do about it?Hopful for help.Best regardsAnders
+
+HiWhere is the atttached trace.
+
+This issue has been resolved (wrong settings in Dynamic limits).
+

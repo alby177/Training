@@ -1,0 +1,8 @@
+I have a simple ladder program, which compiles with no errors.however when running the simulation mode, the program is in RUN state is green the logic does not operate.i.e. the left hand side of the ladder rung is blue, when I activate a switch to TRUE nothing happens.please see attached screen shot.many thanks.
+
+Press F7
+
+Thanks, all good.
+
+Prefer to use ctrl + f7You could have a bad joke with a hard forcing
+

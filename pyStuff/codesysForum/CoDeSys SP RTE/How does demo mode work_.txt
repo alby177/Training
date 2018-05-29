@@ -1,0 +1,10 @@
+I am testing CoDeSys SP RTE and when I start this application it tells me that I have no license and he will run in demo mode.That is ok so far, but what does demo mode means?I can see that it timeout after one hour, but is there other limitations in functions in demo mode?I am trying to make web visualization work, but for some reason it only present a not running visualization in my browser.A bit strange because the Soft PLC is running fine (for one hour), but nothing happens when I view it in a browser.I use Apache 2.4 if it matters.
+
+demo means you can do anything you like including programming and simulation.Only running for longer as 1 hour on real I/O is not possible.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+under online use simulation and in configuration you will need to set web visualisation to on.This works in simulation.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

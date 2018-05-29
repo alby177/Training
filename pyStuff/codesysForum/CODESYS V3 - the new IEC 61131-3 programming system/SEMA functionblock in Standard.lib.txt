@@ -1,0 +1,2 @@
+Hi,does anyone know why the SEMA functionblock no longer is available in Standard.lib?Codesys V3.5 SP4 from Festo./Torbjörn
+

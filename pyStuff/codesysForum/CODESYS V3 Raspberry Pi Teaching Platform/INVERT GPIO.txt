@@ -1,0 +1,4 @@
+I need to invert the gpio output pins, how can i do this? I tried to enable the "active_low" feature in /sys/class/gpio/*gpiopin*/active_lowIt works for the value in /sys/class/gpio/*gpiopin*/value but not for the runtime... How does the communication between runtime and gpio works?Is ther maybee a kernal command that works?
+
+o5i wrote:I need to invert the gpio output pins, how can i do this? I tried to enable the "active_low" feature in /sys/class/gpio/*gpiopin*/active_lowIt works for the value in /sys/class/gpio/*gpiopin*/value but not for the runtime... How does the communication between runtime and gpio works?Is ther maybee a kernal command that works?Enviado de meu ASUS_Z00AD usando Tapatalk
+

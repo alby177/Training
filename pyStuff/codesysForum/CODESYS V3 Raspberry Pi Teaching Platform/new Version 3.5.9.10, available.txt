@@ -1,0 +1,6 @@
+- PI3 Support- BACNet SL Stack embedded in this Version- plc runtime 3.5.9.10- Runtime Key configured as HID device could be used for licensinghttp://store.codesys.com/systeme/codesy ... pi-sl.htmlBRModerator
+
+It is great to hear that BACnet stack is integrated!Should we install CODESYS BACnet SL from CODESYS Store to use Bacnet?Best regards,Zdenko.
+
+HI Zdenko,yes use the package from store to use it.BREdwin
+

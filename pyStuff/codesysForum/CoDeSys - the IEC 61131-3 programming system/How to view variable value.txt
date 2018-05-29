@@ -1,0 +1,8 @@
+Newish to CoDeSys, running Ver. 2.3.  I assume this is possible...how to monitor variable values?  I am walking on a variable in my code example and would like to monitor the value.
+
+if you go online you see the vars on the right side.and yes you can monitor. on several ways.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Withing CoDeSys 2.3, Go to Help> Contents.Select the Index TabSearch for "Monitoring".You're looking for "Watch and recipe manager".
+

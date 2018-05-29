@@ -1,0 +1,18 @@
+What do i have to do if i want to show a Web Visualization on an Android platform.
+
+I think you just need the right Java installed and you should be good.  And, of course, the ability to connect to the device through an IP address.
+
+I think some installations also require you to type in the port address on the URL such as http:\\192.168.119.200:8080/webvisu.htm
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+where i get the right java?
+
+java is free available at www.sun.com and if you google it will be even closer.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+i can't find a java for the Android platform witch can show webvisu, is there anyone witch have some experience.
+

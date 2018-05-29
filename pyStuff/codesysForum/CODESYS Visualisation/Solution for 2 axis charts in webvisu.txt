@@ -1,0 +1,2 @@
+Hi,I'me search solution to have 2 axis charts (XY) on webvisu. Range data are 0 to 4096 and I want 4096 points on charts.The only way I have fond is: create 4096 square of 1pixelx1pixel and move them on X and Y with variable. It's a very long job to create this 4096 square.Have you a solution ? ActiveX ? Or project with a lot of point I can use ?Thanks for your help.Bests regards.
+

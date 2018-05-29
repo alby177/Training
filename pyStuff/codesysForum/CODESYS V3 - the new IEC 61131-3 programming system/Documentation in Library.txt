@@ -1,0 +1,14 @@
+Hey All,I looked at some other posts regarding documentation for library, and it looks like you have to manually generate it. However, this video (https://www.youtube.com/watch?v=A4lQGWAUTgs&t=1s) shows that the documentation is automatically generated after she clicked the "Save Project And Install Into Library Repository". I tried to follow the steps, but library always end up with "This object has no documentation." Anyone can shed some light on this matter?Thanks,
+
+Hi,you mean this?https://www.youtube.com/watch?v=s-i54boTAYkcheck the help accoding this."c:\Program Files (x86)\3S CODESYS\CODESYS\Online Help\en\LibDevSummary.chm" to 3.5SP11 there will be a real web based online help be available:Check this out here (Attention this is not released this online help->  but a good preview):https://help.codesys.com/webapp/guideli ... n=3.5.10.0BREdwin
+
+Edwin Schwellinger wrote:Hi,you mean this?https://www.youtube.com/watch?v=s-i54boTAYkcheck the help accoding this."c:\Program Files (x86)\3S CODESYS\CODESYS\Online Help\en\LibDevSummary.chm" to 3.5SP11 there will be a real web based online help be available:Check this out here (Attention this is not released this online help->  but a good preview):https://help.codesys.com/webapp/guideli ... n=3.5.10.0BREdwinHey Edwin,I updated the post with the video link. The link you posted is definitely different from what I was watching. I'll look into this for more information.Thanks!
+
+Hi Edwin,I watched the video multiple times and followed the steps. However, when I install the library, same deal. I get this "This object has no documentation." I included .library instead of compiled-library, so I hope this didn't screw up the process.The .chm file is in "C:\Program Files (x86)\3S CODESYS\CODESYS\Online Help\en"I can look at the description in the Online Help (F1 key), but nothing shows up at Library Manager level. Not sure what's going on here.Thanks,
+
+Hello nothinrandom,there is really a bug in a V3.5.10.40.CDS-55281 LibDoc: Generated documentation cannot be displayed in LibraryManagerUse previous version V3.5.10.30 or wait for V3.5.10.50 (release at the end of the next week).RegardsRoman
+
+r.evbatyrov wrote:Hello nothinrandom,there is really a bug in a V3.5.10.40.CDS-55281 LibDoc: Generated documentation cannot be displayed in LibraryManagerUse previous version V3.5.10.30 or wait for V3.5.10.50 (release at the end of the next week).RegardsRomanAhhh thank you very much for clearing that up! Thought I was going crazy here.
+
+Thank you for this information.After several days of struggling, I just opened forum to post new topic and then I saw this.I also thought I was going crazy.
+

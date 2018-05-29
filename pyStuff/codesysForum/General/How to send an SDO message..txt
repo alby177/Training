@@ -1,0 +1,4 @@
+Hi, Could you please advise how to send an SDO message (ref. attached picture) in CODESYS? What libraries should be used? I would appreciate if you give me a sample of a program.
+
+I have a problem with SDOs too. I am using the canopen manager library and the function CanopenSendSDO with no results. The call of the function i am using isCanOpenSendSDOread(Enable:=ton.Q,(*Rising trig each 2s*)wDrvNr:=0,(*one master, the PLC*)ucNodeId:=5,(*Id of the node*)wIndex:=16#6411,(*Index of the node*)bySubIndex:=00,(*Subindex. I am trying to read the number of subindexes of this node*)ucModus:=16#40,(*read mode*)ucAnswerBytes=>ar(*and here is where we expect the answer, where ar is an array of 8 bytes*))I can see with a sniffer the SDOs are in the bus but I don´t receive any answer
+

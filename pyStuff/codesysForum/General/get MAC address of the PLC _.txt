@@ -1,0 +1,2 @@
+is it somehow possible to read the MAC address of the PLC from my project ?thanks
+

@@ -1,0 +1,6 @@
+Dear Codesys community,I might ask a stupid question, but bare with me I am still new to programming in CodeSys.For some customers I am writing a program, I want to upload it to the PLC. But I want to make sure that the customer cant just install codesys and download my program and have access to all the code I have written.I have one of the security USB stick for licenses, is that needed?Can someone please explain to me how to encrypt my code, or redirect me to a place where this is documentated.Thanks a lot,Andre
+
+When the application is downloaded, the code will be compiled. You cannot upload this code and edit this in CODESYS.
+
+Hi,yes and additional (sure this is optional)the runtime key is needed if you want to prevent that anyone could copy the whole system (know how protection).The bootproject could be encrypted (by CODESYS IDE) and only the machine with the runtime key could run this encrypted bootproject.Doing this will need a security key on the CODESYS Developmentsystem side (to generate the encrypted bootproject) and a runtime security key on the plc runtime side.BREdwin
+

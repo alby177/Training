@@ -1,0 +1,12 @@
+Hello,
+
+I have a problem with my codesys program,
+
+I developped it with CodeSys 2.3, web visualisation and send mail works
+
+My problem is the send ftp and the save data in csv
+
+Can you help me
+
+Thanks
+

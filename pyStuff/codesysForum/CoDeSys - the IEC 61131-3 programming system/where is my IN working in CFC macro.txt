@@ -1,0 +1,4 @@
+I have an input In-3 in a macro in CFC, however i can not find it when i step into this macro.Yes i did make it but i clicked the mouse in the variable list and now i can not find it anymore so i can not remove it.I tried select all and then move all over the screen the normal inputs are shifted inside another but the In's are not shifted.Found a strange thing with this.when i select a few items that are on top/bottom of another block and try to move them the block is moved not my selected items. this has something to do with selecting.so now i first have to move the big block out of my selection and then move my selection and then move my block back again.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

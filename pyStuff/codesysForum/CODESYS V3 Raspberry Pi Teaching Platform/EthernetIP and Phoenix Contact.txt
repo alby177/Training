@@ -1,0 +1,10 @@
+Im trying to connect to a Phoenix Contact Inline Bus Coupler with Codesys ver 3.5.7.0 on Raspberry Pi2.  I am getting these errors in the log:No local Ethernet/IP Adapter found.  Class 1 connection as target not supported.SetOption unable to set Socket_SO_REUSEPORTConnection Failure.  Extended Status: Invalid network Connection parameter.I have the Ethernet set up as:Attachment:Ethernet adapter.PNGI can connect to the PI and Bus Coupler.  I just cant get the PI to talk to the Bus Coupler
+
+Hi,Quote:No local Ethernet/IP Adapter found. Class 1 connection as target not supported.this is only an info - no problemQuote:SetOption unable to set Socket_SO_REUSEPORTthis is only an info - no problemQuote:Connection Failure. Extended Status: Invalid network Connection parameterthis is the Problem.One question is there a reason why not using the eds file of the Phönix device?(-> you are using obvisouly the generic ethernet ip device)So I would recommend to install the EDS file from your device (from the manufacturer), than it is easy to configure  BREdwin
+
+Ok I have the EDS file.  How do I install the EDS file into Codesys?thanks for your help!
+
+I figured it out.  VERY COOL!
+
+I have a phoenix contact ILB ETH 24 DI16 DIO16-2TX and want to configure it with the same software CODESYS 3.5 on exor PLC. Do I still have to use the EDS file as I am looking at the manufacturer's recommended software to program the contacts and there is no EDS file on the list for this unit. Any reply would be appreciated.
+

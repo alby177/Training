@@ -1,0 +1,4 @@
+I have made a control application to run in a 7 inch display PLC system. I would like now to create another application based on the first one to run in a Windows based 22 inch display PC to execute “parallel” control functions with the PLC through CAN communications.WebVisu nor RemoteTargetVisu are options, as they seem to duplicate the screens of the PLC on the PC and I need to create optimized visualizations plus some additional control features for the 22 inch display system.Is it possible to use CoDeSys to create executable PC applications? (Time is of the essence in this project and I would like to use the already created PLC code as much as possible and avoid going to another Development Environment)Thanks
+
+This is possible. You need the Soft-PLC:http://www.codesys.com/products/codesys ... l-win.html
+

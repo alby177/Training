@@ -1,0 +1,20 @@
+Hi, very simple question. if i have code in a case and no jump address. Will the code keep executing over and over again?
+
+When the CASE is done the program jumps to END_CASE
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Will this be the case with multiple cases? e.g.CASE  Example OF1.case1();2.case2();3.case3();END_CASE;Say if case1 executes its code, will it automatically jump to the next or as you said jump to end case.
+
+If example is 1 case1 will be executedIt will not even test if example is 2 but will move to the end_case instruction just because the example is not correct for any other.This is also not allowed so1:and 1..3: is not allowed.btw it must be a colon and not a comma.see example i gave you CASE INT1 OF1, 5: BOOL1 := TRUE; BOOL3 := FALSE;2: BOOL2 := FALSE; BOOL3 := TRUE;10..20: BOOL1 := TRUE; BOOL3:= TRUE;ELSE BOOL1 := NOT BOOL1; BOOL2 := BOOL1 OR BOOL2;END_CASE;if int1 is not 1,2,5,10,11,12,13,14,15,16,17,18,19,20 else will be doneotherwise when it is 1 or 5 bool1 will be true when int1 is 2 bool2 will be falseif int1 is from 10 to 20 bool3 will be trueetc.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks Shooter  One thing, how do you determin which case is used. How can you choose case 1. or 2. or 3. I presume if you declare your variable "example" as an interger you can feed values in that variable, then choose each case you want.
+
+yes that why example is declared in the VAR listVARexample:INT;END_VARbut this will be done automatic when you type in the program.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks  
+

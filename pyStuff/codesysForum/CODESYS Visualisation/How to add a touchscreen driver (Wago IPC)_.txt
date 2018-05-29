@@ -1,0 +1,20 @@
+Hi
+
+I have a client with a Linux based Wago IPC. They are hoping to get a particular touch screen running on the CoDeSys target visualisation.
+CoDeSys apparently supports certain touchscreens based on the TSHARC driver, but we are hoping to get on of several other screens working (we need a 17" touchscreen or larger).
+My understanding is that the target visualisation on the Wago uses microwindows (Nano-X) linked to CoDeSys at compile time 
+ - is this correct?
+
+I have been able to load the kernel module that came with the touch screen, and I am hoping that by creating a device file in /dev/ (and perhaps editing the config file) I can persuade CoDeSys to treat the touch screen as an additional source of mouse events. 
+- any idea how to configure the devices in /dev/ for this to work? 
+
+Thanks, any help gratefully received.
+Greg
+New Zealand
+
+Hello. I'm in the same trouble using a Wago 758-874 and a Proface TM3600.Wago TM series are going out of production and I don't like their WP series (expecially the costs...).The mayor problem is telling to the Codesys to use the driver you want.
+
+You can use JAVA.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

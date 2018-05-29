@@ -1,0 +1,6 @@
+I acquired a EtherCat Servo drive to test with the PI runtime.  Right now I added a second USB Ethernet adapter and use the PI Ethernet port for Ethercat.  I had to set the MotionBus cyclic to 6ms for smooth motion.  When it was set for the default 4ms motion would jerk during a MoveVelocity.  Also the EtherCat Servo I am using has to use the DS402 profile because it does not have a SoftMotion device file for CoDeSys.1.  What performance can be expected with EtherCat on the PI?  2.  Is there anything that can be optimized in the PI to run the motion bus faster?3.  Is there a performance hit if there is not a native SoftMotion device file and DS402 profile is used?It is very cool to see the power of CoDeSys in a micro-controller.  It would be nice to have some data on expected performance.
+
+_________________The Original SoMachine Ninja
+
+Hello,using softmotion with the PI on Ethercat is working but has a problem. I tested with 3 drives of Schneider Electric (LXM32M, LXM32i and ILX)ILX with the generic DS402. LXM32i and LXM32M are already integrated in Softmotion.The runtime of the Pi is not stable enough so you will have a big jitter and this leads to some trips on the drive.Maybe a realtime-extension for the Linux will help? But to show the posibility of softmotion with Ethercat it is impressive.
+

@@ -1,0 +1,11 @@
+Hello!
+Prompt please as software to control the object to visualizations in CDS v3.3 p2...
+For instance me it is necessary to change the coordinates a point object POLYLINE. How I link the coordinates a point with array? Or how I change the properties of this object from program?
+Thanks advance..
+
+Çäðàâñòâóéòå!
+Ïîäñêàæèòå ïîæàëóéñòà êàê ïðîãðàììíî óïðàâëÿòü îáúåêòàìè âèçóàëèçàöèè â CDS v3.3 p2...
+Íàïðèìåð ìíå íóæíî ìåíÿòü êîîðäèíàòû òî÷åê îáúåêòà POLYLINE. 
+Êàê ìíå ñâÿçàòü êîîðäèíàòû òî÷åê ñ ìàññèâîì? Èëè êàê ìíå ïîìåíÿòü ñâîéñòâà ýòîãî îáúåêòà èç ïðîãðàììû?
+Çàðàíåå áëàãîäàðåí...
+

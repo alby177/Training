@@ -1,0 +1,2 @@
+Hello all,I'm using pragma directives extensively but I've noticed that all the code between a conditional pragma is not getting compiled at all.Is it possible to get this code to be compiled?Is there any flag, checkbox... somewhere that can be activated to get this?Thank you all in advance.And have a nice weekend!
+

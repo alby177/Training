@@ -1,0 +1,4 @@
+Hi guysUsing somachine 4.1 sp1. When i run the web vizu in chrome i get an error that your browser doesn't support html5 canvas. Even though this was working on the same pc for a week. I have the latest chrome version.Had to get it going quickly so found an add-in for chrome that allows pages to run in internet explore mode. The page opens now but every few seconds there is an error "an error happened will automatically restart"On my developer pc i dont get these errors. So i think it is a windows error.Also wondered about the memory size and buffer size for the webvizu if memory could cause these errors?
+
+Just wanted to add the warnings i get
+

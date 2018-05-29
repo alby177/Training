@@ -1,0 +1,6 @@
+Hello Forum,I am looking for some advice. I would need a PLC based on Codesys with an estimated price 140 - 220 Euros, with Modbus TCP/IP or RTU integrated and a very simple LCD. It would be interesting to if it is able to host a webserver to program some basic values.Can you recommend some PLC?Thanks!
+
+Just another question: Do you know any Touchscreen able to work with Beaglebone Black which is able to work with Codesys Visualization?
+
+Using the Beaglebone or raspberry pi is a cheap effective way to do this and you can use any screen attached if you use a web visualisation.In terms of other companies, Schneider Electric have a cheap range of Codesys based PLCs that operate on Modbus or Ethernet IP.
+

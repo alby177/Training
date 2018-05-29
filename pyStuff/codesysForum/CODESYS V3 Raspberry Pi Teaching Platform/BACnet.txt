@@ -1,0 +1,4 @@
+Do CoDeSys support BACnet from the start? Or do I need to buy some library? I want to build a web-based BACnet Explorer. Would have been fun if I had been able to use CoDeSys to do it.
+
+Hi,there is a bacnet stack and configurator  available for CODESYS V3at the moment there are no plans to implement them into the CODESYS Pi runtime.There are  3S customers which offer their plcs including bacnet, maybe this is could be an option to use a bacnet CODESYS V3 plc.BREdwin
+

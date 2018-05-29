@@ -1,0 +1,12 @@
+I have tried using DTU.SetTimeZoneInformation, DTU.gc_tziTimeZoneCET but could get mine working.Both return my current time as UTC time. I am trying to get this working so that my Daylight Saving time automatically change. I am running this on a Raspberry Pi. My raspberry pi has the ntp server, I also have check out OSCAT network where they have the SNTP server function block, but I dont know how to use it. I am new to Codesys. Help would be appreciated.
+
+Hi,from my point of view this is not neededif you are connected to a network isn't it thant you have the time Information set by the OS?So that's all you need.Here is an example application with osccat calender and example how to set events once a day..etcviewtopic.php?f=23&t=6247&p=12387#p12396BREdwin
+
+Edwin Schwellinger wrote:Hi,from my point of view this is not neededif you are connected to a network isn't it thant you have the time Information set by the OS?So that's all you need.Here is an example application with osccat calender and example how to set events once a day..etcviewtopic.php?f=23&t=6247&p=12387#p12396BREdwinI have tried the timerexample before I posted the question here, but using that example return my local time as UTC time. When I changed the offset time to 630/530 in minutes it shift the local time 1 day before.
+
+Hi,hm.. i set 540 for 9h and this seems to work for me.SystemTimePrg.Calendar.LDT is then your local time.BREdwin
+
+puh... you are right this seems not to work for AdelaideBREdwin
+
+Hi,this seems to be a bug in the OSCAT Basic library in UTC_TO_LTIME.I will report this in the OSCAT Forum (oscat.de)You could solve this by change it in the library (the oscat libs are open) just open it from here:"c:\Users\<YourWindowsUserName>\CODESYS OSCAT Basic\oscat_basic_333.library" just change the tmp variable from int to DINT and install it by 'Save Project and install into Library Repository' under the 'File' menuBREdwin
+

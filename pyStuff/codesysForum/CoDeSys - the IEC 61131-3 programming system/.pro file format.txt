@@ -1,0 +1,39 @@
+Does anyone know - or have a document - for the file format specification for the codesys pro files?
+
+I'm trying to automatically stamp a version number directly into the pro file during our automated build process, we will then query this number using the PROJECT_INFO structure.
+
+Thanks
+
+Matt
+
+Take a project and open it with a text editor. You will see that it is basically a text file with some header information. I think with an easy parser you should be able to find some specific Tag within the file and change the value.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+Sorry I forgot to add. Someone from 3S would need to let you know if there is a checksum involved. You may get corrupted files. 
+
+I was right. I tried editing a *.pro with notepad and saved it. Reopened with CoDeSys and it stated that the project was corrupt but it did give me the option to continue. I did and my changes from notepad took effect.
+
+_________________Thanks,Steve Pfeifenroth
+
+I would be insterested by such a feature.
+
+I think that modifying the pro file is not the right method. You may cause corruption of the project file. Moreover, this format may change with a newer version of CoDeSys. 
+
+I looked at the different method for automating CoDeSys 2.3: Import/Export, batchinterface and MessageIntreface and it seems that unfortunately the modification of the Project Info is not supported by these methods.
+It may be possible to do it thanks to the COM interface but I am misisng information about it.
+
+spfeif wrote:Take a project and open it with a text editor. You will see that it is basically a text file with some header information. I think with an easy parser you should be able to find some specific Tag within the file and change the value.
+
+Could you attach here sample how looks .pro file opened with notepad? Because I tried but inside isn't possible to understand and find anything.
+
+Best regards,
+Hristo Mihalev
+
+you can also use the version block from any library.or make your own version block.this way you do it inside codesys easier.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+No, no...The problem is that when I tried to open the project received message "project is corrupted". Now I tried to open it with notepad, just to see inside (to take some info from there) . Unfortunately all inside are not understandable. Do you have some ideas in my case?Best regards,Hristo Mihalev
+

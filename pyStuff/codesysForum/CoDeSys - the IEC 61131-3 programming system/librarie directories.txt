@@ -1,0 +1,14 @@
+Hi !I have installed codesy 2.3 a little time ago ..... now when I try to open a some lybraries then a message with "cannot find 1 of 5 lybraries - change directory?" comes up - what I have to do now?Thanks
+
+_________________let make it work !!!
+
+find the name of the missing library and put it in correct directoryif not found download from website 3s
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+I had this problem when I first started programming,Go to the "resources" tab and click on the library manager.the missing libraries will be written in red text.Click "add new library and locate each missing library,once the new library is in, click on the old (red text) library and press delete.May I make 2 suggestions.firstly keep all your librarys in the library directory so as to save you time having to import them every time you make a new program.Secondly save your program after sorting out this library problem so you don't have to redo this if codesys should accidentally close
+
+One more hint:Under Project/Options/Directories you can find 3 different directories for libraries:The first one is for project specific libraries. I would recommend to keep all project specific libraries in this directory The 2nd one is target specific, which means that this path is determined from the manufactured of the controller you want to program. Usually you will find all target specific libraries in that directory. This directory cannot be edited!The 3rd directory is for the global CoDeSys installation. Typically all general interesting libraries should be save there.
+
+_________________Roland WagnerModerator
+

@@ -1,0 +1,2 @@
+Hi FolksI am writing a little BMX start gate program for the Pi where I have to read an input from a start button, play an audio file and switch a few lights and relays.I have all the code written in ladder logic to run the GPIO etc and I could trigger the audio by switching an output pin but that is a little clumsy. I am sure there must be a better way of doing it via a script?Thanks Simon
+

@@ -1,0 +1,6 @@
+Goodmorning everyone. It 's the first time I write on your forum but I have been following you for my projects. In this case I have a problem with the WagoLibWeatherForecast_01 library. I use codesys 2.3.9.49. For 2 years everything worked perfectly, for about a month however, it does not work anymore. I get the answer: 'HTTP-ERROR: Server returns "307" instead of "200 - OK"' error code # 2147491841. I do not need to use this specific library, but I have not found any other functional ones. The error seems to be linked to a redirect but I do not understand what the meaning may be ... Thanks in advance if you want to help me!
+
+Hi,for this I would really recommend to ask here:https://www.sps-forum.de/wago/ or maybe a support request to the Wago Support will help to solve this.If this application is running on a PFC100 or PFC200 you could think on updating to CODESYS V3 or eCOCKPIT - and have the webvisu on your mobile phone. ( Wethaer forcast is in CODESYS Version 3  provideded by this application which use 'Openweathermap.org' as source for the weather data; https://store.codesys.com/weather-forecast-library.html)BREdwin
+
+Perfect! Thank's
+

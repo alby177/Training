@@ -1,0 +1,4 @@
+Hello,I use Codesys V3.5 and I have installed "Codesys control for Raspberry pi SL". As I run the program, it shows an error.                ------ Build started: Application: Device.Sim.Device.Application -------                typify code ...[ERROR]         raspberry pi peripherals, 3.5.11.0 (3s - smart software solutions gmbh): FillBuffer [FileReader]: C0032:  Cannot convert type 'LWORD' to type 'UDINT'                Compile complete -- 1 errors, 0 warnings                Build complete -- 1 errors, 0 warnings : no download possible!Can you please tell me why this problem has arised?Thank you.
+
+Hi,guess this is a known issue if you try to simulate a Raspberry PI Project with CODESYS 64Bit Version.This will be solved with 3.5SP13.Workaround:Login to the real PI instead of simulatting or change the plc to Control Win.BREdwin
+

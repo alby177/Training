@@ -1,0 +1,4 @@
+When remove some element cant replace back to the line, after some edit then become like the attachment. Can someone tell me what is happen?
+
+Hi,which version is that exactly,if needed send the project to 3S Support to recover/repair.BREdwinPS: this is CODESYS V3... the post will be moved to the right section
+

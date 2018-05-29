@@ -1,0 +1,16 @@
+Is it possible to copy and paste the (FB) so I don't have to make it again.This is what I get when I try it. does anyone have any idea or ways to complete what im trying?Thanks Shawn
+
+It's probably better to create a function block, define inputs and outputs, and add the internal logic. You can easily reuse it anywhere in the code...
+
+Directly after Paste all the new blocks are still marked, use pointer on the dotted section and drag the new blocks away. If you miss the dotted triangle make an undo and try again. Don't point the cursor anyware else and click then you will loose the marked block and have to drag every block.
+
+yes it is possible to copy FB, however the names will be same as old ones, and you will have to declare all of them in the VAR listA better way is to make a complete sub program into a FB and use that one twice, so only one declaration is needed.i saw in your screen a very wide CFC, try to keep every thing on one page, you can use selfmade FB and Macros with in pins and out pins etc.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Shooter,Are you saying I can create a single (FB) with all those I have in my screen?Basicly going from 10 boxes down to one that does everything the original 10 did.Ive been trying to figure out if I could do a subroutine or something like that. I dont really use codesys that much so I know very little. I mostly just design and make blueprints. programming is still very new to me. Thanks for all the help and if you have an example to show me id be very appreciative.
+
+yes you can, go to macro in top of screen and copy your long thing into it, take care of the inputs and outputs and presto.the first start of a program is PLC_PRGin same list you can make Function blocks and functions.function blocks are called by the PLC_PRG just by giving them a declaration in the VAR list.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

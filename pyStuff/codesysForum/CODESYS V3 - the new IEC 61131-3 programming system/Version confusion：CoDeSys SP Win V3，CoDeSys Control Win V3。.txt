@@ -1,0 +1,12 @@
+I'm quite confused with CoDeSys versions.So what does “SP” mean in "CoDeSys SP Win V3",why now becomes "CoDeSys Control Win V3"?
+
+It is just a name change. In my opinion a good choice, because Control is much clearer than SP.In the detailed information, when you install the newer CoDeSys version, you should have read this.
+
+Good,   So what does “SP” indeed mean in “CoDeSys SP Win V3”?
+
+"SP" was the abbreviation for SoftPLC. But as Tim already wrote: "Control" shows it clearly, that the runtime system is meant to control a machine process etc.
+
+_________________Roland WagnerModerator
+
+I got it，thanks very much。
+

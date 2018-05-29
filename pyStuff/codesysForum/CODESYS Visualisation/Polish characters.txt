@@ -1,0 +1,6 @@
+helooHow must I configure  visualization to obtain Polish characters in web visualization ?
+
+Hi,enable Unicode characters...BREdwin
+
+There is a problem with polish characters, maybe with other unicode...Buttons seem to take text display values from other variables.After turning off the unicode all seems to work good?!?Codesys 3.5.7 or 3.5.8 - the same problem...Some buttons show correct values(variables and text) and some show values from other buttons - on the PLC in run mode(In the project before download they are OK).
+

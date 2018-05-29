@@ -1,0 +1,16 @@
+HAllo Gemeinde,nun hat es auch mich erwischt. Kann den Raspberry nicht mehr finden wenn ich diesen im Netzwerk suche. Somit kein Einloggen möglich.CS läuft kurz im Top und scheint dann geschlossen zu werden?Auszug Log File(ERROR: open failed (errno 6 No such device or address)Please check if /dev/char_dev is available!ooops... this runtime was built for raspberry pi (-20, 0x00000BB8, 0xFFFFFFFB) )Habe den Raspi auch neu aufgesetzt, Update auf 3.5.8 und Downgrade auf 3.5.7 blieben auch ohne Erfolg.Beim Betriebssystem handelt es sich um die neueste Raspian Jessie Lite Version.Weiß jemand Rat?Grüße Andy
+
+hilft das:(per putty und ssh Login ausführen)sudo apt-get updatesudo apt-get dist-upgradesudo rpi-updateGrüßeEdwin
+
+Hallo Edwin,vergas ich zu schreiben. Sorry.Hat leider auch nichts gebracht. Immer der Fehler im Log un dann nach ein paar Sekunden ist CS weg.(ERROR: open failed (errno 6 No such device or address)Please check if /dev/char_dev is available!ooops... this runtime was built for raspberry pi (-20, 0x00000BB8, 0xFFFFFFFB) )Grüße
+
+Hi,mach mal:sudo  rm /dev/char_devsudo /bin/mknod /dev/char_dev c 249 0..GrüßeEdwin
+
+Hallo Edwin,immer noch das selbe Spiel.   Grüße Andy
+
+Hi,würde ich mir gerne online anschauen... schick dir ne Email.GrüßeEdwin
+
+Hallo Edwin.ja passt.andreas.kofler.sgs[ät]gmail.com
+
+Vielen Dank Edwin nochmals für den schnelle und hilfreichen Einsatz.
+

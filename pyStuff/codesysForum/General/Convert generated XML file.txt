@@ -1,0 +1,2 @@
+Hi,A program that I am using seems to be using Codesys in the background, Indralogic\Indraworks.  They updated some parts of it and now it doesn't format the XML correctly.  The program seems to need version 3.3.0.0 while <Version>3.5.8.0</Version>    <SymbolConfigObject version="3.5.8.60" /> is generated.Is there any way to convert this back to the 3.3.0.0 format?Thanks for any help!Todd
+

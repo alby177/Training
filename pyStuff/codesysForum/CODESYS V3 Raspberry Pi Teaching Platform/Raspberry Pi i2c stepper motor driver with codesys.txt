@@ -1,0 +1,4 @@
+Hi, I'm a student. I want to use adafruit i2c stepper motor driver with raspberry pi and codesys. I found with servo drive applications but I didn't find stepper driver. Can I use "Adafruit DC and Stepper Motor HAT for Raspberry Pi" with codesys ? If I use driver how do I make it?driver link: https://learn.adafruit.com/adafruit-dc- ... spberry-piCan you help me ? pleaseIf you help me I will be happy Thanks.
+
+I need your help. Can I use this stepper drive with Codesys?
+

@@ -1,0 +1,2 @@
+Firstly I would like to apologize if I am being inappropriate!I'm tending to use this module , https://store.ncd.io/product/4-channel- ... interface/ , but I do not know how to make a library for it and a device, could someone help me step by step?It uses the MCP2308 IC, has 4 inputs and 4 outputs.my english is not very good but I can turn aroundwtts app +55 15 997205052email: marcos.a.almeida@outlook.com
+

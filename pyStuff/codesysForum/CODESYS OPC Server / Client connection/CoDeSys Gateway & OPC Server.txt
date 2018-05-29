@@ -1,0 +1,31 @@
+Hi,
+
+Currently I have a HMI communicating with the Gateway server. We are trying to add an external hardware to the system which needs to communicate an OPC Server. HMI needs some info from this external hardware.
+
+I understand that CoDeSys has an OPC server as addon. How is it able to support my new configuration?
+
+Thank you in advance.
+
+You probably mean that it is not a CoDeSys based device.
+The CoDeSys HMI cannot access other OPC servers as it is not an OPC client. The CoDeSys HMI and the CoDeSys OPC server can only connect to CoDeSys Devices.
+
+I can think of 2 options you have:
+1) Use another visualisation tool which has an OPC client driver (like a SCADA system). This can connect to both the OPC server of CoDeSys and also to the other OPC server.
+2) Run another tool on the PC which reads the data from the OPC server and writes the data to the CoDeSys PLC. This could also be a SCADA package or something like the MatrikonOPC Data Manager.
+
+Thank you for your prompt reply. 
+
+Yes, it is not a CoDeSys device. Guess that I have to search for an alternative software to act as an OPC server to my external device.
+
+Sorry to bring this topic up again.
+
+Do you mean that I can connect my new hardware to existing OPC server if the hardward acts as an OPC client?
+
+No.
+Normally the provider of the hardware has an OPC server available.
+Any Software tool which has an OPC client can connect to this OPC server to communicate with the hardware:
+
+Hardware <=> OPC server <=> OPC client <=> software application <=> OPC client <=> CoDeSys OPC server <=> Gateway <=> CoDeSys PLC.
+
+The provider of your hardware should be able to explain exactly what you need.
+

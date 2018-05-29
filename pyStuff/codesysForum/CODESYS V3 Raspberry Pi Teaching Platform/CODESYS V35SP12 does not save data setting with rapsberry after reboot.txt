@@ -1,0 +1,6 @@
+Hi,I create raspberry pi applications with CODESYS. In my applications, I have to set up data (PERSISTENT DATA) that does not have to change after restarting raspberry.When I was using codesys V35SP11, I had no problems (after the raspberry reboot, the data set before the restart, remain correctly set), but now that I use CODESYS V35SP12, after reboot the data setting is cleared (the default settings given to the persistent variables return).Did any of you find this problem?Can someone tell me how to solve it?Should I go back to CODESYS V35SP11?Thanks, best regards.
+
+Hi,Are you using a UPS? Graceful Linux shutdown is essential to gave this reliable runnung.If not how should this work?BREdwin
+
+Hi Edwin,I have solved the problem. Thanks!
+

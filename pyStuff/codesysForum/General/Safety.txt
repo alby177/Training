@@ -1,0 +1,10 @@
+Wie bekomme ich als potentieller Anwender Informationen, wie man Safety SIL 2 Anwendungen in Codesys ST schreiben kann.Ggf. an Hersteller der SPS wenden ist klar, aber wenn da noch keiner ausgekuckt ist?Es gibt so etwas wie ein Sicherheits Programmierhandbuch (wohl ein PDF) aber selbst hier in der Suche findet sich nichts (Siehe Anhang)
+
+_________________mens agitat molem
+
+moeller has 8 lessonsand you made error in search do not use to many words.safety is depending on country and use.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Very good question.I was also searching for this when we developed a Safety training in cooperation with IFM.- A good help for you will be the PLCOpen Safety Specifications.- In combination with the Norms (e.g. 61508) this will give you certain guidelinesIf required we could give you a training/workshop to develop a CODESYS safety application (V2.3 and/or V3).You will get an insight in the norms and regulations (only focussed on application development and not on SIL of PL, because there is enough information about this on the internet).You will get an overview of the (PLCopen) function blocksYou will get to know which levels there are in which you can develop your applicationYou will get to know how to use and develop libraries, programs and handle the specific Safety inputs and outputs.This will take about one day, depending on your wishes.If you are interested, then please send your inquiry to info@extendsmartcoding.nlRegards,Tim van HeijstExtend Smart Coding.The Netherlands
+

@@ -1,0 +1,2 @@
+There is an array whose length depends on a parameter (global constant declared in library) of a library. This parameter has been given a specific value in the library manager of the current project. When this array is added to the recipe definition, it does not use the length based on the current parameter value but on the default value declared in the installed library.
+

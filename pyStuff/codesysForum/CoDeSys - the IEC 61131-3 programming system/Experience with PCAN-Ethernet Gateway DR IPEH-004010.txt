@@ -1,0 +1,2 @@
+Hey!I connected via CanBus and PCAN Ethernet an IFM Controller CR0401 with my PC succesfully.I recieve Data from the Controller, but cant send anything.During my research I found out that the IPEH-004010 is only supported by CodeSys v3.0 and higher?!? But the CR0401 works only with CodeSys v2.3.But i wonder why i am able to recieve Data from the IFM? Maybe it is just a coincidence?But maybe there is a solution to send commands to CodeSys v2.3 too?! Or do i really need another Controller which supports CodeSys v3.0?Has anyone some experience?Cheerzjoe
+

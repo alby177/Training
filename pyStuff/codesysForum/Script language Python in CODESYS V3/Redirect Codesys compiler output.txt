@@ -1,0 +1,24 @@
+Hello,I would like to set up an automated software build system on a scripting base.Therefore I start a batch file containing the "codesys --runscript" commands for a python script to compile a codesys project with the option --enablescripttracing.This works fine, but the trace output is not redirected into a file completely.On cmd prompt the batch file output ist redirected via "build.bat >> log1.dat" - okWithin build.bat the python "print()" script commands are redirected via "> log2.dat Codesys --runscript ..." - okBut the codesys compiler messages are displayed within cmd prompt   How can I redirect the messages that come out of codesys during e.g. the python command "app.create_boot_application(bootapppath)" ?Best regardsDirk
+
+Hi DBe.DBe wrote:How can I redirect the messages that come out of codesys during e.g. the python command "app.create_boot_application(bootapppath)" ?Here some example code:Code:CompileCategory = Guid("{97F48D64-A2A3-4856-B640-75C046E37EA9}")found = projects.primary.find("Application", True)app = found[0]# Clear messages from Build categorysystem.clear_messages(CompileCategory)app.create_boot_application(r"C:\Temp\App.app")# Get message objects which contain all the dataseverities = {   Severity.FatalError : "Fatal error", Severity.Error : "Error",   Severity.Warning : "Warning", Severity.Information : "Information",   Severity.Text : "Text"   }msgs = system.get_message_objects(CompileCategory)for msg in msgs:   sev = severities[msg.severity]   print("{} {}{}: {}".format(sev, msg.prefix, msg.number, msg.text))# Or: Get only the message textmsgs = system.get_messages(CompileCategory)for msg in msgs:   print(msg)BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi Martin,thank you very much! The compile information is printed within cmd prompt AND log file now   .During project creation I do a SVN checkout (via codesys addon). These reports are printed within cmd prompt only.Is there another GUID available for this too?BRDirk
+
+Hi DBe.DBe wrote:Is there another GUID available for this too?Use the following code to get a list of all available message categories:Code:guids = system.get_message_categories(False)for guid in guids:   print("GUID: {} Description: {}".format(guid, system.get_message_category_description(guid)))If you replace "False" with "True" in "get_message_categories()" you only get the active message categories.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi Martin,works fine - thank you!Only one small remark:"HMI Meldungen" has no constructor? Therefore you algo fails.But a try-catch filters this.BRDirk
+
+Hi DBe.DBe wrote:"HMI Meldungen" has no constructor? Therefore you algo fails.Which version of CODESYS do you use when this error happened?BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi Martin,I use Codesys 3.5 SP5 Patch 7 with a build profile 3.5 SP3.Using these commands:Code:for guid in guids:print("GUID: {} Description: {}".format(guid, system.get_message_category_description(guid)))I get these errors:Code:Skript Meldungen: Information: Build.py(23): Ausnahmefehler (<type 'exceptions.AttributeError'>, AttributeError(u'F\xfcr dieses Objekt wurde kein parameterloser Konstruktor definiert.',), <traceback object at 0x000000000000002B>)Skript Meldungen: Information: Build.py(23):       print("GUID: {} Description:{}".format(guid, system.get_message_category_description(guid)))Skript Meldungen: Information: Build.py(23): Ausnahmefehler (<type 'exceptions.AttributeError'>, AttributeError(u'F\xfcr dieses Objekt wurde kein parameterloser Konstruktor definiert.',), <traceback object at 0x000000000000002C>)Kind regardsDirk
+
+Hi Dirk.DBe wrote:I use Codesys 3.5 SP5 Patch 7 with a build profile 3.5 SP3.The problem is not the HMI category. It's only the last working category before the error.I tried it with two newer versions. With CODESYS V3.5 SP6 the problem still exists. With CODESYS V3.5 SP7 there is no error.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

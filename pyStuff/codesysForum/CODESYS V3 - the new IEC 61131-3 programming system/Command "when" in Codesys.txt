@@ -1,0 +1,30 @@
+Hi.So far, i worked on a Jetter SPS. They had the command "when" that would wait for an event before going on.When A=true then b:=2 then...How do i solve this best in Codesys? like this?S1: IF g.BMedS3 = FALSE THEN JMP S1;END_IFor like this? in this case a:=a would be a useless command.While g.BMedS3 = FALSE do a:=a; END_WHILEOr is there an other way i dont understand?Thanks.
+
+In general the program flow of a PLC is not stopped by commands. Many (almost all) PLC operating systems include a watchdog timer that will fault out the PLC if the end of the program is not reached in a specified amount of time.  While this behavior can be changed it is probably better for industrial applications to have a watchdog.You specific example could be handled in Structured Text like this:Code:IF (A) THEN   b:=2;ELSE   b := <Some other / default value>END_IFYou should always consider the ELSE clause of IF statements so that the program does not end up in an unexpected state.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+If you need to run a sequence (step 1, wait for something, step 2, wait for something, etc), then you can also look to state machines (CASE statements) or SFC programming.  SFC is inherently a flow chart type program where you have blocks and transitions - the transitions would be your "when this, then go to next step".  State machines are simply a CASE statement and a variable you increment.  In either case it is a preference.As ndzied1 said - don't do forever loops or while/wend statements - this will break PLC code.  PLC code requires all code to execute over and over, not just your code.  It is not like a PC script that you say "sit here and wait for 3 minutes before going to the next line of code".  Whenever you have a delay or a wait, you will need a type of state machine or SFC.  This is so other parts of the PLC can do it's thing like update inputs and outputs and handle communications.  Programming tip:  Think of a small child asking, "are we there yet" on a long trip... they ask and you answer, "no" over and over.  Eventually you can answer, "yes" and go to the next state (out of the car).
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Thanks alot for the answers. I looked at AS and at state machines. I must say that i dont really like any of them but i seem to prefer AS. I will really miss my "When" command. Made things so much easier.  
+
+rtist wrote:Thanks alot for the answers. I looked at AS and at state machines. I must say that i dont really like any of them but i seem to prefer AS. I will really miss my "When" command. Made things so much easier.  With AS i mean SFC. in german it is called AS.
+
+Hi rtist.Te answer to your first question is yes "if then" do the same as "when then". See https://www.ibm.com/support.
+
+Scott.The child and the trip...  Good
+
+After looking at SFC for a while i find it very slow to program and very much clicking and looking for the right spot to debug. Especially because i cant directly look into the active scripting of the steps but have to click on it to open them. If i rename a step, the scripts are not renamed with it automatically, so if i do a few mistakes, i have a total chaos after some time.Also the state of the operators in the transitions is not shown (like in ST) so it is difficult to find out which variable is not set correctly.I would highly appreciate if you codesys guys could create the "when" command in ST. This should work just like a transition in SFC. WHEN a and not b THEN "contine". Waiting for "a and not b" to be true.This would allow to write the complete SFC Program in ST, making it much less clicking.Also a "DELAY" command in ST would be nice.DELAY t#3s  would stop the program for 3 seconds, like a transition with a TON timer that needs a lot of text lines to make it work.
+
+I've never used "when", but given your explanations it is something that can be done easily using a simple if clause and a states machine.let's see:Code:case CurrentState of   0:     do something;    if (a and not b)    then      CurrentState := 1;    END_IF  1:    Continue with what you want...END_CASEThis keeps the code clean and doesn't need to stop a PLC task giving you plenty of advantages.
+
+_________________http://www.robotecnik.com - robots, CNC and PLC programming.
+
+I don't think you will see these changes. The idea of wait until but go ahead and let fieldbus communication and HMI communication and other things runs is not very determinate. If you insist in programming in this script style, you could look at having your program be a stand alone task with a very low priority. Basically it will be interrupted by the main code. However, I use state machines to solve this as already mentioned
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+

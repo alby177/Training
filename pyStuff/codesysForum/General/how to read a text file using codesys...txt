@@ -1,0 +1,16 @@
+Hi everybody,
+   In my project i need to read a text file ,for this purpose i am using SysFileOpen, SysFileRead functions .But when i run the application in simulation mode and checked the output from SysFileOpen block it always showing 0 only.I included necessary library file also (SysLibFile.Lib) .
+
+  can anybody help me in this regard or i need to do anything further...
+ any help is appreciated
+
+
+  Thanks & regards,
+  bharath
+
+Hi!
+I think CoDeSys just SIMULATE behaviour of the controller and can't create or read files as well as it can't simulate COM port and work with it. Thus the function SysFileOpen always returns 0.
+my example
+Code:hnd:=SysFileOpen('/data/mylog.txt','r');...SysFileRead(hnd,ADR(buffer),bytes_to_read);
+It's a good idea to use forum search: the same question on this page
+

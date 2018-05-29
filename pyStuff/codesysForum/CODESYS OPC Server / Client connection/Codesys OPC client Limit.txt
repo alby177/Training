@@ -1,0 +1,4 @@
+Is there a limit to the number of connections at one time? I am trying to connect 50 BL67 gateways to the Codesys OPC client.Thanks,Ethan
+
+I think you are trying something which is not possible.- There is no CoDeSys OPC client, only a CoDeSys OPC server- The OPC server is meant to connect to a CoDeSys controller and not to fieldbus I/OWhat you probably want to do is program your CoDeSys controller to which the BL67s are connected.Then you configure the CoDeSys OPC server to be able to connect to the CoDeSys controller.Any OPC client can then connect to the OPC server to read/write variables of the CoDeSys application.
+

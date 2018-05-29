@@ -1,0 +1,4 @@
+Just downloaded the CSV Utility package from CodeSys store. How do I activate the seven day demo license??I have the compact dongle on my computer, but I can't find the way to activate demo license. The example project won't compile because of the missing license.
+
+Hi,you need to add the CSV Utility Demo in you cart and order it (sure this is for free), ongenerating the order the ticket for the demo license will be send to your registered email adress.Then use this ticket to activate the license on your stick.Thats the way it works with all these demo's in the store.Best RegardsE.Schwellinger
+

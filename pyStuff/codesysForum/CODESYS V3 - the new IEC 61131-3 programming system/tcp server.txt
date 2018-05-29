@@ -1,0 +1,6 @@
+HelloIs it possible to get TCP working in simulation mode with the local network card in your pc? And also, if you have more than one client, are you supposed to make several instances of NBS.TCP_Connection depending on how many clients you will support?
+
+I used the Control Win softplc instead and then tcp/ip is working.And about having more than one client, creating several instances of tcp_connection solves that issue. However, when a client disconnects the xDone flag is set and it seems that you can't use that tcp_connection instance any longer.  Since there is no "reset" input to the block i tried setting xEnable to false and then back to true but the Done flag stays true. Does anyone know how to solve this?
+
+@zezamiThis is correct. Create array of TCP Connections, but point them back to the same TCP server handle since one TCP server can handle multiple connections. Also create array for TCP Read/write.
+

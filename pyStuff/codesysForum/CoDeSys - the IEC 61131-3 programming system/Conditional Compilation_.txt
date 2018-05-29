@@ -1,0 +1,24 @@
+Hello-
+
+I am new to CoDeSys, but have experience with other more formal programming languages such as C, C++, etc...  I am looking to create an application that will work with more than one type of target.  For example, I would like to create a program that will run on at least two specific targets, with minimal intervention.  One way to accomplish this with the least amount of effort in other languages is to use an 'ifdef' statement that instructs the compiler to include or ignore certain portions of the code.  This way, one application with the proper logic included can be compiled for different targets by simply changing the build options of the project.  Can anyone tell me if there is a way to accomplish the same type of thing in CoDeSys?  I am using V2.3.6.1.
+
+-Brian
+
+Hi,
+
+Conditional compilation is only possible starting from the new version 3.0 (code only). Perhaps you can page out target specific parts into different libraries ( e.g. for each target, however only usefully for data items like array bounds ).
+
+regards
+
+You can conditional compile using an IF THEN ELSE and a boolean constant as the input.
+
+You could make a few similar POUs for different platforms. Next go to: Project – Options – Build – Exclude objects… and exclude superfluous POUs from compilation. 
+It is not a problem if the POU uses other target specific POUs – they will exclude from the code automatically because they are not in use. 
+
+__________________IP_
+
+You could make a few similar POUs for different platforms. Next go to: Project – Options – Build – Exclude objects… and exclude superfluous POUs from compilation. 
+It is not a problem if the POU uses other target specific POUs – they will exclude from the code automatically because they are not in use. 
+
+__________________IP_
+

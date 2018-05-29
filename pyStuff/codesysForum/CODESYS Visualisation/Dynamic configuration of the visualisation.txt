@@ -1,0 +1,8 @@
+I am working on a project where I am using Codesys for only the visualisation which will communicate directly with the CAN network using Can open protocol. 
+I want to make my visulisation screens using CoDeSys as generic as possible so that I can use the same screens for some other project too but with different variables and their properties.So I need to know that is it possible to convert my visualisation into some editable file format i.e CSV, txt etc. so that according to the requirement I can edit that file with different variables and properties to be used in the other project that also have similar visualisation screens and convert it back to Visualisation?
+
+Lookin forward to get any help or valuable ideas regarding this.
+
+Best Regards,
+Rajat Bansal
+

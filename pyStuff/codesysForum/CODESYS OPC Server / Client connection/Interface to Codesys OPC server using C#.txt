@@ -1,0 +1,4 @@
+Hi, I need to talk to the Codesys OPC server from C# in a VS2013 application:  how do I do this? is there any example code for this? Some hints or guidelines would be appreciated, thanks, Cathy
+
+I am trying the Advosol OPC DA.net toolkit and that seems to be pretty good, and includes a free evaluation download.
+

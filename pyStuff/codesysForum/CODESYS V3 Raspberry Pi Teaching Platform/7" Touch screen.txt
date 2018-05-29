@@ -1,0 +1,4 @@
+Hi everyone, i have started a project wich interfaces a teensy 3.1 whit the raspberry pi. The goal is to use the 7" touch whit the pi as user interface, but im not sure how to do this because there is no native visu. I have tried to startup a browserwindow whit midori but it seems midori doesent work whit codesys, there is just the loading icon.. Chromium is no more in the repo.. I wanted to use something lightwight if possible.. Everytime i try to install a brwoser it asks me to insall about 100mb of things i dont need...Or other question.. Is there a Scada System wich runs natively on linux, supports modbus and is similar to program like codesys?thanks
+
+Hi,one Option would be,to use RaspberryPi.org Standard Image 'Debian Jessi' In current Version the Webbrowser works with LCDDsiplay and CODESYS Runtime see no problem there.BREdwin
+

@@ -1,0 +1,4 @@
+I have downloaded some example projects from the Visu Event Handler package on the Codesys store.When I try and open a project, I am prompted, "One or more library references in this project failed to load.  Please take a look in the messages view for further details."When I go to library manager and try to add libraries, they are all grayed out.  Clicking into one tells me:"No source code available for this object because it is in the compiled library 'visuelembase, 3.5.7.10 (system)'.  Do you want to browse for the original library in order to display the source code?"Obviously I am doing something wrong.  Any guidance is much appreciated.Thanks!
+
+Hi,you need to update the project,I would recommend to use this steps from this Forum FAQ section :viewtopic.php?f=22&t=5641&p=10083#p10083#Regardsplcmax
+

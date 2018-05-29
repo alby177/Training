@@ -1,0 +1,4 @@
+I don't see the exception when I put in break points and go step by step, but when I just let it run I see : *EXCEPTION*[ProcessorLoadWatchdog] occurred in: App=[all], Task=[all]I am just running it on the codesys soft PLC for windows. My codesys version is 3.5.4.30What does this exception mean and how can I get rid of it?
+
+are you using loops (e.g. repeat until / do while)?Maybe you are in an endless loop.
+

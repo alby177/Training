@@ -1,0 +1,16 @@
+Hi,I browsed through the forum but I couldn't find a sollution for this. I would like to run a Phyton script (or bash script) based on a condition within PLC programm (ie. If GPIO pin 27 is high, I want to run a Phyton script).I found some suggestions using Sysprocess.library and SysTypes.library, and use "Sys Process Execute Command", but I can not find these two libraries at all (viewtopic.php?f=21&t=5714)Hope someone can help.Best regards,Gregor
+
+Hi,1. for adding syslibs you need to switch to professional (this is obsolete for 3.5SP7 ).2. then you need to add sysprocess library and Systypes Interfaces2 library (just type part of the name into the search field see screenshot)3. check my example (add the command to /etc/CODESYSControl.cfg)BREdwin
+
+Hi Edwin,thank you for your answer.I managed to install libraries: "SysProcess 3.5.5.0" and "SysTypes2 Interfaces".I am a bit confused, what and how I should write into CODESYScontrol.cfgI have a working script (only an example) which I can run with this command:Code:sudo python \home\GPIO27_ON.pyWhat should I write into .cfg file for this command to be used from within PLC program?I prepared this in .cfg:Code:[SysProcess]Command.0=shutdownCommand.1=GPIO27_ON.pyI moved file to \usr\bin\ folder. I made it executable.In Programm I define xGumb as virtual button.This is my code:Code:xRisingTrigger(CLK:=xGumb);IF xRisingTrigger.Q  THEN    _('GPIO27_ON.py',ADR(Result));END_IFI get Result value 25 when I trigger xGumb. Script is not executed.Gregor
+
+Hi,could not really se the problem at the momentcould you please upload the CODESYSControl.cfg .. (check if there is a dublicate entry of the SysProcess section)Error 25 means: define ERR_NO_ACCESS_RIGHTS	0x0019	/* No access rights for this operation */BREdwin
+
+Hi Edwin,attached is CODESYSControl.cfg (I had to rename it to .txt because forum doesn't allow .cfg files to be uploaded).There is no duplicate.Could this be a problem with ROOT privilege to run python scripts?BR,Gregor
+
+Running script...Attachment:trying to run script.jpgBR, Gregor
+
+Hi,Change the config file to:[SysProcess]Command.0=shutdownCommand.1=python(after doing this a restart of the runtime is needed)and then call in CODESYSSys..Process...ExecuteC..('python GPIO27_ON.py',ADR(Result));BREdwin
+
+Hi Edwin,I finnaly got it working!I had to give the full path to run scripts!Code:IF xRisingTrigger.Q  THEN    _('python /usr/bin/GPIO27_ON.py',ADR(Result));END_IFThank you!BR, Gregor
+

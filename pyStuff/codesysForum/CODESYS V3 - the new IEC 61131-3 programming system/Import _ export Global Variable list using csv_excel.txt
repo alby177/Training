@@ -1,0 +1,4 @@
+Hi,I am using CODESYS V3.5 SP8 Patch 2Is there a way to import / export Global variable list using CSV files?So we can generate variable lists in Excel and then import them in CODESYS.with kind regards
+
+When you use tabs in the declaration of the variables in CODESYS (textual view), then you can just copy/paste the variables to/from Excel.Excel will use the Tabs to place the text in individual columns.
+

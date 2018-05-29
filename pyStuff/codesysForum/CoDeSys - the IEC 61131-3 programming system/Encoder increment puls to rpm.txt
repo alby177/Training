@@ -1,0 +1,20 @@
+Hi there. I'm new to Codesys and PLS programming and I rly need your help.I got a Incremental encoder that increments for every round it takes. How can I convert this to RPM?I know that i have to get the time between every pulse and do the math (rpm = (1/time) * 60). But have to do this?
+
+Hi Henrik,I think there was some library in Oscot forum, But i dont know which one is that.Any how the code is constructed as below1. Take a TON timer and make it automatic on/off but negate output of timer to the timer input2. Find the difference between the values with the encoder pulses3. Multiply with the factor and determine the value and divide by the resolution so that you will get RPMIf you want code you can mail me to below ID i will give you new codebalajimct@gmail.com
+
+this is old post too, however your way with TON timer is not reliable.see the OSCAT.DE library for a correct way.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+may i know the function name for calculating the encoder pulses,I think, if the speed of encoder is 50KHz then the time between the pulses may be 0.02ms, In the codesys the min time is 1ms, then how come you can determine the exact pulses between the pulse interval?If you run the interrupt also the minimum time is again 0.1ms, I think there will be again problem.If the speed increases then the value in the M_TX will be wrong.If i am wrong can you please correct my points.Thanks
+
+m_tx is a timer that looks at a digital signal being high, yes the resolution is 1 msbut the precision is less as the program needs time to loop.If the pulses are faster as about 10 Hz, you will not be able to see all pulses especially when other tasks are running.You will need a fast counter input. This input stores in its own memory the number of pulses, and when asked it will give you an INT how many are counted.together with the time passed you can count the speed.but still you will need a fast counter.another way i used is an arduino as a converter.I used it for getting a decent analog input and a decent analog output 6 AIN and 6 AOUT for 25 euro is low.  oops and a 7809 for power.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi Using OSCAT library we can get encoder pulses by MC_READ POSITION why need to worry about the timer implementation.May I know what servo is used on your side.The library can be used for any servo it is universal.      Thanks
+
+Hi
+
+Hi                    Any response on OSCAT usage?
+

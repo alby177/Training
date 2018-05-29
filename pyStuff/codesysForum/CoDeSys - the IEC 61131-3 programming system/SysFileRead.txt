@@ -1,0 +1,12 @@
+Hi.I'm reading a file (without extension) with this library, byte by byte. It works for some files, but with other files, when I read a byte, the character is followed by some other characters that are not in the file. For example, when I read an 'A', what I can see is 'AX<d,|U', and if I read a Z, 'ZX<d,|U'. Why could this be happening?
+
+Could it be something like newline and/or linefeed? Have you looked at the files with a hex editor?
+
+A Hex 'd' is a Carriage Return so this makes some sense.But, if you are reading a byte, that is a character.  You must be putting this into a string before you see the extra stuff?
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+Where exactly do you see these extra characters?
+

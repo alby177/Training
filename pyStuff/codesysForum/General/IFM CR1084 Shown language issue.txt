@@ -1,0 +1,6 @@
+hello, all:   i have some problem with language issue,  eg, when i need shown German or French,   some character text can not shown properly, only show "??" so have put the fonts in.    even it can not shown in the laptop when we program.    and please kindly help this issue, many thanks.
+
+use the correct fonts in windows, it all depends on the graphic codes used.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

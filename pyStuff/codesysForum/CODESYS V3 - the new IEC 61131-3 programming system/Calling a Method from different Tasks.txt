@@ -1,0 +1,10 @@
+Hi,If I want to call the same method from different Tasks, what would be the way to prevent the method being called from the 2 tasks at the same time?I thought about using a "busy" variable in the FB holding the method. Setting it to TRUE at the beginning of the method and setting it FALSE at the end and make sure the "Busy" variable is false before calling the method.Is this enough or is there a better way of doing this?Thank you.
+
+I amb calling all my fbs from all tasks. And I pass to him the task from which has been called. Inside t'he fb, a switch case determine the function( runHigh, runMid, or runFreewheel) that has to be called un function of the task whic calls.Enviat des del meu Aquaris M5.5 usant Tapatalk
+
+There is a possibility the method will be interrupted between reading and writing the variable.  So I do not believe it is enough.  I believe you said in another post that you are using TC3, if so Bechhoff has a TestAndSet function/function block that disables task preemption while it performs these operations.  There must also be a "disable task preemption" function/function block or something similar in the 3S or CAA libraries.
+
+_________________Rick
+
+Yes I use TC3.I will look for the TestAndSet Function.Thanks a lot.
+

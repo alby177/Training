@@ -1,0 +1,2 @@
+Help me please. I have downloaded the codesys and bought the licence for controlling the beaglebone black. I just configured everything as in quide, but i cannot start the application after logging in. It says "program downloaded:exception". Codesys kinda downloads the application and logs in but does not let me start it. 
+

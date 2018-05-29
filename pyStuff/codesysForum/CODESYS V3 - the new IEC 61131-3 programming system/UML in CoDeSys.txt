@@ -1,0 +1,4 @@
+Hello,I’m interested in the new CoDeSys UML featutre.What is the feature list of this tool?  - Supported UML languages?  - Code-Generation?  - When is the tool available?  - Demo-Version available?Thanks in advance for your help.Greetings,Matthias
+
+I noticed the same. I think we have to wait for 3.5 SP1 and use SVN (in combination with WIBU stick).
+

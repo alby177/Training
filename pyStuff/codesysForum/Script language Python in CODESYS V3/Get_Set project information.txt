@@ -1,0 +1,18 @@
+Hi,I am trying to get/set project information using scripts.I can find the "Project information" object using:Code:from __future__ import print_function# define the printing functiondef tree(treeobj, depth=0):    name = treeobj.get_name(False)    if name == "Project information":        print(name)        print(treeobj.get_children().Count)        # start looking in primary projectfor obj in projects.primary.get_children():   tree(obj)I cannot find information on the object in ScriptEngine.chm. Can anyone help me here? Or is the object with project information simply not supported yet?// Frank
+
+Hi, Frank,Frank Jepsen wrote:I am trying to get/set project information using scripts.I can find the "Project information" object using:Code:(snipped)I cannot find information on the object in ScriptEngine.chm. Can anyone help me here? Or is the object with project information simply not supported yet?Currently, this object is not supported yet.I propose that you file this as a feature request via our support department.
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+
+Hi M.Schaber,Ok. Then I will have to make a workaround for now.I will try to create a feature request for it.Regards,Frank
+
+Hi, Frank,Frank Jepsen wrote:Ok. Then I will have to make a workaround for now.Maybe you can utilize the native or PLCOpenXML export/import for that workaround.HTH,Markus
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+
+M.Schaber wrote:...Maybe you can utilize the native or PLCOpenXML export/import for that workaround....I have now tried that and cannot get it to work unfortunately. I tried creating a project with some content and project information, exported it and imported it again. The project information goes into the XML I can see, but I cannot load the project information again; only the other content is loaded. Is this a known issue?The workaround I hoped for was exporting to PLCOpenXML, edit XML using scripts, and import it again.Now it seems that I have to resort to my previous "workaround", where I have used an auto-mouse/keyboard-clicker to automatically click around in the GUI.   (even though this it not a very stable solution)
+
+Hi, Frank,Frank Jepsen wrote:M.Schaber wrote:...Maybe you can utilize the native or PLCOpenXML export/import for that workaround....I tried creating a project with some content and project information, exported it and imported it again. The project information goes into the XML I can see, but I cannot load the project information again; only the other content is loaded. Is this a known issue?I'm not that deep into the export/import function details so I'm afraid I cannot answer that question. If the same problem appears when importing manually via the menu, maybe the general forum can help you. Or you can always fall back to our support department.
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+

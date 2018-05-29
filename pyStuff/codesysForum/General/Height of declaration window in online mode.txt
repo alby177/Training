@@ -1,0 +1,10 @@
+Hello,
+
+when i monitor a FB, the height of the declaration window is half of the screen,
+if i resize the height to 1/3 next time i go online the declaration window is back to halfscreen
+
+anyone can explain how to keep the height of the declaration window at 1/3?
+
+Thanks in advance
+Fabrizio
+

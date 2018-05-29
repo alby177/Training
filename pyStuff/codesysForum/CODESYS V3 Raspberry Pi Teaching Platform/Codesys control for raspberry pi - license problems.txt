@@ -1,0 +1,14 @@
+Hi to all,I have a problem with the "Codesys control for raspberry pi" license.After installing the license, the system automatically reboot a few hours later (as the license was not installed).The license appears to be regularly installed (a green check appears).Has anyone encountered the same problem?Does anyone know how to solve the problem?Thanks!
+
+Hi,are you working with SD Card images of a licensed Raspberry PI?BREdwin
+
+Hi Edwin,when I installed the license (device/PLC setting/edit license) a green check appeared, as confirmation that the license had been installed successfully.After I ran a codesys program, but few hours later (about two hours) the system freezes and apper the message: "An error happened; will automatically restart". Then I went to check the log file and appear this message: "runtime not licensed".So I went to check the license I entered (in device/PLC setting/edit license), but the license did not appear anymore. I tried then to reinstall it but codesys did not recognize it.Edwin, if you remember, I have already contacted you for this problem (with another license and another raspberry); you've come into my computer with teamviewer and you've solved the problem.Remember how did you do it?Thanks, BR
+
+Hi,1. clean up the content of (would say delete the content of this directory)cmact_licenses directory via CODESYS File browser2. restart the Pi plc3. relicense by CMLicenseNew.WibuCmRaU  file (which you find on your PI - CODESYS File browser)BREdwin
+
+Hi Edwin, I clean up the content of cmact_licenses directory via CODESYS File browser, but I not see theCMLicenseNew.WibuCmRaU file.Below I attach the screenshot.Thanks, BR
+
+Hi Edwin,can you give me some solution?Thanks, best regards
+
+Hi,you need to open a support case in the CODESYS store by using the 'my question' (logged in to your store account)BREdwin
+

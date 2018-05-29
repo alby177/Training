@@ -1,0 +1,16 @@
+Hi Guys,
+I have a few simple bitmaps (like icons) that I wish to angular rotate about their centres under program control using the VisualObjectType structure.  They do not seem to work yet standard objects created within the Visual programming environment do.
+
+Is there an exception to this for bitmaps?
+
+Hi,
+
+I don't think  it's possible to rotate bitmaps in the visualization.
+
+One solution would be to create a series of bitmaps with the icon rotated at a different angle in each one. Then use the programmability possibility in CoDeSys to select the one that should be displayed.
+
+Best regards,
+Kristian Berlin
+
+Kristian is right you can't rotate a bitmap.
+

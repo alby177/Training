@@ -1,0 +1,14 @@
+Hello,I want to play AUDIO files with my RPI2. What do I have to do in Codesys? My idea is to play AUDIO files when some digital bit is ON.regards
+
+Hello:Enable commands at /etc/CODESYScontrol....  (do not remember right name), add to settings:Code:[SysProcess]Command=AllowAllOR more safety:Code:[SysProcess]Command.0=aplayCommand.1=mplayer...In Codesys program add variable:Code:VAR   cmdResult   :    RTS_IEC_result;               // Command ResultEND_VARAnd use command for play the sound  (for aplay command):Code:SysProcess***ExecuteCommand('aplay /theway/tomusic/sound.wav', ADR(cmdResult));    // Delete that "***", I have to add it because forum filtering itRemember, that program will stop at command until the sound is played. Its better to make 2nd Task for sound playing with using some buffer or mark at GLOBAL VARIABLE.Code:IF soundState THEN SysProcess***ExecuteCommand('aplay /theway/tomusic/sound.wav', ADR(cmdResult)); soundState:= FALSE; END_IF     // Delete that "***", I have to add it because forum filtering itMaybe you have to add library:SysTypes InterfacesSysProcess
+
+Thank you! This worked fine.
+
+jvondrus wrote:Maybe you have to add library:SysTypes InterfacesSysProcessHallo jvondrus,How can I add this library?Thanks, your help!regards
+
+Hi,see screenshot just type in what you know from the library - name of an FB or name of the LibBREdwin
+
+Hello,I am currently testing a video file with: Video_1: STRING: = 'sudo omxplayer -o both /home/pi/media/test.mp4';The file is also played via the "omxplayer".Works perfect,But how can I finish playing that prematurely?In the terminal I press "q"is that possible?Thank you very muchmfg mike
+
+Edit: I got it working. Now that I have an account I can see the screenshot mentioned above.  Just an addition, I had to click on the "display advanced libraries" in the Add Library window. I am interested in getting this code to work on my Raspberry Pi 3 using CODESYS V3.5 SP10 P2 +. I have SysTypes Interfaces (3.5.2.0) and SysProcess (3.5.7.0) installed. I'm very new to CODESYS and Raspberry Pi. In declaring the variable cmdResult, there is an error "Identifier 'RTS_EIC_result' not defined". I also tried Code:cmdResult   : POINTER TO RTS_IEC_result;but I get the same error. Also, regarding the SysProcess***ExecuteCommand (minus the ***) I have the same "Identifier not defined" error. Is there an "Import" that I'm missing?jvondrus wrote:Hello:
+

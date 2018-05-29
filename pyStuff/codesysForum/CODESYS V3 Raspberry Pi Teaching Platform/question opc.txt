@@ -1,0 +1,8 @@
+Is it possible in some way to publish the driver in OPC UA and read it with an opc DA client?I have an old scada that read codesys drivers 2.3 in opc DA and now I can not read the 3.5.thanks in advance
+
+Hi,Pi could be OPCUA Server but if ou install an OPCDA Server on an Windows machine sure you could get the PI symbols through this OPCDA Server vom the PI plc.(Access them by your OPC DA Client)BREdwin
+
+good thanks for answeringDo you know any software that can do that, connect as an opcua client to the pi, and serve the points as a server opcda?Thank you
+
+Hi,CODESYS OPC DA server is doing this (sure OPCUA is in this case not involved)Keep in mind the OPC DA is only available in the CODESYS 32Bit setup.BREdwin
+

@@ -1,0 +1,10 @@
+How do I configure the raspberry pi to automatically run the application on reboot? I have no problems rebooting the pi, connecting to the pi with Codesys, logging on and pressing the 'run' button. But I would like the application to run automatically on reboot.Thanks.
+
+In the device settings you can select run on boot Sent from my SM-N9005 using Tapatalk
+
+Thanks - but I can't find that option for the Raspberry PI. When I right click on the Device (CODESYS Control for Raspberry Pi SL), which brings up the Device Editor, none of the device screens have the 'run on boot' option.Where is the Run on Boot option? I'm using Codesys 3.5. Seems like that was available somewhere in v2.3, but I can't find it. The help system or google wasn't able to point in me the right direction.Thanks for your help.
+
+Hi,this should be enabled by default.If your boot application does not start I asume that there is a problem in your application (crash on Startup - whatever, things like that)check the log after startup the pi by ssh connection:cat /tmp/codesyscontrol.logBREdwin
+
+Thank you, very much. That's what I needed.
+

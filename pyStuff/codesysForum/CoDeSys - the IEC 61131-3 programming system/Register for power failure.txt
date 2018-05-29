@@ -1,0 +1,6 @@
+Hello,can anyone explain me which variables or register I have to use if power failure appears and I need to read the saved data from PLC?Thanks
+
+There is no Power failure in the PLC, however you could detect a failure in the PSU (or better in the AC circuit)
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

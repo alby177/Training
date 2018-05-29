@@ -1,0 +1,4 @@
+Hi,just ported a programm from RPi to BBB and figured out, that the set cycle time within the Task Configuration is not working.For my programm I'm using own special timers working with the cycle time of the task. As I'm configuring them with TIME variables, which just work down to ms and the task cycle time even set to 200ms is not rising up into the ms times.Is this a bug?RegardsMichael
+
+Hi,my Problem is solved as I'm using now ticks.As it is a bug is still open.Best RegardsMichael
+

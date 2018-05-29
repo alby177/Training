@@ -1,0 +1,4 @@
+Is there a way to modify the default keypad of CoDeSys?I want to have capital letters and numbers together.
+
+Hi Raz,feel free to customize the Keypad to your requirements."c:\Program Files (x86)\3S CODESYS\CODESYS\Projects\Visu\Dialogs\VisuDialogs.library" BREdwin
+

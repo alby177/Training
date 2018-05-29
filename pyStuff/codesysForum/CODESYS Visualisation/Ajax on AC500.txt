@@ -1,0 +1,2 @@
+I have to create a website in a AC500 conpatibile with mobile phones.The best solution I think is to use javascript (jquery)The problem is to have the variables inside PLCBy examples on the internet (but on a Wago) can I use Ajax, but each call returns me an empty string (if I have not started the Applet) or always the same (if I started the Applet)Where can I find documentation to retrieve this information?
+

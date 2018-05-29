@@ -1,0 +1,6 @@
+I have a base class that I'd like to extend such that the subclass has extra parameters in its constructor.For the sake of brevity, I'll skip the class definitions and jump straight to the object declarations - I think it gets my point across:Code:A : BaseClass (parameter := myParameterValueForA);B : BaseClass_Specialization_1 (parameter := myParameterValueForB, specializedParameter := mySpecializedParameterForB);However, CODESYS doesn't like the definition of BaseClass_Specialization_1.FB_Init because it doesn't match BaseClass.FB_Init.  This is a standard thing to do with other OO languages, and I'm trying to figure out if I'm just missing something or if it's not supported.Any thoughts / suggestions?
+
+Hello,unfortunately CoDeSys does not support overloading.
+
+Thanks, I was afraid that might be the case.  Pity, that is quite a restriction for working with class hierarchies.  I can understand not supporting overloading for regular methods, but for constructors it strikes me as kind of a big deal.Maybe it will turn up in future versions...
+

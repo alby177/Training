@@ -1,0 +1,4 @@
+(This is a rephrased example of a case which arrived via email.)Python has the range() and xrange() constructs to iterate over integers. However, there is no such construct for floats.The main reason might be the problems with rounding of floats. If you want a good introduction into that subject, you can check the following article: What Every Computer Scientist Should Know About Floating-Point Arithmetic by David Goldberg.You should also be aware that the FPU on the runtime might handle the precision and rounding different than the Python code on the developer PC, if you're about to compare floating point values between PC and runtime e. G. via monitoring.If you're aware of said problems, you may find some solutions in the Recipe 66472 in the Python Cookbook, or in the Discussion on Stack Overflow.
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+

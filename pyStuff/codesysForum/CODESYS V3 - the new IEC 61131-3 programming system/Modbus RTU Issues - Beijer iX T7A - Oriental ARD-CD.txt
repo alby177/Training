@@ -1,0 +1,10 @@
+Hi I'm brand new to Codesys and am attempting to connect a Beijer iX T7A HMI with softcontrol to an Oriental Motor ARD-CD stepper controller using Modbus serial.I have successfully achieved this using proface but am getting constant framing errors on the drive and no values in the holding registers of the codesys.Any ideas please?
+
+I think framing errors could be a sign of mismatched baud rates or possibly noise.  Even if you want to go faster as a final goal, set both devices up for something slow like 9600 baud to begin with.  Slower speeds are generally less suseptable to noise and cable issues.Then there are the serial parameters of number of data bits, number of stop bits and parity.  I konw the Beijer has controls for this but no clue about the Oriental stepper controller.  A common setting for this (but by no means ubiquitous) is N81 which means 'No' parity, 8 data bits, 1 stop bit.  These settings have to match on both devices just like the baud setting.  I think you'll get different errors if you are trying to read an address out of range.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+Issue solved. Problem was found to be incorrect wiring diagram on the OM drive. Ground pin not connected which was giving some erroneous data strings Sent from my iPhone using Tapatalk
+

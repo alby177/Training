@@ -1,0 +1,2 @@
+HelloI'm using the Modbus RTU Master, V3.5.10.0Is it possible to write to node address 0 (I mean a broadcast)?Thanks
+

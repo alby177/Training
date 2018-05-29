@@ -1,0 +1,9 @@
+i am just importing and exporting etc, and now i can not change the hardware configuration. can anybody tell me why this is unreachable. i do see the word but there is no wagoBus anymore.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Did you solve this? It isn't completely clear but in the past I have had problems with Targets and it messin gup the IO address spacing etc.. It was because there was another .cfg file in a path defined for the project so when the project was opened it like got confused because there where two cfg files found.
+
+_________________Thanks,
+Steve Pfeifenroth
+

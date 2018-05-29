@@ -1,0 +1,6 @@
+Hi,I am developing a continuous integration test framework using the Codesys Test Manger to test the components in a package. I would like to know if it possible to install the packages from Test manager or command line.thanks,mazahar
+
+Hello mazahar.There is the tool PackageManagerCLI.exe in the Common directory which allows you to install/uninstall packages from the command-line. But you need to restart your CODESYS instances to make the new stuff available.To start the tool you could create a test action with the command ExecuteExternalCommand from the group TestManager.System to install the package and use the script element Remote Call to start another CODESYS instance which runs the actual test script.HTHMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

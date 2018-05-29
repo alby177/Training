@@ -1,0 +1,6 @@
+When I add an Ethernet device (3S- Smart Software Solution Gmbh 3.5.9.0 Ethernet Link.), I get an error from the library manager. In the library manager the library IoDrvEthernet uses the library IoDrvUtility with seems to be (not resolved).=> Could not open library '#IoDriver Utility'. (Reason: The placeholder library 'IoDriver Utility' could not be resolved.)I am using Codesys V3.5 SP9 Patch 1 +When I look in the Library Repository this "IoDrvUtility' seems to be located in the 'IoDriverBase' library.Compiling fails wit at least 35 errors.How can I correct this problem?see screenshots attached.
+
+Hi,which plc are you using and in which version?The Problem is that the placeholders for this new SP9 lib is not defined in the plc device.The workwround is to set it manually in the placeholders on the libraryManager.BREdwin
+
+Thanks, it works.The PLC I am using is a Macq P6 codesys 3.5.9.10
+

@@ -1,0 +1,10 @@
+Hello,Is there a variable for Web-Visualization which is like CurrentVisu in Target Visu?  I am running a test function and I need to it kill the test if the user leaves the screen.:~Kind regards,Doug
+
+the answer is Noask roland if there is a way to see if info is asked by the PC and if so the unit is active, if not then is there a variable no need to update..
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thank you for your input.  It actually makes sense that it would be able to pass the variable back since multiple users can be logged into the web-visu at a single time.Kind regards,Doug
+
+_________________Kind Regards / Mit freundlichen GrüssenDoug Rilee
+

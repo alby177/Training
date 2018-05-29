@@ -1,0 +1,12 @@
+Dear all,I added EL7211-9014 Servo driver xml file in  codesys using Tool->Device Repository. XML file was added without any error by codesys as seen on picture 2. After this process ı hope that ı can add EL7211-9014 xml file on my codesys program without any problem but when ı right click on Ethercat_Master->Add_Device as seeen in picture 1, xml file didn't  appear. So ı can not add xml file. How can I solve this problem? Thank you for helping.Best Regards.
+
+Dear All, I solved my previous problem. I have one more question. I added EL7211-9014 XML file on my codesys code. But I can not generate SM driver. I think  driver profile of EL7211-9014 is MDP742.  How can I drive EL7211-9014 servo driver which has MDP742 driver profile via soft motion. ?Best Regards.
+
+Hi,guess you need to change the firmware to have the ds402 profile running. Then you could usethe SoftMotion driver which comes with the SoftMotion Package.BREdwin
+
+Hi Edwin,I changed to firmware profile to DS402. I red that ethercat drive will not work with softmotion Generic Driver because of  there is no realtime capabilities on the PI. I generated SoftMotion Light Generic Driver   But ı got an error shown in png_1 and png_2.If ı generate SoftMotion Generic Driver, I do not get any error until pressing the start button.(png_3,png_4).After pressing the start button, I get the error shown  in png_5.According to what ı read, Softmotion Light driver should work without any error. How can ı solve this problem.Best Regards.
+
+Hi, Could you give me some suggestion for my problem?
+
+Hi,I would try to check if this drive is SoftMotion light capable"c:\Program Files\3S CODESYS\CODESYS\Projects\SoftMotion\4.x.x.0\SoftMotionLight\SML_CompatibilityCheck_DS402.project" If this is the case you could go with SoftMotion light,if not - the only way is to use an rt_preemt patched Linux Kernel and use SoftMotion then.BREdwin
+

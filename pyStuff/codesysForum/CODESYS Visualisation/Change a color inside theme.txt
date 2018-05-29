@@ -1,0 +1,4 @@
+Hi everybody,I created my own Theme from FlatStyle but I can't change a type of color (here the blue one on table arrow up and down, cursor, etc.)So, if you know the right property to change I'll very happy to know it ...
+
+I don't know why but after many restart, my personnal theme have been correctly modify.
+

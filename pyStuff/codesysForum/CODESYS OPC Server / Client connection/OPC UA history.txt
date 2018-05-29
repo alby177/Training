@@ -1,0 +1,8 @@
+hello:Does codesys support for opc ua history and retrieve the history of the variables?best regards,
+
+Hi,at the moment not implemented.BREdwin
+
+Edwin Schwellinger wrote:Hi,at the moment not implemented.BREdwinDo you know if it is in development or if you plan to do it?Best regardsEnviado desde mi Plus E mediante Tapatalk
+
+I think many customers would like to see this feature implemented! Me too! 
+

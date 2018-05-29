@@ -1,0 +1,4 @@
+The codesys Webserver indicates that "socket to PLC opened successful", "File favicon.ico requested..." and "File webvisu.htm requested...". State: "successful", but the PLC_VISU visualization does not appear in Chrome (http://localhost:8080/webvisu.htm)???
+
+hi,which plc are you using?-> http://localhost:8080/webvisu.htm -> this calls a CODESYS V3 webvisualisation.BREdwin
+

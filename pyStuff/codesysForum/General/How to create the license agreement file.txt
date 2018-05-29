@@ -1,0 +1,13 @@
+I have created a library with license formaet, but I don't know how to create license agreement to authorize other customer to use the library.
+
+Hi
+
+Library licensing is limited to OEM’s or important customers because it’s an additional effort for us.
+We’ll create a tool which enables creating licenses for libraries with a specific vendor ID.
+A licensable library appears in the licensing manager after it was inserted into a project once.
+Please contact our sales department in concrete cases.
+
+Bye, Frank
+
+_________________Qualitätssicherung
+

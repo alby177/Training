@@ -1,0 +1,8 @@
+I'm trying to get Ethernet/IP working and seem to not be able troubleshoot the error. Attached is a picture of the explorer tree. The only indication of errors I see is in the "Status" tab of the ethernet module that says "Module reports and Error". How do I know what the actual error is?
+
+Hi,does this happen even if you browse the correct Interface?BREdwin
+
+I have browsed all the items in the tree with the red triangle and there doesn't seem to be any new information. But I'm very new to Codesys.OH! Now I get it, I don't have an interface selected.
+
+Thank you Edwin for helping with my problem, but I seem to have only gotten halfway through it.In the Ethernet Device Parameters, there are two IP addresses listed. One is "Configure" and the other is "Actual". I cannot figure out how to change the actual IP address. I have tried deleting the entire ethernet tree and starting over, clearing memory on my device and redownloading. My device is at 192.168.1.75.
+

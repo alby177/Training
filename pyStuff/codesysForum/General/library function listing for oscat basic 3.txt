@@ -1,0 +1,14 @@
+Hiany body has the detail library function listing for the oscat basic 3 library?I ready from the codesys library manager but not much detail.
+
+J think you find the detail in "Oscat Basic Docu.English/German" you can dowload on the website of Oscat 
+
+this is not the place use oscat forum instead, however u should DL 3 versions:the LIBthe TXTand the PDFin the PDF is a description of each function with in and outputs.the TXT version has the complete program of all functions, here you can learn how to program.do not change anything but make your own functions from this lib.if help needed just ask here or at oscat.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+shooter wrote:this is not the place use oscat forum instead, however u should DL 3 versions:the LIBthe TXTand the PDFin the PDF is a description of each function with in and outputs.the TXT version has the complete program of all functions, here you can learn how to program.do not change anything but make your own functions from this lib.if help needed just ask here or at oscat.Dear Paul, I couldn´t download the oscat library, please can you send it to me please, carloseduardo@koeln.com.bo, thank youBest Regards
+
+done
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

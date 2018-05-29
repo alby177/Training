@@ -1,0 +1,4 @@
+Hello,Does Codesys have system operands with special functions such as power-up bit, always on/off, clock pulse etc?
+
+Up
+

@@ -1,0 +1,12 @@
+Hello,
+I have a new question about PID controller. Everytime, when I start and stop and restart mi program the PID function gives me an overflow error. The error set to the PID controller is of 20, summing in steps of 1 value.
+Why should this happen?
+
+I tried to wrote the PID myself, but then I found that I do not know how to set the time. Is there any time function that allows me to sum, for instance, a value of 1 per second until my setpoint?
+
+Thanks a lot.
+
+Noe
+
+_________________Noe
+

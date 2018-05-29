@@ -1,0 +1,2 @@
+Greetings,I'm trying to find a CodeSys PLC (v3) for a special class of advanced automation and I will need to add C code to the mix of IEC programming.Can anyone recommend such a vendors product?Regards,Johnny
+

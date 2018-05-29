@@ -1,0 +1,4 @@
+Hi,the topic name's says everything, When I open a new empty unipi Project from the startup page, 502 errors occurs. Anyway have an Idea why?
+
+Hi,think this could be solved by update device in the device tree:See the faq section:viewtopic.php?f=22&t=5641&p=11221#p11221cheersplcmax
+

@@ -1,0 +1,2 @@
+Hi,I'm reciving an unhandled exception when configuring the alarm class notification actions. It's not very important, but I guess that a bug it's a bug.How to reproduce? Check photo.
+

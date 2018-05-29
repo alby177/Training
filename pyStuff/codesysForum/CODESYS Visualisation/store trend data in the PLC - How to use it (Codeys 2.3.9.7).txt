@@ -1,0 +1,16 @@
+I need to display some trend data using the trend HMI element. It works fine either in HMI ou web-visu mode.
+
+The question is, the display starts with an empty display every time I restart the visualisation. In fact, I want to connect to the PLC from time to time and watch the last period of time.
+
+So I checked on the "store trend data in the PLC" option, in the target settings-visualization options. The ringbuffer TREND_TASK is correctly generated, as explained in the online help. 
+
+I imagined this task stores the data in the PLC, just for my purpose! In fact, I see no difference at all: every time I reconnect to the PLC, the trend displays at first an empty x/t grid, filling it as time goes on.
+
+My target is a Wago 750-873.
+
+What is the intended function of the "store trend data in the PLC" option?
+
+Remark: I don't want to send the data over the network because I can't guarantee it's always ON. Is it possible to work in that configuration?In the trend configuration, the "recording option" is set to online. I tried to set it to "History" without configuring a filename, but CoDeSys crashes by saving the project.
+
+Thanks a lot for any help
+

@@ -1,0 +1,2 @@
+Hello,is it possible to change the settings of a data server during runtime?How will this work?ThanksMaik
+

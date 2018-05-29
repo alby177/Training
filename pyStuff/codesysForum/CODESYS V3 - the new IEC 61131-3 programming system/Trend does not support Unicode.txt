@@ -1,0 +1,2 @@
+Hi All,It seems "Trend" and "Legend" does not support unicode strings although i have checked "use unicodestrings" in Visualization manger -> General Setting.Description of all of the trend variables are in Korean, however the trend tooltip and legend are not displayed correctly as shown below.Any help would be appreciated.Attachment:Trend_Unicode_Issue.jpgBest Regards.Y.M.Kim
+

@@ -1,0 +1,10 @@
+Good morning,i have the problem when i call a function of building library. An exaple is when i call timer_1 function and declare the variable in prg.Timer_0_1 : Timer_1;the name of the variable Timer_0_1 is not correct this is for all variable of all function block.of building.I installed building package from store and i use codesys 3.There is a old tipic for this ?
+
+try it with namespace - this should work
+
+_________________Building & Process Automation with HVAC Library for CODESYS© - www.hvac-automation.com
+
+ciorry86 wrote:Good morning,i have the same Problem! Can somebody help us?  
+
+Hi,use the namespace OSCAT_BUILDING.timer....Best Regardsplcmax
+

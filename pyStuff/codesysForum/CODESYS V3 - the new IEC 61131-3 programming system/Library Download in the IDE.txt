@@ -1,0 +1,10 @@
+Hello,I tried to use the automatic Download of the missing librarys in V3.5 SP5.When i delete one of the Codesys Libraries then I get an Error when i trie the "Download missing libraries" Button, but it could be that my Internet Connection is done by an Proxy Server.But the main question is how to set up an private Library Server for my own libraries ?I tried to include the Path of the Library directory to -->Options-->LibraryDownload-->DownloadServerLike that D:\CodesysLibrarys\MyOwnLibsD: is on a Server but connected as a NetworkDevice (Netzlaufwerk)So the Question is what type of Server do i have to use and in which format do i have to store the librarys on the server.Thanks a lot !
+
+Hello, I tried it again with "D:\CodesysLibrarys\MyOwnLibs"It also seems like it works, because when a library is missing then the IDE shows me the path where it want to search for the library.Like:file:\\\D:CodesysLibrarys\MyOwnLibs\FlorianINC\EngineDriver\0.0.5.3So I rearranged my libraries in this manner.Now I have a Path like this: D:CodesysLibrarys\MyOwnLibs\FlorianINC\EngineDriver\0.0.5.3\In this folder I made a copy of my library (EngineDriver_V0.0.5.3.library)But the automatic download is still showing an Error and the download will not start.Do I have to save the library file in any special format ?
+
+Hi,1. you need a webserver where you put the libraries on and this should "serve" the libraries as https download.2. Since SP6 you could supply your customers additional with 'missing devices# (you could download missing devices from CODESYS development system too)The structure on the webserver should be for libraries:This is similar to what you find in the device repository 'c:\ProgramData\CODESYS\Managed Libraries\'+ Index fileThe index is in that screenshot for example:3S - Smart Software Solutions GmbHCAA Technical WorkgroupInternSystem
+
+what does the index file contain?
+
+_________________Building & Process Automation with HVAC Library for CODESYS© - www.hvac-automation.com
+

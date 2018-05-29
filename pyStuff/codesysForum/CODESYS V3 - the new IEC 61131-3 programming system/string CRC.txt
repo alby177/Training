@@ -1,0 +1,12 @@
+HII have a string 'CA,0,0,3,0,0,1,ED$R$N'may i know how to write a source code using codesys 2.3 in ST to calculate the  CRC of this string?Thanks
+
+look at oscat basic library it as the function CRC_GEN that will calculate if for youhttp://www.oscat.de/downloadmanager/viewcategory/3.html
+
+_________________The Original SoMachine Ninja
+
+thank you for your suggestion,but the crc_gen only works on byte array, need to change the string to byte array! how, no lib function supports this conversion.
+
+stolen from viewtopic.php?t=948MyString   AT %MW0:      STRING(80);MyBArray   AT %MW0:      ARRAY [0..79] OF BYTE;ORbyByte:BYTE;sString:STRING(8 ); (*a normal string has a size of 80 chars*)abyByte: pointer to POINTER TO ARRAY[0..7] OF BYTE;abyByte:=ADR(sString); (*if lengths do not match you can get real weird problems*)byByte:=abyByte^[i];
+
+_________________The Original SoMachine Ninja
+

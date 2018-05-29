@@ -1,0 +1,6 @@
+Hy!!!!I am new to CoDeSys and I don't  have experience with PLC programming systems. I am trying to set up a smal project. I have 1 building with 4 apartments and each appartment has a counter for cold water. I need to colect all data from counters and to do a display when you can visualize the counter foe each ap, the total counter and reset de partial counter. I finished the proface programming, and codesys part for counting and reset. All the counters are in ModBus and I'm using WAGO 750-881 with the 750-653/003-000 module.I don't have any ideea how to declare the analog input, how to connect codesys with the counters.Please help me!!!!!Thanks in advance.
+
+first thing your 881 is NOT version 3 but 2.3 For every counter you use a %MW* address like %MW101 for counter 1use wago i/o check 2 for the parameters and put the data to be send as a %QW* to your module. receiving is by %IW*for software have a look at www.oscat.de it has a modbus library.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

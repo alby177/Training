@@ -1,0 +1,10 @@
+Hi,A couple of questions.First, I'm looking for a way to do mathematical power (i.e. x raised to the power of y), but I can't seem to find a way to do it. Is there an operator or function in Codesys that can do it? I've tried scanning the documentation and libraries to no avail.Secondly, I've been looking for a way to merge two 16-bit ints into a real. This is a surprisingly common operation as sensors/meters tend to store data in real form but accessible over modbus through two 16-bit registers. Again, I can't find a way to do this.Finally, I'm not sure how to accessing inputs and outputs on PLCs through Codesys. Is there some documentation on this topic? Preferably without having to map I/O to variables since this just wastes time with our current system.Any help, samples or even direction would be great.
+
+1. The EXPT function raises one variable to the power of another.Attachment:Help-EXPT.JPG2. One way to do this is to define a union (DUT) as shown below.  Code:TYPE MySignalType :UNION   RSignal   : REAL;         ISignal    : ARRAY [0..1] OF INT;END_UNIONEND_TYPERSignal and ISignal occupy the same memory space so you could access the data as follows:Code:VAR   A   : MySignalType;   B   : REAL;   C   : INT;   D   : INT;      END_VARA.RSignal := B;      // Put some real data into the unionC := A.ISignal[0];   // Get data out of union as two INTsD := A.ISignal[1];
+
+_________________Rick
+
+Thanks for the reply!It's amazing how well hidden that operator is. It's not even listed on the operators page in the manual!Regarding the real, that seems very useful. I will probably still have to be wary regarding endianness, although I'm not sure how to detect that in ST. Were it C or C++, it would be another matter, though.
+
+Dears.I think that inside the union B has to be lint. If you put lreal, it takes 13 lasts bits as exponent.If you have the number as lint it is easy to convert to lreal
+

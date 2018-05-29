@@ -1,0 +1,6 @@
+Hi,I need to read a log file on GSM router that is only available via http. Is it possible to create an http connection in CoDeSys so that I can read that log file in CoDeSys?Thanks
+
+Use Oscat LIBhttp://www.oscat.de/
+
+_________________The Original SoMachine Ninja
+

@@ -1,0 +1,10 @@
+Hello!I have a problem. I want to write text to a file but cannot use the SysFile library. I have that included in my project, but RTS_IEC_HANDLE is not defined. Why?My goal is to write to a MS SQL database, but I don't know how to do that, so I create a file insted and later a MS SQL database is going to pick up that file.I'm using Codesys 3.5 SP8.
+
+Have you tried adding the namespace before the type like:Code:SysOpenFile: SysFile.SysTypes.RTS_IEC_HANDLE;njkk: SysFile.ACCESS_MODE;
+
+Comingback4u wrote:Have you tried adding the namespace before the type like:Code:SysOpenFile: SysFile.SysTypes.RTS_IEC_HANDLE;njkk: SysFile.ACCESS_MODE;No. I will try that tomorrow. I give you a reply then.
+
+Comingback4u wrote:Have you tried adding the namespace before the type like:Code:SysOpenFile: SysFile.SysTypes.RTS_IEC_HANDLE;njkk: SysFile.ACCESS_MODE;No that doesn't work.
+
+I change library.
+

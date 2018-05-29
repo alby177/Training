@@ -1,0 +1,11 @@
+Hi, I got a program written in MXPro (CoDeSys) v2.3.9.5 and unfortunatelly string variables are not seen correctly on panel Microinnovation (EATON) XV-100 (B6, color) with Galileo visualization. You can see that in attached file. Changing project->options->editor->font options in mxpro does not change anything on galileo visualization.Have you any ideas how to make it working? Regards.PS. I do not know whether that problem is Galileo problem or MXPro problem - maybe you faced such situation and know how to do that.
+
+I have a guess. Check which font the text/label box is using. The string is just a list of bytes. But how they are displayed will be based on your font settings.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+HelloThe forum you wrote that worked with the panel XV-100 mikroinnovation, please tell us to what PLC you connecting this panel and what protocol (Profibus, CanOpen, Ithernet). I have a problem, I can not connect panel XV-252-57MPN, to the PLC via Profibus EC4P-202 of Moeller. Thanks in advance
+
+Hello chrisdotdot !I had this problem using visualization Moeller version of CoDeSys, but never with Galileo.This seems to be a problem of font with Galileo.2 or 3 ideas :- In setting the tag you can choose 2 options for "Format" (ACSII or Unicode) and 3 options for "Termination" (With version 7.2.3)- When you load the application Galileo, it seems that at one point we propose to load the fonts- Try may be an update of the systemHope this helps you !Best regards
+

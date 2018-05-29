@@ -1,0 +1,8 @@
+Hi,I need to use Rising Edge Trigger in a program. To understand how it functions, I wrote a simple program with single input and output. Simulation can be seen here: https://youtu.be/SLGQLkMbE2gIn the video you can see that R_Trig function block detects the rising edge of the input on only two occasions.Is there a problem with software/ function block or anything else?Thank you
+
+rtrig's output is only True for one cycle when the signal changes, so for maybe 20ms if you have a default cycle time set.The fact that you can see it at all is due to the scan of the visualisation. If you stick a tof at the end of it with let's say 3s then you will see the trigger.Sent from my SM-G935F using Tapatalk
+
+A simulation is not accurate, the trigger does work for one cycle, (taking very small time, not enough to be visible at screen,you will need to use a SET coil to see it working correct.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

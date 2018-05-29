@@ -1,0 +1,2 @@
+Hi,Is there a way to point to each variable of a GVL?Like :FOREACH VAR IN THIS^.GVL   iVar := __VARINFO(MyTestVar);   //Some work..END_FOREACHThan you
+

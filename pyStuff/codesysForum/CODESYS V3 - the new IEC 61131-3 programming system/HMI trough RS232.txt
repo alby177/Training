@@ -1,0 +1,10 @@
+Dears,I'm quite experienced Codesys user but i have a task which I've never done it. I have to connect Delta HMI DOP-B03S211 with my Codesys PLC V3. Hardware connection is not problem, it is RS232.Connection manual:http://www.delta.com.tw/product/em/control/touch_hmi/download/manual/Hitachi%20EH%20Series%20PLC_EN.pdfProblem is how to get data in Codesys. Do i have to establish Modbus over RS232 or do I have to make it by-my-self with raw data and kind of buffer?For now I'm using CANopen, does for HMI connection also exist any knd of *.esd file which determines variables & its address?please, suggest meAlex
+
+Oh I forgot, I can use Modbus RTU slave, right?  Will work?Regards,Alex
+
+It is not clear what you want to do.The link to the Hitachi PLC shows information about a type which is not programmable with CODESYS.The CODESYS HMI cannot connect to this PLC.Might be better to use a Micro-EHV+....
+
+If the HMI supports Modbus, then it will be the client (master) and you can setup a Modbus server (slave) module in your CoDeSys PLC V3 code to respond to the HMI requests. If the HMI is using straight serial, then you will have to make your own serial port driver using the SysCom library. This will be more work than the Modbus solution.If you are lucky and Modbus is supported on the HMI, then simply create a WORD array on your PC side that will hold the xx registers that you need to move back and forth. Use the same array for both read and writes (it's just easier). Use a Modbus Server FB and point to the WORD array. I typically have all of the read only registers first (array entries 0..27) and then the writable registers at the end (entries 28..32). Every PLC scan, copy your data between your internal variables and the WORD array (reads go from internal variable to WORD array; writables go from WORD array to internal variables).
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+

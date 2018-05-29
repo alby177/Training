@@ -1,0 +1,15 @@
+Hi,
+
+I have a program made with CoDeSys and that can run on multiple target:
+Wago 750-841, 750-871, 750-849, etc.
+
+I'm using the USR led that exist on these devices and that can be blink programmatically.
+
+To warn the user that the PLC is in RUN or STOP I'm using system events to run some PRG : LED_START_PRG, LED_STOP_PRG (wichh are called nowhere).
+
+A problem occured when I'm doing a target change, because system events are cleared but a bug seems to be present because when I upload the rebuilt project to the PLC it turns to a failure mode when set to run.
+
+I'm using a telnet connection with the PLC serial cable to see that the error occured when calling the LED_START_PRG (that should not be called as system events table has been cleared and concerned programs are not built and linked in the binary file, they are grayed).
+
+Any idea to fix this issue, because every time I forgot to re-add system events on target change, I'm crashing the PLC.
+

@@ -1,0 +1,7 @@
+I'm using EASY215 from frenzel berg to make it CANopen master but I only have two options 'Base Parameters' and 'Can Parameters'(screenshot attached).
+Please tell me where to find the options for PDO/SDO mapping for EASY215.
+Thanks in advance.
+
+I don't know EASY215.
+But in my PLC, the PDO configuration is made directly in slave (Right click in CANopen Master, insert element, select slave, ...)
+

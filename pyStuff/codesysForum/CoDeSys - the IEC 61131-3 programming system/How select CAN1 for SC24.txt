@@ -1,0 +1,4 @@
+Hello!In codesys, I use CanOpen on the SC24 with CAN0 : it's OK!How use the port CAN1 for canopen in codesys ?Thank You!
+
+I'm already know.  All port need add to PLC Config. And, please,  look for ID Node.
+

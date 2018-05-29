@@ -1,0 +1,23 @@
+Hello Friends ,
+
+Need your comments!!
+
+Thank you!
+ 
+
+---------------------------QuickBuilder --------------------------------
+
+Channel: Modbus TCP
+Controller:
+1. DI for discret input
+2. DO
+3. Holding Register for M area
+IP address 192.168.1.???
+Points:
+Status 
+Analog
+
+Modbus Register map as attached, it has been tested.
+
+_________________Aries Tsai
+

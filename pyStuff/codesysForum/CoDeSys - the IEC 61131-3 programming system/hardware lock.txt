@@ -1,0 +1,7 @@
+Hello!
+
+I use the ThinkIO PLC and have a question about hardware lock of my application. When I created boot project in the PLC, two files were created in the directory. Theoretically one can copy this files from PLC (of course, if admin password is known), put them to another PLC, just run it and get working project. I understand that the end user (our clients) can't get the source code of my project (no symbol file) but I want to be sure that that my application will be installed and used correctly.
+So I want to get some unique information of the PLC (e.g. MAC-address of PC) to create hardware lock. I search through all Codesys libraries supported by ThinkIO but can't find anything 
+
+Best regards
+

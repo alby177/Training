@@ -1,0 +1,12 @@
+I use CoDeSys 3.5 SP3 for panels Wachendorff with linux operating systemI need connecting to database LiteSQL using SQL  by lines of code.I see one example end library SQL4CODESYS downloaded from the storeWachendorff with CoDeSys 3.5base  is sufficient for running application?thanks Luca
+
+Hi LucaThe SQL4CODESYS library uses the SysSocket library for communicating over TCP/IP to the SQL4automation Connector service.If your system supports that, it should be possible to use SQL4automation to connect to any database that supports ODBC.Is there an ODBC driver for LiteSQL? Or did you mean SQLite?Roger
+
+Hi,I'm looking too about a SQL library for CodeSys. But I only want to manage a local database in a first time.So, SQL4CODESYS can exchange with a database store into a local memory of my PLC or I need other library ?Thomas.
+
+Hello Thom,you can also use the library for MySQL (see store: http://store.codesys.com/mysql-library-sl.html.The library doesn't need any 3rd-party software as ODBC-Drivers or other software, you can execute sql commands from your controller. If you have permissions and an compatible operating system, then you can also install an MySQL Server directly on your controller. Best Regards,Kevin
+
+_________________Building & Process Automation with HVAC Library for CODESYS© - www.hvac-automation.com
+
+free of use MySQL lib for Codesys V3https://www.dropbox.com/s/zm32vdsdav67b ... chive?dl=0free of use MySQL lib for Codesys V2https://www.dropbox.com/s/9tsg8m4e34qfa ... T.zip?dl=0And MSSQL lib samehttps://www.dropbox.com/s/y9ib3jl3tvdcq ... 3.rar?dl=0https://www.dropbox.com/s/7tl4kixx2v8j4 ... T.zip?dl=0
+

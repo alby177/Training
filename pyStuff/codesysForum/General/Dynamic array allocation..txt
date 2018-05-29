@@ -1,0 +1,16 @@
+In CoDeSys 2.3 we can use a variable with out declaring it in Function Block(in same entity) and creat library.
+
+I will explain the way of work with CoDeSys 2.3 as comes below...
+
+Now when we install the library and we instantiate the same it gives compile error. So that we can declare the same into Global variable list of Project(POU). It will not give any more compile errors indirectly library points to the variable reference from Project(POU) GVL area.
+
+Now with newer version of CoDeSys V3.X does not support the same feature. 
+
+But this feature is required. Let us explain the importance / area of use also...
+
+We deliver Compiled libraries to customer. 
+
+As a part of application requirement we need to use an array for movement of data. The array size (dimension) will be varied according to user(As per field requirements). User will create global constant with same name and set the constant value as per his requirement. It was indirectly acheiving the adjustment of array size.
+
+Anybody please help if you come across from same requirements...,
+

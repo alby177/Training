@@ -1,0 +1,4 @@
+When I added dynamic memory allocation to my project (CodeSys 3.5.12.10), I receive the following two errors that I cannot find how to resolve.                ------ Build started: Application: Device.Application -------                typify code ...[ERROR]         Dillution Station: C0136:  ambiguous use of name 'LinearMemoryManager'[ERROR]         Dillution Station: C0138:  No matching FB_init method found for instantiation of LinearMemoryManager                Compile complete -- 2 errors, 24 warningsAny ideas?
+
+The issue is related to the inclusion of the VisuElemBase library. The issue can be reproduced by:	1) Create standard application	2) Enable Dynamic memory	3) Add VisuElemBase libraryCompile the application
+

@@ -1,0 +1,8 @@
+Hi, Recently Ive noticed that it is not possible to set the output on older raspberry ( B+)The GPIO pin is constantly low when is set as  Output. Inputs works fine. Just curious is anyone else have this problem as well.I'm using latest runtime on raspi (3.5.10.20) and Codesys SP10 patch2.Thanks.Lukasz.
+
+I have the same problem on a raspberry pi 3, newest jessie image.An old reason was that I added a new Ethernet connection between. So the Adresses of the Outputs (QX...) changed.But now, new installation I have the same thing here. Can't set up an output, or read any inputs. With wiringpi i can set and check all the GPIO's.Hope you (and me) can be helped.
+
+I have the same problem with Raspberry Pi 3 B (Debian Jessie)In Codesys i configured some GPIO as output and i give it 1, nothing happend. All GPIO still as input.Do you have any solution i'm trying now with Last Image von Respian Desktop i don't know if that will help....
+
+Hi,is everything up to date?Please check the following:SD Image - Rasbian Strech ?CODESYS 3.5.11.x ?Pi Package 3.5.11.x ?GPIO Driver librariy 3.5.11.0BREdwin
+

@@ -1,0 +1,17 @@
+
+
+Hello Everybody,
+
+I am using Codesys 2.3.7.2(Build Dec 15 2006);
+
+and my hardware is PM571 and if the COM1 is configured for CS31 and COM2 is configured for Modbus (Master or Slave) I am unable to use the COM1 or COM2 for program down-loading !
+As per PPT file this condition is called "Emergency mode" and what is to be followed to do the down-load is tried like pressing RUN button pressed at the power-up of CPU and followed the steps explained but no success.
+
+Have anybody tried this or can anybody help in this regard.
+
+
+Best regards
+K.Guruprasad
+ABB Limited
+INDIA[/img]
+

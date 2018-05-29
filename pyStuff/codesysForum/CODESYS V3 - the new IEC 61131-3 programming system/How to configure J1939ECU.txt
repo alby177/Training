@@ -1,0 +1,2 @@
+When you have added a device CANBus\J1939_Manager\1939_ECUthen how to configure the device so that it can Receive some PGN(s),and Send some PGN(s).And most important，how to configure the transport protocol？
+

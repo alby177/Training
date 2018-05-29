@@ -1,0 +1,13 @@
+I met a problem when testing Canopen functionality under CoDeSys V3.5.I Add a Canbus Device,then add a CAN_Loacal_Device under the Canbus device wiht nodeid=3.then add a RPDO as Digital_Outputs and a TPDO as Digital_Inputs .The problem is that:   1、The TPDO Data is sent only when the data change，I want to know how to make the TPDO sent periodically。  2、The TPDO‘s COB-ID=0x183，that is ok。While the RPDO's COB-ID is 0x203 by default, How can I configure the RPDO’s COB-ID to a new value 0x185 other than the default value 0x203? 0x185 will be another CANOpen slave's TPDO COB-ID in the CAN Net.        Best regards                                                   Qiyue.
+
+By the way, I have set the “Always update variables”。
+
+Hi,3S' CANopen slave does not support async (periodically).I used a work-around with sync. The master transmits COB-ID 0x80 regularly. And the slave replies by transmitting it's TPDOs.Hope this helps you.Regards,Edwin.
+
+thanks
+
+1. If the device supports it the TPDO1 is set for COS (Change of State assuming DS401 device which means those are digital inputs) the transmission of the data is typically handled by the Communication Channel for that TPDO. If you double click it in the PDO editor you will see a drop down box for selecting how you would like that data transmitted from that slave device. Again not all devices support all transmission types. If it supports the Event timer add a value in the Event timer and select async. This will cause the device to transmit on COS and when ever the event timer expires. Go to the PDO mapping tab in CoDeSys and click on the TPDO. If the Event Time (x 1ms) is not grayed out add a time in that box. You can also set the inhibit timer is the signal bounces alot.2. You should not change the TPDO/RPDO ID's since they are defined by CANopen. But if you really wanted to (I urge you against it because there should be no reason to need to do this) you have two options:Open the eds file and edit the address of the PDO if it is in the form 200 + $NODE_ID$. orGo to the PDO mapping tab in CoDeSys and click on the RPDO. The PDO properties box will appear. Change the Value in the COB_ID box.
+
+_________________Thanks,
+Steve Pfeifenroth
+

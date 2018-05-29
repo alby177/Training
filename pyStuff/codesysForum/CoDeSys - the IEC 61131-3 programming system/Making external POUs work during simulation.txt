@@ -1,0 +1,2 @@
+I've written an external POU which connects to a database. But when I try to login to the runtime running on my PC it claims that my external POU is unresolved. My Visual Studio 2005 DLL project is a PC C++ project and not any type of embedded project. The target is a large scale embedded system which runs the full PC version of Windows XP.
+

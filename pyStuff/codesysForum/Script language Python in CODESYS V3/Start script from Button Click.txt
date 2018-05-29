@@ -1,0 +1,2 @@
+I would like to store some informations that I have collected in a HMI Visu to a File on the PC that is runningthe HMI ( not the PLC ).I never did Python before but have read that it is possible to access the variables containing the data inthe HMI Visu. Since it should be no problem to write from Python to disc I only need a way tostart a Python script from a button, but I have not found a way to launch the script from the visu.Any Idea how to do this.Other Ideas to write the data to disc on the system that is doing the visu are also highly recommended.ThankVolker
+

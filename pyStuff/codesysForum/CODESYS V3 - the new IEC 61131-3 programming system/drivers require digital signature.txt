@@ -1,0 +1,6 @@
+Dear all,I'm experiencing a difficult in installing the latest RTE version (12): at the installation I'm prompted to uninstall the software using some .dll regarding the digital busses (CAN, ethetcat, ...).The OS is Win 7 Ultimate SP1 64-bit.Thanks a lot in advance.Ugo Giannotti
+
+Hi,it is mandatory to have:https://technet.microsoft.com/en-us/lib ... ty/3033929installed.BREdwin
+
+Thanks a lot.
+

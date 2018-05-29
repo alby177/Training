@@ -1,0 +1,4 @@
+HelloHow can I implement a button to restart and shutdown raspberry  pi on the web visu ?Thаnks
+
+Code:VAR   Result: UDINT;END_VARCode:IF GlobalVariables.resetFromVISU THEN   GlobalVariables.power_led := FALSE;   _ (pszComand:='sudo reboot' , pResult:= ADR(Result));END_IFIF GlobalVariables.poweroffFromVISU THEN   GlobalVariables.power_led := FALSE;   _ (pszComand:='sudo poweroff' , pResult:= ADR(Result));END_IF
+

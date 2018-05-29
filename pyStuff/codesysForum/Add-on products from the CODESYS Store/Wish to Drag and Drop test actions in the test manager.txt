@@ -1,0 +1,8 @@
+Hi Test Manager developers,By the Test Scripts overview of the test manager is it already possible to use "Drag and Drop" functionality.But by the test actions is this not possible and must the copy/cut/paste be used to move items.Please, add "Drag and Drop" functionality to move and copy (with Ctrl) test actions, calls, assignments, etc?Regards, Bakkertje
+
+Hi Bakkertje.We already have an improvement listed in our Jira tracker TM-77 , so it will be implemented eventually.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi Martin,That's nice .  Thanks for the information.Regards, Bakkertje
+

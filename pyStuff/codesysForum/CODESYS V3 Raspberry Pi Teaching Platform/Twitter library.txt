@@ -1,0 +1,6 @@
+Hello everybody!I downloaded a twitter library to codesys some weeks ago. Now it seems that that library is no longer available in the codesys store anymore which means that the product data sheet is also no longer available. Is there anybody out there that might have it and can send it to me?/Johan
+
+Hi,twitter moved their communication to encrypted, therefore we need to updatethe store product to support that.This will be then available again, but is not exactly clear when this will be, will take some time.BREdwin
+
+OK.Thank you for the information!Johan
+

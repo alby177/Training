@@ -1,0 +1,12 @@
+Is there a way to detect the target selection from ST, FB, etc...?  I would like to create some code to check the target settings and set a global variable?  Based on this global variable, my application will call the proper functions that are specific for each target that can be selected.
+
+CoDeSys 2.3 does not support such a functionalty. 
+
+CoDeSys 3.x will get conditional pragmas and in this way conditional compilation which will solve your questions.
+
+Hi,Does anyone have an idea how this could be done with Codesys V3.Thanks & regards
+
+Hi.I would give Systarget.library a try.See screenshot.BREdwin
+
+Thanks a lot for that Herr Schwellinger.i had tried this Library and I can read out the Vendor name and Device name.Actually i intend to use a few device specific libraries which would trigger an error when i would change thedevice type to Win3. But maybe if i could use Pragma to read the Vendor Name, and thus decide on the libraries icould use, i could avoid the compiler error.Do you have an idea i could do this.
+

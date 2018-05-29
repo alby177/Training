@@ -1,0 +1,8 @@
+Ought to be a simple question... where can I find the ARTI win32 DLLs and header files? The 3s-software website barely responds to a search on ARTI, the integration documents mention their existence, but no sign of them in the downloads or after installing the gateway.
+
+please contact the 3S sales team for an offer for the PLCHandler
+emailto::sales@3s-software.com
+
+_________________Good Better CoDeSys
+Boris Schuster
+

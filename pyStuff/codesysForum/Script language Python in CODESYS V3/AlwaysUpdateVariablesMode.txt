@@ -1,0 +1,10 @@
+Hi,I want to change the "SPS-Einstellungen" -->"Variablen immer aktualisieren".  The code is:device.driver_info.set_bus_cycle_task('Profinet_IOTask')device.driver_info.always_update_variables = AlwaysUpdateVariablesMode.AlwaysInBusCycle device.driver_info.behaviour_for_outputs_on_stop = StopResetBehaviour.KeepCurrentValuesEverythink works except the line in the middle. Is there anything wrong. I can't see a mistake?After running the script "disabled" is in the textfield.Thanks for the helpSteffen
+
+Same here, seems to be a bug.Is there already an issue in the JIRA system ?
+
+Hi Steffen.Steffen_R. wrote:Everythink works except the line in the middle. Is there anything wrong. I can't see a mistake?After running the script "disabled" is in the textfield.Which version of CODESYS did you use?BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi Martin. I used Codesys 3.5 SP10 Patch1. I have email contact to the CODESYS Support. They told me that this is a bug and they put it on the list.MfG Steffen
+

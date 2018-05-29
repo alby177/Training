@@ -1,0 +1,8 @@
+Hi there. Are there specific fucntion blocks in Twincat 2 that in the event that the power is lost to the CX controller, once the power is restored to the unit various programs and comms can be switched on and off accordingly?i.e. [If fbPowerRestore.PowerBackOnBit thenMotor_1:=true;fbSerialComms.bExecute:=False;END_IF(as an example)Kind regardsRussell
+
+yes there are look in taskbox for events.and you can make it yourself by using a bit at the start of the program and set this bit after restart is done.if bit is off restart is needed.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks Shooter. I have looked in the  taskbox but can't create the option for an event. The only option that I have is for a cyclic program. Could you possibly advise further?
+

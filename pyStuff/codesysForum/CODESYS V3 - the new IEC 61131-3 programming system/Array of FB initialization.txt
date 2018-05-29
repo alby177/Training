@@ -1,0 +1,6 @@
+Trying to figure out how to initialize an array of FB, where the FB itself is initialized with a STRUCT (through the FB_Init).This works:Code:bar: STRUCT_BAR := (b1:=val1, b2:=val2);foo: FB_FOO(bar);This does not:Code:bar1: STRUCT_BAR := (b1:=val1, b2:=val2);bar2: STRUCT_BAR := (b1:=val1, b2:=val2);foo: ARRAY[1 .. 2] OF FB_FOO[(bar1),(bar2)]; // or like FB_FOO[(bar1,bar2)] and other variations I could think ofThe compile error would look something like:[ERROR]         C0032:  Cannot convert type STRUCT_BAR to type POINTER TO FB_FOOThanks!
+
+Figured it out ...Code:METHOD FB_Init //of FB_FOOVAR_INPUT   bInitRetains: BOOL;   bInCopyCode: BOOL;   var: STRUCT_BAR; END_VARfoo: ARRAY[1 .. 2] OF FB_FOO[(var:=bar1),(var:=bar2)]; 
+
+It seems that is not possible to pass diferent parameters to the array fb initialization.You can, but, initiqlize internal variables as in structures. ( An fb is an structure too).Se the postviewtopic.php?p=16838#p16838Be healty!
+

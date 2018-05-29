@@ -1,0 +1,8 @@
+I'm having some trouble enabling the "store trend data in the plc" function. When it is selected, and I go online, I get the error message "error 3612: maximum number of POUs (1024) exceeded! Compile is aborted"I increased the maximum number of POUs from 1024 to 1324, and when I try to login, I get the message "Too much data for the controller!"Any ideas on why this is happening, or how to trend without using this feature?If it helps, what i'm trying to do is record the position of a solar panel every hour and store it in a .txt file in the fileserver.Thanks,Martino
+
+Your trend does not fit in the controller, make it smaller (more time in between samples, or shorten the storetime.(btw trend is not very secure in 2.3)
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+thank you
+

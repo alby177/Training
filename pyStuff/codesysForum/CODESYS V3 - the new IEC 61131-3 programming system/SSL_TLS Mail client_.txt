@@ -1,0 +1,6 @@
+Hi All,Here's the context: I'm working on a program that's supposed to send status updates via e-mail. We currently use the SMTP client included in the Oscat Network library, and even though it works, it does not support any kind of encryption.We would like to switch to a more advanced system that would allow to use SSL or TLS to encrypt the e-mails, however I couldn't find any library that would allow me to do so. The newer Oscat Network library does show a SSL option, however after reading the documentation and looking at the packets through Wireshark it's not working with our current setup.We're using the JanzTec A500 running WinCE.Has anybody heard of a SMTP client library that would support SSL/TLS encryption? I've seen one on the Codesys store but I'm not sure it handles encryption and it's costly to implement...Thaks a lot,Paul
+
+Hello Paul,you can find a mail services library in the codesys store, which supports TLS encryption.https://store.codesys.com/mail-service.htmlPlease check the requirements, because it needs the runtime version > 3.5.10.XI've tested the library and it works very well with 3.5.11.0. With lower Versions the connection process takes very long. Best Regards,KevinR
+
+_________________Building & Process Automation with HVAC Library for CODESYS© - www.hvac-automation.com
+

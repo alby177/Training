@@ -1,0 +1,28 @@
+Hi developers,
+
+could you explain me what's the real benefit of using FBs rather than functions 
+IMHO they are quite similar.
+
+Best regards
+
+In the general case function is more preferable. It takes a little bit less memory and easy to use (you need not to declare instances). If you can use a function (you need not internal memory in the POU and 1 output is enough) then you have to use it.
+
+
+With one exception , if we need POU with many 'parameter' (constant) inputs FB can be more suitable, especially in cycles. For example:
+
+Function:  My_func(TRUE,10,220,'Hello',x);
+Indeed I have only one 'x' varying value, but I have to write in all places: 
+My_func(TRUE,10,220,'Hello',x);
+And each time the compiler will generate code for transferring all parameters.
+
+With FB I can write input parameters only once:
+
+My_FB.par1 := TRUE;My_FB.par2 := 10;My_FB.par3 := 220;My_FB.par4 := 'Hello';
+Further in all places (or in cycles) I can write only:
+
+My_FB(par5 := x);
+
+__________________IP_
+
+Thank you for the explanation
+

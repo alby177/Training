@@ -1,0 +1,2 @@
+Hello experts, I've defined a watch list which I use to load the value needed for the elements in a recipe. At the beginning I need to load the watch list in order to have the value loaded and ready to use by the controller. However I want to reduce the job for the operator as much as I can. I was wondering if there is any way that by clicking at 'Start', the watch list loads automatically, without having the operator to navigate through the folders and pick the watch list to load.Appreciate your help.Regards,
+

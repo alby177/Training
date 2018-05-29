@@ -1,0 +1,6 @@
+Hey guys,i connected my MCP3008 DAC to the pi and i can now read analogue signals. I wanted to ask you if you have experience with using a temperature-humidity sensor?I thought of the DHT22:http://www.exp-tech.de/dht22-temperatur ... oC4mTw_wcBCould i just connect this one to the MCP3008? And how can i read the two different signals with one data connection then? I found some instructions with python(https://learn.adafruit.com/dht), but im not that familiar with codesys yet so i dont know how i can 'translate' that ^^
+
+Hi,connecting this to MCP3008 will not work,a serial protocoll is needed.An option might be to use this sensor:viewtopic.php?f=23&t=5872&p=10867#p11612 BREdwin
+
+thank you! i will try it out 
+

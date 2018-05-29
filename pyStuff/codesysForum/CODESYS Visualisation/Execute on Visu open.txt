@@ -1,0 +1,4 @@
+Hi,I was wondering whether there is a way of executing code on when a specific visu has been opened.E.g., I want to pass a visu a DATE_AND_TIME, but I need to use DTSplit on it so I can populate various elements with the year, month, day, etc.Note - I'm using CODESYS 3.5.5.4, which has a bug where I cannot initialise visu variables properly, and I cannot upgrade to SP9 at this moment in time.
+
+I use 3.5.5.4 also but I'm not aware of the bug you are talking about so not sure if this will help.If you open up your Visualization Manager and check the box that says "Use CurrentVisu Variable" you can setup a trigger to run like:Code://sudo code not checkedvar   fb_PageCheckTrigger   :   R_TRIG;   sPage            :   STRING   :=   'Home';end_varfb_PageCheckTrigger(CLK:= VisuElemes.CURRENTVISU = sPage);IF fb_PageCheckTrigger.Q THEN   //Code to execute when page is openEND_IF
+

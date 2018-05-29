@@ -1,0 +1,4 @@
+Hi All,I have done various tests with ethercat on the raspberry Pi and codesys, including virtual drives etc.However I would like to ask how to use a Beckhoff Ax5000 series drive and Am8032 Motor.I have installed the Device repository and scanned the system and found the drive unit.But at this point I am stuck, the ethercat does't run on the servo drive and I am not sure how to tell codesys the motor type.Any pointers would be a great help thanks. 
+
+Hello, Have you added the Beckhoff EtherCAT XML file?You also need to add an axis to the solution tree, in here you can configure settings.
+

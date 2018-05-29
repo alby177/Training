@@ -1,0 +1,4 @@
+Hi,I am trying to keep a log of the time a users login on a visulisation by using an array and a combo box array.I can't get the current date and time. it's always 1970. I've seen people suggest SysRtcGetTime but I don't have it and I can't figure out where to download it.So where can I download it or is there another way in ST to get the current time?thanks
+
+Never mind.I used a RTC.GetDateAndTime block to solve my issue.I figured out how to add libraries.
+

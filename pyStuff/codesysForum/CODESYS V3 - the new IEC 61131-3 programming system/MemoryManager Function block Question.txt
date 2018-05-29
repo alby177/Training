@@ -1,0 +1,2 @@
+In what situation MemoryManager.Delete() fails to release the pool? I am asking because I have a message in the Log that states that it cannot release the pool. I have attached a picture with the log.This is happening if I login without to start the controller and after that I do a Reset Origin.This is offtopic: How can I check for memory leaks in Codesys?
+

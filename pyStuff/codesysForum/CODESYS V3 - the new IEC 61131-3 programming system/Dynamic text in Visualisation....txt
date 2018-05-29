@@ -1,0 +1,10 @@
+I try to display text message in relation of an int from a variable. I have created a textlist with all text message and ID corresponding. I have try to display my text in a rectangle in a Visu without any success... I have put the textlist name in the Dynamic texts / Textlist properties and I have put in the Textindex my associate variable. What should i do ?
+
+Once selecting the rectangle, you have to click on properties and then under dynamic texts tab:1.- select your textlist between ' '; for example; 'int_textlist'2.- select your textindex between ' '; for example; 'text_ID'And i think it should work
+
+then make your rectangle with %s as normalnow two ways possible.make a variable in the text display in your PLC_PRG make stlist[1..10]:='line1','line2', etc.stvar:=stlist[linenumber];in textdisplay on visualisations use F2 and choose PLC_PRG.stvaroruse syslibvisu libraryobject1.stTextDisplay:=stvar;
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thank you both .. That have not solve my issue directly but give me the info to solve it. To solve my issue and display dynamic message base on an Interger value ... I have put in the feild TextIndex => Int_to_String(myvar) ... That feild look for string variable. From a Integer value I need to convert it. Now i change my message dynamicly with the change of my value.
+

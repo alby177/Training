@@ -1,0 +1,6 @@
+Hi,How to get Standard64 library for CoDeSys V3.5?Thank you in advance!Regards
+
+Go to your library manager and "Add Library" then look under the common folderAttachment:AddLibrary.PNG
+
+Thanks a lot  
+

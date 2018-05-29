@@ -1,0 +1,8 @@
+Hi All,I know that I can declare a variable that points to a data type. For example:TEST1: POINTER TO WORD:= ADR(%IW123);However, I can't create an array of thatTEST2: POINTER TO ARRAY[1..2] OF WORD:= [ADR(%IW123), ADR(%IW321)];Is this legal or is the syntax incorrect? Either way, compiler is not happy at all.Thanks,
+
+What do you want isArray [1..2] of pointer to word.
+
+Josep M. Rams wrote:What do you want isArray [1..2] of pointer to word.That works. Thanks!
+
+It s not the same a pointer to an array that an arry of pointers.
+

@@ -1,0 +1,6 @@
+Is there anyway to Set / Reset a step in a SFC?  Looking for a way to make a step active other than using the transition.
+
+yes it is possible but why should you do this.look at <stepname>.x  this is a boolean and shows if the step is active.if you use <stepname>._x := true and the step is not active yet ( .x) then the step will be executed the next cycle it is called.however you must watch as this could mean several steps are active in one SFC.look for step2.sfccurrentstep etc.search in help for sfc status scan
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

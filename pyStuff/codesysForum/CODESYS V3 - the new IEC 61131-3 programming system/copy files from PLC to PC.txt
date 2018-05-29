@@ -1,0 +1,2 @@
+hi UsersI create some log cvs files on my Linux based Plc through my CoDeSys V3 program. I would like the user to be able to copy these Project log files to the local PC using my web Visualization. Could someone suggest how i could do this.Thanks & regards
+

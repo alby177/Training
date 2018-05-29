@@ -1,0 +1,8 @@
+Hi allI wrote a program in codesys V3.5 for an exor PLC and wanted to attach an Uniop eTop 500 series the control system. Has anyone have any idea were can I get a manual how to program the HMI.Kind regards
+
+this question is in wrong forum, post it in V3 uphere,manual is available with F1 (helpfile)
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+is it possible to use Codesys 3.5 with eTop500 Exor? I always used v.2.3
+

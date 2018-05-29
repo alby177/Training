@@ -1,0 +1,16 @@
+Is there any way to get the name and type of current variable in runtime.for examplemyDINT: DINT;myCurrentVariableName: STRING; myCurrentVariableName := toString(myDINT);  (* myCurrentVariableName would equal "myDINT" *)if TYPE(myDINT) = DINT then      (* True if variable is DINT *)endif
+
+_________________The Original SoMachine Ninja
+
+Hi,to get the type of a variable you can use conditional pragmas:Code:PROGRAM POUVAR   iMyValue      : INT;   xIsInteger      : BOOL;END_VARCode:{IF (hastype(variable : iMyValue, INT))}   xIsInteger := TRUE;{END_IF}To get the name of a variable you can try the attribute Code:'parameterstringof' But as far as I know this is only working inside visualizations.
+
+By the way, would be nice from 3S to release documentation on type independent numeric variables ANY_NUM.... I know, this must work internally.... And sometimes it's useful when developing more or less generic FBs, libraries....Also, I've noticed, that some functions (MIN, MAX) can receive more than 2 parameters in ST? How to declare such user functions?P.These are really CoDeSys internals... but this features are making things elegant and excellent....
+
+jzhvymetal wrote:Is there any way to get the name and type of current variable in runtime.for examplemyDINT: DINT;myCurrentVariableName: STRING; myCurrentVariableName := toString(myDINT);  (* myCurrentVariableName would equal "myDINT" *)if TYPE(myDINT) = DINT then      (* True if variable is DINT *)endifTry to search for "{attribute reflection}" and "{attribute instance-path}".This works for FB instances... I quote online help....Code:{attribute 'reflection'} FUNCTION_BLOCK POU VAR {attribute 'instance-path'} {attribute 'noinit'} str: STRING; END_VAR In the main program PLC_PRG an instance myPOU of function block POU is called:Code:PROGRAM PLC_PRG VAR myPOU:POU; myString: STRING; END_VAR myPOU(); myString:=myPOU.str; And... you can always check an FB instance for interface compatibility....(instead of types)
+
+Hi Strucc,he was asking for variable instances not for FB instances. That's why I did not offer this instance-path stuff But anyway, you're right:An official support of ANY_NUM would be great   And if I could add this to my whishlist:OVERLOADING of methods!!!!
+
+singleton wrote:Hi Strucc,he was asking for variable instances not for FB instances. That's why I did not offer this instance-path stuff But anyway, you're right:An official support of ANY_NUM would be great   And if I could add this to my whishlist:OVERLOADING of methods!!!! I want to raise my hand also for overloading.  Also I wish CoDeSys would give more document how to use the following types:ANY ANY_DERIVED ANY_ELEMENTARY ANY_MAGNITUDE ANY_BIT ANY_STRING ANY_DATE ANY_NUM ANY_REAL ANY_INT
+
+_________________The Original SoMachine Ninja
+

@@ -1,0 +1,10 @@
+Hello.I'm new with codesys so i going to be happy if you could help me. i downloaded 2 axis Mnjoystick from codesysStore so how can i get it to my program?ThanksLassera
+
+To get the visu element in the toolbox, you have to activate the visualization extension in the visualization profile of the project settings.
+
+Thanks a lot!Lassera
+
+hi all,first of all, how can i get this mncontrol in tool box? where can i download this "2 axis Mnjoystick " ? i have activated the things which has been mentioned in above reply, but i dont know how can i see this mncontrols in tool box?
+
+yes, i have got it now..Thanks
+

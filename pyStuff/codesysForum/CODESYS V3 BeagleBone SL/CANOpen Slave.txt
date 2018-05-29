@@ -1,0 +1,4 @@
+Hi,I was trying to set up BBB as a CANOpen device. I added one TPDO and one RPDO. But I couldn't seem to get the device running("Not Running" is shown in status). I have started CAN0 using the command "ip link set up can0 type can bitrate 250000". What am I missing?Thanks!Ricky
+
+Hi,I restarted the board and I got a bus failure. The diag message read "EMCY: Error Passive".After that I brought CAN0 down and up, and made some minor changes to the program(just to make sure it recompiled), downloaded it again. And when the program started I got the same "Not Running" message on the device(the CANBUS says "Running") as before.I hope this would help with the problem solving.Ricky
+

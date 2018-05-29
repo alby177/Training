@@ -1,0 +1,12 @@
+I have visualizations that run locally within the CoDeSys IDE  (Not downloaded to the target) from their PC's that technicians use to interact with the PLC. I have always used access rights on all of my components within CoDeSys. In the past the access rights have been set to user0 = full access user1=read only. In latter versions of CoDeSys having the user access set to read only on visualizations still allowed a user to press buttons and interact. Now using V2.3.9.4 it appears that read only on visualizations has locked out the user from being able to interact with the visualization. Has the access rights changed between versions relating to visualizations? Is it possible to distribute changes made to CoDeSys in a section within CoDeSys Help like "CoDeSys Revision History"?
+
+_________________Thanks,
+Steve Pfeifenroth
+
+I found the answer to my question. As stated in the visualization manual 
+Quote:Please regard, that the access rights which are set for the visualization object in the 'Project' 'Object''Properties' dialog, are independent on those of the particular visualization elements !
+
+I was setting the object properties rights and not the individual control object rights. I thought that the visual container object rights was an over riding global to all control objects in that container but it is obviously not the case.
+
+_________________Thanks,Steve Pfeifenroth
+

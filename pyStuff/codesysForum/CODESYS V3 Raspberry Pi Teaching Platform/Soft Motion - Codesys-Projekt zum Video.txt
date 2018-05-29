@@ -1,0 +1,4 @@
+Hallo Codesys Team,zur Zeit mache ich erste Gehversuche mit der Codesys Soft Motion und möchte einen 4-Achsen Palletier-Roboter ansteuern.Aufbau: Raspi 3, Adafruit PCA9685 und 4 Modelbau-ServosBei meiner Google-Recherche bin ich auf folgendes Video gestoßen:https://www.youtube.com/watch?v=ZrIW1GvQRp8Könnten sie bitte das Codesys-Projekt zum Video mit der Community teilen?Es wäre eine große Hilfe.Danke im Voraus
+
+Hallo,interessante Sache!Unter dem Video stehen drei recht neue Kommentare.Dabei auch ein Link zu diesem Forum wo man den code laden kann:viewtopic.php?t=5740Ich bin auch am Anfang mit Codesys. Viel Erfolg!GrüßePatrick
+

@@ -1,0 +1,8 @@
+Hello Everybody,Can anyone tell me how i can create a libreay for linking C function code. Actually I have to crate a external libray which i want to use in my Codesys SP RTE. But I can not get how I will go forward. Initially i want create a small external library for C. then I want to use them as function block library in Codesys SP RTE.I have found a manual from 3S " Creating and linking External C library Fuctions" Document V 1.0. But it is little bit difficult for me as I never create any libray for C.I have follow this munual but i cant create actually.I hope,many of you may have experience to create libray for C code. It will be very helpful to tell me how to create externel libray for C.Thanks,Asif
+
+In version 2.3 it is not possible, however in version 3 it is.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Actually. I is possible. I have done and sloved my prob.
+

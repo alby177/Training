@@ -1,0 +1,7 @@
+Has any one got example code to send a file via the ethernet link to a PC from a wago 841 PLC?
+
+Don't you just use FTP?
+
+_________________Thanks,
+Steve Pfeifenroth
+

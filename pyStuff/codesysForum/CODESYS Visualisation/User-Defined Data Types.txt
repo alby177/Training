@@ -1,0 +1,8 @@
+I'm very new to Structured Text and dealing with user-defined data types. I've looked online and on the codesys manual, and from what i've read, it seems like this should work:TYPE HistoryArr :STRUCT	BaseRequested:REAL;	BaseActual:REAL;	AngleRequested:REAL;	AngleActual:REAL;	DateAndTime:DT;END_STRUCTEND_TYPECodesys wants me to declare HistoryArr.. What type would I declare this as? eg. WORD, INT, etc
+
+in your POU you say :VARhistory array[1..10] of Historyarr;END_VARin the ST you write for examplehistory[1].anglerequested :=setangle;it works the same as when you say array of INT but now the whole structure can be used.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks, This helps a lotAlso I should note that I was declaring the TYPE and STRUCT in the ST code, but realized I was supposed to add it in the Data Types Tab
+

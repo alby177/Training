@@ -1,0 +1,55 @@
+Hi!
+I started in this project to program with codesys (xsoft). 
+The problem is then i use SFC. When i moves from one Action to the next the last one still is active. If i use the coil -()-  to set the signal high in the action it will always be high until the statment i true. 
+And this am I not used too. That am i doing wrong, or do I have think different when using codesys.
+
+There is it possible to find some samples that show how this should be done.
+Using SFC and Ladder. 
+
+I think the manual doesn't say much about this.
+
+Hello,
+
+please find attached an easy example with SFC and LD transitions.
+
+If you work in simulation mode take care that an activated transition is not automatically deactivated by the system.
+
+Please as well the attached AVI film.
+
+_________________Roland WagnerModerator
+
+I have to agree with the person who has started this tread. It is extremely annoying that the steps in SFC is still active when leaving the step. 
+
+Example: You have a SFC of 10 steps in one vertical line... in step 3 we set a variable. We can now go to step 7. Then the variable in step 3 is still set. I am unable to reset the variable from outside the SFC. Is this normal for SFC ... ?? I do not think so...
+
+Another example: A variable is set outside a SFC-block. Inside the SFC-block we reset the variable in step 3. Also we use the variable as a transition condition from step 6 to 7. Now the transition will not work. But the online showing is telling us that the Variable is high (coloured). Even though the variable in this particular SFC is reset in step 3.
+
+I admit my version of CoDeSys is 2.3.6.1 ... if there has been any changes to the software regarding SFC since... please let me know.
+The SFC examples are useless ... we need to have more complex examples.
+
+Best regards from Denmark.... 
+
+I am not sure whether I really understand the problem. Could you please post a project showing the problem?
+
+_________________Roland WagnerModerator
+
+I also want to know how the best solution to is make. One way, what I understand is to make an inverstion of the coil in the next step or use an exitstep to take this coil down.
+
+Hi I am new to the forum. I am also having the problem that the actions(or in fact the outputs that are within the step) remain active even when the SFC step has moved to the next step. The action steps themselves move on but their outputs stay energized. How can I solve this. Also I have tried to use the IEC action steps and I cannot seem to get it going. I get error 4358, action not declared. Am I missing something simple?Many thanks in anticipationNiall
+
+Hi! It's long time ago I dealed with this.Look at the move Roland provided. I think it explain that you should use entry and exit option in the step. I think you double klick on the step at each corner. Or you right click and choose add exit or entry action.Regarding to the missing action you need to add an action by right click on Pou and 'Add Action' and use the same name in the IEC flag beside the step.Hope this will help you a little./Torbjörn
+
+IN SFC there are ENTRY steps and EXIT steps, and normal steps.Entry actions is done when entering the step, but only once.same for EXIT.all Normal actions are done as long as the Step is active.In IEC see the letter in front like N T etc.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+I agree with Shooter.  Use the EXIT step in SFC to unset any variables that should be cleared.An advantage you can use if you are clearing the same variables every time is that you can create a single action that clears the variables and then have each EXIT step always call the same action so you can re-use the code and not have to create a bunch of steps that all do the same thing and clutter your project.For me, I usually create an action that I call with the S0 attribute in the INIT step.  The S0 attribute tells the program to run the program continuously once it has been activated.  I will then use this action for things such as calling function blocks and timers.  Because the issue you can get into with SFC is that a timer, for example, needs a final call to reset the timer back to 0 and clear the outputs.  If you are to use the output pin from a timer to transition a state in SFC, your function blocks will get frozen with the output bit set on and it becomes really troublesome to manage them this way.  So by putting them in a latched action, you can use your SFC states to read and write to the input pins of the Function Block without the risk of getting the Function Block stuck in an undesired state.
+
+crthomas1234 wrote:I agree with Shooter.  Use the EXIT step in SFC to unset any variables that should be cleared.An advantage you can use if you are clearing the same variables every time is that you can create a single action that clears the variables and then have each EXIT step always call the same action so you can re-use the code and not have to create a bunch of steps that all do the same thing and clutter your project.For me, I usually create an action that I call with the S0 attribute in the INIT step.  The S0 attribute tells the program to run the program continuously once it has been activated.  I will then use this action for things such as calling function blocks and timers.  Because the issue you can get into with SFC is that a timer, for example, needs a final call to reset the timer back to 0 and clear the outputs.  If you are to use the output pin from a timer to transition a state in SFC, your function blocks will get frozen with the output bit set on and it becomes really troublesome to manage them this way.  So by putting them in a latched action, you can use your SFC states to read and write to the input pins of the Function Block without the risk of getting the Function Block stuck in an undesired state.
+
+Hi I programming in SFC and LD and am trying to introduce a time delay between two consecutive steps, but timer output remains high after leaving the step and when it goes through the next time there is no time delayDoes anyone has any exampleRegards
+
+yes a timer inside a step stays high( well it is not scanned anymore so the state is unknown)when going back in the step it still sees a true value inside.another way is to use TP.When timer is done be sure to switch it off before leaving the step.if timer.q then timer.in:=false; end_if
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

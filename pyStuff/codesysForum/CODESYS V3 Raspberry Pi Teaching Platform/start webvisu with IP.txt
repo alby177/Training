@@ -1,0 +1,8 @@
+Hello,is it possible to open the codesys webvisu with the ip?i changed the port to 80, and now i can start the webvisu by entering "192.168.1.xxx/webvisu.htm" in the browser.But i want to call it only by the IP. Any suggestions?Best Regards
+
+Hello,without a platforum in reach to try it myself, i guess changing "Name of .htm file:" into "index" should work. Best Regards
+
+Hello,after testing with my PI, renaming into "index" is no solution.Best Regards
+
+it should be index.htm not just index
+

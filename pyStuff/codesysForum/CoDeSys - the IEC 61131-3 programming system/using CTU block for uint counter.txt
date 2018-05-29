@@ -1,0 +1,22 @@
+Hello,I want to use the CTU block to count beyond WORD type max (65,535).I put in the output of the CTU block an UINT variable, it compiles with no errors but I'm not sure if this would work or not ?What's the best way to do this ?Thank you
+
+I deleted my first answer due to not understanding the question. The CTU should work with UINT, INT, WORD. Check the help - it says what is supported. I don't think longs are, though (may be wrong)
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+scott_cunningham wrote:I deleted my first answer due to not understanding the question. The CTU should work with UINT, INT, WORD. Check the help - it says what is supported. I don't think longs are, though (may be wrong)Thank you for your answer, In the help it says the followingFunction block Incrementer (CTU):The input variables CU and RESET as well as the output variable Q are type BOOL, the input variablePV and the output variable CV are type WORD.Also in the first chapters of the help, they mention that the size of type WORD variable is 16bit means it's max is  65535.Am I reading the help wronge ?
+
+Ah, you are using version 2.3.  Sorry, missed that. So a WORD is "the same" as a UINT. You simply need to cast your variables WORD_TO_UINT() or UINT_TO_WORD(). In general programmers signal but coded usage with WORD and arithmetic with an UINT. Otherwise they are both 16 bit unsigned.... Embedded controller programmers and C programmers will often use BYTE WORD and LONG instead of USINT UINT UDINT.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+scott_cunningham wrote:Ah, you are using version 2.3.  Sorry, missed that. So a WORD is "the same" as a UINT. You simply need to cast your variables WORD_TO_UINT() or UINT_TO_WORD(). In general programmers signal but coded usage with WORD and arithmetic with an UINT. Otherwise they are both 16 bit unsigned.... Embedded controller programmers and C programmers will often use BYTE WORD and LONG instead of USINT UINT UDINT.Now I see, I'm an embedded software developer and have this small project using PLC.Based on codesys manual WORD is the same as UINT : size 2 bytes with max value : 65535. I need to use DWORD type to get my counter beyond 65535 which is not possible with CTU bloc !!is there a solution for that ?
+
+Use two CTU blocks - one feeding into the other, with rollover mode. Or, just build your own (ST language may be easiest).  You simply need to increment your var on rising edge (R_TRIG). Or check into the OSCAT library (OSCAT.de). I think it has larger CTUs.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+indeed look at oscat for a double word counter, or make it yourself, you will learn a lot from it.if a DW is not enough, you will need to make a 8 byte counter, with for example an array.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

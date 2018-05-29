@@ -1,0 +1,8 @@
+I gave installed both version of CodeSys software 2.93 and 3, should say very big differnce.
+However, I would like to know more about licence policy. As I see everything is "demo", but did't find editor. Is using editor for application is free, just paying run time, either in PLC or PC.
+Could I use editor in "simulation" mode without any license obligation?
+
+The tool you downloaded and installed is for free as I understand. The actual kernel 'PLC' that's what will cost.
+
+I suggest when you try your program that you start the DEMO kernel and not use the simulation. You will get a more lifelike simulation.
+

@@ -1,0 +1,8 @@
+Dear All,I'm a new user to Codesys Based software "SoMachine". Can anyone help me by forwarding UDP libraries & Sample code or Documents related to the same.My requirement is to communicate to a Laser welding equipment, which works on UDP via Ethernet.Thanks & Regards,
+
+Dign up for a account and download Oscat Network Libraries.  It has a network handler that will do UDP.  Here is a link to the library but you must be signed in.  Also you can grab the English help file from the main OsCat webpage.http://www.oscat.de/community/index.php ... 784.0.html
+
+_________________The Original SoMachine Ninja
+
+Thanks for the information. I have downloaded the related files. Will Ping back if any help is required or even if works is completed.BR.
+

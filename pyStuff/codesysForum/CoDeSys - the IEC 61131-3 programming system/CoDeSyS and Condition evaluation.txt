@@ -1,0 +1,25 @@
+Hi, I'm asking something about condition evaluation. Check the following code:
+
+Code:var_a := FALSE;var_b := FALSE;if var_a and var_b thenbegin;//Some codeend;
+
+In this case, did the program will check the var_b or it will bypass directly after checking the var_a value ?
+
+If (condition) then
+logic
+end_if
+
+Your condition is an AND statement which must take two operators A and B. B is never skipped.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+the example is not correct but the question is.
+when it is an OR does it stop testing the rest?
+probably not.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Oh, now I understand. The question is since it was an AND condition and the first vlaue is false that means why even evaluate the second. Missed that one.
+
+_________________Thanks,Steve Pfeifenroth
+

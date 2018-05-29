@@ -1,0 +1,9 @@
+I'm using the AsyncSocket Library and i receive from FB AsyncSocket Connect the errorId 7..which problem corrispond error number 7?
+Where is the decoding of the socket errors?
+
+Note:
+I'm using codesysV23 and RTE for xp.
+
+Regards
+Stefano
+

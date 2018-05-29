@@ -1,0 +1,12 @@
+Hi as you can see,the variable sReceive in fbUdpR is a input variable. Why in declare section is a VAR_OUT variable?Best RegardsAttachment:ScreenShot.jpg
+
+If you used the auto declare functionality, the cursor starts in the variable type and you can accidentally change it from VAR to VAR_IN or VAR_OUT.  I have done this a few times myself. Just change it to the required type you need.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+I have to say: I have copied this code. My question is conceptual.What is your opinion? sReceive is VAR_OUT variable?Thank you very much.
+
+It could be - depending on if there is other code that sets the variable.  In general, VAR_OUT simply means it's a variable that can be read outside of the POU and cannot be written.  It certainly can be assigned as an input to some internal code.Here is a post I just made that uses a VAR_OUT (Output) as an input to a FB (PulseTimer) inside my POU: viewtopic.php?f=2&t=6856#p14739VAR_INPUT = variable the POU can use that is set externally (i.e. TON(EN:=TRUE) ... EN is an input variable)VAR_OUTPUT = variable the POU can use and set that is visible externally (i.e. TON(Q => Done) ... Q is an output variable)VAR_IN_OUT = variable the POU can use and set that also can be set externally (so both the POU and user code can change it)VAR = internal variable to the POU that is NOT visible externally (only visible in debug mode)
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+

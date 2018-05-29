@@ -1,0 +1,2 @@
+How do I change the button labels to English in the alarm table within the web view? They are in German. In the HMI and running view within Codesys, the labels are english. I looked through the webvisu XML and couldn't find a place to change the label language setting.Thanks!
+

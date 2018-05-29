@@ -1,0 +1,10 @@
+Hi,I wrote some code which logs numerical data into an array. The problem is getting this data from the array into text, excel, or some other format where I can manipulate and analyze the data.When I go online with a laptop, I can easily copy one array value and paste it into a text file. Unfortunately, I cannot determine a way to select multiple lines or copy the whole array of values. I can manually type out these values, but with hundreds of values it would take too long. I've tried logging remotely over CAN, but I cannot transmit and record at an acceptable speed. I really need these values logged as fast as the scan cycle will allow.Any solution that I'm missing? I'm really surprised I can't just copy/paste a list of array values from codesys!Thanks
+
+what plc and type is used, what communication can be used
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+If you hardware has a flash drive or hard drive, then you can use the sysfile library for read/write access and just save your data as a csv type file.If not, you can send the data via communications, like a serial stream, or as an email, etc.I know you are using v2.3 based on the post folder, but for users using v3.x, they can also use Python scripting can access program variables - but that's only good for online mode.Respond to shooter's post if you need more detailed information.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+

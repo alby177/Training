@@ -1,0 +1,73 @@
+Is there a library that offers the ability to send a character string out through the host computer's serial port?
+
+Jason
+
+Hi,
+
+What about SysLibCom?
+
+It allows to open/close serial ports, and to read/write data from/to them.
+
+Or are you looking for something different?
+
+Arie N. Verheul
+
+I thought that was what I should use, but I can't seem to interpret the examples that I have found online.  Can anyone post some working POU's with SysLibCom?
+
+Jason
+
+Jason,
+
+I've done quite some RS232 interfacing between CoDeSys controlled PLC and other equipment.
+
+Basically I've one task handling one serial port, with one 'low-level' POU (FB) handling basic RS232 actions (sending requests and receiving responses) and a 'higher-level' POU (PRG) determining which subsequent requests to send based on received responses.
+
+The higher level POU is continuously calling (polling) the low-level POU, checking it's status to determine if the low-level POU has finished transmitting the current request, or has finished reading the expected response etc.
+
+The low-level POU is a state machine with several (job)states and several (job)results, and it's only this POU that uses the functions from SysLibCom 
+
+Some extra states are needed because the low-level POU is only sending a certain amount of bytes at a time, and also is reading a certain amount of bytes at a time, before handing over control to the higher-level POU (so that eventually also other tasks can get a chance to run).
+
+States:
+
+JOB_IDLE:                                              (* Do nothing *)
+JOB_SEND_REQUEST:	                       (* Send request *)
+JOB_SEND_REQUEST_CONTINUE:	       (* Send more bytes from (large)request *);
+JOB_WAIT_FOR_ANSWER                         (* Wait for response *)
+JOB_WAIT_FOR_ANSWER_CONTINUE        (* Wait for more bytes from (large)response *)
+JOB_PROCESS_ANSWER                          (* Process response *)
+JOB_RETRY                                             (* Send request again *)
+
+Results:
+STATE_READY
+STATE_BUSY
+STATE_TIMEOUT
+STATE_WRONG_ANSWER
+STATE_TRANSMIT_ERROR
+STATE_INIT
+STATE_NOT_USED
+
+Arie N. Verheul
+
+That sounds like a good idea, similar to what I would like to set up.  
+
+I have tried using syslibcom.lib, but can't get even the SysComOpen function to work.  My plc is configured with the target system being a PCI card with an integrated PLC installed inside my computer.  This card does not have any serial ports, and I am hoping to use the host PC's RS 232 port, not a port on the target card.
+
+I have duplicated the code from this post on the German board:
+http://forum.3s-software.com/viewtopic. ... hlight=232
+
+but it cannot successfully open COM2.  
+
+Is this possible?
+
+anverheul : Is it possible to have a copy of the source?
+
+Best regards,
+Frank
+
+bump: any updates to this? 
+
+check the codesys site
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

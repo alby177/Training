@@ -1,0 +1,6 @@
+HI Guys,I am using execute option to run (.exe ) a file in the alarm configuration.This file plays the audio when new alarm occurred. To stop the audio,i have to close the window. And press a button on hmi screen to acknowledge the alarm in the alarm table.Is it possible to use button on the hmi screen to close the audio file and acknowledge the message in the alarm table at the same time?Please help.Thank you,Pavan
+
+possible, but you will have to make this in your exe file as when this is started it does not know when to stop.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

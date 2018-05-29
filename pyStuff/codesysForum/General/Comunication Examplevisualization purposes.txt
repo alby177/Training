@@ -1,0 +1,7 @@
+Hello I'm starting with VB programation, and i need to build an small aplication for visualisation purposes.I'm using an plc from IFM, AC1327, wich is an ethernet Gateway.Can anyone help me with, by tell me wich is the best way to do this, and if possible get-me some small example in VB.Thanks in advance
+
+My quick response is you will need to use either OPC or the DDE gateway. Look at the manual "...CoDeSys V2.3\Documents\English" in file "CoDeSys_Visu_V23_E" this will get you started. I am not aware of any examples in any language.
+
+_________________Thanks,
+Steve Pfeifenroth
+

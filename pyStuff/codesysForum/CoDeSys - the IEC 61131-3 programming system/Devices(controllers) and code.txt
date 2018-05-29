@@ -1,0 +1,6 @@
+Hi, I am a newbie   (not in plc), but have some questions about CodeSys;Are there methods/files for importing different types of controller makes into the CodeSyseditor out of those included in the default downloaded programming-tool? Are they to be foundwith the manufacturer if?Any way of importing/convert binary machine code direct from file? (instead of being uploaded) 
+
+controller types are called targets and should be available at the manufacturer, as codesys is a piece of software development used by many companies building PLC or controller it even exists for a RPi.yes it is possible to include binaries in the code, however it is in V2.3 not easy, in V3 it is better documented, also C can be used.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,12 @@
+Hi there,I'm using a MODBUS configuration in CODESYS between a WAGO 758-874/000-131 and a WAGO 750-872.The project compiles with no errors but I can't write in the OUTPUTs of my slave (WAGO 750-872). I only can read its inputs.Maybe is there any library missing? Could anybody help me?Thank you very much!
+
+_________________Thais Jampaulo
+
+what addresses are you using on the slave, and what is the configurstion.you will need to add an offset for correct addresses.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+The problem was that my outputs were configured in PI allocation as 'PLC, PLC' not as 'Modbus TCP/UDP'. But now it works. Anyway thank you for your answer. Have a nice day.
+
+_________________Thais Jampaulo
+

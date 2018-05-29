@@ -1,0 +1,2 @@
+I followed the tutorial to create an IEC runtime component. All source files, .h, .c, .m4, .bat are ready to build in the VS 2010.Make use of the windows solution project in the Toolkit, and replace those CmpTemplate.* by MyLibrary.*, the building error reads:Error	1	error C1083: Cannot open include file: 'sysdefines.h': No such file or directory	c:\program files\codesys runtime toolkit\components\cmpstd.h	21	1	CmpTemplateWhere should I check? Thanks.[img]C:\Users\302014330\Desktop\Untitled.jpg[/img]
+

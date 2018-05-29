@@ -1,0 +1,2 @@
+Hallokann Codesys Pythonscripte auf dem Raspberry ausführen und Variablen in die Codesys Routine übernehmen?Ich habe bis jetzt nur in PLC programmiert.mein Vorhaben wäre, dass ich ein Gerät was per RS485 am Raspberry angeschlossen ist ausfrage und so bestimmte Ausgänge schalte bzw. Variablen vom RS485 Bus in der Routine weier verarbeiten möchte.Danke
+

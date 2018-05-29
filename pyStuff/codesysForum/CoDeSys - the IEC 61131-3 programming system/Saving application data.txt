@@ -1,0 +1,2 @@
+Hi everyoneI wonder if anyone can address me to a Data management library. What I need is to save a summary of a process, no more then 100 times a day, to a file that is located on the cloud. However, I like to have an alternative should the communication is temporarily not available. Thanks, Joseph
+

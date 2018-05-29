@@ -1,0 +1,12 @@
+Hi Is there an example how to use tcp or udp socket from raspberry .BR
+
+frankdunn wrote:Hi Is there an example how to use tcp or udp socket from raspberry .BRHi118/5000Did you get any examples that work for communication between raspberry and other devices using TCP sockets?
+
+Hi,These two examples you need to check:http://store.codesys.com/mixedsearch/mi ... duct_area=http://store.codesys.com/mixedsearch/mi ... duct_area=BREdwin
+
+Edwin Schwellinger wrote:Hi,These two examples you need to check:http://store.codesys.com/mixedsearch/mi ... duct_area=http://store.codesys.com/mixedsearch/mi ... duct_area=BREdwinHi Edwin, I'm working on a similar project with a Raspberry and Codesys, does anyone have a complete project where a TCP server is configured using Sockets? The links you indicate do not lead me to any example package.Thank you!
+
+Hi,somehow these links are changed:plc chat in the CODESYS store was one of the example:https://store.codesys.com/plc-chat.htmlCommunication with halcon the second one:https://store.codesys.com/communication ... alcon.htmlBREdwin
+
+Edwin Schwellinger wrote:Hi,somehow these links are changed:plc chat in the CODESYS store was one of the example:https://store.codesys.com/plc-chat.htmlCommunication with halcon the second one:https://store.codesys.com/communication ... alcon.htmlBREdwinThank you very much Edwin!
+

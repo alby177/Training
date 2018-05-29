@@ -1,0 +1,4 @@
+Can anyone post an example of or describe of building a simple external lib in C for the CoDesys V3.1? Kind of frustrated by the lack of documentation on this topic. 
+
+Thanks!
+

@@ -1,0 +1,10 @@
+HelloI'm having problems connecting to my Codesys PLC through an  Ewon Cosy. I can see other parts of the target (it's an HMI/FTP server aswell).Is there an option I need to set?thanks
+
+Don't use the "Scan for devices", because you have probably created a VPN tunnel and this doesn't work.You have to use TCP/IP communication, therefore just enter the IP address of your CODESYS Controller in your communication settings dialog. Then it will try to connect by TCP/IP with the controller.
+
+Thank you.
+
+Hi,there is a known error with current Gateway ( you need to use as a workaround <SP10 CODESYS Gateway - will be fixed to 3.5SP12)BREdwin
+
+Thank you, too.
+

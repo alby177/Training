@@ -1,0 +1,8 @@
+SDORead					: 	ETC_CO_SdoRead;SDOWrite					: 	ETC_CO_SdoWrite;I want to read&write SDO from ethercat slaves using these FBs.When I write to SDO,it always fail,even I changed to write other address,such as 0x6099.Meanwhile reading always good.But my friend use the the FBs to write another ehtercat slaves,read and wirte SDO both good.My question:Is it the slave's problem about write SDO error?Attachment:SDOw.jpg
+
+Hi,do you use this example from here:After installing this package you'll find the example here:"c:\Users\<YourWindowsUserName>\CODESYS Examples\EtherCAT Example" BREdwin
+
+Edwin Schwellinger wrote:Hi,do you use this example from here:After installing this package you'll find the example here:"c:\Users\<YourWindowsUserName>\CODESYS Examples\EtherCAT Example" BREdwinBut I do not want to use EtherCAT Example.Why the way I used do not work?And what is the problem?Tks,anyway!
+
+Did you ever find a solution to the ETC_CO_sdoWrite problem?I have the same issue. I can read Sdo's fine, but can't write anything.I have downloaded and using the Ethercat example from CodeSys Store.Have tried to write with ETC_CO_sdoWrite and ETC_CO_sdoWrite4, but no luck.With ETC_CO_sdoWrite, I get the error:ETC_CO_FIRST_ERROR,SdoAbort: 16#06090031, if using WORD, and 16#06070010 with DWORD as write value.I can't find any description about the error, or errocode.!!! Update:It turned out the values I am writing are not within legal range.So problem solved.
+

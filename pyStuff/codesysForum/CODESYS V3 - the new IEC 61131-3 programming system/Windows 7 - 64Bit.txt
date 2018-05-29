@@ -1,0 +1,32 @@
+Has anyone had success with running version 3 on a 64bit windows 7 platform?  If so, how did you get it to work?
+
+This is not supported yet, but it works perfect in the Virtual Windows XP mode of Windows 7 (also on 64 bits systems).
+
+V3.4 SP2 with 64bit support is available for download 14.12.2010
+
+Is it only about the programming system or does the rte V3.4 SP2 work on windows7 64Bit as well? Because I can't get the service started.
+
+This is correct. The Control RTE doesn't work yet on 64 bits systems.This is scheduled for earliest 2012.
+
+Hi Team,Is there any further update on having the bug fixed?Thanks,
+
+_________________Russell GeeManmachine Pty Ltdwww.manmachine.com.au
+
+What bug?
+
+The bug that wont allow it to run on 64 bit!
+
+_________________Russell GeeManmachine Pty Ltdwww.manmachine.com.au
+
+In my opinion you can not call this a bug.It would be a bug if 3S-Smart Software Solutions would have created a 64bit Runtime, but it doesn't work.Now it is a missing feature, which is under development.
+
+Got it...The end result is that it does not work   Good news is that it runs ok in virtual mode 
+
+_________________Russell GeeManmachine Pty Ltdwww.manmachine.com.au
+
+Does it run on windows 10 64bit?
+
+Hi,the download here:http://store.codesys.com/systeme/codesy ... te-sl.htmldoes contain a 32Bit Windows- and 64Bit Windows Version of Control RTE and will run on Windows 10 too.BREdwin
+
+I only need to use the CodeSYS OPC server on windows 10 64bit. Does it have this in the RTE version?
+

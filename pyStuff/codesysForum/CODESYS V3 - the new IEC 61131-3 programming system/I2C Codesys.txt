@@ -1,0 +1,2 @@
+Hello everyone, I’m triying to control 2 moteurs with an arduino connected to a Raspberry. All is working well. But now I would like to put a sensor ( accelerometer), Velleman 208, on my Raspberry to get the speed of my car. I’m using I2C communication bettwen accelerometer and Raspberry, so do you know  how to manage I2C in Codesys? I mean how to recuperate the values of accelerometer and show it on my Raspberry. I’ll be very thankful to those who will help me. Thank you
+

@@ -1,0 +1,8 @@
+Hi,i add a plc via script to an empty project. Then i want to add an Ethernet Interface as a profinet master. The problem is to Change/configure the inteface (eth0, eth1) by script.Can somebody give me a simple code snippet to configure that Interface. My second problem is the device id of the profinet slaves. The id's are like: 0x002A_0x0301_DIM 19. (Siemens IM151-3 PN ST V7.0). That id throws exceptions.....Thank you
+
+Hi Steffen_R.Steffen_R. wrote:Hi,i add a plc via script to an empty project. Then i want to add an Ethernet Interface as a profinet master. The problem is to Change/configure the inteface (eth0, eth1) by script.Can somebody give me a simple code snippet to configure that Interface.I think the configuration of a device is stored in its device and/or host parameters. Look at my example in my previous post. You have to edit it to match your devices.Steffen_R. wrote:My second problem is the device id of the profinet slaves. The id's are like: 0x002A_0x0301_DIM 19. (Siemens IM151-3 PN ST V7.0). That id throws exceptions.....In the attached python script the code prints all device descriptions with have the type 81 and add a ProfiNet slave device from the imported device description.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi Martin,it works that way.Thank you very muchSteffen_R.
+

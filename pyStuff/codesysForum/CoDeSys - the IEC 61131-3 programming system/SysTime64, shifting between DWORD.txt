@@ -1,0 +1,21 @@
+Hi,
+
+( Is High DWORD and Low DWORD) 
+
+I need save actual time and compare. But for better operate I wanted to convert into second.  I need doword. 
+
+My first idea :
+
+  i :=  (PlcTick.ulLow / 1000000) + (PlcTick.ulHigh * 10000);
+
+!! Wrong !!
+
+If ulLow have 16#FFFFFFFF and add ulHigh. Is bad result, surely. 
+
+I try 
+
+ i := 	pom := SHR(PlcTick.ulLow, 20) + SHL(PlcTick.ulLow, remainder); 
+
+Not exactly 1 second. At 5 minute, longer about 15sec! WHY ??? 
+Where is the problem?
+

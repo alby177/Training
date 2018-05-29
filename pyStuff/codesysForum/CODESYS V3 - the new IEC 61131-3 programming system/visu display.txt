@@ -1,0 +1,8 @@
+hi all,can any one help me on this .i want to Display files in  specific path on the visu. other side USB Folder data.i want to acesss file and del or copy to usb or usvb to sys ..can any one give some idea . please also see the below example , how i want to do on visuAttachment:DATA.png
+
+Hi,maybe you would like to have a look at the VisuDialog example in Store.good luck.
+
+Hi learnetk,thanks for the info. i had downloaded and installed VisuDialog example in Store.can you please tell me how use it , where i can find it in lib or some other place .
+
+Hi Once the package has been installed, the example program can be found under your User directory  \CODESYS Examples\Visu Dialog ST\1.0.0.2\There are a few application in the example Project, but maybe 'FileDialog' could be one you are looking for.Good luck. 
+

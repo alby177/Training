@@ -1,0 +1,10 @@
+Hi,I need an Profibus DP master in my Project.Hardware:Softmotion PLC IX T12B-SM from Beijer ElectronicsEtherCat modules from BeckhoffActual software:Codesys V3.5 SP5 Patch 1I use EtherCat Coupler EL1100 and hoped to use EL6731 (Profibus master)It is possible to add EL6731 after EL1100, but I cannot plug any profibus devices, only EtherCat device.I have talked with Beckhoff, they told me not to use this. I seem only to work with TwinCat........In TwinCat they also add an Profibusmaster and have some internal connection to the module.Is this possible in Codesys??With best regardsJens
+
+Hi Jens,you need to have an additional Packagewould recommend to contact support@codesys.comBREdwin
+
+Hi Edwin,Thank you!BR//Jens
+
+@Jens:As far as I know this package is licensed by 3S.As of now, this license is not included in the iX TxB SM image.There is still a possibility to use it, but you would need to switch to an iX TxC industrial computer with Codesys RTE installed, then get the single user license from the Codesys Store once it becomes available.Regards,Kim HansenBeijer Electronics Automation AB
+
+Hi Kim,sorry, I have forwarded your email 'from 7th' to get an exact deadline when it will be in the store.This answer is pending.Technical I guess it is ready to use.BREdwin
+

@@ -1,0 +1,10 @@
+I am trying to measure temperature using a MCP3008 to convert the values. The only values I get from it are 0 or 255.I check the wiring a few times so I doubt that's the problem. I have setup the SPI master and MCP3008.It only gives 255 when the input to channel 0 is 1V higher than Vref.
+
+Can you post your setup?A photo or a sketch (e.g. with "Fritzing").Gesendet von meinem LG-H870 mit Tapatalk
+
+I set up the mcp3008 the same as the picture. I am using different sensors though.I tried testing it with a potentiometer and that's how I found out it gives 255 if the channel input is 1 volt higher than Vref and 0 if its less.I am using a raspberry pi 3 model B.
+
+Hi,if you are working with Rasbian Stretch from 11-29-2017 Version (current Version)there seems a Problem with the maxSPI Speed.You can reduce here the SPImax Speed, then it should work. (sure depends on your used Versions of Rasbian)https://www.raspberrypi.org/forums/view ... 4&t=207412BREdwin
+
+Thanks for the reply.That seems to have fixed the problem.I now get a range of readings. similar to what I expected.Thank you.
+

@@ -1,0 +1,4 @@
+Hello,When using the ActiveX object for the PLC Handler library.  It seems that some of the documented functionalities are not available in the ActiveX component.  Specifically, I am trying to call the Scan Network function but it does not show up as a valid method??Am I missing something or is this method not supported in the ActiveX version?
+
+Hi,there is jira database entry for that:CDS-3569 PLCHandler: finalise the ActiveX Interfacethis point is still not fixed yet.
+

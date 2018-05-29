@@ -1,0 +1,4 @@
+Dear Community,is it possible to transfer codesys integrated user sessions between several applications?Thank you in advance.
+
+_________________Building & Process Automation with HVAC Library for CODESYS© - www.hvac-automation.com
+

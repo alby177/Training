@@ -1,0 +1,10 @@
+Hello Everyone,Is it possible send the data from PLC (codesys v2.3) to smartphones enabled with Android/iOS over Wifi?Can anybody suggest me how to achive it?Thanks in advance.
+
+If you can implement a Modbus Server in your PLC then you can use this product to access:http://www.sweetwilliamsl.com/I believe it is iOS only.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+ndzied1 Thanks for your replay.We are looking at the app to be developed for iOS, Android and Windows as well.I missed one info that the PLC is soft PLC running over Linux OS
+

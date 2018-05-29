@@ -1,0 +1,24 @@
+Hello everybodyI have a big problem, today Codesys application crashed during simulation oparation. After this I can not open my project, I get a message:"Could not open project/library (no vaild project/library file)"I did not make any backup of this project (I know I'm stupid   ) and also I did not download sourcecode to PLC.This program works on my customer PLC but I have to make some changes and now I can't.I have this probably corrupted .pro file, maybe there is a chance to fix it somehow???I also downloaded a compiled program from PLC, maybe there is a way to decompiled it?Please help me someway, don't tell me that I have to write this program again  
+
+Hi,you need to send the project file to 3S support,in most of the cases, the project file could be restored if they are corrupt.>I also downloaded a compiled program from PLC, maybe there is a way to decompiled it?No; this is not possible!BR Edwin
+
+Hi EdwinThanks for answer, I send my files to 3S yesterday and now I'm waiting and praying.I write here also because I was hoping that there is some way that we can do this on our own.GreetingsPrzemek
+
+Hi,do you any backup of it?The .pro file has only 4kB I fear the worst.BREdwin
+
+find all the *.pro filesfind all the programname.* filesthey can be anywhere stored so look in main directory and down.look in the trashcan (on computer )look in the manual of the machine, i put it always on a sticky, as my installations sail all over the world. (yes they can make their own unit with it.) not happened yet
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi EdwinNo, like I wrote before I have no backup.Right now I'm doing like you showed me for the rest of my projects. There are no excuses for me but i'm using CoDeSys for about 8 years now and I never have a situation like this. Even if sometimes application crashed .pro file always was ok.I was always doing backup manually but now this project was not complete, it works but there was some bugs in it.That is way I didn't make a backup because I was still working on it.Yes you are right, the .pro file is very small. Is CoDeSys removes this file during some operations???Maybe I can restore this file with some undelete software????Hi shooter, i'm not sure what are you suggest.GreetingsPrzemek
+
+look all over your computer maybe it has backups you are not aware of, search on date for example,undelete software works sometimes.look into zip files, as archive uses zip as extension.to use undelete you must not save the small.pro file maybe it finds links to other protions.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hey GuysThanks for all answers but I have no luck with my project.The .pro file was to small and to corrupted to restore.And I didn't find any backup files in my computer.I can only write this project again   The worst thing is that this program is working and I can even see a web visualization from PLC, but I can't retrive it.Thanks again Przemek
+
+i forgot to mention the *.exp extension.hopefully you did an export, i love it as i can read this.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

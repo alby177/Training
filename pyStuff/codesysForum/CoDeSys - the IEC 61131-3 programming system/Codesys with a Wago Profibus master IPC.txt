@@ -1,0 +1,13 @@
+Currently I am configuring wago Profibus master (IPC) with a slave 750-833 controller (no program, just act as a slave coupler only)and a slave 750-833 controller(with a simple program). I have no problem with the first slave 750-833. For the second 750-833, I have define the PFC address of 750-833 for the input start at %IW256 and the Output start at %QW256. Then downloaded the program into the 750-833.  But it doesn't work because i have error on the profibus master (IPC). My question is how to configure the profibus master's address to conrespond with the PFC variable addresses?
+
+I have attached a few pictures of Profibus master's configuration with the project files. Please advise!
+
+That is error on u program after rebuild.
+Error 3278: PLC_PRG (9): Invalid address: '%QW256'
+Error 3278: PLC_PRG (10): Invalid address: '%IW256'
+
+Are you sure you using the correct address?
+
+I don't know what address that I have to type in....
+I just assume only...
+

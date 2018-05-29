@@ -1,0 +1,11 @@
+Hi everyone.
+When I am trying to login my codesys project without simulaton mode to communicate it with the PLCWin NT .exe on the same PC to check whether this works or not. 
+But when I login Gateway.exe Communication error (#0) Logout performed comes. In simulation mode I am not getting any error.
+Can someone suggest me what can be the error? And How to correct this.
+
+I doubt that there is some problem in communication parameter settings.
+
+Looking for some reply.
+Regards,
+Rajat Bansal
+

@@ -1,0 +1,12 @@
+I want to know which WinCE version (4.x, 5.x, 6.x) is suitable for a typical PLC platform using CoDeSys Ver 3.x and Intel Xscale 400MHz processor?
+I heard that there are lots of OS related issues (file handling, task switching, schedular execution time) etc in older versions.
+
+Does anyone have such varied experience and observations on WinCE versions?
+In one of my projects I found that WinCE 6.x is faster in schedular and task switching than WinCE 4.x. Is this the observation by others too?
+
+Does WinCE 6.0x support real time multitasking? If not what is the wayout? I need it to minimize the jitter in the task execution time.
+
+_________________Devdatta Hambardikar, 
+Messung Systems, 
+Pune, India
+

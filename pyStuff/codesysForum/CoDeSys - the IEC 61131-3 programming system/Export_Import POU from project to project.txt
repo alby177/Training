@@ -1,0 +1,10 @@
+Hello, I'm creating one personal library, I test each FB in one "progect.pro" and if the FB is OK, I want to add it to a "library.lib".
+Is it possible?
+At the moment i can't copy/paste nothing that is not a ST, but I want to use also SFC, CFC ect...
+
+no ideas?
+
+Copy and paste via the Windows clipboard works with ST and IL only. For the other languages try to export / import the needed POUs.
+
+Project | Export brings selected POUs into a file, Project | Import imports them into the actual project. This should work with all programming languages.
+

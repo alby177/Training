@@ -1,0 +1,2 @@
+Hello,I have a question about the Trend chart in a visualization screen.I noted that the data displayed on a trend chart is retained even through new downloads, which means it's a file stored to the SD card.  Is there any danger in leaving this running in a project, in terms of number of writes to the SD Card?Are there any suggestions on setting up the buffer to minimize this, or is it not recommended on the Pi to leave the trend running?Thanks in advance.
+

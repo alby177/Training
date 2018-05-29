@@ -1,0 +1,20 @@
+HelloHow can I 'UNION' an INT with an ARRAY[0..15] of BOOLEach 'BOOL' seems to take 1 byte...Bit 0 is 1Bit 1 is 256...Thanks
+
+depending on what you need, you may not need the union.You can always use the dot notation to access the bits in a word.Code:MyWord: WORD;Bit0 := MyWord.0;Bit1 := MyWord.1;Not sure if this works with INT type but easy to try in simulation mode.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+BOOLs are stored as BYTE size in CoDeSys. Use bit level access as described by ndzied1. Either the util library or oscat.de library has pack/unpack functions you can use if you need to break apart a bit coded variable.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Thank you both for the quick answers.Have a good weekend.Paul
+
+Just for your information (not the best solution, but just as information what is possible):You could create a structure of BITS (REGARD THE FACT THAT THEY ARE BIT AND NOT BOOL:Code:TYPE STR_BITS :STRUCT   x1 : BIT;   x2 : BIT;   x3 : BIT;   x4 : BIT;   x5 : BIT;   x6 : BIT;   x7 : BIT;   x8 : BIT;   x9 : BIT;   x10 : BIT;   x11 : BIT;   x12 : BIT;   x13 : BIT;   x14 : BIT;   x15 : BIT;   x16 : BIT;END_STRUCTEND_TYPEThen you can create a UNION containing the structure and the WORD:Code:TYPE UNION_BITS_WORD :UNION   strBits : STR_BITS;   wWord : WORD;END_UNIONEND_TYPENow it is possible to use the union with BIT/WORD access:Code:PROGRAM MainVAR   u1 : UNION_BITS_WORD;    // Declaration of a union variable   xBool1: BOOL;         // just a bool   xBool5: BOOL;         // just a boolEND_VAR// Assign some value to the word of the unionu1.wWord := 16#F0F0;// Get the bit value from the structure of bits and assign it to a BOOLxBool1 := u1.strBits.x1;xBool5 := u1.strBits.x5;
+
+For this very reason I wish 3s would allow BIT as array type then you would be able to do the following Code:TYPE UNION_BITS_WORD :UNION   xBit : ARRAY[0..15] OF BIT;   wWord : WORD;END_UNIONEND_TYPESince BIT is not allowed as a base type of an array this would not work. Can someone at 3s add a request?
+
+_________________The Original SoMachine Ninja
+

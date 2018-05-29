@@ -1,0 +1,27 @@
+Is it possible to run CoDeSys V2.3 from a USB-drive (without installing any files on the PC)?
+
+What exactly are you trying to accomplish? From my point of view you can not run CoDeSys from a thumb drive on a computer that doesn't have it installed because of the quick off the top of my head reasons. 
+
+You need the gateway installed that will not be present on the PC.
+
+It's windows therefore CoDeSys installs and registers DLL's that are required for it to function that would not be present on the PC.
+
+It's windows therefore CoDeSys might use the registry that would not be present on the PC.
+
+But when you get to V3 and it is .NET based then it may be possible since you may only need the PC to have the correct framework installed.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+I'm trying to create an automatic update USB-drive, the current PLC doesn't have any other way to update the software except for a CoDeSys download.
+
+to updat the program in the plc you only have to send your new file to it.
+with for example the ethernet service module.
+I would update by sending new plc and returning the old one if possible. This makes sure it will work even with unexperienced crew.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Oh I understand now. There is a CST (CoDeSys Service Tool) I have posted the pdf here. I have no Idea how to acquire it. 3S and rightfully so doesn't work with the end users much and my MFG is worthless. With it there are command line parameters that you can write batch files or your own application around.
+
+_________________Thanks,Steve Pfeifenroth
+

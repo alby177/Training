@@ -1,0 +1,4 @@
+I am currently working on a college project using CoDeSys and a WAGO 758-870-000-001 profibus PLC.Could anyone tell me where I could find the target support package for above WAGO PLC. I need it quite urgently so that I can finish off my project.Any help appreciatedThank you
+
+Ask Wago. A TSP is allways distribributed by Wago. As far as I know you will get a customer.exe from Wago to install the target.regardsRalph
+

@@ -1,0 +1,6 @@
+Hy everybody,i have a big question. So I create a file .csv where i can print the state of some tags. These tags are the my machine settings and i can easily import in a excel file.Now i try to read back the parameter changed in the .csv file to initialize the machine in according with the changes of the parameters in the excel file.I have replaced the .csv file written before with the new file with the modification.now my problem is the multiple lines of the file and its dimension (more and less 35Kb)Thank You in advanced for any suggestion
+
+Hello mkzini,you have multiple options: - You can use the CAA File library from the CAA Technical Workgroup. There is a good documentation available, which also includes some examples to open/close/read/write/append etc.- Another option would be to use the CSV Utility library from the CODESYS Store (requires a Workstation license) - https://store.codesys.com/csv-utility.html- As I understood your application case, you want to save variable persistent based on a file storage and not with an retain memory. So in this case you can use the Persistence Manager.--> You can find the AC_Persistence module under the Module section.Best Regards,KevinR
+
+_________________Building & Process Automation with HVAC Library for CODESYS© - www.hvac-automation.com
+

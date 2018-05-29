@@ -1,0 +1,18 @@
+Hello,What kind of option are there for version control system in combination with CODESYS V3. Is there support for GIT, what is the best system that can be used?Regards
+
+Hello woude,Clientside: - SVN Plugin for Codesys is requriedServerside:- SVN Server for example: --> Apache SVN Server--> VisualSVN (GUI)As far as I know, git integration is currently not supported.Regards,Kevin
+
+_________________Building & Process Automation with HVAC Library for CODESYS© - www.hvac-automation.com
+
+GIT support can only work if the "codesys" you are running works with multiple files (i.e. TWinCAT 3) and then you link the folder where all those files are to your server.In other codesys apps (like SoMachine from Schneider) you can use Subversion.This is a pity... even both systems work flawlessly and very well, for machine programmers, GIT has a big advantage: when you are out of your office and you don't have access to your remote repository, having the local repository on your laptop would allow you to continue working as if you were connected to your server.TwinCAT with the possibility to use Visual Studio as an editor combined with GIT (or the version control you prefer) is a winning combination.
+
+_________________http://www.robotecnik.com - robots, CNC and PLC programming.
+
+Any news on whether git support is planned for the future?
+
+_________________Building & Process Automation with HVAC Library for CODESYS© - www.hvac-automation.com
+
+A professional tool as Codesys should absolutely support Git.Codesys' project structure should be flattened out and its files made at least somewhat mergeable and human readable.I am aware of the SVN plugin, but as pointed out in a post above -- one of the great features with Git is its distributed and offline capabilities. And now in 2018 Git services are a lot more available than SVN. So I hope S3 will make this awesome tool even more awesome and modern by making its project structure more suited for modern version control systems.
+
+I agree. Throw away the Plugins and just make a proper file structure like any other language in the world.This would make it possible to have automatic code generation, better translation support, implicit support for any (source) control system, and 3party suppliers to supply better tools than codesys can. 3S can't do everything in its IDE and everything better than any company in the world, its simply not possible.This would even allow people to write good Structured Text editors, the editor in codesys lacks a lot of features which are standard in modern IDE.
+

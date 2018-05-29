@@ -1,0 +1,12 @@
+Hi,the command "Execute Script file..." open a dialog box for choosing the PY file.Is there a way to give a parameter to select a specific script file ?So, i will able to add commands in a dedicated menu (each calling a different script).Regards.
+
+Hi rsprich.rsprich wrote:Hi,the command "Execute Script file..." open a dialog box for choosing the PY file.Is there a way to give a parameter to select a specific script file ?So, i will able to add commands in a dedicated menu (each calling a different script).Regards.The command has one parameter for the path of the python script but you can't use "Customize..." to create your own entries with it. BUT in the upcoming release of CODESYS V3.5 SP9 we added a new feature which might suites your needs: Quote:The CODESYS base directory can contain a sub directory "ScriptDir" which will be searched for python scripts with the file extension ".py". The found python scripts can be executes through the new popup menu "Scripts" below the existing menu "Scripting".You can use it by adding the new commands "A" ... "Z" and "..." from the ScriptEngine Commands to a new popup menu or any other place you want.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Thank you for your answer. So, waiting for the SP9...
+
+Hi rsprich.CODESYS V3.5 SP9 was released last week.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

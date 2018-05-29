@@ -1,0 +1,2 @@
+I have a medium scale system on AC500 serise PLC.We want to create different programming stations for different areas. However SDB file has to be on only one stations since OPC is running on server.What is method to define SDB file creation path?Any other solution?Thanks in advance....Kaustubh
+

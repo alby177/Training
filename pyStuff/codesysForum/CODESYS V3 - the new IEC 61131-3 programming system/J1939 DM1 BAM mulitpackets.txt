@@ -1,0 +1,2 @@
+Attachment:Capture.PNGIs it possible to use the j1939ecu module to read multipacket DM1 messages?    I tried added another spn_1 signal to the pgn but does not seem to read the multipacket.
+

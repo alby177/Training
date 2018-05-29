@@ -1,0 +1,10 @@
+Hello,I have seen many demos of controlling EtherCAT servo driver using CODESYS EtherCAT Master on Raspberry pi (rpi). What I wonder is the network driver for CODESYS EtherCAT Master realtime or not? Assuming that the rpi is running a rt_preempt/xenomai patched kernel, we may have realtime task/thread but how about Ethernet driver? As I know, rpi use SMSC 9512/9514 USB-Ethernet controller, does CODESYS  EtherCAT Master have its own realtime capable driver for that controller (USB type) or just use Linux network driver? Thanks,
+
+Like you already wrote, this heavily depends on the kernel. CODESYS only supports the rt-preempt patch. Xenomai is not supported.But be aware that the preempt patch can't solve all realtime problems. So a bad driver can always interfer with your realtime tasks.Gesendet von meinem LG-H870 mit Tapatalk
+
+Ingo Hornberger, thanks for your replying.From your text I can see CODESYS just use generic SMSC Ethernet driver from Linux. If that, CODESYS EtherCAT Master do not guarantee realtime due to latency of network stack and USB stack in Linux. Please correct me if I am wrong.Thanks
+
+That's fully correct. But from our experience, most network drivers are very good, as well as the network stack of linux. Most realtime problems are coming from bad BSPs, or when people are patching things in the kernel things which are introducing locks or harming the rt-preempt patch in another respect.Gesendet von meinem LG-H870 mit Tapatalk
+
+Thanks Ingo Hornberger. I got enough information I wanna know about CODESYS. Actually, my experience with realtime system is quite different from your point. In most case, network driver and network stack are main latency sources (not deterministic). Therefore all EtherCAT Master I have known come with realtime capable network driver.Anyway, thank you for your useful information.
+

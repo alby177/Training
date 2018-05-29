@@ -1,0 +1,8 @@
+Does anyone know how to assign components of a structured data type to a definite address using CoDeSys? For example, I would like to have a Data type as follows:Code:TYPE TestData :STRUCT    Data1 : WORD;    Data2: WORD;     Data3: WORD; END_STRUCTEND_TYPEAnd in the Global variable table, I would like to have something like this:Code:VAR_GLOBAL   TestData1: TestData;   TestData1.Data1 AT %QW1500;   TestData1.Data2 AT %QW1501;   TestData1.Data3 AT %QW1502;END_VARI know it does not work with the above syntax. But does anybody know the right syntax? This would save me a lot of effort.
+
+Hi,in a Multiprog wt (CoDeSys competitor) written application I used the following syntax:Code:VAR_GLOBAL   TestData1 AT %QW1500 : TestData;END_VARThis will allocate 3 WORDs QW1500 and up, in the same order as the TestData structure is declared. It looks a bit strange, since the structure is bigger than 3 WORDs, however, it worked fine.I guess, CoDeSys will do it in the same manner. Both of the systems are IEC1131 compliant ...
+
+Rolf, Thanks a Ton. I tested this. It works with CoDeSys too.   I should have guessed. In the same project, I had assigned a DWORD to a %QW address and realized I made a mistake because the DWORD took values from the adjacent address too. So obviously the address is only a starting address that fills up the variable to its entire width. I really think the CoDeSys guys should mention this possiblity in the help file under the "Variables declaration" topic.
+
+As a side note I have used addressed memory to pull bytes out of words and put them back in a different order. You can define an array of words at a marker address and then define an array of bytes at the same address. This effectively overlaps the memory like a union in C.
+

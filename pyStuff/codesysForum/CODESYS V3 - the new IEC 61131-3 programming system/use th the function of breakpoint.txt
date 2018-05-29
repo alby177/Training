@@ -1,0 +1,4 @@
+when I use th the function of breakpoint, I met the question some programmes can be set breakpoint to achieve stepping, but the other programmes can't run when I set a breakpoint.  And what's more, when I have set some breakpoints, I can't clear them.
+
+It is logic that the other programs are not running if you only have one task. This is normal when you set a breakpoint.If you want to have a part which continues to run, you should create another Task which calls the other programs.You can easily disable the breakpoint by selecting it and pressing F9 or open the breapoint dialog view and delete the breakpoints.Maybe it is a good idea to have a CODESYS training. This will save you a lot of time searching for these little items.
+

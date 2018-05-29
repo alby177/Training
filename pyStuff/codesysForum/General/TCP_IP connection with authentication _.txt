@@ -1,0 +1,10 @@
+Hi,I need to establish a TCP/IP connection and exchange data between my PLC (Festo CPX-CEC-C1) and a Cognex Dataman camera. PLC is a client, camera is a server. The problem is the camera requires a username/password, and I have no idea how to provide them.The only solution I found so far is to connect to port23 (telnet) - in this case after the connection is established the camera sends a 'Username: ' string -> I send back a reply -> the camera sends 'Password: ' string -> I send reply -> then I can exchange data etc. However if try to connect to a different port (on which camera is configured to listen) I get connection refused error because I do not provide username/password.So the question is - how to send a username/password ? thanks
+
+Hi,This is new for me as well, but can't you Listen for the string 'Usernamne:' and 'Password:' and respond by sending the username and password in string throu TCP/IP.On 3S website they have some examples on tcp/ip, tryout to see if you get the strings from the camera.ftp://ftp2.3s-software.com/pub/Examples ... unication//Torbjörn
+
+Thanks for the reply.What you suggest was exactly what I was trying to avoid. But as it seems to be no other way, I did it that way.It works in this case, but the question still remains - if something requires a username/password, but doesn't accept telnet connections, how to connect to it?
+
+You could modify the FTP FB found in the Oscat Network Lib.  FTP should use similar authentication.http://www.oscat.de/
+
+_________________The Original SoMachine Ninja
+

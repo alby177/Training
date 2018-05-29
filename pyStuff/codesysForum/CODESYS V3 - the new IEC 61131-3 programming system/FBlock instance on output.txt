@@ -1,0 +1,8 @@
+Dears.It is possible to declare, in a function block, an output which is the instance of the same function block.I' d like to use in my project  fucntion blocks orderers (like MC_MoveAbsolute) which accepts the instance of the object to be  ordered as an in_out (For example the ordered is the functionBlock Axis_ref_virtual and the orderer is the functionBlock MC_MoveAbsolute). But I'd dont like use global variables as an in_out to MC_MoveAbsolute (As axes are).I have made a fucntion block wich controls the movement of a pneumatic cillinder, I'd like that this function block gives an output as an one instance of himsrlf to be connected to the inout input of a functionBlock named FB_setCillinderIn, Because I d'ont like that the instance of the pneumatic cillinder be global.
+
+Look into using THIS keyword. You can define an output variable of type MyFunctionBlock and use THIS or THIS^ to supply your instance. I use something like this to add objects to a collection.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Thanks Scott. I try that. But if I use this i Will use a copy of my instace, and if i Will use this^ i Will use an pointer. My idea was to use a "reference to" as an output, but Is not possible.I d like to use t'he same function like axes. I have seen that axes_ref is not an instance of the axes, is an intermediate classe beetwen the axes and t'he orders function blocs (mc move absolutes) i Will use t'he same method.Enviat des del meu bq Aquaris 5 usant Tapatalk
+

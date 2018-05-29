@@ -1,0 +1,12 @@
+Is any solution if we want animate or select frame of the ".gif" files that we use in Visualization?Regards
+
+I am curious about the answer to this question as well.
+
+I am also curious. I intend to add an animated "Help" character to point users around the HMI.
+
+Hi,at the moment only possible by using the browser element,see attached project.BREdwin
+
+Edwin Schwellinger wrote:Hi,at the moment only possible by using the browser element,see attached project.BREdwinIs this a way to use Browser element in target visu (for example, with Berghof DC2007)?
+
+Hi,what I see  it works with the Control Win target visu,so I would expect to have it up and running in other targetvisu's too.BREdwin
+

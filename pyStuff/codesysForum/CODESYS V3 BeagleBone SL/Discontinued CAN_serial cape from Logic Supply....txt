@@ -1,0 +1,4 @@
+I've contacted Logic Supply. CAN/serial cape has been discontinued. Any alternative produc to implement CAN with Codesys in a reliable way??
+
+Hi,http://www.waveshare.com/rs485-can-cape.htmBREdwin
+

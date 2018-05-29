@@ -1,0 +1,14 @@
+I am looking for a tutorial on how to configure a Pi3 to use Canbus through an MCP2515. Is there any available?
+
+anyone?
+
+Using the candump command, I am able to see the network Packets.However, I am still getting a bus failure in codesys
+
+I seem to be getting errors from the following script:sudo /root/rts_set_baud.sh#!/bin/shBITRATE=`expr $2 \\* 1000`ifconfig $1 downecho ip link set $1 type can bitrate $BITRATEip link set $1 type can bitrate $BITRATEifconfig $1 up
+
+Edwin? Can you help?
+
+Hi,I'm having the same problem ... Do you know more about that ?Best Regards
+
+Create rts_set_baud.sh file in /root/ and chmod it to 777.
+

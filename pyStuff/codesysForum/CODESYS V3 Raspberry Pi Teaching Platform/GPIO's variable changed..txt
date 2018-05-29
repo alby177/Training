@@ -1,0 +1,8 @@
+Hi,My GPIO's name had changed, before I had for example dwIn.23 and it worked. Now the attribution of the same port is dwIn.9.How can I get the previous order like1 3 5 7 9  11...2 4 6 8 10 12...?
+
+HI,did you add your maaping like in the screenshot?It should not happen then.BREdwin
+
+Edwin Schwellinger wrote:HI,did you add your maaping like in the screenshot?It should not happen then.BREdwinTy for your fast answer,Yes, that work but the mappage were already done like on this image on the example application "GPIO". The problem is that this old mappage does not work even with this example.
+
+Edwin Schwellinger wrote:HI,did you add your maaping like in the screenshot?It should not happen then.BREdwinOk I'm a pure genius, since the morning I was using the wrong map... The one for the GPIO is this one.Ty for your time,BR,Julien.
+

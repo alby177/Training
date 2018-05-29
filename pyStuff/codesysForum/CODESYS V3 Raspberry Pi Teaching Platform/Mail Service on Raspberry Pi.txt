@@ -1,0 +1,20 @@
+Hi, i need to send e-mail from codesys on raspberry Pi and i found the Mail service package on the codesys store, but i don't know if it work on the raspberry.Any of you ever tried it? if yes it only need an internet connection to the mail server or need more?
+
+Hi,this is more a generic problem nothing to with the PI.Most of the email servers support meanwhile only SSL/TLS encrypted transfer.Therefore as long SyslibSocket does not Support SSL/TLS it is not possible by an implementation as CODESYS library.This is a point on the roadmap which extend this (SSL/TLS Support for these syslibs which are needed).Using email on the pi you have always the option that you execute a command line email tool and execute this by SysProcess.- this is the Workaround at the Moment, like for example sendmail..:viewtopic.php?f=21&t=5714#p11405BREdwin
+
+Since Raspberry PI allows other program to run in the backgroud  one workaround is you can relay SSL connections using STUNNEL.  http://www.xaviermet.net/project-blog/u ... -speak-sslOnce configured you can use OsCat Network library SMTP FB to send e-mails that require SSL connection.Any case wish the SyslibSocket library had SSL then this wouldn't be a problem to do on any platform.BR
+
+_________________The Original SoMachine Ninja
+
+I used the _ with ssmtp and work fine but when i call the script to send the mail from codesys, the mail appear to be sent from root. Do you nave an idea to fix it?
+
+Hi JzhvymetalWhat configuration do you need to do in Stunnel to get it to work?The link you send doesnt have any detailed steps. To create an SSL connection you will need the username and password. Where is this inserted.Do you have any steps to accomplish this?Thanks
+
+Hi,You can also use the Oscat Network Library to send Emails. http://store.codesys.com/oscat-network.htmlThe FunctionBlock you need is called "SMTP"BRAndreas
+
+interesting, i will try it. thanks for the suggestion.
+
+Hi AndreasDoes Oscat SMTP FB support SSL connections?Thanks
+
+Hi brendang, I am sorry. I just tried it. It does not work with SSL ... I think you need to work with a script on your raspberry.Similar to this one: https://stackoverflow.com/questions/645 ... using-smtpI would use 3 command line arguments for recipient, subject, contentBrAndreas
+

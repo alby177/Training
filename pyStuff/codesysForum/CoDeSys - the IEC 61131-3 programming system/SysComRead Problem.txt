@@ -1,0 +1,22 @@
+Hello,We are trying to read in a string on the COM1 port of an Eaton / Moeller XC201 PLC.We can use the syscomwrite function and see the data the PLC is writing out the COM port so we are confident that we have the port set up properly.There are a couple of questions that we don't know the answers to;Should we call the syscomread function continuously or just once?What should be put in the setup function for the buffer size?What should we use for the timeout?If anyone has an example it would be very much appreciated.Thanks
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+Bump?
+
+_________________nOrM=====nOrM = Norman Dziedzic Jr.
+
+Hi,    Please find the attached program and i would like to know how u did for com writeThanksSarath 
+
+Thanks for the sample.  We'll try it out.  I didn't get any target information when I opened the file.  Have you used this on an Eaton/Moeller XC201 PLC?We are writing with the SysComWrite function from the library SysLibCom.lib 27.8.10 15:11:00Norm
+
+_________________nOrM=====nOrM = Norman Dziedzic Jr.
+
+No I have not used Eaton PLC. The target settings in the program is  changed to PLC winNT for testing.Can u send your program of how you did for com write.Thankssarath 
+
+I wanted to follow up on this one.What we found was that the syscom read did not work when called inside an action.  We moved it to the main body of the main POU and it functions fine.  This would appear to be a bug but it is working for us now so we're ok.
+
+_________________nOrM=====nOrM = Norman Dziedzic Jr.
+

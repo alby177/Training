@@ -1,0 +1,24 @@
+I added a library to the directory of the Wago 32bit target files and opened it. 
+
+Immediatly I got the error: The Licencing manager could not be loaded.
+
+The project also refuses to compile.
+
+The loaded library is: Enocean_04.lib downloaded from the Wago website.
+
+The library is free of charge, but somehow I need to use the licencing manager which does not start.
+
+Please help me as I need to make a simple program by monday.
+
+_________________ing Gwen Stouthuysen
+Application development engineer
+
+Tyco Thermal Controls nv
+gwen.stouthuysen@tycothermal.com
+
+tel: +32.16.213.593
+
+It is solved by changing the rights of the user over the C:/LM.DAT folder from read only to Read-Write-delete
+
+_________________ing Gwen StouthuysenApplication development engineerTyco Thermal Controls nvgwen.stouthuysen@tycothermal.comtel: +32.16.213.593
+

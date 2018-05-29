@@ -1,0 +1,12 @@
+Most of the libraries for analog processing ( 0-10V, 4-20mA…) are using “real” as output.  For an analog output module you need a datatype “word”.  How can I easily convert real to word?  Does a library exist with a function REAL_TO_WORD  function?I think it must be also possible with pointers but have anyone experience with it and/or having a example program?
+
+The standard includes a REAL_TO_WORD() function.  You only need to check with your hardware documentation to see what numerical value corresponds to the real world voltage or current signals.Usually you perform a scaling function first to create the number you need to send to the analog output, for instance, a 12 bit analog output would likely take numbers from 0 to 4095.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+The word output is sometimes strangely formatted.but in general the conversion like ndzied tells is working,Inputs are sometimes shifted so will need special attention before scaling.Have a look at the oscat library with many functions for this.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

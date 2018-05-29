@@ -1,0 +1,86 @@
+I've a program infront of me which has been used in a plc before, I've located a set of variables which look to be the variables allocated with each pin. each variable ends:
+variable AT %QX0.1:BOOL;
+
+How do I read these variables to know which pin number they are allocated to?
+
+I have a second problem regarding invisible objects in visual. If you want to make an object invisible dependant on a variable being on, you just type the variable name in the invisible box on variables, but what if you want to make an object visible dependant on a variable being on. IE opposite way round
+
+Addressing is hardware dependent so you need to get the manual for the hardware you are programming.  In general though, your address if for an output (Q).  In specific, it is output bit 1 of word 0.  How the word and bit are mapped to physical points must be read from a manual.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+thanks, I thought that might have been the case with what they were being named, so if Q is the output then I would be the input. I'll have to find the manual then.
+
+Here is some more light. Straight from the CoDeSys help files:
+
+The following range prefixes are supported:
+
+I
+ Input
+
+Q
+ Output
+
+M
+ Memory location
+
+
+The following size prefixes are supported:
+
+X
+ Single bit
+
+None
+ Single bit
+
+B
+ Byte (8 Bits)
+
+W
+ Word (16 Bits)
+
+D
+ Double word (32 Bits)
+
+Examples:
+
+%QX7.5 and %Q7.5 
+ Output bit 7.5
+
+%IW215
+ Input word 215
+
+%QB7
+ Output byte 7
+
+%MD48
+ Double word in memory position 48 in the memory location.
+
+%IW2.5.7.1
+ depending on the PLC Configuration
+
+ ivar AT %IW0 : WORD;
+ Example of a variable declaration including an address assignment
+
+_________________Thanks,
+Steve Pfeifenroth
+
+Hello Keith!
+Your correct that AT%QX0.1 is a output and the actual pin is depending on your PLC configuration. In PLC configuration (in CoDeSys development software) it is possible to see wich output module that has the address %QX0.1 (in your case its the first output module and the first pin but it dosen't have to be the first module i the PLC rack).
+Was that clear 
+
+Regarding the visualisation you simply write x_Var:=FALSE in the "invisible box", then the entity will be invisibly when the variable is FALSE.
+
+Good luck Friend
+Magnus
+
+Carmichael_keith wrote:I've a program infront of me which has been used in a plc before, I've located a set of variables which look to be the variables allocated with each pin. each variable ends:variable AT %QX0.1:BOOL;How do I read these variables to know which pin number they are allocated to?I have a second problem regarding invisible objects in visual. If you want to make an object invisible dependant on a variable being on, you just type the variable name in the invisible box on variables, but what if you want to make an object visible dependant on a variable being on. IE opposite way round
+
+_________________Magnus Stengård
+
+For the visualisation u can use NOT to do the opposite of what the var is.
+Example:
+NOT(x_Var)
+

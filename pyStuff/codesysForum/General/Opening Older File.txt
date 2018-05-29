@@ -1,0 +1,26 @@
+I have an old file I need to open.  When I open it in a newer version of CoDeSys I get the error message:Quote:Error while loading the PLC configuration!Description file for module 'Module.Root' not found.Change configuration directory?If it matters, the controller for this job is Moeller/EatonXC-CPU201-EC256K-8DI-6DOIf I skip the root error message, then I get complaintes abou the libraries.  This is a nightmare!I'm not sure what exactly it is looking for... Any help greatly appreciatedThanks,Norm
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+you have 2 problems very common when using programs from old or anywhere.you will need to have the target file, specific for each type PLC. codesys is a compiler but it will need to know the hardware.the other thing is it cant find libraries used in the program.do not change directory but have a look under window library manager.the not found ones are redcolored. you can put specific libs in the project directory.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+So my question comes down to how do I find these particular libraries:Code:3S_CANopenMaster.lib 24.7.03 03:29:56Util.lib*4.1.02 01:24:10Standard.lib*7.6.02 01:26:00SYSLIBCALLBACK.LIB 9.7.02 08:1:543s_CANopenManager.lib 2.7.03 07:36:043S_CanDrv.lib 18.3.03 03:48:32SysLibRtc.lib 4.4.03 00:42:003S_CANOPENNETVAR.LIB 7.6.03 09:03:12SysLibTime.lib 7.6.02 01:29:00XS40_MoellerFB.lib*4.6.02 07:16:10XSoft-APPEXP-MV4_CANopen.lib*17.9.03 14:10:20SysLibFile.lib 7.6.02 01:26:50
+
+_________________nOrM=====nOrM = Norman Dziedzic Jr.
+
+a fast one is to find *.lib on the harddiskyou can also look for each file apart like util.lib (a standard one coming with codesys)open directory and copy the needed files to your project directory under libs.on project settings you can give a directory name for extra libs
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks for the quick reply.  Does it matter that the libraries on my computer are newer than the ones referenced in the project file? I'm accessing this machine remotely and can't afford to make any mistakes.  I also noticed that the PLCConfiguration is not present in the proejct when I open it with a newer version of CoDeSys.  Another chance for me to make an error.   
+
+_________________nOrM=====nOrM = Norman Dziedzic Jr.
+
+when you connect to the PLC it will say you will need to download the correct version, as codesys sees something is changed between the running program and the one you have in the computer.you must be sure you have the correct target on your computer as the compiler does not know what you are running.The PLC will accept your program however if wrong target it will seeze anything.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

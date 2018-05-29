@@ -1,0 +1,13 @@
+Good afternoon,I am working with UINT variables, but I would like to map then bit by bit because each bit has a determinate meaning. I am trying to do it following the help menu but I cannot do it. Can anybody help me please?If I have understood properly I should make an structure of 16 bits and then try to map it, but I do not know how to map it bit by bitThanks in advance
+
+Add a variable in the mapping table like wFaultRegister.In the code you can access the bit level of the variable as follows:Code:OverTemperature  := wFaultRegister.0;   (* Get bit0, all bits are accessed 0 based *)UnderTemperature := wFaultRegister.1;(* You can get creative and substitute the bits by enumerations and constants *)ENUM_OVRTEMP  := 0;   (* Assume this is part of an enum structure *)ENUM_UNDRTEMP := 1;OverTemperature  := wFaultRegister.ENUM_OVRTEMP  ;UnderTemperature := wFaultRegister.ENUM_UNDRTEMP ;Also easy to create your own FB to do this similar to the UNPACK FB.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+Thanks spfeif for the info but I would like to use this in a mapping input/output card. I mean instead of mapping a UINT variable in a %QW0, I would like to map bit by bit like %QB0.0,%QB0.1, %QB0.2...and so on. I have seen on the help menu that is possible but I do not know how to do it
+
+I believe it is not possible. I am assuming what you are calling mapping is from the IO of the target. the target is not configurable. Why does it matter? Just map in the software?
+
+_________________Thanks,Steve Pfeifenroth
+

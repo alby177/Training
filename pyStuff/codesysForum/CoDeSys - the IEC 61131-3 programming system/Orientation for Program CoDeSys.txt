@@ -1,0 +1,21 @@
+Hi,
+
+I need orientation for start program CoDeSys!
+
+Thanks
+
+_________________Daniel Ilha
+Brazil
+
+Hi,
+
+try the documentation and project file named "first steps". This should help you to get an idea how to work with CoDeSys. You find them under the directory, where you have installed CoDeSys (normally Program Files/3S-Software/CoDeSys V2.3/) and there under the Documentations tree and the Projects tree.
+
+_________________Roland WagnerModerator
+
+I go to follow tips.
+
+Thanks!
+
+_________________Daniel IlhaBrazil
+

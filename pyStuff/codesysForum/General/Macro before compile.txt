@@ -1,0 +1,11 @@
+Hello,
+
+I've got a question about the "thing" Macro before compile.
+
+Most of the projects i'm doing has a "main" program written in CFC.
+
+Does anybody know if its possible to make a macro that "orders everyting according to data flow" before compiling?
+
+Regards,
+Hasse
+

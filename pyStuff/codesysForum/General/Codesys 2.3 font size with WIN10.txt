@@ -1,0 +1,2 @@
+Dear All,I got a new computer with Windows 10 and it seems, Codesys 2.3 take a POU, Library etc. font size from somewhere - and it looks like this (please see the picture).Do anybody know how to change it? The default font is really small and not easily readable. Font in the editor is not a problem - this can be easily changed.I cannot find any settings in Options menu or CoDeSys.ini file.Any help is appreciated!Thanks,RegardsJan.
+

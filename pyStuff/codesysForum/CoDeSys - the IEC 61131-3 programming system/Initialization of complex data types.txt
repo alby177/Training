@@ -1,0 +1,35 @@
+Hello all!
+
+I've declared own datatypes and have problems initializing them
+
+example:
+TYPE DWORD_PARAMETER :
+STRUCT
+	Value : DWORD;
+	OldValue : DWORD;
+END_STRUCT
+END_TYPE
+
+TYPE Param :
+STRUCT
+	ComponentName : STRING;
+	Timeout : DWORD_PARAMETER; 
+END_STRUCT
+END_TYPE
+
+I have declared this variable in a program and want to initialize it
+myParam : Param := (ComponentName := 'Test'); 
+How do i initialize the Timeout variable in the same way?
+
+Thanks in advance
+
+Hello
+
+The whole initialisation is:
+
+myParam : Param := (ComponentName := 'Test', Timeout := (Value:= 5, OldValue:= 10));
+
+Bye, Frank Hailer
+
+_________________Qualitätssicherung
+

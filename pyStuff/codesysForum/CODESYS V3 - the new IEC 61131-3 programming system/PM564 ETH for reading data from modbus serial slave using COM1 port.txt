@@ -1,0 +1,2 @@
+Hi all,I am trying to program PM564 ETH PLC to read data from a multifunction meter which is a RS485 modbus serial device. This device is connected to COM1 port of the PLC. The ETH port is used to connect to the PC. Using Automation Builder 2.0 Basic with codesys 2.3.9.49. can anyone suggest how to program the PLC . Also i need help on addressing. The serial device starting register is 40001 and data type is integerThanks & Regards
+

@@ -1,0 +1,2 @@
+Hi all.I'm looking to get a PCI card to allow my PC running codesys 2.3 to be a Profibus master.I want to communicate with a  wago 750 series profibus slave and using a soft plc is my preferred option. Any input from you guys would be of great help.
+

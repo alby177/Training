@@ -1,0 +1,6 @@
+Hi,
+Have anybody with RT LynxOS expirence?
+
+What for OS used you? ( As development evironment tools on desktop
+computer and PLC-kit or device )
+

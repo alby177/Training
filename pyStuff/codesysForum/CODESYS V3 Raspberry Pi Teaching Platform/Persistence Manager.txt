@@ -1,0 +1,4 @@
+Halloich arbeite mich gerade in Codesys ein, und komme bei folgender Aufgabe nicht weiter:Ich brauche persistente Variablen. Diese müssen eigentlich nur bei Änderung neu gespeichert werden, um dann bei Neustart der Steuerung wieder verwendet werden zu können (Änderung der Variablen ca alle 10 Betriebsstunden)Ich habe nun in einen Beitrag hier im Forum gelesen, dass sich dies mit den Persistence-Manager lösen lassen würde.Ich komme aber nun nicht weiter wie man diesen zur Application / bzw zu den Modulen hinzufügt. In der Hilfe von Codesys finde ich hier auch nichts konkretes.Kann mir hierzu jemand einen Tipp geben ? Vielen Dank im Voraus
+
+Hi,attached the example project for using the persistence manager,anyway an ups would even in this case help to prevent the sd card damage (in case you switch off powersupply while writing thepersistence manager files)BREdwin
+

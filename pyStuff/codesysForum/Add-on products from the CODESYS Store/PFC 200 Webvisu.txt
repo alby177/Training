@@ -1,0 +1,4 @@
+I have a question about WebVisu on PFC 200. When I change target WAGO PFC200 from original to CODESYS PFC 200 Target from Store and create WebVisu in CODESYS V3.5. In internet browser put http://plcaddress:8080/webvisu.htm I got original wago PLC_VISU webpage.How to change it?
+
+Hi,this should work, check in your Project the plclogger...You should see if you access the webvisu in the browser - served Images pages etc..BREdwin
+

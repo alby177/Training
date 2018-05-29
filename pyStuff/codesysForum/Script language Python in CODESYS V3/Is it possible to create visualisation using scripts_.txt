@@ -1,0 +1,6 @@
+If yes can someone show an example how it looks?
+
+Hi.Viacheslav Mezentsev wrote:If yes can someone show an example how it looks?There is no Scripting API for the Visualization at the moment. Only for the Image Pool.We have the entry CDS-35638 in our database to create a Scripting API for the Visualization but it is not on the roadmap at the moment.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

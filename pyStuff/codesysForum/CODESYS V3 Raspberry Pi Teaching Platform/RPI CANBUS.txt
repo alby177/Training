@@ -1,0 +1,12 @@
+Hello,I have a problem with the rts_set_baud.sh script.Attachment:Codesys error.jpgI don’t understand, the script is at rootAttachment:locate script.jpgHave you an solution ?Attachment:droit script.jpgthksDavid
+
+Hi,I would recommend to check how this is done in beaglebone blackthere the can is supported.BREdwin
+
+Ok thanks for your advice.But the canbus is no longer supported on the RPI?
+
+Hi,we just add all needed components to the runtime (obviously without this script)As you need anyway to build a customized kernel with included socketcan (or is this nowadays not needed anymore?)At that time we decide just add the license for the users which manage to deal with restricitions.BREdwin
+
+I think i don't need a specfic kernel.My application requires just CANBUS with sofmotion light for 3 axis.My can RPI canboard is avaible but codesys script is disable.
+
+I have find a solution to done the canBus.I use a RaspiLC Iso:Raspbian Jessie-Desktop Kernel 4.9 Codesys-Runtime 3.5.11But now i have this: Module not foundAttachment:Driver not found.jpg
+

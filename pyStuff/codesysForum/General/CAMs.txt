@@ -1,0 +1,33 @@
+hello,
+
+         I have another question, it puzzled me for days.
+
+         please, thank you very much.
+
+         what is the funtion of CAMs inthe CodeSys.please explain it         carefully.
+
+            thanhs very much.
+
+dengjun wrote:         what is the funtion of CAMs inthe CodeSys.please explain it         carefully.
+
+Dear Dengjun,
+
+Your question is unlikely to be answered, since it is very broad, and frankly rude, since it does not show that you tried to gain any knowledge beforehand.
+
+Please read the manual on GEAR_IN(), CAM_IN() and CAM_OUT().
+Then look at the softmotion-example in the CoDeSys library.
+
+Then state, if possible, specific questions about what you dont understand.
+
+Regards
+  Nicolai Hanssing
+
+Thank you very much for your answer! My question is how to change the relative phase of two simultaneously running axis? Thank you again!
+
+dengjun wrote:Thank you very much for your answer! My question is how to change the relative phase of two simultaneously running axis? Thank you again!
+
+For simple running of axes with a specific phase-offset please look at the function-block MC_PHASING().
+
+Regards
+  Nicolai
+

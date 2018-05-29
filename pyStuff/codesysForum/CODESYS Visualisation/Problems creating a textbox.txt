@@ -1,0 +1,6 @@
+Hi all.I'm trying to create a textbox on my visualisation, and everything seems to have been done correctly as far as I know (using a rectangle to serve as the textbox, textdisplay has a vaild variable plugged ito it, the "text input" box has a tick in it, etc).Here's my problem.When I run the app and click on the textbox to type something in, the cursor appears not inside the text box as one might expect, but OUTSIDE the textbox.Is there something I've missed?Thanks.Elric.
+
+Oh, by the way, I'm using version 2.3.9, if that makes any difference.Thanks.Elric
+
+Never mind.  Found the solution:  make sure to have set an initial value for the text box via the "text->content" value.
+

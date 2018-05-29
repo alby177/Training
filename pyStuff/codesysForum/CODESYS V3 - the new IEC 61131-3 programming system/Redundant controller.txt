@@ -1,0 +1,10 @@
+Hi,Maybe someone can help me with a solution with chossing a codesys based controller.The project is for a ship and must contain hot-standby redundancy between 2 controllers and also redundant profibus communication with the remote i/o's. I was wondering if 2 Beckhoff controllers with the standard runtime from Codesys will do the work. Or maybe someone have a better idea.Thank you!
+
+That would do it, but why profibus and not ethercat?
+
+_________________http://www.robotecnik.com - robots, CNC and PLC programming.
+
+Hi,this is only possible with Ethercat...BREdwin
+
+Thank you both for the answers. @Joan M: Why Profibus? This was in the project specification. I would changed if it was by me. The problem is that the ethercat bus couplers from Beckhoff dont have type approval certificate. One solution is to use Profinet for the Remote IOs...I guess.
+

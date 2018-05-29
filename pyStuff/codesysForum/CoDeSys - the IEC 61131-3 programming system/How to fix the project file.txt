@@ -1,0 +1,4 @@
+One of our customers meet trouble need your help. He work for a new project about one week and only using one project file. Today when he program with indralogic suddenly power off. When he restart his computer and try to open his project, everything was changed. All of the PLC configuration and POUs disappeared. Can him get his programs back? How to do?
+
+By the way, Normally he set Password for his project file.
+

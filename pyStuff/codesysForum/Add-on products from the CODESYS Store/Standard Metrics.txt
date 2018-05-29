@@ -1,0 +1,2 @@
+Hi,If I have a POU with a function block action the number of comments doesn't show correctly in the standard metrics, however if the action is structured text then it works (See screen grab). Is this meant to happen, what other limitations on the metrics are there for function blocks?Thanks,Tim
+

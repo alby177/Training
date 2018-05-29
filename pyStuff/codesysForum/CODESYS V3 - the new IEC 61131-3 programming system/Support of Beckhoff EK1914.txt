@@ -1,0 +1,2 @@
+Is it possible that the "EK1914 EtherCAT Coupler with integrated digital standard and safety I/Os" will be supported in codesys ?In our machine portofolio, this module would be a perfect fit , for integrating safety with codesys , using only this module.Does codesys have any future plans of supporting this module ?TiaFrank Strømmen
+

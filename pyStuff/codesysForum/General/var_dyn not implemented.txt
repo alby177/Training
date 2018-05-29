@@ -1,0 +1,8 @@
+Hi Everyone, Im recently new to the 61131 standard and codesys, but have 30 years programming experience. I have noticed the standard defines a VAR_DYN block which allows dynamic/temporary allocation of variables (using the stack mechanism). However, codedsys seeems not to have implemented this feature, so all variables are static. I have scoured the documentation and the net and can find no references to this.
+   I am using codesys 2.3.6 (i have no choice here). Have I missed something, or has this requirement never been implemented?
+
+thanks all
+simon
+
+Try to use functions from SysLibMem library (if your hardware manufacturer implemented it in your PLC). Allocate memory and use it as you want.
+

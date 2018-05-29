@@ -1,0 +1,11 @@
+Does anyone know if it is possible to import PLCopen standard files into Codesys? For example, I can export a Telemecanique PL7-pro ladder file in to a file with an .LD extension. When I look at this file in notepad, I can see the following:
+[HEADER]DATE = date #2007-10-28STANDARD = 'PLCopen  v0.1 1993'SENDER = 'Schneider Automation S.A. PL7 PRO V4.3'[APPLICATION]NAME = 'STATION'DATE = date_and_time#2001-08-07-13:07:12VERSION = '0.0'[SOURCE_UNIT]SU_TYPE = PROGNAME = 'Plug_assist'LANGUAGE = LDBODY = ADDRESS = MAST MAIN VAR_GLOBALEND_VARPROGRAMRUNG (*PLUG HEAT CONTROL.  The Plug Heat contactor is ON when enabled with the HMI touchbutton.  A high-high Plug temperature condition causes the Plug Heat contactor to go off.*)OPEN_CONTACT(%M256),CLOSED_CONTACT(%MW804:X9),H_LINK(8),COIL(%Q6.7);END_RUNGRUNG (*PLUG ASSIST CYLINDER CONTROL.  When Plug Assist is enabled by the HMI touchbutton, the Plug Assistcylinder is controlled via the Timing Window during Normal Run.  *)OPEN_CONTACT(%M569),OPEN_CONTACT(%M257),CLOSED_CONTACT(%M5),CLOSED_CONTACT(%M10),CLOSED_CONTACT(%M11),OPEN_CONTACT(%M276),OPEN_CONTACT(%M2),CLOSED_CONTACT(%M482),H_LINK(2),COIL(%Q6.7);END_RUNGEND_PROGRAM[EOF]
+
+It looks like it is a PLCopen standard but I cannot find a way to import the code.
+
+Thanks!
+
+I'm afraid this will not work. Import of source code from systems other than CoDeSys has to be be done via the Windows clipboard and works for text based files only (IL and ST). 
+This restriction applies to every PLC programming system (even PLCopen systems), all of them can share text based files with others only.
+Regards
+

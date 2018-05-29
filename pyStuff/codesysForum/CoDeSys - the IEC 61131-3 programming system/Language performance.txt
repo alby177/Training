@@ -1,0 +1,7 @@
+Hi,
+I'm wondering if anyone knows if there's any studies on the peroframnce of the IEC 61131-3 languages compared to each other. Is there any penalty for writing in one of the graphical languages as compared to say structured text?
+My feeling is that there's none or very little diffrence (at least if the graphical lanauge is used for a task that suits it) but I'm writing a report where CoDeSys is a central part and thus I need to be able to give a reference to a document that states this, or in the case that I'm wrong states something else.
+
+Regards
+Leon
+

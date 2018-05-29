@@ -1,0 +1,22 @@
+After recently updating to version 2.3.9.25 I've discovered that I'm limited to nine fonts (see below) I can select under OPTIONS-EDITOR-FONT.  This wasn't the case prior to my recent upgrade.  Is there a way I can add / access other fonts?  I am running Windows 7 Ultimate 32-bit version.  Thanks.Available Fonts:Consolas - Courier - Courier New - Fixedsys - ISOCTEUR - Lucida Console - Lucida Sans Typewriter - Monospac821 BT - Terminal
+
+this is one for boris.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+I've reolved my problem.  Something happened to the fonts on my Windows font file.  Once I was able to re-load them, they appeared in CoDeSys again.
+
+Hello cvrettacos,I have the same problem and I can't find a way to solve it.Can you please post the details of your solution?Has anybody else some suggestions?
+
+Hello again,I've tried to restore Windows Fonts and hide/unhide Fonts with no good results.Does anybody know what causes this problem?Am I the only one with this problem?
+
+I didn't realize it before, but one of our IT guys also set CoDeSys to run in  Windows XP Compatibility Mode.  Access to all my fonts returned, but I started having other issues - extremely log time for CoDeSys to load files & it kept hanging-up frequently.  Once I switched Windows XP Compatibility Mode off, I lost the fonts again, but CoDeSys started running better for me.  I've just decided to live without the fonts.I'd be interested to hear if you have better success.
+
+Unfortunately I'm still using Codesys with only nine fonts available.I've searched also on other sites to find out more about this problem, but I couldn't find a solution.The only way to increase the number of fonts has been to disable the hiding of fonts according to the language configuration of the PC, but this only enables chinese and cyrillic fonts which are useless for me.I hope someone at Codesys can read these posts and give a solution.
+
+hello,could anyone check the following:1. add some monospaced font's on your windows 7 installation (google them )(copy the ttf's to the windows font dir)2.then in CoDeSys goto Project|Option|Editor|Font -> 'Weitere Schriftarten' (see Screenshot in my case this is not translated development version  )select the added font (new one must be a fixed fonts / monospaced)3. check if everthing is working well, like _ in cfc / editing in the grafical editors etc..this should solve the 'Windows 7 fixed font problem' i guess.feedback appreciatedcuEdi
+
+Hello Edwin,I tried your suggestion and I finally had a few more fonts available. Thanks for providing this workaround.I still don't understand why we have this limitation with Codesys and W7 since it had never been a problem with XP and previous versions of Codesys to use standard unicode fonts like Arial or similar ones. It might seem a detail to someone, but for who has to spend a few hours a day reading and typing program lines, the font is a very important "tool" and I consider this as a bug which should have already been solved, or at least explained.
+
+Hello,good news:This will be solved with V2.3.9.36 (Release on 26th July 2012)E.Schwellinger3S Support
+

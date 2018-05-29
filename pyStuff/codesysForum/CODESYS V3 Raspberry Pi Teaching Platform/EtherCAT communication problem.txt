@@ -1,0 +1,8 @@
+Hello,I work for an automation company.I'm developing a simple project with CoDeSys on Raspberry to control a servo-drive through EtherCAT.The code works well, but occasionally (about every 2-3 hours), the drive stops due to a communication error.I suspect that the error is due to a too high jitter that sometimes reaches peaks of 4 ms.I think that the rise of jitter is due to some process of the operating system.To solve the problem I tried to install the patch RT-Preempt, but I did not get any result.I'm using a Raspberry Pi 2 model B, I set the EtherCAT task to 4ms with a 0priority and DC (distributed clock) also to 4ms.The drive is an OMRON R88D_KN04H_ECT.Any suggestions?Thank you
+
+Hi, I have an experience with Raspberry Pi and 3 Control Techniques drives connected by EtherCat. I had  no problem with that setup. I used EMLID Real time image for Raspi. It is worth to try that image in my opinion.  good luck.
+
+Without purchasing a license (just download) the CODESYS Control for Raspberry Pi runs for two hours without functional limitations and shuts down automatically (demo).maybe you have a problem with your license
+
+The raspberry codesys is named soft real time. Codesys people ensures a jitter of about 500 us.Using a realtime linux image the codesys has to plug his interrupt as realtime interrupt, an I dont know if it do that.I have implemented a pou with a variable delay of 600us in the first task, before ethercat task. I have had running it for a 10 min and the jitter after this pou is around 5 us. But nobody ensures me that there could be a linux thread which blocks interrupts, smi or something similar.
+

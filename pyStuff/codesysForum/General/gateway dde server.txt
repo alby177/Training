@@ -1,0 +1,15 @@
+Hi,
+    I'm trying to read the DDE in excel via the gateway app.
+
+I have it working in codesys and I've edited the line to change it from codesys to gatewayddeserver. 
+
+I make my program a boot file and shutdown codesys. I open gatewaydde.exe and go online. set the PLC to run and open the spreadsheet.
+
+This where everything goes south. I get pop asking to open gatewayd.exe and after clicking yes I get an error message saying the program is missing or damaged.
+
+I've gone through all the help files and can not see what is wrong all the comms parameters are the same.
+
+Just to let anyone know what the solution was. I did not have access to the C:\windows\gateway files. Codesys was unable to copy the symbol files to this folder so when GATEWAYDDESERVER had no symbol files in which to load.
+
+Go the IT department grant me access and all working well.
+

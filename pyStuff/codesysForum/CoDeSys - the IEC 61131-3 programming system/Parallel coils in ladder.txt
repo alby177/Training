@@ -1,0 +1,8 @@
+Hi everyone,I've question with Ladder logic in Codesys. Is there eny way to achive parallel coils like picture below.Thanks for your help.
+
+No way to do this as you draw. With ladder Logic in CoDeSys parallel coils must be diven by the same equation.  But you can write 3 networks, one for each coil with its own equationIt's a bit longer to write, but you can use the copy and paste. And it will work. 
+
+in version 3 it is possible but in version 2 it is not possible in ladder logic, however in other like ST or SFC and CFC it is possible. In IL it is also possible as but difficult.In LD the coil (or any output must be a boolean and can not be questioned againonly solution for this is use multiple networks and use the result from the previous or build it as many times as needed and use dummy outputs.watch it when using outputs as inputs there is a difference when you use markers or real outputs as they are only scanned at the end of program.i am meaning that if you set a coil in a program and you are asking if it is set on the next line it will be on however in real the output is not on yet.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,4 @@
+Good morning !!a question:With an arduin connected to raspberry directly from usb you can control arduino via serial (and without any converter 485) from codesys?Do you have some examples of Arduinian code to read the values?Thank you, Alberto
+
+Ok ..... you can !!I did some tests and finally I saw them running.Now, however, I would just need some help.Can somebody give me some information on how to write an arduino code to control inputs and outputs?On the web there are many examples in modbus via ethernet but not serial.Do you have a few pieces of arduino code that show you how to read an input and set an output i codsys ?Thanks a lot, Alberto
+

@@ -1,0 +1,4 @@
+hiI use CoDeSys 3.5 SP3Using an object frame named "FrameMain"how can I change the reference visualization from code "PLC_PRG" in ST?how can I change the properties of this object to ST code?GetObject("FrameMain....I need an examplethanks Luca
+
+There is a very explicit example in the store.http://store.codesys.com/visualization- ... =default#1what is the maximum number possible of display inserted in a frame?Is there a way to reference the frame dynamically from code? I do not loading visualization by reference property. I load visualization directly from code. es: myFrame := "Visualization1"thanksLuca
+

@@ -1,0 +1,8 @@
+I recently learning Codesys V3.5.  I use PC( Win V3 ) or raspberry pi3 to run the Codesys program.     I have successfully used EtherCAT and Modbus TCP protocol to communicate with the Staubli robot.      But Profinet always does not work.   When I use  PC( Win V3 ) as Profinet Controller, the status bar tells me that there is no module.   When I use  RaspBerryPi3 as Profinet Controller, All status lights are green.But communication is still not successful
+
+Hi,for Profinet on Control Win there are two points needed:1. Install Winpcap (Winpcap.org)2. Disable the Firewallthen it should work>When I use RaspBerryPi3 as Profinet Controller, all status lights are green.But communication is still not successfuleither use the inputs/outputs in the pou's (add mapping) or set "Enable 2  update variable.." option.BREdwin
+
+RaspberryPi3: Profient ControllerStaubliRobot: Profinet DeviceCurrently I can monitor the robot to Raspberry Pi3 digital input signal. Raspberry pi3 output signal in the robot side is always a question mark  “？”I use SIEMENS s7-1200 instead of raspberry pi3  communication with robot is OK.So..I don't think the problem is on the side of the robot.
+
+When I scan for devide. It picks up the correct IP, stationname and MAC.  But I do not understand that valid IP required.Attachment:11.jpgAttachment:22.jpgAttachment:33.png
+

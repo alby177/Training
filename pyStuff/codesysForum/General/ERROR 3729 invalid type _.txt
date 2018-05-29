@@ -1,0 +1,36 @@
+I have included two screen shots. Each has a different target so I am assuming it is target related. The issue is if you look at the two nodes I added to the CAN master the hardware address is incorrect. It shows:
+
+AT %IB161 :UINT; This is incorrect and should be AT%IWXXX :UNIT.
+
+If you will also notice the first node I enter it has the addresses wrong but the next one added is correct. If I keep adding more of the same node it will have the pattern incorrect - correct -incorrect-correct.
+
+I have included the same eds file with another target and it works fine which leads me to believe it's target related. It is a big problem because once I assign a variable to the incorrect address I get compiler errors
+ERROR 3729 : (0) Invalid type 'Unit' at address %IB161.
+
+I have seen addresses like this be incorrect in the past because there were multiple *.cfg files in the directories but in this case there are not. Any thought on how to slove this one? Any reason this would happen?
+
+_________________Thanks,
+Steve Pfeifenroth
+
+This damn CoDeSys formum will not let me upload the screen shots that are both 53kb each. Every time it states maximum file size for all attachments is reached. Board Admin please let me upload!!!!!!
+
+_________________Thanks,Steve Pfeifenroth
+
+When would you manually adjust the Input and Output Address?
+
+The problem I am having with the PLC configuration assigning an incorrect type to the hardware address of CANopen nodes I was able to get around by manually changing the Input and Output address on the CANopen nodes "BASE PARAMETERS" tab. I unchecked Automatically calculate addresses on the Targets "SETTINGS" tab.
+
+Should I do this? Will this cause problems. I have never had to manually change addresses before.
+
+_________________Thanks,Steve Pfeifenroth
+
+Steve,
+
+We have seen this with adding I/O cards to gateways.  CoDeSys will assign the next available address to devices but some devices require word or double word alignment.  Specifying the starting address can help in this situation.
+
+I'm not positive but I believe certain targets will have default address sizes (byte vs. word) so this may be why it seems target dependent but don't quote me on that part.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+

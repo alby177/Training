@@ -1,0 +1,6 @@
+I'm using Codesys not from long time... but still not clear 100% when CPU need to go to stop in order to update a program:-if I "rebuild all " project--> STOP-when I "build" (F11) ? (usually not..)--> NOT STOP-when "moving" project from one pc to another?-->??other-->?I mean, what is the rule for that? (in some process a CPU going to stop to update the program is not acceptable...)Regards
+
+it depends on what is changed, if the varlist is changed the cpu must stopif only a variable is changed the cpu does not need a stop but i would recommend it.if program is changed the cpu must stop even if inside a library there is a change.If cpu is not allowed to stop you will have to write your program complete and good in one go.remember the retain vars etc.If process is that critical use another method like two plc next to each other with a changeover.it is called redundant.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

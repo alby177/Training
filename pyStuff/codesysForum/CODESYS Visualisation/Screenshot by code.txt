@@ -1,0 +1,2 @@
+Someone knows if is possible to take a screenshot of the display directly by code or executing an external command?Best regards,PSI'm using Codesys 3.5 SP8
+

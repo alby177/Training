@@ -1,0 +1,2 @@
+How can be checked by python script, if a) a dedicated package (e.g. SVN PLugIn)andb) the corresponding licence is available (e.g. the svn plugin licence)in CODESYS V3.5?Thanks in advance.D.Baur
+

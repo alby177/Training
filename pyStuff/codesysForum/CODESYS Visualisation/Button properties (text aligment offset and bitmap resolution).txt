@@ -1,0 +1,2 @@
+Good day,it is my first project trying to use codesys visualization and I am missing quite few functions I use to have on hand in my previous applications.I am trying to format buttons. How could I make text horizontal alignment left, but with a 20px offset?Also, If I insert bitmap on button properties, I could use only original size or stretch through whole button.  Is there way to determine for example that bitmap should be 30x30?download/file.php?mode=view&id=2650
+

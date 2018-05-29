@@ -1,0 +1,57 @@
+As everyone may or may not know you can not install multiple versions of CoDeSys V2.3 that I am aware of. Here is my dilemma.
+
+PLC MFG1 is using CoDeSys V2.3.9.13 and all associated libraries, especially the ones created by 3S which the names of the libraries don't change and you can have build issues with trying to use projects developed with earlier versions/libraries of CoDeSys. See my older posts.
+
+PLC MFG2 has tested all of their libraries etc and are stuck at V2.3.9.4 since it has been validated.
+
+If I have already installed V2.3.9.13 from MFG1  I can not install CoDeSys 2.3.9.4 from MFG2. As soon as I try it states their is already a newer version installed and the install will exit. So now I can possibly have issues with MFG2 software because CoDeSys could have changed the libraries and made them incompatible with older versions and then you are stuck!!!
+
+The only thing I can do is uninstall V2.3.9.13. Install V2.3.9.4. After the install of V2.3.9.4 isolate the libraries from the CoDeSys build path. Then install V2.3.9.13. When working with V2.3.9.4 I will have to point to another library folder in the project build options.
+
+V3 has taken care of this issue but what about V2.3 users. We are still here!!!! How about giving us a CD with all the libraries broken into folders based on builds at which they changed and let us developers target the libraries we need. Or make a tool that will allow us to extract the 3S libraries only from any older build out of the cab files and place them in a folder of our choice.
+
+Any ideas how to remedy this situation?
+
+_________________Thanks,
+Steve Pfeifenroth
+
+Hi, 
+I don't know if you use Codesys from 3s or from a PLC manufacturer but maybe it helps you : in my case, I use codesys v2.3.1 from "x" en codesys v2.3.2 from 3s and it works fine. Both have the same target settings and different library. (I can use codesys from 3s with the PLC from "x"). 
+
+Note : the versions numbers are example
+
+I use 2 versions of CoDeSys on the same PC.
+A version from 3S and a version from Moeller. and its works well.
+Each version is automatically installed in a different folder.
+
+But I can not open a Moeller's project with 3S version for licensing reasons.
+
+I think your problem does not come from 3S, but from manufacturers.
+For example, I installed a version for Schneider drive module axis Lexium, 	
+and this version installs over version 3S !
+In the same way some manufacturers put their targets and their libraries just anywhere.
+Best regards.
+
+You could look into using virtual machines.  I'm doing this right now.  I have explored the free Virtual Box from Sun but it looks like there are problems with some of the dongles I need to use.  
+
+I'm just today setting up a new hard drive with the intent to use VmWare Workstation and to create VM's for the various programming platforms that don't necessarily play well together.
+
+Since we have multiple engineers I also have the grand scheme in my mind that I can create base installs of software versions and distribute them to all the engineers and we can all be sure we're working from the same version of the software.
+
+It will be a few days before I have any results as the rest of the day will probably be taken up in the base Windows install.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+Hello,
+
+I use to copy an existing installation to a different folder, so it is fixed.
+A second installation may overwrite the other one, but I got the fixed one too. Except the gateway files are overwritten in the system folder.
+The targets are independent from the version of CoSeSys, so everything works fine in "parallel" installations.
+
+_________________Good Better CoDeSys
+Boris Schuster
+
+Hello,I have got a problem when installing multiple versions last week:- I had installed ABB Codesys 2.3- I installed TwinCAT (Beckhoff) Codesys 2.3 afterward- both was installed in different folders so no interference between them (the only problem is the same extension of *.pro files; I should choose the right Codesys manually)- BUT !!! TwinCAT setup totally damaged the gateway software: I was not able to use SYSCON in ABB any more - it was not able to connect to HW !!! The only solution of this problem was uninstall TwinCAT and ABB, and install ABB Codesys from scratch; no TwinCAT more.I hope this problem is managed better in V3.
+

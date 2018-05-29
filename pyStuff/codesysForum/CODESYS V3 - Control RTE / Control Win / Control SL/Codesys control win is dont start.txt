@@ -1,0 +1,4 @@
+I have CDS 3.5 SP5 Patch5 and application for it.I installed CDS Control Win on Windows XP/RAM 256Mb, installation went ok, i place application.app and application.crc.There is no any reaction to "Start PLC".When i try to run Service separately, it displays error 1053 (service start timeout).Summary, i cant run application, and no any errors displayed (except of separately service run).Please help.
+
+Hi,update to current version is for sure an option, there is a standalone setup available in the CODESYS Store.http://store.codesys.com/codesys-control-win-sl.htmlBREdwin
+

@@ -1,0 +1,12 @@
+Is possible to get or set values when application is running on plc. Can I connect application directly with python? I mean application started in plc and it is running mode so I created boot application. Can I use created application ?   Can I run python script with ST Language.
+
+Hi,The CODESYS Script Engine runs in the CODESYS IDE, not in the runtime. (It's purpose is to automate development tasks users can also perform manually in the IDE.) Thus, reading and writing variables internally uses the monitoring API of the CODESYS IDE, and cannot be used standalone.If you want to access variables without a running CODESYS IDE, you may use an external Python interpreter (like the one from python.org) and one of the OPC Libraries for python you can find on the net. This also requires that you set up an appropriate "Symbol Configuration" within the project, and an OPC server.To run a python script from ST language, you need to spawn a python interpreter. Depending on your runtime system, you may be able to install a python interpreter there, and start it as an external process. But still, you don't have any communication between the IEC code and python. Another possibility is to use a Server running python, and use tcp/ip from the runtime to connect to the server and communicate.Technically, it should also be possible to create a runtime module containing a python interpeter (on appropriate platforms). But this option is only available to our OEMs, normal end users usually cannot create runtime modules.
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+
+We are OEMs. How can I create runtime module ?
+
+Hi,If you are OEM, your runtime team did receive appropriate training at the time when the runtime was ported to your hardware, this is part of the starter package.So you should ask your runtime people.But you should not underestimate the effort.And additionally, Python itsself is only available on some platforms - it may be hard or impossible to get it running e. G. on eCos or other embedded platforms, although you may have better success using specialized python implementations like PyMite or TinyPython.
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+

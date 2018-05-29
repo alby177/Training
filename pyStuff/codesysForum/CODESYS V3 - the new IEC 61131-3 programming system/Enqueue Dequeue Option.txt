@@ -1,0 +1,4 @@
+I am implementing the code to acquire and transfer the data through TCP IP at 1000 samples/sec. To do this i need Enqueue and Dequeue option. I am using CODESYS V3.5 SP2 Patch 2, I am unable to find the SBM EnqueueBuffer / DequeueBuffer functions. Is that anybody used SBM library Enqueue / Dequeue options or similar, please share the library.
+
+In the store you can find a demo application which uses the Netbase library.I think this will be a good starting point for further development. See http://store.codesys.com/plc-chat.html.
+

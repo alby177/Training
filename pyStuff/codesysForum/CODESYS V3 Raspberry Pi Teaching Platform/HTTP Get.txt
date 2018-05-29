@@ -1,0 +1,8 @@
+Hello,I am trying to use HTTP Get from the Oscat Network library.I can't seem to get it to work, are there any simple examples of this in Codesys?Supposedly, there is a demo for this in the library, but the only demo I can see is the yahoo weather demo.Thanks in advance
+
+I did get this working by the way.  Yet again Oscat is just super.In a nutshell, here were the basic steps (in case someone else is interested).  This method is probably similar for any demo POU in libraries.  These demos are not visible by default.1) loaded oscat network library as project.2) removed exclusion from the HTTP_GET pou inside the demo folder3) saved project and installed into repository4) opened up demo pou from test project5) created new POU and added to task list using Oscat demo code6) fixed all the errors that came up after compile.  Most of these were variable definitions that needed fixing, i.e. added OSCAT_NETWORK.HTTP_GET instead of just HTTP_GET.7) changed get to rising edge versus from DNS DONE bit.There may be a better way, but this worked fine.
+
+Hi Fixstuff,I am trying very much to do what you achieved with the Yahoo weather FB. unfortunately I cant' even get the libraries installed.If I try installing the the oscat libraries as .lib, I get errors that POU's are exceeded.I have seen advice as to opening .lib as project. Do you have a working demo project I could use? I am no PLC expert, I do it as hobby (home automation)The steps you provided are a little beyond me, maybe you could give a little more detail?thanks!
+
+Hi,Sure Oscat is an option I would use them from CODESYS store:https://store.codesys.com/catalogsearch/result/?q=OSCATan other options is this library here Http Client:https://store.codesys.com/http-client-example.htmlBREdwin
+

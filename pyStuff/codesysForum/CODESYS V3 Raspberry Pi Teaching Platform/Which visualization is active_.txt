@@ -1,0 +1,4 @@
+How can i know which of the visualization's are active at any time in my Plc program?Regards
+
+See: viewtopic.php?f=25&t=6334&p=12783#p12783 from your original postBREdwin
+

@@ -1,0 +1,8 @@
+I'm using two arduinos as Modbus TCP slaves to my codesys/raspberry (using this tutorial as base http://www.fleaplc.it/en/tutorials/33-a ... io-codesys). Normally everything works fine but sometimes (can bee months between) the modbus communication is going down. As far as I can see (I'm no expert to codesys) it is the slaves that stops working. If I disconnect and then reconnect the power supply to the arduinos the communication starts working again. is there anybody that have experienced the same problem and found a solution?/Johan
+
+There is a setting that by default is turned off.  It's called auto-reconnect - its in the setup page near the IP address I believe.  I've had issues before where turning this on fixed things.  This is only assuming the Arduino end is not messed up..I attached a screenshot of it..
+
+Have to check that setting...Thank You!
+
+This setting is enabled. Any more suggestions.... 
+

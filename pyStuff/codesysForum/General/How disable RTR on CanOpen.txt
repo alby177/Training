@@ -1,0 +1,6 @@
+Good morning,    On a Codesys 2.3 Controller I have a CanOpen Device that do not support RTR for asynchronous communication. How can I disable the RTR setting?Best regards
+
+that is device dependent so need more info. what controller is used.look into this manualhttp://support.maximatecc.com/sites/default/files/documentation/IO%20Controllers/CrossFire%20MX1B%20CoDeSys/Documents/CANopen%20for%203S%20Runtime%20Systems%20V2_3_5_0.pdf
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,7 @@
+hai everybody 
+
+                    In my project i want to use functions "sysfileopen" and "sysfileclose". I know these 2 functions will be useful for opening and closing of a file, but i am not sure about how to use them like what r the arguments to be passed and in which instance to be used. Please Let me know regard these instances.
+
+
+ Thanks and Regards
+

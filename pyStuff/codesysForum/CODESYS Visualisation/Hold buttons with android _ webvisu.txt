@@ -1,0 +1,6 @@
+Hello,I have an application were we are trying to use a webvisu to run certain tasks only while buttons are being held down. Has anyone had any luck getting this to work on any Android or Apple phone? We have tried different browsers and also the Codesys Webvisu app but can only get something to happen with clicks on the buttons. We have tried 3.5.4.2 and 3.5.9.0 without luck.We don't have access to rooting the devices to install a touchpad simulator and would prefer not to have to use one but open to suggestions if it is possible to do.Thanks,CB
+
+Hi,not really sure if this will solve it, try:http://<url>:<port>/webvisu.htm?CFG_HandleTouchEvents=trueBREdwin
+
+Works great, thanks
+

@@ -1,0 +1,16 @@
+Hi, 
+I have tried UDP between two Codesys targets and it works good.
+Can any one clarify whether it is possible to exchange data (Network variables) between Codesys target and TwinCAT controller-CX over UDP?
+
+If Yes, then how shall TwinCAT be configured?
+Regards,
+
+I guess, TwinCAT can't be configured for your task. The problem is that TwinCAT PLC Control doesn't have enough functionality for creating network variables. I had the same task but couldn't realize it using network variables.
+
+If you have to program one of your devices using CoDeSys and the other one using TwinCAT you ought to use special FBs which create Modbus TCP/UDP connection. In order to do this for Beckhoff CX you can use FB_MBReadRegs and FB_MBWriteRegs (see code):
+Code:VAR   fbModbusRead: FB_MBReadRegs;   arrData: ARRAY [1..50] OF DINT;   bError: BOOL;END_VARfbModbusRead(   sIPAddr := '192.168.1.95',   nTCPPort := 502,   nUnitID := 16#FF,   nQuantity := 100,   nMBAddr := 0,   cbLength := 200,   pDestAddr := ADR(arrData),   bExecute := TRUE,   tTimeout := t#1s ,   bBUSY => ,   bError => bError,   nErrId => );But! There is another way to create a connection. A few months ago I spoke to Beckhoff engineers in Moscow office. They created and downloaded an XML-file into my CX9010, so that I could easily create a connection between CX and another CoDeSys programmed PLC. In this case I used very simple code for CX:Code:VAR_GLOBAL   arrayIN AT %MB0: ARRAY [0..15] OF WORD;   arrayOUT AT %MB32: ARRAY [0..15] OF WORD;END_VAR
+
+You may be interested to join the TwinCAT Developers Group on LinkedIn http://www.linkedin.com/groups?gid=1860933
+You will have to register with LinkedIn before you can join the TwinCAT Develops group.
+The Group has over 300 members and supports an active discussion forum and news area.
+

@@ -1,0 +1,4 @@
+Hello,For my work i had to try and work with codesys but a have to create a program where we can change an incomming signal in 4-20mA to a signal in lux but i have a problem that we can't create a loop to make sure the function keeps going for every new input we get . this is what i have so far:ROGRAM AnalogDigitalVARLux: REAL;input1: REAL;LuxMax: REAL;LuxMin: REAL;Output1: BOOL;END: BOOL;Input3 : BOOL;END_VARLux:= (input1 - 4)*(LuxMax - LuxMin)/(20-4);IF Lux> 500 THEN;Input3:=TRUE;Output1:=Input3;ELSE;Lux:= (input1 - 4)*(LuxMax - LuxMin)/(20-4);END_IFty for the help in advance
+
+All you have to do, is to call this program regularly...The easiest way, probably to add a call into PLC_PRG, what is created by default in your project:AnalogDigital();Just have a look at the devices tree in your project, and look at the Tasks element... Make sure that PLC_PRG - or your AnalogDigital is regularly called...
+

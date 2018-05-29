@@ -1,0 +1,8 @@
+I'm seeing an issue where the step entry action (as opposed to IEC action) is not executed for a step immediately entered after the init step. Other entry actions work as expected.This has to be a bug.
+
+The problem is that the IEC "N" Action on the Init step was executing and over-writing what happened in the entry action of the subsequent step.Bug in my code I guess, but CODESYS actions can be confusing as all hell!
+
+Agree that they can be quite confusing.Another thing I noticed is that if you have a transition with a regular boolean variable and you reset this variable with IEC-action "R" in a later step you wont be able to get past that transition even tho the reset comes after the transistion.
+
+somlioy wrote:Another thing I noticed is that if you have a transition with a regular boolean variable and you reset this variable with IEC-action "R" in a later step you wont be able to get past that transition even tho the reset comes after the transistion.The R and S action qualifiers are persistent; they keep RESETTING or SETTING when that step isn't active; it's standard SFC behaviour. A good reason to avoid them IMHO 
+

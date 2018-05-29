@@ -1,0 +1,8 @@
+Hello, Does anyone know how to refresh a bitmap image without resetting the IPC? I found the following post but I believe that is relevant for Codesys V3.5. So the more technical question would be: How do I disable the image cache on Codesys V2.3?viewtopic.php?f=11&t=5829&p=10711&hilit=bitmap#p10711Thank you.
+
+option in target under resources.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Can you be more specific as to which option? I don't see anything in there that could help me.
+

@@ -1,0 +1,16 @@
+Hi Folks, how can I save values so that they are loaded when the Pi boots up? I need to adjust values for timers during commissioning and have them saved for future use. I know I fan populate the prepared values of the tag but can I write to that register in run time?
+
+CoDeSys provides a "GVL_PERSISTENT" object.  If the Raspberry Pi supports it (it should), you simply have to create a GVL_PERSISTENT object and define your variables you wish to keep even after a power cycle.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+If I understand well, there is no chance to have retain variable with raspberry:http://forum.codesys.com/viewtopic.php?f=21&t=5722&hilit=retain
+
+...except you are using an UPS, which make a graceful shutdown on Linux OS.Then the Retains / Retains persistent data are saved and restored on the next Startup.BREdwin
+
+OK Edwin you are right.But why the retain and persistant variable are reset when I download a program with a little difference?BR
+
+Hi SimonD,Alternatively you could use the SysFile library to read and write values to text files on a specified location on the raspberry. I think there is an example in the Store that will demonstrate on how to achieve this. Regard,Johan
+
+Hi,>But why the retain and persistant variable are reset when I download a program with a little difference?this should not happen, see the table from the online help!BREdwin
+

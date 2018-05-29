@@ -1,0 +1,4 @@
+Hello everybody in the CoDeSys community,a lot questions in this forum are posed around the OPC communication and configuration. In order to make it easier to find the right answers more quickly we installed a new top level forum: http://forum-en.3s-software.com/viewforum.php?f=17All existing topics about OPC have been moved into this new area. Those topics which only mention OPC as an approach to a solution have been copied into this area.We hope that these changes may be useful for you. Please do not hesitate to contact me for comments or requests.
+
+_________________Roland WagnerModerator
+

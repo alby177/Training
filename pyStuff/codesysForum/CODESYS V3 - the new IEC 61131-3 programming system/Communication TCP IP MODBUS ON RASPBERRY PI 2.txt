@@ -1,0 +1,2 @@
+Hello, I try to communicate in a display modbus tcp ip .The Raspberry Pi is not responding to my queries .Can you tell me the method and the restrictions on the MODBUS TCP IP communication?Should he says I a slave ?Should there that I declare variables of trade ?For I do not need to do this when I work with SoMachine (SCHNEIDER )ThanksLudovic
+

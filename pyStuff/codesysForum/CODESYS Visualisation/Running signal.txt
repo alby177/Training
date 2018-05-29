@@ -1,0 +1,21 @@
+Is it possible to check in the plc code if the pc visualization still runs?
+Sort of  hardbeat signal
+
+Hi
+
+You can ping the Http-Server. (Port 80 or 8080)
+(Ping with PLC-Command)
+
+
+If he NOT aswer, you be sure that NO visualisation ist possible.
+
+_________________Karl
+
+HLK-Homepage  www.magnia.de
+1-Wire-Forum (Versuch) http://www.magnia.de/index.php?option=c ... &Itemid=55
+
+Hi,
+
+what do you mean with PLC-Command? (can this be used in the plc code?)
+Http-Server? I'm using the CoDeSysHMI.exe
+

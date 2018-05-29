@@ -1,0 +1,2 @@
+Hi,Is there somewhere a decent help to get the OPC server running on a computer with codesys V2.3?Installage says everything is OK - Symbol configuration list is done - OPC configuration is still unclear to me and the service OpcEnum is stopped.I checked the doc received from WAGO but not a single word about OPC server / client !!Thanks for any help
+

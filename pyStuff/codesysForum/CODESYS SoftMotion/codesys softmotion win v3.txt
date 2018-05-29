@@ -1,0 +1,16 @@
+HelloI am trying to control serad servo via codesys softmotion win v3. But i dont know where to start.Which softplc i should download and where. is there any manual for codesys softmotion win v3
+
+Hi,in general for SoftMotion you need a realtime capable plc - for example:SoftMotion RTE:http://store.codesys.com/systeme/codesy ... te-sl.html (this is the plc which you install on the target pc - see the documentation what is needed to set to have hard realtime)Which fieldbus does the 'serad servo' support?Here are some SoftMotion Projects/tutorial:c:\Program Files (x86)\3S CODESYS\CODESYS\Projects\SoftMotion\4.1.1.0\Examples\Tutorial\Which is a good startpoint + onlinehelp.BREdwin
+
+Hi EdwinThank you for your help!Yes i tryed to control servo by softmotion rte. But i have some problems that i cant solve.Serad servo supports ethercat . But when i add ehtercat in rte control i recieve following errors.Unresolved reference: 'CLOSEETHERNET'Unresolved reference: 'GETNUMBEROF ADAPTERS'Unresolved reference: 'GETADAPTERINFO'Unresolved reference: 'OPENETHERNET'Unresolved reference: 'SENDETHFRAME'Unresolved reference: 'GETETHFRAME'Unresolved reference: 'SENDIPETHFRAME'Unresolved reference: 'GETIPETHFRAME'And as i read from manual i installed ethernet driver form  C:\Program Files\3S CODESYS\CODESYS Control RTE3\CmpRTL81x9Mpd. And there i recieve following error.'This device is not working properly because windows cannot load the drivers required for this driver.'Also can i control servo by codesys softmotion win v3. And what is the bad side of using codesys softmotion win v3.
+
+Hi,please read the RTE documentation...install in Windows device manager a CODESYS Driver for your network card (Intel or Realtek chipset is needed)Add this driver to the RTE configurationRealtek 8139 (CmpRTL81x9Mpd)   Realtek RTL8139 (und kompatiblen) Ethernet-Contoller.   the 8100 und 8110 are compatible too.   Realtek 8169 (CmpRTL8169Mpd)   Realtek 8169/810  Realtek RTL8111B / RTL8111D / RTL8111E  Intel EtherExpressPro1000 (CmpEt1000Mpd )  82541,82547,82567,82571,82573,82574,82583V, i210, i217-LM etc  Intel EtherExpress PRO/100 (CmpEt100Drv)  Intel 82551,82557,82559  Intel 82559, 82558, 82557 and 82550 BREdwin
+
+Hi Edwin,I read rte documentation. And i installed it from deivce manager.I tryed to install it with another pc but i always recieve this errror(windows error code 31)
+
+Hi,could we get the IDs of your networkinterface?BREdwin
+
+Hi There is hardware id
+
+Hi,hm.. guess you need to contact the Support.BREdwin
+

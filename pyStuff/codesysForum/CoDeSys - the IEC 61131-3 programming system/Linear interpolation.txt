@@ -1,0 +1,10 @@
+HiAnnyone here know a good algorithm for linear interpolation. I know that oscat lib can provide a block that can do that. But i need the algorithm, so i can make a block my self. I need that bacause i'm making a PID regulator with a gain-scheduling option.I'm programming the PID in Codesys structured text.Best Regards Henrik
+
+if you open the oscat.lib in your codesys as a library, you can see the source code complete it is open source.easier way is download the txt version. and the pdf along.If you tell us what you want, we will look into your problem.btw if it is complicated you can always use fuzzy.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+ymax/ymin*((value-xmin)/xmax-xmin)+ymin
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

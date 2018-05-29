@@ -1,0 +1,2 @@
+Hi.Have anyone gotten this HAT to work with Codesys? I've been trying to get this HAT to work for quite some time now, but my Codesys skills appear not to be sufficient. I have tried to write a new library for this HAT based on the libraries found on Github written in Python.And one more question, how do you write your devdesc. files? I tried to modify an existing devdesc. file in visual studio and save as a new one but when I go online to test I get a message in the status bar of the i2c device saying "driver not found".Best regardsAsbjørn A.
+

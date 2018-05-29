@@ -1,0 +1,4 @@
+So I've managed to get CAN running through Codesys but I seem to be having some speed issues. I have the code setup to transmit a message every 1ms. The processor is running at about 90us. I put a CAN sniffer on the network and I can only get about 17 packets per second max out of the pi. Any idea where I might be getting the delay from?
+
+I figured it out. I had the task cyclic time set for 20ms. Changed it to freewheel and now Im getting 254 transmissions per second.
+

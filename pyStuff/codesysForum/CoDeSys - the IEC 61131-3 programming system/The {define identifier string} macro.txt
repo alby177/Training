@@ -1,0 +1,6 @@
+Hello everybody,I have a few problems with following code (see screenshots):- First problem: I define a new symbol replacement directive, but the compiler doesn't recognize the defined symbol "REPLACE_ME" after the pre-compiler has build it.And he definitly pre-compiles this piece of code since I can see in the output that debug mode is enabled !Does anybody know how to use the {define identifier string} macro ?- Further more I want to write my own ASSERT(x) macro which is only defined during debug mode, and wich takes 1 or 2 parameters for validation.Second problem: you can't define DEBUG outside PLC_PRG. I found this issue back in the help and I think this is a major limitation! How would it be possible to use my ASSERT(x) macro in other libraries??Third problem: It's not possible to use the symbol " {error '...'} " inside a {define identifier}. How can I display an error in the output?Fourth problem: in C++ you can convert x to a string using #, but how is this done in CoDeSys?Fifth problem: how can you define the identifier as a function, which takes 1 or more parameters?Thanks for all help and comments !
+
+this is probly version 3 so put your question downthere.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

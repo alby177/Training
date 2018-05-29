@@ -1,0 +1,2 @@
+Hallo,Ich versuche ein live stream (UTC TVB-1101 kamera) mit ActiveX component VideoLan.VLCPlugin.2 zu machen, aber ohne erfolg...In VLC media player kann ich ein netzwerkstream starten mit folgende URL: rtsp://[user]:[pasw]@192.168.1.70:554 Das funktioniert.Welche paramter muss ich mitgeben so das es functioniert, nur die URL reicht nicht.Vielleicht ist es besser ein andere component zu nutzen oder das ganz anders zu machen...ich höre gern!gr. D. SchuppertNiederlande
+

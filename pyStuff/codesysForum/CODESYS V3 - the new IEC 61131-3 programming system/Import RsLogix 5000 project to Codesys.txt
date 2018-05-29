@@ -1,0 +1,2 @@
+Hello,I'm totally new to codesys and I use Rslogix 5000 to control and program our A.B. PLC.I want to simulate my project with an graphic interface.I have create a codesys project and test some rung of my original Rslogix 5000 project with the interface and it work great, but it take a lot of time to reproduce the original project.Is there is a way to quickly import my Rslogix 5000 project to codesys?If not, what is the easiest way to reproduce my project on codesys?Thank you
+

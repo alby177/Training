@@ -1,0 +1,6 @@
+Hello - Below is the code I am having trouble with. I can accomplish this simple task by using the Function Block type for "Alarm", but I've never use a straight "Function" before and I wanted to try it. I cannot seem to pick out how to get the "Alarm" solution returned to PLC_PRG. Could someone please help? TIA.PROGRAM PLC_PRGVARLevel_SP : INT := 35;Current_Level : INT:= 40;Level_Alarm : BOOL;END_VAR==========Level_Alarm := Alarm(Level_SP, Current_Level);============================FUNCTION Alarm : BOOLVAR_INPUTsetpoint:INT;variable:INT;END_VARVARoutput:BOOL;END_VAR============IF variable >= setpoint THEN	output :=TRUE;ELSE	output :=FALSE;END_IF===============================
+
+Hi,the return value of the function is its name:Code:IF variable >= setpoint THENAlarm :=TRUE;ELSEAlarm :=FALSE;END_IF
+
+Hi Singleton -Thank you for your reply - that works perfectly! I appreciate your help.
+

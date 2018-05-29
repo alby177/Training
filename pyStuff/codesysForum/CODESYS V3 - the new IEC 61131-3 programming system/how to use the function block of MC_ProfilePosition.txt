@@ -1,0 +1,2 @@
+how to use the function block of MC_ProfilePosition?    I don't kwon how to instantiate the variable TimePosition
+

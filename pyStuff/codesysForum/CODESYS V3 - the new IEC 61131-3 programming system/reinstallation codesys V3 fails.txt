@@ -1,0 +1,6 @@
+Suddenly when I start the application comes the following message:(see figure).I have uninstalled the application, re-install it and leave it myself.Help , please.
+
+Hi,try to execute:"c:\Program Files\3S CODESYS\CODESYS\Common\RepairMenuConfig.exe" BREdwin
+
+hi, I've tried it and it still does not work.What happened was as follows:I turned off the computer and codesys was open, windows tells me if I closed the application I have accepted. It is from restarting the computer when it does not start. This has been with version 3.11.00, I tried with the same version and nothing, I installed the last one (3.11.10) and neither. I imagine reinstalling windows will be solved but I want to try anything else. The operating system is windows 8Thanks for the help.
+

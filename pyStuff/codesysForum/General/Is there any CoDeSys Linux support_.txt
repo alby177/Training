@@ -1,0 +1,8 @@
+Hi,I would like to know if CoDeSys has any support for a Linux environment.  I have performed a search and some other members have used WINE or VMWare.  However, I was wondering if anything has changed since then.Thanks You,Jason
+
+In general CoDeSys is a tool developed under and for Windows. A reasonable development for Linux would mean to invent the wheel once again...We have heard that some tried to run CoDeSys under a Windows emulation under Linux, but this will surely cause problems as soon as e.g. the communication to the PLC is affected.
+
+_________________Roland WagnerModerator
+
+For CoDeSys v2.3, Ubuntu + wine libraries: See https://www.youtube.com/watch?v=un1jN2vIqi8. I tried installing wine on Ubuntu 14 but it required so many additional libraries that it would not be practical for me.
+

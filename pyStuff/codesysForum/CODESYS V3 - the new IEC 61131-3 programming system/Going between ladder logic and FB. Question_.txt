@@ -1,0 +1,20 @@
+Before I ask my question let me say that I am not very experienced with CODESYS. I was given a program and asked to start a system but I needed to make a few changes. Here's my issue. My program has five different POUs(?) I guess they are called. The first is done in function block programming and the rest are ladder logic. I added some simple ladder logic and it works. Using the logic I added, I would like to use the coil in the ladder logic (like you would use a contact form the coil) to operate a SEL block within the function block logic. This is what I can not get to work. Any ideas?Thanks
+
+How did you define your coil (variable)?  If it was defined as a VAR in POU1, then it is not available in POU2 by design. It could be your Programming environment defined a local var in POU2 with the same name when you typed it in. If you need it in several POUs, then define it as a VAR_OUTPUT IN POU1 or as a global. POUs define blocks of code and scope of variables. By design, internal VARs or POU1 are not available in other POUs. VAR_INPUT, VAR_OUTPUT and VAR_IN_OUTs are used to pass data back and forth in a controlled manner. You can also use global variables which are available in all POUs, but use sparingly as it becomes harder to troubleshoot and guarantee what POU is modifying the global, etc.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+I got a little busy at another site but:It is defined as a VAR_GLOBAL. It is also used as a digital output from the coil. It seems to me it should work as it is now but I couldn't get the SEL block to change between the two values listed.
+
+Can you get any SEL block to work?  Does the other rungs work in the same POU?  If SEL600HP is a global BOOL, then it should work.  When viewing in the online mode, do you see your variable switch from FALSE to TRUE on that rung?
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Now that you mention it, I don't believe I've ever seen that SEL block work when the variable went high and i dont remember it working when forcing the bit. It is the only SEL block used in the program. This is just going off of memory. It will be a fee weeks until I get back to the site.
+
+Your usage of the SEL block is correct.  Are you calling the POU so it will run?Example PLC_PRG:Code:POU1();POU2();POU3();POU4();POU5();If you don't run the POU, it doesn't execute any code.  Maybe this is why?You could also try if a local variable inside of the POU with the SEL block can change the SEL state...
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+The POU is definitely running. Everything else in it was working. I think I'm going to have to dig into it a bunch when I get back to the site.
+

@@ -1,0 +1,6 @@
+Hallo zusammen,folgender Präsentation entnehme ich, dass es neben dem State- und Klassendiagram auch ein Aktivitätsdiagram geben soll.http://www.sks.fi/www/images/CoDeSys-UML_en_020511.pdf/$FILE/CoDeSys-UML_en_020511.pdfWo finde ich das in Codesys?Besten Dankentew
+
+Hallo entew.Vom Aktivitätsdiagram gab es nur einen Prototypen, der aber nicht weiterentwickelt wurde und deswegen auch nicht im Produkt vorhanden ist.PS: Bitte das nächste mal in Englisch, da das hier ein englischen Forum ist. Danke.GrußMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

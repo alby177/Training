@@ -1,0 +1,6 @@
+Hi,I'm searching for a solution to send to the system the halt command to put it in normal graceful shutdown.Is there some possibilities to do that via Codesys?Thank a lot.
+
+Hi Mike,Have a look at the SysProcess library, it gives you what you require.There is already a post on this topic that walks you through how to reboot. See viewtopic.php?t=5714
+
+Or, if you want to do it manually through the IDE, you can use:Tools -> Update Raspberry Pi -> ShutdownGesendet von meinem LG-H870 mit Tapatalk
+

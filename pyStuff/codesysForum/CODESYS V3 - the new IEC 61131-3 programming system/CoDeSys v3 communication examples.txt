@@ -1,0 +1,10 @@
+Hi,I am new to CoDeSys V3 and I want to test the Modbus RTU/TCP, CAN, Profibus communication in V3. Can someone please help me to find examples on these topics.Thanks
+
+How do people learn CoDeSys v3? I am unable to find any tutorials or guides on CoDeSys v3.I am a CoDeSys v2 developer but v3 has changed a lot and there is not much information available.I want to learn how to do ModBus RTU/TCP, CAN and profibus communication Thanks
+
+I think the CoDeSys store has a ModbusTCP example package you can download.Very crudely, version 3 is basically a big leap in the IDE.  Yes, there are some new keywords and expanded non-conforming IEC61131-3 items that many programmers have been asking for along with some improved libraries, but overall, if you can program in version 2, you can program the same in version 3. Additionally, version 3 allows control manufacturers (iPCs, PLCs) to build their IDE into the CoDeSys base (not just use it).  This will allow different brands to make nice additions to the IDE and eliminate "dual tools" (version 2 days: one tool to program the PLC and a different tool to program the drive).Overall, rely on the help, documentation in libraries and the CoDeSys store.Good luck!
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Thanks scott_cunningham
+

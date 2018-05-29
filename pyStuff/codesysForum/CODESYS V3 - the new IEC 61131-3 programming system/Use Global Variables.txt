@@ -1,0 +1,6 @@
+Hi everyone,Since I've installed codesys version 3.5.8, when I want to use a global variable which is declared for example in the GVL file, I have to call it by this way: Gvl.VariableNameBut before, with the version 3.5.5, I didnt have to do that, only the name was enoughAnd if I update an old progam created with 3.5.5 to version 3.5.10, I can continue to call my variable only by their name, I have done a quick check in the setting between the bot version but I found nothingSomeone has an idea of what I have to do?Many thanks in advanceDom
+
+Remove this from the top of your GVL:Code:{attribute 'qualified_only'}This attribute forces one to use the fully qualified variable name, i.e "GVL.Variable" instead of just "Variable".However, I find that forcing the qualified name can be helpful because it makes it more difficult to get your variables mixed up and it becomes very clear that you're dealing with a global.
+
+Agreed, using qualified_only as the default makes perfect sense. Makes it easier to organise as well.Sent from my SM-G935F using Tapatalk
+

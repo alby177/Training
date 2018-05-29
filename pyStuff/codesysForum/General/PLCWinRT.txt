@@ -1,0 +1,6 @@
+Hi,
+
+I have used SP RT earlier but now I want to know how to use the PLCWinRT.When I create a new program and asked to select a target the PLCWinRT option does not show-up in the drop-down box.But I am able to start PLCWinRT from the start menu.Also, when I start 'Install Target' PLCWinRT is already installed.Is there a document explaining the procedure to use PLCWinRT?Thank you.
+
+Check the directories that the target that was installed. You probably installed in some where else.
+

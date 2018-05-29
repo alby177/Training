@@ -1,0 +1,12 @@
+Hello,I have not find in the menu TOOLS, Update Raspberry.However, i have install Raspberry package in CODESYS software.I need help.ThksBest regards
+
+Hi,(restart of CODESYS after Package Installation is needed)If this does not solve it.1. Tools->customize2. Add Command - Update Raspberry PiBREdwin
+
+Thanks you very much
+
+Not working for me (3.5.11.x).
+
+Hi,1. Is the Pi Package already installed from CODESYS Store in CODESYS or in PackageMmanager?2. you mean adding the command manually does not work?BREdwin
+
+1. Yes, for 3.5.10.40, 3.5.11.10 and 3.5.11.20. Package was installed for all versions.2. I can't find any RaspberryPi menu and command.So I installed the deb package manually. Now it works fine.OS: Win10 LTSB x64
+

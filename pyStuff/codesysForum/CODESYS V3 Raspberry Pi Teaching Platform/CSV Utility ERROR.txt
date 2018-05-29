@@ -1,0 +1,6 @@
+Hello, I am taking my first steps into PLC programming with Raspberry PI 3. I managed to finish my program for the purpouse I need, but I encountered problems in saving the data in CSV file. I bought the library from codesys CSV Utility, and tried the example "CSVWriterCFCExample" from "CSVUtilityExamples.project" as you can see in the photo attached. The problem is that is not working and I do not understand where is the mistake. The signal from function "CSV.Init" (xDone) is not sended(I guess there is the problem) sometimes on "eError" says NO ERROR, sometimes PATH NOT DEFINED(yellow area). No files are saved in the directory from path, and even if I make the csv file in that directory with the proper name, is not changing anything.Please help me with this problem.Thank you.
+
+Hi,you need to remove/change the Windows related paths names (things like c:\Temp does not really make sense on Pi/Linux)BREdwin
+
+Thank you very much, it worked. You made my day great !
+

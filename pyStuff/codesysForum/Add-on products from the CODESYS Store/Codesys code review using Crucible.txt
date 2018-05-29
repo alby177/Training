@@ -1,0 +1,6 @@
+Hello,I am using codesys v3.5 SP4.I want to use Crucible for reviewing my ST code.Crucible supports text files only.Is there some work around/solution for getting codesys code reviewed by crucible?Thanks,Winy Kakani
+
+Hi inkakawi.inkakawi wrote:Crucible supports text files only.Is there some work around/solution for getting codesys code reviewed by crucible?Possible solutions: Manually export the ST POUs as PLCopenXML Use scripting to export the ST POUs as PLCopenXML Use scripting to export the textual parts of the ST POUs, requires CODESYS V3.5 SP6 or newerBRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

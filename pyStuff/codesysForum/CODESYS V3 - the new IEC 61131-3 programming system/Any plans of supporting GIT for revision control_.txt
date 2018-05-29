@@ -1,0 +1,8 @@
+I see that there is support for svn and I know ways of integrating svn and git but I'm asking for a more native way of using GIT with CODESYS.Any plans for it?
+
+Hi.kmpm wrote:I see that there is support for svn and I know ways of integrating svn and git but I'm asking for a more native way of using GIT with CODESYS.Any plans for it?At the moment there are no plans to make a GIT integration but you should contact our sales department and tell them that you are interested. If there is enough demand the plans might change.Regards,Martin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Support of git would be really useful. Because during debuging on real industrial object  (mostly unavoidable) often there is no access to an SVN server or no Internet  access at all. But it would be helpful for developer to have access to any other versions of the program. Also in this case would be nice to have possibility to make branches and commits, that is possible with git. Without this feature users should handle a bunch of projectarchives manually. I am using git svn to go around this.
+

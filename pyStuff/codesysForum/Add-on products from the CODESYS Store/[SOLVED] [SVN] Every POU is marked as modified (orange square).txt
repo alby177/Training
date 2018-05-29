@@ -1,0 +1,4 @@
+Hi guys,I have a problem with the SVN plugin 4.1.0.0 for CODESYS. Since the update to CODESYS 3.5.6.0, the SVN marks nearly every POU as 'modified'. When you right-click on an POU and compare it to the head revision, it says "The two objects are equal". Even a clean-up with refreshing the status icons does not solve this problem. Will this issue be fixed in one of the next versions?I also had this problem with CODESYS 3.5.4.0 sometimes (some POUs were marked as modified) but only with a very few objects.Kind regards
+
+Ok, after comitting the wohle project once again, the incorrect marks are green now. Maybe there were any property differences due to the version upgrade of the project that are not shown in the CODESYS diff-er.
+

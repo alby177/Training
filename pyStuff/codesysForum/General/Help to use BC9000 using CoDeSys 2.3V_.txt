@@ -1,0 +1,6 @@
+HI
+
+Can any one help me out how i can configure BC9000 controller with CoDeSys 2.3v using Ethernet?
+
+Regards
+

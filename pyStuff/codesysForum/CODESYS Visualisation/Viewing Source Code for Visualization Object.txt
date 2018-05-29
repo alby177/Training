@@ -1,0 +1,8 @@
+Is it possible to view the ST code generated for a Visualization object directly before it is compiled?
+
+I have a screen called AUTO and if I have an error during compile, the log references a line number in "__AUTO_INPUTCODE", but I cannot edit __AUTO_INPUTCODE directly. This issue is related to the F Key issue in an earlier post from me. Thanks!
+
+You cannot view the source as ST but more as a configuration file, you can generate this file by using the export of codesys. Project -> Export and select the visu you need and then a filename.
+
+Most of the errors in the visualization are caused by a lack of a library, or a wrong used variable
+

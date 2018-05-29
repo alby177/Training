@@ -1,0 +1,27 @@
+I'm trying to find out how to interpret a symbol file created by CoDeSys.
+
+I'm working with our local Beijer HMI office to try to get them to write drives so I can import a symbol file in the HMI and have access to the variables in the PLC.
+
+I know I have done this with the Moeller HMI's and their X-Control PLC and also with the Bosch Rexroth HMI and IndraLogic PLC.
+
+Does anyone know how this is accomplished?  Is is a form of OPC? Is it straight DCOM messaging?  Or something else...
+
+Thanks,
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+When you talk about HMI, I assume its not the built in HMI?
+
+If not then a solution is to use a CoDeSys gateway installed somewhere. 
+CoDesys then has a OPC-server using the symbol-file that connects towards the PLC using said gateway. So our application would use OPC.
+
+Other field-busses may offcourse also be used if supported by your target/HMI.
+
+Lastly you could use the CoDeSys protocol to communicate directly to the PLC. I dont now if theres a document or any sotware components available for this?
+
+
+Regards
+   Nicolai Hanssing
+

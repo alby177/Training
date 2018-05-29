@@ -1,0 +1,22 @@
+Hello all , can you tel me if it's possisble to use Wago product
+in 3S Codesys software ?
+Wago tell me : you have to use Codesys for Wago !
+
+
+Part 759-910 
+WAGO-I/O-PRO 32 Demo 2.1
+
+Part 759-912 
+WAGO-I/O-PRO CAA Demo 
+
+
+http://www.wago.com/cps/rde/xchg/SID-53 ... a_9377.htm
+
+you need target installation file,you have to pay, i think
+
+yes you can use codesys on wago no problem, however in demo you can not use the programs as it is only a demo.
+
+and i/o pro is the old version with same restrictions btw.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

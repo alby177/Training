@@ -1,0 +1,4 @@
+HiThere exist a string variable in sfc which has the name of the active step. But if there are more than one step active, only has the righter one.Anyone knows if in future versions we can know all active steps?
+
+Hi Josep,currenlty that is not implemented. There is a proposalCDS-32102 SFC: SFCCurrentStep : solution for parallel stepsbut it is not actually planned.RegardsRoman
+

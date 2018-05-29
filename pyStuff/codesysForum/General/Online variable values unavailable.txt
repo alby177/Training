@@ -1,0 +1,26 @@
+Hello,
+
+When I go online with a processor that has a lot of variables, some of the variable values are not available.  They show up as "????"  Why do these values not show up?  Is there anything that can be done to see these values?
+
+Thank you,
+Tom
+
+Can you be more specific? Typically my understanding is that when you see the ??? it is a variable that CoDeSys can't reference. This may be due to the variable table being inaccurate. What type of POU are you trying to view, PRG,FB,FUN? Are the variables part of structures or standard variables? About how many variables are you trying to view at one time. When prompt before a download that there have been changes do you say yes to download the new code or do you say no?
+
+_________________Thanks,
+Steve Pfeifenroth
+
+Tomasz Wisniowski wrote:Hello,When I go online with a processor that has a lot of variables, some of the variable values are not available.  They show up as "????"  Why do these values not show up?  Is there anything that can be done to see these values?Thank you,Tom
+
+Hello Tomasz,
+
+When you already loged in, open again the same POU.  
+
+Best regards
+
+when it is a function block called by other program the variables do not show
+functions do not show at all.
+put them all in one global block so you are sure they are never doubled.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

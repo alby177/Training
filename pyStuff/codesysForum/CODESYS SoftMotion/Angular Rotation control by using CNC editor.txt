@@ -1,0 +1,22 @@
+hello
+
+ I am using CNC editor for the motion (x,y & Z co-ordinates). Just after SMC_Interpolator i am using "SMC_TRAFO_Gantry3". Now i want 
+get control on the anuglar motion of the spindle. I want to ask two questions
+
+1. what word should i use for angular movement like we use "X" word for X-axis movement , "Y" word for Y-axis movement and so on.
+2. what block should i use after "SMC_Interpolator" , so that i can control my angular movement as well
+
+thankx
+Best regards
+Tahir
+
+1.
+you can take
+one of add axis commands:
+
+N2 G1 X0.01 Y0.01 Z0.01 P360 Q180 U120 V90 W60 F10 E10 E-10     
+
+for example the letter P for the "P360°" then use the 
+2.
+SMC_ControlAxisbyPos Fb and give as position input Interpolator.piSetPosition.dA1
+

@@ -1,0 +1,4 @@
+Hello,I need to create a Codesys v. 3.4.1 (RTE target) project with Ethercat and Profinet network. The two networks don't work together but one at a time depending from the customer machine configuration, also the configuration of the slaves can change. The selection of the settings should be done in run time and not in development.Anyone can suggest me how to set this kind of project?Thanks
+
+hm you will have a rte which contains always both cards the netx for Profinet and the Nic for ethercat right?You want to have a full configured iec application which contains ethercat and profinet?Then no matter if ethercat or profinet is physically connected the same project should work for both configurations?One proposal could be configure all ethercat slaves as optional then the config with profinet should work.for dynamic profinet configurations are there any suggestions from other users?
+

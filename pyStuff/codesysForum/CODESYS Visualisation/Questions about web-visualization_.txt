@@ -1,0 +1,13 @@
+Hi to everyone!
+
+I put into visualization a historical trend, but unfortunately it doesn’t work properly… When I refresh the internet explorer window, the data from the trend get lost. (I marked in the target settings – store trend data in the PLC).
+
+Also, activex controls don’t work. I tried to put the microsoft monthview activex, but when I open the internet explorer it didn’t showed. I don’t know why?!!  Should I use other activex controls or?
+
+And also, how can I assign another names to users, when I define a user priorities? Should I make users into PLC program or? What’s the best way? For example: I wan’t to create a user ‘robert’ and a password : ‘123’, and only if the operater login, then it is possible to change some data in the plc.
+
+Please help me!
+
+Best regards,
+Robert
+

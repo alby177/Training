@@ -1,0 +1,2 @@
+For a 256 color LCD,what was the maximum rosolution for LCD ,640*480 or 800*600 ?
+

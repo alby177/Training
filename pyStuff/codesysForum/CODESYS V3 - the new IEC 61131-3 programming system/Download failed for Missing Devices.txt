@@ -1,0 +1,6 @@
+I am trying to download missing device for a demo project that was sent by a vendor.I tried to go directly to the download URL that is shown below but webpage shows a 404 error, meaning the url does not exist or I don't have access.How can I go about downloading this missing device?Attachment:MissingDevice.JPG
+
+Easiest would probably be to see if the vendor can send you a projectarchive instead of just the project file.Or you can ask the vendor for the device file, or look on bosch website to see if they offer a way to download it.
+
+I sent an email asking for the projectarchive. I looked all over their website and couldn't find anything related to this specific device to download. Thanks though!
+

@@ -1,0 +1,8 @@
+Hello All, I want to generate a Sin signal with GEN function block, based on description of this function the frequency is defined by PERIOD and CYCLES. Therefore for frequency 50 Hz what is the value for these two variables (i.e PERIOD and CYCLES). My simple code is as follow: SinGen(	MODE:= SINUS,	BASE:= FALSE,	PERIOD:= t#20ms,	CYCLES := 100,	AMPLITUDE:= 24,	RESET:= FALSE,	OUT=>OutSin);For Frequency 50 Hz which value I should choose for PERIOD and CYCLES?
+
+BASE defines whether the cycle period is really related to a defined time (BASE=TRUE) or whether it is related to a particular number of cycles, which means the number of calls of function block (BASE=FALSE).For me looks like you have to use Base=false; and cycle=50thanks
+
+20 ms and 1000 cycles is way too much for a standard plc.it means every 20 us the generator should be called.1 sinus is divided in x cycles. so everytime you call the function the next sinus value is generated.if period is on then it will give the sinus value calculated by the time.however you will not be able to make a nice 50Hz sinus wave as wanted as the PLC is just to slow for this processsuppose you have a cycletime of 10 ms then you will only see the top and bottom for example.so you see a squarewave.start up a trace in resources (in simulation it will not work very good as this is even slower)
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

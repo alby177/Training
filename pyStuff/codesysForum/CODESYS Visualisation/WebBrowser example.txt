@@ -1,0 +1,2 @@
+I am not able to use the webbrowser element to show a url inside a codesys visualization.I tried running the example:  WebBrowserVisuExample_v1.1_RASPI.projectbut it seems it's not fully compatible with 3.5 SP12. I don't see any visualization in the project, even though many urls are listed in as GVL.Can you please update the webbrowser visu example and make it available on the store ?Thanks,Anthony
+

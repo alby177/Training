@@ -1,0 +1,4 @@
+Does the rasperry pi codesys iso support a ftp server functionality? If yes,,how do it?Thanks!Regards
+
+Hi,Sftp is available in this wheezy image,it is more safe to use sftp I would recommend to use it instead of ftp.(Even if you use totalcommander there is a add on for secure ftp available - but also many clients for sftp are available)If really needed sure you could install an ftp server too.There so many tutorials on how to do it for example:http://www.ducky-pond.com/posts/2013/Au ... er-on-rpi/just google for ftp server raspberry pi you will find many more.BREdwin
+

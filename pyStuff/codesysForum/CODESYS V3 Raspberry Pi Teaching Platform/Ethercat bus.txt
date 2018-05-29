@@ -1,0 +1,4 @@
+Hello,I'm try to start the ethercat master but i can't.I need any additional software??Thank You
+
+Hi,guess you need to install the the correct ESI (ethercat slave files) for this drive to the CODESYS device repository,The red '?' in the device tree means that at least not the correct installed device is available.Then after installing the 'ESI' (this you could probably download from the device manufacturer) the steps are:-Go online with an ethercatmaster project (without slaves added) -rightclick on the ethercatmaster and scan the slaves.-then the slave should be found and then add it to the project by the scan Dialog-after that a new Project download is needed.If this does not lead to a running configiration please check the plc logger on the plc device tab.BREdwin
+

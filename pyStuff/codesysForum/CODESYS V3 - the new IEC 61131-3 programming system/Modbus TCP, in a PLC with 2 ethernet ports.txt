@@ -1,0 +1,6 @@
+Hi forum,I've configurated an ethernet port with a modbus slave device in the 3200C Lenze PLC, but I get something strange.meanwhile it communicates, it doesn't refresh the variables I read or write, they are always 0.Does someone know something about it?thanks in advance! I'll give more info if needed. (I'm becoming mad with this! :-S)
+
+Some details...is your plc master? How do you know communication is running properly?Sent from my AN10DG3 using Tapatalk
+
+Quote:Some details...is your plc master? How do you know communication is running properly?Hi!The %$&@ Lenze PLC is the slave, and I use a PC as master, I know the comm are good because the master returns 0 values and no error.The problem is the Lenze PLC seems to not be able to put data in the communications.But finnally I resolved it! And I'm going to share it. I had to remove the modbus tcp slave device, and the ethernet interfaze. And call manually the function block "modbusserver", with port 502, pointers to input and holding registers, etc.And now it's working. thanks!
+

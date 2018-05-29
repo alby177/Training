@@ -1,0 +1,8 @@
+Hi!I want to use 64-bit subtraction, addition and comparison operations via CoDeSys programming system. For sure I can make my own functions for this, but I'm almost sure that somebody have made this already. There must be a library that does this. Can you give me a hint where I can find such a library?Thanks!
+
+look at www.oscat.desimple and you can only take what you need.if you download the text file you will get an structered file with all explanations etc. in english.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks!
+

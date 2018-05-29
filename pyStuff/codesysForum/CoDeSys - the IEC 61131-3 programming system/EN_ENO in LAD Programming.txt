@@ -1,0 +1,2 @@
+I am able to use the EN/ENO feature in CFC but I cannot activate it in LAD. Is there a way of using EN/ENO in LAD function blocks or is this feature not available? If it is not available, what is the reason, since IEC-61131-3 provides for this feature? Thanks in advance.
+

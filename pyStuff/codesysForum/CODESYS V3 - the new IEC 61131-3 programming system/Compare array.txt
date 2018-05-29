@@ -1,0 +1,14 @@
+Hi all.I am new to codesys but I am getting the hang of it. I only struggle with the arrays. Now i need to do some actions with arrays and i have no idea how to start.Here's the situation:I want to put 50 codes into the plc (these will never change). When someone scans an article, a code is given in the plc with an "array [0..3] of byte".Now I want to compare this result with the 50 other codes. All codes are the same length. But i have no idea how to compare the array of byte with the codes. How to convert the array to a string? Or are there other options? Does anyone knows a solution with this problem?All has to be done in ST btw Many thanks.
+
+Hi,I would stick the codes into an array of dwords, a pointer to dword to the 4 bytes that come from the scanner and then a for loop to look through the array to see if you find a match.HeinzSent from my SM-G935F using Tapatalk
+
+teichhei wrote:Hi,I would stick the codes into an array of dwords, a pointer to dword to the 4 bytes that come from the scanner and then a for loop to look through the array to see if you find a match.HeinzSent from my SM-G935F using TapatalkI could check that  Do you know if it is possible by converting it into a string or whatever? It could be easy to know when i have to work on other projects if there are more bytes.Thanks in advance
+
+You can also leave the codes as an Array of string and use oscat basic Chr_to_string and concat in a loop to build your string from bytes. Or you do a pointer to string with an address of aByte[0..79] and load your four bytes into [0..3] and make sure the rest stays 0. Then it's flexible with the lenght as well.Sent from my SM-G935F using Tapatalk
+
+Thanks for the reply  I'll work on it
+
+Hello NBCC,check out the CAA Memory Library. There is a Compare function under the category "CAA_Memory" --> "Analysis" -->"ARRAY and MemoryBlock". With this function you can compare arrays and find the first position of the change. Code:wPosition := MEM.Compare(ADR(arrArray1),ADR(arrArray2),SIZEOF(arrArray1));IF wPosition >= 1 THEN    ; // difference on position XEND_IFRegards,KevinR
+
+_________________Building & Process Automation with HVAC Library for CODESYS© - www.hvac-automation.com
+

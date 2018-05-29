@@ -1,0 +1,4 @@
+Hello, I am using a batch file to start the SoMachine LogicBuilder via command line and execute a script likeset SCRIPT=testLogicBuilder.exe --nologo --noui --runscript="%SCRIPT%"The script itself is running well, I tested it also directly with "Tools -> execute script". But, when I use the same script via command line I get a message window which asking for "username" and "password" => see attached file !There is nothing defined or activated regarding user access rights. If the script is started directly within SoMachine this window will not appear ?
+
+Hello, I work now  with "online.set_default_credentials('None')" and after some test  like to say it is working now. Never the less I do not undertand why this command is necessary ?
+

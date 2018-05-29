@@ -1,0 +1,4 @@
+Hello CoDeSys Crowd,i would like to know wich data format of the TS Column in TBlTrendData.How to change the Format into something human readable?The attached Screenshot is done with DB Browser for SQLite.
+
+TS - it is time stamp number of second from Thu, 01 Jan 1970 00:00:00 GMT  (can check here https://www.epochconverter.com/)
+

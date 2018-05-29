@@ -1,0 +1,2 @@
+Hi guys I'm new in codesys how can I congrufation my apllication ?I will read with cr0403 plc diesel motordata from mercedes-benz ECUcan anybody write a small programm for me?thank you
+

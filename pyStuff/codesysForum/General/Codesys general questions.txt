@@ -1,0 +1,26 @@
+Hello guys,I'm completely new to Codesys and I'm working with Codesys 2.3 on ABB AC500. I have few question about Codesys and I would appreciate if you could help.1- Is it possible that some functions or some libraries of codesys doesn't work in my controller? For example SysStrCmpl wouldn't work in my case.2- Is it possible to define a Matrix in codesys 2.3?3- Is Codesys 2.3 a good choice for Recipe management?Thank you for youe help.Regards, Ehsan
+
+1. should be possible towork.2. yes it is called array3.why not?see oscat.de for a nice bundle of softwre, apart from all the libs avaialble at a lot of websites.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thank you,  I didn't check that you can define two dimensional array as well, my bad. Regards,
+
+well yes you can make more dimensions even 4 if you like, and going on you can make a structure in datatypesnormally i use max 2 dimensions in one array and this as a structure to define more array.when using strings please define length as this is valuable memory.when they are constant please use it as they are in other type of memory.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+The problem I have with recipe Management is that, I can only save one watch list. Is there any way that I can check which watch list I want to save?Thanks
+
+as this watch list is still not reliable i dont use it, i use just a simple visualisation for this.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Then what is the best way to load and save recipes? Assume that you have 2 different recipes for a mixture and each of them has 8 chemicals which needs to be mixed according to the recipes . How do you suggest I need to tackle that?Regards,
+
+make an array with the data you need, like valvenumbers to open and times to stay open.use it in a state diagram.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thank you.Yes, I do that right now. However, it's not the best way to go, if you have huge number of recipes and want to keep track of your changes.Thank you anyway.
+

@@ -1,0 +1,22 @@
+Hello,I am fresh man hier with SPS, and I just Need to use the dynamic date type such as "Array" in C to get a Analysis of a System structure in real time in order to calculate the Safety intergrity in Codesys.Can you please tell me, how can I use the python script or C Modul in Codesys, so that a cooperation between the codesys and the script can be organised.  I've no idea how works the scriping language and the c Modul with the SPS-Tasks. It is so Kind of you, if you can Show some examples for me.Thank you very much.Beste regards.Haoming
+
+Hi Haoming.haoming wrote:I am fresh man hier with SPS, and I just Need to use the dynamic date type such as "Array" in C to get a Analysis of a System structure in real time in order to calculate the Safety intergrity in Codesys.Can you please tell me, how can I use the python script or C Modul in Codesys, so that a cooperation between the codesys and the script can be organised.  I've no idea how works the scriping language and the c Modul with the SPS-Tasks. It is so Kind of you, if you can Show some examples for me.I'm a bit confused. Do you want to test the IDE or the runtime of CODESYS? Or do you want to test your PLC application on the runtime?BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hallo Martin,I am writing the PLC now, and I've just found that there is no way to use the dynamic Array such as which in C++ STL according to DIN 61131-3, for the question how to use the C Code in PLC I've found a Webinar on your Website, and about the python I do have no idea, how does python work with codesys, as I see, there are couple use of Python which were be postet by Markus in the Forum, they may be:1. starting the Project in Codesys2. creating a Project in Codesys3. test and Export the .XML data using python from codesysFor These, I'd like to ask, the codesys do has a main Task, how does python work in the LOOP. Can it work in the main Task, so that one can Change the variables in real time? Or it can work in multi-thread. Are there any systematic Tutorien in the Forum or Webinar?I am so sorry for These silly queastions. And thank you a lot.Best regards
+
+Hi Haoming.We have some examples in the CODESYS Online Help. Search for "Executing Scripts".The Scripting API is documented in the ScriptEngine.chm in the sub directory OnlineHelp of the CODESYS installation. Search for "Tips for Python Programmers regarding .NET API Documentation" to find some help how to read the Scripting API documentation.haoming wrote:For These, I'd like to ask, the codesys do has a main Task, how does python work in the LOOP. Can it work in the main Task, so that one can Change the variables in real time? Or it can work in multi-thread. Are there any systematic Tutorien in the Forum or Webinar?The scripts are executed in the main thread of CODESYS. The methods, which require the message loop to be processed, take care of that themselves.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Good evening, I am trying to execute a python script but I keep getting "'LightException' object has no attribute 'GPIO'" error message. Am I missing some kind of configuration or something?
+
+Hi FWosniak.FWosniak wrote:Good evening, I am trying to execute a python script but I keep getting "'LightException' object has no attribute 'GPIO'" error message. Am I missing some kind of configuration or something?Can you show me your code or at least which the line of code which causes the exception?BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi,haoming wrote:For These, I'd like to ask, the codesys do has a main Task, how does python work in the LOOP. Can it work in the main Task, so that one can Change the variables in real time? Or it can work in multi-thread. Are there any systematic Tutorien in the Forum or Webinar?Just an additional note to make it clear:The python scripts are running in the CODESYS IDE, not on the PLC. They use the monitoring mechanism to read and write variables.
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+

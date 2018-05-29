@@ -1,0 +1,8 @@
+Good morning,Does anybody know about the existance of CoDeSys libraries for these Beckhoff devices?I would like to control 24V DC motors using ETHERCAT but I cannot find anything related to it.Thanks in advance!
+
+I never used these, but it seems it is based on some variables which you can read/write to control it.To use this in combination with CoDeSys V3, you need to have a device which is EtherCAT master.Then you need to install the .xml files in the device repository (menu Tools=>install device).See http://www.beckhoff.com/english/downloa ... 6931806140.Download the zip file and install at least the "Beckhoff EL7xxx.xml"After installing it you can add it to your EtherCAT I/O configuration and access the variables.
+
+some helpfull hints.put this message in codesys v2.3 forum.look at www.oscat.de for some 'simple' libraries.need more info please tell me the Processor you are using.yes this block can also be used for a stepper motor.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

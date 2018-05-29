@@ -1,0 +1,48 @@
+In Case statement case integer of1..n:end_casewhere n is an integerIt is showing error,when am building itI need to execute the sequence 10 times if n=10,but n is a configurable value by the user it can be an integer.Can any one help me on this?
+
+Hello,If it's the same sequence that you would like to do N times I would instead recommend a FOR-case. Something like:Code:i: INT;MaxCount: INT;aThings: ARRAY [0..100] OF INT;xDoIt: BOOL;IF xDoIt THEN  FOR i := 1 TO MaxCount DO    aThings[i] := i;  END_FOR  xDoIt := FALSE;END_IFThe above code will fill the array aThings up to index MaxCount when the BOOL xDoIt is set to TRUE.I hope this helps.Best regards,Kristian Berlin
+
+Hi BerlinThanks for the reply 1).I have lot of timers and I have to reset them when repeating the sequence.2).for loop is too fast  it is finishing the count in no time,for 1 sequence.3).There is no jump statement ST Language,so I went for case statement.Below is my Code:IF g_TIU[i_TiuNo].HeaterTest.bTest THEN	tofdelay(in:=NOT tofdelay.Q AND g_TIU[i_TiuNo].HeaterTest.bTest AND i=0 ,pt:=t#1s);	btofdelay:=tofdelay.Q;IF NOT bdelay  THEN	g_TIU[i_TiuNo].STICScriptNo:=eTempset;		END_IFIF btofdelay OR bdelay THEN	p_TIU[i_TiuNo].bSTICRunScriptHeater:=TRUE;ELSE	p_TIU[i_TiuNo].bSTICRunScriptHeater:=FALSE;END_IFIF (g_TIU[i_TiuNo].STICScriptNo=31 AND i=0) THEN	(*RsScript(SET:=p_TIU[i_TiuNo].bSTICRunScriptHeater,RESET1:=g_TIU[i_TiuNo].STICRunScript);	g_TIU[i_TiuNo].STICRunScript:=RsScript.Q1;*)	i:=i+1;END_IF	(*RsScript(SET:=p_TIU[i_TiuNo].bSTICRunScriptHeater,RESET1:=g_TIU[i_TiuNo].STICRunScript);	g_TIU[i_TiuNo].STICRunScript:=RsScript.Q1;*)IF i=1 THEN	tondelay(in:=NOT tondelay.Q AND NOT bdelay AND TRUE,pt:=r_TCUConfig[i_TiuNo].TIUHeaterTimer);	bdelay:=tondelay.Q;END_IFcurrenttime:=tondelay.ET;IF bdelay THEN	g_TIU[i_TiuNo].STICScriptNo:=eTempget;	i:=i+1;END_IFIF btofdelay OR bdelay THEN	p_TIU[i_TiuNo].bSTICRunScriptHeater:=TRUE;ELSE	p_TIU[i_TiuNo].bSTICRunScriptHeater:=FALSE;END_IF(*RsScript(SET:=p_TIU[i_TiuNo].bSTICRunScriptHeater  ,RESET1:=g_TIU[i_TiuNo].STICRunScript);g_TIU[i_TiuNo].STICRunScript:=RsScript.Q1;*)IF i=15 THEN(*RsScript(SET:=p_TIU[i_TiuNo].bSTICRunScriptHeater  ,RESET1:=g_TIU[i_TiuNo].STICRunScript);*)	p_tiu[i_tiuno].bHeaterTestCompleted:=TRUE;END_IFEND_IFI have to repeat the above sequence by  'n' times based on users input
+
+How about adding a counter that you increment by one every time you've done the sequence and and IF-case to see if you have performed the sequence enough times?
+
+gooday sarathbabuYour code will not work, probably as the timers are every loop starting.Case statement can be used here, however for or do while is better here probably.please give us a flowdiagram what you want. because the code used by you is very garbled.if you have to test on a timer use this timers output. timeron.q and timeroff.qyou can not use timers inside a array, however you can use RTC in an array.something like it takes 5000 msec for step 1 use array[1]:=5000if starttime > arraytime + RTC do something.this way you keep the times correct, with timers it is not very precise (takes about 10 msec)
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi Berlin 1).If I keep counter with in FOR loop it is executing the sequence once and the counter is updated with in that time,before the sequence go to start.2).I need to reset the timers also before it goes to start.Hi Shooter1).Please find the attached image for the flow.It is too simple but timers reset and 'n' times repetition of the sequence are the critical part.
+
+your bit A is still on after 20 secondsbut i made a program exactly as yours is.i made it in SFC to follow your flow.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi,1).SFC is solving the problem.2).Any reason why cannot we use FOR loop for this kind of sequence?
+
+For is also possible, but when you draw a simple flowchart it is easier to make an SFCwith FOR you can doFOR a = 1 to variable  ton1  ton2next ai made an SFC but it is not correct, as your flowdiagram is not correct.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi1).I have corrected my flow  chart.2).With out SFC is it possible in for loop using a counterThanks
+
+flowchart still not correct.yes within a for loop it is possible, just check if timer is expired and then move on.use wait for this, but the program stops now.if you haVE MORE AS ONE PROG RUNNING THIS IS BAD PRACTICE.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Shooter,In the sequence k:k+1; is supposed to increment once,in the flow but it is incremented in no time with in the FOR loop.Attached is the flow chart
+
+your sequence is still not correct.now it is 1 second on20 seconds off2 seconds on because the third timer is followed by the first timer.probably you want to wait for 20 seconds again, but this you can do by jumping one step lower.A PLC is always looping its programs, and checks if values are true, this is to avoid a standstill somewhere in a POU and rest of machine is not controlled anymore.you can achieve your goal with WHILE NOT timer.Q DOnothing:=true;END_WHILE
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks for the idea.Hope fully this flow chart should be correct to some extent
+
+late reply, but here's an implementation in ST with a case based state machine, only one timer is needed as its used for both on and off states.Code:PROGRAM POUVAR_INPUT   // Start the sequence   Start: BOOL;   // Number of repeats   Repeats: INT := 10;END_VARVAR_OUTPUT   // Output signal   A: BOOL;END_VARVAR   State: WORD;   Counter: INT;      Timer: TON;END_VARVAR CONSTANT   STATE_START : WORD := 0;   STATE_ON    : WORD := 1;   STATE_OFF   : WORD := 2;   STATE_STOP  : WORD := 3;END_VARCASE State OFSTATE_START:   IF Start THEN      Timer(IN:= FALSE);               Counter:= 0;      State  := STATE_ON;   END_IF// Puts the signal on for 1 secSTATE_ON:   A:= TRUE;      Timer(IN:= TRUE, PT:= T#1S);   IF Timer.Q   THEN      // Reset timer      Timer(IN:= FALSE);               State  := STATE_OFF;   END_IF// Put the signal off for 20 secSTATE_OFF:   A:= FALSE;      Timer(IN:= TRUE, PT:= T#20S);   IF Timer.Q   THEN      // Reset timer      Timer(IN:= FALSE);         Counter:= Counter + 1;            IF Counter < Repeats THEN         State:= STATE_ON;      ELSE         State:= STATE_STOP;      END_IF;            END_IF// Done   STATE_STOP:   // Wait for start signal to be removed, else the sequence will be restarted   IF NOT Start THEN      State:= STATE_START;   END_IF      END_CASE
+
+_________________Andreashttp://www.boschrexroth.com
+
+Hi                Good and simple but is it possible to keep no.of repeats as a variable instead of a constant.repeat:=n;where n can be any integer Thanks
+
+yes the number can be a variable, but when you need it variable useWhile counter<endnumber doend_whilein a CASE it is not possible to use  a VAR for the cases.constants are possibleCASE INT1 OFINT1 is a normal Variable of the INT type (byte etc possible.1, 5: BOOL1 := TRUE;above 1 and 5 must be a constant BOOL3 := FALSE;2: BOOL2 := FALSE; BOOL3 := TRUE;10..20: BOOL1 := TRUE; BOOL3:= TRUE;ELSE BOOL1 := NOT BOOL1; BOOL2 := BOOL1 OR BOOL2;END_CASE;
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

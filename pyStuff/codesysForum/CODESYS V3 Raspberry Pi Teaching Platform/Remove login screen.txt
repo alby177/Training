@@ -1,0 +1,6 @@
+Hello How to completley remove login screen (user management) from webviualization?
+
+hi,Reset origin device...In the CODESYS remove/delete the VisuManager and add a new one.BREdwin
+
+May I lose anything else beside user management ?
+

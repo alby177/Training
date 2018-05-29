@@ -1,0 +1,20 @@
+Codesys 2.3.9.34(ABB) & Codesys 2.3.9.35(Wago) when in CFC the _ level is stuck at 106%.If I try changing the _ level the code is jumbled up on the screen and the display reverts to 106%.This bug started with the ABB version and I tried overinstalling the Wago version hoping it would fix the problem.I have tried uninstalling, but no use.I presume there is a registry entry or hidden file somewhere that is not deleted on uninstall.Does anyone know how to resolve this?
+
+What's the "_ level"? Can you give a screenshot?
+
+Hmm,  when I enter "_" the system seems to translate it to "_"."_ level"'Z''oom
+
+this time I will try spelling it with more 'o's and see if it translates."_ level"
+
+something is up with this system, it doesn't like _.I'll try spelling it 'z' 'o' 'o' 'm'  ans see if it replaces it with a '_'.
+
+yes known problem, but not seen action from office yet.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Do you know what the Registry entrys are for Coesys or hidden files that this is held in??I have a number of PCs with Codesys installed and only one is suffering this bug - so it must be in a setting somewhere that is not removed when the program is uninstalled.I want to delete EVERY file that is associated with Codesys and try again.Thanks for your help.
+
+If you change the font of the project you will be able to _:Project -> Options -> Editor -> FontWe use using Courier New 9 ptI am not sure (have not checked) what other fonts will work.I know Courier does not allow scaling.
+
+Thanks for that - I never would have thought to try that.Works for Times New Roman as well.Looks like it works for true type fonts.Cheers
+

@@ -1,0 +1,10 @@
+Hello, I'm traying to connect with a cognex camera with a profinet protocol. Then when I'm going to create a PN_Controler this don't start....How can i do this, HELP!!!!!!!Attachment:foto.jpg
+
+Hi,1. you need to install winpcap (winpcap.org)2. disable the windowsfirewall3. install the slave gsdml... for the cognex camera into the device repository in CODESYS4. Download the project and start it ... rightclick PN controller in the device tree - scan devicesThis scan should show the cam ... give station  name and ip. Add it to the project by this scan dialogNow a new download ist needed...(maybe after you have added some io varable mapping)BR Edwin
+
+Edwin Schwellinger wrote:Hi,1. you need to install winpcap (winpcap.org)2. disable the windowsfirewall3. install the slave gsdml... for the cognex camera into the device repository in CODESYS4. Download the project and start it ... rightclick PN controller in the device tree - scan devicesThis scan should show the cam ... give station  name and ip. Add it to the project by this scan dialogNow a new download ist needed...(maybe after you have added some io varable mapping)BR EdwinThanks, Now I can run the profinet bus, and also i see the profinet device.One thing more, if i want do the same project with a rapsberry pi, the equals of wincamp to raspberry, which is it?Best regards
+
+Hi,no on raspberry pi nothing extra is needed... just connect to the pi, browse eth0,eth1 and set the ip of the masterdownload - run -scan the slaves.BREdwin
+
+Edwin Schwellinger wrote:Hi,no on raspberry pi nothing extra is needed... just connect to the pi, browse eth0,eth1 and set the ip of the masterdownload - run -scan the slaves.BREdwinThank you!!!  
+

@@ -1,0 +1,2 @@
+I did comunication between several devices on modbus rtu using in RPI usb/rs232, so in confuguration codesys i used  ttyUSB0,now I would like to use  port built in RPI . How do it ? In configuration fileCODESYS  I use ttyAMA0 but it is not work.
+

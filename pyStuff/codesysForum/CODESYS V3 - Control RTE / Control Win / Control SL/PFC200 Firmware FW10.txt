@@ -1,0 +1,6 @@
+Hi,I tested CODESYS Control for PFC200 SL on the target 750-8202 with the firmware FW10 (02.07.07(10)).It seems to work. However, is it risky (i.e. crash, malfunction...) on a long period to use this firmware FW10? Thanks!Thierry
+
+Hi,no we are testing the new runtime releases on current wago firmware.It is more risky to stay on an old filrmware (security... ) even old bugs (even known and meanwhile solved) could be in.So always use latest is our recommendation.BREdwin
+
+Edwin,Thank you very much for your quick and efficient answer.Regards,Thierry
+

@@ -1,0 +1,2 @@
+Ich arbeite gerade an einem Projekt, wo ich die Daten von SPS auf MySQL Server schreiben möchte. Ich muss einen speziellen Code für die Verbindung zwischen Server und SPS schreiben oder direkt mit den Bibliotheken von SQL (open, querry, close) .can jemand sagt mir, wie ich das erreichen kann. Auch ich möchte die Daten in jeder halben Stunde in den Datenbankserver schreiben.
+

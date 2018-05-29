@@ -1,0 +1,6 @@
+Good morning, I made a software in codesys, made the login (F8), than put it in run (F5).Problem is that when I switch off the power to the plc and switch on again, the plc reboot, but seems that I have to reput the software in run condition in order to have the same result as when I'm connected with the pc.Is there any parameter in codesys in order to have the sw downloaded always in running condition (even when it has switched off)?Thank you.
+
+Hi,create the bootapplication.Regardsplcmax
+
+Thank you very much!plcmax wrote:Hi,create the bootapplication.Regardsplcmax
+

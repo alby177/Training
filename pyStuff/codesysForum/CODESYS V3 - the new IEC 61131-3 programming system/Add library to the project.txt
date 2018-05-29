@@ -1,0 +1,10 @@
+Hello, I'm just starting learning, and got a very stooped questionsHow add library to the project? I know standard procedure Library manager->Add library and from list select library press OkBut I need SysFile library and this library isn't in the list of Add libraryYes I found this library in  the Library Repositorybut how I can add it from there to the Add Library list? Sorry for stooped question but I looking through Help and FAQ and did not find anything  
+
+Hello Stas,If you know the name of the library then after pressing Add Library at the top you can enter the library name in the search edit box. Then it should find it.Perhaps you need to look at the buttons at the right side of the search edit box. There is a button "Display Advanced Libraries" - see if i nyour case it is pressed. See the attached file for more information.Regards,ert
+
+ert wrote:Hello Stas,If you know the name of the library then after pressing Add Library at the top you can enter the library name in the search edit box. Then it should find it.Perhaps you need to look at the buttons at the right side of the search edit box. There is a button "Display Advanced Libraries" - see if i nyour case it is pressed. See the attached file for more information.Regards,ert Thanks Ert 
+
+Hi,you could add into the search line what every you know from the lib, Name, a specific funtion ...in my example concat... which always should be used from StringUtils library. (never use concat from the Standard.library due Performance reasons)BREdwin
+
+Edwin Schwellinger wrote: (...) (never use concat from the Standard.library due Performance reasons)BREdwinSorry, but I need to ask about this.I am using WCONCAT from Standard64 library. Is there anything wrong about it in terms of performance?
+

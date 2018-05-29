@@ -1,0 +1,12 @@
+Hi All,I have two old Yaskawa SGDA servo packs with no Fieldbus communications, with an analog input for speed reference and an incremental encoder output. I'm using a Raspberry Pi 3, with Ethernet/IP and a Wago 750-352 EIP IO rack with two Encoder inputs and two -/+10V analog output modules.My intent is to use the CNCTable project example with my setup. The example project uses the SM_Drive_Virtual, I suppose I cannot tie the Wago IO to the parameters of SM_Drive_VIrtual. I found the POSCOntrol project example where the parameters of SM_POSCOntrol, in.wActPosition and out.iSetVelocity are tied to an Ethercat Buscoupler with an analog output module and encoder input module.My question is, would it work if I replace SM_drive_Virtual in the CNCTable project with SM_PosControl, use the POSCOntrol axis with the SoftMotion function blocks, in the CNCTable project, and tie in.wActPosition and out.iSetVelocity to my IO?Thank you.
+
+Hi,how fast is the IO Update via EIP for the encoder?BREdwin
+
+The default RPI is 10ms, and not sure how deterministic this will be. Is this what you were asking?
+
+Hi,yes exactly, if this is determinitic it might work,it is an option to chose these ethercat modules from the posControl poject example.BREdwin
+
+Thank you Edwin,One question that I have is, the SM_Poscontrol module has a PID loop configurator for speed/position control, while SM_Drive_virtual and Sm_Free_Encoder don't, but I suppose I could still use them, in that case, how is the position/speed controlled?
+
+Hello,you need to use poscontrol other wise you do not have the PID Loop fot Controlling your analog drive.Encoder and virtual axis are Independent from that - and used as 'virtual' axis , encoder as encoder axis - both could be for example connected as master axis for caming or mc_gearin. mc_phasing etc.BREdwin
+

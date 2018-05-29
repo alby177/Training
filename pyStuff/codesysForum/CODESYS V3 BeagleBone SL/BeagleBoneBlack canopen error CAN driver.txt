@@ -1,0 +1,18 @@
+Hello!I connected CANopen bus. connection is correct, as shown in FigureAttachment:can_ok.pngafter rebooting the controller connection is lost, as shown in the figure. Diagnosis of an error. "NetID 0: No CAN driver"Attachment:can_error.pngafter the operation "Tool -> Update Beaglebone Black" the connection is restored, as shown in the figureAttachment:can_ok.pngWhat is the reason and what can be done?I tried different versions of packages (3.5.9.0 and 3.5.10.0)CoDeSys version 3.5 SP9+I'm use bone-debian-8.6-lxqt-4gb-armhf-2016-11-06-4gb.img
+
+Hi,at moment no idea why this happens.Have no hw here to check. But never seen it before.Somehow the can driver is not ready at the point when the runtime is starting up.Could you test if a restart lead to a working bootproject/etc/init.d/codesyscontrol stop/etc/init.d/codesyscontrol startthen a cat /tmp/codesyscontrol.log and give us this output.BREdwin
+
+Happy New Year!Thank you for responding quickly.I am able to check only on 9 January.Just write the result.
+
+Hi!1) After reboot saved log file - Attachment:codesyscontrol_after_reboot.zippossible reason:Socket_CanMiniDriver_Setup[1050]: using /opt/codesys/scripts/rts_set_baud.shSocket_CanMiniDriver_Setup[1063]: registering can interface 0openRxSocket[583]: Opened socket for reading (can0)openRxSocket[589]: ioctl(SIOCGIFINDEX): No such devicecanopen bus NOT worked2) After restart working bootproject(/etc/init.d/codesyscontrol stop/etc/init.d/codesyscontrol start) saved log file - Attachment:codesyscontrol_after_stop_start_service.zipnot exist error ioctl for can0canopen bus workedSomehow the can driver is not ready at the point when the runtime is starting up?Help me, please!
+
+Hi,I found a temporary solution.I edited file /etc/rc.localand add next strings:sleep 15systemctl stop codesyscontrolsleep 1systemctl start codesyscontrolCAN bus work after a reboot, but now the boot is taking longer than 16 seconds.Something wrong in codesyscontrol!Need help developers!
+
+hi,our problem at the moment is on our board this does not happen.Then can0 interface starts relieable.So I would give this a try:add in /etc/network/Interfaces then can0 interfaceExample:auto can0iface can0 inet static    address 192.168.99.1    netmask 255.255.255.0    network 192.168.99.0Could you please try this an give a feedback if this solves it reliable for every startup?BREdwin
+
+Hi,Thanks for the advice!I'll try tomorrow and I will write immediately.Network settings work through the file /etc/network/interfaces in Debian 8.6? I thought all the network settings in Debian 8.6 (Jessie) made through the service ConnMan, and file /etc/network/interfaces is not used.The original post I got this from can be found here: https://groups.google.com/forum/#!topic ... fNwIk_dWlg.Thanks to Brian Anderson for the original comment.
+
+Hi,I'm try add in /etc/network/Interfaces then can0 interfaceauto can0iface can0 inet staticaddress 192.168.99.1netmask 255.255.255.0network 192.168.99.0NOT worked! (After restart BBB, command ifconfig not show can0)What else can I try?
+
+Hi all!Same problem with my app. Thank you alt your previous post, it was very helpful for me (rc-local solution).One more thing... Have you any experience, whats happening when BBB starting on the CANbus, because I have an other CAN capable device and if BBB starting then the other device going to wrong?! It means the ARM processor will stop when my BBB booting.Regards, Siggi.
+

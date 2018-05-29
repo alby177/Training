@@ -1,0 +1,15 @@
+Hello everyone
+I came across strange issue. I have some variable of type PERSISTENT RETAIN and when I switch declaration view from text to table form, PERSISTANT is getting stripped out and moved into VAR section like variable NAME.  So, when I covert back to text format, declaration of  PERSISTENT RETAIN variables changes to  RETAIN and  PERSISTENT becomes its own varible. Here is an exampe.
+I start with 
+VAR PERSISTENT RETAIN
+	testPersistantVar: BOOL := TRUE;
+END_VAR
+Then I go to table format and back to text, the declaration changes to 
+VAR RETAIN
+	PERSISTENT: BOOL := TRUE;
+	testPersistantVar: BOOL := TRUE;
+END_VAR
+Is this a bug in CoDeSys? Is there a way to create varibale PERSISTENT RETAIN in table format?
+I am using CoDeSys version 2.3.5.8
+Thanks
+

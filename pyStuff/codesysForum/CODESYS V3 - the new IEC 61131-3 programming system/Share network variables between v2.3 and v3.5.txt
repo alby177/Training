@@ -1,0 +1,6 @@
+I have an application where I need to communicate between a PLC running v3.5 and an another PLC running v2.3. I was hoping to use network variables, but I have been unable to figure out how to export a list of variables from either version and import it into the other. V2.3 seems limited to exporting "exp" and "dcf" files. And V3.5 seems to only export/import "gvl" files. Is it possible to use network variables to communicate between v2.3 and v3.5? If so, what am I missing on how to import the variable list?
+
+Check help:https://help.codesys.com/webapp/cds-con ... ontrollers
+
+tbambrough wrote:I have an application where I need to communicate between a PLC running v3.5 and an another PLC running v2.3. I was hoping to use network variables, but I have been unable to figure out how to export a list of variables from either version and import it into the other. V2.3 seems limited to exporting "exp" and "dcf" files. And V3.5 seems to only export/import "gvl" files. Is it possible to use network variables to communicate between v2.3 and v3.5? If so, what am I missing on how to import the variable list?Hi, that  type of communication is possibile.I made this with wago750-880 and Raspberry. If you still need help just type and i will try to find this projectWysłane z mojego PLK-L01 przy użyciu Tapatalka
+

@@ -1,0 +1,16 @@
+Dear Edwin,Is it possible to leverage the rela time capabilities of Xenomai for codesys on a beagle bone?BR,Carsten
+
+Hi,why not using rt_preemt patched kernel instead of using xenomai?BREdwin
+
+Hi Edwin,Thanks for the suggestion. To my knowledge though Xenomai is more hard RT than rt_preempt, isn't it?Could you therefor answer on my previous question if Xenomai can be used in user and or kernel mode?BR,Carsten
+
+Hi,yes it is right, but from my experiance there are not many applications out there which reallynot could deal with rt_preemt patched kernel and really need Xenomai.For this runtime release from store it is not possible to use with Xenomai.BREdwin
+
+Hi Edwin,Thanks for your quick response. Will the runtime be suitable for use with Xenomai in future releases?BR,Carsten
+
+Hello,At the moment not planned.BREdwin
+
+Hi Edwin,Is it possible to create a xenomai 3 capable codesys in one of the future releases? With the current rt_preempt I get around 70-80 us jitter under load.I am using the setup with a BBB industrial with a task cycle time of 1ms. The current jitter results in 'unpleasant' behaviour in our haptic setup.BR,Carsten Voort
+
+Hi Carsten,still not planned at the moment.BREdwin
+

@@ -1,0 +1,2 @@
+Hi,I don't have the alarm message background we set on the alarmclass. Could you please help? we're using V 3.5.9see attachment: Attachment:alarmclass_background.pngRaspberry V 3.5.9 .20Thanks,Pape
+

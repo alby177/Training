@@ -1,0 +1,20 @@
+hi,everybody!My Codesys verion is V3.4 sp4,when I login, it shows:1“No connection to the device, please rescan your network.”2“Object reference not set to an instance of an object.” I rescan my network,and found the gateway logo becom gray from colorful,since then I can never login my project except reinstall the software.Unfortunately,whenever I build new project and login many times later,this problem happen again. Is there anyone met the ploblem before?Plese help!thanks!regradsPhilip
+
+_________________Philip Liang
+
+It seems your gateway is OK, but the PLC cannot be found.Which PLC do you use? If it is the SoftPLC (WIN/RTE) then I just think it has stopped and you have to restart it again.In the System Tray (next to the Windows Clock in your task bar) you can find the icons on which you can click to restart it again.
+
+Thanks to TimvH.I use the softPLC (Control Win V3), PLC and gateway are still running,the gateway logo will resume colorful after stop and start the Gateway and softPLC,but when I login,the problem happen again.
+
+_________________Philip Liang
+
+The same problem at my PLC,I'm using Vendor specific RTE, so when I login eg. 10-15 times, the connection breaks and gateway losts (No cennection to the device. Please restart the gateway). I have to restart whole PC (windows XP embedded). I think this is global problem of 3S Gateway.regards,Alex
+
+Hi,suggest to send a projectarchive to 3S Supportwe should reproduce this, then we could help on this issue.cuEdwin
+
+I think it maybe the bugs of Ver3.4.4 ,after I used Ver3.5.0, the program never happen again.
+
+_________________Philip Liang
+
+Hello,if your visualization has some error ( some Version Software will not Pop up Errors in visu) . example u Change something in visu or even you just move visu element  . you Need to do clean all and re build then download .i think this will help you.for below two Problems1“No connection to the device, please rescan your network.”2“Object reference not set to an instance of an object.” solution : save ur Project .. Close completely even codesys and start the codesys again and open Project then clean all , rebuild . and download if u find Gateway Problem still . go to Gateway Manager and add new Gateway same as last Gateway and delete old one and scan ....RegardsHarikrishna
+

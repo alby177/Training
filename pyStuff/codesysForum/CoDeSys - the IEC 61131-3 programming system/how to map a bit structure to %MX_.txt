@@ -1,0 +1,14 @@
+Hi all,I need to map a bit-structure into addresses bit area as %MX.I cannot find a way to do it.. this is the declaration in "Global Variable"StructureName AT %MX0.0 : UserDefinedTypeName ;when compiling always return "only BOOL variable allowed on bit addresses"how to solve it? I need to map UDT to physical addr to receive modbus command from HMI..define bit by bit will result too boring and will generate too many variable..Every suggestion is appreciated
+
+MX is only boolean as far as I'm concerned. use MW insteadso AT %MX0.0 becomes    AT %MW0bear in mind thatMX0.0 up to MX0.15combined will fill word 0 as well as MW0
+
+thanks carcrosser. I've already tried as you suggest, but in that way there is not correspondence bit-bit between %MX and bit of structures..Moreover going online I receive an invalid state for structured variableI mean: from HMI I need to send bit command to PLCHMI Command 1-> MX0.0    --> Structure bit 0HMI Command 1-> MX0.1    --> Structure bit 1
+
+do you have your visulisation on the PLC or are you using network variables (MODBUS TCP/IP for example)if you use the visuals on the PLC you can simply modify them in the visualisation screen by selecting the correct variable. there is no need for this to store it on a physical hardware address.if you use the mod bus, then you require this option, however I'm not sure on the ability to write this variables from the network.
+
+I need to use modbus addresing..I think I found the solution:I created a function that split an INPUT var into the single bit of the structure as following:FUNCTION FuntionName : UDTVAR_IN_OUT	IN : DWORD;END_VARFuntionName .0:=IN.0;FuntionName .1:=IN.1;and then when I call FUN in PRG I declare as :MOTORCOMMAND:=FuntionName(%MD80);in this way I have:%MX160.0=MOTORCOMMAND.0%MX160.1=MOTORCOMMAND.1%MX160.2=MOTORCOMMAND.2........
+
+your way is good, as bits are stored as bytes, so you can not put them in a bitaddress.however you can pack bits into bytes and unpack them again.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

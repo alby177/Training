@@ -1,0 +1,24 @@
+Hi all, I'm very new to codesys.I would like to create my own HTML5/javascript visualisation and connect it ("somehow") with the codesys code (to be able to read/send data and calls). Could you please advise me how to do it? I found some articles on the internet, but I'm still confused. Any help appreciated.
+
+_________________Paul
+
+Hi,at the moment not possible/ not suported.What is your use case... or better what is missing in the webvisu giving you the reason to have this requirement?BREdwin
+
+Hi,my use case is simple. I need my own HTML5/JS/PHP code to be able to show "current state" of the program running in the PLC. And I also need to send commands to it.It would be great to use it and that could simplify my work a lot, but WebVisu it is not exactly what I'm looking for. I need custom shapes and graphics which are not available. I need a lot of interaction between the Web and other devices (i.e. DB).I was researching a bit and found some ways how to read variables via network (i.e. Modbus).The idea is very simple. Let's imagine a counter that is increasing. I need to show this counter on the Web. How do I read the value of it from the PLC?Could you please advise me what is the best practise? Which way should I go?Thank you.P.
+
+_________________Paul
+
+You may want to look into interfacing your web app to an OPC server.  I recently saw what looked like a fairly easy to use Python library that could read and write data from an OPC server.
+
+_________________Rick
+
+Hi Rick, all,I have researched many options. one of them is OPC. I will mention all that I have found maybe will be useful for somebody.My webserver was php based so focus on php1) OPC (this has poor php support in linux)2) Modbus (it's possible to communicate via modbus using phpmodbus library)3) exchange information via files4) shared memory5) write own socket server and communicate via sockets
+
+_________________Paul
+
+pavol.fazik wrote:Hi Rick, all,I have researched many options. one of them is OPC. I will mention all that I have found maybe will be useful for somebody.My webserver was php based so focus on php1) OPC (this has poor php support in linux)2) Modbus (it's possible to communicate via modbus using phpmodbus library)3) exchange information via files4) shared memory5) write own socket server and communicate via socketsSo OPC client bascially runs on a Webserver, right?
+
+zahoorahmed wrote:So OPC client bascially runs on a Webserver, right?This was my goal to have php opc client, but no good php stack for OPC client (or wasn't at that time).The workaround can be calling C client from the PHP 
+
+_________________Paul
+

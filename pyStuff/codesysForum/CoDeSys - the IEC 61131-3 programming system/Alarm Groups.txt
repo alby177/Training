@@ -1,0 +1,19 @@
+Another day, another codesys question  Here goes:
+
+I've got a visualization with an Alarm Table. When I configure this element I can change the alarm group. If I select a single alarm group (for instance: 'System/Main') there is no problem. However when I select 'All Alarm Groups' from the list 2 errors are generated during compiling:
+
+'Error 4726: S500_Alarms (3): The alarm table for all alarm groups cannot be used because an old version of the library SysLibAlarmTrend is used'
+
+'Error 4121: __S500_Alarms_Cyclecode (235): 'STPATH' is not a component of 'STAlarm'
+
+Follow this link to see some screenshots:
+http://picasaweb.google.nl/SWTRoelofs/Codesys
+
+I've tried Codesys versions: 2.3.9.19 and 2.3.9.20. 
+I've tried different library versions: SysLibAlarmTrend.lib, SysLibAlarmTrend_V10.lib and SysLibAlarmTrend_V11.lib
+
+Does anyone know that library? Is it commonly used much? Why do I need it? Is it possible for me to show multiple alarm groups in one alarm table?
+
+
+(Note to the webmaster: I can not upload any attachments anymore. I get this message: Sorry, but the maximum filesize for all Attachments is reached. Please contact the Board Administrator if you have questions.)
+

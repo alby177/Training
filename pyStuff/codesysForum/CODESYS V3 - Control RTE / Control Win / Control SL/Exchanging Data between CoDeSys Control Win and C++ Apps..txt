@@ -1,0 +1,12 @@
+I am able to call and execute a C++ program through a CoDeSys Control Win application, both running in the same computer system. Is there a recommended method to allow these two programs to exchange data? Thanks
+
+I think , you can use ModbusTCP client/server to do data exchange between CODESYS and VC program.Sent from my iPad using Tapatalk
+
+For transferring data I'd use UDP if it's on the same machine, or if packet loss could be handled. TCP would be overkill talking on the same machine as the chance of packet loss would be low.I've used UDP between CODESYS controllers with a single system in an industrial environment for a while without issue, and also between a CODESYS drive and a PC running a VB app.
+
+I am trying to achive a similar thing with a c++-application on the same machine as Codesys. I tried to find UDP examples for recieving data from en external source into Codesys but with no luck. PJE, do you have any example code?
+
+Hi,I would recommend to use OPCUA,there is a OPCUA Server in Control RTE / COntrol Win - embedded.You need to implement an OPCUA Client (which I guess you'll find some examples, code snippets for c++ or any other languages)BREdwin
+
+Try network variable lists.I have used this to interface with labview.
+

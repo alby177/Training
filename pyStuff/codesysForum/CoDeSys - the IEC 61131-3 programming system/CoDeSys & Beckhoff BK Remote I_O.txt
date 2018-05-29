@@ -1,0 +1,28 @@
+Hello Guys,
+
+I am really struggling to get a Berger-Lahr TLM controller to even see my Beckhoff remote I/O module over CANOpen. I know the bus is working as when I disconnect this unit and connect my Festo CPV-10 valve terminal it works like a dream.
+
+I guess the question is has anyone used the BK5120 CAN bus coupler successfully. As a qwerk I am using an analogue input and four encoder inputs and no outputs... 
+
+Any thoughts???? 
+
+I haven't used that module but I know all the basics have to be covered:
+
+Baud Rate for all nodes must be the sameEvery staion must have a unique node addressWiring must be right - Maybe someone used a non-standard configuration for CAN_H, CAN_L & GND.Will the device power up in operational state or pre-operational?  Some have dip switches for this or you may have to configure it with special software or you may have to send it a NMT command to get it to go to operational stateAll nodes must use the same detection scheme: heartbeat or nodeguarding.All devices need to use the same base frame identifier number of bits (2.0A -> 11-bit identifiery) or (2.0B 29-bit identifiers).
+
+Hope this helps
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+Hi,
+
+When using the TLM2/3 Controller from Berger Lahr, we assume you have selected the eds file and configured it correctly in the PLC Configurator.
+
+When the Beckhoff I/O module appears on the CANopen network it will produce a bootup message and during this time the TLM2/3 will be searching for the object 1000:0 (Idx:Sidx). If the slave answers to this object 1000 correctly then the TLM2/3 will initialise the slave correctly.
+
+Often it can be the case that the response is not coded correctly in the eds file and so this prevents the TLM2/3 from initialising the slave.
+
+I encourage you to use a CAN analyser (if you can) to look at what's happening OTW (On the Wire) which is preventing the TLM2/3 from successfully initialising the slave device.
+

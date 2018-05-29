@@ -1,0 +1,4 @@
+New to codesys. I am having trouble getting the SysTimeRtc library installed. Are there any instructions on how to get this library installed correctly?thanks
+
+Found in the library manager "advanced" tab.How do I properly use the SysTimeRtcGet function to return the system date and time?
+

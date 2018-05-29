@@ -1,0 +1,2 @@
+Dear Sir:How can we check the CODESYS RTE  instruction speed in my IPC? does hove and test project can support check the   speed in Cycle time for 1 instruction (minimum)BinaryWORDFloating-pointbr,Peter
+

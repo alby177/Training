@@ -1,0 +1,24 @@
+Realtek 8139 (CmpRTL81x9Mpd) Realtek RTL8139 (and compatible nic's) Ethernet-Contoller. the 8100 und 8110 are compatible too.   Realtek 8169 (CmpRTL8169Mpd) Realtek 8169/810Realtek RTL8111B / RTL8111D Intel EtherExpressPro1000 (CmpEt1000Drv )Intel 82541,82547,82567,82571,82573,82574,82583V, i210, i217-LM Intel EtherExpress PRO/100 (CmpEt100Drv)Intel 82551,82557,82559, 82558, 82557 and 82550This drivers are needed for using the ethercat master, profinet Controller and Ethernet ip scanner and Ethernet IP Adapteron Control RTE.
+
+Does RTL8111E controller supported ? I'm interest to use Ethercat master on a panel PC that mount this controller. Is "E" char in controller name outstanding ? ThanksPanelPC is: http://www.ieiworld.com/product_groups/ ... azYyLVBnng
+
+Hi,yes should work, if not please let us know.BREdwin
+
+I use the "Codesys Control Win V3" in the same PC with development and all running OK for:* profinet on VMWARE Intel Pro/1000 nic. When i try to run the same project in an Advantech PC with "Codesys Control Win V3" the Ethernet bus not work if i use the profinet.* profinet on Realtek PCIe GBE Family Controller.Attachment:WinPLC_adapter.pngWith profinet the Ethernet bus not work.Attachment:WinPLC_fault.pngAttachment:WinPLC_fault_02.pngWithout profinet the Ethernet bus work.Attachment:WinPLC_ok_01.pngAttachment:WinPLC_ok_02.pngI try to run in the Advantech PC with "Codesys Control RTE V3" but then i have hardware compatibility problems.Please help because i am in midle of project and ihave spend much of my time for tests.Regards
+
+Hi,for Profinet you need to install a CODESYS network driver. (same which you need to ethercat)not sure if it does fit (you might check the hardware id's in windows device manager)I would give CmpRTL8169Mpd a tryBREdwin
+
+Hi EdwinPlease give me instructions where to find the driver and how to use for:Codesys Control RTE and Codesys Control Win PLC.Regards
+
+Hi,Control RTE:see the Control RTE user manual for the instructions on how to install the Windows driver...-> Windows DeviceManager networkdriver  you need to replace the existing Realtek to the CODESYS Realtek Driver then add it to CODESYSControl.cfgand after doing this a reboot is needed.Control Win:You need to install WPcap for using every networkdriver (manufacturer independent)BREdwin
+
+Hi EdwinI try your instructions and work OK for Control WIN with default driver or with Codesys CmpRTL8169Mpd driver but with Control RTE works for a litle and after 1 to 10 seconds i take error exception:Attachment:Profinet_freeze.pngAny help?Another one tell me how to work the Serial Comms with Control RTE.Regards
+
+Hi,yes this is a known bug which will be solved with 3.5SP8Patch1 (release is 18th February)If you need a.s.a.p a bugfix I could give a release Candidate for Patch1.... write to 3S Support.For serial communication I could send an Project example if needed. BREdwin
+
+Hi EdwinPlease do something quick because i need tomorrow start the project tests at my costumer place.Until now i have do my tests with Raspberry run time but for the final project i need to work with Control RTE.Regards
+
+Hi,I've sent you an email...BREdwin
+
+Hi EdwinThe update of patch stops after a while because try to find the "disk:1".Any suggestionRegards
+

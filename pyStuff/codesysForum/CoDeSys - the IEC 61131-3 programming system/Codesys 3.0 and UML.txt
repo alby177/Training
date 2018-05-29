@@ -1,0 +1,6 @@
+I have developed a IEC61131 code generator which generates PLC code from an UML model. The code is generated in *.exp ASCII format and then imported into codesys 2.x or Beckhoff.
+
+In the new codesys 3.0 compiler the exp import option is not available anymore. Is there any possibility to generate code for the codesys 3.0 system?
+
+Will there be an automation interface that I can use? 
+

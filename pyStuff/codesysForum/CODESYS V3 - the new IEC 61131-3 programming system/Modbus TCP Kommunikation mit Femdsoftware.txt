@@ -1,0 +1,10 @@
+Hallo,ich habe einen Windows7 Steuerungsrechner mit Codesys V3 RTE Version 3.5.3. Die SDK ist auch auf dem Rechner installiert. Auf dem gleichen Rechner ist eine Fremdsoftware installiert, welche einen Modbus TCP client hat. Kann ich über Modbus TCP mit dieser Software aus dem Codesys heraus kommunizieren, wenn Master und Client auf dem gleichen Rechner laufen? Welche Bibliothek muss ich dafür einbinden?Danke im Voraus!Gruß Dax
+
+Das kann bei zwei Servern (endgeräten) ein Problem geben weil die ja dann beide den port 502 belegen. Außer du kannst den port bei einem Server ändern oder den Server abschalten, dann sollte es gehen. Wenn es wirklich nur ein Client ist wie ein HMI oder Scada dann geht es. Mit dem DOS befehl netstat -nao und dem task manager kannst du über die PID sehen wer auf port 502 hört.Sent from my SM-G935F using Tapatalk
+
+Ok, danke. Kannst mir noch den Namen der passenden Bibliothek nennen?
+
+Das geht ohne bibliothek, musst du im Geräteverzeichnis unter der Netzwerkschnittstelle einen Modbus master anlegen. Ich habe gerade kein Codesys dabei aber mit rechts klick auf die Ethernet schnittstelle und dann Gerät anhängen heißt es glaube ich. Da kann man dann variablen anlegen und pollzeiten etc. Oder halt slave wenn man sachen aus der SPS haben möchte. Allerdings sollte man sich variablen für das Lesen und Schreiben explizit reservieren. Ich hab beim ersten mal den Fehler gemacht und habe variablen als read/write deklariert und dann vom programm aus versucht drauf zu schreiben. Das geht nicht weil die werte immer von Modbus neu geschrieben werden.Sent from my SM-G935F using Tapatalk
+
+Vielen Dank,habe es nun mit einem Ananas Modbus Test Client hinbekommen. Im Projekt habe ich dazu einen Ethernet-Knoten, darunter einen Modbus-Master und darunter einen Modbus-Slave eingefügt. sonst müssen nur Variablen angelegt und gemappt werden und die Kiste läuft. Prima!
+

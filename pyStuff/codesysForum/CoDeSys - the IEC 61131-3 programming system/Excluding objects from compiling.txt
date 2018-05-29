@@ -1,0 +1,19 @@
+Hello,
+
+in projects with large libraries (e.g. oscat), the max. amount of objects is reached. When I try to exclude unused objects from the compilation (Project->Options->Objekte ausschliessen->Unbenutzte ausschliessen), the button "Unbenutzte ausschliessen" is sometimes grayed out and not usable.
+Why is it like that, and how can I bypass this?
+Thanks in advance.
+
+timmf wrote:Hello,in projects with large libraries (e.g. oscat), the max. amount of objects is reached. When I try to exclude unused objects from the compilation (Project->Options->Objekte ausschliessen->Unbenutzte ausschliessen), the button "Unbenutzte ausschliessen" is sometimes grayed out and not usable.Why is it like that, and how can I bypass this?Thanks in advance.
+
+First, change maximum BF for compilation in Target Configuration/Memory.
+When compilation goes to the end, you can modify the check box 'not compile'.
+You can also use the button "exclude unused" to optimize.
+When the check box 'not compile' is gray, It means that there is POU used and other unused. You can check or uncheck it.
+
+After this you can reduce and set the previous value of maximum BF in Target Configuration.
+
+Sorry I'm not sure for CoDeSys label/menu in the interface. I have a french version.
+
+Thanks for the answer, Romuald.
+

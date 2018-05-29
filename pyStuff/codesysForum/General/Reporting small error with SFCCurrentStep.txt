@@ -1,0 +1,29 @@
+Found in CoDeSys version 2.3.9.3
+
+The string variable do not show string at init in simulationmode and on a SFCInit or SFCReset the string keeps the old step and do not re-init at Initstep.
+  Hope you understod that!
+
+The variable SFCCurrentStep was declared as an output.
+
+/Tobbe
+
+Here the content of the CoDeSys online help, everything is explained:
+
+SFCInit: When this boolean variable has the value TRUE the sequential function chart is set back to the Init step. The other SFC flags are reset too (initialization). The Init step remains active, but is not executed, for as long as the variable has the value TRUE. It is only when SFCInit is again set to FALSE that the block can be processed normally.
+
+SFCReset: This variable, of type BOOL, behaves similarly to SFCInit. Unlike the latter, however, further processing takes place after the initialization of the Init step. Thus for example the SFCReset flag could be re-set to FALSE in the Init step.
+
+Hello Boris,
+
+It's not the SFCInit and SFCReset this was about. It was about the string variable SFCCurrentstep. 
+Even after SFCReset and SFCInit is re-set to FALSE the SFCCurrentstep will not change.
+
+Where can I find this online help??
+
+Best regards
+Torbjörn Lundahl
+
+Hello I´m having problems with SFCCurrentStep.When I declareSFCCurrentStep:STRING;inside the SFC program then in simulation mode the variable works well and gives me the name of the current step.I want to declare this variable as global, so I can access this variable from other POUs,  but when I do this in simulation the flag don´t work correctly, it´s always changing between 'Init' ant 'Step2'How can I solve this problem??Thank youAltino Gonçalves
+
+Hi aaltino!Have you tried to declare the SFCCurrentStep as an output? Then you should be able to get this variable as FB_Functionblock.SFCCurrentStep./Torbjörn
+

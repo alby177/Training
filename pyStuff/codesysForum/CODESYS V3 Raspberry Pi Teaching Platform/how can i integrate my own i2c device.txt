@@ -1,0 +1,4 @@
+Hi,Is it possible to integrate my own (not in the standard device included in the raspberry pi) i2c devicewithout using any aditional sofware?Can someone explain how to do this?kind regards
+
+Hi on4bhmI'm at the same point right now.First thing you have to-do is to write your own devdesc.xml file.Second is to create your own lib.There is a sample on your local hard drive inside your user folder if you have installed the RaspberryPi package.Also is a lib example in there.Then Erikk uploaded his own devdesc.xml and a lib to run SHT-21 sensors (thanks again), see "Looking for library to run a SHT-1x sensor" discussion.This may helps you to have an idea where to start.Good luck, still working on my I2C-Device... and will upload it as soon as all is working.
+

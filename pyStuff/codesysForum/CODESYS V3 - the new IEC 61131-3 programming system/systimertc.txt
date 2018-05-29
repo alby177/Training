@@ -1,0 +1,4 @@
+Hi Does anyone knows were i can  find the systimertc library.Thanks in advance
+
+Hi,not sure what you want to archive  but I would check,http://store.codesys.com/date-and-tme.htmlBy the way when ever you search some library functions, library... I would recommend to use this powerful search line here (screenshot)then doubleclick on the result inserts the searched library to the library manager.BREdwin
+

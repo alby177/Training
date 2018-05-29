@@ -1,0 +1,6 @@
+Dear forum,I have install a PEAK-Can usb device and it's works fine under CODESYS V3.I'm looking for a solution to read from CAN Layer2 network. Is this possible or can V3 only work with CANopen?And I have no idea to read the state of the CANopen like the state, busload and so on. I can't find any library for this.Who can help me. ]:-> chrischanHH
+
+Hi,check this example in the store your can layer 2 communication:http://store.codesys.com/can-bus-example.htmlBREdwin
+
+Thanks for your help]:-> chrischanHH
+

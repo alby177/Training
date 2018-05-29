@@ -1,0 +1,8 @@
+While testing new project visualization, PLC gateway loads with the earlier visualization run on it in demo mode. Is there any way to reset it?
+
+change anything in your program, and the PLC will tell you it is different, so please download new software.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Does that mean it can not have blank to start with?
+

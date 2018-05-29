@@ -1,0 +1,4 @@
+Hi,here is a package for OPENCV with CODESYS and Raspberry PI, works with the PI camerahttps://store.codesys.com/opencv-for-raspberry-pi.htmlBREdwin
+
+Any idea what I'd have to change to use a USB camera?Thanks!
+

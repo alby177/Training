@@ -1,0 +1,3 @@
+How can I start and stop recording the data of a trend?
+The data should always be recorded to log0.trd
+

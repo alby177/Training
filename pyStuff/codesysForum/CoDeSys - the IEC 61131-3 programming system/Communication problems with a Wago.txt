@@ -1,0 +1,8 @@
+Hi I'm new to using this software. I have problems connecting using codesys software. I have successfulling communicated using the Wago ethernet settings and also pinged the PLC ok.When I use the codesys software and try to upload the program from the plc I get the following errors:Communication error #0 log out performedInformation about the driver:Trying to connect: cannot connect to the address local hostDriver state: write attempt from an invaild socket.The plc is a 750-881. The software is CODESYS 2.3. Running on windows 7 operating system.If I try to download a program to the plc I get the following error:The project must be correct for loginany advice please?
+
+I have tried with a ethernet straight through cable and also a cross over cable. Which should I be using?
+
+in ethernet settings you set the PLC to a fixed address like 192.168.2.102 whatever.in the PC you must set its address in the same range like 192.168.2.100 for example.this is done in network settings.test with every explorer to the address 192.168.2.102 you should see the basic screen.under communications first try is to use the cable to program the device.use a very simple program to test it like out:= in+1;the prgram will put the VAR in the list with this assistant. it asks for type etc.In your program is an error, send the program zipped and we will try to help you.cable type is crossover or use a hub then use straight.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

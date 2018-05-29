@@ -1,0 +1,4 @@
+Hi, we are adding extra HTML Help (.CHM files) to our package, and using the XML 'merge file' mechanism to tell the help system where to place these extra CHMs in the table of contents.Currently our merge files have a line such as Code:<TOCRoot>ms-its:C:\Program Files (x86)\3S CODESYS\CODESYS\Online Help\en\CODESYS.chm::/f_welcome_to_codesys.htm </TOCRoot> Obviously, this makes an assumption about where Codesys is installed, which may not be correct. Is the Codesys installation directory available as an environment variable, so we can use this in the URLs in our merge files?For example, something like:Code:<TOCRoot>ms-its:%CODESYS_INSTALL_DIRECTORY%\Online Help\en\CODESYS.chm::/f_welcome_to_codesys.htm </TOCRoot> 
+
+Ah! It looks like I can just use relative addressing, and not worry about the installation directory at all.so something like Code:<TOCRoot>CODESYS.chm::/f_welcome_to_codesys.htm</TOCRoot>  
+

@@ -1,0 +1,2 @@
+Hello everyone! I have a problem with RPI i/o ports. When I first load the program, all inputs and outputs are working properly. If I turn off  the power Raspberry inputs stop working. What is the problem?
+

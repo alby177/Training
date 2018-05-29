@@ -1,0 +1,6 @@
+Hi I am trying to get modbus tcp running with an esp8266 in a Sonoff switch. The issue I keep running into is the bus goes into stop or error mode and then reconnects briefly. I would like some more information about why the little triangle goes orange or red, like the diagnostic buffer in a Siemens CPU. If I could only see if its a network issue/protocol issue...Attachment:modbus.pngSo far I know the following:similar code works on an Ethernet connection and Arduino with a constant greenIt is not the Response Timeout setting of the modbus slave(2000 ms)It is not the socket Timeout(20 ms)It is not the Modbus Slave channel trigger (750ms)The MCU that runs the slave has ample idle timeAttachment:modbus2.pngAttachment:modbus3.pngLooking at the data exchange between the MCU and the Pi, the Pi is supposed to do two modbus calls to the device. One FC3 and another FC6, sometimes the Pi only does the one call before indicating the bus in fault, sometimes both 50ms apart. A few times one or the other or both of the function calls are executed sucessfully before the bus goes into stop, and is restarted via "Auto-reconnect".
+
+Hi,write the name of the non working slave to the watch window to get more information on the modbus error(for doing this I would remove the autorestart option)'SonOffDUAL_POOL'BREdwin
+
+@EdwinThanks exactly what I needed!
+

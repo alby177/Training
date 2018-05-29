@@ -1,0 +1,8 @@
+Hey!Unfortunately, I'm not so good to use the program .I need help move projects from xp ( ABB AC 500 Control Builder based on CoDeSys by 3S verison 2.3.4.9 Windows7 Pro to another computer. If successful import the project, but has problems with com port. I wonder if I have to have programs for the com port I / O_ bus settings. I ask for help !!Yours Zsolt .
+
+probably, the IO is not defined, due to not having imported the configuration.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks it was error when I export the project I had not admin rights Level 0: Admin Level 1 ....
+

@@ -1,0 +1,6 @@
+Dear All,  I want to know how to insert line comments on Codesys for ladder,FBD,CFC
+
+Hello,For Ladder and FBD you have to go to Tools (Menu) -> Options-> FBD, LD AND LD Editor ->Tab General and check the box 'Show network comment'.For CFC use the comment box in the Toolbox.Best regard 
+
+Thank you for the informations
+

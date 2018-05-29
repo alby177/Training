@@ -1,0 +1,6 @@
+Hello, 
+What is the max number of serial port avaible in codesys??
+I have an application with 20 serial port and i can't open port number greater than 8.. :(
+
+Maybe you should try on RS 485.
+

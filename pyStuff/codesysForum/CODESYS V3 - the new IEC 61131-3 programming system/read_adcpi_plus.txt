@@ -1,0 +1,2 @@
+hello all.i am using CODESYS to read analogue value form ADC PI Plus extension board. It uses mcp3424 chips. i have written a small program to read value from a single channel which was working perfectly but the same program is not giving any output now. i am a little bit confused with that as there is no error message generating while running the program. i have uploaded both the program screenshots and also the library. a little bit help will be great,thank you,
+

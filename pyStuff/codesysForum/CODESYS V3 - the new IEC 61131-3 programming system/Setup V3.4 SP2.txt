@@ -1,0 +1,5 @@
+There is an error in the packed setup of V3.4 SP2when the hardlock driver (<WINSYSDIR>\hlduinst.exe) is already not installed the setup tries to install it.This does not work with the packed setup of V3.4.2.0Here the error does not appear in our tests because we normally have installed the hardlock already.Please find attached the setup, install the driver and it will work.download the file hldrv32.zip fromhttp://aladdin.info/support/hardlock/downloads.aspx
+
+_________________Good Better CoDeSys
+Boris Schuster
+

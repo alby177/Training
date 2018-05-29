@@ -1,0 +1,31 @@
+Can you upload an existing program from a wago 750-842 plc.
+If so how? 
+
+_________________Can you upload a program from a WAGO 750-842 plc with CoDeSys Sofware? If so How?
+
+You can upload a program from any CoDeSys PLC only if the source code has been loaded before.
+
+To upload a program, do : 
+File -> Open -> Open project from PLC. CoDeSys then asks you to define the TArget, and after to define Communication Parameters.
+
+To download the source code you can do : Online -> Sourcecode download.
+You can automate this by  roject -> Options -> Source download
+
+Hoping to be helpful 
+
+JAPIB wrote:You can upload a program from any CoDeSys PLC only if the source code has been loaded before.To upload a program, do : File -> Open -> Open project from PLC. CoDeSys then asks you to define the TArget, and after to define Communication Parameters.To download the source code you can do : Online -> Sourcecode download.You can automate this by  roject -> Options -> Source downloadHoping to be helpful Hello JAPIB,Your way to extract the program from the WAGO PLC seems to be real good!But...I got a 750-843 PLC from WAGO and tried your upload instructions.My program funtionnality was first tested functional running online.The IP address is good to, I can access the PLC setting HTML page by tapping the IP into the web browser.But I couldn't open/extract the program from my PLC.The following popup appear: SourceCode Could Not Be ReadWHY!?!Thank you
+
+HelloAre you sure that the source code is really loaded ?When you load the program and that you test it, you do not load automatically the source code (only if you automate this by roject -> Options -> Source download).Best regards
+
+JAPIB wrote:HelloAre you sure that the source code is really loaded ?When you load the program and that you test it, you do not load automatically the source code (only if you automate this by roject -> Options -> Source download).Best regardsHello JAPIB,Yeah I thing your right, the source code wasn't been loaded correctly I guess.I tried to load it with Project -> Options -> Source download, but it barely change the previews reaction. Except for this, when I tried to upload the program with File -> Open -> Open project from PLC;It shown a popup '' Load Project from PLC: (number increasing) '' and then the popup '' SourceCode Could Not Be Read '' appear.To get this I checked the '' Source Code Only '' in '' Extend '' section of Source Download.So I thied to manually download the source code. Online -> SourceCode DownloadBut it shown the following message:    The last online service has not been executed correctly!    Servive number:48 error number: 80    File 'Source.dat' could not be written.Why the source code seem to not load?Thank you &Best Regards
+
+Maybe your wago 750-842 doesn't have enough memory for saving the project files. See technical data for your PLC:Code:Program memory 128 KbyteData memory 64 Kbyte I can suggest you uploading files manually but 750-842 has no communication protocols except modbus and http.  
+
+Avgur your idea is good.The worst is that some PLC do not have storage space for backup source code.  You should check the documentation for your API or ask your dealer.  
+
+JAPIB wrote:Avgur your idea is good.The worst is that some PLC do not have storage space for backup source code.  You should check the documentation for your API or ask your dealer.  Yeah your right JAPIB!I ask my WAGO dealer and he confims as you say, that this particular PLC (750-843) don't have storage space for backup source code. So that's why I wasn't able to upload it.In the future when I'll get a PLC that could store this source code, well I'll know what to do!Thank you for your support and good advice.Thank you all!
+
+not any codesys is uploadable, due to the fact it is compiled in the computer.however it is possible to save the source code too on some plc.with older plc it is always a big problem to get the source.i still like very old ones they do store the source and do interpret this, it is slower, and number crunching is difficult.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,4 @@
+Hello.I'm wondering if it is possible to dynamically create visualization objects.  In other words, can I somehow create objects during runtime instead of making a fixed number of objects during design time and hiding them until I need them.If this is not possible, is there a way to simply draw or paint pixels on a visualization?  I don't see a "canvas" object in the toolbox, but I would assume that this is implicitly present in any visualization.Kind regards,The Captive Engineer
+
+I have the same qüestion as you. As I can ser from others posts from you, you want to mount a visualization with all instances of the same class, it s true?Enviat des del meu Aquaris M5.5 usant Tapatalk
+

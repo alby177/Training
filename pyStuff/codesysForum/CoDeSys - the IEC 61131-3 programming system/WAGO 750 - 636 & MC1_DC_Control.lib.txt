@@ -1,0 +1,6 @@
+Hi all!I am trying to use the WAGO 750 - 636 with the MC1_DC_Control library to control the speed of a linear actuator.I wish to create a simple program which lets me set the PWM % and the direction of movement.Unfortunately I am having some issues with this library, and the motor seem to only move when i set the command to move directly, thus overriding the PWM. Or when i set the speed to 200 (100%) which also will ignore the PWM.Basically, whenever i try to use PWM, the motor stands still.I have tried using the MC1_DC_ControlBasic followed by MC1_DC_PWM function blocks but to no luck.Would it be too much to ask any of you guys with some more experience to point me in the right direction?Maybe write me some simple example code?I would normally post my code here, but I suspect I am so far from the correct answer that it would not help much.
+
+what is current_limit as this is the limit for the PWM control.and yes please put the software in, as this helps to see what is done by you.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,2 @@
+Hi,for each device in CoDeSys v3, is there a parameter setting with the name "Bus cycle task". See screenshot, for example "Bus cycle task_plc.jpg" and  "Bus cycle task_ETHCAT.jpg".Can I automatically select the option in combox by using a Python Script? It is nice, when someone show an example script.Many thanks
+

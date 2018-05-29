@@ -1,0 +1,30 @@
+Could someone nice post SysLibSockets library(SysLibSockets.lib) example?
+
+Maybe TCP-server and TCP-client..  
+
+Ask at the 3S-support for the TcpUdplib.lib and for an example.
+
+Hello
+
+There's a very useful example project, TcpUdp.pro (enclosed). It includes a TCP Server and Client as well as a UDP Producer and Consumer. The functions within come from the library TcpUdpLib.lib and are modified a little bit.
+
+Bye, Frank Hailer
+
+_________________Qualitätssicherung
+
+Hi!
+
+Thanks from example. I got my project working 
+
+Actually I still have one problem. I can reveive messages from my client(LabView-prgoram) to my Codesys-server, but I can't send messages to   Client. I get allways -1 value from Codesys SysSockSend-function. If I check last "TCP/IP API Error Code", I get error "235 Operation would block". Is there problem with socket options, or something else?
+
+Thanks for the TCPUDP example
+
+Antti wrote:Hi!Thanks from example. I got my project working can u give me the TcpUdpLib.lib fast i am in need  
+
+Hello, Looking for a "exemple.pro" to create a tcp server nonblocking that proposed above is blocking "tcpudp.zip" Thank you in advance for your help, jlm
+
+Frank Hailer wrote:HelloThere's a very useful example project, TcpUdp.pro (enclosed). It includes a TCP Server and Client as well as a UDP Producer and Consumer. The functions within come from the library TcpUdpLib.lib and are modified a little bit.Bye, Frank HailerHi, How can I open the example project "TcpUdp.pro" in CoDeSys V3.5?Thank you very much.
+
+jlm60 wrote:Hello, Looking for a "exemple.pro" to create a tcp server nonblocking that proposed above is blocking "tcpudp.zip" Thank you in advance for your help, jlmHi, How can I open the example project "exemple.pro" in CoDeSys V3.5?Thanks you very much!
+

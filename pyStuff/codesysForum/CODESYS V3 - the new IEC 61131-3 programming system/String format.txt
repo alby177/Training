@@ -1,0 +1,18 @@
+Is there a C equivalent function in Codesys for string formatting?For example: sprintf(str, "%d,%d,%d", a, b, c);
+
+You have to build the string. See CONCAT and associated key words
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+I am familiar with CONCAT but I am seeking for more elegant solution for longer strings. Also, CONCAT is rather slow.
+
+I also don't use CONCAT. I use my own byte copy routine. Sorry, IEC isn't setup to have fancy string handlers.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Hi,in any case it is much more performant if you use StringUtils.library in compare to use the string/concat whatever from Standard library.BREdwin
+
+Hi,recently I faced a warning in a document what tells me:Quote:Plaese note, string functions are not "thread safe": When using tasks, string functions may only be used in a single task. If the same function is used in different tasks, there is a danger of overwriting.Okay, clear so far. It is like it is. I am looking for a general solution how to deal with this restriction in POUs provided in libraries. Do you recommend to use in general the functions from the StringUtils.library?For my opinion the usage of this lib in my situation brings me two advantages:I avoid the use of the STRING functions from the Standard lib, thus there is no risk in conjunction with MultiTask apps where my POUs are implemented later.The program becomes more performant.Maybe it sounds a little bit stupid, because I answered teh question by myself. But I am really looking for an external opinion to strengthen my decision, not to use the String functions from the Standard lib in my libraries.Thank you for your feedback.
+
+Hi,I got the information from 3S that since CoDeSys V3 all String functions are threadsafe. Thus the problem has been solved by itself.However, I also got the information, it is recommended to use the StringUtils lib, because it is more performant than the functions from the Standard lib.Regards
+

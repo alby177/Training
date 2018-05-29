@@ -1,0 +1,4 @@
+Hello,Can someone tell me what the error codes for RTS_IEC_RESULT for the syssocket.lib. I'm getting error code 529 and 518 and I don't know what the error description is.
+
+Hello,see cmperrorsBREdwin
+

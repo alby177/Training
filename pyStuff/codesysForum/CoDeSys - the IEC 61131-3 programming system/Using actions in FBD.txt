@@ -1,0 +1,14 @@
+Hi,
+I have a small problem... If i have constructed a FB using FBD i've got problems calling actions in current instance. 
+If using ST everyting works perfect but with FBD style the "action box" expects every input of the FB?!?!?!. Is it supposed to be like that.?
+
+/Hasse
+
+Yes, this is the correct way.
+
+Even if you do not need to edit the VAR_INPUTs of the "mother's" FB in order to execute the action, sometimes it might make sense to do it. Therefore they are liste at every call of an action.
+
+But if you do not want to change the inputs, you can leave them without a value. What you have to do is delete the "???" at the inputs you do not want to change. That's all (see attached screen shot).
+
+_________________Roland WagnerModerator
+

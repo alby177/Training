@@ -1,0 +1,22 @@
+HelloI have problem .. when i download project it is work fine.. But after reboot raspberry pi project don't start.... and Codesys Runtime too.. don't start... i have to connect with ssh and remove Application.app... then reboot again and codesys runtime start without project.. What can be reason.. In attachment my project. https://www.dropbox.com/s/n7d8d77rsf9ji ... chive?dl=0Thank you.
+
+Hi,I have checked  this with your project,I agree there is a problem on startup ->need to be checked on monday.Will send you an email with the results and solution then.BREdwin
+
+Hi,Ok thanks... i will be waiting some info from you...Thank you.
+
+Hello Edwin,There is some news... answer me on email if it is possible: dmitriy.murashov@automation-engineering.ru or in skype:ladimko Thanks
+
+I found reason is serial port modbus line.. if i remove from Codesys config next lines .. everythink is start perfectly. That can be problem. I checked with 3.5.2 and with 3.5.6 runtime. It is same problem there.[SysCom]Linux.Devicefile=/dev/tty-RPIportnum := COM.SysCom.SYS_COMPORT1
+
+Hi,think you need to chance your application see screenshot.BREdwin
+
+i don't use this block ADAM4016 (it was before temporry added) i just want using iomodbusdrv from Codesys.. and standart comunication config for Modbus Bus.. project arh: https://www.dropbox.com/s/sft4jwc2u4ayn ... chive?dl=0i can make tomorrow remote access with teamviewer to PC with this raspberry PI it is ok? (email me, i will answer with id and pass)Thanks.
+
+Hi,ok thanks for the offer to do this online,we try to reproduce and debug this here.Do you agree that this has worked on 3.5.5.20 Pi Runtime?This is what we see here at the moment.BREdwin
+
+Hi, I just see.. if we don't have device connect to 485.. everythink is booted.. but then we have device when try to startup codesyscontrol.bin .. we have segmentation fault... all that i check on 3.5.20..on 3.5.6 it is not segmentation fault .. it is just stack on message (if we use console for log from codesyscontro.bin) this version for 2-hour demo mode... and that's all.. no message from loding libs or from internal webservice.... just stack...
+
+Hi,'segmentation fault' seems a known bug in 3.5.5.20 (nothing to do with your problem)->you need to try several times (starting this by using the console) guess it will work.BREdwin
+
+ok i am doing on 3.5.20add file /usr/bin/wdt.sh#!/bin/shwhile truedo        sleep 5        RESULT=`pgrep codesyscontrol`        if [ "${RESULT:-null}" = null ]; then                /etc/init.d/codesyscontrol start                echo "start codesys"        fi        sleep 5doneand add in /etc/init.d/rc.localbefore return line in do_start func/usr/bin/wdt.sh &Now it is work .. starting if not from first time (with segmentation fault) from second one for sure..
+

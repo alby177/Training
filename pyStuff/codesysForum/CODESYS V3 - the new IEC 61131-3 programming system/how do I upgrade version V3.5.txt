@@ -1,0 +1,4 @@
+HiCan anyone show me how to update version V3.5 sp3 patch4 to sp4 patch 4 and would programs written in patch 3 load in patch 4Thanks
+
+Hi,for me a great help was the FAQ section in the forum with the following entry:viewtopic.php?f=22&t=5641&p=10083#p10083Regardsplcmax
+

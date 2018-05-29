@@ -1,0 +1,12 @@
+Does anybody know if it is possible to call a visualization screen in the plc code? 
+
+Yes, there is a system variable "CurrentVisu" of type STRING which contains the current painted visualization. When you make an assignment like CurrentVisu := 'NewVisu' and NewVisu is a correct visualization name than the current painted visualization changes.
+
+This would be done automatically for the targetvisualization. For the webvisualization you must set the parameter "USECURRENTVISU" = "TRUE" in the webvisu.htm
+
+In CoDeSys you must set the option UseCurrentVisu in the target settings.
+
+Thanks for your reply, I'will try it at ones,
+
+Corvdl.
+

@@ -1,0 +1,10 @@
+There are some drives which don t saves his paràmeterization internally. Its are downloaded by the controller on every driver poqer up. FOr ex i700 from Lenze.Via PlcDesigner and a Lenze controller (c300) I can parameterize it, after, I can connect it to a non Lenze Codesys controller and works fine.The question is, how can I send the parameterization from the non Lenze Codesys at power up?ThanksEnviat des del meu Aquaris M5.5 usant Tapatalk
+
+Hi,all these parameter (cxxxx) you could write by SDO's to the drive -  there is a formula how to access them via sdo's - guess you need to ask the Lenze Support - (could not remember how to translate them, sorry)BREdwin
+
+Hi Edwin.You are right, I can test the parameters via coe online, and save its via startup sdos. ( New i700  dont uses cxxx parameters as 9400, uses sdo cia400 index directly).But. My idea is to configure a drive using human software (as easy or plcDesigner addon) and after that pass the parameterization to the drive via standard Codesys). But I have to copy not less that 100 parameters for every axe, which:-I can make mistakes on copy.-Its a hard work to do that for every new axe.-with 30ms for sdo, every axe takes 3 s on startup.My question was:Can I create an startup xml with the actual drive parameterization?There exist any library to send files over ethercat at starup?.PD: It s not a bad idea to send firmware and parameterization at startup, and everyday exist more drive manufacturers which do that. I think that standard Codesys would have ready to do that...Enviat des del meu Aquaris M5.5 usant Tapatalk
+
+It could be as easy as go to coe online and right mouse button and add this paramater with its actual value to startup parameterEnviat des del meu Aquaris M5.5 usant Tapatalk
+
+HiThere exist in plcdesigner the posibility of save the drive parameterization on an xml. Xml which is loaded gracefully by startup parameters.It works.
+

@@ -1,0 +1,2 @@
+In the documentation for the PFC200 runtime showing supported modules, the 750-632 proportional valve module and the 750-658 modules are both listed.  I cannot find these modules to add to the bus.  Also the PFC100 is listed as a compatible target at the header of this file.  Can you please advise when any of these will actually be available for the v3.5 package?Thank you.
+

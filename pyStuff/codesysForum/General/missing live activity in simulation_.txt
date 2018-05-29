@@ -1,0 +1,26 @@
+Hi
+
+I am new here and I have yet another beginners question:
+
+Is it possible to see some live activity in simulation as you change values?
+
+say for example that a insert a AND gate in a FBD and there are two inputs "A" and "B" and then an output "C".
+Then I start the softplc and load this application to it.
+
+I then mouse-click my inputs once and a small blue triangle appers next the the input names and the comment box says these inputs a set to TRUE .... then --- why doesn't my output automatically turn to TRUE ?
+
+Thanks
+Óli
+
+I have been reading the manual for V2.3 and playing with CoDeSys V3.3 ...
+regarding my question earlier about playing with values in online mode and seeing some changes occur as you change inputs ->
+is it mabe the case that I always have to press "write values / ctrl+F7" to see the affect of my input changes .... ?
+or is there any automatic "refreash" option?
+
+hope this question is not too unclear (newbie)
+
+Thanks
+Óli
+
+I have learned more how to use CoDeSys and no longer have this problem 
+

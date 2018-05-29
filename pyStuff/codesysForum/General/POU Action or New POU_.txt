@@ -1,0 +1,6 @@
+HelloA general question on Codesys....In teaching about PLC subroutines, what would be the best way to describe the use of adding an action to a PLC_PRG POU vs. creating new program POUs and calling them from PLC_PRG?I know that Actions (not the SFC kind) do not have their own variables, but how much of a difference would this make?  Any POU that is called by PLC_PRG could have variables passed to it if necessary, and could access the calling PLC_PRG's variables using PLC_PRG.variable_name.thanks
+
+an action can only be called by its master (here plc_prg) and a POU by anyone,an action is part of the POU and a Function or FB or POU are standalone things easier to maintain, and can be reused in other programs.I do use actions to keep the main program on one page.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

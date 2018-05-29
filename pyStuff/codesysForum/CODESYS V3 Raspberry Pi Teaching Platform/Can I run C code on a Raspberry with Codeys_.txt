@@ -1,0 +1,12 @@
+Hi!As I know, Codeys have a plug-in so the user can use C code to do code, instead of PLC code. But is that plug-in free, comes with the Raspberry Pi Codesys package or not free at all and don't come with the Raspberry Pi Codesys package?I going to do some system identification, math, adaptive control with the PLC.Because I don't think that PLC-structure text cannot do any adaptive control. That's why I think C programming is needed.https://books.google.se/books?id=L0m_CR ... LC&f=false
+
+Hi,no - this is not possible/supported by Raspberry Pi at the moment.BREdwin
+
+This can be implemented within ST, because most PID Loops are implemented  in pure  ST also. Though this a bit more complex, it is definatly doable I guess.For some open source examples of PIDLoop implementation, take a look at the OSCAT Basic library which is free charge and downloadable from within codesys store (free account needed). They also have a website and a forum.
+
+Hermsen wrote:This can be implemented within ST, because most PID Loops are implemented  in pure  ST also. Though this a bit more complex, it is definatly doable I guess.For some open source examples of PIDLoop implementation, take a look at the OSCAT Basic library which is free charge and downloadable from within codesys store (free account needed). They also have a website and a forum.Thanks! Then I have to use ST language.But Matrix library should also be included in Raspberry PI package.
+
+Please understand that Codesys is in platform independant. So, if you have a matrix library written in pure IEC with platform dependancies, it will run in  a wide variaty of targets. Stick to CAA and or Syslibs as much as possible.
+
+Hi.There are some funtionalities with matrix in sm3_basic library.You can do that you want with st. If code take a lot of time you can execute this code in an assinc task.
+

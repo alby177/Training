@@ -1,0 +1,6 @@
+The Pi ModbusTCPSlave Device seem to only support Holding and Input Registers but no Coils/Discrete Inputs?In the main Config I can set start addresses, but I don't have access in the IO mapping
+
+Normally there is an area for input register and an area for holding register, you can read the same area as discrete input and coil.For example if you read the first discrete input is the same as reading the first bit of the first input register.10001 = 30001 bit 010002 = 30001 bit 100001 = 40001 bit 000002 = 40001 bit 1inside the PLC (slave tcp):30001 = %QW0 and 10001 = %QX0.040001 = %IW0 and 00001 = %IX0.0
+
+Is this the same for ModBus Serial RTU?  I have a HMI that is reading (FC-1) and writing (FC-15) coils to a CoDeSys PLC that is set up as a ModBus Serial Slave device.  Only the Holding & Inputs registers show up in the I/O mapping.  So will the coil read and writes from the HMI master show up in the mapping in the same way it does for TCP...(i.e. 00001 =40001 bit 0)?Also...how would you then read and write the 30000 & 40000 registers?
+

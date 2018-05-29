@@ -1,0 +1,6 @@
+Hello,I like to create boot application with CodeSys V3Attachment:Sans .png but I always had this error:The "create a boot application" service is not implemented on the device.Attachment:Sans titre.png
+
+Hello,Are you using a demo version ? With some demo version (Wago for example) you can do anything you want (write a program, dowload into the PLC, ...) but you can't create a bootproject.For this action you have to buy the complete version.Best regardFrench version :Bonsoir,utilisez vous une version de démonstration du logiciel ? Avec certaine version de démonstration (Wago par exemple) on peut faire tout ce que l'on veut (écrire un programme, le charger dans l’automate, le faire fonctionner) mais il est impossible de créer un projet bootable. Pour cela il faut acheter la version complète.Cordialement.
+
+Hi,I would recommend to ask the plc manufacturer...BREdwiin
+

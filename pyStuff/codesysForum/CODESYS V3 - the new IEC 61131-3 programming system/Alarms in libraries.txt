@@ -1,0 +1,2 @@
+Is is possible to assign Alarm Configuration (or Alarm Class) to a function block and create a library with that settings?I would just like to have a function block with its own alarms integrated which can be easily reused.
+

@@ -1,0 +1,26 @@
+Hello.Has anyone done a web visualization in EasySoft Codesys? I can't get a grasp on it. I have made a visualization called PLC_VISU, I had every setting in Codesys right, but when I type 192.168.119.200/webvisu.htm in Chrome I get nothing but a low-resolution picture of an XC201 (the Moeller PLC I'm using) and a line saying "XSystem".I have read the instructions on how to set it and the only thing I have problems with is setting a Webserver. How do you do it? In the manual it says you have to write commands (such as "webserver.exe -s"), but WHERE do you type them? Also, I have a version of EasySoft Codesys that seems to be demo (as Licence Manager tells me) and I do not find any webserver.exe or webserver_config.xml in the directory C:\Program Files\Moeller Software\easy Soft CoDeSys V2.3.9\easy Soft CoDeSys\Visu. If I type "filedir" in Codesys>PLC Browser, I can see that there are those 2 files.Another 2 questions, off-topic.How is it possible to access the files in the PLC (XC-CPU201-XV) directly, like explorer or smth like that?And, when you type 192.168.119.200 in your browser, shouldn't you get a menu, to configure the webserver and access files? Another way put, shouldn't I see a ftp and a menu?Thank you, kindly, in advance.
+
+_________________Lucian
+
+I got it.It seems that none of the things I mentioned matters. I was just omitting to specify the port :8080. It worked smoothly with http://192.168.119.200:8080/webvisu.htm.But, as I have seen, it works rather slowly. I have 2 visualizations (PLC_VISU and VISU1) and a button in the first one that _ to the other when pressed. Actually, I command some drivers for 2 step motors in the first one (using several parameters and then press "Execute") and I simulate the motors moving in VISU1. After executing a routine configured, I press the button for the 2nd visualization and, by the time it shows up, the movement is finished and I see nothing.Is there some way to make it faster? Or, am I not implementing this idea right?And, by the way, the last 2 questions from my post above remain a puzzle for me.Thanks again.
+
+_________________Lucian
+
+See that you are running a late version of java, is the webvisualisation button on in resources, and yes it is slow switching, however if you stay on same page it is faster.The webvisu is only updated in every cycle.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thank you very much for your reply, Paul.Yes, I have the latest version of Java and the webvisualization is enabled. Too bad it is slow switching, but I will create an instance of the 2nd visualization in PLC_VISU and use a "Hide" button, to simulate the same thing.However, do you have any idea how can I access the PLC, like Windows Explorer or FTP? I can't find anything in the documentation files from Moeller, though it is possible I haven't searched enough.
+
+_________________Lucian
+
+sure you can just type in the ip number like 192.168.1.102 or something you have set it on.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+HelloTo access the files in the PLC (XC-CPU201-XV) directly, you must use a FTP Client like Filezilla Client. With this soft you can acces different memories of the XC200 PLC.You just have to connect as "anonymous". 
+
+Thank you very much, JAPIB. It worked!
+
+_________________Lucian
+

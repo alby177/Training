@@ -1,0 +1,10 @@
+see the sample as draw in page 3-3.
+a "off" at last. (Network 0004)
+when I input the "off"
+CoDeSys open a Dialog "Declare Variable"
+ask me to input some info....
+but I can't find any description in the Guide (about the word "off")
+there are 1 error(s) and 1warning(s) when compile
+
+how can I continue the sample...??
+

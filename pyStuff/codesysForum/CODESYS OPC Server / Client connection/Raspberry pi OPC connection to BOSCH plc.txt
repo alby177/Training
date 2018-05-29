@@ -1,0 +1,4 @@
+Hi,not sure if this is the correct location to post.I have a Bosch Rexroth PLC L45 which i program in codesys. The PLC has inbuilt OPC DA server. I need to connect it to a raspberry pi running python (so the pi is the OPC client). Does anyone have experience with any ready-built libraries i can use on the pi?I found http://openopc.sourceforge.net/about.html but unsure if this is what i need.Many Thanks
+
+Hi Allfound another way. On my plc i added a modbus TCP slave device using codesys. I then found some great software at https://code.google.com/p/pymodbus/which enables "full Modbus protocol implementation" written in python. This runs well on my pi.Thanks
+

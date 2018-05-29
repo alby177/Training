@@ -1,0 +1,4 @@
+Hello,I want to compare some arrays but what I'm doing is not working.Here is my code: Code:VAR      i               : INT;      xValueChanged              : BOOL;   xInitialStatusSensor      : ARRAY [0..5] OF BOOL := [TRUE, FALSE , TRUE, FALSE, FALSE];   xRunTimeStatusSensor      : ARRAY [0..5] OF BOOL := [TRUE, FALSE , FAlSE, FALSE, FALSE];END_VARFOR i:= 0 TO 5 DO      IF xInitialStatusSensor[i] <> xRunTimeStatusSensor[i]  THEN               xValueChanged := TRUE;   ELSE               xValueChanged := FALSE;         END_IFEND_FORAny idea?Thanks in advanced
+
+In the last cycle of your FOR loop the result is determined.Maybe better to use e.g.:Code:xValueChanged := FALSE;FOR i:= 0 TO 5 DO   IF xInitialStatusSensor[i] <> xRunTimeStatusSensor[i]  THEN      xValueChanged := TRUE;     // EXIT optionally    END_IFEND_FOR
+

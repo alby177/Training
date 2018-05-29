@@ -1,0 +1,4 @@
+Hello:is it not possible to use .gif or something similar in visualization?thanks.
+
+Hi,only by using the browser element.BREdwin
+

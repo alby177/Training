@@ -1,0 +1,12 @@
+Hello,I have a small problem, whose solution most likely will seem ridiculously easy to me once it is solved.I'm trying to use the pre-compiler command "define" to define some Numbers as Text for frequent use in CoDeSys V3.5.The CoDeSys help tells me, that it should look like this:{define <identifier> <string>}I tried to write the following lines in the define window right below the END_VAR command:{define HELLO 123}{define <HELLO> <123>}{define HELLO "123"}But nothing works. Does anybody know how it's done or what I am missing?Thank you very much!
+
+I think you misunderstood the meaning of defines in CODESYS.I think you want to create a constant for this:Code:VAR CONSTANT   HELLO : INT := 123;END_VAR
+
+Hmm, that might be. I thought defines in CoDeSys are just the same as they are in C.When I declare a constant variable in C, this variable really exists, meaning memory gets allocated for it, but a define just gets replaced with its value before compiling.Thought this should be possible in every language.
+
+TimvH's post is correct.  You can tell the compiler if you want to keep the variable existing, or if you want to replace with constants.  See the Project options area - you will find it there.  Sometimes it is nice to keep the variable for online debugging (you can't change it, but it "speaks" to you like "MAX_ARRAY_SIZE") and most hardware platforms running CoDeSys do not really run out of memory space (like often found in embedded systems running C code).
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Ahh, found the option and it was already active. Now this makes all sense! ^^You two really helped me out, thank you very much!
+

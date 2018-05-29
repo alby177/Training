@@ -1,0 +1,22 @@
+Hi,could you please help me about cycle time for PID_FIXCYCLE. What does it means for the loop and where should I take it from?thanks in advancePape
+
+You have to insert the cycle time of the task from which you are calling pid_fixcycle instance.You can go to task manager and see which is the task cycle and insert it as a constant.Or you can ask at the actual task via Iectaskmanager library ( the library name could not be absolutelly correct)
+
+Thanks Josep for your help. I am regulating temperature which is slow.My task (Regulation) is part of Main task (see p1). Is the average cycle time as shown on Task configuration - Monitor (see p2) that I have to put for the PID_fixcycle?Thanks againPape
+
+Hi.It is not named cycle task. Is named task interval. In your case 4000us
+
+Thanks Josep again,Due to I also have digital inputs, I keep this task (at 4000us) for them and put a new one only dedicated to temperature regulation at (100ms) but the output of the PID was very slow. I use ziegler & Nichols method to have Kp, Tn and Tv=0.  I tried to increase this cycle time but facing overshooting. How to solve that? Can someone have a look using teamviewer to help? thanksPape
+
+I dont have experience in temperature regulation, but changing task interval wont solve your problem (at least meantime the magnitud order of your system time constant be bigger than task interval).If you have overshoot cold be an integral or proportional problem. If it reacts slow and has overshootint seems small kp and big ki.Try to limit integral response.Pid has as input ki or Ti?Ki is multiplied by Kp inside pid?
+
+Hi Josep,This is calcs I did:Kp = (0,9 * ζ) / (td *G)Tn = 3,33 * tdwhere Kp: P coef.ζ: time constant in sec. at (63.2%)td: time delay in sec. at (2%)G: process gainTn: integral time in sec.Should I manipulate Tn to adapt codesys PID formula?thanks,Pape
+
+See:Units of G. (Kp will have G units inverted)As I could see from the pid it will be: kp(1+1/Tn). Tn seems correct.This Pid seems that cant limit inyegral term. (Oscat library has pid in which you could limit integral term).You could do:Put Tn at high value  (1000000 s). It will disable inyegral term.Increase kp since you see overshoot.After that reduce tn since the system atach the desired temperature.
+
+Hi Josep,I tried your instructions and this is what I have got:I used CTRL_PID from OSCAT.My output card varies from 0 to 65534 (16bit).On CTRL_PID I set LL=0, LH=100 and use LIN_TRAFO to scale it.Results: I have noise all time from temp sensor that make the output fluctuating. I used SUP=0.5 but not big change. I also put LH=10000, the noise is reduced a lot but controller output is very slow in this case.Do you have an idea what I am doing wrong?thanks,Pape
+
+Hi:First of all. I d try to work with SI units. For example: anOut at 12000 means 100V over the resistance. Working in PID with V and °C independices your system from the converters used.Sup is not a filter is a dead band and only works when the error is nearest to 0. Previous at PID use a LowPass filter in feedback. As your system response is slow A cut frequency of 10Hz would have to work. If your feedback has noise after this filter you have somethibg wrong reading temperature.I would work with ft_pid. It has anti wind up in integral.One more question: When you calculate G for Ziegler Nichols you have used temperature(in digital counts)/Volts or Amps (in digital counts)?.
+
+Hi Josep,Thanks a lot for your help.It finally works. I had error on my input scaling. That's why your instructions didn't work the first time.The lowpass filter solved the noise. I am using 4-20mA. With Ziegler Nichols I use the temp (C) or the WORD but in percent. (G=%delta temp/ %delta CV ) in manual mode.look the results attachedthanks againPape
+

@@ -1,0 +1,8 @@
+Here is log..1438353000: Cmp=CmpChannelServer, Class=16, Error=0, Info=0, pszInfo= Channel <channelid>12</channelid> closed by request, <error>0</error>ooops... this runtime was built for raspberry pi (-21, 0x00000BB8, 0xFFFFFFFB)PlcStartRasPI[355]: ERROR: Ptrace CONT FAILED (errno 3 No such process)PlcStartRasPI[361]: Parent killall time stop with thiss error? what it can be? i use image with rt patch on Raspberry Pi B+Thank you.
+
+Hi,which sd Image is it or is this your own made patch?BREdwin
+
+I use this image http://docs.emlid.com/Downloads/Real-time-Linux-RPi1/ ... now again get clear image and install 3.5.7 package ... look like work fine now..   But what dose ooops... this runtime was built for raspberry pi message mean? It is in runtime blocked only for Pi board?
+
+Hi,yes this should work only on Pi boards.BREdwin
+

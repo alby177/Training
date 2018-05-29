@@ -1,0 +1,8 @@
+Good evening,I am working on an application that loads and writes information on quite big files, so while the loading and writing is being held I would like to show a "loading" image. Is it possible to add a ".gif" animation to do this?If anybody has any other idea about this, I am open minded!Thanks in advance
+
+yes , however i would use the visible switch for this.just put it visible while loading. to prevent lots of communication.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+I use it as you told me but when I download it and run the application the gif does not move.Thanks a lot!
+

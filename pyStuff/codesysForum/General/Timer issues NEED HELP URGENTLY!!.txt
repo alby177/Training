@@ -1,0 +1,11 @@
+i am using ladder to create my program with basic functions. 
+12 OR inputs producing 1 output.
+how do i use timer to hold my output if any of the 12 inputs is true?
+
+I am not sure if attached Project solves your problem.
+Project is straight forward and doesn't need any explanation.
+
+Greets,
+
+RikeR
+

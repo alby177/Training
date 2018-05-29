@@ -1,0 +1,8 @@
+Hello, I search if there is any simple way to change the type of an existing POUI have programmed a SFC as an FB (in order to have it persistent), but now it's getting quite big and I have to change the code from FB to PRG.Is there anyway to export the code from my FB module to a PRG ? (it is very simple with a text FB just copy and paste in a PRG), but I don't know how to do it with a SFC POU.thank you very muchJacques
+
+yes you can copy paste your SFC, select all you want except the init, and the jumpwith shift.watch the inputs and outputs as this is impossible in a program, and other vars and actions.however better is to have subfunction blocks when it grows too big, just have another SFC called by your first SFC.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thank you very much shooter, your suggestion saves me a lot of timemerry christmas to you!
+

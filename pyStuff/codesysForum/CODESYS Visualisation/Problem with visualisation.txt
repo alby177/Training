@@ -1,0 +1,18 @@
+Hello,
+I have a problem with visualisation, it's a basic thing, I try to visualize a variable ( wich is a byte type), but  without success.
+I put the name of the variable in Textdispaly field in Variables  category.
+is it the right way to to that?
+Thanks
+
+You also have to have an entry in the Content field in the text catagory.  This is a format specifier similar to what is used in printf() function in C.
+
+So, to display your byte as a base 10 number use %d, or to display it in hex, use %x
+
+Hope this makes sense.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+thanks ndzied1 it works well now, I can visualize all variables 
+

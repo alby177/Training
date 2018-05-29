@@ -1,0 +1,18 @@
+Good afternoon,I am trying to drive 2 stepper motor with Beckhoff EL2521 pulse generators.If I scan ethercat bus, codesys find EK1100 coupler and 2 EL2521 terminals, but don´t use softmotion drive. If I go online and run there isn´t any error. The Ethercat bus is running.If I manually insert EK1100 coupler and 2 EL2521, I can choice EL2521 terminal with softmotion drive but when I go online and run my proyect there is a configuration error and ethercat  terminals don´t work.  How can I use EL2521 terminals with softmotion drivers?thanks, regards, Iban
+
+Hi,you need to post the errors otherwise we could not help.Please send the plclog... guess you will see there the error reason.BREdwin
+
+Hello, How can I get plclog?How can I upload a Image?thanks,Ivan
+
+Hello,I revised online help, I attach you photothanks regards,Iban
+
+I attach you some photosthanks, regards, Ivan
+
+Hi,I think the problem is caused by using Control Win.This plc is not realtime capable. The SoftMotion drivers need an activated distributed clock setting.Now you have two options: Switch to Control RTE or any other realtime capable plc type this is the best solitionor wait for my description ( i need to check) how to work around it with Control Win (not sure if this works reliable maybe more for testing pupose)This does only work with this ELxxxx kombination... not with other drives.BR Edwin
+
+Good aftenoon,I have tested using Raspberry pi and is in green. No configuration error.I attach photo. I don´t test a stepper motor still  but at least there isn´t configuration error.I haven´t option of RTE in my installation of codesys, Have I to download from codesys store RTE software and install?I will like use my PC as PLC.thanks, regardsIban
+
+Hi,you Control RTE from the CODESYS store.Sure with Pi it will work, if not you need to a apply a rt_preemt realtime patch.BREdwin
+
+Hello,I am going to testThnaks
+

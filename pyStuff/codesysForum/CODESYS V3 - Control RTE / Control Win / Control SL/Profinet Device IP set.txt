@@ -1,0 +1,4 @@
+Hi My name is Steven.OHI’m using Profinet Device (Ethernet) on My codesys RTE(x86). I have a question. I want to Set IP of my Codesys RET using external tool.How can I change IP without change of my Project?  If I use this function, do I need change PNdevice.data ?Where is PNDevice.Data?  Can I change the file ? My Environment	Windows embedded standard 7	Codesys RTE 3.5.11 Thanks a lot for your great help.Best Regards.
+
+Hi,there are some open points which are open to implement to makethis possible.At the moment you need to set it manually.There is achance to have it on for SP12 release.BREdwin
+

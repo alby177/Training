@@ -1,0 +1,6 @@
+Hi,I wanted to change my visualization theme. It worked fine for everything except the buttons. Any suggestions? I am running Codesys on a Raspberry Pi 3.Attachment:Button problem.JPGGreetingsAndreas
+
+Hi,I would recommend to check if these Images which you add to the the Imagepool are downloaded to the PI.(on project download -> use the CODESYS Filebrowser to check if the files are located in /PlcLogic/visu)Somtimes large and lower case in the filename sometimes cause these Problems+ check the plc loggerBREdwin
+
+Hi,I switched to one of the standard Codesys styles (white style). In the filebrowser I couldnt find the button elements of the white visu.The log shows the following:Attachment:VisuLog.JPG
+

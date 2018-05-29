@@ -1,0 +1,2 @@
+Hello,i am trying using a union of function block. I had some trouble accessing a function block (among the union)  using pointer.I wonder if this is possible to use a union of function block (as it is not in the IEC 61131 standard)...Thank in advance for any helpSébastien
+

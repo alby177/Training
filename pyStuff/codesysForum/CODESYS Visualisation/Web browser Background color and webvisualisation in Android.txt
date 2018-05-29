@@ -1,0 +1,2 @@
+I've two questions about web visualization:- I found how to change the background color o image in Codesys 3.5 SP8 P2 Visualization area size but when you open this visualization in a web browser, color outside this defined area is always white. Is it possible to change this browser background color, for example, to black?- In Chrome, Safari, Internet explorer is working pretty well but in Android Native Web browser, when you tap over some button, for example, it seems to bounce two times.Regards,Pep
+

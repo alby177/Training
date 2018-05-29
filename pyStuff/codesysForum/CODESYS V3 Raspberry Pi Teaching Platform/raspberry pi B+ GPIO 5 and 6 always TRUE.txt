@@ -1,0 +1,10 @@
+Dear all,in my project I'm using Raspberry PI B+. I need quite a number of inputs. Everything is working, but not GPIO 5 and 6. Both are always TRUE. (See pictures) What is wrong with my programming?Than you very much for your reply.Joachim
+
+How have you connected the inputs to the GPIO's?
+
+Hi ZorAxe,I have all inputs connected to the GPIO's. It seems to me that GPIO's 4, 5, and 6 are used for other things. Therefore I changed my input signals to GPIO 9 and 10 and it is working now.Thank you very much for your support.Best RegardsJoachim
+
+JJoe wrote:Hi ZorAxe,I have all inputs connected to the GPIO's. It seems to me that GPIO's 4, 5, and 6 are used for other things. Therefore I changed my input signals to GPIO 9 and 10 and it is working now.Thank you very much for your support.Best RegardsJoachimJoachim,Could you share with me what your physical wiring looks like? I am having trouble getting inputs working with CodeSys. Do you have resistors in your circuit? Did you wire your inputs to GND or to 3.3V?Thanks in advance,Krys
+
+Finally got my inputs working last night, here is the wiring diagram that I used to make it work.
+

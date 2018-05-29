@@ -1,0 +1,4 @@
+Wibu Systems and 3S-Smart Software Solutions will host a free-of-charge webinar entitled: CodeMeter secures CODESYS applications, on Tuesday, October 15th.Find out how you can use the Wibu CodeMeter technology integrated in CODESYS toprotect your CODESYS projects (source code) against unauthorized access or product piracy.control the usage of your application upon boot or at runtime. protect sensitive application data. implement usage control for your plug-ins and libraries.More information and an online registration form can be found at http://www.wibu.com/us/codemeter-secures-codesys-applications2.html
+
+_________________Roland WagnerModerator
+

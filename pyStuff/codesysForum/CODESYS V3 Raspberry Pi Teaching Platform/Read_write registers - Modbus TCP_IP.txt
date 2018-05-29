@@ -1,0 +1,2 @@
+Hi,I connected via Modbus TCP/IP to WAGO PLC. I am using Modbus Master simulator and I've got problem with reading coils. I can't see any changes when I query registers or while using another simulator it shows me error (pic)   Have you ever had such error during reading or writing?
+

@@ -1,0 +1,8 @@
+Can anyone please explain the purpose of external file in CoDeSys3.Can we use this file to pass parameters to the project for configration.
+
+Hi,For examle you could download pdf files to the plc and show them in the visualisation or if it is a pc based controlShow them on your target.Sure maybe if you download inifiles you could read them for examle by inifile reader ..BREdwin
+
+Edwin Schwellinger wrote:Hi,For examle you could download pdf files to the plc and show them in the visualisation or if it is a pc based controlShow them on your target.Sure maybe if you download inifiles you could read them for examle by inifile reader ..BREdwinHi Edwin,Thanks for your reply.I am trying to download a csv file with some values and trying to read them in CoDeSys using SysFileRead but can't read the file.1. First issue is that I am not sure if the file is really downloaded onto the PLC as there is no indication2. Second issue is if it is downloaded what's the location/path of file?
+
+Hi,which plc are you using (it depends on the runtime version too)You could check with the CODESYS file browser,the file will be downloaded runtime Directory /Plclogic/ApplicationBREdwin
+

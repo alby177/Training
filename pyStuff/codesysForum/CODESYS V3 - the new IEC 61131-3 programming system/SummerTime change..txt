@@ -1,0 +1,4 @@
+Hello!! I'm a newie, so.. Don't think I'm very stupid!!.   One cuestion... I'm doing a program that activates an exit several times in a day, at 7 oclock, 9'30... etc, etc... The problem comes with the summer/winter changing time. To take into account this, i want to use DST function in Oscat.lib library. but it needs a DT tag that i don't know how to get. TO make the schedule i've used a CurTimeEx function that provides me a SystemTimeDate tag, but I don'r know how to transform this in DT tag for the DST function. Any help?Thank you!.
+
+Eureka!The function Set_DT gives you a DT tag if you give it all the elements of a SystemDateTime Tag (TagName.Year, TagName.Month...). Thanks anyway for your reads!!.
+

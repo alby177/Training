@@ -1,0 +1,6 @@
+Hi,I am using V2.3 and yesterday had to re-install windows 10.  Since then I am missing the 'open from plc' selection button - see attached file.  I have tried different versions of V2.3 as well as different screen resolutions and text sizing, but all to no avail. Everything was working fine before re-installing windows so I am assuming there are some missing C++ files or equivalent.Any help would be appreciated.Thanks,Paul.
+
+can't you downgrade to Win7 or at least run a VM?
+
+Many thanks - it works ok with a VM, but it had worked for more than a year with Windows 10 without issue.  It was only after needing to re-install  - essentially an 'out of the box' re-install due to Windows crashing during an update - that the radio button disappeared.Will continue with the VM although it is not as convenient due to screen resolution issues (I am using a Microsoft Surface Book and the screen resolution is not always good at handling the older non-Microsoft apps)
+

@@ -1,0 +1,2 @@
+Hello, I created an external library from a C source for C166,  and i met some problem,1. I had generated the library.lib, the library.hex, and the library.obj.2. Copy the object file and the library into the CoDeSys library directory.3. Link the library into my CoDeSys application program.4. Build the application project, there is no error.5.1. On Online mode, with command "Online -> Login ",         Error Message Show :   Unresolved external POUs:5.2 On Simulation mode, with command "Online -> Login",        The function return mistake value.So please help me , Sir.
+

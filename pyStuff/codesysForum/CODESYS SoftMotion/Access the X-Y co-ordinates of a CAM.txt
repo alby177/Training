@@ -1,0 +1,4 @@
+HelloIs it possible to get to the CAM points from within the program?ThanksPaul
+
+Maybe I should explain.I'd like to mathematically place cam points during runtime. I can declare a cam in IDE; I just want to move the points at runtime.Thank you
+

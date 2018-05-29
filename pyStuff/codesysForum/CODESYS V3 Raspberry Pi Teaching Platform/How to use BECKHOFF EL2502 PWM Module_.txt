@@ -1,0 +1,8 @@
+Hi,    I need to use digital PWM signal, the current selection is Beckhoff EL2502 2ch PWM module. I added a device description file, but there are only 2 channels in IO MAPPING to adjust the duty option and no option to adjust the frequency. Attachment:1.png    I have consulted the documentation and the frequency needs to be written in the CoE cycle. I'm not quite able to understand this problem. I see EL2502 's startup Parameters with the PWM settings option to change the frequency, but I need to change the frequency with the requirements in the PLC. I suppose I could be configuring the Expert process data in EK1100. I don't quite understand how to relate it to a variable. Attachment:2.png    What I want to do is similar to Schneider's FB Attachment:3.png     EL2502 Module Documents at https://www.beckhoff.com/english/ethercat/el2502.htm    Thank you.
+
+It looks like this setting can be used.I don't have a module test yet, if someone has used it, please tell me if I can use it. Does it continue to output?Thanks.Attachment:1.png
+
+Hi,either map it to the PDO's or send the SDO from your application by SDO send.http://store.codesys.com/ethercat-example.htmlBREdwin
+
+Edwin Schwellinger wrote:Hi,either map it to the PDO's or send the SDO from your application by SDO send.http://store.codesys.com/ethercat-example.htmlBREdwinThank you very much.
+

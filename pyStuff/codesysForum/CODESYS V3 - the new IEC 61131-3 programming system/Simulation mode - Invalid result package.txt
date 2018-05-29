@@ -1,0 +1,2 @@
+When I go into simulation mode and login I'm getting this errorClicking details shows this:When I try a clean/clean all and try to login in simulation mode I get this error:I'm using Festo's flavor of CodeSys V3.5 SP4 Patch 1. Has anyone else ran into this problem?
+

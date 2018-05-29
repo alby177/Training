@@ -1,0 +1,28 @@
+Hi,there is a new Version available:http://store.codesys.com/codesys-contro ... ry-pi.htmlinclude new Runtime Version on Pi V3.5.4.10 and additional examples in CODESYS.New Features on this version:1. GPIO's are supported2. RC Servo Example with SoftMotion3. Analog Input / I2C Example (MCP3008Temperature)Additional you see now in c:\Users\<USER>\CODESYS Control for Raspberry PI\1.1.0.0\Example Device Descriptions and Exsmaple Libraries for those who want to implement own devices:MCP3008.devdesc.xml SRF02.devdesc.xml I2C_AdafruitPWM.library I2C_Gyroscopes.library I2C_SRF02.library IoDrvGPIO.library IoDrvPiFace.library SM3_Drive_Servo.library SPI_MCP3008.library SPI_PiFace.library How to install the new version / update an existing ?For those how have already the 1.0.0.0 Version:On CODESYS Packagemanager 'search updates' - click on update in PackageManager in CODESYS.As usually for the Pi part, there is additional a Debian package available ( ->on request on support@codesys.com)which give you the posibility to install the CODESYS Runtime on an existing Pi image. (or update an existing Image, this is needed)BR3S Support
+
+Thank you for the great Job.unfortunaly, an update via package manager has some connection problem.greetingsDeborah
+
+Hi,we try to fix that a.s.a.p sorry for that.BREdwin
+
+With version 1.1.0.0 is it required to update the SD card for the Raspberry Pi?If so, can this be done without re-flashing the entire card.  For instance, I have installed avahi on my Pi to allow use of a .local domain name for finding the device when it is set to DHCP for the ip address.I have also installed a different browser to allow for local viewing of visualizations.If I re-flash the card I will have to set these things up again...Thanks,
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+One more problem not that I have updated the Raspberry Pi Package (and also removed and re-installed).I get all kinds of errors related to GPIO when I build.  
+
+_________________nOrM=====nOrM = Norman Dziedzic Jr.
+
+Hi,i've no glue what happens, never seen this.Does this happen on your existing projects or on these examples from us too?"c:\Users\<yourUsername>\CODESYS Control for Raspberry PI\1.1.0.0\GPIO.project" Could you send a projectarchive of the project to support@codesys.com?BREdwin
+
+I have this same issue as well. Here's my process:1. Download latest version of Codesys.2. Install latest version of Codesys on fresh VM (no previous Codesys to conflict with)3. Install Raspberry Pi v1.1 from Codesys4. Create new Raspberry Pi project5. Try to build fresh project6. Fail due to dependency issues
+
+Hi,ok now I see this too, we need to investigate / solve this, but the workaround is to do a 'clean all' for this solves the problem, could you please verify this?BREdwin
+
+That did work for me.Thank You
+
+_________________nOrM=====nOrM = Norman Dziedzic Jr.
+
+Working for me now as well.
+

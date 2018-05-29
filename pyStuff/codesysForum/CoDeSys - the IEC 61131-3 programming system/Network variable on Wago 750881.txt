@@ -1,0 +1,6 @@
+HelloI am using a Wago controller 750881 with library NetVarUdp_LIB_V23.libI have big difficulties with network variables function:Having 1 controller as producer and 20 controllers as consumer, I see that only part of the consumers are refreshed with the correct values. :First of all I would like to know if I am using the correct library. On previous projects I was using the same features and library with controller 750841 and did not encounter such problems.Is it possible that AM library is not compatible with 750881?
+
+it is depending on the software version you are using.check with wago if compatible.or give me the version you are running and the serial on you 881 and i will ask office.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,14 @@
+I want to draw a polygon with 4 points, with my codeI have some trouble, here si my prodedure.Define like that:Code:VAR CONSTANT      iCount : INT:=4; END_VARVAR   pPoints : POINTER TO ARRAY[1..iCount] OF VisuElems.VisuStructPoint; END_VARCode:Code://Fill some data to pointerpPoints:=ADR(aIndex5004); Then I draw a polygon with 4 random points, enter in fields:Array of points: PLC_PRG.Graf_dizaFB.pPoints^Number of points: PLC_PRG.Graf_dizaFB.iCountPLC>Login and nothing realy happens...? pPoints array y and x is filled with random numbers eg.from 40 to 100. The polygon dissapears, sometimes I get error: paint buffer memory too low.What do I do wrong?regards,Alex
+
+Code:VAR   aVisuStructPoints : ARRAY[0..4] OF visuElems.VisuStructPoint;   pVisuStructPoints : POINTER TO visuElems.VisuStructPoint;END_VARCode:aVisuStructPoints[0].iX := 10;aVisuStructPoints[0].iY := 20;aVisuStructPoints[1].iX := 20;aVisuStructPoints[1].iY := 20;aVisuStructPoints[2].iX := 10;aVisuStructPoints[2].iY := 40;aVisuStructPoints[3].iX := 60;aVisuStructPoints[3].iY := 20;aVisuStructPoints[4].iX := 80;aVisuStructPoints[4].iY := 20;pVisuStructPoints := ADR(aVisuStructPoints);Then in the visualization refer to <instance name of FB or PRG>.pVisuStructPointsIn the number select 5 (for this example)
+
+TimvH it does not work??
+
+I used V3.5.5.1 with the Control Win. This works fine:Attachment:DynamicPolyline.jpg
+
+I copy-paste it from you TimvH...Well i do not get it, it simply just don't work with me I also created FRESH project  with control WinV3 (I'm using 3.5.4.2). Online>Run (not SIMULATE!). I get this: (attached picture)Ok,s something wrong with me or with Codesys? I'm loosing my head because of this!Any other suggestions, I'm going to instal 3.5.5.1. If won't work, I will... better not to say.   regards, Alex
+
+Well, YES! It works with 3.5.5.1.  Question is, if it will work with my target??? I have win RTE 3.5.2.1, on xp embb.I'm going to make some test during day...Thank you TimvH for your efforts, I appreciate!regards,Alex
+
+YES it works with IDE 3.5.5.1 on RTE 3.5.2.1 platform. I created fresh new project in 3.5.5.1 and copied my existing project from 3.5.4.2 into. works like a charm, and many other troubles are gone.I specialy like new function Refactornig, it's just great.Thanks again TimvH,regards,Aleksander
+

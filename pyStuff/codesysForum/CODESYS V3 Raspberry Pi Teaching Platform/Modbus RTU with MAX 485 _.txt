@@ -1,0 +1,6 @@
+HelloI have a "big" Problem. I would like to use the MAX485 for Modbus RTU on the UART Port (GPIO14 and 15). Everything is fine but for the MAX485 I need to change the direction (transmit or receive) with a pin.If this GPIO pin is high i can send through the MAX485. If this GPIO Pin is low than the MAX485 can receive.Now i have the Problem that can´t get any direction variable from the Modbus library to toggle this Pin so im stuck at the moment.Has someone maybe any ideaGreetings Christoph
+
+Hello Christoph,I'm not really sure, but using MAX 485 on the tty is not really possible without having handshake pins to give the direction. To workaround this by a kind of own implemented mechanism will not lead to a reliable solution.I would recommend to use a ready to use USB to RS485 Adapter instead implement this with a huge effort.Maybe I am totally wrong and someone could give us a hint how to solve this with a MAX485 circuit.Best RegardsEdwin
+
+Hi Christoph,maybe this links give more information at least an better explanation:http://www.raspberrypi.org/forums/viewt ... 85#p514164https://github.com/mholling/rpirtsctsRegardsEdwin
+

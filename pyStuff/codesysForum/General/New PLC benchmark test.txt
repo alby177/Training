@@ -1,0 +1,21 @@
+  How about 1000 IL instructions execution time?
+Do forget it!
+
+There is more effective and pleasant test now. Simply run the CoDeSys Tetris on your PLC, 'work' (enjoy) one hour and see the max score.  It gives complex estimation about you and your PLC  
+
+
+
+  Download page
+
+My best congratulations with 'April Fool's Day' for all colleagues!  
+Igor Petrov
+April 1 / 2006
+
+__________________IP_
+
+Hey,
+
+this my personal HighScore (already generated in April) and played without tricks!
+
+_________________Roland WagnerModerator
+

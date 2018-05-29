@@ -1,0 +1,14 @@
+Hi!Codesys has a lot of libraries for Raspberry PI - PWM, ADC and much more. But I wonder if there is a library for the 7" LCD touch screen?It would be great if WebVisu can handle this:
+
+It can, Google raspberry pi chromium kiosk mode. It runs the web interface. I've done that a few times. You may be able to use the loopback interface to make a generic image.But a proper target visu would be nice, chromium is not that straight forward to set up.Sent from my SM-G935F using Tapatalk
+
+teichhei wrote:It can, Google raspberry pi chromium kiosk mode. It runs the web interface. I've done that a few times. You may be able to use the loopback interface to make a generic image.But a proper target visu would be nice, chromium is not that straight forward to set up.Sent from my SM-G935F using TapatalkI taket that as a NO. There is ny library yet.Because I want just it to be plug and play.
+
+I don't believe there will ever be one. Because that 7" screen is driven by the Pi. If you set it all up to point to a specific start screen that you always use in projects, you can take an image of the whole thing and there you go plug and play. Sent from my SM-G935F using Tapatalk
+
+teichhei wrote:I don't believe there will ever be one. Because that 7" screen is driven by the Pi. If you set it all up to point to a specific start screen that you always use in projects, you can take an image of the whole thing and there you go plug and play. Sent from my SM-G935F using TapatalkOK.  So there is not way to have a LCD for the PI in codesys ?
+
+Classic Line LCD is a different story, but that's not going to show the webvisu. You could drive that through the GPIO. But it's a pain and it can't display much. The 7" touch works OK in Kiosk mode but I went away from that for commercial solutions because it's too hard for the average maintenance person. Sent from my SM-G935F using Tapatalk
+
+teichhei wrote:Classic Line LCD is a different story, but that's not going to show the webvisu. You could drive that through the GPIO. But it's a pain and it can't display much. The 7" touch works OK in Kiosk mode but I went away from that for commercial solutions because it's too hard for the average maintenance person. Sent from my SM-G935F using TapatalkThank you. There is not avaible yet.
+

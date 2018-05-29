@@ -1,0 +1,8 @@
+How to use raspberry pi 2/B GPIO18 as PWM output to control servo? How to config PWM? Don't use I2c, just gpio12 or  gpio13 or gpio18 or gpio19?
+
+Good morning huiliyi, I am having the same issues. I am trying to control a servo futaba s3003 using codesys and raspbi. I have the code in python but I dont know if I can use it on codesys or if I have to do something more. It is very simple, just a position control.
+
+Hi,always possible is to call  the cmd by the IEC application:viewtopic.php?f=23&t=6247&p=12699#p12711Maybe not very nice but will work.->execute this in an own Task please and set GPIO18 as unused in the CODESYS configurationBREdwin
+
+Good morning Mr. Schwellinger, thanks for helping us, I tried to open the DeltaRobot project but I got more than 500 errors and a series of messages like "the current version of your plc does not support ...". Am I missing something?
+

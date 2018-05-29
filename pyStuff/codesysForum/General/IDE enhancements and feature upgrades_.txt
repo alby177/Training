@@ -1,0 +1,17 @@
+What is 3s position on the continuation of development for CoDeSys V2.3 since V3 is starting to become production ready on a wider scale? The reason I ask is I don't see any comments from end users of the V2.3 IDE looking for enhancements or features? I haven't seen a new development feature in V2.3 in over 3 years. Are end users satisfied with the IDE? Do any end users have enhancements or feature requests? Shouldn't there be a forum for this? How are the end users needs addressed? Is there any way to have a window into the software development life cycle of the product we use on a daily basis? It would be nice to see what the future holds.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+Hello,
+
+in fact almost all new developments and improvements are nowadays implemented in CoDeSys V3. 3S will maintain CoDeSys V2.3 during the next years and even makes single developments as well for this version, but the focus concerning new features is on CoDeSys V3.
+
+In fact the V2.3 IDE is wideley accepted (even if we know, that there could be a lot of more features   ). Due to the fact that there were no major improvements in CoDeSys V2.3 the system is very stable.
+Of course we develop a lot of new things, but as CoDeSys V3 gives us much more possibilities and is anyway the system for the future the developments are made for V3.
+
+Of course we are interested in end users requests - you are the ones really working with the tool!
+The best way to handle those requests is to send them to the support team. There they will be put in the data base as so called change requests.
+
+_________________Roland WagnerModerator
+

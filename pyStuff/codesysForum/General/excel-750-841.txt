@@ -1,0 +1,12 @@
+I want to do a connection between excel and an automate 750-841. 
+Now, I can't do that, but the problem is the next.  
+I want that the 750-841, is disconnected of a PC, but to the week to unload the data to excel or txt, these data are inputs and outputs
+I need a demo me of a program
+Thank you for your response and excuse me for my level of english.
+
+Please find a ZIP with an example for DDE attached. Unfortunately it is available only in German   .
+
+Nevertheless I hope you will come along.
+
+_________________Roland WagnerModerator
+

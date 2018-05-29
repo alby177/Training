@@ -1,0 +1,4 @@
+Hi,I use Codesys V3.5 SP8 Patch 2.With trace recorder I write a file in .csv with the values of two variables and then use it in Excel.Field Trigger.Date writes the date/time in a format that I cannot turn with Excel.For example, today Trigger.Data; 147557616 This number should indicate today date and time (04/10/2016).How can I decode this number?Thanks to all.
+
+Domingo wrote:For example, today Trigger.Data; 147557616 This number should indicate today date and time (04/10/2016).How can I decode this number?It must be Unix date (and time) format, but I think you are missing a zero?147557616  gives: "Wed, 04 Sep 1974 20:13:36 GMT"1475576160 gives: "Tue, 04 Oct 2016 10:16:00 GMT"So in excel you have your unix date (date and time stamp it is) in cell A1 and in an other cell (that you format as date) type: =A1/(60*60*24)+"1/1/1970"
+

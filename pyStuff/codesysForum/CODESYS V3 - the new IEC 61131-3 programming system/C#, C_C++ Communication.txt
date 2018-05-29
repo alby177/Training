@@ -1,0 +1,4 @@
+What is the easiest way to communicate from a .NET or C++ application to read and write variables in CoDeSys?I have used ADS communication library from Beckhoff in the past to read and write variables in TwinCat.Is there something similar in CoDeSys?
+
+You could use the PLCHandler for this.http://www.codesys.com/products/codesys ... ndler.htmlThis is not free of charge. Contact your local distributor or 3S-Smart Software Solutions for the price.
+

@@ -1,0 +1,12 @@
+Hello,How to setup IP Master Address inside ModbusTCP_Slave_Device?As reading online help it should be here on the General tab.Thanks. Igor
+
+I believe you set the IP address on the "Ethernet" device just above your ModbusTCPSlave (the Ethernet device is your link between the slave device and a hardware interface).  This is how it is done with other fieldbus solutions
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Hi scott, I tried as you proposed but without success. Next I did some experiments and finally found a solution which looks it working well.On the Ethernet device I add first Modbus_TCP_Master and then Modbus_TCP_Slave (see picture). Actually I don't understand this configuration but it's working Thanks for help.
+
+Igor - I missed something in your first question.  A Modbus Slave (Modbus Server in Modbus terminology) only answers to queries it receives from the master (Modbus Client).  Because of this, the Server does not need to know any IP address - it responds directly to the IP address of the Client message.  The Modbus Client, however, needs the IP address of the Server it is sending messages to.  So, your Modbus Server has an IP address, but you do not have to enter an IP address.From your screenshot, your system is running a Client (master) and is sending messages to one Server (slave).  If this is working, then your code is the Client (master) and the other device is the Server (slave).  It looks a little funny, because you see a master and slave, but you are simply defining the communication tree of the application (you are the master and are talking with one slave).  If you had other devices to send messages to, they would be additional slaves below your master (Clients).  This tree layout (showing the slaves under the master) is exactly the same with EtherCAT and some other fieldbus systems.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+

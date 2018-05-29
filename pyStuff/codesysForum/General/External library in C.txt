@@ -1,0 +1,35 @@
+I remember that I read in the past one document explaining how to write CoDeSys external libraries in C. I think there is the possibilty to load obj file dynamically with the Rts. Do you have a document explaining how to do it?
+
+Hi,
+
+there is a general way how to do so.
+
+Please find attached a first document about the preparation / implementation of external libaries in CoDeSys (C_in_CoDeSys_e.pdf).
+
+But the way how to implement external libaries depends on the runtime system and the compiler for it. Please find attached a document for 32 Bit runtime systems. But please contact in any case your project manager in order to confirm the right way how to do so.
+
+_________________Roland WagnerModerator
+
+In document C_IN_32Bit_E.pdf which is describes this operation more 
+I found: "Type definitions, such as BOOL, which are used in the header
+file are found in the file lzstyp.h." - but I don't have this file anywhere in my installed codesys v. 2.3.6.1, where can I fond this file, describes all codesys definitions in C/C++ format?
+
+You don't really need this file and you can use your own C macros. But be careful because there are some differences in the IEC types and the C types (eg INT is 2 bytes in CoDeSys and 4 bytes in C)
+I would recommend to modify the headers generated bu CoDeSys in order to prefix all types with something like "SP_". Then you must define your macros. I think the following macros are valid for PlcWinNT and Visual C++...
+#define SP_BOOL char
+#define SP_BYTE unsigned char
+#define SP_INT short
+#define SP_UINT unsigned short
+#define SP_WORD unsigned short
+#define SP_DINT long
+#define SP_UDINT unsigned long
+#define SP_DWORD unsigned long
+#define SP_REAL float
+#define SP_LREAL double
+#define SP_TRUE  1
+#define SP_FALSE 0
+
+I think that these macros depends from your compiler and your Runtime System: Be careful...  
+
+I hope it helps
+

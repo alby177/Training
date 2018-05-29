@@ -1,0 +1,16 @@
+Is there anyway to turn GPIO or an I2C/SPI board to run a Pulse/Direction Axis?  I want to use it to control steppers with a stepper driver using Softmotion Library.  If so I would like to test with 3D Delta printer.
+
+_________________The Original SoMachine Ninja
+
+Any answer?
+
+This is very interesting to me too, anybody knows the answer?
+
+Hi,i agree these puls/direction steppers would be useful for many applications butit is no easy possible to use them by the GPIO's. ( there is no Driver available for SoftMotion and guess you need for sure additional harware / Extension board / whatever)At the moment only the EL2521 by using Ethercat solution is running out of the box including SoftMotion driverBREdwin
+
+Hello.I´m struggling with the same Problem.This device seems to be the solution:http://pthat.com/The last Problem i have ist the serial Communication.RegardsMcNugget
+
+McNugget2000 wrote:Hello.I´m struggling with the same Problem.This device seems to be the solution:http://pthat.com/The last Problem i have ist the serial Communication.RegardsMcNuggetIt looks good. Did you already tried it? Do have easy  access by codesys?Sent from my SM-G950F using Tapatalk
+
+Hello.Unfortunately i wasn´t able to try. I´m waiting for the Hardware.At the moment i try to solve problems  with webvisu and RS232 Communication.
+

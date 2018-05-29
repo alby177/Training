@@ -1,0 +1,34 @@
+I am using straight Codesys
+version 2.3.  I have been checking CANOpen Communication using the sample
+project CANSlaveXS.pro using RM CANView USB device and target as CCPXS 10.4 . I have following
+obsevations and queries. Kindly have a look and give your comments.
+
+1) I am able to transmit PDOs from the sample project to the RM CANViewUSB
+device Interface. But unable to recieve PDOs to my application.
+
+{ This I can say because I am receiving PDOs in RM CAN-Device Monitor with
+same COBID & data bytes as present in  Global variable pCanDevPDO_Tx in
+CanOpen implicit Variables(Constant) Global object In Resources tab. But I
+am unable to recieve databytes but the COBID in Global variable
+pCanDevPDO_Rx sent by RM CANView USB device }
+
+2) Also in the variable list in parameter manager if i define some variable
+as read-write then it does not reflect in the PLC Configuration PDO mapping.
+In that case how can I map those Read-Write PDOs as like what is done in the
+sample project?
+
+
+Cheers n Regards,
+Rajat Bansal
+
+Hi, Rajat Bansal
+
+I think that you have to use the function Can_SetFilter located in 3S_CanDrv.lib.
+
+You have to specify the valid COB id:s you want to receive.
+The first parameter is set zero (first CAN Controller), second parameter always 0. Third parameter is the COB:ids allowed first 16 (MSB) the 16 (LSB)  Ex. 0x2010201 lets PDO with COB Id 0x201 pass.
+
+I've had the same problem when using a device..
+
+Hi Hassi, can I just confirm that you are saying that parameter 1 is the CAN Master Node ID?
+

@@ -1,0 +1,4 @@
+CodeSys V3.5 SP9 Patch 4 wont open, every time I try to, I get this error message:Failed to instantiate the frame window. Exception has been thrown by the target of an invocation. The application will be terminatedI've tried re-installing the software twice, rebooted on many occasions but yet I still get that error message.Any ideas?
+
+Solved. Just re-installed it and it worked.
+

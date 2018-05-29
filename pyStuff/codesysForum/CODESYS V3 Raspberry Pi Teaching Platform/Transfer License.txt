@@ -1,0 +1,4 @@
+Hi again!Do I understand correctly it is not possible to transfer the license to another Pi?I upgraded to a newer Pi and would like to use my run-time license on that Pi instead.
+
+Maybe if you call support on this They helped me out on this issue a year ago. Don't know if they are still willing/able to help though.
+

@@ -1,0 +1,6 @@
+I already have a raspberry pi B model and I'd like to buy a Banana Pi (just for try, it seems to be more powerful)..but question is: can I run the Codesys softPLC on it? it should be compatible..
+
+Hi,no banana pi is not supported at the moment, till now,there are no plans to support the banana pi.BREdwin
+
+Thanks Edwin,then I'll not buy  
+

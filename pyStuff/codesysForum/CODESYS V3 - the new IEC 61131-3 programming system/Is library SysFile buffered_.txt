@@ -1,0 +1,4 @@
+All,I'm trying to write to a file, with SysFile.In the target folder, I do NOT see the file. Until I close this file.Does a way exist to write to a file 'in realtime / runtime'?I did not find any 'synch' or 'flush' function in the library.Any ideas...Regards,Edwin.
+
+A flush function would resolve the issue.The SysFileFlush function is not part of the library (V3.5.2.0), although the document “CODESYS Control V3 Reference (Document Version 3.5.3.40)” mentions it.The CAA File library has a Flush function.I’ll use the CAA File library.Regards,Edwin.
+

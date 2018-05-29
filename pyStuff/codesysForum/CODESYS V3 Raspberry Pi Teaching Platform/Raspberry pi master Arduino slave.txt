@@ -1,0 +1,10 @@
+Hi there,I'm currently working on having my raspberry pi as a master and my arduino as the slave. Currently I'm getting a "not running" on the slave when I login. I'm not sure if I have my channels set correctly for my arduino. Can anyone point me in the right direction for what channels are need on the arduino slave? Thank you.
+
+Are you using MODBUS RTU? What serial bus? What serial cable, usb?
+
+I'm currently using usb from the raspberry pi to the serial port on the arduino.
+
+Mstanley wrote:I'm currently using usb from the raspberry pi to the serial port on the arduino.Then you need to edit /etc/CODESYSControl.cfg and add the following: [SysCom]Linux.Devicefile=/dev/ttyUSBportnum := COM.SysCom.SYS_COMPORT1;I used the modbusino library to set up my arduino as slave, works a treat.
+
+Sorry but to check arduino from serial you want some paid library or not?But then can you handle inputs and outputs from codesys via PI?Can you explain how to run from scratch to control from arduino serial?Thank you, Alberto
+

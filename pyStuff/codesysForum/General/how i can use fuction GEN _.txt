@@ -1,0 +1,23 @@
+I am trying to use the function GEN, but is give me an error, saying that a clash between the util.library and the CoDeSys library of compacx3.
+
+
+how i can resolve this problema?
+i need to put one movement like sine wave in my linear motor?
+
+
+Help me please, thanks a lot.....
+
+what plc are you using?
+if parker then look in manual.
+do not use gen for this as it is too complex and too slow.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi....
+
+Yes i'm using a plc that belong in parker (compax3), for linear motor...
+
+So, i need to input one force  like sine wave, in motor, can you help me to do any program for do it?
+
+Thanks a lot...
+

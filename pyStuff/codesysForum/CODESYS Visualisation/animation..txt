@@ -1,0 +1,20 @@
+Ok, been learning CoDeSys for a couple of days now and I'm getting the hang of it really well now. I've got a program together complete with visuals, it's looking good at the moment and I've got it working in the simulation. My plan is to put the visualisation into a touch screen PLC but while I realise the program and in fact PLC's in general are meant for industrial applications and so animations and visual effects are not a necessity, I would like to try adding some anyway if it's possible. does anyone know if it is possible and if so how?
+thanks
+Carmichael_keith
+
+The "classic" method of animation in industrial HMI products is to have a series of graphic images that represent all of the possible states of the animation and to turn the visibility of them on and off using status variables from the PLC.  Like a childs flipbook.
+
+You will find in the CoDeSys visualization that you can actually control the x and y position of graphic objects using variables from the program.  This thread shows a visualization I did where I animated the position of a cylinder rod: http://www.plctalk.net/qanda/showthread ... ht=codesys
+
+I know that the Exter series HMI from Beijer http://hmi.beijerelectronics.com/web/be ... name/exter has this capability as well.  The only down side to it is that it cannot, at present, read in a symbol file to link to the CoDeSys variables over ethernet.   I have had to use modbus to communicate with our Moeller XControl PLC's when using the Exter HMI's.
+
+I'm sure others can use position based animation as well....
+
+<disclaimer> I work for a Beijer distributor </disclaimer>
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+thanks, I've been playing around with some idea's inspired by yourself and have come up with a couple of solutions to my problem and my work is now progressing well 
+

@@ -1,0 +1,16 @@
+Hello Does anybody know or is possible to make a button with a hyperlink to a external web pageIn my situation a plc with an other web visualisationkind regards
+
+lets try this one.however you can always start the browser twice automaticclaly with the screens you like to see.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+this is possible with the option execute program with this parameter:INTERN LINK http://www.google.com/
+
+[quote="TimvH"]this is possible with the option execute program with this parameter:INTERN LINK http://www.google.com/[/quote]This works well for me, but only in CoDeSys -> Visualisation interface. In the browser - nothing happens when clicking on the object?!
+
+It definately works OK. You probably did something wrong.
+
+[quote="TimvH"]It definately works OK. You probably did something wrong.[/quote]You have to be right - this is the second thing for me that works well in CoDeSys -> Visualisations, but not in the browser. The situation is the same with access control. - [url]http://forum-en.3s-software.com/viewtopic.php?f=5&t=1893[/url]
+
+Do you test this in Internet Explorer?Is the webserver in the PLC, then I would suggest contacting the vendor of this PLC.If you use the Control Win or Control RTE, then it must be a setting in your PC.
+

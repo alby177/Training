@@ -1,0 +1,14 @@
+We can define retain variables in global variable list. Is there a way or a function to explicitly save retain variables to EEPROM or Flash memory that the CoDeSys application can call so that the program can save retain variables anytime when needed?
+
+By the way, in CoDeSys v2.3, there is SysRestoreRetains() and SysSaveRetains() functions to call.
+
+"CmpApp.library":AppStoreRetainsInFile() andAppRestoreRetainsFromFile()Save should always be done after change of a retain value, restore after boot up.**************************************************Another option is to use the Application Composer for this.It takes some time to configure, but when this is done, you have a very flexible solution to store and restore variables to/from various files.
+
+TimvH wrote:"CmpApp.library":AppStoreRetainsInFile() andAppRestoreRetainsFromFile()Save should always be done after change of a retain value, restore after boot up.**************************************************Another option is to use the Application Composer for this.It takes some time to configure, but when this is done, you have a very flexible solution to store and restore variables to/from various files.==========================================Yes, it works! Thank!
+
+TimvH wrote:"CmpApp.library":AppStoreRetainsInFile() andAppRestoreRetainsFromFile()Save should always be done after change of a retain value, restore after boot up.**************************************************Another option is to use the Application Composer for this.It takes some time to configure, but when this is done, you have a very flexible solution to store and restore variables to/from various files.============================================I wander whether it works in a PLC in which there is no OS system such  as WinCE or linux,that is no file system.
+
+How to store or restore retain variables in a PLC target where there is no such Os system as WinCE or linux,that is there is no file system?
+
+Just use the Persistent variable list (add it to your application). This will write it to the battery backup memory.The vendor of the PLC can tell you the details about the size and whether this is supported.
+

@@ -1,0 +1,4 @@
+Hi,I have INT variable, which value I like to show in webvisu with scale INT/10, for example INT value is 855 and I like to show value as  85.5. I know that I can scale it in application, but my question is if it is possible to do scaling directly in webvisu configuration.Thank you!Best regards,Zdenko.
+
+Try to have a look at "unit conversion" in the help topics.As a workaround, you can always assign TO_REAL(iVar)/10 to the textvariable, and use %2.1f in the text field.
+

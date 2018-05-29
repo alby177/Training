@@ -1,0 +1,12 @@
+Hi All,Is there a library file available for SMS actions such as SMS receiving etc ? To send an SMS is easy enough but a lot of string manipulation is needed on the receive part and before writing code manually I was wondering if any such thing exists ? Any help is appreciated.Regards,Naveen
+
+did you have a look at www.oscat.dehugo has made lots of comm subroutines
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi Shooter,Thanks for your reply.I had a look in an older oscat library I had previously and now the latest 3.33 for CodeSys V2.3 that I'm using but cannot find any comm related blocks.  There are some string manipulation blocks. Do you know which section they come under ? I must be missing it.Thanks for your help. Regards,Nav
+
+go to oscat again, and move the cursor down.it is hidden, but network has lots of them.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

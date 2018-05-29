@@ -1,0 +1,4 @@
+Hello.I want to connect the Beckhoff DeviceNet Slave EL6752-0010 via an Ethercat coupler EK1100 to the Ethercat master of Codesys V3.I get the ethercat communication running, but the configuration of the DeviceNet via Ethercat doesn't seem to work properly.The DeviceNet master isn't able to start the communication (device deactivated).Via Twincat the configuration of the DeviceNet works. So the hardware setup is correct.Can someone provide a demo of such a configuration or some more detailed configuration instructions.A configuration with a few bytes in- and output in polling mode would be sufficient.RegardsThomas
+
+Hello Thomas,hard to say, the device net support in CODESYS is obsolete (no or to few customers ask for it)Therefore the EL6752 is not supported.GrüßeEdwin
+

@@ -1,0 +1,61 @@
+Hi, im trying to start the runtime in a windows 10 virtual machine based on linux+kvm/libvirt but it doesent work.. Here is the output of the window01500715638940: Cmp=CmpOPCUAServer, Class=1, Error=0, Info=0, pszInfo= **************************************************************
+01500715638940: Cmp=CmpOPCUAServer, Class=1, Error=0, Info=0, pszInfo=     OPC UA Server Started:
+01500715638940: Cmp=CmpOPCUAServer, Class=1, Error=0, Info=0, pszInfo=     Hostname: DESKTOP-4SOTATE, Port: 4840
+01500715638940: Cmp=CmpOPCUAServer, Class=1, Error=0, Info=0, pszInfo=     URL: opc.tcp://DESKTOP-4SOTATE:4840
+01500715638940: Cmp=CmpOPCUAServer, Class=1, Error=0, Info=0, pszInfo=     Loopbackadapter activated.
+01500715638940: Cmp=CmpOPCUAServer, Class=1, Error=0, Info=0, pszInfo=     All available networkadapters are used.
+01500715638940: Cmp=CmpOPCUAServer, Class=1, Error=0, Info=0, pszInfo= **************************************************************
+01500715638940: Cmp=CmpOPCUAServer, Class=1, Error=0, Info=0, pszInfo= Provider CODESYS_DefaultProvider with Version 0x3050b00 registerd at the OPC UA server.
+01500715638940: Cmp=CmpOPCUAServer, Class=1, Error=0, Info=0, pszInfo= Provider CmpOPCUAProviderIecVarAccess with Version 0x3050b00 registerd at the OPC UA server.
+01500715638945: Cmp=CmpBlkDrvTcp, Class=1, Error=0, Info=6, pszInfo= Local network address: <ipaddress>192.168.1.50</ipaddress>
+01500715638945: Cmp=CmpRouter, Class=1, Error=0, Info=4, pszInfo= Network interface <interface>BlkDrvTcp</interface> at router <instance>1</instance> registered
+01500715638947: Cmp=CmpRouter, Class=1, Error=0, Info=4, pszInfo= Network interface <interface>BlkDrvShm</interface> at router <instance>2</instance> registered
+01500715638947: Cmp=CmpBlkDrvShm, Class=1, Error=0, Info=9, pszInfo= Local address (BlkDrvShm) set to <address>1</address>
+01500715639384: Cmp=CM, Class=8, Error=0, Info=0, pszInfo=#### Exception occurred: CMInit
+01500715639384: Cmp=CM, Class=1, Error=0, Info=35, pszInfo= CODESYS Control shutdown...
+01500715639442: Cmp=CmpOPCUAServer, Class=1, Error=0, Info=0, pszInfo= Provider CODESYS_DefaultProvider with Version 0x3050b00 unregisterd at the OPC UA server.
+01500715639588: Cmp=CmpOPCUAServer, Class=1, Error=0, Info=0, pszInfo= Provider CmpOPCUAProviderIecVarAccess with Version 0x3050b00 unregisterd at the OPC UA server.
+01500715639590: Cmp=CmpRouter, Class=1, Error=0, Info=5, pszInfo= Network interface <interface>BlkDrvTcp</interface> unregistered
+01500715639591: Cmp=CmpRouter, Class=1, Error=0, Info=5, pszInfo= Network interface <interface>BlkDrvShm</interface> unregistered
+01500715639593: Cmp=CmpOPCUAServer, Class=1, Error=0, Info=0, pszInfo= ********************** Server OPC UA stopped! *************************
+
+01500715639594: Cmp=CmpRouter, Class=1, Error=0, Info=5, pszInfo= Network interface <interface>ether 0</interface> unregistered
+01500715639596: Cmp=CM, Class=1, Error=0, Info=36, pszInfo= CODESYS Control shutdown done
+Gesendet von meinem Lenovo TAB 2 A10-70F mit Tapatalk
+
+Hi,Quote:01500715639384: Cmp=CM, Class=8, Error=0, Info=0, pszInfo=#### Exception occurred: CMInit could not really identify why this happens is this current 3.5SP11 Version if not could you try it with this?BREdwin
+
+It is sp11... Gesendet von meinem Moto G Play mit Tapatalk
+
+I reinstalled the vm but no way.. still the same errorGesendet von meinem Moto G Play mit Tapatalk
+
+2017-08-12 04:29:36: Handle 62 automatically released (no longer valid)
+2017-08-12 04:29:46: Entry (101597:13) not found - Event WB0200 (ENTRY NOT FOUND), Request IP-Address local(IPV6)(ts)(Oskar,CODESYSControlService.exe) with NoUserLimit
+2017-08-12 04:29:46: API Error 200 (ENTRY NOT FOUND) occurred!
+2017-08-12 04:29:46: Access from local(IPV6)(ts)(Oskar,CODESYSControlService.exe) to FC:PC=5000304:13 with NoUserLimit (Handle 95)
+2017-08-12 04:29:47: Access from local(IPV4) to SubSystem (Handle 96)
+2017-08-12 04:29:47: Handle 96 released
+2017-08-12 04:29:47: Access from local(IPV4) to IFI (Handle 97)
+2017-08-12 04:29:47: Handle 97 released
+2017-08-12 04:29:47: Access from local(IPV4) to SubSystem (Handle 98)
+2017-08-12 04:29:47: Handle 98 released
+2017-08-12 04:29:47: Entry (32767-3201 0:0) not found - Event WB0261 (LICENSE NOT ACTIVATED), Request IP-Address local(IPV4) with NoUserLimit
+2017-08-12 04:29:47: API Error 261 (LICENSE NOT ACTIVATED) occurred!
+2017-08-12 04:29:47: Access from local(IPV4) to IFI (Handle 100)
+2017-08-12 04:29:47: Handle 100 released
+2017-08-12 04:29:47: Access from local(IPV4) to SubSystem (Handle 101)
+2017-08-12 04:29:47: Handle 101 released
+2017-08-12 04:29:47: Access from local(IPV4) to SubSystem (Handle 102)
+2017-08-12 04:29:47: Handle 102 released
+2017-08-12 04:29:47: Access from local(IPV4) to IFI (Handle 103)
+2017-08-12 04:29:47: Handle 103 released
+2017-08-12 04:29:47: Access from local(IPV4) to SubSystem (Handle 104)
+2017-08-12 04:29:47: Handle 104 released
+2017-08-12 04:29:47: Entry (32767-3201 0:0) not found - Event WB0261 (LICENSE NOT ACTIVATED), Request IP-Address local(IPV4) with NoUserLimit
+2017-08-12 04:29:47: API Error 261 (LICENSE NOT ACTIVATED) occurred!
+2017-08-12 04:29:47: Access from local(IPV4) to IFI (Handle 106)
+2017-08-12 04:29:47: Handle 106 released
+2017-08-12 04:29:47: Access from local(IPV4) to SubSystem (Handle 107)
+2017-08-12 04:29:47: Handle 107 released
+Gesendet von meinem Lenovo TAB 2 A10-70F mit Tapatalk
+

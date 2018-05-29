@@ -1,0 +1,13 @@
+What for "board" whould CoDeSys working?
+BrainBoard from Fa.Kontor, xScale? other ...
+
+CoDeSys - the programming system is running only under Windows (NT / 2000 / XP preferred). No matter on which board.
+
+The runtime system which makes a PLC out of an intelligent hardware can be based on the several different platforms. Under http://www.3s-software.com/index.shtml?SP_CPUs you will find the complete list of supported CPU platforms.
+
+If your are searching for a list of devices that are programmable with CoDeSys you can have a look at the website of the CoDeSys Automation Alliance: http://www.automation-alliance.com/inde ... a_products . This alliance unites companies that offer programmable devices with CoDeSys.
+
+I hope this will answer your question.
+
+_________________Roland WagnerModerator
+

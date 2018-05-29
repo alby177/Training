@@ -1,0 +1,2 @@
+When I am creating a boot project offline it asks "Do you want to save the reference context for the boot project?"   I click yes.   It is creating the application.app and application.crc but will not create the visu folder with my images.    I was using 3.5 SP5.   That version created the visu folder.   Is there a setting that enables creating the visu folder?
+

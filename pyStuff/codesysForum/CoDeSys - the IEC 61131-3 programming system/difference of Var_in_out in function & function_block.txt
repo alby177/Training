@@ -1,0 +1,24 @@
+What is the difference between function & function block in terms of using var_in_out in codesys v2?function no need to instantiate & it returns a value in Version2.In version3 function can have outputs also.
+
+a function can have only one output (this can be a structure) and a FB can have more vars.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Yes function returns a value.I need info about using  var_In_Out in function Thanks
+
+here you goas a function can only give one variable back (or a structure) i have to put all outs in one structure.in a function block you can have several in and out
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Code:var_In_Out test:bool;test2:int;end_varshooter wrote:here you goas a function can only give one variable back (or a structure) i have to put all outs in one structure.in a function block you can have several in and outTry the above in function declarationAm asking about var_in_out in declaration
+
+in a function it is impossible to have in-out,start a new function and you will not be able to select it from the assistant.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+pls check the attached pgmfunction allows in_out
+
+you declared it yes , but how do you get the result from internal to external?ie you do not use over (which is the output of the function.)
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

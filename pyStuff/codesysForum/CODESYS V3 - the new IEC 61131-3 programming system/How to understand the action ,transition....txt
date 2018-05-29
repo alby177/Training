@@ -1,0 +1,6 @@
+How to understand and use the action ,transition...which belong to function block and programme!
+
+An Action is a piece of code which can act on the variables of the corresponding POU.You can call this from the POU itself, or from another POU.The main purpose is to better structure the application and to make it more readable.It is also possible to use this in V2.3 and is therefore also implemented in V3 to make it backwards compatible.You can regard this as a Method, but without any arguments.A transition is actually only used in combination with SFC POU's where the transition is the condition to jump to another Step.
+
+thanks! you explained ckearly. thank you very much
+

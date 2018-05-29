@@ -1,0 +1,9 @@
+Hi,
+
+how to create a new *.vis File for static language change..
+
+If anyone have sample project with Vis file please let me know...
+
+
+Thankyou for your help.
+

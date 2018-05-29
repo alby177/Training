@@ -1,0 +1,4 @@
+Hi there!After having done a number of projects in Codesys 2.3, I am now working with a device running Codesys 3.5. The problem I am facing is that this program has to communicate with a 2.3 device over the CANbus (using CANopen). I know I can set up communication using PDO's, but I want to exchange data through Network Variable Lists. I can do this in 2.3, but in 3.5 I only have the option to create a NVL over UPD, not CANbus. To further complicate matters, the 2.3 device is the bus master and the 3.5 is a slave.Could someone please explain me how I can set up communication through Network Variable Lists in my set up?Regards,Bas
+
+As far as i know, network variables over CAN are not supported with CODESYS 3.X
+

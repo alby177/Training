@@ -1,0 +1,4 @@
+Hi EveryoneI think I'm stucking on a small thingI download the library Oscat, I added it and now when I compiled, I've the error message: "Ambigous name space STANDARD definied by library ..., Ambigous Name TON defined by librarySo my question is: How can I rename (Standard) and Delete parts of a library (TON, TOF,...)Many thanks in advance for your Help 
+
+Hi,you downloaded OSCAT lib from store?http://store.codesys.com/mixedsearch/mi ... duct_area=then this should work.Which plc and which version are you using?BREdwin
+

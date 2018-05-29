@@ -1,0 +1,25 @@
+I am new to CoDeSys, and I have been looking for a good explanation of how to use the Parameter Manager for a CanOpen slave.  I am trying to create a couple of PDOs.  One to send from the slave to the master and one that will be received by the slave in a network with one master and one slave.  For the parameter manager, I am confused on access rights to set and what indexes are allowed?  I have tried every combination I could come up with from different templates I have looked at, and then I monitor the Can Bus, and I can never seem to transmit anything even though I am toggling the mapped variables.  All of the documentation I have found doesn't fully explain it, and I must be missing something.  Any help would be appreciated.  Thanks.
+
+Step 1: Do you have the EDS file for the slave?
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+The slave device is a HMI.  After trying to configure the PDO mapping, I had it generate an eds which I imported to the master, but I must have configured something wrong.  The HMI doesn't have a manufacturer made EDS that I am aware of.  They provided a template project, and I tried to emulate that, but no luck.  I am trying to figure out how to properly configure it so the eds works, I guess.  Thanks for the help.
+
+I ended up using Network Variables to transfer data between the two devices. I would still be curious to the proper way to setup the Parameter Manager, PDO Mapping, and then creating the EDS. Thanks.
+
+I guess first you have to add a CAN Master.  On the Resources Tab, Right click the PLC and do an Append Subelement / Can MasterThen you have to add the slave device by right clicking on the Can Master and doing an Append Subelement.  This should bring up a list of all the EDS files that CoDeSys knows about.  If you don't see your slave, then the EDS file is in the wrong place.After the slave is added you have to map the PDO data but perhaps, depending on the EDS file you have, some items may be pre-mapped.You also have to setup the CAD parameters for the Master and match the baud with the slave. Then there are CAN parameters of the slave where you need to set up a Heartbeat or Node Guarding.  I don't believe it is a good idea to do both.Then to make matters a little more complicated, each PDO has it's own parameters regarding how it is transmitted (cyclic, sync, acyclic...).  For those I have sometimes had to play around to find the one that works.One more note, once your are mapping PDO data, the terms Transmit and Receive are from the viewpoint of the slave and not the master.  Since the PLC is the master, this can be confusing.Short Answer: Network Variables were the way to go!
+
+_________________nOrM=====nOrM = Norman Dziedzic Jr.
+
+In the installation folder of CoDeSys V2.3 is a manual which might help:My PC: C:\Program Files (x86)\3S Software\CoDeSys V2.3\Documents\English\CoDeSys_V23_E.pdf.See chapter 6.6.9.Maybe you used subindex 0?Maybe you didn't use subsequent subindex numbers?In the Target Settings you can choose as range for the variables e.g. 16#3000 - 16#30FFIn the Subindex you can use as range e.g. 16#01 - 16#0F
+
+(Directly after power up, the slave should transmit the NMT boot up msg. If supported.)To get the network going, a "NMT start node" or "NMT start all nodes" is needed (e.g. 0x000 2 0x00 0x01).Now the slave device should transmit something.
+
+You can use network variables. Check out under the target setting for net variables. Look up under help as well. What this does is allows the seamless use of variables communicating use a CoDeSys communication in the back ground and you don't really have to do anything. So you just reference the variables like any other variable."By an automatic data exchange (compare this to the non-automatic data exchange via the Parameter Manager) it is possible to update the value of a network variable on several controller systems within a CoDeSys compatible controller network. This requires no controller-specific functions but the network subscribers must use identical declaration lists and matching transfer configurations for network variables in their projects. In order to make this possible it is recommended that the declaration not be entered manually in each controller application, but loaded from a separate file when creating the list. (see 'Create a global variables list'). For the exchange of network variables it is necessary that the variables are used in a cyclic or free-wheeling task or in PLC_PRG. It is not sufficient to declare them in the declaration part of the POU! If the variables are used in several tasks/PLC_PRG, then at data exchange that task will be regarded which has the highest priority."
+
+_________________Thanks,
+Steve Pfeifenroth
+

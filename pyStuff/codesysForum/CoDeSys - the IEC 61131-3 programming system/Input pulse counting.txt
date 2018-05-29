@@ -1,0 +1,80 @@
+i'm new at CoDeSys. and i'm wondering how to make a program counting input pulses.
+
+This is the case:
+
+
+
+I got a movment sensor placed at my door. And i wanna see on my plc program how manny has enterd the room. So every time the input is high i want the program to count 1. and if it gets high again, then is 2 and so on.
+
+
+
+And ofc a reset button. 
+
+
+
+Would be awsome if someone can help me.
+
+
+
+Best regards
+
+Henrik
+
+the line should be something like 
+
+IF R_TRIG (pulse) then counter:= counter+1; END_IF;
+IF R_TRIG (reset) then counter:=0;END_IF;
+also F_TRIG is possible.
+lots of other possibilities like using a function block CNT etc.
+in simulation you will not see this pulse as it is only one cycle.
+
+if you want to know how many people are in then you will need two pulsemachines and check the sequence of them.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi Henrik,
+Shooter is almost right, however, you need to declare instances of the R_TRIGs and F_TRIGs, then it will work
+Code:VAR  Sensor    : BOOL;  Reset     : BOOL;  CountTrig : R_TRIG; (* to catch the rising signal edge *)  ClearTrig : F_TRIG; (* to catch the falling signal edge *)  Count     : INT;END_VARCode:CountTrig (CLK := Sensor); (* finds the counting up events *)ClearTrig (CLK := Reset); (* finds the clear commands *)IF CountTrig.QTHEN Count := Count+1;END_IF;IF ClearTrig.QTHEN Count := 0;END_IF;
+That's quite easy to understand I hope. 
+Details of the standard FBs such as R_TRIG or F_TRIG you should find in the CoDeSys online help, or on the internet at IEC61131 related websites.
+Regards 
+Rolf
+
+You may want a short time delay on the count in case the signal bounces a few times as the person starts to actuate the sensor.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+and to finish rolf 
+Sensor  at %IX0.0  : BOOL;
+  Reset   at %IX0.1  : BOOL; 
+just to be sure you have inputs from the PLC.
+
+yes rolf is my teacher i am always a little short in the corners.
+and norman is also correct, but timers do not come in lecture 1 but in lecture 3.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thank you very much guys. Its working perfect.
+But now i have another case: I have tryed manny diferent things, but it wont work as atended.
+
+Case is: i dont want a reset button annymore. so i installed a second movment sensor at the door. so they are standing next to each other.
+So i want the sensors to detect how manny is going in and how manny is going out
+
+-So if signal for sensor 1 is detected first = someone is going in to the room (count 1 up)
+-But if signal from sensor 2 is detected first = someone is leaving the room (count 1 down)
+
+Sorry for bothering you guys. But I'm still a newbi. Promise to get bether
+
+Best regards
+
+Henrik
+
+easy one, oja still newbie.
+i would recommend a course at plcs.net.
+if sensor 1 on and sensor 2 off then someone enters.
+if sensor 2 on and sensor 1 off somenone leaves.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

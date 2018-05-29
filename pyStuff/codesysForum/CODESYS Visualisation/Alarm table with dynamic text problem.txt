@@ -1,0 +1,2 @@
+I am trying to use Alarm Table with dynamic text as it shown in "XML-File for Dynamic Texts" section of visu.chm .It works fine with simple text in any element, but not with alarms.I attached my project and XML-file to this message. Any help will be greatly appreciated:)P.S. Codesys v2.3.9.20
+

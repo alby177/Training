@@ -1,0 +1,2 @@
+Dear:I'd like activate the virtual keyboard of Text Editor in touchscreen,while  its property haven't the inputconfiguration ,everyone have any advice or answer to help me ,thanks!
+

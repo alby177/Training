@@ -1,0 +1,2 @@
+Hi,I have been trying to post information to the log from within my IEC application, I have done this using the function call belowCode:LogRes := LogAdd(CmpLog.STD_LOGGER, 'CmpProgram', UDINT_TO_DINT(CmpLog.LogClass.LOG_ERROR), 0, 0, 'Invalid input');This posts the error message to the log successfully but when I look at the log under the component column, all I get is "<1000>" whereas I would like to get the name of the IEC library that the error has come from. i.e 'CmpProgram'.Is this possible from within an IEC application?Thanks,Pete.
+

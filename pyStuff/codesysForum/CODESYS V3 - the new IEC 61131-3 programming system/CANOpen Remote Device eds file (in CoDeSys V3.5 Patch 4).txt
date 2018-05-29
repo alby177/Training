@@ -1,0 +1,6 @@
+Recently I updated to CoDeSys V3.5 Patch 4 (from V3.4).And I noticed that some of the eds files for Remote Device are not imported.For a Vendor, only one eds file is loaded. Any other eds files, for that Vendor, are skipped.Did anyone experience similar behaviour?The steps are Tools; Device Repository; Install; *.edsThe result would be under Tools; Device Repository; Fieldbusses; CANopen; Remote Device.Regards.
+
+The unique identification changed.The ID is compiled from sections in the eds file.In V3.4: FileInfo and DeviceInfo-sections. And the actual eds filename.In V3.5: FileInfo and DeviceInfo-sections. And the Identity section [1018].
+
+Thanks for the info.
+

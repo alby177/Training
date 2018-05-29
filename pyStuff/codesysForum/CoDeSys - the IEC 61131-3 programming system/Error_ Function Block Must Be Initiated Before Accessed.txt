@@ -1,0 +1,8 @@
+How dp you initiate a function bloack before is it accessed. I am new to Codesys and have been struggling mightily.          Please assist      
+
+when you have enetered (F2) a function block, give it another name as it is by default (that is the FBname) when pressing enter or you go to next line it says hey it is not defined, in omost cases you can press enter and it will insert a line in the VAR list above.try it with the FB editor as this is simplest.when you put in a FB on top it will ??? change it to a name example fbblock press enter and the line will be inserted.later on edit this var list to make it readable.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thank you. That was very helpful 
+

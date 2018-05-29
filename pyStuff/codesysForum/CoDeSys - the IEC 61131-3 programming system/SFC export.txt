@@ -1,0 +1,20 @@
+Hi, Dear all:
+
+when i exported SFC program in project A, then imported it in project B.
+
+After the operation, i found that SFC programs in project B were quite different, funtions were ok,but very difficult to read. 
+
+why like this? Bug in Codesys?
+
+Thanks for all
+
+Alex
+
+it does not keep positions however it does work.
+yes you could call this a bug, however when translated all this info will be lost all together.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Once more again! 
+Do not export and import! Use Project --> Merge to copy directly form another project. The export format is a simplfied description which contains only the logik.
+

@@ -1,0 +1,10 @@
+First of all I m new in Codesys world so i would need some help.I am working with schneider m241 controller. My apliccation should read data from A/B encoder and calculate speed. I configured HSC and called it in my POU which is called at MAST task.My issue is that after debuging hsc counter doesn't execute. I 'm working with simulation for now, I didn't put my program to PLC yet.In attachment is possible see that all outputs are "false" but at least RUN output should be "true". I also tried with some other function blocks and still had same issue.I will appreciate any help.
+
+Hi,HSC does not work in simulation mode as it is a runtime functionality of the PLC. For the simulation mode CoDeSys provides a special simulation devices that is implicitly used. There you can not access to any PLC runtime functionalities.
+
+Tank you for your prompt reply, I assumed something like that. Can you just tell me where can I find that special simulation devices to simulate encoder and counter.
+
+Hi,there might be a misunderstanding. If you switch to simulation mode, CoDeSys takes a special simulation device instead of the real device. In this case it is only possible to simulate the logic. I don't know any solution to simulate the hardware of a device.
+
+Hi,Yes there was misunderstanding and you were right about HSC. After I downloaded program to PLC everything was ok.
+

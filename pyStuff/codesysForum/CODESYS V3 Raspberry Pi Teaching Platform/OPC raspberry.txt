@@ -1,0 +1,10 @@
+Hi i am using the unified Automation UaExpert for connecting to the raspberry. However when i connect the client to the server using the opc.tcp://<Network address>:4840 i am able to connect but i cant see any variables which i have declered in the symbol configurator to be both writable and readableAny one that have been exepericing the same problem or someone that know what i have missed or what i have done wrong?
+
+i have tested the example provided by codesys but i cant get it to work fully. i can connect to the raspberry but aint able to see the variables which i have declered in the symbol configuration.see picture.Attachment:Capture.PNG
+
+Hi,yes this is an accident in 3.5SP8 (which will be solved with 3.5SP8Patch1)The Workaround would be:To have GVL which does publish some variables (additional beside this OPC variables in PLC_PRG from the example) BREdwin
+
+this workaround does not seem to work for me (using codesys V3.5 SP8+)...My OPC-UA client is an android app from Prosys (https://www.prosysopc.com/products/opc- ... r-android/)I get the same result as above: i can browse up to the application level, but i can't see my variables. I have 1 extra global var defined just like in the example.
+
+restarting everything solved the problem...
+

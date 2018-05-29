@@ -1,0 +1,2 @@
+Hi what is the best way to save data for later analysis on PC? I like to save data from a accelerometer with high update time.
+

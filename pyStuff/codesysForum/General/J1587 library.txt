@@ -1,0 +1,11 @@
+I don't suppose anyone knows where I can get my hands on a J1587 library which can access the DM1 diagnostics of an engine.
+
+Thanks in advance
+
+
+
+Good luck. We had that buss on the Detroit Diesel engines. You will probably have better luck getting a gateway J1587 to J1939.
+
+_________________Thanks,
+Steve Pfeifenroth
+

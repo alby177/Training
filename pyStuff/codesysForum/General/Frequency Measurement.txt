@@ -1,0 +1,6 @@
+How to measure frequency on the Codesys
+
+as all plc tend to be too slow with cycletimes, this must be done inside modules suited for this, like fast counters or special frequency modules. If you need simple frequency of the normal powernet several have modules to get everything out of the powernet like Amps, Voltage frequency, cos phi, power factor and harmonics (like WAGO)
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

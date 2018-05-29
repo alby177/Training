@@ -1,0 +1,2 @@
+Hello,I've got a problem with the Codesys V3 and importing a .LIB file. I found a few video's online but all are from the V2.3 version, in this new version I'm not able to import a .LIB file. Does anyone know how to fix this?Reason for importing a .LIB is that I have a Modbus TCP RIO from Weidmuller which I want use with Codesys. Problem is that I can't communicate with the Weidmuller RIO via the TCP connection. If I use a webclient I am able to communicate with the Weidmuller RIO.I hope anyone can help me solve either or both problems.Thanks
+

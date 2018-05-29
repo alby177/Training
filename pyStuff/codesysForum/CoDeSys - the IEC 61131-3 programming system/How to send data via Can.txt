@@ -1,0 +1,27 @@
+Hello, I am new to programming in Codesys, I am using a IFM CR1080 PDM display and a IFM CR0232 controller.  I am confused as how to program the communication between the two, the information is very scarce in the manual.  How are the variables on the controller called from the display?  I am not a structured text programmer at all and I am trying to figure out how this is done using the templates.  Can someone explan how they are doing this with the code below?I have the following code on the controller:	(***********assign received input variable to the PLC variable********************)	CASE HANDLE OF		1:	KpTemperature_H1:=DWORD_TO_BYTE(INPUT_VALUE);			(****create event for async transmition*****)			IF KpTemperatureOld_H1<>KpTemperature_H1 THEN				KpTemperatureOld_H1:=KpTemperature_H1;				EventId100:=TRUE;			END_IF;		2:	KdTemperature_H2:=DWORD_TO_WORD(INPUT_VALUE);			(****create event for async transmition*****)			IF KdTemperatureOld_H2<>KdTemperature_H2 THEN				KdTemperatureOld_H2:=KdTemperature_H2;				EventId100:=TRUE;			END_IF;		3:	Temperature_H3:=INPUT_VALUE;			(****create event for async transmition*****)			IF TemperatureOld_H3<>Temperature_H3 THEN				TemperatureOld_H3:=Temperature_H3;				EventId100:=TRUE;			END_IF;		4:	KpPressure_H4:=DWORD_TO_BYTE(INPUT_VALUE);			(****create event for async transmition*****)			IF KpPressureOld_H4<>KpPressure_H4 THEN				KpPressureOld_H4:=KpPressure_H4;				EventId101:=TRUE;			END_IF;		5:	KdPressure_H5:=DWORD_TO_WORD(INPUT_VALUE);			(****create event for async transmition*****)			IF KdPressureOld_H5<>KdPressure_H5 THEN				KdPressureOld_H5:=KdPressure_H5;				EventId101:=TRUE;			END_IF;		6:	Pressure_H6:=INPUT_VALUE;			(****create event for async transmition*****)			IF PressureOld_H6<>Pressure_H6 THEN				PressureOld_H6:=Pressure_H6;				EventId101:=TRUE;			END_IF;	END_CASE;
+
+Take a look in the CR0032 or any other PLC under the Target settings. Because you are new to PLCs the easiest way for you is use net variables. Look up under help and network variables. It uses a CoDeSys communication that is seamless.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+Thanks Spfeif, so network variables are supported by ifm platforms then?Cheers
+
+Never mind, I see that they are supported.
+
+PS not sure why you have a case statement here? Also you notice that you repeated code over and over just changed the variable. In other words you wrote if this doesn't equal that then true. That is a perfect example for encapsulation by putting it in a FB for this. Input the value and compare in the FB store the old value and set the output? How are you doing with this?
+
+_________________Thanks,Steve Pfeifenroth
+
+It will be easy to have array function block instead of doing it many times.I will reduce your time for debugging also. 
+
+Hello everyone, I have been trying to set up my Can connection, I have attached the two files I have created.  I am using an IFM CR0232 PLC and a CR1080 display.  I have created Network Variables lists in both.  Can anyone have a look at the files and see where I am going wrong.Thank you.Waindude
+
+Well after many hours of fishing around in my programs, I was finally able to get my network variable lists to work.  I actually had a bunch of help from a fellow on another PLC forum who is from Australia.Waindude.
+
+Which other forum?
+
+_________________Thanks,Steve Pfeifenroth
+
+The forum is PLCS.net, they are a great bunch of guys.  They have several hundred thousand members, and most are very helpful.  When you post a question or comment, there is usually an answer in a few hours, unlike here.  It would be good to adopt thier attitude on this forum.  I was suprised by the lack of help on this forum.  I actually had help from a fellow in Australia ( I am in Canada), he took my code, ran it on his platform and tested it and sent it back to me with suggestions.  All just to help someone out in need.I am not bashing this forum, because I know the premis is good, but people definately were more helpful with a Codesys problem on a general PLC forum versus this one that is dedicated to Codesys.Hopefully my comments won't get me banned, as I would like to continue to use this forum, but everyone should loosen up a bit here.Waindude
+

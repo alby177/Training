@@ -1,0 +1,6 @@
+When I add a function it produces error 'Unknown type: R_TRIG'Seems like the standard library didn't install?  Any ideas?
+
+Hi,use the "standard procedure" to add the library- goto the LibraryManager- "add library"- click into the search line- type TON- click to the search result - > this will add the library to the LibraryManagersee screenshotBREdwin
+
+That got it!  Thanks!
+

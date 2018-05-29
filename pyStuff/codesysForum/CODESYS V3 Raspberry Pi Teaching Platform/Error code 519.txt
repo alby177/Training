@@ -1,0 +1,2 @@
+Im have trouble getting the Ethernet IP adapter to work on a Raspberry PI2.I am getting the error:Could not bind the multicast socket errorcode 519.Thanks for your help.
+

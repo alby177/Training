@@ -1,0 +1,8 @@
+So, I installed this just now and it doesn't start.I'll attach the log.
+
+Add...and uninstalling it also removed some critical bits from the other working version.
+
+I also have problems getting the latest version to run. I get these messages when logging on to Windows (see attachments). Can start Codesys and write programs, but I cannot connect to download, neither to physical PLC nor simulation. Used to work fine with the v3.5 SP9 version. It may or may not be related to your issue.Attachment:CODESYSControlSysTray.gifAttachment:GatewaySysTray.gif
+
+Thanks. Great answer as usual
+

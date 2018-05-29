@@ -1,0 +1,8 @@
+Hi,We are experiencing weird behaviour with our application.  We have built various versions on different laptops, only the .pro file has been copied between laptops.Does CoDeSys look at the last compilation timestamp in Project->Project Info and compare to timestamp in .ri or .ci as to when the application requires compiling?The effect we have is the version that was sent back from site was used on a different laptop and a previous version of the program appears to now be installed on subsequent products.Bewildered Andy 
+
+It is always new compiling, whenever something is changed even a space character is enough.Therefore If you put a program in a PLC save it on a stick and glue it onto the PLC so you are sure what is in it,this is only way to be able to see your program online.I always try to put no constants but only VAR in my program. this way i can change them without changing the program.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Not being able to connect to the controller is not a problem for us in this particular project and we can download programs as we like.   The problem we are trying to solve is how a previous version of software could have been downloaded.   Where does the compiled version of the the code exist?   Is there flags or checksums in the code to determine when it was compiled?  And how does CoDeSys know that it needs compiled or built?Andy
+

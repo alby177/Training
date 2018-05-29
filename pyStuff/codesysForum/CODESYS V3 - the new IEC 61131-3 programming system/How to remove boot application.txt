@@ -1,0 +1,6 @@
+Hello!I have quiet simple but unsolved question: How to remove boot application from device?Tried with Clear ALL in codesys Build tab, but doesn't work.I have V3 on XP embeded, with HDD, without SD card.regards,Alex
+
+Online => Reset origin.
+
+Thanks!regards,Alex
+

@@ -1,0 +1,8 @@
+I am using the OPC Communicator that comes with the Bosch Indralogic.  I am able to set up the OPC and establish communication between the Wonderware and the Bosch device.The problem is the symbol file being opened.  I can see some variables and can read and write to them.   I am trying to add some new variables to the project, but the OPC will not recognize them.  Does the OPC pull the symbol out of the Bosch device?  or does it find a .sym file on the PC with a matching name?If it is accessing the file from the PC where does it search for the .sym file?  Kinda hard to develop when you can't add new variables. 
+
+Hi,the problem maybe is, that the IndraLogic OPC server does not recognise an update of the symbol file. Probably you will have to do the OPC configuration again.The symbol file is stored in the same folder, which holds the PLC project, e.g. the *.pro file. On configuring, the IndraLogic OPC server maybe needs the full path to the *.pro file; it automatically changes the file extension to read the symbol file.Regards,Rolf
+
+The IndraLogic opc server only reads the symbols from the controllers when the server is first started. So often if you add a new variable to a program and download it (Important, the symbol file isn't used for the tag list, the symbols is always read online) you might need to restart the opc server, the easiest way to do this is to kill the task INDRAL~1.EXE and then reconnect to the opc server from your program.
+
+_________________Andreashttp://www.boschrexroth.com
+

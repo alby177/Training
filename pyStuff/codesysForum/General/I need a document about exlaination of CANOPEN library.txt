@@ -1,0 +1,6 @@
+I use 3s CANOPEN library ,but I don't have docunment to explain how to use these FB correctly,would you please give me a docunment about that?
+
+I used the information in the library: Tools; Library; Intern; CAN bus; 3sCANopenDevice; Details. (It's not very detailed.)And the 3S ftp server has some CAN examples.Hope this helps.
+
+Where?I looked under Projects/CoDeSys v2.3/CommunicationBut there doesn't appear to be anything related to CANOpen.A search of other folders currently has revealed nothing.
+

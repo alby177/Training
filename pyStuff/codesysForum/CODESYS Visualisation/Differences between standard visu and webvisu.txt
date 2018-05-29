@@ -1,0 +1,17 @@
+Hello,
+I think it will be a good idee to list the differences between standard visualization and webvisualizations the user's find.
+(see my other 2 messsages)
+
+I really want to use webvisu but it doesn't work like the standard visualisation.
+Each time I spent more time to fix the problem.
+
+This morning I find the following problem:
+
+I have a visualization called COM2 for a rs232 communication port.
+CoDeSys doesn't create the com2.xml file in the compile directory. I get a message when I use the "online login":
+
+The file ...\COM2.xml could not be sent!
+
+I renane my visualization file COM_2 and everything look nice.
+There is probably some reserved keywords ?
+

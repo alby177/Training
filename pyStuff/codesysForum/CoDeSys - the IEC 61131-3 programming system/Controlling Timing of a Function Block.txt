@@ -1,0 +1,51 @@
+Hi,
+
+I am writing an algorithm in ST which needs to be called every 250mSec. At some stage (20 or 30 seconds), the algorithm sets a BOOLEAN flag and is complete. As a complete newbie to CoDeSys, I am not sure how best to do this. Do I...
+
+Write the algorithm so that it 'falls through' and then trigger it on a 250mSec timer (like you might do under Windows). If so, what kind of timer?
+
+or
+
+Write it in a while loop so that the loop runs for the whole duration of the algorithm (20 or 30 seconds) but put some sort of delay timer to slow down execution of the loop to 250mSec.
+
+I read in another post that a while loop will block execution and probably trigger the watchdog but I am not sure if this would happen in my case.
+
+Hope I have explained the problem clearly enough!
+Any suggestions or comments would be greatly appreciated.
+
+Thanks
+
+Tony
+
+Hello,
+
+Take a look at the "Resources Tab", there you will find the "Task Configuration" you can set the program execution to what ever your harware can handle.
+
+In the other example, why not use a standard "IF THEN" or "CASE".
+
+I think you need to do some control of the time in any case because you sometimes don't want execution in 20-30 sec.
+
+Hope this helps you.
+
+/Torbjörn
+
+Wow thanks, so I can tell a task how fast it should run? Could I ask you how I associate my code with that task?
+
+Sorry if that is a dumb question but this is all new to me.
+
+Thanks again
+
+Tony
+
+Hi,
+
+Its OK, I figured it out!
+
+Thanks
+
+Tony
+
+Software Monkey wrote: task how fast it should run
+
+No it means that you can tell it when it shall start. If it's a complex code it will take longer time to execute.
+

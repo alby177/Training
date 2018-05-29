@@ -1,0 +1,18 @@
+Hi,is possible to share data between a codesys and a no-codesys application i Raspberry PI2?BR
+
+Throwing this out there, since no replies..  Like I've mentioned in other posts, I use Modbus TCP, if you have the ability to compile and modify the code.If the application is already done, but provides output to the console, you can pass information into Codesys using the syscommand method detailed in the examples section.  There is a command with and without parameter passing.Obviously, there are more methods, such as REST API, using HTTP Get and Posts, or MQTT, I'm sure there are more.
+
+There is a example on codesys store: http://store.codesys.com/shared-memory.htmlBut they are 2 codesys application! My problem is to share data codesys and non-codesys application on the same target.BR
+
+shared memory is one of the possibilities. Others are OPC UA, Modbus TCP. It depends on you application. What is the platform?
+
+_________________Paul
+
+Hi Pavol,thank you for your answer.I'm trying to work with raspberry PI2.Yes shared memory is one of the possibilities. Now I'm trying to share data with UDP protocol.I appreciate your answer for me that I'm a newbie. BR
+
+no problem. Maybe I asked wrong way.... I meant what is the non-codesys aplication. In what language is it written?
+
+_________________Paul
+
+Xojowww.xojo.com
+

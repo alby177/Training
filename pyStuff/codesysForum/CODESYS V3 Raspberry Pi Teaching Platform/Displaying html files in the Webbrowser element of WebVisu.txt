@@ -1,0 +1,2 @@
+Hi All,Has any one managed to display html files saved on the raspberry in the Webbrowser element of WebVisu. I know it works with a normal http://www.somepage.com butI cant seem to get it to display a locally save html.Thanks in advanceBest RegardsJohan
+

@@ -1,0 +1,6 @@
+Hello, I tried to communicate the raspberry with a DP I/O EtherCAT (between cable: eth0) and in the same time with an Omron PLC between Ethernet/IP (with wlan0, using an AP in the PLC). And it doesn't works.It communicate succesfully separately. If I try to use only Ethernet/IP it works fine. And if I try to communicate only with EtherCAT, it works fine. But when I add the two types of communications in the project, it doesn't work.I guess that I'm not configuring well the task's, but I don't know. Can you help me?Thank you,Best Regards.
+
+I've tryed lot of things and still not working! Please, anyone have an idea?Edwin; can you help me?Thank you!
+
+TP-Link UE300, 1000Mbps, USB 3.0and see more http://elinux.org/RPi_USB_Ethernet_adapters
+

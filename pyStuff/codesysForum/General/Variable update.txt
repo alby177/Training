@@ -1,0 +1,18 @@
+Hello everyone,
+
+I am having a weird problem and I'm not even sure where to start.  When I am on online and running with some hardware, the Global Variable list seems like it is not being updated.  There are a bunch of variables that are getting values and then at some point the variables are all "???"  I cannot force these variables, or use them in any way.  
+
+I must admit, the gloabal variable list is quite long.  I am planning on making some of them local variables because there is no need for them to be global but I don't think that should be a limitation.  If it is does any one have any rules of thumb when dealing with global variables?  
+
+Like I said, I'm not sure if the global variable list will solve the problem I am having.  Any other suggestions will be greatly appreciated.
+
+Tom
+
+I believe we have seen this when we have the window looking at the variables online too big.
+
+Try making your window smaller so you are not looking at so many variables at one time.  This will reduce the required communications and may bring back the display.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+

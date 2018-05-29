@@ -1,0 +1,4 @@
+How to specify the font name of a visu element?Suppose I have the fonts files of 'msyh.ttc','SIMLI.TTF','simsun.ttc',etc.
+
+-Add your font to the Windows Fonts (Configuration Screen => Fonts). You can do this by just dragging/dropping into the Configuration Screen where you see all the fonts which are installed.-Normally CODESYS will automatically show all the fonts which are installed, but if you see that they are "greyed-out" in the configuration screen, this means your setting is that you only get to see the fonts which are supported by your input device (language settings).-In Windows 7 you can go to the Windows Font settings (part of configuration screen where you can see the fonts) and there "un-check" the option to hide the fonts according to your language settings.Then all fonts which are installed should show up.
+

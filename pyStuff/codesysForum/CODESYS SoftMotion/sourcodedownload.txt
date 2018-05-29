@@ -1,0 +1,10 @@
+hello i am trying to do sourcecode download to lexium controller LMC20 in order to retrieve; upload  the project in plc at another time. but it gives error. anyone can help?
+
+Hello,
+
+aydin wrote:hello i am trying to do sourcecode download to lexium controller LMC20 in order to retrieve; upload  the project in plc at another time. but it gives error. anyone can help?
+
+as i know there is  no filesystem on LMC20, so this is probably not possible but to be sure ask your supplier.
+
+Edwin Schwellinger
+

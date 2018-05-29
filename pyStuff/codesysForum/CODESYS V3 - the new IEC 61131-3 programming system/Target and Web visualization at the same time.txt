@@ -1,0 +1,4 @@
+On supported pc panels is it possible to run target and web visualization at the same time?If so, would they see the same screen? meaning if I was on screen 1 on the target would the web be on screen 1 to or could it be on a different screen?
+
+Hi,Yes this is possible, the clients could be independent show different pages.(sure you should not activate current visu option).Best regardsPlcmax
+

@@ -1,0 +1,2 @@
+Hello,I like to make visualization function block in library, which uses Dynamic texts from text list.Text list is configured in Codesys project, not in lib. All works ok if I make the same visualization function in Codesys project, but don't work if I put this visu fb in library.Should I set some reference (pointer?) to define function block to use specific Text list from Codesys project? Or that is the procedure to make this work?Thank you!Best regards,Zdenko.
+

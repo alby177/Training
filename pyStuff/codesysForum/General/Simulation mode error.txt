@@ -1,0 +1,6 @@
+In simulation mode my project out two errors. The same project on two different computer as compile in simulation mode out two errors. On one PC in simulation mode compilation is without error, but I set "run" and appears the following error - "Access to illegal address! PLC is stopped."On the other computer is a compilation error - "Error 4001: ConfigEndCycle (2): Identifier 'TI' not defined"I don't know what is the problem. Does anyone have any idea what could be the reason?
+
+Gut feeling that this smells like pointers are used and writing to wrong locations or using references that are not initialized. You can accidentally write to memory locations and crash your PLC.  Additionally accessing arrays out of bounds Can also cause these errors.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+

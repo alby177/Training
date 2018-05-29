@@ -1,0 +1,2 @@
+Hi,I am looking for color control in webvisu (color picker) - I like to pick specific color with this control in webvisu and on output of this control will be 3 variables with coresponding values (R,G,B).Is something like this possible to make with codesys webvisu?Thank you!
+

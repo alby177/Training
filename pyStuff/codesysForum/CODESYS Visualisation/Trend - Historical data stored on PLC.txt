@@ -1,0 +1,6 @@
+Hi, I have been trying to display historical data in Trend Visualization. I am using WAGO 750-841 controller option: Store trend data in the PLC, also option: History in Trend configuration. Trend data files (.trd) are successfully created and stored on PLC.Although, when I log into a PLC with CoDeSys (v2.3.8.35), Trend Visualization element displays only current data, for the time periods when I am/was logged in. Data stored in .trd files are not displayed.  Thanks,Dalibor
+
+this trend thing is not running perfect, it is having some pointers running, do not rely on it. it is version dependent what happens.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

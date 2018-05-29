@@ -1,0 +1,53 @@
+Hello,
+
+I'm a newbie to modbus communication. I have a Festo PLC and have configured the Modbus TCP server and can connect to it using a freeware Modbus TCP client  
+
+Now I want to test the addressing. Apparently the addressing insde the Festo PLC is open and the user is free to choose his own addressing. I'm not sure if I have to write code in Codesys to map the IO and then address these addresses from the client? Or does Codesys provide a way to define this addressing?? Please advice or provide example if available.
+
+Thanks,
+-Dude
+
+As a follow-up to my own post, I was able to map the Outputs on my Festo PLC to the Mobbus TCP address space. This is the format I used:
+
+Output0 := PLC_PRG.awModbusData[0].0;
+Output1 := PLC_PRG.awModbusData[0].1;
+
+I can successfully switch on these outputs from my ModBus Client. However the same mapping does not work if I want to read in Inputs. Codesys gives the following error:
+
+Error 4020: Operands of 'ST', 'STN', 'S', 'R' must be variables with write access or direct address. 
+
+I tried using direct addressing and symbolic names but does not work. Any ideas??
+
+Thanks,
+-Dude
+
+Sounds like you did the following:
+
+Input0 := PLC_PRG.awModbusData[1].0; 
+Input1 := PLC_PRG.awModbusData[1].1;
+
+This would cause the error you described change it to :
+
+PLC_PRG.awModbusData[1].0 := Input0; 
+PLC_PRG.awModbusData[1].1 := Input1;
+
+Or you don't have awModbusData[1] configured as output instead as input this will not give it write access as well. Sounds like you might have one or both variables configured as inputs (readonly).
+
+The CoDeSys error will give you a line number in your code. Try to copy the code to make it easier to help.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+Hello,
+
+Actually I had the inputs mapped like:
+PLC_PRG.awModbusData[1].0 := Input0; 
+PLC_PRG.awModbusData[1].1 := Input1; 
+
+and it still did not work. Then somebody told me that "awModbusData" should be defined as a global variable. I did that and it worked like a charm. I would have never figured it out since the outputs mapped and worked correctly without declaring "awModbusData" as a global variable. Maybe you have a better idea.
+
+Anyways, my problem is solved for now. Thanks for your effort.
+
+Thanks,
+-Dude
+

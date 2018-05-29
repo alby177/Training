@@ -1,0 +1,10 @@
+Hello, 
+
+I use the scheduler in an application. I would like to know how do you change the text in different elements (FbScheduler, FbPublicHoliday, etc.) because I use it in french and modify public holidays. 
+
+Excuse my english...
+
+Thank you in advance for your reply. 
+
+Sincerely yours.
+

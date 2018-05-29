@@ -1,0 +1,2 @@
+Is there a way to customize the gCode M-Functions ?For example, i want to set a variable value ( N20 M106 K200 ) (Set the value of iVar to 200)Please Help me.
+

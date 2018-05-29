@@ -1,0 +1,12 @@
+I am a CodeSys Device User,programming with CodeSys V2.3 or CodeSys V3.5. When I try to download the newest CodeSys V2.3 or CodeSys V3.5 IDE, it is restricted to registered users.      But how to becoe a registered user? and where to login as a registered user?
+
+For registering go to:http://www.codesys.com/download/passwortanforderung.htmlFor downloading go to:http://www.codesys.com/download/download-center.htmlJust select one of the items you want to download. When you are not logged-in yet, you will see a dialog where you can click on to enter your name / password.
+
+TimvH wrote:For registering go to:http://www.codesys.com/download/passwortanforderung.htmlFor downloading go to:http://www.codesys.com/download/download-center.htmlJust select one of the items you want to download. When you are not logged-in yet, you will see a dialog where you can click on to enter your name / password.================================================the question is that there is no way to pop up a dialog to enable me to enter my account and password!when the mouse sliding over the item I want to download,there is no response at all!
+
+Maybe you want to try it on another PC or with another browser.
+
+Hi.Do you use a Javascript blocker? If yes, that could be reason. The login dialog is shown after clicking on a download link.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

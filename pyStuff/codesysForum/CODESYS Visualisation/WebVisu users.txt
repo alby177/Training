@@ -1,0 +1,4 @@
+HiI added to my project user managment and I created two users.I open visualization on two diffrent PCs at the same time.I log-in using two different users on two different PCs, everything works well.When I open sub-screen  (alarms or others) on the one of visualization the same screen appears on the second visualizationalthough it's logged in on different user. It seems to my that I have only one view at the same time.What should I change to have independent view per user?
+
+In Visualization Manager disable checkbox Use variable CURRENTVISU.
+

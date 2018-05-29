@@ -1,0 +1,8 @@
+I'm wanting to use an ADS1115 16 bit ADC on my project. If anyone else using these? I find the MCP3008 lacking for my needs. I'm having a hard time finding a reasonably detailed writeup on creating a device library from scratch, or even modifying existing device files to create new libraries. I could even use a prebuilt library so I could learn from that.
+
+I have written the library a while ago. The library is not fully tested, but it worked for me. You will find the library, device description file and an example inside the archive.
+
+alesles wrote:I have written the library a while ago. The library is not fully tested, but it worked for me. You will find the library, device description file and an example inside the archive.Hello,I've finally made time to tinker with this.The ADC is being powered from 5V and my single ended input (potentiometer) is referenced to the same 5v. PGA is set to FSR_6144mV. (2/3)With the input held ad VDD, I'm still only getting 4700 max reading. Same with all inputs.Any help you could give would be appreciated greatly.
+
+It looks like a found where the issue was coming from.It seems your library has the raw data being converted to a max reading based on the PGA setting. So, FSR_6144mV means that it will only output a max data reading of 6144. For my purposes I need resolution, so I changed all those type presets to 16383. Now I'm reading close to 12600 max reading, which is about right, since I'm still set to 2/3 gain, or +/-6144mV full-scale. It would be nice to trade this PGA for an external reference input.
+

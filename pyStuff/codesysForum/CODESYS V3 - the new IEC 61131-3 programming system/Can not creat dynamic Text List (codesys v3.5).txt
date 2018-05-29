@@ -1,0 +1,6 @@
+I have a problem with to creat dynamic text list like example error's list.  i select on POU or application and click rightmouse add object but dont see TEXT LIST.does anyone know how can i creat dynamic text list?
+
+Go to the menu: Tools=>Options=>Features. Enable the object "Text List".(maybe you have to restart CoDeSys before it is enabled).To link a graphical object to a dynamic text list you have to enable the "expert" properties (at top of properties view of graphical object).Otherwise this property is not visible.
+
+aaah! hehe found it, thanks you very much.
+

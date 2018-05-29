@@ -1,0 +1,7 @@
+Is it possible to make certain function block which is part of external library to be called from the graphic icon which could be placed in main or auxilary user tool bar?
+
+When we go to the properties of any contact to enter the address or make that varable retentive,it not possible to jump to a specific field by using the under lined characters? how does it work ,or what is the significance of underlined characters.
+
+_________________regards
+Jagjeet Paul
+

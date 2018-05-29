@@ -1,0 +1,11 @@
+Hi,
+I wish to build a CAN multi-master network configuration where the CAN slaves are in control of one CAN master. However the alternate master is in standby mode, and will takeover in the event of failure of first master, re-initialise the slaves with the necessary communication parameters using SDOs, and carry on the process.
+
+I understand this wont be uninterrupted process. 
+Any suggestions that might help to make transfer of master control uninterrupted?
+
+Has anyone worked across with such a configuration or suggest?
+
+Regards,
+Rahul.
+

@@ -1,0 +1,6 @@
+Have a DDE sever issue. The basic codesys server works of when trying to read the DDE from within windows. The issue is when trying to use the gateway dde sever add on. I've run Mircrosofts DDERecon to see if it was a excel issue but again in the link box of the DDERecon I have an item topic under codesys but not under gatewayddeserver?
+
+The program is fully loaded into a ifm PLC and using the same RS232 link between PC and PLC. I've done everthing in from the help files. The data is a string (have also tried a WORD) and this works with codesys server in both excel and DDERecon. But the gateway does not.
+
+Is there a setting or quirk that I'm missing?
+

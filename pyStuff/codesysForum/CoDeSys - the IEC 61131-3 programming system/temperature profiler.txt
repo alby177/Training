@@ -1,0 +1,12 @@
+Dear All,Iam using CoDeSys-V2.3I need a sample program for Temperature profiler.for example:[img]E:\profiler.jpg[img]     for 2 hrs the temperature should reach 300 deg C,next  2 hrs the temperature should maintain 300 deg C, after 4 hrs it should go 600 deg C and program should end.
+
+many ways to make it:try SFCinitblock emptytransition is start buttonblock 1 setpoint:=300transition is a timer TON for two hoursblock 2 other setpointtransition for the time etc.and so ongo back to init is automatic.(can not see the img)ladder diagram is also possibbledo it with steps as you learned in school (oops you are and i am doing your homework?)start and init or step1 and notstep2 coilstep1ton and step1 or step2 and notstep3 coilstep2etcstep1 setpoint:=300step2:=600etc
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+hi,i have a profiler library function but it was not working so i need a smple program.with this mail i have attached the file This Temperature profiler will run under PID action not like the normal timer sequence.
+
+have a look in www.oscat.dethey have exactly what you are looking forif you like to pay me i can write it for you.give the input and the output.yes yes i am fan.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

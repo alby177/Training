@@ -1,0 +1,12 @@
+Hi, I'm programming a quadricopter and in the visualization windows I insert the position I need to reach. This values are assigned to some specific variables which are used in the FB. How can I dinamically assigned those to some other  in the FB? I need to do that because the other variables are also used in the Plant.Thanks.
+
+a locally defined var is in every instance of a function block has another name. maybe you will need to use a in/out var.btw this question belongs in V3 .I also hope codesys is fast enough to control your copter as a PLC tends to be too slow for these type of fast operating things.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi, there's my problem.I need to dinamically modify the inputs of a FB by using values which are given as input in a visualization window.Then I need to assing those values to another variables that are the outputs of the same FB.There's a way to do that?
+
+in a function block there are inputs outputs and in/outputs possible.that way you can keep setting values or integrator from the out back to the in.please give sample project as export file and what do you need. as i am not sure what the question is.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

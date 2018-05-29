@@ -1,0 +1,4 @@
+Hello!I've been playing with trace for the first time yesterday, and after a few painful hours I found why I get 57 Build errors when adding Trace component in visualization. You have to enable a check "Generate Trace POU for visualization" and a task deployment have to be set.After all a Trace integration in codesys V3 is very simple practicaly without any code implementation, plenty of settings and after PLC login works like a charm, very happy.For all beginers there is a explanation in prinscreen, I have to share with you.regards,Alex
+
+Thanks for the information!
+

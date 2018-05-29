@@ -1,0 +1,6 @@
+I'm having a small issue with rebinding to a port if I do a clean. I understand the software is keeping the socket open with the previous socket identifier, but locks out the new bind request.Is there an easy way to fix this on V2.3?Regards,PJE
+
+You'll have to use the system events for that, more specific the SysCallbackRegister function from SysLibCallback.lib:Reguster the callbacks like this (once in the program)Code:IF Init THEN   SysCallbackRegister(INDEXOF(NetVarClient_Callback), EVENT_STOP);   SysCallbackRegister(INDEXOF(NetVarClient_Callback), EVENT_BEFORE_RESET);   SysCallbackRegister(INDEXOF(NetVarClient_Callback), EVENT_BEFORE_DOWNLOAD);   Init:= FALSE;END_IF;Then close the sockets in the function callbackCode:FUNCTION NetVarClient_Callback:BYTEVAR_INPUT   dwEvent         : DWORD;   dwFilter      : DWORD;   dwOwner         : DWORD;END_VAR(* Close the socket *)NetVarClient.Close();After this the socket will be closed when you do a reset or download or stop.(You can open the NetVarUdp_LIB_V23.lib library to see it in action)
+
+_________________Andreashttp://www.boschrexroth.com
+

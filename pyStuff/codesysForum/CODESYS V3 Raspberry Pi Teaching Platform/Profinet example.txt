@@ -1,0 +1,16 @@
+Is there any profinet example?
+
+Indeed, I tried the EtherCAT example and tried to do something similar with Profinet. But when I try to add a device I don't find Profinet Master. Where do I find it?
+
+Hi,you need to add 'Ethernet' then add Profinet Controller.See screenshot.BREdwin
+
+Danke für die rasche Antwort!
+
+I've added the example Project additionally!BREdwin
+
+When I open the example project above with the current version I get a library errorCode:[ERROR]         profinet, 3.5.8.0 (3s - smart software solutions gmbh): Library Manager: Could not open library '#ProfinetCommon'. (Reason: The placeholder library 'ProfinetCommon' could not be resolved.)When I go to the library manager I cannot download the library and when I try to reload the Library I get another error, see pictures. What to do?
+
+Hi,is everything in current Version?CODESYS IDE? (3.5.8.x)Raspberry Pi Packet? (check for updates in Package Manager)Then 1. Update plc device in Project tree by rightclick update device2. set compiler Version to current (same as your codesys version)3. Check by rightclick onto the profinet Controller in the device tree - udpate device to current VersionUsed attached project.BREdwin
+
+I use Codesys 3.5 SP 8 P4 with Codesys Control for Raspberry 3.5.8.10. I already had updated everything using "set all to newest". Actually I get more errors with your newly posted example project. I get additionally a similar error for SM3_Robotics, SM3_Robotics_Visu and SM3_Transformation.But I can resolve the error in the SP6 example by manually selecting "placeholder". Still this should work automatically.
+

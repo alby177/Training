@@ -1,0 +1,2 @@
+Hi,I am trying to use templates for visu creator. I installed successfully and got new menu option Generate visualisation active.I created a function block with template specification as in refference manual. Clicking Generate visualisation I see message FB Visu creator: finalising, but I get no new visualizations...Maybe I am doing something wrong.BR, Gregor
+

@@ -1,0 +1,5 @@
+ Q1. Just can assign one function code for this block. How can it work as reading and writing data?
+  Q2. The data value is not identical between WAGO 750-841 and Honeywell HC900 controller? Why? 
+
+_________________Aries Tsai
+

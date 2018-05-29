@@ -1,0 +1,20 @@
+Hi,EtherNet/IP communication tra Raspberry PI2(scanner) and a PLC work fine as you can see:But if I reboot the raspberry the communication does not work.To start the communication it need a hot reset or a cold reset.How is it possible to run the communication itself after a reboot?Thank you
+
+If someone want to look the project, you can download it from following link.https://dl.dropboxusercontent.com/u/152 ... ectarchiveThe project work fine, but if reboot the raspberry, the ethernet/IP communication does not work.Currently for start up communication after reboot I have to perform a hot or cold reset.BR
+
+Maybe I understand the problem, but I have no solution. Please look the screenshot! Have you advice for me?
+
+guess we could provide you with an solution tomorrow.... some additional tests are needed.BR Edwin
+
+we need more time ... sorry for this.
+
+No Problem Edwin! I wait!Do you think that it is a bug?BR
+
+Hi,yes it is a bug and it need to be solved in CODESYSThe workaround is to use a static assigned IP till the fix is released.BREdwin
+
+Hi Edwin,Raspberry has already a static assigned IP.   BR
+
+
+
+OK now it work fine:
+

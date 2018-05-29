@@ -1,0 +1,8 @@
+Hi all,Recently I used the Modbus master library (CoDeSys V3.5.3.0).And I noticed that dis-connecting and re-connecting the serial cable does NOT restart the Modbus protocol.Do you have any experience with (re-) starting the Modbus protocol? Is there a way to:- detect that the Modbus protocol is not running.- (re-) start the Modbus protocol manually (by the application).Any help is appreciated.Regards,Edwin.
+
+Yes, this is known.In the device tree you can set the name of your slaves (right click => properties).This name is the instance of your Modbus Slave.To detect the error and reset the communication you can use e.g. (mbSlave1 is the name of my Modbus slave device):IF mbSlave1.xError THEN	mbSlave1.xReset := TRUE;ELSE	mbSlave1.xReset := FALSE;END_IF*************To get the error message you can useVAR	bySlave1Error: IODRVMODBUS.MB_ErrorCodes;END_VARbySlave1Error := mbSlave1.byModbusError;
+
+Tim,Thank you for your quick answer.I'll apply it immediately.Do you know where I can find a list of known issues?(I do not have access to the CoDeSys jira database.)Regards,Edwin.
+
+Please contact your supplier for this.Jira is only accessable for direct customers (OEMs) of 3S-Smart Software Solutions and Distributors.
+

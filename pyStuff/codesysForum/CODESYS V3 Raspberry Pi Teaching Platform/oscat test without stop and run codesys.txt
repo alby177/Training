@@ -1,0 +1,2 @@
+Good evening,how can i force oscat tod while i runtime?I tried to set and force with CTRL F7 a value but arrived at that date now the timer does not start.How do you do it?Thanks
+

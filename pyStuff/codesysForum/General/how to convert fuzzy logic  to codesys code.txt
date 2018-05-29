@@ -1,0 +1,22 @@
+I am using codesys2.3.4.5,
+and using matlab fuzzy logic to model a double hook control model 
+
+but i don't know how to convert fuzzy logic mode to codesys code.
+
+if there anyone can give me some help
+
+
+Snow.Ma
+2009-3-18
+
+See http://www.hybridtech.dk/
+
+Try this site:
+
+http://www.fuzzytech.com/?lang=e
+
+With this software you cn create, test and translate the fuzzy logic to ST language.
+
+_________________Best Regards,
+Mauricio Lopes
+

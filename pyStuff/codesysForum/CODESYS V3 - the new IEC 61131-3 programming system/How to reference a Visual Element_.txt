@@ -1,0 +1,6 @@
+If I create a rectangle element in some Visualization,the rectangle's "Elementname" is "GenElemInst_4",Then how can I reference the Elementname of "GenElemInst_4"?Like the way bellow:VisuElems.GenElemInst_4.Position.X:=100;Or other methods?
+
+Hello. I am interested in this too.
+
+I'm afraid, this is not very simple to do in V3. First of all, in V3 there are multiple visualization clients, and each of them is a separate entity, with regards to the currently visible visualization, and its components... Any many-many other differences. In order to "program" visualizations, and create elements from ST code, there is a toolkit you can purchase from 3S.As a workaround, I recommend to extend your function block or program with a variable iPositionX, manipulate that variable from within the function block, and bind this variable to Relative-movement/Movement top-left/X or the corresponding Absolute-movement value of a visualization element. It's very easy to create progress bars and other "animations" this way.
+

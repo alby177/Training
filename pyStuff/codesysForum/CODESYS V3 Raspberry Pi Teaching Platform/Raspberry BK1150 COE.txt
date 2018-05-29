@@ -1,0 +1,8 @@
+Hello,I'm trying to add BK1150 ethercat fieldbuds module and some KL-mouldes to Raspberry.When I download the program the Ethercat and BK1150 are marked with orange triangle and I see one error from log :Emergency from device:1001 Error code: 16#A000 Error register: 16#02 Error field: 16#0E 16#04 16#00 16#04Some previous post mentioned that with BK-devices the  user should use "MDP" version of device xml-files but when I asked from support there are no MDP files anymore for newer devices, only COE - files.Are there any experts how can tell how I can set  Codesys to understand COE-definition of BK1150 ?Thanks
+
+Hi,hm a pain ....because this is not needed in Twincat (MDP variant)Use attached MDP and add them manually...  not by scan (this works for sure...)BREdwin
+
+Hello Erwin,thanks for your attachement. But there is only the BK1120 MDP in the zip-file.Do you have another one?Regards,Frank
+
+Ok,now ist works.   I've modified the BK1120 (see the attachment)...Regards,wayne
+

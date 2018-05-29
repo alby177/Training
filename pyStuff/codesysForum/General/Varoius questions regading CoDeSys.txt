@@ -1,0 +1,84 @@
+Hi!
+
+I have som various questions regarding CoDeSys.
+
+1. Is there any way to create a toolbox for the various function blocks so that you can drag and drop your function blocks to the drawing? I know that you can press F2 and get the Input assistant but that is not what I'm looking for. 
+
+2. Are there any documentation regarding the revision handling in CoDeSys, other then the help section? 
+
+3. In the macro menu in CoDeSys you can create macros using batch code, but is there any other way to create macros? Can you for an example “record” your actions and create macros from that, like in MS Word?
+
+4. Is there any way to set labels/names on wires without using the input/output. The label must be connected to the specific wire. 
+
+5. Why does not CFC meet the IEC 61131-3 standard? What is it that make CFC differs from the standard?
+
+6. I would like to make a header and footer which will be printed with the drawing.
+I have changed the default.dfr to match my criteria’s and would like to have an easy way to change the text in the header and footer without editing the default.dfr. Can this be done?
+For an example to change the name of the designer of the drawing. 
+
+7. When running an application and setting an local variable in an action it takes quite a while before the same variable gets set in an other action. Why?
+
+8. How do you measure cycle time in Codesys?
+
+9. Is there any documentation regarding creating or modifing libaries? In that case, where can I find it?
+
+If nothing else is mentioned then I’m using CFC in all the questions. 
+
+Hope you can answer all of my question.
+
+Best regards
+Andreas
+
+I'll try to answer a few that I think I know.
+
+1. You can not create a toolbox. I was hoping that CoDeSys was a little more Plug-able like Firefox where users can add there own plugins. 
+
+2. Another great point. I have been asking 3S and my PLC MFG for years now and they don't really release it. My PLC MFG tells me to read the help to see what changed. If you find something please let us all know.
+
+3. Not that I am aware of.
+
+4. I think you mean comment the wire? Not possible.
+
+5. How does it differ?
+
+6. Not really good with this but may be possible.
+
+7. ?
+
+8. A couple of ways. Hardware wise you can set an output at the beginning of a program cycle and reset it at the end and monitor the output with a scope.
+
+Some PLC MFG have a cycle time FB for you to use.
+
+Another software method is to store the time at the beginning of a cycle and the end subtract and determine it this way.
+My PLC MFG has an external software Pkg so I can request it.
+
+I think there is a way directly with CoDeSys but I can't think of where I have seen this.
+
+9. Which type of library? One written external like in C or internal with CoDeSys? CoDeSys is simple you just add POU's and select save-as internal library.
+
+look under CoDeSys help keyword "Internal Library" here is a CCP:
+
+User-defined Libraries
+If a project is to be compiled in its entity and without errors, then it can be saved in a library with the 'Save as' command in the 'File' menu. The project itself will remain unchanged. An additional file will be generated, which has the default extension ".lib". This library afterwards can be used and accessed like e.g. the standard library.
+
+For the purpose to have available the POUs of a project in other projects, save the project as an Internal Library *.lib. This library afterwards can be inserted in other projects using the library manager.
+
+Hint: Regard the possibility to define via pragmas to what extent the declaration part of the library should be visible in the Library Manager when the library has been included in a project. ("Concealing of variable declarations).
+
+If you have implemented POUs in other programming languages, e.g. C, and want to get them into a library, then save the project using data type External Library *.lib). You will get the library file but additionally a file with the extension "*.h". This file is structured like a C header file and contains the declarations of all POUs, data types and global variables, which are available with the library. If an external library is used in a project, then in simulation mode that implementation of the POUs will be executed, which was written with CoDeSys; but on the target the C-written implementation will be processed.
+
+If you want to add licensing information to a library, then press button Edit license info... and insert the appropriate settings in the dialog 'Edit Licensing Information'. See the corresponding description at 'File' 'Save as...' resp. at License Management in CoDeSys.
+
+Let me know what you find out.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+Regarding cycle time, on our hardware which is Eaton/Moeller and Bosch Rexroth you can go to the Resources tab and select PLC Browser (when online)
+
+This opens a window with a command line on top and an output window below.   To the right of the command line is a button that drops down a list of possible commands.   One of them gives info on the PLC scan time (can't remember off the top of my head which one right now)
+
+Regerding CFC I think it is just that it was never written into the 61131 standard.  It's like C++ is not part of 61131 but it is still a valid language. 
+
+Hope this helps.
+

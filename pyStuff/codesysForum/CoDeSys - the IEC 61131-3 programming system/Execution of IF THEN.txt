@@ -1,0 +1,9 @@
+How does the execution of an IF THEN works?
+
+Does the CPU skip everything inside IF END_IF, so if I put heavy code inside does this save execution time?
+
+/Torbjörn
+
+Yes, it does skip. If you convert ST to IL, you can see this easily. CoDeSys will introduce jump labels.
+Rolf
+

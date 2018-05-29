@@ -1,0 +1,14 @@
+Hi EveryoneI made a Function Block that would be part of a Library. The user of this library could use as many instances of the said function block which is not known at the time of implementation of the Function Block / Library.Is it possible to dynamically create an Id for each instance of the function block that the User creates. Does anyone have an idea how this could be done.Thanks and regards
+
+What is wrong with letting the user define the name when the user uses your FB?Code:PROGRAM ExampleVAR   Inst1 : YourLibrary.YourFB;   Inst2 : YourLibrary.YourFB;   Inst3 : YourLibrary.YourFB;END_VAR
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Hi Scott Probably i couldnt explain my issue.So i try it again, inside the function block i have a variable which is the Id of the function block, just as shown belowFunction_Block Motorvar Motor_id : uint;end_varso if the User of the library has an two Instances of the function block like fbMotor1 : Motor;fbMotor2 : Motor;then i would like the Motor_Id in fbMotor1 to have 1 and Motor_Id in fbMotor2 is 2, or any other number.Thanks and warm regards.
+
+Use VAR_STAT to define an internal FB var that is static across FB instances.  Then add an Fb_INIT method (see the help) that will increment the counter and assign to a var output.Code:FUNCTION_BLOCK MotorVAR_OUTPUT   MotorId : UINT;END_VARVAR_STAT   InstanceCount : UINT;END_VARMETHOD Fb_Init : BOOLVAR_INPUT   bInitRetains : BOOL; // if TRUE, the retain variables are initialized (warm start / cold start)   bInCopyCode : BOOL;  // if TRUE, the instance afterwards gets moved into the copy code (online change)END_VARTHIS^.InstanceCount := THIS^.InstanceCount + 1;THIS^.MotorId := THIS^.InstanceCount ;
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Oh..Thankyou so much Scott..this works like a charm..!!Thanks again and warm regards
+

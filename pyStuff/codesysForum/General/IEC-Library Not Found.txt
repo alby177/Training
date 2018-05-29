@@ -1,0 +1,6 @@
+Hi All,I'm trying to write a sequence in SFC, but I want to use IEC-Steps instead of the simplified version. When I toggle the IEC-Steps on, I'm told that I'm missing the "IEC-Library", further digging through manuals found that specifically I'm missing this one "lecsfc.lib".Does anyone know where I can obtain this, as all I can find is information on Wago's and all sorts, nowhere to actually get a hold of this library.Thanks
+
+give me email adress and PLC type and will send it to you (or the wago will)
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

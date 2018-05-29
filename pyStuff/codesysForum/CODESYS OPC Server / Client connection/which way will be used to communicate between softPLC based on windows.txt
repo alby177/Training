@@ -1,0 +1,2 @@
+hello everyone,as a new user , I don't know which way will be used to communicate between softPLC based on windows, I have a network, every computer install the codesys v3.5  winnt, now I want to communicate between them, I cannont find a good way. TCP ? SOCKET? OR OPC? At the same time ,I want to own a example to understand the program. thanks!hope give me a help!
+

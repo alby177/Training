@@ -1,0 +1,12 @@
+Hello,is there any modbus/TCP example with two Rasperry Pi ?Thank you in advanceBest RegardsLeonhard Stiegler
+
+Hello,I'm lookig for same connection, do you have some new info about connesc 2 RPis via Modbus?Thank you.
+
+Master Modbus1) Add device : Ethernet > Ethernet adapter2) Set ethernet adapter: Double click on it, set interface, IP ...3) Add device : Modbus > Modbus TCP Master4) Set Modbus Master device : Mark auto-reconnect5) Add device : Modbus > Modbus TCP Slave6) Set Modbus Slave device : General: Set Slave (2nd RPi) IP address, port, unit IDSlave Channel: Add channel (Reading -FC4 / Writing -FC16 / Both -FC23), set offset to 0x0000, set lengthAdd I/O mapping, I'm using full address to WORD, like "Application.PLC_PRG.modbusIn", where "modbusIn" are devined at PLC_PRG as "modbusIn	:	ARRAY [0..3] OF WORD;"7) Go to Device (CODESYS ... Raspberry Pi) > PLC settings and set Bus cycle task to "MainTask" Compile9) If you are getting some warnings declared variables at library, make a change at LibraryManager. Set version of IoDrvModbusTCP from "3.5.6.0" to "3.5.4.0".10) Compile11) It's done   Modbus Slave1) Add device : Ethernet > Ethernet adapter2) Set ethernet adapter: Double click on it, set interface, IP ...3) Add device : Modbus > Modbus TCP Slave4) Set Modbus Slave device : General: Set slave port, ID, WORD lengthAdd I/O mapping, I'm using full address to WORD, like "Application.PLC_PRG.modbusOut", where "modbusOut" are defined at PLC_PRG as "modbusOut"	:	ARRAY [0..3] OF WORD;"Set bus cycle and updating variables to "Use parent device/bus setting"5) Go to Device (CODESYS ... Raspberry Pi) > PLC settings and set Bus cycle task to "MainTask"6) Compile7) It's done   Both UploadRun Both device programAll done and data are flowing, I hope 
+
+Hallo,ich need some help to get run my two pis over modbus/tcp.I have done all steps (Master Modbus) in the description of "jvondrus", but my modbus slave dont run?What "set length" I need? What can I do?
+
+Hi,use attched example.BREdwin
+
+Edwin Schwellinger wrote:Hi,use attched example.BREdwinThank you, very much!Now I've understand it...and the two rapsberry runs!
+

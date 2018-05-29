@@ -1,0 +1,10 @@
+What do I need to create an external implementation of a library? How can i obtain it (or them)? What about licenses? 
+
+An external library is linked to the runtime system. This could be a C or IEC implementation.To link it to the runtime system you need the Runtime toolkit. You can purchase this from 3S-Smart Software Solutions or your local distributor.This is mainly done by OEM's like PLC or IPC vendors in which case the runtime is adapted to the platform (CPU/OS/Mem combination).Main question is why you want to create an external library?Could you inform us a little bit more about your application?Which hardware do you use?What functionality should the external library have?
+
+Thanks for the information you provided.I'm working with a PhD student and we need to implement an interprocess communication with IEC 61131, so we need to implement an external library to implement such communication.For external implementation, which languages are allowed?
+
+Hello,Have you looked into using OPC? The CoDeSys OPC server (Windows only) is free.If you want to implement an external library it's C or C++ that can be used.You also have the possibility to write a CoDeSys application that communicates using sockets. That might be an alternative for you.Best regards,Kristian Berlin
+
+I agree with Kevin.You can use the Network library (Use Case) for TCP/IP or UDP/IP communication.The CoDeSys V3 application can be both Client and Server.
+

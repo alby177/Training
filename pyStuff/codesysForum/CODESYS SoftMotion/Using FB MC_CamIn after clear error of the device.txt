@@ -1,0 +1,2 @@
+Hello,I used functional MC_CamIn to set the CAM table to device.  During executing of the table device indicates error. The execution of the CAM table is stopped. In this case the device error is cleared and Enable input of the functional block MC_Power is reset (FALSE/TRUE). There is system ready and Power stage of the motor is ON. The question is after these steps (clear device error) is it possible to continue the CAM table from this place where is stopped? Thanks.
+

@@ -1,0 +1,4 @@
+When I try to group some elements in a visualization it seems like the reference point is changed to random.The same problem, when placing a visualization in another visualization.How do I solve this? o\|/_
+
+https://www.facebook.com/peder.lodahl.9 ... ater&ifg=1
+

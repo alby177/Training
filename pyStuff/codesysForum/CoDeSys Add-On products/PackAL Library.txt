@@ -1,0 +1,11 @@
+Does anyone know if there is a OMAC PackAL for CoDeSys available?
+
+_________________Erik Soeder
+
+I would like to know the same. I am currently creating my own. I do know that Wago has created a library framework (template).  If you are not using PLCopen then you are going to create your own control modules your self anyways. Let me know what you find.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+Hi spfeif !What is the diffrence of PackML and PackAL?After reading yours request, I started to investigate what it was you were looking for.This is something I find very intresting, a standard template to make code and communication between machines and what I understand even between code/stations.I also found out that Wago have made this framework from some basic code from 3S. Mitsubishi has released code on there site.Will see if I can convince my boss to pay the membership to OMAC so I can get the P&L implementation guide./Torbjörn
+

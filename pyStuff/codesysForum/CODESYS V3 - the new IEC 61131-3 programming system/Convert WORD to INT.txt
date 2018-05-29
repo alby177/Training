@@ -1,0 +1,8 @@
+Hello, I would ask how to convert WORD_TO_INT?I don't find any function.
+
+It is there as a built in function.  The help groups all of the integer conversions together under the section "conversion->integer data type".  Just start typing it in and the SmartCoding functionality should show the choice.Attachment:word-to-int-example.pngAttachment:help.png
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+scott_cunningham wrote:It is there as a built in function.  The help groups all of the integer conversions together under the section "conversion->integer data type".  Just start typing it in and the SmartCoding functionality should show the choice.word-to-int-example.pnghelp.pngThanks scott_cunningham
+

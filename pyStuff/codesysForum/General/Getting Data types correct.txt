@@ -1,0 +1,16 @@
+In other dialects I have done something like:-bool_var := (int_var = 53);ie the boolean is set TRUE if the int equals 53 otherwise it is FALSE.can I do this here?
+
+Yes you can  
+
+thanks for the reply. I got my example wrong - what I was actually trying to do was as below.bool_var := (int_var AND 8);
+
+thanks for the reply. I got my example wrong - what I was actually trying to do was as below.bool_var := (int_var AND 8);
+
+nickobs wrote:Code:bool_var := (int_var AND 8); This will not work. That is not a boolean expression. But the first example should work. Happy CoDeSysing!
+
+Hi!What I understand is that you can do a bit compare but only with WORD types.BOOL := WORD AND 2#10010010/T
+
+stop when you do an binary AND the result is still a word.you must convert it by WORD_TO_BOOL to work correct, and yes the shortcuts will work, but are not easy to read, and are not in IEC
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

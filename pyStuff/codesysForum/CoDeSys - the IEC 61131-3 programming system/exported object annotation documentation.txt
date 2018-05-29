@@ -1,0 +1,2 @@
+I am looking for documentation concerning the annotations in exported object files like the following:(* @NESTEDCOMMENTS := 'Yes' *)(* @PATH := '\/TCU Objects\/.Internal' *)(* @OBJECTFLAGS := '0, 8' *)(* @SYMFILEFLAGS := '2048' *)(* @END_DECLARATION := '0' *)I can guess about the @PATH, @NESTEDCOMMENTS and the @END_DECLARATION keys butthe @OBJECTFLAGS and @SYMFILEFLAGS have more complex non-obvious values.Any help in pointing me towards documentation would be great, or a simple explanation.
+

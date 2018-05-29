@@ -1,0 +1,6 @@
+I don't understand the "SysLibs". For example, how do I know if I can use the stuff in SysLibFile.lib? I was under the impression that it only worked if the target vendor provided such a library. However, I have a SysLibFile.lib in c:\program files\3s software\codesys v2.3\library, which I can import without problems into my Infineon C16x based project. How is this possible?On the same topic, what is the purpose of SysStrLen() in SysLibStr.lib, when you already have the standard LEN() function?
+
+you can load all libs from any supplier they do not always work as some are vendor specific.in the library you can see what functions are included and the comment.just open the lib from start.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

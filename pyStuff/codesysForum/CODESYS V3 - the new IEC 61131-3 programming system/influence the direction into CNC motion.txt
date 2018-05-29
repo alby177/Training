@@ -1,0 +1,6 @@
+Hi guys!I'm doing a project where 5 module axes, 0-360, and they are moved with CNC motion.I use: smc_smoothpath -> smc_extendedcheckvelocity -> smc_checkvelocities -> smc_interpolator and then smc_controlaxisbypos.But I have a little question: can I set the direction of the axes in positive value?If I set the movement from 350 to 5, it does a backwards movement, instead I would a forward movement.Can anyone help me?Cheers
+
+Hi,The user can specify a period for the axes A, B, C, P, Q, U, V and W by setting the word PA, PB, PC and so on. By default these are 0, which means: finite and not modulo.e.g. N0 PA360 (this means that A has a period of 360 degree).Then, the decoder will modify ist behaviour in the way, that the additional axes always travel tot he nearest point. E.g:N0 PA360N0 G92 A270 (set the position of A axis to 270)N0 G1 A0This will move the axis in positive direction.The position output of the ipo is not in the interval [0..Periodlimit], but can be outside of it. However, the FBs like SMC_ControlAxisByPos will take care of making the modulo.cuEdwin
+
+Thank you so much Edwin for your answer!Anyway I don't use decoder but the other way "OutQueue".Is it possbile to modify the direction from "shortest" to "positive" directly?Thank you in advance.
+

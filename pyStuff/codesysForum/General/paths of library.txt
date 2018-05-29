@@ -1,0 +1,11 @@
+I have a folder with standard libraries and another with my own libraries. I want when i submit to the repo a project and the .lib, anyone who downloads it can directly open the project in his own pc and detect the .libs. Is this possible by relative paths or something else??
+
+I think you are referring to distribution. just use the menu File -> Project Archive -> Save/Send.(* OOps this is V3 *)This will pack the entire project including the libraries in the repo. On the receiving side of the archive extract by using the menu File -> Project Archive -> Extract Archive. It will automatically put your libs into their repo and will be ready for you.(* V23 *)V23 is path dependent to your libraries.The same principle as above but you now have to manage the paths in V23. You have to do some up front work in the Project -> Options -> Directories. You Use File -> Save/Archive. This creates a zip file. The trick is to make sure th ereceiving person uses the option on extraction to use file paths.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+I know this is a old post but ...I set my project folder as Project Project\build Project\lib Project\lib2In the Project set the directory relative:Project->Options->Directories		Libraries: .\lib\;.\lib2\		Compiles Files: Build\the "." will search the relative path for the libraries, the ";" will allow you have more than one library directory.This works for *.pro but I cannot get it to work for *.lib
+
+HelloI have got the same problem. For Project-Files (*.pro) I can set "Project Libraries". But if I want to use the same in a Library-File (*.lib) I can set the directory and save the library. But after opening the same library again, the path just entered before is lost! Is this a codesys bug?I need this to use one library from another library.Thanks for any help.
+

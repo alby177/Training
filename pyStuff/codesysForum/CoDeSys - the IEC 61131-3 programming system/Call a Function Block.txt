@@ -1,0 +1,44 @@
+Hi,
+
+I call a Program (PRG1) from System Events (event start for example).
+PRG1 have to send a email. But the function to do this is a function block and need multiple cycles.
+
+How to do this when PRG1 is called once and have only one cycle.
+
+I also notes that I can't put parmeters to call a program from System Events.
+It is possible from a Tasks Config but not from System Events.
+
+Thanks,
+Romuald.
+
+Hi,
+
+- call a FB from your event wich sets a global bit
+- call PRG1 in main cycle as long as bit is true.
+- reset the bit in PRG1 when all stuff is send.
+
+Nitro
+
+_________________Die Fähigkeit sprechen zu können macht nicht unbedingt intelligent. (Qui-Gon Jinn)
+
+Thanks for you reply.
+
+Nitrozin wrote:Hi,- call a FB from your event wich sets a global bitNitro
+So we can call a FB from an event ? When I press the F2 key, only PRGs are proposed.
+I don't understand how we can call a FB. We do not need to create an instance ? It does not seem to be possible in System Events.
+And as I said, apparently we can not use parameters for POU in System Events.
+
+I should mention that I use the version 2.3.9.13
+
+What I did that seems to work:
+
+Code:System Event 'start' --> START_PRGCode:PROGRAM START_PRGVAR  Inst: FB;  error: INT;END_VARgo := TRUE;WHILE go DO  Inst(var1 := '', .., send := go, error => error);END_WHILE
+
+In fact I simulates cycles with a WHILE boucle. Is the good way to do in CoDeSys development ?
+I don't think so. My WAGO stops responding  
+
+Nitrozin wrote:Hi,- call a FB from your event wich sets a global bit- call PRG1 in main cycle as long as bit is true.- reset the bit in PRG1 when all stuff is send.Nitro
+
+Perhaps you want to say this:
+Code:VAR_GLOBAL  Gstart: BOOL;END_VARSystem Event 'start' --> START_PRGCyclic Tasks  which calls --> PRG_WITH_FBCode:PROGRAM START_PRGGstart := TRUE;Code:PROGRAM PRG_WITH_FBVAR  Inst: FB;  error: INT;END_VARIF Gstart THEN  (* send = IN_OUT variable. Set to FALSE when finished *)  Inst(var1 := '', .., send := Gstart, error => error);  IF NOT send THEN    Gstart := FALSE;  END_IFEND_IF
+

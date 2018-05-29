@@ -1,0 +1,6 @@
+Hello,I would like to get the CODESYS old version V3.5 SP3 Patch1: does enybody know how and where to get it?Thanks a lot in advance.
+
+If you haven't found it already, send a request about it to support@beijer.se and we can provide you with a download link as it's still in our support system.I wish Codesys would supply an "old versions" link on their website. Sometimes you really need to use an older version because of some feature that isn't compatible with other systems.
+
+Thanks for the support.Yes, I need to work on a project from onther supplier using that version.
+

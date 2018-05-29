@@ -1,0 +1,7 @@
+I am using a CCP_XS 10 inch display controller to communicate with another control module over J1939 bus. The communication works fine. My question is how do I know if the communication has failed (for e.g. a loose cable unable to deliver a J1939 message). I am using the Program "J1939_master" provided with the library J1939lib.lib version 3.10.06. Is there a way I can check for failure to deliver message condition? Any help is appreciated. Thanks,Indy
+
+Have you figured it out? If you pass the library I can help you out. I just am not sure if they are using the 3S CanDrv or they are directly accessing the CAN bus themselves.If you are using 3S can libraries do you have the documentation for them? Typically vendors add an available output to a CAN read FB so that you know there is a new message you can use that on a timer.
+
+_________________Thanks,
+Steve Pfeifenroth
+

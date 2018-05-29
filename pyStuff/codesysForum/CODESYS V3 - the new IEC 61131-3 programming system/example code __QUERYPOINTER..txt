@@ -1,0 +1,6 @@
+Hello all,I'am looking for an example how to use the __QUERYPOINTER.Regards Patrick
+
+The CoDeSys online help has a basic example.A few tips:Find it in help by searching for "__QUERYPOINTER" (include the two underscores)The FB you want to cast to must implement __SYSTEM.IQueryInterfaceDepending on your hardware platform, execution time of this call could be noticeable (especially for high speed automation)Also check out __QUERYINTERFACE
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+

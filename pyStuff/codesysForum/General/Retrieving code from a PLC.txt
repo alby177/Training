@@ -1,0 +1,32 @@
+Hello all,
+
+I'm running CoDeSys 2.3.8.0 with a Wago 750-841 controller, and I seem to be having a bit of an issue with retrieving existing code from the unit.  As per the documentation, I go to the "File/Open" menu, then click on "PLC...", set my target settings and comm parameters, and CoDeSys appears to be going through the motions of downloading the code from the Wago unit.  After a few confirmation dialogs about overwriting existing configuration files and such, I'm given a "Save As..." dialog asking for the project name to save to.  After saving the project, I then am left with a project containing a single PLC_PRG ladder logic program which is empty.
+
+I would have expected to have a program and a number of function blocks (all ST) from this unit, although I don't know whether to expect to get symbol information or not.  In any event, an effectively empty project is definitely not what I was expecting.  Am I missing something really glaring somewhere?
+
+Hi Steve,
+
+general the code wich is downloaded to the controler is compiled code, so it's not possible to upload it to your programming system. The way wich is discribed in your post is the way to open sorcecode from controler. To have this possibility you have to download your sorcecode first! Download sourcecode is one of the topics in Online menue.
+
+regards
+Ralph
+
+Thanks for the clarification, Ralph.  I was expecting that the code would have been compiled to some kind of intermediate p-code that would have been relatively easy to derive the original source from, but it's obvious I was mistaken. 
+
+The compiled code in the unit is machinecode and can be made with all types of compilers, it will be without any comment, or variable names.
+
+The only thing you could get back is a decompiled program.
+Only when really needed You could read all commands.
+
+it will look like HEXcode and after decompiling it will look something
+like ST however only numbers no characters.
+127 = add
+345645 address of what to add
+
+If you need to read what happens find the program and hook the original up.
+If not possible when back engineering it will take a lot of effort, to see what happens.
+
+If you open a book on machine language for the 8085 you will see what i mean.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

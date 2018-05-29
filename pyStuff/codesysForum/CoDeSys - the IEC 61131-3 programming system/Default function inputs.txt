@@ -1,0 +1,49 @@
+As it's possible in e.g. C++ to  have default function arguments, I'm now wondering if this is also possible in CoDeSys ?
+
+C++ example
+Code:int Increase(int nValue, int nStep=1){return nValue+nStep;};Following function calls are both valid ...Code:int nTest = 0;Increase(nTest);      //nTest is incremented with 1Increase(nTest,5);    //nTest is incremented with 5In the CoDeSys help I found info about VAR_INPUT CONSTANT, but if I try this I get compile errors when calling the method with not all inputs filled in.Code:METHOD mnIncrease : INTVAR_INPUT  nValue : INT;END_VARVAR_INPUT CONSTANT  nStep: INT := 1;END_VARVAREND_VAR----------------------------mnIncrease:=nValue+nStep;----------------------------mnIncrease(nTest,5); //nTest is incremented with 5mnIncrease(nTest);   //generates compile error
+Does anyone have an idea if my idea is possible ?
+
+it is possible with a FB by using an initial value to the input variable definition like Input :Byte := 4;, But not possible with a FUN that I am aware of, CoDeSys will not compile if the input to a function is not connected to a variable. Why do you need to do this?
+
+_________________Thanks,
+Steve Pfeifenroth
+
+The default argument causes default method operation. All method calls that require default operation then need to pass the default argument. A lot simpler and safer if you can omit it as in C++, no ? Thx !
+
+I do not have the problem
+
+Please add a Function_Block to your project
+
+FUNCTION_BLOCK My_FB
+VAR_INPUT
+  nValue : INT;
+END_VAR
+VAR_INPUT CONSTANT
+  nStep: INT := 1;
+END_VAR
+VAR
+END_VAR
+
+Code is only a ;
+
+Declare a instance in the PLC_PRG
+VAR
+	mfb : My_FB;
+END_VAR
+
+And use it with mfb();
+Set a BP to mfb()
+And step into with F8
+There you’ll see nStep is 1
+
+_________________Good Better CoDeSys
+Boris Schuster
+
+I'm using CoDeSys v3.3
+
+It indeed works for Function Blocks ... Thanks ! However, I need to explicitely pass the input name in the FB call ...Code:mfb(nValue:=99);
+Tried the same now with a method but then I get a compile error that tells me the method requires exactly 2 inputs  
+
+Any idea on that ?
+

@@ -1,0 +1,10 @@
+is it possible in Codesys 2.3 to have a function return value  VOID? I need it to create some function that return more values (defined maybe as IN_OUT for example)
+
+no a function can not have more outputs. only one.but a function block can and that should be used,
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+I know, thanks, but a FB need to be declared also as instance data.. so for sure it'll need more memory usage than a FC.This is my habit coming from Step7 IDE.. I used few time FB, almost always FC.And when need flags data as counters or latched memory I add some INOUT parameters in my FC
+
+hi, i think you can return a struct with all data you need!
+

@@ -1,0 +1,8 @@
+God morning everyone!Im brand new programmer, I have made a few smaller programs in older plc system but count me as a beginner.Im trying to learn Codesys and have startet to make a visual design to my program.I wonder if there is an easy way to make/show a clock in visual that shows the time of the day and also put in todays date.Is there and premade libs for this, or is it program from scratch to make it work?Thanks for helping a poor beginner out  
+
+You can display time and date as a digital clock, by using placeholders for time and date (%t, %d, %m, %Y). For more detail search for „Text” in Help.You can also make your own analog clock using seconds, minutes and hours to rotate the „needles” in a visualization, but it would be more complicated.Your PLC must have real time clock functionality.Regards,Lucian
+
+for learning use www.oscat.de they have nice library with all sorts of functions.it is a german site but the software and docs are in english.and a clock is very easy with $d etc, see helpfile
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

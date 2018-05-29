@@ -1,0 +1,10 @@
+HiI see there is a log for the device (RPI). Is there any way to write to the same log location or is this dedicated for the device only information.Thanks
+
+HiAttached an Example for writing,Errors,Warnings,Debug Messages into the plc log.BREdwin
+
+Thanks EdwinI just have a couple of questions:Does this log information get stored in a file?If the RPI reboots, will this information be rewritten?What is "Offline-Logging"Much appreciated!
+
+Hi,by Default it is a 'ring-buffer' (alive as Long the runtime runs)you could activating to write the log file to the runtime Directoryby uncommend the following section in /etc/CODESYSControl.cfg:(restart plc is needed after doning this)->remove the ';' to activate:[CmpLog];Logger.0.Name=StdLogger;Logger.0.Enable=1;Logger.0.MaxEntries=100000;Logger.0.MaxFileSize=500000;Logger.0.MaxFiles=3;Logger.0.Backend.0.ClassId=0x0000010B;Logger.0.Backend.1.ClassId=0x00000104;Logger.0.Filter=0xFFFFFFFFthe youBREdwin
+
+Hello!I have a little problem with your example project.I tried to make a status message with:Code:stdLogger.AddLogEntry(CmpLog.LogClass.LOG_USER_NOTIFY, Errors.ERR_FAILED, 0, 'server started');but I only got the message "LOGGING BUFFER OVERFLOW;LOG MESSAGE DISMISSED" in the log file.Maybe anyone can help me?Best regards,Samuel
+

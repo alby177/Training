@@ -1,0 +1,12 @@
+Hello,I got this error after upgrading the controller and codesys from SP4 to SP5. There is no data stored in the .sqlite files, however they are created.I have added a bunch of trend recordings to the Project, after that I got this database error. I have tried to replicate the error by starting a new Project and just adding alarm manager with alarmstorage and trend recording but that Project works as intended. I have changed the compiler to the new version and update the device. I have tried to delete Alarm manager and TrendRecording and adding those again, still no luck. Any ideas?
+
+Hello;codesyssupport Pls give an answer l have same problem..
+
+Hi,39437 means:SQLITE_NOMEM A malloc() failed "Is it possible that you run out of memory with your device?Which Controller are you using?BREdwin
+
+Hi Edwin;l am looking pc task manager cpu used;%15-40 , used memory:%25-35 , Codesys RT Configuration used memory:%25-35 and Harddisc have got 40gb free..la have got 28 trends my project but only 9 trend is runing l see that visulation.But if l looking Program Files/Codesys3.5/Codesys RTE3.5 my trends SQLİTE files is increasing..Can u give me any idea?l am using Siemens Profinet controller.ThanksBRRecep
+
+Hi,you could change the default setting (-> allocating 2MB)by the following setting in the CODESYSControl.cfg[CmpCAAStorage]Memsys5SizeInMB=xso you could add 3 as x here to have 3MB Memory allocated for CAA Storage.BREdwin
+
+Hi Edwin;Thnx for help. I add to *.config your text and its work.Now 28 trends is recording.Thank you so muchBRRecep
+

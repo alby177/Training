@@ -1,0 +1,8 @@
+I'm using Wago 750-880. My system require to display the trending for data which store in SD memory card. Also the trend need to scroll back the history. May I know how it work?
+
+Anyone can help on this?
+
+Hi,      Can you tell in detail what data you want to scroll back I mean how you want this data to be displayed?
+
+Hi,For my data logging to sd card in csv or txt file. I would like to read the file from s: drive from 750-880 and display the date and data from file reading in histogram. The histogram must have feature to scrolling bar for time to time.
+

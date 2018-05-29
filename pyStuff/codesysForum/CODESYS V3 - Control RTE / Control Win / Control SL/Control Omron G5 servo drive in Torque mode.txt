@@ -1,0 +1,6 @@
+Hi,I am trying to control Omron G5 (R88D-KN01-ECT) in Torque mode.I use Codesys V3.5.12 and Codesys RTE 3.5.12.0 Softmotion in Windows 10.To control in Torque mode, as Omron G5 manual, I must change PDO mapping as: use #1704 for output,use #1B02 for input.Then I also add to Startup Parameter: 60E0( positive torque limit value) , 60E1(negative torque limit value), 607F (Max profile velocity), 6060 (Op Mode).After setting, I use SMC_SetTorque to control torque, but the actual torque is not change (keep 0).I don't know why I can not control Torque.Can anyone help me to solve this problem.I also attached my project  and source.Thanks Nguyen akv
+
+Hi,remove the MainTask...BREdwin
+
+Hi Edwin,I tried to remove Main_Task as you guide.But I can not to control torque.Can you give me any suggestion and ideal to control in Torque Mode with Omron G5?I see that  ESI file(.xml) of Omron G5 is newer than ESI file (.xml) of Codesys make for Omron G5.As I understand, Codesys use "ESI_Omron_R88D-KNxxx-ECT_Ver2_0_rev09.xml.But Omron servo Drive will use "Omron R88D-KNxxx-ECT.xml".What do you think about the difference of that?Because I can control normally in Position Mode, but when change PDO mapping to Torque modeI can not control torque.Thanks,Nguyen AKV
+

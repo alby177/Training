@@ -1,0 +1,4 @@
+All,I want to do some emergency actions when my application is 'killed' e.g. '> sudo pkill codesys'.Does CoDeSys provide a way to 'catch' a 'kill' event? I found the callback library. And I tried: Code:cbNew.eEvent := CB.EVENT.STOP;cbNew.eClass := CB.EVENT_CLASS.ONLINE_EVENTS;cbNew.eSource := CB.EVENT_SOURCE.ALL_SOURCES;cbNew.pPOUFunc := ADR(CallbackON_EVENT_STOP);CB.RegisterCallback(cbNew := cbNew, peError := ADR(eError));  This catches the transition to the STOP state.What parameters do I use to catch a CoDeSys 'kill'?I searched in the CB.EVENT, CB.EVENT_CLASS and CB.EVENT_SOURCE enumerations, but cannot find anything. Regards,Edwin.
+
+I found these values:Code:dwSpec dwParam dwSource action03E90001 00000022 00000004 stop03E90001 00000022 00000003 div by zero03E90001 00000022 00000001 killRegards,Edwin.
+

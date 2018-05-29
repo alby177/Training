@@ -1,0 +1,8 @@
+When doing a Network Scan the RPi is not foundSetup:Wired LAN Connection via dedicated routerBoth laptop and RPi configured with static IPsWindows Firewall is disabledCodesys V3.5 SP7 Patch 1Codesys for RPi Ver 2.2.0.2What I have done/checked:PING works both waysTOOLS/UPDATE RaspberryPi finds RPi and UPDATE works (V3.5.7.10)Tried setup without Router but problem persistsUpdated to the latest Raspbian (2015-09-24-raspbian-jessie)Please could somebody please suggest a solution Thanks
+
+Hi,hm.. I need to try 2015-09-24-raspbian-jessie.even here I would try this:connect by ssh to the Pi(putty)thensudo apt-get updatesudo apt-get dist-upgradesudo rpi-updateIf this does not solve it please send me the Output of /tmp/codesyscontrol.log(cat /tmp/codesyscontrol.log)BREdwin
+
+HiI've tested with:2015-09-24-raspbian-jessie.img After deploying (by 'Update RaspberryPI' command) the runtime on the raspberry pi based on this raspbian-jessieworks without problems.Don't forget to enable SPI,I2C by sudo raspi-config if you try to connect and use SPI and I2C devices.BREdwin
+
+Thanks Edwin,that seems to have fixed the problem.
+

@@ -1,0 +1,8 @@
+Hi,I need to interpolate 3-axis with continuous path. The application looks like a SCARA robot and all the points are calculated by the PLC.The interpolation already works using a G-code with the SMC_NDecoder + SMC_Interopolator + SMC_ControlAxisbyPos, but after each point (G01) the drivers stop and I need to keep running until the last point.Its not necessary to use the G-code.Any idea how to interpolate without stop?thks
+
+Hi,you need to adjust this with dAngleTol on SMC_CheckVelocities ... This input describes the tolerance angle up to which at a sharp bend of the path no stop shall be executed. BREdwin
+
+Thanks Edwin!!It works when I use a CNC program with fixed coordinate. In the program, the PLC calculate all points in a table x, y, z and when use those points to write in variables of g-code (N20 G01 X$p1$ Y$p2$ Z$P3$ F$V1$) still keeping the delay. Believe because the interpolation didnt get the next position before finished the work.Is there a way to use a table directly on the SMC_Interpolator or need to use a g-code?BR.
+
+Hi,yes think you need a little more 'look ahead'... so more lines ofN20 G01 X$p1$ Y$p2$ Z$P3$ F$V1$should solve this.BREdwin
+

@@ -1,0 +1,12 @@
+I'm having trouble to export my library using the script, only found sample to Import an XML.Can someone explain/give sample how could I use this interface?Code:string export_xml(   IEnumerable<IExtendedObject<IScriptObject>> objects,   string path = null,   bool recursive = false,   bool export_folder_structure = false,   bool declarations_as_plaintext = false)How can I gather an Enumerable of ExtendedObjects from a project that opened a library?Thanks
+
+Hi, etamgul,etamgul wrote:I'm having trouble to export my library using the script, only found sample to Import an XML.Can someone explain/give sample how could I use this interface?Code:string export_xml(   IEnumerable<IExtendedObject<IScriptObject>> objects,   string path = null,   bool recursive = false,   bool export_folder_structure = false,   bool declarations_as_plaintext = false)How can I gather an Enumerable of ExtendedObjects from a project that opened a library?Your question is not completely clear to me:Do you want to export objects from a library which is opened as primary project, or do you want to export an already installed library from the library repository which happens to be referenced from the currently open project?
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+
+Sorry. To clearify: I'd like to export a lirbary - opened as primary project - to PLCOpenXML format.
+
+etamgul wrote:Sorry. To clearify: I'd like to export a lirbary - opened as primary project - to PLCOpenXML format.The "IEnumerable<IExtendedObject<IScriptObject>>" should be taken as a hint that one should pass a sequence of script objects there.The easiest way should be to use proj.get_children(false) and set the "recursive" parameter of export_xml(...) to true.HTH,Markus
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+

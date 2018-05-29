@@ -1,0 +1,15 @@
+Hi,
+
+I'm also using the OPC server.
+
+Triggered by another thread in this forum, I checked the OPC server log file (didn't know that this existed).
+
+Is there someone who knows what the following errors indicates:
+
+**** ERROR: 
+Writing values failed to <PLC1>,  GetWriteVariant failed: Error=6
+
+Thanks.
+
+Arie N. Verheul, The Nederlands
+

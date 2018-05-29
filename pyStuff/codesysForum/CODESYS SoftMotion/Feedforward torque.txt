@@ -1,0 +1,2 @@
+Dears.I am working with an Lenze i700 it wors fine but I cannot give to the drive an torque addition.Torque addition is mapped in pdo, but it is allways 0, and I have not seen in anywhere the load inertia. Anybody knows how I can parameterize it?.In any case, it is possible to access the addtorque variable from the axis_ref?. If it is possible the torque feedforward could be cqlculated having in count load inertia and static and viscous friction.Be healty!
+

@@ -1,0 +1,6 @@
+i am using codesys v3.5 pbf, and have made a number of projects with this version of codesys   , i configured a Balluff...; now i can't seem to crack the simulation (activating inputs during simulation). please help   , explain every step in details, how i can successfully do this!Thank you   
+
+go to the plc configuration here you can set the bools and inputs even in simulation.i use a xor on the visualisation as this makes simulation easier.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

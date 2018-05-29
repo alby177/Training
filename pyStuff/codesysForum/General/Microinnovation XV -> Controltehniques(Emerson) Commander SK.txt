@@ -1,0 +1,8 @@
+I have configuration panel XV with PLC licence connect over CanOpen a few XIONs and I would like to add a Commander SK, I have SM-CanOpen card on the commander SK. I imported the eds file in codesys. I setup the right node address but the communication still doesn't work. Has sameone tried the (controltehniques-emerson) Commander SK and XV or XC (Eaton-Microinnovation) ?
+
+Hello, sasko.Which EDS file did you use in Codesys?
+
+CSK_G.eds date file 16.10.2007Best reggards
+
+Did you add any parameter (for example, Status Word) in the "Send PDO-Mapping" section and then declared a variable at the corresponding input address?You also have to use that variable somewhere in your code for it to acquire values from the inverter.Cheers,Lucian
+

@@ -1,0 +1,4 @@
+How long the Control Win SysTray run without license? is it trial or free?
+
+The Control Win will run for 2 hours in demo mode. After this time you can start it again.To run it permanently you need a license.
+

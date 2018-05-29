@@ -1,0 +1,14 @@
+Hello everyone,I have a problem. I want to divide one number(Real data type, i need it as real, because numbers behind comma have importance too) with number 3600. How can i do that? When I try to use DIV, I get some kind of number(**********e-003), even when i try to divide 10.0/3600.0 i get 2,77****e-003, although i should get 0.002777***, is there any possible solution how to scale the output or round it? Thanks for every reply
+
+VARinputtime:TIME; (* here you start making the difference*)inputdivider:real:=3600;  (* make sure this is a real variable when you type in th eprogram 3600 it is treated as an INT*)workingtime:real; (* for holding the converted time just to let you see if it works*)outputhours:real;END_VARprogram:workingtime:=TIME_TO_REAL(inputtime);outputhours:=DIV(workingtime,inputdivider);RETURNThis can best be done in a function block in FBD for example.make the inputdivider GLOBAL (put all constants and upthere i use even zero and 1 as reals in GLOBAL
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+abyss616 wrote:Hello everyone,I have a problem. I want to divide one number(Real data type, i need it as real, because numbers behind comma have importance too) with number 3600. How can i do that? When I try to use DIV, I get some kind of number(**********e-003), even when i try to divide 10.0/3600.0 i get 2,77****e-003, although i should get 0.002777***, is there any possible solution how to scale the output or round it? Thanks for every replyCorrect result actually:2,77777e-003 = 2,77777 *10^-3= 2,77777 * (1/1000) = 0.002777So it's only a display thing in the CodeSys debugger.http://en.wikipedia.org/wiki/Scientific_notation
+
+_________________Andreashttp://www.boschrexroth.com
+
+old problem , but display with %1.6f or anything you like.yes rounding is also possible, but not accurate.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

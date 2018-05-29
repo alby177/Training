@@ -1,0 +1,24 @@
+Hi,Can you please provide me a working sample code for Write and Read File using Codesys v3 ?Thanks,Naganatha Subramanian R
+
+Did you solve that?
+
+It is advisable to use the CAA_FILE.library.In the help of V3 is an example.Libraries > System Libraries > CAA Libraries > CAA_FILE.library > Examples > File - Standard (EXAMPLE)
+
+old post
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thank you so much for the answer.I don't have the example, can you send me it?Is it possible to attacc in a post?Thank you again!
+
+Below you can find the copy from the help. I didn't test this and have no idea whether it works directly without compile errors.You should off course also add the USE CASE library "File access".Please also check the store at http://store.codesys.com. After signing in you can download a package with a "File Utilities" example.Code:PROGRAM FILE.STANDARD_PRGVARxFileStdInit: BOOL:=FALSE;uiFileStdState: UINT:=0;sFileName: CAA.FILENAME:= 'TestFile.txt';hFile: CAA.HANDLE;sFileTestString: STRING:='Hello caa library user';sFileString: STRING:='';szFileSize1: CAA.SIZE := 0;szFileSize2: CAA.SIZE := 0;filop: FILE.Open;filwr: FILE.Write;filrd: FILE.Read;filcl: FILE.Close;END_VARIF NOT xFileStdInit THENfilop(xExecute:=FALSE);filcl(xExecute:=FALSE);filwr(xExecute:=FALSE);filrd(xExecute:=FALSE);xFileStdInit:=TRUE;uiFileStdState:=0;ELSECASE uiFileStdState OF0: (* create a new file *)filop.sFileName:=sFileName;filop.eFileMode:=FILE.MRDWR;filop.xExclusive:=TRUE;filop( xExecute:=TRUE);IF filop.xDone THENhFile:=filop.hFile;uiFileStdState:=1;END_IFIF filop.xError THEN(* error handling*);END_IF1:(* write text in the file *)filwr.hFile:=hFile;filwr.pBuffer:=ADR(sFileTestString);szFileSize1:=SIZEOF(sFileTestString);filwr.szSize:=szFileSize1;filwr.udiTimeOut:=100000; (* 100ms Timeout *)filwr( xExecute:=TRUE);IF filwr.xDone THENuiFileStdState:=2;END_IFIF filwr.xError THEN(* error handling*);END_IF2:(* read file - TestFile.txt*)filrd.hFile:=hFile;filrd.udiTimeOut:=100000; (* 100ms Timeout *)filrd.pBuffer:=ADR(sFileString);filrd.szBuffer:=255;filrd( xExecute:=TRUE);IF filrd.xDone THENszFileSize2:=filrd.szSize;IF szFileSize2 = szFileSize1 THENuiFileStdState:=3;ELSE(* error handling*);END_IFEND_IFIF filrd.xError THEN(* error handling*);END_IF3: (* close file - TestFile.txt *)filcl.hFile:=hFile;filcl( xExecute:=TRUE);IF filcl.xDone THENuiFileStdState:=4;END_IFIF filcl.xError THEN(* error handling*);END_IF4: (* end of example *);END_CASEEND_IF
+
+Thank you so much!I will test it!
+
+Hello - from a new user!I have integrated the relevant statements from the "official" example for opening a file with the CAA File library. The statement "filop.eFileMode:=FILE.MRDWR" produces an error (in a German language system):---------------------------------------[FEHLER] TestTemplate: InitTheTest(Zeile 7, Spalte 1 (Impl)): C0032:  Typ 'Unbekannter Typ: 'FILE.MRDWR'' kann nicht in Typ 'MODE' konvertiert werden---------------------------------------The tooltip on ".eFileMode" shows me:------------------------------------------VAR_INPUT Open.eFileMode : MODEfile mode: FILE_MWRITE - write, FILE_MREAD - read, FILE_MWRRD - read & write, FILE_MAP------------------------------------------When I use this file mode value "FILE_MWRRD, the same error - with this sentence - will be shown.Where is my mistake - I have no idea?!System: CODESYS V3.5 SP2 Patch 2 on a Windows 7 system.
+
+The example is from a somewhat older library.You should now use:filop.eFileMode:=file.MODE.MRDWR;
+
+Hello TinvH,thank you - this is the solution that works! 3S has some problems with its online help maintenance.With regards, Rudolf.
+
+thank you so much it was helpful for me too 
+

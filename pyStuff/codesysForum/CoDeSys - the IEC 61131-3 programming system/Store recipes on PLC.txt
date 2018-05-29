@@ -1,0 +1,6 @@
+Some one could tell me how can I put recipes om CPX plc and access then from IHM Fed-50!? i think that is by Parameter Manager, but what index I should use?! that who are on example of target settings?!Thank You
+
+just give a number in a variable and let the plc sort it out what it must do.like use SELECT
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

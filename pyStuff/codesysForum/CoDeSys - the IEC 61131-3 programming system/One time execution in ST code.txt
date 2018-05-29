@@ -1,0 +1,6 @@
+Hi,In a ST, how can I run some part of code only once?In below example I need to run some part of the code ( commented with (* only once*))  only once.IF a=1 Then  IF b=1 THEN        (* only once*)   c=1                   (* only once*) ELSEIF b=2 THEN   (* only once*)   c=2                   (* only once*)  END_IF    CASE c OF      1:             ........             ........      2:              .........             .........      END_IF
+
+if (once=false) then  once:=true;  if b=1 then    and rest of instructions.  else  end_ifend_if
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

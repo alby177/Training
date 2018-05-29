@@ -1,0 +1,19 @@
+I am new user of this CoDeSys. So I have 2 questions about it.
+
+1. Is there any possibility to change REAL type to BOOL type or viceversa? If there is no possibility, then what should I do?
+
+2. How to use RESET funtion in CoDeSys?because I should make a program that consist of RESET function. 
+
+I would be very helpful for any help,
+Davre
+
+Hi, the answer is late, but I hope nevertheless useful for you. First of all: Use the integrated help in CoDeSys, it contains the answers for both questions:
+
+1. You can use the conversion operators REAL_TO_BOOL and BOOL_TO_REAL. If you use the input assistant (F2 hotkey) all conversion operators are listed.
+
+2. Depending on the controller you use there is a special system library SysLibPlcCtrl.lib which offers a function SysResetPlcProgram with options for warm, cold or hard reset.
+
+I hope this will help you.
+
+_________________Roland WagnerModerator
+

@@ -1,0 +1,8 @@
+Hello,Can anybody tells me that why i have errors when I have creating an external Library in Visual c++. As normally I have no error when I create a simple external library with C (without SIN, COS or math.h) like  A=B+C;But when I write trigonometric function program (Y=SIN X ) with math.h in Visual C++ with Functional Block  then I have two errors.Error:C:\DOCUMENTS AND SETTINGS\WIM\MIJN DOCUMENTEN\CODESYSTEST11\SIN_LIB.OBJ' (Symbol '_sin', Class 'EXTERNAL', Type 'REL32')Error:C:\DOCUMENTS AND SETTINGS\WIM\MIJN DOCUMENTEN\CODESYSTEST11\SIN_LIB.OBJ' (Symbol '_RTC_CheakEsp, Class 'EXTERNAL', Type 'REL32')Please give a small idea as I need to create a external library where I have to use lot of SIN COS TAN.  ThanksAsif 
+
+why you need to go external,SIN is inside codesys and if needed better progs look at www.oscat.de(i saw btw 32bit, is this same type as in codesys?
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi shooter,Basically i can use SIN, COS TAN in CodeSys and I already used it. It is not my problem. I have a big Sun position algorithm and it is huge big, Anyway I want to link that C Code (Sun position algorithm) where math.h is present as external library. but I can not create an external library for math.h. So at first i want to create a simple external libray for math.h and with SIN, COS function. then I want to make an external library  for big SUN position algorithm. I hope, you got my problem.......ByeAsif
+

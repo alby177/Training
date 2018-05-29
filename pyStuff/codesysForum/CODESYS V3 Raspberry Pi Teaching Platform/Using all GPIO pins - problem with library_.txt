@@ -1,0 +1,28 @@
+I'm trying to expand past the 12 pins for the _A_B GPIO configuration, I followed the post here:viewtopic.php?f=21&t=5832&p=10728&hilit=gpio02#p10728I managed to get it imported but I get an error: Failed to Insert library IoDrvGPIO...Attachment:Screenshot01.pngI did download the IoDrvGPIO.library from that thread, not sure I imported it correctly?  Or missed another step somewhere?
+
+Hi,I would recommend to change this “AllGPIOs.devdesc.xml” in that way,That it uses  current version of the GPIO Linrary, this Library you find here:"c:\Users\<YourWindosUserName>\CODESYS Control for Raspberry PI\3.5.8.10\Libraries\IoDrvGPIO.library"This is Version 1.0.1.10->So I would recommend to change AllGPIOs.devdesc.xml to use 1.0.1.10 of IoDrvGPIO.libraryGuess this will solve your problem.Copy the devdesc to:"c:\Users\<YourWindosUserName>\\CODESYS Control for Raspberry PI\3.5.8.10\Devices\AllGPIOs.devdesc.xml"And install it.To select it on adding it is needed to set ‘desplay all versions”BREdwin
+
+Hi EdwinCould you please explain a bit more on how to configure the GPIO to be able to use all the pins on the Pi 3? I am sorry but really can not understand your description!Thanks Simon
+
+Hi,you do not need to adapt the GPIO library for using with PI3.There is a generic problem with PI3 which need to be fixed by 3S.BREdwin
+
+Thanks EdwinCan anyone tell me what GPIO I can use with the existing setup? I have only tested GPIO25 as a relay output and it works ok. I only need 3 inputs and 5 outputs for my project.Cheers S
+
+Hi Edwin,Is there any workaround to read gpio input signal from Raspberry PI 3 ?Marcys
+
+Hi,no sorry there is no workaround for the GPIO inputs at the moment.BREdwin
+
+Hi Edwin,You wrote that there is no workaround at the moment, but maybe you know, if this problem will be solved by CodeSys?Regards Marcys
+
+Hi Marcys,this will be solved for sure!But I could not really give you a date for the release at the moment.BREdwin
+
+Hi Edwin,Thanks for the responseregardsMarcys
+
+Hello!I need to extand the GPIO parameters too I want to have full control over the parameters. Right now i cannot set SDA, SCL as digital input/output if i want to use them as digitals only.The reason is that i want to develop own libraries for other products who use i2c and SPI.Im using the B+ Pie
+
+Hi Edwin,has this been resolved by now ? Are you postive, that all GPIO's should be working in either direction with PI2 & PI3 ?Thank you!
+
+_________________J.Reitzig
+
+Hi,solved is that PI2 and PI3 work as expected with the PI2 B IO mapping.To have all GPIO's available which means you need to remove I2C/SPI what ever GPIO you need to have in the Linux OS to have them available for CODESYS is up to the users because we will not fulfill all the wanted customizesation of the GPIO settings.BREdwin
+

@@ -1,0 +1,8 @@
+Hi,fairly new to the progamming side of external kit on Codesys.Need some help please, im trying to connect to an ADAM 6060 module, Its modbus over ip.Im using it as we have a lot of kit out, that used these. We used to use the Advantech Studio Software which is horrible. So im trying to move them onto Codesys with Wago.I have no idea where to start on this, im presuming i will need to use the modbus lib.any help would be greatfully recieved.thanksMark
+
+depending on the type of wago you want, you can send any message to the adam system. However you could consider a translator just for simple connection and software.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi, at present in using a 750-842, looking at finally using a 750-881.
+

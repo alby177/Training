@@ -1,0 +1,6 @@
+Hello!i am new with programming so i'm asking maybe stupid questions, so if i have analog input what gives value from 400 to 1000.  Value 400 is for example 80 cm and 1000 is 1100cm. How i can make a program which tells automatically how many cm is value 500?Hope somebody understand this...thanks
+
+This is a linear equation of style y = ax + b.  I will leave you to fill in the blanks on the equation details.So create a FUNCTION - but you first need to decide your data type.  INT or REAL... You are using nice rounded numbers, so I will pick INT (using ST language):Code:FUNCTION GetDistance : INTVAR_INPUT   Raw : INT;END_VARVAR CONSTANT   SCALE: INT := 123;   OFFSET: INT := 123;END_VARGetDistance := Raw * SCALE + OFFSET;END_FUNCTIONThen in your regular program you can simply write:Code:Cm := GetDistance(500);HINT:  Always make sure you don't overflow the data type!  INT only goes to +32767.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+

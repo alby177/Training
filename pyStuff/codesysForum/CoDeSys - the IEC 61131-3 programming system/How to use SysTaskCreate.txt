@@ -1,0 +1,10 @@
+I'm trying to get SysTaskCreate to work, but it returns 16#FFFFFFFF (TASKID_INVALID).
+
+Here is my code:
+Code:PROGRAM PLC_PRGVAR  handle : UDINT;  dwParam : DWORD;END_VARhandle := SysTaskCreate('Task_1', 32, 100, SysIECGetFctPointer(INDEXOF(CallbackTest)), ADR(dwParam));WHILE TRUE DO  SysTaskSleep(1000);END_WHILEPROGRAM CallbackTestVAR_INPUT  dwParam : DWORD;END_VAR{some code...}
+
+What am I doing wrong here?
+
+Best regards,
+Frank
+

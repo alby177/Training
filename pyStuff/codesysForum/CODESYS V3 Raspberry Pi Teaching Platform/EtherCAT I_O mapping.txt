@@ -1,0 +1,12 @@
+Hello, Short description of my problem: I am using Rpi as EtherCAT controller for FlexiPro ( branding Servotronix) servodrive. It works perfectly as motion controller. The FlexiPro contains 11 inputs and 6 outputs. They are operated by means TxPDO and RxPDO. I am able to read all inputs, but outputs are permanently on zero. If I am trying to write a 1 to some output variable, I can see a change for a while and then it is rewrited to 0 again. Physical output doesn't change. Outputs are operated by means CAN object 60FEH, subindex 1. The subindex 2 is used for output masking. I set a proper mask before cyclic operation of outputs. I have to notice, that I tested to send required outputs by means of SDO. It works. It means the issue must be somewhere in I/O mapping. Have you any idea what I   am doing wrong?Peter
+
+Hi,could you attach the ESI file of the drive?BREdwin
+
+Edwin Schwellinger wrote:Hi,could you attach the ESI file of the drive?BREdwinActual XML file is in atachment
+
+Peter.skokanek wrote:Edwin Schwellinger wrote:Hi,could you attach the ESI file of the drive?BREdwinActual XML file is in atachmentWhere can I find it?
+
+Peter.skokanek wrote:Peter.skokanek wrote:Edwin Schwellinger wrote:Hi,could you attach the ESI file of the drive?BREdwinActual XML file is in atachmentWhere can I find it?
+
+Hi,not sure if this works with the DS402Generic Driver but you could give this a try:Set the outputs to example: Drive.out.dwDigitalOutputs.0:=xBit0;etcDriveName.out.dwDigitalOutputs...the same exits to get the inputs from the drive:Drive.in.dwDigitalInputsBREdwin
+

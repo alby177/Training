@@ -1,0 +1,8 @@
+Hi everyone,I've attached a 4-20ma level sensor to a PLC input that is configured for current. The PLC reads the range 4-12ma just fine, but anything from 12-20ma is just read as 12ma by the PLC. I'm using an IFM CR0232 (http://www.ifm.com/products/ca/ds/CR0232.htm) with Codesys 2.3, and the sensor is a Turck Inclinometer (http://old.turck.us/illustrations/M1...0(sheet_1).pdf). I did some measuring with the meter, and the sensor is indeed putting out 4-20ma. I also checked voltage, and the sensor outputs between 1.55 volts (when the sensor is putting out 4ma) and 4.55 volts (when the sensor is putting out 12ma). The voltage remains the same at 4.55 volts from 12-20ma.The code is very simple, using an IFM library block:Code:VAR_INPUT  xChannelNumber:BYTE;(*Channel number for the X angle*)END_VARVAR  xInputAnalogBlockExtended:INPUT_ANALOG_E;      (*Input block for extended input, X*)  xTempWord:WORD;  xError:BYTE;END_VARxInputAnalogBlockExtended(      ENABLE:=TRUE,      MODE:=IN_CURRENT,       (*Global constant defined in library*)      CHANNEL:=xChannelNumber, (*Integer input*)      OUT=>xTempWord,      ERROR=>xError);Any ideas?Thanks!
+
+as you can see in PLCS.net it is a hardware problem, as the sensor is not able to send a signal above 4 volts (strange but cheaper.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Yep, it was a hardware issue. The PLC input had a resistance that was too high for the sensor.
+

@@ -1,0 +1,2 @@
+Hi everybody,  I am new in codesys and I have a problem with communication speed, I nead communicate with a 33600 baudrate but in CAA SerialCom this speed is not supported, is there an other way to make this ?Thanks to everybody can help me.
+

@@ -1,0 +1,31 @@
+Hi guys,
+
+Just wanted to know if anyone could shed some light on this matter.  It happens to almost all projects I work with.  The below example is for downloading into a PLC using a USB to Serial converter but I've used ethernet as well and the same problem happens.
+
+You can see from the three screenshots attached what's going on.
+
+In the first, I just go to online->run and after the codes been compiled and downloaded the following message happens (Runtime error #20 (task=unknown) )
+
+It doesn't log me out.  I'm unable to 'run' the program as shown in screenshot two.  However, If i go to 'single cycle' the program starts working.  If i go to 'Run' again I'm able to run it.
+
+So I'm able to download the program onto my PLC but this error just keeps coming up, can anyone shed any light onto it?
+
+Cheers,
+
+Nav
+
+hi nav
+
+put a breakpoint and check line by line then u will come to know where u have the problem
+or
+please attach the source code i.e. project(.pro file).
+
+thanks for your response.  
+after a while of headbanging it turned out to be a hardware configuration causing the problem (an internal coupler wasn't defined).
+
+Cheers,
+
+Nav
+
+Quote:...after a while of headbanging it turned out to be a hardware configuration causing the problem (an internal coupler wasn't defined). I realize this was ~4 years ago, but I was wondering if you remember exactly what internal coupler wasn't defined. I keep getting this same error and it is driving me crazy!   I have an ABB AC500 PLC (PM591 CPU w/Internal Ethernet and two DC532 I/O blocks). I have appended the subelements: (2) DC532's and (1) PM5x1-ETH - Internal-Ethernet[SLOT].Am I missing something?
+

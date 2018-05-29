@@ -1,0 +1,6 @@
+Hi allDoes anyone know how to read the system time from rasbian to use in CoDeSys? The Raspberry is set up for ntp, and i would like to use that for a project where i need actual time and date without the need to readjust the clock after a power off.Probably there is already a function somewhere and i just have not found itHelpful could also be the possibility to run a pyton/php (or any other language) script on rasbian by codesys code and read in the result...Thanks for help, i work for years with codesys, but our controllers have RTC and we don't do the integration by our self 
+
+Hi,use attached example,Code:(* get time in seconds since 1970 *)udiUtcTime := SysTimeRtcGet(udiResult);IF udiResult <> 0 THEN   RETURN;END_IF(*converts the utc time (seconds) to a SYSTIMEDATE with year, month , day, and time etc. *)udiResult := SysTimeRtcConvertUtcToDate(udiUtcTime, strTimeDate);IF udiResult <> 0 THEN   RETURN;END_IF(*converts the utc time to the local time, regarding timezone and summer time in seconds *)udiResult := SysTimeRtcConvertUtcToLocal(udiUtcTime, udiUtcTimeLocal);IF udiResult <> 0 THEN   RETURN;END_IFThe projectarchive is using the calendar from the oscat libraries too!BREdwin
+
+Hi EdwinBig thanks for the fast help and the working solution, perfect!Cheersimpius
+

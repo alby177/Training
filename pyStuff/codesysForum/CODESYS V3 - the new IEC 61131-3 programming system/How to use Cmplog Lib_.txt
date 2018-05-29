@@ -1,0 +1,8 @@
+In my application ,i want to save some debug messages into a file.Now , i can write message into a logger named PlcLogger,and it can display it in codesys,but i can not find the file in my root.Do you have any examples?Best regards
+
+You can use the CAA_FILE library.See the CoDeSys help for detailed information about this library and an example.
+
+Thanks!This is not my means.I wanted to save messages into the loger file .The message also include the PLC system info.Like this:00000980: Cmp=JBL_UTIL, Class=1, Error=0, Info=0, pszInfo= *** EVT_DenyStart received: App=Application, bDeny=0 ***00000980: Cmp=MIO_PLC, Class=1, Error=0, Info=0, pszInfo= *** EVT_DenyStart received: App=Application, bDeny=0 ***00000981: Cmp=JBL_UTIL, Class=1, Error=0, Info=0, pszInfo= *** EVT_DenyStop received: App=Application, Reason=4, bDeny=0 ***00000981: Cmp=MIO_PLC, Class=1, Error=0, Info=0, pszInfo= *** EVT_DenyStop received: App=Application, Reason=4, bDeny=0 ***00000981: Cmp=JBL_UTIL, Class=1, Error=0, Info=0, pszInfo= *** EVT_PrepareStop received: App=Application, Reason=4 ***00000981: Cmp=MIO_PLC, Class=1, Error=0, Info=0, pszInfo= *** EVT_PrepareStop received: App=Application, Reason=4 ***00000981: Cmp=JBL_UTIL, Class=1, Error=0, Info=0, pszInfo= *** EVT_StopDone received: App=Application, Reason=4 ***00000981: Cmp=MIO_PLC, Class=1, Error=0, Info=0, pszInfo= *** EVT_StopDone received: App=Application, Reason=4 ***Do you have any ideas?
+
+you can configure the logging of PLC by editing COdesysSP.cfg file，the component can configure like below:[CmpLog]Logger.0.Name = "your file name"Logger.0.Enable= 1...
+

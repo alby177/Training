@@ -1,0 +1,26 @@
+Hi,after update to 3.5.9 obviously there are some things that before work fine, after no! I'm not able to communicate with modbus rtu.I see on the log: "SetOption Unable to set SOCKET_SO_REUSEPORT".Maybe that's the problem?BR
+
+Hi,no this is not a problem, did you update all the devices in the device tree by rightclick and update device. (in your project)(then browse the Ethernet connector / setup the IP address there)BREdwin
+
+Dear Edwin,yes I updated all. The app with ethernet communicate via Ethernet/IP protocol with a device, and it work fine. Via modbus RTU (serial) have to communicate with another device. Com port start well, master modbus start well, but no communicate with slave.Please, let me know.BR
+
+Hello Suibaf,I had the same problem and fixed it by editing the /etc/CODESYSControl.cfgAfter the update the section[SysCom]Linux.Devicefile=/dev/ttyUSBportnum := COM.SysCom.SYS_COMPORT1;was missing.Just put this back and it should work again.Regards,Johan
+
+Hi Johan,yes this overwriting of the CODESYSControl.cfg file is an open point on Raspberry Pi runtime updates (hope this will be fixed with next version -)BREdwin
+
+Hi,yes I know, I already add this code in CODESYSControl.cfg. If you no add this raw the com port no start. In my case as you can see, com port start, master modbus start, but communication with slave no work now!!!  Before it work perfectly for months!!!
+
+Edwin,on serial port I have a Led in TX and a Led on RX. Usually I see a led on TX when Modbus Master trasmitt. Now the led is off. It seems as modbus master no perform request.What Can I ceck please?BR
+
+Hi,so you are using really Modbus Serial/RTU  the I agree Johan you need to add the serialcom to /etc/CODESYSControl.cfg as he proposed in his post before.BREdwin
+
+Yes Edwin,I'm using really Modbus Serial/RTU.In CODESYSControl.cfg I have:[SysCom]Linux.Device=/dev/tty1portnum:=COM.SysCom.SYS_COMPORT1;(I copy from old CODESYSControl.cfg)I don't understand where is my error, same software, same hardware. I checked serial port with a little python script and it work perfectly, I see LED on when it transmit.
+
+Hi,but this (1) is wrong there:what is your interfacename in /dev?[SysCom]Linux.Device=/dev/tty1portnum:=COM.SysCom.SYS_COMPORT1;BREdwin
+
+Hi Edwin,Quote:what is your interfacename in /dev?excuse me, what do you mean?As I told I copied from old CODESYSControl.cfgif it's wrong, the com port would start well? I tryed, for example, to put tty0 but the com port no start.
+
+Hi,just want to say in my opinion this is not correct:Linux.Device=/dev/tty1If you are using for example ttyAMA0 the config file should beLinux.Device=/dev/ttyAMAportnum:=COM.SysCom.SYS_COMPORT1;BREdwin
+
+Yes Edwin,you are right! it's my mistake!BR
+

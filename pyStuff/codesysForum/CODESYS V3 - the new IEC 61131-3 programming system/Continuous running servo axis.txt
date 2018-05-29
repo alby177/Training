@@ -1,0 +1,4 @@
+I am getting familiar with absolute axis control, wondering if I can get any comments or examples of continuous running servo axis example from somewhere.What FB should be used to run the flat belt conveyor in clockwise rotation with constant speed?
+
+Hi,scale the drive modulo-and use MC_MoveVelocityBREdwin
+

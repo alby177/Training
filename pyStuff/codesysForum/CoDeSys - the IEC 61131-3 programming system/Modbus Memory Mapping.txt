@@ -1,0 +1,6 @@
+What I would like to do is adjust part of the Modbus memory map without implementing additional Modbus.lib's. Basically, I want to utilize the Modbus address range from 12288-24575, but not actual have the memory stored on the WAGO NOVRAM. By default, that modbus address range is mapped to the Wago 16K 'retain flag' memory segment, starting with address %MW0. I have a 5,000 Word Array that I would like to be able to easily access via modbus, but this array will change frequently and will likely destroy the controller's NOVRAM quite fast.An alternative solution would be to adjust the starting point of the 'retain flag' segment without altering the current map of Modbus:12288 -> Wago:%MW0.Another alternative solution would be to shrink the 'retain flag' segment, and start my array at an address of %MW1000 or similar. Although, I fear this solution will not work as expected.Any ways to do this using only configuration changes?Using Wago 750-880 PFC.
+
+Markers are not retained, only when you tell it in VAR RETAIN
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

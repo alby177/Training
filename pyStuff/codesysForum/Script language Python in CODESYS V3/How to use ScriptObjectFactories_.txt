@@ -1,0 +1,12 @@
+Hi,In the script engine documentation for V3.5 SP1 Patch 2, I have noticed that a script object factory object is present. Has anyone used this and is able to explain how to use it?Under ISystem2 members I see a property called "factories", so one should be able to useCode:system.factoriesas an entry point. However, when I try this I get the following error:Quote:[INFORMATION]   test.py(8): Begin of script[INFORMATION]   test.py(8): system.factories[INFORMATION]   test.py(8): exception (<type 'exceptions.StandardError'>, StandardError('Exception has been thrown by the target of an invocation.',), <traceback object at 0x0000000000000034>)[INFORMATION]   test.py(8): system.factories[INFORMATION]   test.py(8): exception (<type 'exceptions.StandardError'>, StandardError('Exception has been thrown by the target of an invocation.',), <traceback object at 0x0000000000000035>)[INFORMATION]   test.py(8): system.factories[INFORMATION]   test.py(8): Return from script[INFORMATION]   test.py(8): system.factoriesRegards,Frank
+
+Hi, Frank,I tried your example, and actually, you found a bug.  I filed the bug into our Jira system as CDS-30637, and fixed it.The fix is currently scheduled for the next service pack (V3.5 SP2).Thank you for your feedback!Markus Schaber
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+
+Hi Marcus,I will be looking forward to try out the feature in SP2 then.It seems that there will be a lot of new features in the script engine in that version. The documentation in SP1 Patch 2 gives a taster, since it includes documentation for some of the objects that will first be available in SP2  Is SP2 still scheduled to be released during december 2012?Regards,Frank
+
+Yes, the current schedule for V3.5 SP2 is still mid-of-december 2012.
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+

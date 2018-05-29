@@ -1,0 +1,4 @@
+I have CoDeSys V2.3Is it possible to get data from CoDeSys (simulation mode) over OPC? Or I need real hardware PLC?
+
+Hi,I'm afraid you will need a real PLC. However, the CoDeSys PLC runtime SP RTE can be run under Windows on the development system. For this 3S provides an OPC server. It should be provided together with the CoDeSys programming system, check your CoDeSys folders.Regards
+

@@ -1,0 +1,4 @@
+Hi, i'm newbee with codesys. I work on wago 750-841..I have to log on computer plugged on network (IP) some process data ( time and 6 other real value). I didn't found any helping document.. Somebody tell me i have to write data on "wago ram disk" and transfer with ftp on ftp server based on remote computer..Is it possible to access these "ram disk" by ftp or other? Do anybody can help by example code.. Thanks!
+
+Look at the post: viewtopic.php?f=1&t=2025&hilit=reading+file+name#p4135
+

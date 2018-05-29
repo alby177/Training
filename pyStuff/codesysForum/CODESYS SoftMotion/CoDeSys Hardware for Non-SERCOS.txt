@@ -1,0 +1,6 @@
+I have an applications that use large vector AC drive. Part number WJ200-150HF from the following Hitachi brochure.http://www.clrwtr.com/PDF/Hitachi/Hitachi-WJ200-Inverters.pdfDoes anyone know of a CanOpen / SERCOS interface or CoDeSys Controller that will send out a +/-10 Speed Reference and Encoder Feedback.The encoder is Accu-Coder brand model 755A.http://www.clrwtr.com/PDF/Accu-Coder/Accu-Coder-755A-Shaft-Encoders.pdf
+
+B&r has x20 series which has encoder reader modules and am oitputs ones too. That modules are connected to an can open head adapter, its are ip20Wago and lenze has simila modules too
+
+One more thing. In the past, the internal bus of that modules couldnt be synchronized wiht sync of can open, I dnt know nowadays.If you want to make a position loop that could be a problem.
+

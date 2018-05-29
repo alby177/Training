@@ -1,0 +1,8 @@
+Hi,I am trying to run Python script using Test Manager's "ExecuteExternalCommand" and I have an error message stated as,"The system can not fine the file specified"Basically, What I want to do is,1. Calling Python script i.e. DCSWITCH from a specified directory with an argument i.e. "SET{SWITCH1|MUXA|BANK1|CH101|CLOSE}".    - python C:\SCP\SCP\34970A\DCSWITCH.py "SET{SWITCH1|MUXA|BANK1|CH101|CLOSE}"Hence,there is no issue when calling using command prompt.I have attached a screenshot.Please advice.
+
+Hi,Did you try to pass absolute pathes for both the python.exe and the script?
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+
+M.Schaber wrote:Hi,Did you try to pass absolute pathes for both the python.exe and the script?Hi Marcus,I have solved this issue Walter.
+

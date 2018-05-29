@@ -1,0 +1,8 @@
+Hello,I'm trying to login with WAGO IPC C10E from the CoDeSys IDE to download test project.Always pop up message "Communication error (#0)". Project is some dummy - PLC_PRG with few rows of code and simple visu with one button - for test only.Ethernet cable connected to X8, 192.168.1.20 ( default setting ). Ping ok, ftp ok, telnet ok. Communication parameters IP adr 192.168.1.20 port 1200. Computer in same network with IP 192.168.1.99. Two devices only in network. On K-bus only one DI module 750-430. Any ideas to improve situation?
+
+are ethernet settings in controller oke. start ethernet settings separate program from wago, free available on website.on 750 series there is a small hatchcover and a switch below. see manual for position of this switch.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Wago devices need the k-Bus termination module. Without it codesys comm do not work. The minimum configuration to have online communication via codesys is: CPU + 1module (DI,DO,AI,AO, Serial,...) + k-bus terminationRegards
+

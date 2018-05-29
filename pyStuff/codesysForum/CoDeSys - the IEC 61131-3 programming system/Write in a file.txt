@@ -1,0 +1,4 @@
+Hi,I would like to write date into a text file using SysLibFile.lib.When I will use the SysFileOpen to create a new file where will it be?Is it on my computer or on the wago memory?Thank you,masav
+
+Actually I found the answer on my own.It is on the memorycard of the Wago device.You can access it throught the FTP connection.
+

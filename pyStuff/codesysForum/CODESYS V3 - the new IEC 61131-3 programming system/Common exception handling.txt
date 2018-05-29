@@ -1,0 +1,4 @@
+What is the common handling for System Exception?For example when the exception DIVIDE BY ZERO is triggered.In my test setup, the device will halt. And I can see what happened in the CodeSys ControlDevice; Log. See figure.But in the factory, the CodeSys ControlDevice; Log is not available. A GUI is available, but that is not updated anymore (halted also).The users will have to do a device reset (power cycle) manually. Or can / should I do a device reset automatically (if possible at all).In this case, the application is not critical. But the users will notice an automatic reset. So my preference is a manual restart by the users. Any thoughts...Regards,Edwin.
+
+You could use the Callback functionality, but in this case I would advise to add the "POU for implicit checks".Here you can select which kind of checks you want the runtime to do.This helps you find any problems in the code regarding division by zero or accessing an array out of bounds.
+

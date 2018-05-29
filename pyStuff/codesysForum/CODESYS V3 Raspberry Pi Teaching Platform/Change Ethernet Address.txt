@@ -1,0 +1,26 @@
+Hi,Rasperry PI has static Ethernet Address 192.168.2.42. I need to Change Operating System Setting from 192.168.2.22 to 192.168.2.42 but I can not. Though I click on Change Operating System Setting and change the ip address and save, it no change and obviously ethernet/IP connection does not work! What can I do?
+
+The address change should be simple in CoDeSys, but it is not.I accidentally found yet another bug?
+
+Hi,you need to add the following in /etc/CODESYSControl.cfg:[SysSocket] Adapter.0.Name="<adapter name>" (for example, "LAN Connection 4" on Windows , eth1 on Linux)Adapter.0.EnableSetIpAndMask=1 BREdwin
+
+Edwin,obviusly it does not work. Your advice does not solve the problem.
+
+Hi,in my tests it has changed the address but accidently the plc is then not reachable because maybe on routing problems. (This need to be invetigated deeper)But would you agree that you see the change after doing this by ifconfig?BREdwin
+
+Hi Edwin,I think to a bug in the bug. For fortune the couple "raspberry and codesys" is for teching and playing!!!. If it is for "true work" I could die of hunger.OK my work is init here with a bug. Please Edwin look my topic:viewtopic.php?f=21&t=6703So I have in raspberry a static IP address that I define in interfaces file.If I change with codesys the IP address from 192.168.2.22 to 192.168.2.42 and change also in intefaces file from 192.168.2.22 to 192.168.2.42 obviusly ifconfig view a new IP, but eth0 in codesys no change and my program does not work. And if I ping 192.168.2.42 it response and also 192.168.2.22 response. Response me 2 IP address  , also If I restart Raspberry.The endless story go on!!!
+
+Hi,yes I agree that there is an open point,need to be fixed, but sure it is possible to have the configuration on Linux side'Use Operation System Setting' tagged in CODESYS this will work.According your first problem this is solved since release of 3.5SP8Patch2.  (viewtopic.php?f=21&t=6703)BREdwin
+
+Quote:'Use Operation System Setting' tagged in CODESYS this will work.Yes sure, but only if I use 192.168.2.22. If I want to change it does not work. And I ping 2 ethernet IP address .22 and .42.IP .42 is defined in interfaces file. and I need to use 42!!!   Have a nice week end!
+
+Hi Edwin,Excuse my insistence. Can you explain me why I can connect from codesys with raspberry with 2 IP address? 192.168.2.22 and 192.168.2.42. Also I can connect with putty to raspberry with these IP address. But only 42 is configured in interfaces file (static).BR
+
+Double IP address problem solved with this forum topic:https://www.raspberrypi.org/forums/view ... 9&start=25Quote:Try adding the line:    denyinterfaces eth0to /etc/dhcpcd.conf (change eth0 as required).Now I have to test if ethernet/ip communication work fine.Thank you very much!!!
+
+Thanks for reproting this,this might be useful for other users too!BREdwin
+
+OK now all work perfectly, also ethernet/ip communication.
+
+Hi,with last workaround, codesys find the correct IP address, Code:denyinterfaces eth0 but it does not serf the web.Edwin...is there other solution please?BR
+

@@ -1,0 +1,2 @@
+Running  CodeSys 2.3.7.2 with IFM PLC. Connection to PLC is serial at 57600 baud. After being logged in, I often see "Communication Error  (#0): Logout Performed".  Sometimes (not always) when I try to re-login I again see "Communication Error  (#0): Logout Performed" but the PLC resets. After this reset the usec counter from TIMER_READ_US is zeroed. Does someone know why the first logout occurs? Has someone seen the PLC reset when trying to re-login?
+

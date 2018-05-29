@@ -1,0 +1,4 @@
+Hi,i am a beginner with Raspberry (Codesys)...1.1-wire Master does not work. Red cross over 1-Wire master and DS18B20 Sensor. "Driver not installed".2. Compiling the project comes an error "C0080:  Functionblock 'IoDrvGPIO' must be instantiated to be accessed"3. Adding Button comes an error "The object GUID '00000000-0000-0000-0000-000000000000' is not valid."4. Using WebVisu page from browser, Raspberry goes stop mode. And bottom of the screen comes red blinking text "Program loaded - Exception".I'M SORRY FOR MY BAD ENGLISH JR
+
+Hi,use the following link to setup the Linux kernel modules for onewire:http://images.google.de/imgres?imgurl=h ... CD4Q9QEwAwThen there is an example Project which should work out of the box (in case the Linux part is korrekt):http://forum-de.codesys.com/viewtopic.p ... 957#p16047this is in the german forum but the login credentials are the same... you just need to download the project from the link.BREdwin
+

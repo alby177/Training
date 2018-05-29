@@ -1,0 +1,6 @@
+ We are using codesys OPC V2 with update rate of 200ms. Total 16 ABB AC500 serise PLCs are there with our system. We are trying to establish connection with Visio citect Scada. When we fire SCADA communication is not happening. But when we start matricon and connect to OPC and then start SCADA then communication is happening sucessfully.However after some time SCADA is shutting down abonormally. When we see log file of OPC there are errors related to subscription of some PLCs though we did not changed anything.When we tried reducing no of PLCs to 8, Communication happens without help of Matricon.Request to send possible solution on this.Can I distribute the network by seperating single OPC into Two so that OPC load will be reduced?Whai is the limitation of OPC on no of PLCs, Data transfer etc? Thanks in advanceRegards,Kaustubh
+
+Start by increasing the Wait time to e.g. 100sec for all PLC's.
+
+TimvH wrote:Start by increasing the Wait time to e.g. 100sec for all PLC's.Thanks a Lot TimvH!I got a clue. We have also seperated OPCs with DCOM and its working fine
+

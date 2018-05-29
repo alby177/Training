@@ -1,0 +1,4 @@
+Hi everyone,I don't know how to use a MCP3008 to read in a analog value from a potentiometer using CODESYS ladder logic.I think it's wired correctly but I'm not getting any output from it.I also have no idea how to read an integer value on the raspberry pi 3 model B as each GPIO pin in CODESYS is set to a bit.Any help would be appreciated.
+
+Never mind. we got it working
+

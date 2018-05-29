@@ -1,0 +1,8 @@
+Hello,I am looking for a function to limit the number after the decimal point of a real.The input parameters of this function are Val type and Reel NBdigit of type Int.The output parameter is a realHere is an example My_Fonction (3.45789, 2). The output value is 3.45.
+
+J'ai fait ma functionVoici le code :Code:PROGRAM Real_To_RealVAR_INPUT   rIn : REAL;         Digit: INT;         END_VARVAR_OUTPUT  rOut       : REAL;      END_VARVAR   d1 : DINT;   r0,r1,r2,Rdigit: REAL;               END_VAR//**********************************************************************************//*********************************************************************************rdigit   :=INT_TO_REAL(Digit);r0 := EXPT(10,rdigit); r1 := rIn * r0;d1 := TRUNC(r1);r2 := DINT_TO_REAL(d1);rout := r2 / r0;
+
+have a look at www.oscat.de for a lot of functions you can use.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,10 @@
+Hi,How can I change I2C baud rate permanently?Default is 400kHz.I tried:sudo modprobe i2c_bcm2708 baudrate=100000sudo bash -c "echo options i2c_bcm2708 baudrate=100000 > /etc/modprobe.d/i2c.conf"But this doesn't work. After reboot, baud rate is set to 400kHz again.Thank you.BRZdenko.
+
+Hi Zdenko,you need to change this in: /etc/init.d/codesyscontrol snippet:Code:        make_mknod        killall codesyscontrol.bin > /dev/null;        export PlcConfigFile=/etc/CODESYSControl.cfg        echo bcm2708_i2c.0 > /sys/bus/platform/drivers/bcm2708_i2c/unbind        echo 400000 > /sys/module/i2c_bcm2708/parameters/baudrate        echo bcm2708_i2c.0 > /sys/bus/platform/drivers/bcm2708_i2c/bindBR Edwin
+
+Thank you Edwin! It works   .BR,Zdenko.
+
+HelloI'm trying to change the i2c baud rate to 100kHz following the example above. I have copied the code in to the "codesyscontrol" file but when restarting the pi, codesys does not work.Is this how the change was intended?  see attached picture.Thank
+
+Hi,it looks ok.You don't have to copy anything. Just change parameter in /etc/init.d/codesyscontrol:echo 400000 > /sys/module/i2c_bcm2708/parameters/baudrateto:echo 100000 > /sys/module/i2c_bcm2708/parameters/baudrateand save file, then do reboot.It should work.Best regards,Zdenko.
+

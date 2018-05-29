@@ -1,0 +1,14 @@
+Hi everyoneI am new to CODESYS and Wago PFC200. I downloaded CODESYS 3.5.8 and PFC200 package manager. I also updated PFC200 package manager.I need to send and receive data between PFC200 and my slave device through Modbus RTU (RS485).I added all Modbus Libraries and PFC200 Libraries to my project.I inserted Modbus_com, Modbus_Master_COM_Port and Modbus_Slave_COM_Port into Devices tree.But when I login and start CPU, Modbus_Slave_COM_Port does not running. I also checked COM_Port, and there was no error!!I attached a screenshot of my project.Is there any possible solution?!! Thanks in advanceAttachment:ModbusRTU.png
+
+Hi,did you change serial mode to rs485 in the plc shell?BREdwin
+
+Hi Dear EdwinThanks a lot for your help. I change serial mode to RS485 in PLCshell succesfully.   Now Modbus_Slave_COM_Port is running. But I have new problems to solve. first:I added Modbus_Slave_COM_Port to watch1. Before Modbus_Slave_COM_Port  goes to running mode and response success; byModbusError changed between two values: Response_Timeout, Response_Wrong_Slave and m_DeviceState Changed Between: Unknown, Error for about a minute.I tried to solve this by changing response time but I sow no difference.Second: I want to read some values(Start Add:40001, Register Size:2, Type: Float) through RS485. I Think, I have some mistakes adding them to Modbus Slave Channel. the shown values are always 0 and I don't know how to map specific variables.  I will attach screenshots.Thanks in advanceAttachment:Response.pngAttachment:ReadValues.png
+
+Hi,you have two posibilities.1. Map variables .. give the Name there and use them in PLC_PRG Pou2. set alway update (this you could use for testing purpose)BREdwinPS: Moderator should move the Topic to the CODESYS Control Posts!
+
+HiThanks a lot for your time and consideration. My slave has not running status again and I don't know why this happened!!!I moved the topic to CODESYS Control Posts.Thanks again
+
+HiGood news   Finally I established a Modbus RTU (RS485) connection and I can read data from slave. I need data to update online but the problem is that, slave's data updates slowlyI defined timeout responses as 1 second. Still not enough. Unfortunately adding data length makes updating slower. Is there any way to boost the update operation?Thanks in advance
+
+I have done few project with Wago PLC from ECO to PFC, unlikely to tell you that Wago built in Com port always perform in low speed. If you need a good RS485 comport on wago plC, you have to use the wago high-end special com module, or direct go for TCP/IP to com port.
+

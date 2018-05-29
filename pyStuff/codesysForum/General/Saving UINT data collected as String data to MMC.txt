@@ -1,0 +1,23 @@
+Does anyone know how I can save the data I'm collecting as Unsigned Integer Data to the MMC card in a String format?  I'm collecting the data in a Three Dimensional Array, but I'd like to be able to save it to the MMC card or a USB thumb drive in a text format so I can view it using a simple text editor.  The only String Functions I can find are meant to work with data that is already in Script format.   
+
+_________________Dan in Tacoma
+
+There is a function:   … := UINT_TO_STRING(…); Hope it will suit you.
+
+__________________IP_
+
+Igor Petrov wrote:There is a function:   … := UINT_TO_STRING(…); Hope it will suit you.
+
+ 
+Yes, this is exactely what I need, but where do I find it.  I've searched the CoDeSys libraries that came with the program and I don't see it in any that I have.
+
+_________________Dan in Tacoma
+
+Hi DanO
+
+It is a typeconversion. You can find Typeconversions from every IEC datatype to every IEC datatype using the input assitant (F2) and selecting the  item Conversion Operators. The more easy way is simply type it in the format SourceType_TO_TargetType. 
+If you still have troubles to find it or to work with it give us an idea wich programing language you are using. That helps to discribe it step by step
+
+Regards
+Ralph
+

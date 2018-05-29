@@ -1,0 +1,52 @@
+Hi, 
+
+I am working on a program that has a duty standby operation for 2 fans. Fan1 should run for 2 weeks then fan2 for 2 weeks. this timer needs to remember it's position even if the input is false. my problem is that a normal timer (ton) resets after the input returns to false and after a power fail.
+What i need is a timer that retains the current time until reset. Is there a simple way of doing this?
+
+The program will be used on a Wago 750-841.
+
+Thanks
+
+Dave
+
+Hi Dave,
+I'm afraid there's no such timer. I would suggest to manage these two fans by a state machine. The situation of this machine can be stored as a RETAIN PERSISTENT, so it will survive even a software download.
+Don't know, if Wago supports PERSISTENT, but RETAIN alone is good to survive a power fail.
+Regards,
+Rolf
+
+declare the timer as follows
+
+var retain
+timer1 : tp;
+end_var
+
+this should fix your problem, all vars of tp are in retain memory
+
+_________________freie sps bibliothek unter www.oscat.de
+
+Hi Hugo, 
+
+Declaring as Retain didn't work because as soon as the input of the timer returns to false then the timer resets.
+
+Does anyone know if there is a clock pulse like the Siemens s7 300 that i can use. I’m currently using a timer set a 1 sec which then adds 1 to a retentive real, but the timing is not accurate. 
+
+Thank You
+
+that should not be the case, i believe something esle is wrong
+retain only makes sure that the inner variables of the timer are kept in non volatile emeory during power loss
+there should not be a funktional difference between retain and non retain at all
+
+_________________freie sps bibliothek unter www.oscat.de
+
+If you are expecting something to work over long lengths of time I am assuming you have a real time clock? Just compare the start time to the current time and when greater then your two week limit turn on the output? With no real time clock it will never work if you shut off power. Look at SysLibRtc.lib. IF (CurrentTime - StartTime > Week2) then setoutput end_if Just make the start time retain.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+hugo my best, if the input is down the timer stops as normal, because the input is not retained. he should use a take over contact to keep his input.
+841 has no rtc in so will not work.
+I would not use two weeks btw but 12 hours so the fan will not get stuck by dirt from the other one, is there a prevention the stopped fan does not get air from the other?
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

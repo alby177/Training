@@ -1,0 +1,2 @@
+Hi all,my problem is that I want to create a plot in which I can choose x-variable and y-variable.If I use the standard element of VISU (Trace, Trend and Istogram) i can only choose the y-variable.Is there a way to solve the problem?I saw this link: viewtopic.php?t=6304 but if possible I would prefer to use an already existing VISU element or another simpler way.Thanks
+

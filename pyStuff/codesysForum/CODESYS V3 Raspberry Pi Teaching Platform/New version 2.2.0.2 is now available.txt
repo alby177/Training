@@ -1,0 +1,30 @@
+Further Details: http://store.codesys.com/codesys-control-for-raspberry-pi-sl.html
+
+_________________Roland WagnerModerator
+
+One of the things I thought would be changed when the official release was made was this:Quote:This product is provided for testing and training purpose and may not be used in the field.but it still exists on the store site.   From the questions asked on the forum, it is almost certain the these have already been used in real production systems but I guess this is just a way for 3s to protect itself?
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+The hardware of the Raspberry Pi is out of our point of view not designed for industrial purposes. So whoever wants to use the SoftPLC on the Pi should be aware of it...
+
+_________________Roland WagnerModerator
+
+Thank you for the clarification.  That is what I thought.  And I agree, the hardware is not industrial.
+
+_________________nOrM=====nOrM = Norman Dziedzic Jr.
+
+Important Links:How to license Raspberry Pi ?viewtopic.php?f=22&t=5641&p=10688#p10688How to do backup your Pi license ?viewtopic.php?f=22&t=5641&start=15#p10689How to do restore your Pi license in case of corrupt SD Card Image ?viewtopic.php?f=22&t=5641&p=10690#p10690
+
+How to update an existing Image to the new version?Copy by CODESYS FileBrowser 'codesyscontrol_arm_raspberry_V3.5.6.0.deb' to the Pi.then login via ssh and execute:sudo dpkg -i /root/codesyscontrol_arm_raspberry_V3.5.6.0.debWhat is needed if I want to use a Raspberry Pi 2 as CODESYS plc?Either use the  Image from the CODESYS Store download or use the same method like in the description above.Copy by CODESYS FileBrowser 'codesyscontrol_arm_raspberry_V3.5.6.0.deb' to the Pi.then login via ssh and execute:sudo dpkg -i /root/codesyscontrol_arm_raspberry_V3.5.6.0.debAny additional recommondations?Use CODESYS Development System 3.5.6.x and install the CODESYS_Control_for_Raspberry_PI.package via CODESYS PackageManagerThere are some addition examples here: c:\Users\<YourUserrname>\CODESYS Control for Raspberry PI\2.1.0.0\'What is needed to update my existing CODESYS Projects to have all in the new version?Precondition:-Everything is up to date CODESYS / Package / Pi Linux plc side-Then open your old project - you will be asked to 'Update your environment' - yes 'set all to newest'-Then goto the device tree in your project and right click on the Pi device - 'Update Device'.-If there are any fieldbus in your device tree do the same procedure at least if a new version is available.
+
+There is an update available in the CODESYS Store :2.1.1.0What is new? Update of the plc rutime to V3.5.6.20 the CODESYS Store download file contain a debian package  (copy this to the Pi and execute 'sudo dpkg -i codesyscontrol_arm_raspberry_V3.5.6.20.deb') to update your existing version (on your sd card image) What else need an update? The recommendation is to update the CODESYS Developmentsystem to 3.5.6.30 and update the Raspberry Pi Package (this could be done by the CODESYS PackageManager ...."search updates"- then download)For more information read the RaspberryPI_de.pdf: "c:\Users\<YourWindowsUsername>\CODESYS Control for Raspberry PI\2.1.1.0\RaspberryPI_de.pdf" SPI MCP23S17 is now supported "c:\Users\<YourWindowsUsername>\CODESYS Control for Raspberry PI\2.1.1.0\PiFace_FB.Project" should Show how to use SPI devices in your project without implement it as a library.
+
+There is an update available in the CODESYS Store :2.2.0.0What is new? Update of the plc rutime to V3.5.7.0 The package contain Raspberry Pi Update menu command in CODESYS for easy updating an existing or a new Image3S Raspiberry Pi SD card Image is not longer needed - use the Standard Raspberry Pi Image (http://downloads.raspberrypi.org/raspbian_latest) and - scan the Pi and install/Update the plc by CODESYSSee in the the FAQ section:How to get the SD card Image for the Raspberry Piviewtopic.php?f=22&t=6345&p=12781#p12781How to update?1. Update the CODESYS development system2. If you have an existing Pi and installed Package in an older version update the Version by Package Manager3. Execute 'Update Pi' command under Tools - scan the pi and update itNew Features:-'Sys Process Execute Command2' to retrieve output from executed Shell command -Ethernet IP Slave-Using Visualisation Symbols-120dpi problems solved with 3.5SP7-Multi Y Axis for trend-Profibus Master and Slave possible by EL6731 Gateway-CANOpen Master or Device by EL6751 Gatewayand many more..
+
+There is an update available in the CODESYS Store :2.2.0.1Bugfix for "CODESYS is freezed" after update the Pi Runtime using 'Update Raspberry Pi' Command
+
+2.2.0.2 -update to 3.5.7.10 Runtime-including the bugfix for - 'plc does not start' -issue after updating the debain / kernelHow to apply the new Version.1. Open CODESYS2. Open the CODESYS packagemanager3. search for updates4. PackageManager will Report a new Raspberry PI package Versionupdate it see screenshots.After doing this update plc by Update Raspberry Pi command to 3.5.7.10 runtime.
+

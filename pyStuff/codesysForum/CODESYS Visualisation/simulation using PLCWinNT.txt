@@ -1,0 +1,8 @@
+Hello friends. I want to test my sample project using PLCWinNT.exe. 
+The target which I am using is "CCP XS 10 inch screen simulated". 
+Is it possible to test this target using PLCWinNT? 
+If it is then how to test and if not which 3S Codesys target is to be used just for the sake of testing. 
+Cheers & regards, 
+
+Rajat Bansal
+

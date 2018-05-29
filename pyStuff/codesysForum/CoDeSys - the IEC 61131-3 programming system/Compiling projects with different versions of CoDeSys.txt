@@ -1,0 +1,5 @@
+Since I started using CoDeSys there has been about 5 new releases that I am aware of. How is the versioning of CoDeSys, libraries, compiler, etc.. handled? In other words if I have version 2.3.7.1 and compile a project is it the same as V2.3.6.4? I would not expect it to be BUT what would make them different? The libraries that are accessed, a tweak in the compiler? What would be the difference between compiling a project with V2.3.7.1 and sending the entire project with V2.3.7.1 libraries to some one who has V2.3.6.4? Is there a flow chart of how a CoDeSys project is compiled?
+
+_________________Thanks,
+Steve Pfeifenroth
+

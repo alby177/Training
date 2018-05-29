@@ -1,0 +1,10 @@
+Hello everyoneI'm using Codesys 3.5.9.The editor 'Find' function highlights found text with a light gray background.Cannot find any editor setting for selecting another color.is there any user setting for this?
+
+_________________Best regardsrudolf
+
+Hi Rudolf,that has been improved in 3.5 SP10. The selected color is now darker and inactive color is configurable.RegardsRoman
+
+Thanks!have to upgrade then  
+
+_________________Best regardsrudolf
+

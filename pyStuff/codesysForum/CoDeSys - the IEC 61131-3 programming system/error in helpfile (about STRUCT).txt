@@ -1,0 +1,4 @@
+in the HTML helpfile and several documents in version 2.3 have an error in the example on STRUCT you forgot the [] after start etc.it says erronous initial value
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

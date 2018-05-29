@@ -1,0 +1,8 @@
+HelloI would like to now the max resolution for a timer/task on a Pi 3, and having a good performance for others tasks..Thanks,Miquel
+
+Ei Miquel.It depends on the execution time of your codesys code.For example. If your code takes 1 ms of execution time, you can use a timer task of 10 ms. But if your execution time is 9 ms, 10 ms could not be a good optionAs I can remember, raspberry codesys allow a minimum cycle of 10ms. Normally a cycle time between 10 and 100 ms. Could be good.Be carefull with visualization tasks on Raspberry. Its takes a lot of time.And finally, executing on an standard raspbian linux you will have a jitter which can be 0,5 ms. The people says that with a preemtive kernel it is reduced to 100 us...
+
+Hi,if you use a Pi2 or Pi3 even cycltimes < 1ms should not be a problem, (for example 500us is possible)but I agree to Joseph you need to take care if you set this in the highest prio task the max calc time from your code should not takemore than the cycle time you have specified.If you do this I would recommend to set the following setttingin /etc/CODESYSControl.cfg to enable the processorload supervision.[CmpSchedule]ProcessorLoad.Enable=1ProcessorLoad.Maximum=95ProcessorLoad.Interval=5000BREdwin
+
+Thanks for your reply.. I'm trying to read a encoder though a Ethercat BUS, and i was wondering what max cycle task could be achieve without stuck the pi.. If we consider that i have a PREEMPT kernel, i should be able to get it properly, as you explain...RegardsMiquel
+

@@ -1,0 +1,13 @@
+Hello,
+
+with the V3.4 the CoDeSysSP.cfg file contains new entries (for SP Win V3).
+The config file will not be overwritten with an update from V3.3 to V3.4
+Find attached the standard cfg-file, please merge it with the existing file.
+
+find the file in the german forum
+
+http://forum.3s-software.com/viewtopic.php?t=2335
+
+_________________Good Better CoDeSys
+Boris Schuster
+

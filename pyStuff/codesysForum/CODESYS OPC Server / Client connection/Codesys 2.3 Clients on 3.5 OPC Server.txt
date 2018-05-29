@@ -1,0 +1,4 @@
+I currently have a couple of Codesys 2.3 devices running with a 2.3 OPC server.  However, I have recently installed the 3.5 OPC server and am trying to figure out how (or even if) it is possible to use this OPC server to view my 2.3 devices or not.  Does anyone know if it is possible, and if so, are there any instructions on how to do so?Thanks for the help!
+
+Hi,see the faqs section here in the Forum:viewtopic.php?f=22&t=5649BREdwin
+

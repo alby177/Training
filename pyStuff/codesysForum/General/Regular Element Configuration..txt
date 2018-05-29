@@ -1,0 +1,7 @@
+I have made a button on the screen for the puropose of being able to switch between visualisations. the idea behind this is that I can have a front page where I can access all other visualisations. I figure in order to link the button to the visualisation I'd have to put the visualisations name somewhere in the regular elements configuration box. 
+Can someone let me know where.
+thanks
+Carmichael_keith
+
+Never mind, I figured it was the _ to viz option. It seems really obvious now. oops :p
+

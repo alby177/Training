@@ -1,0 +1,8 @@
+Dear All
+
+I am using "IB IL RS422/485 PRO" Phoniex inline IO module with Rexroth Indracontrol PLC (Uses CoDeSys Programming).  I want to use this "RS485" module as Modbus RTU master. 
+
+Please help me in this.
+
+Thanks in advance...
+

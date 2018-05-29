@@ -1,0 +1,2 @@
+Hello,Is it possible to embed inside a WinForm/C# application the whole CodeSys development feature.Is there any component for that?If yes, is it possible to get a documentation on this component?Does it integrate simulation feature?Does it integrate debug feature of remote program?Thanks a lot
+

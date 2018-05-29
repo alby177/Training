@@ -1,0 +1,2 @@
+Hello!It is possible to change serial port baudrate to value that is not in list? I want use 250k but it is not on selectable list.Second question is, when we create new ModbusChannel there is option to set trigger from "application" but how to use this? any example?Thanks for answer.
+

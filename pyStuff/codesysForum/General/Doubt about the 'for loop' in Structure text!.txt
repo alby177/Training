@@ -1,0 +1,41 @@
+I am new to structure text and I don't understand how it work. please advise on the code below.
+
+PROGRAM PLC_PRG
+
+VAR
+	M1: INT;
+	M2: INT:=1;
+
+END_VAR
+
+------------------------------------------------------------------
+
+FOR m1:=1 TO 5 BY 1 DO
+	m2:=m2+1;
+END_FOR;
+
+
+this program should run 5 times and m2 should return value 6. 
+but it didn't return value 6, and it is still running and adding on
+value to m2.  how can it be?....
+
+It is running 5 times for each scan of the program. 
+
+Since the program gets continually scanned,  it will run another 5 times on the 2nd scan, 3rd scan, etc. 
+
+Think of the main program in a PLC as being contained inside a "DO Forever" loop. 
+If you want the FOR loop to execute only once, you need to add some sort of condition, perhaps an IF statement around it  
+
+Declair a flag
+
+xRunFor: BOOL := TRUE;
+
+Then in the code...
+
+IF xRunFor THEN
+... FOR Loop
+ xRunFor := FALSE;
+END_IF;
+
+Thanks for your explanation..
+

@@ -1,0 +1,8 @@
+I am trying to understand how the Position selection works in an object, under the Input catagory, with the Text input of variable TextDisplay checkbox checked. Another entry field appears just below called Number of Positions:, in place of the Dialog title: box. I have tried to enter 100 or 0 to 100 range with two dots as separators and a few other values, but nothing seems to work.
+
+My hope was that this object would allow me to build a slider bar that could be used to change a variable value. I have tried this property in squares and rectangles as well as polygons but nothing seems to work.
+
+Thanks!
+
+Why dont you use the sliders of CoDeSys?
+

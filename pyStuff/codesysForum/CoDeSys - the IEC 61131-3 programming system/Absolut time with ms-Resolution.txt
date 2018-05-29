@@ -1,0 +1,6 @@
+Hello
+I would like to timestamp my values with a time value that has milli second resolution (~accuracy) and transmit them via Modbus/TCP. Now I found the SysLibTime.lib with its structure SystemTimeDate. SystemTimeDate contains the value Millisecond but it seems that this value is always zero! 
+There is a timer with micro second resolution, but I can't figure out how to use this counter for mi absolute timestamp. Any help is welcome!
+ 
+PS: I use the WAGO 841 Ethernet Controller.
+

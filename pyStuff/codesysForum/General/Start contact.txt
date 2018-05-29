@@ -1,0 +1,6 @@
+Good morning,I would have a question for you:Is there a way to have a conception that opens and then closes when the program starts on the plc?In my project I have 4 OSCAT timers that at a certain time perform an operation only that every time the application loads on the plc the timers leave.I would like to create a denied contact that at startup interrupts the timer output to say 5 seconds and then closes.it's possible ?Thank you, Alberto
+
+I see you never received an answer. Hopefully you solved this. Otherwise my idea:Define another timer for 5 seconds and call it all the time. Code:VAR   BootDone : TON; END_VAR  BootDone(IN:=TRUE, PT:=T#5S); IF BootDone.Q THEN    //ok to use other timer values now END_IF 
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+

@@ -1,0 +1,10 @@
+HelloIs there a way to know, in a program the status of the bus Mobbus TCP, the status of the master, the status of a slave, if an element is connected or not.I read documentation about CAA_DeviceDiagnostic.lib, but it is not very clear for me   I use the name of a slave in status windows, i see many helpfull inofrmations, but I can't uses it in my program.Thank you in advance for your answers. 
+
+HelloNobody uses Modbus TCP or rather diagnostic information?   Please Mr. CODESYS gives us more readable and useful docs with real examples.   
+
+It is easy the modbus items are objects.  Do the following by using the name of the object:Modbus_TCP_Master.xSlaveErrorModbus_TCP_Master.uiConnectedSlavesModbus_TCP_Slave.byModbusErrorModbus_TCP_Slave.xBusyModbus_TCP_Slave.xConfirmErrorModbus_TCP_Slave.xErrorModbus_TCP_Slave.xInitDoneBR
+
+_________________The Original SoMachine Ninja
+
+Is there a proper working example available for Modbus TCP and other comms?
+

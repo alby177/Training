@@ -1,0 +1,2 @@
+We have a programme that creates a socket listener using SysSockCreate etc from SysSocket lib. It seems this program can run in simulation but cannot use sockets (SysSockCreate always returns 0).It would be very useful to run this programme locally in simulation rather than deploy to a real device, and have it listen on the PC network adapter. I wonder if this is possible?
+

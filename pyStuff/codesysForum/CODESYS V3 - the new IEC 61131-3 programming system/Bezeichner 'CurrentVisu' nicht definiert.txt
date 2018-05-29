@@ -1,0 +1,4 @@
+Hi!In absehbarer Zeit werden wir auf Codesys 3.x umsteigen, deswegen mache ich die ersten Gehversuche. Ein kleines Projekt, in V2.3 geschrieben, sollte den Übergang simulieren. Leider bekomme ich die Compiler-Meldung: "Bezeichner 'CurrentVisu' nicht definiert" obwohl das Ankreuzfeld "CurrentVisu Variable verwenden" angewählt ist.Wo liegt der Fehler? Gibt es eine andere Art des Seitenwechsels? (Obwohl, das würde schon 'ne Menge Arbeit bedeuten, denn wir verwenden 'CurrentVisu' recht intensiv.)Kann mir jemand helfen???PS.:Das System ist CoDeSys 3.4 SP3, Device: zur Zeit keine echte, halt mit "Win V3" und mit "RTE V3" probiert. Aber so weit komme ich ja gar nicht!
+
+You have to use VisuElems.CURRENTVISU
+

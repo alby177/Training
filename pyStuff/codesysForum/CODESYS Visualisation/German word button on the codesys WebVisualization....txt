@@ -1,0 +1,20 @@
+Recently, I configured a alarm table in the codesys visualization and also in the webvisualization. I have noticed that the Acknowledge Selection, Acknowledge all and history button display in German language on the codesys webVisualization but these button show in English language on the codesys visualization.  
+
+My question is how to I configure to those button to be display in English language on codesys webVisualization? (Both attached picture above is belong to the same project file.) How can them be displayed in two different language?..please advise??
+
+HiI am experiencing the same problem. When the visualisation is on a web page /java applet the language on the buttons changes from english to german. Can not find any solution to this probelm.Has anybody a fix for this?  
+
+_________________Best regardsrudolf
+
+roland this one is for you, this is error in the java script builder.however i must say why are they using this alarm.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+shooter wrote:roland this one is for you, this is error in the java script builder.however i must say why are they using this alarm.I use the alarm functions in codesys just because they are there for my small alarm system. but i now realize that the this alarm handling in codesys has'nt the best functions available.maybe you have a better alternative ?  
+
+_________________Best regardsrudolf
+
+yes try oscat for a start.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

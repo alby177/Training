@@ -1,0 +1,25 @@
+I am trying to figure out how to get the Timer values to display as a fractional value. I have tried taking the values from Time to Real but if the value goes below 1.00 it still shows up with the engineering notation. Example: .998 seconds shows up as 9.98e-1.
+
+Any suggestions???
+
+Where do you want to display? In CoDeSys visualization you can use a formatting such as %f2.3 (2 figures before, 3 figures after decimal dot). On line help - at least German version - gives details on page Visualization - Variables.
+
+I passing these value to an IFM PDM360 and trying to get them to show up on the Display.
+
+The IFM PDM uses the CoDeSys visualization so Rolf has presented the correct response. To elaborate.
+
+(Assume a text box)
+
+In a visualization text box you need to add a format similar to this in the text content area "Time = %f3.2 this means 3 digits with 2 places after the decimal point. So 1.00 or 2.34. This formats the display of the variable of type real.
+
+In the text box-variables-text display add the variable to monitor say PLC_PRG.MyTime.
+
+Note PLC_PRG.MyTime must be defined as type real. If it is say defined as an int or dword or anything else %f formatting doesn't apply and will not display decimal places.
+
+Let me know if this doesn't work for you I can send an example.
+
+I believe CoDeSys has made some changes to the visual objects in Version 2.3.9.11. In prior versions I feel this is a downfall because in order to display in the visual elements values with decimal points you have to configure values as type real. This is not the most efficient use of speed and memory when using non 32 bit platforms.
+
+_________________Thanks,
+Steve Pfeifenroth
+

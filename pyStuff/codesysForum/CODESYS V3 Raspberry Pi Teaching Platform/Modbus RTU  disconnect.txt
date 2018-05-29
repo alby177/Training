@@ -1,0 +1,28 @@
+HiAfter rebooting Raspberry  pi, the modbus rtu  connection is not restored .Raspberry  pi master  , arduino slaveHow to solve a problem ?
+
+Hi,check this 'Auto-restart connection':BREewin
+
+Dear Edwin , many thanks for the answer!Yes, I have  Auto-restart connection'.I would like to add that I connect arduino and pi through the USB .Do you have any other solutions?My configuration
+
+I reinstalled the program and made the settings a second time.No changes, when the program is compiled, everything works, but if you reboot the Arduino or restart the pi, the connection is not restored
+
+Hi,add Modbus_Slave_Com_port (the name of the modbus slave in the device tree)to the watchwindow and check there additional Information on the connection while you are online (maybe diable autorestart for one try)to see the problem.BREdwin
+
+Dear EdwinI understand the reason why I do not turn on the modbus RTU  after rebootingIf I write  FALSE    ( m_slaveEnabled ) , then everything starts to workHow can I do this automatically in the program and can I do it in a  CFC ?
+
+Hi,not sure how we could help without checking this online....BREdwin
+
+Edwin Schwellinger wrote:Hi,not sure how we could help without checking this online....BREdwinHiI do not see any problems for implementing this, I can give you access to teamviewer .Tell me when you are comfortable ?Just attach the project, please see there may be an error in my settingsBest regardsErnest
+
+Hi Ernest,guess this is a slave problem?Because seems no to resposnse in case of the restart isn't it?Could you increase this timeout?BREdwin
+
+Если не удастся решить проблему, то можно использовать функциональные блоки из библиотеки IoDrvModbus напрямую, без устройства в дереве проекта. Библиотека содержит два функциональных блока для работы в режиме modbus rtu master: ModbusRequest и ModbusRequest2. Их использование более прозрачное, чем этот странный драйвер Modbus от 3S.Я приложил пример проекта на CFC как можно использовать фб ModbusRequest для чтения дискретных выходов (Codesys 3.5.10.x).
+
+Edwin Schwellinger wrote:Hi Ernest,guess this is a slave problem?Because seems no to resposnse in case of the restart isn't it?Could you increase this timeout?BREdwinHi EdwinFor the test, I connect the arduino (slave) to the OPC server and left all the settings as were. Everything works and if I reboot the Arduino while running, then the connection to the server is automatically restored.I increased the timeout of the response, as a result, I see that the error about the loss of communication is triggered with misconception but I do not see that the master at that time is polling the slave.
+
+Viacheslav Mezentsev wrote:Если не удастся решить проблему, то можно использовать функциональные блоки из библиотеки IoDrvModbus напрямую, без устройства в дереве проекта. Библиотека содержит два функциональных блока для работы в режиме modbus rtu master: ModbusRequest и ModbusRequest2. Их использование более прозрачное, чем этот странный драйвер Modbus от 3S.Я приложил пример проекта на CFC как можно использовать фб ModbusRequest для чтения дискретных выходов (Codesys 3.5.10.x).Привет Огромное спасибо что ответили Мучаюсь с этой проблемой уже месяц , перепробовал практически все варианты что нашел  на этом форуме Честно говоря я нашел как можно возобновить связь после перезагрузки , но я не смог сделать это в программе так как не могу найти связь с  ( m_slaveEnabled ) .Вот ссылка на видео https://www.youtube.com/watch?v=jz6ZYWJpHtw
+
+Обычно функциональные блоки имеют дискретные входы и выходы общего назначения, типа xEnable, xReset, xError, xBusy, xDown и т.п. Так вот, если нужно обновить состояние какого-то блока, то пользоваться нужно каким-то из этих входов. Я бы попробовал Modbus_Slave_COM_Port.xReset := true, если количество запросов с ошибкой превысило какое-то число (попробовать установить в true по условию 1 раз). Т.е. нужно добавить счётчик и следить за установкой xError, причём не в каждом цикле, а именно отслеживать, что произошла ошибка таймаута (истекло время ожидания ответа).Внутренний член "класса" m_slaveEnabled напрямую скорее всего не доступен, т.к. управление им не удобно из таких языков как CFC. Сброс может происходить косвенным образом, с использованием указанных выше дискретных входов.Идентификатор Modbus_Slave_COM_Port является экземпляром драйвера устройства, т.е., другими словами, это экземпляр специального функционального блока. Он доступен для того, чтобы программист мог работать с устройством "напрямую". Я никогда не работал с этими устройствами, т.к. предпочитаю синхронный обмен по протоколу Modbus с использованием своих функций и функциональных блоков. Может быть вместо Modbus_Slave_COM_Port нужно будет сбросить Modbus_Master_COM_Port, посмотрев его свойства в online.П.С. Можете приложить скетч Arduino, я могу посмотреть в чём может быть дело.
+
+Viacheslav Mezentsev wrote:П.С. Можете приложить скетч Arduino, я могу посмотреть в чём может быть дело.Я буду вам премного благодарен..Я проверял ардуино  в качестве слейва в OPC сервере от Инсат - все работаетНастройки COM порта в Raspberry :[SysCom]Linux.Devicefile=/dev/ttyUSBportnum := COM.SysCom.SYS_COMPORT1;Raspberry и  arduino  подключены через usbЭл почта .. erno0011@mail.ru
+

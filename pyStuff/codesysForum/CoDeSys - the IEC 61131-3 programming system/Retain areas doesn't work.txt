@@ -1,0 +1,63 @@
+I'm developing a project in which it's supposed to use retentive areas of memory to store values which should be kept after turning the PLC off. I'm using the "RETAIN" keyword for this purpose, it does not work although I'm using the correct form of declaration as follows:
+
+VAR_GLOBAL RETAIN
+
+Var AT %MW0: WORD;
+
+END_VAR
+
+Hi,
+nobody else seems to have a solution, so let me try an answer.
+On reading the post, three questions came up on me:
+1. Which hardware do you use? Does this support RETAIN variables? (I know PLCs, which support a few bits only)
+2. I think, it is not always possible to have a variable on a specific address as RETAIN. Some (or all??) PLCs may restrict the RETAIN address space. I normally use the RETAIN clause with symbolic variables only.
+3. Why do you use the keyword "Var" as an identifier? This might confuse the compiler.
+
+Try to declare the variable as
+Code:VAR_GLOBAL RETAIN  RetainVar : WORD;END_VAR
+and put it to MW0, when you need it there.
+Regards
+
+We had a unit, I think it was a Moeller/Microinnovations HMI/PLC that wouldn't retain values only to find out there was a bug in the firmware. When we updated the firmware it all worked out fine.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+I think you have several ways of search : 
+- read the documentation of the product to see if this product accepts retain variables or how to configure this variables. For example, with IFM PLC, there is a function block to use to declare retain variables.
+
+- look for a firmware update.
+
+Hoping to be helpful, best regards
+
+Rolf_Geisler wrote:3. Why do you use the keyword "Var" as an identifier? This might confuse the compiler.This is just an example to clarify how I declare variables in my applicationRolf_Geisler wrote:Try to declare the variable asCode:VAR_GLOBAL RETAIN  RetainVar : WORD;END_VARand put it to MW0, when you need it there.Regards
+
+Why you are declaring the variable without address. "RetainVar: WORD;" Why don't you declare it as "RetainVar AT %MW0: WORD;"
+
+the retain does not work when you change the program, did you set retain memory correct?
+ 
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+In CoDeSys - and other IEC compliant PLCs -, there is no need to put variables to a certain address. Let the compiler allocate them. Access is working on the symbolic level only.
+
+This is useful for RETAIN vars as well. The compiler knows, where to store it. MW0 as given in your example may be outside the battery buffered memory. You would have to study the system manual of the PLC to find out, which addresses are inside.
+
+I use declarations with an absolute address with IO only. This works fine for lots of years now.
+
+yeah rolf you are good, however on modbus it is needed to use markers.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+shooter wrote:yeah rolf you are good, however on modbus it is needed to use markers.
+What hardware are you using?  We use Modbus in Moeller controllers without using markers.  But we do have to use function blocks.
+
+_________________nOrM=====nOrM = Norman Dziedzic Jr.
+
+Hi shooter,
+maybe Modbus requires markers, don't know (never used this by now). But - did Shohadawy talk about Modbus?
+Rolf
+
+Hello All, I also had the same issue in our HMI, At last we could able to manage by writing in a .ini file externally.Hope your HMI also have a runtime/firmware to run the codesys application. Try to shutdown the runtime/firmware properly in order to retain the values. If that works, there is a problem in your runtime/firmware.Thanks and Regards,Rajesh G
+

@@ -1,0 +1,6 @@
+Hi there,I know that Matlab generates IEC61131-3 compatible code from Simulink and Stateflow models. Is there any tutorial exist, which could provide step-by-step guide how to integrate that code into Codesys?
+
+Our company received a demo of this Matlab functionality. Basically, it created one large POU with one state machine. It did not fit our goals as far as code layout, so we didn't pursue it.Implementing should be very easy - paste in the program and call it every scan.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+

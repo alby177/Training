@@ -1,0 +1,6 @@
+Hello,Is there a direct method to access the (time stamp, variable) data pairs from the Trend and Trace tools in order to perform calculations with them?I am interested in obtaining the rate of change of a physical variable being tracked with these Trend and Trace graphs and I do not want to wait for these values to be written to a file and then retrieve them to do the math. I need to be able to do this operation as close to real time as possible.Thanks in advance
+
+Hi,there is no public interface to access these data (there is an entry in our tracking db for implementing this feature but not realized)(or do you mean from outside of the CODESYS world from an other non CODESYS application which is running on the pi??)BREdwin
+
+Thanks for your prompt response Edwin,I meant for CoDeSys applications running under Win SL.(Out of curiosity, are there specific tools for accessing those subject pairs from non CoDeSys apps?)Luis Mendez
+

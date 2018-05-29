@@ -1,0 +1,8 @@
+How can i generate sdb file?
+
+_________________zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+
+CoDeSys ver 2.3 can generate SDB file....but for version 3.x,SDB file cannot be generated.so symbolic database cannot be used for newer version.
+
+_________________zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+

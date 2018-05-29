@@ -1,0 +1,9 @@
+Hi,
+
+I wanted to find some example how to create OPC Client written in C++. 
+And supported CoDeSys OPC Server 2.0
+
+Thanks 
+
+Paul
+

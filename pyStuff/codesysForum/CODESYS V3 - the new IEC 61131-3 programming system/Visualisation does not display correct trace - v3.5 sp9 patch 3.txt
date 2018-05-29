@@ -1,0 +1,2 @@
+Please see attached program. When I run visualization my top trace does not display correctly. Any help is greatly appreciated. Thank You
+

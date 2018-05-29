@@ -1,0 +1,6 @@
+Hi..In my project I want to read registers from a modbus tcp slave device. In normal conditions everything is ok but I must handle an error bit while an reading or socket error at communication.For example when turn off the power of slave device, a communication error occurs. So how can understand the error of modbus tcp.Thanks already..
+
+If you have control over the slaves you could toggle a bit and increase a counter on the slave side and read that back, make sure it increases. But if there is a way to access the on board diagnostics from Codesys that would be nice.Sent from my SM-G935F using Tapatalk
+
+Each modbus slave device has a property "byModbusError".In your case you can use e.g. the following code:Code:Mb1State := Modbus_TCP_Slave.byModbusError;Mb1State is then of the following type:Code:VAR   Mb1State: IoDrvModbusTCP.MB_ErrorCodes;END_VARIn the library "IoDrvModbusTCP" you can find this ENUM (in the Structs folder) to see the details.
+

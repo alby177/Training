@@ -1,0 +1,2 @@
+I need to change a codesys variable from an http command.With Wago I have to use a http sintax like this:http://admin:wago@192.168.1.103/WRITEPI ... 1&FORMAT1=%xIt is possible to simething like this with Codesys and Raspberry?Best Regards,Gianni
+

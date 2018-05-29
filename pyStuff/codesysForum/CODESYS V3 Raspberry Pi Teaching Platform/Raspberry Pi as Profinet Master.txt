@@ -1,0 +1,4 @@
+Hello good morning,I have Raspberry Pi with codesys installed package 3.5.9.10I'm trying to configure Raspberry Pi as Profinet Master, but when I try to attach Master to Ethernet Adapter, Profinet master does not appear on the list, only appears Modbus.Do you have any example project ( *.projectARchive could be better) in order to know how to set it correctly?Thanks in advance!
+
+hello:I would recommend that you upgrade everything to the latest version, and with 3.5 sp11 I appear without problems.
+

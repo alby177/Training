@@ -1,0 +1,10 @@
+Good day to everyone,My name is Luca and I'm new in the forum and in the Codesys world, so be patient with me I recently started a new automation project that, in my plans, will run powered by a Codesys softPLC controlled by a C++ application that already controls a machine. So the situation is that I already have a working C++ program where I want to add a control interface for the Codesys PLC.To achive this result I implemented the PLC Handler, working with the ActiveX version of the library because my C++ IDE is Embarcadero C++ Builder and the static libs are made for Visual Studio.Everything works fine except for a very big problem: the ram usage grows every time I read vars from the PLC. I've made some test applications and i've seen that the memory leak happens only when i interact with the PLC Handler.So my question is: is there anybody using the PLC Handler with the activeX? Is it possible that the PLC handler is not compatible with Embarcadero IDE? Maybe there is some things to do to make everything work properly...Any help will be greatly appreciatedLuca
+
+up  
+
+another up 
+
+Anyone who works with the PLCHandler in a IDE different from Visual Studio?
+
+Update: I solved the problem, fortunately was not PLCHandler fault but a type problem in Embarcadero C++. The Variant type defined in RTL was different from the VARIANT returned by the PLC Handler. But this difference was not well documented.Thanks to all
+

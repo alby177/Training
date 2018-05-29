@@ -1,0 +1,22 @@
+help me please. I want to make PID controller with Stucture Text (ST). I was get stuck when I should create the structure text. I still confuse which ST should I use. thanks before
+
+Hi
+
+You can download PID-Controller  with Source.
+
+(Free Library with Source.)
+
+
+Manual with Examples are possible for download.
+
+
+Links  OSCAT      http://www.oscat.de
+
+_________________Karl
+
+HLK-Homepage  www.magnia.de
+1-Wire-Forum (Versuch) http://www.magnia.de/index.php?option=c ... &Itemid=55
+
+thank you very much.
+It is very usefull and working.
+

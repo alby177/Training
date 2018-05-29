@@ -1,0 +1,4 @@
+I am playing around with a custom driver, written in IEC, and I have a question about the device description *.devdesc.xml.I don't know if this driver ever will be public and I wonder if there are any reserved types and id's for the <DeviceIdentification> values in the device description that can be used for development to avoid collisions.For the Type value I have seen all kind of numbers but I saw somewhere that numbers above 32768 could be used for customers.The Id Value seems to be some sort of vendor code + something else.I would be so happy if anyone could contribute with more information.I do not have access to all documentation, I just have Codesys 3.4 downloaded from Beck and the documention for the DB240 driver in their SDK as well as the V3.5 that came with a Berghof starter-kit.
+
+Some information about parameters of device description file you can find in xml-schema description. The link is available in every devdescr.xml file.  
+

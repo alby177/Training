@@ -1,0 +1,8 @@
+Dears.I am working with Lenze I700 drives in sync position mode. Codesys sends the speed feedforward in encoderPulses/s and i700 interprets it as rpm factorized in 480000/2^32. That causes an following error proportional at speed. There exist any parameter to solve that?Thanks
+
+Hi Josep M. RamsHave you found a solution I have the same problem with following error.Thanks
+
+Hi.Modifying fFactorvel in ref_axe it works (But not seems to be a elegant method   ), but I cannot know how to set the addTorque FF.
+
+Thank you for info about your solution.
+

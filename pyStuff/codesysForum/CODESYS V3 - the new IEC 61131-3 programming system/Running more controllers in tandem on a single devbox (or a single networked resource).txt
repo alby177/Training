@@ -1,0 +1,8 @@
+Hi,Has anybody got any experience with running more then one softcontroller (softplc/target) on a single machine in tandem?This offcourse provided that the hardware is sufficient (CPU, Memory). I can imagine that these runtimes then should have different TCP port per target. Is this supported or not? It would be nice if these tandem targets can have different versions, whatever the preference or need is. I imagine that the system hardware resources only limits the possibilities.Thanks!
+
+BUMP
+
+Hi,this is an open point:'Control Win: use multiple instances on one hardware'at the moment not possible / open.What is your exact use case, testing purpose, run licensed instances ...?BREdwin
+
+My use case is testing/development purpose with a mix of licensed/unlicensed targets.I presume that solving this for non realtime targets should be less complex then RT capable targets, because of the dedicated hardware requirements for RT targets.If one installs non-rt targets in parallel on a single devbox and assigns different IP-ports to the runtimes, this should be, in theory, possible.
+

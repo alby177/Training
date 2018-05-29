@@ -1,0 +1,19 @@
+Hello!!!
+Is it possible to import Siemens Step7 files (*.awl) intoCodesys???
+Thanks. 
+
+HI
+
+Quote:Is it possible to import Siemens Step7 files (*.awl) intoCodesys
+Yes, but is only posible with "Copy and Paste".
+
+But, AWL-Comands are not work under CoDeSys.
+
+
+You can import SCL-Code from Siemens  in St-Code under CoDeSys .
+
+_________________Karl
+
+HLK-Homepage  www.magnia.de
+1-Wire-Forum (Versuch) http://www.magnia.de/index.php?option=c ... &Itemid=55
+

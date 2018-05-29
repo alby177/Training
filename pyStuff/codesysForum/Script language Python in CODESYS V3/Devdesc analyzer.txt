@@ -1,0 +1,8 @@
+Hi,I often have to modify or use device descriptor file aka : devdesc.xml and I wonder if someonehas already made a tool to parse it for checks (parameters and so on), easier reading than with a traditional text software ?Cheers.
+
+Hi,Currently, the only thing we can offer are validating XML editors like Altova XML Spy (which is used in-house by us), Serna Free, XM Mind and others.
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+
+...or Notepad++    But it's really painfull each time you need to walk through all the lines. Just suprised that no one made a script/app. to ease this process. Cheers.
+

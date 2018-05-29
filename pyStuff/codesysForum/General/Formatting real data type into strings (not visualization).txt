@@ -1,0 +1,6 @@
+I need to get my floats into strings in the format I want.  I want to specify # of decimals.  This data is being logged to a .csv file.  The only option I appear to have is REAL_TO_STRING, then screw around with the resulting string.  The biggest problem I have now is that values < 1.0 are coming in as engineering format... so I get -9.733445E-1 for example.What is the correct solution to this situation?  Everything in Codesys seems to be built on C building blocks so why can't I just do a sprintf type of funciton and specify %.2f or something like that?Any help is appreciated.  I really don't feel like parsing out E values in my string to try to figure out where to move decimals around.  It's really getting excessive for something so simple.  I already have a ton of code to get the # of decimals I want with values that don't have E in them.
+
+multiply your number by 100 to get two decimalsmake a real_to_int conversionthis you can write direct to your CSV (as this will only take little memoryor divide it by 100 and make it a real again.I do leave it in INT as my calc (openoffice) will calculate it back in correct numbers.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

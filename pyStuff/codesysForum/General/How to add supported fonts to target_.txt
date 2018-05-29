@@ -1,0 +1,4 @@
+We use 10" touch display with Windows CE. CE supports lots of fonts. Somehow in Target Settings: "Supported fonts in the Target" list, there is only three different fonts.
+
+How can I add more fonts to this list? Need to update some libary or what?
+

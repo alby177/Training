@@ -1,0 +1,34 @@
+today OSCAT released the first draft of english manuals for our libraries.the manuals can be downloaded from our homepage download section
+
+_________________freie sps bibliothek unter www.oscat.de
+
+Thank you hugo!  Very much appreciated.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+any help improving our english manual is very much appreciated.pls give us all your corrections and inputs to www.oscat.de
+
+_________________freie sps bibliothek unter www.oscat.de
+
+can not load it error in file.could you please have a look at it hugo.otherwise send it direct to me at shooter@home.nl please.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+sorry our server was down for a few hourspls try again all is up and running again
+
+_________________freie sps bibliothek unter www.oscat.de
+
+Hugo, are you interesting in russian translation of your manual? I think I can help you...
+
+yes we are very interested some work has already be done and with more help we could finish the job much fasterpls contact the user "asap" in the oscat forum with a private message or a post in announcements
+
+_________________freie sps bibliothek unter www.oscat.de
+
+On page 21 of the documentation, it is written that the library has been tested with various processors (Bechoff BX 9000, Beckhoff CX 9001-1001, Wago 750-841, etc).  If I am using a CoDeSys PLC that is not listed, does it mean only that the library has not been tested on that PLC family or am I likely to run into many problems?     Thank you and kind regards! 
+
+the list of tested hardware is simply the hardware we use in our labs for tests.any hardware not listed should work properly as long as it complies to the IEC61131-3 standard.since your hardware is using the Codesys 2 development system everything shopuld work easily and straight forewardmost users of OSCAT have Harware which is not listed in our manual.
+
+_________________freie sps bibliothek unter www.oscat.de
+

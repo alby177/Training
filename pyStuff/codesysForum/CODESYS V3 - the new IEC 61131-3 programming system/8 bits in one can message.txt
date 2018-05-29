@@ -1,0 +1,8 @@
+Hi. I saw somewhere (but I don't remember where) how send 8 bits in one CAN message. I was something like this:Code:au8_Rx_Data[0]:=UINT_TO_BOOL(t_CanMsg_Rx.au8_Data[0.1];au8_Rx_Data[1]:=UINT_TO_BOOL(t_CanMsg_Rx.au8_Data[0.2];au8_Rx_Data[2]:=UINT_TO_BOOL(t_CanMsg_Rx.au8_Data[0.2];   //ETC   Added a dot and a new numeric field.But that is not exactly it. If anyone can tell me more,Thanks
+
+Think you might be talking about something like:Code:tx_Data.0 := bit1;tx_Data.1 := bit2;tx_Data.2 := bit3;
+
+Hi.Could be?:T_canmsg_rx.aux8_data[0].1Or if not, traditional system:Data[0]&16#00010
+
+Code:T_canmsg_rx.aux8_data[0].1That's it.Thanks.
+

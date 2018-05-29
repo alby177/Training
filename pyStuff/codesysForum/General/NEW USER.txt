@@ -1,0 +1,15 @@
+CAN ANYONE RECOMEND A BOOK WHICH MIGHT BE AVAILABLE GIVING PROGRAM EXAMPLE AND GUIDE LINES IS THERE A WEBSITE FOR NEW USERS
+
+I could recommend the book from Robert Lewis: "Programming Industrial Control Systems Using IEC 1131-3". I used for CoDeSys training courses. You can find information on the PLCopen website (it is the 6th book in the list):
+http://www.plcopen.org/pages/promotion/ ... C%201131-3
+
+There are some more interesting books, but only in German.
+
+_________________Roland WagnerModerator
+
+If you're going to get that book, don't get it from amazon.co.uk
+as crazy as it sounds it's actually half the price from amazon.com (£98 from .co.uk and $66 from .com)
+it's £44 from waterstones and 69Eu from PLCOpen. hope this helps you
+
+P.S. be careful as you read through this because I change between GBP, USD and EUR
+

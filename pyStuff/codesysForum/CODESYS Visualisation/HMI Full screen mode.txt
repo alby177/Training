@@ -1,0 +1,15 @@
+Hello
+
+How can I start a visualization with the HMI not in a full screen mode.
+I would like to have a windowed mode, is that possible?
+
+Possible.
+Please add line to Codesys HMI ini file:
+CodesysHMI.ini
+the line:
+NoFullScreenMode=Yes
+
+Hi!
+
+Can I choose background color for fullscreeen?
+

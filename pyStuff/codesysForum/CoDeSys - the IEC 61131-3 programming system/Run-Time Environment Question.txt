@@ -1,0 +1,10 @@
+I'm an experienced SW developer with many years of application development and embedded development in a variety of languages.  I am currently working on CoDeSys application on a WAGO 750-841 PLC.  My immediate goal is to get a 750-653/003 RS485 module working.I've written the program yet it's not working.  I've come to the conclusion that my understanding of the run-time environment or something is flawed.  I've spent many hours reading what information is available but I am still unable to understand how it all fits togeather.  I haven't had that golden moment where a sudden piece of knowledge brings everything into focus.Would anyone care to share thier "golden moments"?
+
+Perhaps it is best to try something simple first.  What language are you using?  For instance, in ladder logic, just have a single contact drive a single output bit or in ST, just define an INT variable and set it to 1.Can you go "online"Did you set the controller into RUN mode?If you are not in RUN mode then the logic is not run.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+One thing that was not immediately obvious to me is the separation between Wago and Codesys. For more hardware specific issues, consult Wago docs most likely; for more software related consult Codesys Help and Forums. Understanding how Wago builds on top of Codesys is an important step; then you know who to blame =]    Some things have been standardized by Codesys, while others were left to Wago to implement themselves.Beyond that, go with 'ndzied1'. Start with simple, just to verify you have an operational environment. (you are running, LED status is solid green, simple logic is being executed...)Check over the hardware basics here...http://www.wago.com/wagoweb/documentati ... 00_0en.pdfMaybe attempt to do some Coms over TCP/IP, the setup is nearly out-of-the-box. Then switch over to your 485 card. If you stick to modbus, you should already have premade libraries that are already mapped to memory. You may have to setup 1 function block to initialize yourself as slave/master and your connection parameters.Good Luck
+

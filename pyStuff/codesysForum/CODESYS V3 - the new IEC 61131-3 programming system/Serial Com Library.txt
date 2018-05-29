@@ -1,0 +1,6 @@
+Hello teamI'm using the Serial Com Library from the Codesys Store. It appears as V3.5.7.0My target uses 3.5.10.10Should this be ok?The reason I ask is that I'm finding the Runtime 'fragile', and it appears to be connected to this library.Can someone confirm please?ThanksPaul
+
+ph0010421 wrote:Hello teamI'm using the Serial Com Library from the Codesys Store. It appears as V3.5.7.0My target uses 3.5.10.10Should this be ok?The reason I ask is that I'm finding the Runtime 'fragile', and it appears to be connected to this library.Can someone confirm please?ThanksPaulI'm running 3.5.10.40, and I'm seeing the same Serial library. What this means is that it's the latest build (i.e. most stable). Maybe you can elaborate more on the fragility aspects. I've done some simple testing, and it works great so far.
+
+Hello nothinrandomThanks for the reply. I'm encouraged that you are having no problems. The FBs do work, but I'm seeing the rt crash during an online edit for example.If I don't 'use' any of the FBs then I'm ok.I do repeatedly execute the COM.Read (toggle the xExecute with its own xDone flag) and wonder if 'something' can't keep up.As an aside, the szSize output seems to have a value in when it shouldn't, but that's for another time.ThanksPaul
+

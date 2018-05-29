@@ -1,0 +1,2 @@
+Hello,In trace manager, If I use two cursors then I can see Delta Y values(Y2-Y1 values) on right hand side , but I can not see deltaX (X2-X1 values). How to configure to see Delta X values.Regards,Himanshu
+

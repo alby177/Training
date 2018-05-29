@@ -1,0 +1,10 @@
+Hi,I want to achieve something very simple. There is a rectangle in a visualization. I want to change the background(fill) color of that rectangle between white-grey-green-orange-red by modifying a variable value.Acc. to Codesys help ( I use 3.5 sp7 patch 2) , this should be done by assigning a DWORD variable to Colorvariables/Normal State / Fill color and eventually  to Colorvariables/Alarmstate / Fill color. DWORD should contain an RGB color in the form 16#00RRGGBB, so if it is, say, 16#0000FF00, the rectangle background should become green.However, nothing like that happens - when I assign a variable to Colorvariables/.../Fill color - the element simply becomes invisible, no matter what the variable value is.What am I missing? Attached is a simple Control Win 3 project with one visu which shows the problem.Thanks for any suggestions
+
+I have the same problem with 3.5 SP9 patch3...When variable (GVL DWORD) is in "variable color": fill color disappear.
+
+Color variablesApplied for dynamic definitions for the color of the element via a project variable.A color is defined by a hex number which is composed of Red/Green/Blue (RGB) components.A project variable of type DWORD must be entered like prog1.dwFillColor.The variable must define the color value in hexadecimal format. To fill the complete DWORD, the first two digits after "16#" have to be set to zero: "16#00RRGGBB". HIND to the first two digits:	00 is used when under Visualization Manager > Activate semi-transparent drawing is NOT active	FF, instead of 00, is used when under Visualization Manager > Activate semi-transparent drawing is activeBREdwin
+
+Thank you very much : it work well !It must be had to help of codesys....
+
+Thanks a lot! Replacing first 00 with FF did the trick. But even Sherlock Holmes will have a really hard time finding that And to make it even harder, the help file explicitly states "The leading byte always is 16#00"I think color should be set as 16#xxRRGGBB , and Codesys should set the leading byte depending on that transparency setting.
+

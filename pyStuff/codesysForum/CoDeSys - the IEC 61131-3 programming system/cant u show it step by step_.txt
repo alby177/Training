@@ -1,0 +1,10 @@
+hi;
+
+There is maybe thousands information about codesys..its like puzzle..instead of it cant u prepare small example with pictures and step by step about it for beginner  for using library blocks.for example i couldnt understand how we ll use MC_HOME , MC_POWER  etc..  bcs first i cant understand from where i should do another settings ..if u do it we can solve codesys more quickly.we need only small example..off course not like stupid example whic name is Traffic Signal..We need example between servo motor and for example Motion Pro;Lexium Driver and where u use special  function blocks..
+
+also  for example Siemens Wincc Scada prepared an example.its beatiful and u solve it quickly and u interest in it more... 
+
+im a little angry ...sorry..
+
+thanks..
+

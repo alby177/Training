@@ -1,0 +1,6 @@
+I'm working on a library where I'm using modbus tcp/ip to communicate with an Arduino. I have created two function blocks and saved it as a library and it is working just fine. I now want to add help context to my library so that I don't need to send along a printed manual. How do I do this and how do I connect it with another library's help context (the error codes are the same as for ABB's function block ETH_MOD_MAST so I want to create a link to that page in the ac500 eth library)?Regards,Oskar
+
+you can not link inside a library, but you can do this in a pdf file, i would put all comment in the var header look at oscat library
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

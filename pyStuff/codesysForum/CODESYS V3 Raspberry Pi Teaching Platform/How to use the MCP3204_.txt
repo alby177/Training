@@ -1,0 +1,4 @@
+Hello everyone. I am doing MCP3204 connection, I want to read the measured values of the potentiometer. But in just a MCP3008 devices. I made a connection by introducing the MCP3008. The result was negative. So I can not read the values.Is there any way of being able to use this device?
+
+Hi,you need to modify the MCP3008.library which is part of the delivery"c:\Users\<YourUsername>\CODESYS Control for Raspberry PI\2.0.1.0\SPI_MCP3008.library"  and DeviceDescription too.use the FAQ in the FORUM section to read best practice on library development.Debugging the library is possible (library you could debug compiled.library not) by clicken in the library manager to your desired fb,and set a breakpoint in there.BREdwin
+

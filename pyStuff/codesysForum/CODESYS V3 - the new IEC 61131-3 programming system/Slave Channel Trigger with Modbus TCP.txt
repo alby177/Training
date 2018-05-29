@@ -1,0 +1,10 @@
+HelloWhen setting a slave channel, we can choose a trigger ; Cyclc, Rising Edge or Application.With Application, what FB (or other thing) should we use ?With the same, for a Modbus serial slave, J use ModbusChannel FB and it works well.On line help, doesn't mention this possibility (Application).   Thank you in advance for your help.  
+
+Hi,Each defined modbus channel of a slave can be triggered by a function block with the usual inputs (xExecute) and outputs (xError, errorCode etc..) The channel that is to be executed is referenced by the index of the channel (as displayed in the Modbus-Slave configurator's channel-page. The latter one gets a new column with the Channel-index (same value that is used for referencing the channel in the application) There's an additional new Trigger "Application" for the channels.BREdwin
+
+Hi Edwin,"ModbusChannel" works well with Modbus RTU slave.But with Modbus RTU, when I build my project with variable declaration Channel1:ModbusChannel;I get an error : Identifier 'ModbusChannel' not defined.When I search the word "ModbusChannel" into the library manager it found the library IoDrvModbusTCP, (already installed), but when I look inside this library (into the library manager) I don't see "ModbusChannel" !! (And I got news glasses last week !!   )BRJAPIB
+
+Hi,which Version are you using exactly?BREdwin
+
+Hi EdwinI used an old project, which I updated with CODESYS V3.5 SP12 Patch3.I have updated the PLC and ... forgot to update MOdbus_TCP_MAster and MOdbus_TCP_Salve (3.5.11.0)   Thank you very much Edwin for your help. It's a beginner's mistake     BR.JAPIB
+

@@ -1,0 +1,16 @@
+hello every one:
+I want to creat *.trg file myself,but i do not know what editor and format of *.trg file?
+please help me,thank you!
+
+Hello,
+
+the creation of *.trg files is only possible for direct OEM customers of 3S-Smart Software Solutions. The reason therefore is that it contains information on the target settings, that only the manufacturer of the device may know.
+
+So in case you are an OEM customer you can directly contact the project engineer which is your contact person for the implementation of the runtime system. He will provide you with the necessary equipment to generate *.trg files.
+
+In case you are no OEM customer please understand that this is not possible for you in order to protect you and your machines from unintended behaviour which may happen when changing the target file.
+
+_________________Roland WagnerModerator
+
+I see，thank you。
+

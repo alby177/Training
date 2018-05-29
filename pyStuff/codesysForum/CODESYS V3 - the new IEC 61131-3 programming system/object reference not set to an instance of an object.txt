@@ -1,0 +1,2 @@
+Hello,I am recieving this error(object reference not set to an instance of an object) when i am trying to copy lader program from pou to the same pou in my program.And after this error my program shuts down automatically without saving my Project.I can’t slove this problem and it’s slowing down my programming process.I’ll be glad if you can help me.Thank you.
+

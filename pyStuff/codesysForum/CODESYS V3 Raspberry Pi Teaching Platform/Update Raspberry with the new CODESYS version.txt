@@ -1,0 +1,56 @@
+Hello,I installed CODESYS V3.6 SP6 Patch 3.I'm trying to transfer application in my raspberry B.It does not work, the runtime version on the Raspberry is too old (I think never have updated since december 2013!).This older version also prevents me from seeing "me connect" to transfer file "codesyscontrol_arm_raspberry_V3.5.6.20.deb" with CODESYS to the Raspberry. (as it is explained on the pdf help file).   I found a solution with the free software "WinSCP". It allows to connect to SSH with raspberry and to transfer file from my PC to the raspberry.So I used it to copy  file "codesyscontrol_arm_raspberry_V3.5.6.20.deb" from PC to Raspberry.I then connects with Putty and run the command "sudo dpkg -i codesyscontrol_arm_raspberry_V3.5.6.20.deb" to install the new version.   I think this may interest users would be in the same case.
+
+Hi,we will introduce with 3.5SP7 a new PlugIn in CODESYS which will update/install the plc Pi runtimeto the Raspberry Pi.- scan the Pi's which are in your network (it is not needed to have a installed CODESYS runtime on the pi)- update / install the runtime to the scanned Pi'sThis should make the whole install/update procedure more userfriendly.See the screenshots from this preview.To deliver the SD Image included in the CODESYS store download will not be needed anymore, you use the raspberry.org original Image then.BREdwin
+
+when will this be released?do you have an FTP site where I can find older versions of the software?  I have a library that doesnt like the newest raspberry pi description
+
+Hi,which library does cause this, this library  need to be updated.You could attach a projectarchive then I will try to show you how to fix this.BREdwin
+
+Hi Edwin,Thank you for the information. This new install/update procedure will be more userfriendly.  
+
+Edwin Schwellinger wrote:Hi,which library does cause this, this library  need to be updated.You could attach a projectarchive then I will try to show you how to fix this.BREdwinhmmm even tried online help for project archive... cant find how to do that...The sample program Im trying to use is i2c with an arduino, it says the raspberry pi description is not loaded (3.5.4.0) and when I update it to 3.5.6.30, I loose my I2C Arduino UNO IO driver from Gerhard Schillhuber.  Also it says it cannot find IODrvArduino but I have IODrvArduinoUNO from the same gentleman.
+
+Hi,see screenshot...Project archive is the way to save/restore your project including every library and every devicedescription / visustyle whatever is needed to open the project on an other computer and give the possibility to compile it without missing items (libraries/devices...)BREdwin
+
+here it is as I received it before any updates.hmm file is 4 megs, but Im only allowed to updload 1 meg files.
+
+Hi,I downloaded CODESYS 3.5 SP7.I can't find the window with the possibility to update my plc Pi runtime.Please some  Help will be usefullBR
+
+Hi,sorry you need to wait till the Raspi 3.5SP7 package is available in the CODESYS store.This come with the Pi Package.BREdwin
+
+Edwin Schwellinger wrote:Hi,sorry you need to wait till the Raspi 3.5SP7 package is available in the CODESYS store.This come with the Pi Package.BREdwinHi Edwin,Thanks for the information.
+
+2.2.0.0 Version is available...BREdwin
+
+Hi!I am trying to update my PI as shown above, it detects the PI, but when I hit update but I get an eternally spinning cursor in Codesys. Tried to download a "fresh" install image, but the download only contains the package.  Not:This product consists of:-       Debian package with CODESYS Control for Raspberry Pi-       CODESYS Plugin to install and update the package on a Raspberry Pi-       CODESYS device description files for Raspberry Pi, Raspberry PiFace Digital, Raspberry PiFace Control&Display, Raspberry Pi Camera, several devices/breakouts with I²C (SRF02, Adafruit PWM, MPU6050, MPU9150, AK8975), SPI (MCP3008) or 1-wire (DS18B20) communication interfaceAre there any known issues?
+
+Hi tonverra,thank you for reporting this.It seems that the updateprocess works. (If you check the Pi it is updated to 3.5.SP7 after execute the update command)But you need to end CODESYS by the TaskManager (it is somehow blocked)We are working on an update for this.BREdwin
+
+Same problem. But after I closed CODESYS by the TaskManager, I can't login into Raspberry from CODESYS, device does not respond.
+
+Same here. The pi is running. I can ping but not connect.
+
+Hello,please contact support@codesys.comBREdwin
+
+I have done so. Thank you.
+
+Hi! I'm having the same problem, can update both raspbian and EMLID but nowI can't connect. Is there a solution?BR Simon
+
+_________________SC student from Sweden
+
+Hi,we are working on the solution,at the moment you could execute manuallysudo dpkg -i codesyscontrol_arm_raspberry_V3.5.7.0.debif you Login by ssh.After doing this it should work again.BREdwin
+
+For me it also worked to reboot the PC, then I can scan and find the Pi again.BR Símon
+
+_________________SC student from Sweden
+
+I had very similar problem, and in my case windows 10 firewall was causing it. When I turned off firewall my RPI was updated correctly and Codesys did not freeze while updating.
+
+I've succesfully installed CODESYS V3.5 SP7, including the CODESYS Control for Raspberry PI Version:2.2.0.1 package and am able to find the "Update Raspberry Pi" menu via "Tools" menu. The problem is that i do not have any .deb packages, where can i find these? It is not located anymore at the download page, only the .package file is available here. Or am i looking at the wrong place?Thanks,
+
+rmalle wrote:"Update Raspberry Pi" menu via "Tools" menu. This is the only thing you need, if you locate your pi you can just update it. If you don't have the runtime it will install it.BRSimon
+
+_________________SC student from Sweden
+
+Thank you for your reply. Unfortunately i can't get it to work. I can't find any package and i also can't find the Raspberry Pi (which is connected to the same network, ping is no problem from both sides). Some screenshots in attachment.Any advice on how to solve this?
+

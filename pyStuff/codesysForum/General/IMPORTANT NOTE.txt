@@ -1,0 +1,41 @@
+Only tested with CoDeSys v.2.3.9.7.
+
+(Note: Be aware that the following are a totally wrong approach of programming in CoDeSys, but I think this is a serious bug that need some attention. This was discovered purely on an experimental level)
+
+---
+
+Assume that you're working on a POU of type CFC.
+If declared e.g. an instance of a function block globally and you create a box of the same FB type it in your CFC POU, NEVER attempt to write ADR(FB instance) on top of this box! This will ruin your whole project, causing CoDeSys to crash every time you try to open the project.
+
+I tried to open the project file in a HexEditor, erasing everything that had got to do with both the function block and the pointer to it. Did not help.
+
+Anyone else experienced this, or something familiar?
+
+I tried your instructions, there is no crash,everything is ok.
+
+Please attach the projectarchive so that I'm able to check the problem.
+
+_________________Good Better CoDeSys
+Boris Schuster
+
+I've attached an example project file.
+
+There is no problem opening the project.
+Where did you get your version of CoDeSys ?
+Please try the plain CoDeSys.
+
+_________________Good Better CoDeSysBoris Schuster
+
+For unknown causes, the project indeed opens (not the case with my original project), but when compiling, it crashes.
+
+Downloaded from 3s-software, clean install.
+
+By the way, I'm running Vista.
+
+Thanks for your quick replies 
+
+ok, it crashes, but the project can still be opened.
+I'll add the error to our error tracking system.
+
+_________________Good Better CoDeSysBoris Schuster
+

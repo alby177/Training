@@ -1,0 +1,26 @@
+Hiam trying to convert string to an Ioeg heatertemperature %iw23 realcheck:=concat('heater'+'temperarture')check2:=string_to_real(check2);Is it possible?
+
+you have a WORD not a REAL coming from the inputcard.there are no direct inputs with real.conversion is possible with word_to_real (value is 10 times the measured value)so your setpoint is a real, not a string.and you can not have 1 var (check2) double declared
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+well then for booleg heateron: bool(*This boolean not from hardware*) check:=concat('heater'+'on')check2:=string_to_real(check2);Is it possible?
+
+so check :STRING(30):='23.45';check2:REAL;use oscat.de FLOAT_TO_REAL functioncheck2:=FLOAT_TO_REAL(check);however no output is in real, but you can use REAL_TO_WORD.in boolean it is simplerIF (check= '23.45') THEN heateron:=TRUE;END_IF
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Is there no way to convert a string to the desired variable name we declare no matter what sort of declaration it isfor eg: r_codesys:real;          b_codesys:bool;          i_codesys:int;string_to_real('r_codesys')string_to_bool('b_codesys')string_to_int('i_codesys')is not the above things possible?Are need to write my own code to make it work like this?
+
+NO, you can not make variablenames inside your code, as the code is compiled all this info is lost again.however you can make a automatic declarationtable (in any textmaker like NPP).sorry for the misunderstanding.what are you trying to do?look for data types here you can make types and structures
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Actually I want to useTest1:boolTest2:boolTest3:boolto for i=1 t0 3test:=concat('Test'+int_to_string('i'))end_fori do not want to use if else statementits compiling yet am not seeing any output
+
+no what you are trying is not possible, however you can use an array if it are a lot of bools.like test[1]:=true;etc.but you have to make it in advance as it is impossible to change the variable list in a running programhowever i/o must be in global list with all %QX0.0 in writing.(you can automate this with a textmaker.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Am gonna create a function to do this stuff   Thanks
+

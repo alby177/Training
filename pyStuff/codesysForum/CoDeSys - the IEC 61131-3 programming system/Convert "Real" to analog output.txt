@@ -1,0 +1,8 @@
+I'm working with Wago 750-841 PLC and I see a lot of functions which have a output "Real" and most analog output modules have "word" as format.  This is maybe a stupid question but how can I convert easily REAL to WORD with one function?thanks
+
+Hi,I have the little freeware library AnalogEA.zip (analogue input / output) on my website http://www.geisler-controls.de. The POUs FB_AnalogOut reesp. FB_AnalogOut2 are doing the conversion from REAL to WORD.Unfortunately, the documentation is in German only, but the sources are included into the download package. So it will be not too difficult to understand the working.Regards
+
+look at REAL_TO_WORD function, you can convert to almost all directions.be aware to first scale the output before conversion.and have a look at rolf or at www.oscat.de you will find a lot of examples here.any questions just ask them here you found a great spot. more difficult can be asked at www.plcs.net
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

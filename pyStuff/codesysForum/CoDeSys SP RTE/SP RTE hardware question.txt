@@ -1,0 +1,6 @@
+Good day Everyone.I'm new to the forum and new to codesys programming so I hope this isn't a simple request!I am trying to do some research for a soft plc to run festo equipment i.e a profi bus card with some cpx I/Os and analogs etc. What is the advantage of using a RTE versus the normal PLCWinNt v2.4?Do I need to connect the phisical hardware to my PC in order to run the softPLC?At the moment I don't have a licence for SP RTE. The screen just says it is switching to demo mode and then nothing pops up? does this mean that the system is running in the background or is there a problem? Do I need a licence to run the RTE? Do I need to setup my hardware in the codesys controller using the SP RTE?Your help is appreciated in thsi regard! Thank you.
+
+The SP RTE is a realtime runtime unlike the PLCWinNT.You can start it and run it in DEMO mode for 2 hours. After this you just have to restart it again.To run the RTE permanently you would need a software license which you can get from 3S-Software or your local distributor.To connect it with some Profibus I/O you will need a Profibus Master card in your PC which is supported (e.g. a Hilscher CIF50).
+
+I think the RTE kernel is nesserery if you are going to run servo axis.
+

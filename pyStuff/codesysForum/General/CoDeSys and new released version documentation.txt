@@ -1,0 +1,7 @@
+Hello,
+
+From my PLC manufacturer they release new versions of CoDeSys. Currently the newest release is V2.3.7.2. According to IFM 3S has made changes to the  3S CANopen libraries. Is there an area that we can go and see what changes were made to the libraries from the 3S web site? Who is responsible for this information 3S or the PLC manufacturer?
+
+_________________Thanks,
+Steve Pfeifenroth
+

@@ -1,0 +1,8 @@
+Hello,how can I connect CodeSys V3 to 2 or more devices with CAN Gateway (all devices us the same)?When CODESYS scan is performed on a network (CAN or Ethernet) with multiple devices, i should be able to differentiate between devices that respond (through SA or another way ...) thanks
+
+Hi,use 'set active application'BREdwin
+
+Hi,thank you for your reply.i connect 2 devices to my peakcan but in the scan no one is show   
+
+Hi,which plc are you using on which you want to login via CAN?BREdwin
+

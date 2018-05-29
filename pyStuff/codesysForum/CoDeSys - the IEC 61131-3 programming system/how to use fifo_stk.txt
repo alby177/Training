@@ -1,0 +1,2 @@
+how to use fifo_stk?? how to use adr and sizeof operators??how can we create a database( DB ) to store elements??Pl. help 
+

@@ -1,0 +1,11 @@
+Hi,I added oscat311.lib to a project for a PLCWinNT target, just to test how some stuff works.When I tried to build the project, got error 3612 - compile aborted because there were more than 512 POU's.So what is really compiled from a .lib - only what's actually used + dependencies, or everything no matter used or not ?thanks
+
+Yes everything is compiled and counted in V2.3. BUT here are a few ways to get over this. I have complained about this situation in another post.1. if the compilers claims there is not enough memory sometimes if your target permits you can adjust the size in the Project-Option-Build- Number of data segments.2.  You need to go to the Project-Option-Build- and select the "exclude objects" button. This will allow you to select which FB to exclude from the build. This will lower your overall POU count during a build.Unfortunately CoDeSys is smart enough to know you have too many POU but not smart enough to know which ones are actually used/referenced.
+
+_________________Thanks,
+Steve Pfeifenroth
+
+within oscat it is a little difficult, but possible.1. make your own library by deleting a lot of functions, however a lot of them are nested, so it will tell you some functions are not in because you deleted them.2. i use the oscat.txt a lot, i just copy my needed function into my program and do not use libraries at all.when a function asks for a subfunction i copy that one also.i copy in ST and have to move the VAR into its place. disadvantage is you can not do any version work. but if your program is running why a new version is needed.I do write faultless programs, so no update needed   
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

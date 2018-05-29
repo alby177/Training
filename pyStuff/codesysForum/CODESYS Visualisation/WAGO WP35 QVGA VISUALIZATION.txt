@@ -1,0 +1,6 @@
+Dear all, I have a problem with the webvisu, I got a 750-880 and a WP35 QVGA, the web visualization in my browser is ok, but I can´t visualize it in the WP35, can you send me more information about the configuration or send me an example program?
+
+most problems occur with version numbers, try to update the java on the HMI first.some java does not like the codesys versions.are addresses oke? same range
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,6 @@
+Here is a simple example, how to open a dialog from your program, e.g a notification, i'm not sure about my method, maybe experts can tell if i did it in a right way, thanks
+
+AlexD wrote:Here is a simple example, how to open a dialog from your program, e.g a notification, i'm not sure about my method, maybe experts can tell if i did it in a right way, thankschanged a little bit, please download again
+
+Please redact openDialog function must be:FOR i:=-1 TO 15 DO	IF GVL.g_pData[i]<>0 AND_THEN GVL.g_ive[i]<>0 THEN		IF NOT (GVL.g_pData[i]^.GlobalData.GlobalClientID=i)THEN			GVL.g_pData[i]:=0;			GVL.init[i]:=FALSE;			GVL.g_aClientIds[i]:=FALSE;			GVL.g_ive[i]:=ive;		END_IF		IF GVL.g_aClientIds[i] THEN			CONTINUE;		END_IF			GVL.g_aClientIds[i]:=TRUE;		__TRY			NewStDialog(GVL.g_pData[i],GVL.g_ive[i],'ST Dialog','Hi!',0,0);		__CATCH(exc)			__ENDTRY	END_IFEND_FOR
+

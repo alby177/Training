@@ -1,0 +1,6 @@
+I would like to know how I can use GetCurrentVisu method and how I should fill Max and Min values at the keypad. I am trying to use it but once I press OK, values are not written to the variable. I have tried to leave them empty, to introduce numerical values...but nothing is working.Thanks in advance!
+
+keypad max is filled configureinputtext input of variable textdisplaychange it to keypad and max and min will lite up.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

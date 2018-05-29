@@ -1,0 +1,8 @@
+Hi all! I'm looking for a library that permits xml files managing (create, parse, add tags,...). Does it exist? Thanks for every suggestionSent from my AN10DG3 using Tapatalk
+
+Hi,the OSCAT Network library contains a XML-Control.http://www.oscat.de/downloadmanager/vie ... twork.htmlRegards,Malcolm
+
+Hi,ok, but would recommend to install it from CODESYS Store optimized for V3http://store.codesys.com/mixedsearch/mi ... duct_area=BREdwin
+
+Thanks a lot!Sent from my AN10DG3 using Tapatalk
+

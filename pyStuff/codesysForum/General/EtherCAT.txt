@@ -1,0 +1,6 @@
+Can anyone send me a sample program to communicate the EtherCAT Slave HMI with Codesys PLC.RegardsThillai
+
+on youtube search for kurt braun, he is explaining it in a fast tempo (you can pause) how fast to implement a coupler.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

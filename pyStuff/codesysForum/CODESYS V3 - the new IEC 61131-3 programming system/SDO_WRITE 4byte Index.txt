@@ -1,0 +1,8 @@
+I'm trying to use the CIA405.SDO_WRITE4 function to write a SDO to a device. My issue is the index input (SDO_WRITE4.INDEX) is of type WORD but I am trying to write a SDO in the Manufacturer Specific range (ie index 16#5999). This index value is 4 bytes but a WORD is only 2. Im getting SDO_WRITE4.ERRORINFO 101122066 or 0607 0012h which from the abort code represents: "Data type does not match; length of service parameter too high."Any ideas? Is there another way to write higher indices SDO?Thanks.
+
+An SDO message is 8 bytes in total:1 for the command2 for the index1 for the sub-index4 for the data bytesThe maximum value of a WORD is 16#FFFF, this means you can also access index 16#5999
+
+The error is about the variable that you try to write, try with write8 or write2.Enviat des del meu Aquaris M5.5 usant Tapatalk
+
+Sorry. Via sdo you cant write an 8bytes message.Try with write2 or write 1Enviat des del meu Aquaris M5.5 usant Tapatalk
+

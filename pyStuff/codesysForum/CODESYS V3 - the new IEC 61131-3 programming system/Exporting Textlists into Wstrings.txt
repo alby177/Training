@@ -1,0 +1,6 @@
+I am struggling to export the text list i created into wstrings . I know the librady is GetText or DynamicTextGetText , but i cannot implement. Can anyone help me how to do it? Thank you.
+
+For general WSTRING functions you have to add at least the library Standard64.In the visualisation manager, you have to enable "use unicodestrings".Textlist are automatically exported as unicode .csv files if you need to translate this.If you want to use the textlist text as "WSTRING" in your application, you have to use the specific WSTRING functions:pwsStr := VisuElems.cmpDynamicText.DynamicTextGetDefaultTextW(ADR(sTextList), ADR(sValue));orpwsStr := VisuElems.cmpDynamicText.DynamicTextGetTextW(ADR(sTextList), ADR(sValue));wsResult := pwsStr^;
+
+How to get Standard64 library? I didnot find in Store.Please help.
+

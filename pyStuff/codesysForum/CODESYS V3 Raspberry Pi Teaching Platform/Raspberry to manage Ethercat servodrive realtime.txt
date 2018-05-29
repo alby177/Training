@@ -1,0 +1,4 @@
+I am starting to use Raspberry like Ethercat master. Everything is OK for IO point. Beckhoff EK1100 + EL1xxxx + EL2000.Now I want to start with servodrive.Someone test this configuration?
+
+Hi,you need a rt_preempt patched Linux kernel for doing this...Search the forum for this issue.BREdwin
+

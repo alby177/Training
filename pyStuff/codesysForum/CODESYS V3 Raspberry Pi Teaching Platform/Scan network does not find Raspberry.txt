@@ -1,0 +1,9 @@
+Hello together,can someone help with this connection problem?- I get a connection to my Raspberry via Putty.- Sometimes the Raspberry shows up when I do "Update Raspberry" --> Scan, but sometimes not- Once I create a project and do "Scan network" in order to find the Raspberry, it never shows up, regardless of wether I found it through the update function or not.I found this similar problem in other posts, however I did not understand all the solutions, because I am quite new to this. I tried new installation and rebooting of everything more than once.With  cat /tmp/codesyscontrol.log  I get: no such file or directoryEvery help would be very much apprechiated!Thank you,Joanna
+
+Hi. Check this post:https://r.tapatalk.com/shareLink?url=ht ... are_type=t
+update rasberry pi not availible in tools
+
+Thank you very much!I got a new SD card for my Pi and started from scratch, also I use the 32-bit Version of CoDeSys now. I don't know what exactly did the trick but now it works Joanna
+
+Joanna wrote:Thank you very much!I got a new SD card for my Pi and started from scratch, also I use the 32-bit Version of CoDeSys now. I don't know what exactly did the trick but now it works JoannaGreat. Good luck!
+

@@ -1,0 +1,4 @@
+Hello，    I meet a problem，the project need to draw a curve on a visualization dynamicly，such as y=ax*x+bx+c。Is there any functions to perform this?     Or can I dynamicly to draw a point or a line?
+
+Use Polyline with dynamic points.Check CmpVisuHandler.library to see Struct which you need and assign to polyline ADR of arrray of VisuStructPoint.
+

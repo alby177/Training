@@ -1,0 +1,2 @@
+Retain identity does not match to current bootproject program identity.Plateform:Wachendorff Display OpusA6，CoDeSys V3.5。I write a promgram and create about 20 visualizations. All is Ok until I add a visu element to a page, and download the program(the program compiled no error),then download size is 1921k,and when the download progress is about 97%,error occurs,which says“Retain identity does not match to current bootproject program identity.”Can anyone help me？
+

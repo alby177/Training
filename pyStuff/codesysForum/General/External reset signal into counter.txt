@@ -1,0 +1,13 @@
+How to external used reset on counter. I have some counters in SCF stpes, when I not used reset. On the end if is valid condition I wanted to used this myCounter.reset := true;
+
+On this record is ignore.
+
+Hi Paul,
+
+a Function Block must be called to react (A counter is a Function Block) so try it this way:
+
+myCounter(reset:= True);
+
+regards
+Ralph
+

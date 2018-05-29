@@ -1,0 +1,10 @@
+HelloI tried to use my pc with codesys control rte and connect to bekchoff ek1100 and el2809.But there is problem when i install codesys ethercat adapter.I recieve code 31 error. I dont know what is problem or did i install correctly.Anybody know how to solve this problem.Help please.
+
+Hi,seems that RTL 8139 Driver is not the correct one... could past the hw id's?BREdwin
+
+this is RTL 8139 driver in my pc. I installed it form C:\Program Files\3S CODESYS\CODESYS Control RTE3\CmpRTL81x9MpdIs this driver is correct one? If not where i can find correct driver for codesys control rte.
+
+this is how i installed it.is thi correct?
+
+Hi,would recommend to ask the technical support.BREdwin
+

@@ -1,0 +1,6 @@
+Dear all,I am a new user of codesys and for my first project, I need to do the CAN message programming for my project.I have to recieve some CAN messages continuously one by one in sequence and control the output.I have 2 questions. 1.) How to implement / configure the CAN mesasage such as identifier, data bytes in CODESYS?2.) How to send or recieve configured CAN messages in CODESYS?Also if anyone have some document in configuring and Transferring CAN messages please share with me.If anyone has some example project or document please share with me.Thanks in advance.Regards,M. Rakesh Sharma
+
+find the libraryor look at www.oscat.de
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

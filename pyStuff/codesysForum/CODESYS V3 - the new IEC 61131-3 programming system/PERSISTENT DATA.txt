@@ -1,0 +1,8 @@
+I have done a global persistent data list. I can reset and download keeping the persistent values but when I switch the cell off all the values are reseted. Do I have to link these values to a file o something similar to avoid losing their values when switchinf off/power failure?Thanks in advance
+
+Hello,How persistent data is handled depends on the device you're programming. It can be stored directly into something like non-volatile RAM or saved to a file at powerfail. Which device is it that you're using?Best regards,Kristian Berlin
+
+Hi againI am using a Khunke with Windows XP Embedded.Thanks for your support
+
+Is it a complete system that you bought from Kuhnke or did you install SP RTE yourself on a PC? Is there any nvram at all in the hardware? What does the information from Kuhnke say?
+

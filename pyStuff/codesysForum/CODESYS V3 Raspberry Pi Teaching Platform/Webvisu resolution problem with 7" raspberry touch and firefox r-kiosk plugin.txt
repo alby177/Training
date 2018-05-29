@@ -1,0 +1,4 @@
+Hi,I'm running codesys webvisu on 7" touch with 800x480 Resolution. I set These values fixed in scaling options to 800x480 and on every visu page in the properties menu. I also checked the raspberry Resolution to be sure, that the System actually is running on 800x480.However the visu get's cut on the lower part of the Screen (see screenshot  Raspi 7 Zoll_klein.jpg ). If I run the same visu on my PC's Firefox everything looks fine (see screenshot Visu PC).I'm running V3.5 SP9 Patch5+ Any suggestions ?Regards,Stefan
+
+Hi,could you please add the project? (at least a small part of it with the visu)BREdwin
+

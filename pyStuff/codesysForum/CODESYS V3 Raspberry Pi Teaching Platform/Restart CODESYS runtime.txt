@@ -1,0 +1,12 @@
+Hi! I'm testing a lot of different things with the pi and CODESYS and sometimes the pi (or the CODESYS runtime) crashes. So my question is if I can just restart the CODESYS part without rebooting the pi.I'm also wondering if it is possible to stop a running task from the pi command line, if it has lost connection to CODESYS.And one last question, is there a setting to not have a boot application? It's a little bit annoying to crash and reboot to a crashing app.BRSimon
+
+_________________SC student from Sweden
+
+Hi Simon,you could use:Code:sudo service codesyscontrol stopsudo service codesyscontrol startto stop and start the plcThe default is to generate a bootproject but you could change this in your project underapplication ->properties->  boot applicationBREdwin
+
+Thanks Edwin!
+
+_________________SC student from Sweden
+
+This one help me ... it as old car don't startup from first time (with segmetation fault, but start from second one add file /usr/bin/wdt.sh#!/bin/shwhile truedosleep 5RESULT=`pgrep codesyscontrol`if [ "${RESULT:-null}" = null ]; then/etc/init.d/codesyscontrol startecho "start codesys"fisleep 5doneand add in /etc/init.d/rc.localbefore return line in do_start func/usr/bin/wdt.sh &Now it is work .. starting if not from first time (with segmentation fault) from second one for sure..
+

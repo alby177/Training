@@ -1,0 +1,6 @@
+HI Guys,I am working on codesys 2.3 for Wago PLC. I am using web visualization for HMI visualization.Is it possible to play PC audio files in codesys visualization?Please help me.Thank you,Pavan.
+
+no not direct, but you can give commandstrings into the vis.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

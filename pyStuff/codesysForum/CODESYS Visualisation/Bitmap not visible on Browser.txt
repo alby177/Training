@@ -1,0 +1,20 @@
+When adding a Bitmap in PLC_Visu, it works but when looking at the page with a browser, the picture is not displayed (IE7 & FFox).
+
+All other variables are displayed properly, just the background image is missing.
+
+Any ideas ?
+
+Do you see a link to the image on the page?
+Is the image in the right place to be referenced by the HTML?
+What hardware are you using?
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+save the background on the plc.
+when in simulation it comes from computer.
+and as this is not possible in run mode you do not see the picture.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,12 @@
+Hello,I am trying to use the Raspberry PI (PI 2) as a Profibus master using the example from the below link:viewtopic.php?f=23&t=6247&hilit=profinet#p12724I am having difficulties having the profinet controller to establish - it uploads configuration to the PI ok, but fails to start the controller.Any ideas on what i'm doing wrong?
+
+Hi,did you specify the MAC or Network (browse it) address if you click on Ethernet in the device tree?And check the plc logger for more Information.BREdwin
+
+Yes sorry, it was defined as eth1 where the interface in the PI was eth0. This has solved that issue.However I'm still not able to talk to the hardware. Station name is defined in the hardware to match codesys, IP addresses match up, but it gives me error "16C9A049".
+
+Hi,could you ping the profinet slave from the Pi?Does the scan (rightclick on profinet master) result fit to your real hw configuration?BREdwin
+
+Hi Edwin,I seem to get the following message when scanning. It picks up the correct IP, stationname and MAC.
+
+Hi,did you install the XML files for your profinet slaves?It seems that your scanned hw does not fit to your installed devices...Seems that These which come with the projectarchive from the example are different to them which are needed for your real device.BREdwin
+

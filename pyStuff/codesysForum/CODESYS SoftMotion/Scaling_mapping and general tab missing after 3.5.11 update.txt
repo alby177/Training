@@ -1,0 +1,2 @@
+After installing version 3.5.11, the tabs "General" and "Scaling/Mapping" in Drive setting are missing.How can I get them back?
+

@@ -1,0 +1,4 @@
+Hi, I am getting this error, despite the fact that I am using the Codesys Softmotion Win V3 both in the Development System and on the soft PLC.What should I do? Thank you so much in advance.
+
+Hi,the problem could be probably and corrupt CODESYSSoftMotion.cfg file:"c:\Program Files (x86)\3S CODESYS\GatewayPLC\CODESYSSoftMotion.cfg" if this file is not available or malformed this would happen.BREdwin
+

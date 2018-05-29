@@ -1,0 +1,2 @@
+Hallo,ist es möglich die Beckhoff Klemme EL6002 (2x RS232) mit der SysCom Lib zu verwenden.Leider hatte ich bisher keinen Erfolg, da die SysCom auf einen Com-Port zugreift, die EL6002 aber nur ein Control- und Status-Word, sowie den Eingangs- und Ausgangspuffer bereitstellt.Gibt es eine Möglichkeit die EL6002 als Com-Port zu deklarieren?Oder, irgendeine andere Möglichkeit die SysCom und EL6002 zu "verheiraten" bzw. eine andere Lib, welche den Zugriff auf die EL6001 ermöglichtAufbau:RaspberryCDS-Ethercat-MasterEK1101EL6002Danke im Voraus
+

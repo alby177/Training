@@ -1,0 +1,28 @@
+Dears.I need to debug some lines on a Fb_exit method.Breakpoints seems that doesnt works.Do you know if It is possible to launch logs from this method (something similar to printk)
+
+Use a global string array and index to implement your own message queue.  You can display it on a visualization using a table widget.
+
+_________________Rick
+
+Thanks.But i need it to use on Fb exit, which is called ending execution when tasks are stopped.
+
+Data is still retained in memory is it not?  If debug strings are written to array elements prior to and during FB_exit() wouldn't they still be there for examination?
+
+_________________Rick
+
+Hi Josep,Try message pragmas, with that you will be able to send texts into the debug window of your codesys application.See: https://infosys.beckhoff.com/content/1033/tc3_plc_intro/9007199390952075.html?id=134509795542249697Hope this helps.
+
+_________________http://www.robotecnik.com - robots, CNC and PLC programming.
+
+Oh, and another option (specifically for Beckhoff) https://infosys.beckhoff.com/content/1033/tcplclibsystem/html/tcplclibsys_adslogdint.htm?id=4109655218661787585It could help a lot in the kind of situation you propose...You can always ask the manufacturer of your software if this is implemented there if the message pragmas are not.Message pragmas work in all Codesys versions, but I have not found a way to show values other than predefined strings which is better than nothing.
+
+_________________http://www.robotecnik.com - robots, CNC and PLC programming.
+
+Thanks Joan.I will test the pragmas.
+
+At the end I have used this functions:Attachment:Captura de 2017-03-03 16-15-54.png
+
+Looks good Josep, along the lines of the ADSLOG Beckhoff specific functions.  Nice.Thank you for sharing!
+
+_________________http://www.robotecnik.com - robots, CNC and PLC programming.
+

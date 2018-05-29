@@ -1,0 +1,14 @@
+I got a problem with the communication between the codesys 2.3.9.35 and the PLC WAGO 750-880, a screen appears:"No gateway with the given settings could be found", when I try to setup the communication parameters, I need help, I've been trying to solve this problem for several days, best regards,Carlos Eduardo Ibáñezcarloseduardo@koeln.com.bo
+
+Hi,this issue occure since  one of the many Windows updates on some machines,this is solved with current CODESYS 2.3 Version2.3.9.41 or use the standalone Gateway Setup, but the better solution is to askthe Wago-Support if it is safe to migrate to the newest Version with the wago targets.
+
+are the communication settings correct like direct 9600, etc.changeable with wago ethernet settings.please have the computer and the plc almost same number like 192.168.2.201 and 192.168.2.202
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thankyou very much Edwin, I didn´t understand about the standalone gateway setup, this is a software WAGO? or Codesys?Edwin Schwellinger wrote:Hi,this issue occure since  one of the many Windows updates on some machines,this is solved with current CODESYS 2.3 Version2.3.9.41 or use the standalone Gateway Setup, but the better solution is to askthe Wago-Support if it is safe to migrate to the newest Version with the wago targets.
+
+Dear Shooter, yes the configuration is right, I think that must be something like Edwin Schwellinger is suggesting, but I can´t find the solution yet!
+
+I'm pretty sure that this will help on that problem.I've send you a link to download it.cheers
+

@@ -1,0 +1,10 @@
+I am using jmobile from uniop with a codesys plc running version 2.3 i have digital signals working but cannot get analog inputs to read, i am using 4-20mA inputs but cannot see them being read by plc. Does any one have any ideas or is there a library i need to use?
+
+HiHow you declared your variable?it shud be QW%thankssarath  
+
+sarath wrongVARxCounterHeat7 AT %QX0.0: BOOL;wLightcabinetimpulse AT %IW2: WORD;xDownload AT %MX2.2: BOOL;END_VARhave a look at oscat.de library using input1 function block.as the input first bits are used for error control.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+YesFor analog input fourtorwenty:AT %IW3000;Actual reading depends on calibration insidefor analog outputtenvolts :at %QW2016;Thanks in my previous post i mentioned was analog output assignment 
+

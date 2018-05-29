@@ -1,0 +1,4 @@
+Hi to everybody.I own two Wago PLCs with several I/O boards. One has a 750-880 controller, the other a 750-849. They are both 2012/13 systems and are perfectly working.The OEM who wrote the software does not exists anymore. My company does not have a copy of the software …….My question : is there a way to create something like a  “disk image” of each controller to download to two identical systems to be used as backups ?Many thanks in advance.
+
+You might be able to do a backup by inserting a SD card, and using PLC's web-interface and/or Ethernet Setting software to make a backup. I never tried it, but I read somewhre that it's possible.There is also an app called WAGOUpload which might be able to do what you need.But, the simplest: have you tried opening the PLC in codesys?
+

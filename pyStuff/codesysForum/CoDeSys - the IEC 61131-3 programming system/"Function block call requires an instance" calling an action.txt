@@ -1,0 +1,8 @@
+Using Codesys 2.3, I'm getting the following error:"A function block call requires a function block instance."My call to the function is in a PRG as follows:Code:PROGRAM TestProgramVAR    testFunctionBlock:MyFunctionBlock;    callAction:BOOL;END_VARtestFunctionBlock(inputVar:=1);IF (callAction) THEN    testFunctionBlock.testAction();END_IF;Any idea why this won't build? The function block is instantiated, so I'm not sure what's going on. I suspect I might be calling the action wrong.Thanks for any help!
+
+I solved the problem. The problem was that I had a variable in the function block with the same name as the action (variable name was zeroCount, action name was ZeroCount). This confused the compiler, so I renamed my action and now it works.
+
+and you are also calling this function block twice (that is no good practice, however i do know why as you want the same blockresults.You may give the values in front of the call.Especcially when using timers this often is a problem, the compiler does not see these problems.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

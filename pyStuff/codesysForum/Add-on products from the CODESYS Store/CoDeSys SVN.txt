@@ -1,0 +1,2 @@
+Hi, I have a question regardin CoDeSys SVN. Is it possible to have version control for Function Blocks (object level) and Libraries ?Regars BosseL
+

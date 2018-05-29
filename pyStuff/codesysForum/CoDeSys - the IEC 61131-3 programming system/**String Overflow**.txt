@@ -1,0 +1,37 @@
+I am getting a string overflow error that I can't track down.
+
+The strange thing is that I copy the string to another location and that location always contains the proper values, I just cannot use the original string variable for any comparisons.  The variable is defined as STRING(8) so it has a fixed length anyway so I can't understand this at all.
+
+When I go online with the PLC (Moeller XC100) and look at the variable definition it says **String Overflow**
+
+I can't find any help on this.
+
+Has anyone seen this before
+
+Thanks,
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+Maybe  you concatenate some strings in your program to the destination of your defined string?
+If it doesn't help please send your program to sia@moeller.net. I will care about your problem.
+
+Klaus
+
+Program sent.  Thanks for the help
+
+_________________nOrM=====nOrM = Norman Dziedzic Jr.
+
+In case anyone is watching this thread, Moeller found the problem.
+
+I had the string(8) defined at marker address %MW0
+
+Had another tag defined at %MW8
+
+The problem is that even though the string is 8 characters long,  it requires 9 characters of memory to account for the null \0 character at the end of the string.  When I was writing to %MW8, I was getting a String Overflow since I was overwriting the last character of the string.
+
+Thanks to Klaus and sia@moeller.net for help on this matter
+
+_________________nOrM=====nOrM = Norman Dziedzic Jr.
+

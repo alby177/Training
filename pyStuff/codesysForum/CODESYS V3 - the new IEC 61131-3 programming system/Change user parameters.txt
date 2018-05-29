@@ -1,0 +1,4 @@
+Hi all,I want to know if it is possible to adjust user parameters (station parameters) with a codesys program. Now we need to set the parameters and load it into the PLC (which gives a short down-time).Now i want to change the parameters by selecting a value onto a touchscreen. For this i need to get to the right parameter and i don't know if this can be done in Codesys or not. Thanks in advance.
+
+Could you elaborate on what kind of parameters you mean?
+

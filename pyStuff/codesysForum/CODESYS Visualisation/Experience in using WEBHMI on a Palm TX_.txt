@@ -1,0 +1,11 @@
+Hello,
+
+I want to use the Web-server on a WAGO 750-841 to visualize some values. To browse through the visualisation I want to connect via wlan with my Palm TX. I have acces to the Webbased Management but if I push the WEBHMI button, it discontinues with a blank sheet.
+Do anyone know how I could have success?
+
+Thanks in advance,
+
+Ralf
+
+You need to have Java support (to show the java applets) which is not always available on PDA's. Check with your supplier whether this is included.
+

@@ -1,0 +1,2 @@
+Hello,Is it possible to use design patterns in Codesys V3.5?I would like to use a Factory Design Pattern, i did often use it with Java and C#.Does someone have an example program where the Factory Design is used?Regards Patrick
+

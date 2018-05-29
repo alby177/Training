@@ -1,0 +1,4 @@
+Hello!I'm working with CR1084 and i have some question. In to the programming manual of CR1084 ( https://www.ifm.com/mounting/7390995UK.pdf ) in the page 343 "System flags: function keys" i want to use KEY_CHANGED but i dont know how to do.   Thanks!! A greeating.ASM.
+
+I want to change the function of the key, u know u can configure it like toggle variable, writte variable but i can not do it like tap variable .thanks friends, a greeting!
+

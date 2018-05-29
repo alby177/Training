@@ -1,0 +1,16 @@
+I want to now what key is been pressed. 
+I want to make a password dialog but i dont want to see the password.
+So everytime I press a key i put it to a string and put a * to the screen
+
+To make a password dialog you can do like this :
+
+With CoDeSys Version2 :
+In category Input, of the object you use, you have to select hidden. And by entering your code you will only see stars in the input area.
+
+With CoDeSys version 3 :
+Use Inputs On Mouse Click for example, choose Write a variable and tick Password field
+
+Hoping to have answered your question  
+
+Thanks but i tried that. I still see what i am typing.. and you have to actived the edit field and converm with enter. And if I now how, then I can use de other key's F1 F12 as well.
+

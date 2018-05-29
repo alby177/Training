@@ -1,0 +1,8 @@
+Dear all!I have an encoder Hengstler in CanOpen, but this does not have dip switches to set the address and network baundrate.The manual states that these settings should be modified by the Layer-Setting-Service (LSS) is defined in CiA DSP-305.I read the post viewtopic.php?t=1224,  but I don’t have best results..Links for download:Manual: http://www.hengstler.de/gfx/file/shop/e ... pen_en.pdfManual Tec.: http://www.hengstler.de/gfx/file/shop/e ... URO_en.pdfManual Inst.: http://www.hengstler.de/gfx/file/shop/e ... ANopen.pdfEDS: http://www.hengstler.de/gfx/file/shop/e ... ANopen.zipI need to modify this parameter. Can anyone help me?Regards,Eduardo
+
+I'm still working on that problem. Someone must help me?
+
+HelloLook here:http://www.canopensolutions.com/english ... /lss.shtml
+
+Hello,I had the solution to the LSS. It was necessary to send a command first.Canid: 0000dbyte 0: 0x80byte1: device addressSee: http://www.microcontrol.net/download/ap ... an1204.pdfI used the functions and CanUser_Write CanUser_ReadImage for configuration and an oscilloscope to check the pulses in the network .Thank'sEduardo SchedlerEstrela - Rio Grande do Sul - Brazil
+

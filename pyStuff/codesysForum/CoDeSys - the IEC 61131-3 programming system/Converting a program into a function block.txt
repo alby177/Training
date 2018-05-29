@@ -1,0 +1,12 @@
+I have a program written as a SFC but I now need to implement several instances of the program so I thought it best to have the code as a function block. Is there a way to convert the program into a function block or would I need to start again?Thanks,Tony
+
+Open the object.  Change the word PROGRAM to FUNCTION_BLOCK above where your variables are defined.  Close the object.  It should switch to an FB.  I use v3.x now and this is how it is done in 3.x, but if I remember correctly, it was the same on v2.3.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Thanks very much for your reply, I will try this.
+
+not correct , as a program has no I/O defined.however it is possible to do:copy the program and give it other name (something like FB_SFC_blabla)change indeed the name program to Function_blocknow define what variables are used as Inputand as Output and which ones are global and local etc.within the program no changes are needed.check the real I/O Tags as you will mess it up when using double.It is normal for a beginner to do it this way.I only use Function blocks and my main program just calls blocks. so my main program is max one page, same for a sub btw make them max one page so you can overview what happens.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

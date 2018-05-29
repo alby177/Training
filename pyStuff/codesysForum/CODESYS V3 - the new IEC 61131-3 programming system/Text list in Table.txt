@@ -1,0 +1,12 @@
+I've created a Table with 2 columns:1.st column is showing my BOOL array of inputs, configured with template for color variable, WORKS OK2.nd column should be showing my Text list with corresponding ID range from 1 to 8. But i cannot configure damn Text index!The point of that. I have 64 Digital inputs (8x BOOL arrays size 8 ), want to show them in diagnosis screen, it is a lot of work to do with descriptions in 3 different languages. So this can be simply solved with Text list and language switching.Can anyone advice me how to do that?attached pic of problemTnx in advanceAlex
+
+How would you like to show 8 different values depending on a BOOL state?If this would be an array of integers, you could use as text index the declaration: aiIn[INDEX]
+
+No, I would only like to show fixed descriptions undependent of BOOL state!
+
+If ad add a axIn8[INDEX], i get value form Text list only where primariy array is TRUE (pic attached) because value is always 1.
+
+I figured out a workaround with one support array://Workaround for filling table with text list, support array	auiTextList8  : ARRAY[1..8] OF UINT:=[1,2,3,4,5,6,7,8];So, I put in Text index field: 	auiTextList8[INDEX]result is OK, attached picbrut force solution, but works... any other easier way suggested?regards,Alex
+
+Hi Alex,Yes, that is how I would also do it if you want to be able to easily translate the texts.
+

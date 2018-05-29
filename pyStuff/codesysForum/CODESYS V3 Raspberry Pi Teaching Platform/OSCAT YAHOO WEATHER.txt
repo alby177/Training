@@ -1,0 +1,6 @@
+HelloIm traing  to use  OSCAT Weather library but this function use IP_C also from OSCAT. Do  I need  configure  anything  else  to  obtain  my Raspberry IP Adress.
+
+Hi,guess this does not work anymore.(guess because of missing TLS/SSL encryption)There will be coming up a new application based on openweathermap (https://openweathermap.org/)in the CODESYS store.-> shortly after 3.5SP11 Release.BREdwin
+
+Is possible  but  I  ask  about  the  IP_C  function  with is  part of  the  oscat  yahoo weather . When  I  compile  aplication  for Control  WIN I  see my IP  adress. Is possible  but  I  ask  about  the  IP_C  function  with is  part of  the  oscat  yahoo weather . When  I  compile  aplication  for Control  WIN I  see my IP  adress. Should  it  work  for  raspberry ?
+

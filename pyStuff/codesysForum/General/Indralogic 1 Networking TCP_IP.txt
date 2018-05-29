@@ -1,0 +1,6 @@
+Hello all, please be indulgent, this is my first question. Recently I've got a new job in PLCs area, Rexroth. Currently I am working with OpCon Engineering System (probably you didn't hear because it's only for Bosch Rexroth internal use) and basically it's Indralogic 1.6.I have to send and receive some data (words) over TCP/IP. I've did it (UDP Server/Client) in Indralogic 2 with the RIL_SocketComm library. It's easy. But I have to do it in Indralogic 1, and I can't do it. The library here it's SysSocketsAsync.lib and has absolutely no info on it on f1 what's so ever!!! It's horrible.Please help me. Please consider alternatives:1. guide me to an functional example or at least, real documentation on the library, SysSocketsAsync.lib2. guide me to an 3-rd party library that does the trick. Remember, I am using Indralogic 1.6 (I do not know the codesys version)3. show me other alternatives (like creating a server with different tools that can do the trick) etc. It's just sending and receiveing async data.I am working on VPB40.3. Thank you!!
+
+Sincerely, guys, can you just show me a functional SysSockLibAsync example and that's it?
+
+Hello fulminator,you can find an example of TCP and UDP communication in this topic: - TCP Socket example? (viewtopic.php?t=133)BR:gee
+

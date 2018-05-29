@@ -1,0 +1,4 @@
+I do not understand how to manage this trigger. Where the variable of the trigger?Best regards.
+
+I'm sorry, I have found the variable. When you activate the trigger "Rising edge" this one appears in "ModbusGenericSerialSlave I/O Mapping".
+

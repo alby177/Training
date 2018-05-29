@@ -1,0 +1,16 @@
+I have a function block written in ST that needs to run every 0.25 seconds but I am not sure how to do this. Ideally, I would like the timing to be internal to the function block so that you do not need to remember to trigger it externally.I thouhgt of using a timer but I could not figure out how to do this inside the FB. I also thought of using the TIME() function but i think that this will overflow in 49 days which would cause problems.Can anyone suggest what I can do?  
+
+go to resources, task configurationadd a task and add your program to that tasktell the task to run every t#250ms in cyclic mode.that is allno remember nor anything else to do it.yes a timer will overflow (takes days but it does) then the task will not be done, but 250 msec later it does, so if critical you must check this, if not then just leave it.a timer has the disadvantage it needs starting and that is taking time. about 10 ms, so one loop will be 260 msec.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+btw it does not work on a FB only on a program
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks for the reply. Changing the task time to t#250mS is a really neat idea! Out of interest, if I decided to use the TIME() function, do you think the following code would handle the overflow? I dont really want to wait 49 days to see if it works   Code:   IF (TIME() < prevTime) THEN         (* Check if TIME() function has overflowed*)      prevTime := prevTime + T#49d17h2m47s295ms;   (* Make previous time overflow *)   END_IF   tdiff := TIME() - prevTime;      (* Calculate elapsed time since algorithm was last run *)   IF(tdiff > LoopTime) THEN      (* Is it time to run algorithm again? *)      prevTime := TIME();   (* Update the time when last run *)      trigger := TRUE;      (* Flag that we should run *)   END_IF;
+
+calc is not correct.if overflow detected it should befulltime-prevtime+time()+1 is tdiffexample pre is 250time() is 5full is 255255-250=55+time()=1010+1is 11yes the code is good, but it can deviate 100 ms due to other programs.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

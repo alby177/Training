@@ -1,0 +1,10 @@
+Hello Community,under projectsettings --> static analysis light, I enabled 'check for unused vars'. So If I declare an output var like this: Code:VAR_OUTPUT   itf_MyFB         : itf_FBExtended := THIS^;END_VARI allways get a Static analysis error: SA0033: unused var .... How to avoid this message? I know, that there is an attribute to exclude warnings, but for Static Analysis I've nothing found in the online Help.Thank you in advance.
+
+_________________Building & Process Automation with HVAC Library for CODESYS© - www.hvac-automation.com
+
+With the installation of the Full Static Analysis functionality, you get a Add-On help topic in the online help.This describes the way how to deactivate specific rules.For unused variables, which is SA0033, you can use:Code:   {attribute 'analysis' := '-33'}    itf_MyFB         : itf_FBExtended := THIS^;   {attribute 'analysis' := '+33'}This way, if i is not used, this is ignored by static analysis.- is turning it off+ is turning it back on
+
+ Wow - Now it's working. I think this needs definitly to be added to the standard pragma attribute list, because I didn't find it there. Cheers,Kevin
+
+_________________Building & Process Automation with HVAC Library for CODESYS© - www.hvac-automation.com
+

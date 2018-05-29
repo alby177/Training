@@ -1,0 +1,8 @@
+Hi,I want to give an variable color to an element like a rectangle. I tried that with : Farbvariablen -> Normalzustand -> Füllfarbe (Color variable -> Normal state -> Fillcolor). I added the var test_color (DWORD) and give it the value: 16#FF0000. When i start my visu, the rectangle should be red, but thats not the case. Did i forget anything?
+
+Is your fill attribute set to Hollow? Any other changes made to the element besides tying the variable to the fill color property?
+
+Use 16#FFFF0000. It's RGBA, 4 bytes - 3 colors + alpha-channel.
+
+Thanks for your help. I solved the problem by updating my Styleconfiguration.e.kislov wrote:Use 16#FFFF0000. It's RGBA, 4 bytes - 3 colors + alpha-channel.That also helped a lot.
+

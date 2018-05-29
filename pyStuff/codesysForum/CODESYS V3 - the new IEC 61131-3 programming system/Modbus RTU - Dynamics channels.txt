@@ -1,0 +1,2 @@
+Hi,I would like to create a Modbus RTU Channel dynamically, without graphical Modbus Configurator.I created 'Modbus_COM' / 'Modbus_Master_COM_Port' / 'Modbus_Slave_COM_Port' in my codesys project, but channels are defined in a configuration file, so they will be created in the program.If it's possible, how can I do that ?If not, I also tried ModbusRequest function, but it doesn't work (MB_ErrorCodes = 255).Have someone an example of this kind of project, and explanations of how function is used ?Thank you,Rémi
+

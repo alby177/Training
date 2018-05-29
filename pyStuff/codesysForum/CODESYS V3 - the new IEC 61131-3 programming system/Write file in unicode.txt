@@ -1,0 +1,2 @@
+Hi all,I'm trying to write a file with the SysFile library. How can I write unicode characters? It seems the library writes only in ANSI.Thank you,Regards.Massimo
+

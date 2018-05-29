@@ -1,0 +1,63 @@
+Hello,
+
+I have downloaded the CoDeSys V2.3.8 Demo (with CoDeSys SP PLC WinNT V2.4 ).
+I´m testing the SysLibShm.lib (located in "C:\Program Files\Common Files\CAA-Targets\3S\Lib_PLCWinNT").
+My project compiles without errors, but when I try to run it, I get the following error:
+"#81: Access violation in 'Access violation Task = New Task'"
+
+The error occurs when I try to execute the following code:
+
+hMyShMem := SysShmOpen('MyShMem', 0, SIZEOF(aRxBuffer) + SIZEOF(aTxBuffer));
+
+
+
+
+My project source code is:
+
+Program Test
+VAR
+	hMyShMem: DWORD := 0;
+	aTxBuffer: ARRAY[0..63] OF BYTE;
+	aRxBuffer: ARRAY[0..63] OF BYTE;
+	dwRet: DWORD;
+	dwTxErrorCounter: DWORD := 0;
+	dwRxErrorCounter: DWORD := 0;
+END_VAR
+
+IF (hMyShMem = 0) THEN
+	hMyShMem := SysShmOpen('MyShMem', 0, SIZEOF(aRxBuffer) + SIZEOF(aTxBuffer));  <--------------- ERROR!!!!!
+ELSE
+
+	dwRet := SysShmRead( hMyShMem, 0, ADR(aRxBuffer), SIZEOF(aRxBuffer));
+	IF (dwRet = SIZEOF(aRxBuffer)) THEN
+		;
+	ELSE
+		dwRxErrorCounter := dwRxErrorCounter + 1;
+	END_IF
+
+	dwRet := SysShmWrite( hMyShMem, SIZEOF(aRxBuffer), ADR(aTxBuffer), SIZEOF(aTxBuffer));
+	IF (dwRet = SIZEOF(aTxBuffer)) THEN
+		;
+	ELSE
+		dwTxErrorCounter := dwTxErrorCounter + 1;
+	END_IF
+
+END_IF
+
+Any idea why this error is occurring?
+What means this error message? 
+Did anyone already use this library? Any example?
+
+
+Thanks a lot!
+
+Billo
+
+I have no experience with this and also no demo application, but the error is caused by not using a pointer.
+I think it should be something like:
+hMyShMem := SysShmOpen('MyShMem', 0, ADR(dwSize));
+
+Thanks TimvH!
+
+TimvH wrote:I have no experience with this and also no demo application, but the error is caused by not using a pointer.I think it should be something like:hMyShMem := SysShmOpen('MyShMem', 0, ADR(dwSize));
+

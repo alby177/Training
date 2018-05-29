@@ -1,0 +1,4 @@
+Hi,for this product (opentherm gateway)https://www.nodo-shop.nl/en/opentherm-gateway/188-opentherm-gateway.htmlThis is a PIC controllo with TTl cable (for USB support). Other information herehttp://otgw.tclcode.com/index.html#introexist a support for codesys software and raspberry py PLC ?
+
+No, this is not supported by the product. What doesn't mean that it is not possible to use it. I'm not exactly sure about the link between OpenTherm and the Pi. But if it is either serial, Spi, OneWire, I2C or accessible through another linux device driver, you might be able to access it from your CODESYS application.Do you know more about it?Gesendet von meinem LG-H870 mit Tapatalk
+

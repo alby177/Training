@@ -1,0 +1,22 @@
+Hi at all,I use CODESYS V3.5 SP5 Patch 4 with the SVN plugin 4.0.0.0 and a SVN license on a USB dongle.Sometimes, when I open a second CODESYS project, there pops up a message, that says that no SVN license was found. This happens when first or second CODESYS project is opened by a python script (see attachment). When I open both projects by a double click in Windows Explorer everything works fine.thanx Volker
+
+Hi volker.How often does this problem appear?Is there also an error message on the "Events" tab of the CodeMeter Control Center?Have you tried the latest version of the CODESYS SVN package? At the moment it is V4.0.1.2.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi, Volker,It seems there is a problem in the CodeMeter software used for license protection. When several instances of CODESYS are started in rapid succession, some of them may fail to get valid licenses.We're currently investigating this issue together with Wibu Systems, and try to implement a workaround in the next release (CDS-42630).
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+
+Hi M. Keller and M. Schaber,> How often does this problem appear?When I start in the morning it works well (for hours). But if it happened once, all other attempts will fail.> Is there also an error message on the "Events" tab of the CodeMeter Control Center?Yes, see attachment.> V4.0.1.2.Yes, I’ve updated but it still happens.> in rapid successionIt also happens, when I work slowly.Additional info: I start one CODESYS with WinAPI function CreateProcess (and python script):CreateProcess(codesyspath, cmdline, NULL, NULL, FALSE, 0, NULL, plcpropath, &si, &pi)codesyspath : C:\Program Files\3S CODESYS\CODESYS\Common\CODESYS.execmdline : "C:\Program Files\3S CODESYS\CODESYS\Common\CODESYS.exe" --profile="CODESYS V3.5 SP5 Patch 4" --runscript="CoDeSysScript.py" --scriptargs:'"C:\Projekte\STL2\Debug\Data\CoDeSys\GenC\Test2700.project" 128' –enablescripttracingplcpropath : C:\Projekte\STL2\Debug\Data\CoDeSys\GenCBut it does not matter, if I start first CODESYS by Windows Explorer and second by WinAPI or vice versa.thanx Volker
+
+Hi, Volker,We did forward your additional information to the coworker who is investigating the issue. We'll keep you updated.
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+
+Hi Volker,the reason might be, that the station-share machanism is not working with your script.Please ensure that the user you are running the script with is the same as your user when you start CODESYS interactively.BR,Matthias
+
+Hi Matthias,the Windows-Task-Manager shows that all CODESYS.EXE instances are startet from the same user (de9eezt1).best regards Volker
+
+Hi Volker,unfortunately I can not reproduce your license error on my machine. Therefore I would suggest to contact our support team to get it reproduced on our side.This is necessary to provide a custom bugfix on this issue.Support details you will find under the following link: http://www.codesys.com/support-training/codesys-support.htmlThanks,Matthias
+

@@ -1,0 +1,63 @@
+Hello All,
+
+I am having an issue and I am not sure if it is within the CoDeSys IDE or the target system and who would be responsible (vendor or 3S) .
+
+I have a variable say "uPlantOptions :BYTE;" where each bit in the byte represents a different option that you can set. On a visualization I have LED's to show the state of each option. When I run the code configured with no target "NONE" in simulation mode the code runs perfectly. While viewing the program online in simulation mode the variables in the format "variablename.bit" show black when false and blue when true. example use of the dot (.) operator:
+
+If uPlantOptions.0 THEN
+  bEnableAllAlarms  := TRUE;
+End_If;
+
+or uPlantOptions.7 := true; (* to set the 7th bit true *)
+
+Visualization element setting:
+
+Change Color: uPlantOptions.3  (* setting in the Ellispe Element *)
+
+But once I load the code to my target the LED's will no longer change state on the visualizations. Everything on the visualizations that referenced variables in the format "variablename.bit" no longer function. While viewing the program online with the target the variables with the dot (.) operator format are now greyed out but yet the logic still works? It makes it difficult to debug the code.
+
+I am using CoDeSys V2.3.5.5 with an IFM target for Infineon C16x
+
+Any suggestions on this?
+
+_________________Thanks,
+Steve Pfeifenroth
+
+I tried a little test myself and have gotten strange results.  There is a listing of code below which shows what I'm trying.
+
+I set a breakpoint at the line 16:
+	LD		bTestByte.7
+
+Then as I step through  the lines the program seems to invert the bit where the focus is but it looks like the logic is also changing the more significant bits as I go along.
+
+Could this be a bug in CoDeSys?
+
+Note, I'm using Moeller X-Soft which I think is based on V2.3.3.14
+Code:PROGRAM BitAccessILVAR   bTestByte   :BYTE := 2#10101010;   tonDelay   :TON;   xDelayDN   :BOOL;   xDelayNDN   :BOOL;   tDelayTime: TIME := t#2s;END_VAR   (* Setup the preset time *)   LD      tDelayTime   ST      tonDelay.PT   LD      tondelay.Q   STN      xDelayNDN   CAL      tonDelay(IN:= xDelayNDN)   (* Jump to end if delay not done *)   LD      tonDelay.Q   JMPCN   TheEnd   (* Negate each bit *)   LD      bTestByte.7   STN      bTestByte.7   LD      bTestByte.6   STN      bTestByte.6   LD      bTestByte.5   STN      bTestByte.5   LD      bTestByte.4   STN      bTestByte.4      LD      bTestByte.3   STN      bTestByte.3   LD      bTestByte.2   STN      bTestByte.2   LD      bTestByte.1   STN      bTestByte.1      LD      bTestByte.0   STN      bTestByte.0TheEnd:END_PROGRAM
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+I did some further testing and found that my problem stems from the use of global variables. According to the CoDeSys manual care should only be taken with var_in_out types. The variables and visualization elements do work on my target as long as they are not global variables. I use two global variables for system configuration and holding states. I have configured
+
+g_dwStates  WORD;
+g_dwOptions WORD;
+
+When accessing any bit with a visualization element in the format (.g_dwStates.1 or g_dwStates.1) the result is "???". Viewing the global variables online running with the target when they are in the format (variable.bit) are grayed out. If I view the global variable with a visualization element and display the result using “%s” I receive the correct value of the dword. Example:
+
+Change color:  g_dwStates.1
+Text display:   g_dwStates
+Text:                 %s
+
+This will result in no change of color but the value displayed by the element is 2.
+
+I am able to bypass this anomaly by using the following:
+Change color:  g_dwStates AND 16#2
+
+This works.
+
+If I use a local variable everything works fine. Any explanation ? Is using the AND in the change color and Invisible a good idea? Will it cause any problems with the web based HMI?
+
+_________________Thanks,Steve Pfeifenroth
+

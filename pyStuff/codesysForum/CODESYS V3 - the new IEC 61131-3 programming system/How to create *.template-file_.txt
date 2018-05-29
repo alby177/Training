@@ -1,0 +1,4 @@
+Hey, How can I create own CODESYS *.template files?Thanks in advance!Best regards,Oleg
+
+Hi Oleg,here the FAQ for generating templates:· Create a project and save (copy) it in the folder “…\3S CoDeSys\CoDeSys\Templates” or a subfolder of this folder· Create a template file with the extension .template and store it in the obove mentioned templates folder (not in a subfolder)Content of the template fileBREdwin
+

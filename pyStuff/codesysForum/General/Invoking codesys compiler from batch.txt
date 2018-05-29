@@ -1,0 +1,8 @@
+Hi,I would like to know if it is possible to compile a program and upload it to the PLC via batch command line?The idea is to be able to switch from different versions automatically.Regards
+
+Bump.
+
+It should be something along the lines ofCode:"C:\Program Files (x86)\3S Software\CoDeSys V2.3\Codesys.exe" /batch /cmd build_and_run.cds file.probuild_and_run.cdsCode:project buildonline loginonline runThe problem is I can't get it to log in silently. The query and replace commands don't seem to help at all, even though I do remember them working a year ago. Anyway, you should probably read these two entries in the help file yourself, if you haven't done it yet:Attachment:commandfile.png
+
+Thank you very much!Regards
+

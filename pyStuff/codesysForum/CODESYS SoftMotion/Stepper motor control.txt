@@ -1,0 +1,8 @@
+Hello People,I have stepper motor with beckhoff system. I got prepaired programme in .pro and .tsm with file. I have to test this product in diffrent ways.The beckhoff module are :EL1100,EL1034,EL2002,EL 7041,EL 9505,EL 9011This application have linear encoder to read the actual position. But i am not sure thatthis motor is in close loop or not.As per my understanding, EL7041 module responsible for controlling the steps and taking feed back from the encoder.But how to find out that this stepper motor is in close loop ? And if it is in close loop then how can i make in lopen loop ?I didn't find specifically something in .tsm file for this Drive and encoder system.Thanks.
+
+depending on motor, a small motor has no feedback, it should have an encoder on its back.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+I have stepper motor which is from Stögra company. It's model is SM 56.18J.This motor is with 200 steps/revolution. In Twin CAT,.tsm file, the NC with linear encoder is in close loop for sure. Now, i found only one way,to make open loop in Twin CAT System Manager through the changing encoder in system manager.But still motor didn't move. And it's making horrable noise as well. What cound be your suggestion ?Thanks in Advance.
+

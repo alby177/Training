@@ -1,0 +1,8 @@
+Dear Sirs;We need help to configure BIOS of PC, we need a complete procedure of the configuration of the BIOS SETUP of PC to run the CoDeSys SP RTE without problem, to turn CoDeSys stable.If anyone can help us, we will be grateful.Best regards;Adilson G. S. de Medeiros
+
+hello,a good startpoint is to read the RTEV3 documentation,which is installed together with the RTE V3.There is a description how to disable throtteling / disable speedstep etccuEdwin
+
+Hello Edwin again...Unfortunately the project was done by third parties and we have no experience of CoDeSys, just know that the version is 2.3. I could not find any documentation on configuring the software and the PC BIOS!You can help us?Best regards;Adilson Medeiros
+
+hm.. the best option is probably to ask your supplierhe knows his industrial pc and i'm sure he know the settings.Did you tried to contact them?Edwin
+

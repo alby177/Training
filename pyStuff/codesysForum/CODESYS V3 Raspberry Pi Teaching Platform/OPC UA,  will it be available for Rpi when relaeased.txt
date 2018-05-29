@@ -1,0 +1,12 @@
+Hello Does anyone know if OPC UA will be avaliable for the Rpi platform when CODESYS releases OPC UA for the standard?
+
+Hi,there is no decision, maybe this could be in for all 3S runtimes:Control RTEControl WinControl for Raspberry Pibut these are rumors The release is scheduled for 3.5SP6 -> end of yearBREdwin
+
+Thanks for your reply, rumors are also information.
+
+Hello,I am using a RPi 2 model B, and tried several clients on the same network as the RPi. None of the clients discovered the opc ua server.How can I check whether the opc ua server is running on my Pi?Best regards,Carsten Voort
+
+Hi Carsten,I'm sure UaExpert Client will work.Please use the example in"c:\Users\<YourWindowsUserName>\CODESYS Control for Raspberry PI\2.1.1.0\OPCUA.project" to be sure th symbols are configured ok.You could see logmessages in the plc log here (screenshot)BREdwin
+
+Hello Edwin,Thank you for the tip. I have a connection now. Maybe something for the other users:I am using a different OS by which the jitter is only as much as 50us -> http://www.emlid.com/real-time-linux-fo ... -binaries/If you install the codesys runtime for raspi as a *.deb in this OS, the performance is great!BR,Carsten
+

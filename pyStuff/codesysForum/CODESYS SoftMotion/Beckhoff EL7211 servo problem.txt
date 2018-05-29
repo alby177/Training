@@ -1,0 +1,6 @@
+Hello,I am trying to use Backhoff EL7211 servo in raspberry pi. But i have problem.I updated Raspberry piI updated CodesysI added EK1100 ethercat coupler from BeckhoffI added EL7211 Servo motor driverAs you see on pic, i got Configuration error. I dont know why and i dont know how to solve itIs there anyone can help me ?
+
+The problem has solved.
+
+ekmekci: What was the pb ? Did you choose the right servo ? OCT is One Cable Technology
+

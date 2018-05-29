@@ -1,0 +1,14 @@
+Hi,What are the limitations to the trend visualisation? I have a project on the Pi where I am have 8 trends, each trend is logging every 400ms, each value is stored every 2000ms and each trend has maximum storage of 50mB. Each trend has 1 value.I am getting issues. Sometimes, when the Pi is shutdown the visualisation goes in to error, I click on the screen, the visualisation restarts, and trend 1 is no longer logging correctly, the date time stamp are all zeros and it is not logging any values. Some times some of the trends come up with an error Error 30437 occurred.I have 16gb SD card in my Pi. Any ideas why I am getting these errors?
+
+Hi,guess you need to wait to 3.5.11.40 or 3.5SP12 release, there are some performance improvements, which should improve this.at the Moment I would add:[CmpCAAStorage]Memsys5SizeInMB=10to the /etc/CODESYSControl_User.cfg which should help to prevent the 30437 ErrorBREdwin
+
+Thanks Edwin. I will try.Any estimates on when the new release is happening?
+
+Hi,during the week.BREdwin
+
+OK, I look forward to it   I have played around a little more and the problem still exists. In fact it has gotten worse. My visualisation seems to remember trends from days ago. I have since loaded completely different projects, removed the Codesys application, uploaded new run times and then reloaded my original trend project, however it still has the old trends in the history and it wont update with new values.Is there a way to delete these trends from the Raspberry Pi memory?
+
+Hi,you need to execue a reset origin on the device.BREdwin
+
+I have downloaded the latest release 3.5.11.4. It hasn't cured the issue with the visualisation failing when power is removed from the Pi without a proper shutdown. Any ideas on what may be causing the issue?I have a couple of other questions, 1. Does the trend work on a FIFO system, so when my max visualisation storage has been reached will the trend simply stop working or will all old values be deleted and only new value visible?2. Is there a way a user can delete the trend memory through the visualisation and the trend automatically restart?
+

@@ -1,0 +1,22 @@
+Hello to the experts - I need help!In my visualisation there is a group of 7 Radiobuttons, assigned to a enum-type variable. A click on any Radiobutton changes the content of the enum-type variable, OK so long. But on the visualisation screen typically no changes are visible. Sometimes the active radiobutton will go inactive, but the actual clicked one goes not active. An update is only done by changing the actual screen and go back.Where is the mistake?With regards and full of hope, Rudolf.
+
+Hello!I have also experenced that kind of problem (then I stoped using radio buttons...) and also problem with my mentioned here: http://forum.codesys.com/viewtopic.php?f=11&t=5276. That has to be some serious bug in visualization!regards,Alex
+
+What is the right way to give this problem to the CODESYS development?
+
+Hello!The support 'guy' decides if it goes to developers, right now they are sloving my problems mentioned on link in previous post.regards,Alex
+
+Hi, do you also see this in the IDE, or only in the target visualisation?
+
+there are two variables used, one for on/off input to your software and one for the output.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+To TimvH: The described behaviour is seen with the target visualisation at the CODESYS runtime on my PC.To shooter: What is the output variable? In the IDE I spend one enum-type variable for the radio-group - thats all.
+
+To TimvH: Now I have understand your question! The wrong behaviour is in both - the IDE and the target window.
+
+Ok...Yesterday CODESYS V3.5 SP3 is released. Is it possible that you try it with this version?
+
+Now I have installed this brand new version and it runs. But the behaviour of the RadioButton-group is the same than before. It looks like a refresh problem of the CODESYS software. The radio-group is allways updated after a change of the actual window and back. So the correction is a task for the future...
+

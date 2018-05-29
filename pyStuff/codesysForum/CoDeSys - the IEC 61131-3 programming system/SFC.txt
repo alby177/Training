@@ -1,0 +1,6 @@
+Hi,I am using SFC as my as main programming language and Ladder Diagram inside the steps.While the SFC is running, at any step in my program if alarm/fault occurs it should go to “step x”, how can I achieve that?Thanks, Best Regards,
+
+look for SFCInit in the manual, it is a flagthere are several possibilities here.beware this is not a IEC command. nor is it 61131so if you want to write nicely, catch it with transitions and jumps.Do not use the timers as they will not go to trans if needed.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

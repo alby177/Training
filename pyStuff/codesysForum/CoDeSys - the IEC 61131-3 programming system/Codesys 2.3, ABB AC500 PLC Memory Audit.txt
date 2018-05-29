@@ -1,0 +1,6 @@
+How can I export/view/print all variables that are addressed to memory for a project?I've inherited a large project and need to know which memory addresses are used and what their respective tag is.Software: ABB Control Builder Plus 2.3.0, CodeSys 23.Thanks
+
+I should add the fact that not all variables written to memory are declared in the global/OPC/retained variable lists. Some are declared within POU's and I'm looking for a relatively easy way to export/view/print all tags that are written to memory for a project
+
+jethridge wrote:How can I export/view/print all variables that are addressed to memory for a project?I've inherited a large project and need to know which memory addresses are used and what their respective tag is.Software: ABB Control Builder Plus 2.3.0, CodeSys 23.ThanksHi,If you select in the project menu the option document you can print a cross reference list.In this cross reference list the global variables and the local variables will be printed.Perhaps this is a solution for you?
+

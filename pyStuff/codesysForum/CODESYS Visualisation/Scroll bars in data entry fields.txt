@@ -1,0 +1,10 @@
+Is it possible to disable scroll bars for data entry points in web-visualizations. It seems that numerical and hidden text fields have no scroll bars but text fields default with scroll bars, even when the text width/height does not require scrolling.My users are getting confused: when they edit a field, the existing text is hidden to the left of the data-entry field and it is necessary to scroll left.
+
+i can not duplicate what you are having please more info.have you put the text position in the middle and height too?
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi Shooter,Attached please find pdf with screen shots that explains. Any advice would be welcome.
+
+I can confirm the same thing in Chrome. I'd like a way to specify that the text field isn't a multiline field.
+

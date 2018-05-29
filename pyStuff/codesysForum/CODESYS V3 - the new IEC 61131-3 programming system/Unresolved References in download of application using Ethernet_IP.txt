@@ -1,0 +1,8 @@
+I have set up a simple project using the CIFX Ethernet/IP Scanner device and soft PLC device.  The project builds without issue.  When I go to download I get 24 unresolved references.  See attachment for snippet of Messages.  What is missing?  Thanks!
+
+Hi,which plc do you want to use?BREdwin
+
+I am using the CODESYS V3 Soft-PLC for Windows with non real-time capabilities
+
+You need to add 1. ethernet connector then 2. EIP scanner not the Cifx based card.. this needs additional hardware in you pc. BREdwin
+

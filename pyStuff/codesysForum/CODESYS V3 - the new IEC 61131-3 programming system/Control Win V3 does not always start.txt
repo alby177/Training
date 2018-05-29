@@ -1,0 +1,12 @@
+HiSometimes the Control Win V3 does not start and I have to restart my computer.Is there something I can do to not make this happen and/or is there a way to restart it without restart of the computer?Thanks
+
+Do you have the control win license on a dongle?
+
+No, free trial. I did not have this problem before, it started when I run Test Manager but it is likely connected to my test cases.
+
+Hi,you need to check the plc log:by default it is disabled as file (only accessible by CODESYS IDE) you need to remove the ';' on the following section in the CODESYSControl.cfg("c:\Program Files (x86)\3S CODESYS\GatewayPLC\CODESYSControl.cfg" )  increase maxentries and MaxFilesize too.After include this you could check the files in your runtime directory c:\Program Files (x86)\3S CODESYS\GatewayPLC[CmpLog]Logger.0.Name=PlcLogLogger.0.Filter=0xFFFFFFFFLogger.0.Enable=1Logger.0.MaxEntries=100000Logger.0.MaxFileSize=500000Logger.0.MaxFiles=3Logger.0.Backend.0.ClassId=0x0000010BLogger.0.Backend.1.ClassId=0x00000104Logger.0.Type=0x314   ;Set the timestamp to RTCLogger.1.Name=CommLogLogger.1.Enable=1from my experience the reason could be:Either there is a exception on start (which you will see then in the log, like processor overload exception for example) or are you using retains and there is no graceful shutdown of the plc? (check your project if there are retains)BR Edwin
+
+hi,I have a problem in starting CoDeSys control win V3. it run for more than one sec and stop again
+
+Hi,would recommend to use the current version which is 3.5.5.40BREdwin
+

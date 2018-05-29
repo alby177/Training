@@ -1,0 +1,8 @@
+Hi,How to split up datatime variable?I would like to get day, month, year and time separetly?Thanks
+
+I always convert to string and use the standard functions string RIGHT(), DELETE() etc to isolate them.
+
+Thanks for your answer.
+
+Use CAA DTUTil for Split/Concat DT, Date and TOD.It seems easy then string functions.
+

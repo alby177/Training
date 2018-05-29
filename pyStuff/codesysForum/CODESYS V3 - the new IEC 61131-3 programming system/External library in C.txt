@@ -1,0 +1,12 @@
+Is there any documentation how to do this in V3?  I know this existed for V2 based on this following post:viewtopic.php?t=620Is using an external library platform/controller dependent?
+
+_________________The Original SoMachine Ninja
+
+To be able to link these external libraries to your runtime you will need the runtime toolkit.If you create your library in IEC code it is hardware independent.
+
+Was external library hardware dependent in V2? Also the reason I wanted to use C code is to use some opensource code provide under GNU.  To modify the code to IEC structured text will be very time consuming.  Is the runtime toolkit for OEM use or is provided to endusers?
+
+_________________The Original SoMachine Ninja
+
+The toolkit is for OEM's, but you can also buy the toolkit for the Control WIN and Control RTE.Then you can use any (I)PC to adapt the runtime and add your own drivers and external libraries.You can also buy the toolkit for any other platform and become an OEM.You cannot modify existing OEM runtime adaptations.
+

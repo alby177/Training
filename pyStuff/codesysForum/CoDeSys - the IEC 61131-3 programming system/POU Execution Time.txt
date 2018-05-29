@@ -1,0 +1,10 @@
+Is there a way to monitor how long a pou takes to execute, or how much 'spare' time there is before it is called again? I have a pou that writes data to a file and i want to be sure that i dont call it too fast. I only really need to do this within the codesys development environment.
+
+OK, just a case of RTFM. I am using a Wago 750-8202 and there is a page in the web server which provides exactly this info. 
+
+the answer is not as simple as the question.1you can find the executiontime in the tasks when running, however communication is not done in the pou, but in the overhead , meaning you will need to do 2 measurements one with file and the other without.the diff is the time.2this time is never the same and fluctuates due to timing of interupts etc.3.check if buffer empty, then you can start next writing.a plc is not the best daqsystem so check what is needed and the speed needed
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+You can make that POU a timed task in task configuration. Create a task, set it to cyclic and define your interval time, then add which POUs you want to call in that task.
+

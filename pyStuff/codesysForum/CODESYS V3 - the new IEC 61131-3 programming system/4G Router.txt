@@ -1,0 +1,4 @@
+I Want to use a 4G routerFirst it have to a make a call to the responceble person.After that it has to Send a sms with Machine number and error number.Has anyone an example  of how i can instruct a 4G router over ethernet , to do thisThanks !
+
+You shall look at your 4G router what kind of AT Command that they allow you to do.
+

@@ -1,0 +1,48 @@
+Goodmorning all,
+
+Here's the question:
+
+From the library: SysLibTargetVisu_v10.lib I use the following function to get translations from a dynamic text list.
+Code:GetText(stResult, nResultLength, stPrefix, dwID)This works perfectly. The string variable stResult now has the correct translation. However, now we have a Russian customer so I have to load Cyrillic characters (unicode).I will have to use the following function:Code:GetUnicodeText(pResult, nResultLength, stPrefix, dwID)
+
+As you can see this function does not return a string, but a pointer instead. the variable pResult is of the type: POINTER TO ARRAY [0..10000] OF UINT.
+
+Does someone have an idea how to use this pointer? How do I generate a string from this array of UINT?
+
+Help would be much appreciated 
+Thanks,
+Stefan
+
+use the ^symbol
+it is above the 6
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Sorry, I don't quite understand.
+
+You mean something like this:
+Code:MyPointer : POINTER TO ARRAY[0..10000] OF UINT;MyString : STRING;GetUnicodeText(MyPointer, 50, 'Button', i);MyString := MyPointer^;
+
+It returns a type casting error:
+Type mismatch: Cannot convert 'ARRAY [0..10000] OF UINT' to 'STRING(80)'.
+
+This also fails to compile:
+MyString := UINT_TO_STRING(MyPointer^);
+
+PS
+Shooter, I think I saw you at the Dutch Codesys Users Conference  Thanks for your help.
+
+Nobody knows?
+
+swtroelofs wrote:Nobody knows?
+Try this
+Code:MyPointer : POINTER TO ARRAY[0..10000] OF UINT;pString : POINTER TO STRING;MyString : STRING;GetUnicodeText(MyPointer, 50, 'Button', i);pString := ADR(MyPointer);MyString := pString^; 
+
+Thanks for your reply!
+
+Unfortunately it didn't work. The dereferenced pointer to the string stays empty. Please look at the attached picture.
+
+Do you have any more ideas? Who would know this?
+
+I'll try once more to upload the screenshot...
+

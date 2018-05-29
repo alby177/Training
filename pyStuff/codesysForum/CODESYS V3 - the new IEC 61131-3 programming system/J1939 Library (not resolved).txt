@@ -1,0 +1,4 @@
+I am writing a CODESYS 3.5 program for an STW ESX-3XL controller. I am attempting to append a J1939 device on one of my CAN buses.  The library for this device (which came with my STW CODESYS installation CD) should appear automatically in the library manager. It is appearing, but is not resolving (picture attached). I'm struggling to find any info to help me with this issue.Anyone able to assist me with this?Cheers,Andrew
+
+Ask the company who provided you the PLC.Normally the device description of the device (controller) will contain a list of references to the specific version of the libraries which the device supports (firmware / codesys runtime version specific).I guess the device description of this device is missing the reference to the specific version.
+

@@ -1,0 +1,4 @@
+Hello: Is the Linux MachineKit compatible with Codesys? And if anyone has it done could share it here??Thank you.
+
+Hi,hm... you mean if the CODESYS plc will run on these Images with installed Machine Kit?Never tried so far, should be possible to run the plc beside this Machine KIT.BREdwin
+

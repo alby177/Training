@@ -1,0 +1,14 @@
+I'm working with CoDeSys V3.5 and with the CoDeSys Control Win Sys Tray device but I can't start the PLC to onnect the device ??!!!
+
+Hi,could have several reasons.1. Check if there is an bootapplication which maybe lead to an crash of the softplcif yes remove Application.app2. Check if CODESYS Service Control is running->check if the CODESYS Service Control is running under Windows Services.if not install the Service by ServiceControl.exe -i in the Gateywayplc directoryBREdwin
+
+hi,thank you for answer but i didn't find what u'r talking about can you explain please...  the device starts for less than one second and stop again i didn't find the problem. when i run the codesyscontrolwinv3.exe i have an error.
+
+Hello,could you remove Application.app if this still exist could not see the laso log messages on your screenshot,this would help if you give us one (only the log messages are interesting)-Then which version are you using exactly? - V3.5.5.40?BREdwin
+
+I removed the application.app. It works  thak you Edwin 
+
+the problem isn't solved yet it works for a moment and the device stopped again. this is the exe windowI'm using V3.5.1.0
+
+Hi,would recommend to update to current version 3.5.5.40.There are a lot new features available like coredump and goto the src code in case of an exception.So this might help to find the problem.BREdwin
+

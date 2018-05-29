@@ -1,0 +1,6 @@
+Hello,I have a simple division line, but the problem is that the variable does store the value of that division.I tried with a simple example: a := 100 / (600 -3437);But 'a' does not store the value, and shows 0.'a' is defined as REAL, also tried LREAL.Any suggestions about what the problem is?Best regards,Jonathan
+
+A:=600.0/(123.0-2300.0)Use .0 after all numbers
+
+Thanks you!That worked.
+

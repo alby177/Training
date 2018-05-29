@@ -1,0 +1,6 @@
+codesys 3.5 SP7I'm trying to start the first example of the softmotion examples. Described in the Online Help, SoftMotion, Example application, Single-Axis motion control.I have built without errorsI have started the CODESYS Softmotion win v3 and its running.When I try Login I get the message No active path defined, and when I scan the network for a controller - none is found. What should I use as active path to the softmotion win v3 controller? In the command window running softmotion win v3 there are listed some ip-addresses, but none of them work as activepath.what am I doing wrong?Attachment:bild.png
+
+Your device in the project "... V3 64" is slightly different than the device you started "...V3".Right click on the device in you project and select "update device".Then select the CODESYS SoftMotion Win V3 (not the 64).
+
+TimvH wrote:Your device in the project "... V3 64" is slightly different than the device you started "...V3".Right click on the device in you project and select "update device".Then select the CODESYS SoftMotion Win V3 (not the 64).Ahhhh. Thank's!
+

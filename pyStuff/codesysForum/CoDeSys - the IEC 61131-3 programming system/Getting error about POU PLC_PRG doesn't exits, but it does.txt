@@ -1,0 +1,10 @@
+The project I'm working on was compiling/building perfectly until I started to fiddle with the alarm configuration. After some settings in there I get the following error: "Error 3614: The project does not contain a POU named 'PLC_PRG' (main routine) or a task configuration".Of course I have a POU called PLC_PRG...What can cause this?Cheers
+
+Removed a task in the 'Task Config' I had added. Still don't know why it caused error but anyway.
+
+the compiler first looks in the task configuration, if there is any task in there or has been, the default PLC_PRG will not be active anymore as it is a default.however you can put PLC_PRG in the task list without problems.This is best way when there are several tasks, you can give them a priority and a event to start.plc_prg should be freewheeling however.another way to do this to start the programns in PLC_PRG but you dont have the same possibilities to run like timed or when event happens.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Ahaa, understand. Thanks for the explanation.
+

@@ -1,0 +1,10 @@
+Does somebody have an idea of how to translate the Python program deposited in the appendix into CODESYS? It is a program that makes it possible to read temperature and humidity with a HiH6130 Sensor connected to the MCP3421 18bit ADC
+
+just a quick hint or something would be sweet
+
+Hey guys,so.. I started up with this but im always getting "???" where at len.Does somebody know what i am doing wrong?The Python program works perfectlyI'm just having some problems with the communication. I only need help with that. So that i can access the MCP3421It seems like the "Timer.Q" doesnt trigger and i don't know why
+
+Hi,you sometimes need to make a watchlist of some variable to see some variables. I don't know all conditions but complex variables like ARRAY need it./Torbjörn
+
+I wrote a library and a device description for the MCP3421 with a type-K temperature sensor connected to the pi. It's poor written but it's a start and it works for me  i hope anyone else can maybe make use of this too.
+

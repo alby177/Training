@@ -1,0 +1,10 @@
+Hi,I'd like to parse my current  project / library files to apply some checks :* unused variables, * bad naming, * indentation * retrieve variables names for documenation* etccan someone points me to how to do this please ?Cheers,
+
+Hi,Most of those things should be caught by the Static Analysis Add-On.The variable names for documentation should be available via PLCOpenXML export, and then parsing the XML file.
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+
+Thank you, this made me discover the Static analysis add-on .Cheers.
+
+Hi I'm doing a parser for Codesys 2.3 if you are interested let me know.
+

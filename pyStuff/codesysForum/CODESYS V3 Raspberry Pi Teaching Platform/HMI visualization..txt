@@ -1,0 +1,6 @@
+I know I can use the webvisu but in a project I am able to add HMI Visualisation as well.How do I use this, either on a "remote" computer or local on the rpi?
+
+Not clear what you mean..Sent from my AN10DG3 using Tapatalk
+
+Hi,HMI is running on a remote pc connected via dataserver to the plc (in your case Raspberry Pi)Check the  online help for 'Basics to CODESYS HMI'-you could add 'HMI' in your project and then click on 'Create HMI' then you have a second application in your project as result which you could download to the HMI pc.As I know this is an extra license (not sure see only the device which you got with CODESYS installation)  - for the hmi deviceplcmax
+

@@ -1,0 +1,6 @@
+Dear Codesys users,It has come to my attention that some runtimes posses an embedded Communication Gateway, it seems this is also the case with the RPi.I am used to having the gateway installed on a local box (PC, laptop, whatever) and configuring it so that machine can contact the desired runtime. Also, the gateway proces can be installed/run on a networked machine. I before shortly was not aware that a communication gateway is embedded in the RPi and readily available.My question is simple:  how should (can)  I recognise that a communication gateway option is available in device X?Thank you
+
+Hi,just add the gateway by the IPAdress (of the plc you want to check)...then select the new gateway, if the green circle occure,a gateway is embedded if not it stays red.BREdwin
+
+Dear Edwin, Thanks
+

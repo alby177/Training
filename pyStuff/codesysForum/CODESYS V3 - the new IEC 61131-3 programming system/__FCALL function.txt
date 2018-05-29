@@ -1,0 +1,2 @@
+Hello,Does someone know what the __FCALL function does ? It seems to take 2 arguments, but there is no documentation about it online or in CoDeSys help.Thank you,
+

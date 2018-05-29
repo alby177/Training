@@ -1,0 +1,2 @@
+I have hard time to figure it out how to use Index ( pointer ) with odd address. See example of an existing program.We have a table %MW0 ... %MW10000 ( I know that %MW0 and %MW1 = %MD0 ... On that part it's ok. But we need to use pointer for double ( MD ... located in ODD address of %MW ... Like %MW5 and %MW6 !!! )  
+

@@ -1,0 +1,4 @@
+Hi guysI want to get the current output but my code dose not workCould you please let me know what is the pproblemCOMPRESSOR_RUNNING_OUTPUT(		ENABLE:= TRUE,		CHANNEL:=2 ,                FREQUENCY:=100,		VALUE:=700,   );	IF(COMPRESSOR_RUNNING_OUTPUT.RESULT =1) THEN		COMPRESSOR_RUNNING_OUTPUT.CURRENT;	END_IFcheers
+
+Hi Did check your Hardware Settings.make Setting / wiring as current Output
+

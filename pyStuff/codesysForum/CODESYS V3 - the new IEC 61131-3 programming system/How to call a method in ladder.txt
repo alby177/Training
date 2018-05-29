@@ -1,0 +1,6 @@
+Hi all,I cannot figure out how to call a method in ladder.I have a FB containing an action in ladder. In this action I want to call a method using the THIS pointer.In ST I would just need to write this:  THIS^.myMethod()How can I do this in ladder?I usually use ST but in this particular case I wanted to use ladder.Thank you.
+
+Hi yannickasselin1,this will work in Ladder too.Regards,Roman
+
+Thanks, it works.I also figured out that using an empty box with EN and just put the method name in it also works.Don't even need to put the THIS^ on top of it.
+

@@ -1,0 +1,6 @@
+Is there a method to surpress the characters "$R" (carriage return)and "$N" (newline) from when displaying a string?
+
+ 
+
+_________________Kind Regards / Mit freundlichen GrüssenDoug Rilee
+

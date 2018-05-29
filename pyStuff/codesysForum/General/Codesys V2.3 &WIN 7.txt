@@ -1,0 +1,4 @@
+Hi,Friends,Can Codesys V2.3 be installed in WIN 7 system?If not,Is there any SP for solving this problem?Thank you in advance!
+
+Hello,this is possible if you use verion >=2.3.9.24would recomment the current version 2.3.9.38.Regards
+

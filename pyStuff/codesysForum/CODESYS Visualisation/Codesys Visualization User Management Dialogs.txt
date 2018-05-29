@@ -1,0 +1,2 @@
+Hello,I am new to Codesys 3.5 and looking for help in modifying (just changing the basic looks like color, fonts) the Login, change password dialogs (User management dialogs). I was able to modify the keypad and Numpad by changing the appearance in the file "VisuDialogs.Library" in default directory, C:\Program Files (x86)\3S CODESYS\CODESYS\Projects\Visu\Dialogs.I tried changing the user management dialog the same way but it did not work. I am currently using V3.5 SP10 Patch 4.Any help is appreciated.Thanks!
+

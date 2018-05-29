@@ -1,0 +1,8 @@
+hello all, iam writing one function block .and i want to check my code is working or not .can anyone help me how to simulate fb code ???RegardsHarikrishna
+
+In the Online menu there is a choice of Simulation.  With this active, you do not need a target device.  This allows you to test anything without worrying if you break something.In general I've used two methods for testing FBs:Use online debug mode:  In PLC_PRG make an instance of the FB and add a call to that instance without any arguments.  Then select simulation mode, login, download and run.  Manually set/clear input variables and look at the output variables.Programmatic test:  Create a test program that sets inputs and verifies expected outputs (replaces your manual testing).  This seems like more work, but as soon as you change one thing in your FB or add functionality, the test program pays off.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+thanks for the Information.
+

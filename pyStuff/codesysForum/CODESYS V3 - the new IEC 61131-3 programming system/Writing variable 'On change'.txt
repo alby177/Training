@@ -1,0 +1,6 @@
+Good morning, I'm a newby to codesys (V3.5.7), I'm currently reading the 'input variable' by modbus by using the slave modbus/Channel slave modbus/Read Holding Registers and declaring them in global variable.I can write on this node as well by using 'Write Multiple Register' but I need to write the value only when I change it, not cyclically.To better explain, I have a net in which the same value should be written from local (plc on the machine) or remote (plc controlled by codesys). I have to maintain the last value written (from local or from remote, same importance). I'm sure it should be done quickly but I can't find the solutions. Any suggestions?
+
+Hi i think you should be able to do it with the 'Rising Edge'. You just Need a variable that would be triggered when the Value changes and this could be mapped to the 'Rising Edge' variable.
+
+Thankyou very much for the respons.I made something like this:2 writing, one is for the trigger variable and the other for the value I want to change.1 reading, that is pointed to the same value of the second reading.I was espected that if I put one on the trigger variable (which come to true), the value on the writing should pass to the reading as well. But no way to connect the trigger variable to the action that identify the changing of the value on the plc?Thank you very much.
+

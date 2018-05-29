@@ -1,0 +1,8 @@
+Hi,I am trying to use the BBB with OMRON drive but I meet some problems with the SoftMotion.Indeed, I added a SoftMotion CiA420 Axis to each of my drives and when I try to log in 2 SDO read errors occur.Attachment:Abortcode.pngThe AbortCode 6020000 means that the “Object does not exist”, therefore I have to create this object or to skip this reading. Is it possible? alternatively is there other way to fix it?Attachment:Device tree.pngAttachment:Devies.pngThank you for your attention.BRT.
+
+Hi,there is a special SoftMotion driver for this drive...I would recommend to use this driver instead of the 'DS402 generic driver'BREdwin
+
+I also tried your configuration with the special SoftMotion driver but the problem remains.Attachment:problem special sm.png
+
+Hi,no everything is green so looks good  you need to check:1. realtime rt_premt patch quality (check in the task monitor the jitter)2. Update the Ethercat_Master to Ethercat_M... ( there is a Setting FramesAtTaskstart which is needed for SoftMotion)Think this should help.BREdwin
+

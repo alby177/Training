@@ -1,0 +1,10 @@
+Hi,I must establish a connection between two PCs via Ethernet.I make my program using mainly SysSocket.lib, but it is at the configuration of the communication I have a problem ..If anyone can help me ..thanks in advanceWilliamGauthey Automation France
+
+It is much easier to use Network Variables. For this you don't have to program anything (just configuring).In the menu Tools-Options-Features, enable Network Variables.Add a Global Variable list to your application and set in the properties that the variables should be sent over the network.In the application of the other device, add a Network Variable List and link this to the GVL of the other application.Now the application will automatically send the values of the variables from one PC to the other.It is most easy to have both applications for both devices in one project.
+
+Hello,I would also prefer network variable. This is the easiest way.As an alternative to the "raw" sockets, I can also recommend the CoDeSys CAA_NetBasedServices.lib in V3.This lib encapsulat the socket interface. I used the TCP Server and Client Blocks in a project without problems.By the way: what specific problems do you have?Thanks,Matthias
+
+I would recommend using the OsCat Network Library it has been tested and validated. It also has a built in NET Var module or Modbus TCP Slave/Master.You have to be signed in to download. This has been updated for CoDeSys V3.http://www.oscat.de/community/index.php ... 784.0.html
+
+_________________The Original SoMachine Ninja
+

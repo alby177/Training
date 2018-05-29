@@ -1,0 +1,4 @@
+Hello,I have a problem with polygon and dynamic points. In fact, I want to display a polygon with dynamic points that I calculate in my program, and put this polygon behind all items I have in my visu. The problem is that my polygon doesn't take these points if I put it behind all items. And if I put my polygon ahead an other item, it works. If someone have a solution...Best regards,Romain
+
+Hi,without your project we could not help.BREdwin
+

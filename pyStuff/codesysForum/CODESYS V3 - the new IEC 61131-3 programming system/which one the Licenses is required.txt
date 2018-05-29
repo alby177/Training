@@ -1,0 +1,4 @@
+HiWe need a soft PLC to support the following protocols:-ModBus Master\Slave-ModBus RTU Master\Slave-OPC/UA Maser\SlaveAlso we have 200 tags in each Station.I appreciate if someone could advise us on which one the Licenses is required for this purpose.thanks
+
+hi,Quote:>We need a soft PLC to support the following protocols:you mean this should runs on which OS?the question is:Which plc do you want to use for this?These licenses are embedded in all CODESYS Store SL (single license runtimes) so you have the choice here:https://store.codesys.com/systeme.html(except opc ua client)BREdwin
+

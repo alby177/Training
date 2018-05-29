@@ -1,0 +1,16 @@
+Is it possible to make a PLC programmed with CoDeSys and having an ethernet port talk to AllenBradley on Ethernet/IP; ie is there any library that can handle Ethernet/IP? I found a library for ModbusTCP can anyone out there help me with EthernetIP?
+
+I'd like to know the answer to this also.  
+
+Anyone?
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+Hello,
+
+to create own Ethernet-Communication there is a lib called syslibsockets.lib and depending of your target a lib called TcpUdpLib.lib
+
+ask for examples a the 3S-support :=)
+

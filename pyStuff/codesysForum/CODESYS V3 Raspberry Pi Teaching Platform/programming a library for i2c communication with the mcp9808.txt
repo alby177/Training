@@ -1,0 +1,4 @@
+Hello, i'm a totally beginner with codesys. I want to combine the raspberry pi and a temperature sensor (mpc9808). I already made the device description and now i have some problems to make a working library. Therfore i have an example code, which i want to transfer into structured text. But it's still not working. It would be great if you give some helpful hints.
+
+Hi,would recommend to start with an empty Pi projectadd Raspberry Pi Peripherals library and execute the write and read , readregister fb's manuallyin the project.If this lead to valid values, then next step could be implement this to the library.BREdwin
+

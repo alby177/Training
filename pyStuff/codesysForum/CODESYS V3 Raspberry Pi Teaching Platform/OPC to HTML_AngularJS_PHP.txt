@@ -1,0 +1,2 @@
+Hi i have established a connection between the plc and the opc server and able to read the values with the opc client. now i am intressed in reading and writing the variables from a webpage based on html, Angularjs, etc. Has anyone done this before and can be of help by explaning the steps necessary to perform?
+

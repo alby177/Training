@@ -1,0 +1,24 @@
+Hi,How can I achieve delay(wait_ time in Structure Text code?Thanks,
+
+You need to use a TON function block and either an IF statement or a CASE statement, depending on the need complexity. For a very basic solution:Code:VAR   Delay : TON;   Count : INT := 0;END_VARDelay(IN:=TRUE, PT:=T#1S);IF NOT(Delay.Q) THEN   RETURN;END_IFDelay(IN:=FALSE);//delay is over.... More code hereCount := Count +1;This is a simple example.  Be sure to call the TON FB with FALSE once to reset it so it is ready for the next time... This example should result in the variable Count incrementing roughly every second. In real life, you probably need something more advanced, but it hopefully helps you out. Note: code above was manually typed in - I may have a typo or two
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+in this function block you can use a input var for the time.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks for the reply guys,I tried to duplicate your code, please tell me why the code below is not working. Only the first timer is working not the second one.a:=1;b:=2;c:=3;wait5(IN:=TRUE, PT:=T#5S);IF NOT (wait5.Q) THEN	RETURN;END_IFwait5(IN:=FALSE);a:=7;b:=8;c:=9;wait6(IN:=TRUE, PT:=T#5S);IF NOT (wait6.Q) THEN	RETURN;END_IFwait6(IN:=FALSE);
+
+In your program, wait6 timer is only reached when wait5 timer expires.  Look at the flow of your code - if wait5 timer is not finished, then return - so the rest of your code is skipped.  You only need multiple timers if you need to run timers simultaneously.Your code must run every PLC scan - it's not like a PC script - you don't go from the first line to the last line and then be "done".  Every PLC scan (xxx uS), your code is run.  If you need to do steps 1,2,3, then you need a state machine (CASE statement):Code:CASE Step OF   0: //init      Step := Step + 1;   1: //first timer routine      a := 1;      b := 2;      c := 3;      wait(IN:=TRUE, PT:=T#5s);      IF wait.Q THEN         wait(IN:=FALSE);         Step := Step + 1;      END_IF   2: //second timer routine      a := 4;      b := 5;      c := 6;      wait(IN:=TRUE, PT:=T#15s);      IF wait.Q THEN         wait(IN:=FALSE);         Step := Step + 1;      END_IF   3: //done - don't do anything more      ;   ELSE //code error!!! restart state machine      Step := 0;END_CASENow your code executes this way:PLC scan 1 - case 0 executes (step incremented)PLC scan 2 - case 1 executes (timer starts - 5 seconds)PLC scan 3 - case 1 executes (timer running)PLC scan 4 - case 1 executes (timer running)...PLC scan xx - case 1 executes (timer expires, timer disabled, step incremented)PLC scan xx+1 - case 2 executes (timer starts - 15 seconds)...I hope that helps!
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+To scott_cunningham,It helped a lot, can't thank you enough.Thanks again. 
+
+Hello !I have tried the similar logic and it's not working. I developed a Functional block called "Fan_VFD" and used in a Program "PRG" of CFC type. Everytime when Fan_enable is TRUE;VFD_enable and error_VFD are FALSE, the timer has to count 10sec and execute the following steps. But it isn't happening in this case. The output of the timer is not resetting to False when IN:=FALSE. Please help me resetting the timer. [code][/code]FUNCTION_BLOCK PUBLIC Fan_VFDVAR_INPUT	diff_pres:REAL;	VFD_cal_setpoint:REAL;	VFD_enable:BOOL;	Fan_enable:BOOL;	error_VFD:BOOL;	bypassTimer:TON;END_VARVAR_OUTPUT 	VFD_setValue:WORD;	VFD_status: BOOL;		Fan_status: BOOL;END_VARVAR_IN_OUT	isolator_status:BOOL;	byPass_status:BOOL;END_VAR------------------------------------------------------------IF Fan_enable AND NOT VFD_enable AND NOT error_VFD THEN			isolator_status:=FALSE;			bypassTimer(IN:=TRUE, PT:=T#10s);			IF bypassTimer.Q THEN  			bypassTimer.IN:=FALSE;                        VFD_status:=FALSE;VFD_setValue:=0; bypass_status:=TRUE; Fan_status:=TRUE;			END_IFEND_IF
+
+You need to call the timer function block to get it to work and update the output variables.  If you look at your code, you only call the function block inside of an IF/THEN block. The difference is that your code simply set the input variable to false, but did not execute the function block.  You need to do every scan if you want the timer to run:Code:bypassTimer();
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+

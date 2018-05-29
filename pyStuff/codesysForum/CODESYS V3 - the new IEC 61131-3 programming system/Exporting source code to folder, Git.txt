@@ -1,0 +1,2 @@
+Hi all, how can I export my source code to a folder, so I can use Git for version control?Can I automate this process with the python scripting?Thanks
+

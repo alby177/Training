@@ -1,0 +1,8 @@
+Hi,I have success implement a license codesys to a computer but have some problem i need to format my computer.Did the license still active after i format ?Can i use the same ticket ID to reactive the license ?How i do if the license cant active ?
+
+Hi,a good option is to have the license on this runtime key's:https://store.codesys.com/accessories/c ... mpakt.htmlplease contact the Support , by using the CODESYS store 'my question' option (logged in as user)BREdwin
+
+So i can use license that i purchased in codesys store move to Codesys Runtime Key.No matter the computer have any problem i just plug out the USB and move to another computer and continue use the same license. Am i correct?
+
+Hi,we need to move the license....But if the license is then on the stick the pc with the connected key is licensed.BREdwin
+

@@ -1,0 +1,2 @@
+Addressed for CODESYS developers.There are two options for automatic Execution ordering for functional blocks in CFC editor: by topology and by data flow. I have found only “by Data Flow” option is available (for entire drawing), but actually this option does set up execution by topology. I am using CODESYS v3.5.10.30.
+

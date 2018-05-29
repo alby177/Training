@@ -1,0 +1,6 @@
+Hi,How to fix this (see attached file) ?Attachment:Sans titre.pngUnable to connect to the softplc... versions conflict.Thanks in advance.Cedric
+
+Ok, understood now...
+
+hellodowngrade your codesys System on the pc , or go to visu Setting and select same Version as online ...
+

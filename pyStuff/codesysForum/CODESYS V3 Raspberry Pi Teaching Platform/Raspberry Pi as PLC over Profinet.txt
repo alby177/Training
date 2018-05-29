@@ -1,0 +1,8 @@
+Hi all,I have Rasp Pi 3 Model B and need to do the control of asynchronous drive (SIEMENS) which is connected to control unit (SIEMENS) and I have Ethernet cable which I should connect to Raspberry Pi. I use software CODESYS Control for Raspberry Pi SL, and I have problem to in a communication between Pi and control unit. Please suggest is this project possible, do I need any additional hardware? I haven't seen projects which connect Siemens hardware with Codesys software, could this cause a problem?Thank you in advance!
+
+Hi,here is an example project how to use the Pi as Profinet device.PN Controller is possible to, add Ethernet then PN Controller.So both is possible. (Master/Slave)BREdwin
+
+Hi,Thank you for your reply.I connected everything, but I have a problem now that I cannot see any inputs/outouts from control unit. When I go online "User-defined parameters" list is empty.What could be the reason for this?I updated GSDML file from Siemens to Codesys.
+
+Hi,screenshot, or attach the project.Otherwise almost impossible to help.BREdwin
+

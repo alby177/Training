@@ -1,0 +1,8 @@
+Hello , Someone know how is possibile read data from .TRD files by ecxel for example with out have error or Someone know other program eable to manage this data files !!!!1Thx a lot !!!Felix 
+
+Hi Felix,could you either attach a .trd file or describe which program trd produce as output?BREdwin
+
+Hi Felix.felanzet wrote:Hello , Someone know how is possibile read data from .TRD files by ecxel for example with out have error or Someone know other program eable to manage this data files !!!!1Do you mean .TRD.XML? If yes, then you may have a test report from the CODESYS Test Manager.MS Excel has an XML import but I'm not sure if it would work  out of the box. You could use VBA or an other programming language to parse the XML data.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

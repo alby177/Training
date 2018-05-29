@@ -1,0 +1,4 @@
+I'm writing an application for the ABB PM571 where I need to be able to access and change its IP address without having to recompile/redownload the configuration file to the PLC.  Does anyone have any suggestions on this?
+
+Thanks -
+

@@ -1,0 +1,12 @@
+Hi there, I'm using RPI with Codesys and would like to know - is there any possibility to log the value of any variable to file, including some sort of timestamp. Is it possible without complex CSV or whatever file operations?In my application I have a temperature sensor, which I want to log.Thank you
+
+syoma wrote:Hi there, I'm using RPI with Codesys and would like to know - is there any possibility to log the value of any variable to file, including some sort of timestamp. Is it possible without complex CSV or whatever file operations?In my application I have a temperature sensor, which I want to log.Thank youHow long do you want to log the variable for and at what frequency? Sent from my SM-N9005 using Tapatalk
+
+For example, I have a PID controller, running at 100ms rate. I want to capture transient process of about 20 seconds by logging temperature and controller output every 100ms to make offline analysis and calculate better tuning coefficients for it.
+
+OK. In my opinion the best way to do it is still using the standard libraries in Codesys. See this thread for a good explanation. viewtopic.php?t=7089Sent from my SM-N9005 using Tapatalk
+
+The oscat network library is the library you would need. Sent from my SM-N9005 using Tapatalk
+
+Hi, I am resurrecting this thread as I am having some issues with my CSV logging. I am using the CAA file library standard example for creating a CSV file, this works fine and this writes my string to a CSV file. The issue I am having is that rather than writing the string to the CSV file in a new line each time it is triggered to do so, it just overwrites the old data. I have opened the file in append mode and the last part of my string is '$R $N'. I am not sure where I am going wrong.Does anyone know or have faced this issue before?
+

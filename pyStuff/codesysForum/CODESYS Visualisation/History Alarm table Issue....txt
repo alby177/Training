@@ -1,0 +1,4 @@
+Since i am still not able to display the alarm history on the codesys webvisualization, so could anyone tell me how to read an alarm file which the is create by the codesys software and display them on an alarm table or an table? 
+
+I have attached an alarm file to be read and a table which need to be display them..
+

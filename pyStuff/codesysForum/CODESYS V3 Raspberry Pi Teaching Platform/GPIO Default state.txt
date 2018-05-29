@@ -1,0 +1,2 @@
+Hi, After developping a code for my raspberry PI, I found a problem with the default state of pins. When a Pin is energized (high) into codesys, the state is unergized in the reality. Same for the Pins that are supposed to be unergized are energized so It did a big problems to me. It must be a way to fix it, from Linux code or from Codesys modification. In fact, if my programs had been connected to all the valves and pumps, I shall had big mess here.Someone know a fix for it? except use negative coil because this is not a real fix.
+

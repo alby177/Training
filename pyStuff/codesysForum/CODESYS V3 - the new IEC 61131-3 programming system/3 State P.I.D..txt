@@ -1,0 +1,8 @@
+Hello,I am using Codesys in Schneider's Electric Somachine V4.1SP2. I want to create a Auto Tuning 3 State P.I.D. process. The three states of the PID would be Null, Up, Down so i could control a three way valve. As i have seen and used before, vendors like Siemens has a so called 3-Step P.I.D. i would like to know if Codesys has a workaround for this process. Thank you in advance
+
+As I know you must do it yourself.One example (rus): link.
+
+Hi,maybe you could check the oscat libraries...https://store.codesys.com/catalogsearch/result/?q=OSCATBREdwin
+
+Edwin Schwellinger wrote:Hi,maybe you could check the oscat libraries...https://store.codesys.com/catalogsearch/result/?q=OSCATBREdwinHello again,I will check these and come back later Thanks a lot for your afort
+

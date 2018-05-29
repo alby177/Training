@@ -1,0 +1,15 @@
+I am having problems inserting instances of visualizations into a visualization that is 3,000 pixels wide (more than a screen width).
+
+The inserted visualization has a variable attached to x-offset.
+
+If the program is simulated and the x-offset set to a small value the object is drawn.  As the x-offset is increased the object sometimes disappears.  When the x-offset is greater than 1 screen the scrollbars do not always show.
+
+I have tried this with just 1 line in the instance visualisation and the same thing happens.
+
+If I try the same with a line on its own (not using an instance visualization) everything works.
+
+
+Codesys version 2.3.5.1
+
+Ken
+

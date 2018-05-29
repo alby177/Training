@@ -1,0 +1,2 @@
+Hi,I have a simple pop up dialog, and everything is working well, but I need a conditional close button - only close on valid entry. I was hoping to simply issue a close dialog function call to close it from my ST code, but can't seem to find an easy method to do so.Thanks,PJE
+

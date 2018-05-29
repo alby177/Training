@@ -1,0 +1,4 @@
+Since a few weeks, the 3s OPC server (opcconfig.exe v3.5.10.0) refuses to get discovered on my devbox. I use codesys 2.3 runtimes in combination with Classic OPC, thus UA is no option. As a client I use Matrikon OPC explorer for test purposes. It uses OPCEnum.exe to browse the system. OPCEnum does not return any installed servers. My box is a Win 10 Pro installation with the windows newest patches/_ updates.Has anybody got a workaround?
+
+Hi,I would give this a try:mmc comexp.msc /32or use:https://opcfoundation.org/developer-too ... componentsBREdwin
+

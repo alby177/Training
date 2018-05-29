@@ -1,0 +1,4 @@
+HI again!I am trying to communicate to multiple XMC4500 infineon developmentcards through modbus/TCP where they act as slaves to my raspberry pi3.Currently I have succeded to establish communication to my soft PLC at my laptop and a XMC4500 at the same time. But when I am adding a second XMC4500 device it can not have connection to both at the same time. Instead it is alternating the connection with a random cyclic behavior where one card have connection at the time. I have assigned them with static IP at 192.168.0.201 and 192.168.0.202.Is there anyone that has faced a similar problem?BRMattias
+
+I have solved the problem.Appearently my XMC4500 was assigned the same MAC addresses. This caused the router to be confused which was which. Buy assigning uniq MAC-addresses for the cards solved everything and now it is running smothly.BRMattias
+

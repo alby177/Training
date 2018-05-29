@@ -1,0 +1,6 @@
+I am attempting to find a simple way to reset the Control RTE without opening the CoDeSys development environment, opening the application, logging in, and then selecting Online -> Reset Cold. I need to use this functionality when my machine power is cycled BUT power is maintained to the RTE. In this situation, the communication between the RTE and my CNC is lost until the RTE is restarted.Is there a way to restart the RTE without rebooting the industrial PC or logging in to the application from CoDeSys? For example, does there exist a Windows API or command that will force a cold reset of the RTE?Note that I have already written a Python script to automate logging in via CoDeSys to reset the RTE. It works, but is not a great solution. Making the script adapt to changes in the application would be hard to do.Thanks,Saul LiptonApplications EngineerNUM Corp.
+
+Hi,this could be done by command line:starting:net start "CODESYS Control RTE V3"stopping:net stop "CODESYS Control RTE V3"CheersEdwin
+
+Thanks! Works great!Saul
+

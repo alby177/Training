@@ -1,0 +1,8 @@
+Hi all,I would like to send some basic production data directly from the PLC using an ethernet router which has a fixed IP sim card.I have been reading on a few different methods.DDE looks like a possibility, but I am under the impression that we require a local PC at the machine???OPC I know nothing about.Emailing using the alarm function also looks like a possibility.Can anyone think of any other ideas or give me some idea of how I would implement one of these?I am using an ABB Codesys 2.3 PM581I also have another router with fixed IP if this helps.
+
+For DDE you will need to run the Codesys program on your receiving computer.For OPC you only need a small driver which translates the data to a format readable by the receiver for example excel or open office calc.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks for that shooter. I will look at OPC.No doubt I will have lots of questions on this, but I will trawl the forum and read any relevant manuals first.Thanks again.
+

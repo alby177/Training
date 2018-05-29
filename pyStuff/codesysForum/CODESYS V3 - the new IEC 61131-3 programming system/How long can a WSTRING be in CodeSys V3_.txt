@@ -1,0 +1,20 @@
+Hi!How long can a WSTRING be in Codesys V3 if I concat it with Standard64 library?Is it maximum 1000 characthers or does it depends how many memory I have left to use?So I can concat a array for 1000 elements to one WSTRING if each element has e.g 5 characters?Best regards
+
+Volvo742 wrote:Hi!How long can a WSTRING be in Codesys V3 if I concat it with Standard64 library?255 charsYou can use other methods to do it (pointers, SysMem, etc.)
+
+e.kislov wrote:Volvo742 wrote:Hi!How long can a WSTRING be in Codesys V3 if I concat it with Standard64 library?255 charsBut isn't that STRING ? Quote:As a rule, CODESYS does not limit the string length; however, the string function processes lengths from 1 to 255 only. If a variable is initialized with a string that is too long for the data type, then CODESYS truncates the string accordingly from the right.https://help.codesys.com/api-content/2/ ... -3s-string
+
+"String functions" are all functions which used for any strings. No matter STRING type (ASCII-based charset) or WSTRING (Unicode/UCS2) - only 255 chars supported in Standard/Standard64 library.
+
+e.kislov wrote:"String functions" are all functions which used for any strings. No matter STRING type (ASCII-based charset) or WSTRING (Unicode/UCS2) - only 255 chars supprorted in Standard/Standard64 library.Ok. So there is no idea to have a longer string?Who set the 255 limit? That's very bad.
+
+As I say before - pointers, SysMem...So you need to use memory manipulation.
+
+Hi,would recomended to use StringUtils.library!BREdwin
+
+Edwin Schwellinger wrote:Hi,would recomended to use StringUtils.library!BREdwinThanks! So there is no limit for StringUtils library?
+
+I included the library StringUtils, but still, the maximum string length is 80 chars.
+
+You need to use the function calls in Stu and not the Standard library. For example:Stu.Standard.LEN should really be Stu.StrLenWStu.Standard.CONCAT should really be Stu.StrConcatWIf you look at the data type of Stu.Standard.LEN/CONCAT it is looking for a string input which has the 255 character max. This means anything you pass it automatically gets truncated if it is larger than 255. The Stu.StrLenW input is looking at a pointer which it will iterate through until it finds the terminating zero character. This gives it a way to not be size restricted.So for your code tryCode:StringLength := Stu.StrLenW(ADR(TomString));StringLength needs to be DINT. This is like how Edwin did it but he used WSTRING instead of STRING so different function calls are needed.
+

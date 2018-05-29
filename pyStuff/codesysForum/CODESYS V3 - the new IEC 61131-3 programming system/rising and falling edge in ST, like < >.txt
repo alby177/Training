@@ -1,0 +1,8 @@
+Good day, my friend!Can you help me in one question. In ST language if you write S= or R= is function like Set and Reset Relay in LD language.May be for rising and falling edge in ST exist specific symbol, for example : If <Contact THEN  ...    "<" - like Rising edge.I ask you, because not comfortable create another variable, remember mean at the end of cycle, and compare in next cycle, like this: If lastContact<Contact THEN... like Rising edge.If you know about this some interesting information, please, answer me. 
+
+I don't think this is possible because one is kind of an operator and the other is a function block that needs to remember the old value in order to detect a change.Sent from my SM-G935F using Tapatalk
+
+Ok, but how it is realizу in ladder diagram?  program remember all variable old value ?
+
+Hi BIZON,Quote:Ok, but how it is realizу in ladder diagram? program remember all variable old value ?Yes, in LD the variable of type R_TRIG or F_TRIG (from Standard.library) is declared implicitly (automatically and invisible for user).ST has no such "service", you have to declare them implicitly.Regards,Roman
+

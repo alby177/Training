@@ -1,0 +1,2 @@
+I mean those properties for which you can't bind variables.
+

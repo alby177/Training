@@ -1,0 +1,14 @@
+Hi,I'm about to test the addon Codesys SVN (demo) and have some problems to get a license ticket.I have purchased a Codesys Security key (USB dongle), downloaded the demo, and installed it with Package Manger in Codesys 3.5 SP12.However, when I follow the activation instructions for License Manager I get to step no.3 on the online instruction, or step no.10 on the offline instruction.In other words; I need a license key for Codesys SVN demo, but I do not know where to find it.https://help.codesys.com/api-content/2/codesys/3.5.12.0/en/_cds_installing_license/https://store.codesys.com/codesys-svn-demo.html?___store=enDoes anybody know how to activate this add-on in demo mode?Best regards, Bosse
+
+Hi,see here:https://store.codesys.com/codesys-svn-demo.html#System Requirementsyou need to have a security key:https://store.codesys.com/accessories/c ... mpakt.htmleven for using the demo mode.BREdwin
+
+H Edwin,Thanks for your answer.I have download the addon from same link as you provide, and I have have purchased a Security Key and I'm aware that I need it even in demo mode.But I still dont find the key that I need (example marked yellow on the picture).
+
+Hi,for activating the SVN demo license you have two options:1. LicenseManager in CODESYS - under Tools-LicenseManager2. license.codesys.comthe license key you'll get as an email when you purchase the DEMO license in the CODESYS Store - so you need to register and buy this demo rpoduct (sure purchasing with 0 €)Is your problem that you never get an email including the license ticket number on doing this?BREdwin
+
+Hi Edwin,OK, now I see the problem. As you pointing out in your question, I did not recive any email when I download the demo product.Shall I download it again or?
+
+Hi,I would rise a question in the store helpdesk (Login with your account) ->  'my question'BREdwin
+
+Thanks Edwin. 
+

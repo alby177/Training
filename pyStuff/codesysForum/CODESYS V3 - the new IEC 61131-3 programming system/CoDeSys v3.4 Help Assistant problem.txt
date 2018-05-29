@@ -1,0 +1,18 @@
+Hello everybody,I am working with a CoDeSys v3.4 and when I try to open "Help" menu, the CoDeSys get collapsed and closed.Could anybody help me?Thanks in advance!
+
+Hi,it seems that there is something wrong with the installation. I would propose to de-install CoDeSys (perhaps save your projects in case you have saved them in one of the installation directories), make a new download and re-install it again.This is definitely no general problem.
+
+_________________Roland WagnerModerator
+
+Thank you very much but I have tried what you purposed and I still have the same problem.
+
+Really strange!   I have no explanation for that effect. If it is not the setup you have installed that the only thing I could imagine is a problem on your PC. Do you have another PC available where you can test it?
+
+_________________Roland WagnerModerator
+
+Sorry for the delay answering but in other PCs I have not had this issue.I still have this problem on that PC. I also suppose that there should be something inside the PC
+
+In any case you could try the latest release CoDeSys V3.4 SP4. If the effect has not disappeared then it is really most likely a problem of that special PC.
+
+_________________Roland WagnerModerator
+

@@ -1,0 +1,6 @@
+Hi,
+Is there any tools included in CoDeSys for doing profiling and performance analysis? Or should I just setup various timers and mesure performance with them?
+
+Regards
+Leon Ljunggren
+

@@ -1,0 +1,4 @@
+Hello,I have the following application to realize:How to setup the communication of  Lenze PLC (3221C using CoDeSys) as MODBUS TCP Slave to connect to a 3th party Touchscreen using MODBUS TCP Master.Maybe somebody has experience with this kind of application.Regards,Nico
+
+NicoKamstra wrote:Hello,I have the following application to realize:How to setup the communication of  Lenze PLC (3221C using CoDeSys) as MODBUS TCP Slave to connect to a 3th party Touchscreen using MODBUS TCP Master.Maybe somebody has experience with this kind of application.Regards,Nicocodesys 2.3 or 3.5?
+

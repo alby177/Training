@@ -1,0 +1,12 @@
+Hello,I have found mostly dead links or hopelessly outdated information in regards to my problem. Hopefully anyone in this forum can advise me. I want to inject native code into my structured text. I do not care whether it is C, Python or whatsoever, I just need to find a way to embed  "external" functionality into my CodeSys Program running on the Raspberry.And yes, I have found this module provided by CodeSys that matches this very purpose, but it is geared towards device manufacturers. It is not geared towards the average joe end user. Thank you in advance for your time to respond to this thread.
+
+_________________J.Reitzig
+
+The module was at one time available for everyone but now only to their OEMs (implies not easily implemented/issues/etc). Many people have asked - nothing has been offered up. You may be better off setting a GPO (general purpose output) that your other code is watching for.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Modbus is your friend.  Its the best way that I have found to get external data into and out of Codesys.Just add the relevant library into your application (C, Python, etc), and just send data from a client (your code usually), into a Modbus slave running in Codesys.  I've done this with C, Python, and Node-Red and they worked just fine.For example, I had an Adafruit Ultimate GPS board plugged into the Pi.  I used Adafruit's sample code, and just added the Python Modbus library, and sent position data over 4 registers into Codesys.For the Node-Red, I simply added the Node-Red-Contrib_Modbus library, and was sending data to and from Codesys from Grove Sensors (also added via Node-Red library)I've also used Modbus from Codesys into ESP8266 modules.  This was using the Modbus libraries available for Arduino.  I could pass all the IO of the ESP8266 (an Adafruit Huzzah actually), and use it as a generic remote wireless IO node.
+
+Hi @fixstuff555 I have a smart home project. I did for this project that connecting between arduino/ethernet shield and raspberry with modbus tcp in codesys. But I need to do this project with wireless. So I had a ESP8266. But I didn't know arduino code. Can you help me ?
+

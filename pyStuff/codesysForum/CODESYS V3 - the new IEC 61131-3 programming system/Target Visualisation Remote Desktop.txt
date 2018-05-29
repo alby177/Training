@@ -1,0 +1,2 @@
+Hi everyone,Is there a reason why a target visualisation will not start if I am connected to the target by Remote Desktop?If the PLC is started before I Remotely connect, it works. But if I am connected by Remote Desktop and then start the PLC the Visualisation will not start in the remote session. If I then log on locally on the target, the visualisation is there!!!Also, is there a way to start the visualisation manually?Thank you.
+

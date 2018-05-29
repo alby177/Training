@@ -1,0 +1,4 @@
+Hi allI would like to sync text files that I saved onto the SD Card using Codesys to Grive (Linux Google Drive). I see that the files are saved to the root directory of Codesys but I cant seem to access these files from the Linux filesystem (Jessie).Is there any way that I can save these files to an area on the SD Card that both file systems can have access to?If not is there any work around that you can suggest?Thanks, much appreciated!
+
+Ok, so I got this working. I thought that Codesys was running in its own type of VM with its own data area, I was wrong with this assumption. I was easily able to save the data to the standard file system on the SD Card. Installed Insync and the cloud syncing is working like a charm.
+

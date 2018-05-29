@@ -1,0 +1,17 @@
+Hiya ppl,
+
+I have TLCC v1030.
+Is there any documentation for all its *.LIB files? 
+
+e. g.
+TLCC_Standard_V1030.lib
+TLCC_SysLib_V1030.lib
+TLCC_Check_V1001.lib
+
+Thanks
+
+TLCC_MAN wrote:Hiya ppl,I have TLCC v1030.Is there any documentation for all its *.LIB files? e. g.TLCC_Standard_V1030.libTLCC_SysLib_V1030.libTLCC_Check_V1001.libThanks
+
+Hi, 
+all the documentaion should be in the installed target area (there should be a directory called help )... if not, please contact the manufacturer.
+

@@ -1,0 +1,16 @@
+Hi
+
+We have some problems to save the retain variables on a file on the harddisk(Retain.bin).
+We have tried with both the functions "SyssaveRetains" and in the plc browser(save retains).
+
+Does anyone have an excample that shows how this works, and what editor that can read the retain.bin file.
+
+Hello
+
+An example project for the PLCWinNT is enclosed to this entry. As the retain file is binary you should open it with a hex editor to look into.
+
+Yours sincerely
+Frank Hailer
+
+_________________Qualitätssicherung
+

@@ -1,0 +1,4 @@
+Hi I'm trying to install CODESYS Control for PFC200 SL on my Wago PFC200.When i'm upgrading i get the following error message. I use standart user: admin and password:wago.I tried to login with ssh with user: admin and password:wago and this i working.Someone have a idea what is wrong?[ERROR]         Target [removing]: sudo: no tty present and no askpass program specifiedJesper
+
+Hi I solved it. The problem is that in the Guide firststeps_codesys_control_for_pfc200_sl_en.pdfthey say to login with User:admin and Password: wago, but then you don't have root access on the PFC200.You have to use User:root and Password:wago.
+

@@ -1,0 +1,5 @@
+The buffer size for RX = 256, TX = 256, in CanDrv library. Does it means that application can receive a maximum of 256 PDOs per cycle?
+
+Regards
+Rajesh G
+

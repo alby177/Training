@@ -1,0 +1,43 @@
+Hi One clear question for you:
+
+System:
+CoDEsys 2.3.7.5
+
+Running in a multi-task enviroment, I have a low-priority task that does a sorting on a large array, wich sometime takes a long while to finish (several seconds).
+Will the scheduler restart the process on top of itself, as it is scheduled to run with a fixed cycle of 100ms?
+
+I've been unable to find a clear description of this, I assume not.
+
+NExt question:
+ANyone have a good way of sorting an array of structs, by a string inside the struct.
+Right now i've made a String-compare-function using OSCAT, that is called and returns that Str1>Str2, Str1<Str2 or Str1=Str2, .....
+and then do a cocktail-sort (bubble-variant)  
+
+Issue is sorting an array of recipies by their recipe-name.
+
+Interesting that the task takes so long. Typically you have a watchdog timer that wouldn't let something run for more that ~100msec.
+
+How are the recipes given to you and how many and often are they received? Maybe you can do the following:
+
+Create a multi-dimensional array.
+Sorted[1..26,1..100] of MyRecipe;
+
+When received look at the first character of the name and add it to the array like. A = 1 B= 2, C=3, Z=26. Instead of sorting all the time you can break the sort into smaller chunks. So if you get a new recipe "Cookies" you can add it to the Sorted[char(C) - 64,uLastIndex] then sort only Sorted[3,100] instead of all recipes. Because it sounds more like you are inserting instead of resorting?
+
+Or if you have control of it add an id to the recipe and let the software outside of the PLC sort them?
+
+_________________Thanks,
+Steve Pfeifenroth
+
+spfeif wrote:Interesting that the task takes so long. Typically you have a watchdog timer that wouldn't let something run for more that ~100msec.How are the recipes given to you and how many and often are they received? Maybe you can do the following:
+They are not recieved, but made online while the application is running (2 axis Scara-robot and several more servos and IO). When the operator wants to store the current active recipe, I insert it into the array, sort it, and I store the whole array on disk. Array is fixed size of 300, and is allways loaded into memory during bootup.
+
+If the array is allready sorted it does not take long, about 7-30ms.
+However if its is not, which was my testcase, and have long string as names like '0000001' '0000002' etc, then it took quite a while. The string compare function takes longer due to the names, and the sorting was worst-case for a bubble-sort. 
+
+Seeing its not an issue during production, as the array is allways sorted except for the new insert, I'll just leave it be.
+
+Actually the write-access onto a flash-card afterwards takes longer, it takes 500ms or more.
+
+Nicolai
+

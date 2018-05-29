@@ -1,0 +1,8 @@
+Best,I have the following problem, I now have a timer, where I use the ET on a screen that I convert to a string, but unfortunately I see the following 24m30s490ms, is there a possibility to defend the 490ms defenitively,?BrJeffrey Collewijn
+
+You could check the OSCAT library - see CoDeSys store.  Or, this is easy enough to roll your own.  Here is one way:TOD is a nice format for this (TOD#hh:mm:ss.mmm).  Basically convert TIME to TOD to STRING and trim it for the answer.Code:FUNCTION CleanTime : STRINGVAR_INPUT   TimeValue : TIME;END_VARVAR   MyTOD : TOD;   MyStr : STRING[12]; //lose the millisecondsEND_VARMyTOD := TIME_TO_TOD(TimeValue);MyStr := TOD_TO_STRING(MyTOD);CleanTime := Standard.RIGHT(STR:=MyStr,8);So now, you can just do:Code:Pretty := CleanTime(Timer.ET);
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Or, you can do:a:time;a:=a/1000;and aftera:=a *1000as a is an integer kind...
+

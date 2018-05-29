@@ -1,0 +1,4 @@
+I'm hoping to be able to create my own login dialog and execute a ST script to perform the login.  I assume it's possible with either VisuUserManagement or VisuElemsWinControls but I can't seem to find a function that lets me attempt to issue a login.  I searched the forum and only found a post from 2008 with someone having the same question but no responses.
+
+I realise this is a very late reply - I've only just seen the question. Still the answer may be useful to someone else.3S publish a reference library that you can take as a model to create your own user management dialogs. Look in C:\Program Files (x86)\3S CODESYS\CODESYS\Projects\Visu\Dialogs\VisuUserMgmtDialogs.library
+

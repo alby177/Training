@@ -1,0 +1,4 @@
+How a Canopen master can send NMT Message(NMT start) cyclicly per second?How a Canopen master can send and receice PDO messages?
+
+This is all automatically done by the driver.If you really want to send the NMT messages yourselves you can add the CIA405 library.
+

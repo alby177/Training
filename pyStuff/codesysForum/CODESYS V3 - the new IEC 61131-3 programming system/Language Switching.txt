@@ -1,0 +1,6 @@
+hello    how can i switch the languages in visualization in run time.Can any one give me sample programs
+
+Hello,You should read the English online help : Core_Visualization -> Elements -> Generally Configuring Element -> Use Text and LangageHappy reading  
+
+Just create a button with the input to change the language.In the code you can use the variable "visuElems.CURRENTLANGUAGE" to see which is the currently active language, but you can also write to this STRING variable to modify it.
+

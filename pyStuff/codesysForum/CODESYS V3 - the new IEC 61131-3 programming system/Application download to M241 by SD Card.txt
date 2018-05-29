@@ -1,0 +1,2 @@
+Hi there,I have one simple question. I understand how to make application download to M241 PLC by SD card.I want to provide possibility of app download by SD card to PLC only once. So, my question is how to do this.Is it necessary to change Script.cmd file or somewhere else is catch.Thanks in advance for any possible answer & BR
+

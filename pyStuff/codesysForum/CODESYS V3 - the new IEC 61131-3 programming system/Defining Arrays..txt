@@ -1,0 +1,50 @@
+Hi Guys,I'm trying to define an arrayAn example of what I'm trying to do is ARRAY [0..8] OF INT := [1,2,3,4,5,6,7,8,9];Is there an quicker way of defining the array?I tried the following:ARRAY [0..8] OF INT := [1..9];but it resulted in an error.Thanks.
+
+Do you need the initial values 1 to 9?Or is it also OK when all values are equal?From the Codesys help.Example of the full initialization of an array: Code:arr1 : ARRAY [1..5] OF INT := [1,2,3,4,5];arr2 : ARRAY [1..2,3..4] OF INT := [1,3(7)]; (* short for 1,7,7,7 *)arr3 : ARRAY [1..2,2..3,3..4] OF INT := [2(0),4(4),2,3];  (* short for 0,0,4,4,4,4,2,3 *)
+
+Thanks for your reply BakkertjeI probably didn't explain it properlyCode:arr1 : ARRAY [1..5] OF INT := [1,2,3,4,5];From your example that's fine if you have an array of 5 but if I had an  array of 100 Is there a quicker way of doing ARRAY [1..100] OF INT :=[1,2,3,4,5,6,7 to 100]Thanks
+
+I think not direct by the declaration.But you can use a FOR loop which you run one time after power up to set all the values  
+
+Hi Bakkertje,Thanks for the replyBut I don't understand what you mean.Is there a basic example you could show me?Thanks again
+
+He means like this:Code:MyArray ARRAY [1..100] OF INT;i: INT;bInit: BOOL := FALSE;IF NOT(bInit) THEN   FOR i := 1 TO 100 DO      MyArray[i] := i;   END_FOR   bInit := TRUE;END_IF
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+Thank you both Bakkertje and ndzied1 that is exactly what I was looking for.
+
+If your variables are inside a FB, you can also use FB_INIT() to initialize your FB and any variable you want to before your code runs.  FB_INIT() is called automatically at the creation of the object, not when you hit "PLAY" on the PLC.  The main difference would be your variables are all initialized without your code actually having to start and run "init" code.  In many cases, this is a personal preference (OOP vs procedural), but for large projects with a lot if initialization, this can be a noticeable amount of time, which is removed with the FB_INIT() technique.  NOTE: FB_INIT() requires a couple VAR_INPUTS - see the help for more info.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+@ndzied1, it looks that you can read my mind  You made exactly the idea that I had in mind.@Scott, I don't know this FB_INIT() and FB_Exit() functionality. This can be very useful  
+
+One word of warning: FB_INIT() does not overload like methods - it is additive.  This was a decision by the developers.  So this means if you EXTEND a FB and add another FB_INIT(), CoDeSys will use the FB_INIT() of the base class and the FB_INIT() of the EXTENDED class.  See the help - it warns about this.
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+Hello,How do I check if all the values in an array are FALSE?Code:VAR        myArray : ARRAY[0..5] OF BOOL;   i: INT;   xAllFalse: BOOL;END_VARIF myArray[0] = 0 AND myArray[1] AND .... THEN       doThis();END_IFI was trying to do this but it didn´t work.Code:FOR i := 0 TO SIZEOF(myArray) BY 1 DO   IF NOT myArray[i] THEN      xAllFalse := TRUE;   ELSE      xAllFalse := FALSE;      END_IFEND_FOR
+
+Try this:Code:VAR CONSTANT   c_min : INT := 0;   c_max : INT := 5; END_VARVAR         i : INT;   xAllFalse : BOOL;   myArray : ARRAY[c_min..c_max] OF BOOL; END_VARCode:xAllFalse := TRUE;FOR i := c_min TO c_max BY 1 DO   IF myArray[i] THEN      xAllFalse := FALSE;      exit;   END_IFEND_FOR
+
+@Bakkertje - Thanks for your answer but same result. Not working.
+
+Hi drChiavo,That is strange I test it and I see no problem.Did you use the "exit;" to jump out the FOR loop?When you don't use this in your code the result depends only on the last item of the array.When you don't use this in my code you are checking always all item of the array, which is not necessary.
+
+Hello Bakkertje,Yes, I have used "EXIT;". What I want to do is to call a function if all the values are FALSE.For example,Code:VAR CONSTANT   c_min : INT := 0;   c_max : INT := 5;END_VARVAR         i : INT;   xAllFalse : BOOL;   myArray : ARRAY[c_min..c_max] OF BOOL := [TRUE,FALSE,TRUE,FALSE,TRUE];END_VARSo just if all are "FALSE" THEN.. DoSomething()... but the values change during the RunTime. I used your method but it just works for the first value. This means that when I change the first value of myArray[0] to "FALSE" then the function DoSomething() is called and it should be just called if myArray[2] and myArray[4] are also FALSE.
+
+Hi drChiavo,Do you need this each PLC cycle that for each value that is false the "doThis();" is called? Or only it one time for each value that is changed from TRUE to False?
+
+Hello Bakkertje,I just need to call the DoSomething() one time, but just if all the values are false.For example,if I have in my array two values that are true (i.e. myArray[2] := TRUE and myArray[4] := TRUE) then I have to change this two values to false. This means that if I just change one value (i.e. myArray[2] := FALSE) DoSomething() is NOT called. DoSomething() will be called just if the other value is also FALSE. (i.e. myArray[4]:= FALSE ... called DoSomething()...)
+
+Hi drChaivo,If I correct understand what you want than is this the solution:Code:VAR CONSTANT   c_min : INT := 0;   c_max : INT := 5; END_VARVAR         iIndex : INT;    idoThisCounter : INT;   iItemsFalseCounter : INT;   xTriggerOneTime : BOOL;   myArray : ARRAY[c_min..c_max] OF BOOL; END_VARCode:iItemsFalseCounter := 0;FOR iIndex := c_min TO c_max BY 1 DO   IF myArray[iIndex] THEN      xTriggerOneTime := TRUE;      EXIT;   ELSE      iItemsFalseCounter := iItemsFalseCounter + 1;   END_IFEND_FORIF iItemsFalseCounter = (c_max+ 1)    AND xTriggerOneTimeTHEN   xTriggerOneTime := FALSE;   idoThisCounter := idoThisCounter + 1;   doThis();END_IFRegards, Bakkertje
+
+Yes! That works!Thanks a lot!Best regards,Chiavo
+
+A suggestion if your array is rather large: Use a method to check for all false and use AND_THEN, which is a conditional and check - if the first element is false, the rest of the IF is not evaluated... Something like this:Code:PROGRAM PLC_PRGVAR CONSTANT   c_min : INT := 0;   c_max : INT := 5;END_VARVAR         myArray : ARRAY[c_min..c_max] OF BOOL := [FALSE,FALSE,FALSE,FALSE,FALSE];   DidIt : BOOL := FALSE;END_VARIF NOT(DidIt) AND_THEN AllAreFalse() THEN   DoSomething();   DidIt := TRUE;ELSE   ; //not doing it anymoreEND_IFOnce "DidIt" is TRUE, AllAreFalse() will not be called.  Also, by putting the checking in a method, the code intent should be easier to see two years from now when no one remembers what we were doing.Code:METHOD PRIVATE AllAreFalse : BOOLVAR   i : INT := 0;   Check : BOOL := TRUE;END_VARWHILE Check DO   IF myArray[i] THEN      //this one is true - stop checking      AllAreFalse := FALSE;      Check := FALSE;   ELSE      IF i <= c_max THEN         i := i + 1;      ELSE         //end of array - all were false         AllAreFalse := TRUE;         Check := FALSE;      END_IF   END_IFEND_WHILE(This is an example of how our company would solve this as we are trying to follow the PLCopen programming recommendations, which suggests not exiting early out of FOR loops and always show the ELSE, even if it is empty to make the "intent" clear).
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+

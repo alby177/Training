@@ -1,0 +1,4 @@
+Hi all,I've seen that it's possible to change the current visualisation via code, with or without a frame, but is it possible to display a dialog from code?Code:IF expression THEN   ShowDialog();END_IF;
+
+I would be interested in knowing the answer to this question as well. Does anybody have the knowledge? Do we have to add a visualization? The visu adds quite a bit of size to the application...Thanks,Saul LiptonApplications EngineerNUM USA
+

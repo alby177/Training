@@ -1,0 +1,19 @@
+Hello to everyone,
+I have a 750-819 Wago Plc that' s running standalone.
+I' ve just connected it to the Lon net.
+How may I read the internal Plc variables from the Lon net ?
+I' m using WAGO I/O PRO CAA software tool.
+May I create PLC Lon variables ? 
+
+Thanks a lot.
+
+Bye
+Claudio
+
+sorry i mist this message.
+yes it is possible to use it on a lon.
+make marker like %MW0 same like input and output
+and then you can see them on a special address.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,6 @@
+How does GetCurrentVisu works?Thanks in advance
+
+with respect to what device?
+
+I am working with a Windows embedded CPU which has a screen of 5´´(CoDeSys SP RTE).I would like to know, how can I get the visualization screen that is being used at the moment, because I would like to active some variables in determinate visualization screens.
+

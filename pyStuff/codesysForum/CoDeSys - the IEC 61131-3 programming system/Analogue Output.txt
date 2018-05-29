@@ -1,0 +1,10 @@
+HI,I am using Codesys 2.3 for Wago Controller.Can some one advice me which library to use to unscale the value to analog output module.I am using this software for first time.Please reply,Pavan
+
+Hi, I also use Wago controllers but I don't know witch library has scaling function.. .it's faster if you create a scaling function from your analog out value (%,....) and the "points".. ex: 0-4mA= 0-32767points..Made from your own it's like this:Out=(OutMax-OutMin) /(InMax-InMin)*(In-InMin))+OutMin  Or you can find something already done into OSCAT into http://www.oscat.de/  libraryRegards
+
+in util.lib are several functions for this, i do use oscat for this, most i copy the txt version to keep the program small.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thank you guys.I found scaling block LIN_TRAFO from util.lib.
+

@@ -1,0 +1,10 @@
+Hi everyone! Has anyone used 24C32(64) EEPROM chip to saving retain variables? Is it possible? I have this part: http://www.ebay.com/itm/400503978923
+
+You can save retain in data file like here viewtopic.php?f=21&t=5722&start=15 then use http://www.gallot.be/?p=180 and execute from codesys ./eeprom -f data -w to save and to read ./eeprom –r –f data
+
+murdemon wrote:You can save retain in data file like here viewtopic.php?f=21&t=5722&start=15 then use http://www.gallot.be/?p=180 and execute from codesys ./eeprom -f data -w to save and to read ./eeprom –r –f dataHi! Thank you very! Tell me please where I'll find this programm for eeprom? This link is damaged root# wget http://www.lm-sensors.org/browser/i2c-t ... format=txt  ...
+
+Here is last version https://github.com/dgallot/i2c-tools
+
+Hello. Still, how to organize external at24cxxx memory accesses in codesys?
+

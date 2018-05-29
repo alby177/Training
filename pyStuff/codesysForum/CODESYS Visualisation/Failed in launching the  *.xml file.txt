@@ -1,0 +1,2 @@
+Hi..Friends,        I added the *.xml file in Language of visualization settings.In simulation mode, Language change happened. But in Controller Language change didnot happen.
+

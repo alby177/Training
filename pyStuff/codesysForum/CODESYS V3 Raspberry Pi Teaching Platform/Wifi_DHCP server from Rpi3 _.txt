@@ -1,0 +1,8 @@
+Hi everybody,I just want to enable a wifi dhcp server access from the Rpi3 to have webvisu on any wireless device. I did it on Rpi 2b+ , but on the third version .... no success.May be I should say that I'm a newbie on Linux/Rpi !Huge Thanks to Helpers.
+
+Hi,guess the following link should help you to do this:https://frillip.com/using-your-raspberr ... h-hostapd/BREdwin
+
+I'm in exactly... I'll give report tomorrowThanks
+
+ Nice, works after modifying "/etc/dnsmasq.conf" like this (# before lines):  interface=wlan0      # Use interface wlan0  listen-address=172.24.1.1 # Explicitly specify the address to listen on  #bind-interfaces      # Bind to the interface to make sure we aren't sending things elsewhere  server=8.8.8.8       # Forward DNS requests to Google DNS  #domain-needed        # Don't forward short names  #bogus-priv           # Never forward addresses in the non-routed address spaces.  dhcp-range=172.24.1.50,172.24.1.150,12h # Assign IP addresses between 172.24.1.50 and 172.24.1.150 with a 12 hour lease time
+

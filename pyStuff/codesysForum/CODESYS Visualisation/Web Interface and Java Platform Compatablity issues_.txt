@@ -1,0 +1,14 @@
+
+I recently encontered the following issues with the Codesys Web Interface.
+
+1)  Update time for text elements TOO slow.  
+2)  I can't get visualization objects to refresh without resizing windows.
+
+We Downgraded the Java runtime environment from 1.5.0.0.4 to 1.4.2.0.3 and the functionality changed noticably.  
+
+Integer or text object with highest priority (Lowest number on the element list) displayed well.  All other objects needed to be clicked to refresh.  Visualization objects required a window resize to be refreshed.
+
+What version of Java Runtime environment is best??
+
+I made some progress some time ago.  Problem is not really related to Java runtime.  I've found that if you utilize some complex visualizations in a nested fashion, it can cause the visualization not to update.  Example:  a visualization with 9 identical gauges displaying the same data.  If you group 6 of them in a nested fashion, only the other 3 will update properly.
+

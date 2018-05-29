@@ -1,0 +1,124 @@
+I saw CODESYS running on the BBB in Nuremberg last year. Are there any plans of releasing this as well?
+
+Any answer ?BeagleBone Black is much more better  board then RPI for PLC application.
+
+Hi,I agree, decision is still pending...BREdwin Schwellinger
+
+I hope decision will be positive, cost effective and available as RPI.
+
+Are there any new information about Beaglebone Black and CoDeSys? It would be awesome to be able to use one of both Pi for Video etc and BBB because of many GPIO.BR
+
+Any more new info on this? If this is not going to happen I will have to look for another solution as this would work perfectly for my application.
+
+Hi,not yet which fieldbus / interface are you plan to use on your Project?BREdwin
+
+BeagleBone Black would be awesome with all of its additional IO. ModBus/TCP would be a common bus we would use.
+
+Modbus RTU. I will have to use the rs485 cape for that. Modbus TCP would be a good option as well. I see there is also some nice touch screens available for it as well.
+
+I'm an EE student, BBB would be an excellent platform for us to do low cost projects with.We're doing our PLC programming labs on 100 year old Hitachi PLC´s with some awful IDE probably made for Windows 3.0, it would be a bit nicer to be able to work in Codesys IDE instead.
+
+A new contender http://imx.solid-run.com/wiki/index.php ... d_Hardware
+
+_________________The Original SoMachine Ninja
+
+Edwin Schwellinger wrote:Hi,not yet which fieldbus / interface are you plan to use on your Project?BREdwinBBB. Serial, SPI, GPIO
+
+I would really like to be able to use Codesys on the BeagleBone as well.
+
+Well If there was a choice I'd have Codesys 3 o both, RPI and BBB...and that's because you can get a litle different addon cards/capes/whatever-you-call-them for each. As it seems there is already some sort of a project working with BBB+Codesys 3.5.4+CANOpen+LCD here:http://www.altsoft.kr/archives/portfoli ... bone-black(I have no affiliation with the page in the link, nor do I understand Korean, so I don't know if there's something inappropriate on that page or even if it is in fact a working solution. If necessary the board moderators can freely remove the link.)Cheers
+
+I hope you can help me in installing the latest Codesys on to latest Debian Beagle Bone Black.When executing:  dpkg -i codesyscontrol_arm_raspberry_V3.5.5.0.debI got the following error:Selecting previously unselected package codesyscontrol.(Reading database ... 61227 files and directories currently installed.)Unpacking codesyscontrol (from codesyscontrol_arm_raspberry_V3.5.5.0.deb) ...Setting up codesyscontrol (3.5.5.0) ...make_touchmake_blacklistmake etc modulesmake_daemonupdate-rc.d: using dependency based boot sequencingupdate-rc.d: warning: default stop runlevel arguments (0 1 6) do not match codesyscontrol Default-Stop values (none)Backup licensestar: Removing leading `/' from member namescodesyscontrol.bin: no process found/etc/init.d/codesyscontrol: 32: /etc/init.d/codesyscontrol: cannot create /sys/bus/platform/drivers/bcm2708_i2c/unbind: Directory nonexistent/etc/init.d/codesyscontrol: 33: /etc/init.d/codesyscontrol: cannot create /sys/module/i2c_bcm2708/parameters/baudrate: Directory nonexistent/etc/init.d/codesyscontrol: 34: /etc/init.d/codesyscontrol: cannot create /sys/bus/platform/drivers/bcm2708_i2c/bind: Directory nonexistent/rootcodesyscontrol startedpostinst finishedIs there anything I have to check / modify so the CodeSys will run on Beagle Bone Black.Thanks for helping.
+
+Hi,the Raspberry Pi Runtime is not made/compiled to run on a beaglebone black,you need a special beaglebone release for that.This will probably come but the schedule when this will happen is still not fixed.BR Edwin
+
+Edwin Schwellinger wrote:Hi,not yet which fieldbus / interface are you plan to use on your Project?BREdwinDear Mr. Schwellinger,I'm also interested in an image for the BB black.As you asked about field busses: EtherCAT and CAN, as well as RS232 would be an awesome combination.When do you know if you'll make a release?
+
+Hello,Is there any more info on this possibility?  If the decision is made not to ever release for the BBB, is it possible for a customer to do this on their own with an SDK?
+
+Is there a technical reason why the raspberry firmware does not run on a BBB?Is there a reason why the firmware does not run on just any arm based linux environment?
+
+Hi,yes, there is a reason:We will release a version for BBB (Q2) which will be adapted to the hardware of the BBB- more GPIO's - CAN - all the additional stuff which is available on BBBNew devicedescription/libraries everything included in a CODESYS BBB store package as it is now already available for Raspberry PI -so this will be a different product.BREdwin
+
+Very good news.  Can't wait!
+
+also waiting codesys support on BB/BBB with al the cool stuff like i2c,SPI,CANopen, Profibus, profinet.
+
+WOW BBB codesys released!!!
+
+Will the Beaglebone have retain memory?  It looks like the board has some flash.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+Hi,by default not (without additional hardware) -> same as Raspberry Pi.You have two options:1. use an UPS System - graceful shutdown of the system is needed.2. find a cape which has additional NVRAM and map this area as Memory for retain data. (from my experiance hard to find - to is not available for BBB)GrüßeEdwin
+
+please create a sub forum for bbb.
+
+What about I2C & SPI bus on BBB?
+
+The BeagleBone Black CODESYS Runtime is now available in the store.http://store.codesys.com/systeme/codesys-control-for-beaglebone-sl.html
+
+i have a error message when updating beaglebone black.my bbb image is  bone-debian-8.4-lxqt-4gb-armhf-2016-05-13-4gb, flashed to eMMC and boot from eMMC.is this the problem?
+
+Does codesys runtime get use of BBB PRU?
+
+Hi,at the moment not, which feature/features you might use if this would be available?BREdwin
+
+for direct use: high speed data adquisition like a adcfor motion task do i need a RTOS? with this runtime i could use preempt-rt or xenomai?
+
+Hi,yes you could use rt_preempt, then the plc/runtime is realtime capabaleno for xenomaiBR7Edwin
+
+How can I enable the realtime capabilities of the Codesys on the beaglebone via rt_preempt?Can I use the beaglebone with codesys in industrial applications? or it's not recommended like the raspberry - codesys combo?does it have ethercat master functionality?thanksRotem
+
+Hi Rotem,How to install a Beaglebone RT_Preemt patched Linux kernel:Step 1: Get default Beaglebone imageDownload the latest Debian image for BeagleBone:http://beagleboard.org/latest-imagese.g. JessieFlash it to a micro SD (e.g. with Win32Imager).Step 2: Convert it to a realtime LinuxBoot Beaglebone from SD card. Connect via putty (e.g. over USB; IP address: 192.168.7.2).Connect Beaglebone to the internet.cd /opt/scripts/toolsgit pull-> specific version   ./update_kernel.sh --kernel 4.4.14-bone-rt-r11better:./update_kernel.sh --bone-rt-kernel --stable	The beaglebone kernel will be automatically updated to a realtime kernel.After reboot the realtime kernel is booting.Step 3: Set CPU Governor to performance.For getting better realtime performance set the CPU governor to performance:Edit file /etc/init.d/cpufrequtils and change the entry GOVERNOR="ondemand" to performance.Step 4 (optional): Enable CAN capeFor enabling CAN cape support add following line to /boot/uEnv.txt:cape_enable=bone_capemgr.enable_partno=BB-CAN1Step 5: Flash SD card to eMMCcd /opt/scripts/tools/eMMC/./init-eMMC-flasher-v3.shNow wait until LEDs stop flashing.You can remove SD card and boot from eMMC now.Note: If you want to optimize boot time you can deactivate services at startup:e.g. deactivate apache server, Bluetooth,…Furthermore it’s possible to recompile u-boot with bootdelay =0. This saves 2 seconds boot time.We will add this to th FAQ section.Quote:Can I use the beaglebone with codesys in industrial applications? If you make the Image/OS robust for just switching it off or use an ups, yes.Quote:does it have ethercat master functionality?It has ethercat master functionalityBREdwin
+
+Edwin Schwellinger wrote:Hi Rotem,here is a small FAQ for using rt_preemt on BBB:Download the latest Debian image for BeagleBone:http://beagleboard.org/latest-imagese.g. JessieFlash it to a micro SD (e.g. with Win32Imager) and boot Beaglebone from it.Connect Beaglebone via USB to your PC and connect via putty to address 192.168.7.2.On Beaglebone console:cd /bootnano uEnv.txtUncomment: cmdliner=init/opt/scripts/tools/eMMC/init-eMMC-flasher-v3.sh	This turns the SD card image into0 a flasher imageSave file and close nano.Type init 6.	Beaglebone reboots and SD card content is flashed to eMMC. Wait until LEDs are not flashing anymore. Then remove SD card.Reboot Beaglebone	Beaglebone boots now from eMMC. Boottime is about 1 minute.For the following steps the beaglebone has to be connected to the internet.cd /opt/scripts/tools./update-kernel.sh –kernel 4.4.14-bone-rt-r11	The beaglebone kernel will be automatically updated to a realtime kernel.When script is finished  rebootBoot time is about 22s.For getting better realtime performance set the CPU governor to performance (see GettingStarted.pdf).Note: You have to add this command to the startup script.For using a CAN cape add following line to /boot/uEnv.txt:cape_enable=bone_capemgr.enable_partno=BB-CAN1If you want to optimize boot time you can deactivate some commands in startup script:e.g. deactivate apache server, Bluetooth,…Furthermore it’s possible to recompile u-boot with bootdelay =0. This saves 2 seconds boot time.We will add this to th FAQ section.Quote:Can I use the beaglebone with codesys in industrial applications? If you make the Image/OS robust for just switching it off or use an ups, yes.Quote:does it have ethercat master functionality?It has ethercat master functionalityBREdwinHello, tell me who is more productive raspberry 3 or BeagleBone Black?
+
+It depends on your application: for a scada, i would use a raspberry and for an ethercat master with motion and i/o, a bbb is better. why raspberry license is 35e and bbb one 50e?
+
+Edwin Schwellinger wrote:Hi,by default not (without additional hardware) -> same as Raspberry Pi.You have two options:1. use an UPS System - graceful shutdown of the system is needed.2. find a cape which has additional NVRAM and map this area as Memory for retain data. (from my experiance hard to find - to is not available for BBB)GrüßeEdwinAs Edwin said, BBB have a  power management IC. you can connect a rechargeable battery (UPS) on TP5 .. TP8 and normal power supply.when power supply is disconnected, the power management IC will immediately switch over to UPS. in this case you can read a input onto one of the GPIO for save and auto shutdown.BR,Stablex
+
+I am following  Getting Started guide to setup runtime on Beaglebone Black. So far it is ok with configuring Beaglebone and not ok to transfer runtime to BBB. In Codesys menu TOOLS the option "Update BeagleBone Black" is not available. I don't see it  at all. (Codesys 3.5.9 with installed Beaglebone package)Package Manager says CODESYS Control for BeagleBone SL 3.5.9 is installed.Codesys 3.5.9 is installed on Windows 7 64bitWhat would be the first step to troubleshoot?ThanksBelow is the installation log :Code:Users on this machine:================================================================================Kind:            Plug-inData:            PlugIns\BBBUpdate.plugin.dllData ID:         Guid=40962830-b582-4177-b99f-d5d6469896ac Version=1.0.0.0Current profile: ================================================================================Target item is not yet existing.==> Target item has been created.==> Reference counter has been created. Initial value is '1'.==> The action requires a restart.================================================================================Kind:            Profile changeData:            40962830-b582-4177-b99f-d5d6469896acData ID:         InstallationKey=12; Profile=CODESYS V3.5 SP9 Composer Dedicated; PlugIn=40962830-b582-4177-b99f-d5d6469896ac;Current profile: CODESYS V3.5 SP9 Composer Dedicated================================================================================Target item is not yet existing.==> Target item has been created.==> Reference counter has been created. Initial value is '1'.==> The action requires a restart.================================================================================Kind:            Profile changeData:            40962830-b582-4177-b99f-d5d6469896acData ID:         InstallationKey=12; Profile=CODESYS V3.5 SP9; PlugIn=40962830-b582-4177-b99f-d5d6469896ac;Current profile: CODESYS V3.5 SP9================================================================================Target item is not yet existing.==> Target item has been created.==> Reference counter has been created. Initial value is '1'.==> The action requires a restart.================================================================================Kind:            Add menu commandData:            f872d1e4-0650-431d-8073-54b5fbdfcf8bData ID:         Command=f872d1e4-0650-431d-8073-54b5fbdfcf8b;Profile=CODESYS V3.5 SP9 Composer Dedicated;User=Current profile: CODESYS V3.5 SP9 Composer Dedicated================================================================================Target item is existing. Checksum is '1'.Source item is identical to target item.Reference counter is already existing. Value is '1'.==> Reference counter has been incremented.================================================================================Kind:            Add menu commandData:            f872d1e4-0650-431d-8073-54b5fbdfcf8bData ID:         Command=f872d1e4-0650-431d-8073-54b5fbdfcf8b;Profile=CODESYS V3.5 SP9;User=Current profile: CODESYS V3.5 SP9================================================================================Target item is not yet existing.==> Target item has been created.==> Reference counter has been created. Initial value is '1'.================================================================================Kind:            FileData:            Delivery/codesyscontrol_arm_beagleboneblack_V3.5.9.0.debData ID:         C:\Users\Admin.Latitude\CODESYS Control for BeagleBone SL\codesyscontrol_arm_beagleboneblack_V3.5.9.0.debCurrent profile: ================================================================================Target item is not yet existing.==> Target item has been created.==> Reference counter has been created. Initial value is '1'.================================================================================Kind:            Device descriptionData:            Devices/CODESYS Control for BeagleboneBlack.devdesc.xmlData ID:         Type=4102; Id=0000 0040; Version=3.5.9.0Current profile: ================================================================================Target item is not yet existing.==> Target item has been created.==> Reference counter has been created. Initial value is '1'.================================================================================Kind:            Device descriptionData:            Devices/SPIMaster.devdesc.xmlData ID:         Type=497; Id=0000 0001; Version=1.0.0.0Current profile: ================================================================================Target item is not yet existing.==> Target item has been created.==> Reference counter has been created. Initial value is '1'.================================================================================Kind:            FileData:            DevicesData ID:         C:\@Projects\CoDeSys\DevicesCurrent profile: ================================================================================Target item is not yet existing.==> Target item has been created.==> Reference counter has been created. Initial value is '1'.================================================================================Kind:            LibraryData:            Libraries/IoDrvGPIOBBB.compiled-libraryData ID:         IoDrvGPIOBBB, 1.0.0.0 (3S - Smart Software Solutions GmbH)Current profile: ================================================================================Target item is not yet existing.==> Target item has been created.==> Reference counter has been created. Initial value is '1'.================================================================================Kind:            LibraryData:            Libraries/CmpCharDevice.compiled-libraryData ID:         CmpCharDevice, 3.5.4.0 (3S - Smart Software Solutions GmbH)Current profile: ================================================================================Target item is not yet existing.==> Target item has been created.==> Reference counter has been created. Initial value is '1'.============================================Kind:            FileData:            LibrariesData ID:         C:\@Projects\CoDeSys\LibrariesCurrent profile: ============================================Target item is not yet existing.==> Target item has been created.==> Reference counter has been created. Initial value is '1'.===========================================Kind:            FileData:            ExamplesData ID:         C:\@Projects\CoDeSys\ExamplesCurrent profile: ===========================================Target item is not yet existing.==> Target item has been created.==> Reference counter has been created. Initial value is '1'.
+
+hi,yuo could add these commands manually under Tools->CustomizeBREdwin
+
+Thank you Edwin.It would be good to update Getting Started guide to add this step in sequence.
+
+sure we could add this, but usually this would not be needed.. just in case it fails.BREdwin
+
+ivp90 wrote:It depends on your application: for a scada, i would use a raspberry and for an ethercat master with motion and i/o, a bbb is better. why raspberry license is 35e and bbb one 50e?Hello! Thanks for the reply, you can know what are the advantages BBB before PI3 in softmotion?
+
+I am trying to follow :For the following steps the beaglebone has to be connected to the internet.cd /opt/scripts/tools./update-kernel.sh –kernel 4.4.14-bone-rt-r11then I do: sudo reboothere is mistype, should be ./update_kernel.shThis command runs in few seconds. How we can verify that after reboot kernel is updated to realtime OS?Where to find the latest version of RT Kernel? For example, today is 4.4.14-bone-rt-r11, what would be the name tomorrow? Where is that source? Thanks
+
+Quote:For getting better realtime performance set the CPU governor to performance (see GettingStarted.pdf).Note: You have to add this command to the startup script.Where is a location of Startup script?Thanks
+
+I agree with the misstype kernel src you see in the script will be pulled from:https://rcn-ee.com/repos/debian/pool/ma ... -upstream/if you execute ./update_kernel.sh –kernel 4.4.14-bone-rt-r11on later updatesyou need only to call./update_kernel.sh and you get the newest sources..BREdwin
+
+how to specify that I need a realtime kernel?Edwin, could you please help with Startup script, where is it?
+
+Hi,which startup script for doing what? For Setting the CPU Clock?Always an option is to google the bbb forum here there is always a solution for all kind of Problems:http://beagleboard.org/Community/Forumsmaybe this link here helps for setting the CPU clock:http://beaglebone.cameon.net/home/set-cpu-speedKeep in mind for rt_preemt/realtime it is mandatory to have a stable cpu clock no matter if it is set to always beeing fast or slow - important is constant.BREdwin
+
+Why is the BBB considered Industrial capable and not the RPi? Is there because there are extended temperature range versions available, or is there some other reason to believe it is more reliable?
+
+Dear Edwin, am i able to use SPI somehow on Beaglebone with codesys, because i've  seen on your example screenshot (store)? If it possible,  how can i add this?
+
+Hi Edwin,I am using codesys on beaglebone black but found it very slow and consuming all CPU. I used the same program with Raspberry PI and was ok. Due to industrial propose I go BBB.I followed codesys recommandations to install it. How to check  that I may did something wrong?Can you help please?Thank,BRPape
+
+I need your help people. I create a simple program to turn the light on using GPIO, and after logging in codesys says :"downloaded:exception" and does not let me start thr application.
+
+Hi,yes this is a known bug at the moment...please map the whole word and access:for examplewOutput.0in your application.BREdwin
+
+Dear Stablex,Have you done UPS functionality with BBB?. Could you please guide me?Regards,Kumar.E
+
+kumareasu wrote:Dear Stablex,Have you done UPS functionality with BBB?. Could you please guide me?Regards,Kumar.EIs there ant facility to shut down the BBB via CoDeSys?
+
+Hi,Please use the search function in the forum..You will find it x times it is the same like you use Raspberry PiBREdwin
+
+Hi Edwin,It works... Thank you for your help...Persistant variable also works fine.Regards,Kumar.E
+
+Edwin,I have seen RT-Preempt in https://www.osadl.org ..Will it be good for BBB.Regards,Kumar.E
+
+sure... 
+

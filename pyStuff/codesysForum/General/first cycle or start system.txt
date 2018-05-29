@@ -1,0 +1,29 @@
+Hi, I used CoDeSys (ABB-PLC)
+
+I’m beginner in CoDeSys. 
+I want to used something to get information now is first cycle. (Understand me) for example in Simatic – SM0.1 (First step)
+
+I see system events – start. I try to create, but didn’t work. 
+
+Lot of thanks 
+
+
+	Paul SAmek
+
+Hello Paul,
+
+some Simple Steps:
+
+1. Create the POU wich you want to execute by start-event. (Best way try it with a simple adder so that on every start 1 is added )
+
+2. Check the checkbox in front of system event start
+3. Click in the same row in column called POU
+4. Use F2 Key to select your start POU
+
+thats all.
+By the way don't use simulation mode. Simulation mode does not support system events. You must test your project with a real hardware.
+
+Regards
+Ralph
+[/img]
+

@@ -1,0 +1,8 @@
+Hi, I got the program. When I want to open, target returns an error. Program was written by another programmer.I do not have problems making himself write.best regardsFatmir
+
+you will have to find the target file and put the hardware configuration to it. (however you can load and edit the program without it. it defines where the I/O is.the libs , some are open, and free available, some will have to be bought.just google them and you will find several on the codesys site.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Ok. I solved the problem.I got it from programmer the target, and I installed.
+

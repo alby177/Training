@@ -1,0 +1,6 @@
+Hello,I couldn't find the Timer func. which is shown under the table and any user manual about it. Could you please help me the interrupt configuration of "Timer" event in system menu ?Thanks in advance
+
+if you add a task in the task configuration and have it triggered by event it will do an add a task in the tasklist, i do not know how to really interrupt a task in codesys (i would never do this as you do not know the state the machine is in, and you must have a interupt disable switch.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

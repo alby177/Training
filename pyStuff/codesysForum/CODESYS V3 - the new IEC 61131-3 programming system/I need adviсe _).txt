@@ -1,0 +1,6 @@
+Hello!   I've made for instance an array in my library. Now i want to give an ability to the user of my library to define the size of this array.  I It's static array which would be compiled with users project, but user needs to define the size of library's array. I tried use pragma {IF defined ...} {END_IF}, but it doesn't work in variable's area.How to realize this possibility?
+
+An option is to use parameters. You can add these to the library (only available when creating libraries).When the user adds the library he can specify the value of this parameter in the library manager.This parameter is then in your case the size of the array.
+
+Thanks! This is exactly what I needed! even better 
+

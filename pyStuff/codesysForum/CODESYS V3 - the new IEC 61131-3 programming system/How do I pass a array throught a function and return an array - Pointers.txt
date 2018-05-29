@@ -1,0 +1,6 @@
+Hi!I want to pass a array of strings throught a function and that function is going to return back the array. So I need to use pointers for that.Let's keep it simple! I first have my array:Code:myStrArray: ARRAY[0..10] OF STRING;Then I need to convert myStrArray to a pointer.Code:p_myStrArray: POINTER := ADR(myStrArray);Then I need to pass p_myStrArray throught  my functionCode:p_returnArray := myFunc(p_myStrArray);(*....*)FUNCTION myFunc: POINTERVAR_INPUT   p_myStrArray: POINTER;END_VARVAREND_VARmyFunc := p_myStrArray; // Return statementAnd then recive my pointer and turn it back to an arrayCode:returnArray: ARRAY[0..10] OF STRING;returnArray := p_returnArray^;But it won't work for me. What have I missed?
+
+Wrap your array with an fb and pass the fb to the funtion as varinout. Or better, the funtion could be an method of the fb.If not, you don t know from inside the funtion array dimension.
+
+I didn't know the compiler would allow thisCode:FUNCTION myFunc: POINTERVAR_INPUT   p_myStrArray: POINTER;END_VARMaybe try this insteadCode:FUNCTION myFunc: POINTER  ARRAY[0..10] OF STRINGVAR_INPUT   p_myStrArray: POINTER  ARRAY[0..10] OF STRING;END_VAR[/quote]Then when you call the function you may try thisCode:VAR    MyStrArray: ARRAY[0..10] OF STRING;    PtrReturnArray : POINTER TO ARRAY[0..10] OF STRING;END_VARPtrReturnArray := myFunc(ADR(MyStrArray));
+

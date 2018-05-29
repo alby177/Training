@@ -1,0 +1,6 @@
+Hi!  As I mentioned previously I am trying to develop my CoDeSys skills.  I just learned browsing through this site that you can, in Structured Text call another POU like so:POU();POU_1();What I was wondering is if this can be done with a POU using ladder logic?  I guess I am asking what is the ladder logic equivalent of the above?Thanks!
+
+HelloRight-click in your network and select 'Insert Box'.You can select your POU from the dialog box.RegardsPaul
+
+That worked perfectly!  Thank you for responding so quickly. Have a good weekend!
+

@@ -1,0 +1,17 @@
+I have windows 7 running V2.3.9.38I have changed about every graphics setting I can find with no luck.The issue is on some modal windows in CoDeSys the objects on the screen are shifted typically down and to the right. This causes things to be covered up or out of view so you can no longer access them with a mouse or even see they exist. You can not resize the window. Here is a list of things that get covered up:1. Object properties gets shifted so that you can not see  User Groups 6 and 7 and it covers the most important check box for "Apply to All"2. Global Net Variables. Shifted to the right you can not access the ADD Network button. I used another computer and found the keyboard shortcut to access the net variables.Has anyone else seen this and or know a solution?
+
+_________________Thanks,
+Steve Pfeifenroth
+
+Probably something wrong with resolution setting check the settings in the bat file or starter icon (Properties)
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hi,try to reduce the dpi seting of your PC graphic card. It seems that it is set to a higher value, try the lowest one in the Windows display settings.
+
+_________________Roland WagnerModerator
+
+Thanks,My monitor is set at 1680 x1050 - I changed it to just about everything that didn't helpI tried changing the DPI the default is 96. I changed it to 125 since I can not set a value lower than 96 (which would make things smaller anyways). That worked but now it looks really bad inside CoDeSys since all the FB icons and everything are so large smeared together and grainy. I also tried using the custom dpi setting and tried 110 and 115 and made no change until I used 125. I tried adjusting the DPI and the screen resolution at the same time and couldn't find a happy place. I guess I'll just live with knowing the keyboard short cut for the NEt variables and use the TAB key to get to the check box for the apply to all.
+
+_________________Thanks,Steve Pfeifenroth
+

@@ -1,0 +1,10 @@
+Hi,I use two 3rd party libraries where both included with the standard library. The program throws an exception 'Two libraries have same name space'. Is there any way to resolve the conflict.-SID
+
+rename one of the FB in a lib, or make your own lib with the FB needed.what blocks do have this problem as standard.lib is needed.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Go to the library Manager an change the namespace in the properties of the library.
+
+The namespace can be changed only for the Parent library and couldn't change for the child libraries below the parent-SID
+

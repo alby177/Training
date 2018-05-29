@@ -1,0 +1,6 @@
+Hi,I am using IFM controller to control the engine speed of a Volvo FL Type vehicle using J1939 protocols. Also we are using CLASS 1 Controller(attached is the datasheet) to control engine speed using J1939 protocol. Both these controllers are on J1939 network. Trouble I am having , the controllers only work when only one controller is connected to the J1939 network. When both controllers are connected to J1939 network they start to interfere with each other as they both are trying to transmit data at the same time. My question is, how is it possible to have two controllers (IFM PLC CONTOLLER & CLASS 1 TPG CONTROLLER) at the same network.
+
+in any network you will have to got addresses.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,78 @@
+Dear Sirs,
+I have a problem with SFC. I'd like to jump to init step from a PLC task (for example when an error occurs),I can't use SFCInit as a global variable. 
+How can I do that? Could someone help me?
+
+Thank you very much.
+
+Roberto
+
+Hi,
+
+you could declare SFCInit within a class
+
+VAR_INPUT
+      SFCInit:BOOL;
+END_VAR
+
+in the declaration part of your SFC-POU.
+
+Then you can access to it from another POU for example like this:
+
+MySFC.SFCInit:=TRUE;
+
+I hope this can help.
+
+_________________Roland WagnerModerator
+
+I try to make the same with Codesys V3 : 
+
+I have declared in my SFC properties the use of SFCinit (also in the menu Tool\options) but when I try to acces to mySFC.SFCInit form PLC_PRG , I have the message 
+
+"SFCInit" is no input of mySFC 
+
+I have try to declared :
+
+VAR_INPUT
+SFCInit:BOOL;
+END_VAR
+
+in the declaration part my SFC POU, but it is the same. 
+
+Thank you very much
+
+With my version 3.1 SP2 Patch 2 it works pretty fine. So the question ist what is your version?
+
+Regards 
+Ralph
+
+My version is 3.1 SP3 Patch 1 
+
+Did you made just the declaration the use of SFCinit in the SFC properties (and also in the menu Tool\options)
+
+or did you made the declaration explicit of 
+VAR_INPUT
+SFCInit:BOOL;
+END_VAR
+
+in the declaration part my SFC POU ? 
+
+Regards
+
+You have to do both. Check the box for use and declare in element properties and declare the SFC-Flags you want to use as input.
+
+By the way I was wrong My current version is 3.1 SP3 Patch 2 so it is one patch newer than yours.
+
+I've tried again with the declaration & the validations in the properties but i still have the same message "SFCInit" is no input of mySFC. 
+What's wrong ? is there a correction in the Patch 2 ?
+
+Regards
+
+Hi bells,
+
+could you post a project archive? I'll have a look for it. Maybee i can see whats wrong.
+
+Regards
+Ralph
+
+In order to activate SFCInit for a SFC POU you must open the property window of SFC POU object (right button click over the POU name) and in the "SFC Configuration" tab click "Active" in SFCInit variable.Also the declaration of input variable in the POU is needed:VAR_INPUT      SFCInit : BOOL ;END_VAR
+

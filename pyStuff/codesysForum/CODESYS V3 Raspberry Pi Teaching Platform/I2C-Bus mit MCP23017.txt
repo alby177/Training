@@ -1,0 +1,4 @@
+Hallo,ich kann mit dem Baustein MCP23017 keine Ausgänge schalten.In FUP habe ich im Baustein den Eingang IO_A auf Null gesetzt, so dass das Byte A als Ausgang arbeitet.Wenn ich jetzt auf dem Raspi mit I2Cdump die Konfiguration ansehe, ist das Byte A immer noch als Eingang parametriert.Wenn ich mit I2Cset den Parameter 0x00 von FF nach 00 umstelle funktioniert allesIm Baustein MCP23017 ist die Variable IO_A vorbelegt mit 16#FF. Hier könnte der Fehler liegen. Die Vorbelegung würde ich gerne auf 16#00 ändern. Aber dies gelingt mir nicht. Wie es scheint ist der Baustein schreibgeschützt. Hat jemand eine Idee?
+
+Hi.Ich verwende den MCP23S17 am SPI.Dort gibt es bei den Parametern im Gerät die Möglichkeit, das einzustellen.Ich weiß nicht, ob das beim MCP23017 am I2C genauso ist...Aber normal solltest du doch die Daten über den Eingang ändern können.Das sollte auch keinen Schreibschutz haben.Woher hast du den Baustein?
+

@@ -1,0 +1,10 @@
+I am trying to use Visual basic and ActiveX instrument widget as the HMI to communicate with the Wago 750 PLC. I saw the PLChandlerX.OCX in Codesys and have been trying to seach for an example. However, I cannot find any. Hence, I will greatly appreaciate it if any Codesys expert can provide a simple example in this website. Thanks alot and best regards.
+
+Chinphooi
+
+You can get this example from the cd in the demo folder.
+
+www.izabil.com
+
+_________________zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+

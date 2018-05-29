@@ -1,0 +1,18 @@
+Hi,What is the SOFT PLC?What is the different between PLC and Soft PLC?Regards,hcchin
+
+Hello, A PLC is specific hardware as Moeller, Wago, ABB, ...A Soft PLC is a program that runs on a computer.When you install CoDeSys V2, a Soft PLC called "CoDeSys SP PLCWinNT" is installed too. Best regards.
+
+Hi, Do you means we can use the "CoDeSys SP PLCWinNT" as a PLC Controller on our PC?So We can make use our PC/Laptop to communicate/control with remote I/O?(provided if we have the protocol master card is installed on it, like profibus, deviceNet and CanOpen)Regards,hcchin
+
+HelloYes of course you can use a PC as a PLC !Generally we use an industrial PC rather than a laptop.With communication boards, networks and input-output decentralized stations.You can use : Profibus, CANopen, Modbus RTU, Modbus TCP, ....But you should know two things : 1°) there are two soft PLC : CoDeSys PLC WintNT is dependent on Windows and CoDeSys SP RTE is not dependant on Windows.2°) These are not free soft PLC. You need a licence to use. Without licence they operate in demo mode during two hours, and after they should be re-started Best regards.
+
+I want to use and IPC(Industrial PC) as PLC. OS may be any coomecially available. I want to buy CoDeSys RT to work with Windows OS.Where to buy and how to Buy?
+
+Ask to CoDeSys System Partner in your country.You must have a look here :http://www.3s-software.com/index.shtml? ... empartnersBest regards
+
+JAPIB wrote:Ask to CoDeSys System Partner in your country.You must have a look here :http://www.3s-software.com/index.shtml? ... empartnersBest regardsHi JAPIB,Your post were really helpful to understand the differnec between the Soft PLC and PLC   I was eventully not knowing some of these facts which you talked about, but now i am clearI just wanted to ask how may instnace of Codesys can we run on One PC as we have given option to have 4 tasks, i will be very greatful to know it  Thank you,
+
+a soft PLC same as a PLC can have multitasks in one program.i prefer to have one program with 4 tasks, so the overview is better.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,8 @@
+Hi,I have create a librarie for MCP3202 : 2 inputs DAC 12 bits .When I use it in project and call output variable "ch0", I have error at compilation : "C0046: MCP3202.ch0 not define".Could you help me ?Bests regards.
+
+Topic moved to the Raspberry PI section
+
+Hi,in may case i could compile errorfree with the installed library and device description.BREdwin
+
+I have rename device "MCP3202" to "MCP3202_1" and it's good now when apply ch0 or ch1.Thank you.
+

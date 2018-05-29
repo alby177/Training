@@ -1,0 +1,10 @@
+I use  softmotion  with Beckhoff ethercat, EK1100 and EL7031 drive  for  the  motor.Everything works ok, but  if I logout and  login again I always get an error on the EL7031: bus not running. Ethercat and EK1100 are OKSame issue  on normal  PC and on raspberry PiI think this is safety issue to prevent unwanted motion after a stop. can only solve  this to download the  program again. How can I solve this  or I,m I doing something  wrong?
+
+Hi,should work even with disconnected CODESYS.. Could you attache some plc log files?BREdwin
+
+Edwin,Error appears when I stop the plc  running and start again if  I logout with plc running  and  log in again it is ok.plc log : AL status read from slave adress1002 status 16#18watchdog for opmode expired.adress1002(1002 =el7031)ps: what should be setting of bus cycle task .  use parent bus cycle settings  or  activate 1 or  acivate 2 I have been playing with these setting , but  what is the  right setting . for example I have an  el1008 not working if  I choose use parent bus cycle setting.I find short description in: ethercat  mapping : tab <device>I/o mapping  refresch variables , but it is  not very clear to me .
+
+Hi,ok now it is clear please set the option update io's while plc in stop.BREdwin
+
+thx , works  and solves  other issues  too
+

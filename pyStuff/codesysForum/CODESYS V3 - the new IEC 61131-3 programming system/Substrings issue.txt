@@ -1,0 +1,4 @@
+Hi, I'm using codesys v 3.5 SP7 with Berghof IEC 2250. I connect to Wonderware Archestra platform via IO-Codesys Core Server / ARTI3 protocole. I have a problem with managing strings. I recive a package of information in one string, separated with specific symbols ex. information!information@information...information. I can find the places for symbols with Standard.Find, and the length with Len function, but how to extract the information beetwen symbols? I would like to copy it to different strings and converts to integers.Any ideas? Thanks!
+
+I've solved the problem with the most simplified functions like LEFT, MID and RIGHT and FIND ofc. There were only few offset issues. Pls close the topic.
+

@@ -1,0 +1,10 @@
+Hello I would like to kown which others HMI or touchscreen can work with MOELLER plc's ... like at XC-101, EASY-800 and EC4P.PD: I know that Moeller has it's own line of HMI.Thanks.
+
+With the XC101 we have used Beijer's Exter line of HMI's.  Originally we had to implement a Modbus slave in the PLC to make this work.  Now Beijer has a CoDeSys driver that seems to work.  I would recommend getting an RS232 card to put into the PLC so you can program the PLC and leave the HMI attached at the same time.  I believe the EC4P would be the same.For the Easy800 you can get it with a screen or use the MFD?
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+
+From Moeller you can use XV100 or XV 400. They are HMI with PLC,  using the CoDeSys Visualization. You can also use it with a XC100 or other. Have a look here : http://www.microinnovation.com/en/deskt ... _view-328/(Moeller and micro innovation are Eaton brands)
+

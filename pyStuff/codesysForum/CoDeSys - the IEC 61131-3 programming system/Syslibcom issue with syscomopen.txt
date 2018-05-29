@@ -1,0 +1,35 @@
+Dear all,
+
+I am new to this forum ( just registered 5 min ago ).
+
+I am trying to use the syslibcom library with a Moeller XC100.
+
+I tried many approaches to opening the Com1 ( the embedded serial port that is usually used for programming the PLC ) of the XC100 to send a couple of bytes and recieve a couple .
+
+Till now what i got is a 0 handle at the return value of the syscomopen.
+
+Can anyone provide me with a POU that does it ?
+
+Plus what i know of RS232 is that you set the settings of the connection before opening the port. Can anyone explain to me why in syslibcom you open the port and then use the handle to invoke syscomsetsettings and change the settings ?
+
+Thank you.
+
+It is really odd how this post was read 42 times without anyone having an answer.
+
+Anyways this is what i found out after hammering Moeller with questions,testing for a whole week and not getting anywhere for days :
+
+The only way to open a port is to write the code in your main PLC_PCG. I don't know why but if you write a FUN or a FBD wich you later call from the PLC_PCG the port simply doesn't open. Furthermore i found out that the embedded port of the XC100 can only be opened and closed. You can change the baudrate from the PLC configuration but you cannot use the syscomsetsettings function ( I also don't know why).
+
+Anyways i bought the xcio-ser module which has rs232 and rs485 , wrote a PLC_PCG in which i open the port (in LD ), worte a FBD to alter the port configuration (in ST, unfeasible in LD) and finally got my communication running.
+
+If anyone needs any info regarding what i wrote i will be glad to provide it.
+
+Ciao
+
+Hi,
+I'm having big problems with a moeller XVC100 too. I'm trying to read something form a rs232 on canopen (XN-1RS232) but it seems to be the hardest mission in the world, even with the (useless, till now) support of moeller. 
+Not being able to read from the remote rs232, I'm trying now to read from the embedded one, but again I'm not getting any good result.
+I can open the port using the syscomopen function, but as I try to read using syscomread the plc go to fault condition (SF led blinking) and on the display appears 'PLC watchdog' (another plc just make the shut down).
+Any example or good idea for at least one of the 2 problems?
+thanks
+

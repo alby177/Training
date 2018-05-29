@@ -1,0 +1,8 @@
+does anyone know where the problem is?i created a dynamic text name'TESTEN', filled it up with alots errors 1 to 60. and i try to test with it in simulation mode, after login format %s doesnt change.
+
+Is the fault_control POU called from your main application?If it isn't called, then it is not compiled with the application and the variable status unknown.
+
+it called from cyclic_program, PLC_PRG call cyclic_program.in my first picture what i have done is correct right?
+
+Possilbly the textlist is not downloaded.Please try to "Clean all" and download the application.
+

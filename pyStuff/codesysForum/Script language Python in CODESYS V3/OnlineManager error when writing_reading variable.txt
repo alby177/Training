@@ -1,0 +1,6 @@
+Hi,When I try to write a variable through script I sometimes get the error:Error : The OnlineVarRef at position 1 was not created by the OnlineManager.Parameter name: variablesI can write to this variable many times without an issue then I get this error.Does anyone know what it means, and how I can resolve it.I know this is a bit light on details so if any more detail will help let me know and I will add it.
+
+Hi.williamc wrote:Error : The OnlineVarRef at position 1 was not created by the OnlineManager.Parameter name: variablesThe second expression of your prepared/forced values was not recognized as an object of the Online Manager. This error can only happen if the element is a null reference or an unknown OnlineVarRef implementation. The null reference could be a timing issue.Is it always the same position in the same order of expressions or a different position but the same expression?Can you provide more information about your script?Regards,Martin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

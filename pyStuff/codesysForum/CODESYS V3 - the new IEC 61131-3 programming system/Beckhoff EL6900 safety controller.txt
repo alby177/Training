@@ -1,0 +1,6 @@
+Hello,after inserting the EL6900 module, the SafetyTask is not automatically added and, even from the context menu of the SafetyApp, it is not possible to add it: the selection is missing.Any suggestion?Thanks a lot in advance.
+
+Hi,not sure what you are missing but are these the steps you are doing?https://www.youtube.com/watch?v=y5c-ZxtCc0oBREdwin
+
+That's great, thanks.The tutorial is very clear.However I have an additional question: is it allowed to create safety FB's? I see in the POU tab the possibility to insert "External FB (EtherCAT Safety)". By trying to create a new FB, the declaration area is displayed only: no code is allowed to create.Any suggestion?Thanks a lot in advance.
+

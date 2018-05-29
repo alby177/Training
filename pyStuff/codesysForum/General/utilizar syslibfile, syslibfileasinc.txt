@@ -1,0 +1,2 @@
+Hi, i'm working on a PLC MFD4 easyHMI, i wanna store the values from a global_variable into a file .txt; i understand for that i've to use the library: syslibfile and/or syslibfileasinc. my question it's... some ome can help me? i'm a begginer in Codesys and i'm not clean about how to use... thanks!
+

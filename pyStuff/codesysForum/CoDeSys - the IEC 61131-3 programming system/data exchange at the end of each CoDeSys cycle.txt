@@ -1,0 +1,2 @@
+CoDeSys v. 2.3, Beck IPC@CHIP SC2x.I need transfer some data to specific device at the end of CoDeSys cycle (analogue CoDeSys In/Out refresh). Data transfer is realized by platform functions. Is there any way do not bother platform user by calling some platform function directly? I want to do this automaticly, indepence from CoDeSys programm (like CoDeSys CANopen stack). Maybe there is some calback function to use it?
+

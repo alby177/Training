@@ -1,0 +1,4 @@
+Is there a way to convert a DWORD (with only data at the LSBs) to WORD?
+
+There is internal Codesys function DWORD_TO_WORD. Very simple, right?  
+

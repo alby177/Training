@@ -1,0 +1,15 @@
+Hi everyone,I was wondering if it is possible to load a new project into a PLC without having to use CoDeSys software. For example, if the PLC block was with customer and i need to load the PLC with a new version of my project. The customer does not have the software and does not have any clue about CoDeSys.How can I send only a file to the customer, so that he can load the project into the PLC? If not possible, what other option is there?Your reply is purely appreciated!
+
+Some PLC's you can load with a flashcard.Otherwise the can instal the software and you take there PC over, to load the plc
+
+Depending on the PLC, and its settings, like WAGO and Beckhoff, you can program them via internet.On many others you will need a download program and a cable to connect to a PLC.Other is you can send them a new PLC with the new program in it (best way as you now exact what is in)another way i have used is send them a laptop with a codesys on it. and a cable. total cost is about 200 euro so cheap and reliable. and you can ask a local PLC man to install it.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+thank you for the replies guys.what i can conclude from this,is that there is no way to update and load my project remotely without using CoDeSys software then?!?  I was hoping 3S could come up with a solution for this matter. perhaps in the next version.
+
+Tell us what PLC you are using. Some PLC MFG give you a service tool especially when it's a serial port. Other PLC you can compile your project, which you have to use CoDeSys, but get the compiled binaries. On some PLC you can FTP files to change the code.
+
+_________________Thanks,
+Steve Pfeifenroth
+

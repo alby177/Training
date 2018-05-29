@@ -1,0 +1,12 @@
+Hi all.So I am having this strange problem, where I need specific number of digits in my counter. I need the counter to be able to count up to 9999999, but the number of digits always has to be the same. This means, when the counter starts it should be 0000001, then later on it will be 0001021 and so on.I would prefer to convert the counter into string later on, so maybe there is a solution there? I am completely out of ideas on how to easily realize this. Please help Best regards,
+
+First, make sure your counter supports the high number (you need a dword output). Then you Use DWORD_TO_STRING to get the number as a string. Also define a string '0000000'. Concat the two together and then your answer is MID(togetherstring, LEN(togetherstring)-7,7). Or about that
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+
+I actually made it happen like this, because I am not familiar with repeat of while funcitons as yet Code:STRINGcounter:=DWORD_TO_STRING(DWORDcounter);IF LEN(STRINGcounter)=1 THEN   TEMPcounter:=CONCAT('0', STRINGcounter);   TEMPcounter:=CONCAT('0', TEMPcounter);   TEMPcounter:=CONCAT('0', TEMPcounter);   TEMPcounter:=CONCAT('0', TEMPcounter);   TEMPcounter:=CONCAT('0', TEMPcounter);   TEMPcounter:=CONCAT('0', TEMPcounter);ELSIF LEN(STRINGcounter)=2 THEN   TEMPcounter:=CONCAT('0', STRINGcounter);   TEMPcounter:=CONCAT('0', TEMPcounter);   TEMPcounter:=CONCAT('0', TEMPcounter);   TEMPcounter:=CONCAT('0', TEMPcounter);   TEMPcounter:=CONCAT('0', TEMPcounter);...ELSIF LEN(STRINGcounter)=7 THEN   TEMPcounter:=STRINGcounter;END_IFI am not proud of it but it works 
+
+have a look at www.oscat.de for a nice library containing all sorts of manipulation, and yes you may be proud of your solution.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

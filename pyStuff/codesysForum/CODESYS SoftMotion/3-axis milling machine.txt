@@ -1,0 +1,4 @@
+Hi everybody,
+I´m new on the block. I want to build a 3-axis milling machine using SoftPLC and industrial PC with Real Time Eathernet+Brushless Servo motors.Mechanical part I have already solved. Please help me regarding controller design. I want to use ST (programming style).Please guide me regarding programming, are there any built-in functions in CoDeSys V3 that I can use? I will be very obliged for any useful prompt reply..-:)
+yours
+

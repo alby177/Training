@@ -1,0 +1,4 @@
+Good morning,I unintentionally deleted the project file that runs on raspberry.I've already tried undelete on the development pc but the file is lost!Is there a way to get the raspberry project back?Thank you, Alberto
+
+Hi,no this is not possible, this is compiled code.Except you enable source download see the online help:https://help.codesys.com/webapp/cds-dlg ... n=3.5.11.0BREdwin
+

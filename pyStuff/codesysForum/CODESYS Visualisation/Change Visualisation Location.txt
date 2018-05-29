@@ -1,0 +1,6 @@
+HiI would like to change the location of the webpage from "http://IP Address:8080/webvisu.htm" to "http://IP Address:8080". Is there a "default.htm" that can be used to load this webpage automatically?Thanks
+
+Hi,this is not possible at the moment,but there is an entry in the improvement database.BREdwin
+
+Ok, thanks!
+

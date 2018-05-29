@@ -1,0 +1,16 @@
+Hi,
+
+We are planning to use CoDeSys, if we can combine it with RTAI.
+How hard real time can CoDeSys be used under RTAI? Or isn't there any support for it?
+
+Thanks in advance.
+Toni
+
+Hi Toni,
+
+there is a RTAI support by CoDeSys V2.3 Runtime. To get detailed information please contact our sales department.
+sales@3s-software.com
+
+Regards
+Ralph
+

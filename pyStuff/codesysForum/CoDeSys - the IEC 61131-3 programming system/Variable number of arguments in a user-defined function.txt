@@ -1,0 +1,8 @@
+Is there any way to define a function with a variable number of arguments in Codesys 2.3? You know, like ADD, MUX...
+
+NO, however you do not have to use all inputs, so you can make a default block with several inputs and set them default on zero, for example.same for outputs you do not have to use them.btw how do you think you could program this?
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Disclaimer: I'm not sure it's a good idea yet.As my current project has only two-state valves in it, I made a universal FB for use with both motorized and solenoid type ones, i.e. FB as a class definition in OOP way (thus FB actions = OOP class methods). So, in SFC transition conditions, I would like to be able to do something like AreOpen(VE1, VE2, VE3, VP1, VP2, VP3) instead of VE1.open AND VE2.open AND VE3.open AND .... For this to be possible I need a function capable of accepting arbitrary number of arguments.
+

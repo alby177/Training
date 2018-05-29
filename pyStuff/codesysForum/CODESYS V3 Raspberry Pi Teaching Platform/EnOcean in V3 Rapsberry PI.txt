@@ -1,0 +1,2 @@
+Hi,Does anyone know if EnOcean supported in Codesys V3 on RPi platform?If so, what are the libraries and where to get them?It seems that some one has got it working. (with USB300 transceiver)https://www.youtube.com/watch?v=GKrFzpo4E-wThanks and any information appreciated.Michael
+

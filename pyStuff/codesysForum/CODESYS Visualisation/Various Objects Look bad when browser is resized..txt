@@ -1,0 +1,6 @@
+This trend Object doesn't look good in a webvisu depending on the size of the open browser window. 
+
+Visualization Objects shouldn't resize with the window.
+
+I could have sworn that I've seen a comment about this in the past.  Has this been fixed and I just don't know about it?
+

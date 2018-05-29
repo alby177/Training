@@ -1,0 +1,6 @@
+Hi,I am trying to use the table control.It works fine when linked to an array of struct defined like this:var    astMyStruct: array [0..9] of ST_MyStruct;end_varIt also works fine when linked to an array of struct defined like this:var constant    c_iNbElement: int := 10;end_varvar    astMyStruct: array [1..c_iNbElement] of ST_MyStruct;end_varBut it does not work when linked to an array of struct defined like this:var constant    c_iNbElement: int := 10;end_varvar    astMyStruct: array [0..c_iNbElement- 1] of ST_MyStruct;end_varIs this a bug?I like to use constants to define array sizes and I like to keep all my arrays 0 based.But if I keep working this way, I cannot use the table control with my arrays.Thank you.
+
+Hi,I have added a bug in our tracking db.Should be fixed.BREdwin
+
+Thank you.
+

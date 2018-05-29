@@ -1,0 +1,6 @@
+Is there a Pragma Instruction to make an Action/Method private in a function block?
+
+_________________The Original SoMachine Ninja
+
+You can assign visibility for Methods in their declaration, e.g.:METHOD PRIVATE DoSomething: BOOLI don't remember exactly in which CoDeSys version visibility of methods was implemented, but this works atleast with V3.5 SP1. You cannot give access specifier for Actions, and therefore you cannot hide them with PRIVATE or INTERNAL ("PUBLIC" inside the Library, otherwise PRIVATE (i.e. hidden for application that includes the library).
+

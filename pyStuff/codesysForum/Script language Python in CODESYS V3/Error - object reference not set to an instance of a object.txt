@@ -1,0 +1,8 @@
+On one of our computers, when writing values to variables through a script. We get the above mentioned exception. I see that it does write all the prepared values, but after that it throws the exception. All this happens in the function online_app.set_prepared_value
+
+Hi,If the issue is reproducible on your side, could you try to get a stack trace? This can be done via python, or (simpler) using the DiagnosisToolLauncher.exe in the CODESYS Common directory.#Thank you.
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
+
+The log file is attached. One is before clicking ok on the exception dialog and the other is after
+

@@ -1,0 +1,14 @@
+Hi Test Manager Developers,I have a few change request for the CompareVariableList test action of the Test Manager. This function is very useful and I use it many times. There are a few small issues which can be improved.1) Please, make auto completion also working in the “Value/From” value column. (This works already at the “Variable” column and in many other test action)2) When a global value of type integer is used for as “Timeout” value there is a warning “Required parameter should be a value of an integer type”. Please, remove this warning in this case. It works fine, and also by the CompareVariable test action is this working (without warning).Regards, BakkertjeThe next software is used: Codesys V3.5 SP7 Patch 2 and Test Manager 4.0.1.1.
+
+Hi.For your first point we already have the entry TM-75 in our bug tracker and for the second point I just added TM-415.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi Martin,Thanks, for the information and adding this wish to your list of improvements.Regards, Bakkertje
+
+Hi Martin,I found TM-415 in de 3S Jira: http://jira.3s-software.com/browse/TM-415But I cannot found TM-75 ? http://jira.3s-software.com/browse/TM-75Regards, Bakkertje
+
+Hi Bakkertje.Bakkertje wrote:But I cannot found TM-75 ? http://jira.3s-software.com/browse/TM-75Sorry, TM-75 is an internal one. But most of it was implemented with TM-5.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+

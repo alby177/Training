@@ -1,0 +1,2 @@
+Hallo. I need to replace one application by other programmatically. Is it possible to do using CDS functionality?I tied CmpApp library. Two application in one plc work. First can reset originally the second. The second is deleted totally including boot files.Now the first app can make a copy of boot files of second app from backup and need to load and start the second app. is it possible?
+

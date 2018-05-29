@@ -1,0 +1,10 @@
+Hi
+
+When you create a new global variable list. it is possible to make a link to DCF file.
+
+What is the format of DCF files ?
+
+Regards
+
+Steen
+

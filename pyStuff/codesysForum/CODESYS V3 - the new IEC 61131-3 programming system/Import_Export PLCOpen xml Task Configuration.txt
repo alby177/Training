@@ -1,0 +1,16 @@
+Hello,I'm currently using Codesys 3.5 SP2 and everything works fine with the importation and eportation of PLCOpen XML except with the Task Configuration.After exporting my task(Mast) I try to import it again and what I take is a new branch of Application->Task Configuration.Is it a bug?Does anyone know who to fix this problem?Thank you very much.
+
+My experience with PLCOpen xml support in CoDeSys is that not ALL data is stored in the PLCOpen xml files. Exporting and importing again, MAY lose information.I detected this with:- recipes- CANopenI did not detect it with Tasks.Maybe the selected device in the device window, then starting the import was not correct.CoDeSys inserts / appends the items in the imported PLCOpen xml file at the selected device.Regards,Edwin.
+
+Thank you for your answer Edwin.I tried also to import by selecting another device but then either it finds no elements or it overwrites the application by the application->task configuration branch.In PLCOpenxml the task should normally be under instances/configurations/configuration/resource/task but in the export file of Codesys it is under addData.I tried to import an xml according to PLCOpenxml schema but it finds no elements.You said you had no problem with importing PLCOpenxml for Task Configuration,did you use another file from the one that Codesys exports?
+
+I create a PLCOpen xml file with another program / script. And that works fine.
+
+This export/import doesn't work like it should in V3. In V2.3 works perfectly. I found another solution for my self which works 100%. I allways open 2 Codesys project and I simply copy/paste eg. tasks, visu, GVLs, POUs, from one Codesys to another, thats all.regards,Alex
+
+Thank you both for your answers!Yes Alex that is also a way to do it.Edwin is it easy to tell me which program?
+
+It's a proprietary application / script. Sorry.
+
+I see.Thank you!
+

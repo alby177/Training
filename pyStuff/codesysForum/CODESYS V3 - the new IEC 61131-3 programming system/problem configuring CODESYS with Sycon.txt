@@ -1,0 +1,2 @@
+Hi all,I have a problem using Codesys running whareouse using Sycon comunication system.Here the problem:
+

@@ -1,0 +1,4 @@
+as Subject .Can any one know how to change it ?i am using v3.5.9.0
+
+Hi HeroLinPlease see this commend:The problem is if the runtime starts before you have an valid IP address which is usually the case the OPCUA Server does not reasign/change the address.This leads to problems on startup (runtime works OPCUA not)You could workaround this by a later start of the runtime (init Sleep with 20s)If you have a port problem you could configure the port in /etc/CODESYSControl.cfg (and even which nic you want to use for OPCUA)[CmpOPCUA] NetworkAdapter=eth0NetworkPort=4841Hope this can help you.HeroLin wrote:as Subject .Can any one know how to change it ?i am using v3.5.9.0
+

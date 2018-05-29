@@ -1,0 +1,6 @@
+I need to update a remote PLC (operation made by customer). How can I do it? (It's possible to share some "compiled" with the customer and then he'll download to the PLC without the chance to see my source code?wish I made clear what is my need..
+
+depending on type of PLC you can send the compiled code and use a download program from factory.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,8 @@
+Greetings,For anyone who needs to maintain or start working on a large Codesys project it is very difficult to browse if all they have is the Codesys project as documentation.  Browsing a large project in Codesys is like reading through a pinhole!  Jumping around, split screens with tiny windows is ridiculous and frustrating.  It would be very nice to be able to print the entire project as an indexed PDF or even better yet as an HTML website (similar to Doxygen).  It would be a much more readable representation just for the sake of being able to learn what is being done in a project.Think about it.
+
+There is, as far as I know, a substantial way to document (and print) your project/libary allready.See the online help for more information
+
+Yes,This is helpful although for project that I am maintaining uses a mix of structured text and ladder logic.  Ladder logic diagram parts are split on separate pages because the representation is too wide.  I could print to PDF however there is no index to cross reference and at 400+ pages without indexing browsing through Codesys is better because it is possible to jump to to definitions, etc.  The open source document tool "sphinx" integrated into Codesys can generate html which would probably represent complete diagrams and indexing.  Am trying to find how this can be done through Codesys.Thanks,M.
+
+At the moment this is mostly done via commandline but that is bound to change in the future.You can also write python scripts to take care of your specific documentation needs.Thus you can mix and match.
+

@@ -1,0 +1,8 @@
+if I define an array as:MyArray : ARRAY [0..63] OF BOOL; is there some instruction that get back the array-elements size (64 in my sample)?Regards
+
+I'm answering myself.. SIZEOF (return number of bytes of a variable) but need to consider the type of data (ex. byte or int or...)
+
+well if you need the number of elements it is 63-0 +1the size is the number of bytes needed a boolean is byte size.+2if you try it what is result? 65!!for an INT it is 2*64+2 is 130, etc
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

@@ -1,0 +1,42 @@
+I've been into a project where we tried out the new Ethercat possiblities in Codesys 3.
+
+Ethercat is new. Much hardware is old.. for any migration project we will run into the need for bridges to other buses.
+
+Beckhoff EL6751 is a bridge Profibus<->Ethercat. It may be one of the most common bridges there is. We set up one. There is a way to set it up using Beckhoff's System Manager. It must be recognized as an Ethercat device (OK in Codesys3 - import its XML device description).
+
+But to be useable we must also configure the Profibus net it bridges to. We found no way to do that in Codesys3. You can't add Profibus devices under the Ethercat master.
+
+This makes me wonder.. without this type of devices supported we must wait very long into the future with Ethercat, or go for a totally Beckhoff-specific solution, if we use that hardware. Possible answers/questions:
+
+
+- Profibus can be configured but I did not understand how
+- It can be done when 3S-software has implemented new features into Codesys3
+- It can be done when 3S-software publishes own descriptor files for the devices
+- It can be done if Beckhoff ships configuration tools and definition files and thus supports Codesys3
+- It can NEVER be done
+
+Check all, some or none of the above.. as you see I'm kind of thinking "who has the ball".
+
+Maybe this kind of insight is not available from a user forum. Though if anybody can comment I'd be very interested.
+
+Thanks!
+Jens
+
+We faced the same problem.
+
+These EtherCat<->OtherFieldBus bridges woud be very useful simplifying hardware project building, and I/O cabling layouts.
+So far the descriptor of EL6xxx modules are present in CodeSys 3.2.x, but the Profibus fieldbus cannot be defined, i.e. they are useless in CodeSys.
+
+We are using them in our hardware, and this prevents us using CodeSys without redesign hardware layout.
+
+I hope 3S will be addressing this support very soon.
+
+
+Valentino
+
+We are nowadays facing the exact same issue with the EL6751 EtherCAT to CANopen bridge and the latest CoDeSys version.Does anybody know if this issue has been addressed by CoDeSys and/or Beckhoff ?
+
+Hi everybody,I just talked to one of our developers for the fieldbus implementation.He told me that the Ethercat -> Profibus Gateway is already in the schedule, but was postponed several times.Concerning the EL6751 Ethercat->CAN Gateway:The support is already implemented since CoDeSys V3.4 SP2. In order to use it you need the CoDeSys EtherCAT stack and the CoDeSys CANopen stack, and additionally a runtime component in your runtime system.
+
+_________________Roland WagnerModerator
+

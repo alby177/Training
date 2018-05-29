@@ -1,0 +1,2 @@
+1-Is it possible File Conversion HEX to PRG ? by the CODESYS2-I'm programming for truck cranes . truck cranes have a have several sensors (pressure sensor / length / angle, etc.)NO PLC, NO WAGO ,NO ABB ,No nothing else ONLY PROGRAM WHIT CODESYS V2.3How do I identify the software sensors CODESYS?How should I define the ID of the sensor to the software? Software should go where?
+

@@ -1,0 +1,17 @@
+Hello, 
+
+I have several problems with my program that is supposed to drive several motors thank to 4 stepper cards 750-671 from WAGO. The problem is that the motors are not really cooperatives, and I can notice several mistakes that are ruining my life:
+
+*First, and maybe the biggest one, sometime, my motors don't want to start and after several seconds (around 15-20), the motor status become 99, and if I want my move to be done, I have to force the startmotor (BOOL) to 0 then to 1 in order to have a movement. I really don't know from where it could come, so if someone has already had this mistake, I would be greatfull to ear about a solution...
+
+*Secondly, I can't use the Jog mode, indeed, it can move, but I can't control the speed, and if I want to control the speed by the velocityControl mode, I have a deceleration very slow and it's not good either...
+
+I'm really desperate, my company is asking me for some results but I can't have anything with these troubles, and it's my first application with this kind of devices so I don't know what to do, would you have any usefull information??
+
+Thanks by advance,
+
+what software are you using with these cards?
+what block is used to control it.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

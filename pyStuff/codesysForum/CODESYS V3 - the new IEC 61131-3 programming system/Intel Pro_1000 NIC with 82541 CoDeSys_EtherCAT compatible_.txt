@@ -1,0 +1,8 @@
+The 3S "CoDeSys Control RTE Overview" leaflet states under the item Supported Fieldbusses/Fieldbus Cards that Intel Pro/1000 network cards based on the Intel 82551/82557 chips can be used for EtherCAT communication. My hardware supplier offers Intel Pro/1000 GT network cards, but they use the Intel 82541 control chip. See http://www.informatique.nl/550367/intel ... apter.html Is this NIC also allowed, or MUST it be one with the 82551 or 82557 controller?(The 3S "CoDeSys Control RTE V3" manual does not explicitely mention this)
+
+_________________Henk van RooySystems Engineering GroupMechanical Engineering DepartmentEindhoven University of Technologyurl: http://se.wtb.tue.nl
+
+Hi,even if it is not explecitely mentioned, the  Intel 82541  was tested and worked properly with EtherCAT on CoDeSys Control RTE.In any case: If you already have the card you can of course try - it should work.  
+
+_________________Roland WagnerModerator
+

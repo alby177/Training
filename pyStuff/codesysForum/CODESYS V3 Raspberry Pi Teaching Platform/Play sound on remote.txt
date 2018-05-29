@@ -1,0 +1,6 @@
+Hi,Is possible play sound on remote pc from codesys?Thanks, Alberto
+
+Hi,you mean you want to be connected by webvisu, click a button and it should play a sound on this machine where you execute the webvisu?BREdwin
+
+Edwin Schwellinger wrote:Hi,you mean you want to be connected by webvisu, click a button and it should play a sound on this machine where you execute the webvisu?BREdwinYes !   
+

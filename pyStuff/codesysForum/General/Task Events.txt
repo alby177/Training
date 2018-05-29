@@ -1,0 +1,18 @@
+It would seem that in simulation mode, the only user created task that actually runs is the highest priority task.  No other task seems to be called unless they are 'CoDeSys' tasks like Visualisations etc.
+
+I do have a work-around for this but it involves adding further code to the program.
+
+I would have thought that if CoDeSys provide a simulation mode in the program it would at least function correctly or have I overlooked something here?
+
+Is this just with Wago devices?
+Does anyone using other devices have this problem?
+
+In fact all tasks will be called in simulation mode. But due to the simulation the task behaviour concerning the interval time causes the highest priority task always "to win".
+Try to "detune" the lower priority tasks by some ms, then it should work.
+
+_________________Roland WagnerModerator
+
+Thanks Roland, I will try this.
+
+Well that didn't work.
+

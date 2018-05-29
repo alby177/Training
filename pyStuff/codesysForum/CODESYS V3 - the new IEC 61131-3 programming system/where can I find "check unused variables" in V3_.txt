@@ -1,0 +1,6 @@
+Hello all,Using TwinCAT I was used to check leftovers (variables that where defined but never used in the program) using that option.I can't find it in V3, have it been removed? is still there but I can't see it?If it is there, could anyone here tell me where it is?Thank you all!
+
+Hi,projectsettingsBREdwin
+
+Perfect, thank you!
+

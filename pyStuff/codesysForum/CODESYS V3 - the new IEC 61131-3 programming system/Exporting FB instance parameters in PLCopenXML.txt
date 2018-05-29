@@ -1,0 +1,6 @@
+Hi,I am dealing with PLCopenXML exports of my program and it seems important parts are missing in the export - CodeSys 3.5 SP7.I declared an FB with a constant paramenter as Code:// in the FB declarationVAR_INPUT CONSTANT      MyParam : WSTRING := "none";   END_VARIn the program (CFC style) I instantiate the FB and set the value of MyParam in the instance using the "Edit Parameters" dialog. The Project compiles and runs using the value given for each instance.However if I export the project the project to plcopen xml the parameter in the instances is not present. It still exists in plcopen xml in the type definition of the FB but not in the variables of the type.Looking at the PLCopenXML spec const parameters ar not explicitly mentioned but it seems possible to implement. Is this a bug in CodeSys? Thanks in advanceThomas
+
+Hello Thomas,that's a bug.  The issue id is CDS-50631 PLCopenXML CFC: Parameters list is not processedPossible workaround: make sure the FB is exported along with your CFC POU.After import perform Pins-> Reset Pins... command on the box.Regards,Roman
+
+Hi Roman,thanks for the hint and the issue id. Resetting the pins works and I get the dialog back to set the parameter values - unfortunately the original value information is gone since the values have not been exported Best regardsThomas
+

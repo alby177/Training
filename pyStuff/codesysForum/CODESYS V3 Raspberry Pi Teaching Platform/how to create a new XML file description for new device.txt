@@ -1,0 +1,2 @@
+Hello,Please, is there any tutorial "how to create a new XML file description for new device"?I would like to build a new communication interface for LIN BUS like J1939?thank you.
+

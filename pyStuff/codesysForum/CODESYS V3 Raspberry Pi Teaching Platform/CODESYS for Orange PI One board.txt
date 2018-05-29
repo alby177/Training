@@ -1,0 +1,8 @@
+I have found Orange PI One board for less than 15$ on AliExpress including shipping to my country which is amazing cheap.So I would like to start topic about idea Codesys for Orange PI One platform.Mladen
+
+Have you bought one yet? As a Pi clone they could very well run codesys out of the box. I am tempted to buy one, but I think the no micro usb is a bit of a silly change.
+
+There is different CPU at least... i sure that Codesys runtime not starting there
+
+Quote:Have you bought one yet? I did not. Shipping to my country is very expencive. I have to find some friend in Croatia (nearby country) to order one.
+

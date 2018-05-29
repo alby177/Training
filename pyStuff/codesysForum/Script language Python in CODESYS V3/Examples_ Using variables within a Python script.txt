@@ -1,0 +1,12 @@
+Hi all,the attached examples from the CoDeSys development department show how to use CoDeSys variables within a Python script: Forcing Prepare values for writing Unforce variables Write prepared variables to the PLC
+
+_________________Roland WagnerModerator
+
+Hi,The link is broken to the attached zip-file. Please could you post it again?/Fredrik
+
+Hi,I apologize the problems with this file. It seems that there was any problem within the administration of files in the forum system.We tried to fix the problem, I uploaded the file once again and thus hope you can access to it.
+
+_________________Roland WagnerModerator
+
+No finally the example which should be available for the download...
+

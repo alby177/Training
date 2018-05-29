@@ -1,0 +1,16 @@
+HI Guys,Can you please help me on how can i convert Ladder Logic program to Structured Text Language in Codesys 2.3. I was able convert it to Functional Block diagram and IL. But, I could not found an option to convert it in to STL..?Thank you,Pavan
+
+No not automaticcally, however by hand everything is possible.start with output:= input1 AND input2 etc.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Hello. Sorry for late answer, my profile weren't registred before now, is there anything I can do to help? Post a print screen of the ladder program then I will give you a few ways to do the same in STL. Or a suggestion for a program that you want, then I will try to make a program that may teach you how to program in STL. Easy digital (Boolean) is no problem to convert, but analogue can be a little difficult.
+
+Thank you Guys,I spent few days learning structured text language to implement in the project.I looks fine so for.I have to do little more work to complete the project.I will contact you if something goes wrong.Thank you once again.Pavan.
+
+When converting ladder to Structured Text a common mistake is to only write logic to turn output instruction ON and forgetting that if the logic for the ladder rung is false that the output instruction gets turned OFF.Computer science people tend to go with IF/THEN/END_IF; when re-writing a rung but without the ELSE part, they will not actually copy the function of the rung.  When replacing ladder with IF/THEN structured text you will almost always need the ELSE.  The major exceptions are SET and RESET output instructions and rungs with one shots.Shooter suggested a much better way which is to start with the output tag := and then create logic on the right side of the equal sign to control the output.
+
+_________________nOrM
+=====
+nOrM = Norman Dziedzic Jr.
+

@@ -1,0 +1,6 @@
+I'm using the AP SDK to develop CoDeSys plugins, and there's a convention to use a + prefix, but I can't remember what it means.I have an example TestObject class lib, and a +TestObject class lib.Does it denote an interface library?Thanks in advance--R
+
+The documentation of the AP gives the following information:The "+"-sign in front of the name has the purpose of clearly identifying the project as an interface component at first glance.  It is recommended that this convention is followed.
+
+Of course. Thanks.Found it in the pdf.
+

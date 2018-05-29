@@ -1,0 +1,6 @@
+The logs which seen at Device--> Log location in codesys platform , i want to e-mail same log file to concern person. Please let me know the location of log file.Thanks,Tejal Deshmukh
+
+Hello,usually this file you'll find in the runtime Directory,but you do not Need to pull it there because you could save it from CODESYS Development System see Screenshot.cuEdwin
+
+Dear Mr. Edwin,Thanks for your reply,but my requirement is some thing different from as shown in screen shot.I want to see history of  logs, but when we are going online history was not displayed any where in CoDeSys Log plat form.If you have any idea about it please explain.Thanks,Tejal Deshmukh
+

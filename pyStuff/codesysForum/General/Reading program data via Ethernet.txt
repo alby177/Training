@@ -1,0 +1,8 @@
+I have an IEC61131 application running on a Wago Ethernet module (750-841). Is there a way I can request the values of certain program variables via the ethernet connection? If so, what would I need to do to implement it, both on the Ethernet module and the PC which is attached to it.From the data sheet it looks like you can get data from the I/O modules using Modbus protocol but this is not what I need to do.   Any help would be greatly appreciated.
+
+yes via DDE and the wagosoftware you can get data into excel.With OPC driver you do not need anything else.and you will able to see them.just in the PLC make some markes like %MW23 etc.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Thanks shooter, I will try that.  
+

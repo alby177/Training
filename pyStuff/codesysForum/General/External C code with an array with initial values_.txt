@@ -1,0 +1,15 @@
+Hello,
+
+I successfully created an external library from a C source for C166. 
+Basically it is running!
+
+Currently I have the following problem. I was not able to use a constant array with initial values that is defined in the C source. It seems that CoDeSys is pointing to a different memory address?!
+
+The following does not work:
+Code:#pragma class hc=NCONSThuge static const int aiTemp[] = {0, 11, 22, 33};#pragma default_attributesIf e.g. aiTemp[2] is read the result is not "22"!A single global constant variable is working:Code:huge static const iTemp = 55;I use the following classes file:Code:CLASSES(  FUNCTABLE (40000h to 44BFFh),  CINITROM  CPROGRAM   NCONST         SHAREDCLIB  SHAREDRTLIB (4C00h to 4FFFFh),  CNEAR  CUSTACK (120000H to 127FFFH)) Functable class contain the following:Code:huge static const LibDesc ld[512] = { ... };huge static unsigned long const pLibCodeInit[] = {...};
+
+Does anyone know what is needed to use arrays in CoDeSys V2.3 with inital values defined in C.
+
+Best regards
+Tobias Müller
+

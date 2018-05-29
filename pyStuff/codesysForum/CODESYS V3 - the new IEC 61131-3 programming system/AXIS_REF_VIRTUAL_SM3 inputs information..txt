@@ -1,0 +1,6 @@
+Dears.Do you know if exist information about the input-outputs of the AXIS_REF_SM3.Thanks.
+
+Hi,I have a document about Softmotion from Codesys with an explanation about Axis_ref_Sm3...Here are the data I haveAttachment:2016-09-29 08_37_18-CODESYSSoftMotionV3_OEM.pdf - 1.pngAttachment:2016-09-29 08_38_28-CODESYSSoftMotionV3_OEM.pdf - 2.pngAttachment:2016-09-29 08_38_47-CODESYSSoftMotionV3_OEM.pdf - 3.pngAttachment:2016-09-29 08_39_06-CODESYSSoftMotionV3_OEM.pdf - 4.pngAttachment:2016-09-29 08_39_31-CODESYSSoftMotionV3_OEM.pdf - 5.pngAttachment:2016-09-29 08_43_27-CODESYSSoftMotionV3_OEM.pdf - 6.pngAttachment:2016-09-29 08_43_49-CODESYSSoftMotionV3_OEM.pdf - 7.pngAttachment:2016-09-29 08_44_10-CODESYSSoftMotionV3_OEM.pdf - 8.pngBest regards
+
+Thanks Bobypointe
+

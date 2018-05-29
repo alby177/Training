@@ -1,0 +1,14 @@
+Hi allIs there any way to create void pointers in codesys?and need info about writing code in visual c++ & converting it to codesys library.Thankssarath
+
+Pointer to any DATA type this is what is required.Is it possible in codesys?Thanks
+
+Regularly and traditionally it's POINTER TO BYTE, it can be interchanged without conversion to POINTER TO *.However, in some cases this might lead to memory alignment problems... for example, ODD pointer to byte should not be used as pointer to word.As for CODESYS V3 , POINTER TO ANY seems to work.
+
+Hi StruccThanks for your info.Code:type st_recipetest:bool;test1:lreal;end_typefunction_block testervarpt:pointer to array [1..250] of dword;xmlvalue:string;end_varpt:=adr(st_recipe);pt^[i]:=string_to_dword(xmlvalue);Is it possible to have a pointer like this inspite of any data typeThanks
+
+yes that is possible, however why should you use pointers, as everything can be programmed in 61131 standard language.when using pointers it is same as use peek and poke, very machine dependent.whenever possible try to avoid it.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+Strucc wrote:Regularly and traditionally it's POINTER TO BYTE, it can be interchanged without conversion to POINTER TO *.However, in some cases this might lead to memory alignment problems... for example, ODD pointer to byte should not be used as pointer to word.As for CODESYS V3 , POINTER TO ANY seems to work.Thanks StruccUsed your idea Sarath
+

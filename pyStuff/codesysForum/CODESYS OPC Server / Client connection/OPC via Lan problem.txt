@@ -1,0 +1,16 @@
+Hello
+
+
+I made a program with codesys. and made the setting for OPC server. I can connect on the local pc to the server. But on another pc in the network I can't connect to the opc server. I tryed a lot of thing.
+
+I also  tryed a kepware server. That works but that is not an option.
+
+Does somebody knows if it is even possible  to connect to another codesys opc server on another pc? 
+
+already thx,
+Rasco
+
+This is probably a DCOM issue.
+Run dcomcnfg to check your settings and/or log in to both PC's with the same username and password.
+Another thing you can do is turn of your firewalls to see if that is the problem.
+

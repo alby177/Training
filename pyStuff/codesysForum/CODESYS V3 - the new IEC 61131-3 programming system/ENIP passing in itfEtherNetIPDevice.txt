@@ -1,0 +1,2 @@
+The EtherNet/IP explicit messaging is very useful! Is it possible to pass in itfEtherNetIPDevice as an input of a custom function block? I don't see IEtherNetIPService available as an object anywhere. For example, the getAttributeSingle FB:getAttributeSingle(	xExecute:= , 	xDone=> , 	xBusy=> , 	xError=> , 	itfEtherNetIPDevice:= , 	eClass:= , 	dwInstance:= , 	eError=> , 	wAttribute:= , 	pData:= , 	udiDataSize:= , 	udiReceivedDataSize=> );Thanks,
+

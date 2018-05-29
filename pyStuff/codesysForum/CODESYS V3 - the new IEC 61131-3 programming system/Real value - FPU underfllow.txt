@@ -1,0 +1,2 @@
+Hello!I thing I detected a bug regarding the REAL values.The transfer single precision IEE754 REAL values with the binary Exponent equal to 0 are triggering a FPU underflow exception.VAR  rReal1: REAL;END_VARrReal1:=1.18E-38;     //it works                               0b00000000100000000111110110011001rReal1:=1.17E-38;     //it generates the exception      0b00000000011111110110011011010111Where could be the problem?I'm using Codesys V3.5 SP3 Patch 3 with an IDS ACOS750 device.
+

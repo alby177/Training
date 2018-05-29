@@ -1,0 +1,4 @@
+I want to adapt the VisuUserMgmtDialogs example that can be found in "C:\...\CODESYS\Projects\Visu\Dialogs\VisuUserMgmtDialogs.library" to my project changing some things. But I can't see the documentation of the library anywhere.As I saw in this video from CODESYS, I expect the documentation to appear in that frame of the Library manager for every library that I add to the project.But as you can see in the next picture, in my CODESYS I get nothing when I click on the library name. I have also tried with another standard libraries with the same result.Am I doing something wrong? Maybe is that these libraries don't have any documentation?I would be very grateful if you can help me because this library could be very useful to me but without documentation it's going to be a nightmare to figure out how to use it.
+
+What version of Codesys do you have? I had the same issue using 3.5 SP10. Try to update to SP11 if you haven't done so.
+

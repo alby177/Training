@@ -1,0 +1,9 @@
+Hi!  I am an old Simatic'er and am almost new to CoDeSys (2 evenings with a Wago 750-841.  I made the example project with Visu and put it on Webvisu).
+
+I've been looking for some HMI diagrams made with Visu from a real process/plant/machine.  All examples I can find are primitive pictures with colour-changing- or jumping boxes, and some tanks with bargraphs on.  
+I would like to see how far you can take the Visu.  How large processes, how many controllers,  nice and informative diagrams with motor and valve object icons that are  connected to the alarm system?  Plant hierarchy, interpicture jumps?  Practical limit - 2, 20 or 200 diagrams?  Has anyone of you catalogs/pictures/video/link to show me?
+
+
+Thanks in advance
+KalleO
+

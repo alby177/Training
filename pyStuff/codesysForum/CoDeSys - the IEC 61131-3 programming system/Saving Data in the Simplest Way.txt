@@ -1,0 +1,2 @@
+Hi there. I am newby with CoDeSys but I love it. I need to know the simplest way to assign a reading value (I.E. a WORD) to memory. This value is changing always. I just need to read it and save it to a memory allocation (anywhere) at specific times. I'll appreciate a lot any help.
+

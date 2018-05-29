@@ -1,0 +1,6 @@
+Will the Codesys runtime environment properly shutdown and save all retain variables when Raspberry PI shuts down by 'shutdown --halt' command?And more general question: does the Codesys on Raspberry PI honor retain variables and where does it save them?
+
+Hi,you need a graceful shutdown of the Linux OS only then the Retain file is saved by the plc runtime.So the only possibility to have reliable retains to use an UPS -Uninterruptible power supply which Triggers then a shutdown of the Linux system.the retains file will be saved to /root/ in case your Applcation is named Application you will find there Application.retBREdwin
+
+Edwin, thank you for assistance. Now I'm working on UPS PIco integration with Codesys. So my Raspberry PI has UPS.
+

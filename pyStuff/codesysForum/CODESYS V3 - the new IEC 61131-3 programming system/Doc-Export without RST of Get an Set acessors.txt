@@ -1,0 +1,8 @@
+Hello,when I build an xyz.json file (Open library then: Tools -> Doc-Export)the RST comments from the get and set acessors are not included in the resulting .json file.Is there a reson why the RST is not included ?
+
+Hi.For compiled libraries the library manager shows only the property.There are no nodes for the Getter and Setter. It's a bug (CDS-44061) that the Getter and/or Setter appear as separate chapters.CODESYS only saves the comments of the Property and not also the Getter and/or Setter. We think it is enought to add the comments only the Property.BRMartin
+
+_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
+
+Hi, thanks for your answer!right now another problem occured:I have one test.library there the .json (doc-export) file includes a "Comment" for the property--> so it is part of the generated HTML WebsiteIn the productive .library there the .json file does not include a "Comment" for the property--> so it is not part of the HTMLIn my opinion the (doc-export) .json should include every single information of the .library, so why isn't it included ?Is there some kind of secret Button for the correct setting ?
+

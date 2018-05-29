@@ -1,0 +1,8 @@
+Hi, i wanted to know if there is a controler based on linux whit codesys license included or whit upgrade license like the wago but more powerfull. Maybee whit remote control via kvm like intel vpro or lilo or whatever. I checked the supported devices but its too much, so i tought maybee has some infos. thank youGesendet von meinem Lenovo TAB 2 A10-70F mit Tapatalk
+
+Hi,beside many available plc's are from plc manufacturers on option could behttps://store.codesys.com/systeme/codes ... x6-sl.htmlThis is a debian based it is for sure possible to add remote control stuff.BREdwin
+
+Is there a linux x86 runtime coming in future?
+
+Somone there? Runtime x86?Gesendet von meinem Moto G Play mit Tapatalk
+

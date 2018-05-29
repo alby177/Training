@@ -1,0 +1,6 @@
+Hi,I am curious, what is different about the U.S. variant of CODESYS? Do we have some limitation in the software?Thanks!
+
+See this topic for more info. http://forum.codesys.com/viewtopic.php?f=11&t=7190
+
+_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
+

@@ -1,0 +1,6 @@
+How can i change current visualization using ST- code (i mean in main program, no by using for example buttona event).
+
+Take a look at the free example in the CODESYS Store: http://store.codesys.com/visualization-switching.html
+
+_________________Roland WagnerModerator
+

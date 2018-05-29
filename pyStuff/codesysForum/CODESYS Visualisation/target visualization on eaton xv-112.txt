@@ -1,0 +1,6 @@
+hello,hello m trying to load visualization on eaton xv-112. codesys gives error : communication error(#0) logout performed.target selected is same as version loaded on display(XV-1xx-v2.3.9 SP3). though it shows demo in codesys in front of target.please helpthanks in advance.
+
+it says clearly there is no communication so go to online, find just under simulation mode the communication parameters.It is possible you will need new firmware, this depends on the version of the software you are running.for firmware contact the dealer of the hardware
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+

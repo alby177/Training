@@ -1,0 +1,10 @@
+Hi,I'm not familiar with Codesys. I'm trying to configure alarms. Everything seems to work fine, but not in a way as I want  . Let's say I have to variables: "set" and "reset". Everytime as "set" has a rise (FALSE -> TRUE) I want a new record in my table. As "reset" goes up there is a need to have an extra text in the record (is it latch var?). Reset changes state of this text, but text keeps it's state even when we turned off "reset". Of course new records has a state before reseting them. Is there any possibility to do this?Another problem is in class configurations. It seems like changing background color hasn't got any effect, I can only change font.
+
+All I can see that I should configure alarm table... but I have no option 'bout history of my alarms in properties. Is it hidden somewhere?
+
+First problem was solved by finding turning table into historic. The second one is still a problem.Another thing happened now. I want in my alarm table show a value of string variable. Alarm has a messege <currentvalue %s>, observation type "change" and in details is my string variable. Everything is fine as long as alarm table is not historic. When I turn it to historic table every change of string variable gives me messege "TRUE". I think it comes from bool variable which triggers historic table. How can I solve it? I want a history of every change of my string variable.EDIT: CODESY ver.: V3.5 SP8 Patch2
+
+Hi,I have the same problem concerning background issue in alarmclass. The background has no effet on messages. Was this solved somewhere?thanks,Pape
+
+Hi Suro,change the style in Visualisation manager. Background may work after that.thanks,Pape
+

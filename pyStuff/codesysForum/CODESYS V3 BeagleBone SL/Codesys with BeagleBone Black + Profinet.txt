@@ -1,0 +1,10 @@
+Is posible to connect Codesys with BeagleBone Black with a Profinet dispositive? And if it is posible how can I do? Thanks.
+
+I see a Profinet network in available devices.Try this:Rightclick on Device (your Beaglebone) => Add Device => Profinet IO => Ethernet Adapter => Ethernet => add device => close windowRight click on Ethernet => Add Device => Profinet IO => add what you want: IO Device if BBB is a slave or IO Master if BBB is a master => add device => close windowRight click on new added device => Add Device => add your IO, Drives which was previously registered in  Tools=>Device RepositoryIs this what you are looking for?
+
+Hi,there is one little problem doing profinet on BBB.Think the internal networkcard does not work.You need to test it with a usb to ethercat Adapter.BREdwin
+
+Thank you.I connected the BBB like Master with Ethernet connection to the Profinet "ET 200S IM 151-3 PN HF", but sometimes the BF (bus error) is flashing with red color. And appears this:Station status: CF81FD05Connection aborted: AR consummer DHT expired.Why happens this problem? Is it possible to connect via Ethernet or do I have to connect via USB with an USB to Ethernet adpater?Regards.
+
+Hi,either performance issue - reduce reduction Ratio.. or check the task cycle for the profinet io update Task,it is by default 1ms does this work for BBB?BREdwin
+

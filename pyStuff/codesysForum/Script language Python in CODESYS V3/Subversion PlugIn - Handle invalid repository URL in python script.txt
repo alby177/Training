@@ -1,0 +1,4 @@
+Hello,an invalid repository URL given tosvn.checkout function leads to an exception.How can this be handeled?Is there a possibility to check the validity of the URL before call the interface function?Thanks in advance. Kind regardsD. Baur
+
+Hi,we use the commandline option from TortoiseSVN  with the subprocess module to check the path:Code:def svn_check_path(URL):   command = 'CD C:\Program Files\TortoiseSVN\bin' # the shell command   process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=None, shell=True)   process.communicate()      command = "svn ls " + URL    process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)   #Launch the shell command:   output = process.communicate()   log = output[1].decode("cp1252");   #Split the logs    infos = log.splitlines();   path_missing = False;   for logs in infos:      if 'warning' in logs or 'E200009' in logs:         path_missing = True   return(path_missing)
+

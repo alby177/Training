@@ -1,0 +1,6 @@
+Hi,I would like to edit the textlist file during runtime. am I able to reload and update the textlist during runtime? I am using 3.5.12.I found the following function:DynamicTextRegisterFileDynamicTextLoadDefaultTextsDynamicTextRegisterPathAre there able to be used?Thanks
+
+You jsut need to run the function "DynamicTextLoadDefaultTexts()".Regards
+
+Hi,    Sorry if I expressed my question wrongly. I had a textlist but the user want to edit(Add/Remove) the textlist during runtime. Is that possible?ThanksRegards,Lai
+

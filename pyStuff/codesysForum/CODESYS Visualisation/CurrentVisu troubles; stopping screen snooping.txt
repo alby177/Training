@@ -1,0 +1,10 @@
+I have a working web visualization with several screens. My problem is, because I need to use CurrentVisu, all computers logged into the PLC will see the same screen in webvisu. If one user switches to the alarm screen, so do all the others. If one user logs in as an administrator, everyone gets access to the admin screens and commands.Is there a way to only allow one computer to connect at one time? Or, to allow different computers to view different screens?
+
+I'd extend the question:Is there (will there be) a way to manage sessions with visualizations? For example: users logged in from different locations, with different credentials can have different permissions... Probably in V3 this could be feasible, for example, via a special variable, like "SessionID", or SessionPointer, that can be used in "tags" ... like: SessionPointer^.UserName, or SessionPointer^.CurrentVisu...As for the question, the only thing I could do is not to use CurrentVisu variable (it's definitely global).
+
+it is even worse, when one HMI is running, anyone also from outside just has to enter the ip address and he can even take over.in V3 this is solved.
+
+_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
+
+I'm using V2.3. Is all hope lost?Even if I were to stop using CurrentVisu, I'd still have a login issue. As soon as I display a button leading to a protected screen, any user could press it.(In fact, I found that by modifying the STARTVISU parameter using Chrome's HTML element inspector, I could even bypass the login screen!)
+

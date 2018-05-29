@@ -1,0 +1,16 @@
+Hi, I look over all topic in this forum without found anything out that can help me. I runned the script from the UNIPI package. Then I tried the 1-wire sample gived without success. I look over internet since the last week. No tutorial, nothing that can help me. I tried my 1 wire DS18B20 on arduino and it was working properly. So if someone can step by step explain me the correct way to use the 1-wire device on Codesys please. Not just a copy and paste of another topic. We are in 2017 and obviously we usually found tutorial of everything on internet. Never had to look that hard of explanation. Ask me what you need to know about my config. I will printscreen anything you need but I dont understand why this thing doesn't work.
+
+Hi,if no other use could help why not askinghttp://store.codesys.com/codesys-for-unipi.html#SupportIf the Onewire reading is different to the onewire reading which is part of the CODESYS Raspberry Pi Package."c:\Users\<YourWindowsUserName>\CODESYS Control for Raspberry PI\3.5.10.0\Documentation\RaspberryPI_CodesysV3_FirstSteps_EN.pdf" there is an improved project which is available here:viewtopic.php?f=23&t=6247&p=16920#p16920(additional Task for onewire reading and improved scan - could be executed not only on init... later by application this is possible to rescan the onewire )BREdwin
+
+After many time of wated time, I tried to start from scratch. I opened clean UNIPI project. Then many error come out. I tried to refresh the device, But cant find the correct device. So I tried to download the missing device description from the Codesys software and obviously it does not worked. I tried to look with Unipi for my issue but, the problem seem to be on your side.
+
+Hi,what happens if you set the correct sensor ID, which does fit to your connected?BREdwin
+
+I plug 2 one wire device with address 28-8000001e9e98 and 28-8000001e8786. In DS18B20 I replace the value by those address but no difference.
+
+Hi,sorry my screenshot was not the one I wanted to upload.Here the correct one.1. add your ID's to the configuration page - if you use 2 you need to add 2 onewire in the device tree and add both addresses to the configruation page (aatention realigne the rows otherweise you do not find the section for the address input)2. use the project from the link (this does additional rescan the sensors if you set the variable)here the Pi Application section in this forum:viewtopic.php?f=23&t=6247here the Project which scan the onewire:viewtopic.php?f=23&t=6247&p=16920#p16920does the onewire reading work already under Linux?example on how to do this on ssh connect to the Pi in the Linux console		/sys/devices/w1_bus_master1/28-000444149aff $ cat w1_slave 	c2 01 55 00 7f ff 0c 10 95 : crc=95 YES	c2 01 55 00 7f ff 0c 10 95 t=28125   	cat 10-000800575c8b/w1_slave	And you will see something like this: 	30 00 4b 46 ff ff 0f 10 b8 : crc=b8 YES30 00 4b 46 ff ff 0f 10 b8 t=23812BREdwin
+
+Yes it's working now. Thank you very much for this 1-wire issue. I'm pretty much sure that I'm not the only one who having this trouble.
+
+Hi,yes I agree but I'm pretty sure that I have writen exactly his at least in 3 posts This updated example will be included in the next release.BREdwin
+
