@@ -1,2 +1,0 @@
-hi,i am new in this site .i have doubt in vb6.0 OPC client....................in my vb client i can display all the PLC variable  that i configured in opc server(codesys opc server) using OPC browse methodit will be like thisPLC1:.alarmPLC1:.countPLC2:alarmPLC2:.countPLC3:alarmPLC3:.countbut i dont want to display PLC variable,,,,,,For my application i want to display only PLC name(PLC1,PLC2,PLC3) that i configured in  OPC serverhow i will do programme for that please help me
-

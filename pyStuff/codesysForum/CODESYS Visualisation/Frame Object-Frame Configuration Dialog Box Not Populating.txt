@@ -1,2 +1,0 @@
-If I place a "Frame" object on a visualization, the "Frame Configuration" dialog box appears but nothing shows up in the "Available Visualizations" box, even though I have a number of visualization objects present in the project VISUs folder. Has anyone else seen this behavior?DZ
-

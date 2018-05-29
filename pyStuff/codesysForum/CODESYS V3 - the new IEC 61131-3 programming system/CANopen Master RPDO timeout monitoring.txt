@@ -1,2 +1,0 @@
-Hello all,Does anyone know a  way to implement RPDO timeout monitoring in CODESYS?Seems CODESYS "CANopen Manager" doesn't support RPDO timeout monitoring.
-

@@ -1,2 +1,0 @@
-This is a video of a sorting unit made with codesys 2.3The  program is written in SFC.Have a look   https://youtu.be/xgbjALThoGc
-

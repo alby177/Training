@@ -1,4 +1,0 @@
-Is there anyone who know how to change the limit of (1280) of i/o INPUTS AND OUTPUTS memory allocation?
-
-Hi you can overwrite / change these settings by rightclick the application there are settings for io size and memsizeBR plcmax
-

@@ -1,8 +1,0 @@
-Using CoDeSys v3.5 on TT Control as CANopen manager. Using CoDeSys v2.3 on IFM as CANopen slave.Imported EDS from v2.3 into v3.5. Some adjustments required.Both nodes start OK and go operational. Each sends a PDO to the other. I verified that both PDOs are entirely present on the bus. However the receivers only see the first couple of items in the PDO. Its as if the last items of the PDOs do not get mapped. I have carefully reviewed the mappings and they are OK. I see no explanation of why some PDO items get updated and others do not.Anything other than mappings to look at?
-
-Maybe an address alignment issue?  (really just guessing)
-
-_________________nOrM
-=====
-nOrM = Norman Dziedzic Jr.
-

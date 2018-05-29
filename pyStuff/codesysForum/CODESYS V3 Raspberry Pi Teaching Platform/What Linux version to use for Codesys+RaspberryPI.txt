@@ -1,6 +1,0 @@
-I am planning on jumping into the PI soon.  Can somebody recommend the best PI board and Linux version to get good results. Any other recommendations for getting started are also welcome.  Thanks.
-
-_________________Rick
-
-use rpi B+ or newer..as Linux version I suggest to use the latest available on www.raspberrypi.org  (raspian jessie lite)
-

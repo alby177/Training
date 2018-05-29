@@ -1,6 +1,0 @@
-In the documentation https://help.codesys.com/webapp/_cds_ac ... n=3.5.11.0 is a link to the "API Reference Documentation for the ScriptEngine". This link is broken, and i cant find the documentation?!Regardsadv
-
-Hi adv.adv wrote:In the documentation https://help.codesys.com/webapp/_cds_ac ... n=3.5.11.0 is a link to the "API Reference Documentation for the ScriptEngine". This link is broken, and i cant find the documentation?!RegardsadvThe HTML version for help.codesys.com is still not finished yet. You can use the offline version which is a CHM file.Before CODESYS V3.5 SP11 the ScriptEngine.chm was in the directory "Online Help" of the CODESYS installation path. With CODESYS V3.5 SP11 you can find in the file ScriptEngine.chm in the sub directory for the individual language of the directory "Online Help".BRMartin
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
-

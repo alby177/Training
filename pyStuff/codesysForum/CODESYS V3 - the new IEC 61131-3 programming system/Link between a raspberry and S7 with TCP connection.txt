@@ -1,2 +1,0 @@
-HelloI am new to codesys and will need advice and feasibility of a project.From a raspberry, I would like to read variables from an S7 controller and use a web page to read them with only a TCP linkI have a problem with my communication between my S7 and codesys. Is it wise to use Ethernet / IP Scanner followed by a Generic Ethernet / IP Device? In my generic connection I don't know the meanings of Configuration / Consuming / Production Assembly parameters for generating my connection path.Thank for your help.
-

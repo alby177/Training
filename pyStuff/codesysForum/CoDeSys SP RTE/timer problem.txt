@@ -1,6 +1,0 @@
-Hello, i have this problem:in my application there is a lots of timer (TON).The problem is that the TON time is slower than real time for example timer of windows.30s set of the TON is 46s of real time.
-
-check your real time by asking it.This can happen when running simulation.and when tasks are overlapping in time so your processor cant keep the pace.slow down the number of times tasks are executed or even stop some tasks like initialisation.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

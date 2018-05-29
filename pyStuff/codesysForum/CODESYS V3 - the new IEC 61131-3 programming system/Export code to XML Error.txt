@@ -1,8 +1,0 @@
-Hi Guys, When I export code written in CodeSyS 3.5 SP10, I get the following error:The Type: "_3S.CoDeSys.NWLObject.BoxTreeTerminator' is not supported.If I delete the network (Ladder Logic) it exports fine, but defeats the purpose wouldn't you say...lol
-
-Hi Keithang,can you identify the network that produces this exception? Please post a screenshot of it here, probably we will found some workaround.Regards,Roman
-
-I am seeing the same error message.  The shape of the ladder that causes this problem is seen in the attached pdf file.
-
-Hi Keithang,there is a simple workaround for your case: add a TRUE contact just after the powerrail. This will eliminate the necessity of yet unsupported terminator element which exists between powerrail and branch point.RegardsRoman
-

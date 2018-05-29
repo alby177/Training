@@ -1,2 +1,0 @@
-Hello everyone,are there list of keyboard combinations for CoDeSys V3?I know, you can look into "Settings > Keyboard" but a handful list will be nice e.g. as a PDF Thanks in advance.  
-

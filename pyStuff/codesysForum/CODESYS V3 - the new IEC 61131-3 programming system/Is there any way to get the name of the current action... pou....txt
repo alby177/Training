@@ -1,4 +1,0 @@
-Hello all,The question is tricky as I've seen the "Attribute Instance-path" thing, but I would like to get the current action name inside a specific POU (program or fb).I'm using extensively functions to get the programmer aware of what is going on while the program is running and given a customer requirement now I must change a lot of the program, and this means changing the messages too...Now that I have to change them... it would be better to set them automatically (more work now but less work tomorrow).i.e.: "Problem happened in MAIN.PRGAuto.ACTNiceAction: Code 304".Can it be done? and if it is possible... how?Thank you all!
-
-_________________http://www.robotecnik.com - robots, CNC and PLC programming.
-

@@ -1,8 +1,0 @@
-Does anybody know how to use  Wifi ESP8266 with codesys and raspperry .
-
-Maybe can someone tell me how to send a string of bits to an IP address.
-
-Hi,check Application Examples here:PLCChat:http://store.codesys.com/mixedsearch/mi ... duct_area=Communication with Halcon http://store.codesys.com/mixedsearch/mi ... duct_area=Install them by click to the cart in CODESYS.Then open the examples here:"c:\Users\<YourWindowsUserName>\CODESYS Examples\BREdwin
-
-Hello againI decide to use modbus protocol to comunicate with ESP8266.  I have data form holding register when I use modbus scanner but in codesys not. How to configure modbus slave in codesys  to find data from register. I  use modbus slave library from http://pdacontrolenglish.blogspot.com.c ... cp-ip.html.
-

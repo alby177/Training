@@ -1,4 +1,0 @@
-everytime after reboot hmi, hmi will change back to default language.
-
-I'm not sure, but maybe it works by writing the current language string variable to a variable which is Retain (Persistant):Code:// When the HMI is restarted call the following code:IF NOT(xInitDone) THEN        IF sRetainLanguage <> '' THEN                  VisuElems.CURRENTLANGUAGE := sRetainLanguage;        END_IF;        xInitDone := TRUE;END_IF;// After this write the current language to the retain variablesRetainLanguage := VisuElems.CURRENTLANGUAGE;Please let us know if this works
-

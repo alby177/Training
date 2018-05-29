@@ -1,2 +1,0 @@
-hello:I am trying from a list of alarms of the alarm manager to know if any variable is in alarm.Now I put all the variables in an OR and I remove all the variables that generate alarm, is there any way of knowing if a group of alarms has any of their alarms on?best regards,
-

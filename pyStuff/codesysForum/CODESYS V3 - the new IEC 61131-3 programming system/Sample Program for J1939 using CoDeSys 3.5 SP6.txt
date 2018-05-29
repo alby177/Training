@@ -1,8 +1,0 @@
-Hallo  Can anyone help me with a sample code for J1939 using the IoDrvJ1939 (FBs) not over PLC configuration, because the documentation for the function blocks is not quite clear.Thanks in advance.
-
-Hi,this is impossible to use without using the configuration and add it to the device tree.BREdwin
-
-[quote][quote][quote][list][code][quote="Edwin Schwellinger"]Hi,this is impossible to use without using the configuration and add it to the device tree.BRHi Edwin,I know that it must be combined with the deviece tree, but what exactly I need is a example project for the other function blocks not ONLY using the project tree. In other words, I need a program for J1939 using (DM1_Read, DM2_Read, DM1_Write, DTC Provider .....etc.).Thanks
-
-Tell me if this is what you're looking to do.
-

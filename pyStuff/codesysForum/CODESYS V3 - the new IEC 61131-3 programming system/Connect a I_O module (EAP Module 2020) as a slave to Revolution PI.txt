@@ -1,2 +1,0 @@
-Hello !I would like to know how I could access the I/O module through "Codesys V3.5 Sp12 Patch 1+". communication protocol : MODBUS TCP/IPRevolution PI: Master, I/O module: SlaveAbout the I/O module:http://www.eap-electric.at/de/produkte/ ... odul-2020/Thank you.
-

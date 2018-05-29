@@ -1,4 +1,0 @@
-Hi,I am new to the Codesys programming but it's progressing.How would I display an Integer value, like from a Timer accumulator, to the Visualization?Glen
-
-Under help check out "Visualization->Elements->Generally Configuring Elements->Use Text and Language".For the text property in the element you would use %d.For the text variable property in the element you would use the variable you are trying to show.
-

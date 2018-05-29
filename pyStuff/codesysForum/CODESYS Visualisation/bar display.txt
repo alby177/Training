@@ -1,4 +1,0 @@
-hi is possible to help someone  , i have a problem is not possible to rotate bar display , is not active bar orientations setting
-
-Set Width lesser than Height (or Height lesser than Width) to rotate element.
-

@@ -1,2 +1,0 @@
-I have PC with Windows XP . RTE V3.5.8.60 RTL8139, Driver from codesys installed and component added in cfg codesys.Try to start Ethercat Softmotion from PLC. But all time have EtherCat: not started. I don't have any ethercat device now just trying to check if Ethercat will be work fine on RTL8139 (now it is connected to some router)In attachment screenshot. Show that there is no SoftMotion lic installed (will it work with 2hout in demo?)And i need real Ethercat slave device for checking Ethercat on RTL8139?
-

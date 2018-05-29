@@ -1,2 +1,0 @@
-Hi,I'm curious, is there any way to set Modbus TCP Slave device IP address from the code (visualisation) level? My goal is to use some project that contains Modbus Slave with different devices without need to use Codesys development software for IP change..Is that possible?Thanks.Lukasz
-

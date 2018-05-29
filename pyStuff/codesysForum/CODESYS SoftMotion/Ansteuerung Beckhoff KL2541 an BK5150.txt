@@ -1,2 +1,0 @@
-Hallo,ich möchte die Schrittmotorklemme KL2541 die an dem Buskoppler BK5150 hängt von Codesys V3.5 SP11 ausirgendwie ansprechen.Die IO Klemmen kann ich setzen / lesen aber wie kann ich auf die Register der Schrittmotorklemme zugreifen?Wo finde ich die Klemme in den PDO´s ?Wie kann ich vorgehen ?bin für jede Hilfe Dankbar
-

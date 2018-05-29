@@ -1,2 +1,0 @@
-I use the serial with visu example from the store.The issue i have when checking the codesys is i don't get all the sent message all the time i get parts of it, especially when i set the reading timer to be less then the writing timer. for example "hello world" --> "hello".How can i config the com.read to stop only when the data is the size i want it to be or when i get a predefined char?
-

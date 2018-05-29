@@ -1,4 +1,0 @@
-Hi,I could not find the function of block move. There is a No in Oscat library.thanks
-
-i solved the problem
-

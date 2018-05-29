@@ -1,2 +1,0 @@
-Hi. I check CDS-43087 and I'm a little bit confused. I see only new checkbox Paint disabled elements greyed out in Visualization Manager. So is this no way to choose custom color/shading/etc. for disabled elements? (as said in request). Also I can't find description for this checkbox in web-help.
-

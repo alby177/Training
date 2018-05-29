@@ -1,5 +1,0 @@
-Hello,everybody,I hope you can help me right now.The problem I fall accross is as follow:
-    I am using CoDeSys V2.3,recently I want to programme a shift register model,by making up with HSD model(D trigger in macsctrol.lib)and clock impulse.But I can not realize the shift function.Please tell me how to programme.I think my programme is right and hope someone can correct the errors,I pack my programme with the filename CSU_10,my Email address is liaihua-2001@163.com.
-   Besides,would you be  so kind as to tell me how to programme a D trigger model  myself by using ST language.
-   Thank you very much,expecting you answer.
-

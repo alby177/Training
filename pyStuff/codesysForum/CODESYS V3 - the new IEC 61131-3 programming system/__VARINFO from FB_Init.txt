@@ -1,2 +1,0 @@
-Dears.I am calling __VARINFO on the FB_Init method of an virtual FB declared on a library.If I try to extend this virtual FB on another FB, the system fails with the error:"Cannot convert type 'Unknow type: 'MEMORY_AREA.MEM_LOCAL'' to type MEMORY_AREA.Can anyone help me?.Thanks.
-

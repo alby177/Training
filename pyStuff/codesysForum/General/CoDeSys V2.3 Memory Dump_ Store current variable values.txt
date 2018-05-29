@@ -1,2 +1,0 @@
-Hello,I am working with CoDeSys V2.3 running on a industrial PC. Sometimes is occurs that a machine runs into an error or an unpredicted situation because of a software bug. Then usually I log on and monitor the values of the corresponding variables to get more insight. This action takes some time, which will stop the production.So I want to know if it is possible to store the state of all PLC inputs, outputs and variables at a specific point in time, so that I can "debug" the software bug offline, while the PLC can be reset and the production can go on?Best RegardsMartin
-

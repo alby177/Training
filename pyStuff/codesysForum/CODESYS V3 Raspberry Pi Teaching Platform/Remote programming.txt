@@ -1,8 +1,0 @@
-Hi!I'd like to program RPI behind home router so I have to redirect programming port?  I know router remote IP address with help of ddns service.Is this possible?
-
-I have found the answer. According to this post viewtopic.php?f=22&t=5641it seam's not possible by redirect tcpip port trough router since programming work with udp ports.Cheers !
-
-Hi,this is one option yes, but attention would not recommend to open this programming ports to the whole world wide web!!!To be more secure I would recommend to have it behind a VPN connection,and this is easy to establish with the Raspberry Pi.1. install OpenVPN on the pi side2. install OpenVPN on Windows CODESYS PC side3. just forward the VPN Port to the Pi (this you need to setup in your router)Then you could establish a connection between CODESYS PC and Raspberry Pi.Add the remote VPN Address as Gateway Address in CODESYS and scan the Pi plc.Connect then to the Pi with CODESYS... that's it.Forwarding that way the webserver should be possible to inside this VPN tunnel it should be safe to access it.Maybe I will add a detailed how-to because I think this is important to do it the right and secure way!BREdwin
-
-Hi,there are many tutorials out there, as example one is:http://www.raspberrypi.org/forums/viewtopic.php?t=20916Never connect to the runtime ports to the internet without VPN otherwise the whole world couldmanipulate your plc BREdwin
-

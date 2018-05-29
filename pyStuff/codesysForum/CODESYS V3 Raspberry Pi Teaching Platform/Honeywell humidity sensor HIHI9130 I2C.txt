@@ -1,2 +1,0 @@
-Hello. Has enybody a soft for this sensor? I bought this sensor and I trying to connect it to I2C bus. If somebody could help I will gratefull. Thank you.
-

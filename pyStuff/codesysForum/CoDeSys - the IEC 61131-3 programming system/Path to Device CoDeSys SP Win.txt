@@ -1,5 +1,0 @@
-I'm new to CoDeSys V3 and have started playing around with it. I've installed the development environment on my laptop along with the gateway and SP Win. When developing a very basic test application, I've tried setting up a path to SP Win from the Gateway (Device->Communication Settings). On the first try, a device was found with the network name of my laptop, IP address etc. was shown when I clicked 'Scan Network', but no connection could be established when attempting to log into the device. I subsequently deleted the device, but afterwards I've been unable to get it back. Clicking on Scan Network doesn't show the PLC, although the service has been started and manually adding a device produces an unhandled exception from the CoDeSys IDE. Am I doing something very wrong, or do I have to use SP Win on a different PC as the one I am developing on? Is there a specific network that I need to use? Currently my laptop is connected to the corporate lan with DHCP.
-
-Thanks
-Frikkie
-

@@ -1,8 +1,0 @@
-Hello to the experts!I'm developing a library with a couple of function blocks, each with an associated visu. All things runs well - with one exception: For a diagnostic function block a table should show the diagnostic data. They are located in an ARRAY [1..200] OF <struct>. An output variable of the function block defines this array:Code:DiagBuff    : ARRAY [1..200] OF ..._DIAGMESSAGE;When I insert a table into the related visu, it is not possible, to assign this output variable in the usual form $INST$.DiagBuff. This variable is not shown with F2 and also the table columns are empty. In the CoDeSys Help I found an example with a direct variable connection: PLC_PRG.<Daten>.Is the indirect variable assignment $INST$<Data> not working with tables? Is there an alternative?My version: CoDeSys 2.3.9.42 (pbF).
-
-My working work-around: I place the Array as a Global var. And it seems to work.
-
-what about the dot you are using.and in V2.3 n dynamic variable can be made.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

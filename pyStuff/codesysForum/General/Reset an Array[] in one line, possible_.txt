@@ -1,6 +1,0 @@
-Hello,I would like to know if it's possible to "Reset" all the index of an array to a value, with one line?For example:I have a array of 5 real. array[1]= 1.12, array[2]= 2.23, array[3]= 3.45, array[4]= 4.56, etc...In a phase of my sequence, I need to "Reset" completely my array[] to a specific value, for example 0.Is there any commands that allow that or should I use a Loop to "Reset" each index one by one...?eg: array[1..5] := 0; or something like that?Thank you for your help,Regards,Fred
-
-There is no standard way to do this.However, if you don't aim platform independence, and your target platform support SysLibMem library, you might want to try:SysMemSet(ADR(MyArray),0,SIZEOF(MyArray));However, this only works, if you'd like to reset everything to 0, or it's an array of bytes.I'm not sure about the performance difference between this solution and a standard ST for loop...
-
-Hello,Ok, I'm gonna to see if I have SysLibMem library.I want reset all to '0', so it would be perfect.Anyway, I can measure the time for performing the 2 methods and compare it... Finally a "For" Loop is not so big to write.Thank you for your idea,Regards,Fred
-

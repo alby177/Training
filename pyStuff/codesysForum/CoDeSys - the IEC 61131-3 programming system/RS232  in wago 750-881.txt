@@ -1,4 +1,0 @@
-HelloI have a serial port RS232.If I send one command at this I get a data back (REAL number).I need this data in a WAGO 750-881 PLC, how do I downloaded it in the PLC?I can see there are several modules supporting RS232, but which one?Is there any function blocks I can use?Have no experience with RS232.
-
-I think you need the sercomm.lib library from Wago. Here attached the official docs (do you need just a pure 232 comms or Modbus RTU over 232?)
-

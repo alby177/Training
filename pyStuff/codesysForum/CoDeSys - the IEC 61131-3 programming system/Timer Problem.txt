@@ -1,6 +1,0 @@
-Hello Dear friends,     I have many problems with my TON timer.When I use just one TON, the program run normaly. But When use more than one It doesn't work.The PLC connot run correctly. And it stops on one Step on which it connot progress again.Just notice , my PLc is a Controller AC1353 of IFM Electronic.Please I need your help.Many thank!
-
-you must give your timer a unique name above the diagramor in ST it is timer1:TONetc.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

@@ -1,6 +1,0 @@
-What about difference between Control Win vs Control RTE and Control SL?Do you know about any specific manual or documantion to read about these Controls?BR
-
-Hi,the main difference:Control RTE ( SoftMotion RTE:hard realtime capable plc - <50us Jitter and Tasks <1ms possible to setupControl Win:not realtime capable plc - no tasks <1ms possible If you install Control RTE there is a manual available.BREdwin
-
-Thanks for all your help, I appreciate it.
-

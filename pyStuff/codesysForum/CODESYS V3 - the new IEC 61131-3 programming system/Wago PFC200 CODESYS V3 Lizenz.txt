@@ -1,4 +1,0 @@
-Hallo,ich verwende den Wago PFC200 mit der CODESYS V3 Runtime. Kann jemand sagen ob es möglich ist im IEC-Code herauszufinden ob der Controller ordnungsgemäß lizensiert ist oder sich im Testbetrieb befindet? Ich würde diese Info gerne auf meine Visu bringen (Fremdvisualisierung über OPC, keine Targetvisu). Ich hatte den Fall dass ein Controller beim Kunden ohne Lizenz eingebaut wurde und der Inbetriebsetzer das nicht gemerkt hat weil die Runtime deutlich über 2 h (wie angegeben) läuft.Danke für Eure Unterstüzungmarkant
-
-Hi,see the FAQ's:viewtopic.php?f=22&t=5641&p=16248#p16248GrüßeEdwin
-

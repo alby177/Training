@@ -1,6 +1,0 @@
-Hiwhen i try the example that come with the CODESYS Control for raspberry for using ethercat with beckhof i/o i get tis message                 ------ Build started: Application: Device.Application -------                typify code ...[WARNING]       EtherCAT: Application [Device: Plc Logic]: C0100:  Library IODrvEtherCAT, 3.5.4.10 (3S - Smart Software Solutions GmbH) has not been installed, or no valid license could be foundWhere can i find the library  IODrvEtherCAT, 3.5.4.10 Best Regards P Svensson
-
-Hi,this will be solved to 3.5SP5 (July 2014)(Download missing libraries on demand)for now please use attached compiled library and install it.https://dl.codesys.com/public.php?servi ... 4cbafc5782BR Edwin
-
-Thank you very much for the help.
-

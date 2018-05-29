@@ -1,4 +1,0 @@
-Hi. Where I can find full description of diagnonis variables for Network Variables List (Sender)?Also I have question about next sentence from CODESYS help:"The maximum size of a network variable is 255 Bytes. The number of network variables is not limited."I try to send ARRAY [0..300] OF BYTE and it's OK, I can receive all 301 bytes on receive device. So what mean this sentence?
-
-Up.
-

@@ -1,2 +1,0 @@
-Hello I like to create boot application but I always have this error :The service (create a boot application) is not implemented on the device
-

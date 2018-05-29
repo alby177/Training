@@ -1,2 +1,0 @@
-Hi all,i tried to create a log file for a variable in my simulation program using Excel through DDE.can i make Codesys record the variables starting from the time i run my program and end when i stop the sequence,the open a new file when i run my program again.Is it possible?? =CODESYS|'C:\Users\KC\Desktop\MMU\KC\PLC Project\Conveyor.PRO'! plc_prg.On
-

@@ -1,2 +1,0 @@
-Hi all.I know that in a visualization is possible to see an enum as an string.It is possible to pass an enum to an string outside visualizationEnviat des del meu Aquaris M5.5 usant Tapatalk
-

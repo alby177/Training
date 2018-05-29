@@ -1,4 +1,0 @@
-Is there any solution to clear/delete the alarm history at runtime?Regards
-
-Hi,there are some entries in the feature/bug/improvement tracking database for it but till nowthis is still not implemented.BREdwin
-

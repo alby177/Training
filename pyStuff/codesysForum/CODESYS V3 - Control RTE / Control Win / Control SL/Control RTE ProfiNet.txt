@@ -1,6 +1,0 @@
-Hi! First post to this forum.I'm experimenting with Control RTE SL and profinet connections. When I try to download I get the following error messages. I don't get any during compiling.[FATAL ERROR]   Unresolved reference: 'SYSETHERNETADAPTEROPEN'[FATAL ERROR]   Unresolved reference: 'SYSETHERNETADAPTERCLOSE'[FATAL ERROR]   Unresolved reference: 'GETNUMBEROFADAPTERS'[FATAL ERROR]   Unresolved reference: 'GETADAPTERINFO'[FATAL ERROR]   Unresolved reference: 'SYSETHERNETIPFRAMERECEIVE'[FATAL ERROR]   Unresolved reference: 'SYSETHERNETETHFRAMESEND'[FATAL ERROR]   Unresolved reference: 'SYSETHERNETETHFRAMERECEIVE'[FATAL ERROR]   Unresolved reference: 'SYSETHERNETIPFRAMESEND'[FATAL ERROR]   Unresolved reference: 'SYSETHERNETFRAMERELEASE'Did I do something wrong during install?
-
-Hi,You need to install the CODESYS network driver, same which is needed for Ethercat in the windows device manager.Add the component to the RTE config... see the RTE pdf manual for the details.BREdwin
-
-Thanks Edwin. I installed the PRO 1000 driver for my ethernet card and now I can download and run. But I came with a new problem. Ik have both a profinet and a modbus connection but when i connect one or the other the other one dus disconnects and does not come back.
-

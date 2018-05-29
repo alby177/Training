@@ -1,6 +1,0 @@
-I have a 60 minutes timer using TON. I would like to display the timer value in a HMI that read WORDS from the PLC, 1WORD for minute and another WORD for seconds. The timer ET is in  TIME format. I've tried various method in converting the TIME to 2 separate words, minute and second. The conversion process is so long that it the display on the HMI is not as per the actual time counting.I've tried using 2 TON with 1 timer is 60s and 1 timer is 60minutes (so that i can extract the ET convert TIME to WORD for seconds). however resetting the the 60s everytime looses out 2 seconds and the time is not correspondend to the 60minutes timer after a few minute passed. I'm sure other people have faced this before. Do you have a good sample solution for this?
-
-for you www.oscat.deuse the realtimer and calculate the difference. convert this to what you want.for example a 60 minute timer is time(now) - starttime.divide by 1000 as the time is in ms.in simulation it will run slow the way you are doing.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

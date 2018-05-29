@@ -1,6 +1,0 @@
-Dear all,For an academic demo need, I use controlwin 32-bits on a 64-bits win7 OS.The application is based on the httpclient lib.The pc is used in a network with proxy.Where can I configure proxy parameters on controlwin 32 bits ?Thanks a lot for your helps!BR(Happy New Year)
-
-Hi,did you try just to set up the proxy under Windows?What happens then and which errors occure on doning this?BREdwin
-
-Hi,Finally, I solved my prob in using SysProcess_ExecuteCommand2in the runtime to execute a curl command. It's generic (win/linux) and powerful.BR
-

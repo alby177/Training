@@ -1,4 +1,0 @@
-Hi.Could I use RaspberryPi RS232 port as MODBUS RTU Master ?Best regards,
-
-koniecznypiotr@wp.pl wrote:Hi.Could I use RaspberryPi RS232 port as MODBUS RTU Master ?Best regards,Sure. Turn on UART on RPI and use the ST485 OR MAX485. And read my post in this topic at page 3 - viewtopic.php?f=21&t=5699&start=30
-

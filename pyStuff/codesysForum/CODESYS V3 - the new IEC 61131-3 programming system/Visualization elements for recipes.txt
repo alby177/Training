@@ -1,2 +1,0 @@
-I have a recipe type with a few dozens of variables. I want to create a visualization screen that will show the current values of all the recipe's variables.Is there a visualization element that can do that, or do I have to do it manually?In the "RecipeManagment" library there is a sub-library called "Visu Intefaces" but its empty.
-

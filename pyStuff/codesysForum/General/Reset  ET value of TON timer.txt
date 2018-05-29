@@ -1,8 +1,0 @@
-Hello, I need to have delayed output every time input changes from false to true. For now I'm getting this only once. In the codesys help I have found this:"As soon as IN becomes TRUE, the time will begin to be counted in milliseconds in ET until its value is equal to PT. It will then remain constant."How I can reset value of ET so that I could delay my output multiples times, not once?Thanks.
-
-if you put the IN on FALSE the ET will reset. maybe you will need a RISE trigger and that negated to get a FALSE trigger when your input changes.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
-thx for your answer. indeed when IN falls to 0 ET resets. the timer was in an IF statement where it did not get a chance to reset, because the input was putted in a condition, sorry about that, now it works.
-

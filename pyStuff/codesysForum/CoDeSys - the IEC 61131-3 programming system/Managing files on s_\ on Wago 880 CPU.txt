@@ -1,2 +1,0 @@
-Hello.I have a Wago 880 with a SD card slot, i'm using it with a datalogger function block. The problem with this is that the datalogger block (provided by Wago), is accumulating data in the .csv file, how can i make sure that the SD card wont be full after a time?Is is possible to use the library "SysLibFile" and the function block "SysFileDelete" to delete files stored on the SD card. If so, how does "SysFileDelete" work, how do i activate it to delete the logfile on the SD card.I'm using Codesys 2.3.  Simen.
-

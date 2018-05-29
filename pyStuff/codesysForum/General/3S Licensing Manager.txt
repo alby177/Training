@@ -1,2 +1,0 @@
-Hi Just started on my first CoDeSys Project and downloaded a Wago Lib file, but I get a compile error saying the license manager cannot be loaded - when I try to run the License manager it say my hardware doesn't match the database & has possibly changed.How do I fix this?ThanksTony
-

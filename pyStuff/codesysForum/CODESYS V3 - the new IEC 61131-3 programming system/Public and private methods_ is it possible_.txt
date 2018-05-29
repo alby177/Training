@@ -1,4 +1,0 @@
-Hello,I've been programming in a more or less OOP way till today.  using the V2 system.Now I'm thinking on the V3 system and I've been trying to use it.The fact is that I'd like (I feel like it is a must have) to be able to set the methods to become publicly available in all the project or private in order that they could be accessed / called from the same function block instance.The problem that I've seen here is that it seems that the PUBLIC or PRIVATE modifiers seem not to exist.Is it possible to use something like that? Is it planned to be used? having methods is nicer than the approach I've been using till today, but anyway the only difference is passing one more variable...  Being able to filter which functions / methods / properties are available in different scopes would be great.Thank you in advance.Best regards, Joan.
-
-_________________http://www.robotecnik.com - robots, CNC and PLC programming.
-

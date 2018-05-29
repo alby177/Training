@@ -1,6 +1,0 @@
-The following Help section for Data Type > Structure implies that it is possible to compare structures: "If the target system supports the data type, as from compiler version >= 3.5.7.0 you can compare operands of type STRUCT (structure). Example: IF (stStruct1 := stStruct2) THEN...." . (I assume this is a typo and should read IF (struct1 = struct2) THEN ...)Using Control Win V3 Version 3.5.7.10, I have:TYPE TestDUT :STRUCT	MyInt: INT;END_STRUCTEND_TYPEVAR	struct1: TestDUT;	struct2: TestDUT;	testBool: BOOL;END_VARIF (struct1 = struct2) THEN	testBool := TRUE;END_IFThis generates the error:Cannot compare type 'TestDUT' with type 'TestDUT'Have I made an error or is this feature not supported on the target system?
-
-Hinot sure that you could still compare structure directly. But you could do it with pointers, using the Sysmemcmp function in library Sysmem. 	pstruct1: POINTER TO BYTE;	pstruct2: POINTER TO BYTE;       pstruct1 := ADR(struct1);       pstruct2 := ADR(struct2);IF sysmemcmp(pstruct1,pstruct2, SIZEOF(struct1)) <> 0 THEN	testBool := TRUE;ELSE	testBool := FALSE;	END_IFsomething as above
-
-Great, that's exactly what I need, thanks.
-

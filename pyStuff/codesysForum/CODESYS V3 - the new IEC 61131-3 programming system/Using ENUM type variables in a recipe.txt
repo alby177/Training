@@ -1,2 +1,0 @@
-How is it possible to add a variable of type ENUM to a recipe?I tried and I get a compilation error : " 'var_123' is not a valid value for strict ENUM type 'Mode' "I declared my ENUM type (called 'Mode') as DINT and a variable of type  'Mode'.When I add it to the recipe it automatically gives it type DINT
-

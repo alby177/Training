@@ -1,4 +1,0 @@
-Is it possible to Drag and Drop a dialog in visualization? Let's say my dialog is configured to open in the center of the screen, but is masking an indicator I'd like to monitor. It would be nice to have the ability to just drag and drop my dialog window at a new location. I was thinking to use mouse events that are built in visu such as mouse down, mouse move and mouse up, but I need a way to get the current cursor position (X and Y) into a variable in the PLC.Has anyone tried this?
-
-To get the current cursor X/Y coordinates you can use GetLastMouseMoveEvent in the SysTargetVisu23 library. I have thought of trying this for other elements but not for dialogs.
-

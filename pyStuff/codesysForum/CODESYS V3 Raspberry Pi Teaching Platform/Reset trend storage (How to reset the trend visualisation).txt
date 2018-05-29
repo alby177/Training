@@ -1,2 +1,0 @@
-Hello,I am tracking a variable with a trend element in my visualisation for test purposes. At the end of the test I would like to be able to press a "reset" button which causes the trend to reset. At the moment the trend shows me all the values he measured since I started the first test. How is this possible?Thank you an greetingsAndreas
-

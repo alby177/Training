@@ -1,4 +1,0 @@
-Hello all,I'am trying to export the Network variables from CoDeSys to micro innovation XV-440 HMI.I do the steps exactly as in the manual and when I hit the "Rebuild all" command no ITF file created.!!!any one can help please.Regards.
-
-Hello.What exactly do you want to do?Do you want to import tags in Galileo, from Codesys? ITF format is very old. If this is what you want to do, you must use the SYM_XML file created by Codesys and import it in Galileo.Best regards,Lucian
-

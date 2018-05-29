@@ -1,2 +1,0 @@
-Hi All, I have created a guide on a a popular maker website which is essentially a guide to getting started using Raspberry Pi on Codesys, it covers controlling GPIO, industrial Beckhoff IO over EtherCat, softmotion control of a Technosoft Servo Motor and creating a web visualisation.May be a useful tool, see what you think.http://www.instructables.com/id/Program ... h-CODESYS/
-

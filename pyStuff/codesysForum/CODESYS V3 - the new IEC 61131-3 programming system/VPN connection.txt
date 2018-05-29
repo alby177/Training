@@ -1,6 +1,0 @@
-Good evening,I am trying to connect to a device through a VPN connection in order to download future applications. I have done the VPN connection succesfully and I can see my device using programs such VNC viewer but when I want to connect CoDeSys, I do not detect the device scanning the network.Should I make any kind of change on the communication settings of CoDeSys or my VPN?Thanks in advance
-
-Hi,one option is to add the Gateway of the plc (use the IP Address of the VPN/remote machine) then a plc scan should be possible.second option: use the TCP Blockdriver by adding the device'add device' then use the VPN/remote IP address and select in 'Assignment mode'  -> 'IP Address using TCP',both options should work.E.Schwellinger
-
-I did several trials and reached to the first option. Anyway I did not know that there was a second possibility. Thanks a lot for your help!
-

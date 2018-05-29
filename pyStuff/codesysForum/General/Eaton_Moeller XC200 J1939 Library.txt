@@ -1,6 +1,0 @@
-Does anyone know if there is a library for J1939 communications for the Eaton/Moeller XC200 controller?  I could have sworn I saw one a few years ago but the web sights and product mix keeps changing with Eaton trying to get all the Moeller items into their fold.  I can't find mention of one anywhere.Thanks,
-
-_________________nOrM
-=====
-nOrM = Norman Dziedzic Jr.
-

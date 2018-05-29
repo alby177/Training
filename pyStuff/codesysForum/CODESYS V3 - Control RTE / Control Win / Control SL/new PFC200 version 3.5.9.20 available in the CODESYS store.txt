@@ -1,2 +1,0 @@
-V3.5.9.20http://store.codesys.com/systeme/codesy ... 00-sl.html- work now with Wago Firmware Version (06)- Kbus does work again with this firmware Version- new KBUS devices
-

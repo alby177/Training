@@ -1,4 +1,0 @@
-HelloI want to open a Codesys V2.3 project in Codesys V3.5 SP12.Normally this should be possible by selecting open project and selecting Codesys project files (before V3.5). But this option is not possible in my case. I can only chose between.All supported filesProject files (*.project)Project archive files (*.projectarchive)Library files (*.library)Can someone help me?
-
-Hi,the Import is only available in the 32Bit Version of CODESYS.You need to download the 32Bit Version from CODESYS Store (could be used both on the same System)BREdwin
-

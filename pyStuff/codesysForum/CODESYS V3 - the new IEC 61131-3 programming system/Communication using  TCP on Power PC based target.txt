@@ -1,6 +1,0 @@
-Dear Sir,           We have developed a CODESYS project with a TCP SERVER to communicate with a TCP Client running on   another PC. It is working successfully with a Win V3 (soft PLC) device.When it is downloaded to a power PC based  target which is  running a QNX Operating System ,it throws an error which is enclosed.Kindly  help us to resolve this .with regards,Mrs. Praveena
-
-Hi,You need to check the plc log for the unresolved references
-
-Hi!Don't you need an ethernet device?
-

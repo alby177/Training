@@ -1,6 +1,0 @@
-Here is a tutorial to set up a ProfiNET master in the PFC200 with CoDeSys Control for WAGO PFC200.  https://www.youtube.com/watch?v=CXpp_KY_6AkI would like to understand the compatible diagnostic layers and don't find these processes in the documentation specific to the PFC's capabilities ( there seem to be many things that the HW is not compatible with ).  Is there a PFC200 specific document describing the read/write config capabilities?
-
-Hi,in general there are no differences on PFC200 to other platforms.>there seem to be many things that the HW is not compatible withwhat do you mean with HW is not compatible with - what does not work where do you see limits?BREdwin
-
-I made an assumption based on what is written into the environment.  One example:With the ProfiNET coupler, when trying to update config parameters ( i.e. webserver) the "Write Values" button returns a message " not suppoerted by this device".  I do see that if you change the values and then login to the controller these parameters are then written.  Mostly, I just wanted to find more detailed documentation on diagnostic and advanced functionality.
-

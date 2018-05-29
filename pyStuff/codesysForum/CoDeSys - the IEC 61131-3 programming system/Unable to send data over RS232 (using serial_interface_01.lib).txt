@@ -1,8 +1,0 @@
-Hi all,I'm using the Wago 750-880 with the 750-650 to communicate over RS232. I'm using the serial_interface_01.lib (http://www.wago.com/wagoweb/documentati ... 10901e.htm). With this library I am able to receive data, but not sending data. This is the code I have so far:Code:VAR   COM2       : SERIAL_INTERFACE;   xOpenPort2   : BOOL := TRUE;   xInitPort2      : BOOL;   xSendActive2   : BOOL;   SendString2   : STRING := 'Msg from COM2';   ReceiveBuffer2   : typRing_Buffer;   index : INT;END_VARCode:index := index+1;IF index = 1000 THEN   xSendActive2 := TRUE;END_IFIF index = 2000 THEN   xSendActive2 := FALSE;   index := 0;END_IFCOM2(   bCOM_PORT_NR   := 2,   (*   cbBAUDRATE      := wBaudRate,      cbsBYTESIZE      := bDataBits,      cpPARITY         := bParity,      csSTOPBITS      := STOPBITS_1,      cfFLOW_CONTROL   := bFlowControl,*)      utRECEIVE_BUFFER    := ReceiveBuffer2,      ptSEND_BUFFER   := ADR(SendString2),      xINIT         := xInitPort2,           xOPEN_COM_PORT    := xOpenPort2,      iBYTES_TO_SEND   := LEN(SendString2) +1,      xSTART_SEND      := xSendActive2 );Data should be sent when xSTART_SEND is TRUE? The function block does not reset this value to FALSE.
-
-Apparently, the module has flow control enabled.... So it works now.
-
-if this counter is used as a type of counter then better use a task, you can time it.and check if buffer empty before putting data in to buffer.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

@@ -1,6 +1,0 @@
-I am working with Codesys V3.5 SP8 and during the simulation of the visualisation I get this error: "Entry CmContainer not found, error 200".Does somebody know what is it?Best regards,
-
-Hi,seems that this only occure in simulation mode?With the real device it does not occure again?BREdwin
-
-I have tried also with the device and doesn't work.I still have the same error.
-

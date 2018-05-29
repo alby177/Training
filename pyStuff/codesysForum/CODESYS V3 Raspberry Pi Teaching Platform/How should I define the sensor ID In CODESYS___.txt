@@ -1,2 +1,0 @@
-We have several sensors (pressure sensor / length / angle, etc.)These sensors are connected to ECU TTCONTROL (image attach)  through the  protocol CANThe software has been defined for the sensor ID?What is the address of the sensors in the software? Does this  sensor in software  codesys  Has a specific ID?please help me with Teaching with Image software codesystank you dear sir
-

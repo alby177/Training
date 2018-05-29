@@ -1,8 +1,0 @@
-Hello AllI am using codesys V3.6. I have a Visualization dialog box for my web visu. I wonder if its possible to move the Dialog box around the Screen with the mouse.Thanks
-
-I believe an example of moving an object by mouse dragging can be found in:http://store.codesys.com/visualization-elements.html
-
-Thank you Tim,Thats exactly what i was looking for ..!Good Day.
-
-I understand how the example works. But that is a rectangle object and we update the position by linking the element property ‘Absolute movement’ with the variables diDragX and diDragY.  To drag a Dialog Box, how can we update the position in real time?
-

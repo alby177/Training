@@ -1,2 +1,0 @@
-Hi,I'm trying to access the global text list on an Eaton XV300 program (Codesys 3.5.8 based) and I can't find the GlobalTextList object in the tree where the help file states it should be.Any suggestions?PJE
-

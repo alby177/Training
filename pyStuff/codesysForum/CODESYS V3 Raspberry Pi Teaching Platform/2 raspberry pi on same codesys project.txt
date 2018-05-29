@@ -1,8 +1,0 @@
-Hi,Is it possible to have 2 raspberry pi on same project, and connect to them ?I can't connect to the first one, only to he second pi...Thanks for your help.Bests regards.
-
-Hi,set active application.BREdwin
-
-Thanks !
-
-I've just seen it, just one question; you communicate the 2 raspberry's between Ethernet, isn't it?I want to communicate two raspi's and thinked to use the protocol Ethernet/IP. No realised to use standard Ethernet, but it's a good idea, because it's more simple, no need to set one device as scanner and the other as adapter, and deal with EDS files...
-

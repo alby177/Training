@@ -1,4 +1,0 @@
-Hello,which are the steps to test the program in Codesys on the PLC?Thank you.
-
-Hello,which are steps for configuration network with SYCON?
-

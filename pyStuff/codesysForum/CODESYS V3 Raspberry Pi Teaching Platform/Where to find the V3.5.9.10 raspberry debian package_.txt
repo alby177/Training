@@ -1,4 +1,0 @@
-Hi,I updated my Codesys to 3V5.9 and also installed the latest Pi package.However, Updating the pi to version 3.5.9.10 is not possible since there is no debian package on my PC.Tools->Update RaspberryPi   wil not show a versionRegards,Ruud
-
-Hi,This seems only to happen if you change the default path when installing the Raspberry Pi package.If you install the package ..you get the Debian package installes to: "c:\Users\YourWindowsUserName\CODESYS Control for Raspberry PI\.." . (Sure this is a bug need to be solved).Br Edwin
-

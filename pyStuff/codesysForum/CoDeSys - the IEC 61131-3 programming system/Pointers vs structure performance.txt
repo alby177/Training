@@ -1,8 +1,0 @@
-Hi, what the better way in term of performance when we have 1 FB Master and n FB Slave and we need exchange information between them.1) Create a struture and pass it with a VAR_IN_OUT to master and slave FB2) Create a pointer parameter to master  in the FB slaveThanks in advance.
-
-var in out means you will have a bigger structure.better one structure for out and another for Input.see www.oscat.de for functions to do communications.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
-If you just compare the performance of data-transport then both methods are same, also the VAR_IN_OUT is a pointer to the data. With using the VAR_IN_OUT the compiler can checke if there is data connected, if the connected data type is correct, and there is absolutely no risk of pointing to wrong data (caused by a onlinechange).So my favorite is : VAR_IN_OUTIf you where asking the same question in the V3 Forum you got more options (References + Interfaces) Which are defenitly also good ways to transfer "large" amounts of data with a good performance.RegardsRalph
-

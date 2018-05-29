@@ -1,4 +1,0 @@
-This is the library that is used to interact with CodeMeter to get license info.I dont know the exact mechanism of how this is used by the 3SLicense library, but should'nt it be signed. Otherwise isnt it easy to alter this library and bypass all licensing?
-
-Hello Shabroz,Thank you very much for your encouragement regarding licensing. In fact there is another secure mechanism used to exchange information with CodeMeter.In future, please contact us in terms of security directly (security@codesys.com) instead via this public forum.BR 3S Moderator
-

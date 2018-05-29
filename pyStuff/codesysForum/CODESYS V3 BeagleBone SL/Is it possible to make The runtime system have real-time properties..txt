@@ -1,8 +1,0 @@
-Is it possible to make "The BeagleBone Black SL" runtime system have real-time properties , so Jitter will be reduced.Thank you.
-
-Hi,you need to apply a rt_preemt kernel patch.. this will reduce the jitter.search the forum for 'rt_preempt'BREdwin
-
-I have used the way to update the  RT-kernerl in forum. But the link of linux-kernel update site couldn't be linked. The file has been removed and I couldn't update the linux kernel to any verson. I'm not familiar with linux. I have spend several month but still couldn't solve the problem. Is there new way, that I can follow, to update the kernel to RT-kernel. Please provide the new steps to update the kernel.  Thank you!
-
-Hello!use link:https://elinux.org/Beagleboard:BeagleBo ... el_Options
-

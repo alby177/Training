@@ -1,2 +1,0 @@
-Hello All,can any one help me how to tansfer files from controller1(HMI) to Controller2(PLC) on canbus
-

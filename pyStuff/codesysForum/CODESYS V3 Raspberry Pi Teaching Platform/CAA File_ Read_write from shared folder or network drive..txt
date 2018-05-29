@@ -1,2 +1,0 @@
-Hi,Reading and writing files from local drive is no problem but if i change the path to a mapped drive File.Open returns xError.eError returns 5104: file or directory not exist.Is there a way to access shared folder or mapped drive??Thanks Ton.
-

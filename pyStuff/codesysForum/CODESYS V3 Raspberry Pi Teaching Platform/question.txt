@@ -1,2 +1,0 @@
-Someone could explain how the connection mark-source sink works, even though I try not to use them in CFC programming, I'm sure it's obvious but I do not give it with it
-

@@ -1,6 +1,0 @@
-Hi allI just installed CODESYS V2.3 from free download area. I tried to start a project by configuring the hardware (assigning the inputs to the plc input cards)  is this possible with the software downloaded for free or the software is just a demo?
-
-in the demo version you can make a softplc, plcwinnt for example.use file,new then you have to fill in what type of hardware you like, for me it is wago, but in demo use any of the 3 possibilities.and now you can use a lot now, simpler is to do this in global variables.the demo will stop after 2 hours running.yes you may use %QW etc, you can develop all types of programs, and in the end have them compiled on a registered version.in school this way only one licence is needed.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

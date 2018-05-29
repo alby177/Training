@@ -1,4 +1,0 @@
-I would like to do tests with the bacnet license to see if it meets my expectations, could I know what is the limitation of the unlicensed version?
-
-Hi,it works for 30min without limitation,  then stops running without a license.BREdwin
-

@@ -1,2 +1,0 @@
-Hi! Which PLCs are available with 2xCAN and RS232? I'm currently using the TTControl TTC60, which works very well, but are considering alternatives. Currently using Codesys 2.3, but could perhaps upgrade to 3.X as well. Need a few I/Os as well, but not many. It would be perfect with a modular device where RS232 (or even RS422 etc) can be added as extension modules. The PLC must work with 12VDC.Btw, the IFM CR0403 is almost perfect, but unfortunately lacks RS232.
-

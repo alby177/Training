@@ -1,4 +1,0 @@
-I wanted to change color for comment and other object? If it possible ? Thanks
-
-are you wanting to change the color of a visual object or in the actual editor iteself?
-

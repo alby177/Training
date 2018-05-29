@@ -1,2 +1,0 @@
-Hello,I am trying to install codesys runtime on the BBB. When I update using Codesys I get the following error:[ERROR]         Target [removing]: sudo: no tty present and no askpass program specified[INFORMATION]   Update finishedI can ping the BBB on its default static address 192.168.7.2What could be the problem?BR,Carsten VoortEdit:Already fixed it, I had to log in with root and root as password (so no empty password). I use a beaglebone black industrail (element 14) with the latest Debian distribution (Jessie, Debian 8.7 2017-03-19 4GB SD LXQT).
-

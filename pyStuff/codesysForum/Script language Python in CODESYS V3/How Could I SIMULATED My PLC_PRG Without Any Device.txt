@@ -1,8 +1,0 @@
-IN Codesys V2.3 We Could SimuLATED WITHOUT ANY Device( 'None' Target At the Codesys windows Target )I have tried that at Codesys V3 but it is Imposible to Connect to the Simulated it said to me tahta I need to add a Device ? I do not understand Could you give some help to learn CODESYS V3 PLEASE? ThanksI hope You Can Help With that.God Bless You  In Jesus Name ! ! 
-
-Hi!If you use the taget Codesys ... WinNT something.  then you can start the softplc and run for 2 hours. Sorry don't have Codesys installed so don't know exacly the names on the programs.There is two versions one called RTE, this is for realtime applications and motion.
-
-First, this question seems not scripting related, and so I think you might get better answers in the general V3 forum instead of here. Second, I know that V3 also supports some simulation mode, but I personally did not use it yet.
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
-

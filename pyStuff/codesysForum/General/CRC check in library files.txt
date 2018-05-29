@@ -1,2 +1,0 @@
-Hello,I'm using a python script to generate static code for codesys projects. Because I'm tired of copy-pasting the generated code into the codesys system, I decided to let the python script generate a  .lib file to allow a direct use for codesys.It seems like 3S is using some CRC check fields in their library file system, so I can't edit a library file without getting a "file currupted" error when I try to load it.Does anybody know the specific bytes or chars in the header and or bottom information of .lib files which I need to change or replace for a correct CRC checksum?
-

@@ -1,4 +1,0 @@
-hello:I'm finishing my raspberry project and I have two doubts:on the trend I generate the historical variables I want and visualize them perfectly but all at once and thought about generating a record for each trend to be able to see them separately but I wonder there is a way that although in a trend register there are 5 trends select which one do you want to see?and the second one, the visualization works perfect but if I open the visualization from two computers and in one change to another visualization in the other computer I am changed to the same visualization as the first one, there is a way that in a visualization two users are in two different pages?very thanks,
-
-good,  the problem of the visualization is solved. I have the trend.
-

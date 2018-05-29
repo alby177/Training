@@ -1,2 +1,0 @@
-Hi EveryoneI have multiple version of Codesys installed on pc.When i try opening any of my programs it always opens it with the newest version.Is it possible that codesys prompt me with all available version and let me choose the version (Codesys without Profile).Thanks and Warm regards
-

@@ -1,4 +1,0 @@
-Getting a "symbols not loaded" (5) error response when attempting to connect to a PLC using a gateway. Using the PLCHandler.ocx ActiveX control.
-
-What does this mean, and how can it be fixed?
-

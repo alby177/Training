@@ -1,2 +1,0 @@
-hi Everyone,I'm trying to use the SML Library hoping it will light up my project.But as soon as I compile, I have error saying that Axis_ref_Virtual_SM3 is not equal to Axis_Ref_SML.Does someone know where I can find device descritpion for virtual drive using SML Library?ThanksWilliams Fuehrer
-

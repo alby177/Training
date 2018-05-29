@@ -1,2 +1,0 @@
-creating a new global variabele listby default codesys 3.5 sp8 p4 generates the attribute {attribute 'qualified_only'}when you create a new global variable list.to force the programmer to use the name space of the declared variable in this list. is it possible to disable this default behavior  ???And how can it be done ???kind regards
-

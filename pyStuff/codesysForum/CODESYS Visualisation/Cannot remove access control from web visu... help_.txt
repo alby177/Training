@@ -1,8 +1,0 @@
-I'm using CODESYS control win v3.5.10.10At one point I set up online login and now whenever I connect to the webvisu server, the client is asked for login. I do not have user management set up on visualization manager. I need to clear all login dialogs from popping up. One of my webvisu's is a mobile oriented visu and the default login dialogs are cancer to work with using a mobile device. I need to be able to roll back to no access control of any kind, please anyone willing or able to help solve this issue would be much appreciated!
-
-Please let me know if there's a more relevant board this should be posted in. I still cannot seem to default back to no user login when the webvisu is loaded up. Still requires Owner to sign in.
-
-Hi,- remove the user management in the Project- reset original on the device- restart plc and download the Project without usermanagementBREdwin
-
-Thank you Edwin,Reset origin was the only step I was missing. Thanks again.
-

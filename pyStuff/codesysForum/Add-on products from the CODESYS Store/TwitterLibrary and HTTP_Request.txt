@@ -1,2 +1,0 @@
-The HTTP_Request FB in the TwitterLibrary extends CBM.ETrig and that's fine.What it also do is implement a number of methods (prvStart, prvResetOutputs, ...) and I was wondering where I could find documentation and/or examples of how to use them.They don't seem to be called.prvStart should according to it's comments be called on rising edge of xExecute.Is that something you have to arrange manually or how does it work?
-

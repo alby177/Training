@@ -1,4 +1,0 @@
-I have CoDeSys 3.5 running on Windows 7. Recently I noticed that CoDeSysControlService is listening on port 0.0.0.0:8080, which recently started interfering with another program I am running. I have had the other program and CoDeSys running on the same platform for months and never saw this interference before.Has anyone else seen this? Is there a way to configure CoDeSysControlService so it only listens on specific IP addresses? Any way to disable it altogether?
-
-I am not sure, but somehow it must be related to the web visualisation which is listening to port 8080 by default.One thing you could try is open the CODESYSControl.cfg and see if the Component.x=CmpWebServerHandlerV3 and/or Component.x=CmpWebServer are enabled.Maybe if you disable these, the CODESYS Control doesn't use this port anymore.
-

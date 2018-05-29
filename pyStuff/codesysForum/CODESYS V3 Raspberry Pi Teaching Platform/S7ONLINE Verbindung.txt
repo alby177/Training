@@ -1,2 +1,0 @@
-Hallo,gibt es in CODESYS eine Möglichkeit eine S7Online Verbindung aufzubauen um Variablen z.B. aus Datenbausteinen auszulesen.Ich habe hier eine S7 315-2PN/DP in der Ich keine Softwareänderung durchführen kann, ich möchte aber zwei variablen aus einem DB auslesen und diese per OPC-UA testweise zu Verfügung stellen.Konnte leider keine beispiele hierzu finden.GrußAndi
-

@@ -1,2 +1,0 @@
-hello:I am trying to generate a visualization from an FB.So I read it simply by adding the attribute {attribute'FBVisuCreator'} to a POU that is an FB and giving project / generate visualization, the visualization is created automatically but it does not work for me could someone please help me out with this?
-

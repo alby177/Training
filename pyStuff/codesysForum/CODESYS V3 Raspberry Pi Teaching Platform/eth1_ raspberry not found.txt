@@ -1,6 +1,0 @@
-Hello,I want to use the ethernet port of my Raspberry to connect to a Beckhoff coupler. This is why I want the network connection to run over one of the USB ports of the Raspberry with an Ethernet adapter. Model: TP-Link, UE300I set the static IP of the Raspberry for eth1 and I can connect via Putty. But the Codesys command 'Update Raspberry Pi' cannot find my Raspberry anymore.Before I had a direct ethernet connection with eth0 without the adapter and I got the Codesys running on the Raspberry fine.Anybody had this problem before?Thank you,Joanna
-
-Hi,this update command identify the Pi's by their mac address,this means if you scan them when connected by eth1 other usb Ethernet Adapter nothing will be found.The hint is, just add the IP address to the update tool, then you could install the runtime. (without scan it)BREdwin
-
-Thank you, that did the trick 
-

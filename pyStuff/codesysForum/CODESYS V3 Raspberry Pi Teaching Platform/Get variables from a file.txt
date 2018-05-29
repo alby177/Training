@@ -1,4 +1,0 @@
-Is it possible to get variable in codesys V3.5 from a file which is on the memory of the Raspberry Pi ? What language should be used ?Best regards,Julien.
-
-Hi,there are so many options to do this:1. http://store.codesys.com/application/re ... ample.html2. PersistenceManager Application Composer (you do not need a license everything what you Need is included in CODESYS)3. Ini file Reader from store http://store.codesys.com/ini-file-utility.html4. do it manually by your application see http://store.codesys.com/file-utilities.htmljust to give you an idea how you might realize this.BREdwin
-

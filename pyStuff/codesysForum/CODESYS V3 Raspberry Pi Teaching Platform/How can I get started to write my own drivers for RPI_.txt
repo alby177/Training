@@ -1,6 +1,0 @@
-If I implement something that isn't using i2c or SPI, but for example bit banging gpio, how could I do this?I know how to do it using C/C++ on the RPI but what do I need to make a codesys driver out of it, if at all possible?Thanks in adv.Peter
-
-Hi,You need to wait for the next release, there will be a driver included which give you access to the gpio.BrE.Schwellinger
-
-or use this library and devdescription as an example:viewtopic.php?f=21&t=5629#p9986
-

@@ -1,4 +1,0 @@
-Is there a way to find all of the memory addresses for my variables after compile?  This would allow me to monitor some variables over a bus/serial system when online debugging won't be available.  I am used to having this with C applications.  Somehow this also exists with CoDeSys and the .compileinfo file, but I didn't find anything in the file...
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-

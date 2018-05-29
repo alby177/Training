@@ -1,2 +1,0 @@
-Hello,How import an EDS file for CAnopen device?I have seen a lot of message on the subject but none is complete or clear.thksBest regards
-

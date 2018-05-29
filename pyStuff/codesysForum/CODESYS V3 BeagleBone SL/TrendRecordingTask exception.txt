@@ -1,4 +1,0 @@
-I am using a trend recording widget with BBB. Most of the time it works fine, but sometimes, it crashes after a "Reboot Target".The exception error happens in DeterminePreviousConfiguration [TrendFBColumnManager].Attachment:stackTrace.pngTo fix this issue, I need to delete the sqlite databases.I have attached a sample project. Attachment:supervision_minimalCrashExemple.projectIf you run it on a BBB, then restart the target, it sometimes crashes. I noticed it was often linked with a few changes I make on the project, for example, structured code modifications or adding control widgets, then somehow project is not properly updated even with full uploading of the new project.Anthony
-
-Hi,thank you for reporting this,I have created a Bug report for this.Hope this will be solved in one of the next Versions.BREdwin
-

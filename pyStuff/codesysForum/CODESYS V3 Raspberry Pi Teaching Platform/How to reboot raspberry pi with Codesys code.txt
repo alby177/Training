@@ -1,6 +1,0 @@
-Hi all,I'd like to reboot raspberry with codesys code, for example in a ST file.It's possible?If it is not possible, can I reboot raspberry with a script to run not manually, but automatically when an event or time expires (as a routine handled by a task)?Thanks in advantage
-
-make a service ex python to read a modbus register and depending on register state do reboot, there is also  shared memory  https://store.codesys.com/shared-memory ... lt#Product Description
-
-https://forum-de.codesys.com/viewtopic.php?t=5030#p16293
-

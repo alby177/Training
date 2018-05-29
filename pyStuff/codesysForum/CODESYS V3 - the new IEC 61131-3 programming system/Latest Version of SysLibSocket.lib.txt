@@ -1,4 +1,0 @@
-I am using ABB PLC and it comes with Codesys V2.3 and the the function 'SysSockPing' is not supported in the SysLibSocket provided.Can any one pls help me in getting the latest version of 'SysLibSocket.lib' library from net.Thanks and regards,
-
-The SysLibSocket is Target Specific. You should ask ABB for the required extension of the lib.
-

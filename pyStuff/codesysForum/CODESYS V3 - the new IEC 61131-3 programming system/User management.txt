@@ -1,6 +1,0 @@
-HelloWith User management in CODESYS and in the visualisations, how can I display (ot use in program) the user name and the level (Admin, service, Operator, ...) ?Thank you in advance for your answers  
-
-VisuElems.CurrentFullUserNameVisuElems.CurrentUserGroupName
-
-thank you TimvH. It works.The problem is often to find documentation on the thousands of system variables.  Fortunately there always someone in the community who knows some !!  Again thank you and best regards  
-

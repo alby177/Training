@@ -1,2 +1,0 @@
-Codesys have a library for SPI MCP3008 and i2c PCA9685.Is there a library for SPI and i2c universal IC's? Like Arduino has?
-

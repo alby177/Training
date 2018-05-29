@@ -1,8 +1,0 @@
-I have a main visualization with a frame inside. The frame contains another sub-visualization.I show the frame sub-visualization from the main visualization via a button with Switch Framevisualization property ('MainFrame.Frame,1'). It works properly.I would also like to have a button to close the frame content, but when I use Switch Framevisualization like below it doesn't work.'MainFrame.Frame,0'Is there a way to close the frame visualization from its object or to replace it with another (empty) one?
-
-yes just make a small visualisation in the sub going back to the main.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
-Now I can see it is possible in a project.But I am working with a library. And when I use the library in a project I cannot switch the frame by the frame element...I need that close button to be placed inside the frame sub-visualization, so that the sub-visualization is swapped with empty one by its button.
-

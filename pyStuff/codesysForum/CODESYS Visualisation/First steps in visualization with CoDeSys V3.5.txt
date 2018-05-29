@@ -1,4 +1,0 @@
-Hello There,I'm a teacher who wants to make the switch from a brand-dependent to a brand-independent programming language. I have chosen CoDeSys just for that. Now I downloaded CoDeSys 3.5 and tried out the simple steps as described in this 7 minute video:https://www.youtube.com/watch?v=2tX6gumm2zgE.g. defining an input and connected output and attach a bulb and switch to them. I made a build, put CoDeSys in Simulation mode and ran the program: it doesn't work    No matter what I try or change, I can't get it to run. I get the error messages as displayed in the screenshot. What am I doing wrong?It looks so easy in the video...Thanks in advance and greetings from the Netherlands,MJFD
-
-Check this topic: http://forum.codesys.com/viewtopic.php?f=11&t=6422
-

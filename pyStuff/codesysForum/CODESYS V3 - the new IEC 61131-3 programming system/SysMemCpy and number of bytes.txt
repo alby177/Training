@@ -1,8 +1,0 @@
-I have this DUTCode:TYPE DUT2 :STRUCT   word1:DWORD;   dword1:DWORD;END_STRUCTEND_TYPEand thisCode:TYPE DUT3 :STRUCT   by1:BYTE;   wd1:WORD;END_STRUCTEND_TYPEmy pou for test isCode:PROGRAM TESTVAR   Src: DUT2 ;   Dest: DUT2 ;   N_of_bytes: __XWORD := 6;END_VARCode:SysMemCpy(    pDest :=ADR(Dest),  (* destination *)        pSrc := ADR(Src),  (* source*)        udiCount := N_of_bytes,  (* N of bytes to copy *)    );Here my first question:i thinked one word + one doubleword = 6 byte butWhy if i set N_of_bytes=6 i can't copy the doubleword right? just using 8 ?and my second question, usingCode:PROGRAM TESTVAR   Src: DUT3 ;   Dest: DUT3 ;   N_of_bytes: __XWORD := 3;END_VARi thinked one byte + one word = 3 byte butWhy if i set N_of_bytes=3 i can't copy the word right? just using 4 ?
-
-The problem is byte alignment that happens behind the scenes. In your first example, a DWORD can only start on a even, even byte (such as position 0 or 4 or 8, etc). But you list a WORD first and it takes position 0 and 1. A DWORD cannot start at position 2, so the compiler moves it to position 4. In this case your structure is 8 bytes (6 +2 dead bytes). Same idea is true for your second example (a WORD cannot start on an odd position).To avoid this problem, you should always use SIZEOF(structure) to define the number of bytes to copy. Do this also for "normal" variables to avoid platform specific size problems (not every hardware system has a byte taking only one space...)Code:DUT2_BYTE_SIZE : __XWORD := SIZEOF(DUT2);
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-
-Great !Thanks a lot !Cheers.
-

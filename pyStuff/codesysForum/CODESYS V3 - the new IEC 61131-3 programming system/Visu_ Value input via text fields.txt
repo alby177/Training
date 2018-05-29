@@ -1,4 +1,0 @@
-Hello - I Need help! My visu (CODESYS integrated) holds 5 text fields for Input of numeric values. I have some Trouble with the mouse / keybord handling.1. When I use  "OnMouseClick" the visu hangs often when I go to the next text field by mouse-click.2. When I use  "OnMouseLeave" the visu Shows the Input field very outside of the text field, but the values are OK.What function is the right one for this type of application?By the way: what are the rules for upper case characters in this Forum? I have used the shift-key only at the beginning of a sentence! Is there a preset language - and where?
-
-My own first answer: The use of "OnMouseLeave" is functionally fully OK. But the Position of the Input field makes further the Problem, it has a fixed distance to the text field itself. So the half of my question is answered.Now I hope for a tip to posit the Input field exactly at the text field position.
-

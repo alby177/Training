@@ -1,6 +1,0 @@
-Hi, can anyone show me any examples of data types e.g. DWORD, UINT, REAL. Used for real world applications e.g. a DWORD is 32 bit. But what can i assign to this? What can use with this? 
-
-A totaliser is often a DWORDthis way you can add words together and make calcs with them.REAL is very much used when having analog signals.Example input is an analog signal (WORD) of 2345i change it with WORD_TO_REAL to 2345.0then divide it by 10 to get actual temp at input for a Pt100 thus 234.5 degrees celsius.UINT is used when number is not negative.A counter is never negative so you use a UINT to get the full range instead of half of it.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

@@ -1,2 +1,0 @@
-Hello I'm looking for a way to get from  lets say from an rectangle in a visualization its position and angle and sizehow can i do this ??are there library's who can do the the job for me ??or do i have to attach a variable from the type rectangle to the objectIf somebody can give me a clue it would be appreciated.kind regards
-

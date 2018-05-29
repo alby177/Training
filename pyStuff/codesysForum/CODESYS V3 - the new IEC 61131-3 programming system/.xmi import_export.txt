@@ -1,8 +1,0 @@
-Does the UML extension of CoDeSys provide the capability to import/export .xmi files (xml representation of UML models)?
-
-Hello.The CODESYS UML plug-in does not contain an XMI import/export and it's not on the current roadmap.Regards,Martin
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
-
-thanks for info
-

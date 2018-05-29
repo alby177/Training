@@ -1,8 +1,0 @@
-Hey Everybody,I trying to make a progam that shows the alarms in a table.I cannot use the alarm configuration because the hardware doesnt accept it.So what i think i need to use is a table where the alarms are put in, prefereable with a timestamp and with some information like sensor cable broken.Now my alarms are defined in an array of bool.But I really dont know how to accomplish this. Please help me out of this i would be gratefull.Thanks in advance
-
-a table is best for you.make a 'pointer' where your last alarm is. if pointer is above maxlimit set it to zero again.in your table should be the alarmnumber (in separate table all the names) when it occured (time) when it is off again, when it is seen when accepted. current status not in table but ask for it in other nametable.In nametable : the name obvious, the marker like %MX0.0, status, high limit,low limit, min,max, delay before alarmmake a visu with from pointer to pointer +25 lines with alarms.when status is fine leave it out of the visu.see also www.oscat.de it is a good example.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
- Hello! i try alarms in Codesys 2. Simple project - i took bool variable and it generated an alarm. An Alarm Table shows it well. But if i logout my PLC (PLC is running) and login again, the alarm disappears (that is the problem)in AlarmTable even when my variable is TRUE (alarm state). the Alarm appears again when variable is switched to FALSE and TRUE back.how to fix it?
-

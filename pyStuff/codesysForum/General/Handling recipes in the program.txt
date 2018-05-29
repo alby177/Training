@@ -1,2 +1,0 @@
-Hi, is there a way to manage recipes from the program?I mean, can I declare some recipes and create a POU where I can select (graphically from the HMI) the recipe I would like to use when the PLC is running?Many thanks for your help!Bye!  
-

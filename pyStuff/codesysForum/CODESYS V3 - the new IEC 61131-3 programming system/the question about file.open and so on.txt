@@ -1,6 +1,0 @@
-hi FAE     the question I faced was that I want to save the interpolator points being output by FBD into a document for txt. and then plot these points to a curve line by tool of Excel or Matlab.  so how can I do it？ expect to your replay！
-
-Hi,would recommend to use:SMC_AxisDiagnosticLog from sm3_basic libraryExecute the fb in the motion task:Example:SMC_AxisDiagnosticLogInstance(bExecute:=TRUE ,bCloseFile:= FALSE,sFileName:= 'schreibs_da_rein.txt',bSetPosition:= TRUE,bActPosition:=TRUE,bSetVelocity:= TRUE,bActVelocity:=TRUE,bSetAcceleration:=TRUE,	bActAcceleration:= TRUE,Axis:=Drive);additional needed is to call the file writing in an file taskPLC_PRG.SMC_AxisDiagnosticLogInstance.WriteToFile(Axis:=Drive);BREdwin
-
-thanks for your replay. and sorry for that our version don't include this function. if I want to save these interpolator points into an array firstly, and then save the array to a TXT. How to do?
-

@@ -1,4 +1,0 @@
-Hello,I have a new device that use 3.5.9.2.    It is fully licensed and operational.    I have a issue with the TSC1 message not sending the request engine speed.   I can see the message on the CAN bus but bytes 2 and 3 are always zero when I am writing 900 to the request engine speed.The J1939 manager and ecu versions are 3.5.9.0.    On the older device with 3.5.3.5 the TSC1 message transmits as expected.    Is there something that would prevent Codesys from allowing the bytes to populate?
-
-hi,guess this will be solved to 3.5.10.40 release.BREdwin
-

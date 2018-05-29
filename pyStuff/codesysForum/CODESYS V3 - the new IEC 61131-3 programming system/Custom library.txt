@@ -1,4 +1,0 @@
-Hi,I'm trying to create a custom library in Codesys 3, which I've done before in TwinCat, but I can't seem to get it done.I get an error stating that the project information isn't found.  The function block builds ok so where am I going wrong?I created a new Codesys project and then saved as a library, is this the problem.  Do I need to create as a library from the outset?Regards,Jon
-
-Problem solved, I was completely missing where the project information got filled in, probably Sunday working blues.Jon
-

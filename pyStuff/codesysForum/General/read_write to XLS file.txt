@@ -1,8 +1,0 @@
-I am working on a little project where Codysys is running on a notebook for now, the notebook needs to be connected to a Wago 750-881 controller later on.Now I managed to write an value (UDINT) to a database.xls file in the same directory as the *.pro file. Now I would like to read a value (UDINT,STRING) and so on into codesys.Actually the ideal situation would be that I would like to plug a USB stick into the notebook and read/write the *.xls file from there, but than I have to put in somewhere a path to the file from codesys and I can find that option.Can someone put me in the right direction?
-
-G/DayI have the same problem. Can somebody help?Thanks a lot
-
-or use the library with file from the wago websiteor use oscat.de library.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

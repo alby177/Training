@@ -1,2 +1,0 @@
-Is this a way to add custom node in this menu? For example, "MyDevices". I have very many target files in system and I want to order it with my folders (not only vendors).
-

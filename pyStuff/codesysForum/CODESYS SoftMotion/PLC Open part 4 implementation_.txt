@@ -1,8 +1,0 @@
-I was wondering if/when it will be possible to use PLC Open part 4 (coordinated motion) library within Codesys.I am fully aware that all and more of that can be obtained using the CNC library but to be frank it's quite tedious to setup and use the CNC state machine just to get a "simple" circular interpolation done, especially for customers who has no other need for CNC operations.I'm talking about functions such as:MC_AddAxisToGroupMC_GroupEnableMC_SetCartesianTransformMC_MoveCircularAbsoluteRegards,Kim HansenBeijer Electronics Automation AB
-
-Hi Kim,we will implement this for 3.5SP8 but this is a huge effort, therefore it is not100% clear if everything will be in to 3.5SP8 (scheduled for the of the year)_________________Edwin 3S - Smart Software Solutions GmbH
-
-As it wasn't within SP8 I'm now eagerly awaiting SP9    
-
-Hi Kim,we are not far from releasing it, this will be an additional packageand this will happen 'far' before SP9  - I do not have an exact date for it but guess it will happen the next two weeks.BREdwin
-

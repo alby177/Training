@@ -1,4 +1,0 @@
-Hi :I had installed the "CODESYS_Control_for_Raspberry_PiPackage"  .But when i create a new CODESYS project .I could not find the device at "Update Device"List .Am i wrong during package installation ?Can someone show me ?BRHero Lin
-
-Hi Hero,you need to search for the Raspi in the SoftMotion plc sectionBREdwin
-

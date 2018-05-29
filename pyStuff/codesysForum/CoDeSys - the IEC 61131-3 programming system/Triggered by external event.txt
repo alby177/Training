@@ -1,2 +1,0 @@
-can you give me some explanations about the 'Triggered by external event ' option for a task. How to use it when working with PLCWinNT?
-

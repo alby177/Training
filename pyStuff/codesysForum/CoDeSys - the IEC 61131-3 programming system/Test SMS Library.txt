@@ -1,6 +1,0 @@
-Hello,I need to test for a future applications for the 1st time a Demo Library Ver. 1.0.0.3.Unfortunately I'm not expert of CoDeSys V.3.5 xxxHow to use this Library? The manual ncluded is very short.How to connect my device into a GSM Serial Modem?How to send or recive in a very easy way for try this functionallity?Is there a very simple program?Thanks Franco
-
-please move question to V3
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

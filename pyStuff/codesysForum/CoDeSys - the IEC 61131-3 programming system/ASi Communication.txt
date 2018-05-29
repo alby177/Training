@@ -1,2 +1,0 @@
-HiI am using codesys 2.3 sp RTE to a Bhil wiedemann gateway (running in ethernet mode) and then with ASI, I connect to a  Festo VTSA-ASI-4E4A valve terminal .Using the supplied software from Bhil wiedemann i am able to connect to the gateway and valve terminal.I am unable to get the plc config right in codesys .I have used the Devicenetmaster to connect to the gateway but how do I connect to the asi slaves . I have tried to get config and target files for them but no luck.
-

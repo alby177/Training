@@ -1,6 +1,0 @@
-Hi,I am trying to create a customized external library. all seems to work well till I try to use the library component in another project. I get the error "Unresolved external POU's"Can some one please help me resolve this.Thanks
-
-you need a link to leveling in an external lib, make sure the subdirectory is correct for the lib.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

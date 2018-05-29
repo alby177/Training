@@ -1,6 +1,0 @@
-Hi,  I had downloaded some examples from codesys store. I was trying to run the package file on my PC. I can't able to run the packages successfully. It stops at mid without any further progress. The loading bar stops at mid. I am using Windows 10 64 bit system. I am using Codesys V3.5.9.2.
-
-Try this:Run the command line as an administrator and run the package from the command line.
-
-Hi,I would recommend to do this in CODESYS via Shopping cart- (this has the advantage that you have the 'update is available' notification in the package manager- if there is a new version available)BREdwin
-

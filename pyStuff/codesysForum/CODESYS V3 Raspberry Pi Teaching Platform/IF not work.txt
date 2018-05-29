@@ -1,6 +1,0 @@
-Good morning,do you think this code does not produce a result in the vaiabile TapCucStat?This code is in ST and the TOF is in LDCode:IF PLC_PRG.TOF_Open_Cucina.Q = TRUE AND PLC_PRG.TOF_Open_Cucina.ET = T#35S THEN   TapCucStat := 35;ELSE   TapCucStat := TIME_TO_INT(PLC_PRG.TOF_Open_Cucina.ET)/1000;END_IFI see the ET value of the TOF incremented but not assigned to the variable.Where am I wrong?Thank you, Alberto
-
-I would say because your timer is counting in the background and you may be hitting the fb at a .ET value of 35.012s or 34.985s which both doesn't equal 35s. Or are you saying that it is never assigning any value? Is the ST in a function block or in another program?Sent from my SM-G935F using Tapatalk
-
-May be possible that you aren t calling from anywhere tour st code?
-

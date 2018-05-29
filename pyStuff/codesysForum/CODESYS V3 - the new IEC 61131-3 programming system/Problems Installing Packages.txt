@@ -1,8 +1,0 @@
-I am running CodeSys V3.5 SP8 Patch 2 under Windows 7 Professional.Each time I try to install a package, I get an error message to say the installation was interrupted before the installation could finish.In Package Manager, no packages are listed as installed; however, when I look in the target directory, the files are installed.FWIW I did not use the default target directory but specified a different one.What could be creating this issue?Where do I find the log files?TIA for any help.
-
-_________________Computer Setup:- Windows 7 Professional- CodeSys V.5 SP8 Patch 2PLC Setup:- Pi2 (running headless via Putty)- Jessie Lite.
-
-Today I had the idea to run CodeSys as Administrator.When I opened the Package Manager, both packages I had installed are listed as installed.When I run CodeSys as a normal user, the packages do not show upin Package Manager.Seems a bit odd - a bug or normal?From the foregoing I expect when installing a package I probably need to run CodeSys as Administrator.
-
-_________________Computer Setup:- Windows 7 Professional- CodeSys V.5 SP8 Patch 2PLC Setup:- Pi2 (running headless via Putty)- Jessie Lite.
-

@@ -1,2 +1,0 @@
-Find enclosed the error   occurred in the  CmpChannelServer component  in  the   CODESYS IDE log.Kindly help us in understanding  why it has occurred and what it means.
-

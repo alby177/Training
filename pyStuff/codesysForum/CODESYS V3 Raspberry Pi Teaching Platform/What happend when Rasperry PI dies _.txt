@@ -1,4 +1,0 @@
-Hi !Yestarday I connect RPI to 12V. Fortunately, there is no Codesys licence on it. But that's make me wander ... What happened with licence when Rasperry PI dies?  Is it possible to transfer to other board?
-
-in that case you need to contact support@codesys.com
-

@@ -1,6 +1,0 @@
-Hello,I just upgraded my codesys from 2.3.9.7 to the latest version 2.3.9.35 supplied by Wago. My PC has windows 7I didn't uninstall the old version (as proposed in the installation procedure)when I build a project (same as before) the compiler (from time to time) tells a "runtime error #7" at the end of the compile process. See pdf file.I tested the same configuration on another PC equipped with windows XP. same problem.There seems to be no error in the project, which is loading and seems to run fine on the targetWhat may be the cause of this?
-
-Hi! Here: ftp://81.136.231.145/SoMachine%20V3.1%2 ... _Codes.pdfThe 7th error does not exist!Are you sure that, the memory of the device is not in the overflow status?this is a runtime error, doesn't a compile error.Maybe.. I suppose!
-
-Thank you for your suggestion, but the list you supplied to me is for codesys 3.x not for codesys 2.x! RegardsJacques
-

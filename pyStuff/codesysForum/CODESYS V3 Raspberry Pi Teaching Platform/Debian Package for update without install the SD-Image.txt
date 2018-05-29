@@ -1,6 +1,0 @@
-Hi,you'll find the debian package to update your image in the Store Download File: CODESYS_Control_for_Raspberry_PI.zip sudo dpkg -i codesyscontrol_arm_raspberry_V3.5.5.20.deb or request it at support@codesys.com if you have problems to find it.This is the recommended way, if you want to keep your Pi Image and update to 3.5.5.0 licenseable version.BR Edwin
-
-Does the new image work on Raspberry Pi B+ ?
-
-Hi,yes it does!BREdwin
-

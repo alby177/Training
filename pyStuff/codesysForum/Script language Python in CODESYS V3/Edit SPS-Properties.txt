@@ -1,6 +1,0 @@
-Is it possible to edit global SPS-Properties via ScriptInterface, like behavior of I/Os in Stop-mode, variable update behavior or diagnosis activation for devices ?
-
-Hi PLKM.PLKM wrote:Is it possible to edit global SPS-Properties via ScriptInterface, like behavior of I/Os in Stop-mode, variable update behavior or diagnosis activation for devices ?Not at the moment but it will be available with CODESYS V3.5 SP9.BRMartin
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
-

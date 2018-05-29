@@ -1,4 +1,0 @@
-I have a raspberry pi with codesys Runtime runnig. If I a modbus RTU master I get the error "no driver" and I don't have any idea how to fix it. My College did the same thing and It worked directly.
-
-Hi,I would recommend to read here:viewtopic.php?t=5699&start=45#p12981you need to add according to your serial Interface this settig into CODESYSControl_User.cfgpi@raspberrypi:~ $ sudo nano /etc/CODESYSControl_User.cfg[SysCom]Linux.Devicefile=/dev/ttyUSBfor example if you have connected a USB Serial device...If it is the local UART on GPIO's then it should be (& use sudo raspi-config to enable it)[SysCom]Linux.Devicefile=/dev/ttySBREdwin
-

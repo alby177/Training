@@ -1,6 +1,0 @@
-Hello!I'm preparing for my new project. I've choosen the m238 modicon plc from schneider because it has integrated PTO output which i need for my servo drive. Here is a problem. Does this plc supports a webvisu within a ide somachine. I haven't found anywhere on the net...If not, how can be solved?OrDo you recomend me any other plc that have webvisu, codesys v3 and pulse train output.Alex
-
-Hello,as I know there are actually no Schneider PLCs that support web visualization. But with the release of SoMachine V4 the next months, at least the new M241 supports web visualization and PTO.
-
-Tnx for info, i was afraid of that answer... I will not take any schneider then...Do you recomend me any other plc that have webvisu, codesys v3 and pulse train output.Regards,Alex
-

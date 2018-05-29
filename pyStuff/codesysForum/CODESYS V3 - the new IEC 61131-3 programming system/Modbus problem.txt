@@ -1,2 +1,0 @@
-Hello,I have modbus network with 15 DC inverters.The problem is that from time to time i get error and timeout (byModbusError - 163).Some time i get it from first drive, and other time from second, forth etc. There is no rule.For each inverter i set:a. timeout - 5000msb. send 2 registers per 400 msc. receive 3 registers per 100msBaud rate of network 19200,8,1, and 5 ms as delay between frames (in PLC and in DC inverters).In attachment i am sending my settings one of DC invertersDo you have any idea where the problem is?Lukasz
-

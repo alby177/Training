@@ -1,6 +1,0 @@
-After update do version 3.5.9.0 I have a problem with FBvisu CreatorWhen I generate the visualizations, the source FB desapear, I lost the FB..Does exist a configuration, to solve this?
-
-Can you prepare a short video of what happens after you add the visualization? This would help people to find the ways around it.
-
-_________________TA
-

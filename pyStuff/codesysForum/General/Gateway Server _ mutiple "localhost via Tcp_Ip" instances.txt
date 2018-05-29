@@ -1,6 +1,0 @@
-into the gateway server inspector I see thisAttachment:err.jpgWhen I try to connect to PLC (wago 750-881) always get communication crash. How to delete all the duplcaite instances of "localhost via Tcp/Ip"?Thanks everybody
-
-Hi,this you should with CODESYS ''Communication Paramater' see screnshotsBREdwin
-
-thanks Edwin.I know it but the problem is I cannot delete multiple instances..Into another PC with the same configuration I have just 1 instance 'Localhost via TCP/IP'
-

@@ -1,6 +1,0 @@
-How to chang a horizontal progressbar or a slider to a vertical one on a CoDeSys Visualization?
-
-yue_qi_qi wrote:How to chang a horizontal progressbar or a slider to a vertical one on a CoDeSys Visualization?The slider becomes vertical when you make its height greater than its width. The progressbar control is always horizontal. But progress bars don't make good readout bars if that's what you want them to be (except may be for fluid level indicators).
-
-thanks
-

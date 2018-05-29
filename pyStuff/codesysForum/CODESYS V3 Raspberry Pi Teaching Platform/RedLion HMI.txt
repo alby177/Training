@@ -1,6 +1,0 @@
-I am working on getting a G308A210 Red Lion HMI functioning within Codesys using the CANopen option card. I had to build the .eds file from scratch and I believe the HMI is ds401 compliant. so far I am able to send data/signals to the HMI but I cannot receive anything back. I have mapped the PDO to include 64 digital inputs 64 digital outputs 4 analog inputs and 4 analog outputs. the configuration on the HMI is the same. I have one digital input, one digital output, one analog input, and one analog output mapped in my program for testing. anyone have any ideas? or any information I can provide to help?Attachment:PDO.JPG
-
-My first guess would be the assembly instance? Maybe unicast/multicast? Do you have eds file?
-
-Have you test to progrsm transmission mode via 1600 and 1A00 sdos?
-

@@ -1,2 +1,0 @@
-Hi ,Can someone please explain how can i use CODESYS blocks (CAA_NetBaseServices.library) to read values from a device? (Di-Soric CS50 vision sensor)1.When i use windows "TELNET" i can see the wanted values  2.1. I tried to use the "NBS.TCP_Server (FB)" and it's seems OK2.2 When i tried to enable "NBS.TCP_Connection (FB)" i got hConnection remain "0"2.3 So when i tried to enable "NBS.TCP_Read (FB)" it indicated an error with the "handle"Can someone explain?
-

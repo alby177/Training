@@ -1,8 +1,0 @@
-Can I get the POU name or any other application, task information in IEC application or in C? just like __FUNC__ in C.It will be very helpful to locate the exceptions or bugs of my applications.
-
-Search in the help for: "Attribute Instance-path"This will explain what you are looking for.
-
-This is how to get the application information in runtimeCode:FUNCTION GetAppInfo : BOOL(*'******************************************************************************'* This Function gets the application information.'*'* Function requires the system library CmpApp'* '********************************************************************************)VAR_OUTPUT   strProjectName: STRING(255);   strDescription: STRING(255);   strProfile: STRING(255);   strVersion: STRING(255);   strLastChanges: STRING(255);END_VARVAR   tResult: DWORD;   tFirstApp: POINTER TO APPLICATION;   pAppInfo: POINTER TO APPLICATION_INFO;   pString : POINTER TO STRING;END_VARCode:tFirstApp := AppGetFirstApp(pResult := tResult);IF tFirstApp <> 0 THEN   pAppInfo :=AppGetApplicationInfo(tFirstApp, tResult);   strProjectName :=pAppInfo^.pstProjectName^;   strDescription:=pAppInfo^.pstDescription^;   strProfile:=pAppInfo^.pstProfile^;   strVersion:=pAppInfo^.pstVersion^;   strLastChanges:=DT_TO_STRING(pAppInfo^.dtLastChanges);END_IF
-
-_________________The Original SoMachine Ninja
-

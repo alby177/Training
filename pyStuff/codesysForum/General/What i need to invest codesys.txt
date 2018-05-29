@@ -1,8 +1,0 @@
-Hi AllI like to start the codesys , i am not sure what i need to invest , hope some one can advise me.I like to install my panel PC with codesys , my application is below :-I have 2 Axis servo with EtherCAT port. ( motion control by Panel PC , servo is not intelligent )I also have EtherCAT I/ODoes it mean that i can just purchase one copy of codesys V2 ( for I/O control ) and one copy of softmotion ( for motion control ).Any advise will be appreciated.
-
-Any one ?
-
-at first to program and simulate and even run for 1 hour is free.if the panelPC is windows, then only needed is a soft plc.give office a email.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

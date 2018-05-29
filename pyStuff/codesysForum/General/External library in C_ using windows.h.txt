@@ -1,2 +1,0 @@
-Hi,I use some functions from windows.h in my c++ code. When I try to go online this error occurs: Error 3163: .... (Symbol '__imp__GetVersion@0', Class 'EXTERNAL', Type 'DIR32')How can i fix this?Is it possible to work with shared memory?thx
-

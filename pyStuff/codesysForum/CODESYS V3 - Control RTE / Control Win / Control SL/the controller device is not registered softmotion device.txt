@@ -1,2 +1,0 @@
-Hello everyone,I am trying to control metronix servo via codesys win v3.But when i login there is as 'the controller device is not registered softmotion device'.What this mean and how can i solve this problem.can anyone help.Thank you.
-

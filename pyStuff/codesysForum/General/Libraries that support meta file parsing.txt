@@ -1,2 +1,0 @@
-Are there any codesys libraries that support easy parsing of metadata.  Example windows INI file, XML etc???
-

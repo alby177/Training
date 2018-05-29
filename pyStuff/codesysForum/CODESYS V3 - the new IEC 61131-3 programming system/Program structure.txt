@@ -1,6 +1,0 @@
-HelloJust after some advice. I'm new to Codesys. Although I find it very similar to other 61131 platforms I've used, one big difference is the inability to add 'Sections' under 'Programs'I can break a machine down, and have a 'Program' for each part. What is the POU/object/whatever to sub-divide a program?Thanks
-
-Hi,as defined in the IEC 61131-3 the complete machine application can be realized with different objects, which the IEC 61131-3 calls 'POUs'.Such a POU may be a PROGRAM (which contains code and data variables), FUNCTION_BLOCK (which contains code and a data structure, which can allocate data sets by means of instances) or FUNCTION (code but only temporary Memory, the FUNCTION itself is the return variable for the executed code).So you can structure your application by using these three POU types. Each has its advantages and typical use cases.You can call almost every POU by another POU. How to do so is depending on the programming language (the editor) out of which you want to call the POU.Get an example e.g. out of the CODESYS Store - there you will see how others did it .I hope this will help you further.
-
-_________________Roland WagnerModerator
-

@@ -1,4 +1,0 @@
-I have Rpi 3 with latest Raspbian and Codesys runtime v3.5.9.20. I have a working hardware with OneWire_DS18B20 library: I can read the temperature no problem. But in the OneWire library there is an output "stdTimeStamp: RTS_SYSTIMEDATE;" which apparently is the timestamp of the temperature measurement. How can I make use of this timestamp and display it in a visualization? I guess I have to somehow extract the structured timestamp from it but I have no idea how.
-
-Hi,I have attached the project.BREdwin
-

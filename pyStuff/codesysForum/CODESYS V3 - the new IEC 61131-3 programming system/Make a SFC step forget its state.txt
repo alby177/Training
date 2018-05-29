@@ -1,4 +1,0 @@
-See this:And controller consists of the following:My problem is: when Controller is for instance in Normal mode. Then the TTR_switch becomes TRUE so it enters TTR. When it becomes FALSE again it jumps back to Controller. My problem is that I want it to jump back to the Init step named Standby. What actually happens is that it jumps back to the state it was in when it left Controller, in this case Normal. How do I solve this? Thanks in advance.
-
-SFCReset
-

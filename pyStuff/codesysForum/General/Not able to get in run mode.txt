@@ -1,2 +1,0 @@
-Hi all,After adjusting a few networks in my program I am no longer able to get into run mode!!!I am able to log in and download the new program to the controller but thats it!!!Well at least it visualizes that it is downloading!!!As soon as I hit run I get a comm error!!!!     When I try to log back in it asked me to re-download my program. Please help!!!Thank you.Manuel Simon
-

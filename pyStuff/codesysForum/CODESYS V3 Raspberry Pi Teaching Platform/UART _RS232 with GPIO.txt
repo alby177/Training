@@ -1,4 +1,0 @@
-Is it possible to use the alternate Pin Functions for UART Communications?
-
-Hi,did you check if a cat /dev/ttyYourDevice work with your brigded send and receive ... without losing any characters under Linux?Step2 should then be using Sycom example from the store.BREdwin
-

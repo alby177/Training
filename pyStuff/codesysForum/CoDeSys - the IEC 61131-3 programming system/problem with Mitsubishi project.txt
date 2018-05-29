@@ -1,6 +1,0 @@
-Hello to everyone,i have a problem.when I try to open a ".pro" file(it is a program for a FX1N-24MT Mitsubishi controller) it brings me this massage:"Could not open project/library(not valid project/library file)"Thanks you very much.Best regards.
-
-Is the ".pro" a Mitsubishi project (for that companies develoment program e.g. GX IEC Developer)?This file cannot be opened directly in CoDeSys. You will have to 'convert' it to a format that CoDeSys can read.
-
-i think the mitsubishi's software is not based on codesys. you can open it's library
-

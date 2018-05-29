@@ -1,2 +1,0 @@
-hey guys i am using sabo PLM700-A plc with codesys 2.3.I want to show trends of two tags in a single trend but when i compile the project it shows this error as shown in the attachment.I dont know how to resolve this.How to create an array as i am plotting the x-t trend.
-

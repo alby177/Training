@@ -1,4 +1,0 @@
-HiRegarding the Raspberry pi CPU temperature read example provided in this forum, I wanted to try and add a trend of the temperature. However this variable is a STRING. So I wonder if there is any way to convert this value to a variable that could be read by a Trend ?BrMorten
-
-Hi,use stringutils library to sperate the value from the string,then STRING_TO_LREAL or STRING_TO_INT conversion.BREdwin
-

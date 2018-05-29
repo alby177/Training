@@ -1,6 +1,0 @@
-Hello,I have a commented list of about 1500 I/O points on an Excel sheet. I've created the device tree in CoDeSys (Profibus) and now need to add the tag names and commentsI've tried exporting the undocumented device configuration from CoDeSys as an XML table but I can find no way of editing it externally and then importing it back to CoDeSys.Does anyone know how to import the I/O descriptions from Excel into the device configuration in CoDeSys V3.5 please?I really don't want to have to type them all in again.Thanks.
-
-Hello,see attached screenshot.BREdwin
-
-Thanks Edwin - works a treat !Matt
-

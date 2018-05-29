@@ -1,2 +1,0 @@
-Is there documentation that explains the configuration parameters for the Ethernet, Ethernet_IP_Scanner, and Generic_Ethernet_IP_device? I watched the video "Codesys webinar Ethernet/IP". All it really shows is how to add them as devices. I need the explanation of the configuration parameters themselves.
-

@@ -1,4 +1,0 @@
-Is possible to use Raspberry Pi as target platform on codesys 2.3 ? I sow there is some for Codesys 3.xx, but I still using CodeSys 2.3.Regards !Mladen
-
-It seems only v3.5 of Codesys supported for raspberry..why not use the 3.5?
-

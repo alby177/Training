@@ -1,2 +1,0 @@
-I'm new to codesys, and I don't see a way to receive a DM1 message via the J1939 Manager / J1939_ECU.  I can broadcast a DM1, but what if I want to read the DM1 from say the engine and act on it?  The P2P RX Signals doesn't allow me to add it as a custom parameter group either.
-

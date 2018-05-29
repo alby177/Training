@@ -1,6 +1,0 @@
-Dear All,I'm trying to use touch events such as OnMouseDown or OnMouseUp associated to a button in a WebVisu screen. Those events have no effect. Is this problem related to CodeSys or is a Raspbian touch driver related issue?Thanks in advance.
-
-Hi,how do you check this?With the store example visu Events?BREdwin
-
-Problem solved. Some raspberry touchscreens have to be connected to the same equipontential 0V line used by raspberry. Floating 0V induces errors in touch events.
-

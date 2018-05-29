@@ -1,2 +1,0 @@
-Hello all,When trying to Install the Codesys Asteroids package, I am told that the package requires at least installer version 3.5.6.0. My current installer version is 3.5.4.20. Can I achieve the 3.5.6.0 installer in any way? Is there a work-around for something like this?Thank you!
-

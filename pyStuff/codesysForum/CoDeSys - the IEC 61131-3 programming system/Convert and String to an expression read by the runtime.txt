@@ -1,4 +1,0 @@
-Hi,Is there a way to convert a string in a expression which is evaluated on the runtime...ExampleCode:VARmyVar1:BOOL;myVar2:BOOL;sMyString:STRING;END_VARsMyString:='myVar1 AND myVar2'IF MYEVALUTEFUNCTION(sMyString) THEN...END_IF
-
-Nope. This would require an on-board compiler and reflection facilities, which is too much for resource-constrained environment running compiled code. Nevertheless, if all needed was a simple arithmetic expression support, I'd make my own evaluator function. Too much responsibility for the operator though.
-

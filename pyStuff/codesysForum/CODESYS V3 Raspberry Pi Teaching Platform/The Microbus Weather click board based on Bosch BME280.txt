@@ -1,2 +1,0 @@
-Hi Folks,has anyone got any plans to develop an I2C  library for this BME280 based board?. There are code examples (not for codesys) here:https://shop.mikroe.com/weather-clickAnd it is being used for Azure IoT demos here:https://docs.microsoft.com/en-us/azure/ ... et-startedBut these demos are not using CoDeSys or OPCUA, which is a pity as these technologies have a major IIOT use case.If i wanted to create a library for this board, where would i start?CheersC
-

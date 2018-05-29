@@ -1,2 +1,0 @@
-Hello,How to transfer SDO message of CanOpen fieldbus?What a libraries should to use??
-

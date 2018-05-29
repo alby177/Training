@@ -1,4 +1,0 @@
-Hi,how can I change addressing in CoDeSys to run the board i2c espansion card of unipi emo r8?Addressing the card is configured at the time in 21 Hex or 33 DecThank you, Alberto
-
-Nothing ? 
-

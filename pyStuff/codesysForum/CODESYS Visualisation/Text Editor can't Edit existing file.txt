@@ -1,4 +1,0 @@
-Hi,I am using V3.5.9.2. I am trying  to read and write text files using Text editor. I can able to read the file. I can able to write in the new file. I can't able to write the existing file.Is there any specific settings required. I had already configured for Read/Write mode for Text Editor.
-
-Hi,please check this examples here:viewtopic.php?f=23&t=6247&p=14367#p14367BREdwin
-

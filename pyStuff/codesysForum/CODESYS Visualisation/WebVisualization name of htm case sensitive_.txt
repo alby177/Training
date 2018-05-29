@@ -1,2 +1,0 @@
-I have a WebVisualization. I specified the Name of .htm file: as MYPAGE.HTMThe name given to the resulting file by CODESYS tool is mypage.htm1. I can not seem to control the case of the letters in the name from the CODESYS tool.2. the web server will only respond to a web browser when the URL is exactly the right case.There are lots of ways to work around problem 1, but I should not need to work around anything.But, problem 2 seems unacceptable. Am I missing something (probably)?
-

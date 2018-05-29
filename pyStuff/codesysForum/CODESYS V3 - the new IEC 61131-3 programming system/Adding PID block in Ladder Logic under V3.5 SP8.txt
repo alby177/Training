@@ -1,6 +1,0 @@
-I tried and failed to add a PID function block inside a Ladder Logic program.  It seems that the function block is already in the util library but it is not showing up under the Toolbox.  What is the proper way to add a PID FB?  Please help.Attached is the project file.
-
-Hi,the toolbox provided a quick access to the most common elements and is hardcoded. The function blocks from libraries do not appear in the toolbox. To add a FB from a library you can use an InputAssistant or add an empty box and type library namespace in the type field, following by period and finally by the type name of the block.Regards,Roman
-
-Hi Roman,I was able to create the PID block and it is working.  Thank you very much for your help.wf
-

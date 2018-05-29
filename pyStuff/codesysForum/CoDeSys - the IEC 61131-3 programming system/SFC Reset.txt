@@ -1,4 +1,0 @@
-I use the SFC editor a lot and would like to know how to reset an SFC. I thought you could use the SFCName.Reset but that internal bit does not seem to be available. Also if you develop a user function block using SFC which then gets inserted into a program as a function block how would you reset that SFC inside the function block
-
-Just publish the flag with the declaration:Code:VAR_INPUT      SFCReset: BOOL;END_VARBRRalph
-

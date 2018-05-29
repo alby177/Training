@@ -1,4 +1,0 @@
-I am trying to program with codesys, I have used some project and when loading program I skip a lot of errors, apart I try to put myself in scada or visualization and add list images that I can import but I do not get possibility to import I attach some images of errors I hope Can you help me thank you
-
-Hi.It seems you have library errors. Go first to library manager and check download mising libraries.It is possible that after, some errors persist. Go to properties and watch wich librariea has not placeholder click on it and select the library the system proposes.I d recomend to you to work with codesys english version, helps are better, amd if you need some help is better to show an english screen.
-

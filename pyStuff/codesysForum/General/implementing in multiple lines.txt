@@ -1,8 +1,0 @@
-I have long lines of code. In matlab I can just type "..." and the code follow in the next line, like:a = 90;b = 23;c = max(...    a,...    b);Do you know if in Structure text in Codesys there is a similar function to "..." ?
-
-Hi,no, even not CODESYS V2.3 nor CODESYS V3 both open intellisense on unsing ".."BREdwin
-
-You don’t need the dot dot. Just put on next line and indent if you like (you should but not required):Code:a = 90;b = 23;c = max(         a,         b);Or Code:a := 90;b := 23;c := max(         a,         b);I do this a lot for function block calls that have a lot of var ins and outs and IF statements with multiple ANDs and ORs.
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-

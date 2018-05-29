@@ -1,2 +1,0 @@
-Good day to everyone.I want to download the frequency inverter parameters via CANopen SDO function during pre-operational state,the frequency inverter parameters including acceleration time, deceleration time,frequency reference...MY question is :is it possible to save those parameters into a file(e.g. DataObject.csv), and this CSV file(or any other format file) can be added into project tree(See attached photo), then read the parameters via function block (e.g.SysFileRead)?Thanks.
-

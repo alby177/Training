@@ -1,2 +1,0 @@
-I have a group of controls placed under each other. They have same sizes. Can I get quick access to the list of these controls? (like in Photoshop or Easybuilder Pro) There can be many unsorted controls on the screen (>100). I need to select a control (without moving) to change its property.
-

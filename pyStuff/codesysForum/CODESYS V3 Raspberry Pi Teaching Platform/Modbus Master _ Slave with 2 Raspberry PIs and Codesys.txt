@@ -1,4 +1,0 @@
-Has anyone experience with 2 raspberries running codesys?We try to connect 2 Raspberry Pis using codesys on each of the two, selecting one as master and the other one as slave.Unfortunately the TCP connection cannot be established  ,The master starts with SYNC, then the slave answers with ACK+RESET and so the master again tries with SNC .... eternally ...We downloaded the codesys image,  after installation:  apt-get update, apt-get upgrade and finally installed wireshark apt-get install wireshark. Thanks a lot in advancelst
-
-Hi, would suggest to configure it that way:Attached the project.Attention: This is done with 3.5SP5 this week is release, but if you want to use with 3.5SP4 - update the plc device (right lick on the device in the devicetree)and go gack to 3.5.4.x version of the plc.BR Edwin
-

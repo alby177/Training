@@ -1,2 +1,0 @@
-Hallo Codesys-Forum,Ich hab folgendes Problem:Und zwar habe ich einen 5-Achsen Knickarmroboter und unter "Achsgruppen" kann man nur zwischen 4-Achsen und 6-Achsen Roboterkinematiken wählen.Meine Frage lautet: Besteht die Möglichkeit eine Kinematik hinzuzufügen ? Und wenn ja, wo kann man diese finden?  mfG Stefan
-

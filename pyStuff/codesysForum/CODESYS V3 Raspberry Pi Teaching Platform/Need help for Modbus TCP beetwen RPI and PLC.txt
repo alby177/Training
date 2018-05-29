@@ -1,6 +1,0 @@
-Hi everyone,I try to use Modbus TCP beetwen RPI and PLC and I also make init with "Modbus Slave Init" and the value was transfered to PLC. I try read holding register at 0x0000 and all status in codesys "device" is ok but why my value is always zero even though I change the value. I used another tool as Modbus TCP master but the value is good, could anyone help me for this problem?Attachment:MB_RPI.jpgRegardsRoy
-
-Hi,You need to call the mapped variables somewhere in the Pou's if not called tge values will not updated.BREdwin
-
-Hi Edwin,Thank you for your explanation, I don't know if it must process in Pou  Roy
-

@@ -1,8 +1,0 @@
-HiI wanted to produce a simple HMI program on a PI 3 with a 7" touch screen on it. I need this to pull and push data from/to the HMI from a Siemens s7-315 that has an ethernet card Lean 1 card on the rack. Can someone point me in the direction of how I can get the data to and from this PLC to the RPI 3 with codesys HMI on it.Thanks for any assistance.
-
-Hi,the Pi3 could act as Profinet Controller or Profinet Device...!This could be the communication between S7 and CODSYS PI.BREdwin
-
-Thanks for the reply. Could you direct me to some specific instructions for this to get me started on how to set this up.
-
-Hi,I would give this example here atry, both sides are in PN Controller and PN Device.viewtopic.php?f=23&t=6247BREdwin
-

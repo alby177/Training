@@ -1,8 +1,0 @@
-I'm trying to build a time selector using 2 combo boxes, one for hour, one for minutes in 5-min increments.  I've created text lists for 'Hours' and 'Minutes', but the results are bizarre.The hours combo only lists the text value for the first few hours, the minutes combo inserts values between the 5-min increments.Is there a way to fix this / make this work?Attachment:Screenshot03.png
-
-Hi,there is a  property 'Subrange'  for the Combobox.For the first issue put in the start and end index. And for the second Tick the 'Filter missing textentries'
-
-That fixed it, both are working now, Thanks!Attachment:Screenshot05.png
-
-Thank you for this post! I still don't understand why it is built so complicated in Codesys!  
-

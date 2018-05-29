@@ -1,5 +1,0 @@
-In my project I use driver E-RI-TES  for servoproportional valves (ATOS) 
-I try to connect him with Codesys controller by Profibus. 
-Manual say that I can change driver's address in Profibus net by using standard Profibus's service SAP55. 
-What I must to set in Codesys project to use this service (SAP55)?
-

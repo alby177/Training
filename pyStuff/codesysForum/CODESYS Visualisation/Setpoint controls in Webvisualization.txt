@@ -1,4 +1,0 @@
-HelloHave played around with differens controls but can't find a suitable one that works with my phone or _.Would like to have a textbox but can't find it, slider works great in my computer but not at all in my phone.Any suggestions, just need something to be able to change setpoints.
-
-Found the VisuDialog.Numpad and it suits my needs perfectly.
-

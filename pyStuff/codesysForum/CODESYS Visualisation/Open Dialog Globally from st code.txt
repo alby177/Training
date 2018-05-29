@@ -1,4 +1,0 @@
-HelloDoes anyone know how to open a dialog box globally from the st code, according to the help screen, it should be possible, but they don't explain how.They say it is explained in the Visualization dialog example in the codesys store, but it require codesys 3.5.11 and i am stuck on 3.5.9, could anybody download it for me and save as a .project? I figured out how to open a dialog specifically for one client, but i need it to display on all.
-
-Hi lingansn.Have you discovered how to do that?Thanks
-

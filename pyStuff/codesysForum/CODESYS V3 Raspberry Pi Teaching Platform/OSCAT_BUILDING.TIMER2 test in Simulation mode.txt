@@ -1,4 +1,0 @@
-Good evening,I have a small program that manages two shutters with closing and opening programmed daily.I used 4 OSCAT_BUILDING.Timer2Now I would like to test its operation in simulated mode but I have problems.The four oscat modules are identical and differ only in duration of operation and start time.If I try to change the start time at runtime two of them work and the other two do not.If I send the code on the raspberry that manages the shutters everything works regularly !!Why ?So I tried to make a new project by inserting only an OSCAT_BUILDING.TIMER2 and setting the start at runtime, however, I do not see the output .Q of the timer go to true !!How can I check the operation of this timer in simulation mode?Thanks, Alberto
-
-Hello,without the code or code snipped not easy to help.Best Regardsplcmax
-

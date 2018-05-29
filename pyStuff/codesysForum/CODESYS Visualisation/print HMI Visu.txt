@@ -1,2 +1,0 @@
-is there a way to print just the HMI visu.The file->print command prints the project. I just want to printthe visu window.Thanks
-

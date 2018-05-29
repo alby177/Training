@@ -1,7 +1,0 @@
-Hello,I've just received 3 RFID reader/Writer units.I also got IFM controller. (which connected to the RFID units)I need to write/read to/from ID tags.I have no experience with RFID systems.Is there a codesys software that i can use for RFID? or i need to program the software by myself?i read some of the Codesys user manual and it seems like an "OVER KILL" for my needs.Can anyone give me tips for RFID ?ThanksNir
-
-As you may have already noticed your question is very vague. RFID reader what is the communication protocol? Do you connect IFM to RFID reader via CANbus, Serial, a gateway? What manufacturer of RFID reader? What is the application? I can help you with IFM PLC. Which model?
-
-_________________Thanks,
-Steve Pfeifenroth
-

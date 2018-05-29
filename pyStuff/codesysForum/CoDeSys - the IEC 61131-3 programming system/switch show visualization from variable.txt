@@ -1,9 +1,0 @@
-Hi guys, can I switch the shown visualization by toggle a bool variable?
-
-If I understand you correctly, so Yes.
-Under for example a button, the Input section there is something called:
-
-z'oom to vis: (haha z00m will not work in forum)
-
- here you choose the visualisation you like to go to.
-

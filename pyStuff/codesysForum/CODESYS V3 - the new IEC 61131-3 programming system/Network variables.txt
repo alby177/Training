@@ -1,6 +1,0 @@
-Hello!I have heard from different sources (collegues, customer, etc) that the use of GNVL is not possiblein version 3.x (not yet anyway!)!?What is the official status of this?The "Online Help" for v3.4 SP4 states that the handling of GVL and GNVL is implemented... (my interpretation!)There is also an example of a "work-around" for exchanging variable data between v2.3 and v3 controllers...Is it possible to use the solution described in "Online Help"?/Per
-
-Hi, I made a project few weeks ago with V3.4 SP4 succesfully using GNVL. There was some small problems, e.g. dataflow only worked in one direction in some cases, but I believe that was more of a hardware / vendor dependant problem than a problem with V3.4 SP4.Just try it out with any HW you have, following the instructions in the online help worked for me!
-
-Thanks Jay, for your answer!I missed an important part of my question:the network variables sent on CAN does not seem to be implemented (yet?)!!!CoDeSys v3.4 only supports Network Variables over UDP (Ethernet), not CAN!!!Will NV on CAN be supported? When?BR/Per
-

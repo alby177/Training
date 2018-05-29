@@ -1,8 +1,0 @@
-Hello....I am new to CodeSys (2.3) so please feel free to talk down to me   I have a Wago Series 750 PLC that has been programmed with CoDeSys. There are 2 PLCs in the system, 192.168.1.31 is the master, and 192.168.1.32 is the remote PLC located in a building only a couple of meters away. I can ping both successfully. The system appears to be working without issue.I was asked to install two J-Type thermocouples which means I need to add a card (750-469/000-006) to the remote PLC.When looking at the CoDeSys .pro file, I can see how to add a card to the master PLC as follows:   Resources tab - PLC Configuration - right click on K-bus and "Append Subelement"PROBLEM:How can I add a card to the remote PLC? The master PLC no problem, the remote PLC.....I cannot figure out how to do it. I cannot even figure out how to look at the remote PLCs hardware configuration.Any assistance would be appreciated.....Thomas (Alberta Canada)
-
-on the master is a K-Bus, when putting a module extra all the Digital hardware will shift a few words up, so some care is needed.on the slave same shiftingyou have to change the fieldbus variable aat the master software, however your slave has to be a coupler (other type number like 750-341)when it is also a 841 then there is  a program running in your slave.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
-Thanks for your fast response Shooter!It looks like the .pro file is done in function blocks with a password, so my hands are tied.We are contacting the manufacturer to ask them to make the changes.Best regards....Thomas
-

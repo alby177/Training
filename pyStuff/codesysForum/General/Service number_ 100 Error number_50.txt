@@ -1,2 +1,0 @@
-Hi, I am using an IFM Controller and when I tried to go online on Codesys (v2.3.9.38) with a new SW I receive the following message: The last online service has not been executed correctlyService number:100 Error number:50 Someone could give me some information what does it means? And how can I fix it?Thank you very much in advance
-

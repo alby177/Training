@@ -1,6 +1,0 @@
-I'm writing myself some function blocks in a library and can't help but wonder if I can add an image to the function block? Some of the standard Codesys function blocks have images (such as the TP Timer) and I'd like to add a little touch to my library by using my own. Thanks Sent from my SM-G925F using Tapatalk
-
-Hi,in CODESYS V2.3 you need to add the "Bitmaps" for your fb's into the same directory where the lib is located. (the Bitmaps need to have the same name as your fb you wnat to add see screenshot)BREdwin
-
-Thanks! That works a treat!  
-

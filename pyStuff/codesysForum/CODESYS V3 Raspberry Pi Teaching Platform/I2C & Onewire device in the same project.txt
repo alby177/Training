@@ -1,4 +1,0 @@
-Hi,    I have done two different projects, one with MCP23017 board (i2C) and the second with DS18B20 temperature sensor. For each project the Raspberry works well, but when I put both projects in one,  the cycle time goes to 8 second instead of 10ms that I reach with the separate projects.Could someone help me?Thanks in advance
-
-Hi,this example project from the application section (in this Forum) should point you in the right direction:viewtopic.php?f=23&t=6247&p=16920#p16920BREdwin
-

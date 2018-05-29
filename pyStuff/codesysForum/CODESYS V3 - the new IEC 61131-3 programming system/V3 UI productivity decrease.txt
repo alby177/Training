@@ -1,5 +1,0 @@
-Has anyone noticed how when on/off line the V3 version wants to always open windows and resize windows. It is really annoying and takes away from productivity. Has anyone used any DTM's from with in CoDeSys? I use the Altivar71 DTM and the productivity comes to a screeching halt. Every time you click in a box the window resizes, or moves and there are three scroll bars for one menu item and you are spending more time scrolling around to get back to where you need to be then working. The same is true every time you download a trace or anything for that matter the message window opens and resizes your open windows. What's with the text entry boxes on visualizations. You accidently mouse over the box and it takes the context and thinks you want to enter data. The tool box always wants to open. Please stop resizing and opening windows. Where can I turn this off?
-
-_________________Thanks,
-Steve Pfeifenroth
-

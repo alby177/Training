@@ -1,8 +1,0 @@
-Hello,I am currently working on a project of my company where we want to collect process data from a running EtherCAT Bus (so there already is a PLC acting as the EtherCAT Master on the Bus).My question is, is the following approach feasible: we would like to have a second Codesys PLC (Soft PLC) on a separate Box PC (Win10) which is connected to the EtherCAT Bus as an EtherCAT slave. This EtherCAT slave is supposed to be fed certain process variables from the Master PLC.Please let me know if you have hints on whether or not this can be done. Thanks in advance!Best regards,Max
-
-I would try using a Beckhoff EL6695.
-
-So what I described is not feasible? And if so, might I ask why not?Best regards,Max
-
-Hi,no Driver available for an Ethercat Slave Card.BREdwin
-

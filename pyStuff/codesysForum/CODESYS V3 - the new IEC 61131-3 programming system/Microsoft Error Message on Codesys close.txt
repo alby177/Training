@@ -1,4 +1,0 @@
-Everytime I exit Codesys, I get the generic popup message "Codesys has encountered a problem and needs to close". All of my code compiles OK, runs OK and everything seems fine when running the development environment, only when I close it down. I am running Win XP SP3, and Codesys v3.5 SP8 Patch 4, it also did the same thing with v3.5 SP8 Patch 3, and it did it on two different Win XP machines, with both patches. Any ideas what may be causing this?
-
-pleasew upgrate to windows 7 and try. microsoft also stopped support to windows xp. codesys closes sometime when their is an unresolved error( example infinite value occurs in your code when u run) first try your code my simulation mode than  online ) or multi tasking.
-

@@ -1,2 +1,0 @@
-i have tried to follow the example for profinet but my linked variables are not the same type as in example with ur20.I have a pnslave type and the example has pndiagthanks for any helppieter
-

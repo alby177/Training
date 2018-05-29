@@ -1,2 +1,0 @@
-Good morning,use codesys with a raspberry card that controls two plc controllino.Now I wanted to be able to control the heat pump with an infrared led with another raspberry card placed in the house.Choosing the settings is in codesys but how can i send it to the raspberry card?That is, what method of communication should I use and then how do I send the command?Give me a line to follow?Thank you, Alberto
-

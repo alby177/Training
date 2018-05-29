@@ -1,4 +1,0 @@
-HelloWriting a program to Ormec Smlc 160I have variables in "Retain" Variables like pump speed and temperature set pointsWhen I reset the PLC, all the values come back.Doing cold reset through codesys also same thingBut when I power down (manually), the variables don't come back.Why is that?I've tried putting the variables in "Retain Persistent" and still the same thing.Under target settings I have checked load boot project automaticallyWhat else can I try?This is very important as I don't think the PLC will be able to recover from a power outage without an operator being present and certain pumps need to be on at all timeThanksSent from my iPhone using Tapatalk
-
-Hi,never used 'Ormec Smlc 160' so probably I would recommend to ask themanufacturer of this plc if there is a NVRAM inside this plc.This is needed to have the retain feature available.BREdwin
-

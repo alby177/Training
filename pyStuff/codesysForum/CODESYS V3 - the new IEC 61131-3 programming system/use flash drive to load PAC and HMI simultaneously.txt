@@ -1,6 +1,0 @@
-I use SoMachine V 3.1.10.1    I have a TM258LD42DT connected to a HMIS5T.There is a way to put the complete project onto a USB flash drive. The flash drive can then be plugged into the PLC to load the PLC program and the HMI software at once.How do I make this flash drive program?
-
-It's not possible to make a multi download with just one USB stick.You have to make two usb stick. One for the Vijeo designer (HMI) and one for SoMachine (CoDeSys).
-
-You can use the same USB stick to download both the HMI and PLC software.Use the option to create USB stick download in the CODESYS side and then go to Vijeo and use the download to File System option to create the USB files.  Put both downloads on the root directory of the USB stick.This works fine and I have been doing it for years.
-

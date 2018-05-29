@@ -1,2 +1,0 @@
-Hello Everybody,i am using a Raspberry2 with I2C Repeater from Horter&Kalb.There i connectet an AnalogInput Modul also from Horter&KalbHere is the problem:I createt a new project in CFC only one input with the variable and the AnalogInput Modul is not workingI createt the same project in ST and i can`t belive my eyes the Modul works fine!I am using the latest softwareversions.Has anybody the same behavior??Many thanks for your answersStefan
-

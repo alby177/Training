@@ -1,8 +1,0 @@
-Hi All,
-
-Found a "little thing" when using CFC...
-Is the "Component Grid" limited in size???? or is there some sort of setting
-where you can set the size in X,Y plane....
-
-/Hasse
-

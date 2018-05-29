@@ -1,2 +1,0 @@
-Hi,I have a frame and i want to reference variables based on a input string. For example:A frame with 1 Input_s : STRING;I set this parameter to "curve"In this frame I got some textfields. I want the textfields to display POU.curve_text1,  POU.curve_text2 etc..In Codesys 2.3 it worked this way. Probably the best solution ist to create a struct for this. But maybe there is another way.Thanks
-

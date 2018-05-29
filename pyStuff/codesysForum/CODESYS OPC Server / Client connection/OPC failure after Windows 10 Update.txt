@@ -1,2 +1,0 @@
-HiI'm using OPC server for communicate with Codesys base device for my interface which is written in C# language. Normally everything is fine. But because of Windows update, I faced a problem for OPC communication. I can't initialize of OPC server. I haven't found any solution for that.  I faced this problem many times.When I reinstall windows again, then it is getting to start without problem. But this is not a solution, i have a big trouble with this problem.Is there any solution or recommendation for my problem?Thanks
-

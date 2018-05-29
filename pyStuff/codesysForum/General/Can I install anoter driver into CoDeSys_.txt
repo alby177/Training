@@ -1,4 +1,0 @@
-AC500 is a PLC made by ABB. Its programming enviroment is CoDeSys. It also has an EtherNet port. 
-I don't like it's EtherNet driver and I want to install another driver, just like what we can do on a PC. But the software environment is not Windows but CoDeSys. So is it feasible? 
-Thanks.
-

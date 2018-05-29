@@ -1,8 +1,0 @@
-Hi all,I have an application that runs on differents PLC (many customers in different places, same machine for each one).My project consists of a PLC and an HMI, I would like to use OPC UA in order to create the communication between them. Can I change at runtime, via the HMI application, the IP of the datasource where to retrieve data? The variables will be always the same.E.g.Customer1 has an internal network with IPs 10.0.0.x.Customer2 has an internal network with IPs 192.168.0.x.I would like to install and start my HMI application on a PC inside customer's network and, via text-fields, change the IPs where the datasource is.I'm asking because I saw that the connection could be defined via IP and not only via device name.Thank you, Regards.Massimo.
-
-Hi,think this will be possible with SP11 release (July) there was an point:OPC UA Server / OPC UA Server should be aware of IP adress changes.If this does work and you'll change the IP of the interface i assume that the OPCUA Server will use the changed IP automatically.BREdwin
-
-Hi Edwin,Thank you for the reply.Regards,Massimo
-
-I made some tests. In order to keep alive the communication the informations about the server must not change. If I change the IP address of the server the communication brokes and I am not able to retrieve informations.The client require the exact IP (or device name or device address) of the server in order to connect at the startup. If I want to switch between two devices I have to disconnect from the first, change the name/address, compile and download the project.
-

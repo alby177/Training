@@ -1,6 +1,0 @@
-Hello ,The CFC edit in codesys v2.3 have "connection mark" function,Is it in the CodeSys V3???How can I edit it???Thank you very much.Renesas
-
-HelloYes, in the toolbox where you find Input, Output, Box and others, you find "Connection Mark Source" and "Connecton Mark Sink".At least in version 3.5 Patch 3 that I use ! 
-
-Thank you very much,When I update the software,I can use this function.Thanks again.
-

@@ -1,6 +1,0 @@
-I can not find cursor positon in the status bar when in editor mode，and can not find out how to Configure it。Can any one help me？
-
-under extras you can use settingshere you can switch on a gridthe position is visible down right on the screen.when snap is on the cursor will snap, but only after a click.In other editors you have to watch if there is a broken line somewhere, it takes some practice  (in LD) to find correct position for an insert.If question is not answered by this please give comment and clarify your problem with an example.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

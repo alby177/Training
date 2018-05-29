@@ -1,4 +1,0 @@
-Hi All,I want to make a simple program to move the three axis using CNC. For the interpolator output is okay. But when feed the output (piSetPosition) to the SMC_TRAFO_TRIPOD pi input, I got the error at SMC_TRAFO_TRIPOD.bError.Hope I can find some clue about my problem.Thanks before.Regards,Mandra 
-
-Already found the answer, we must provide the parameter of each item logically. Like how big is the radius, how long is the strud and how width is the join.
-

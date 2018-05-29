@@ -1,4 +1,0 @@
-Hi,I'd like to know if the webvisualisation is operational on the PFC200 with "CODESYS Control for PFC200 SL".Tks in advance for your answers!BR
-
-Hi,yes it is.BREdwin
-

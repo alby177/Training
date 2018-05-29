@@ -1,8 +1,0 @@
-I read the post about "Add Library". I guess by clicking "Update Device", CODESYS will only update library component (component presentation), is it correct? How about the corresponding component in runtime system? Thanks.
-
-The external libraries (inside the controller) are not automatically updated when you update the device version in CODESYS. For this a new runtime version has to be placed on the controller. It is best to choose the exact same version in CODESYS as which is running inside the controller.
-
-I think, this is true when using the target with non-windows based RTOS. For example I'm using windows CE or XP based target PLC, and I have manufactory instaled 3.5.2.0 RTE, and it works perfectly with latest Codesys IDE 3.5.5.3.regards,Alex
-
-I ussualy use "Update device" when:-I want to modify existing project and want to use slightly different PLC. In fact is same PLC but with different configurations eg. one PLC have Retain variables and other one doesn't but it has I/O module instead.Then I install new device description file (*.devdesc) and in my existing project click on device->rightclick-> "Update device", so the whole project get refreshed to corresponding settings in *.devdesc file.regards,Alex
-

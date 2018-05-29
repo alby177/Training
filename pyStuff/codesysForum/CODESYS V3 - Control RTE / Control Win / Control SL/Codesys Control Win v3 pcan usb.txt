@@ -1,4 +1,0 @@
-Hello everyoneI am tryin to connect Eaton CANopen Gateway XN-312-GW-CAN with Codesys control win v3 using pcan usb adapter. And when i try to log in i recieve this error:CmpIoMgr(Update Configuration failed from driver)
-
-Hi,is this current Version?Did you add in CODESYSControl.cfg"c:\Program Files (x86)\3S CODESYS\GatewayPLC\CODESYSControl.cfg" [ComponentManager]Component.1=CmpTargetVisuStubComponent.2=CmpCodeMeterComponent.3=CmpWebServerComponent.4=CmpWebServerHandlerV3Component.5=CmpPCANBasicDrvthen it should work.BREdwin
-

@@ -1,6 +1,0 @@
-Hello,I'm using WAGO 750-843, and I want to use the RTC block in my project in codesys 2.3.9.44.Based on the user manual the RTC FB in included in the standard.lib library but the IDE doesn't seem to recognize it.Any idea why i'm having this problem ?Thank you
-
-go to the website and find yourself the rtc.lib.is 843 equipped with an RTC?check with ethernet settings?
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

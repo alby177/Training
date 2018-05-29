@@ -1,4 +1,0 @@
-HelloI have realtek rtl8168 driver and trying to control servo via codesys softmotion rte.Is rtl8168 support CmpRTL8169Mpd. I am installed it but there is some erros like code 31.
-
-Hi,I think you need to apply the following security update:https://docs.microsoft.com/en-us/securi ... 15/3033929'Availability of SHA-2 Code Signing Support for Windows 7'on this system.After installing this, you need to reinstall the CmpRTL8169Mpd ... then it should work.BREdwin
-

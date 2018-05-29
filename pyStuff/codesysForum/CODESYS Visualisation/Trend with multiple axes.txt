@@ -1,4 +1,0 @@
-Hi,I need to represent the graph for two variables. The two variables have a different scale, so I need to have two ordinates axes. Is it possible to do it with a same trend ?The purpose is to use the same trend for multiple variables.I can use the multiple check boxes and set the variable desired, but then I don't know how to change the trend at runtime.Do you have some advises for this problem ? Thanks Gianluca
-
-It's possible since SP7.For example, check it, page 23:https://www.codesys.com/fileadmin/data/ ... SP7_en.pdf
-

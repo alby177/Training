@@ -1,2 +1,0 @@
-Hello everyone,There is any one have a file .gsdml or .xml of the Siemens device 6ES7-315-2FJ14-0AB0 2PN/DP? Because I am trying with Profinet Protocol with RasPI as a Profinet master and Siemens device as a profinet slave. In Siemens site there is just the PROFIBUS GSD files for this device. Hope your help. Thanks all in advance
-

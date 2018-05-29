@@ -1,8 +1,0 @@
-Hi i was wondering if someone now how to create a new modul/device for example a sensor that isnt included in the standard liberary provided by Codesys. If someone might have an example of this would that be extremly helpful.
-
-Hi,please read this documentation/descriptions here:"c:\Users\<YourWindowsUsername>\CODESYS Control for Raspberry PI\3.5.8.0\Documentation\RaspberryPI_CodesysV3_FirstSteps_EN.pdf" There are so many open libraries and devicedescriptions which you could open and These should Show how it works."c:\Users\<YourWindowsUsername>\CODESYS Control for Raspberry PI\3.5.8.0\Libraries\" "c:\Users\<YourWindowsUsername>\CODESYS Control for Raspberry PI\3.5.8.0\Devices\" In the Forum other user share their libraries and devicedescriptions:viewforum.php?f=23they are open too (library are open open it with CODESYS)BREdwin
-
-Thanks, had totally missed that document and also thanks for the link will go through some of them
-
-Hello,but how can I integrate a new device library (ie. I2C_PCF8574.library) in the library manager? Where is the right place to copy or where can I find it in the repository?Thanks for your help.Knut Meißner
-

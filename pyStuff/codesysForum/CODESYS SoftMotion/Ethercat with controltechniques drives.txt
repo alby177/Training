@@ -1,4 +1,0 @@
-Helloi want to create a project where the CoDeSys will control a controltechniques drive (e.g Undrive-SP) via EtherCAT.what should i do to configure the program to communicate with the drive?Thanks
-
-Hello,there are two options:option1:1. use RTEV3 add controltechniques ethercat slave xml to the device repository2. make a new project and add the controltechniques drive beyond the added ethercat master3. access the mapped pdo data and control the drive by your application... setting the controlword etcprobably the better and easier option2:1. use RTEV3 Softmotion as target system, 2. CoDeSys IDE :you do not have to add any etc device description file everthing is included in the CoDeSys Setup (CT drives)3. make a new project and add the controltechniques unidrive softmotion beyond the ethercatmaster4. now you could access the ct drive via the PLCopen fb's (axis input is the drive name ) in your application(Ethercattask = motion task)
-

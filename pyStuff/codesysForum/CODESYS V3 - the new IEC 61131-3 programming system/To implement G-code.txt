@@ -1,4 +1,0 @@
-Hi to all!how to implement G-code into smc_interpolator/smc_geoinfo?I should to use G92 (assign a positioning without movement), but my project is based on smc_interpolator/smc_geoinfo and not on DIN66025.any suggestions?thank you in advanced
-
-Answer:If you want to implement some G-Functions in OUTQUEUE, which can be directly passed on to the Interpolator, you must run through Decoder, and you evaluate the variables into DecoderBuffer.Cheers!
-

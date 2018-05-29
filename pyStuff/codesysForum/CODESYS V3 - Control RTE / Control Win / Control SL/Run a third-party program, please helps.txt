@@ -1,2 +1,0 @@
-Hellow. How in the project Codesys sp12, running on RTE core SoftMotion to run a third-party program, for example, at the click of a button? I tried using SoftMotion Win 64, everything works. But when I run on RTE core, the visualization freezes and there are no error messages.
-

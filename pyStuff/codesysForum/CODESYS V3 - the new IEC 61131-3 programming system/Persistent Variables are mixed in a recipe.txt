@@ -1,2 +1,0 @@
-Hello,I have a variables in a persistent vars list, and in my project I save them using a recipe.My problem is that when I add new vars to the persistent and then update them in the recipe file they are added from the third row and thus mix up the whole list and I need each time to manually arrange them to work properly.Every var that I add is placed in the bottom of the list, I would expect to see it also in the bottom of the recipe file.Any idea why it is happening or how to solve it?
-

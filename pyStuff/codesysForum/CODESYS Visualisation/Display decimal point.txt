@@ -1,6 +1,0 @@
-HiHow do one display a decimal in the visualization . I want to write it in with num pad to a real and then the value must also be displayed that was written in.I manage to write the value in as long as there is no decimal.Thank you
-
-if you want to put a decimal in type input configuration of an element on screen and then give it text input of variable textdisplay.in this textdisplay it should read for example %2.5fsee help configure text
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

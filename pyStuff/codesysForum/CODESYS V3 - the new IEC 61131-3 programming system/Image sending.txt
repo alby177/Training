@@ -1,4 +1,0 @@
-Is it posssible to upload and send an image via Codesys? I'm using Codesys v 3.5 SP8 Patch 2 and Berghoff ECC 2250.
-
-Hi,what is your use case?Sending the image to where? - from CODESYS to plc?- from plc to any Server (which protocol) by IEC-Code ?-?BREdwin
-

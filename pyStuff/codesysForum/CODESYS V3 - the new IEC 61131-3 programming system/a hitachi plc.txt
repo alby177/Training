@@ -1,6 +1,0 @@
-I have found an interesting compact PLC, Hitachi. But I can not found it europe and it is not even listed in CODESYS Device Directory. Why?MV-D40DTPS : http://www.hitachi-ies.co.jp/pdf/catalog/SI-E128.pdfDoes anyone have any experience with that Hitachi?Regards,Alex
-
-Dear Alex,The Hitachi Micro-EHV+ series is available for sale in Europe since December 2013. It is a full CODESYS Ver. 3 compliant compact PLC with various expansion possibilities. The sales channel in Slovenia is via Hitachi Europe's authorized distributor Robotina d.o.o.It is not yet listed in the latest CODESYS Device Directory since it is quite new and will be included in the next release.Details can be found under the following link:http://www.hitachi-ds.com/hitachi-ds/en/About-Us/Hitachi-Europe-GmbH/Addresses-Inverter---PLCBest regards,Arnold Rupperath
-
-I see... I really didn't know. And yes it is interesting for me because of full CODESYS Ver. 3 compliance.Then I'll ask our local distributor.Thanks,regards,Alex
-

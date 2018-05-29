@@ -1,6 +1,0 @@
-It seems that the OPC server is not installed with the latest 64 bit version.Is this how its meant to be, or is there another way to get it up and running?for now I'm trying to install it from the 32 bit version (where it is included)
-
-Hi,yes OPCDA Server this is only included in the 32Bit Version.BREdwin
-
-Indeed, downloading the 32bit version and only install the OPC from there does the job.So steps to get the 64bit version up and running:download 32 & 64 bit versionInstall the complete 64 bit versionStart the 32bit install exe and only choose OPC from there.
-

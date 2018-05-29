@@ -1,7 +1,0 @@
-Hi, I realise it is a stretch to put this question on this forum but I'm working in CoDeSys 2.3.9.6 so I'll ask it here anyway.I have been trying to receive Engine diagnostics from a CAT C18 engine by a CR0505 unit. I can get the diagnostics code with the highest priority but not any of the others. The documentation says that it should be able to store 10 codes, any ideas how to achieve this?Again appoligies for putting this in this forum but this is the only forum I'm actually a member of and trust.  
-
-I can help you. What PGN or Diagnostic are specifically trying to read? I control engines with IFM PLC's although I am not an expert I think we can figure it out. Have you looked at the new IFM engine J1939 specific libraries? Not sure if there is a CAT one or if the diagnostic you are looking for is written. I have used Detroit Diesel, and Cummins.
-
-_________________Thanks,
-Steve Pfeifenroth
-

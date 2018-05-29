@@ -1,4 +1,0 @@
-I want to display a multi-line text string which stored in a text list,then how to input the string in the text list? It seems that the text list can not recognize the STRING CONSTANT ‘$N’or'$n'。
-
-I have got it。Use 'Ctrl+Enter' key to insert a new line。
-

@@ -1,6 +1,0 @@
-I made a FB type and do some calculation on some array inside the FB.I would like to expose this array to the "parent" POU.Currently the array is defined inside a VAR block (like MyArray:ARRAY[0..99] OF WORD)).Is it possible to make this variable visible from outside by some attribute or something similar?Alternatively, can a pointer to an array defined outside the FB be used instead of a local variable?
-
-You've answered yourself in the subject of your question...From the external part of the code you can write something like yourfunctionblockInstance.YourArray to access the array freely.If the array declaration is in the normal var or var_output areas you'll not be able to modify it from outside (which is always a good thing regarding design and peace of mind when you are programming).If you want to modify that array from outside you have to declare it in the VAR_INPUT area.Of course another approach would be using a pointer and pointer arithmetics to find the next positions of the array like you'd do in any high level language.Good luck!
-
-_________________http://www.robotecnik.com - robots, CNC and PLC programming.
-

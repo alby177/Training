@@ -1,8 +1,0 @@
-Hello,Is it possible on codesys for the Raspberry Pi to write a custom library which can talk to the C driver provided for a USB device?Specifically I am interested in connecting to the LabJack U3-HV which we use for many of our projects on Windows.It comes with drivers for linux here: http://labjack.com/sites/default/files/ ... master.zip.I tried to follow along with some instructions for making a library with external C implementation. I can convert the LabJack header file into matching structured text declarations and mark them as external, but I don't know how to (a) install this driver on the pi or (b) tell the codesys compiler what .c / .h files to use when looking for the external implementation.
-
-This document ftp://81.211.56.18/NIO2/Documentation/C ... rivers.pdf seems to get me a bit closer to knowing how to do this. I still don't understand at least this bit at the end:"You should now be able to compile your runtime component. How you are loading it, hardly depends on your Platform. You should check if your component is loaded by checking the output of the Logger in CODESYS or the output of the Runtime at startup on the terminal (if possible)"On the raspberry pi platform, how do I load my component? Is it just a matter of putting my new library in a certain directory? If so, which directory?
-
-Hi,this is not supported for raspberry pi,this is the description if you buy a runtime toolkit then is possible to write own drivers / runtime components etc.BREdwin
-
-OK, thanks Edwin. 
-

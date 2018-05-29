@@ -1,6 +1,0 @@
-hi!!i'm working in aplication for save a data in a .cvs ext, so  i'm looking for information but i only find about 750-880. but i dont have it.is it posible to do a datalogger with 750-842 and save de data in a computer?how can i do this?i hope the anwer fron somebodybye
-
-cheap way is by using DDEstartup the codesys on computer and excel.see manual for example (it is working)
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

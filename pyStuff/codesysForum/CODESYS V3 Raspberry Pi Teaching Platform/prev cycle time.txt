@@ -1,4 +1,0 @@
-is there some way to get the last cycle time in ms? I codesys 2.3 I wrote "tsk" into the "PLC Browser" but in 3.5 I don't know how to do it..
-
-Hi,at the moment you could only check the current load of your plc by typing 'plcload' into the plcbrowser. (This contains all tasks)Another possibility is to use the taskmonitor,this information you could get by your iec application too.BREdwin
-

@@ -1,4 +1,0 @@
-I have recently started working on CodeSys automation framework.I having trouble instantiating the System Components. The exception shown by Visual Studio is - System instance of interface type '_3S.CodeSys.Core.IEngine' is not existing.I am using CodeSys 3.4 version. Also, I have tried both the variants of instantiating the System components - using SystemInstancesCallback and InstanceFactory approach with the same result.
-
-Hello.I had the same problems on Windows 7 64bit.1) Install applicatiopn with options "run as admin".2) There are three solutions during instalation to choose - choose the firts one ".... files and services ....".After these my CoDeSys 3.5 SP3 Patch5 ran without problems.
-

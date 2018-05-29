@@ -1,4 +1,0 @@
-I'm currently working on a database (Microsoft SQL). However, I would like to add the variable name I use in the program. Also, I want to put it in the database now, by using a string, but by doing so I have to type each variable, Where you can make mistakes here could this also automatically make that variable name automatically converted into a string?
-
-Code://DeclarationVAR   MyVarInfo: __SYSTEM.VAR_INFO;   MyTestVar: INT;END_VAR//CodeMyVarInfo:= __VARINFO(MyTestVar);//after this line of code MyVarInfo contains all information obout this variable - just watch in online mode and you will understand
-

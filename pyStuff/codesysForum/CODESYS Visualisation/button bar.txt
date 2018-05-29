@@ -1,2 +1,0 @@
-Hello,I would like to implement some kind of Button bar with buttons to change the current screen. My idea is to use a screen with a frame control and the buttons in front of the frame. Pressing buttons you can switch the image frame and the buttons remain fixed.Attachment:button bar.pngThe only problem is that sometimes I need to change some button when I change the image frame, but the image I put inside the frame can't have any button that be able to hide the buttons of the buttonbar.Anyone has done something similar and figured out how ? Thanks.
-

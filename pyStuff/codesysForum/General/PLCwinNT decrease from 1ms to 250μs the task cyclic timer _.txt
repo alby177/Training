@@ -1,6 +1,0 @@
-Hi all,I want , decrease from 1ms to 250μs the cyclic timer main task in PLCwinNT version 2.4.I possibile and if the answer is yes ...how I can do!!!Thx a lot !!Felix
-
-the only way in V2.3 is to use freewheeling, however this will give problems with other tasks.communication will slow down tasks.try to find a wayto slow down the requirment liike doing different way of control depending on type of operation.you can use a raspberry Pi. that is also codesys and 1000 times faster as aPLC
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

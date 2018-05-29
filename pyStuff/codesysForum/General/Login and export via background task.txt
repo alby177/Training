@@ -1,2 +1,0 @@
-HiI need as a background task to allow CodeSys23, to be able to login to a V2.3 PLC (that contains the PLC program/sym), download the program, and den export then program and everything as xml.Basically, Updload program and Export.It is to verify the program in the PLC matches the program in version control.Any good ideas? Anyone with API knowledge?Thanks
-

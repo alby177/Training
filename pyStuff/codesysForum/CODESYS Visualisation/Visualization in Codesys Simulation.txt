@@ -1,6 +1,0 @@
-Hi,I'm relatively new in Codesys environment. For study purpose only I'm wondering if there is a possibility to view a visualization in a web page. So In my project, I inserted a visualization manager that enabled me to set-up a webvisu object. I set as a visualization the only one I had and set the page to webvisu.htm. Accessing via web browser directed to http://localhost:8080/webvisu.htm the browser is unable to reach the page and give me an error displaying the page. The visualization operates correctly under the Codesys environment.I attach a screenshot.Could someone help me?
-
-Hi,Login to the real plc... BREdwin
-
-Thank you very much!
-

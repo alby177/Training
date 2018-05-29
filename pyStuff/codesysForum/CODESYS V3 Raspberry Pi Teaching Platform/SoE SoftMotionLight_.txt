@@ -1,4 +1,0 @@
-Hi forum! Does anyone know if there will be a generic SML driver for Sercos drives?BRSimon
-
-_________________SC student from Sweden
-

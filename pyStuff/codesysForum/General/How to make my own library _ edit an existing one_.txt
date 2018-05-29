@@ -1,8 +1,0 @@
-Hi,how do I make my own library?In Codesys 2.3 I can save a project as a library, but a project usually contains lots of non-reusable stuff that one does not need in a library. Can I make a library where I put only what I want, e.g. 5 functions from project A and 10 functions from project B ?Another question is, see for example the OSCAT library. It has 600+ POU's, from which I need say 20. How do I make a library with only these 20 POU's ?Thanks
-
-To make your own library you must erase everything that you do not want to include (pous, data types, visualization, PLC, ....).For that :- Make a copy of your original project before, to save all.- Then delete all unwanted elements and save it as a library.- IF you want to insert the functions of another project, you can import them- Finally you save your "project" as Internal libraryAbout Oscat, I think you can open the library (Open type file Library) and after export/import functions you want to use.hoping this helps  Best regards
-
-oscat is a library you can import the normal way, however, it is very big and if you only need a liitle of it, i take the TXT version and copy and paste.i will get errors as i copy only one function at a time. the error says it misses a subfunction, which i then import too etc.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

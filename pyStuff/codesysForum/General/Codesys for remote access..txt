@@ -1,8 +1,0 @@
-HI All,I am newbie to codesys.. Sorry if its a stupid question We have a requirement from customer that our HMI which is based on codesys should be able to accessible for them who is sitting in other country.Making it more clear:We have a device with a touchscreen display.The display screens are developed using codesys.Each screen will have an option to move to other screens through touch screen buttons(soft buttons).Now we need to make this feature accessible for customer who is sitting in other country.customer through his/her windows based PC/desktop/tab should be able to access these feature.I would like to know what all codesys product I require to fulfill this requirement?currently using codesys V2.3. Thank you in Advance..
-
-if the hmi has internet connect it, and seeyoutube of kurt he explained how to do this.it is working via java
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
-First, you'll need a VPN connection. You can have the company's IT department create a VPN for you (which can be difficult depending on the IT department) or buy a device like an eWON or Ei3. We've personally used eWON's and they are a breeze to set up, configure and use. Their technical support is also really helpful.Once you have a connection, the next step depends on the brand HMI you're using. You can use remote connection software (uVNC, GP-Viewer EX for Pro-Face, etc.).
-

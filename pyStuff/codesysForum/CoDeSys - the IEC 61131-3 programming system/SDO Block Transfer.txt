@@ -1,9 +1,0 @@
-Hello All,
-
-Does Codesys V 2.3 supports SDO block transfer, I am using 2.3.8.5 version CAN open manager library. The CanOpenSendSDO is having only 8 bytes to receive.  So could any one explain the sequence of data transmission in block transfer.
-
-In normal SDO - first four bytes -> Upload/download, Index, Subindex, all stuffs. and next four bytes is an data. But how these data's will be transfered in block transfer.
-
-Regards
-Rajesh G
-

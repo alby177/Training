@@ -1,2 +1,0 @@
-Hi all,https://www.raspberrypi.org/downloads/raspbian/since this update to version from 2016-11-25 -Keep in mind to enable ssh otherwise the CODESYS Update Raspberry PI command does not work anymore.RaspberryPI.org die this change (to disable ssh) due security reasons.See https://www.raspberrypi.org/blog/page/2 ... bian-pixel for more Information and how to activate it again.BREdwin
-

@@ -1,4 +1,0 @@
-Dear people,First of all sorry for any bad englishIs it possible to use the following function with a Hitachi EHV + CPU1025, which does not have an internal web server, CODESYS HMI, where you install the version on the computer. I think this is a bit unclear because you are licensing for The computer must haveI wait patientlyWith best regardsJeffrey
-
-Hi Jeffrey,Yes, you can install the CODESYS HMI on a PC and connect to the Hitachi PLC.In your project you will have 2 applications. One for the Hitachi and one for the HMI. You can download them independently.Since 3.5 SP10 it is also possible to develop them individually in separate projectsOptionally you can enable the web-visualisation for the CODESYS HMI to be able to access the HMI also remotely through a webbrowser.For more information about the HMI and the license pricing see the CODESYS store.
-

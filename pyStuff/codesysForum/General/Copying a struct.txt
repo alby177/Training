@@ -1,6 +1,0 @@
-How to easiest copy the values of one struct to another of the same type? In C/C++ the assignment operator does this job but it seems this is not how it works in ST. Do I need to specify a specific copy function for each struct?
-
-You basically need to perform a byte copy. See this post: https://forum.codesys.com/viewtopic.php?t=7671#p17493
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-

@@ -1,8 +1,0 @@
-Im working on a project and I am considering using CANopen, is it possible to use a USB to CAN converter cable from Kvaser with CODESYS?Here is the output of udevadm monitor --udevUDEV  [1409309.515608] add      /devices/pci0000:00/0000:00:1d.7/usb2/2-4 (usb)UDEV  [1409309.520826] add      /devices/pci0000:00/0000:00:1d.7/usb2/2-4/2-4:1.0 (usb)UDEV  [1409309.525023] add      /devices/pci0000:00/0000:00:1d.7/usb2/2-4/2-4:1.0/net/can0 (net)UDEV  [1409309.532863] add      /devices/pci0000:00/0000:00:1d.7/usb2/2-4/2-4:1.0/net/can0/queues/rx-0 (queues)UDEV  [1409309.539158] add      /devices/pci0000:00/0000:00:1d.7/usb2/2-4/2-4:1.0/net/can0/queues/tx-0 (queues)I could also use EtherNet/IP, would this be a better idea because of the ethernet port being easier or more reliable to access from CODESYS? Thank You!
-
-Hi,you want to use this USB to CAN fordoing CANopen by the Raspberry PI Runtime?BREdwin
-
-Yes.  Is it possible?My reasons are:I have a lot of experience with the Kvaser hardware, I also have lots of it available.I'd like to use something that does not come in the "hat" form factor to allow use with the compute module.I'm looking to use parts that are from a "major" manufacturer to help guarantee long term availability. Thanks!
-
-Hi,if you manage to build on the Raspberry PI a Socket CAN kernel modulefor the Kvaser Hardware, this might work but not easy.BREdwin
-

@@ -1,4 +1,0 @@
-I am trying to download program, and I am missing IoDrvEtherNetIP 3.5.6.30.  I loaded codesys for Raspbery PI, and Rockwell 1734 AENT configuration packages, and I can build the package, but not download it, comes up with errors, see screenshot. I can not find IoDrvEtherNetIP 3.5.6.30 on line anywhere, can anyone help me, I am very new to this? Thanks in advance!
-
-Just as you say, you're missing the correct version of the library.Simply click "Download missing libraries" in the Library Manager and it should be retrieved the from Codesys servers automatically.Once the little warning symbol with an exclamation on it goes away, the library is installed and you can try building your project again.
-

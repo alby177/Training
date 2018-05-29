@@ -1,6 +1,0 @@
-Dear All,      As titled, may i know how to make PID function works in inverse mode? I would like to make a PID blower control where the set value is wind pressure. In normal mode, blower speed need faster to make higher pressure. But when i select reverse mode, blower speed need slower to make higher pressure. In Tia portal , there is a bit for reverse mode. So i wonder whether reverse mode is available in CoDeSys or not.  I had been searched in internet about the method but no result. Hope you all can help me about this. Thank you
-
-what PID function is used.when you make the P action negative it will work.This is standard theory.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

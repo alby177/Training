@@ -1,8 +1,0 @@
-I'm having trouble with initializing function blocks inside of function blocks:FUNCTION BLOCK FB_ChildVAR  cVar: DINTENDMETHOD FB_InitVAR_INPUT	bInitRetains: BOOL;	bInCopyCode: BOOL;	SomeVar: DINT;	END_VARTHIS^.cVar := SomeVar;FUNCTION BLOCK FB_ParentVAR  pVar: DINT;  Child: FB_Child(myVar);END_VARMETHOD FB_InitVAR_INPUT	bInitRetains: BOOL;	bInCopyCode: BOOL;	SomeVar: DINT;	END_VARTHIS^.myVar := SomeVar;PROGRAM TestProgVAR	Test: DINT;	Parent: FB_Parent(1234);END_VARObviously, this program does nothing but initialize a single variable, or should. The problem I'm having is that the Child.cVar (fairy syntax) doesn't have the value 1234, per my example.
-
-Fb_init is called after the variables initialization.See in online help how is the initialization sequenceEnviat des del meu Aquaris M5.5 usant Tapatalk
-
-OK, thanks. I saw something that said FB_Init happened before VAR init. What is the function/method decorator to have it called after init? I think that will work for me.Thanks.
-
-Look at pragmas help. There are one called   call_after_init or something similar. It doesn t work if it is called from a library.There exist another method which is instantiate an fb from var. If you  instantiate it as the first var in your fb, the fb_init of the new fb will be called before your variables initialization.Be healty!
-

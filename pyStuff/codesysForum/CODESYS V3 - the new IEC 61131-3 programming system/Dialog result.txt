@@ -1,8 +1,0 @@
-Hlelo,I am calling an OK/Cancel dialog from a Visualization. Is there any way to know on the Visualization that a certain button was pressed on the Dialog?Something like:(OnDialogClosed method:)IF DialogResult = OK THEN   // perform action AELSE   // perform action B  END_IF
-
-Does nobody know the answer?Is it not possible at all?I thought that was the reason why Dialogs existed: to get a Yes / No (or other) response from a user and make use of the result on a Visualization...
-
-HelloYou can find a free example in the CODESYS Store, called "Visalization Dialog Box"
-
-Code:VAR   dlgManager    : VisuElems.IDialogManager; (* Dialog manager *)   visuDialogConfirm : VisuElems.IVisualisationDialog; (* Reference to the custom dialog *)   visuDialogResult   : VisuElems.Visu_DialogResult; (* Get the button clicked. Possible results are OK, Cancel, Retry etc. *)END_VARdlgManager := VisuElems.g_VisuManager.GetDialogManager();visuDialogConfirm := dlgManager.GetDialog("NameOfDialog"); // Get the reference to the custom confirm dialogvisuDialogResult := visuDialogConfirm.GetResult();
-

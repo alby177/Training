@@ -1,6 +1,0 @@
-Has anyone successfully installed CoDeSys 2.3 on Windows 8 64-bit? I'm considering purchasing a PLC from WAGO but I want some assurance of future-proofing if/when our company moves from Windows 7 to 8. I found a video from WAGO on youtube that demonstrated installing 2.3 on a 32-bit release candidate of Windows 8, but nothing about 64-bit.
-
-grunkles wrote:Has anyone successfully installed CoDeSys 2.3 on Windows 8 64-bit? I'm considering purchasing a PLC from WAGO but I want some assurance of future-proofing if/when our company moves from Windows 7 to 8. I found a video from WAGO on youtube that demonstrated installing 2.3 on a 32-bit release candidate of Windows 8, but nothing about 64-bit.Just I can tell you my experience about 'Has anyone successfully installed CoDeSys 2.3 on Windows 8 64-bit?'.I'm using Win7. I tried to set up Codesys V2.3 with my device(IFM) in Win 7. but, it was impossible(but, only codesys program is Ok for test in Win7.) So, I set up Oracle VM VirtualBox(WinXP) and in the Virtual WinXp I set up Codesys V2.3. My device(IFM) was working in WinXP. I think installing might be hard in Win 8, So you would rather get VirtualBox like me.
-
-I have codesys v2.3.9 running on a clients computer with win8 64bit. I haven't encountered any problems yet..
-

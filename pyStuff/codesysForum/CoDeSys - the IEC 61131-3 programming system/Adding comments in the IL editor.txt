@@ -1,6 +1,0 @@
-How do I add comments to my code in the IL editor?I like to add comments above each cluster and to the right of each line.
-
-you can do this by (* before comment and *) to close commentit will turn green
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

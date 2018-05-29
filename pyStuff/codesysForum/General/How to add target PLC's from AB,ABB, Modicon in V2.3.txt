@@ -1,7 +1,0 @@
-Hello,
-
-You will not have targets for AB. They don't use CoDeSys. The targets come from the manufacturer of the PLC. You do not need any target to learn under CoDeSys. You can either select target as none or use their PLCWinNT target which is a windows based PLC target (soft target). That is all you need to learn.
-
-_________________Thanks,
-Steve Pfeifenroth
-

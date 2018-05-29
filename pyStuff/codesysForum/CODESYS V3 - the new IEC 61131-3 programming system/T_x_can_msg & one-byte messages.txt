@@ -1,2 +1,0 @@
-HeyHow can I transmit and receive via CAN 8 one-byte messages in one byte?
-

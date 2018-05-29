@@ -1,9 +1,0 @@
-Hello!
-I want to create invisible to user task in my library (like CANOpen library task).
-
-How I can do that?
-
-on objects in visualisation, there is a parameter which is setable to make the object invisible based on a bool variable. double click the object in the visualisation and click on the "variables" tab. the top option will allow you to do this.
-
-As far i understood i.e you would like to create a Functions and Function Blocks, where should not able to see your function code.to achieve above, Create a external library, that is in C.Thanks and Regards,Rajesh G
-

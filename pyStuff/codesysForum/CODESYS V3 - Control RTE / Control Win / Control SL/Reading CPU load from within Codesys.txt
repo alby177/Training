@@ -1,6 +1,0 @@
-We're running Codesys on it's own core in a multi-core CPU.We would like to present the Codesys CPU load in a HMI application running on another core.Which Codesys library/function can be used for getting the CPU load percentage?I messed around and tried some different functions but never got it to work, hopefully you can provide me with the right answer.RegardsKim HansenBeijer Electronics Automation
-
-Hi Kim,udiProzessorLoad:=SchedGetProcessorLoad(Result);BREdwin
-
-Edwin Schwellinger wrote:Hi Kim,udiProzessorLoad:=SchedGetProcessorLoad(Result);BREdwinBeen searching a lot for this one. Thanks for the info.
-

@@ -1,2 +1,0 @@
-Hi Edwin,Does new version Softmotion User Manual awailable for CoDeSys 3.5 ?We are planning to use Panasonic Minas A5B Ethercat servo drive in our projects with Codesys but there is no any  documentation/detail information about SM3_Drive_ETC_Panasonic_MINAS_A5B function block.It would be good enough if function block explanation document or Softmotion user manual awailable.  ThanksMurat
-

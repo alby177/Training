@@ -1,8 +1,0 @@
-Is there a way to automate the creation of .package files using Python in CodeSys? If so, could you give an example and/or point me to documentation about it?  Thank you.
-
-Hi,cgage@opto22.com wrote:Is there a way to automate the creation of .package files using Python in CodeSys? If so, could you give an example and/or point me to documentation about it?Currently, there is no dedicated Scripting API for package creation.However, the CODESYS packages are just Zip files with a manifest file in XML.So you could use our Package Designer to manually create a "template" package, unzip it, and then use standard XML and Zip APIs in the Script to create the packages.Our own buildservers build the packages the same way - they collect the artifacts from the build directories and the source repository (including the mainifest file), and zip it together to create the package. Small adaptions like setting the version number in the manifest are performed by the build scripts during that process.The Package Designer is available in our store for free download, and it has online help explaining all the options and settings. If you want to go the hard way and manipulate the XML yourself, we have some documentation for the XML format available - it is part of the Automation Platform SDK (Packages.pdf in the Documentation subdirectory), or you can request the "OEM Specification: Packages" it via support@codesys.com.HTH,Markus
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
-
-Hi Markus,Thank you very much for the information, it is precisely what I needed to know.
-

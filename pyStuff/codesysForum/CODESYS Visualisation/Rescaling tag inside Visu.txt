@@ -1,2 +1,0 @@
-Good morning to all forum,I am a newbie in using Codesys package and I have this question.I have some integer variables inside the program, that I want to handle on my HMI like real variables; I would like to understand how to apply a rescaling factor (for example 100) to a variables, so for example on my HMI an I/O field will display 12.34 and inside the program the variable will contain the value 1234.Anybody can help me?Thank you.
-

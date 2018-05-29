@@ -1,6 +1,0 @@
-Hi I am unable to get the SP RTE service to display the icon in the system tray.It starts and is running but no icon.Running windows 7 64bit if this help.
-
-Sorry, but CoDeSys SP RTE does not yet support the 64 Bit versions of Windows.
-
-_________________Roland WagnerModerator
-

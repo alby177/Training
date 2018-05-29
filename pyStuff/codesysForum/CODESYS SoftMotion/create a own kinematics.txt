@@ -1,2 +1,0 @@
-Hello , im trying to create a own kinematic for a 5 axis robot, but i have a problem with setting up the ConfigData, which is needed for the direct and inverse kinematics. Does anyone have a tip or a example how to setup this ConfigData? Another question i have about the kinematic, when i use the inverse kinematic, can i store the position of the TCP in a FB MC_COORD_REF or do i have to use the FB SMC_FRAME ?Greetings Markus
-

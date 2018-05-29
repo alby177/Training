@@ -1,2 +1,0 @@
-Hi everyone,I'm programming project now where I need to read files from shared network directory. I have PLC Rexroth XLC L25. Now I have programmed communications by FTP, but it is not perfect. I  think the better solution is communicate by SMB, but I don't know if it is possible.BR Zefram
-

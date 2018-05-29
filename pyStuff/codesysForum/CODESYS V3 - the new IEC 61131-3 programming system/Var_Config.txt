@@ -1,6 +1,0 @@
-Hello, I'm trying to use VAR_CONFIG and I'm doing the nexts steps:1) I create a FB:FUNCTION_BLOCK my_FBVAR_INPUTEND_VARVAR_OUTPUTEND_VARVAR        myBit AT %Q*: BOOL;END_VAR2) Declaration in program:PROGRAM PLC_PRG       myArray : ARRAY [0..7] OF my_FB;END_VAR3) In VAR_CONFIG:VAR_CONFIG        PLC_PRG.myArray[0].myBit AT %QX0.0 : BOOL;        PLC_PRG.myArray[1].myBit AT %QX0.1 : BOOL;        .....        PLC_PRG.myArray[7].myBit AT %QX0.7 : BOOL;END_VARMy questions is: if I need PLC_PRG.myArray[5].myBit , how do I call this into my_FB?
-
-You have define myBit as a local variable of myFB and so you cannot reach it from PLC_PRG. You need to add something to myFB to tell it to adjust the local var (like method TurnON)... You can also assign a global variable to the output - but this will be frowned upon by some programmers.
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-

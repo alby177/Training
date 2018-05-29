@@ -1,8 +1,0 @@
-Dear sir:i used CODESYS EthernetIP SCAN (Master) connection with omron PLC  based on the EthernetIP protoocl, When i Configuration omron PLC CJ2 EDS file in my projetc , but i see the "connection path " is invalid,Could you please help me? it is EDS file problem or master /slave problem ,i have no clue.Thanks a lot !br,Peter
-
-HelloWith the information provided here, I will assume that the issue comes from the eds file.For me, the connection path is incorrect. It seems that the last segment is not complete. The ODVA provide a tool called EZ-EDS that can read and interpret the eds file. You can register here to download the toolhttps://secure.odva.org/forms/ez-eds.htm
-
-Dear ikisshandball:thanks , i will re check the omron CJ PLC EDS file issue .other one quesition , Does the CODEYS Ethernet IP Driver Scanner (master ) driver have support CIP service -Explicit Messaging function or function block ?Maybe I can change to use CIP service -Explicit Messaging like with omron CJ2 ethernet/IP PLC(omron support).br,Peter
-
-Dear Sir :Sorry for go back the topic ,May i know if the codesys IDE can not use 3rd EDS file for Ethernet/IP tag mapping table,How can i can connection with 3rd PLC ?Can i use which function block for CIP service -Explicit Messaging to connection 3rd Ethernet PLC?Thanks a lot !BR,Peter
-

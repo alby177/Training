@@ -1,2 +1,0 @@
-Hi.I have a project with recipes. I have a few saved recipes and now I want to add new variables to the recipe manager.I found out that after doing so, when I restore an old recipe it comes up with all values at zero although in the text file the values are correct.How can I solve it? What do I need to do so all the values will remain after the addition of the new variables?
-

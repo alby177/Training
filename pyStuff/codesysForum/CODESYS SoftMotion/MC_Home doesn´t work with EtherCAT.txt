@@ -1,4 +1,0 @@
-Hi,I am using softmotion with EtherCAT and I want to change the mode of operation to 6 but after I write it to 6 the softmotion is changing it automatically into 8.Maybe the MC_Home is changing it. Does someone know which EtherCAT-object is changed by MC_Home and when? Because for Homing in EtherCAT the mode of operation is 6; the homing mode is e.g. 19; the home offset 0x607C is also needed.ThanksMike.
-
-Hi,in generall the SoftMotion driver take care all mode settings... s othis is neverneeded to do this manually (even more it not possible to do).So I would propose to check why the mode switch does not work if you execute MC_Home.You need to change the DS402 Parameters I guess.BREdwin
-

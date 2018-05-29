@@ -1,6 +1,0 @@
-Hi, I have been tasked to write some script that will ensure when our device ships to customer it is in a clean state (factory default).We will load an application on during an automated test and I can't see if there is a command or a method through scripting to delete the application.Is there one...or can I just create a blank project for my device and load that? Does that wipe over all files or could there still be files existing from the previous application?
-
-Hello.I think reset_origin() should do the trick.Code:device = projects.primary.find("Device", False)[0]onlineDevice = online.create_online_device(device)onlineDevice.reset_origin()Regards,Martin
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
-

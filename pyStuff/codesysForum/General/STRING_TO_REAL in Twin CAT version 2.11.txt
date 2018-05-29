@@ -1,6 +1,0 @@
-Hello People,I am creating one application  using TwinCAT version 2.11.In which, i am getting string data as output and my problemis that i would like to use this values for controling loop of the process.So, my question is that how can convert data from STRING to REALvalues ?I tried STRING_TO_REAL but it didn't work.I also tried with oscat but i have some problem to use function for conversation of string. Any suggestion and help would be great.Thanks in Advance.
-
-Hello,J works with CoDeSys V2.3.9.28 in simulation mode and this exemple of program is OK :-------------------------------------VAR	Chaine:STRING;	ValR2:REAL;END_VAR-------------------------------------ProgramValR2:=STRING_TO_REAL(Chaine);-------------------------------------So :- Is this really this operation you want to do ?- is there no error in the variables declaration ?- Is it possible to use REAL whis your PLC ? (J don't use Twincat)- Is there a bug in this PLC ?- did you try this in simulation mode ?Hope these few ideas can be helpful 
-
-Hello People,Now, it's working.Thanks for your suggestion.
-

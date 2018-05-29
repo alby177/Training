@@ -1,6 +1,0 @@
-Is it possible to present an "array of integer" or "array of boolean" e. g. as a single OPC item to the OPC client or does CoDeSys 2.3 with OPCDA always expand this to a huge number of single OPC items that the client has to read, named myIntArray[0], myIntArray[1],...All tests my colleages led to many single items, but I would like to see only one single OPC items of array type.
-
-I'm having the same issue. I cant define arrays as OPC items
-
-Hi,without having a detailed version information, hard to say.BREdwin
-

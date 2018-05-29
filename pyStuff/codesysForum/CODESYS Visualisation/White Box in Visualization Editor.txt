@@ -1,8 +1,0 @@
-Hello - how do I change the white box in the visualization editor from 800x600 to 1280x1024. I would like the work area to be the same resolution as the touch screen we have for the HMI. (Codesys 2.3)Thanks.
-
-It looks like that you just place an element on the work area, and then draw it outside the work area and then the work area expand as needed, that is what I have done, there may be other ways to do this, one could be to change the _ rate from 100% to 50%.
-
-target setting in resources goto visualisation and change the numbers.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

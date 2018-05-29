@@ -1,4 +1,0 @@
-Hi,How can I change the NodeId for an OPC UA variable?Or to be more precise: how can I remove the "|var|" from the NodeID, e.g."NodeId:ns=4;s=|var|Raspberry Pi.Application.PLC_PRG.IrSpeed"to"NodeId:ns=4;s=Raspberry Pi.Application.PLC_PRG.IrSpeed"Thanks a lot for any help !?Regards,RMW
-
-same question 
-

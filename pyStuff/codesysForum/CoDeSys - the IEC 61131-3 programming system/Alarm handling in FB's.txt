@@ -1,8 +1,0 @@
-I am new to CoDeSys, mainly I am quite impressed with what I have seen this far, however I wonder if alarm configuration may only be done in the application by using Alarm Configuration/Class/group and storage objects.I find it much more "natural" to define alarms as parts of the function blocks (e.g. a function block for a valve should issue/manage tha alarms related to the actual instance of this valve FB).This way it would automatically be added if you add the FB.Is this really not possible ?
-
-you can do it anywhere you like.im do not use the alarmhandler (only to test if plc is running)the rest is in function blockslook for a better software at www.oscat.dedownload the version for your codesys and the txt version you can read it, the docs are in english too.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
-Thanks for info and link.Unfortunately my Deutsch is weak, do you know english language url ?Any hint of how to define alarm handling ?I want to define e.g. a FB called from within an outer FB, the inner one must be a kind of finite state machine which serves opc server acc0ording to opcfoundation AE 1.10 spec.
-

@@ -1,2 +1,0 @@
-Hi,What is the best way or tool to calculate code coverage with Codesys 3.5 or dare I ask 2.3?Thanks,Tim
-

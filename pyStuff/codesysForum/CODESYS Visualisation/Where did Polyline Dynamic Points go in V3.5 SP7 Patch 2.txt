@@ -1,4 +1,0 @@
-Having installed SP7 patch 2 in the last couple days (from SP4 previously), I'm wondering why Dynamic Points is not visible in the properties window on my polyline.Is there some switch I need to change, or has it been removed?  The help file still lists it as a parameter of the object.Kind regards,The Captive Engineer
-
-Problem Solved:After a bit of playing with some other stuff, I noticed that there is a small checkbox in the upper right corner of the visualization object properties window labelled "Expert."  Once this is checked, the Dynamic Points option does become visible.Hopefully, this will be helpful to someone.Kind regards,The Captive Engineer
-

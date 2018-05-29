@@ -1,6 +1,0 @@
-Maybe someone can help me with the next questions:Is there a code coverage for structerd text?Is there a coding guideline for CoDeSys, if so how can I check it?
-
-the guide within codesys is at www.oscat.deif you follow this guide it will be easy.a real coding is not available yet, after ten years it will be in a IEC code i hope.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

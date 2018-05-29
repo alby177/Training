@@ -1,8 +1,0 @@
-I'm debugging my library. I can set breakpoints during debugging. This works well. I have the problem with the setting breakpoint in function which is run ones at begin program. When I login, application stop and I can toggle breakpoint but when I click start, the program does not stop at this breakpoint. It looks like some part of the code (where the breakpoint exists) is executed after login.
-
-Hi.All initialization code (all fb_init for example) is executed before run, and as I can know it is not possible to make an breakpoint.I had the same problem with a library, and I solved it using log messages
-
-Josep, thank you very much for your reply.Could you give advice how can I use log messages?
-
-Hi.See this discussionviewtopic.php?t=7517
-

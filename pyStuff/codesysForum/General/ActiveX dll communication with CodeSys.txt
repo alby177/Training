@@ -1,8 +1,0 @@
-I have successfully duplicated the example for creating a dll and then activating it from a CoDeSys visualization described in the Visualization manual.  With this, you can send variables from CoDeSys to the dll. 
-
-I am curious if there is a way (or a plan for the future) to have the dll return or send variables that are visible in CoDeSys?  The communication seems one-way right now.
-
-Thanks in advance,
-
-Jason
-

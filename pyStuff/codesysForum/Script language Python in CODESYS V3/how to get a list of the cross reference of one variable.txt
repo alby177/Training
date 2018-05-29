@@ -1,8 +1,0 @@
-Hi all,I´m looking for a solution to get a list of cross references of one variable in my Python script.And if it possible a reference of a member of a struct.I found the following:   >>> system.commands["view", "crossref"].execute()   >>> system.commands['browse', 'crossreferences'].execute()   >>> system.commands['browse', 'legacycrossreferences'].execute()wich only opens the view of the cross reference in my GUI.But I need a list of the POU´s where the variable is used, such like the results in the view.Any idea´sMany thanks
-
-Hi all,no ideas about cross references??
-
-Hi mvs.mvs wrote:Hi all,no ideas about cross references??Sorry, but that is not possible at the moment.BRMartin
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
-

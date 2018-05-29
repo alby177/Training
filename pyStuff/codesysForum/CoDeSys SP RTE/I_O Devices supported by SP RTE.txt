@@ -1,4 +1,0 @@
-Is there a list of PC I/O cards (such as Amplicon's DAQe-2500) supported by SP RTE?
-
-See http://www.3s-software.com/index.shtml?en_CoDeSys_SPRTE
-

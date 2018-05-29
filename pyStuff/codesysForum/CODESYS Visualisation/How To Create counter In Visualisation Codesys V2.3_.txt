@@ -1,4 +1,0 @@
-Hi All Best FriendI intend create counter in Codesys v2.3 in Visualisationplease help metankx
-
-Counters are used in code and have no direct relationship with a visualisation (in the sense in which they are usually referred to in a PLC context, that is). If your counter is called MyCounter and is a standard CTU, CTD or CTUD then the current value of the counter is available through MyCounter.CV. This value can be displayed in a rectangle shape through use of the Text and Textdisplay properties of the rectangle. E.g. Let us assume your counter is part of the program PLC_PRG. Then you could set your rectangle's Text to be "%d" (without the quotes) and Textdisplay to refer to PLC_PRG.MyCounter.CV.
-

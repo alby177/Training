@@ -1,2 +1,0 @@
-I've been looking for Panel PC's that run codesys for a reasonable price. I've come across a kendrion Ventura Scout 1205 that runs codesys v3, connects to ethercat, ethernet/ip and a few other protocols. The price on this is 1150 euro. Does anyone have any experience with this company or this product line?
-

@@ -1,4 +1,0 @@
-I have a symbol configuration but I can not enable the writing of the symbol file to the PLC. I can not see the symbol file on the PLC after download.Does anybody know how to do that ?RegardsSavas
-
-Which CODESYS version do you use?With V3 the symbol configuration is part of your application and you don't see it as a separate file (maybe not for all devices, but for many this is the case).
-

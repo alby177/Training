@@ -1,4 +1,0 @@
-Good afternoon,I am working on using multiple languages and I take it that a useful utility would be the dyntextmakros.xla Excel add-on.  Is there a way to have it work with Excel 2007?  I cannot seem to find the menu addition anywhere once I install it and have it enabled.Kind regards,Doug Rilee
-
-_________________Kind Regards / Mit freundlichen GrüssenDoug Rilee
-

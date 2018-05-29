@@ -1,2 +1,0 @@
-Codesys 3.5.9.81Hello,I am getting an Exception 'Application loaded with retain mismatch' with this version of runtime.  I am using persistent variables in my project.    The variables have not changed for 2 years in the project.   I was previously using 3.5.8.6.   I am testing a newer runtime but having issues with this exceptions error.    It will boot and work as expected but randomly I find the device will abort the project.    Are there any known issues with retain variables?
-

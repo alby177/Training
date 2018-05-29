@@ -1,8 +1,0 @@
-I Can't update the Raspberry Pi 2 to versione 3.5.9.20.When I try to update the system tell me thats work, but still remain the old version 3.5.8.10.I have tried to update it manually but doesn't work too.Gianni
-
-Hi,you could execute by ssh or in the local console:sudo dpkg --purge -r codesyscontrolThen try to install the new one.BREdwin
-
-It doesn't work.When I install the new version manually this message will appare:Quote:Unpacking replacement codesyscontrol ...make_daemonrcupdate-rc.d: using dependency based boot sequencinginsserv: script codesyscontrol is not an executable regular file, skipped!Setting up codesyscontrol (3.5.9.20) ...make_touchmake_blacklistmake etc modulesmake_daemonBackup licensestar: Removing leading `/' from member namespid 12899's current affinity mask: fpid 12899's new affinity mask: 1codesyscontrol startedupdate-rc.d: using dependency based boot sequencingupdate-rc.d: warning: default stop runlevel arguments (0 1 6) do not match codesyscontrol Default-Stop values (none)postinst finishedWen I try to download the project the message is:Quote:The device version '3.5.8.10' ...Gianni
-
-Is not an regular file.... this seems to be the problem.Is this really jessi in current version.BrEdwin
-

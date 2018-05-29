@@ -1,6 +1,0 @@
-I try to load a library that I wrote myself.If the library contain lib of SM3_basic,when I load it to a new project,the project will be error as following picture.If the library does not contain the SM3_basic library,the new project will be all right!Why does this happen?What should I do? Tks.
-
-           
-
-Hi, please check the plc logger for more details. BREdwin
-

@@ -1,8 +1,0 @@
-I did a test which show the performance of my cpu board by 1 million times multiplication.First I did it directly in vxworks by c language. It spent 2500us on finishing the multiplication.Then I make a external library by c language. It spent about 11666us on the test.I don't know why the performance is so poor when I do it by codesys.How can I improve the performance?the code just like below:void CDECL CDECL_EXT func1__main(func1_main_struct *p){	UINT32 startTick, endTick, multipIntTick;	INT32 index, cycles;	INT32 i;	cycles = p->pInstance->varIn;	CAL_LogAdd(STD_LOGGER, COMPONENT_ID, LOG_INFO, ERR_OK, 0, "---cycles=%d---\n", cycles);	startTick = sysTimeBaseLGet();         //get the ticks	for (index = 0;index < cycles;index++)		i = 200 * 100;	endTick = sysTimeBaseLGet();     	if (endTick < startTick)		multipIntTick = (endTick + 0xFFFFFFFF - startTick) / 50;    //get us	else 		multipIntTick = (endTick - startTick) / 50; 	startTick = sysTimeBaseLGet();	CAL_LogAdd(STD_LOGGER, COMPONENT_ID, LOG_INFO, ERR_OK, 0, "---Int=%d---\n", multipIntTick);	p->pInstance->varOut = multipIntTick;}
-
-Watch out for this code, a decent c compiler might inline that to the following, however the CodeSys compiler will not!Code:for (index = 0;index < cycles;index++)i = 200 * 100;After inliningCode:i = 200 * 100 * cycles
-
-_________________Andreashttp://www.boschrexroth.com
-
-Hi Andreaz do you mean it will be faster after inliningThe test code is for a external library, so it is compiled by gnu of vxworks.
-

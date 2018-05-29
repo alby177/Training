@@ -1,2 +1,0 @@
-In device\comminication Setting,how can i "Add device" with CAN login interface? Some PLC login do not trough EtherNet but CAN bus or Serial,under such condition,how can i "Add device"?
-

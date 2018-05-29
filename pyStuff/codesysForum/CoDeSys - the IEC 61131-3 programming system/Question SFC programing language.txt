@@ -1,8 +1,0 @@
-Hello,
-I have a question from the SFC language ...
-how to get out of a step, if the demand arises for some other step in eg. from manual mode to automatically switch mode, in my example the system stays in manual mode (in the loop), although the transition is made (called AUTO ) in STEP for automatic operation, how to reverse the state of the loop in manual work?
-
-always tricky as you must know the state of the machine, when switching over you must use different paths. within a instruction you must look at it or do it outside of the sfc in a separate program.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

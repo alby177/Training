@@ -1,6 +1,0 @@
-We are using ABB AC500 CPU : PM573-eth, we created visulisation project and downloaded to PLC, from our LAN we are able to see visulisation on browser by giving http://IPAddress/webvisu.htmWe tried to load visulisation from internet(Outside our LAN) , but we are not successful, in our router we forwarded Port 80 as well as 8080 to PLC static IP but it does not workOther webserver application is working fine from internetCan anyone help ?
-
-you will need another IP address as all computers are on same address so 192.168.1.102 will not work from outside.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

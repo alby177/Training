@@ -1,6 +1,0 @@
-There is KNX library for Codesys?I would like to use an external IP Gateway or USB interface.Best regardsGianni
-
-i buy now the KNX interface from http://www.opternus.com/en/siemens/deve ... 2-pcb.html and use the serial port , maybe in 2 days i make the communication protocol and communication library ,but ai nead help to make the interface for configuration for codesys
-
-Good MorningLook vor EIBD or KNXDThis are socket Interface , Daemon and more https://github.com/knxd/knxdhttp://michlstechblog.info/blog/raspber ... interface/If you have some Solution   -> postet. I am only a User Not a programmer. Gesendet von iPhone mit Tapatalk
-

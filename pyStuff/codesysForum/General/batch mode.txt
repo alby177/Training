@@ -1,3 +1,0 @@
-I would want to automate certain functions in codesys via a batch file. Anyone who has experience with this? I would for example like to open a project, export an object, import an object, and close the project again.
-Thanks in advance for your help!
-

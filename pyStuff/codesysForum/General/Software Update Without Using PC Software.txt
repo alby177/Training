@@ -1,6 +1,0 @@
-Hi,Is there any way to may an ARM based Linux computer which is attached to two CodeSys based controllers (Bosch Drive and Turck BL20) can instigate a software update from a  locally stored program?Basically I'l like to be able to stop the current program, load the new code, and finally restart the program via an Ethernet connection.This connection is on an isolated network within the machine. I'm currently using the same version of CodeSys to program the PLC code in both devices, but need an automated way to perform software updates, and the Linux HMI/Process Monitor is the only device with an external Ethernet link.Regards,Peter
-
-yes you can program devices via the ethernet, call up the PLC address in any browser and you will see a startscreen from the PLC.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

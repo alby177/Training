@@ -1,2 +1,0 @@
-In order to use a Wago CANopen 750-337 module I've created a new device using the device repository and loaded the eds file provided by Wago. If I try to set the cobid (in the pdos section) for rxpdo5 to 0x780+nodeid this is not allowed and the valid range only appears to be 0x180-0x57F, 0x681-0x6DF. Why is this not allowed? 0x780 seems to be a valid function code.
-

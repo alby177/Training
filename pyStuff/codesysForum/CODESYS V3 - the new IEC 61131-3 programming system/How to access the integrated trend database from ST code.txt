@@ -1,6 +1,0 @@
-Hi All.Sometimes i need to generate a report which shows min, max and avg of certain variable between certain time period from database.Is it possible to access the integrated trend database (SQL Lite?) from ST code to get min/max/avg values?Best Regards.Y.M. Kim
-
-See here: Trend API Example .But it is not so simple to understand.
-
-Much appreciated.I would check it.
-

@@ -1,6 +1,0 @@
-Hello!I have got a problem when using png format images in my monitor.My Codesys Version is V3.5 , OS windows ce 6.0 , CPU  freescale i.MX35.When using *.jpg or *.bmp, the application can show the image correctly.if using *.png ,the application can be downloaded to the device, but the png images won't show .I wonder what can  I do to support the png format images.
-
-Forget about png,tiff,gif files, if you have wince image on plc, i suppose you have janztec plc. The solution is to use bmp. But if you want transparent pics you have to bottom layer change transparent with any color and select in property configuration in coedsys.Regards,Alex
-
-I am also facing this kind of issue. But for me I can see only png image on my device. I can't see any other images on target visu. But I can see the images on web visu. I am using codesys on linux RTOS.
-

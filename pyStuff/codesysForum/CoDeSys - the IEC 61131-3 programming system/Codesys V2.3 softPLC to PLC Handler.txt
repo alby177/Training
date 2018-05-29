@@ -1,2 +1,0 @@
-Hello Everyone,I have two questions which are listed below:1) Does PLC Handler acts as a server?2) Is it possible to get the data from Codesys V2.3 soft PLC with the help of PLC handler ( PLC handler and Codesys V2.3 Soft PLC will be running on Linux OS in one/same PC) ??Thanks in advance.
-

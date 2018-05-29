@@ -1,6 +1,0 @@
-The motion requirements for my servo are most easily accomplished with the MC_MoveVelocity command. Unfortunately, this command in my controller, the Compax3 T40, does not have a jerk input parameter on the function block. Does anyone know of a way to set the jerk with the MC_MoveVelocity function block or perhaps tell me why it was not included as an option in the function block's input?
-
-Hi, the MC_MoveVelocity function block is part of the PLC Open motion libraries. Any servo manufacturer has the same FBs with the same interface, adopted to their hardware. A jerk reduction is not part of the interface.On BoschRexroth servo drives (IndraDrive) there is a parameter to setup jerk reduction, effective on any movement. Check your servo controller, certainly there is such a parameter too.Rolf
-
-You can use the C3_Jog function block to accomlish this.
-

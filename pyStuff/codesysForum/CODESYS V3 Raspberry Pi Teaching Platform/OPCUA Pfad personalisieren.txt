@@ -1,8 +1,0 @@
-Hallo!Der Pfad zum Zugriff auf OPCUA hat sich von der Runtimeversion 2 auf die Version 3 verändert und ist jetzt anders.Ich würde gerne den Pfad selbst angeben. Ist dies möglich oder ist der OPCUA Pfad hardcoded? Vielleicht gibt es ja eine Möglichkeit über die codesyscontrol.cfg ([CmpOPCUA]) ?Vielen Dank für Eure Hilfe!!
-
-keiner eine Idee dazu?
-
-hat keine das Problem das sich der "Pfad" des OPCUA geändert hat? Habe das selbe Problem
-
-Ist Hardcoded und eher versehentlich geändert, sorry!GrüßeEdwin
-

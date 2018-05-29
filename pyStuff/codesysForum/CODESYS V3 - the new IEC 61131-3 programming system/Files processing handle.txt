@@ -1,6 +1,0 @@
-Hello everybody,I need to read some information from a file but I want to know, what types of files can CodeSys handle and what is the most suitable od them? I know that I can use for example CVS file, but can codeSys handle others like, .doc, .xls? Or any other file type?Thanks
-
-Basic text files. For doc/xls you would have to open as a text file and parse the data yourself. Your hardware vendor may have some FBs already built, but these may be just ways of saving and then reading data later...
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-

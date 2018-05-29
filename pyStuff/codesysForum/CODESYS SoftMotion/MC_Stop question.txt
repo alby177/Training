@@ -1,4 +1,0 @@
-Hello.The MC_Stop FB doesn't behave as it should.1. When executed I get an Error.2. I'm waiting for the axis to change state, therefore the Execute input is TRUE, and the  outputs Done=FALSE, Error=TRUE.3. For some unknown reason, although the MC_Stop is in this state, the axis does change its state to "stand still".Pleas see attached images How is that possible? What do I miss?Thanks,Alon.Attachment:XMC_STOP_I_O.JPGAttachment:XMC_STOP.JPG
-
-Mc_stop not changes axe state with done to do that you have to put execute to false.Use Mc_halt instead
-

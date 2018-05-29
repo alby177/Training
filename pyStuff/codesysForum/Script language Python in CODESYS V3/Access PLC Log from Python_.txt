@@ -1,6 +1,0 @@
-I'm writing a test that performs some steps and then needs to check for the presence of one or more faults on the PLC. Is there a way to programmatically access the PLC Log from within Python?
-
-Hi.Right now, this is not yet possible, but this improvement is already listed in our Jira tracker CDS-31928, so it will be implemented eventually.If you use the CODESYS Test Manager for Automation Platform you can use the command "FindMsg" from the test driver "CoDeSys.Log".BRMartin
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
-

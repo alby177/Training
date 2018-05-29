@@ -1,4 +1,0 @@
-HiIs there anyway to forward a "VAR_IN_OUT" variable to a "VAR_IN_OUT" of a sub function block.  Example:Function block FB1 has an "VAR_IN_OUT" called INOUT1Inside FB1 is a call to another function block FB2 that has an "VAR_IN_OUT" called INOUT2. Is there any way to pass forward INOUT1 to INOUT2? Provided they are of the same TYPE .Target settingsVAR_IN_OUT as reference: activated.RegardsJohan
-
- Solved!!(*Code like this does NOT work*)(* Error 4062: No external access to 'VAR_IN_OUT' parameter.........*)STATUSFB.STATUS2:=INOUT2; STATUSFB();Since no external refrence to a VAR_IN_OUT is possible it must be declared inside the () of the function block call.(*But this work*)STATUSFB(							STATUS2:=INOUT2,	);RegardsJohan
-

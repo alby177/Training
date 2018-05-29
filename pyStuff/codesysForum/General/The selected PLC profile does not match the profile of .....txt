@@ -1,8 +1,0 @@
-HiI am using codesys v2.3, i have a project that has worked on a PC, now i had must change the PC.Now the same project gine the error "The selected PLC profile does not match the profile of the target!"when i try to do the login. I have checked the configuration and seem correct.What can be the problem?The PLC is a ttcontrolThanks
-
-use export and import easy and safe way.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
-Are you sure you installed the right target with codesys?Besides installing codesys you will also need to install the right target with InstallTarget.exe. This allows codesys to communicate with your PLC.
-

@@ -1,6 +1,0 @@
-"'VAR', 'VAR_INPUT', 'VAR_OUTPUT' or 'VAR_IN_OUT' expected"The first line following the name of a POU must contain one of these keywords.
-
-you must decklare a variable, and you must have at least one line of programming below that one.i always use nothing:=true;
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

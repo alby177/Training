@@ -1,6 +1,0 @@
-First of all, i have a relay Board connected to the gpio pins of the pi. The Relayboars is activelow because of that i have to set the gpio to high at startup. I have done this by negating the variable i use... Code:%QX0.5:=NOT OUT_DOSE_1_ON; But it seems that it doesent work. I have to switch the variable to on and than back to off... In the IO config of the GPIO shows me that the output of the pin is high but the input is low.. After switching they are equal state.. It seems that the IO doesent update whitout interaction...
-
-Hi, i did some tests whitout results.. If i boot up the pi nothing happens until i start the runtime.. It seems that the default values in the runtime are low... I wanted to change them in the GPIO configuration tab but i cant change them.. Now i dont know how to fix this.. If i put the variable to high the runtime should write them to high at startup but it doesent write the variable... I think its a problem of the runtime...
-
-I added a Timer of 5ms, now it seems to work, but its a dirty workaround, i dont want to leave it this way..
-

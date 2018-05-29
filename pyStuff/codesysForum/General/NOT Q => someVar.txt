@@ -1,2 +1,0 @@
-Why is this syntax not supported? I mean the "NOT" part of the function block call as seen in the title. This feature seems to be a part of the 61131 standard.
-

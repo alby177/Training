@@ -1,8 +1,0 @@
-Does anyone already connect the BK9000 with RaspberryPi, Is there any XML file?
-
-Hi! There is a xml descriptor "Beckhoff BKxxxx.xml" in Beckhoffs xml package. You can download the package at http://www.beckhoff.se/english.asp?download/elconfg.htm.I don't know if it works with the Pi and i don't have the equipment to test, but you should give it a try!
-
-_________________SC student from Sweden
-
-I've tried this package but there's no BK9000 on it.
-

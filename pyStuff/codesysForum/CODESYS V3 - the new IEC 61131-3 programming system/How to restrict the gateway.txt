@@ -1,6 +1,0 @@
-Is there a way of configuring the codesys gateway V3 on a PC to only operate on a specified network interface? I am working on a PC connected to a private network on one NIC and to a corporate NIC on another. I wish to restrict the gateway traffic to just the private network. Can this be done with the gateway or should i be looking at firewall configuration.
-
-Hi David,Several years ago I had a similar problem.The solution then was to add an entry in the gateway.cfg (in GatewayPLC folder):;--> Filter IP range[CmpBlkDrvUdp]itf.0.ipaddress=192.168.99.0itf.0.name=ether x ;****** see 0.MainNet name *****;<-- Filter IP rangeI have no idea if it still works and if it is (still) supported, but it is worth a try.PS, first make a backup of your original file + restart the gateway everytime you make any changes (and saved) the .cfg file.
-
-Thanks Tim, I'll give that a try when I get a moment.
-

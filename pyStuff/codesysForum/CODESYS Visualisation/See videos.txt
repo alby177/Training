@@ -1,7 +1,0 @@
-I want to know if it would be possible to see videos in visualization(for example a webcam).And another question is about the bitmaps elements. I have imported several bitmaps and .jpegs and the quality of the image decreases considerably. Is there any solution for that in this version??? Viele danke.
-
-You can put activeX controls on visualizations. I haven't done this but if your video had an activeX control I think it may be possible.
-
-_________________Thanks,
-Steve Pfeifenroth
-

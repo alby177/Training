@@ -1,2 +1,0 @@
-HI,I want to know total how many errors my system currently has.I am using DIAG_INFO and DIAG_GET to get the error code and then I try to acknowledge tham all using DIAG_ACK (DIAG_ACK_ALL) and am expecting to get new error code but the DIAG_GET doesnt change at all.I am doing something wrong in the sequence?
-

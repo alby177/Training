@@ -1,2 +1,0 @@
-Hello,I'm using Codesys provided by Festo and and using a Wago EDS file which have a few subindexes for specialty modules which are anywhere between 5 and 8 bytes as defined in the EDS file.However, when I add the EDS file in the PLC configuration in Codesys, it only shows those indexes which are up to 4 bytes and the ones between 5 and 8 bytes are simply not shown. Is there a setting to modify this? Or can we maybe edit the *.cfg file or the library file to modify this setting. Please advice.-Dude
-

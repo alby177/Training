@@ -1,2 +1,0 @@
-Good day to all.It is possible to configure tags produced / consumed in codesys to communicate with PLC allen bradley, via ethernet / ip, I already have the communication with the rockwell PLC by ethernet / ip, now I need to know if it can with tags produced and consumed in codesys , and how is it done?
-

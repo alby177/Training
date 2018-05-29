@@ -1,6 +1,0 @@
-Hello, I am trying to apply 'reStructured Text' formatting to comments in a library file, just the same as in this CoDeSys v2.3 thread.viewtopic.php?f=1&t=4885&hilit=formattingI'm following the guidelines from the CoDeSys v3.5 SP3 online help Libraries > Guidelines for Creating Libraries > Library Development Summary > CoDeSys LibDevSummary V0.1 > Project Documentation > Documentation Areas > Formatting Commands (Overview) I can't seem to get it to do anything - the markup just appears in my output in other dialogs (e.g. in the Input Assistant) Do I need to "turn on" the markup in some way?thanks!
-
-whilst experiment further: if I use HTML markup, that seems to work in dialogs (such as the Input Assistant) - but it does not work in tooltips!I am more confused than ever now  
-
-I can confirmation from 3S that the Library Manager doesn't respond to 'reSt' formatting markup at all in the current release. So that was why I couldn't get it to work.  
-

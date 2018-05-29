@@ -1,8 +1,0 @@
-Helo,I'm trying to access files from internal memory  (create, open and write), but even using SysLibAsync I still getting watchdog timout when try to execute de open command. The code that I wrote for tests are below. Any idea of what I can do to avoid that watchdog exception?SYSFILE_OPEN : SysFileOpenAsync;SYSFILE_CLOSE : SysFileCloseAsync;SYSFILE_WRITE : SysFileWriteAsync;BUFFER : STRING := 'test';FILE : DWORD := 0;WRITEN : DWORD;ERROR : BOOL;ERRORID : WORD;ESTADO : INT := 0;PRONTO : BOOL;CASE ESTADO OF	0: (*Abrindo o arquivo*)		SYSFILE_OPEN(stFileName := '\My Documents\teste.txt', stMode := 'a', bEnable := TRUE, hFile => FILE, bError=> ERROR, wErrorID => ERRORID, bDone => PRONTO);		IF PRONTO THEN			ESTADO := 1;		END_IF	1: (*Escrevendo no arquivo*)		SYSFILE_WRITE(hFile := FILE, pBuffer := ADR(BUFFER ), dwSize:= SIZEOF(BUFFER ), bError=> ERROR, wErrorID => ERRORID, dwWrite => WRITEN, bEnable := TRUE, bDone => PRONTO);		IF PRONTO THEN			ESTADO := 2;		END_IF	2: (*Fechando o arquivo*)		SYSFILE_CLOSE(hFile := FILE, bEnable := TRUE, bDone => PRONTO);		IF PRONTO THEN			SYSFILE_OPEN(bEnable := FALSE);			SYSFILE_WRITE(bEnable := FALSE);			SYSFILE_CLOSE(bEnable := FALSE);			ESTADO := 0;		END_IF	ELSE		ESTADO := 0;END_CASE
-
-Hi,try to execute read/write operations in a separate low priority task with enough cycletime.SysFileOpen can take up to 100ms and SysFileWrite can take several 100ms.That should be the source of your watchdog 
-
-Ok, I see, but I thought that SysLibFileAsync should execute that asynchronously and avoid watchdog timeouts.
-
-Ok, I found the problem. Even the SysLibAsync commands takes up to 15 ms and set a watchdog for task with 10ms cicles.  So a good idea to manipulate files are always use a second task.
-

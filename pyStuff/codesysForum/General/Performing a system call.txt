@@ -1,4 +1,0 @@
-What possibilities do I have to call the system outside CoDeSys (e.g. calling a Windows CE application)?
-I have noticed the Execute Command / Execute Program on the Client/PLC as an option on visualization events. But can you perform a similar call from 61131 code, or elsewhere in CoDeSys?
-Regards, Björn
-

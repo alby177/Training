@@ -1,8 +1,0 @@
-I use PC( Win V3 ) as ModbusTCP master, I want to send a negative number, using floating point type data.But I found that only UINT can be selected!
-
-What you need to do is "pack" the 32 bits of the real into 2 contiguous UINTS.  Then you usually have to do some experimentation to see what the other end expects. Sometimes you need to swap high and low words. Sometimes you have to swap hi and low bytes and sometimes you have to do both. Then you have to figure out if addres 0 is really 0 or if there is an implied offset to 1. I usually set things up to transfer 3 reals in continuous addresses and keep changing parameters and swapping until they all transfer ok.
-
-_________________nOrM
-=====
-nOrM = Norman Dziedzic Jr.
-

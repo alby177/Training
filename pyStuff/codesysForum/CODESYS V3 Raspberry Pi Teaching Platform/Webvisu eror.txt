@@ -1,4 +1,0 @@
-Hi,I started with the new standard project. Then clean all. I added Visualization. After compile, this error accoured:__VISU_PROJECTPATH' is no component of 'VISU__VISUALMANAGER__GVL__3What could be wrong?Best regards,Zdenko.
-
-Project is attached.Best regards,Zdenko.
-

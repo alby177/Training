@@ -1,6 +1,0 @@
-Hi, I've tried to install a trial version of Codesys and get an error, as follows: CODESYS V3.5 SP5 Patch 3 Error---------------------------Error 1935.An error occurred during the installation of assembly component {AE56AAF5-F3C0-3D4B-8859-A1E50A3E27BF}. HRESULT: 0x80070003. It then tries to rollback, which also fails. This is on a Windows 7 Professional PC. I downloaded the trial version from the cosdesys download centre: https://www.codesys.com/download.html - the current version.
-
-Put this message in V3 codesys please here its V2.3
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

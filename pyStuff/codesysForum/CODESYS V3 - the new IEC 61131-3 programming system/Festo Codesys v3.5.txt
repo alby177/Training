@@ -1,2 +1,0 @@
-Hi there,I have Festo codesys v3.5 and I recently tried to add the Oscat building library but when I try to include the library into my project, the message that is provides instructs me to update to version 3.5.5.0. (Festo does not have this version of Codesys available).Please advise how I can include this library.Kind regards,Russell
-

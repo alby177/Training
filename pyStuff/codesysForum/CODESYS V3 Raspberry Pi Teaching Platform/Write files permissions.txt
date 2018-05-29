@@ -1,2 +1,0 @@
-Dears.Is it possible to change file permissions and owner wich are writted from Codesys in the raspberry disk?Thanks
-

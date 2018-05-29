@@ -1,4 +1,0 @@
-Hi all,I will keep it short, I to use text data from a website (I have no IP). Is this possible directly in Codesys or should I use external scripts?
-
-UPDATE:I made a python script to get my data and process it. I now run this periodically separate from my Codesys program.Now I would like to use the data that I processed (into a csv file). Can I import this file into codesys? I tried figuring this out by using this example, but it does not seem to be working past case 2.Any help would be much appreciated!
-

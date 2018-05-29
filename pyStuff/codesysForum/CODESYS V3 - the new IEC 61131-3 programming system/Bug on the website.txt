@@ -1,8 +1,0 @@
-HelloThere is a bug on the online help:https://help.codesys.com/ms-its:ScriptE ... ngine.htmlIts not possible to see the documentation, codesys support and codesys feedback seems to be ignoring mails because of the new ticketing system.Can a forum moderator please forward this to the support?I wrote emails to codesys more than a week ago and I didnt recieve anything back.Its the opposite of customer friendly if you ignore support mails by default if no ticket from the store is provided... I hope you dont want to force a customer to buy a ticket to tell you about your bugs?
-
-Hi,no reports like this will not be ignored at all, we already have added an entry on our bug tracking system.Thanks for reporting this.BREdwinPS: Reporting bugs/improvements could be done here:'please visit the CODESYS Store and click on the red button “My question” on the right'https://www.codesys.com/support-trainin ... pport.htmlSo please login wih your store account and use the My question tab on the right.
-
-Hello schaepper,I'm sorry to hear that. The documentation to that topic is somethat special and doesnot exist yet.Tracking:   WHS-29 ScriptEngline documentation is missingIn the meantime please refer to CHM Documentation: CODESYS/Online Help/en/ScriptEngine.chmRegards,Roman
-
-Thank you for your help!
-

@@ -1,6 +1,0 @@
-What is the command to get your macro to close all windows currently being viewed and what is the command to open a specific window such as a program "PLC_PRG"?
-
-Also if any1 has any other comand lines not in the help file, could you let me know?
-
-many thanks
-

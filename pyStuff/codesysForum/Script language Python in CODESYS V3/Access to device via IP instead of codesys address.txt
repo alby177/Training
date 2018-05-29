@@ -1,6 +1,0 @@
-Hi there,currently I usepDevice.set_gateway_and_address(pDevice.get_gateway(), "002A.A03A")to set the address of my device. Unfortunately the address is a different one for the same device at different PCs. Is there a possibility to use an IP address insted of the Codesys address 002A.A03A? Or would this issue be part of the improvement CDS-24285?
-
-Hi,The description of said CDS-24285 says:Quote:Currently, Scripts can set gateway and address for Devices, but the Gateway can only set via GUID.We could improve by allowing to set a gateway via Name, to allow scripts to add and remove gateways, and to trigger network scans.Also, connecting to runtimes via IP address etc. would be useful.So, yes, connecting to the runtime via IP should be implemented with this improvement.
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
-

@@ -1,4 +1,0 @@
-I would like to setup my trend display to show the last 24 hours only.I can make it work fine with the "time range picker", but if I put "T#1d" into the "Time Selector" field on the trend's properties it return error "C0032:  Cannot convert type 'TIME' to type 'ITimeSelector(visuelemsdatetime interfaces, 3.5.5.0 (intern))".Is there any way to fix the time shown in a trend?
-
-You can read and write the time of a TimeSelector element if you assign a variable to the field highlighted in the image.The variable must be a LINT and the value is in microseconds (10E-6 seconds).
-

@@ -1,6 +1,0 @@
-Hi all,I wonder if there is a way in CoDeSys 2 or 3 to create / modify visualizations from the PLC program. I know, that there is a way to assign names to some of the elements, but I wonder if there is a way to create, configure and show elements from the program itself (a similar way to windows forms - in the background there is always a - generated - code).I have seen some topics in this issue, but the picture is not clear yet. As far as I know, V3 has major improvements in this area. Where is it documented? Thanks in advance,P.Peter
-
-Try it with an exported file and then change it.look for the word visualisation and all variables you can find here.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

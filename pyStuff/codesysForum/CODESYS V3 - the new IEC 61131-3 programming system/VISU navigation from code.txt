@@ -1,4 +1,0 @@
-Hi,I would be interested to know if there is a way to navigate through fields of a VISU using code.Right now, i know that the selection manager enables to do so with arrows of a keyboard, but i would like to control this navigation without the need of this keyboard.I guess one solution would be to manually queue keyboard events to simulate the pressing of the buttons.Is there anyone who has an idea on how to do this?The controller runs on an ARM Linux platform, CDS 3.4.0.1 with target visu.
-
-Hello Francois,You can find an example for programatically using the selection manager on our FTP-Server. This example is compilable with CoDeSys 3.4.1ftp://ftp2.3s-software.com/pub/Examples/Projects/CoDeSysV3/Programming/Selectionmanager/Best Regards, Michael Pfob
-

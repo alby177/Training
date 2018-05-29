@@ -1,6 +1,0 @@
-Hi guys after changing screens for my HMI CR0452 I cant log in no more and wont be able to download.I get the following error message:Error 4001:callback_visu(1):Identifier'MAINTARGETVISU_PAINT_CODE' not defined!!!Please help as I am a rookie when it comes to Codesys!!!! Thanks so much!!!Danke im Vorraus!!!
-
-Hi,I would recomment to ask the IFM support,they should care on this.(Guess it is a seeting in the target options, like disable Alarm handling or things like this.BREdwin
-
-Thank you.
-

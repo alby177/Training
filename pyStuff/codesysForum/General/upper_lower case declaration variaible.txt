@@ -1,6 +1,0 @@
-is it possible in Codesys 2 to define 2 variable as following:VAR1 : bool;var1 : bool;without get error on compiling?
-
-CoDeSys variables are case insensitive- both variables you asked about are the same as far as CoDeSys is concerned. This was a decision to make troubleshooting in the field easier.
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-

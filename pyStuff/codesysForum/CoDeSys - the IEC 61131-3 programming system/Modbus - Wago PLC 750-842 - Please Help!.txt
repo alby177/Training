@@ -1,9 +1,0 @@
-I have an application with 4 Yaskawa V7 Drives that have to communicate via Modbus (Wago Serial Interface Module, RS485) to the PLC. Also, a Red Lion Interface to communicate to the PLC via Ethernet with options of Modbus (Master or Slave). I don't have any experience with Modbus and need help desperately. Does anyone have documented sample files of CoDeSys for my application that will help me understand how all of this works? I have the hardware and a single Drive in-house for testing. Thanks in advance for any assistance.
-
-Please have a look the the WAGO application notes on 
-
-http://www.wago.com/wagoweb/documentati ... w____e.htm
-
-Select the "Total overview" and search with Ctrl-F to "modbus".
-You will find several application samples how to connect Modbus devices.
-

@@ -1,2 +1,0 @@
-Hi..Friends,In HMI, I create the Table with 4 columns like Fault Description,System,Date/Time and count to view the Real time error. I used the dynamic Text (*.xml) for fault Description.Due to length of Error, I cann't see full fault Description. I try to reduce font size and font format as well as to remove column also. I couldn't see the Description. If the Text is running from start to end continuously, which is useful to see the Fault Description.Can you please give the guidance to resolve this issue.
-

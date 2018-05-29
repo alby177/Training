@@ -1,6 +1,0 @@
-Hi,My problem is that I'm not able to switch to professional environment. System always return to standard mode.Second problem ... Not sure is this happend after I try to switch to professional environment (Tools-Options-Feature), but there is no "Install library" and "Install Device" anymore.Please help.Mladen
-
-Hi,the dialog where you switch is not saved even if you are switched to professional on next executionit shows as default standard (but you are in professional mode).Keep that in mind.BREdwin
-
-Edwin,Quote:the dialog where you switch is not saved even if you are switched to professional on next executionit shows as default standard (but you are in professional mode).That's clear. Thank you.But, there is still missing items for library and device install from tools menu. 
-

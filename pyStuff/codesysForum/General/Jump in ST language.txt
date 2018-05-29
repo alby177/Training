@@ -1,4 +1,0 @@
-Hi friends,                How to implement  "Jump" in statement logic in codesys.I have not find any instruction.jmp test;test:is my syntax showing errors.Help me on thisThanks 
-
-Hi,use the CASE instruction:Code:CASE iMyState OF   1:      // Do something      // ....     IF xEverythingIsFine THEN        iMyState := 2;     ELSE        iMyState := 999;     END_IF   2:      // Do something else....   999:END_CASE
-

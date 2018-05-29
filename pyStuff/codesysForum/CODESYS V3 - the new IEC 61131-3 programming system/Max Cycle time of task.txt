@@ -1,6 +1,0 @@
-Hi everyone,I have a project that has a task that is called with a cycle time of 50ms.I switch to online mode, select the Task Configuration object in the device tree and open the Monitor tab. Here I can see "Max. Cycle Time (µs)". I want to know if it is possible to get this value with some function to be sure that it will never go over 50ms.And someone knows what happen to codesys if the task lasts more than his cycle time? The codesys will go in exception? And can I catch it in some mode?
-
-See CmpIecTask library.You can ask about the actual task, and you can ask about maxCycletime,....If the task expends more time than your cycle time the plc launches an exception.Could be better for you to use an freewheeling task.Salut!
-
-Hi,check this store application example:https://store.codesys.com/task-manager-example.htmlBREdwin
-

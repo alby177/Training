@@ -1,2 +1,0 @@
-Hello,I wish I retrieve my program variables (coded with CoDeSys) at a fixed time and then send it to an excel file.I saw that one could write excel in a global variable of type:= CoDeSys | 'D: \ Applications \ Applications CoDeSys 2.3.9.9 \ Test \ DDE1.pro'! Entree0orGATEWAYDDESERVER = | 'COUNT PARKING.pro'! PLC_PRG.MCPT2SSBIS.However, no variable in excel and there appears to place # REF!, which is a syntax error in Excel.Do you have a solution?Thank you in advance for your reply.
-

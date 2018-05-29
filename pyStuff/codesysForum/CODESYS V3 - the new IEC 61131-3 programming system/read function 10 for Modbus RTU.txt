@@ -1,8 +1,0 @@
-HI,I can't read the function 10 for Modbus RTU. Is not implemented in Codesys software. Why ?How I can to do ?
-
-What do you mean?Function 0x10 - Write Multiple Registers - it's only for writing.You need to use function 0x03 or 0x04 for reading.
-
-I must setting baud rate and address for my device
-
-c.man wrote:I must setting baud rate and address for my deviceI think it's not possible to set COM-settings for slave device over Modbus. Only manual.
-

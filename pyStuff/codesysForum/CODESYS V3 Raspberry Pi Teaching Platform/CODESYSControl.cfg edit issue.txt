@@ -1,4 +1,0 @@
-I can not edit this file.It does not give me permission to change it. Only to look at it.Is says the owner is root.When I try to save it says "Can't open file to write". /etc/CODESYSControl.cfg:   [SysProcess]   Command=AllowAll
-
-Never mind I got it to worksudo nanoI have little experience with linux
-

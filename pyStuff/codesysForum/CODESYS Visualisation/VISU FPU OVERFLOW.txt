@@ -1,8 +1,0 @@
-Hello,I am receiving a FPU OVERFLOW exception (FPU stack overflow?) from the VISU task.  It is not repeatable on our lab simulators, but it is happening on our vehicle in the field.  Anyone have more information on what this error is caused from?  >>VISU_TASK is throwing an FPU overflow exception and stops working, after this no screen change >>possible anymoreKind regards,Douglas RileeLiebherr Mining Equipment
-
-_________________Kind Regards / Mit freundlichen GrüssenDoug Rilee
-
-is something running off the screen or some visuals out of screen.check if any positions are not on screen, or give strange numbers back.the screen is running with INTegers and fpu means floating point.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

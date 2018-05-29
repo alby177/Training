@@ -1,8 +1,0 @@
-Hello everyone !I am a new user in codesys and I want to communicate with a stepper motor i've got via serial port, can everyone guide me? The exact things I want to do is to send some commands for example rotate via my com port...THanks in advance 
-
-Look to the SysCom library. You will find functions to set the com settings and open the port.
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-
-Hi,yes syscom library in CODESYS and additional search the forum for: how to enable the serial port in /etc/CODESYSContol.cfgExample: (depend on which Interface you want to use you Need to adapt ttyUSB,ttyAMA etc ):[SysCom]Linux.Devicefile=/dev/ttyUSBportnum := COM.SysCom.SYS_COMPORT1;here is a good example for using Serial comviewtopic.php?f=23&t=6247&p=12387#p12398BREdwin
-

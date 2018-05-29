@@ -1,6 +1,0 @@
-Pi : Pi Zero W V1.1CodeSYS : CodeSYS SP10 P1Package : CodeSYS Control for raspiberry pi V 3.5.10.20Connection; WiFiI'm having an issue that I cant seem to fix even after hours of searching through the forums, I can find my pi through the update pi tool and it allows me to update with the message update finished. Upon attempting to scan or download to the pi it comes up with the message, "No connection to the device. Please rescan the network". the Pi has suddenly not discoverable on the network. help would be greatly appreciated
-
-Hi,yes.. Pi Zero support will be added with next version.... 3.5SP11 this will be released probably end of the week or early next week.BREdwin
-
-Hi,now 3.5SP11 with Pi Zero / Pi Zero w / Compute module etc is now available in the CODESYS store.(We recommend to use CODESYS 3.5SP11 and the PI Package in 3.5SP11)BREdwin
-

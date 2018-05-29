@@ -1,8 +1,0 @@
-HelloI've been given an EDS file to talk to a Kawasaki robot controller.It installs ok, but only Input data seems visible.If I install it in another Ethernet/IP configurator (Omron) then Input and Output data appears.Could anyone have a look? (I've changed extension from eds to txt to upload it here)Thanks
-
-ph0010421 wrote:HelloI've been given an EDS file to talk to a Kawasaki robot controller.It installs ok, but only Input data seems visible.If I install it in another Ethernet/IP configurator (Omron) then Input and Output data appears.Could anyone have a look? (I've changed extension from eds to txt to upload it here)ThanksIf you open up the file, you'll see that the path for Exclusive owner is incorrect with some extra bytes:"20 04 25 00 00 04 2C 96 2C 64";    $ PathThis should be more like:"20 04 24 04 2C 96 2C 64";    $ PathIf you use EZ-EDS (https://www.odva.org/software/EZ-EDS-Download), open up the file and go down the Connection Manager -> Connection1 .You won't be able to Create/Decode path. Anyway, I've attached the updated EDS. Let me know how it works.
-
-That's really kind. I'm visiting Kawasaki next week to try and make this work. I'll certainly let you know.
-
-Hi.Just to let you know this this worked.I really appreciate your help. Kudos to you for spotting the error.Regards, Paul
-

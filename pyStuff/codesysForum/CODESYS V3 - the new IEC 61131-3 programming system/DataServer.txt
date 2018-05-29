@@ -1,2 +1,0 @@
-Hi.I have a project with one main PLC and 11 other PLC's as operating panels. The communication between the main PLC and the panels is via DataServer. The DataServer is in the main PLC.The first 10 panels are working OK, then I added the 11th and it is not communicating.Is there a limit for the DataSources?Are there any helpful functions in the DataServer library that I can use to diagnose the problem?
-

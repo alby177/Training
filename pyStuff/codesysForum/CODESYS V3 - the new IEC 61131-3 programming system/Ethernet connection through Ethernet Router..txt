@@ -1,4 +1,0 @@
-If i need to connect to a remote PLC through the web ! I don't see any way to configure the IP adress of the router before entering the IP of my PLC in the Remote Connection menu.
-
-check teamviewer with the VPN connection (VNP->inside teamviwer not any external configured VPN) this works for CoDeSys V2.3 and CoDeSys V3 similar as your are directly infront of the machine. (use TCPBlkdrv available since 3.4SP2)cuEdwin Schwellinger
-

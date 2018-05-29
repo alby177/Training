@@ -1,6 +1,0 @@
-Hello,I'm using Rpi2 model B for Codesys and for visualization (on same board) with LCD 800x480. It's works great, but I have a problem with resolution. Resolution is set to 800x480 at project visu's settings, but web page is created still as 1280x1024 ... The way how to fix it is manually edit canvas parameter at /root/visu/index.htm. But it works just until next download software...Is any way how to declare it to forever?Thank you.
-
-Hi,you could prevent the overwriting of (webvisu.htm,index.htm how ever you haved named it) by changing it here (screenshot)Example if you change it to webvisu2 you have then after the download webvisu2.htm and the old webvisu.htm in the visu Directory.If you call the webvisu then from the origianl file this will work even in case of new downloads.BREdwin
-
-How easy I overlooked it.Thank you very much.
-

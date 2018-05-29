@@ -1,7 +1,0 @@
-Hello
-Has anybody run web visualisation on a Linux workstation? I tried last time and went into troubles with national characters, and '§' characters ( words in strings in xml files, no idea why, are separated with the '§' char) they display as squares  Any idea what to do?
-
-The other question is: Is there a possibility to run a visualisation on PC simply by opening a webvisu.htm file with a browser without PLC connected? I don't mind if variables won't change.
-
-Thanks in advance
-

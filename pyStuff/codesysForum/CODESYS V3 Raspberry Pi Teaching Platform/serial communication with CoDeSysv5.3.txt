@@ -1,2 +1,0 @@
-I'm working on a project with CoDeSys V3.5 using the SerialCom.lib. I found few problems especially with the function COM.Read. I want to use the string read in the com port to send it to a database. my question is: How to use the data (string) read by the COM port because I didn't anderstand this function (COM.Read).thank you for help 
-

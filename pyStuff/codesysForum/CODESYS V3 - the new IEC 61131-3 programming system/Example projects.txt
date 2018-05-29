@@ -1,4 +1,0 @@
-Hello,I am looking for some example projects in Codesys v3.5. Can you recommend some github folder or any collection of projects in Codesys store? Thank you, 
-
-In CoDeSys store in Search field type "Sample Project" or "Sample Application" or in top menu click on Application.
-

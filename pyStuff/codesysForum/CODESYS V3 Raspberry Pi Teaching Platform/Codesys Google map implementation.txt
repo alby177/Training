@@ -1,2 +1,0 @@
-Hy.I am a newbie to codesys, it seems very a powerful tool with raspberry pi and I want to try to adapt it to play with automotive. I saw that codesys can implement google map, is possible to show in webvisu the location (latitude and longitude readed from GPS module) in google map.I saw that feature but I did not find any example:
-

@@ -1,7 +1,0 @@
-Is there a method from the command line to set the compiler version as done via the PROJECT:OPTIONS:BUILD  configuration within CoDeSys?
-
-I often have the request to maintain a particular piece of source code with a previous version while I usually work on new projects with a later version.
-
-Thank you,
-dtr
-

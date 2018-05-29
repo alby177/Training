@@ -1,8 +1,0 @@
-Hello there,Maybe there is here somebody to help me.I want to communicate from my Laptop to  my plc by modbus tcp.Can anybody point me in the right direction. i thought about using the Modbusserver fb.But do i have to ad ethernet and a master or slave to my program?already thanks for the helpgreetsmartinuus
-
-The easiest, built in solution, is to add Ethernet and Modbus TCP slave to your device... A slave will listen to TCP connection requests, and deal with all the communication tasks. You can configure the number of registers, and the addressing offset of different Modbus objects, and then simply "map", "assign" variables from your PLC application to the modbus registers.This way, you don't have to call any function blocks, or add a line of code....
-
-Strucc wrote:The easiest, built in solution, is to add Ethernet and Modbus TCP slave to your device... A slave will listen to TCP connection requests, and deal with all the communication tasks. You can configure the number of registers, and the addressing offset of different Modbus objects, and then simply "map", "assign" variables from your PLC application to the modbus registers.This way, you don't have to call any function blocks, or add a line of code....Hello Strucc,Sorry for the late answer....busy at work:-)Can you give a short example of how you mean this, i think i understand but i want to know for surealready thanks for your answerMartinus
-
-Doest this help?Attachment:Screenshoot.png
-

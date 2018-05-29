@@ -1,6 +1,0 @@
-Hi,I have a simple ENUM definition:Code:TYPE Data :(Data1,Data2,Data3);END_TYPEData1 is equal number 0, Data2 is equal number 1 etc...My question is:How can I get strings from ENUM data? For example - I like to get string Data1 in string variable (using number 0). Is it possible to get this in Codesys?Thank you!Best regards, Zdenko.
-
-No this is not possible (or at least it was not possible when I last checked).What you could do is add text lists and place the text in these lists. From the application you can read these lists.See http://forum.codesys.com/viewtopic.php?f=11&t=5955The advantage is that you could translate these text lists for use in other languages.
-
-Thank you very much! This is helpful!Best regards,Zdenko.
-

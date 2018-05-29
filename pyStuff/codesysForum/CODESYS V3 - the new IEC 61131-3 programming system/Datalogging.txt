@@ -1,8 +1,0 @@
-Hello,I have a question and hope someone can help me a bit with this.I have made type of Energy meter used for a water heat exchanger.I measure flow (L/sec), temperature in and out of water to be heated.With these values I have made a totalizer with the Integral function.I am logging the values to a txt file on a SD card continuisly as such:0 (kJ)2467789 (kJ)The kilojoules are counting up and the newest logged value is the total kJ.The problem now is that if there is a power outage and the PLC starts at zero again.I need to load the previous latest logged value to a variable and add it to the formula.Is there a way to load a value from the SD card? Or how would you solve this?Any input is very much appriciated Thank you.
-
-Move your variable to a VAR PERSISTENT. These are retained even after power cycle (if your hardware supports it). Then, your SD card is only a report of the value of your variable.
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-
-Thanks for that answer Scott,A much simpler solution to this and it works perfectly. BR
-

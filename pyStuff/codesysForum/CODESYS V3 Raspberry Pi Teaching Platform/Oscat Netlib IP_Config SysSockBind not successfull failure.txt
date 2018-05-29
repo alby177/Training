@@ -1,6 +1,0 @@
-Hi,i try to use the Netvars from Oscat Netlib to communicate betweena wago 750-889 Codesys V2.3 and a Raspberry Pi Codesys 3.5.12My Masterside is the 889, running and telling me a timeout failureMy Clientside is the Raspberry, telling me a Failure 02 what means that the ip_control block has a failure with running "SysSockBind"anybody know how to solve this?i am using the netlib from the codesys store,or is there a special "raspberry" netlib from oscat for this?best regards,markus
-
-Hi,I would recommend to post this question in the OSCAT Forum,sure the CODESYS netvars are even not simple to configure ( to have communication between CODESYS V2.3 and V3)but even this could be a solution for your applicationBREdwin
-
-Thanks for your replay edwin,i found the solution for me.If i turn on UDP everything is working...best regards
-

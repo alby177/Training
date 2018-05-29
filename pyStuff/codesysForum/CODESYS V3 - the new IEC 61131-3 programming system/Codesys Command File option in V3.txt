@@ -1,6 +1,0 @@
-In Codesys V2 there is a command file and command line option to export the project data to text files.  Is there a way to do this in V3, similarly?  Thanks!
-
-Any thoughts on this?  
-
-Hi,not similar... more powerful but and more complex ;-(Scripting Engine. Check this section and the online help for it.viewforum.php?f=18BREdwin
-

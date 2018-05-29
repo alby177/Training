@@ -1,8 +1,0 @@
-Hi,I work with Wago PLC in, and I have problem with codesys.How I can read in ladder real time(any block,library)??Thanks!
-
-TIME()it is the time passed since the system startedanswer is in 2.3 as wago has no V3 units yet.some wago do have RTCalso have a look at the oscat library
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
-Wago has the Speedway PLC which can be programmed with V3, but probably you have another type which can be programmed with V2.3. In that case add the library SysLibRtc.lib to you project.In this library is the function to get the real time clock information from the PLC: SysRtcGetTime
-

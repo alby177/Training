@@ -1,2 +1,0 @@
-Hello,I need your help.I start using CoDeSys based on the attached manual2.2.6 Adding the DP-Slave part I found it difficult to install Profibus DP in order to choose BL20-E-GW-DP gateway as well as other I / O modules.http://pdb.turck.de/media/_en/Anlagen/d301189.pdfthank you
-

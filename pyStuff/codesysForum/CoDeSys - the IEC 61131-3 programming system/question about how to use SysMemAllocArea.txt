@@ -1,6 +1,0 @@
-Hi
-
-Can some one pls help me for how to use the system library SysMemAllocArea with code example.
-
-Many thanks for your help
-

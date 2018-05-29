@@ -1,2 +1,0 @@
-Hello, does your EtherCAT master implementation support the ValueInfo field (bit coded unit type, default/min/max value) of the Get Entry Description?/Thomas
-

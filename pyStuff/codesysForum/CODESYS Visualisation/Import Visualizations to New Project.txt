@@ -1,8 +1,0 @@
-I'm new to Codesys and was wondering if there was a way to import a visualization created in one project to another project.I've tried using the export function, but I'm not sure how to open that .exp file in a new project.Thanks!
-
-Hello,From v2 application to a V2 implementation is relatively simple   .Original project : Project -> Import, then you select the visualization you want to export in the explorer that appears, then you specify where to place this file (important).New project : Project -> Import, then you select the file xx.EXP you want to import. Then OK. And visualization is placed in the display tab of the Project Explorer.Whenever a file is imported xxx.EXP content is automatically placed into the correct tabs project Best regards
-
-only export the visualisationstart a new project, or use an existing one.project import this exp file that is all.another way is to use libraries.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

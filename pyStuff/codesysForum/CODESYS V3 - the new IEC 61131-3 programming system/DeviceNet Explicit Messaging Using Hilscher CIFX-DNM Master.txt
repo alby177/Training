@@ -1,4 +1,0 @@
-I have an application where I need to use explicit messaging to send parameter data to a DeviceNet slave.  I have the CIFX-DNM DeviceNet Master card setup and can get the polled connection to the slaves up and running, but cannot figure out how to setup explicit messaging.  In the help files there is only information for function blocks for EthernetIP Messaging.  Does CoDeSys support DeviceNet Explicit Messaging?
-
-Apparently there is a way to do DeviceNet Explicit messaging using the Hilscher CIFX-DNM card.  It looks like there is a IoDrvCIFXDeviceNet Get/Set Attribute function blocks, but I cannot find any information in the help files on this feature.  I'm running a Festo version of CoDeSys that is version 3.5.4.0, so it may just be the version of the software I'm running, or I may be missing a library needed to access these blocks.  Any help on this would be appreciated.
-

@@ -1,6 +1,0 @@
-Hi,I'm moving from Point A to Point B using Mc_MoveAbsolute with a defined speed, Accel, Decel.I'm looking for a way to change the Accel, Decel and Velocity at certain points in between (user specified), while I'm moving from Point A to Point B.Is this possible and if so, how can this be implemented?Any ideas?
-
-yes it can be done, but you will have to define the point too, so you have to split up the pointsdatabase, otherwise you dont know where to change it.so you first define all changes and then you do a action command.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

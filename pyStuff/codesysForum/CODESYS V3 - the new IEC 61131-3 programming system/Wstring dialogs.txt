@@ -1,2 +1,0 @@
-I want use arabic, asian characters and Russian alphabet in my visualization but I can't write it via standard dialog (keypad). There is only string output. And keyboard is only german.  Have you somebody experience with  this problem ? If somebody have some examples or tips how can i do other keyboard with unicode output.thanx.
-

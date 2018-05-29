@@ -1,2 +1,0 @@
-Hi,I'm working with the HMI TURCK VT250. I can't load the application because the load button is disabled in the CoDeSys project  
-

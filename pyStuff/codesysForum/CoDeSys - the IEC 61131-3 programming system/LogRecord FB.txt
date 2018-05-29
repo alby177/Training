@@ -1,4 +1,0 @@
-Does the LogRecord function block create its own file for storing logs or should the file be created beforehand by the programmer?If the file has to be created then what will be its extension?
-
-Hiyou can create a csv file to save the data and is there is any log function block you are using?thankssarath 
-

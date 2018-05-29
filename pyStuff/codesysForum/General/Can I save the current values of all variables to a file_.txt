@@ -1,6 +1,0 @@
-Hi,is there a way to save the current values of all the variables to a file inside the PLC?I have a system with a Codesys 2.3 PLC and a touchscreen panel, no PC around.I want, if some unexpected behavior occurs, to dump the internal PLC state to a file stored inside the PLC itself, which I can later upload and examine. This file should contain the current values of all the variables declared in the project in a given moment.Is there a relatively easy way to do that?I know I can create a POU that can query all the values, but the project is quite big with tons of variables, FB instances etc. Creating such a POU would be a nightmare, so I'm looking for an easier way to do it.Thanks for any suggestions.
-
-use retain
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

@@ -1,4 +1,0 @@
-Is it possible to run both Ethernet/IP and MODBUS TCP on the same Ethernet device (same ethernet board on the PC)?
-
-yes it is!
-

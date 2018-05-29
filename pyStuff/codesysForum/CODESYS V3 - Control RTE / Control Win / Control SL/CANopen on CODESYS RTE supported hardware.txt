@@ -1,4 +1,0 @@
-Hi I'm trying to select a CANopen miniPICe card to be used in a PC with CODESYS RTE and CANopen Master and I need a reference of supported hardware for his configuration.I can see there are two components  CmpSJACanDrv  and CmpHilscherCIFX than can be configured into de component manager of the RTE cgf file but I don’t know which hardware is compatible with it.I guess the Hilscher CIFX 90E-CO\F can be driven with the  CmpHilscherCIFX componentI also guess the  PEAK PCAN-MiniPCIe IPEH-003048 can be driven with the CmpSJACanDrvIs there any reference or some one of you had used any of this cards or other brand cards like IXXAT with CODESYS RTE?Thanks
-
-Hi,not really - check the RTE documentation  in generall only the SJA based cards are supported.Another Option if there is no Slot available in your pc -Ethercat CAN Gateway by EL6751.BREdwin
-

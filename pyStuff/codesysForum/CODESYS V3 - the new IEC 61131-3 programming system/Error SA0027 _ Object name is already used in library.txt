@@ -1,2 +1,0 @@
-There exist 2 functions of the same name, one in a library and the other in a project using that library. The library has a specific namespace. I get the above compilation error.My question is do functions need to have unique names even though they are in different namespaces?
-

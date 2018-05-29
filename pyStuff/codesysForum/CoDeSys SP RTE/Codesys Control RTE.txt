@@ -1,4 +1,0 @@
-Hi,i'm trying to run Codesys RTE on an industrial PC with Win7. The installation is ok and I can also Start the PLC.I make a new project on my laptop with the Codesys Control RTE Devive but I'm not able to can connect with the devive.I can ping the industrial PC but the Codesys network scan didn't see any device.Where is my fault, what i miss to do?thanksSimone
-
-Hi,- check if you use Control RTE 64Bit - if yes you need to add the 64Bit device in the CODESYS project an vice versa..- check if the RTE is properly startet by - go with the mouse on the Task tray Icon - you should see the Network address which have been assigned.- remove the filter in the CODESYS scan Dialog/Settings to see all found devices on your network.BREdwin
-

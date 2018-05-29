@@ -1,5 +1,0 @@
-I'm new to canopen implementation on codesys.Options appearing in the PLC configuration-->CAN communication are only Base Parameters and Can Parameters.Now how do you map the PDOs ... where is the option available. 
-Thanks.
-
-I'm using EASY215 for the above.
-

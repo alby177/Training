@@ -1,4 +1,0 @@
-Hi:I am trying to comunicate Codesys with the BBB to the BK5150. I have loaded de BK515x.eds and I have installed in the repository. I have select "search the dispositive" but it doesn´t appear sending this message: "Attention! The device was not found in the repository."And if we put manually the dispositive BK515x and the CANOPEN is connected binking the light, in Codesys put that the Node state is "PREOPERATIONAL" and doesn´t change.Regards, Jon.
-
-Hi,i would set CANOPEN_DEBUG as compiler define and check the plcloggerBREdwin
-

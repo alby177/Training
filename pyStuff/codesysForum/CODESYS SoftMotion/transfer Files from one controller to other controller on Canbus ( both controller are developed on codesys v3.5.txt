@@ -1,8 +1,0 @@
-Hi ,i want Transfer files from Controller1(HMI) on to Controller 2 (PLC) ON CANbus .can any one help me on this .Many thanks in advanceRegardsHarikrishna
-
-Hi,SDO_WRITE_DATA( SDO_MODE:= SDO_MODE.BLOCK)  from CAA_CIA405 library must be useful for you.
-
-Hi,can you please send any sample prg if u have.i want to send  .txt file from HMI to PLC is it possible with this lib.
-
-Unfortunately, I do not have any examplesYou can read more about "DSP-301 SDO block transfer" here:http://www.canopensolutions.com/english ... open.shtml
-

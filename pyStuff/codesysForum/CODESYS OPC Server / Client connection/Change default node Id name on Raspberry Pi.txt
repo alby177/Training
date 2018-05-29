@@ -1,6 +1,0 @@
-Hi,Is it possible to change the default name 'CODESYS Control for Raspberry Pi SL' ?For example  this name ns=4;s=|var|MYNAME.Application.SpeedCalc.Speedinstead ofns=4;s=|var|'CODESYS Control for Raspberry Pi SL.Application.SpeedCalc.SpeedThanks  Claudio
-
-No news?Just to understand because in V3.5.9.10 the id name was:ns=4;s=|var|Raspberry Pi.xxxNow is:ns=4;s=|var|CODESYS Control for Raspberry Pi SL.xxxI case of new upgrade we will re-change all OPC UA tag pointers?     ThanksClaudio
-
-Hi,was an accident...!will stay forever on:CODESYS Control for Raspberry Pi SLBREdwin
-

@@ -1,4 +1,0 @@
-Hi,I have a system consisting of a Bosch Servo Drive using IndraWorks V12, and I'm looking to add a Turck BL20 unit which is programmed using CoDeSys V2.3.At present I am unable to install the Turck CoDeSys programming suite as it clashes with the Bosch ENI/Etc..Is it possible to install both software packages on the same PC and have them running concurrently?I gather Bosch V12 is based on CoDeSys V3, and therefore it's not possible to simply add the Turck targets to the Bosch software.Regards,PJEEDIT: BL20 not BL10.
-
-Update: After repeatedly stopping all the services and deselecting options which were not needed I managed to install the Turck version of CoDeSys together with Bosch IndraWorks.I now need to check that both the Bosch and Turck software can be online at the same time.
-

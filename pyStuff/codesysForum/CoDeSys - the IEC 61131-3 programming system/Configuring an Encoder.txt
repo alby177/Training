@@ -1,8 +1,0 @@
-Hello, I am trying to add an encoder into an AxisGroup so I can use it for a Master for a Gear and I am getting a bit stuck.Could someone please explain the Module Parameters to me such as "dwRatioTechUnitsDenom" etc. Also how would i then set up the Encoder as the Master?Thank you
-
-are you using 2.3 or version 3and what library.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
-2.3, I have the softmotion library.  So I have access to the SMC_Encoder fb.
-

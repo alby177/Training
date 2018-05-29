@@ -1,4 +1,0 @@
-Hi, VERY new to CoDeSys and fumbling my way through but i just wanted to know if i can "insert" or use vector graphical images generated using Adobe Illustrator in CoDeSys V3? I have been told by a couple of people that only BMP format can be used.....is this correct?Appreciate any input or feedback!Thanks!
-
-Hi,SVG is planned for 3.5SP2Display of images: In contrast to CoDeSys V2.3 now also the .tif format is supported in CoDeSys and also in the CoDeSys Control Win V3 when the SysGraphicGDIPlus Component is used. This is the default on Windows Plattforms, so these (WindowsXP, Windows7) currently support the image formats *.bmp|*.jpg|*.emf|*.gif|*.png|*.tif|*.In case of small target systems consider the option to run the ⇘ visualization integrated in the programming system..The targetvisualization V2.3 does not support the .tif format. In Version V3 the .tif format is now supportedHope this helpsEdwin
-

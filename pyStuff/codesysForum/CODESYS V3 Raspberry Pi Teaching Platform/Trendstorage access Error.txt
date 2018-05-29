@@ -1,4 +1,0 @@
-Log error<LoggerEntries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  <Logger name="&lt;Default logger&gt;">    <Entry severity="exception" component="CmpIecTask" user="nobody" timestamp="26/10/2017 17:17:13" infoId="3">*SOURCEPOSITION* App=[&lt;app&gt;Application&lt;/app&gt;] area=&lt;area&gt;3&lt;/area&gt;, offset=&lt;off&gt;1515532&lt;/off&gt;</Entry>    <Entry severity="exception" component="CmpIecTask" user="nobody" timestamp="26/10/2017 17:17:13" infoId="3">*EXCEPTION* [&lt;excpt&gt;AccessViolation&lt;/excpt&gt;] occurred: App=[&lt;app&gt;Application&lt;/app&gt;], Task=[&lt;task&gt;TrendRecordingTask&lt;/task&gt;]</Entry>  </Logger></LoggerEntries>Can you help me please...
-
-Hi,Which version are you using exactly?BREdwin
-

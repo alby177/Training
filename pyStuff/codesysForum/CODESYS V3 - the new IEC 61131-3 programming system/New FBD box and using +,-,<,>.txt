@@ -1,8 +1,0 @@
-Is there a reason why you couldn't translate +,-,<,>,>=,etc into equivalent ADD,SUB,LT boxes if programmer would type those as the type of new empty box?They would work as handy short hands/propably easier to remember for many that come from different programming languages like C.    Janne
-
-You can use this !!!Just add an empty box to the FBD editor and enter + as function name.The others also work.I have tested this with 3.4.4.5
-
-ok, what got me confused that it doesnt change / to Div / .... hmmm is there difference in their functionality then?
-
-The functionality is identical.
-

@@ -1,6 +1,0 @@
-Dears.Anybody knows if it is, in the last codesys version, the fb mc_movepath available?If not:When?OrHow can I substitute it?Enviat des del meu HUAWEI LYO-L21 usant Tapatalk
-
-Hi,MC_MovePath is  not implemented but there are plans to implement it.But not sure / no exact date exists at the moment when this will happen.BREdwin
-
-Hi.In that case, if I have to move around a shape, I have to put in cascade Mc_moves with blendings?Thanks
-

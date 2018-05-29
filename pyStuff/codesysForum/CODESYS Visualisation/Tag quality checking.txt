@@ -1,2 +1,0 @@
-Hi, is it possible to check tag quality?  to prevent bubbling, e.g when toggle a variable it bubbling till request queue is empty, sometime its undesirable behavior.
-

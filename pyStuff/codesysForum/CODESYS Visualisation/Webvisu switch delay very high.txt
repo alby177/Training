@@ -1,4 +1,0 @@
-I'm using Codesys v3.5 SP9 Patch 2 with Raspberry Pi 3 and runtime of the same version. I configured a WebVisu with a couple of visualizations. Nothing major just a few sensors.The question is: the visualization switch is very slow, it takes 1-2 seconds to switch to another visualization, like from a tab control or hotkey. Is it really this slow? Is it by design? I tried to run the visualization in the raspberry pi browser and other machine in the same network but both are very slow to change visu. There is almost no cpu load on raspberry when running the visu so it must be some other issue. Thanks in advance.
-
-Hi,yes sounds not good.You could check the following.1. How is the plcload (plcbrowser)2. you could check by loggin to the pi via ssh and execute 'top' to check the load of the Linux SystemIf you want, you could upload/attach the application, the I could check.BREdwin
-

@@ -1,6 +1,0 @@
-The documentation I have for CurTimeEx indicates the following:DayOfWeek UINT Day of the week, e.g. "2" (Sunday=0, Monday = 1...)I am getting a 7 for Sunday consistently.  Is this an error in the documentation or is the function block doing something goofy?
-
-the docs are in error.however it is possible to change it.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

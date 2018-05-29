@@ -1,2 +1,0 @@
-Hi,I have a Generic_Modbus_Slave which has a slave address.Is it possible to retrieve the slave address and use it in GVL?Regards
-

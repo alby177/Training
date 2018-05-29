@@ -1,4 +1,0 @@
-HelloDoes anyone know of any library that provides functions to apply to load cell entries?
-
-Make an FB LowPass filter by yourself:vi= inputvo_i = Actual cycle outputvo_i-1 =Output of anterior cyclevo:=vi/(1+Ts)=> vo(1+Ts)=vi  => vo_cycle_i + T (vo_cycle_i-vo_cycle_i-1)/tCycle =vi =>vo_i(1+T/t_cycle)=vi+vo_i-1 *T/t_cycle =>vo_i= (vi x t_cycle +  vo_i-1 x T)/(T+t_cycle)Be carefull with:T>>t_cycle
-

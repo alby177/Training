@@ -1,2 +1,0 @@
-Good morning,I have a stepper motor drive with 1/16 resolution. For done 1 turn I need to generate 3200 pulses.If I put 3200 value in "increments" or a value greater than 1, the EL2521 don´t generate pulsesto correctly. What is the correct configuration?Now when I move in absolute, to do one turn I have to put 3200 value. In "units" don´t let me put a float value.thanks, regards,Ivan
-

@@ -1,8 +1,0 @@
-Dears.Testing softmotion from a codesys manufacturer plc, I have seen that if MC_mobeabsolute is not called meanwhile the motion is running, the axis go to error as Mc_moveabsolute makes the trajectory planing.For example, starting movement from an sfc step and transition before the movement has finished.All softmotion libraries do the same?It is plcopen standard behaviour?I have read plcopen motion papers and I have not seen anything about it.
-
-Hi Joseph,The PLC open FBs have an internal state machine that cycle's through a Start-Run-Stop sort of sequence.  So yes it needs to be executed continuously.  If it were me I would call the block in another method or action that is executed every scan and set/clear the execute bits from the SFC steps.The Beckhoff documentation may be helpful:https://infosys.beckhoff.com/italiano.php?content=../content/1040/tcplclibmc2/html/blocks/TcPlcLibMC_MoveAbsolute.htm&id=
-
-_________________Rick
-
-Thanks rjafrate.My question comes because I am using the same method to control all my actuators (fb_pneumaticCillindersetOut...). And the state is not controlled by the executer (mc_move...) Is controlled by the fb which has the ref as an output (cillinderActuator). And I d like that the executer not monitorizes the movement. But in the other hand, if standard says that the monitorization is mandatory....
-

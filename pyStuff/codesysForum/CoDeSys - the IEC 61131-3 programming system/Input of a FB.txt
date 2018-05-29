@@ -1,6 +1,0 @@
-Hi, there's my problem.I need to dinamically modify the inputs of a FB by using values which are given as input in a visualization window.Then I need to assing those values to another variables that are the outputs of the same FB.There's a way to do that?
-
-make a project with a variable ie visinputspeed.on the visualisation make a square and as display make it visinputspeed.make it a input and choose the numeric keyboard.now you can change the value on the visualisation.is that what you mean?you can also use a slider etc.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

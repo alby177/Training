@@ -1,8 +1,0 @@
-Hi !I have tryed to burn Codesys RPI image to couple (diffrent) 4 Gb SD card. It can't fit.  When change to 8 GB card, it's working.Is this normal ?  If yes, maybe you consider to update starting documentation and from Quote:Additional requirements SD-card (minimum 4GB)to Quote:Additional requirements SD-card (minimum 8GB)Best regards !Mladen Bruck
-
-Hi,no this should work on 4GB sd cards too.If not this is an accident which we will solve with next version.The workaround is to use the Image from Raspberry Pi organisation:http://www.raspberrypi.org/downloads/and install the debian package from the store download  'CODESYS_Control_for_Raspberry_PI.zip\codesyscontrol_arm_raspberry_V3.5.5.20.deb'How to do it?- flash the Image from raspberrypi.org to your 4GB SD- under Windows copy codesyscontrol_arm_raspberry_V3.5.5.20.deb to the partition which you have access to after installing the image- open ssh connection (putty - google it) and execute:  sudo dpkg -i /boot/codesyscontrol_arm_raspberry_V3.5.5.20.debyou could remove after installing the plc the debian package from boot partition by  sudo rm /boot/codesyscontrol_arm_raspberry_V3.5.5.20.debThat's it.BREdwin
-
-I also had problems with the 2.0.1.0 image.I was able to write it to a 4Gb SD card but it kept freezing while booting.I'm using a Raspberry Pi B.I finally was able to make it work by using the 2.0.0.0 image and then update it with the .deb file just like you explained.Thanks.
-
-Hi Edwin!I'm happy with 8GB  (read "I'm too lazy to test once again").   Yet, not much expensive than 4GB. But, anyway, good to know it's possible to use smaller card.
-

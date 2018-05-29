@@ -1,2 +1,0 @@
-Good morning,I get control of speed on a stepper motor but I can´t control the position. How can I adjust EL2521 parameters to travel 1mm with 200 pulse to stepper motor?Thanks, regardsIban
-

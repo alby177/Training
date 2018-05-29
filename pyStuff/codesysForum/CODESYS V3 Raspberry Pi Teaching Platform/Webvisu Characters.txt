@@ -1,6 +1,0 @@
-Hi,I am using Š,Č,Ž,š,č,ž characters in my webvisu project.They are not displayed correctly in webvisu screen on running project:Is there a way to display this characters right?Best regards,Zdenko.
-
-In VisualizationManager/GeneralSettings, check the setting "Use unicodestrings". Works for Slovenian, Croatian, Russian  character set as well.RegardsAleksander
-
-Thank you very much! It works. Best regards,Zdenko.
-

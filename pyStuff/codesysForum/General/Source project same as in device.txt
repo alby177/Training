@@ -1,8 +1,0 @@
-So after making a project and downloading it (simulator at the moment, as I learn), is there a way to determine that what I have in source is or is not matching what is in the device?Maybe its not possible with the simulator, but with a device...does it have a checksum or ability to detect that the source is different?Perhaps it can tell that the compiled files do not match?  I think these are the .ci files?  Anything available like this, so that I can tell when I go online that someone has made a change since I had last been connected?(for example, I programmed in Concept, and it had an equal/not equal display) Thanks, seems a good product so far!   
-
-When you try to login to a real physical device that is already running a project, if anything is different than your source, you get a warning and must choose either download, online change or cancel. If the application matches the source compile, it will just login and you will be in online debug mode. So what means "different"?  This could be any code change, library change or a clean all/rebuild (you receive a warning that you won't be able to login anymore when you choose clean all).
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-
-Thanks!  I did read this a while back, but forgot to say thanks!  
-

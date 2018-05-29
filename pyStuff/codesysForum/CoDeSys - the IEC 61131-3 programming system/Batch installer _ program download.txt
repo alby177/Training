@@ -1,6 +1,0 @@
-Does anyone know if there is an application or library included with CoDeSys that allows for a scripted download of a PLC program?  I'd like to make a batch installer for multiple PLC images.  The images would have been built in CoDeSys and tested before the batch update.  The CoDeSys webpage has a library that looks promising:http://www.3s-software.com/index.shtml?en_PLCHandler_V3Thanks,Doug
-
-You can use a Command File --> refer help by keyword Command File or the CoDeSys Service-Tool --> contact sales@3s-software.combr.Ralph
-
-Thanks for the info, I'm looking into the CST add-on now.  Any idea if it's possible to just ftp the image of the PLC (the .PRG and .CHK files) to the controller?  I logged into the PLC after a download and found a DEFAULT.PRG and DEFAULT.CHK in the /data directory.  These files are the same as the PRG and CHK files in the codesys directory after creating a "boot project".  I tried to replace them on the PLC: set the perms, user and group the same as the original files; then issued a restart, but I could no longer connect with CoDeSys.  Do you know if there are some other files that need to be updated?
-

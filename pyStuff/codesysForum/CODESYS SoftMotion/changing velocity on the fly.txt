@@ -1,8 +1,0 @@
-When I use move commands like MC_MoveRelative, MC_MoveVelocity etc... can I change the velocity on the fly? how?
-
-hi,yes, just re execute the active motion fb with new velocityEdwin
-
-And if I want to use MC_MoveVelocity and change the velocity continuously (with an analog input for example)?If I use MC_MoveRelative with a distance of 1000mm, and after 300mm I reexecute it to change the velocity, what will happened to the distance?
-
-hello malbec,you will have a new target distance relative to the moment of your rising edge on the execute input.Perhaps instead you should use mc_MoveAbsolute and each time calculate your target point accordingly. best regards,
-

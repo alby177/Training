@@ -1,8 +1,0 @@
-Hi,does anybody experienced this problem with placeholder in CoDeSys V3?The problem is without placeholder, graphics is okay (not completely smooth but still its okay)But as soon as integrate the same in the placeholder, the graphics get pixelated.I check the settings like- Scaling: Anisotropic- Options > Visu > Anisotropic and Antialiasing active- Size of placeholder is same in the window it has been usedI don't know why? Can anybody help me please.Thank you.
-
-sbk wrote:Hi,does anybody experienced this problem with placeholder in CoDeSys V3?The problem is without placeholder, graphics is okay (not completely smooth but still its okay)But as soon as integrate the same in the placeholder, the graphics get pixelated.I check the settings like- Scaling: Anisotropic- Options > Visu > Anisotropic and Antialiasing active- Size of placeholder is same in the window it has been usedI don't know why? Can anybody help me please.Thank you.I think I had this issue and solved it by going into Visualization Manager and checking the text box "Transfer both svg images and converted images" in the bottom right hand corner.
-
-And where can I find that option?Can you please make a screenshot. I didn't find it.Thank you.
-
-sbk wrote:And where can I find that option?Can you please make a screenshot. I didn't find it.Thank you.Please see attachment. It's on the lower right after you open up visualization manager.
-

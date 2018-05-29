@@ -1,6 +1,0 @@
-Hi to everyone!
-I did the program for logging in by checking the password and username (which I defined as a string variable) and if the user enter a right username and password then I set a variable which indicates that login is successfully done. It’s a variable which is a boolean type. But the problem is, when I use 2 PCs (web visualization). I type the correct username and password in the internet explorer (on the first PC) and my variable for indication of correct login get TRUE value and I am now log on and I can change for example some setpoints (parameters). But also when I open the same visualization on the other PC in the internet explorer, it’s already indicates that the user is logged on and he also can change some parameters without logging in, and that’s not good… I would like to do that logging on one PC doesn’t affect to the state of login on the others… So, how can I detect a connection to several PCs or to read out the IPs of PCs or something like that???
-
-This is possible by using dedicated .html and xml file(s) in combination with a dedicated java applet for logging into the application.
-Please contact your hardware supplier or distributor for these files.
-

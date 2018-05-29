@@ -1,6 +1,0 @@
-i"m looking for build-in function block which makes scheduled operations
-like day of week and time or date and time
-
-thank you,
-sahar zafrir.
-

@@ -1,2 +1,0 @@
-EtherCat master : IODrvEtherCat 3.5.10.0Slave device : two digital input modules (EL1008), one digital output module (EL2008 ) and one Ethercat coupler.Kernel: QNX + codesys runtime (3.5.10);As long as running the project, there is a warning  ---  the number of slave has changed or is different from the configuration.Could you tell me the reason why this warning occurs ?
-

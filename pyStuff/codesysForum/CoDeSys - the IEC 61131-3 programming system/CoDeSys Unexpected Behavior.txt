@@ -1,2 +1,0 @@
-I tried copy, paste and rename a FB. When I tried to save/go online CoDeSys gives me an error.It reports an unexpected behavior : the Objects xxx and xxx share the same id! They now got new id's.  When I click on OK, at least another 20 same messages with different Object names will pop up. Please advise as I cannot go online with this. There's no compilation error.
-

@@ -1,6 +1,0 @@
-Does anyone know why it gives this exception error?
-
-Hi,rightclick in this logger message should lead you to the codeposition where it does happen...BREdwin
-
-thank you very muchalready guess what it was because when the clock restarts it returns to the time and the trend gives an error
-

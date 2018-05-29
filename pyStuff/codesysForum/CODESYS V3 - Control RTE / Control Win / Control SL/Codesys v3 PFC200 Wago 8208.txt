@@ -1,4 +1,0 @@
-Had anyone gotten the Wago 8208 to work with CodeSys v3? I found a Youtube video for v2, but I'm trying to use V3.
-
-Hi,Profibus Master and Profibus Slave is not supported at the moment with the PFC200.We have not seen many request for it, so this will probaly not come in the near future.Sure all other functions are possible to use even with PFC200 Wago 8208BREdwin
-

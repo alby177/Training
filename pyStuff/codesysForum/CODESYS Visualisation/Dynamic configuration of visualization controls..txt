@@ -1,8 +1,0 @@
-Hi,
-   I need some help regarding codesys visualization. There is any possibility to convert total visualization project into any text file or .csv file or any other file format possible. I will make some modification in that file i.e. changing some control properties or add some more controls and their properties manually and convert it back to visualization. Whether it is possible in codesys?
-
-Any help or ideas would be appreciated.
-
-Best regards,
-Bharath Reddy
-

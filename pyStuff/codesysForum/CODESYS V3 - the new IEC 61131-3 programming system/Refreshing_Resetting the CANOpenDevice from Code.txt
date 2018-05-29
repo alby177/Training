@@ -1,4 +1,0 @@
-Hi,Is there a way that I can reset/reinitialize the Canopendevice from Codesys application ? The script file rts_set_baud.sh (in the runtime) is only called at the beginning. Can anyone please suggest if I can reset CanOpenDevice either from codesys application or from runtime?ThanksIrfan
-
-_________________IM
-

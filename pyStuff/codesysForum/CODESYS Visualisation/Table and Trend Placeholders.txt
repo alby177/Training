@@ -1,8 +1,0 @@
-Is it possible to use placeholders with table and trend objects or is this only possible with v3?
-
-not direct but when used in a visualisation it is.or use the vis.lib.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
-Hi,I don't understand your answer......sorry.......I am using a table in a visualization, but I cannot use a placeholder for the data in the column....the table just disappears.Imagine for example I would usually enter...Structurename.ArrayName..and I then instead I wanted to use a placeholder...$Struct$.ArrayNameor even$StructAndArray$Either way the table rows disappear...
-

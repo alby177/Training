@@ -1,8 +1,0 @@
-I noticed a lot more jitter when using Raspberry Pi 2 vs Raspberry Pi 1.For the same simple program, I get 10088us Max Jitter on Raspberry Pi 2 while I only get 368us on Raspberry Pi 1.Same program, same image. Raspberry Pi 1 seems way more stable.Is this a known issue?Are there any fix?
-
-Hi,thanks for reporting this,we are working on this.As soon we have a solution for this I'll let you know.BREdwin
-
-I'm also interest on this fix!Thanks
-
-Hi all,Just to let you know that the jitter problem with the Raspberry Pi 2 seems to be fixed in the latest version.I let my Raspberry Pi 2 run for almost 20 hours straight (I bought a license) with a 20ms task and the max jitter is 960us. This is good!Now it has been running for 30 min with a 1ms task and the max jitter is 209us so far. This is great!
-

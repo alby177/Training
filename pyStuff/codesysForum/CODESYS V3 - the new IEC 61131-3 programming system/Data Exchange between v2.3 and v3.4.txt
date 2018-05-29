@@ -1,4 +1,0 @@
-Hello!I have to exchange data between a controller that only supports v2.3 and my own controller,based on v3.4.The data exchange must be done using CAN, as the other controller only have CAN and RS232.What are my options?How can I exchange data between v2.3 and v3.4 on CAN?BR/Per
-
-V3.4 supports the possibility to let your device be a "CAN Slave".Add to your CAN bus a "CAN_Local_Device". You can create here your I/O configuration.From this configuration an .eds file can be generated.In your V2.3 CAN configuration you can use this .eds file and connect to your V3.4 device as if it was a CAN node in the network. This way you can exchange data.I tested this with the CoDeSys Control Win V3, this works fine.
-

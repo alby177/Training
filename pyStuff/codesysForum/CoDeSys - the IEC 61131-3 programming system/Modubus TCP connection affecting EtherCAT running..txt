@@ -1,6 +1,0 @@
-hello, allI am facing a problem in v3.5, there is a motor driver connect via EtherCAT slave, and one remote plc via Modbus TCP Slave.the EtherCAT is for driving the motor, and Modbus TCP is only I/O exchanging with CoDeSys v3.5.problem is:The motor was not running smoothly enough(rotating fastly or reversely suddenly), it seems motor was lost some pulses/step sometimes, if I delete the Modbus TCP slave, motor was runing perfectly, EtherCAT seems was affected by Modbus TCP, when I changed Modbus TCP polling cycle time, motor running better.can any one gives any tips? I really need some help from you guys now.  thanks a lot.
-
-Try moving your ECAT processing block onto high priority interrupt? For example in ABB AC500, "Ext CouplerX Hi Priority" would process ECAT blocks at every frame.
-
-_________________AC500 Application and Technical SupportABB Private Limited (Singapore)No. 2, Ayer Rajah Crescent, S139935SG Support Mobile: +65 9733 086624x7 Call Center: +65 6222 7778
-

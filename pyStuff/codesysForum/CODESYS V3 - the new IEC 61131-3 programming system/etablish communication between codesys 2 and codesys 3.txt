@@ -1,4 +1,0 @@
-Hi Everyone,I have another problem with codesysI'd like to etablish a variable exchange between a codesys v2 PLC and a codesys V3 Plc, I declared a network variable file with codesys 2 but the format I get is a .exp file and on codesys 3 I need a .gvl files, I try to import the .exp but I've no variable on codesys V3, I tried to rename the file by .gvl but it doesn't workSomeone has an idea how to do that?Many thanks in advance
-
-What you can do is add another device to your V3 project and add a NVL Send GVL in the application of this new device. Configure this the same as in your V2.3 application and copy the variables from your V2.3 application to this GVL.Then in your main V3 application, you can refer to the GVL of the "dummy" V3 device application.
-

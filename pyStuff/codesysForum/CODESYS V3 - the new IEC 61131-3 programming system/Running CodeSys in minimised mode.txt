@@ -1,8 +1,0 @@
-Hi, We are writing a program that tests a PLC product we are developing. Our main code does some of the business related functions (order entry, reporting etc). To test the actual product we run a Codesys/Test Manager script from a process call. However, we want to keep the CodeSys application that then runs hidden or minimised. We have tried running the process using Process Start and the relevant process start info. We have also tried running the process and then getting a handle to the window and minimising that way both without success.Can anyone suggest a method that might work.
-
-The codesys application has an option to run it 'minimized' with a python script. See command line options.Regards,Edwin.
-
-Hello williamc.williamc wrote:However, we want to keep the CodeSys application that then runs hidden or minimised.Do you mean the non-UI mode? If yes, that will not work because the Test Manager does not support it at the moment. There's only the non-interactive mode through the command line.Regards,Martin
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
-

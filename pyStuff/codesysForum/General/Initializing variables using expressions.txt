@@ -1,2 +1,0 @@
-I want to initialize a variable using expressions, for instancemyVar : INT := 3 + x + 2*y; It seems this can be done in CoDeSys 3.5: https://help.codesys.com/api-content/2/ ... variables/However this gives me compiler errors in CoDeSys 2.3. Is there some compiler option or so I could use to enable this? Or some neat workaround?
-

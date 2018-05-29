@@ -1,8 +1,0 @@
-HelloIs ist possible to downgrade a controller with CODESYS Control for PFC 200 from 3.5.10.20 to 3.5.9.20?When I update the controller with 3.5.10.20 to 3.5.9.20 then it says update finished. (see pic)After the update the controller is no more reachable so I have to reboot it. Thats ok.But after the reboot it still has version 3.5.10.20 again.
-
-Hi,on runtime side I always would recommend to use current version (securiy update included & many bugfixes etc)This means: Even if you decide to work in CODESYS with 3.5SP9/SP10 whatever, it is safe to useWago Firmware 10 and CODESYS Runtime 3.5SP11Patchx.(Just install the ipk of the runtime to the PFC200 controller )- if you do this I would even not install the SP11 PFC200 Package into yourSP10/SP10 CODESYS / Package Manager - just use everything in our selected version - only use the ipk our of the store download.BREdwin
-
-The question came up when I wanted to simulate a behavior of a customers machine. This machine was with an older package, so I had to downgrade my test station, because the package version was interesting.I restored the Wago firmware over an SD card and the applicated the version I needed. This way is just not nice and costs time.
-
-Hi,important commands are:uninstall:remove codesyscontrolinstall older Versionipkg install codesyscontrol_arm_pfc200_V3.5.x.x.ipkstop plc:/etc/init.d/codesyscontrol stopstart plc:/etc/init.d/codesyscontrol startBREdwin
-

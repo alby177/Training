@@ -1,5 +1,0 @@
-I am currently doing one offline configuration for a Cell where in we have PM571 CPU with CM 572 -DPM as a Profibus Master .
-I have done the configuration in the SYCON net where in there are some slave devices on Profibus .
-
-  The i/o which i have assigned for the slave can be simulated  in the Byte ,Word Format but i m unable to access it in bit formats ,for ex- i am not able to simulate the Slave inputs (Boolean )nor i m able to write on the Slave outputs(Boolean)but simulation of the Slave inputs in Byte and Word Format is possible .Please find the attached program backup for reference.
-

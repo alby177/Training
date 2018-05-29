@@ -1,2 +1,0 @@
-I want to learn CNC.But the softmotion manual only contain some FBs and fun.Could I get some complete examples about 3 axis line interpolation or circle interpolation.Many tks.
-

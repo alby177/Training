@@ -1,2 +1,0 @@
-Helo,How to read the file names presents in a path? I tried to use SysDirRead (SysLibDir), but it doesnt return the name of a file?
-

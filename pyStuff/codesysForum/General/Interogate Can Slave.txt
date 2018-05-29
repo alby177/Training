@@ -1,6 +1,0 @@
-Halo..Is there any way that Master can know when the connection to its slave is broken? how to do this..thank you..mRH
-
-You need to use either the CANopen hearbeat protocol or the nodeguarding protocol (Hearbeat is preferred).  The slave will announce its status via 0x700+NodeID 1 byte, status = 5 means its there and active, other codes based on other conditions...
-
-_________________-Tim
-

@@ -1,8 +1,0 @@
-Hi guysToday I stumbled over a problem that seems minor but it is quite annoying. I collect data via com_rec into an array of strings. now as long as the strings are always the same length at each position in the array it works perfectly, but if the String received is smaller than the previous string only the new characters are stored and the last characters of the old string are kept. I've tried to set the String to empty before writing the new data but its seems like the data is still at the adress inside the com_rec because declaring a second array and writing the values there didn't change anything. Is there something I overlooked?Can I somehow free used space completely?thanks in advanceSek
-
-you can not clear the space, but you could use a EOL end of line character, or just fill it with spaces, or null characters.the clearspace will take a lot of time, as it must move all characters a lot of times, better is to have a array with nothing in it.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
-Hithanks for your answer. I'm not exactly sure I understand what you mean with the EOL. I do know what an EOL is, but how do I use it in that case. Does the COM_REC put an EOL at the end of the received String?If yes, how do I check for that in a fast way. Just with FIND or is there a better way?thanks in advanceSek
-

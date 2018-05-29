@@ -1,4 +1,0 @@
-Hi at all, i have an question.It's possible view an ip camera in the webvisu?If yes, anybody have an example??Many thanks in advance.Mattia F.
-
-Yes it is possible!You can make video streaming, and in the folder examples you have a project like that already done!
-

@@ -1,6 +1,0 @@
-Hi,after adding a profinet slave(siemens et200s) to my pn-controller via script i want to get online and start the app. Then the following error occurs:Attachment:fehler2.PNG"Stationsname" and the other Parameters are correct. i can fix the problems manually by Clearing the textfield and type et200s again  OR  i deactivate the unused Slot (<leer>). i tried deactivate the unused Slot by script too, but that didn't work.I hope somebody can helpSteffenEDIT:After some test I recognize that I can fix that to if I manually stop and log out. Then I doubleclick on the treeobject et200s just for open the Dialog. Then I log in again and start and it works.... The following Dialog opens by Login in:Attachment:fenster.PNGby clicking JA and start it works...
-
-Maybe some more Infos...Before and after I log out, doubleclick the treeobject and log in again, I print the device and hostparameters for compare. Before I do the log out..... the parameter id=1025 Name=SlaveOptions is missing. After I doubleclick et200s I run the script for printing the Parameters again and the parameter 1025 appears and the System runs.Is it possible to ad the parameter or do this steps by script?I attached my code
-
-Is it possible that i have to declare the device as a slave? If yes, where?
-

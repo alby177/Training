@@ -1,2 +1,0 @@
-Goodmorning, I don't know if i'm posting it in the right topic, so if so! Sorry for that. Just started a few weeks ago with Codesys so my experience is still quite basic. Is it possible to export the data from the Codesys trending to CSV file with the Trend API Example?
-

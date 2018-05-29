@@ -1,8 +1,0 @@
-How can I call from a Main test script another (sub) script with parameters?For example to use some values from the main script in the sub script.I get message like:"The expected value for SlowTask._ifbTest.iResult can't be converted to type int64, the expected value is iVarTestInput3."OR"Undefined script variable 'iVarTestInput3'"The next software is used: Codesys V3.5 SP7 Patch 2 and Test Manager 4.0.1.1.
-
-Hi Bakkertje.I guess the first error message is from a command like CompareVariable from TestManager.Monitoring. You need use curly brackets around the script variable otherwise the variable name is interpreted as normal string.For the second error message I see no obvious error in your parameters for the CALL.BTW: You don't need to add a parameter for the global variable because the global variable is also available there. Only REMOTE CALLs don't support parameters and global variables but we already have an improvement in our bug tracking system for it.BRMartin
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
-
-Hi Martin,Thanks for your help. I see now that I can use Global parameters also in the sub script.But how can I use an "Input Parameter" insite the SubScript? For example "iVarTestInput3"I want to use it for a TestManager.Monitoring -> CompareVariable
-

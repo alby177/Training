@@ -1,2 +1,0 @@
-I'm new on the use of the ENI server.I'm using Codesys 2.3 and i would like to use ENI server for to work on same project with different people.I've search on web, and tryed many different time, BUT i cannot get it to work!Is it somethink NOT possible with codesys 2.3?Can anybody give me some info?Thank's a lot!
-

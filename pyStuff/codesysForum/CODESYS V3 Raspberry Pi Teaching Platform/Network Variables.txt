@@ -1,2 +1,0 @@
-HiI have looked on the forum for this but couldnt find what I was looking for. I want to install 3 RPIs, the 1 RPI will be used to display and control the the RPIs. I would like to use NVLs for this. I am not sure how this works with 3 devices. Will all 3 of the RPIs have both send and receive NVLs? Are variables in the NVL going to be the same for all the devices?How many devices can share data using NVL?What is the max sizeof the NVL?Thanks
-

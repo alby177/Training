@@ -1,6 +1,0 @@
-I need to use PCAN-USB as CAN interface on CoDeSys SP RTE, but by the instruction, I can't install it as IO-Device. I tried to install it by right clicking and selecting 'Install' on the RTIOwdmPCAN.inf file under 'C:\Program Files\CoDeSys SP RTE\W2k_XP Drivers\Peak Systems PCAN' after installed PCAN-USB with driver come with the CD from Peak, and nothing happens. If I install it manually, I will be given 'not compatible' promotion and end up failing. I suppose that successfull installation will show me the 'RTIOwdmPCAN' in the Detected IO configuration window in 'CoDeSys SP RTE ' System panel.Attachment:SP_RTE.jpg
-
-no, this will not work. SP RTE and usb peak adapter, there is no driver available. USB and Hard Realtime is nota real good combination. Imagine what happends on hotplug.If you want to use it you have to use Conrtol Win (Soft realtime under COSESYS V3).For CODESYS SP RTE V2.3 you need a PCI -Peak or Automata card.
-
-But Control-Win runs likes SPWinNT in CoDeSys 2.3, There is no portal for adding a device for the none-realtime Soft PLC.
-

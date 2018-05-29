@@ -1,8 +1,0 @@
-I am using a Beckhoff EL5101 high speed counter and I need to set the "Enable Index Reset" to true in the startup parameters but as soon as I save or build the project it always goes back to false.What can I do to fix this?I set it to true:Attachment:True.pngAnd then when I save or build it goes back to false:Attachment:False.png
-
-Hi,this is a bug I will add a tracking database for it!But as I see in the generic Editor the Information stored in the right way...BREdwin
-
-Thanks for the reply but I don't understand what you mean by generic editor.How can I make it work in my application?
-
-Hi,Tools->options->enable generic editorif you do this you could see every paramter...BREdwin
-

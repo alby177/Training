@@ -1,6 +1,0 @@
-Hello Guys,Total beginner here trying to learn the software and hoping to get some help.I'm trying to create a basic simulation in SFC. How do I control the flow settings(LOW and HIGH) for the proportional valve? I tried to assign an INT Data type and give it a value of 1 and 2, but I'm not quite sure how to do it. I can't assign INT to the action for some reason (I'm guessing only BOOL data type can be assigned to it). Hope this makes sense and any help is greatly appreciated. Thanks
-
-I supose that you can say to the transition, to action you can assign the code that you want (via an action f.ex.)In a transition you can put intVar=1. It eorksEnviat des del meu HUAWEI LYO-L21 usant Tapatalk
-
-Josep M. Rams wrote:I supose that you can say to the transition, to action you can assign the code that you want (via an action f.ex.)In a transition you can put intVar=1. It eorksEnviat des del meu HUAWEI LYO-L21 usant TapatalkThank you very much for the reply! I will give this a go!
-

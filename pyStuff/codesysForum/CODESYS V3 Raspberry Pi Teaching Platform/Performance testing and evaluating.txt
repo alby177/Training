@@ -1,4 +1,0 @@
-Hi!I'm evaluating raspberry pi as a test device for PLC software. I'm wondering what tests I can do to test general performance of a Structured Text program on the Pi. I've done a couple of delay and jitter tests for our test rig. Now I'm looking for tests to just test the Pi, maybe test ADD, DIV and MUL with some different cycle times to see CPU utilization (via top command). To try to find the limits of the pi runtime.If anyone have an idea or a test program to share I would be very grateful.
-
-_________________SC student from Sweden
-

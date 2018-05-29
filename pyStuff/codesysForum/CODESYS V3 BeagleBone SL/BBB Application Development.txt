@@ -1,4 +1,0 @@
-Hi,Presently working with BeagleBoneBlack, trying with BBB with EK1100+EL2809+EL6080. Could you please clarify the following....1. My application is not getting started when power on the BBB.(Still I have not Activated lenience)2. I am not able to map EL6080 for retentive variables.3. Do we need to have proper shutdown of BBB or we can plug out the power(5V). Any feedback Data Corruption.Regards,Kumar Eswaran
-
-Hi,1. My application is not getting started when power on the BBB.(Still I have not Activated lenience)this should start, check the plclogger  or do a cat /tmp/codesyscontrol.log to see details for the starting Problem2. I am not able to map EL6080 for retentive variables.see attached example but no further support from my side ;-( 3. Do we need to have proper shutdown of BBB or we can plug out the power(5V). Any feedback Data Corruption.If not set to readonly in generell yes!BREdwin
-

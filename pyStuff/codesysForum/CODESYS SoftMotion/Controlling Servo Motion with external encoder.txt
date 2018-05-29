@@ -1,4 +1,0 @@
-I'm trying to connect an external encoder to control the position loop of a servo. Can someone give me some help on how to connect the correct function blocks? My mechanical has a large backlash where the servo motor is connected.  I want to do positioning on an external encoder connected to output movement of the mechanical system.  Then backlash error can be controlled using an output gear connected to the encoder on backlash free gears with small pitch teeth.
-
-So far I got the encoder into a SMC_Encoder block which gives me a AXIS_REF put I don't know how to connect the encoder with other motion blocks.
-

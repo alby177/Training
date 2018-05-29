@@ -1,4 +1,0 @@
-How can activate - deactivate at runtime the storing of alarms and trends;
-
-Hi,check these two examples:http://store.codesys.com/trend-example.htmlhttp://store.codesys.com/alarm-table.htmlBREdwin
-

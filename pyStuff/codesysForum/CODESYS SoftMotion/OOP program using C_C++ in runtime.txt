@@ -1,2 +1,0 @@
-Is there a detail document about OOP program using c language in codesys runtime? Due to our development plan, there is a Function Block B which implements an interface A in our library. And we have to implement the FB B using c/c++ in runtime. How can I call the methods or properties of FB B by interface?Please help me, guy.
-

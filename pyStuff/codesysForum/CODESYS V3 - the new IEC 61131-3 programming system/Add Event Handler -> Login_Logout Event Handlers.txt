@@ -1,2 +1,0 @@
-I would like to execute certain functions upon any user login/logout.In Task Configuration there seem to be some useful Event Handlers: System Events -> Add Event Handler.I added:- event Login, function to call TestLogin- event Logout, function to call TestLogoutAfterwards I get compile errors "Function TestLogin/TestLogout requires exactly '0' inputs".How to use the Login/Logout events then?Are the System Event Handlers and their usage documented anywhere?
-

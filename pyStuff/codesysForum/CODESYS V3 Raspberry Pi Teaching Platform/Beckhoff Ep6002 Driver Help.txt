@@ -1,2 +1,0 @@
-Hi All,We want to use Beckhoff ep6002 2-channel serial interface module to communicate rs232 or rs485 compatible sensors via ethercat. We use raspberry pi to our project and I can  communicate rs232 or rs485 compatible  sensors using Codesys CAA SerialCom library via Raspberry pi serial port. Are there any library like CAA SerialCom to communicate these sensors using ep6002 module via ethercat? Thank you for your interest.
-

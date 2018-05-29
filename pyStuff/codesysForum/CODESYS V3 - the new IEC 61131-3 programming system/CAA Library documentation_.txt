@@ -1,6 +1,0 @@
-Hi,I know we have some documentation for the SysXXXXX libraries within the Program Files folder, but where can I find documentation on the CAA libraries such as Network etc?There seems to be lots of undocumented goodies, which I could use, but I'm trying to avoid the painful trial and error approach to using CodeSys!For example, there are constants in the "Sys Info" (in the FTP folder) example used for registering events, but I have no idea what these hardcoded numbers mean! ? Ie. "evt1 := EventOpen(16#10002, 16#2, res);"ThanksLaythe
-
-This documentation is in the library itself. When you go to the library manager and select => Network => CAA NetBaseSrv, you will get a list of all Function, FB's, structures, enumerations and also a PDF in the documentation section with the description and some examples.
-
-Didn't see that! Thanks very much!
-

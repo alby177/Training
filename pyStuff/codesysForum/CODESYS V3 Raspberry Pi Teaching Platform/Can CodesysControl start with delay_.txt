@@ -1,2 +1,0 @@
-The problem exists when CodesysControl start before Usb flash disks mounting. Then if we have the RTS folder assign on Usb flash disk some times the CodesysControl not works.Any help?
-

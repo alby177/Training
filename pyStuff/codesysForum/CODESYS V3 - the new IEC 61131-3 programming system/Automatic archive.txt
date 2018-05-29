@@ -1,4 +1,0 @@
-Hi,Is there a way to make automatic project archive, or have a pop up asking if you want to make a project archive when closing CODESYS?Nobody remembers to do this when it's a manual task, and i want the backup system to have the latest version in an archive.
-
-write ur   script code and include in ur programe. it does Pop up message when ever you Close it.
-

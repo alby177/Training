@@ -1,4 +1,0 @@
-Dear all,           I am a user of CodesysV3.5 .I have developed a few Programs(POU's).These build successfully. There is Option "Generate Code"in the menyWhen i click on it,  it shows it is successful, but how can i access this code.Where does this code reside(path).In which format is this code(.exe,.bin)with regards,Praveena
-
-It is the step which is normally taken just before you download the application to the PLC, or do an online change.You can use it when you want to use an .xml file for the OPC server to run it in simulation mode. In this case you don't have the PLC available to download the application, but you need to create the .xml file.You should also use it before you create an "offline" boot application, because then you are sure it contains the correct code.I know it creates the .xml file with the symbol list. I'm not sure which other files are created.
-

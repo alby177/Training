@@ -1,4 +1,0 @@
-Hallo Zusammen,ich habe die Aufgabe erhalten mit meiner CodeSys Steuerung über Ethercat eine Verbindung zu einer Beckhoff Steuerung herzustellen - dazu soll die Ethercat Bridge EL6692 von Beckhoff verwendet werden - ich habe eine Beckhoff Steuerung mit installierter und funktionierender Hardware vorliegen - die LED Run Prim leuchtet / Run Sec nicht. CodeSys seitigt wurde mit "Gerät suchen" das EL6692 gefunden - leider funktioniert es nicht - online kommt die Meldung "Bus läuft nicht".Hat jemand ein Konfigurationsbeispiel für diese Hardware?Für Eure Hilfe schon mal Danke im Voraus
-
-Hi,also ich kann lediglich ein Projekt Beispiel beisteuern. ( zwei CODESYS SPS'en mit 2 Ethercat Netzwerk verbunden)Aber denke das gibt dir hoffentlich den passen "Schub" GrüßeEdi
-

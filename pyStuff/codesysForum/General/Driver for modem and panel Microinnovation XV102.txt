@@ -1,2 +1,0 @@
-HiI'm trying to write a driver for modem, to work like windows terminal sending and receiving AT commands. Has anyone tired to do this ?I'm receiving sometimes right string sometime wrong string, I changed the baud rate but not succesfull.right string RING+CLIP: "phone nr.",129,,,,0and wrong string :,,,,0+CLIP: "phone nr",129,,,,0If any one have the driver I would be very happy.THX sasko
-

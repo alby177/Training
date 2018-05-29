@@ -1,6 +1,0 @@
-HelloI would like like to start codesys  project compare from the command line. I found some command line options in manual but I can't find any concerning projects comparison. I.e. I have two projects proj1.pro and proj2.pro Code:Codesys.exe /cmd cmd.txtAnd the cmd.txt Code:file open proj1.proWhat should I put in the cmd.txt to open comparison.This is the same as in this question but this is for V3viewtopic.php?t=6464
-
-as far as i know, there is no command line for this compare, as it will open the current and a file in a window.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

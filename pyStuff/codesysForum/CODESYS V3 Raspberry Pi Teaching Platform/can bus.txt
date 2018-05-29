@@ -1,2 +1,0 @@
-is possible to set the can bus at 400 kb/s?
-

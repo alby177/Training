@@ -1,2 +1,0 @@
-Hi all,is it possible to make sure that one or more common variables declared inside a library, are not separated in different variables if the version of the library changes?For example, if I create multiple libraries that all use the same common library and, over time, I correct the common library but not all the others that use it, I find that the common variables are not as common. I understand that everything can be overcome by making use of the "namespaces", but I have not found a way.Thanks.
-

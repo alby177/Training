@@ -1,8 +1,0 @@
-Hello to everyone,I'm a CoDeSys user, 2.3 and 3.3 on different platform.I often leave the project to the customer, but I would like to block some part of code, to protect them from any "wrong" change and even from copying them when the developing it's been hard (and not paid)In the 2.3 is simple, but I don't found nothing in the 3.x which is useful for this purpose.I've tried with the user management, but in the FB "protected is always possible to enter, so I guess that I don't understand for what is intended.Can anyone help me?Thanks in advance,Andrea
-
-You have to add a new group and a new user to the user management.Also you should change the password of the user "Owner".Right click on the FB and go to Properties=>Access Control.Here you can deny (write-)access for the user Limited.When your customer wants to change something he will get a popup where he needs to login.In your case you should login as Owner to make the changes.
-
-Thanks TimvH,i've just tried your suggestion and protect the code from accidentally change but not from viewing and copying, even denying the "view" permission at the group Everyone.There's any way to blocking the view of some part of code, so the customer cannot see it and copy it in another POU?
-
-You could put this code in another POU (deny all access) and call it from your code.
-

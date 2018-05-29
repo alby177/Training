@@ -1,6 +1,0 @@
-Maybe it's a bug... It looks like SP12 has a missing co-library in the EtherNet/IP library called ElementCollections. You can click on Download missing libraries, but nothing shows up at all.
-
-Hi,hm.. should not happen could you add this here:BREdwin
-
-Edwin Schwellinger wrote:Hi,hm.. should not happen could you add this here:BREdwinThat was it. Great support like always Ed!Thanks,
-

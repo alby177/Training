@@ -1,2 +1,0 @@
-Hi AllDoes any one have implement the above for embedded control for motion control . how easy to implement this ? and it is very useful feature ?
-

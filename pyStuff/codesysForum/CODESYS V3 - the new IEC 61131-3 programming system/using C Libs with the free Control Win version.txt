@@ -1,2 +1,0 @@
-Hello community,is a full Runtime License mandatory for testing the import of C programs into IEC applications, or is it also possible to test this feature with the Control Win Runtime that comes along with the free version of CoDeSys IEC development kit?
-

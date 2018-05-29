@@ -1,6 +1,0 @@
-Hello!I'm using V3.5 and in my visualization are common contols (buttons, slider, table) 'old' looking rectangular and grey. I found VisuDemoV3 project in instalatin folder. In this project are common controls very 'new' looking rounded and blue. I can not find where to change in my projects to have that 'new' looking visu elements...Where to change/switch it?It is posible to adapt this newstyle or I have to change everything, somewhere?Regards,Alex
-
-I think that the two projects are using different "Style settings".  It is possible to change this in the Visualization Manager.
-
-Thanks kberlin!You were right is it simple to change styles via visu-manager, I was changing it over tools>options>visu. styles, but no effect.regardsalex
-

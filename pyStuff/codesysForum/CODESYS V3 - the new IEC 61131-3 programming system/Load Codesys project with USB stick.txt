@@ -1,6 +1,0 @@
-Hey guys, Does anyknow know if it's possible to load a Codesys project from USB stick. We would like to provide our costumers the possiblity to update there PLC software to the newest version if needed. I know it's possible while using libraries, but then they still need to know how CODESYS V3 works. If you guys have any ideas or walktroughs, it's mostly appreciated!Cheers Qimarox
-
-Hi,which plc are you using?BREdwin
-
-Edwin Schwellinger wrote:Hi,which plc are you using?BRBREdwinWe are testing with a Berghof PLC, type ECC2100https://www.berghof-automation.com/en/products/controller-plc/compact-plc/ba-ecc-2100-series/ba-ecc-2100/
-

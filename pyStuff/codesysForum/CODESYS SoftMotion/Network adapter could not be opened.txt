@@ -1,2 +1,0 @@
-HiFinally managed to connect codesys rte . But i cant see any slave devices.there is in log errors like Network adapter could not be opened.Can anyone help?Thanks.
-

@@ -1,6 +1,0 @@
-Hi! engineers:     I want to kown whether I can take a funciton, such as "real_to_int" to convert the DINT to DWORD by CoDeSys.I have tried to use the keyword for DINT_TO_DWORD, but it can be realized by CoDeSys.
-
-Hi, skytianlin,skytianlin wrote:I want to kown whether I can take a funciton, such as "real_to_int" to convert the DINT to DWORD by CoDeSys.I have tried to use the keyword for DINT_TO_DWORD, but it can be realized by CoDeSys.The type conversion functions are documentet in the online help, there is a chapter about type conversion operators.In your case, the ANY_TO_INT() should work:Code:re : REAL := 1.234; i : INT := ANY_TO_INT(re)
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
-

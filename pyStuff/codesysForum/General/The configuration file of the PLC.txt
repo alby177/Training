@@ -1,6 +1,0 @@
-Good day! Have controller with support for IEC . The programming of the controller is carried out via Codesys 2.3.9 .Primary controller configurations are defined in configuration file with extension CFG.In this configuration, the possibility of the controller to work on CAN interface. This configuration allows you to configure the controller in the networkCanOpen tab in the PLC Configuration . The task of ensuring in this way the configuration of the PLC in the rtu network Modbus.Question : What positions should be added to the configuration file and what revision myrts.exe  required to read these items. Where can I read about it.Thank you.
-
-what make is the device, as codesys does not sell any PLC only a software version of its program, and many other SDK etc.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

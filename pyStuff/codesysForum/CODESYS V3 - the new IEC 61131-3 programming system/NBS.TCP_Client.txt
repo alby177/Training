@@ -1,2 +1,0 @@
-If TCP server haven't free connections, which error code should be return by fb NBS.TCP_Client?TCP_CONNECT_ERROR or TCP_NO_CONNECTION or something other?
-

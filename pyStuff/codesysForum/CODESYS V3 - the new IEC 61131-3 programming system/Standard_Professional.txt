@@ -1,6 +1,0 @@
-HelloWith all versions of CODESYS V3 we found an option called "Features" (Tools -> Options -> Features), where we could choose Standard, Professional, or specific settings, to see or to acces more or less objects, libraries ...With SP7 version I can't find such option. Is it a bug or a normal thing ?Thank for your answer  
-
-Hi,this has been removed. Everything is now professional feature set now.It was really a pain. There are so many examples standard user could not add Imagepool,netvar list etc... hard to expain why.This difference is not really needed so it have been removed.BREdwin
-
-Thank you Edwin.It is a good idea to remove this option.It was not so easy to know what option was selected.Best regard.
-

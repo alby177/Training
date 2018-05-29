@@ -1,2 +1,0 @@
-Hello everyone!I'm trying to automate software updating on a network of ca. 50 plc's.I can't force Codesys to download software without displaying the "Program has changed. Download the new program?" dialog.My command file looks like this:Code:echo onreplace yesallquery off okfile open B1_BMS-1.2_6PLC1.proproject buildonline loginonline runonline bootprojectAny ideas?
-

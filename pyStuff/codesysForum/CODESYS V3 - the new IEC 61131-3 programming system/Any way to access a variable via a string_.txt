@@ -1,6 +1,0 @@
-Hello,Lets say I have the following code:VAR    output : BOOL;    my_string : STRING;ENDVARoutput := FALSE;my_string := "output";get_data(my_string); # GETS THE DATA 'FALSE'Is there any function that would do a similar function do the get_data function listed above?It's frequently used in other higher level languages such as python and such.Thanks,Tom
-
-I think is not possible.I have made fbs named fbbool, fbint, fblreal,.... That fbs has two attributes, one with the same type as his name and one string which is filled via the attribute parameterstringof with the fb name. Using fb_init I add this variables in a pool at which I can ask: get fb with name...
-
-You may find this topic of interest viewtopic.php?t=6788
-

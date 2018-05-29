@@ -1,6 +1,0 @@
-Hi :May some one help me how to fine tune the CODESYScontrol.cfg ?I have a project that CODESY RTE V3 talk with WAGO 750-337 CAN OPEN I/O via Hilscher CIFX card . The role of  CIFX card is CAN OPEN Master .BRHero Lin
-
-Hi,Example for RTE config file,[ComponentManager]Component.1=CmpDrvSchedulerAPICComponent.2=CmpHilscherCIFXComponent.3=CmpNetXCanDlDrv;Component.2=CmpSJACanDrv;Component.2=CmpEt100Drv;Component.2=CmpEt1000Drv;Component.2=CmpRTL81x9Mpd;Component.2=CmpRTL8169Mpdsure the lower part in that file with firmware download to the cifx card is mandatory to (remove the ; and adapt to the correct firmware)BREdwin
-
-it works ,Thanks Edwin .
-

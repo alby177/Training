@@ -1,6 +1,0 @@
-Hey All,It looks like package designer doesn't work on the 64b version for 3.5.11.0. Could someone else confirm?Hailing the mighty Edwin. Is there an update for a 64b version of designer?Thanks!
-
-Hi,see the tracking issue for this, but no date when it will be released.Let me check.BREdwin
-
-Edwin Schwellinger wrote:Hi,see the tracking issue for this, but no date when it will be released.Let me check.BREdwinThanks for the update Edwin! Where might I find this issues tracker?Thanks!
-

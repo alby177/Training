@@ -1,8 +1,0 @@
-Hello everyone,I have a problem that does not give me peace with a motion project. I'm using CoDeSys 3.5 with integrated SM3 library, version 4.2.1.0I have three axes on EtherCAT fieldbus. If there is no power to one of these (for various reasons), after the return, or even after a restart of the EtherCAT network via its FB, the drives return to work, but the SM axes remain in "errorstop" . By reading the manuals found on the Internet, it looks like you just need to disable the "Enable" of the "MC_Power" block to reset everything, and with the next "Enable" rising edge, the aces are reset. But it does not happen to me, and I can not get them back on track.After a series of attempts, also trying to use FBs to reset and reset errors, but never succeed. I then discovered that, if the copy softmotion axes objects when work on the variables of support and, after the problem, instead copy the supporting variables on the axes in error, before re-enabling power, these then are reset and operate. But frankly it seems like a dirty solution.Ideas? Solutions?Thanks.Mauro Bottizzo.
-
-Hi,in case of an ethercat restart, you need to execute the SMC_ReinitDrive fb This will bring back the drive to operational for SoftMotion.BREdwin
-
-I don't find it. In wich library is located?Mauro.
-
-SMC3_ReinitDriveIt's working for both my problems. Thanks.Mauro.
-

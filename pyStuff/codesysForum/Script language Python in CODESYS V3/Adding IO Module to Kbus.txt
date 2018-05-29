@@ -1,6 +1,0 @@
-I would like my python script to add an IO Module (8in/8out) to the k-bus.  Here is my code:Code:PROJECT = r"C:\Projects\WAGO_Test.project"proj = projects.create(PROJECT)proj.add("CODESYS_Control_for_PFC200",4096,"0000 0013","3.5.8.10")found = proj.find('CODESYS_Control_for_PFC200', False)device = found[0]kbus = device.find('Pfc200Bus', True)[0]kbus.add('_750-1506', 288, '0000 0001', '3.5.8.10')  #   <-- ERROR HEREproj.save()This gives an error however:'Exception was raised: The device cannot be added or inserted here'What am I doing wrong?  What method do I use to add an IO device?  (I have tried 'kbus.plug =' and that also did not work.)Thanks!
-
-Hi WAGOKurt.WAGOKurt wrote:What am I doing wrong?  What method do I use to add an IO device?  (I have tried 'kbus.plug =' and that also did not work.)I tried to reproduce your scenario and it seems you forgot to add the module ID.Code:kbus.add('_750-1506', 288, '0000 0001', '3.5.10.0', '880F_750_1506')BRMartin
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
-

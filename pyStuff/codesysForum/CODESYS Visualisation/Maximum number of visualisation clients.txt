@@ -1,6 +1,0 @@
-Hi i set "Client settings" to 3 but i still can connect with more than 3 and GLOBALCLIENTID for next clients is -1 what this number this means???
-
-Hi,nope this is not really possible by this settings the VisualisationManager, these settings are more or less 'default' setting for memory allocation for the these Clients.BREdwin
-
-Hi Edwin, is there a way to switch client id from -1 faster?? when allocated ID's available..Also i want if it's possible to deny connection to server to clients, if queue is bigger than 1xn.
-

@@ -1,2 +1,0 @@
-Is there a way to reset the Visu's Auto-Logout timer? I tried to execute a mouse-click Event, but I didn't get it working.Thanks for support
-

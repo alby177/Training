@@ -1,7 +1,0 @@
-I am using the subject Soft PLC and am not able to start the PLC.I have tried restarting the PC _ updating the new device file.But none turned working. Can somebody list the reasons / solutions how to start the PLC.  
-
-Did you reinstall (uninstall install) CoDeSys?Please check this first,the problem itself is not known due to your description
-
-_________________Good Better CoDeSys
-Boris Schuster
-

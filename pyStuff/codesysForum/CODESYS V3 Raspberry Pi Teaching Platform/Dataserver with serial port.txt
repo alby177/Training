@@ -1,8 +1,0 @@
-Hi ,I am trying to get some variables from a small PLC connected on RS232 to raspi using the DataServer.I have modified the CODESYSConfig.cfg like this:[SysCom]Linux.Devicefile=/dev/ttyAMAportnum := COM.SysCom.SYS_COMPORT1[CmpRouter]EnableLoopDetection=1EnableParallelRouting=1NumRouters=20.MainNet=ether 11.MainNet=MyCom[CmpBlkDrvCom]Com.0.Port=1Com.0.Name=MyComCom.0.Baudrate=115200Com.0.EnableAutoAdressing=1I am not able to connect to the RS232 PLC through raspi. It seams that the Com Port is not used.Any Ideas what to do ?ThanksVolker
-
-viewtopic.php?f=21&t=7127May be the problem is the same.BR
-
-Thanks for your answer,but this does not look like the problem.The serial port is not used for the console and it is ttyAMA0...
-
-to me it looks like the component CmpBlkDrvCom is not in the Raspberry.Any ideas how to get this ?
-

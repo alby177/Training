@@ -1,2 +1,0 @@
-Hello Forum,Is there a way to use Pragma to check VendorName or Device Name.Thanks & Regards
-

@@ -1,4 +1,0 @@
-Hello everyone,I am trying to control stemo step driver via modbus rtu.And i need function block to convert little endian to big endian. or form little endian to little endian twisted.Can anyone help..
-
-try the oscat libraries, freely available in the codesys store
-

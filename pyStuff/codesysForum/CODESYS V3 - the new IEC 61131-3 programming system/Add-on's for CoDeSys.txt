@@ -1,8 +1,0 @@
-Can I write add-on for CoDeSys IDE? I want to automate the writing often-repeated pieces of code.
-
-Probably for you the best option is to use the python scripting.There is a section on this forum especially dedicated to this.You can write scripts which not only generate code, but also your hardware configuration for example.
-
-Beside the option to use Python:If you have code that is frequently reused, encapsulate it in a library. This is the better way, especially in cases of maintenance.
-
-I want to write wizard, which help to write initialize section of code (for example).And another question: may I execute the Python scripts inside program on PLC?
-

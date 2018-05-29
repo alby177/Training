@@ -1,4 +1,0 @@
-I created a CODESYS IEC Library now I like create a Runtime System component : (I like to add a c library to my IEC library) .so how could i do it ? thanks
-
-Hi,this only possible if you purchase a runtime toolkit.This is not possible for Raspberry PI SL, Control Win SL, Control RTE SL etc this toolkit is what plc manufacturer are usingfor creating their runtime components.BREdwin
-

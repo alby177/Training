@@ -1,4 +1,0 @@
-Hi,in Codesys 2.3 it's possible to use placeholders in visu elements configuration, that is to define a variable like thisDrive_$x$.StartThen if we specify that x should be 5 for a specific visu, the above becomes Drive_5.StartIs it possible to do the same in v.3.5.x ? I can't see it anywhere.Thanks
-
-HelloEach visualization page has an interface (like FB) on witch you can define variables.To do this select the command Visualization ➔  Interface editor Uses this variables to set your animation on the visualization.When you place this visualization like a frame, you can acces this variables by reference properties and affect the value or the variables from your application.You have to read the Help file "CODESYS Visualisation", chapter "Creating a Structured User Interface", su chapter "Calling Visualization with Interface".Best regard
-

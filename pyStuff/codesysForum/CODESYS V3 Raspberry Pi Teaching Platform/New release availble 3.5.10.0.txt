@@ -1,2 +1,0 @@
-- runtime Version 3.5.10.0- possible to add Profinet Device (Raspberry Pi is Profinet slave could be added below a PN Master/Controller)How to update to this Version?- goto PackageManager an search for upates- install itIt is recommended to update to current CODESYS Version too 3.5.10.0 to have all new available features.http://store.codesys.com/engineering/codesys.html
-

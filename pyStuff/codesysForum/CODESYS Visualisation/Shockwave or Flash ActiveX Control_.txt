@@ -1,8 +1,0 @@
-Hi... has anybody manage to insert and play a shockwave or flash object in codesys visu?
-
-ive been messing with the flash native dll's but cant seem to make it work.
-
-any help is appreciated.
-
-thank you
-

@@ -1,4 +1,0 @@
-Hi,Is it possible to show contents from another url in webvisu?In an iframe for example.
-
-Hi,this will be possible in 3.5SP6 version.(End of the year)At the moment this is not possible.BREdwin
-

@@ -1,2 +1,0 @@
-Hi! I'm looking for an open platform which supports Codesys V3 and provides "raw" CAN access on at least 2 CAN interfaces. The BeagleBone Black apparently has 2 CAN interfaces, but is it possible to use both with capes such as https://www.waveshare.com/wiki/RS485_CAN_CAPE? Is it possible to simply attach two of them?If possible, I would also like to have 1 x RS232 and 1 x RS422. Any suitable capes available? The Waveshare cape apparently only supports two wire RS485.Br,Peter
-

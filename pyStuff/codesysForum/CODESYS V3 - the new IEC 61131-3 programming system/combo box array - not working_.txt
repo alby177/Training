@@ -1,4 +1,0 @@
-I created the combo box, using the array in the example:StringTabelle : ARRAY [0..2, 0..4] OF STRING := ['BMW','Audi','Mercedes','VW','Fiat', '150','150','150','150','100','blau','grau','silber','blau','rot'];Configuration of the combo-box:Attachment:Screenshot08.pngBut when running, it doesn't drop down any rows.  Is it configured incorrectly?(Similar to this problem, I think, but don't see an answer here:viewtopic.php?f=11&t=5112&p=8453&hilit=combo+box#p8453)
-
-Figured it out, I did not have the variable assigned...Working now.
-

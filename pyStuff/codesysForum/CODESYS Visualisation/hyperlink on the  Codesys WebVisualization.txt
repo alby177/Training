@@ -1,9 +1,0 @@
-Could the codesys WebVisualization have a hyperlink which can link to the other websites or access to the its own ftp?
-
-Does the INTERN LINK Command require a library to run?
-
-I　got a message form the web browser "die steuerung wurde angehalten"
-when i pressed on the button. the message means "the control has been stopped" please advise how to make it run? 
-
-Addition information, the button has configured with the with the INTERN Command. the parameter is "INTERN LINK http://www.3s-software.com".
-

@@ -1,6 +1,0 @@
-Hello,Currently I'm using Profinet Coupler and with it I can write parameters to module without creating new application, but using "Write all values" button. Is there a way to substitute the mouse click on a button by python script code?
-
-daniel_REC wrote:Currently I'm using Profinet Coupler and with it I can write parameters to module without creating new application, but using "Write all values" button. Is there a way to substitute the mouse click on a button by python script code?Currently, this is not possible via Scripting. In our Jira database, the improvement CDS-22506 exists to implement device configuration via scripting. You should ask your support contact to add your company as an interested customer to this issue.Thank you for your feedback,Markus Schaber
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
-

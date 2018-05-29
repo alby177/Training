@@ -1,4 +1,0 @@
-Is there such a thing for CODESYS like themes, like DARK, LIGHT etc like some other editors have?
-
-No defined theme, but you could modify settings: Tools -> Options.. -> Text editor (left hand side)
-

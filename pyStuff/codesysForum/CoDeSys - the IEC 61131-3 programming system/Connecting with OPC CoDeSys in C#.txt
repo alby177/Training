@@ -1,8 +1,0 @@
-I am trying to create a C# .net application which can read/write to a LMC20 PLC through OPC CoDeSysGate.  I have my OPC CoDeSysGateway up and running, and i was able to use your OFS Client.exe to read/write with OPCCoDeSys.  What i would like to know is, how can i write my own code for reading and writing with OPCCoDeSys? Am i head the correction direction if i am using API from OPC Foundation? Because i notice in your OFSClient.exe it is not using .net API.  Are there any sample code for read/write to a PLC through OPC CodeSys in C/C++/C#?
-
-Best regard,
-
-David Yu
-Varian Medical System
-Software Engineering
-

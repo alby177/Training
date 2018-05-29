@@ -1,4 +1,0 @@
-Please help, I am really frustrated.I have accidentaly moved the Search results tab from Online help somewhere and now it is not showing anywhere.I can only use the most relevant search result, which is opened automatically.Can you please kindly help me to restore it? It is hard to work without it.Thanks!
-
-Hi delmadord,I would suggest to solve problems like that using UI Automation technique. The idea is locate this no more visible window and execute the Maximize method of "Window pattern", making the hidden window visible.Download, install and start some utility that understand UI Automation (best and simplest is UIspy - very outdated Microsoft tool, difficult to find, but try it) or may be Inspect.exe, or may be something else.  Activate the OnlineHelp, locate "Search Results" execute pattern "Window", Method "SetWindowVisualState", Value = "Maximized". It works pretty good, both in UISpy and Inspect.exe. RegardsRoman
-

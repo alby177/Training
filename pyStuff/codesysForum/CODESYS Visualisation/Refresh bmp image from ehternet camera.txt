@@ -1,2 +1,0 @@
-hello from France,i have the same problem i create a bmp file from a ethernet camerabut i don't know how to display the camera.bmp imageit does not run throught bmp picture under codesysindeed bmp images are load only when the plc starts...even in bmp listso how can we refresh in real time?can we use an activeX but how?Who has the know-how?regards
-

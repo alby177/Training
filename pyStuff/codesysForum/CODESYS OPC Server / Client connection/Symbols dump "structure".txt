@@ -1,2 +1,0 @@
-I'm facing a serious problem with the opc symbols. When in configure symbol file I select "Export structure components" those are exported on the same "root" as the owner instance without any directories instead of nested inside the instance.Can I change this behavior? HowI'm using the ABB compact hmi 800 where I prepared some object types that need to have the opc data structure matching theirs, so I need to fix this.
-

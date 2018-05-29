@@ -1,4 +1,0 @@
-I'm trying to log actions by the logged in user. Does anybody know how to access the current user (perhaps depending on the CURRENTCLIENTID)?
-
-VisuElemsWinControls.CurrentFullUserName
-

@@ -1,4 +1,0 @@
-I try example from "core_Visualization.chm" Change user Level.It works well with the English version   But in French it does not work   For the button "cancel" I use the "Annuler" (in french, as it is proposed).When compiling, I get the error message (in french) " C0004:"Annuler" n'est pas un composant de "VISU_DIALOGRESULT"" ("Annuler" is not a component of "VISU_DIALOGRESULT").I Use CODESY V3.5 SP5, this problem existed with previous versions. I think it's a translation problem in a library or something like that.Thank you in advance for your ideas  
-
-Hi,in that case I would recommend to send an email to support,with the projectarchive and steps to repeat.BREdwin
-

@@ -1,6 +1,0 @@
-Sometimes Codesys uses the symbols from an old project, and doesnt copies the files to c:\windows\gateway files\Procedure:open projectA,configure communication setting (erase everything, and i press update). Here you will see projectA.proopen project B (copied project)re-build everythingconfigure communication setting (erase everything, and i press update).  Here you will still see projectA.proany idea??how can i fix that?  it is getting really annoying
-
-I need help with this issue!!please
-
-I think you are mixing up things.Once you create an application and set the option to create a symbol file you have the option to download the symbol file to the PLC or not. If it is downloaded the OPC server retrieves this from the PLC.CoDeSys will  (also) create the .sdb file and puts this in the gateway folder when the application is downloaded.The OPC server checks which project is in the PLC and checks if this .sdb file is in the gateway folder.This is (in my experience) only done when the (boot) application is downloaded to the PLC.By just updating something in the gateway settings doesn't update the .sdb file which the OPC server uses.
-

@@ -1,8 +1,0 @@
-Hello!There is the function "getadapterinfo" in CmpSysEthernet.library. I try to use it to get MAC of local Ethernet adapter. But i can't understand what it gets me. The field MAC, which the function returns, doesn't match the real MAC of any adapter in my PC. Unfortunately I can't find extra information of this function.  Is some other function (way) there, which can get MAC address?
-
-Windows-system?If yes  ==> start menu "Run"Enter "cmd" + Return"ipconfig" will return the IP and MAC addresses of all present network adapters.
-
-Thank's, but i need to get MAC in IEC-task for different system. Now i get it by outer ARP request and send the result back to IEC-task. But it's inconvenient way, and it doesn't work behind router (router changes PLCs MAC on its own). i need something local and universal to get MAC in IEC-code.
-
-Hi,1. you need to add/check if a component is in your runtime:Component.x=SysEthernet(runtime config)2. use the following snippet:declare:diNumber: DINT;iAdapter: DINT;stName: STRING(255);stDescription: STRING(255);aby_address:ARRAY[1..6]OF BYTE;program:getnumberofadapters(ADR(diNumber));FOR iAdapter := 0 TO diNumber DO	getadapterinfo(	iAdapterNum := iAdapter, 	pbName := ADR(stName), 	pbDescrition := ADR(stDescription), 	iBuffersize := SIZEOF(stName), 	iMacLength := 6, 	sMacAdress := ADR(aby_address));END_FORcuEdwin
-

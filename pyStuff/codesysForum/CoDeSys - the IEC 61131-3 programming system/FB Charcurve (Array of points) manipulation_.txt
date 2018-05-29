@@ -1,6 +1,0 @@
-I need charcurve, defined with FB "Charcurve" to be manipulated from touch screen. Is there any way to change values of Array of points (defined for FB "Charcurve") by variables that can be defined with fixed addresses?My goal is to control the relationship between outdoor temperature and coolant temperature and change this relationship through touch screen. Any solution is welcome. 
-
-if you do it by the manual like list AT %MW100: ARRAY [0..10] OF POINT := (X:=0,Y:=0),(X:=250,Y:=50 etc );then you can manipulate all positions the way you like.You can also do it without this point structure as it is rather difficult.i tried to put it into a bar display but that does not work with structuresYou can copy an array to a single array to visualize.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

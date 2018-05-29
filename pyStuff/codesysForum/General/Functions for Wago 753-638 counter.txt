@@ -1,6 +1,0 @@
-Do anybody knows there are function blocks for the wago up/down counter module 753-638 ?
-
-look at www.oscat.de for a lot of function blocks:if not found what you are looking for, just ask and i will give you some hints.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

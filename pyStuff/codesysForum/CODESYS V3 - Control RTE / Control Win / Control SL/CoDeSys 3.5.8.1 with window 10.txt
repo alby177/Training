@@ -1,8 +1,0 @@
-Hi All,    I have created a very simple POU with action call in FDB. after I saved re-opened the file. I got the error like below and cannot save it anymore. However, if i use ST for ACTION, there is no issue at all. Is there anybody else encounter this issue. Thanks
-
-Hi,i have tried to reproduce this with current Version (3.5.9.20)This does not happen with this Version (sure I have only Windows 7)BREdwin
-
-Hi Edwin, thank you for your reply. I received email from 3S support, and told me the issue exist in 3.5.8.1 and was fixed in SP9.Once again, thank  you. Have a nice day. 
-
-Hi All,I have tried using 3.5.9.2. I have the same error. CoDeSys V3.5 SP9 Patch 2+ and window 10.
-

@@ -1,8 +1,0 @@
-Hello,
-
-Does anyone know if it's possible to stop the VISU_TASK?
-
-I've read the manuals but it only seems that you can start and stop a task created with the functions provided in the SysLibTasks.lib
-
-I HAVE NOT TRIED THIS, but intitail thought would be to change the task from cyclic to 'triggered by event' and attach it to a global variable that you either set true or false.  Might work.
-

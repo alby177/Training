@@ -1,2 +1,0 @@
-HelloI have developing an apps to read the position of a engine, and i'm looking for a suitable hardware (GPIO are not suitable because of encoder freq). After searching about differents options, i have found that 23017 chipset would be able to read it. My question is if Codesys is supporting it?Raspberry Pi HAT - 32 I/O Port Expander - MCP23017 - I2CThanks for your help.RegardsMiquel
-

@@ -1,4 +1,0 @@
-All Devices are operational but the Master cyclically requests the SDO configuration from the slaves.   Is there a setting in the Master or Slave that causes the Master to request SDO config continuously.
-
-Hi,which SDO is requested...?If you are on Version 3.5SP7 or newer you could add CANOPEN_DEBUG asCompiler define and check the plc logger for more Information (CANopen debug messages)BREdwin
-

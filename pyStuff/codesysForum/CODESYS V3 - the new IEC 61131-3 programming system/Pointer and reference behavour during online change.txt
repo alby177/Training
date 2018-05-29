@@ -1,2 +1,0 @@
-Hi all, could anyone please help me with more information about how pointers, references and interface references behave during an online change? Can it be dangerous etc? What do I have do watch out for? I will primarily use Interfaces and References.I have read in the manual but I think it is a bit short on the explanations. There is some there about FB_init/reinit also, are these called also during online change?Thank you!
-

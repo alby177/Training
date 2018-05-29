@@ -1,2 +1,0 @@
-Hello,how to reload visualization (global for all clients) or switch to specific one via program command, please ?Thank you very much for help.---EDIT:Or how to simulate keyboard press "F5" for reload web page, because main web visu is located on same computer as CODESYS program (at Raspberry Pi).
-

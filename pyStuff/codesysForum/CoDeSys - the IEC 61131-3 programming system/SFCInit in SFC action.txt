@@ -1,3 +1,0 @@
-How can one init a sequence that's within another SFC action?
-I don't know how to declare the SFCInit bool it this case.
-

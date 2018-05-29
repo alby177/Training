@@ -1,4 +1,0 @@
-Actually I´m using TwinCAT 2.11 on a Windows7 VM with BK9000.In the past I had BK1120, but I had to change to BK9000 because of star topology.There are 4 wired and 1 wireless connection to BK9000.I´m considering to change to codesys on a Raspberry Pi with "CODESYS Control for Raspberry Pi SL".But actually I´m not able to install the the BK9000.I´m having the XML and MDP, but nothing seems to work.Tools -> Device Repository -> EthernetIP Slave .. Install .. but nothing happensWhen I´m doing it with an EtherCAT coupler it´s working and it appears in the overview.Edwin recommend BK1120 because of configuration expenses, but this is no option.The BK9000 supports ModBus and ADS.Does anybody runs a BK9000 with codesys ?
-
-_________________Kind regards, Thorsten
-

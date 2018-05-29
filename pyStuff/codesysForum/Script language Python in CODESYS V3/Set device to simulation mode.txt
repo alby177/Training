@@ -1,6 +1,0 @@
-I cant find a way to set the device, which my active application belongs to, in simulation mode. How do I get the reference to the interface IScriptDeviceObject for it.Any help is appreciated.
-
-Hi Shabroz.Gill.Shabroz.Gill wrote:I cant find a way to set the device, which my active application belongs to, in simulation mode. How do I get the reference to the interface IScriptDeviceObject for it.Search for the device object by using find() and use the method set_simulation_mode() for setting the simulation mode.For example:Code:proj = projects.primaryfound = proj.find("Device", True)assert(len(found) == 1, "No or too many devices with the name 'Device' found")dev = found[0]dev.set_simulation_mode(True)assert(dev.get_simulation_mode() == True, "Simulation not active")BRMartin
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
-

@@ -1,8 +1,0 @@
-Hello,For my project, I have to convert GPS coordinates stemming from a GPS weft to X and Y coordinates. For that, It seems that I need an algorithm of GPS projection system. Is a block or library exists in CoDeSyS and doing that work?Thank you for you help!Romain
-
-I'm not a CoDeSys expert but I  don't think there is such a thing in the default set of libraries and I haven't heard of it anywhere else either. Not much of help to you but it's an answer anyway.
-
-Hi,I would check the OSCAT libs (either download the from store or oscat.de)the libraries are available as .library so you could extend one of the function in there to your demands.Switch to professional to work with libraries. (Tools-Options-Features)BREdwin
-
-Thank you for your answers, but I'm not sure that it can help me. I did some research and it seems that i must do a projection (datum WGS84 to UTM or RGF93 to Lambert) in order to obtain latitude and longitude in pixels, but I don't find lot of clear explanations for the moment.Best Regards,Romain
-

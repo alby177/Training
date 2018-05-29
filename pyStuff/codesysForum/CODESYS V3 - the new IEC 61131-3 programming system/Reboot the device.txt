@@ -1,4 +1,0 @@
-Hi there,how can I reboot the device?Any standard library function available?We use Berghof DC2xxxThank you in advance.
-
-1. Instal WinSCP.2. Connect with DC2007 (protocol SCP, default login/pass - root/root).Attachment:28-11-2017 6-48-18.png3. In folder /home/plc/applications you find file CODESYSControl.cfg. Open it and add next block:Code:[SysProcess]Command=AllowAllAttachment:28-11-2017 6-45-42.png4. Open terminal and use command busybox reboot to save and reboot PLC.Attachment:28-11-2017 6-47-37.png5. In CODESYS add library SysProcess.Attachment:28-11-2017 6-53-03.png6. Use it in code next way:Attachment:28-11-2017 6-54-13.png
-

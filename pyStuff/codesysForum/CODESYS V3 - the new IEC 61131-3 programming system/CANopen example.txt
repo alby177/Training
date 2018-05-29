@@ -1,6 +1,0 @@
-Hi,I try to open a 'CANopen Example' project available in CODESYS Store. But it seems like there are only an .xml and a .manifest file in the archive. Size of the zip-file is indicating that there is more, but it's hidden or smth.Just to mention, it went fine with other free downloads, where I find library and other files in the corresponding archive.Has anybody here downloaded and used that example? Thank you!
-
-Problem solved.Use Chrome for download if you need that example.Download of 'CANopen example' with Internet Explorer didn't work correctly.
-
-Hi,yes - seems to be a IE problem.I would recommend to do it that way.( see screenshot by using CODESYS shopping cart icon)This works always and you have the benetfit that you could use the packagemanager to check for new versions.BREdwin
-

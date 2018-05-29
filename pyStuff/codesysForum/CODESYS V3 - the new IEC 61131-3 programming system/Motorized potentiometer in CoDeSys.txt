@@ -1,6 +1,0 @@
-Is there a library that contains a function for motorized potentiometer?
-
-Here is a FB you can use where the input priority is (reset, inc, dec) (I only lightly tested it - so double check it):Code:FUNCTION_BLOCK MotorPotVAR_INPUT   Inc   : BOOL := FALSE;   Dec   : BOOL := FALSE;   Reset : BOOL := FALSE;   Rate  : REAL := 0.1;END_VARVAR_OUTPUT   Cmd : REAL;END_VARVAR CONSTANT   MIN_CMD : REAL := -100.0;   MAX_CMD : REAL := 100.0;END_VARIF Reset THEN   Cmd := 0.0;ELSIF Inc THEN   Cmd := MIN(Cmd + Rate, MAX_CMD);ELSIF Dec THEN   Cmd := MAX(Cmd - Rate, MIN_CMD);END_IF
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-

@@ -1,2 +1,0 @@
-Hi , I have noticed that on the latest version of Codesys (SP9 Patch4) there is a strange behaviour of compiler.It's just reporting  that there is no defined outputs of device I have created But code can be compiled and download to target. It is jus a bit annoying as sometimes auto-declaration window is trying to force me to declare this output..It's all good when I set my compiler to the version 3.5.9.20  ( same problem on 3.5.9.30).Is that a bug?  ThanksLukasz
-

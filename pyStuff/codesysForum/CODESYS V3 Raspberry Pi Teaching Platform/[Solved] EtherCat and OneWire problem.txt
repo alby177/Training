@@ -1,4 +1,0 @@
-When I tried to add Onewire temperature sensor DS18B20 in my configuration including Beckhoff EtherCAT coupler, EtherCAT stops communicating entirely. EtherCAT works fine without onewire master.What could be the problem? Maybe task interval?
-
-[Solved] Sorry had to create low priority task and set that task in Onewire mapping (did not see viewtopic.php?f=21&t=6258&hilit=onewire+modbus)
-

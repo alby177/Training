@@ -1,4 +1,0 @@
-I want to port the Codesys RTE on PowerPC micro . Can I have any comment  as , how much memory will it consume ?
-
-I have internal flash of 1.5 MB ? Is that sufficient ? Or should I go for external EEPROM ?   
-

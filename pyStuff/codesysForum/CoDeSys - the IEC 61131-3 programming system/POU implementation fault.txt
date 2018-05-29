@@ -1,4 +1,0 @@
-Hi,I have a problem to build my old project after re-installing CodeSys 2.3 on my PC.Here comes a part of the listing with errors:**********Implemetnation of POU 'NetVarManager_CAN'Error 4001: NetVarManager_CAN (7): Identifier 'INITNETVARMANAGER' not definedError 4267: NetVarManager_CAN (26): A function block call requires a function block instanceImplemetnation of POU 'NetVarPDO_Rx_CAN'Error 4001: NetVarPDO_Rx_CAN (3): Identifier 'INCRXPDOCOUNTER' not definedImplemetnation of POU 'NetVarPDO_Rx_CAN'Error 4001: NetVarPDO_Tx_CAN (3): Identifier 'INCTXPDOCOUNTER' not defined*********Occures when building the project.Can anyone help me how to fix it?EDIT: added listing
-
-Problem solved.I had to update libraries, after that all worsk fine.Topic can be closed.
-

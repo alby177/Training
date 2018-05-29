@@ -1,4 +1,0 @@
-Where we can found some literature for programming CodeSys 3?BR,Mladen
-
-Hi MLaden,directly on the 3S download part.Programming part is quite the same than Codesys V2.3You have some first steps too!http://www.codesys.com/support-training/self-help/codesys-manual.htmlBest regards
-

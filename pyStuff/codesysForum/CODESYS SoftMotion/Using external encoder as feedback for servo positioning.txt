@@ -1,4 +1,0 @@
-Hello, I am trying to set up an external encoder to use as position feedback. Could anyone show me how I would do this?
-
-This has already been discussed, refer to this topic:http://forum.codesys.com/viewtopic.php?f=6&t=6159
-

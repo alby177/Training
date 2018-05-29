@@ -1,6 +1,0 @@
-Hi All,We have some confusion about the directory of the codesys files in Raspberry Pi. We see 2 different directory where the codesys files is stored./root/PlcLogic/var/opt/codesys/PlcLogicWhich one is really used? How can we correct this?Thank you.
-
-Hi,in Versions < 3.5SP11:/root/PlcLogicin Versions >= 3.5SP11:/var/opt/codesys/PlcLogicAdditional you have since 3.5SP11 a splitted configuration file  /etc/CODESYSControl.cfg and /etc/CODESYSControl_User.cfgwhich then hold your userparameter like com Settings, device name, bootapplication name etc.... (not loose them on every runtime update as it was before)BREdwin
-
-Hi Edwin,It is clear, thank you.
-

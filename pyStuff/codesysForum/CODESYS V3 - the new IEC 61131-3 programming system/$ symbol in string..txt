@@ -1,4 +1,0 @@
-I need to send string that looks like for example: '$ Login, 123'How can i do that ?
-
-JeloneK wrote:I need to send string that looks like for example: '$ Login, 123'How can i do that ?Try this: '$$ Login, 123'
-

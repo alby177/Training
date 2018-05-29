@@ -1,6 +1,0 @@
-Dear all,I have a problem about visualization. When ı open the visualization toolbox, some tool like switches, buttons become invisible and visualization running slowly . Sometimes code dont respond and crash. Other problem about visualization is when ı click tool-> visualization styles repository , ı get an error.How can ı solve this problem. I can not working on visualization efficiently because of the that errors. I am waiting  for your quick reply.Best regards.
-
-Dear all,The problem I mentioned above is that it occurs in two separate computers. Windows 10 installed on two computers. I tried it with old versions of Visulization but I'm getting the same error. How can ı solve this problem.Best Regards.
-
-Dear All,I have solved problems. Visualization Manager->Selected Style-> Style15. I need to change the styleBest Regards
-

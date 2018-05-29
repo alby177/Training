@@ -1,8 +1,0 @@
-HelloI want to use Unipi with codesys, wish library to use for 8 relay (MCP23008  port expander)?BR bot
-
-I am hoping for the same thing.  It shouldn't be impossible to use some of the similar drivers and adapt it to unipi-the-universal-raspberry-pi-add-on-board.
-
-I have just released a package of drivers for UniPi in the CODESYS store available for free download - See http://store.codesys.com/codesys-for-unipi.html
-
-CODESYS for UniPi 1.0.2.0 is now available for free from the CODESYS store.This has full support for the UniPi 1.1 board, and the EMO-1W8R and EMO-4R4DI expansion modules (The SSR versions should also work using the same drivers.
-

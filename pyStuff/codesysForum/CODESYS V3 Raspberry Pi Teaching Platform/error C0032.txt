@@ -1,6 +1,0 @@
-Hello,today I downloaded RPi library and instaled it on Codesyswhen I tried to launch the example I got such picture 243 errors main error C0032what I'm doing wrong? 
-
-If a type is unknown, check the "library manager". Most of the times, there is simple a specific library version missing.Gesendet von meinem LG-H870 mit Tapatalk
-
-Hi,i agree to Ingo,but usually these kind of problems could be solved on using existing/example projects by:viewtopic.php?f=22&t=5641#p100831. Update the plc device by rightclick in the device tree to current Version (if feldbus stacks are in the Project update them too)2. set current compiler Version3. set current visuprofileBREdwin
-

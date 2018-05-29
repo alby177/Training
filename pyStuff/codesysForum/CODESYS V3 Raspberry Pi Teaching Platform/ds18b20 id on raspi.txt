@@ -1,6 +1,0 @@
-HII would like to put as parameter the id of a ds18b20 sensor, to be able to change it later if it's broken.For example in my project the ds18b20_1, id "28-xxxxxxxxxxxx" what is the syntax of this parameter and the text to put in the webvisu screen (i tried ds18b20_1.owuID, bat its not ok)Thanks
-
-Hi,check this example here:viewtopic.php?f=23&t=6247&p=16920#p16920BREdwin
-
-Many thanks for your replyI tried it, it's ok for reading the idbut i doesnt find how reading the value rTemp corresponding to the sensors[img][Capture1.png[/attachment]]
-

@@ -1,4 +1,0 @@
-when start my PC,the "CoDeSys Control Win SysTray" Icon will appear on the task bar of the desktop,but the status is stopped. Click on the icon,the pop up menu will appear,then I click the the "start PLC",but I can not start it.
-
-Some things I would try:- Login as Administrator- Remove the application.app and application.crc from the (default) folder: C:\Program Files\3S CoDeSys\GatewayPLC\- Install the latest version- If it still doesn't work, re-install CODESYS
-

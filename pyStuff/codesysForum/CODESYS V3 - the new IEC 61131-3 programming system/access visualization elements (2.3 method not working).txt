@@ -1,2 +1,0 @@
-Hello,In version 2.3, it was possible to use the name of an element (Programmability -> Object name) to access all the properties (bInvisible, nAngle, etc.) of the object from the code. I can't find a similar function in V3.It was also possible "to link" this visualization object like this :Code:MyVisObj :VisualObjectType;MyVisObj := Name_of_Visualization_Object;(* and after use something like *)MyVisObj.dwFillColor:=dwColorHBlue;Is there an equivalent type for "VisualObjectType" ?Thanks
-

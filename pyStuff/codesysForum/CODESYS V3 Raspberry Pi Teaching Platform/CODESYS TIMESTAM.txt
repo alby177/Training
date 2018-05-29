@@ -1,2 +1,0 @@
-Witam,I would like to get actual time and date next convert it to timestam code.How to do it in codesys 3 ?
-

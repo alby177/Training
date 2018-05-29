@@ -1,6 +1,0 @@
-I have my suspicions that this doesn't work but I'd like it confirmed from Codesys before we dig too deep into this.When I have a 5-axis trafo where the tool originates from the center of the inclination/azimuth (pic1), the MC_TRAFO5 is working correctly.This is the normal case in most machines and also what is depicted in the online help.Pic1 - Centered toolHowever, in this case, the machine has a tool that originates from a non-center part of the inclination/azimuth (pic2), and I can't get it to work correctly.The values that are output from MC_TRAFO5 seems to be assuming that it originates from the center.Pic2 - Non-centered toolRegards,Kim HansenBeijer Electronics AB
-
-Hi Kim,you are right the 5-axis trafo does not support this at the moment.But it would be possible to execute before you call the Trafo an own fb which moves the TCP for this Offset.The direction of this 'pre-transformation' depends on 'azimuth' and 'inclination'If you need this for an real project and you have problems on implementing this,please contact us by our Support email.BREdwin
-
-I Kim. In my machines i have the same problem as you. I solved the problem modifying g codes before pass its to systems.Be carefull with circles with a radius smallest than descenter size. If you have a rotating tool in tcp, yoy have to invert circles sense
-

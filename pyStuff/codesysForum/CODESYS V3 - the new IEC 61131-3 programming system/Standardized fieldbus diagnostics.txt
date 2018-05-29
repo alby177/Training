@@ -1,6 +1,0 @@
-In the CoDeSys news letter about SPS-convention there is section about CoDeSys V3.5. (http://www.3s-software.com/se_data/_fil ... E_web.html)As one new improvement there is a mention about "Standardized fieldbus diagnostics", among many other new fieldbus topics. However, I didn't find any new libraries, documentation or improvements about fieldbus diagnostics? It would be a great feature, atleast to be able detect missing nodes or nodes with active error with a simple & standardized way.Did I miss something or will the diagnostics features be added in the Service Packs?
-
-Hi,this must be the new CAA device diagnosis library. This lib provides functions and interfaces to iterate over device nodes to get status informations about them. I've never used it, only read the specification some time ago.
-
-Hello,Is this CAA device diagnosis library really functional? I did try to use it but I can't get it work. GetRoot() function returns null, getIDeviceInstByIoAddr throws exception 0x51 and so on.. I also tried to look if some fieldbus devices would implement these INode/IDevice/IBus interfaces but didn't find any hints on that.I mainly tried to test it with profinet.
-

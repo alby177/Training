@@ -1,4 +1,0 @@
-Hi all,I plan to build a hardware that support CoDeSys V3.What CoDeSys software I need to have to enable uC for CoDeSys V3. Any suggestion?Last time using Atmel and Cypress for all the project and eat a lot of time to do the programing and debugging. Need to drive LCD, sometime link to NI system or customize visual studio application for remote control. Now after using the CoDeSys with Wago750-881 feel like simple a lot for the programing.   I cannot use standard automation hardware for some of my project like the laser detector, laser control and other project they are to big to implement for the experiment use. Please help...
-
-Some update...I found ready make hardware for CoDeSys3 from Hilscher and BECK-IPC. Nice  Anyone have use netX100/500?-200MHzAnyone have use SC243-IEC3?-400MHzBoth look good for the specification but not sure for the price Cannot wait to get some of those and have a try  
-

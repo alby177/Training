@@ -1,2 +1,0 @@
-Dear all,I'm currently using 750-880. I would like to know how to read the data from SD card (750-880) and store it into array.
-

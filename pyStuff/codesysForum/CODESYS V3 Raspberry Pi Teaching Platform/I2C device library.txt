@@ -1,4 +1,0 @@
-Hello,I'd like to make a library to my I2C device and I have question how to add line in configuration window of device like in attachment ?
-
-Hi,this you need to add in the device descripton:"c:\Users\<YourWindowsName>\CODESYS Control for Raspberry PI\3.5.11.10\Devices\MCP23S17.devdesc.xml" "c:\Users\<YourWindowsName>\CODESYS Control for Raspberry PI\3.5.11.0\Libraries\SPI_MCP23S17.library" Then you need to extend the library to read the paramter.After changing adding lines in the devicedescription the steps should be:Install the devicedescription to the device repoditory and then execute update device by rightclick in the device tree -> update device (then the edited and Change devdesc is used)BREdwin
-

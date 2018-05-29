@@ -1,8 +1,0 @@
-Hello,
-
-I declare this variable "Message: ARRAY [0..65535] OF BOOL;" in the GVL of my project and I would like to set at one, for example, "Message[14902]" in the name of an associated action in a SFC graph. But the compilation goes in error "Message[14902] isn't a valid identifier !".
-
-Does someone can help me ?
-
-Thanks for you help by advance.
-

@@ -1,6 +1,0 @@
-Hello, I'm currently work on a project and I want to display dynamic images. My problem is that I need the same image several times but I don't know how much, it depend of the utility (it can be 4 or 100!) So, I would like to instanciate an image rather than create 100 images on my application. Is it possible to instanciate an image from the programming?Thank you for you help!
-
-Hi,Currently there is no way to create and include the VisuElements dynamically.You have to define the maximum configuration and switch the unused elements invisible.BREdwin
-
-Ok thank you for you quick answer. I will do that so.Best Regards
-

@@ -1,4 +1,0 @@
-My visualization looks different from build to run? The build screen has all elements but the run screen is missing elements. I don't know whyAttached is a screen shot of the 2Would appreciate any assistanceI thought maybe I hit a max number of elements for Viz or something
-
-Hi,should not happen could we get the projectarchive to fix this?BREdwin
-

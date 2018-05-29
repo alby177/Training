@@ -1,6 +1,0 @@
-Hello,I just finished programming a project under codesys V2.3. I saved it and created a new project. However, when I went to look at my finished project, I realized that the new project had actually saved under the finished one.I've lost over 10 hours on this project, and would like to know if it is possible to get my finished project backI hastily await your response. Thank you in advance.Nicolas
-
-depending if you have save before compile and autobackup.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

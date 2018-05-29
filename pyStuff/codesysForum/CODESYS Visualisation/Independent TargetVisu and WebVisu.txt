@@ -1,8 +1,0 @@
-Hello,I am using a XV100 PLC-Display from Eaton and I am wondering if it is possible to have 2 different visualizations, one for the TargetVisu and another one for the WebVisu, I made some test and if I create a TargetVisu and a WebVisu, both are completely linked so when I change the screen in the web it is changed in the TargetVisu and every visualization is accessible in both targets.This is a handy feature in some environments but I have an application where I want to have 2 different visualizations in TargetVisu and WebVisu, is this possible?Thanks in advance.Best Regards.
-
-Hi,i would recommend to give this store exmample application a try:http://store.codesys.com/client-indepen ... ching.htmlBREdwin
-
-Hi,Thank you, I will try it.Best Regards.
-
-Hi,I tried the example and it works, I need to study it more deeper to achieve what I want but the important thing is that it seems that Codesys has the tools for the task.Thanks.Best Regards.
-

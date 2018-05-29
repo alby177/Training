@@ -1,4 +1,0 @@
-Hello, I'm currently looking into the possibility to make custom graphical components for CoDeSys V2.3. Anyone who knows if this is possible?
-
-I've looked att the ActiveX import component, but it seems as if the comunication is oneway. It would work for importing a videostream or so but if I want more functionality from my controls.
-

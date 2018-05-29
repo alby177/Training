@@ -1,2 +1,0 @@
-Hi Guys,I am trying out Control Win V3 with profinet slave device. I am not able get it running. Could anybody give me some advice. Thanks
-

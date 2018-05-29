@@ -1,6 +1,0 @@
-I have written a program which uses Moeller PLC to control simple intersection with 6 traffic lights (2 of them control left-turning). Now I'd like to add a possobility to switch all the lights to 'yellow' when a button is pressed. How can I add this functionality ? I was trying to introduce some new boolean 'ORANGE' variable but how to connect it ? Program written in Codesys 2.3.5 from Moeller website.
-
-use a SEL switch on all lights for normal operation and for emergency orange.this way the status is not important.and make a blinker in it.btw your program does not run with me, probably missing a librarie
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

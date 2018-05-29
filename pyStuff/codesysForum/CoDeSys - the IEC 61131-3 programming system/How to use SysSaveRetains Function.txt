@@ -1,2 +1,0 @@
-Can someone explain how the SysSaveRetains block works? What type of file needs to be called at stFileName? Can't seem to find anything useful online or in the manual about this. Whatever filename I put, it gives me a -1 reading, which if I understand means that it could not locate the fileThanks,Martino
-

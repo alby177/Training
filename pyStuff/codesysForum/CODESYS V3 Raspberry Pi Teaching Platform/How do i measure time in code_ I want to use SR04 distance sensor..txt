@@ -1,6 +1,0 @@
-Hello!I wonder how i can measure time in code. For example.Code:time1 := clock time;Operation..... or some stufftime2 := stop clock;time := time2 - time1If that is possible, i can use the digital SR04 distance sensor.Here is the data sheet about the sensor. Look at the timing diagram. http://www.micropik.com/PDF/HCSR04.pdf
-
-Maybe like this ?Attachment:Function_Block.png[url][/url]Here the result is in time() formatFrank
-
-frankienones wrote:Maybe like this ?Function_Block.png[url][/url]Here the result is in time() formatFrankThank you. I will test it later today and give you a reply.Edit: it working.
-

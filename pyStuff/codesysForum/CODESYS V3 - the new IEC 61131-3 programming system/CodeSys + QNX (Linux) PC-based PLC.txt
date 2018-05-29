@@ -1,6 +1,0 @@
-Hello!  I have PLC based on  Intel® Celeron® 827E 1.4 GHz, single-core CPU. OS is QNX or Linux. Can I run CodeSys runtime on this PLC. Where can I find information on this topic?
-
-Hi.Look for the SoftPLC of the CODESYS Runtime on the CODESYS website. Also have a look at the brochure in the Download section.A firmware image for the Raspberry Pi with the CODESYS Runtime (2h-Demo) is available through the CODESYS store.Regards,Martin
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
-

@@ -1,6 +1,0 @@
-Can anyone give me some detail document about how to use the function "SMC_GroupJog" (FB) , "SMC_GroupPower(FB)" or others which is not detailed in PLC Open part 4    
-
-Hi,see here:https://help.codesys.com/webapp/_sm_car ... on=4.3.0.0BREdwin
-
-Thank you, kindly   
-

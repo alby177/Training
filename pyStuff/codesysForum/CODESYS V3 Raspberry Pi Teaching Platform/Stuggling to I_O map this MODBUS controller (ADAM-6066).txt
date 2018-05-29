@@ -1,6 +1,0 @@
-Hi guys,I've managed to map the I/O for an eDAM-5029 unit. However, I'm having trouble replicating a function code 4 & function code 6 command structure for the ADAM-6066.Here's how I did it for the eDAM-5029 unit:If you have any idea as to what I should put for the offset and I/O mapping values that would be fantastic as I've been biting my nails over it.Here's the manual for the ADAM-6000 series. The MODBUS mapping datasheet for ADAM-6066 is on document page 233-34. http://downloadt.advantech.com/ProductF ... al_Ed5.pdfMany thanks.
-
-Hi,On EDAM-5029 you used function 03 and 04. On ADAM-6066 you have to use functions 02 for DI and 05/15 for DO.Try this configuration:BRZdenko.
-
-You sir, are a gent and scholar!Cheers man.
-

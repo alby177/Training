@@ -1,6 +1,0 @@
-Hi All,I am a beginner so I am struggling under very simple problem. Unfortunately, I can't seem to resolve this issue I know how to change shown screen to other using control's configuration like button click event.However, I couldn't find the way to change current visualization with other using CODESYS library function.Are there any functions I can change shown screen such like ChangeScreen() or ShowScreen(), and so on?Thank you in advance.Chris,
-
-hi,probably a good example is:http://store.codesys.com/visualization-switching.htmlRegardsplcmax
-
-Hi plcmax,Thanks for your help. Yes, it is definitely good example .Cheers.
-

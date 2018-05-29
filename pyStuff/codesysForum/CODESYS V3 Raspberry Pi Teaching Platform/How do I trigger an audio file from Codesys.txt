@@ -1,2 +1,0 @@
-Hi FolksAs per the heading, is it possible to trigger an audio file to play from within codesys?Also is there a random number generator? I am programming in Ladder and need to generate a random number between 1 and 2.7 seconds to load into a timer.Many thanks S
-

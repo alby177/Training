@@ -1,8 +1,0 @@
-please tell me anyone  how to use analog i/o in codesys,with example
-
-Hi,
-there is a little free library at http://www.geisler-controls.de, however, it is given in German only. Time to add an English documentation and comments ...
-Regards
-
-It varies from ECU to ECU, I suggest you check the documentation relating to your hardware.
-

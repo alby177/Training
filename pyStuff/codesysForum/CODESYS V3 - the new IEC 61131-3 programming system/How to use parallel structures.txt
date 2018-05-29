@@ -1,6 +1,0 @@
-Download this program and running correctly , why this parallel structure does not execute？
-
-I believe there was a bug reported for parallel branches using EN/ENO not executing.  You will have to make a workaround.
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-

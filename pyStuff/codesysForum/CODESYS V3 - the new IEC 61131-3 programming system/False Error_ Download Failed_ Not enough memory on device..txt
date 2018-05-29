@@ -1,7 +1,0 @@
-Recently during development of a project I attempted to create a 50 some Array of string(1000)s. This caused a memory error in which it stated "Download Failed: Not enough memory on device." I reverted my change and attempted to download with the old version of the code which compiles and would normally load to the project. The error still became present on download. :/ I formatted the panel, changed my project to be of a smaller size, still this project would not download to the panel. Next I attempted to load the project to a panel that was exactly the same. It loaded! Same project, same settings, same type of panel!On the panel with the memory error, I attempted to download a blank project. That compiled and loaded. Now back to the my original project, I attempted to download. Did not load with the same error.Not sure where else to look or change settings for this one particular panel. Any ideas out there?
-
-Hallo,you must clean your project. Sorry, I have a german Codesys only, but with the picture you can find the right place.Then compile and downöoad your project again.I hope, it can help you.BRThomas
-
-_________________Vielen Dank
-grauerwolf
-

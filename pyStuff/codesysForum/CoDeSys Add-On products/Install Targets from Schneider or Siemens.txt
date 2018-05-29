@@ -1,6 +1,0 @@
-HI. I have "CoDeSys 2.9 provided by Festo", and only have targets for install of course from Festo. Do you have others PLC of other brands to install? For example Modicon Momentum, or Siemens S7-300 ?Thanks! from Argentina.
-
-Hi,even if CoDeSys is an open system, it is not possible to program any PLC with that tool. This has commercial reasons (yes - the company behind CoDeSys wants to earn money   ), but of course technical reasons:in order to program a device with CoDeSys a special runtime system has to be installed on the PLC which cooperates with programming sysem and thus enables the download of the compiled application code, the debugging, the fieldbus access and much more. This means that devices without that runtime system cannot be programmed with CoDeSys, such as PLCs from Siemens and some others.On the reference list of CoDeSys customers (http://www.3s-software.com/index.shtml?en_Company_ref) you will find a list of all customers that offer programmable devices with CoDeSys.
-
-_________________Roland WagnerModerator
-

@@ -1,4 +1,0 @@
-Hi all,I follow this help document https://help.codesys.com/webapp/rAlrUyiOs68zj7UlZdXT0yImTJI%2FSet_Attribute_Single;product=EtherNetIPServices;version=3.5.12.0 to test Ethernet/IP FB. But I can not build successful. Any one knows what wrong? Thanks.(* CIP Data type for string with a length of max. 64 chars *)TYPE STRING64 :STRUCT   uiLength  : UINT;   sString   : STRING(63);END_STRUCTEND_TYPEPROGRAM PLC_PRGVAR    setAttributeSingle : ENIP.Set_Attribute_Single ;    strHostnameToSet   : STRING64 := (sString := 'NewName');END_VAR
-
-Daniel are  you putting this all in the PLC_PRG POU? For the part:Code:(* CIP Data type for string with a length of max. 64 chars *)TYPE STRING64 :STRUCTuiLength : UINT;sString : STRING(63);END_STRUCTEND_TYPEYou need to put this all in a DUT object. Right click your application->add object->DUT then select a tructure and name it STRING64. So it would look like:Attachment:Set Attribute Example.PNG
-

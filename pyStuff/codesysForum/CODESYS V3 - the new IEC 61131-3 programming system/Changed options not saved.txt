@@ -1,2 +1,0 @@
-I changed the LD editor options (see attached photo) but each time I close the software and start it again all the options I changed reset and I have to change it again.How can I save it permanently?
-

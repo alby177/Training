@@ -1,6 +1,0 @@
-hi, I'm new in this and  i have a question about timer. Now I have a XC-201 of moeller and I want to know wich  will be the range of time that handle the timer and if is possible to get a time of 0.1ms
-
-a timer that short is in all plc type computers impossible, in fact in all digital systems this will be a problem, solve it with a timer NE555 for example, give it an analog value and you can change the timing.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

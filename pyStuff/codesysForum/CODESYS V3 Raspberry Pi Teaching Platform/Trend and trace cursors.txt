@@ -1,2 +1,0 @@
-Hello everybody,I'm testing Codesys v3.5.8.0 in a Raspberry Pi 2 and WebVisualization.I've a trend and a trace recording temperatures and I'd like to use the cursors to read the value in a specific moment. So I marked the 'Show cursor' check box in Trend and Trace properties.The result in run time is:- In the Trend, I couldn't see the cursor in any moment.- In the Trace, I can see the cursor and it moves horizontally but the vertical line is moved quite a lot on the right of the real mouse position.Anybody knows the solution?Thanks in advance.Josep
-

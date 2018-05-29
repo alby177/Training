@@ -1,8 +1,0 @@
-My situation:
-
-PLC_PRG (is CFC) when I call program, it was written in SFC all its steep are   defined as var_output without INIT. As soon as I try put in output, program doesn't work. When I try put flag SFCInit program work, but not pointed at this step. 
-
-Where is the problem?
-
-Paul
-

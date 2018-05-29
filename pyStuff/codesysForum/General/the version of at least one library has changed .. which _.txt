@@ -1,6 +1,0 @@
-Hi,if I copy a Codesys 2.3 project from PC1  to PC2, and then open it on PC2, I quite often see a message like "The version of at least one library has changed.." or alike.Sometimes after such message, a project that compiles without errors on PC1, compiles with errors on PC2.Is there a way to know the versions of which libraries exactly do not match ?Indeed I can find this the hard way, comparing .lib versions / sizes / timestamps etc. But for a project with lots of .lib's that's quite time consuming procedure. Is there an easier way?Thanks
-
-version numbers are in the library window.and why use so many libs?yes i realise when using communications they have for every bit another lib.  
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

@@ -1,6 +1,0 @@
-Hi All,I have done various tests with ethercat on the raspberry Pi and codesys, including virtual drives etc.However I would like to ask how to use a Beckhoff Ax5000 series drive and Am8032 Motor.I have installed the Device repository and scanned the system and found the drive unit.But at this point I am stuck, the ethercat does't run on the servo drive and I am not sure how to tell codesys the motor type.Any pointers would be a great help thanks.
-
-Hi,you need to do two things for this:1. Use a rt_preempt patched Linux Kernel/ SD Image on the PI2. You need to have/use Twincat to export the SDO startup parameter (which contains drive and motorconfiguration) set them up in twincat / Export them as XML file and import them in CODESYSsee screenshot.BREdwin
-
-Thanks Edwin However I didn't see a screen shot suggested in your post
-

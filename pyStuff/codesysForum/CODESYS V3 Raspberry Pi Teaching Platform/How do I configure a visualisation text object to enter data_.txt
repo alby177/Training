@@ -1,8 +1,0 @@
-Hi Folks, can anyone please point me to an example of how to enter a value into a variable from a visualisation screen? I can set up a slider to do it but can't seem to find out how to type in a value!Thanks S
-
-Check the help files and the codesys store (http://store.codesys.com/visu-on-screen ... __store=en).  You can make a rectangle be an input device.  Instead of toggle, you can tell codesys to open a keyboard.
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-
-Thank You Scott
-

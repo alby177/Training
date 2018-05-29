@@ -1,2 +1,0 @@
-I created a compiled library to use in a SEL3555.Importing the library into the RTAC software fails with the error "GenerateFlow, GenerateBP,GenerateBP2 is not a valid value for StatementFlag."I can import this as just a library with no problems, but not as a compiled library.Any help would be greatly appreciated.
-

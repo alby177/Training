@@ -1,2 +1,0 @@
-Does any one know if it is possible to view the program from a file which has been upload using the ftp program downloader. example program       abc.H86
-

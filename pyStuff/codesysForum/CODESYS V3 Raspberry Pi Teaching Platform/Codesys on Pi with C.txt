@@ -1,4 +1,0 @@
-Hi,Is there any thoughts on adding your C integration of Codesys into the Pi version?  This might be very appealing to a lot of people perhaps coming into the Codesys environent for the first time from the Linux world and Pis.
-
-I would like this as well.So just adding a comment to show interest.
-

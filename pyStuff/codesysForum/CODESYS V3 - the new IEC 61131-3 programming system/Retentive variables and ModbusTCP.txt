@@ -1,4 +1,0 @@
-Hi!I'm new to this forum so forgive if I posted this wrong.I have a Magelis GTO display connected to a PAC320 PLC over ModbusTCP. I have a few settings stored in variables in the PLC that I want to be retentive. I've put them in a persistant variables list and flagged them with RETAIN and PERSISTENT. Every time I brake the power and then switch it back on again the display overwrites the old values. How can I resolve this?Best regardsChristian Lundahl
-
-I resolved this by storing each variable in the HMI in a separate variable copy on data change. I then load the values from the copies on startup.
-

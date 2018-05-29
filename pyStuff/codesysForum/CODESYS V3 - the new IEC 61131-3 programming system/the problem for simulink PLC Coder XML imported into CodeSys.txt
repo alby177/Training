@@ -1,6 +1,0 @@
-I ask you, I used simulink PLC Coder generated XML file for CodeSys V3.3 version, when imported into CodeSys inside, why only import (FB), but global variables and the device can not be imported.
-
-help~！
-
-does anyone help me?
-

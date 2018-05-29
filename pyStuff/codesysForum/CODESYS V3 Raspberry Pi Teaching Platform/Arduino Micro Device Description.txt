@@ -1,2 +1,0 @@
-Is it possible to edit te ArduinoUNO.devdesc from this topic viewtopic.php?f=23&t=5872&p=10868#p10868 to work at the same way with Arduino MiCRO?
-

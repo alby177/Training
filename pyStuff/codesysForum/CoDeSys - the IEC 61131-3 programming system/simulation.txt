@@ -1,6 +1,0 @@
-hi everybodyi create a program by codesys i want to simulate this...first how can i do ?second : i go to online > simulation then online > logit...now i want change variable but i do't understand how..?!?i write this program by scl language thank...naeimi
-
-What is SCL?yes you put a check on simulationthen you go onlinenow you can change and check all variables used in program:double click on any variable and a popup will appear to change it. (a bool will change statusthen run the program. name your program PLC_PRG (yes i know about tasks but to early to ngin on this.)first program in ST:output1:=input1;it will ask for type use bool (standard so just hit enter)run the program and doubleclick on input1
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

@@ -1,6 +1,0 @@
-Hi, I am developing some Unit Test and if I use the property "LanguageModelAttribute = qualified-access-only" inside my test library then the test will fail.It seems that the Unit test can not work with the namespace/prefix, is this behaviour correct?Thanks in advanceMark
-
-Hi.Mark_V3 wrote:Hi, I am developing some Unit Test and if I use the property "LanguageModelAttribute = qualified-access-only" inside my test library then the test will fail.It seems that the Unit test can not work with the namespace/prefix, is this behaviour correct?Yes, that is the current behaviour. The problem was reported a few weeks ago. See TM-258. The fix will be available with the next release. Unit then you have to remove the property from the Project Information if you want to use unit tests from a library.You also have to add the library to the list "Libraries to test" in the IEC Unit Test element of your test script.BRMartin
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
-

@@ -1,2 +1,0 @@
-Hello forum members. I recently started with develoment in codesys, thus I'm using version 3.5 sP1 patch1I am using the control WIN under windows 7I currently try to use recipes. I downloaded the recipe management from Codesys store and try to use LoadFromAndWriteRecipe method.but as soon as my application calls this method, an exception occurs.I give you the log file and my demo application in attachment. I can't find out what i'm doing wrong.I would appreciate any help. thank you in advance
-

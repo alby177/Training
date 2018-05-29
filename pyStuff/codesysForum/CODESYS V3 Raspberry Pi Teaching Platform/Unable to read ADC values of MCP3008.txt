@@ -1,8 +1,0 @@
-Hello, I have previously read ADC values on Codesys successfully. After some playing around to the point of no longer being able to read the values I uninstalled Codesys and re-installed to start from scratch again using the MCP3008 example library.I still cannot read the values as it displays 0 constant.What is odd, I can read the values in fine through the Adafruit library on Python using Hardware SPI. One thing to note, no changes have been made to my connections.Please can someone help.RegardsKris - P.s I am a beginner to all of this.
-
-Hi,are you using this example application?"c:\Users\<YourWindowsUserName>\CODESYS Control for Raspberry PI\3.5.11.x\Examples\MCP3008Temperature.project" This should work without problems.BREdwin
-
-Hi Edwin, Apologies for the delay in getting back to you. Yes, I am using the MCP3008 project found in the examples.It worked previously until I tried updating to a newer version of Codesys.What I have now noticed when I deploy a new runtime I get an error message 'Error output: codesyscontrol.bin: no process found. Could this explain what I am experiencing?Thanks again, Kris
-
-Hello Kris,I don't think, that your problem is related to this error message.But is it possible, that you used the second SPI port? The default in the project is the first one. You can change this in the configuration settings of the master.BR,IngoGesendet von meinem LG-H870 mit Tapatalk
-

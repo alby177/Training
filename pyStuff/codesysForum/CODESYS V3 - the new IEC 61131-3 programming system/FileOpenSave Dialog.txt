@@ -1,2 +1,0 @@
-I'm probably being rather slow - I haven't done very much with the codesys visualisation yet. I want to get the FileOpenSave dialog to appear as a dialog when I press a button. I want to configure the dialog to only show files with a given extension. Having selected a file and pressed Open I want the selected filename accessible in a string in my application and I want a Boolean to be toggled. If I cancel then I just want the dialog to close.It sounds as though it should be easy - but so far I have failed to work out how to do this. Any help would be greatly appreciated.
-

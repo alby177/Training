@@ -1,6 +1,0 @@
-Hi all,I would like to create a connection to an TCP server. I tryed to use CAA NetBaseSrv 3.5.8.10 (NBS.TCP_Client).Code:ServerIP.sAddr := '192.168.5.100';Client(   xEnable:=TRUE ,    xDone=>TCPClient_xDone ,    xBusy=>TCPClient_xBusy ,    xError=> ,    udiTimeOut:=5000 ,    ipAddr:=ServerIP ,    uiPort:=2000 ,    eError=>TCPClient_eError ,    xActive=>TCPClient_xActive ,    hConnection=>TCPClient_hConn );Somehow i get an 'timeout' right away. xActive never gets TRUE. Im sure the TCP server is ready to receive connections.Am i missing something on the device configuration side? I also tryed to add '3S ethernet adaptor' and set the interface (PCI\E1R1). Doesn't seem to help. Controler = Lenze 3200CIf someone could point me to the right direction that would be nice!Kind regards,
-
-Try connecting with putty to the server ip on port 2000 to make sure you can get a connection from your PC. Also make sure that Lenze 3200C supports NBS.TCP_Client/Server and not just the standard SysSocket functions
-
-that timeout is also in microseconds, so 5000 microseconds = 5 milliseconds is a bit too low. Probably increase to 500000 microseconds. If you ping device on your computer and the response takes 10ms, then setup connection for 100ms.
-

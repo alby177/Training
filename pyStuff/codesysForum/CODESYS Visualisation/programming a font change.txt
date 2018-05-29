@@ -1,2 +1,0 @@
-is it possible to code a font size dependent on criteria for use on display CR0451
-

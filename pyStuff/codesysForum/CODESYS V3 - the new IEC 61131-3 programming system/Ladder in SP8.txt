@@ -1,4 +1,0 @@
-Since upgrading to SP8, wherever I use a contat with a variable from an array the view changes automatically to FBD and I can't switch it back to regular ladder view.How can I fix it?
-
-Hi razmis,you've reported this problem to support already:CDS-48090 LD: Network is not drawn as Ladder any moreThe problem is fixed in Patch 3, release next week.Regards,Roman
-

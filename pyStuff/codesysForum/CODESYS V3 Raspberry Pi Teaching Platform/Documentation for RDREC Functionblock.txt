@@ -1,4 +1,0 @@
-Hi,I am currently working on acyclic Profinet communication on the Raspberry Pi. My Profinet Device is a Hilscher netHat - The cyclic communication works pretty much out of the box, but when it comes to acyclic communication I get lost...To perform the acyclic reading of a Record I use the RDREC functionblock. Unfortunately the documentation for RDREC only describes the properties, but doesn't say anything about how it's supposed to be used properly. I am quite new to CoDeSys, therefore I would appreciate just a few examples to see how it's done by the Pros.Thank you!
-
-Hi,could only provide an example with some comments in the code.Guess this will help.BREdwin
-

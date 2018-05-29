@@ -1,2 +1,0 @@
-I would like to now of there is an possibility to change some features of the standard alarm table of CODESYS V3?An example:The standard states for alarms in an alarm table are: - Normal- Active- ActiveAcknowledged- WaitingForConfirmationBut now, some of these state texts are too long.. is there an possibility to change these state texts?
-

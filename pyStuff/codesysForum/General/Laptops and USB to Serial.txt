@@ -1,7 +1,0 @@
-Hello,
-
-One suggestion I would like to make is laptop's now a days don't come with serial ports. For those of us who still need to use serial ports it is difficult at least on my end to get CoDeSys to recognize com ports. What I mean by that is instead of letting me enter a com port number manually, especially one greater than 4, CoDeSys may be reading the low level BIOS settings which skips the so called virtual ports of a USB to Serial adapter driver. CoDeSys does work with USB to Serial adapters, I'm using one now, but configuration is difficult.
-
-_________________Thanks,
-Steve Pfeifenroth
-

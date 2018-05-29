@@ -1,8 +1,0 @@
-Hello,I made a new project with the PI.After I would download the Application I get the error.It is only visible in Log-File.Attachment:exception.JPG
-
-Here the project.
-
-Hi,welche CODESYS Version verwendest du?Alles in 3.5SP9Patch10 ?Ich würde die aktuelle SP11 Version verwenden ,also CODESYS und das PI Packet. (und auch die PI Runtime auf dem PI)GrüßeEdwin
-
-Hi,Hab ich auch versucht,die Lösung des Problems war, dass das Programm das auf dem Raspberry war schon nicht korrekt war.Durch das Löschen der Applikation und anschlissendem Neustart, konnte die korrekte App geladen warden.Danke
-

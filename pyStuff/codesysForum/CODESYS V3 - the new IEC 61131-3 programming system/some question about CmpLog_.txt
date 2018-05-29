@@ -1,6 +1,0 @@
-Hi:   when using the logger ， I encountered three problems，who can help me?  1, inside the file of CodeSysSP.cfg，under the component of CmpLog ,"Logger.0.Backend.0.classid = 0x00000104" What does it mean?(0x00000104 --#define ITFID_ISysFile )  2,How can I change the format of the log file？only .csv？  3，How can I  determine the number of log in the file？
-
-I don't think it is a good idea to change this file.It is a file created by the OEM. If you make any incorrect changes, the runtime might not work anymore.
-
-TimvH wrote:I don't think it is a good idea to change this file.It is a file created by the OEM. If you make any incorrect changes, the runtime might not work anymore.  thanks for your answer，  I saw the component of CmpLog is blocked  in this file ， if i no change this file ，although i can see the message ， but i can‘t find the file in my root。
-

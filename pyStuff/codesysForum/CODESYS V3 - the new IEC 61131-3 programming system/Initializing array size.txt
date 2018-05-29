@@ -1,6 +1,0 @@
-The following code does not compile:Code:FUNCTION fooVAR_INPUT CONSTANT   x : INT;   y : INT;   END_VARVAR   dd : ARRAY [0.. x*y-1] OF LREAL;END_VARCode:dd[0] := 1;Are x and y not considered constants here?I get the error : Border '((x * y) - 1)' of array is no constant value
-
-Why do you declare the constant as INPUT? Makes no sense...This will work:Code:FUNCTION fooVAR CONSTANT   x : INT := 1;   y : INT := 2;   END_VARVAR   dd : ARRAY [0.. x*y-1] OF LREAL;END_VARIf you want to create the array dynamic, you have to use __NEW if your target system supports this.
-
-There is an option to use VAR_IN_OUT CONSTANT variables.This is described in the Help of CODESYSWARNING: Uncheck the option "Replace constants", otherwise you will get exceptions in CODESYS.See the menu: Project => Project Settings => Compile options
-

@@ -1,6 +1,0 @@
-Hi,I've been researching the RPi learning environment for a few weeks now ... Being a teacher to high school Electronics and ICT students. I'm supposed to teach them the basics of IEC 61131-3 PLC programming. That is why I'm very happy I found Codesys. It allows me to bring PLC in to their comfort zone. (Raspberry Pi, Arduino, I2C, SPI, ...)I'm wondering now ... When I take Gerhard 's Arduino Uno IO Driver in the IO mapping page I can map variables to physical Arduino pins. When I take a look at the PCF8574 library supplied by Madax. The communication is byte wise oriented using:Code:PCF8574.OUT := byteValueToBeWritten;PCF8574.STATEMy question: How would one go about providing an I/O mapping tab entry for each of the PCF8574 's port pins, like Gerhard did in his library? I've been over the devdesc.xml files for both libraries, I turned http://forum.codesys.com/viewtopic.php?f=21&t=5619 (I2C devices in codesys pi) inside out, but I can't seem to get my finger on how it is done. Is there some kind of manual available for this? Can someone point me in the right direction?Thanks in advance,Koen.
-
-I have the same issue and can´t find any solution.Did you solved it?
-
-I have the same problem mapping i2c MCP23017
-

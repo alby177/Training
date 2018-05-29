@@ -1,8 +1,0 @@
-Hi, In CodeSys version 2.3 there was possibility to convert LD pou to Structured Text. Is this posibility too in version 3 of CodeSys (I can not find this option)?regards Marcys
-
-Hi Marcys,there is definitely no such functionality in CODESYS V3.I'm wondering how did you manage to make this in CoDeSys V2.3?Regards,Roman
-
-Hi,oh sorry, I should write how to convert from ST to LD/FBD in CodeSys v3In CodeSys v2 you click right mouse button on PLC_PRG in ST a choose Convert Object, then you chose new name and destination format IL, FBD, LD and CodeSys v2 will convert it. I have attached screenshotAttachment:CodeSys2_img1.jpgAttachment:CodeSys2_img2.jpgregards,Marcys
-
-Hi Marcys,the conversion ST to LD/FBD is not present in V3.Regards,Roman
-

@@ -1,6 +1,0 @@
-How to check the modbus tcp errors if I use the standard devices (ModBus TCP Slave)?
-
-Hi,use the name of your slave (device tree) in the watchwindow.You should see more Information for diagnostic purpose.BREdwin
-
-Thanks a lot!
-

@@ -1,6 +1,0 @@
-I am writing an application for a Wago 750-881 PLC but I don't see that device listed in my CodeSys 2.3 development software. Can anyone tell me where I can get the new device and how I install it?ThanksTony
-
-Hi     What you meant by u r not seeing device in the list? 
-
-When I double click "target settings", the target Settings dialog lists configurations for many of the (older) Wago 750 series bus couplers but the 750-881 is not listed. However, since posting my question, the nice people at wago have resolved this issue. The version of CodSys on their website had the necessary Wago parts included.Thanks for taking the time to reply  
-

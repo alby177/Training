@@ -1,2 +1,0 @@
-Hallo,einige Projekte, die ich in CoDeSys 3.4 erstellt habe, lassen sich mit CoDeSys V3.5 nicht mehr fehlerfrei übersetzen. Nachdem alles auf neuest gesetzt wurde und auch die Geräte aktualisiert wurden, kommen Fehlermeldungen, weil die Bibliothek CmpDynamicText nicht auf dem System installiert ist. Wenn ich versuche, sie zu installieren, kommt auch eine Fehlermeldung. Auch wenn man die Frames in der Visualisierung neu läd, bleiben die Fehler.Was kann ich tun? Für einen Rat wäre ich sehr dankbar.Viele GrüßeMatthias Seitz
-

@@ -1,4 +1,0 @@
-Hello there!I'm a newbie in Codesys world and I'm facing a first small problem.I have to run a program that should start with "Login_Page" where a user should login and after that should switch to "Mechanical_Checking" visu and so on...The problem is that the visualization is not starting as I set it in Visualization Manager, with the "Login_page" (see picture). It's starting every time with "Electric_Checking" visu, as the first visu in alphabetical order in the application list. Even after PLC rebooting, it does the same.If I rename the "Login_Page" as "A_Login_Page", to be the first in the list, the problem is solved. Is this a normal behavior? Is there a setting that I miss it?Attachment:2016-08-05_132005.jpg
-
-Solved!The problem was the address used in web browser: http://some_ip/webvisu/ instead of http://some_ip:8080/webvisu.htm.Thanks Mr. Schwellinger for support!
-

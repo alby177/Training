@@ -1,8 +1,0 @@
-Hi,when working with an SFC program with lots of parallel branches, and add a step & transition to some branch, all branches on the left are pushed down.And as the program grows, the visual representation becomes an awful mess. I have to scroll up / down like crazy and editing is very inconvenient.Is there a way to align parallel boxes and avoid vertical gaps ?Please see attached image, it should be clear from it what I'm asking.Thanks
-
-i see them exact as you want them so we have to look some deeper.? is this V2.3 or 3
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
-Hi pnn!There is one way a found, because I had the same problem as you.If you mark(multiselect) the steps there the branch will be and then make the 'right branch', the editor will connect the last line to the main line. This mean that you need to have something that connect your 'Init' step to the main line, and not as you have today.Remember if you export and then reimport the code the editor has changed the apparence again, to what you had in the beginning. It's possible to copy and paste and correct it but after some time it's not funny anymore./Torbjörn
-

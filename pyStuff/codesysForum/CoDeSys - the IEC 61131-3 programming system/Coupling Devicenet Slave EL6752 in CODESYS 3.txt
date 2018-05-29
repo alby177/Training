@@ -1,4 +1,0 @@
-Hello,I am coupling a Devicenet EL6752 Slave device with EtherCAT Coupler EK1100 through codesys v3. I have made an Expert Process Data settings required size of input/output bytes as shown in image below.Attachment:ExpertSettings.JPGThe image below shows the startup parameters that I have configured so far.Attachment:StartupParameters.JPG The missing part so far is the mapping of the output/input data from/toward the master device with the input/output data on/from the slave device. The problem is that I am not able to find a configuration settings for input/output connection polling data which can tell exactly at what index is the input data and at what index is the output data. So I am not able to exchange any data between the Devicenet master and slave devices. Can someone please suggest if I am doing it the correct way and is then how can I configure that data mapping between master and slave devices?Thanks in advance.
-
-_________________IM
-

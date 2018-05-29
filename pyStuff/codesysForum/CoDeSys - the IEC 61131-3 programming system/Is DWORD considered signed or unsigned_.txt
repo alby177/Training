@@ -1,6 +1,0 @@
-I see the DWORD is 32-bit and arithmetic operations can be performed on it.Is it considered signed or unsigned 32-bit?
-
-A DWORD is a UDINT. Unsigned, 32 bit. Typically should imply but coding or some data but I have used and see it used with counters and addition / subtraction (pointers are DWORDS).
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-

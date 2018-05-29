@@ -1,4 +1,0 @@
-I have an application that use a 25hp AC drive from Lenze. This drive is at least 10 years old.http://www.actechdrives.com/PDF/AC-Tech/AC-Tech-MC-Series-Drives.pdfDoes anyone know of a CanOpen/SERCOS interface or CoDeSys controller that will send out a +/-10 speed reference and encoder feedback.The encoder is a Kuebler.http://www.clrwtr.com/PDF/Kubler/Kubler-5000-5020-Incremental-Encoders.pdf
-
-Hi,one option is for sure to do this by using CODESYS V3 and Ethercat:There is an example project here:"c:\Program Files (x86)\3S CODESYS\CODESYS\Projects\SoftMotion\4.1.1.0\Examples\Tutorial\PosControl.project" BOM:-SoftMotion capable CODESYS V3 plc-Ethercat EK1100-EL4031 ->  AnalogOut-10…+10 V, 12 Bit-EL5101 -> Incremental-EncodernBREdwin
-

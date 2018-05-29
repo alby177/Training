@@ -1,2 +1,0 @@
-hello:I'm working with a trap that returns this error rootname ilegal name.would you know what is referred to with the root name?Best Regards
-

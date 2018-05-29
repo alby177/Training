@@ -1,8 +1,0 @@
-Hi there.I've already posted most details about issue from the subject on this thread:http://forums.mrplc.com/index.php?showtopic=22555If somebody can give me any piece of information, suggestion anything it will be highly appreciated.Ty in advance.Dean
-
-This PLC is an old PLC. you can not use CoDeSys to program this PLC.I think you have to look about "Modsoft" from Schneider (who bought AEG Modicon in the 1990s). 
-
-I see. I found some manuals on the internet and it seems that this PLC is manufactured in 1995.Ty for the info about ModSoft. I did some research, and found out that there is new and live software project called PLC WorkShop-32 For Modicon which is basically successor of the previously mentions program, and this one is running under Windows OS instead DOS.Behind this software is one company from USA (no intend to advertise), but they told me that my Modicon is not among supported processors which is very strange. I downloaded the software and try to connect the PLC but as Im using serial to USB cable and they said processor type is not supported who knows knows where is the glich. I just cannot read the PLC file...If you have some other advice shoot Dean
-
-As Im using laptop for programming purpose, and the PLC is quite old and has RS232 port I used the USB to Serial adapter to connect them and then I got one hint that adapter can be source of problems too.What do you think is it worth trying to connect it with desktop PC and with direct serial cable?It will be quite a task as I need to find some PC 1st 
-

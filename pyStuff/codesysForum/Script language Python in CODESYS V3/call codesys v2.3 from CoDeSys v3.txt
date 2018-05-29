@@ -1,8 +1,0 @@
-Hello,as your know, user can create/call CoDeSys v2.3 project in CoDeSys v3 by using Python script. following script works well with CoDesys 3.5.7 sp3:Code:command = codesys23.create("PLC_project","Application")but it does not work with CDS v3.5.9 SP9 and SP11. Error diagnose shows "Path to CoDeSys object in 'names' is invalid." Have some one any idea or solution about that? Thanks for help!BR.
-
-Hi hhz.hhz wrote:Code:command = codesys23.create("PLC_project","Application")codesys23 is not a symbol/object from the CODESYS Scripting API. Are you using a derivate of CODESYS or any AddOns which add additional Scripting API?BRMartin
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
-
-Oh, yes. thanks for information and good clue . That is an Add-one from 3rd. party. I will find the quell.
-

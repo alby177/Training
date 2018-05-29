@@ -1,4 +1,0 @@
-As I mentioned above, it's very emergency. Thanks!
-
-Hi,The list of all available Beckhoff drive motion driver.and you could add the AX5206 by the generic SOE Driver, see screenshot.BREdwin
-

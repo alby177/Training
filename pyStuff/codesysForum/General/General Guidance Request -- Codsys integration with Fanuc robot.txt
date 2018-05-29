@@ -1,4 +1,0 @@
-I am totally new to Codesys and EtherNet/IP so I would like to ask if they are the right tools to use for a specific application, as follows:Objective: Integrate a Fanuc R-2000iA robot arm to plasma cut steel, with a Raspberry Pi touch screen computer as a user interface.- The Fanuc RJ3iB control on the R-200iA robot can be set up as an EtherNet/IP adapter.- The Fanuc control has a facility that will monitor the state of 18 digital inputs, so I need a way for the Raspberry Pi to set the state of those digital inputs.- We prefer to build a web based interface using, PHP, Javascript, and Python.- The operator will select from a menu of parts to plasma cut on a web page.What I need to know at this point is if Codesys is the right tool to set this up.Thanks!- Ron
-
-Hi,I think yes it is, maybe start with the Pi, but if you need more industrial youCould maybe switch to Janz emPc or any CODESYS device which is CODESYS V3 capable.BREdwin
-

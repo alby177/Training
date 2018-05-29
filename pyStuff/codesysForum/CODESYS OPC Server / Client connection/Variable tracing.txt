@@ -1,2 +1,0 @@
-Dears.  Do you know if it is possible capture an varible every cycle to trace it via opc ua?
-

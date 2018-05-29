@@ -1,6 +1,0 @@
-This code causes my PLC to crash:dp: POINTER TO ARRAY[0..7] OF BYTE;soc: BYTE;...soc := 60;dp^[3] := soc * 2;If I add UINT_TO_BYTE() around the multiplication, it works. It seems like the result of a multiplication - even with small numbers - is an integer, ie with 16 bits or more. Can someone confirm this; is this specified somewhere?
-
-not reaaly but you did not define the multiplication factor (2) as a byte thus this is automatic an integer thus the result is an integer.define the 2 as a constant byte and you will see it works.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

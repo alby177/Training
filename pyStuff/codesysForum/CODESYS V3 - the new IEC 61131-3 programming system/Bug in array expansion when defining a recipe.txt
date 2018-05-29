@@ -1,2 +1,0 @@
-I have a structure which contains arrays. This structure is defined in a library and the array dimensions are defined as global constants in the library. These global variables (Library parameters) of the library can be changed from the Library manager in the application. When I create a recipe for the structure, it creates the variables for all the array elements. The problem is that it creates variables according to the default values of the library parameters and not the ones entered by the user in the Library manager. This looks like a bug
-

@@ -1,4 +1,0 @@
-Hi,In a project, I need to make a DataLog to save 5 variables value and date. One time every day.The most important thing to do is:-Export DataLog automatically every day via email or download link in webserver.-Make a web visualization showing datalog values. For this visualization I need to insert a date picker to choose the day stored values to show. I can't see any date picker in tools.I'm using M241 controller, from Schneider.Could you please help me?Thanks,Pau
-
-Alternatively, you can use the tool 'Text Editor' to view Log files in Webvisu field and create the file search.Enter the date in the search box and go to the required line.
-

@@ -1,6 +1,0 @@
-When opening toolbox it appears for a moment then disappears. Tried rebooting loading a different project. Cannot get Win7Codesys V3.5 SP8 Patch 1
-
-Tried re installing with a registry clean before. Still nothing. Don't think it is hiding off as I tried the windows tricks to bring it back.
-
-hm..  this is probably saved in the opt files:<Profilname>.opt.keyb - for keyboard<Profilname>.opt.menu - menu<Profilname>.opt.tbar - toolbarnot sure if this helps.BREdwin
-

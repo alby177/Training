@@ -1,6 +1,0 @@
-Hello I´m having problems with SFCCurrentStep.When I declareSFCCurrentStep:STRING;inside the SFC program then in simulation mode the variable works well and gives me the name of the current step.I want to declare this variable as global, so I can access this variable from other POUs, but when I do this in simulation the flag don´t work correctly, it´s always changing between 'Init' ant 'Step2'How can I solve this problem??Thank youAltino Gonçalves
-
-Hi,probably you have more than  just one SFC POUs in your application. If you declare SFCCurrentStep as a global variable, it will be updated from all SFC POUs.In case you want to be sure that you access only the SFCCurrentStep from one single POU, you can declare it as local VAR_OUTPUT variable. Then you can access it with POU_name.SFCCurrentStep from any other POU.I hope this will help you.
-
-_________________Roland WagnerModerator
-

@@ -1,6 +1,0 @@
-Hi,I'm trying to install a package from the store and I'm always getting this error:I have tried with different packages and I always have the same problem.
-
-Running CODESYS as administrator fixed it!
-
-Hi,another option is to delete the cache files, they will be generated on startup of CODESYS.BREdwin
-

@@ -1,4 +1,0 @@
-Hi,how match connection is possible to raspberry Webvisu page.Now, when connect new machine to webvisu.htm lost the connection on the other machine.Only one connection at the same time ?Thanks, Alberto
-
-Hi,this should not happen check the plc logger...for this situation!BREdwin
-

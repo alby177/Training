@@ -1,4 +1,0 @@
-Will the targetvisu be supported by beaglebone thru the RemoteTargetvisu? As I assume it is a visu for VNC HMI screens?If yes when will it be supported?
-
-Hi,yes this is supported:start this here:"c:\Program Files (x86)\3S CODESYS\GatewayPLC\RemoteTargetVisu.exe" and scan your BBB and connect to it.BREdwin
-

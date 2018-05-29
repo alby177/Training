@@ -1,4 +1,0 @@
-I have the Raspberry Pi 2 Model B with the latest CoDeSys 3.5.8.10.The Ethernet/IP Scanner is not able to receive the data on cyclic connection, but data are available via GET_Attribute_Single.With the same EDS file insert into CompactLogix, I'm able to read the value.Did I miss anything in the CoDeSys setting?Attachment:Snap1.jpgAttachment:Snap2.jpgAttachment:Snap3.jpgAttachment:Snap4.jpg
-
-Found the solution, need to set the box "Always update variables" to Enable 2 (always in bus cycle task) or Enable 1.Attachment:Snap5.jpg
-

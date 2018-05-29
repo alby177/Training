@@ -1,4 +1,0 @@
-I got a RPI1 running fine. Now i'm trying to use a RPI2. I did follow the installation instruction, and can log in/out by ssh as normal. The problem arrived when i tried to activate the license (bought yesterday), it only connects to the 192.168.0.6 (RPI2) for a short while. Then i have to reboot it by ssh. The connection time before dropout is about 5-10sec. Not sure if the license is activate or not now, so also afraid of loading a new image.Any help appreciated !
-
-Got it working. Installed a new Image. Don't know what problem was.
-

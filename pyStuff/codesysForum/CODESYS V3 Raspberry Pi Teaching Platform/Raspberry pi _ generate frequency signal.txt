@@ -1,2 +1,0 @@
-Hi,I want to generate frequency signal between 0 to 440 Hz to drive step by step motor.I do it with ordinary tor output and count cycle of Rpi. But precision is limit by cycle max of Rpi. Over 500µs cadenced cycle : not work well.How can I do it with better solution ? Is it possible to use sound output ?Thank for your help.
-

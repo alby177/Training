@@ -1,6 +1,0 @@
-Hello,Is there a way to get a string which is the name of the variable passed in parameter of a function ?I test the type ANY (__System.AnyType) which provides 3 fields (pointer to the value, value size and type class) but not the name of the value.For example :Code:FUNCTION funcVAR_INPUT   info : ANY;END_VARVAR   infoSize:DINT;   infoTYPE:__SYSTEM.TYPE_CLASS;   infoPointer:POINTER TO BYTE;   infoName : STRING;END_VARinfoSize := info.diSize;infoTYPE := info.TypeClass;infoPointer := info.pValue;infoName := "" //???????????????????????Code:func(GVL.myVar);Now, I would like to retrieve, in my function func, the name of the variable "GVL.myVar". I heard about __VARINFO, however I can't find a easy way to retrieve such an information.Please helpRegards,FG
-
-The attribute 'parameterstringof' is only available in visu, it's to bad because it whould have solved the problem....Code:FUNCTION funcVAR_INPUT   info : ANY;END_VARVAR   infoSize:DINT;   infoTYPE:__SYSTEM.TYPE_CLASS;   infoPointer:POINTER TO BYTE;   {attribute 'parameterstringof' := 'info'}   infoName : STRING;END_VARinfoSize := info.diSize;infoTYPE := info.TypeClass;infoPointer := info.pValue;
-
-See this post viewtopic.php?p=14404#p14404Varinfo gives to you class name and instance name.
-

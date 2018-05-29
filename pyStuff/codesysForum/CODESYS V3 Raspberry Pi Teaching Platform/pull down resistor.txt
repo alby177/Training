@@ -1,4 +1,0 @@
-Hello I need help because I want to activate internal pull-down resistor on my GPIO ... is it possible by CoDeSys V3?
-
-Hi,from CODESYS side guess this is not possible but would recommend to "Google" it for example read this:https://github.com/fivdi/onoff/wiki/Ena ... spberry-PiBREdwin
-

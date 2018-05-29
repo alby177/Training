@@ -1,8 +1,0 @@
-hi everyone,got here a quick question, which I am hoping somebody out there can help me on this one.got here one codesys project with two 750 841 controllers. Program had been written already.  The data communication has been established between the two controllers via the function_block "Ethernet_ModbusMaster_UDP". It works - so far so good.One of the controllers (main controller) has been configured under Resources - Hardwareconfiguration in my program. Second controller (I/O indicator light flashing) tells me that there is no hardware configuration, or the configuration has not been made properly.Where and How can I create the Hardwareconfiguration for the second one. I ll be grateful for some help!
-
-you will have to make a copy of your program, one for the master and one for the slave.when a unit is switched over (probably an anlog unit, the system is not correct and gives an error
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
-That's all I needed to know.Thanks!
-

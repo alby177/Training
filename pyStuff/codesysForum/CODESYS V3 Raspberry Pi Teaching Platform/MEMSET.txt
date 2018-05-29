@@ -1,6 +1,0 @@
-Hi, i was wondering if there is a MEMSET function. I want to set a array to 0.Or maybee is it possible to make a struct of arrays and set that to 0?
-
-Hiyou could use the sysmemset in the sysmem library.
-
-Hi, is it possible to use it whit 2d arrays? If i want to delete only 1 column or row?like Code:memset(myarray[][1],0,sizeof(myarray[][1]);???I managed to delete the whole array using this:Code:SysMemSet(pDest:=ADR(SET_AUTO_NAME) , udiValue:= 0, udiCount:= SIZEOF(SET_AUTO_NAME));
-

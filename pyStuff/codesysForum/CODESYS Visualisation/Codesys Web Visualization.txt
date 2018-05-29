@@ -1,4 +1,0 @@
-Hello,I want to use web visualization function of Codesys over Internet on Hitachi make HX-CP1H16 PLC.I am able to access the visulaization .htm file in web browser on local network.How can i achieve the same over internet through cloud services?Can anyone share documentation of configuration with cloud services?
-
-1) You'll need to connect device to the internet.2) If you're not going through a router with a static IP address, then change the IP of device to match whatever IP is provided through your internet service provider.3) If you're going through a router, you could set up port forwarding. The device is connected to the router via local network of, for example, 192.168.1.X. However, your WAN IP could be something like 10.199.207.199. When you port forward, the router "links" the external IP address to the local IP address.
-

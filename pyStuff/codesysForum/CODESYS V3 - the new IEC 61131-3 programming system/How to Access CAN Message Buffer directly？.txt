@@ -1,6 +1,0 @@
-Under CoDeSys V3.5，How to Access CAN Message Buffer directly without interference of higher protocols such as CANOpen or J1939？So that we can check whether there is new messge in the Rx buffer and then read it from the Rx buffer，or we can write a message to the Tx buffer。Our target is Wachendorff OPUS A6 Display。
-
-When you go to the website http://www.3s-software.com/ you can go to "Download" "CoDeSys Sample Projects".Then go to the ftp site and select folder: Projects/CoDeSysV3/Programming/CAN/Maybe these examples are helpfull for you.
-
-thanks
-

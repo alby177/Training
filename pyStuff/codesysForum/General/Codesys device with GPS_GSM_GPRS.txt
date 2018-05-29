@@ -1,6 +1,0 @@
-Is there any Codesys device which features a GPS as well as GSM/GPRS communication?
-
-yes beckhoff, wago, and many others have modules to get this.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

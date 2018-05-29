@@ -1,8 +1,0 @@
-In CoDeSys V2.3 it was easy to send an alarm via email using the Alarm Notification Action 'Email'.This doesn't seem to be available in V3.5.xDoes anyone know the correct method to send an email when a specific alarm occurs please?
-
-See the store for a library and example application.You need to have a dongle and license to enable the library in CODESYS (not on your device).http://store.codesys.com/mail-service.html
-
-Thanks for the help but it says that you need CoDeSys 3.5.5.20 or newer. I'm on 3.5.4.patch 2, will it work ?
-
-I have not tried the latest version of this library.I have used an older library version with 3.5.4.x and this also works with 3.5.5.xWhat you could do:- Order a dongle and try it with the demo license- Program your device with 3.5.5.x. (should be no problem if you select the correct compiler and device version)- If it doesn't work, let me know, I still have the old package 1.0.0.0 which will work with 3.5.4.x (unfortunately I cannot attach a file with extension .package to this post)Off course your device should support TCP/IP communication.
-

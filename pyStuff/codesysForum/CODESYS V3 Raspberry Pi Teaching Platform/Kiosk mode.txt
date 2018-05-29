@@ -1,6 +1,0 @@
-HelloHow do I enable the kiosk mode for visualization and can I turn it on / off  if necessary?
-
-see:viewtopic.php?f=21&t=8189sudo nano /home/pi/.config/lxsession/LXDE-pi/autostartlxpanel --profile LXDE-pi@pcmanfm --desktop --profile LXDE-pi@xscreensaver -no-splash@point-rpi@xset s off@xset s noblank@xset -dpms@chromium-browser --noerrdialogs --kiosk --incognito http://localhost:8080/webvisu.htm
-
-Thank you very much!
-

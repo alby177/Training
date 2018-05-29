@@ -1,6 +1,0 @@
-Hi!Where do I report problems and small Issues?Using version provided by Festo. V3.5.3 just updated and lost ability to use complex structures.Also found a problem when I try to get to a decleared variable. If I write AAA.BBB it looks fine but if I use the dotted button (...) and pick out the variable the full structure will not show.
-
-Are you sure you don't have any compile errors?If you want to insert the variable with the namespace (after pressing ...) you have to check this option "insert with namespace prefix" (not shown in your printscreen).
-
-Hi TimvH,No it can not be the namespace. I activated the namespace and I got 'Standard.GVL.OPC.CounterOK', I didn't like the look of it so I removed the 'Insert with namespace prefix'. After that I got what I  wanted. 'OPC.CounterOK'.Why does it say 'Standard' and not 'Application'?
-

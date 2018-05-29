@@ -1,6 +1,0 @@
-Hi Everyone,I try to run DLOG_FILE_CSV_DEMO program and I get "unknown string length: STRING_LENGHT" error.It seems it hasn't been defined. Has anyone experienced same issue? Thank you in advance,Marian
-
-put this question in the oscat forum please.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

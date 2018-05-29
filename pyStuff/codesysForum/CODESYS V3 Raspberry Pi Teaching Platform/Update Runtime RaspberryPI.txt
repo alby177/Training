@@ -1,2 +1,0 @@
-Hello, I get this error in CodeSys when try to Update RaspberryPI:"[ERROR] Target [removing]: sudo: no tty present and no askpass program specified[INFORMATION] Update finished"Practically don't wont to update Runtime.How we can fix this?
-

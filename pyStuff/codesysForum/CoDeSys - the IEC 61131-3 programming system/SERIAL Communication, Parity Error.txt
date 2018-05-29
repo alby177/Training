@@ -1,4 +1,0 @@
-Hello, When I initialize the connection by function SERIAL_SETUP, I choose PARITY := 1 (even parity). The communication is now set to sending format 8E1. Same format I set to next device, which will communicate with my PLC. But I don't know, how I determine that in receive data is error. Neither function SERIAL_RX has no output, which can tell me about this error. Could somebody help me? Thanks for your replies.
-
-Hi       You can check with CRC for errors.Have a good day 
-

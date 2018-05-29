@@ -1,8 +1,0 @@
-Hello everybody,I am creating a library in which I have several folders containing POUs.Is there a way to hide/show folder of this library when the library is added in a project file.I would like not to see some folders of the library in the library manager of the .project file.Thanks for your answers 
-
-Hi, RBats,RBats wrote:I am creating a library in which I have several folders containing POUs.Is there a way to hide/show folder of this library when the library is added in a project file.I would like not to see some folders of the library in the library manager of the .project file.As far as I know, there is no possibility to hide folders, but individual POUs can be hidden by butting Code:{attribute 'hide'} in the declaration part - and once all POUs are hidden, the folder itsself should also disappear.
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
-
-Hi,Thank you for your response. I have already tried what you suggest.. but it doesn't work.I don't think it's possible to hide a folder even if it doesn't include any POUs..
-

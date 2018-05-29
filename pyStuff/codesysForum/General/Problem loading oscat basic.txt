@@ -1,2 +1,0 @@
-I am using Codesys 3.5 32-bit. I am try in to load oscat basic. I got 3.3 library from the codesys store. I have added it using the library manager. I see it in the library window but do not see anything in the input assistant. I am trying to use an interlock function following a tutorial but see nothing. Can anyone give me advice. Thanks. JoeF.
-

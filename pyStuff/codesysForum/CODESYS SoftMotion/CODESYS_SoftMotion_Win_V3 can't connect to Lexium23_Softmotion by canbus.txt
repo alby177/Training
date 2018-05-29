@@ -1,8 +1,0 @@
-I can't use  the canbus of CODESYS_SoftMotion_Win_V3 connect to Lexium23_Softmotion by PCAN-USB .  I don't know what's worng. It seems the  Lexium23 should be recognized.
-
-Hi,for SoftMotion (cyclic send setpositions) it is mandatory to have a hard realtime capable plc.So you need to switch to SoftMotion RTE but then you could not use Peak-USB, then you need to use a Peak pci CANCard.USB and realtime is not really a good combination (imagine hotpluging and realtime....ahhhh)If you want to stay on Control Win you have the choise to use SoftMotion Light (if this works with the drive - not sure) or you could request the Schneider PLCopen libraries.. they usually provide you with this if you ask for it. (Hope I'm not wrong)BREdwin
-
-Mr Edwin,        Thank you very much for your help. Now I know what cause the problem.
-
-ok
-

@@ -1,4 +1,0 @@
-Is there any way to add more channels in a modbus slave device without the trick of add another slave device with same address?
-
-Hi,this should be fixed with up coming 3.5SP7 Version (mid July)BREdwin
-

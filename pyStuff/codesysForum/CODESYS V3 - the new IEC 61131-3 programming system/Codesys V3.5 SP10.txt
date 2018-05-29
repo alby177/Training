@@ -1,8 +1,0 @@
-Hello People,I'm using Codesys version 3.5 SP10. Whenever I startup the software I'm getting the following error what I attached. If I click yes, the codesys is just crashing if no then keep continues working.Do you have any idea where should I look for the problem? I don't know what is that io link device. I searched for it in the device repository but I have found nothing.Thank you,Gergö
-
-What hardware are you using? That looks like a hardware specific plugin for your PLC. I'm using v10 without issues apart from the usual "I can't find this and I can't find that library".Sent from my SM-G935F using Tapatalk
-
-The interesting thing that it comes when I open the codesys itself but not any project. So empty home page comes.
-
-This is really strange since codesys keeps the old instance and installs a new one, so as far as I know every plugin and library needs to be reinstalled afterwards. Have you tried it on a new Windows user profile? That would be a reasonably quick thing to do.Sent from my SM-G935F using Tapatalk
-

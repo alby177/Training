@@ -1,4 +1,0 @@
-When examining the slave eds file, generated with CoDeSys V3.5 SP1 Patch 2, I detected an extra "_1" in a Object ParameterName.For test perpose, I created 1 io area and 1 parameter entry. The io area Object has an Extra "_1" added. See figure.io area:[3800]     ParameterName=Digital_Inputs_a_1 <-- Extra "_1"[3800sub1] ParameterName=Digital_Inputs_a_1[3800sub2] ParameterName=Digital_Inputs_a_2parameter area:[5800]     ParameterName=ParamRange_a[5800sub1] ParameterName=ParamRange_a_1[5800sub2] ParameterName=ParamRange_a_2At 3S: Can you confirm that this is a defect.Regards,Edwin.
-
-As a work-around, I created a script that removes the extra '_1'.Regards,Edwin.
-

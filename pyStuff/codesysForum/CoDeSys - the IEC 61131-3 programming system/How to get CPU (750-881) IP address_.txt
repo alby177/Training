@@ -1,4 +1,0 @@
-Is there some library to get the IP address of local CPU? (ad string.. Using Ethernet.lib I can get IP addr in DWORD only..)
-
-Converting the DWORD isnt a option?
-

@@ -1,2 +1,0 @@
-Good morning, I would like to use a SCT013-30 to read a consumption.Practically for arduino there is everything on the net but I would like to use it on the raspberry on which runs codesys.Theoretically / practically I should connect it to an analogue raspberry input, read the value and transform the value into codesys.This is the method?Thanks, Alberto
-

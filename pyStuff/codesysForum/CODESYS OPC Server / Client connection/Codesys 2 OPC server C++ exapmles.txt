@@ -1,2 +1,0 @@
-1) Is there documentation on Codesys 2 OPC server? I need examples how to communicate with PLC on C / C++2) There exsists Codesys 2 OPC UA? Or only OPC DA?
-

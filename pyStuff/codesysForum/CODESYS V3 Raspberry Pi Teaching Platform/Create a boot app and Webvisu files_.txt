@@ -1,2 +1,0 @@
-Hallo all,Is it possible to build a boot application to include the webvisu files under the visu folder so that it can be remotely transferred via ftp to the Raspberry Pi? When I goto Online -> Create boot application It only builds the my_project.app and my_project.crc files. Is there a option that I need to select for generating the visu folder?I am using Codesys V3.5 SP8 +Best Regards,Johan
-

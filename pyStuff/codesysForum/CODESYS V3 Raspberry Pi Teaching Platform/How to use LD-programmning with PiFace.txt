@@ -1,4 +1,0 @@
-Hi,Can I make programs in the IEC 1131 language LD when using PiFace as I/O-card?How to address the different input/output pin on the PiFace?Regards / Anders
-
-Hi Anders,would propose to use attached example.Either you generate single bits (in my example xIn0,xIn1) in the mapping or you map a byte and access then later with bytename.0 to bytename.7 (byOut)the single bit's in the Byte.BREdwin
-

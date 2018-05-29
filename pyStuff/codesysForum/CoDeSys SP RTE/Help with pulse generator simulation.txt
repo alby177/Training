@@ -1,6 +1,0 @@
-I'd like to ask you a few questions about cosesys simulation. Firstly why when I in the simulation a pulse generator I get a rump to and from 1. Is this the time it takes to reach 1? And why do I get four correct pulses and then after some time I get again four correct pulses? The pulse generator should produse pulses with the same period.
-
-the simulator is very slow, as it needs to interpret a machine-code not used in the PC but like an ATMega.So when using times it will not be precise, however in some cases it even works.The visualisation of it is also very time consuming. It is really only good for getting things to work, do not expect a great working thing.When you download it to a PLC it will be running just fine.In the simulator it will run a task until it needs to go to display handler keyboard mouse etc.Try to stop as much processes as you can to speed up the PC.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

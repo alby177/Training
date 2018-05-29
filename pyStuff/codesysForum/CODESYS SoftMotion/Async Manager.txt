@@ -1,6 +1,0 @@
-Hi,I want to use the CAA Async Manager. If I understood correctly I have to initialize the worker befor the job is open?It always says NO_MEMORYCan you help me to use it properly?Is there some documentation?Thanks
-
-Hi.You can do it too with an assyncTask.Create an assync Task, and in the program which runs in the assync tasks create an array of fb which implements an interface which has an assync method. In the assync program call the assync method of the interfaces registered in the array.In the creation of the fb in the sync task register your fb which implements the interface in the assync array.You can start the assync method with a execute-done mechanism.
-
-Thats what I wanted to try with the Async Man Libary
-

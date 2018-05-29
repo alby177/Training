@@ -1,6 +1,0 @@
-Hi,      1).  In order to monitor the code continuously am using if else logic,is there any other logic for continuous monitoring the code and execution of the step.2).if test=1 thentest:=2test1:=false;end_ifin the above code whether test1 will execute or not?Thanks
-
-it will execute once.false is zero,true is anything else.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

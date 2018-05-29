@@ -1,6 +1,0 @@
-Hi,I have to exchange data between a PLC program with Codesys V3.5 and a Windows application.These 2 applications will run on the same computer. I have updloaded the shared memory package on the Codesys Store.I am looking for an example or some explanations to use this tool in a simple project.Thanks for your help
-
-Hi, I have the same application needs as you.I have already installed the relevant shared memory package.But I don't know how to use these package function in Codesys.Have you found an example or how to use it?I am also looking for an example or some explanations to use this tool in a simple project.Thank you!!
-
-Shared memory may works differently on the Windows system and the target device. Here below the working example on the Raspberry Pi 3 with C#. You need to describe the problem more accurately.
-

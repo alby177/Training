@@ -1,6 +1,0 @@
-What software is necessary to work with Codesys on Texas Instruments DSP family C28xx. Does new Codesys version (V3) inherently supports this microcontroller family, or is it necessary to buy some other software addons. The same question could be posted for other microcontroller families, for example ARM based.I have another question regarding the Modbus RTU Master functionality of Codesys based PLC. Namely, in the older version the Codesys could connect with peripheral I/O cards directly by using CanOpen protocol. Is in the new Codesys version enabled the function which connects PLC directly to Modbus RTU based peripherial I/O slave cards.Thanks.
-
-In general CoDeSys has integrated compilers for different platforms. Among them the TI C28xx family and of course ARM derivates. Please see the full list under http://www.3s-software.com/index.shtml?en_CoDeSysSP_OEM.In order to be able to program a controller realized with one of these CPUs the manufacturer of such a device has to implement the so called CoDeSys runtime system. In order to do so it is necessary to purchase the corresponding toolkit. Please find more information on the business model here: http://www.3s-software.com/index.shtml?en_businessmodel
-
-_________________Roland WagnerModerator
-

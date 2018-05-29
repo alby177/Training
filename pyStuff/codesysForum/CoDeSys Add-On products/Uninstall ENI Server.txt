@@ -1,7 +1,0 @@
-After installing ENI Server, I can not manage to install it   
-Is there a tip for uninstalling the ENI Server?
-
-As the ENI server is a Windows Service you can de-activate in the Windows list of services.
-
-_________________Roland WagnerModerator
-

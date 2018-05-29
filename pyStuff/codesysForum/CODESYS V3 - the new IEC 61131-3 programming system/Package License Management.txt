@@ -1,2 +1,0 @@
-Hello,I have created a package using "Package Designer" and installed it with the Package Manager.My package is displayed within the installed packages list but with following License Info : "License info not available"What shall I do so I can have "No license required" instead.Thank you.
-

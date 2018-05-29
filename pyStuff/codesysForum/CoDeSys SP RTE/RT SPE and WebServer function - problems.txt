@@ -1,2 +1,0 @@
-Hello, I need connect together project from RT SPE and WebServer function. I read userguide for Visualisation, but by example doesen't work. RT SPE work without problems, WebServer work too witout  problems, but when i send request from Web-Browser is show message "Can't show this site". Can help somebody ?
-

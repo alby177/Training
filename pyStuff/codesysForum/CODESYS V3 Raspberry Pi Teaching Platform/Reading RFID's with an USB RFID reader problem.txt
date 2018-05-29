@@ -1,4 +1,0 @@
-Got someone this project to run?My RFID Code is always empty.Chris
-
-Hi Chris,Are you using this example here?viewtopic.php?f=23&t=6247&start=15#p19180check if the reader is running ok, when you connect it an use it as a HID device under Linux (open a bash/ commend line and check if it works)Sure this example works only if there is a webvisu running (this handler is called in the visu context)If you need a RFID reader more generic it should be possible to read the id's under /dev/...BREdwin
-

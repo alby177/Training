@@ -1,8 +1,0 @@
-Hi,I have always the same problem when i use 20 bits encoders with codesys 3.5 SP9 Patch 5. Softmotion 4.1.1.0 .As usual, in the Axis Scale/Mapping, I enter 1048576 (=2^20) increments and 360 in units in application.The MC_Power sets the motor in standstill only within a very narrow range of positions. I can spin the motor only within this limited range. If i set as target position a position out of this range, the motor loses its torque and does not spin at all. It looks to me that some sort of max limits exceeded occurs even if all limits are disabled. Maybe any overflows occurs ????I tried with both 16bits encoders and 10 000 increments ones with no problems.Up to now my workaround to use 20 bits encoders is to set 2^14 bits in the edit box increments in the Scale/Mapping tab. I then compute by hand via SW the actual position and velocity of the motor axis.Is this a known BUG or an unknown one or simply i'm doing something wrong?Thanks.
-
-Hi. Have you test if the trible is in the drive, not in the axe?Torque losing seems a pole position problem.
-
-HI, could you update to Softmotion 4.2.x.x currnet version and check if this still exists?BREdwin
-
-Hi EdwinVersion 4.2.1.0 seems to solve the problem.I do need to send to the drive a Torque Trajectory using the Mode Of Operation 10 (Cyclic synchronous torque mode). Each step (4ms) i generate a Torque value [in Nm]. Which of the MC or SMC blocks could i use for this purpose? Can i set directly the variable Axis.setTorque ? Thanks.
-

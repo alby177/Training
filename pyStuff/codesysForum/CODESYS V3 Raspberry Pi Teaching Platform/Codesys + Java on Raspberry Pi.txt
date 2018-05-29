@@ -1,8 +1,0 @@
-Hello and thank you for the nice work that you have done bringing the codesys platform on the Raspberry. (First post on the forum   )My question is if there is something that someone has done in order for communicating the values of different variables (software or GPIO) with Java. I haven't seen anything so far, only the PLChandler that supports C and C++.Thank you,sios
-
-Hi,an Option might be to use an OPCUA Client in JAVA.Raspi has an OPCUA Server embedded into the plc runtime.BREdwin
-
-Thank you for your prompt reply. I will try it today and see. Although I haven't done any work with OPC UA yet, I can see that I can set the variables that I want to be sent out from the OPC UA server on the Rpi. I am assuming its a matter of programming of the client in order to send back different values for these variable. Or the OPC UA server on the Rpi runtime is only for sending values of variables?Thank you again,Sios
-
-An easy way to get data into Codesys from Java, Python, Ruby, whatever is to use Modbus libraries for that language.You can set up a Modbus Server in Codesys, and push data to it using a Modbus client from the library.Its hard to get free OPC UA libraries.  They are limited in tags on the few that are available.
-

@@ -1,6 +1,0 @@
-Hello,I think the CAA Memory library was originally imported to my library repository along with a project which I downloaded from the forum. It can be found in Library Repository:Test Versions(not recommended)->Intern->CAA->Utilities->CAA Memory.However, I cannot find it by using "Add library" in "Library Manager".Can someone help me?Thanks!
-
-When you add the library, click Advanced.Then go to the section "Use Cases".Here you can select the library "Memory".
-
-TimvH wrote:When you add the library, click Advanced.Then go to the section "Use Cases".Here you can select the library "Memory".Thank you for replying.Before clicking Advanced, I can see the section "Use Cases", after clicking Advanced, and selecting "All companies" I can see the section "Use Cases" too. However, in both cases, I cannot find the CAA Memory library. All the libraries under "Use Cases" are from 3S - Smart Software Solution GmbH.
-

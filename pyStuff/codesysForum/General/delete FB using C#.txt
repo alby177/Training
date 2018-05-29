@@ -1,6 +1,0 @@
-Hi, I have one question; is it possible to delete a function block using C#?Thank you.
-
-Could you tell us a bit more what is you're trying to do?
-
-I am trying to write a C#-Code, which opens a CoDeSys-Project and deletes one function block (fb_01).
-

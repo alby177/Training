@@ -1,2 +1,0 @@
-Hello,I'm searching for a document explaining the structure of project .export files.These files can be opened in Notepad and look like .xml files. I would like to get a list of different graphical elements included in my project and get the size of these elements. I would like to write a script to get sizes of some graphical elements of my project. That's why i imagine to read the .export file. is there any description of the .export file structure ?Thank you
-

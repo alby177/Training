@@ -1,4 +1,0 @@
-Hi,I would like to know if there is a way to access Interface Editor variables from the PLC Logic. I need this because i'm creating standard frames for compose the HMI and in those frames i ask for some variables from the interface editor for the text of some components such as textbox of button text. The problem is that i want to implement multilanguage and other types of text elaboration features, but i need to be able to set those variables from PLC Logic.Someone can help?Thanksaf
-
-Hi,Do you use the visualization inside the PLC? In that case you can simply use global variables in order to access from both sides (Visualization and automation).Otherwise you have to set a Dataserver communication between the devices.If this is not the answer you are looking for, please provide a concrete example on what you want to do.Best regards,Massimo
-

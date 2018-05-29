@@ -1,4 +1,0 @@
-Hi, is it possible to user rfc2217 serial to ethernet protocol to use a serial to ethernet converter directly from the runtime?Gesendet von meinem Lenovo TAB 2 A10-70F mit Tapatalk
-
-Hi,if they work on an virtual comport, yes I think this might work.BREdwin
-

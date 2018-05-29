@@ -1,8 +1,0 @@
-Hi,Equipment Details:Habour Mobile Crane GOTTWALD HMK330EG 2002PLC: PC104P-S-H003S003 (QNX 2.45)IPC: WindowsNT, CoDeSys 2.1, Syscon, DriveMonitor, etc.We have a problem to stablish the communication with the PLC from Codesys... we cant login. However, the ethernet is OK, because I make a ping from IPC to PLC, and from PLC to IPC. Exploring the QNX system on PC104 I find the /codesys carpet... and inside I try the command "ls" showing a I/O fail. Also, if I check the FlashDrive (IDE SSD 128MB) and I find 16 damaged sectors or clusters. So I think the /codesys carpet is damaged and this is the place where the program is running and syncronizing data with the PLC (Visualitation or Work Program). This is my question...How can I re-install the codesys software on the QNX, in PC104?Sorry for my english and thanks a lot.Regards.
-
-find the program cable and try to connect old fashioned way.there is a difference in ports of communication and programming.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
-So, using serial port is it possible to download the codesys program to the PLC and retore the /codesys QNX carpet?I never tried this before... is a null modem communication?Thanks.
-

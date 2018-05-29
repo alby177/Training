@@ -1,6 +1,0 @@
-First I want to write that the CANBus Example have been very helpful. But I have not found out how to make an automatic reply on a remote frame request.All help is appreciated.ThanksJan-Olof Johansson
-
-hi,you need to setup the receiver for RTR receiving Messages :maskConfig                 : CAN.RECEIVER_MASK := (                            dwIdValue:= 0,                             dwIdMask:= 0,                             xRTRValue:= FALSE,                             xRTRMask:= FALSE,                             x29BitIdValue:= FALSE,                             x29BitIdMask:= FALSE,                             xTransmitValue:= FALSE,                             xTransmitMask:= TRUE, xAlwaysNewest:= FALSE);either xRTRValue = FALSE and xRTRMask = FALSE  //receive all  RTR and none RTRsor xRTRValue = TRUE und XRTRMask = TRUE  //receive RTR onlyand then in 'ProcessMessage' check if it is a RTR and react on that.BRE.Schwellinger
-
-Hi,Thanks for your answer and support, unfortunately it is not enough in my case. I need to set up the CAN hardware to respond automatically to a remote frame request. To let the software detect and react is too slowly. This requirement is beyond my control.Best RegardsJan-Olof
-

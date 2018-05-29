@@ -1,8 +1,0 @@
-Hello,VARoutR: UDINT;END_VARoutR:=1024/255*255*100/100;Why outR = 1020 but not 1024?
-
-see this ..could helphttps://www.mathsisfun.com/operation-order-bodmas.html
-
-I studied math at school. Unfortunately the operations order doesn't mater here. I believe the problem somewhere in data types.
-
-I find out the problem: 255 is not a 256 and all calculations was done in integer type.
-

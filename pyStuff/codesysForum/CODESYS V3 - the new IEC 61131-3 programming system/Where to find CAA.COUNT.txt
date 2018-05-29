@@ -1,6 +1,0 @@
-Hello,We are working on a CANopen project.We want to read the bus load of CAN1I use the CAA Can Low Level Extern library (Namespace CL2)For most function i need an CAA.HANDLEI gues that i can get this handle by using the Function DriverOpenH from the CL2 namespace.But when i use that function it request an input ctMessages (CAA.COUNT) I cannot find where i can get this CAA.COUNT.Has somebody an idea where to find this input. Or a different way of analizing the CANopen bus.Best regards Patrick
-
-You have to specify from which library you will get the COUNT type.Since 3.5 this has been changed (compared to 3.4).Please use CL2.COUNT instead of CAA.COUNT.
-
-Thanks Tim, Problem has been solved.regards
-

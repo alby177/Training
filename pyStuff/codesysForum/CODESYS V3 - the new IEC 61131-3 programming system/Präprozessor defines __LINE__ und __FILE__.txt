@@ -1,2 +1,0 @@
-Hi,do we have in Codesys preprocessor macros like __LINE__ and __FILE__?I want to use these to setup a debug message with line and file text.Tahnks a lot,Dirk
-

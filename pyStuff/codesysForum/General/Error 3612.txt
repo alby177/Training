@@ -1,8 +1,0 @@
-I am using CoDeSys V2.3.9.22 with the installed target for ABB AC500 eCo. I also use Oscat's library. When compiling I get a error 3612 '' POU number is greater than 512 ''. Where can I change the maximum number of POU? In the Target Settings -> Memory Layout Maximum number of POU's is 512 and gray ie. Not to be changed. What should I do?
-
-2 ways to solve this:1: try to manage the memory allocation.2: As oscat is very big, try to cut out unused pieces of the lib.; load it as library in your program and delete portions not used.3: take the TXT version of oscat and copy some portions into a new library or into a new one.  mind that it is often a whole bunch of functions that are calling others like a PID is calling a P and I function etc.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
-shooter wrote:2 ways to solve this:1: try to manage the memory allocation.2: As oscat is very big, try to cut out unused pieces of the lib.; load it as library in your program and delete portions not used.3: take the TXT version of oscat and copy some portions into a new library or into a new one.  mind that it is often a whole bunch of functions that are calling others like a PID is calling a P and I function etc.thanks Mr. Shooter for solution.I cut unused pieces of Oscat lib (and some others) then debug whole thing and nowmy project is working.
-

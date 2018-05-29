@@ -1,2 +1,0 @@
-Hello,I am trying to setup Modbus RTU on my ARM-Linux platform.I have added the modbus com port and modbus rtu devices and configured them, but I don't seem to be able to get the communication working.My device has 2 serial ports: /dev/ttyS0 and /dev/ttyS1.In the CDS port configuration, I can only put a number,what doesthis number point to?I was guessing that 1-> /dev/tty0, 2->/dev/tty1... and so on. But I need to address /dev/ttyS1Any ideas?Thanks!
-

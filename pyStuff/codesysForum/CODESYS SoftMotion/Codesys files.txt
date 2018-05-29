@@ -1,2 +1,0 @@
-Hi everyone,When we want to archive a project for a machine and maintenance, what are the necessary files that has to be inserted in this archive?In other terms:If I try to connect the PLC on another pC without having to download the project, what are the needed files?Other question, after a compilation, what are the file extension and the meaning of them?ThanksWilliams
-

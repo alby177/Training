@@ -1,2 +1,0 @@
-Hi everybody,Do any of you know any good and affordable analog IO (4..20mA) for Raspberry Pi? Preferably not com-port based like rs232/422/485 or modbus.Preferably SPI or i2c or any other. If you do, please post the link!Thank you in advance
-

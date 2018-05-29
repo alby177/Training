@@ -1,2 +1,0 @@
-Is this possible w/ the r-Pi?On another plc in CodeSys v3.1, I could configure task type = External, event = on_Start.  But I don't have these options for the r-pi, v3.5.  Any way to do this?  Is this a difference specific to ver 3.5 of CodeSys, or the r-Pi, or both?
-

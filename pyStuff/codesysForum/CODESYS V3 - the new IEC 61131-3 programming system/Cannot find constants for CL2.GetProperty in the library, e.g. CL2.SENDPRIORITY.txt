@@ -1,2 +1,0 @@
-Hello,I cannot find the constants for Code:CL2.GetProperty in the library, e.g. Code:CL2.SENDPRIORITY. For now, I just hardcoded the Code:11 from the help, but would prefer a clean solution.Did I miss something? I am using CoDeSys 3.5.7 SP7 .Thanks in Advance     Torsten Knodt
-

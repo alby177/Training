@@ -1,6 +1,0 @@
-I wish to use property of visualization object through say PLC_PRG.Normally if I use Application.Objectname.propertyname:= Value;should work, but the property or visual element is NOT defined.Any suggestions?
-
-library is available for vis objects properties.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

@@ -1,2 +1,0 @@
-hello:I have a problem when I define persistent variables(global persistent var). If I modify the program (if I not touch the persistent variables) everything is perfect. But as soon as I generate a persistent variable, even if the change is online, the persistent variables all go to 0, this is so?
-

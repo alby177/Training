@@ -1,6 +1,0 @@
-Attachment:Screen2.jpgHalloI made profinet project with a B&R X20BC00E3 profinet slave. Everything worked well witch you can see in Screen1. Then I put 24V to an input of the B&R modul. The led of the modul shines but the state of the input in the online view did not change to true. At least I used "Gerät suchen" and got the result which shows Screen2. I dont know what went wrong. Has anybody an idea?
-
-I had the same problem using Beckhoff EtherCat IO and I figured out that if you don't use any of the IO in the project they will be in grey in the online view and they won't change state.If you map one of the IO to a variable in your project and you use that variable in a POU I think you will see it change state in online view.
-
-Hello That's it. Simple Problem.You have to use the input as an variable in the programm. The declaration of the variable and monitoring it online is not enough.Anyway I am little bit confused about the error message after testing "Gerät suchen".Thanks a lot.
-

@@ -1,4 +1,0 @@
-Hi everyone,Today I decided to use a new PLC (xc 202) , so I had to update it with a usb key to be able to use it on codesys 3, once the plc updated I received an error message which asked me to pass on version 3.5.7 so I updated it with the fireware option in codesys 3 by Ftp and when the installation was finished I couldn't reach my PLC anymore, I can find it by scanning my network but I don't see the ftp files (which is probably deleted) so this is why (I think) I can't reach itSo if annyone has an idea,Many thanks in advance  
-
-Hi,please ask the plc manufacturer for help/support.BREdwin
-

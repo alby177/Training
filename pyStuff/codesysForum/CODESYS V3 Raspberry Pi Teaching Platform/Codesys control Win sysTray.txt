@@ -1,2 +1,0 @@
-Hello everybodyI got a problem when i want to work with Codesys Control Win V3. At first everything worked normal. I made a little project and started Codesys control Win Systray. The symbol changed when i started this.Suddenly, i stopped working. I can't activate it anymore. When I take a look in my task management, i see that it consumes 15% of my processor. So it wants to do something but it simply can't. I deleted my version of codesys and reinstalled it. But i got the same result.I am using V3.5.8.10Does anyone has got a solution for this?Thanks in advance!
-

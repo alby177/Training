@@ -1,6 +1,0 @@
-Hi All,I am currently trying to run up a new version of ABB PS501 V2.  This is ABB's version of CoDeSys. The interface is V3.  An interesting thing is wehn you click on the program icon V2.3 starts up.  This seems quite unusual to me. Is this a transition step for making the controllers programmable with V3?  Or is this how V3 operates?Thanks,
-
-_________________Russell GeeManmachine Pty Ltdwww.manmachine.com.au
-
-Dear Russel,this is a special customization for ABB. They use Control Builder Plus, which is based on CoDeSys V3.4, to make there configuration and use CoDeSys v2.x for developing the IEC progam. In principle CoDeSys V3.4 is a stand alone IEC programming system with all features you need to develop your aplication.If you have further questions to  ABB PS501 V2 please contact ABB directly. Best regardsJosef
-

@@ -1,6 +1,0 @@
-Hi I am trying to instal BBB IOs module. I go to tools - Device Repository - Installand select GPIO_modules.xmlBut I get this error:The correct import filter for the file could not be detected!Does anyone know what is happening?When I install SPIMaster.devdesc.xml I don't have any problemThank youBest regards Oscar
-
-Hi,why installing GPIO's did you modify them?They are available in the repository and only need to be pluggedBREdwin
-
-Hi.Now is working. I have not instaled xml file and use the device in repository. Thank you for your response.
-

@@ -1,8 +1,0 @@
-How can I make symbols in Global Variable?I am able to create "SYM_XML" file with the main project file (CoDeSys V2.3.9.13 and select PLC model Wago 750-841(FW12...))I just need to create some symbols in "SYM_XML" file. But I am a beginner of using CoDeSys and struggling to understand the software.If you someone have a sample program or sample "SYM_XML" with BOOL, INT, DINT or something,would you mind to share?
-
-export the global var.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
-I'm not sure what you mean by symbols. If by symbols you mean variables to use in your program, the syntaxes are as follows:VAR_GLOBAL	MyVar_Bool :BOOL;	MyVar_Byte:BYTE;	MyVar_Word:WORD;	MyVar_DWord:DWORD;	MyVar_DInt:DINT;	MyMem_Bool 	   AT %MX0.0 : BOOL;	MyMem_Byte 	   AT %MB0    : BYTE;	MyMem_Word        AT %MW0   : WORD;	MyMem_DWord      AT %MD0    : DWORD;	MyMem_DInt	   AT %MD1    : DINT; END_VAR
-

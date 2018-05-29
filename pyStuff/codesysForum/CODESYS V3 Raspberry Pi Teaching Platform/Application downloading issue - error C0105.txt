@@ -1,6 +1,0 @@
-Hi everybody,I've an issue when trying to download an application into the Rpi. Codesys gives me an error C0105. The translation should be something like this: "Not enough global data memory available, Unable to set the function pointer for '__RELOCATE__CODE'  Build complete -- 1 errors, 0 warnings : no download possible!An idea anybody? This issue is new for me, never had it before.  Thanks in advance
-
-Hi,did you solved the problem?I have the same problem with my raspberrry 3.
-
-Hi,is it possible to attach the project to check?BREdwin
-

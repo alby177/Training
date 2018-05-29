@@ -1,4 +1,0 @@
-Hello!Does anyone know how to realize the communication of Codesys and matalb? I know the opc will solve it, but I just can't do it. When i tried to set the opc tool of matalb, there is no item in the OPC.DA server. Can someone teach me in detail? Like how to configure the opc server for Codesys and the opc tool for matlab.
-
-Ok, i solved it. dongyaocode wrote:Hello!Does anyone know how to realize the communication of Codesys and matalb? I know the opc will solve it, but I just can't do it. When i tried to set the opc tool of matalb, there is no item in the OPC.DA server. Can someone teach me in detail? Like how to configure the opc server for Codesys and the opc tool for matlab.
-

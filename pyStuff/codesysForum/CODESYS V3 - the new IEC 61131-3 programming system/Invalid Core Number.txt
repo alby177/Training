@@ -1,4 +1,0 @@
-What does it mean? I have projects with many tasks. Do I need to delete them all and paste again? Why?Codesys 3.5.10.70.
-
-Hi,could we get the projectarchive,this does not happen with my plc.BREdwin
-

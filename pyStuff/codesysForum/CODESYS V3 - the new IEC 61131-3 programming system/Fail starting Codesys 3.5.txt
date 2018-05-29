@@ -1,4 +1,0 @@
-My Codesys 3.5 worked fine for a few months. Now it does not work and when trying to start it shows the message:"Failed to istantiate the frame window. The option file 'C:\ProgramData\CODESYS\CODESYSProjectDefaults.opt' could not be loaded. (Reason: Root element is missing'.) The application will be terminated."I have unistalled Codesys and erased the folder ‘C:\Program Files (x86)\3S CODESYS’ several times but when reinstalling the software I get always the same error.I use Windows 7 and I have in the same computer simultaneously Codesys 2.3 and Codesys 3.5.Any help?
-
-Hi,just delete the file 'C:\ProgramData\CODESYS\CODESYSProjectDefaults.opt'.It will be recreated automatically.
-

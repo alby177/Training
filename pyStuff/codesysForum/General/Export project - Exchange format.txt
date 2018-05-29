@@ -1,5 +1,0 @@
-Hello,
-I've read in "User manual for PLC programming with Codesys V2.3" that it is possible to export projects in order to exchange programs between different IEC programming system; where can I find a reference table (or something similar) explaining  the exchange formats (expecially the ones about the graphical languages LD and FDB)?
-Thank you in advance,
-A.B.
-

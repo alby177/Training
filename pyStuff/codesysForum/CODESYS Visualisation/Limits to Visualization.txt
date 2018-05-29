@@ -1,6 +1,0 @@
-HiIm using Somachine 4.1 and created some visualization pages. For some reason there are some text displays not shown when online in the simulator.There is no visibility settings used. Just wondering if I went over some max amount of objects per screen?Thanks for any clarification
-
-I'm experiencing the same issues as Chud. I also would like to add on a question to his about how to stretch or "screen fit" visualizations automatically on devices? I've looked through the codesys for this option but can't seem to find it.
-
-ok it seems like there is a limit. If i delete the amount of objects that displays from the display that doesnt display the latter does display. I have been looking for a setting to increase but havent found anything. Btw Rmoudy i found a best fit setting in the tools----options but this would only apply to the programming software when online (I think)
-

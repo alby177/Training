@@ -1,4 +1,0 @@
-Hi, I am looking to jump in to CoDeSys based PLC's.  My problem is I have a ton of Allen Bradley PLC's that I have to communicate with.What's the best way to do this?I have like 10 hours experience with CoDeSys, so it's safe to assume I know nothing.Thank you! 
-
-You may want to consider WAGO 750 Series PLC's.  Most support Ethernet/IP (Slave) which makes it easy to communicate with other AB PLC's.Here is an example video... https://youtu.be/y7cL5IHcR20This video shows how to talk to the IO directly, but it is of course also possible to R/W network variables too.  Here is an App note that shows how.  http://www.wago.com/wagoweb/documentation/app_note/a2032/a203200e.pdf
-

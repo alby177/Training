@@ -1,8 +1,0 @@
-Does CoDeSys return an errorlevel, when using --runscript?I use (in a batch file):Code:"%CoDeSysPath%\CoDeSys.exe" --profile="CoDeSys V3.5 Patch 4" --noUI --runscript="script1.py"echo %errorlevel%The errorlevel is 0 always. Even when using sys.exit (4) in the script.How can I get the return code from the script running in CoDeSys, into my batch file?
-
-Hi, Edwin,Edwin wrote:Does CoDeSys return an errorlevel, when using --runscript?I use (in a batch file):Code:"%CoDeSysPath%\CoDeSys.exe" --profile="CoDeSys V3.5 Patch 4" --noUI --runscript="script1.py"echo %errorlevel%The errorlevel is 0 always. Even when using sys.exit (4) in the script.How can I get the return code from the script running in CoDeSys, into my batch file?If you use system.exit(4), it should work.The reason is that sys.exit() was redirected to just exit the script execution instead of the whole CoDeSys instance. By hindsight, the process is still terminated in --noUI mode, so there the exit code should be retained. I filed issue CDS-30366 in our tracker, so this will be fixed eventually.
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
-
-I replaced Code:sys.exit(4)withCode:system.exit(4)And it is working successful. The batch command retrieves the correct errorlevel.Thank you for your help.
-

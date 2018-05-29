@@ -1,4 +1,0 @@
-Hi.I have some troubles getting started with programming via tcpip in codesys. I would like to have a Festo PLC (CDPX module with soft plc) communication with a device that has an ethernet interface supporting Ascii over ethernet. Anybody knows about how to get started? Anybody has some codesys project samples that shows how to setup communication and how to transfere data. Every help is appreciated. Thanks.\Morton
-
-If you use V3, then look at the CAA Netbase library (Use Case library)You can also find an example in the store (store.codesys.com). See the Halcon demo application.The help will also provide you some information.
-

@@ -1,8 +1,0 @@
-Beim Versuch ein Projekt auf dem Raspberry zu laden erhalte ich immer diese Meldung:[FATALER FEHLER] Unaufgelöste Referenz: 'IOMGRRECONFIGUREZuerst kommt ein Fenster: Fehler beim Download:1 unaufgelöste Referenz(en),0 Signaturkonflikte, 0 Versionskonflikte gefunden!Die Geräteversion auf der Hardware scheint sich von der im Projekt zu unterscheiden. Versuchen Sie durch Upgrade bzw. Downgrade des Gerätes im Projekt mit der aktuellen Hardware gleichzuziehen.Was kann hier die Lösung sein?
-
-Hallo,welche CODESYS Version und welche PI Runtime Version verwendest du?GrüßeEdwin
-
-Ich habe das Projket mit 3.5.6.0 auf Windows 7 erstellt erstellt. Dann habe ich auf Windows 10 erhöht und die neueste Version Codesys-Version 3.5 SP8 installiert. Das Projekt und das Gerrät habe ich auf die Version 3.5.8.10 gesetzt.Ich bekomme auch Verbindung und kann einen Download durchführen. Nach Aus-Einschalten des Raspberry bootet dieser nicht mehr und ist nicht mehr erreichbar. Es hilft nur ein altes Image auf die SD_Karte zu schreiben.Daraufhin habe ich versucht den alten Zustand mit 3.5.6.0 wiederherzustellen und bekomme aber dann die obige Meldung.Also zusammengefasst: Alt geht nicht mehr, neu auch nicht.  Bin für gute Ratschläge dankbar.
-
-Hi,alles auf 3.5.8.10 aktualisieren... dann schau ich mir das online an...wenn das geht bei dir.GrüßeEdwin
-

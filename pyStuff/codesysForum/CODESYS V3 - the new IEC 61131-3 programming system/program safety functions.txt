@@ -1,2 +1,0 @@
-Hi,Does anybody know how to program safety function blocks? I have Codesys V3.5 and is supposed that it comes with safety sil3 but I don't find where can I program safe functions.Thanks
-

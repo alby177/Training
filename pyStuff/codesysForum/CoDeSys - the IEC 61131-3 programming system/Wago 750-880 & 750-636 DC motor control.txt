@@ -1,6 +1,0 @@
-Dear CoDeSys forum, I have the 750-636 module for controlling my 24v dc motor with incremental encoder and I would want to make a ladder program using MC1_DC_ControlBasic. I know that the motor is working because in I/O-Check with few minor tweaks I'm able to set target position etc. and the motor is working. There is also a green light for the motor being referenced. When I try to use the mentioned above function block, set the target value and speed (max. 200), and set the xEnable, I get an error flag and message that the motor is not referenced. I'm guessing that I need to feed the function block more information, already tried few thing but failed. Can someone tell me what do I do wrong? I would be glad to know and solve this problem. Greetings to all.
-
-there are several inputs you have to set, some of them via a structure.try the example and it will clarify what you need.or make an export and i will have a look at it.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

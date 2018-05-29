@@ -1,6 +1,0 @@
-I am new to SFC and I think I am having a problem.  At any point in the SFC flow I would like to give a command to move to a certain step (a re-home step).  As you can see in the attached picture I am setting an IEC action to look for this command.  When the command is given it does jump to the step I intend.  The only problem is it appears I have 2 steps active.  (1.) the step that I wanted to jump to from the action, and (2) the step I was on before the command was given.  Is this a problem?  If so, are there any suggestions to fix this problem?Also, I have a couple of actions that are set in the beginning of the program (with IEC step) and never reset.  The reason I am doing this is because I need to monitor I/O and variables?  Is this a correct way of doing this?  Is appears to be working just fine but wanted to know if these is bad programming practice.Thanks.
-
-it is not wise to jump to an action. you need a state machine for this, you can use some extra transitions, when a homing is needed.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

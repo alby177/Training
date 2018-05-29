@@ -1,4 +1,0 @@
-codesys 3.5 sp7I'm trying to do the examples in Softmotion/Example applications described in the Online help.I wonder where I can find the files refered to in the help files, for examplePLCopenSingle.projectPLCopenSingle2.projectPLCopenMulti.projectetc...I have used the search tool at codesys site, and looked in the list of downloadable files but couldn't find any package with the example files.RegardsAJ
-
-After installation of CODESYS you can find them in:C:\Program Files (x86)\3S CODESYS\CODESYS\Projects\SoftMotion\Examples\Tutorial\
-

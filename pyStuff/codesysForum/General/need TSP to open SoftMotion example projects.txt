@@ -1,4 +1,0 @@
-Hi,when I try to open any example project from<CoDeSys V2.3 install dir>\Projects\Motion I see error messages like --Error while reading target informationError while loading the PLC configuration!Description file for module 'Module.Root' not found.--I'm using v2.3.9.42 provided by Festo and have a full installation incl. Softmotion and SP PLCWinNTIf I correctly remember, softmotion examples are for a realtime enabled softPLC target (not SP PLCWinNT) , but it's not included in the Festo installation package. Can I download a TSP for it from somewhere ?Or if TSP alone is not available, where to download a  3S Codesys 2.3 installer? Can't find it on the website.Or is there any way to use SP PLCWinNT for the examples ?Thanks
-
-please ignore, I found Codesys v.2.3 installation containing a SP RTE installer on Turck site, problem solved
-

@@ -1,8 +1,0 @@
-The raspberry Pi and some one wire temp sensors from Dallas DS18B20 are giving me a hard time.When I login white SSH than I can read the temperature white the cat commando.but when i login in the raspberry Pi white codesys with then I get only the address from the sensors.but no readings. what do I do wrong?In the status window is the message "no driver found" is this normal?Regards Lammert,
-
-Hi there!I have exactly the same problem (No driver found) like lvdPol. Please help us...Regards T. Holsten
-
-Hi,please check the following:1. did you add the ID of your sensor in the configuration tap of the 1wire sensor.2. what does Linux report if you connect to your pi by ssh (putty) and give then the following command cat /sys/devices/w1_bus_master1/28-0004442100FF<28-0004442100FF> should be your sensor ID which you see in the table If this is set and it still does not work you need to check if your sensor does work under Linuxcd /sys/bus/w1/devicescd <yoursensor-ID>cat w1_slave0f 00 4b 46 ff ff 06 10 0c : crc=0c YES0f 00 4b 46 ff ff 06 10 0c t=7375 Did you add the 4k7 resisitor ?Here is a good description:http://www.google.de/imgres?imgurl=http ... CD4Q9QEwAwBREdwin
-
-Danke! Jetzt funktionierts. Punkt 1 hatte ich übersehen.
-

@@ -1,8 +1,0 @@
-This morning, some workmates discussed "what code the CoDeSys IDE generate",Some said that the CoDeSys IDE generates machine code that can be executed by hardware,some said that the CoDeSys IDE generates interpretative code that can not be executed by hardware directly but by the CoDeSys runtime.
-
-As it was explained to me, the IDE first generates intermediate code from every editor.This intermediate code looks a bit like structured text, but with some additional information.From this code, the application is specifically compiles for the selected device (OS and CPU dependent).This compiled code will be executed by the CODESYS runtime which must be available and running on the device.This runtime also takes care of the communication with the IDE and I/O handling (and others).If you want to create your own "CODESYS device" and implement the runtime on your own hardware you should contact 3S-Smart Software Solutions. They can explain you all the details.
-
-The CODESYS compilers directly generate machine code for the specific CPU of the target device.However, that machine code needs the CODESYS Runtime as an "environment" to execute, as the runtime provides functionality needed by the IEC code (application scheduling, task handling, I/O drivers, basic system functionality, etc...).
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
-

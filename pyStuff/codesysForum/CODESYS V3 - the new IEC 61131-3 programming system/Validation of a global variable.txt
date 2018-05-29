@@ -1,7 +1,0 @@
-Hi,I wish to check if a string name communicated to the codesys controller is a valid global variable For e.g. In myController (Codesys)Type myDataType:  a : INT ;  b : STRING ;END_TYPEVAR_GLOBAL       myVar : myDataType ;END_VARThe external system (another controller) is not aware of existence of 'myVar'. It will simply pass the name in the form of STRING for e.g. var_name = 'myVar'.Is it possible that codesys program can check whether such a global variable exists?Regards,Rahul.
-
-Hi,I am sorry that I can't help you but I too would like to know the answer. I have a different application in mind. I would like to read the value of global variables, but first I need to resolve if the name exists.So I would like to use a variable name string to find the variable.thanksDaveW
-
-_________________David Warren
-Luscher UK
-

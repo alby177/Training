@@ -1,3 +1,0 @@
-Platform - Wago 841
-Is there a way to programically determine the IP address from the Local Host's system communication parameters?
-

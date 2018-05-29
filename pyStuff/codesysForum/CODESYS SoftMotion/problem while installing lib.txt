@@ -1,2 +1,0 @@
-hi all, i had missing some lib in my Project ( new lib given by supplier ) i had done the following steps to install the lib .1. C:\ProgramData\CODESYS\Managed Libraries\TTControl. here i have all the Folder related to lib from TTcontrol.2. i had copy and pasted new lib Folder here ...3. open codesys Project4. Tools -> library repository -> install button -> open (C:\ProgramData\CODESYS\Managed Libraries\TTControl\Lib500) Folder )5. OPEN lib500_types.compiled-library-ge33 FILE to install.but i am getting the following error as Show below Attachment:3.PNG
-

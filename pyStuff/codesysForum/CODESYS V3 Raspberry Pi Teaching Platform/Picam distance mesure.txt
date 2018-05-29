@@ -1,2 +1,0 @@
-Hello,Is or possible to make distance Mesure between two pixel on the picam picture with codesys visualization ?ThanksBest regards
-

@@ -1,4 +1,0 @@
-I have a Magelis HMISTU HMI display connected to a Wago 750-881 coupler using Modbus TCP. I wish to display the values of a number of variables within the PFC but the display driver will only accept register values in the range 30001+ whereas the variables are located in the Wago coupler at address 256+. I have tried using IEC61131 addressing but this does not appear to help. Is there a way to perform some kind of conversion or are the two items simply incompatible?Thanks,Tony
-
-Its OK, I just realised that register address 30001 on the display is in fact equivalent to Modbus address zero on the Wago so I just need to add 30001 to each Modbus address in the Wago to access my variables.
-

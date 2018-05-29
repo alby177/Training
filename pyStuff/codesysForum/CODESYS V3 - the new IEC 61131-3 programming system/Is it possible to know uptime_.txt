@@ -1,6 +1,0 @@
-Is it possible to know uptime for the codesys application? Is there any function for this or I must do it manually?
-
-Seems like you need TIME() function.https://help.codesys.com/webapp/cds-ope ... 5.10.0#id1
-
-It works.
-

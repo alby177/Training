@@ -1,4 +1,0 @@
-Hello to all fans of CodeSys,I want to create a data transfer with Raspberry PIwith method  GET or POSplease help.thank you
-
-Hello.. i have lib for POST and GET for Codesys V3 please write me on email: dmitriy.murashov@automation-engineering.ru
-

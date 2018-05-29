@@ -1,8 +1,0 @@
-Hi,I'm using BBB for some projects involving CanOpen and CanOverEthercat servo motor drives.The SM_Drive_GenericDSP402 fixes the ModeOfOperation always to 8 regardless the FB used (e.g. MoveVelocity, MoveAbsolute, ...etc).From the CiA 402 Standard i read that ModeOfOperation=1 means Profile Position, ModeOfOperation=3 means Profile Velocity and so on...ModeOfOperation 0 and from 8 to 127 are RESERVED !Why does the Codesys SoftMotion Axis always set the MoO to 8 ? What does the MoO 8 stand for ?Inside this forum i found this:Quote:Hi,check if the servo supports the following operating modes which are defined in the CANopen drive profile DS402:either7 Interpolated position mode or8 Cyclic sync position modeshould be supported by your new servo driveIn which way Does codesys control my motor using MoO 8 ?Most of my drives works well with this mode but i have one drive that can set the motor in standstill though the MC_Power, but i can't get it spinning usign MoveVelocity or MoveAbsolute...etc.Might someone shed a light on this MoO 8 ? Thank you in advance.
-
-Hi,CSP Mode 8 cyclic synchronous position mode is used by CODESYS SoftMotionto have the posililty to do caming, cnc, multiaxis movements.The master calcs the trajectory for all drives and send cyclic setpositions in compare to if you use the DS402 mode 1 where the drive is doing the trajectroy.(This is used by SoftMotion Light)BREdwin
-
-Hello Edwin ... it is any other requirements for servo modes, sync, or somethink .. that need to be done for using with SoftMotion from Codesys?
-
-Hi,th plc should be realtime capable.BREdwin
-

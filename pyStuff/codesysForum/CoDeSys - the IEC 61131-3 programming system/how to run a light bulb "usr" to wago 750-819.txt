@@ -1,6 +1,0 @@
-Help for NewbiesHow to turn on and off a light bulb "USR"? As I understand it from a manual designed for use by the programmer. Throw a code example please.
-
-You have to include the library Visual.lib.You can find the documentation for this library herehttp://www.wago.com/wagoweb/documentation/759/eng_manu/122/m912220e.pdfUwe
-
-Uwe wrote:You have to include the library Visual.lib.Thank you! Yhat's what I need.
-

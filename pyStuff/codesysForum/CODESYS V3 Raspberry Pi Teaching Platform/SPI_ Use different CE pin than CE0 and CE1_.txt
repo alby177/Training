@@ -1,4 +1,0 @@
-Hello everybody,I want to use more than two SPI devices. Therefore I need more thantwo ChipEnable (CE,CS,SSEL...whatever) pins. It should be possible to useany GPIO pin as CE output. Is there a way to define what pin should be used by the SPI driver?Regards,Jay-Be
-
-I think any change is not possible because this SPI port is hw implemented on BCM chip
-

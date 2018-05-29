@@ -1,6 +1,0 @@
-Hello togetherI see in the standard libraries of codesys exist 2 libraries which have filehandling code in it and do more or less the same.There is one in SysFile S3 and one from "CAA Technical Workgroup" which has also S3 in its author name.Which one should be used for what reasons?
-
-I have similar question: which difference between Sys-libraries and Sys23-librarires?For example, SysCom and SysCom23.
-
-Correct me if I am wrong, but the *23 libs are, as far as I have understood, Codesys 2.3 backward compatible libraries for use in codesys 3.5. You will need these whenever you convert old v23 projects to v35. After converting the project, you can then phase them out for more contemporary libraries if you wish.
-

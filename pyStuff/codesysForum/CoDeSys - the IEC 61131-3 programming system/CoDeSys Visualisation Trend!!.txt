@@ -1,8 +1,0 @@
-Hi everyone, i got a little question in the matters of saving the visualization TREND history.   I manage to save my trend history and then access the saved file using "Wordpad and/or Notepad" from microsoft.  My Question is as follow:  Is it possible to save the TREND history in another format then .TRD, if yes how and with which proceedur ??    in order to facilitate the file analysis,  because with the use of 3 variable or more, within the file it became quite hard to be understood on the first look.Thanks in advance!Lasrediel
-
-The data block is not shifting but the pointer is rolling around.So if you want a variable in a file just take it and give a timestamp and the value to a file.In V2.3 this trend has some flaws and is never meant to be used as datacollector.I think boris copied it from a standard visualisation source file.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
-A little unusual idea, but for this purpose I used a program that makes the screenshot at regular intervals, after which screenshots are available for quick review. At the same time trd-file Imports easily in the table (I used open office calc) where you can generate more elaborate trends.
-

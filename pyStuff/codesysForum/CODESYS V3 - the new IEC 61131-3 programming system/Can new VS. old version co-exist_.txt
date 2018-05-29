@@ -1,4 +1,0 @@
-Hello gang,I started my work with version 3.5 SP 4 then later installed 3.5 SP 8.  I new find that SP 4 version still launches but when I try to open any projects I get and error saying:Internal error while object 'Device' is providing language model information: stDisplayNameAny ideas as to what is going wrong?
-
-Several versions of Codesys can co-exist for sure, I have about 12 different versions installed ranging from v3.5 SP1 to v3.5 SP8.While you await an answer from the Codesys support team, try uninstalling and re-installing them if you haven't already.
-

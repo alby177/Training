@@ -1,2 +1,0 @@
-Here is a shot overview of how to create a configuration of I/O on codesys PLC with simple configuration software.www.youtube.com/watch?v=j6wZEdg8zR0It's now suitable with Beckhoff PLCs.
-

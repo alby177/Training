@@ -1,2 +1,0 @@
-In C/C++ you can declare input arguments to functions of references/pointers constant. Then the compilers gives an error if the referenced value is changed accidentally in the function. Can the equivalence be done in CoDeSys?
-

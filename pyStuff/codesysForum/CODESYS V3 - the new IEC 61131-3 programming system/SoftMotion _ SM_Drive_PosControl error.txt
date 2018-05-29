@@ -1,2 +1,0 @@
-I get an error when I use a MC_MoveVelocity and by mistake the velocity, acc/dec are "0" ... The axis false in Error ( red triangle ), Online Status/Communication ( initialization of base communication (10 ). What's mean initialization of base comm(10 ) ??? . I'm not able to reset this error by MC_Reset / or SMC3_ReninitAxis ! The only way to get back it's a cool reset of the Controller !Can you give me details about this state ?
-

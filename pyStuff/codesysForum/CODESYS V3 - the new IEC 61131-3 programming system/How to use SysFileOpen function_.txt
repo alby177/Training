@@ -1,4 +1,0 @@
-Hi, I am new to CoDeSys. I am trying to use the function SysFileOpen to open a file, I saw that on the 2.3 versione the usage was:SysFileOpen(´filename´, ´access mode´);How does it work on the version 3?From the documentation I see:SysFileOpen(´filename´, ´access mode´, pointer to an error object);I was adding the CmpError Library to my project but doesn´t seem to recognize any of the contained error objects declared in there.Thanks,8Strings.
-
-Hi StringsSadly this is a slow forum where I have not got any help in the past. To get the ball rolling here some hints on the SysFileOpen. The third item is a pointer to an error code. e.g.VAR   rte:   RTS_IEC_RESULT;  //Error code according to runtime error list   fh:    RTS_IEC_HANDLE;  // file handle   fileName: STRING[63] := '\dir\myfile.bin';END_VARin code area  fh := SysFileOpen( fileName, AM_READ, ADR(rte));good luckDaveLuscher
-

@@ -1,6 +1,0 @@
-Hi all.Very recently I've had to make some changes to my code and when it comes time for me to download the code to the controller I either get a popup window, or a message in the status bar about a 'runtime error' with some kind of error code.You can ignore them and the project begins to run like nothing's happened, but I've found that it's not running as it should in certain places.What I would like to know is where can I look up these error codes so that I may have a better idea as to how to fix what's wrong with my code.I was looking around on the online help and found something called CfgCCGetError, which, as I understand it, will let you view the last error that flagged up whilst the code was being downloaded to the controller.  T figured that might be able to be of some use, but, when I tried to build my project after having included the library, I got an 'unresolved external pou' error message, so that route was closed off to me.  Oh, I'm working with a Wago 750-881.So yeah, I guess what I'm trying to ask is, is there some kind of detailed documentation floating around out there on  these runtime error codes?  Thanks.
-
-Hi Elric,               Try to reset codesys run time and start RT services again and download your program it should workThanks
-
-OK - cheers for that:  I'll give it a shot and let you know how I get on.Elric.
-

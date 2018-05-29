@@ -1,6 +1,0 @@
-Hi, I want to define a Dialog in a library and use it in my project.However, if I add an event to open the library dialog from my project the dialog does not have input and output variables. The compiler provides warning "the dialog is not instantiated within your application".How can I use dialogs from my library inside a project?
-
-Please check the following:- Double click on the visualisation manager- Go to the tab "Visualisations"Are here your dialogs visible and selected?
-
-Yes, they are visible and are selected.
-

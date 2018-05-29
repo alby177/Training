@@ -1,2 +1,0 @@
-I've duplicated a group of graphic objects, and need to make the same change to all variables in the duplicated objects - i.e., change Array[1] to Array[2]Then duplicate again, and search/replace Array[1] to Array[3], and so on.When I select 'Selection Only' and click 'Replace All' it tells me, 'Search scope 'selection only' is not supported for this editor'.So I then select 'Active Editor' and 'Find Next' then 'Replace', I get the error msg:  'Value cannot be Null. Parameter name: stBlock'So what is the proper way to do this?  Am I missing something?
-

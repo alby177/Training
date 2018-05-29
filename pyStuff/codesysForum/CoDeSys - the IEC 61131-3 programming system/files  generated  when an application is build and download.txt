@@ -1,6 +1,0 @@
-I have created an appication with my logic in PLC_PRG using Function block diagram(FBD). When i build  the appication,  some  files must be generated.What  type (bin or exe) files are  generated ,when an application is built and where (path on hard disk) do these files reside?There is an option called "Generate Code" .On clicking this, the code ios generated but where does it reside?praveena
-
-under project options directories you can find where they are in default.with me it is C:\ProgramData\CoDeSys V2.3\Compile\ so not in program files but in data.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

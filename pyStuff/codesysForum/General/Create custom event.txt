@@ -1,8 +1,0 @@
-How I can create my custom event? Which parameters I should send to CreateEvent2 function?
-
-go to TASKS and set the running from freewheel to event driven.now your task is done when a something happens.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
-No. I want to create custom event like Delphi. On some cases rise this event. And in FB recieve event and do some work.CmpEventMgr library have FB EventCreate and EventCreate2. But which parameters I should send to FB?
-

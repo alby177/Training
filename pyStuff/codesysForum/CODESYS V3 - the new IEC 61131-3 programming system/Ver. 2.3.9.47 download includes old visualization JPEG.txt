@@ -1,2 +1,0 @@
-Being new to CoDeSys (but lots of HMI/SCADA experience), I have been experimenting with a project to get a feel for the procedures and coding practices.When I download my simple 3-Visualization project, the download wants to continue to download the old, large JPEG file.  I changed the visualization to have a less KB JPEG file, and this gets downloaded, but for some reason the download wants to download the old, larger file.
-

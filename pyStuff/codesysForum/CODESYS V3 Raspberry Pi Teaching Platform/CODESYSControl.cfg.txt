@@ -1,2 +1,0 @@
-Hi,Does it exist a document (e.g. pdf) on how todefine parameters inside the CODESYSControl.cfg file? ThanksBR
-

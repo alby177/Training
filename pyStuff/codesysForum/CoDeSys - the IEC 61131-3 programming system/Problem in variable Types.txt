@@ -1,4 +1,0 @@
-Hi,I have some confusion:I am trying to run some example problems for learing IEC-61131 but i found some variables type like:VAR RETAIN, VAR_OUTPUT RETAIN.TYPE END_TYPE but I dont get this type of variables in CodeSys 2,3.So is it not important? or It is not support in CoDeSys or probably I am reading a book where the given example is not for CoDeSys but it should be same for IEC 61131-3 supported software.I am waiting for ur response...........ThanksAsif 
-
-Hi Asif,the "variables" you are looking for are not variables, but keywords. After typing, they normally are displayed in bold and blue color.The keywords are standardized by the IEC61131 and are supported by any IEC61131 compliant system, CoDeSys as well.Check the online help to learn more about their use. It's pretty simple.Have fun in using CoDeSys.Rolf
-

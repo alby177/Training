@@ -1,4 +1,0 @@
-Hello... i present lib for codesys V3(was tested on Raspbery PI) for HTTP get and post session. You can use it to transfer some data to yours internet Web server with (php or somethink like push to MySql DB ) and can use to get data from some API in internet service. If you interested in that, write me to dmitriy.murashov@automation-engineering.ru
-
-up.... maybe somevody interesting in that.
-

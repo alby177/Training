@@ -1,6 +1,0 @@
-Dear All;I have a BECKHOFF OPC Server and 13 slave module.Some slave module write to screen  below message.TwinCAT System ServiceMessage queue to TwinCAT System Service not available, therefore dynamic status update not possible. Enable polling mode instead? I select OK but not running..What Am I doing?
-
-Do you hava got any idea?
-
-hi,the problem on this is:Beckhoff OPC is not a CODESYS product made by 3S,this is made by Beckhoff. So I would recommend to ask the Beckhoff support for help.BREdwin
-

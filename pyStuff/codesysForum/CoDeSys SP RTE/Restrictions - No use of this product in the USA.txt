@@ -1,6 +1,0 @@
-Many of the products in the CoDeSys Store (for example CoDeSys SP RTE) have the following statement listed under the heading "System Requirements" Quote:"Restrictions - No use of this product in the USA"Why does this restriction exist?
-
-Check out this discussion link:  http://forum.codesys.com/viewtopic.php?f=11&t=7190
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-

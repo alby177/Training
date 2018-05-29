@@ -1,4 +1,0 @@
-Hi, have some problem with adding variables to the PDO mapping for a Beckhoff EL6751 slave. I'm using Festo version of Codesys v3.5 SP4 P1. I tried to add the eds file in version 2.3 and change the mapping without any problem, also mapped the device on a Twincat PLC. In Twincat I'll get 2 predefined variables, in Codesys V3.5 I will only get 1 ghosted (light grey).Have anyone else had this problem?
-
-Hi,hard to say, guess we need the CODESYS V3 project or at least the screenshots from your configuration tree... andPDO Mapping.BREdwin
-

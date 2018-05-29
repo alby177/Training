@@ -1,4 +1,0 @@
-In the GUI, I disbaled the CANopen Manager Autostart option. And I enable the CANopen manager from my application. With CIA405.NMT: DEVICE := MasterNodeId and STATE := Cia405.TRANSITION_STATE.START_REMOTE_NODE.That is working fine.Now I want to disable the CANopen manager (or go to the pre-op state). Using STATE := Cia405.TRANSITION_STATE.ENTER_PRE_OPERATIONAL, result in a ERROR = CANOPEN_EQUEST_ERROR. And the CANopen manager stays in operational state.Did anyone notice this behaviour too? And maybe has a solution to get the master out of operational state.Regards,Edwin.
-
-Apparently the master cannot be set to pre-op state.So I excluded the master, by using the ALL_EXCEPT_NMT_AND_SENDER flag; STATE := (Cia405.TRANSITION_STATE.ENTER_PRE_OPERATIONAL OR Cia405.TRANSITION_STATE.ALL_EXCEPT_NMT_AND_SENDER)Now the master stays in operational state. And all slaves go to pre-op state.This behaviour is acceptable for me (for this project).
-

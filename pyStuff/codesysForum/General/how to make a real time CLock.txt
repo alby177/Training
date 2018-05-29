@@ -1,2 +1,0 @@
-hi I'm having problem making a code to display or creat a time call for PC time.i'm using codesys v2.3as of now im using Curtime but i dont know its parameters.
-

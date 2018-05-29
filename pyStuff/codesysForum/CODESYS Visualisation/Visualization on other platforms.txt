@@ -1,7 +1,0 @@
-Im interested to know if (and how) anyone out there is using visualization on a non-windows platform, e.g. using no OS at all or e.g. Linux and CPUS like ARM or other. It sounds to me that you have to develop a certain amount of drivers (and os abstractions) running below the RunTimeSystem. 
-Any possibilites or experiences?
-
-Best Regards, Björn Nilsson
-
-_________________Evaluating CoDeSys v3.3
-

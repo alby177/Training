@@ -1,2 +1,0 @@
-Hello~As subject, If I reinstall OS(windows), how to backup license from CODESYS control/softmotion RTE PC? and how to restore license to original CODESYS control RTE PC? Could you guide me with pics step by step? Thanks.
-

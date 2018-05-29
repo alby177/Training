@@ -1,4 +1,0 @@
-Hi,I'm using Codesys v3.5 sp4 provided by Festo with a Festo CECC PLC - it has a standard ethernet port.I need to communicate with a Ethernet/IP slave device, and watched a webinar video where the presenter showed how to add a Ethernet/IP scanner and slaves to a Codesys v3 project. However when I go to Add Device -> Ethernet, in the list of available fieldbuses there is only Modbus with ModbusTCP Master and Slave sub-entries. No Ethernet/IP scanner.So is it possible to use this PLC to communicate with Ethernet/IP slaves? Do I need just a software library, or the PLC should have specific hardware? If I only need a library, where to get it from, and is it free or paid?Thank you.
-
-Hi,Ethernet Scanner is availbale since 3.5SP6Ethernet Adapter is available since 3.5SP7BREdwin
-

@@ -1,6 +1,0 @@
-Hi everybody   ,I'm actually writing which is creating text file with the CAA lib and i'd like ton know how can I make a line feed in my texte file.I've already try to add '\n' or '$l' etc a the end of the string and it does not work   If someone have an idea ThanksJetty
-
-You can use CONCACT Function (in Standard.lib) to add two string in a thrid one.You can use special character like this :$OD : ASCII code for carriage return (CR)$$ : to add a $r$' : to add ' (apostrophe)$L ou $l : line feed$N ou $n : new line$P ou $p : next page$R ou $r : end of line$T ou $t : tabulationHope this helps you
-
-I declared a global string variable like this:	s0D0A: STRING(2) := '$R$N';and then I used concat to append it to the string I want to write to the text file:	SP_String:=CONCAT(SP_String,s0D0A);This worked fine for me.
-

@@ -1,9 +1,0 @@
-Hello, I have just installed CoDeSys and I am getting a module compile error:
-
-Interface of POU 'SMC_AXISGROUPSTARTCYCLE'
-ERROR 3740:  ( 8 ) :Unknown type 'SysTime64'
-ERROR 3740:  (9):Unknown type 'CurTime'
-2 Error(s), 0 Warnings
-
-Any thoughts?? Cheers, Matt
-

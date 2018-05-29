@@ -1,5 +1,0 @@
-It is my limited research that shows that the communication device drivers that are possible for communication to the target device are linked to the target file. BUT in the year 2010 there are devices called gateways that can convert one connection / protcol to another. So this linking no longer physically exists between the target and device drivers unless it is a custom by the OEM manufacturer. Case in point I use Digi / Moxa serial servers to connect over TCP to a PLC that supports a serial connection. I have to install and use the MFG virtual serial port in order to make it work. I have an option through the server to connect directly using TCP sockets so I would like to bypass the serial device driver and use TCP instead but I can't because that device driver is not accessible to me because my target doesn't support TCP. Is there any way to get around this? Why not make the 3S TCP driver accessible to all targets? The worst that can happen is the ever present "Communication Timeout" error box.
-
-_________________Thanks,
-Steve Pfeifenroth
-

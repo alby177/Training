@@ -1,2 +1,0 @@
-Salut,At the moment, despite time and efforts, I can't get my Beckhoff servo AM3111 moving.I already post in the forum (SoftMotion / Author : nwelling / Softmotion with Beckhoff + RPi - drive error) but without reaction.1st: Is it imperative to patch a "Real-time kernel" for the RPi ? ... or it just works better with ?I have updated Motion, profile of the EL7201 is DS402, but I get as Status of the SM3_Drive_ETC_Beckhoff_EL72x1:  " configuration error"What I'm doing wrong ? Thank you for your attention.S.P.
-

@@ -1,9 +1,0 @@
-I have a project that has worked fine. I believe the issue is that at one point the libraries and so forth were on a partitioned drive E. After a reconfiguration of my computer and moving everything over to drive C I now get stuck in an infinite loop. See the error message attached. Selecting any option doesn't do anything. Any way to fix this project?
-
-_________________Thanks,
-Steve Pfeifenroth
-
-I opened this file on another persons computer and removed the references in the Project-options-directories that referenced drive E:. After doing this I was able to get out of the infinite loop and no error messages. In the directories path I had paths to both E: and C: drive directory locations. I left in only the C: drive locations. The original file may have been corrupted when I first had to terminate the program through windows task manager because of the infinite loop.
-
-_________________Thanks,Steve Pfeifenroth
-

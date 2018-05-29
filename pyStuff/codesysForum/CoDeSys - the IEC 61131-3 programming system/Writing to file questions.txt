@@ -1,8 +1,0 @@
-I am trying to write an array into a file, using SysFileOpen, SysFileWrite and SysFileClose, from the SysFileLib.lib.But I can not make it work. When I press a button, this write to file program should start, but it gets stuck when it has to open the file. The output variable for SysFileOpen stays on "0".The FileName for the SysFileOpen is 'disk_sys\routine1.bin' and the parameter I used is Mode:='w'. I have also tried 'disk_usb\routine1.bin', after connecting a USB stick but it doesn't work either.Does anyone have any idea why it doesn't work? Why does output variable FILE return '0'?Thank you.
-
-_________________Lucian
-
-I have found why, so the topic is closed.I can write files only in the project directory on the PLC (like 'disk_sys\project' or, if mmc or usb connected 'disk_mmc\MOELLER\<name of plc>\project').
-
-_________________Lucian
-

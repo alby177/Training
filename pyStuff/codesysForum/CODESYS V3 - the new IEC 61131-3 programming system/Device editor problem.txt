@@ -1,4 +1,0 @@
-hi, allXP, V3.5 SP3 Patch4.Try to open any type of device , but there is nothing in device editors, any tips from you?BR/listenyang
-
-Quote:XP, V3.5 SP3 Patch4.Try to open any type of device , but there is nothing in device editors, any tips from you?Hi Listenyang,I am using CODESYS 3.5 SP4 Patch 1 and am having the exact same issue. Did you manage to work out how to solve it?Best regards,Andrew
-

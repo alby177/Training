@@ -1,6 +1,0 @@
-Hello good folks of the Forum. Im trying to put Raspberry Pi CoDeSys 3.5.12.0 OPCUA server events to the test and am trying to follow the attached help tutorial. I cannot find the libary file: CmpOPCUAProviderAlarmConfigurationDoes anyone know where it is located? Prehaps I am missing a package? I cannot find it in the store.CheersCAttachment:CoDeSysOPCUAHelpFies1.pngAttachment:CoDeSysOPCUAHelpFies2.png
-
-Hi,attached an example project how to use the OPCUA events.The important thing is to know you need to add an alarm configuration to use it.I would recommend to start to read this section:https://help.codesys.com/webapp/_cds_ru ... n=3.5.12.0BREdwin
-
-hello:installs the latest version of codesys 3.5.12, to me with the previous version I could not find that library I do not know if they have introduced it in this version but when updating the program without problem.regards
-

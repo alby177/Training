@@ -1,2 +1,0 @@
-What are the minimum requirements for MACS to run?  Can MACS run on a PowerPC Architecture?
-

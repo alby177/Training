@@ -1,6 +1,0 @@
-Does all programs in a task calls exactly at the same time ? I have the ability to move a program up and down and that makes me wonder.
-
-I was hoping a CoDeSys employee would jump in, but looks like they missed this one.My gut feeling is the calls will go in order of the POUs as listed.  So if you have a Main Task with POUs 1,2 and 3, then the task will run POU1, then POU2, then POU3.  I think this because CoDeSys can run on embedded controllers using an MCU that can't really run multi-threads or anything like a full blown CPU.  If someone else has more info, please chime in!
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-

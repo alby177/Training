@@ -1,4 +1,0 @@
-Hello hi,how to check the wait time and response time of CoDeSys?Thank you.
-
-Hi,wait time for what?BREdwin
-

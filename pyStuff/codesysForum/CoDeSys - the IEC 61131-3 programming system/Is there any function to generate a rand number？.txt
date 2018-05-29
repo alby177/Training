@@ -1,6 +1,0 @@
-Is there any function to generate a rand number？
-
-download the oscat library from www.oscat.de here you will find several blocks making random numbers.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

@@ -1,6 +1,0 @@
-Hello,i want to install codesys on rasberry.We ask wich version of linux i need to install on the raspberry before to install codesys....thanksOk: sorry i have read now that it's debian inside the program...thanks
-
-Hi,yes and next steps are:https://www.youtube.com/watch?v=6FPf3RHWyeUBREdwin
-
-Hello Edwin.thank you very much for you replay.I have look the video.In my mind i want make a Home automation system.I have make somthing with wago PLC (codesys 2.3) . I used a modbus I/O with 8 relay 12A out, 8 input, 1 comunication port 1 wire.I need to do a modbus RTu comunication, so i ask you some informationa about some hardware to connect on raspberry:1- Usb - rs485 conveyor (hal duplex comunication)2- Enocean dongle and also library to codesys3- ZigBee dongle and also library to codesys4- Knx dongle and library comunicationwe could make a post with all hardware that can be connected to rasperry and libraries CoDeSys. What do you think about it ??
-

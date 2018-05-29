@@ -1,4 +1,0 @@
-Does anyone have experience using the Sockets library with TCP/IP? I am trying to develop a TCP/IP application and have gone through the Create-Bind-Listen sequence on the server without a problem. When I try to accept however, I am getting a negative number for the new socket number, typically -2134 (FFFFF7AA) but sometimes -2548 (FFFFF60C). Is a negative socket number legal? I can't seem to get the receive command I have after the accept command to work with this negative socket number so I think it's not legal. Is this an error code? I can't find a list of error codes for the socket commands in any documentation I have.
-
-Any help would be appreciated.
-

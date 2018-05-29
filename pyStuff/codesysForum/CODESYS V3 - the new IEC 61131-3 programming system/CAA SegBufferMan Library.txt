@@ -1,2 +1,0 @@
-Hi all,I'm trying to find the queue buffer functions which are part of CAA SegBufferMan library. Apparently, there are two CAA SegbufferMan libraries, but the one that has the buffer function is not installed by default? Here is the help file of it:https://help.codesys.com/webapp/f_caa_s ... n=3.5.11.0Where can I find it to use? I have downloaded the NetbaseServices example which supposedly would have it installed, even the help file of this example shows those functions, but the library and the functions are just not there.Thank you.
-

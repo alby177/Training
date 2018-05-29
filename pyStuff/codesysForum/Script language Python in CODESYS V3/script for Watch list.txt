@@ -1,2 +1,0 @@
-Hallo,I wann to export the watchlist from CoDeSys v3.5.9 to a .txt file. there are some script to do that automatically?Thanks for any help and idea!
-

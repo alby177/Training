@@ -1,6 +1,0 @@
-HiIm tying to run the program from this forum that reads the CPU temperature of the PI, however when I build it I get the error "Failed to insert library IoDrvGPIO 1.0.1.0".Does anyone have a suggestion on how to fix this error?BrMorten
-
-Hi,FAQs:viewtopic.php?f=22&t=5641&p=10083#p10083BREdwin
-
-Thanks Edwin, that fixed it.
-

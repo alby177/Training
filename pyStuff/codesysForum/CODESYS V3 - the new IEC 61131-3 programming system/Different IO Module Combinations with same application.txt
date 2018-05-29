@@ -1,4 +1,0 @@
-I'm attempting to write an application which covers two different IO Module Configurations that can be selected between in the application. The module protocol and power unit remains the same (EtherCAT). The difference is that one configuration uses more digital input and relay output modules as well as a different analog module. Is it possible to create one application with two different IO mappings and switch between the two within the application? My attempts so far have led either to the EtherCAT slave adapter not going into run or giving an invalid configuration error.In each case, I'm using a Crevis NA-9286 EtherCAT Adapter.If anybody has any input on this, it would be much appreciated.
-
-you may to detect the the status of your ethercat couple to determine which is live and then switch over to the IO address to resume your logic. And make sure you have tick the autorestart of the slave
-

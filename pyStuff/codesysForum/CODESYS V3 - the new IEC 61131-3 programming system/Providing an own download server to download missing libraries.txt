@@ -1,4 +1,0 @@
-Hello community,is there an documentation available, how I can set up an own download server, for downloading missing libraries?I know how to set up a web server in general, but I don't know which folder structure is used to download the missing library. Thank you in advanceBR,Kevin
-
-_________________Building & Process Automation with HVAC Library for CODESYS© - www.hvac-automation.com
-

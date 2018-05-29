@@ -1,6 +1,0 @@
-Hi,I want run some of my code asynchronously. How to use the Async Manager library?ThanksPierre
-
-Do you got any Results?
-
-You may use a task, with event execution.If you can afroid it, it is easiest way.
-

@@ -1,4 +1,0 @@
-I am developing OPC UA client for Control Win V3, and have faced with the incomplete OPC UA specification realization. Particular i found, that functionality of  MonitoredItem DataChangeFilter Trigger is limited by "StatusValue_1", and "StatusValueTimestamp_2" mode would not be accepted by server. This resulted in inability to retrieve the data in every scan cycle (data is being delivered upon value change), and will require some undesired workaround. My OPC UA client is working normally with another Servers though. This OPC Server v3 behavior was checked on UaExpert with the same result.Could OPC Server functionality be limited because of Demo mode? And if not – any plans to rectify this in future? OS:Windows10x64bitCODESYS Control WinV3 3.5.7.20 (Demo)
-
-Hi,need some time to check.This is an open issue need to be solvedOPC UA: Support of "Embedded UA Server Profile"BREdwin
-

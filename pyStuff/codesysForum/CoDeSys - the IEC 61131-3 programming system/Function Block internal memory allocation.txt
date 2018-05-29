@@ -1,6 +1,0 @@
-Im on a Wago 750-873 if that matters...I have a 'Logger' function block with some actions... push(new), pop(last), index(number), and a good amount of memory utilized as arrays. My "issue" is declaring the size of my Logger. It seems arrays don't like to be created dynamically, but using a constant means I have to create a 'Logger' function block for each potential sized Log (one class for 200 logs, one class for 500 logs,...)Is there any way (without using malloc), that I could work this out in the declaration and call some kind of constructor that sets the logger size. I think not, but it would be a lot cooler if I could Thanks.
-
-no arrays are not dynamic as it must know the size beforehand to write other arrays next to it.however you can do it on a usb stick or other memory. Here they are cut in pieces and you could do the same, but it is not advicable.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

@@ -1,4 +1,0 @@
-When logging in on Codesys control WinCE V3 I always get error "Index was outside the bounds of the array" without any explanation. The log does not show any items. I tried a lot of things including refreshing all applicable devices Any hints on this?LEOAttachment:Index was outside the bounds of the array.PNG
-
-I found that we had to reset (powerOFF) the controller  Apparently it does not close down correctly in some situations. Sorry about botheringleo
-

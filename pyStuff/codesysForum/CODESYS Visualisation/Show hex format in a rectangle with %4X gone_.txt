@@ -1,2 +1,0 @@
-I use to show hex numbers with 4 chars as 0F1B by writing %4X in a rectangle. How is that done in CoDeSys v3.5?
-

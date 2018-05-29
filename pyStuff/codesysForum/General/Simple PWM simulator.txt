@@ -1,6 +1,0 @@
-Hi,I'm new to CoDeSys and I was wondering if there was a base PWM simulator program floating around anywhere. Ideally, I need an 80 Hz signal and need to be able to adjust the voltage (24VDC max) to control a fan. I wanted to get my hands on a base program and just teach myself how to tweak it to get it to work properly. I will also be using an EPEC 2038 module for this if that is any help. Thanks.
-
-just because you are a beginnerlook at www.oscat.de lots of pieces of program to work with.pwm is a counter to a full byte for example and each time you are passing add one and check if you are above zero and  below setting. then output is on else output is off.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

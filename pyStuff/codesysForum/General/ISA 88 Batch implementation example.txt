@@ -1,5 +1,0 @@
-I have recently been reading/researching the ISA 88 Batch framework and have thought of a few projects that could benefit from this. I know in the past companies like Elau and possibly Wago have implemented ISA 88 using CoDeSys. The issue I face is you can't find any examples on the internet. I have ideas on how to implement the framework but I always try to see how others have done it. Is there anyone that has an ISA 88 example to share showing how they implemented a Unit? I am currently working on a motor example and would like to compare how someone else passed the data to/from units to equipment to control modules. I currently have implemented it in a similar way to PLCopen by passing structures using Var_In_Out. I need to write a book on CoDeSys (Big project already) and it's applications to PLCopen, ISA 88 and other OMAC technologies. Or at least a wiki with more detailed information. I think it is far over due.
-
-_________________Thanks,
-Steve Pfeifenroth
-

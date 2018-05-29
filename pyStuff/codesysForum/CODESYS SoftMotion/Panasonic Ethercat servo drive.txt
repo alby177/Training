@@ -1,8 +1,0 @@
-HiI am trying to run a servo motor using panasonic servo drive model MADHT1505B21 using mc_power softmotion function block.I cant correctly add axis variable in the mc_power. Do I need to add another device under the servo drive in device tree?
-
-Hi,please add the DS402 generic driver if this drive is Ds402 compliant.If you are not really sure please send me a link to the esi file to check.BREdwin
-
-Edwin,Thanks for your reply.It didnt show option to add CiA402 axis. How to add DS402 generic driver?Refer attach file for esi file for the servo drive.
-
-Hi,this is a bug, should work.Will be solved with 3.5SP7Patch3 (End of October release...)BREdwin
-

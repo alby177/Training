@@ -1,6 +1,0 @@
-Hi,
-I need the Gateway to set RTS signal to log.1 (because there is converter which has power supply via this line). Is it possible? I have not found any way to change RTS state... Gateway always switches this line to log.0.
-
-Thanks
-Jan.
-

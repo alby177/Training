@@ -1,2 +1,0 @@
-I created the Raspberi Pi platform driver L6470 SPI library stepper motor, which in itself works, but I have a problem how to create Stepper motor driver, based on examples SM3_Drive_Servo, namely due to lack of documentation it is unclear how the SoftMotion transfer data to and back from SM3_Drive_Servo like:-Motor Position-Motion Commands (GoTo, Move etc...)-Controller status(Busy, Done, Error etc..)Best RegardsJovan
-

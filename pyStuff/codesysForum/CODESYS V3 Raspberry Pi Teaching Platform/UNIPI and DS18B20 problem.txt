@@ -1,8 +1,0 @@
-Good evening,I have problems in reading the DS18B20 connected to unipi 1.1 !!I tried to load the OneWire draft CoDeSys but is not designed to unipi but for raspberry and it does not work.How can I just read a value from the sensor?I tried to enter the raspberry and typing:PI3_MMM pi @: ~ $ cd / sys / bus / w1 / devicespi @ PI3_MMM: / sys / bus / w1 / devices $ cd 28-0004442100ffpi @ PI3_MMM: / sys / bus / w1 / devices / 28-0004442100ff $ cat w1_slave00 00 00 00 00 00 00 00 00: crc = 00 YES00 00 00 00 00 00 00 00 00 t = 0It seems to not work !!I have three sensors, and I tried them all with the same result.Tips?Thank you, Alberto
-
-Hi,could you check if this works with the example Project fromCODESYS V3 Raspberry Pi share your devices & libraries & applications viewtopic.php?f=23&t=6247&p=16920#p16920BREdwin
-
-Edwin Schwellinger wrote:Hi,could you check if this works with the example Project fromCODESYS V3 Raspberry Pi share your devices & libraries & applications viewtopic.php?f=23&t=6247&p=16920#p16920BREdwinThanks Edwin,but the project is for raspberry alone, I have the UNIPI board 1.1 and the sensor is connected directly to the expansion card.The sensor is connected to the RJ45 BUS 1Wire of unipi then I think the problem lies.Thank you, Alberto
-
-Hi,then maybe better ask the UniPi Support...http://store.codesys.com/codesys-for-unipi.html#SupportBREdwin
-

@@ -1,4 +1,0 @@
-Hello Is possibile to use codesys user management on rapery pi.
-
-Hi,yes it is.BREdwin
-

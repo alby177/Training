@@ -1,4 +1,0 @@
-Hi,Just Curious have someone try or success to implement the Codesys PI on the Debian PI Desktop OS.Thank youJohn Lee
-
-Hi John,guess not, because the PI plc runtime is compiled for arm not for x86BREdwin
-

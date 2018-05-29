@@ -1,4 +1,0 @@
-Hello,I there an option for using IO Link devices such as IO Link masters?Thanks
-
-Hi,to use Ethercat is an easy to use option:EL6224 Ethercat - GatewayBREdwin
-

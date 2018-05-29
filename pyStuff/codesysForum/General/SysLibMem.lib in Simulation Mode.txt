@@ -1,8 +1,0 @@
-Hi!When running in Simulation Mode, the CoDeSys 2.3.9 seem to skip execution of the functions in the SysLibMem.lib:After Code:SysMemCpy(dwDest:=ADR(NewAddr),dwSrc:=ADR(BegAddr),dwCount:=88);no data is copied.When running on the actual PLC (AC 500) the code is executing correctly! Is this by design, or am I missing something?Thx in advance!Best regards!
-
-it is a simulation not an emulation.so all this SYS is a problem.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
-Thnx for your reply shooter!According to Merriam-Webster:an emulator is:"hardware or software that permits programs written for one computer to be run on another computer"and a simulator is:" a device that enables the operator to reproduce or represent under test conditions phenomena likely to occur in actual performance".Regards
-

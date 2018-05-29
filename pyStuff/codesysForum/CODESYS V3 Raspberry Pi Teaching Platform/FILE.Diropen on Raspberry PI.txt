@@ -1,6 +1,0 @@
-Hi,I am trying to use som file acces on my Raspberry PI but i don't know what i'm doing wrong.For a test i first try to open a directory for listing but it doesn't work.here is my codeCode:PROGRAM PLC_PRGVAR   TimerOn      : TON :=(pt:=T#30S);   xDirOpen     : BOOL;   DirOpen      : FILE.DirOpen;   DirList      : FILE.DirList;END_VARTimerOn (IN:= DirList.xExecute);DirOpen.sDirName := '/tmp';IF xDirOpen  THEN DirOpen.xExecute := TRUE;xDirOpen := FALSE;END_IFDirList.hDir := DirOpen.hDir;IF DirOpen.xDone OR TimerOn.Q OR DirOpen.eError > 0 OR DirOpen.xError THEN   DirOpen.xExecute := FALSE;END_IFAnd here is the watchlist output.Attachment:WatchList.jpgDirOpen.xExecute is TRUE but no error or busy and done also stays FALSEi hope someone has a solution for me.
-
-Hi,In your code snippet we are missing the function call:SysDirOpen();you only set the Inputs of SysDirOpen you missed to call the function.There is a good example in the store:http://store.codesys.com/application/fi ... ities.htmlRegardsplcmax
-
-Ty for your answer.  I tested the example and sysdiropen worked oke.  So i can use it in my program.
-

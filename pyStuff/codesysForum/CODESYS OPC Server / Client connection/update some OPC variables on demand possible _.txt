@@ -1,4 +1,0 @@
-Hi,I have a Codesys 2.3 project that communicates to a PC via OPC. I have two main groups of variables:(1) Needed during normal operation(2) Configuration variables - these never change during normal operation As group(2) is quite big and rarely used, I wonder if these vars can be updated only on demand (on the PLC side) in order to reduce traffic. For example normally PLC doesn't care about them / doesn't read. Only if some BOOL becomes TRUE, the PLC starts updating the variables - until the BOOL becomes FALSE again.Is that possible?Thanks
-
-The PLC is the server. This means it doesn't actively start the communication.For the PLC, the OPC server is the client which actively communicates with the PLC.The way the OPC server starts reading the variables depends on how the OPC client registers the variables.To answer your question: you need to configure the OPC client (your PC application) correctly to limit the amount of communication.
-

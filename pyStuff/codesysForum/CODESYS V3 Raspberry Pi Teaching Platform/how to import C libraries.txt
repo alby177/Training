@@ -1,8 +1,0 @@
-Hello!I just started using Codesys with my RPi3 and find it awesome. However, I need to reuse an old library written in C and I cannot find the right way to import it in my project.I have the source code of the library, so should I use Codesys to compile it? Or should the library be compiled elsewhere (e.g. Eclipse) and only then imported in the Codesys application?Are there examples, templates, tutorials to show the procedure? The online help does not help much at all...Thanks!
-
-Hi,this is not possible with Raspberry Pi,only plc manufacturer could implement runtime components which then are in 'c' implemented.BREdwin
-
-Hello Edwin,ok, thanks, I understand.I guess a workaround would be to run the C code in a separate application on the Pi and then use some sort of communication to share the necessary variables values with the Codesys application? What would you suggest for high speed (near real-time) communication?Thanks!
-
-Hi,shared mem is always an Option there is an example in the CODESYS store available...!BREdwin
-

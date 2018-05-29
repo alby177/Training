@@ -1,6 +1,0 @@
-Hi everybody,I'm loocking for something to get the superior round of a division.--------------------------------------------------------------------Ex: result : INT;result := Ceil(3/2);// result = 2--------------------------------------------------------------------After some search on big brother, I don't find Ceil or equivalent function.Any idea?
-
-HiAn possible solutionRes=a/b+ ((a mod b) * 2)/b
-
-Yes, I try and it work!   Thx a lot! => Topic closed  
-

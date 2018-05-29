@@ -1,4 +1,0 @@
-Hi,I noticed that PLCOpen updated their basic motion blocks with a "ContinuousUpdate" input, eliminating the need for retriggering Execute when you want to update position/velocity/acc/dec etc. on-the-fly. For sure, it's not really needed, but still anything that simplifies the user code is a good thing.Is Codesys planning to update the SM3_Basic library to include this functionality as well?Best regards,Kim HansenBeijer Electronics Automation AB
-
-Hi Kim,let me check this, but tooks some time due the holiday situation.BREdwin
-

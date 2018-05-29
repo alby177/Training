@@ -1,6 +1,0 @@
-Hello, I am currently using Codesys v3.5 sp8 to build libraries and subsequently *.compiled-library files with DocFormat property as reStructuredText. Along with the POUs, the  documentation is also compiled for Errors ( during save Project as compiled library). Is there any means to check the "library documentation" for Errors using script before starting to save it as compiled library?. An example script will help me a Long way. Thanks in advance.BR,SK
-
-The online help for the library documentation should describe how the json file is exported and how the libdoc.exe is used for transformation. It returns an error code if something goes wrong.This chain of tools can also be triggered via python scripts, you can use the .NET System.Diagnostics.Process API or the python process apis to control the libdoc.exe.We have some scripts in-house, but they need to be a bit polished before being published, we expect to have one available next week.
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
-

@@ -1,6 +1,0 @@
-Hello, im running codesys V3.5 on a raspberry pi 2.I add an Ethernet controller, then a Modbus master and then finally a Modbus slave.My problem is that i cant find where to put the Slave IP adress..Thnak you for you help
-
-Hi,seems to be a localisation problem,could youtry to switch the CODESYS language to english?BREdwin
-
-Well done ! It was a language problem.I switch to English then its prompt the IP adress field.Thank you very much 
-

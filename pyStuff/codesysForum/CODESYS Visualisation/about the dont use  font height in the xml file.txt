@@ -1,2 +1,0 @@
-hi, everybody:   Could you do me a favor about language text shown from xml file.  we dont want the xml file to control the font height functions, i would prefer the local configuration setting to control the font sizes.based on the manual, it can be do as this, but i failed.please help.
-

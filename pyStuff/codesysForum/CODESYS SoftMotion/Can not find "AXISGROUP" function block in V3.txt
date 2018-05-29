@@ -1,4 +1,0 @@
-Hi :How Can I find any function block that related with "AXISGROUP" in V3 ?I have a SoftMotion training material based on v2.3.There are many AXISGROUP function block for example"SMC_ISAXISGROUPREADY" .But i could not find it at V3 .Is V3 already removed it ?BRHero Lin
-
-Hi Hero,yes this fb is not needed in CODESYS V3.BREdwin
-

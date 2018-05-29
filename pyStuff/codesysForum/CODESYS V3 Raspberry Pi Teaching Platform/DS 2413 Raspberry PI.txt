@@ -1,4 +1,0 @@
-Hello, Ingineers! My name is Andrei, I'm from Moscow, Russia! i try to connect 1-wire modul ds2413 to my Raspberry PI. So, In /sys/bus/w1/devices/3a-000000130497 folder, I found this files:idnamerwueventMy raspberry connect with ds2413 like scheme from .jpeg file.Im trying next ssh comandsecho \x03 |dd of=rw bs=1 count=1But my leds don't workinghelp me please!!!
-
-Need write  echo -e '\x03' |dd of=./output bs=1 count=1 from shell
-

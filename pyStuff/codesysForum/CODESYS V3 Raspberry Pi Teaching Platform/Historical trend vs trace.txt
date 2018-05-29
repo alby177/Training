@@ -1,6 +1,0 @@
-Hi all,attached an example how trend recording is working with 3.5SP5.You need for this example CODESYS 3.5SP5 (http://www.codesys.com/download.html)and Raspberry PI Plc runtime version3.5SP5, which we'll release today.Best regardsEdwin
-
-Hallo EdwinI try the chart according to recreate from the example. But get the error Trend1DateRangeSelector, Trend1TimeSelector and Trend1Legend non canter type. Do I miss a Libery? or I have different mistake.
-
-Hallo,then please use the projectarchive.https://dl.codesys.com/public.php?servi ... 8ef674963dBREdwin
-

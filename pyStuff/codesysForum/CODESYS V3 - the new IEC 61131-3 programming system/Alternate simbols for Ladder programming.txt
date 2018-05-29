@@ -1,2 +1,0 @@
-Hi!Many years developing in CodeSys 2.3 (and Twincat), I'm kinda use to simbols in ladder programming.  Here in V3, all simbols look like somehow "fatty".  Is there a way I can change simbols in ladder programmin in CodeSys V3?Regards!
-

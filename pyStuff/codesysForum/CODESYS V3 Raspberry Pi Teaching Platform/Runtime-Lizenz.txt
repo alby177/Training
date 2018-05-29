@@ -1,4 +1,0 @@
-Hallo,kann eine Runtime-Lizenz auch für mehrere RPi-Geräte verwendet werden.Oder ist die Lizenz gerätebezogen? Freundliche GrüßeOleg
-
-Hi Oleg,die SoftLizenz ist Gerätegebunden.Wenn du eine portable Lizenz brauchst, musst du einen Runtime DOngle kaufen und die Pi Lizenz darauf aktivieren,dann ist der Pi lizensiert an dem der USB runtime KEY steckt.GrüßeEdwin
-

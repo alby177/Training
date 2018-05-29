@@ -1,2 +1,0 @@
-Hi,   We are evaluating UML plug-in now and I can draw UML in our library file.   But now I want to see the whole picture and draw a CLASS UML from our "main" project, and link all components in different libs(Function block, struct, etc) with each other and to main PRG. Is it possible to do that?   Also I would like to know is there a way to export UML as a different format(eg, jpg, html) ?Best regards,Yiqing
-

@@ -1,2 +1,0 @@
-Hi,It seems that the file management libraries are designed only to read and write the contents of external files. Is there a way, for example, to execute a batch script from the RTE? This seems like a basic functionality, but I cannot find any example of its use.Thanks,Saul LiptonApplications EngineerNUM USA
-

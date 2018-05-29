@@ -1,6 +1,0 @@
-Multiple clients using CoDeSys systems have problems with some EDS file entries for our drives, rendering some functions unusable. It seems there are mappings or object enty types it doesn't like. 
-The EDS test & verify tools we have access to can display everything correctly. 
-Is there a possibility to get a tool from CoDeSys for free to verify our EDS data?
-
-I don't believe Codesys's EthetNetIP supports either struct or array. You'll need to download something called EZ-EDS (https://www.odva.org/software/EZ-EDS-Download) and either modify existing EDS file or generate your own. I had the same issues when I tried to import Rockwell Automation's EDS file because the data format doesn't comply with Codesys.
-

@@ -1,6 +1,0 @@
-Hello Everyone,I want to use Input or Memory address as array and then want to read in Program.For e.g, %MW512, % MW514, % MW516.. I want to read as following%MW(variable_Name) and Variable name to be increased by 2 in each cycle and read values of memory and write to some different temporary array.Is this possible?
-
-You can do this:Code:PROGRAM PLC_PRGVAR   Word1 AT %MW0 : WORD;   Word2 AT %MW1 : WORD;   Words AT %MW0 : ARRAY[0..1] OF WORD;   Pass : BOOL;END_VARWord1 := 12345;Word2 := 32109;Pass := (Words[0] = Word1) AND (Words[1] = Word2);Pass goes true.But be careful about direct memory access - when I changed removed the forced memory location on Word1 and Word2 - then Pass was false (i.e. who knows where the compiler put the variables!).  Also, I believe the memory locations may be hardware dependent, too.
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-

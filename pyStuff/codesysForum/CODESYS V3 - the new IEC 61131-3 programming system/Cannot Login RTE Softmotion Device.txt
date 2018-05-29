@@ -1,6 +1,0 @@
-Hi.I'm using V3.5 SP12.0 development system on my PC and I have installed RTE softmotion V3.5 SP12.0 on target device (Windows 10).the device version in the project is same as the version of the target device. (V3.5 SP12.0)I have also updated the ethernet driver (Realtek 8111G Gigabit chipset) with provided RTE driver(8169...) in the installation folder.I've got following errors when trying to login.Your help would be appreciated.Attachment:2018-03-28_17-57-53.jpgAttachment:2018-03-28_17-58-19.jpgBest Regards.Y.M. Kim
-
-Hi,please add the Realtek driver to the RTE configurationI assume you have installed the CODESYS Realtek driver in the Windows device manager... seehttps://help.codesys.com/webapp/_cds_rt ... n=3.5.12.0By the way for Spectre I would recommend to install at least 3.5.12.10 Control RTE !!!BREdwin
-
-Thanks Mr.EdwinIt works well now.!!Y.M. Kim
-

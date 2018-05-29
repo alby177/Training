@@ -1,8 +1,0 @@
-Hello,want to creat a description file for a device and need an array.But I do not know how to add items to the array:    <Types namespace="local">		<ArrayType basetype="std:BYTE" name="Test123" 		</ArrayType>		   </Types>Please help!Best regards,Oleg
-
-<Types namespace="local">	<ArrayType name="Test123" type="local:Settings" basetype="std:BYTE">		<FirstDimension>				<LowerBorder>0</LowerBorder> 				<UpperBorder>9</UpperBorder>		</FirstDimension> 		<SecondDimension>				<LowerBorder>0</LowerBorder> 				<UpperBorder>3</UpperBorder>		</SecondDimension> 	</ArrayType>	</Types>
-
-I know this is an old entry. but how can i define the default Value for ArrayType?I tried following: Code:<Types namespace="localTypes">   <ArrayType name="ArrayTest" basetype="std:REAL">   <Default>[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]</Default>      <FirstDimension>         <LowerBorder>0</LowerBorder>         <UpperBorder>7</UpperBorder>      </FirstDimension>   </ArrayType></Types>But this doesnt Work. I also tried it under the Parameter Section, but this doesn't work, too. Can someone please help me to solve this easy looking problem? Thank you in advance
-
-_________________Building & Process Automation with HVAC Library for CODESYS© - www.hvac-automation.com
-

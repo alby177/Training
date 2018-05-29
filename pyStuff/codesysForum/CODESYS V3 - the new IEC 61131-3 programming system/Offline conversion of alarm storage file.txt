@@ -1,2 +1,0 @@
-Is it possible to convert the alarm storage file to CSV or any other format so it will be avaliable for Excel without going online with the PLC?
-

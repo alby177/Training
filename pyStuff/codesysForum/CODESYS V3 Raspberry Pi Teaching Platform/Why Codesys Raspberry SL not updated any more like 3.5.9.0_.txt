@@ -1,4 +1,0 @@
-Why Codesys Raspberry SL not updated any more like 3.5.9.0?Regards
-
-Hi,we'll release it together with the PI3 GPIO fix -so this will come with 3.5.9.10 - 21th July is the official date +/- a few days to release the PI Package.BREdwin
-

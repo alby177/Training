@@ -1,4 +1,0 @@
-Hi,I  am using an automaton from Schneider Electrics with CANOpen supports. In my case, I have sensors which work only with CAN 2.0A messages and I do not know how to retrieve it.I just discovered CODESYS and I saw that there is a CAA/CL2 library to handle low level CAN.I would like to know if you recommended it to retrieve CAN messages and/or if you have other alternatives?
-
-Hi, yes, this is the way you could do it, if your sensors don't support CANopen.See http://store.codesys.com/communication/ ... ample.html for an example which also can be used in SoMachine.
-

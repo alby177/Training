@@ -1,5 +1,0 @@
-Has anyone attemted to automate the 3s license manager? If so how? We are currently using the default method of email and phone. This method is way too labor intensive and we would like to automate if possible. I would appreciate any thoughts or suggestions anyone can give on this topic. 
-
-Thanks, 
-Aaron
-

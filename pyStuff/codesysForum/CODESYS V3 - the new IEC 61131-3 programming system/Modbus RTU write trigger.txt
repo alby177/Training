@@ -1,6 +1,0 @@
-Hi, I'm looking for documentation on the "Application" trigger type for the Modbus RTU write function. Both the library documentation and the online help only mentions the "Cyclic" and "Rising edge" types. Best Regards,Johan
-
-Hi,this is a configuration on the channels...https://help.codesys.com/webapp/mod-edt ... n=3.5.11.0Additional since SP11 you could use the Modbuschannel fb which you could use by your application code.BREdwin
-
-Edwin Schwellinger wrote:Hi,this is a configuration on the channels...https://help.codesys.com/webapp/mod-edt ... n=3.5.11.0Additional since SP11 you could use the Modbuschannel fb which you could use by your application code.BREdwinHello Edwin,This is what I'm trying to work out, too. How do I use the modbuschannel fb to trigger the channel?Kind RegardsHeinz
-

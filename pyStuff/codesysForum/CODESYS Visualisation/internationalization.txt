@@ -1,5 +1,0 @@
-I have a question concerning the dynamic management of texts according to the languages.
- I would like to undersand how is made the link between the languages defined in XML files fr-FR, en-GB, it-IT (beacons of languages) and systeme variable CurrentLanguage. In the current code, we set CurrentLanguage with G-string " fr-fr ", en-gb ... That this is case sensitive?it not seems to me.
-I can not find an explanation in the documentation.
- many thanks
-

@@ -1,7 +1,0 @@
-Hello
-
-I'm using an industrial PC and i want to send a sms whenever there's an alarm. I'm thinking of buying an industrial gsm from wavecom, of the fastrack series. It gets his input signal from a comport with a rs232 cable.
-Is it possible to send the commands whit CoDeSys?
-
-Thanks
-

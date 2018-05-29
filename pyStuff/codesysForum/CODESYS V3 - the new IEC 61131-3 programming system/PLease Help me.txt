@@ -1,4 +1,0 @@
-Hi every body this program write whit ST(LANGUAGE) Pls change to Lader Language  thank you best regardIF (SW_Aerial_Maneuver_Active=FALSE AND cage_active)OR turret_active THEN       Valve_cage_leveling_down:=0;       Valve_cage_movement:=0;       IF Deadman THEN               Valve_Main:=1;  IF Valve_Boom_up OR Boom_Down_Inctive OR (Stop2 OR Stop1 AND Propertional_valve=Propertional_Val_Min) OR(ERROR AND (Boom_Length>=5800 OR SW_By_Pass=FALSE ))   THEN (*add Stop1&Stop2*)                   Valve_boom_down:=0;               ELSE                   Valve_boom_down:=boom_down;               END_IF
-
-Something like this I suppose
-

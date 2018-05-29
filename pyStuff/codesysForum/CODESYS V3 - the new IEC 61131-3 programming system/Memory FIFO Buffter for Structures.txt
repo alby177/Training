@@ -1,6 +1,0 @@
-Hello, can you advice an efective way to do a memory FIFO buffer to temporarily store data on an array of structures.Thank you!
-
-By the age of the question you may already have solved, but here is my suggestion:First, you will need to use a byte copy scheme to copy a structure into another location (strut1 := struct2 doesn't work).  Be sure to use SIZEOF for your pointer arithmetic. I created a scheme to avoid shifting data but still give a history array output for visualizations. It requires copying the entry to two locations and an array that is twice as big as the number of entries you are trying to buffer. For example, if you wanted the last 100 entries, you need an array that is 200 entries big.For the last 100, you need to:Start index at 99.Save entry at index and index + 100. Shift index to 98. Etc, etcGive an output of this FB a type POINTER TO ARRAY[0..99] OF structure;Set the pointer to index
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-

@@ -1,8 +1,0 @@
-Hello, is there a way to Abort / Interrupt a script during it is executed   Sometimes it happens - for example during development phase - that a script will not finished or hanged up   The only way to continue working will be close CDS (via Task Manager)  
-
-Hello,Since V3.5 SP6, scripts are interruptible by the user (but can override that behaviour, and also output progress information using a progress bar).HTH,Markus
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
-
-Thank you ... I will try it and come back to you if I need some Support  
-

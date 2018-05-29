@@ -1,4 +1,0 @@
-Hello,I made sample project, installed FESTO FHPP  libraryhttps://www.festo.com/net/en-ca_ca/Supp ... _5_5_1.zip, add devices (from eds files provided by Festo) to Device Repository.https://www.festo.com/net/en-ca_ca/Supp ... -AS-M3.zipNow it is time to add drives into project. Right click on Device in project tree => Add Device => Ethernet/IP > Ethernet Adapter > EthernetNow, with right click on the Ethernet I should be able to Add Device which is my Festo drive. I don't see any Festo drives in the list, I search them, no luck. They are still visible in Device Repository.If I do something wrong, is any tutorial available with description how to add servo drive(s) into project?Thanks
-
-As an update, finally I have got it running. Can confirm that FESTO CMMP-AS servo drive can be controlled on Beaglebone platform via Ethernet/IP.
-

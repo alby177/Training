@@ -1,2 +1,0 @@
-Hello.I'm trying to get a screen capture from the current HMI visualization and save it on a SD or a USB memory, using OnMouseClick there is a command for get it but i don't know how to set it. Can you help me please.
-

@@ -1,8 +1,0 @@
-I'm trying to establish a communication between a CoDeSys-OPC-Server and one OPC Client (for instance, Matrikon OPC Explorer), both running in the same computer.Although my PLC configuration is correct (at least, I think so) and I can load all the PLC tags on the client, I'm not able to asynchronous read them. The I/O operations just work when I use Sync mode. The same situation occurs when I try to use other clients (like Kepware OPC Client, ...).Does anybody know why this happen? Does the CodeSys-OPC-Server work just like a Synchronous I/O server?And is there any problem to simultaneously run two different CodeSys-OPC-Servers (residing in different computers) connected to the same PLC?Configuration: Windows 7CoDeSys V2.3.5PLC Moeller XC201Matrikon OPC Explorer 5.0
-
-Anyone, please?
-
-I just heard that this was bug was already known and fixed with the CoDeSys V2.3 OPC Server version 2.3.13.7.After a registration you can download the latest version from our website under http://www.codesys.com
-
-_________________Roland WagnerModerator
-

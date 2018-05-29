@@ -1,2 +1,0 @@
-Hello,I am recently started using raspberry pi & new to this field. i need to integrated ADC Pi Plus board with raspberry pi 3 for my project to measure analogue input from the board. i have a python file which works perfectly, anyone have any idea about how to use it in structured text in codesys? i understand i need to make a device description file and a new library for that. here is the link of the ADC Pi Plus device and the python script.https://www.abelectronics.co.uk/p/56/ADC-Pi-Plus-Raspberry-Pi-Analogue-to-Digital-converter
-

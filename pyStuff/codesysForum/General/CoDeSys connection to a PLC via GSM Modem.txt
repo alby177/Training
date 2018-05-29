@@ -1,2 +1,0 @@
-We are trying to connect to an EATON Automation XC-CPU101 via a GSM modem.We can get two hyper terminal session communicating via the GSM modem with the correct serial comms settings.We are using a 2to2, 3to3, 5to5 cable from GSM to standard Eaton serial programming cable.CoDeSys is set to use Serial (Modem)Laptop modem talks to GSM modem OK, but CoDeSys does go online.What do you think we are doing wrong?What is the difference between Serial (Modem) & Modem (RS232)(level 2 Route)?
-

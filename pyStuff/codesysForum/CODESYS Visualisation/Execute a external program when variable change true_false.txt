@@ -1,2 +1,0 @@
-I would like to execute a external program on the PC that is running Codesys Visualisation when a variable in the PLC change from false to true.I can make a object in the visualisation and then that thing can execute a program (I just use notepad as example) when I click that object, but I can't find a way to execute a program when a variable change.I was thinking to use alarm for this but my PLC do not fully support alarms, so that door is closed.
-

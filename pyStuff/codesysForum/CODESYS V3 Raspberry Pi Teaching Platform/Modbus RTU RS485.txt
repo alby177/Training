@@ -1,4 +1,0 @@
-Hi,iam searching for a MODBUS RTU Lib with RS485 Support.I have an TTL -> RS485 converter on the Raspi, but i must switch the send/recv by a output.The Converter is standart at recv an wen the Modbus Master sende they musst switch it.Have anyone a idear?
-
-Hi!Long time I'm using simple transistor + 75176 IC, bit I believe it can be also max486. It switch automatically independent of speed (I test it with 230kbs and it work). If you able to make your pcb I can send you schematic if you like.
-

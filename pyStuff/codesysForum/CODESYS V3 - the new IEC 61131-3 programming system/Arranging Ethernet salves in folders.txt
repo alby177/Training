@@ -1,2 +1,0 @@
-I have many Ethernet/IP slaves in my project and I want to arrange them in folders.I was able to create folders under the Ethernet/IP scanner but I can't add or drag and drop devices to them.
-

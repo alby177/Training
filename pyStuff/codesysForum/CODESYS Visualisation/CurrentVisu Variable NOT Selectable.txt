@@ -1,8 +1,0 @@
-Under the Viz Manager I wanted to enable the CurrentVisu option but it's greyed out.Is this only available if doing web visu's?I'm a newbie so I just created a Viz didn't create special web viz or him viz.Would appreciate some inputHow do I get the visuelems option?      
-
-Hi,guess it will change to selectable if you add the type of visualisation below the VisuManager.BrEdwin
-
-Thank you Edwin for responding.Does this mean the VisuElems option is available if you select Viz from a different method ( reference photo)?If so would you be aware of a way to detect active pages outside of using the VisuElems option?
-
-Hi,If you do not have an webvisu/targetvisu /hmi/Remotetv below the visumanager you are using theso called CODESYS internal Visu in the CODESYS developmentsystem.Here makes current visu no sense.There is an example in the CODESYS store how to determine which Client has which visu page open (if you have several VisuClients it is recommended not to use current visu)http://store.codesys.com/client-indepen ... ching.htmlBREdwin
-

@@ -1,4 +1,0 @@
-HiI use Raspberry Pi3 with newest Codesys V3.5 SP12 Patch 2. I updated all librarys.I try to make communication witch PCA9685 pcb, using Adafruit PWM library and servo connected to channel 0. I don't use any shortcircuit in address pads, so address is 0.I open "I2C example", compile and send to RPi, and nothing- servo doesnt run. In next step, I open SoftMotion Servo Example, compile and send to RPi and servo is running. But I don't understand how this program refer to Adafruit PWM library. Why "I2C example" doesn't work with servo? Maybe, I have to make some additional configurations in codesys?Could anybody can send, working example for RPi3, for servo connected to channel 0 (FBD will be best).Thanks for any response.Best regards.Łukasz
-
-Hi,attached the example - FBDBREdwin
-

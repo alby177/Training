@@ -1,4 +1,0 @@
-Hi,I am using Codesys V3.5 SP9 on BeagleBone Black with a Mitsubishi A800 inverter with ethercat card.In the manual they use EtherCAT master V3.5.3 and it says further on the set the Task to be triggered externally with the event name"EVENT_ECM_DC"I am using etherCAT master version V3.5.9 and I don't have this option. What can I do?attached is the image with the information about this task configuration.without this, the ethercat doesn't work.RegardsRotem
-
-Hi,with rt_preemt patched i'm sure it will work without external Event triggered Task.BREdwin
-

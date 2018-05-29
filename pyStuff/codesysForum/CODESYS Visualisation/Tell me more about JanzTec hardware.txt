@@ -1,6 +1,0 @@
-Hallo,Is anybody here, who could tell me about JanzTec hardware? I was trying to dig out something in there web site, but there is too complicated task for me - cose I know nuffing about this systems. There is panels and IPC's. Both are labelled as Codesys inside. But there is only two kind of targets. Are they fits for all devices or not? Or emControl (tm) means that I must to buy ipc and panel, install to ipc codesys and enjoy? Or there is some panel-embedded-plc, like in Berghof? Or something more?  As you see, there is more questions, than answers...  Seems to be I need help of community...with best regards Yougi
-
-janztec has embedded PLC meaning codesys is running on this and gives signals to a bus coupler (for example WAGO) this is just hardware without any programming needed.The Panel PC is a simple codesys PC, which can be coupled.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

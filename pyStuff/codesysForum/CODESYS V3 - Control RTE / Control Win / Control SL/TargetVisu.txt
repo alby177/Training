@@ -1,6 +1,0 @@
-Hello! When using Softmotion RTE SL 64bit does not run targetvisu, the project works but there is no visualization, webvisu works, I use Windows10 64bit. There are no errors. On Windows 7 64bit everything works.
-
-Hi,hm... no meather which project you load?On simple 1 element project this happens too?BREdwin
-
-Edwin Schwellinger wrote:Hi,hm... no meather which project you load?On simple 1 element project this happens too?BREdwinHello! Tried different projects and always works without Targetvisu, created a simple project only without visualizing the changes ... (Windows 10 Pro, Sofmotion RTE DEMO version)
-

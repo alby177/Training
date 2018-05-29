@@ -1,6 +1,0 @@
-Hello,I have the following code in an enum declaration:Code:// | Acknowledge Control Byte// Implemented according to://// * SAE//     * J1939//         * -11//             * Figure 9 - Acknowledgment Parameter Group Number Definition//// .. note:: This data/ parameter type is used in the ACK parameter group.I have tried around with the indentation of the unordered list, but did not get a tree as a result. Sometimes the indentation in the output is there, but the bullets are missing. In other cases the lines are all or groupwise written in one with a * between the points.What am I doing wrong?Thanks in Advance     Torsten Knodt
-
-Hi Torsten.Every time you start a new sub level in your list you have to add an empty line before and after it. See Lists and Quote-like blocks from the reStructuredText Primer.Code:// | Acknowledge Control Byte//// Implemented according to://// * SAE////     * J1939////         * -11////             * Figure 9 - Acknowledgment Parameter Group Number Definition//// .. note:: This data/ parameter type is used in the ACK parameter group.Here the screenshot:Attachment:Nested_List_reST.PNGBRMartin
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
-

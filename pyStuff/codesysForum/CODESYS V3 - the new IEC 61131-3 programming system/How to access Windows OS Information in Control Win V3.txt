@@ -1,6 +1,0 @@
-Hi,how can I access Windows related following information in CoDeSys Control Win V3:- Ethernet/ Network settings: IP, Subnet,...- OS version- Processor information- Date & Time- RAM information- Serial number- Computer nameetc.Thank you in advance!
-
-Does anyone know?
-
-run systeminfo and parse the results.
-

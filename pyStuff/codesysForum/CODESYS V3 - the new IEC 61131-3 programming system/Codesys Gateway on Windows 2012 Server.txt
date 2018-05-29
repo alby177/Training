@@ -1,4 +1,0 @@
-Hello together,is it possible to install the Codesys Gateway on a Windows 2012 Server?Best regardsThomas
-
-Hi,this is CODESYS V3 Gateway right?See no reason why this should not workBREdwin
-

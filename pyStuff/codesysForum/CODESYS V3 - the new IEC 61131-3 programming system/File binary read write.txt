@@ -1,4 +1,0 @@
-Hallo Everyone,I am looking to write a file in binary format and then read it back. Does anyone have an idea how this could be done.The SysFile library doesnt seem to have the binary option available.Thanks and warm regards
-
-Hi,Have you tried the library function SysFileWrite() to write binary files? I am using this without any problems. I don't use SysFileRead() but it should work.These functions are in SysLibFile.libTony
-

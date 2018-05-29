@@ -1,6 +1,0 @@
-Is there a quick way of resetting all outputs on the PLC? I am using a Wago system.
-
-a safetyshutdown is possible by using a ladder with:markeroutput AND running > realoutput (%QX0.0) etcin all other programs use this markeroutput.to get safety outputs you will need real safety modiules, or the supply to these outputs needs to come from a safetyrelias.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

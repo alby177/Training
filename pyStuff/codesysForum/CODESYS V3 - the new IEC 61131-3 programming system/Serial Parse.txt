@@ -1,6 +1,0 @@
-Hello, I am using "STW CoDeSys V3.3 SP1 Patch 2". I have a serial port that is being sent a serial string every 1 second. The string is as follows: "12:10:01 AM, 12.01, 1500.02 ...... $R$N" Basically Time Then comma separated data ending in $R$N. The string can have from 2 to 48 data items, which means it could be 500 characters or greater. All I want to do is to parse the data out then convert to numeric variables. The problem is that in a read of the serial port it may get half of the last string in and half of the next string. Also the string functions are limited to 255 which is the main problem. Any suggestions?Thanks
-
-What you could do is move the data to an array of bytes instead of a string. This array can be as long as required. By using an index you can decide where to put the data in the array. With a for/next loop you can go through all data to analyse it.
-
-Thanks,I have it working. I did deal with it as bytes.
-

@@ -1,6 +1,0 @@
-Dear'sKindly I need to know how to replace an global variable by other one because the physical output in the card not working Sent from my SM-A800I using Tapatalk
-
-go to PLC configuration use edit and change the position of the variable to a working one.these var names are also in the global list when running, however they are not edible there.another way is when they are defined with the AT statement to an address, this is exactly same as in the configurator but can be done anywhere in the program.go to the craiable and press CTRL F3 for a list and goto the declaration.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

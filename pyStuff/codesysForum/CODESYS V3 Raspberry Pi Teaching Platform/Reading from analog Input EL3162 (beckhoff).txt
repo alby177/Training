@@ -1,8 +1,0 @@
-Hi! I'm trying to read my analog input, beckhoff EL3162, it have a status port and a value port (both integers). I've mapped the ports to variables. When I'm reading the variables I don't get anything (0) on status and a random value on value (between 0 and 255, unrelated to the Voltage I'm putting on the port, should be 16-bit number). I have an EK1100 and a couple of digital I/O as well, all working fine. Have I missed some setup step? I have never worked with analog I/O before. I have googled all day and I can't find any good examples or guides. Can someone please point me in the right direction?
-
-_________________SC student from Sweden
-
-I solved my own problem, I needed to have the same ground connection on both the input and output to be able to read the signal.
-
-_________________SC student from Sweden
-

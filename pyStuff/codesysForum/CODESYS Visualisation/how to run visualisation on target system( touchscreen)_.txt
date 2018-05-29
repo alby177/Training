@@ -1,8 +1,0 @@
-Hi, 
-i am new to codesys and presently i am working on a project where i need to develop some visualisations using codesys without any PLC Code and using CAN network directly. i want to know after developing visualisations how can i run them on the target system(touch screen installed with codesys) in runtime as in what files i need to copy on my target system.
-
-Any help or ideas would be appreciated. 
-
-Best regards, 
-Rajat Bansal
-

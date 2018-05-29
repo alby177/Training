@@ -1,6 +1,0 @@
-Even when I use the qualifier "P" for an action in SFC and set the transition condtion to "TRUE", I see that the action is performed twice.The only way I found to make it performed only once is by setting a bit in the step before and reset it in the action itself.Is there something I'm missing?
-
-Hello,It's normal   . This is an aspect of the SFC standard. That is different from the French grafcet.J'm french   and when I found out this operation I asked the same question as you.To perform an action only once you should use the input or exit actions. (Right click on a step and then add an input action or output action, drawn with E or X in a square at the bottom right or left of the step).Best regard  
-
-HelloI thought the idea of the action running twice was to turn off coils in LAD. This is definitely the behaviour in other platforms, but doesn't happen in V3.Is this behaviour correct?Thanks
-

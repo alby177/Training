@@ -1,8 +1,0 @@
-Hello, 
-
-i have a question with the CONCAT function. It seems that this function is not thread safe. So, in order to it as well, i want to use the SEMA function. 
-
-I anybody does this. I am looking for an example of using the SEMA function. Is is a valuable way of using CONCAT function in a multiple thread environmement ? 
-
-Think for help
-

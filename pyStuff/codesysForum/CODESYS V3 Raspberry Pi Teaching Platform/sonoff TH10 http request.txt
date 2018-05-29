@@ -1,2 +1,0 @@
-I am trying to request temperature and humidity from this unit. I need to send an Http request:http://Sonoff-IP/cm?cmnd=status%2010the reply should be something like:STATUS10 = {"StatusSNS":{"Time":"2017-03-01T13:01:54", "DS18B20":{"Temperature":21.8}}}is this possible to do?I tried using the web client library but noticed there was a cost associated with it. Not sure if there is another way.Any ideas?
-

@@ -1,4 +1,0 @@
-Hello!I'm am trying to shutdown the raspberry from the codesys control, and then I can't.Any guy know how can I do?Tank You 
-
-Hi,see this example here... you could change this and execute a shutdown, instead of reading processor tempviewtopic.php?f=23&t=6247&p=12711#p12711BREdwin
-

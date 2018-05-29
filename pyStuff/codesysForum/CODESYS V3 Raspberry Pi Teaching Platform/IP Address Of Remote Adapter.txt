@@ -1,4 +1,0 @@
-Is there any way to change IP address or Ethernet/IP Remote Adapter from program? Thank you!
-
-Some more information for my question...I am working on application where I use AB PowerFlex525 drives. I would like to be flexible and communicate to drives with different IP addresses. It could be 192.168.1.10 or 19.168.1.125 for example. I don't know it for sure. I want to have one instance of that drive in program, change IP address from WebVisu and restart communication. It could be done by adding 255 drives in device tree to cover all IP addresses in subnet (I don't know if there is a limit), but I am looking for better solution. Is it possible to reinitialize remote adapter with different IP address?  Any input would be highly appreciated. Thank you!
-

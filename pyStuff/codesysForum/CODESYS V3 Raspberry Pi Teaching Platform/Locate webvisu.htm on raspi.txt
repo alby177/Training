@@ -1,6 +1,0 @@
-Hi,but where is the webvisu.htm file on raspberry ?Thanks, Alberto
-
-hi,as I see:/root/PlcLogic/visuCheersplcmax
-
-plcmax wrote:hi,as I see:/root/PlcLogic/visuCheersplcmaxThanks
-

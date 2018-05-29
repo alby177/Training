@@ -1,2 +1,0 @@
-Hallo Leute in Kempten,tolle Umsetzung der neuen CodesysV3 Version.Als V2.x Mann findet man sich schnell zurecht.Für Anfänger mit Codesys hier eine lehrreicht Seite der Hochschule Mannheim :http://www.es.hs-mannheim.de/buch/CoDeSys.htmlGruß, Wollvieh ! 
-

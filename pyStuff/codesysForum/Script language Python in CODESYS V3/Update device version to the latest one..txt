@@ -1,6 +1,0 @@
-Hi, I would like to know how to update the device version to the latest one without providing the latest device version.  An example would be great.The update(...) method requires the device version.
-
-Hi chenhe.chenhe wrote:I would like to know how to update the device version to the latest one without providing the latest device version.Sorry, but there is no easy way to do that because the version is stored as string which allows to store more than just a simple version info. Some vendors store additional informations like the version number of the hardware which makes the comparison difficult.We use a two steps to compare the versions. First try to parse the string as System.Version (.Net). If it was successful we compare the System.Version objects. If not, we simply compare the strings.If a vendor use the same version format for all its devices you can create your own compare algorithm for it.BRMartin
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
-

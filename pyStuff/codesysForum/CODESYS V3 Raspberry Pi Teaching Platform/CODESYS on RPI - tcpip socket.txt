@@ -1,2 +1,0 @@
-Hello,I'm using CODESYS on an RPI and I would like to communicate with a device that uses a tcpip socket to communicate with other applications. How to do it with codesys? Can someone give an example?Where can I find  Libraries  SysLibSockets.lib  ?
-

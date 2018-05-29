@@ -1,4 +1,0 @@
-Hallo,ich würde gerne wissen, ob es geplant ist, zukünftig die PLCopen-Bausteine Part4 für Mehrachssysteme in CoDeSys zur Verfügung zu stellen.Vielen DankM. Seitz
-
-Hallo,ja das ist in der Tat für CODESYS V3 geplant eventuell zu SP7 als Beta...GrüßeEdwin
-

@@ -1,4 +1,0 @@
-Could someone please explain me the meaning of LZS_DEFINE_ACCU_FLOW service type that's handled in SrvComputeService()? There's no any word about it in the runtime documentation.
-
-Thanks in advance.
-

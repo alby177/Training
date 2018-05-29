@@ -1,2 +1,0 @@
-I use a PLC LMC058 from Schneider electric and i want to send some data with OPC.When we try to send a few datas, it works correctly (about 100 data in a structure)When we try to send more data, some datas doesn't respond. (about 800 data in a structure)I doesn't need a quick connection to send the datas. It can take several seconds to 5 minutes.Somebody has try to send many datas with OPC ?Somebody has an example to configure the gateway or the OPC config ?Somebody has an idea about this problem ?
-

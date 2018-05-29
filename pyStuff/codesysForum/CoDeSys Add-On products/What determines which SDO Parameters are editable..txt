@@ -1,9 +1,0 @@
-Please reference the attached pic.
-
-The SDO's listed are only a subset of the list.  What determines which of these will be configurable here???
-
-The eds file has a field for each object that is RO, WO or RW. The CoDeSys CANopen stack typically works with RW and WO fields that are supported in the manufacturer and device specific area of the object dictionary which is shown in your picture. Open the eds file and check it out.
-
-_________________Thanks,
-Steve Pfeifenroth
-

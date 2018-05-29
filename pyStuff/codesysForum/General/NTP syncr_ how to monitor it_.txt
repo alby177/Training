@@ -1,2 +1,0 @@
-Hi all! I'm e newbie in Codesys 2.3 coming from Step7 and starting using it on some Wago PLC.I need to monitor the NTP syncr with a NTP server ..is there some library to do this? Thanks
-

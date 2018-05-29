@@ -1,6 +1,0 @@
-Is it possible to start the CoDeSysHMI.exe with an argument that define the Com port to connect with? 
-Right now it connect to the COM port that is define in the .pro file. 
-I want to have this option outside the .pro file.
-
-Regards /Andreas
-

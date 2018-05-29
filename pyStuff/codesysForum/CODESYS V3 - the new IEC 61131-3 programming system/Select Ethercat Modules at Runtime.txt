@@ -1,2 +1,0 @@
-Hello,I have a question regarding Ethercat configuration. Is it possible to select active Module connected to an Ethercat Slave at Runtime?For example if I have an Ethercat Slave and this Slave consists of 2 Digital Input Modules and 2 Digital Output Moduls and I would like to deselect the second Output Module at Runtime.Is that Possible?Kind RegardsStefan
-

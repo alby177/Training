@@ -1,4 +1,0 @@
-Hello Guys,has anyone tried out the Microchip 4 Channel 18bit ADC MCP3424?I like to use this one, but after 4Days im working out a Lib i will give up.I dont understand how iniziate and read the Channels.Can any one help me out? Maybe with a working Lib... Please.Greets Andy
-
-Hi,I wrote a library for MCP3424 as a part of my project,it's working but the output is not really what i expected.i have uploaded the library & the device description file.maybe you should take a look . thanks
-

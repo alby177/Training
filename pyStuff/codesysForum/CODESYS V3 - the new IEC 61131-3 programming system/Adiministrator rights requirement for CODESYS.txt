@@ -1,6 +1,0 @@
-Dear All,I have installed codesys. as per company policy my laptop has no admin rights. there is an error occurs if I create project,save and then close. the error is attached in the file.kindly help me to solve this issue.With Regards,Dhanasekar
-
-Every computer MUST have at least one administrator.Normally if you right click the CodeSys shortcut on the desktop, select Properties, then under the Shortcut atb you can select Advanced and enable "Run as Administrator".So every time the program runs, it will have admin priviledges.If you don't have this option, you will have to have toe Laptop admin assign "permissions" to you for running Codesys.
-
-_________________Computer Setup:- Windows 7 Professional- CodeSys V.5 SP8 Patch 2PLC Setup:- Pi2 (running headless via Putty)- Jessie Lite.
-

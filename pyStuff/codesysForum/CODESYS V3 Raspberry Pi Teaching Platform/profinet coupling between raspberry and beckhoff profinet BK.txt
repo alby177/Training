@@ -1,6 +1,0 @@
-I have problems communication with profinet IO. Before I go to details should I have to different ethernet ports on the raspberry or not. In some youtube examples i have seen the usage of a usb to ethernet adaptor in combination with wago I/O. What I am trying to do now one ethernetport both for communication between codesys and raspberry Pi and also for profinet communicationthanks a lot for any advicePieter Devliesvives noord belgium
-
-Hi,both is possible (using the same port or have additional USB adapater)If prefer to split it on seperate ports.Additional I would recommend to use PI2 for doing profinet.You could use this example Project here:viewtopic.php?f=23&t=6247#p12724BREdwin
-
-thanks !
-

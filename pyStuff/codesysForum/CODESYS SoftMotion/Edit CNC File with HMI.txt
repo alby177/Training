@@ -1,8 +1,0 @@
-Hello,I use a Schneider LMC058 Controller with 3 LEXIUM32.A the moment, we use the CNC Editor present in SOMachine (Codesys V3.4) to create mutliple CNC ProgramThere is a way for edit CNC programme in HMI or PC without use CODESYS or SOMACHINE.The CNC code must be editable by operator. What's the best way to do this.I see CNC3Deditor but i'm unable to launch it in SOMachine. The Package Manager is not present in Somachine.Thanks
-
-Hello!Have you solved your problem recently? I am also looking for solution for same problem. May anybody help us, please.
-
-So this is not exactly from the HMI but in SoMachine 4.1 and a firmware update to LM058 you now can do WebVisualiztion.  What this means is with any HMTL5 compliant web browser you can view any CoDeSys Visualization.   HTML5 is supported on IOS, Android, Firefox, IE9.  So if you use the example Visualization provided in the CoDeSys CNC examples you can know view them remotely.  Right now I am without an LMC058 to test this but it is working in SE's newer non Motion Controller PLC's.
-
-_________________The Original SoMachine Ninja
-

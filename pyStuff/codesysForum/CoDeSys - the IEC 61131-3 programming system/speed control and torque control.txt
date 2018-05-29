@@ -1,6 +1,0 @@
-hi,I'm using ACS355 abb and I should write for my thesis a really simple program for control, the first question is I would like to control speed for istance the address of reference speed is 101, how can I run the motor with a speed of 50e.g in one program without using the control block ACS3XX_COM_MOD_RTU or using with ST.second question: is possible to control the torque like giving a value for torque and then the velocity is changing? thanks in advance
-
-if you dont use the function block you will have to write a value to a secific variable and send this to the drive.you need to look this up in the manual.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

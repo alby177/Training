@@ -1,2 +1,0 @@
-Hallo,ich möchte einen MPU6050 und einen TSL2561 in mein Codesys Projekt einbinden.An den I2C Master habe ich beide Sensoren angehängt und die Adressen eingestellt.Der Status vom I2C Bus der Sensoren ist "läuft nicht". Wo ist das Problem oder was mache ich falsch?Mit I2Cdetect werden die beiden Sensoren mit ihren Adressen erkannt.Danke für die Hilfe.elektroblitz
-

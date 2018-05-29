@@ -1,6 +1,0 @@
-A customer designs profiles in AutoCad using a cam plugin. Once finished, they need to generate nc code that Codesys supports, however it seems they can't find a fitting postprocessor that outputs fully compatible code as Codesys supports PARTS of the standard Maybe you could give some suggestions or product/company names as I'm sure you've come across this before?Kim HansenBeijer Electronics Automation AB
-
-Hi Kim,which standard do you mean, this is exactly the problem.My experiance is that every cnc manufacturer has his own dialect / extensions beside the main commands in g code.You have two choises.1. customized preprocessor - Output CODESYS G-CODE2. FB in IEC which converts the dialect in CODESYS g-code while reading and processing itBREdwin
-
-The customer is looking for a customized pre/postprocessor.But I guess we can make one ourselves as long as we get a dialect output close enough./Kim
-

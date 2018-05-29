@@ -1,2 +1,0 @@
-Hello, I have a problem, I'm not getting to use the OPC Server with the Client E3. Communication is done but the quality is always 28. In other customers operate normally. In WIN XP works too, now I'm using Win 2008 Server in a virtual machine, OPC Server and Client are on that machine. I have to do something? Any update? I'm using: '3 S-Smart Software Solutions GmbH ', Version: 2.3 Build 9'Thanks.
-

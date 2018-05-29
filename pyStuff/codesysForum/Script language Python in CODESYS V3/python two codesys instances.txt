@@ -1,8 +1,0 @@
-Hi,is it possible to check with python, if there are other instances of codesys running on the same pc?I was not able to find something similar in the Forum.
-
-If you are interested whether there are other opened projects I think IScriptProjects.all Property is what you are looking for.If not, and you want to check that other codesys instances are running than it is a python question,maybe http://stackoverflow.com/questions/1632 ... it-windows can answer this or a google search? 
-
-I tested the IScriptProjects.all Property. It's not what I'm searching for, I must check for other codesys instances.So I think it's a python question, maybe your link could help me, but at the Moment I don't have the time to test it. I write an answer when I have the time to check it...
-
-I also wanted to do similar but with other program,http://stackoverflow.com/questions/1352 ... ist-outputthis one works flawlessly.
-

@@ -1,2 +1,0 @@
-The problem is found on Windows 7 64-bit English version. With other OS this can not happen. After the first start of CoDeSys, the font of the CoDeSys editors has size 9 and on a next start it is already correct and the size is 11. This is not a sporadic problem. I can reproduce it always after a clean installation.Is there anybody who can give me an advice how to solve this problem? CoDeSys is a part of more complex installation, so if I know where it writes the font size, I can correct it during the installation. Any ideas?
-

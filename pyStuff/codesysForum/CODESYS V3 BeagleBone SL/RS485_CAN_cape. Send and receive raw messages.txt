@@ -1,6 +1,0 @@
-Hi,Accordind to data sheet Codesys provide CANOpen protocol support.Is it possible to send and receive raw CAN bus packets using Codesys? Do I need to implement some kind of driver/library for that?Is CANBus example (https://store.codesys.com/communication ... ample.html) applicable to BBB with RS485_CAN_cape?BR,Arv
-
-Hi,for Layer2 communication check this example:https://store.codesys.com/can-bus-example.html(install it by the shopping cart in CODESYS)BREdwin
-
-Thank you!
-

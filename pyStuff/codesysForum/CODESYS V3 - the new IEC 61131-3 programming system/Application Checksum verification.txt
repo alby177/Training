@@ -1,2 +1,0 @@
-Hello All,Can any one help me how to read the Application Check sum to make sure the integrity of the Application.I saw the Application.crc file, but i cannot able to properly read this information. Thanks,S. Parthiban
-

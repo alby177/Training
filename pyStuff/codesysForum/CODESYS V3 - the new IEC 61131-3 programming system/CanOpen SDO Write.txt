@@ -1,4 +1,0 @@
-Hello togehter,i have a question to write SDOs to a CanOpen Slave.Can somebody give me an example how I have to write SDOs from my plc program to the Hardware?I have to change the SDOs several times during a process.The structure of the Hardware is:-NetX_CANbus---CANopenManger-----SlaveModul (here the SDOs must be changed)Thanks in advance.  
-
-Hello,there is an example:https://store.codesys.com/canopen-example.htmlBest Regardsplcmax
-

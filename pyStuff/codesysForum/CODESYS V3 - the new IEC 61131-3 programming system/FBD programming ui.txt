@@ -1,2 +1,0 @@
-I've been thinking how one could perhaps make easier to use FBD programming ui.I'd integrate the toolbar with the selected fbd network and add new network+toggle comment state to left side of network.What do you think?
-

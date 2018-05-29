@@ -1,6 +1,0 @@
-Hi everyone. I am new to this forum and in case someone from development team reads this, I would like to make a suggestion:I'd like to see CoDeSyS (and every other application) use something other than ".PRO" as file extension for it's projects. There are simply too many products out there that use the same and this creates file association mess. It's been long time since DOS and 3 character limit and it does not matter what the extension is, as long as it is something unique (.codesys, .3s, or similar). Regards,IK
-
-If you make the name .codesysv2 or .codesysv3 and then make the association within windows it will start the codesys software automatic.NO you can not change the default extensions. please leave them like they areHowever when you rename the extension once you can still save etc the updated file.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

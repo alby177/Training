@@ -1,4 +1,0 @@
-I’m testing the CameraStream Sample project on a RPi 3 Raspbian.All is working perfecftly in the LAN (many thanks 3S to for your sample projects)  but when i try a remote access to the webvisu from internet (with port 8080 forwarding on the router), the webvisu is accessible and running correctly but not the video stream : there is a message 192.168.x.y took too long to answer in the browser control object.What could be the source of this timeout, is there some additionnal settings in the RPi or in the router to adjust ?
-
-Solved : the url in the browser control object needs to be adapt for WAN access or LAN access.It could be nice, if possible, to be abble to identify the IP address of the web visu client for an automatic adjustement of the url.
-

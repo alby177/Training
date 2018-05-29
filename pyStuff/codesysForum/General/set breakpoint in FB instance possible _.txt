@@ -1,8 +1,0 @@
-Hi,if I go online(login) , dbl-click some FB, select "Instances" -> pick an instance -> I can't set a breakpoint. When clicking line numbers just nothing happens.If instead of "Instances" I select "Implementation" -> I can set a breakpoint, but I have absolutely no idea for which FB instance this breakpoint applies and which FB instance data I'm looking at.How do I set a breakpoint for a particular FB instance? thanks
-
-HI,       Got to online option in codesys and select "breakpoint dialog " which u can use for breakpoint. 
-
-thanks, but this is the same as selecting "Implementation" and in fact sets a breakpoint at the same place in all the instances of the FB. I have 10 or so instances and stepping through all is quite annoying and time consuming. I need a breakpoint in one particular instance, but seems it can't be done.
-
-Hi,    I do not know how u r updating u r program.For example if u have array[1..10]updatefbstatus in u r (prg) then no need to keep break point u can directly debug in u r (prg). thanks
-

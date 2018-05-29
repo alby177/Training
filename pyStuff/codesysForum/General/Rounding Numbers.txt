@@ -1,8 +1,0 @@
-Try build a FB like this one, it should do the work.Code:value := (input MOD 10);IF value <> 0 THENOutput := input + (10 - (input MOD 10));ELSEOutput := input;END_IF/Niclas
-
-NP, sure.Code:value := (input MOD 10);IF value > 5 THENOutput := input + (10 - (input MOD 10));ELSEIF value = 5 THENOutput := input + (10 - (input MOD 10));ELSEIF value < 5  THENOutput := input - (input MOD 10);ELSEOutput := input;END_IFEND_IFEND_IF/Niclas
-
-another solution:this type of function is also available at www.oscat.de (it is english)
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

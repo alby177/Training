@@ -1,4 +1,0 @@
-I meet a problem when I use the File Access 3.4.1.0 library to operate file access.  fbFileOpen:FILE_ACCESS.FILE.Open;  fbFileOpen(xExecute:=TRUE,sFileName:=strFileName,eFileMode:=FILE_ACCESS.FILE.MODE.MWRITE,xExclusive:=FALSE);  after fbFileOpen() executed,the content of the file that the function block open will be cleard! And the size of the file will be 0!
-
-Use append or read_write mode to open the file.PS, this item should not be in the Python scripting forum, but in the general V3 forum.
-

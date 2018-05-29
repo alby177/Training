@@ -1,4 +1,0 @@
-When mapping a byte variable and bits variables in coils read registers, updated the byte variable but not bits variables.If i clear the byte variable mapping then the bits variables updated correct.Is there any solution to update together byte and bits mapped variables?Regards
-
-Hi,no only one mapping works,either map the bit's or word.If you map word you could access the bits by myword.0 ...BREdwin
-

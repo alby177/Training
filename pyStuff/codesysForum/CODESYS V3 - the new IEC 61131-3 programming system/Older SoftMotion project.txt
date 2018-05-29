@@ -1,2 +1,0 @@
-HelloI'm trying to open a motion project created back in 3.5.7 in a recent IDE (3.5.10.2) but the Cam tables don't load.What am I doing wrong?Thanks
-

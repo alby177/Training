@@ -1,2 +1,0 @@
-hello:I have seen that people generate their own equipment, for example, a modbus or ethercat device with the mapping and others to add with what is done?I've also seen that people who create their own code libraries, for example codesys, have not seen that they have an m-bus library for accountants, with which these libraries are made to be used in codesys later?and the last, I see that a lot of importance is given to "real time", which means exactly that a controller is real time or not? greetings thank you.
-

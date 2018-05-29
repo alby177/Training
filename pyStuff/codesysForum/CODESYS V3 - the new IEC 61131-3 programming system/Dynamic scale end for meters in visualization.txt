@@ -1,2 +1,0 @@
-Hi, I am quite new to the visualization in CoDeSys, so maybe you can help me with a "simple" question. Is it possible to have a dynamic scale end using a meter in the visualization? Attachment:CoDeSys_Visu_Scaling.JPGSince the applied sensors i will use can vary, I want to calculate the maximum using my parameters defined in my program.Thanks for ur help!
-

@@ -1,8 +1,0 @@
-Hello Everyone,does anybody now, if it is possible, to use the "Import/ Export Textlists" - function via the build in scriptengine?I searched the Script Engine Plugin API Reference, but i can't find anything.The question is for Codesys V3.5 SP7 Patch2.Thank you!
-
-Hi cf2017.cf2017 wrote:Hello Everyone,does anybody now, if it is possible, to use the "Import/ Export Textlists" - function via the build in scriptengine?There is no Scripting API for importing and exporting a text list the moment.We have the entry CDS-32967 in our database to create a Scripting API for the Visualization repository but it is not on the roadmap at the moment.BRMartin
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
-
-Hi Martin,thanx for your fast reply.
-

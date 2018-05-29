@@ -1,4 +1,0 @@
-Hello everyone, I’ve connected a RPi Cam on my Raspberry Pi, after a long installation, all is working well. And I can se the video by typing on google chrome « networkadress/html/« . But know I’m triying to have this images on my Vizualisation. I tried all, but I haven’t succed. Thank’s for your help.
-
-Hi,depending on how you set the Apache dirs maybe you need to add 	urlStream := CONCAT('http://', sIPAddress);	urlStream := CONCAT(urlStream, '/html/video.htm');to the access path.BREdwin
-

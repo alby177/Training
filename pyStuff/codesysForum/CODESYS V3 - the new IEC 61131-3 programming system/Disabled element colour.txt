@@ -1,4 +1,0 @@
-On my Visualization I am using a black rectangle with data display and data input.This rectangle is disabled at certain conditions as well as for certain access levels.When it is disabled its colour is light gray, which looks terrible on my black display.How can I change the propery of the rectangle so that its background and frame colour is different in disabled state?Is there any rule how the default 'disable colour' is calculated?
-
-You are right. It would be great if there was an option to enable / disable the "grey out" of the object when it is disabled.There is already a Jira issue created by 3S-Smart Software Solution for this, but it is still open.
-

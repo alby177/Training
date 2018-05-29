@@ -1,4 +1,0 @@
-Hi, I've been searching many hours a way to bring usable the value of the Systime. From SysTimeRtcGet I can get the Rtc time 148011171 (didnt set the clock to right time yet). From this using converter Dint to DT:   DT#2016-11-25-23:56:50. Then again, using different converter I can split date and time. I'm looking a way to have an Integer for all those valueINT for yearsINT for months (0-11 ou 1-12)INT for days (0-30 or 1-31)INT for hours (0-11 or 1-12)INT for second (0-59 or 1-60)I look over all librarys but didnt found anything. I'm using a raspberry pi 3 and need to start some task at different time of the days, same for different date of the month. Someone have an idea how do it?
-
-Hi,I would recommend to use the date and time example from the CODESYS Store.(install it via CODESYS Shopping cart)Another is here in the Forum which is additional based on OSCAT Calendar.. based on this date and time example too.viewtopic.php?f=23&t=6247&p=12387#p12396BREdwin
-

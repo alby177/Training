@@ -1,8 +1,0 @@
-HiWhat are the ways of securing a codesys app on a plc so it could run only on a one physical plc(not one type).Is there a way of connecting it to the hardware of the plc - check serial numbers of hardware or something else to prevent the copied compiled app from running on another plc of the same type...If yes - how can it be done...PS. I don't want to use USB security keys or stuff like that....
-
-I know of no easy built in way to do this, however there are some workaround options that may be possible (and combination of first two). - Encrypt the boot project so someone cannot read it off the PLC. - Read a file on the PLC (if windows/linux) based and look for a set of STRING Variables, otherwise do not execute MAIN. Then the PLC must obviously also have that file on. - On Beckhoff PLCs, you can choose not to download source code to PLC so no one can actually read off it. You can also do a ADS comparison so that the code will only run on PLCs with a given ADS address of X.X.X.
-
-Check with your hardware vendor. I know at least of one that gives you a call to get the mac id on the device. In this case, you can give your customer a special compile that only works on that hardware.If you want to get crazy, you can also start doing some special codes stored at random locations...  this is ok if you are the one programming the device. Of course, really determined cheaters can spoof mac ids if they really try... but I think you will never win against that type of customer.
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-

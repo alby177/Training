@@ -1,6 +1,0 @@
-Hi, I am using SFC as my programming language. Some of my actions are also written in SFC. How can I pause "SFC action" attached to one of the step?Thanks,
-
-what do yu mean by pause? the transition is only done when true.however inside an action you can put a loop when pause is needed go to subaction to stop what you wantyou can also use a separate program to disable an output.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

@@ -1,2 +1,0 @@
-Hello,I have 2 subjects.A.Communication between a Schneider IPC-Box with codesys application and a proface HMI.The proface is a matter because we want to receive data of 7 IPC Box.The communication actually is ok if the proface is slave.To communicate with a master PROFACE is the library with MODBUSSERVER useful?And how we proceed to dowload it?B.Communication between a Schneider IPC_BOX with SIEMENS PLC in PROFINET Network.Is it possible or not?Thanks
-

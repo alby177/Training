@@ -1,2 +1,0 @@
-Hi all         Can any one give an example program for XML Writer?ThanksSarath 
-

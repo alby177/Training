@@ -1,2 +1,0 @@
-What is the status of CoDeSys operating on Windows 2008?  Thanks.
-

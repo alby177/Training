@@ -1,6 +1,0 @@
-Where can I find the help of library?For example, I want to know the description of HSFILTER function,but I didn't find it in CODESYS help.
-
-what version do yiou use and what library, there is in most cases a pdf file with same name as library.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

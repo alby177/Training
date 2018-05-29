@@ -1,8 +1,0 @@
-Hi.Im new to this CodeSys thing. (SoMachine)Right now i'm trying to read out values from a energy meter, but cannot get the conversion to work..Im trying to read out the Frequency (50 Hz). Value is located in modbus address 4113-4114. I have mapped these addresses as %IW0 and %IW1.IW0=01000010 01001000 = 16968IW1=00000000 00000000 = 0Now I need to get these words converted to a REAL value. Anybody that can help?Real should be: 01000010 01001000 00000000 00000000Morten
-
-Check this out:http://forum.codesys.com/viewtopic.php?f=1&t=888
-
-make it a double word and convert it to real is one answer, however what type is your real?look at oscat.de for a big library with all types of conversions.you can also use scale with lowest value and highest.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

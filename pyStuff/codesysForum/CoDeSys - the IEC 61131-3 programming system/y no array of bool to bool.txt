@@ -1,6 +1,0 @@
-Am trying to array of bool to one of the booleaneg:test:array [1..10] of bool;turnon:bool;turnon:=test[1];Am getting error , bool to array of bool is a pbm but y array of bool to bool is also a pbm
-
-VARtest:array [1..10] of BOOL;turnon:BOOL;END_VARProgram turnon:=test[1];i only get a warning on the type bool as it should be written in capital.the rest works fine
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

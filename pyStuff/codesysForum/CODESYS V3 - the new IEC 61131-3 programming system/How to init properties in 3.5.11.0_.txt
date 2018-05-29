@@ -1,2 +1,0 @@
-This code not working in 3.5.11.0:Code:ProjectVersion: TVersion := ( Major := 0, Minor := 1 );The error:Code:[ERROR]         6463: Globals [Device: PLC Logic: Application](Line 85): C0179:  'Major' is no input of 'TVersion'[ERROR]         6463: Globals [Device: PLC Logic: Application](Line 85): C0179:  'Minor' is no input of 'TVersion'
-

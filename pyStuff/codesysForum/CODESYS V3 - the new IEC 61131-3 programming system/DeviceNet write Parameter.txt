@@ -1,4 +1,0 @@
-Hello togehter,i have a question to write Paramter to a DeviceNet Slave.Can somebody give me an example how I have to write Paramter from my plc program to the Hardware (DeviceNet Slave)?I have to change the paramter configuration several times during a process.The structure of the Hardware is:-NetX_CANbus---CIFX_DNM-----SlaveModul (here the Parameter config. must be changed)Thanks in advance. 
-
-Hello,any Progress on this issue? I have a similar one with a B&R POWERLINK-Slave. There is a configuration option but the parameters are never transfered to the Hardware.
-

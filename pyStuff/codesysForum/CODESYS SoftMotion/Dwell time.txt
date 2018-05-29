@@ -1,6 +1,0 @@
-I need to add a dwell time to CNC program. Standard G code is G04, but Softmotion nc decoder ignore it. Have you any idea how to do it?Peter
-
-Hi,which version of the SoftMotion Libs are you have?https://help.codesys.com/webapp/_sm_cnc ... on=4.3.0.0this shoudl work...BREdwin
-
-Thank it heps. I had a wrong sintax. I is not possible to use G04 P<time in ms>, but G04 T<time in sec>.
-

@@ -1,2 +1,0 @@
-Hi,I have created a library and would like to add it to my project using placeholder.First in the library's Project Information I set the Placeholder property to e.g. My_Placeholder.Then I install the library into Library Repository and open my project.In the project I go to Library Manager -> Add Library -> Advanced -> Placeholder and I select the Company name and my library version *.Last step is to select Placeholder name. However, I cannot see my library placeholder there.What is wrong and how to fix this?
-

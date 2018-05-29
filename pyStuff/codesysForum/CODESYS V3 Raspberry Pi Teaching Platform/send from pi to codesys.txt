@@ -1,8 +1,0 @@
-Hello,Is it possible to send commands from the pi to codesys?for example:Turn on or off a marker?With the PI Terminal.Thanks in advance
-
-Hi,you mean if the CODESYS development system is connected there should popup a dialog in CODESYS with an advice?BREdwin
-
-Hello, sorry for my bad english, come from germany.What do I want to do:I have a sms center running at Rasppery.If now a sms received,I turn on a gpio port.This gpio port I ask in codeys.Then I solve an action, for example: start a video, switch an output, etc.Is it not possible that I in my rasppery script directly a variable in codesys switch?Just as it is also possible to send from codesys commands to rasperry!Here is the script with which I evaluated an incoming sms:#!/bin/bashPASSWORD="1234"if [ "$1" = "RECEIVED" ]; then  TEXT=`sed -e '1,/^$/ d' < $2`  # Make text uppercase:  TEXT=`echo "$TEXT" | tr "a-z" "A-Z"`  RCVPASS=`echo "$TEXT" | cut -d" " -f1`  ACTION=`echo "$TEXT" | cut -d" " -f2`  if [ "$PASSWORD" = "$RCVPASS" ]; then      case $ACTION in         #Reboot Server        REBOOT)          reboot        ;;         #Shutdown Server        SHUTDOWN)          shutdown -h now        ;;         #Schalte gpio 17 ein        FILM_AB)           gpio -g write 17 1        ;;         #Schalte gpio 17 aus        FILM_STOP)           gpio -g write 17 0        ;;          esac   fifiI hope you can understand my english  
-
-Hi,maybe it work to use: viewtopic.php?f=23&t=6247&p=12699#p12711and parse the return values of your script in CODESYS not 100% sure if this will work.BREdwin
-

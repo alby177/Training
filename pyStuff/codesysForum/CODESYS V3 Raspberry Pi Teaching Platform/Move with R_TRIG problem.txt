@@ -1,6 +1,0 @@
-Hello,I think, I'm having trouble using Move function inside a function block.I've designed a function block that concats two strings depending on bTrigger. The function is working good but now I want to overwrite the STRING output under another part of the program.Attachment:FB.PNGThe problem is reset variable tries to write an empty string on StrResult but when Reset comes false the old value return again, no matter if inside the function there is conditional move with F_TRIG.Attachment:POU.PNGFor sure I'm doing something wrong but I can't see where is the problem, I'd like to add all the mods inside the function block.Thanks in advance and excuse my EnglishI'm attaching the project file too.Regards!
-
-The CONCAT block in your CHANGE code block always assigns its output to strResult even if not enabled (enable will calculate a new CONCAT output).  So your RESET code writes to StResult, but I. The next PLC scan, the CONCAT output assigns to StResult. You need a different technique....maybe have your CHANGE should always run, but only enable the MOVEs to the output. ST code maybe an easier solution (IF xxx THEN strResult := 'lorum'). In this case, string assignment ONLY happens when xxx is true.
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-

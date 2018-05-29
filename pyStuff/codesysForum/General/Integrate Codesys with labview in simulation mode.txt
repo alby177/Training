@@ -1,4 +1,0 @@
-Hi there,
-
-I'm new in using codesys. I want to integrate codesys with labview (for visualisation) in simulation mode. Can anyone help?
-

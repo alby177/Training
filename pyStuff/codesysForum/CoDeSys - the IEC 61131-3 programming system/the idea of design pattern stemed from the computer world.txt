@@ -1,2 +1,0 @@
-Recently I read the classic computer book <<Design pattern>> of the "Four Gangs" and I think the programming can benefit from this idea. Once I used the "Chains of Responsibility" to deal with the logic problem and it worked, the system became discoupled and easier to maintain. Do the engineers of the Codesy have such invaluable experience and represent the idea with the "Tricks and Tips" to us? I think the resuable methods are more important than the resuable function blocks.
-

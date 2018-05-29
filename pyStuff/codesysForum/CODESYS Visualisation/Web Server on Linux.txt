@@ -1,2 +1,0 @@
-Hi,there is a Web Server for Codesys that runs under linux?Best regards,Gianni
-

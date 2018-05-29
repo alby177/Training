@@ -1,2 +1,0 @@
-I keep getting "Requested registry access is not allowed" when I try to install a support package. Anyone else had this problem and how did you solve it?
-

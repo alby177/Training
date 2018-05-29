@@ -1,9 +1,0 @@
-Hello,
-
-I have a problem establishing communication through the ethernet port after the communication between CoDeSys and the hardware is lost.  I have noticed this on two similar occasions.  In both cases the communication as succesfully been established, lost/disconnected, and without changing communication parameters, unable to be established again.  It looks like this happens with only some PCs, not all.  
-
-Is there a setting that I am unaware of?  
-
-Thanks,
-Tom
-

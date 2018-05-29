@@ -1,6 +1,0 @@
-How can I do to insert the € character in the text property of a object for a Web Visualization?The € symbol is correctly displayed in the visualization inside the develpment tool, but into the XML file of Web Visualization is generated a &#128; sequence while to see the € symbol in Web browser must be used &#8364;
-
-there is a difference in character coding, use the correct table. or use a manual character.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

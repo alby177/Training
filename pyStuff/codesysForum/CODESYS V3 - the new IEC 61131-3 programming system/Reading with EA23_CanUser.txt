@@ -1,2 +1,0 @@
-Hi All, does anyone can give me an example on how to use this library (EA23_CanUser) in order to read some addresses in CANOpen?I have a device that not allow the PDO's, so I need to connect and read and write with SDO.Thank you very much.
-

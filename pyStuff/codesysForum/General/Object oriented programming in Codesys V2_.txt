@@ -1,6 +1,0 @@
-I know that object oriented programming is a new feature of Codesys V3. However, I wonder if it is possible to have limited OOP support even in v2. For example, I would like to create two different implementations of a function block, but keep the interface the same. Callers should be able to call according to this interface, without having to know which implementation is in use. The selection between the two different implementations should be done by runtime (at startup or similar). What's the best way of solving this?
-
-yes i do a lot of oop in V2.3 have alook into placeholders.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

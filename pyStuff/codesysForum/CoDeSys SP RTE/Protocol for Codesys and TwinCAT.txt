@@ -1,2 +1,0 @@
-Does Codesys and TwinCAT use the same protocol to read symbol values? TwinCAT uses ADS/AMS for a remote run time and some kind of direct access when the service is on the same machine. Does Codesys use the same protocol?
-

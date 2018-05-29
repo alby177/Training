@@ -1,6 +1,0 @@
-Hi, i'm trying to connect Turck BL20-PG-EN using CoDeSys V2.3 the communication parameters are correct but when i try to login I get the message  "communication error(#0): logout performed". so can someone help me with steps to perform a login and to download my project.thank you
-
-what port is used on the PC and do you have the target set correct, there is under online a communications parameterset.and the settings in the turck should be checked with a special program available from website.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

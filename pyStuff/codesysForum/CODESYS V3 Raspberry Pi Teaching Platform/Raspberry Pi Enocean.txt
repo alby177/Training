@@ -1,2 +1,0 @@
-Hi all,I'm a rookie in the raspberry program, but I'm try to build a program to communicate with Enocean equipments thru a usb dongle gateway.Can anyone help me in this? There is some tutorial, or a exeample project about that?Thank's all
-

@@ -1,8 +1,0 @@
-I have two tasks and one POU for each task.- I would like to run the tasks depending on an event.As it is now Task1 is cyclic, and Task2 is triggered by an event. But that means that the evaluation of Task2 is executed only once. But I want Task2 to to run in a cyclic manner when the event is triggered. How should I do?I understand that I could set both Task1 and Task2 to be cyclic, but then - how do I j run Task2 (in a cyclic manner) only as long as the condition is true.There must be a way to switch between cyclic Tasks depending on some (global) conditions - or?I have read the Online Help about the Task Configurator but could not find an answer to my problem.
-
-This is not how you should use Tasks.You should just program this in your application and call the code depending on the state of your system.Based on your description I think it is best to have one task which calls one program cyclically.From this program you can have conditional calls to your 2 POU's.
-
-in PLC_PRGif event1 do task1if event2 do task2or in taskconfiguration it is also possiblemake 2 tasks set them both on event and do pou1 in event1tasketc
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

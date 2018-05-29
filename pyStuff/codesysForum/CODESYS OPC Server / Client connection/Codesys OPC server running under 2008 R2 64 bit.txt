@@ -1,6 +1,0 @@
-Hello,we are using the Codesys OPC server v 2.3.13.4 running on a W2K8 R2 SP2 64 bit.Now it seems we are having problems connecting to the OPC server.Are there know issues under W2K8 R2 that we should be aware of ?Can you give us some hints / tips that we can check in order to get the up and running before the 1 of Jully?Thank you
-
-I think you should start with checking the OPCserver.log file and see what messages are given.Then you should check where the OPCServer.ini is saved. I am not familiar with 2008 R2, but maybe you have to save the file in C:\ProgramData\CoDeSysOPC.
-
-Hi,we have checked it with the latest V2.3 Version (CoDeSys OPC Server V2.3.13.7) we see no specific problem. (In a special case more on the client side there where some problems)But OPC Server seems to be ok on R2.cuEdwin
-

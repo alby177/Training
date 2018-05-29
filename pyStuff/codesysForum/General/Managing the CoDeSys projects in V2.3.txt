@@ -1,6 +1,0 @@
-Hello,My colleagues and I are experiencing some difficulties when managing the CoDeSys projects in V2.3.We save our projects on our server and when we want to use them to login onto a machine we move the files to our personal local harddrive. Here's the problem, when I try to login in with my colleagues project it re-complies and wants to do a new download. Which basically resets the PLC and if there are any errors in the program we can not monitor them cause the PLC will be reseted after the login.Any suggestions on how we can resolve this matter?We've tried to place our config and lib. on the same server. But that didn't help. The matter seems to be resolved in V3.We're using Festo's PLC and CoDeSys.Thanks in advance,Zackarias
-
-In 2.3 the compiler looks for any change in the project, (and this happens when you load another project.)The only solution is to use a separate computer when the unit is online.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

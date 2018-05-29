@@ -1,6 +1,0 @@
-Good afternoon, I need to call into 'Global variables' the variables defined into 'service data object' (in the picture1).[img]Codesys.png[/img]How can I define them? And,  how can I see the address I have to use? Sonda1 AT %IW??? :WORD; Thank you
-
-Hinormally you would need to use the Function block SDO_Read in the CIA405 library. The library is added along with the can device.
-
-Thank you for the response.So basically I have to put inside my PLC_PRG a function that can read that address correct?Something as:test:= := CIA405.SDO_READ4(x,x,x,x,x,x,x,x,x,x,x,x);Correct?
-

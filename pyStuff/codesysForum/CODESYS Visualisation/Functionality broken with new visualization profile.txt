@@ -1,2 +1,0 @@
-I am using 3 histograms on top of one another to plot some curves in the web visualization. If I use SP6 flat style visualization the histograms are background transparent and I can see all the curves from the underlying histograms. When I change the visualization profile to SP9 flat style, I only see the curves from the top histogram. I dont see any option to make these transparent as well. Any help is appreciated
-

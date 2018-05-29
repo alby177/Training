@@ -1,6 +1,0 @@
-I have connect 5 DS18B20 on my Rpi3. The time to ask value of 5 sensor is more than 4 seconds !I see in documentation of DS18B20 the time for resolution 12bits is 750 ms. In 10bits resolution time is only 187ms.How can I change resolution of my sensors ? It's not in the library in codesys, I think it's in raspbian.Could you help me ?Bests regards.
-
-Hi,better to ask this in the RaspberryPi.org User Forum.BREdwin
-
-I have find solution to change resolution on internet:You have to use an other gpio than gpio4, like gpio25 in pin22 and only 1 ds18b20 plug in to do change:sudo git clone https://github.com/danjperron/BitBangingDS18B20cd BitBangingDS18B20sudo gcc -lrt -o configDS18B20 configDS18B20.csudo ./configDS18B20 25I have change resolution of 5 ds18b20 to 10 bits. Time now must be 187.5ms x 5= 938ms. But, the cycle time is still 4 seconds !Is it CODESYS ? Raspbian ? I don't understand ....Help ...
-

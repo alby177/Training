@@ -1,8 +1,0 @@
-anybody familiar with this standard for motion?
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
-Shooter that is open ended question....what specifically did you need to know about the standard.  I know the plcopen motion standard inside-out.  The codesys softmotion follows the standard completly.  This is because more than half of the sitting board members are either vendors that use codesys or work for codesys.  It is funny because most of the codesys documentation is an exact copy of the standard documentation that you can download directly from PLCopens website.
-
-_________________The Original SoMachine Ninja
-

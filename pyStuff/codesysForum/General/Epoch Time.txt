@@ -1,8 +1,0 @@
-I may have asked this before and if so I am sorry, but does anyone have any functions or code to calculate current year, month, day, hour, and second from an epoch variable.  Basically an epoch value is a ticker or counter that in my case increments by one every 90ms from a specified date.  In my case it is June 1, 1996 00:00:13.  I have worked through most of it, but if someone else has already done this I would be very happy.
-
- 
-
-Kind regards,
-
-Doug
-

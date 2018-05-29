@@ -1,8 +1,0 @@
-Hi!I have 2 questions?1. Is there going to be a Codesys Runtime for PFC100 in the future?2. What are the chances that the modules 750-650/2/3 from Wago to be supported? Even as payble addon?Thank you!
-
-Hi,1) PFC100 will be available Q4 in the CODESYS Store2) 750-650/2/3 depending on what you need, is it enough to get processdata from these modules and confguration is done by Wago-I/O-Check3?BREdwin
-
-Hi, I have a question about target for Wago PFC100. I seen in PDF supported devices also PFC100. Is it available yet?
-
-Hi,3.5SP11 release (July) for sure.BREdwin
-

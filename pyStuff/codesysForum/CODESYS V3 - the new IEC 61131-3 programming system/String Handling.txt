@@ -1,6 +1,0 @@
-Is that any way to convert the String to Upper or Lower Case?
-
-See the StringUtils library.
-
-Or Oscat lib.UPPERCASE and LOWERCASE I think the functionblocks are called./Torbjörn
-

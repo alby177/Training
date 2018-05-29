@@ -1,2 +1,0 @@
-Hi everybody,is it possible to change project settings --> visualization --> textlist-data path using python script? Scrpting?ThanksMaGu
-

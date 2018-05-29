@@ -1,4 +1,0 @@
-Need help for CoDeSys V3.5 Visu:We have different levels of users for operating visu like "user", "supervisor"I like to switch user-level to "user" from "supervisor" (password protected) - if the current level is "supervisor"- and display is not touched for last 10 min.Is there any touch input variable that I can use to reset timer that switch users?Thank you in advance.
-
-Check SysTargetVisu23 library.
-

@@ -1,8 +1,0 @@
-Dear friendsI am doing an application with CP150 xga tv of WAGO, HMI with PLCThis is my master, I have comunication with 750-881 where I get the status of my sensors and where I control valves and motors. Unfortunately I finished my program when I simulated my program everything is fine. But when I want to download to my CP panel appears me the Error message "Program too large for the controller". I don't know what to do about it , because I already make 3 programs and they presented the same errors...For example for my images pipings, tanks I use  the kind of file wmf.Thank you very much Jorge Roman
-
-Dear Friend, for the people that read my post,Thanks to god and my friend Ing. de la Luz From Wago Mexico, Finally I found the soluction for my program.....   The advise that I can tell you is that you have to use a background bitmat, use the kind of file jpeg. This to lower the size of the program. Well, if you have the same problem, send me a mail.
-
-using jpg is good, when you have repeating things like valves use a visualisation and put one valve in it and reuse the vis.check your libraries as they tend to be big, but you only use a portion of it.use simpler bitmaps or even just a rotating rectangle for the switch and the emergency button is just a red circle. pipings just use rectangles and straight corners.etc.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

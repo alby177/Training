@@ -1,8 +1,0 @@
-I have a problem with serial communication.My CODESYSControl.cfg file is:[SysCom]Linux.Devicefile=/dev/ttyAMAportnum := COM.SysCom.SYS_COMPORT1;Linux.Devicefile=/dev/ttyACMportnum := COM.SysCom.SYS_COMPORT2;On port 1 everythink is ok. It is work, but I have problem with port2.I can't even open this port.Example on screenshot in attachment.Where is the problem ?
-
-Hi,this does not work that way.use only this[SysCom]Linux.Devicefile=/dev/ttyAMAand set a symlink in Linux for/dev/ttyACM0 -> =/dev/ttyAMA1BREdwin
-
-I used command: sudo ln -s devttyACM0 devttyAMA1and it is works,  but after reboot AMA1 disapear, what is wrong ?
-
-Hi,guess the proper solution is to add it by udev ruleswould recommen to google for it.If you add a symbloc link sure you need to add after rebooting the system..BREdwin
-

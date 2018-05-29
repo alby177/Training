@@ -1,8 +1,0 @@
-Hello,I have some doubts about Raspberry PI and I2C bus.I would like to read a specific register from Node XX, and of course, write a value to specific register.There are some functions to read and write but...... it is not clear.For example, I would like to read a byte from register 0x19, from node 0x04.It is clear where I can setup node number, but register number ?????Thanks in advance.
-
-Hi,check this example project here:viewtopic.php?f=23&t=6247&p=19944#p19944this should show how this could work.BREdwin
-
-Thank you Edwin.Kind regards.
-
-_________________John Martin Larraioz Elektronikahttp://www.larraioz.com
-

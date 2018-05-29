@@ -1,8 +1,0 @@
-I've created three of FBs : FB_Framebuffer, FB_Pixel, FB_Painter. And I've added a instance for 2D array of FB_Pixel in FB_Framebuffer. As you see the code, In FB_Painter I want to access the 2D array variable is declared in VAR. But, I couldn't access it. How can I access the instance variable keeping it in VAR region of FB_Framebuffer without VAR_IN or VAR_OUT? Is it possible via Property, Reference or Pointer?Code:FUNCTION_BLOCK  FB_FramebufferVAR   Buffer : ARRAY[0..1, 0..1023] OF FB_Pixel;END_VARCode:FUNCTION_BLOCK  FB_PainterVAR   FrameBuffer : FB_Framebuffer;END_VAR
-
-VARs are considered private variables by design. This is desired and a good thing. Now, to address your situation...Option 1) create a method for FB_FrameBuffer, that's takes the 2D arguments as VAR_INPUTS and returns the FB_Pixel. This may, or may not be the best solution, depending on the size of FB_Pixel. Option 2) rethink your solution. If FB_Painter should not be bothered by buffering details, then it should not need direct access to the array. Instead, FB_FrameBuffer should have methods and properties that FB_Painter can use to command general things like: GetNextPixel() or MoveLeft() or whatever you are trying to achieve. If FB_Painter should access the 2D array, then maybe it should be defined there, which then why have FB_FrameBuffer....
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-
-Thank you for your reply.I'll try to create some methods to access internal variables indirectly.
-

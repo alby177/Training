@@ -1,2 +1,0 @@
-OK all, first time poster here and NON user of the CodeSys system.I've just started at a company and am helping out with a Win7 (x86 Pro) migration.One of the departments here, use CodeSys (v2.3.9.22) and we cannot get it to install.The department, for some reason is not part of the company's IT Dept. so for some reason they do not have Admin Rights.If we install under MY credentials all is fine, go and log on as the end user and it does not see any of the targets.Is there a trick that a non user would understand that needs to be done?
-

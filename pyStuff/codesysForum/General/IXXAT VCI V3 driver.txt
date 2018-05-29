@@ -1,5 +1,0 @@
-Is the IXXAT VCI V3 driver compatible with CoDeSys version 2.3.9.6 and above?
-
-_________________Thanks,
-Steve Pfeifenroth
-

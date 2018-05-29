@@ -1,4 +1,0 @@
-I made a simple file contaning all possible languages.I was inspired by kurt as i saw his examples but they were not complete.Planning to rewrite parts of the manual as i still think the functions are not explained good enough.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

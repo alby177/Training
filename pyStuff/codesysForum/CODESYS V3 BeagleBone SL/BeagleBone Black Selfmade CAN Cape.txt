@@ -1,4 +1,0 @@
-Hello together,I try to connect a Beaglebone Black with CANBus. So i build a Beaglebone Cape for CANBus (you see it in picture):Attachment:DIY Schematic.jpgAfter that, i followed the instruction of this link: http://www.thomas-wedemeyer.de/beaglebo ... ython.html until the CAN test part (because it doesnt work for me).And now the Problem: If i try to test the bus with "./cansend can0" nothing happens. So i have measure P9 Pin24 (UART1 TXD) againgst ground and the level still stay at 3,1 V (P.S. i measure with a PicoScope). Now the question is: what did i do wrong ? Or can there be an other mistake ?Thanks in advance.RegardsHummek
-
-Hi,using  other can capes you need to enable them by:'For using a CAN cape add following line to /boot/uEnv.txt:cape_enable=bone_capemgr.enable_partno=BB-CAN1'Maybe this helps or at least you know what to 'google' for.BREdwin
-

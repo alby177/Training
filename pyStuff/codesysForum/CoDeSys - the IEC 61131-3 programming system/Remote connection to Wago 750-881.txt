@@ -1,8 +1,0 @@
-Hi all to forum!!As subject says, I have a problem to connect on remote wago controller.Aplication is:I connect Wago to switch and switch to router. Controller have an IP address 192.168.1.2 and gateway 192.168.1.1On my router I set ports:2455,502 and set DDNS with data whitch I get on www.no-ip.comAnd then 50 km away on my computer at home in Codesys in communication parametars I choose Tcp/Ip and in address field put e.g.no-ip.com port 2455 but every time i get message communicaton error #0 logout performed!!Now my question is do I need on my home router opet some ports? Can someone who know write in short notes what I need to do!
-
-Don't you need to set the port for CodeSys as well at port 1200?/Torbjörn
-
-Is it necessary for port fowarding on remote router? If yes witch ports?In CoDeSys V2.3 on remote site what address need to be in Gateway properties?Do I need  Codesys gateway server?When I setting communication parametars with DDNS on local site everything work fine, so I guessproblem is on remote location!
-
-bump!     
-

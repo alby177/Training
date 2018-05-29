@@ -1,6 +1,0 @@
-How does the RTE/Control WIN process multiple tasks? Does it do one after another or are all these executed simultaneously? eg: A task with 10ms task time and a task with 100ms task time. If the tasks are executed based on priority, if 10ms task is at 1 and 100ms at 2, will the processor switch to priority 1 if priority 2 is not executed with in the 10ms downtime of priority 1? Meaning priority 2 should run every 100ms, but the whole task should be completed in 10ms?Can someone please explain how multiple tasks are handled.Thank youspen
-
-My understanding is the higher priority task interrupts the lower priority task. The lower priority task is actually paused while the main higher priority task complete's. Once the higher priority task completes, the lower priority task and continue want.  In this way, tasks like fieldbus control, such as EtherCAT, can be the highest priority task and maintain very low jitter, while lower priority tasks complete when there is time. If too many tasks are defined, it can be possible for the lowest level task to never run.
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-

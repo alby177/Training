@@ -1,4 +1,0 @@
-Hello Community,I'm looking for a solution to download a csv file, which is created by the plc, through the web visualization. Is there any way how to do it?Thank you in advanceBR,Kevin
-
-_________________Building & Process Automation with HVAC Library for CODESYS© - www.hvac-automation.com
-

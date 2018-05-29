@@ -1,4 +1,0 @@
-What can cause the error of “dynamic text list *** could not be opened！”。
-
-Has anyone ever met such a problem?
-

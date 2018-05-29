@@ -1,6 +1,0 @@
-Hi,For a project I have to be able to declare a variable length array. I retrieve data from a MySQL database and depending on how long the resultquery is I need a longer array.The idea is to put the result in an array of structure (structure = every column of the query --> Number = DWORD and Name = String). Then I can show the result in a Table on a visualisation screen.The problem is I can't figure out how to make an array of variable length. Lets say that I put the size of the array in the varriable ArrayLength. I wonder how to continue from here?Nico.
-
-No strings must be fixed length, as the program needs to know where to start.However you can make a big area and do it with pointers and lengths,you can have a look at www.oscat.de
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

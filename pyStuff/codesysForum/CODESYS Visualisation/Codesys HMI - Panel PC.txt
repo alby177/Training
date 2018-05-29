@@ -1,4 +1,0 @@
-Hi,Can Codesys HMI be installed on Phoenix Contact - Panel PC - EL PPC15 1000/M https://www.phoenixcontact.com/online/portal/us?uri=pxc-oc-itemdetail:pid=2400070&library=usen&tab=1&selectedCategory=ALL ?Thank you!
-
-Hi,hm.. think so - Windows® Embedded Standard 7 BREdwin
-

@@ -1,4 +1,0 @@
-Hi,On UNIPI board, we have EEPROM that Can be used to store value.Is there anyone who know how write and read the EEPROM using CODESYS. This is the best way to fix the RETAIN PERSISTENT issue at the moment.
-
-I solved it by saving the retain data to file on change, but obviously that's an issue if it changes too often, like every few seconds or worse.Then load it on startup.Sent from my SM-G935F using Tapatalk
-

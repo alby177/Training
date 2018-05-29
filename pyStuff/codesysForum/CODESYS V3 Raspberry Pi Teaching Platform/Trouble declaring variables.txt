@@ -1,6 +1,0 @@
-Hey guys,I'm having some trouble declaring the variables in my project.I want to be able to set/reset the bits in a word and be able to reset the whole word at once.So far i got it working fine at %MW0, but when I try the same at any other adress it wont work.Can somebody help me a bit?
-
-Try:MyMW:pointer to dword;MyMW:=adr(mx0);MyMW[0] is mx0MyMW[1] is mx1...Setting fullMyMW[1]:=16#B1 For exampleSent from my Moto G (5S) Plus using Tapatalk
-
-I think a Union of 16 BITs (not BOOL) and a WORD is a better way to achieve this.
-

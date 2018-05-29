@@ -1,8 +1,0 @@
-Hello, support!I'm trying to use Codesys 3.5.11.20 with Wago PFC200 750-8203.The problem is: Pfc200Bus show "not running" status. PLC in RUN mode, CANBus status "running", but Kbus of PFC200 is not running although "I/O" indicator on PLC is blinking.Licence for runtime is not activated, but no restrictions are mentioned in product description.I have tried versions CODESYS Control for PFC200 SL 3.5.11.20, 3.5.11.10, 3.5.11.0 and 3.5.10.20 with x64 CodesysPFC200 SL 3.5.11.20 and 3.5.10.20 with x32 CodesysPfc200Bus higher version is only 3.5.11.10 available. Then I create new project the following message appear /Device for Interface "PFC200" not found. Type: 288, Id: 0000 0001, Version: 3.5.11.20/so I have add Pfc200Bus over "Add device" submenu.Am I doing something wrong?BR.
-
-Hi,there is no restriction according the license except unlicensed the runtime will stop after 30 minutesThe procedure is (sorry for the message if you generate a standard project this will be solved with Version 3.5SSP12 release)but it works if you add the Kbus manually, see screenshot.Then go online with the empty Kbus - rightclick on it and scan the devices.BREdwinPS:You could install attached device description, this will solve the problem (generating an empty project  KBus error/for 3.5SP11Patch2)
-
-Dear Edwin,The attached file is device description for PFC200 itself, not for PFC200Bus version 3.5.12.0. As far as I understand you, I need file for PFC200Bus. Attach this file also, please.BR.Arv
-
-Hi,this is not needed, the problem is in the devdesc of the PFC200not in the KBUS XML!Just install the attached XML into your device repository.BREdwin
-

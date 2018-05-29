@@ -1,4 +1,0 @@
-Hello,I've just started exploring Codesys so this might be a stupid question.When running a Codesys runtime program on a Windows platform, is it possible to use opc data from an opc server as io for this plc instead of regular io modules?Sampletime and scantime is not critital for me.Ola
-
-No, this is not possible. The runtime has no OPC client functionality.You could however read/write variables with you own OPC client through the OPC server from/to the PLC, but I don't think this is what you want.
-

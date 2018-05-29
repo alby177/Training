@@ -1,6 +1,0 @@
-I made a small html file to read and write variables with my smartphone.It works very well on a Wago 750-841 controllertest program:http://www.jan-karina.be/android/wago_test2.htmlVideo (Dutch)http://www.youtube.com/watch?v=_
-
-Update jetzt geht es auch mit website auser die SPShttp://www.jan-karina.be/piotr/index_pc.htmlMit erste "buttons" kan mann lesen und schreiben ("licht zwembad" und "pomp zwembad")Fur details siehe diese Polische website:http://www.wspin.duu.pl
-
-Update,Now with  Google Gaugemeters and a slider.[/url]For safety, only button "licht zwembad" and the slider are working   http://www.jan-karina.be/piotr/index_gauge.htmlPs, There are some browser issues, in IE the meters are not working.Edit, in IE 9 the meters are working.
-

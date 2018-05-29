@@ -1,2 +1,0 @@
-hi thereI am looking for more information on how to call the function block CanOpenPDO_Rx().trying to figure out how to use it.  Is anyone able to  provide a sample ?Where do I find document/more information on how to use the function block in 3S CAN open library?Thanks in advance!Gavin.
-

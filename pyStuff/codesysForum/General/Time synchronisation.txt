@@ -1,9 +1,0 @@
-Hai all,
-
-how to receive a time stamp data from CAN network, how to configure the Date and time format datatype in PDO configuration ..
-
-Looking for your help.
-
-thanks
-Rajesh G
-

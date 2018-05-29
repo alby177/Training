@@ -1,4 +1,0 @@
-Hallo zusammen,vorweg erst einmal muss ich euch vorwarnen, dass ich noch ein Anfänger mit Codesys bin! Ich möchte gerne eine Tabelle erstellen, in der ich frei Werte zuordnen kann. Bisher habe ich es geschafft einen Array zu erstellen, dem ich dann in der Visualisierung mit vorgesehener Wert =... und dann mit F7 und alt+F7 einen bestimmten Wert zuweisen kann, der dann schließlich auch in der gewünschten Position der Tabelle erscheint, nachdem ich mich einlogge.Jedoch ist dies ziemlich umständlich. Es wäre super cool, wenn mir jemand eine Methode zeigt, mit der man bequem eine Tabelle erstellen und frei bestücken kann. In der ich z.B. sagen kann, dass Position array[0,0] den Wert "3" haben soll ohne dafür jedesmal in der Visualisierung den "vorgesehenen Wert" ändern zu müssen Ich wäre super dankbar über jegliche Lösungsansätze! 
-
-Pos si.
-

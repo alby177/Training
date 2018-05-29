@@ -1,2 +1,0 @@
-Greetings,I'm creating a new template project and I was wondering if it is possible to get a schema for .template files located in the Codesys "Templates" folder. For example I'd like to add a customized icon for my template to be viewed in the New Project window. Also any other form of information about editing .template files would be great!
-

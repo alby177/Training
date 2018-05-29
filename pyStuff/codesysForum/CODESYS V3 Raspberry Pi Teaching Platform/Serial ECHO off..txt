@@ -1,8 +1,0 @@
-Help.How can i stop my raspberry of echoes everything that receive in serial communication where open with SysCom library?Regards.
-
-Hi,never seen this, which serial interfacedo you use and did you check this with the project from the store orthe project from a post here:viewtopic.php?f=21&t=5699#p10247BREdwin
-
-Hi Edwin. Please help because I don't know what I am doing wrong.When use the example project all looks ok.When I try to use direct SysCom library all works ok except that In receive the cariedge return (hex0D) parsing as new line (hex0A).I try all day to understand why but...Regards
-
-Hi,but how could we help ?You need to attach the project then we could review/test your code.BREdwin
-

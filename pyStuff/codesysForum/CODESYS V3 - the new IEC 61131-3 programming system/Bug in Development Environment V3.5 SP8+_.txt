@@ -1,2 +1,0 @@
-Hello,I created a FUNCTION that returns enumeration data.When I assign the returned value to a variable with the same data type, first nothing happens.After debug the same line appers underlined in red (signaling a coversion error); same with the FB.By edeting the line (e.g. adding a space) red underline disappers again.See screenshots.Best regards,Oleg
-

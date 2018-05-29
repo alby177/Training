@@ -1,2 +1,0 @@
-I need to do some matrix calculation on condesys 2.3 PLC. Is ther any availabre library?BR
-

@@ -1,2 +1,0 @@
-In my project, I have excel file, which contain different type of machine and feature.First column has details of common spec. for all machine. First row has machine id. In Codesys, if change the machine id in HMI, spec. of corresponding machine to be change.How can implement in python script and procedure to use python script or any language script.Regards,J.Peter Jebamani.
-

@@ -1,8 +1,0 @@
-Hello Everyone,
-
-I am trying to communicate with multiple Modbus TCP slaves from one controller using SysSockets library.  Currently I have been able to succesfully create two sockets.  They are set up as unblocking, reuse address and reuse port.  When trying to send/receive data, the first socket works fine and the second socket returns a -1.  (Same subroutine is used to send/receive for both sockets so the code should be fine, Modbus TCP slaves have been swapped and the issue is not with the slaves)  
-
-Is there anything else that I should be doing or not doing that I may be missing.  Thanks a lot in advance for any help.  
-
-Tom
-

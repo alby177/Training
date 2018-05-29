@@ -1,2 +1,0 @@
-Hi everybody,I would like to realise I2c communication beetween RPI (codesys) and LCD with address 6f. It is possible ?  When I add Slave on Codesys I have only several devices. it is not should be a universall communication with select addres  ?How do it ?
-

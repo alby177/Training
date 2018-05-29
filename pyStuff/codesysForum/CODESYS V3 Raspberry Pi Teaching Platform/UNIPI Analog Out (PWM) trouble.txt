@@ -1,4 +1,0 @@
-Hi,Once again, hopefully last time, I've an issue with a part of my unipi. The Analog Output, who is much more an PWM output that Analog Output. I'm trying to output but what so ever I do there is no difference and unipi does not respond to any help message I sent.I know that the wiring is ok. I use 1-wire and it work, Digital Input workRelay output workAnalog In workThe analog out is correctly wired.I assume that the value to is beetween 0-10 because this is a REAL value and the unit is V so, I think that's mean Volt. Is there anything to do to enable PWM? basicly I thought that Setup script was the only one setup to do but into the setup script there is nothing related to PWM. I need help plz.
-
-please delete this post. After many check, I found a code 12 error. the problem was 12'' behind the keyboard.
-

@@ -1,6 +1,0 @@
-Hi,I'm trying to make a connection via ethernet/ip, but there is something wrong. Ethernet/IP scanner is running in demo mode (yellow icon and status about running in demo mode), but adapter is not working at all (red triangle). In I/O mapping of the adapter I have a warning "The bus is not running. The shown values might not be up-to-date). Does anybody know how to fix it?
-
-Hi,which plc are you using (and which manufacturer)BREdwin
-
-Problem solved. I had to turn on slave device. I was mistaken by collegue, who said that to test protocol I don't need to turn on all devices (scanner only).|Thanks for your reply 
-

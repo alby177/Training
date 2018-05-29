@@ -1,2 +1,0 @@
-I know that we can create a declaration and also a program in Text  ( ST ). But can we create POU in other languages and add or modify logic in it ?
-

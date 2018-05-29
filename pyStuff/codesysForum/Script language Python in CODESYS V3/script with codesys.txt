@@ -1,6 +1,0 @@
-Hi     Is there any example to understand how a v3 pgm can used with python script?So far there is no example simple v3 pgm with winNT run time and python scriptCan any one pls help out to create one?I can understand python but there is not even a single program of both codesys & python togetherThanks
-
-Hi, Sarathbabu,I think there is some misconception.The python scripts run in the CODESYS IDE, while the IEC Code is executed in the runtime.Scripts are meant to automate tasks which the user usually performs manually by clicking and typing in the CODESYS IDE.Also, Scripts are not contained in CODESYS projects, and cannot be downloaded to the runtime. It is the other way round - scripts themselves can load and close projects, and trigger downloads of applications to devices.Scripts can communicate with IEC applications via monitoring (reading and writing of variables), so some kind of interaction is possible, there are even examples here in this forum: http://forum.codesys.com/viewtopic.php?f=18&t=2052 or http://forum.codesys.com/viewtopic.php?f=18&t=1890.HTH,Markus
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
-

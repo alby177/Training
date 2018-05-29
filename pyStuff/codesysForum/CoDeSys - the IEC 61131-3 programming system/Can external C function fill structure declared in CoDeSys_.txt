@@ -1,6 +1,0 @@
-Hello,I have a question regarding functions that return structures and that are located in external library which is part of RTS.Let's say that I have a function named Dummy that's part of the RTS and looks like this:Code:StructureType*   Dummy ( StructureType*  DataToBeLoaded){// code, code, code, loading, loading loading the structurereturn DataToBeLoaded;}I defined an external library in CoDeSys like this:Code:FUNCTION Dummy: POINTER TO ARRAY[1..ArrayLength] OF StructureTypeVAR_INPUT   DataToBeLoaded:    POINTER TO ARRAY[1..ArrayLength] OF StructureType;END_VARThe main task of this function is to take structure from CoDeSys and load it with data from file. I'm using C lib, because it is easier to manipulate complex text file, like the one I'm dealing with.Problem is that DataToBeLoaded is not loaded with any data. At the same time I see that function is being exectued and the structure inside of the function is being filled properly (I see it over Telnet).Does anyone have some idea how to handle this?Thanks in advance.
-
-In version 2 not possible, in version 3 it is.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

@@ -1,8 +1,0 @@
-Hello AllI've been researching methods to allow better data manipulation of tag data without resorting to clunky IEC61131 code.With this, I believe the answer is to expose the tag data to the OS hosting the runtime.I know that Beckhoff are using Codesys and have a library that can expose runtime tag data to a .NET application running on the host OS.Can this be done with a base CODESYS installation running on a Linux OS (Raspberry Pi)?
-
-Hi,Raspberry Pi has an embedded OPCUA Server,so I would suggest to use a OPCUA Client on your .NET application.BREdwin
-
-Thanks for the response @Edwin But this wont work if I want to share data on an application or service on the Pi?Would I really have to go out and back through the ethernet port again just to get data?What if I wanted a Java program - would I have to program a native bridge in C++?
-
-Hi,Sure this will work on the same Pi.No data will be send over the network if you are using the local connection... localhost.BREdwin
-

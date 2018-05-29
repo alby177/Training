@@ -1,6 +1,0 @@
-I'm using CoDeSys in an OEM implementation. In the OEM's implementation, having a VAR_INPUT or VAR_OUTPUT as a PROPERTY will generate a compile error Quote:C0031:  Type definition expected instead of 'PROPERTY' until you add a single comment above the FUNCTION BLOCK declaration. Then it will work, except that when you use the FB, you won't see any input or output wires for the VAR_INPUT or VAR_OUTPUT.This all seems like some buggy implementation to me, but my OEM contact says that you can't do any of it.What say the CoDeSys community?Cheers,Bill
-
-Properties are not VAR_INPUTS or VAR_OUTPUTS.  They are basically both an input and an output (two methods in one - a GetProperty() and a SetProperty()).  Many people use properties instead of VAR_INPUTS because you can validate the data or force code to execute.  VAR_INPUTS don't do anything until the FB "runs" (i.e. doing the following only sets the variable, but doesn't execute code or update any outputs: MyFb.Counter := 1;... instead you have to call the FB like this: MyFb(Counter:=1);... but sometimes you don't really want to do that)..I am probably not understanding your question - can you be more specific?
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-

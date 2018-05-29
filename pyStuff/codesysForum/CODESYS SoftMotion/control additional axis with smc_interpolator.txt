@@ -1,6 +1,0 @@
-Question I have  an xyz 3axis  system .How  do I connect an additional Q-axis to  smc_interpolator so it is also controlled bij  cnc (g code)?The  xyz you connect to the SMC_interpollator Pisetposition output with Trafo_gantry 3  function blok .How do I connect/control the additional Q-axis ?    ( to smc AxisConytrolByPos   in CFC programming ?)
-
-Hi,check the online help,depending on what you Need uvw or  a,d,c axis..BREdwin
-
-Didn"t find any info in online help about additional axis! (only how  to use in  g-code, but not how  to  connect to  smc_interpolator ). Did I miss relevant info/pages in online  help?tried some options and used Q-axis in  G-code  and found out that you have to use dA2 variable from smc _ Interpolator to connect to smc_ControlAxisByPosition The axis controled in this way does not finish a task! .If  I use for example  Q25 and  next step  Q0  it will start but not finish the first task, but right away steps to next line .I can solve it with G4 T.. (time delay ) Do  I something wrong here  or does  it work this way. Did  I  forget to connect a feedback?
-

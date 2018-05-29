@@ -1,2 +1,0 @@
-Hi.I want to use two SPI devices on a raspberry pi 3 and Codesys V3.5 SP11.So i connected a MCP23S17 to SPI with CE0 and a mcp3008 to SPI with CE1.How do i add them in Codesys?I added two SPI Masters, one with spidev0.0 and one with spidev0.1.0.0 for the MCP23S17 with CE0 and 0.1 for the MCP3008 with CE1.With this config, nothing worked.If i use the MCP3008 with 0.0, i can read the analog values, but have no connection to the MCP23S17.How can i use both SPI connections in Codesys? Only the one on CE0 works...Thanks.
-

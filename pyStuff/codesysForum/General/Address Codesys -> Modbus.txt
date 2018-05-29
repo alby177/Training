@@ -1,8 +1,0 @@
-Hi everybody,On page 94 and 95 of the manual of WAGO 758-0874/0000-0131 (http://www.wago.com/wagoweb/documentati ... 31_0en.pdf). There is the equivalence between the address of CODESYS and MODBUS.Looking the table we can realize that some of address' interval are coincidents. How is it possible to discover exactly the adress equivalent?I've a WAGO 758-0874/0000-0131 with 4 modules: 750-530, 750-430, 750-459 et 750-559.The adresses in CODESYS are:For the 750-530: %QX4.0, %QX4.1, %QX4.2, ... , %QX4.7For the 750-430: %IX4.0, %IX4.1, %IX4.2, ... , %IX4.7For the 750-459: %IW0, %IW1, %IW2 et %IW3For the 750-559: %QW0, %QW1, %QW2 et %QW3Which is the address equivalent in MODBUS of the address CODESYS %QX4.0?The same question for a WAGO 750-872. This WAGO has also the same 4 modules: 750-530, 750-430, 750-459 et 750-559.Best Regards,
-
-_________________Thais Jampaulo
-
-[New Informations]For the 750-872 I found the solution throw this table that is attached. So %QX0.0 = 0200(hex).I still don't know about the 750-0874/0000-0131. If anybody could help me I would appreciate.
-
-_________________Thais Jampaulo
-

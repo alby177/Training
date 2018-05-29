@@ -1,4 +1,0 @@
-Hello,I'm having trouble configuring EtherCAT on my Raspberry Pi running Codesys 3.5.10.I'm interfacing it to EtherCAT Slave consisting of EK1100 Coupler and several I/O Terminals - EL2008, EL3202 and EL2602.The problem is that EK1100 and all those devices are not listed in the Codesys Database and recognized as some Vendorcode, Productcode etc - see screenshot belowAttachment:EtherCAT.pngBut I have seen on this forum, that people interfacing Beckhoff Ethercat devices successfully. Do I need to download some database for my devices?Could you help me with solving this problem?
-
-Sorry, my bad. Needed to go to Beckhoff website and download XML Device Descriptionshttps://www.beckhoff.com/english.asp?do ... lconfg.htmAfter that install them using Tools->Device Repository.
-

@@ -1,2 +1,0 @@
-Hello,trying to setup the Beckhoff Stepper Motor Terminal EL7031.I already could ad the terminal itself to the EK1814 Ethercat coupler but i'm missing the "Drive" see picture "CodesysSoftmotion2.gif".There was annother thread where the TO already had this drive see "CodesysSoftmotion.gif".How do i add this driver? Has this somthing to do with the version?Codesys version 3.5.9.2Thanks to all
-

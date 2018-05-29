@@ -1,2 +1,0 @@
-Hello everyone,I have a beckhoff cx8090 which contains the plc program and I want to use the raspberry pi for the webvisu.What is the best way to achieve this, as the beckhoff CX is the master with the program.thanks for you help
-

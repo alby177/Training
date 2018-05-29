@@ -1,6 +1,0 @@
-Hi,My display is CR451. I'm trying to make some kind of language change online from the list on display.I created .xml file acording to help, and marked 'Dynamic texts'.How to change between languages on display online?I see some examples with 'Language Default' internal variable, I don't know how to find it.
-
-use a variable to set the language needed, then rewrite the screen.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

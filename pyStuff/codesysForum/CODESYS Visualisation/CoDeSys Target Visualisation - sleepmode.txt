@@ -1,4 +1,0 @@
-This machine is left on all the time.  It runs a target visualisation from CoDeSys on 15"screen attached to the device.
-
-Q:Can I suspend [sleep mode] the visualisation output to the screen from within CoDeSys under program control?
-

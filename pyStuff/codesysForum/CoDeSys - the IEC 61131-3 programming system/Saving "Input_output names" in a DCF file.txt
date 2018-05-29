@@ -1,9 +1,0 @@
-Hello all!
-
-Does anyone know if it's possible to save a CANopen node IO configuration (i.e IO names) to a DCF file? 
-I have a system with approx 17 CANopen slaves and i would like to make "Templates" for each slave so i just can add a slave and the IO names(variables) will be created?
-
-Regards,
-
-/HAZ
-

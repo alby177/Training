@@ -1,6 +1,0 @@
-Hi,This might ba a question for a Excell forum, I do not know, but I hope someone can help me   I have a Festo CPX-CEC PLC from which I would like to read values into an excell sheet via CoDeSys GatewayDDEServer, I saw the examples for this at:http://www.3s-software.com/index.shtml?sample_projects And I can make it work fine, what I wonder now is how can I read in an array of lets say 600x4 in an dynamic way (Not writing every command by hand, it is 2400 of them...)The commande below only lets me read part of the array at a time and it is not an Excell command so it does not let me use standard Excell dynamics=GatewayDDEServer|'DDE_Excell_test.pro'!'measurement.StoreArr[2,1]'Do I have to use macros inside Excell or is there som other way?Best regardsAnders
-
-in excell it is possible to put the value in to a string. and use that, however impossible to do it dynamiccally this way.ddeserver does not accept numbers, or changing txt.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

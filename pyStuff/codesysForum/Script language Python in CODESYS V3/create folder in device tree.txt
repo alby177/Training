@@ -1,8 +1,0 @@
-Hi there,I am new to Python programming and have a small issue, maybe:How can I create a new folder in the device-tree or the POU-tree?For example:I want to create a new folder at: "Application/POUs" that should be named with "test".So that I have a new folder at: "Application/POUs/test" where I can import any POUs.Is that possible?If yes might an example very helpfull.RegardsMichael
-
-Hi mvs.A script object can create a folder under itself by calling the method create_folder(<Folder name>). See example.Code:proj = projects.primaryobjs = proj.find('Folder', recursive = True)folder = objs[0]folder.create_folder('SubFolder')objs = folder.find('SubFolder')if not objs[0].is_folder:   raise Exception('Object is not a folder')BRMartin
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
-
-Hi Martin,I tested it and it works great.Many thanksMichael
-

@@ -1,6 +1,0 @@
-Hi.Anybody knows how could configure I a drive via Codesys.I can see the parameters via coe online and I have the startup parameters, but there exist the posibility of change parameters in online mode (As coe online allows to see the parameters  iD like to change its).Thanks
-
-Hi,I would use:SMC3_ETC_WriteParameter_CoEBREdwin
-
-Thanks Edwin.In any case, is ig planning to change the drives parameterization via coe online?Thanks
-

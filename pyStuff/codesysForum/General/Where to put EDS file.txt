@@ -1,6 +1,0 @@
-I'm trying to integrate a canopen string pot into my project.  CoDeSys 2.3.9SP4 (Eaton XSoft).  I can't figure out where to put the eds file so that it will be found when I try to append subelement from the PLC Configuration screen.Any help would be appreciated.Thanks,
-
-_________________nOrM
-=====
-nOrM = Norman Dziedzic Jr.
-

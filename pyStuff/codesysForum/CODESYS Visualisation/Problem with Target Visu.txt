@@ -1,6 +1,0 @@
-For everybody a happy 2016.I have setup me first project with Codesys 3.5 for Codesys 3.5.8 Softmotion RTE 64But with the Target Visu given me Problems.She not show images.On the Engineering System I can see the Visu with frame’s and images but un the Target onlyText , Lines, rectangles. The Functions behind the frames is on the Target active. (Push Button  is working).This Problem I have with the project written from me but with the Codesys Examples too.On the Target PC   I found me Images on:C:\Program Files\3S CODESYS\CODESYS Control RTE3\PlcLogic\visu    That means I have send this Data from me engineering PC   to the Target PC.What I doing wrong?Way the differed  between engineering system and Target?
-
-Hi,this should work without problems.1.Please check with the codesys filebrowser if you see the visu files on your target.2.If you have redirected the path in the RTE, set the filepath in  the configuration file 'targetvisuextern.cfg' in the Control RTE directory:[SysFile]FilePath=d:\Control\BREdwin
-
-Hi,    Thank its working now. ( Ich wuensche noch ein schoenes und Erfolgreiche 2016. Happy New Year and best wish for 2016.)
-

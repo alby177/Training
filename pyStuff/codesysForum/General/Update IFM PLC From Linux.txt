@@ -1,6 +1,0 @@
-I am fielding IFM CR0032 & CR2530 PLCs with the requirement that they be updated from Linux. So I need to replicate the CoDeSys v2.3 capability to download/create boot project; or the IFM Maintenance application's capability to write an resx file to a PLC. Wine libraries or VM are not available options for me. I can study the CAN bus traffic that results from writing an resx file to a PLC (objects 0x1025 & 0x1F50) but this won't tell me how checksumming is performed, and the format of status from the PLC. Has anyone faced this problem?
-
-I have asked IFM for technical support, but they are not responding quickly.
-
-Hi mccabehm,do you have any update on your request? I am also interested on what you try to do.Regards
-

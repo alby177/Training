@@ -1,2 +1,0 @@
-Hi,  I am trying to use Recipe by FB. When I create the program with RecipeMancommands.GetRecipeNames FB I can't able to assign the variable for pString. I can able to assign a variable for pointer to INT for ADR of array. But I can't use that variable in pstring. Any one can help on this. Any one have done Recipe with FB. I can see the sample program in the Codesys store is with  ST.
-

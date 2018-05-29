@@ -1,6 +1,0 @@
-Wenn ich den code downloade bekomme die Warnung Keine VAR_PERSISTENT-Liste für die Applikation vorhanden um den Instanzpfad für die Variable xxxxxxxx einzugebenwas hat das zu bedeuten?
-
-Hi,Actually Codesys v3 is a bit different in handling Var_Persistent. So you need to have your Persistent variables all in a file. A Persistent file could be added asApplication --> Add Object --> Persistent Variable
-
-Thanks, now it works..
-

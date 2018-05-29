@@ -1,4 +1,0 @@
-Hi, I am relative new in Codesys, but I have been working with Siemens for a long time.  I am trying to use the functions in SysLibMem.lib (especially SysMemMove) and the code working fine in (Simulation mode) with Codesys 3.5 but not at all in 2.3. I intend to do a FIFO, but this is only the basic function before I move on to the “FIFO-function” with offset and so on so to speak.Is there any difference between these?My code looks like this.Code:VAR   sSourceString:   STRING;    sDestString:   ARRAY [0..7] OF STRING;   EdgeDetect:   R_TRIG;   bInit:       BOOL;END_VAREdgeDetect(cLK:=bInit);IF EdgeDetect.Q THEN   SysMemMove(dwDest:=ADR(sDestString),    dwSrc:=ADR(sSourceString),    dwCount:=SIZEOF(sSourceString));END_IFRegards BosseL
-
-It turns out that SysLib functions in Codesys 2.3 don't work in Simulation Mode. When I download this to a real HW-PLC it works fine.I did the same test with SysGetProjectInfo, both Sim-mode (didn't work) and in a real PLC (works).
-

@@ -1,2 +1,0 @@
-Working with CoDeSys(2.3) I have a User Defined Library containing Function Blocks where internal variables have been hidden using the {library private} pragma.The FBD and CFC Editors work fine in this respect however when I reference an instance of such a block in the ST Editor I am offered a pull-down list showing ALL its variables, including those that were to be hidden.  Is there a way of preventing this?Having done a slightly more concerted search I see now this is an old chestnut that has been around for many years!  Thanks to those who at least viewed my post.
-

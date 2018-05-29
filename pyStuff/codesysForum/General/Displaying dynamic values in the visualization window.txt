@@ -1,6 +1,0 @@
-How to Displaying dynamic values in the visualization window? For Example TON(Timer)﻿
-
-Hello !In the category Text, in the text area write : %sIn the category Variables, in the Displau area write the name of the variable you want to see. For exemple for a TON called MyTon, you can use MyTon.PV, MyTon.CV, ....Use the F2 key to choose the variable you want to write.This is described in "On line help, in the chapter CoDeSys Visualization -> Visuali=zation Elements, Configure -> Text.   Best regard  
-
-Hi dear Mr.JAPIBTankx for answer, pls put the your email address active, because i want send my project for you for setting Aleman Best regard
-

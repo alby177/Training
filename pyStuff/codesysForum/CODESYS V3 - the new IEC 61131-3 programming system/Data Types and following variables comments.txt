@@ -1,2 +1,0 @@
-I have a question about creation a data unit type like below:Data types:TYPE DIn :STRUCT	In:INT;	Flag:INT;END_STRUCTEND_TYPEIf I declare a GlobalVariable like below:VAR_GLOBAL	I:DIn;END_VARwhen in a POU I insert a BOOL derivate from this G.variable (i.e. I.Flag.0 or I.In.1 and so)the comment that I assign to the bit doesn't be automatically assigned every timethe same bit is used.The same issue happens with Dt composed by ARRAY of Bool.Thanks for your co operationgiova
-

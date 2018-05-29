@@ -1,2 +1,0 @@
-Hello,i have a few question. It is possible to open the method "Transfer" of SPI communication? I am interesting in the communication between RPi and Codesys or it exists other ways to find out how the communication works?Regards seb
-

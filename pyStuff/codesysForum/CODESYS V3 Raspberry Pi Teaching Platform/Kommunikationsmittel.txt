@@ -1,2 +1,0 @@
-Hallo habe einen Pixtend v2, Image neu geladen , Software installier , Programm geschrieben mit Webvisu , alles funtioniert wenn ich neustarte aber ,ist die webvisu da aber keine aktoren reagieren ,also quasi bekommt spi keinen signal . Bitte helfen
-

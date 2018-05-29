@@ -1,2 +1,0 @@
-Is there any fuzzy logic library to implement fuzzy logic controller in Codesys?
-

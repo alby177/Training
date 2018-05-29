@@ -1,2 +1,0 @@
-Hi Alli have a Overdigit WP240 GPRS PLC which is in a remote area which i want to use for data logging. i want to be able to read all the data via gprs on a Citect Scada. Any ideas on how i can go about it. Thank you in advanceSimon
-

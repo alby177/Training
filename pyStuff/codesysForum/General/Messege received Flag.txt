@@ -1,7 +1,0 @@
-Is there a library function which allows access to a CAN Messege received flag? or Node Guarding Errors?
-
-What specificily are you looking for? Yes all the data you need is in the "CANopen implicit Variables" global variables list. The CANopen master is in the array structure pCANopenMaster and all the nodes are in the array structure pCanOpenNode. Let me know if you need more help. Especially with writing a function to use them. Look in the CoDeSys help pdf documents '...\CoDeSys V2.3\Documents\English" for "CANopen for 3S Runtime Systems V2_3_5_0.pdf" that should have been installed with CoDeSys 2.3.9.x. I think 3S started distributing them about 2.3.9 version? I could be wrong on that. Can Message received from a particular slave or any received message?I forgot what to monitor for a message received but CANopen heartbeat nodeguardpCanOpenNode[i].nStatus to tell the status of the device if  pCanOpenNode[i].nStatus <> 5 then not operational.You can also look at the pCanOpenNode[i].GuardTimer.Q. If TRUE then heartbeat/NodeGuard fault. You can loop over the nodes in your system using MAX_NODEINDEX which is also in the global fileCode: For i = 0 to MAX_NODEINDEX do    if pCanOpenNode[i].nStatus <> 5 then (* Get the first node that faulted *)          xFault := TRUE;          uNodeID :=  pCanOpenNode[i].ucNodeNbr;          EXIT;    end_if end_for
-
-_________________Thanks,
-Steve Pfeifenroth
-

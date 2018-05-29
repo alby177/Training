@@ -1,6 +1,0 @@
-The controller is running on Linux platform.In my project,  I can get all devices while scanning. And the ethercat status of all devices is also running.However, I can not change the driver's status to StandStill state using MC_Power FB(the FB is always busy when I use it). It's under Stop state and the "UnderVoltage" is shown on the driver.I just doubt whether those two work with each other. Or is there any important config that I should pay attention to?It's very emergency. Thanks!
-
-when you see undervoltage on the drive display it's a sign that the drive is not correctly powered, it has the 24VDC needed to perform the control tasks but it has not the right 400V to be able to move any axis.Just try it to plug it to the current correctly, if you can scan the  device and see it going OP then it's clear you have it correctly configured, but undervoltage is not a good point to start trying powering it by software.Good luck!
-
-Be carefull too on no instantiate mc_.. blocks inside methods. Everytime method finishes the mc fb is destroyed and be constructed at the beguin of next call. When this matters the fb says everytime is busy.
-

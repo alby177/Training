@@ -1,4 +1,0 @@
-Can someone tell  Application of  XML file in software codesys?pls answer me
-
-Hi,if you are using CODESYS V3 then:http://store.codesys.com/xml-utility-1. ... re=defaulthttp://store.codesys.com/xml-utility.htmlfor the demo's in the store a security key is needed on CODESYS developmentsystem pchttp://store.codesys.com/accessories/co ... mpakt.htmlIf you are using CODESYS V2.3 you are in the wrong forum section.BREdwin
-

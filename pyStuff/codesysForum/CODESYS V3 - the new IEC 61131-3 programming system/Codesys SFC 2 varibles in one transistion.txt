@@ -1,2 +1,0 @@
-Hello,I use codesys V3.5 SP5 Patch 4.When making an sfc with steps and transitions, I need to use 2 variables in one transition.Is this possible?Also do I need to invert an variable within a transition, is this possible?  Albert
-

@@ -1,6 +1,0 @@
-HelloDoes a manual exist for the Modbus rtu library?Thank you
-
-Hi,you should find all the Information in the onlinehelpBREdwin
-
-Online help is not useful and as it only breifly define the terms.No details and no examplesI am struggling with Modbus RTU/TCP & CAN communication but just learning by trial and error  
-

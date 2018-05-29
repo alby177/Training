@@ -1,6 +1,0 @@
-Dear All,
-
-why i can't get PWM output in this case (see attached picture)
-
-http://yfrog.com/5spwmcodesysj
-

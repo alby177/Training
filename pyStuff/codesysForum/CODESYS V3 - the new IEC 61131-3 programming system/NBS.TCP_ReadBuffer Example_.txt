@@ -1,2 +1,0 @@
-Does anyone have an example of the readbuffer function?Thanks,
-

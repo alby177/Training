@@ -1,2 +1,0 @@
-I use a data server to read some global variables from another device. This project that I read from has a GVL called "Constants", and it refers to a library with also has a GVL called "Constants". For some reason the dataserver can see both these GVLs and cannot handle this situation. When I click the refresh or rebind button I get the above stated error.I am using 3.5SP7 Patch 2. Is there any way to resolve this other than changing the GVL name
-

@@ -1,4 +1,0 @@
-Hello,I was looking at the new patch 4 that was released recently.  I saw that when you add a property to a function block, you can now specify a property as public, private, internal, etc.I checked the help documentation and didn't see any documentation on what was changed with this.  I am familiar with OOHING programming conceppts and what this means I the C++ world.  I just want to know how these will apply to CoDeSys.
-
-Hi,I've already tested the new access modifier. They work as in C++. You can use them for Function blocks, methods, properties and also properties accessors. But you cannot use them for variables.For me it is an great enhancement.
-

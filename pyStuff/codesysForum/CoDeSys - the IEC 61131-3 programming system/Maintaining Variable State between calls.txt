@@ -1,6 +1,0 @@
-Sorry if this is a basic question, but we are new to CODESYSWe are currently porting function blocks written in C from a alternative IEC 61131 environment into CODESYSOne of the things we used to do in the old environment was create a special pin on the function block to store the internal state of the function block instance. So on the 1st call of the function block it would malloc a area of memory and store the pointer on the internal variable pin. So for example if we only wanted to run the function block code once, when a enable pin had gone low to high, we would store the state of enable pin in the internal variable and compare it with the present state of the enable pin to see if it had changed.However it feels a bit of a kludge and as we move to CODESYS I feel there must be a better alternative. So my question is how, in a C function block, do we maintain the internal state of a function block instance?
-
-what version of codesys is used and for what PLC.yes the state of a function block can be stored in a structure, but why is that done?
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

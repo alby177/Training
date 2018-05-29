@@ -1,4 +1,0 @@
-Hi there,does anyone know how to read the value of a globel constant while being offline?I know how to read values while being online using something like "myOnlineApp.read_value(...)".But in my case, I can't get online. I just want to open a project and get the values of some constantsdefined in the source code of the project.Thx
-
-1) Get the text of object declaration part using textual_declaration property(like described here viewtopic.php?f=18&t=8558)2) Parse strings and find your constant initial value.
-

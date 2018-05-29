@@ -1,2 +1,0 @@
-In order to have Task_Info2 of a task, I get  the RTS_IEC_HANDLE of the task with only having the name of the task. When I call IecTaskGetInfo3 function to get Task_Info2 of the task with the RTS_IEC_HANDLE from SchedGetTaskHandleByName function, there is an error and the Error ID is ERR_PARAMETER. Could you tell me where the problem is ?
-

@@ -1,8 +1,0 @@
-If I don't enable the FB of MC_POWER , the axis is all right!But when I enable the FB of MC_POWER, the axis is error.I don't know the reason. Please help !
-
-Hi,set the compiler define in the application properties:CANOPEN_DEBUGthen download the project and check the plc logger for more details on These Problems on the CAN communication.BREdwin
-
-Thank you !  The servo error code is AL3E2 or AL3E3.AL3E2: CANopen SYNC signal errorThe CANopen SYNC signal is received too early.AL3E3: CANopen SYNC timeoutThe CANopen SYNC signal is not received within the specified time.When I use LMC058 of Schneider in Somachine , the SYNC way is different.They use the External signal. Can pi use this way?
-
-Hi,from your screenshots your realtime should be good enough (maybe I'm wrong) but I would give this a tryto generate the sync on the Raspberry PIBREdwin
-

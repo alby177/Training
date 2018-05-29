@@ -1,2 +1,0 @@
-By default CmpBlkDrvUdp is created for every ethernet interface. For example, I have two interfaces 192.168.1.1 and 192.168.2.1. But I want to bind CODESYS only to 192.168.1.1. Is it possible to enable CODESYS Control run only on certain ethernet interfaces?
-

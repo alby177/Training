@@ -1,2 +1,0 @@
-We are using CODESYS 3.5.4  under QNX 6.5.1  on a PPC-be  32-bit machineand am  facing issues on scheduling .Has  anyone  faced any such issues like this .
-

@@ -1,8 +1,0 @@
-I have zero experience of codesys programming while I am in a project now .I have finished the logic program,but I don't know the relation between identifier and the node Id.Does anyone can help me ?
-Thanks.
-
-The ID is part of the Identifier with CANopen a TPDO1 is 180xh + NodeID.
-
-_________________Thanks,
-Steve Pfeifenroth
-

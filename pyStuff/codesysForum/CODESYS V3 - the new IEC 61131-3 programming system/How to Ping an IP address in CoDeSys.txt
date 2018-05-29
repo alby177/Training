@@ -1,6 +1,0 @@
-Can anyone please help me in "How to Ping an IP address in CoDeSys?"
-
-Hello, hiten.upadhyayI use CoDeSys V3.5. There is included the library "SysSocket".Inside this library SysSocket is the function "SysSockPing".I use this Function sometimes and it works.----------------------------------------------------------------Here my examplePROGRAM PLC_PRGVAR	PingTime: UDINT;END_VARSysSockPing(szIPAddress:='192.168.3.1', ulTimeout:=500, pulReplyTime:= ADR(PingTime));----------------------------------------------------------------I checked it with Wireshark - the ping works.Greetings,Matthias
-
-Thank you very much Matthias for the reply.I am using ABB PLC and it comes with Codesys V2.3 and the the function 'SysSockPing' is not supported in the SysLibSocket provided.Can you pls help me in getting the latest version of 'SysLibSocket.lib' library from net.Thanks and regards,
-

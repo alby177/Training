@@ -1,2 +1,0 @@
-Hi!I have a compass module AK8975 connected with I2C to my Raspberry Pi. It should be supported in the built in library but i'm having trouble how to use the commands. Has anyone used this device in their project and could share the project file? Or anyone that could give me some hints of how to control it and read out the data./Daniel Hoffman
-

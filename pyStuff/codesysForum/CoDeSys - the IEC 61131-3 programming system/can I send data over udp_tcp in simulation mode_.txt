@@ -1,6 +1,0 @@
-hi, I am trying to apply the tcpudp.pro example project I found on this project to send and receive tcp or udp data from a Codesys simulation of a peice of structured-text code to a C# tcp server or udp server(I will choose between TCP and UDP later, now I just want to get something working). I am having no luck with the example, is there a trick to making this work?I have tried adding a cyclica task with UDPProducer, and I am guessing I shoudl be setting diSOcket=0 to make the code run UdPOpenSendSocket(iPort)?I have set up a UDP server on my computer on port 5000 run the following code, but diSendSocket =0 continously:PROGRAM UDPProducerVAR	diSendSocket : DINT  :=0;	iPort : INT:=5000;	stDestIPAddress : STRING := '127.0.0.1';	diRecvSocket: DINT;	bySend : ARRAY[0..10] OF BYTE := 0,1,2,3,4,5,6,7,8,9,10;	bSent: BOOL := TRUE;	bActive: BOOL := TRUE;END_VARIF bActive THEN	IF diSendSocket = 0 THEN		diSendSocket := UdpOpenSendSocket(iPort);	END_IF 	IF diSendSocket > 0 AND bSent THEN		bSent := FALSE;		UdpSendData(diSendSocket, iPort, stDestIPAddress, ADR(bySend), SIZEOF(bySend));	END_IFEND_IF
-
-in simulation this does not work, as the target is not the asame.so it does not know how to deal with it.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

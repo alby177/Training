@@ -1,2 +1,0 @@
-Hello, I'm trying to use the function SysLibGetSymbolAddress of the library SysLibSymbols.lib in a ABB AC500 series PLC but it seems that it is not working. I always get a zero value at the output of the string and the name of the variable in the string is well written (I'm 100% sure of that because it's a copy-paste from the watch list were I'm visualitzating the value).Anyone know if that function works in ABB PLCs?Thank you,Joan Frances.Innova IT S.L
-

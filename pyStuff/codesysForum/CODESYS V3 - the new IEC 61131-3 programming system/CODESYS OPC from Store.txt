@@ -1,6 +1,0 @@
-Hi.Which difference beetween this (159€) and this ("is free of charge and delivered along with the CODESYS Development System")?
-
-Hi,no difference since 3.5SP12 release OPC DA Server need a license.BREdwin
-
-Thanks for information, Edwin.I also will be grateful to get answers for next questions:1. viewtopic.php?f=11&t=84722. viewtopic.php?f=11&t=7694#p20190(or there is no possible because CDS-27300?)3. viewtopic.php?f=11&t=7532#p20195
-

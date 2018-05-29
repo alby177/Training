@@ -1,9 +1,0 @@
-Hello, All:
-Can I find any help document or some program examples for SysLibAlarmTrend.lib ?
-
-Any alarm related subjects will help.  I am new to CoDeSys.
-
-
-Thank you
-awu10
-

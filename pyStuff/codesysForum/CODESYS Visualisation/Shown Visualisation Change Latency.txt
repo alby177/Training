@@ -1,4 +1,0 @@
-Hello There,I have been experiencing a huge latency while changing the shown visualisation. It takes from 1 to 3 seconds to change the shown visualisation. Is there any quicker method to do so?I am using the buttons from "common control" menu; and then into the Input Configuration, on OnMounseClick , i configure it as "Change shown visualisation".Please let me know if there is any other way which is much much quicker ? will the different brand of screen have impact on the performance of Codesys V3.5 SP8 version?Thanks in advance.
-
-Hi I think is better to explain what brand of PLC are you using with codesys and to attach your project. I don't remember there is a command OnMounseClick in the button object...in codesys 2.3.
-

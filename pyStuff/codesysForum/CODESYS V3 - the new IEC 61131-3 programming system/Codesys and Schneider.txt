@@ -1,4 +1,0 @@
-Hello all,I am using Codesys V3.5 SP6 Patch 4.Is it possible to use my codesys version to program a schneider/modicon PLC instead of using schneider's SOMachine ?thnx in advance.
-
-Hi,no, it is not possible. There are Schneider specific customizations inside SoMachine that you need to use their devices.
-

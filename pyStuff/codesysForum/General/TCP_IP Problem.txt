@@ -1,9 +1,0 @@
-Good morning everyone, I'm a new codesys forum's member and i thought you might be able to help me . I developed a TCP/IP client using syslibsockets and normally it works right but sometime the application stop working and i don't know why.
-
-I'm 3 tcp/ip connection working at the same time.
-
-Does anybody know if there is a maximum tcp Connection for syslibsocket.
-Does anybody Help Me??
-
-Thanks a lot
-

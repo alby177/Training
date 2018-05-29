@@ -1,8 +1,0 @@
-I want to login an application from the python script. If the device is not scanned for (black dot rather than a green dot in communications UI), I cannot login and get a generic error Login failed. I want to detect if the network needs to be scanned so that I can give the user a more descriptive error. Where can I access this in the scripting
-
-Hi,As it's some time without a reply: has your problem been solved in the meantime?Regards,Markus
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
-
-I still dont know how to do this
-

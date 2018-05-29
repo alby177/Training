@@ -1,4 +1,0 @@
-Export a global variable list which has a "v1 :REFERENCE TO INT;", to a PLCOpenXML formatImport this file. The variable definition is changed to "v1:REFERENCE TO REFERENCE TO INT"
-
-Hello Shabroz.Gill,that's really a bug, I've reported it to support.Workarounds you can use to avoid this problem:1. Activate PLCOpenXML option "Additionally export declarations as plain text". This will append a section which can be used to read the declaration "as is".2. Alternatively you can degrade the compiler version of the project before (not inclusing) 3.5.6.0 (e.g. 3.5.5.7) - just for export - do not save the project with degraded compilier version.Regards, Roman
-

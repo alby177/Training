@@ -1,2 +1,0 @@
-Halloich habe eine Frage:Kann man auch im fup verschiedene Visualisierungen analog zu "VisuElems.CURRENTVISU" aufrufen ?
-

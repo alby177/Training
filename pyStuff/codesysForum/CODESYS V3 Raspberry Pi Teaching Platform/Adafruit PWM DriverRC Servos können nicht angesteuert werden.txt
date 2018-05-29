@@ -1,6 +1,0 @@
-Ich versuche über CoDeSys for Raspberry Pi RC-Servos mit Hilfe des Adafruit 16-Channel PWM Interfaces anzusteuern. Leider funktioniert mein Programm nicht. Im Anhang habe ich einige screen shots angehängt. Kann mir jemand weiterhelfen.P.S. Mit Phython funktioniert alles wie es sein soll! Wenn ich das CoDeSys Beispiel Projekt starte bekomme ich über 500 Fehlermeldungen.Vielen DankJoachim
-
-Hi,nimm einfach eines dieser  beiden Projekte:Es muss gehen ohne irgend ein Adress Einstellung:"c:\Users\<deinWindowsUserName>\CODESYS Control for Raspberry PI\3.5.8.10\Examples\SoftMotion Servo Example.project" oder"c:\Users\<deinWindowsUserName>\CODESYS Control for Raspberry PI\3.5.8.10\Examples\I2CExamples.project" GrüßeEdwinPS: Bitte im englischen Forum englisch posten 
-
-Hello Edwin,thank you very much for your answer. I didn't recognize that pure English forum. Sorry about that. I will switch to the German forum now.Best regards
-

@@ -1,4 +1,0 @@
-regards to all:1- Does the CODESYS Package Designer not exist for 64bit?2- Is it possible to see the code of the free packages of the store in some way, the source code?
-
-Hi,the Package Manager will be released for the 64Bit Version with 3.5SP12 Version.(around 20th December)Sure you could see the content... of these packages by open them as zip. BREdwin
-

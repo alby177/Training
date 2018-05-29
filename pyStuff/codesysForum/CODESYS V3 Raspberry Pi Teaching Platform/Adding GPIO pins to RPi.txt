@@ -1,2 +1,0 @@
-Hello everyone,I have a quick question. In my project I need to use more then the standard amount of pins in codesys. I want to use the SPi pins, but how do I add them to.I have read some posts of other users who even shared their GPIO file, but it doesnt work for me.editI want to use the SPi pins as a normal io pin, digital input/output.I added the modified files and the screenshots. I hope someone can tell me what is going wrong.Hope someone can help me.Jonathan
-

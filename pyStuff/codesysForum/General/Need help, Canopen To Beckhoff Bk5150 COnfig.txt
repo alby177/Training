@@ -1,4 +1,0 @@
-Hello,Need help, Canopen To Beckhoff Bk5150 COnfigSystem Codesys 2.3PLC Berghof Dc1005MDevice, Canopen connect to Beckhoff BK5150  Input KL1408, KL1408Output KL2408, kl2408, kl2408Attachment:beckhoff1.jpgAttachment:codesys2.JPGI connect to PLC and login but imput and output not working.Maybe wrong address? or Need library from beckhoff?Please helpThanks,
-
-device
-

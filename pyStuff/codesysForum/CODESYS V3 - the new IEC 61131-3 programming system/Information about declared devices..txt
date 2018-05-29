@@ -1,2 +1,0 @@
-Dears.Do you know if it is possible to know how many devices are defined in project?. Thanks
-

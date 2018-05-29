@@ -1,8 +1,0 @@
-Hi there,Is it possible to use some EtherCat serial Communication terminals like the Beckhoff EL6001, EL6002, EL6021, EL6022 right in CODESYS?I know how to use them in TwinCat with the function blocks provided from Beckhoff but I'm wondering how to use them in CODESYS V3.Can I use the Beckhoff function blocks in CODESYS? Or are there any other function blocks I can use?Does someone have a sample code?Thank you.
-
-I also like to know the answer. I am using EL6021 (RS485).Can I use it with Codesys Modbus master? When I try, the Modbus master asks me for COM port... How can we do that?
-
-anyone?
-
-Hi,no there are no drivers available to have them as serial device.The only way to use them is to use the process data in your application which isprobably a huge effort.BREdwin
-

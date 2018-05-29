@@ -1,2 +1,0 @@
-Hi.First, I add a visualization and the trend Object. But how to Access the SQLITE database recordings from the plc program? I can see there is the "VisuTrendStorageAccess" Library loaded together with the trend object but I have not successfully managed to work With it.Thanks,Thorgrim
-

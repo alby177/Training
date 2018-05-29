@@ -1,4 +1,0 @@
-Does anyone know if the Package Designer works with SP11 Patch 1? It didn't work with the previous version.Thanks,
-
-Hi,no not updated, ealiest 3.5SP12 end of the year. (the package in the store need to be updated not CODESYS)BREdwin
-

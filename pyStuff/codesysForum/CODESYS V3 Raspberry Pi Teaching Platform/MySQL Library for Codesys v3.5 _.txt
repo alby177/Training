@@ -1,4 +1,0 @@
-Hi.Is there any MySQL library available for codesys v3.5 ? I found that Wago had a library for Codesys v2.3, but i guess its incompatible with v3.5 ?Is ther any other way to do logging to a MySQL database from Raspberry pi using the Codesys runtime ?Thanks.
-
-Hello.. I have mysql and mssql lib to straight writing to DB... Write to dmitriy.murashov@automation-engineering.ru
-

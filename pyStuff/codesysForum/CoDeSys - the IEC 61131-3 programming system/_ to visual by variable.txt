@@ -1,9 +1,0 @@
-How can i change from viual by a variable. Not with a button !
-And no Dialog.  Ive got parameter screen which i want to protect by a password. So first a diolog for the password then if oke switch visu
-
-Reinier wrote:How can i change from viual by a variable. Not with a button !And no Dialog.  Ive got parameter screen which i want to protect by a password. So first a diolog for the password then if oke switch visuYour question is how to change a window by code? Am I right? If yes, you can use a system variable CurrentVisu. Someone have already asked this queston here, take a look.
-
-Thanks. But i think that is V2. As far as I now is the IEC 61131-3 for the V3.  Ive got the answer from the support.
-
-VisuElems.CurrentVisu := 'Screen name';
-

@@ -1,2 +1,0 @@
-Hello,I am using Control Win V3 for an application that is using a PEAK PCAN USB to connect to the CANbus. I can see messages on the bus and if I transmit a message using PCAN-view I can see it in my application but I am unable to see my own messages that are being sent out through the CoDeSys application. Any thoughts on why this might be happening?Thanks,CB
-

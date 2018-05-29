@@ -1,4 +1,0 @@
-Hello,i need communicate with USB devices (bar code scanners). In Raspberry USB serial device look as "/dev/ttyACMx" ,x=0...n .Any idea how to make it ?Thanks, Marian
-
-I had to go through this to enable a USB-RS485 device.http://forum.codesys.com/viewtopic.php?f=21&t=7108&p=15605&hilit=tty#p15601This should help.I don't really know why this isn't enabled by default.
-

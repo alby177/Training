@@ -1,6 +1,0 @@
-Hi all,https://www.youtube.com/watch?v=LOe5cAgAmuo-Pi3-official 7" LCD Multitouch RaspberryPI.org-Sense HAT - for temprature/humidity/air pressurebased on OpenWeatherMap https://store.codesys.com/weather-forecast-library.htmlBREdwin
-
-Are you using a Webvisu and chromium in kiosk mode?
-
-Hi,yessudo nano /home/pi/.config/lxsession/LXDE-pi/autostartCode:lxpanel --profile LXDE-pi@pcmanfm --desktop --profile LXDE-pi@xscreensaver -no-splash@point-rpi@xset s off@xset s noblank@xset -dpms@chromium-browser --noerrdialogs --kiosk --incognito http://localhost:8080/webvisu.htmBR Edwin
-

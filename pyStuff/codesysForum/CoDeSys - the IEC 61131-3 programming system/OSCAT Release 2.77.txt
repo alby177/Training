@@ -1,8 +1,0 @@
-OSCAT has released the new OSCAT Library today
-with over 70 updates, fixes and new modules
-the OSCAT Library is the leading open source library for IEC61131.
-
-the download is available under www.oscat.de
-
-_________________freie sps bibliothek unter www.oscat.de
-

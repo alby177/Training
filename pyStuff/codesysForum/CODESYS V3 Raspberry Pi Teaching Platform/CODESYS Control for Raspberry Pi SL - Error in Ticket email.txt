@@ -1,4 +1,0 @@
-I purchased a copy of the CODESYS Control for Raspberry Pi SL online. The license email came to me with: "Beim Abrufen der Ticket Informationen ist ein Fehler aufgetreten." or "An error occurred while retrieving the ticket information.". The same info is displayed under "My Orders" on my account.Does anyone have info on how to generate another key? I've sent an email through the contact link. Any help is appreciated! Thank you.
-
-Hi,you got meanwhile an email with the ticket number from CODESYS store,we apologize for the inconvenience.BREdwin
-

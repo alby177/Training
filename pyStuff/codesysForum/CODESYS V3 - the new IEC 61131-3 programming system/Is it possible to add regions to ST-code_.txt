@@ -1,4 +1,0 @@
-In order to structure my ST-code I sometimes would like to be able to collapse/expand parts of the code to my own liking.For example, in C# you can use #region and #endregion to create your own "folds".Does something similar exist in Codesys? I've searched the built-in help and forums but came up empty.As of now, my workaround is to put my code within dummy IF-statements which then can be collapsed separately.
-
-Hi Kim,yes, it is possible since CODESYS V3.5 SP9 with the following syntax{region "Description"}// code{endregion} RegardsRoman
-

@@ -1,4 +1,0 @@
-Hello, I want to contol stepper motor with SoftMotion.I found some information that this is possible.But I don't know how to do this.I want to use GPIO as pulse and direction outputs.Could give me some advise how I can solve this problem?Thank you in advanceMariusz
-
-Hello Mariusz,doing SoftMotion is possible with Raspberry PI but we do not have a ready to use solutionfor using GPIO's (for example to genearte puls direction).The only way at the moment to use SoftMotion and Puls/direction is the use of EL2521 Beckhoff - there is a SoftMotion driver available for these drives.BREdwin
-

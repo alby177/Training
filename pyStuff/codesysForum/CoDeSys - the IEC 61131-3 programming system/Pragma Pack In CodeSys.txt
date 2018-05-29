@@ -1,2 +1,0 @@
-HiI am creating a structure which is set of different data types say...Byte, word, dword...And am receing data over ethernet in this structure. when I receive d data, its not getting transfer due to the memory alignment.Can any one help me in defining the structure as #pragma pack(1) to avoid the memory alignment issue.
-

@@ -1,2 +1,0 @@
-Hi There,Is there any update available on Graph for having two different variable and not "Time" as fixed X axis.Thanks in Advance.
-

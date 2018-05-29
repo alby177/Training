@@ -1,2 +1,0 @@
-hi everyone,I have some problem when i scan my plc(FIO Controller 113) device with gateway from Codesys. I can no longer log in my PLC through the CodeSys program. i do not know why. When I ping the PLC IP address by the program "Command Prompt" the link is done without problems.Can someone help me please.
-

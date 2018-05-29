@@ -1,8 +1,0 @@
-Dear All,how do I cast explicitly ENUM to UINT (or other compatible type) and back UINT to ENUM?I haven't found dedicated conversion operators.I'd like to use 'strict' pragma and cast explicitely. Now I have to remove 'strict' and casting happens implicitly, which is bad of course...Thank you!
-
-I don't know of an ENUM_TO_UINT() or UINT_TO_ENUM() type of conversion.BUT, you can turn on "Insert with namespace" in the SmartCoding options.  This will include the namespace of the enum automatically, avoiding incorrect casting with another enum.  At least it avoids issues when two enumerations have the same entry with different values.Then it's up to you to never do this:Code:MyEnum := 53;And instead, do this:Code:MyEnum := T_STATUS.IDLE_AFTER_FAULT;(Of course, you can include the namespace manually without turning on the SmartCoding feature...)
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-
-Instead of converting could you just define the ENUM as type UINT instead?Code:TYPE MyEnum :(     EnumMember1 := 0,     EnumMember2 := 1) UINT;END_TYPE
-

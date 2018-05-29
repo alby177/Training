@@ -1,4 +1,0 @@
-Hi to all you techies.
-I'm using EASY215 with CoDeSys.I tried the Traffic light example but had some problems.Can anyone provide me with step by step guide to do programming.Any useful docs will be a great help.Currently I'm in need of a simple program to blink a LED with the press of a button.
-Thanks in advance.
-

@@ -1,9 +1,0 @@
-Hi,using Codesys 2.3I can't get how to reuse a pulse timer.Attached is a simple project with one SFC program, which tries to use a TP timer declared as TP1 global.It works only once after a PLC reset.If I set TP1.IN from an action(TransA -> Step1A), the first time it works.TP is started, .ET increases etc.The next time I set .IN, nothing happens as .ET is already equal to .PTI can't reset .ET to 0, it doesn't reset automatically, so how am I supposed to reuse the timer?If I set TP1.IN from an ENTRY action(TransB -> Step1B), TP1.Q becomes true forever and TP1.ET stays at 0.It should be obvious already that I'm a complete newbie.How all this works and how to reuse a timer? Thanks.
-
-please ignore, I've found what's wrong.Instead of TP1.IN:=FALSE; I should have used TP1(IN :=FALSE);Not so obvious at first sight 
-
-Sorry I hope you don't mind if I explain the difference between the two calls for people who might be wondering.TP1.IN:=FALSE; this sets the variable but never jumps to the instance of the timer TP1 in memory to reload the algorithm.TP1(IN:=FALSE); this sets the variable and jumps to the instance of the timer TP1 in memory and calls/runs the algorithm.EXAMPLE:Code:PROGRAM PLC_PRGvar Timer :TON;end_varTimer(IN := TRUE, PT:= T#5s);Timer.PT := T#10s;end_ProgramThe outcome of the timer will be Timer.Q := TRUE after 5 sec not 10 sec.
-
-_________________Thanks,
-Steve Pfeifenroth
-

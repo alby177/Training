@@ -1,2 +1,0 @@
-Hi,I'm a newbie and I discover Codesys with my Raspberry Pi3.I know that on the Siemens PLC and Tia Portal (for exemple S7-1200) an output is like Q1.1 (the CPU executes the user program and at the end, write the output process image to the physical outputs).By appending a ":P" for exemple Q1.1:P the program write immediately to the physical output.Is there something similar with the RPI in Codesys ?Thank you   Philipp
-

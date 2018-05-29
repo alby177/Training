@@ -1,3 +1,0 @@
-It seem that I had a NULL pointer error in my program, hence the run time error. I have tried to get information about solving an exception, but the online help says very little. I can not see any exceptions under the Log-page for the device, must logging be anbled or what? 
-Confused...
-

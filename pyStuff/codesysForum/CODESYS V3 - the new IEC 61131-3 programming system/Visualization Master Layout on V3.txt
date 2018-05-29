@@ -1,4 +1,0 @@
-On v2.3 we could create a Master Layout to be the reference page background to the others page(like a button, a clock, a logo, or some status information common for all pages).How can we do that in Version 3?
-
-1) Create a visualization2) Create another visualization, add a frame object and select the first visualization.You could use the frames for many solutions, not only templates (backgrounds), but also to create visualization objects which have reference(s) (VAR_IN_OUT) to e.g. function block instances or structures.
-

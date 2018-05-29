@@ -1,2 +1,0 @@
-Hi,downloaded the PackML from Store but I having trouble to compile it.Get the Error on every line the unitModeManager is used: C0185:  It is not possible to perform component access '.', index access '[]' or call '()' on result of function call. Assign result to help variable first.Not sure if the image work as it should.https://drive.google.com/file/d/0B9dMlo_ns0UuMlp0LW1TNE1LZGs/view?usp=sharing
-

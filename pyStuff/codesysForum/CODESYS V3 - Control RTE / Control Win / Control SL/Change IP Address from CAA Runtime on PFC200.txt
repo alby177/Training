@@ -1,4 +1,0 @@
-Hello, struggling with finding a way to change the target's IP address from within the PLC runtime.  This is a feature that has always been available from WAGO on CoDeSys 2.3 and e!Cockpit  Is there a TCP/IP config library or Linux command line block that will accomplish this?
-
-Hi,for me it works with adding the setting (add the Interface which you want to set)[SysSocket]Adapter.0.Name="ethX2"Adapter.0.EnableSetIpAndMask=1in /etc/CODESYSControl.cfgand set the IP by adding the 'Ethernet Connector' to your project and set 'Change Operation System setting' see screenshotBREdwin
-

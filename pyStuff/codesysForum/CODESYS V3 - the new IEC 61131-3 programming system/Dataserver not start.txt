@@ -1,4 +1,0 @@
-Hello,I have such kind of problem  - there is two appications, one is visualisation only, and another - PLC, they talk to each other with Dataserver. So, some time ago was happend something, I dunno what, and  the dataserver stops work. According to logs, after the download dataserver try to start, and then stopped by timeout. The dataserver task in visu application seems to be work...  How I can determine the reason dataserver stop?
-
-Hiplease check the plclog for more Information.There should be an error number why the Connection fails.BREdwin
-

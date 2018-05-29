@@ -1,4 +1,0 @@
-Hi developers, i try to make a program for connecting a client CoDesys with a server  Java. i do connect.  but the problem is when i try to send data cause i'm using SysLibSockets but the FUN SysSockSend  request a ADDR, but i dont know how define it. Can you hel me? please
-
-ADR(variablename)
-

@@ -1,6 +1,0 @@
-Is it possible to export the alarms list to a file and edit it in Excel?
-
-This has been added to V3.5 SP7 (recently released).Right click on the alarm table and choose export/import;Attachment:ScreenShot.jpg
-
-Does anybody know if it is possible to list all historical alarms in a set date range please?For example I would like the user to be able to view all alarms that occurred between July 1st and July 27th.
-

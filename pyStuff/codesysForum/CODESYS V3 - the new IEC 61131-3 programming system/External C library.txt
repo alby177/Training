@@ -1,8 +1,0 @@
-I am looking to use a C dll. I found a document that discribes hows to make an external C Library but it is for version 2.Can I do the same in V3? And if so any documentation? I have V3.5 compiling for a Windows CE target.Hoping for any helpDave WarrenLuscher UK
-
-Hello Dave (feels a bit strange writing that after having watched the movie 2001 recently  ),From the document CoDeSys Control V3 Manual (Version 14.0):"In CoDeSys 3.x we no longer distinguish between internal and external libraries. Each library can contain functions and blocks that are either implemented internally (in IEC) or externally (in ANSI-C or C++). External implementation is based on a component of the runtime system, internal implementation is based directly on the CoDeSys library."This document is available in the customer area http://3s-software.com/index.shtml?en_Down2. Best regards,Kristian Berlin
-
-Yes, but this is only for OEM's. You need to have the Toolkit.
-
-TimvH wrote:Yes, but this is only for OEM's. You need to have the Toolkit. Actually, he needs only a few files from that toolkit.    Interesting, are they available for end-users? they could be very useful.
-

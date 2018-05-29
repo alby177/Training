@@ -1,4 +1,0 @@
-Hi all,I was wondering if it was possible to convert a compiled library back into a .library file (or .lib file).If so, how is it done?Many thanks
-
-Hi,no this is not possible.BREdwin
-

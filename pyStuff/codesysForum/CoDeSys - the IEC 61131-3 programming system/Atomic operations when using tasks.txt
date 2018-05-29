@@ -1,2 +1,0 @@
-As far as I understand the tasks in CoDeSys are interrupt based? If so, how to ensure atomic operations on variables and arrays? I have quiet a few variables and arrays I want to share between tasks and I need to be completely certain that these are finished writing before switching task.
-

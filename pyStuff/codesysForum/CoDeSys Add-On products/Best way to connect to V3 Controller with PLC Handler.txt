@@ -1,4 +1,0 @@
-If I have a V3 PLC that I know is at a defined IP address, what is the best way to connect to that controller with PLC Handler?  The V3 connection methods seemed to be limited only to the device name or CoDeSys address.  Both of these will change from device to device but the IP is fixed on every controller.Is there a way to resolve a device name or address from the IP address?
-
-if your plc support CmpBlkDrvTcp then you could connect via the IP address:this snippet is from the plc-handler documentation 5.1.1.2:Starting from version V3.4 SP2 there is also the possibility to usethe CmpBlkDrvTcp to communicate to the PLC. Parameter name  Description: IpAddress  Tcp/Ip address of the PLC Port  Tcp/Ip port number of the PLC. If not specified, the default value 11740 is used.
-

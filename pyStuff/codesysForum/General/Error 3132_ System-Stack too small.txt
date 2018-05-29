@@ -1,6 +1,0 @@
-Hello,When I do more than about 10 nested function calls (or programs, or function blocks, or function block actions) in CoDeSys, I get the error 3132: System-Stack too small: NNN 'WORD' needed, 128 'WORD' available. The number NNN increases if I use the error check functions like Checkbounds, CheckDivByte, CheckRangeUnsigned, etc. (and provided something in the nested functions has something to do with arrays, dividing bytes, etc.)Is there any obvious way to overcome this situation?Stéphane GeorgetSGEORGET20130219
-
-check for illegal exits in the program, increase stack on resources.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

@@ -1,4 +1,0 @@
-Goodafternoon,My configuration is Vmware with W10x32 and Codesys 3.5.8.1. WIN V3Everything works just fine when using Ethernet -> Modbus TCP master -> Modbus TCP slave.But when using PN_Controller I get the red triangle.Any idea what this could be?Thanks!
-
-Hi,guess this is already solved by teamviewer?WinPCap problem was the reason.BREdwin
-

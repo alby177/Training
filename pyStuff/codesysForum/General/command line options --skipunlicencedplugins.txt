@@ -1,6 +1,0 @@
-HiI have a "Test Manager" plugin installed which requires a USB licence dongle and sometimes I have to remove the USB key,but still I want to use some codesys.exe with scripts (which do not require this plugin).To solve this problem I found this "--skipunlicencedplugins" exe parameter but seems that it is not working (v3.5 SP6).Are there any additional parameters required? Or is this not supported (just documented) yet?Thanks
-
-please use V3 forum.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

@@ -1,2 +1,0 @@
-Hi guys.Just wondering if codesys got a Function block or something to make the date and time on the computer to a variable in my plc program?I just want to reset a variable or an output with the clock on my PC.For example: Every night 04:00 o' clock i'm going reset a variable.someone got an ideaBest regards Henrik
-

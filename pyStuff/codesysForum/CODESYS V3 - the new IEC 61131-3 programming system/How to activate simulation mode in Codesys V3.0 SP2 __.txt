@@ -1,6 +1,0 @@
-Hello everybody
-
-I want an idea from your people to check my written logic in Codesys Simulation mode.
-
-Whether is it possible if it so please help me  
-

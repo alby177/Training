@@ -1,6 +1,0 @@
-Hi,Working with CODESYS 3.5 SP8Basic ladder diagram or ST does not run in simulated mode/. Program builds fine and when I go tu run visualization also does not show. Anybody else having similar problem? - I am running it on Windows 7.thanks,
-
-hi running on windows 10 and the visualisation doesnt work .. i can simulate the ladder but any visualisation end to that error : program loaded -exception .. is there a way to fix this ?It's my first time on that kind of program so may be I m doing something wrongThanks for ur help  
-
-hi again diego i found a solution on this page viewtopic.php?f=11&t=6422hope it will work for you too 
-

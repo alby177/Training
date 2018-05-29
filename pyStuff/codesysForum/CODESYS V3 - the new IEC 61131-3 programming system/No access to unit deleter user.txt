@@ -1,4 +1,0 @@
-Hello, I deleted the last user in the project (accident) and now I cant login on the PLC.Ony the login windows appears. Is there a chance to reset the unit without login or is there a master password available?
-
-You cannot delete the last user. CODESYS will give you a message that the last "administrator" user cannot be deleted. There must be another user still available.There is no master password.
-

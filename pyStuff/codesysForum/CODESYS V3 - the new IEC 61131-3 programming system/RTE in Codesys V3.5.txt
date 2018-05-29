@@ -1,6 +1,0 @@
-Hi there,i have codesys v3.5 running and have made a project for a Tripod under RTE. Now i was wondering, the system tray shows that the RTE engine is running but it can't find any devices to download to. Do you have any idea what i am doing wrong here?Thanks a lot!Br,Ed
-
-Hi,Have you started the "RTE with Softmotion"? You need this version if you want to run an application with Softmotion functionality. This Device should also be selected in your application.Maybe when you scan for devices you can check which ones you can find.First set the Filter option in the communication settings of the device to none.If you have the "standard RTE" running, you can download the RTE with Softmotion from the download page of www.codesys.com
-
-Deni wrote:Hi there,i have codesys v3.5 running and have made a project for a Tripod under RTE. Now i was wondering, the system tray shows that the RTE engine is running but it can't find any devices to download to. Do you have any idea what i am doing wrong here?Thanks a lot!Br,EdI met this problem also, I had no idea about this.
-

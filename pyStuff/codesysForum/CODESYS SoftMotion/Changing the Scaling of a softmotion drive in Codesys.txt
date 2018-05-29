@@ -1,8 +1,0 @@
-Hi,I would like to be able to change all the scaling parameter of my softmotion drive in my Codesys project (in running mode, and not only config one).not only the inc/motor turns object, but also the gear ratio.I have an application where the same motor could be used on different station with different scaling.I looked into the axis structure parameter and I only found the MSC_Changegearinratio block.Does someone know how to do this?Thanks by advance
-
-Hi,use SMC_ChangeGearingRatioand after that a SMC3_ReinitDrive...BREdwin
-
-Hi thanks for the answer, but I already tried and it changed only a few parts of the config.Nominator is a dword and denominator a int!I need more. As you can see on the image of my first post, I would like it I change the values in the red square!Does someone know how to perform this?
-
-Example:Axis.iRatioTechUnitsNum := Direction (+/-1) * motor turns * gear output turns (all left side) * units in application (all right side)Axis.iRatioTechUnitsDenom := increments * motor turns * gear output turns (all left side)  Note: These two values are mathematically reduced, e.g. if iRatoTechUnitsNum=10000 and dwRatioTechUnitsDenom = 200000, it will be…iRationTechUnitsNum=1 and dwRatiTechUnitsDenom=20BREdwin
-

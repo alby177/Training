@@ -1,6 +1,0 @@
-Hi everybody,i would like to get info while updating the project if there is a conflict. We try to set up a daily build and with the update-function it does not give us any information if there was a conflict. I tried SvnInfoEventArgs (imported clr sharpsvn) but it does not work so far. Any help, ideas? Thanks, MaGu
-
-Hi, MaGu,I assume you're using the CODESYS SVN AddOn.Right now, there's no way in the scripting API of the SVN AddOn to check whether an object is conflicted.There's the issue SVN-33 to improve on this situation eventually, but it is not scheduled yet.(Public jira access to the SVN issue database should be available soon.)
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
-

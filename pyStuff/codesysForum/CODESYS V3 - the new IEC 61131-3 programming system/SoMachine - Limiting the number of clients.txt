@@ -1,4 +1,0 @@
-Hi!I would like to know if there is a way to limit the number of connection to webvisualization? I have tried to set the maximum number of visualization clients to 1 (under Visualization manager) but I can still connect from two different devices. How can this be solved?Best RegardsAnton
-
-Anton Bolander wrote:Hi!I would like to know if there is a way to limit the number of connection to webvisualization? I have tried to set the maximum number of visualization clients to 1 (under Visualization manager) but I can still connect from two different devices. How can this be solved?Best RegardsAntonAccording to the service of schneider Somachine is not Codesys and the visualization does not support more than 1 client, besides they are not enabled is an alarm manager.good luck
-

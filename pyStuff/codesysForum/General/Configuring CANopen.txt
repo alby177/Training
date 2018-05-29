@@ -1,9 +1,0 @@
-How can I CONFIGURE the CANopen network through Codesys.
-Master-EASY215
-Slave-C040xx-BD-EVA with C04012A
-Presently I'm able to map the master and slave under 'PLC configuration',but where is the option for eds generation for EASY215 (though it appears if I choose the target as 3s codesys sp plcWinNT V2.4 )?
-And once I'm able to generate the eds then how will I configure the CANopen network by codesys ?Any pdf or example will be appreciated.
-
-Also tell me whether I can use cananalyser and devicemonitor softwares from www.port.de to configure canopen network.
-Thanks in advance.
-

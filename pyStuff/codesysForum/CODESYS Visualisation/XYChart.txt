@@ -1,4 +1,0 @@
-Hello,In the help file "Core_Visualization" you explain :"In the CODESYS Store, you will find a sample project for using XY chart elements in visualizations."Where is it ? As all time, when I try to use the schearch box, I get no good answers.   Thank you in advance for your help.Best regard.  Japib
-
-Hi,think this will come... (this example application in the CODESYS Store)BREdwin
-

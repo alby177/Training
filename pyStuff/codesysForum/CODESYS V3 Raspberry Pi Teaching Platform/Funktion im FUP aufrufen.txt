@@ -1,2 +1,0 @@
-ich habe eine Frage:kann man die Funktion "Sys Process Execute Command" auch im FUP aufrufen ?Falls ja, wie müsste diese dann aussehen ?
-

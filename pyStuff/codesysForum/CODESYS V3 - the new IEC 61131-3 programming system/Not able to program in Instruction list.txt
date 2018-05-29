@@ -1,4 +1,0 @@
-Good dayI downloaded the Codesys programing portal and for some reason it does not give me the option to create new POU`s in instruction list.Maybe someone can help me with this please.Any help will be appreciated.
-
-Hi,you have to enable it:"Tools > Options > FBD, LD and IL Editor > IL > Enable IL"
-

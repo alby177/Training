@@ -1,4 +1,0 @@
-Hi,I'm looking to implement a TCP/IP server in CoDeSys V3 to communicate with a PLC that is currently setup as a TCP/IP client.Can you point me to examples / methods to do the same?Thanks
-
-Brine wrote:Hi,I'm looking to implement a TCP/IP server in CoDeSys V3 to communicate with a PLC that is currently setup as a TCP/IP client.Can you point me to examples / methods to do the same?ThanksHi Brine,I think search function is down right now, but I can point you to a post that you could use: viewtopic.php?f=11&t=7935. Let me know if this helps.Thanks,
-

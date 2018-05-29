@@ -1,4 +1,0 @@
-Helloi'm trying to select a period of time inside a visu element 'DateRangeSelector', but i'm not able to do get it..I have no found any information or guide in order to discover how to use this element..Would appreciate any help ..Regards,Miquel
-
-Same problem, interested
-

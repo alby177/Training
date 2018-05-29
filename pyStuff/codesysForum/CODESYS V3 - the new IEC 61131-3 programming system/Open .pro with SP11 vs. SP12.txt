@@ -1,6 +1,0 @@
-Hi, does anybody know why I can open an old Codesys 2.3 project (.pro) with Codesys 3.5 SP11 but not with SP12?
-
-Hi,please keep in mind the V2.3 project converter is only avilable in the CODESYS 32Bit version. ( not in the 64Bit CODESYS Developmentsystem)This is for 3.5SP11 and 3.5SP12 the same.You could check which version you have under 'about'.In the CODESYS Store both versions are avialble ( in the version tab)BREdwin
-
-Thanks, you're right. That was the problem, I did never think about it. 
-

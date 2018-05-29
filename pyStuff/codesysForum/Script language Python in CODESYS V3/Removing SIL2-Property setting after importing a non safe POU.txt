@@ -1,2 +1,0 @@
-Hi support-Team,if an PLCOpen-XML import is done into CODESYS, all importet elements have the SIL2 property set.How can it be removed by script for non safe POUs?Thanks in advance.
-

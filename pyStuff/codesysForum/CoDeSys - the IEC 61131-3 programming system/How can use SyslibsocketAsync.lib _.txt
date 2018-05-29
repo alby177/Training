@@ -1,2 +1,0 @@
-Are you have any example ?I want to do data communications with Rexroth L40 and Cognex Dataman Dmc Reader Over TCP/IP with SyslibsocketAsync.lib .First,I I've tried  with  Syslibsocket.lib, but it isn't work.I don't understand ,why my project is not work ?
-

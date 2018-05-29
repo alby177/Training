@@ -1,4 +1,0 @@
-Is there any function block that will give the master position required on a given CAMed slave position?  I need a similar functionality like smc_getcamslavesetposition but I want to input the slave position and receive as an output the required master position to achieve it.
-
-_________________The Original SoMachine Ninja
-

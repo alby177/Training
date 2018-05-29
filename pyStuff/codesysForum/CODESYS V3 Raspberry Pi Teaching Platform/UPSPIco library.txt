@@ -1,4 +1,0 @@
-A library for UPS PIco for Raspberry Pi. Includes the following functions: - read voltage- read temperature- read analog inputs- read other parameters- control LEDs- control of cooler (including automatic control based on temperature)- Still Alive Timer (watchdog which will reboot the Raspberry Pi if your code will stop)- initial configuration of the device out of your code
-
-Thanks for sharing this,it is now available here:viewtopic.php?f=23&t=5872&p=10867#p13721
-

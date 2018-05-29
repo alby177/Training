@@ -1,6 +1,0 @@
-Hello:Please let me know if there would be any solution declaring an array tagname as part of 2 concatenated strings. Someting like:"CONCAT(string1, string2): ARRAY[1..10] OF BOOL;"or test=CONCAT(string1, string2)POINTER(test) : ARRAY[1..10] OF BOOL;In fact I am trying just to obtain an array tagname as a prefix +name where the prefix is a variable....I can do it with multidimensional array ARRAY[1..10,1..100] where i=1..10 could be my prefix but in this particular situation I need to get the name as a variable...Please let me know.Thank you!DD
-
-No that is simply impossible as the whole program is compiled and all these variables are not in the end program.so you can not make a variable variable.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

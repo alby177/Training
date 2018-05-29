@@ -1,2 +1,0 @@
-Hello I'm new on this forum so sorry for my possible failures;)I have i problem with an OSCAT lib, IP_CONTROL2.When i build my program there is still a message:Error 4001: IP_CONTROL2(142): Indentifier 'SYSLIBSOCKETS_OPTION' not definedHow can i solve this?I think this is the reason my program is not working.I try to build a program that can communicate whit a remoteI/O trough TCP/IP?Maybe you have some hints??Thank you!!
-

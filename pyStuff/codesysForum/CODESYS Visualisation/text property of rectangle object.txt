@@ -1,4 +1,0 @@
-All the text written in text property displays as single line on the object. How do I change it to multiline?System Enable   and not      System Enable
-
-For multiline text you have to use CTRL+Enter together.In your case:Text>Content:System(Ctrl+Enter)enableAs easy...Regards,Alex
-

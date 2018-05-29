@@ -1,2 +1,0 @@
-Hello,I would want to connect my raspberry pi 3 with an schneider PLC TSX by modbusTCP.But I don't understand if i need to use TCP slave or Master on Codesys V3.Have you a project example of this configuration, please?thksBest regards
-

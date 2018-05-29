@@ -1,2 +1,0 @@
-Hi there,I use plugin CODESYS Safety SIL2 (compound safety device) and I want to implement some code running on non-safe PLC and safe as well.I use some non-safe libraries, so in safe PLC I want to call the code from non-safe POU.However when I place POUs on pane 'POUs' where they are device independent, Codesys threats all that codedefault as safety-relevant. Is there some way to change this behavior?It prevents me from reuse the code. Should I copy all code under device and mark it as non-safe in properties?Maybe there is any better method?
-

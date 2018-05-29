@@ -1,2 +1,0 @@
-Dear,I'm new on this forum.I search to ping a smartphone on wifi network with a Wago Modbus tcp 750-841.I try to test the SOCK_PING function with Codesys v2.3 but it's not work.This function give the result SOCK_SUCCESS all the time even if the ip address of the smartphone is not on the network.I put 2 pictures in attachment.Do you an idea for my problem ?Thanks
-

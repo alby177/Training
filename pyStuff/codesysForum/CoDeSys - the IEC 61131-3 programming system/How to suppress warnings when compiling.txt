@@ -1,6 +1,0 @@
-Good morning everyone,I'm actually developing an application with Beckhoff system; at the early stage when compiling this application generates 200+ warnings that take lot of time displaying; I've looked under Project => Options => Build any option like "Suppress warnings" but I don't find anything similar; any idea or hints will be very apreciated and can save me lot of time...Thank you very much!Francesco
-
-if it are warnings no problem, how often do you compile? if it are alarms you will have to look for them.you can switch off compiling the blocks that give these warnings.most warnings with me are on visualisations, so i just switch them off.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

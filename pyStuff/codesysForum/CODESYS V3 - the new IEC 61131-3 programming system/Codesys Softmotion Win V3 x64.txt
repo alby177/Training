@@ -1,2 +1,0 @@
-Hi I just started working Codesys softmotion, try to run the "Codesys softmotion example". When compiling it, it says 'SM_Drive_Servo' not defined error displayed on the bottom window.What should I do? [UPDATE]Resolved
-

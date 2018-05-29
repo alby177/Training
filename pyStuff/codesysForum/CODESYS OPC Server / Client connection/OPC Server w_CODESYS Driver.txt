@@ -1,2 +1,0 @@
-Hi all,Kepware have now release the flagship KEPServerEX 6.2 with an CODESYS river supporting both version 2.3 and 3.I have testet the driver together with my Raspberry Pi and Codesys SL and found this very easy to connect.Visit www.kepware.com and download the newste version og KEPServeEX and make your own test.God luckPeter Grote
-

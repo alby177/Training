@@ -1,4 +1,0 @@
-Hi,Was there a solution found for trend on raspberry pi? If the power is removed from pi the visuisation becomes corrupt and programme needs to be removed and then uploaded to the pi. This is an issue for me as even with a UPS I cannot guarantee that someone doesn't accisebtly remove the power before shutdown on the Pi.I as I in another post about a graph created from x and y stored in an array. Interesting but is there a simple way to get the current date and time from the pi to help with the x axis? Also would the Y axis auto scale? And information on this would be appreciated  
-
-Hi, This should work on the Pi,If UPS should take care that on an shutdown all files are saved, so this could not happen that the sqlite db is corrupt.BREdwin
-

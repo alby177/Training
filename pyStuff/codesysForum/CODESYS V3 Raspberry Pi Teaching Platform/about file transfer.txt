@@ -1,2 +1,0 @@
-hello:I am testing the file transfer to download files from plc to pc. I get an error but I do not know the number that gives me which table it corresponds to. Does anyone know which table is the error correspondence?
-

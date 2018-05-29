@@ -1,6 +1,0 @@
-Hello,I have an application with two slaves drives (Ethercat Beckhoff EL7041) synchronized via MC_CamIn to a virtual master drive running in Time_Position_Profile.I'm making some test under Codesys Control Win (not RTE for the moment).The problem is that when the master as finished his position profile (stopped at his final position) , the slaves are still running slowly to their final position, like they were in late, not perfectly synchronized.  Should it be a problem due to Control Win instead of RTE, or some settings into the regulation loop ?Thanks in advance.Cedric
-
-Hi,hm...hard to say, how do you use th drive, there is no SoftMotion driver available.What about moven by simple MC_MoveAbs.. does this work?BREdwin
-
-Hi,I'm using the drives as in the PosControl example project, sending velocity to the drives and actual positions as feedback.I'm going to try a simple MC_MoveAbsolute command I see how does it work, I'll tell you.Thanks
-

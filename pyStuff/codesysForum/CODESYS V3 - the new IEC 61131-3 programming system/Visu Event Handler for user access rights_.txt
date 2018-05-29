@@ -1,4 +1,0 @@
-Is there anyway way to program a Visu event handler when a user clicks an object that does not have proper access rights.  When a user clicks a button without access rights I want to pop a login dialog. I found examples for Key Event Handler, the Mouse Event Handler and the Editbox Event Handler are there any other Events for Visu?
-
-_________________The Original SoMachine Ninja
-

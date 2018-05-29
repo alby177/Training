@@ -1,2 +1,0 @@
-Does anyone know if the Alarm Table and Trend elements can be deployed on a Windows CE 5.0 platform. I have tried to install an application on such a platform but the table elements do not show on the monitor.
-

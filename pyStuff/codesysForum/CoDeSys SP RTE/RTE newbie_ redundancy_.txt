@@ -1,4 +1,0 @@
-Hi all, I'm approaching first time to softPLC Codesys..is there the possibility to install the RTE on 2 PC and set them as redundant? Is there some feature like that?
-
-Hi,yes this is possible with Control RTE (V3)...But you to ask sales@codesys.com this is not part of the standard Setup.cuEdwin
-

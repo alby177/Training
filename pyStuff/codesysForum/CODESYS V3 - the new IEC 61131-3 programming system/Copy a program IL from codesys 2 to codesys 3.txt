@@ -1,4 +1,0 @@
-Hello Everyone,I've a software that I wrote with codesys 2 and I'd like to update it to codesys 3 So some parts are still good so I'd like to make a copy paste from a codesys V2 IL to a codesys V3Is it possible? Because an IL software with codesys 3 have a structure which doesn't allowed me to take all the lines (400) and paste them I have to select the instruction (LD, St, ...) copy It, copy the variable and restart so it's a very long processSo have you an idea how can I do that?Many thanks in advance
-
-Hi,open the V2.3 project with CODESYS V3,the Import will solve this for you.BREdwin
-

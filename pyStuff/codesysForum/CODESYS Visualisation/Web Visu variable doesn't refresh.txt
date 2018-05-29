@@ -1,8 +1,0 @@
-Hello Everyone,I am testing an Overdigit WP240 module built on SC24 chip and I need some help regarding web visualisation.The test program I have written is very simple, PLC_VISU contains a self-incrementing counter field + one dd/mm/yy HH:MM:SS field , simulation works just fine, program has been successfuly uploaded, web page is shown OK, I see time elapsing but counter doesn't increment.Any piece of advice would be highly appreciated.Thank you in advance,Marian
-
-a visu can not increment so it is in the program, is the PLC_PRG running or did you make a task?and please upload the program it will be much easier to see what is wrong i prefer a EXPort file.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
-I have found the problem in webvisu.htm file which was somehow altered during installation of WP240 target.Manufacturer has been very supportive in this matter. Thank you, Marian.
-

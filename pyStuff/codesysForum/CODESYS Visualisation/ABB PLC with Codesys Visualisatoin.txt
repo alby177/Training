@@ -1,6 +1,0 @@
-Dear Sir, I have a few question on my architecture design and hope Sir could lend me a helping hand here.Hardware: 2 PC + 17 PLC Stattion (with HMI at each individual station)1) Could Visualisation has concorrent PC licience? (2 identical PC which link to 17 PLC station)2) Does Visualisation only support peer to peer communication? (PC are not allow to communicated 17 PLC at the same time)3) Does Visualisation have any limmitation on total number of devices connected (Example: RS485 only support total 32 Devices)4) If I used Modbus TCPIP as my communication protocol. May I know duration of data transmission required in the system?
-
-yes you can use more then one PC in your system.and yes they can look at different PLC.use OPC for this.you can use several visualisations on your PC, however only one PLC per visualisation.no limts on opens creensspeed dependent of how much info is over the net.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

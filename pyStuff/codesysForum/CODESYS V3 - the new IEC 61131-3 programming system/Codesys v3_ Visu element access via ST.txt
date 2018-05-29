@@ -1,6 +1,0 @@
-Hi,I have a visu that has a polygon with multiple points and I was wondering if there's a possibility to import the coordinates of these points to an array of VisuStructPoints? Could it be through VisuElems-library?I have tried to get some information on the VisuElems-library as it seems to be a way to access the elements of visu's but I'm a bit too dumb to get the picture right. Is there documentation on the library (or examples that might have some hints to the right direction)? The methods itself are not that self-explanatory, or I've missed the correct ones.I can do the points manually but I was thinking if there's a more "automatic" way to do this.Thanks for all willing to give insight, I really appreciate it. Codesys 3.5 SP 5 patch 3 + RPi Runtime.
-
-Hi,   you can use the property Dynamic Points of this component to set an array of points.Attachment:Untitled.png
-
-loraul wrote:Hi,   you can use the property Dynamic Points of this component to set an array of points.Attachment:Untitled.pngThanks loraul but I'm looking for a solution that would do the opposite. I have the polygon in my visu and I would like to get the coordinates from the visu to an Array of VisuStructPoints. If it's possible in the first place.I know it's possible doing it by hand (...or with a "clipboard sniffer"), but I'm wondering if there's a way of doing this in CoDeSys.
-

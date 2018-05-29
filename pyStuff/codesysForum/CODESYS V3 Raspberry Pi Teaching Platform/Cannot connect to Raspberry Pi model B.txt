@@ -1,6 +1,0 @@
-So I am quite new to this. I have a Raspberry model B I want to use to learn some CoDeSys coding. I followed the Instructables instruction, but got stuck when trying to connect to the Rpi. The update of the Runtime seems to work fine on the right IP address, but I cannot connect to it afterwards.First disabbled the firewall on my laptop, but that didn't help. Then I found this topic : viewtopic.php?t=6601 and tried the update thing. Also from scratch, twice.Everything seems to work fine until I install the CoDeSys runtime. The I get a 'failed to start load kernel modules' during startup of the Rpi.In the /etc/modules-load.d I can see that it loads:spi-bcm2708i2c-bcm2708i2c-devIf I #spi-bcm2708 in that file the above mentioned error does not appear during startup, suggesting something is missing.Can anybody help me out here?I use CoDeSys for Rpi version 3.5-9-20 and Raspbian Jessie Lite
-
-Hi,is this really the latest Image from RaspberryPi.org you are using (September 2016 version)?https://www.raspberrypi.org/downloads/raspbian/BREdwin
-
-No, I found the problem. I forgot to set the CoDeSys project to RaspberryPi.Now it works, thanks.
-

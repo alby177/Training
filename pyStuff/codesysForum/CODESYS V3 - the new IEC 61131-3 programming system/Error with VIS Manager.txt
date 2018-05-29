@@ -1,2 +1,0 @@
-Hello, yesterday I ran into this error, and it didn't let me download and run my program, when I checked my device hardware edition is the same with my control win V3, i tried to update my device and nothing happened. After the solution was to delete my visualisation manager but it seems strange...can anyone help me...?
-

@@ -1,4 +1,0 @@
-Hi all.I am trying to get OPC communication to work between FSGateway from Wonderware Intouch 2012 (v10.5).The FSGateway disgnostics indicates all variable names from the OPC-server but it can not read/write values to it.The FSGateway indicates no errors.FSGateway supports OPC DA 2.05A while CoDeSys OPC-server supports OPC 2.0?In previous projects I used OPClink from Wonderware but this program is superseeded by FSGateway.I suspect the CoDeSys OPC-server to be incompatible with FSGatewayAnybody have any knowledge about this?
-
-_________________Best regardsrudolf
-

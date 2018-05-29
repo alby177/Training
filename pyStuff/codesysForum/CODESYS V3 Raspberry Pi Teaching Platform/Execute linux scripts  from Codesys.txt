@@ -1,4 +1,0 @@
-Hi,I have been looking for some way to execute linux  bash scripts from codesys code, but i have no found any reference to do it..anyone has get it ?Regards,Miquel
-
-Hi Miquel,viewtopic.php?f=23&t=6247&p=12699#p12699BREdwin
-

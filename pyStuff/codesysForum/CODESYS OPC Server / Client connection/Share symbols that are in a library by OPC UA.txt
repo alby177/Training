@@ -1,4 +1,0 @@
-Hello,I have a CoDeSys project that uses libraries.I can publish global variables of my project by OPC UA (see attached image). However, global variables that come from a library (for example sVersionSummary in attached screenshot) are not browsable in the client (I tried with several clients and servers).Is it a bug or is there a specific operation for a library variable to be published by OPC UA ?Thanks,
-
-Hi,this is a bug now in the bugtracker,thanks for reporting this.And additional these SVN_... should not be there an will be removed. BrEdwin
-

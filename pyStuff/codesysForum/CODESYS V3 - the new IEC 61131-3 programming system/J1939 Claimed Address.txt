@@ -1,6 +1,0 @@
-Is there any way to change the destination address of J1939 Tx PGN at runtime?  Technically, it is the NAME field of the address claim that uniquely identifies a node, and the address could be different from one power cycle to the next.  Granted, most systems are simple enough that this isn't an issue, but there are times when it would be useful to at least be able to change the desination address of a PGN.  Indeed, to be fully compliant with J1939, this capability is a requirement.
-
-Hi,The NAME of an ECU is like the MAC address and is always static. Each ECU claime at the beginning of an address. That ECU says: Hello, My Name is xyz and I want claim following address. This address can be static, but also u.U. dynamically. And exactly this address can also be changed using the IEC code. RemoteECU has a method to change the address. Keywords: Arbitrary Address cabable ECUBR E.Schwellinger
-
-It looks like only LocalECU has the change address method as far as I can see, which I assume would change the SA of the local node.  What I need is to be able to change the DA field of the P2P Tx PGNs of the local ECU.
-

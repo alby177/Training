@@ -1,2 +1,0 @@
-At one moment the activated Codesys HMI displayed the message requiring "continue in demo mode" or "request license". The most probably this happened after someone logged on with a different user account (in Windows 2003). Clicking request license button opens add license wizard but module list is empty. The next button cannot be pressed. Trying to do anything through Licensing Manager did not help. Is there a way to recover the license without reinstalling OS?
-

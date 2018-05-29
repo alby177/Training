@@ -1,2 +1,0 @@
-Hi,I am attempting to execute a task by an event. However, the object I want to point to is one of an array of booleans. CoDeSys seems not to be able to process this as it does in the rest of the design software. It seems to only be able to handle straight booleans. Is there a way around this?  Thanks,Saul
-

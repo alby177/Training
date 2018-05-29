@@ -1,6 +1,0 @@
-Hallo Everyone,Is there a Modbus Tcp library for Master & Slave which could be used instead of the Configuration Editor in the new CoDeSys3. I had used the library functions with CoDeSys2, but i cannot find one in the newer Version.And if some one has a short example that would be really great.Thanks and warm regards
-
-Hi,why not use the method and add the modbus to the configuration?BREdwin
-
-HiActually i found using the Library functions much better in CodeSys2. Allthough i use the Configuration in V3, but like to try out the library function aswell. Do we have a library function like the one available for V2.Thanks and warm regards
-

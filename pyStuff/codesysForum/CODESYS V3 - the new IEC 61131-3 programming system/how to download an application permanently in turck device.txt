@@ -1,4 +1,0 @@
-hi,I'm working with a Turck device HMI VT250-57P. I tested my program and i works but when  i disconnect from the PC it desn't work any more. what are the steps I must follow to install peranetly my app in the device.thank you for help
-
-Create a boot application.
-

@@ -1,6 +1,0 @@
-Hi I am trying to polling MOXA E1242 device by Modbus. The attached file is my project. I am sure the modbus tcp master fieldbus work fine. I could see the Modbus polling Ethernet sockets in Wireshark tool that on Raspberry Pi. I have add variables and mapping to Modbus command.But I can not see the variable value changed. It's always zero. How should I setting to make the modbus polling data mapping to variables? Thanks.
-
-Hi,CODESYS does only update variables which are used in the pou's.This is a fieldbus independent feature.So either use your mapped varibale or change to 'enabled2 - always update'BREdwin
-
-Hi Edwin,Thanks. It's work. But I have more questions. 1. I can't get two variable value in the same ModbusTCPSlave Channel. see the attached file ModbusTCPMaster_Value.jpg.2. Where can I see the memory mapping value like %IW0, %IX0.0 ... 3. I only could login to Raspberry Pi and start this project once. If I logout and then login again to start project always got "ModbusTCPSlave : Bus Failure" Error.CODESYS 3.5 SP12 Patch 2 + CODESYS Control for Raspberry Pi SL 3.5.12.10 BRDaniel
-

@@ -1,6 +1,0 @@
-Hello,I am new to CoDeSys; I am working with Festo CPX-CEC C1 terminal. More than one axis is connected to the terminal. My objective is to develop .NET application, provide GUI to control the movement of the axis ( Control and Status parameters). Festo has provided motion library (Festo_motion.lib) to control the movement of the axis. As I understand this library is created using CoDeSys. Festo_motion library provides all the I/O control and status for the controller.OPC, DDE. modbus tcp/ip are the options suggested to send the commands from C++/.NET application to control the axis. When I worked with OPC, I found out that the feedback (refreshrate) of position value is slow compared to CoDeSys sample visualization project.I would like to know whether it is possible to link the library built with CoDeSys in Visual Studio? In other words, Is it possible to create the visualization in C++/.NET and use CoDeSys built library(Festo_motion.library) to communicate with the controller?Thanks,Uma
-
-see answer in general
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

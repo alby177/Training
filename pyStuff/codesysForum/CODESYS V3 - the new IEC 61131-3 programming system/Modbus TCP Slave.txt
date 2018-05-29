@@ -1,6 +1,0 @@
-I am connection my RPi 2 and an PLC. RPi 2 is the Master and the PLC as the Slave and I have my setup correct, but I have a hard time understanding how to make a channel when I need to read ex. Digital output in the PLC. The PLC ouput is from 00001 and is handled by the funktions code 1 and read some register 34029 Modbus offset 4000. Can anyone help me to understand how to make a channel setup.//Peter
-
-Hi Peter,a starting point could be attached example..BREdwin
-
-Hi Edwin,Thank you for your feedback, but still I am not able to have it work as expected.I have attached my project and some PLC Modbus Document and I also add some commend:1. My Raspberry Pi is licenced, and I use the newest package 3.5.9.102. I have not licenced the Modbus TCP Master.3. I want to read i the PLC node ID on Register SR29 = 34029 (Value=20)4. I want to read a timer in the PLC on register R30 = 43030 (Value between=0-7000)5. I want to read the timer setpoint in the PLC on register R33 = 43033 (Value=7000) I have tryed to setup the modbus TCP Slave with channels, but not able to see any valuesPlease let me have you feedback.Best RegardsPeter GroteEdwin Schwellinger wrote:Hi Peter,a starting point could be attached example..BREdwin
-

@@ -1,6 +1,0 @@
-Hello,I wanted to try my RPI as ProfinetDevice. I therefore downloaded the project example and followed the described instructions.Unfortunately, my CODESYS Profinet Device is not running and is displayed with error sign even though the PN-Device Status is in RUN-Mode.In my sencond RPi which I tried to use as ProfinetMaster, I cannot find the slave device (no problems with other devices).I work with the latest version of codesyscontrol (V3.5.10.2).Any ideas?Best regards,Oleg
-
-Hi,is the ethx Adapter on PN device Pi in 'promisc' mode?Check the logger in the plc logger on pn device PI.Is there a message on missing PN device license?BREdwin
-
-Hello Edwin,I added the 'promisc' command to /etc/rc.local. Now everything is just fine.Unfortunately, I did that on my PN-Master first instead of the PN-Device. Thank you for your support!Best regards,Oleg
-

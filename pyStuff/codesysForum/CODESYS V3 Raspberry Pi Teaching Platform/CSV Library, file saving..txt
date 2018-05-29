@@ -1,2 +1,0 @@
-Hello,I have an issue with saving data on raspberry pi via CSV Utility Library.The purpose of this program is to check how much a machine is running within a shift. So I have one program, one function, 2 sensors(10 in total when program implemented). Each use the same function. This function contains CSV.The files are created, but both sensors save in the first file.RESUME : 2 sensors, same function. The Init makes 2 CSV files but save the data from both sensors in the first csv file.Please Help.Thank You!
-

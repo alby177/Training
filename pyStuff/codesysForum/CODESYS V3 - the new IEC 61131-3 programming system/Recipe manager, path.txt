@@ -1,4 +1,0 @@
-Hello!I have another issue that can't solve it. Can be path for saving files for recipe manager changed during the runtime? If i access the save as or load as recipe trough visualization, opens adefault dialog for saving to disk, that is ok. But the directory tree goes only to c: i cannt see whole computer eg. d: disk.In recipe manager I have declared path to c:/recipesI found variables in symbols config. table (screenshot attached) but I don't know how to declare it in PRG.any ideasregards,Alex
-
-Well, nobody knows?
-

@@ -1,8 +1,0 @@
-Hello,Is it possible to search the connected ProfiNET Devices in a list like TOPOLOGIE.Then rename it and safe it.Is there any possibility for this situation ?Best regards
-
-HelloIs there any library that I can try this ?I find a lib with a struct like this...
-
-Hi,this should be covered by the ProfinetCommon.library,BREdwin
-
-Hello Edwin,THX for this information.In the Information (KeyF1) there is a documentation for this situation.DCP_IdentifyBest RegardsAlex
-

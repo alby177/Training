@@ -1,6 +1,0 @@
-Hi guys,i have a question about C# Code Integration in CODESYS.What do I need to integrate C# Code in CODESYS (Visual Studio 2015, Visual Studio 2017)?It is also possible to integrate C# with Visual Studio Express ?Can you give me an example how to integrate C# Code in CODESYS?Thanks in advance.  
-
-Since C# runs on CLR, a non-realtime VM, there is not much chance it's possible to do what you ask.
-
-You can run C / C++ on a PLC which supports this, as far as I know. Then you could use Visual Studio, but it will still not be C#.If you are used to C# and are now doing IEC-61131-3 with what ever hardware, welcome in the late 70ties, early 80ties. They just disocvered hashmaps and unittests!
-

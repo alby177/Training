@@ -1,6 +1,0 @@
-Hi all,I am trying to configure a PC that will run my HMI application. How can I install only the HMI without install the entire CODESYS platform?Thank you, regards.Massimo
-
-In the CODESYS store you can find the CODESYS HMI SL. When you download this, you get the installer.
-
-Ok, thank you.Regards.Massimo
-

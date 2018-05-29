@@ -1,4 +1,0 @@
-I am using CoDeSys V3 PLC, After my downloading the program and when press to start the scan, am getting exceptional error saying Access violation from Application IEC Task.Please explain / give me idea about this error, to overcome.I already tried to increase cycle time and checked.But from all above if I clean all the project and download again the same program works.
-
-Which PLC do you use?Do you use the latest CoDeSys version?You mentioned that after a clean all everything works, does this mean you cannot reproduce it anymore and don't have the problem anymore.Maybe you can attached your application (as project archive) to see if it happens on other PC's as well.
-

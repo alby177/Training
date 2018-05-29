@@ -1,2 +1,0 @@
-Hi,attached an example how to start a heating pump once a day (sure many settings like start it on weekend only are possible see the pdf in the library)This based on oscat building which is available here and in the projectarchive:http://www.oscat.de/community/index.php ... l#msg11566BREdwin
-

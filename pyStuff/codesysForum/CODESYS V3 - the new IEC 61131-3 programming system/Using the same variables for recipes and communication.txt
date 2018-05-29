@@ -1,6 +1,0 @@
-In my project I have many parameters that needs to be in a recipe and also to be transferred via communication (Ethernet/IP) to slave devices.Is it OK to use the same variables for both the recipe and the communication or should I use two different sets of variables (one for the recipe and one for the communication)?
-
-You should be able to use the same variables for the recipe values and to send those values over the communication channel.  However, you may want to use a set of temporary variables for loading your recipe to preview it or alter it before going "live" with the values.  Otherwise, a user cannot change his mind (the old recipe values are lost as soon as you load one).It may be seen as duplication or wasteful, but I prefer to define an array specifically for the communication channel and create one Program that is called every PLC scan that maps program variables to/from the array (especially for Modbus).  That way, I am sure of my data order (data[1], data[2], etc) while still using descriptive variables in my code (CmdSpeed, ActSpeed, FeedRate, etc).
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-

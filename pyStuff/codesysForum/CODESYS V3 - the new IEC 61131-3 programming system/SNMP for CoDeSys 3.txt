@@ -1,2 +1,0 @@
-Are there any activities around to implement basic SNMP services as a CoDeSys V3 library?
-

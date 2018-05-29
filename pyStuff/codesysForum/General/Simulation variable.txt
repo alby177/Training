@@ -1,2 +1,0 @@
-Hi all, does anybody know if in Codesys (I use V3.5 SP12) there is a varibale which gets TRUE if I run it in Simulation, and FALSE if I run it on the PLC?  Thanks,Michele
-

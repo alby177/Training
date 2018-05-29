@@ -1,4 +1,0 @@
-Hi!Is it possible to switch the profile during the installation? Our company has own profile and after the first start of CoDeSys, our users have to switch to our profile manually. This is not comfortable. I want to program in our own installer (who contains the CoDeSys installer and additionally installs the package with our plug-ins and libraries) a code that switches to our profile. Is that possible and how?
-
-Just to clear something. I know that I can call CoDeSys with the needed profile like a parameter on the command line. The question is how to switch our customer specific profile like a default one? I mean that when we call CoDeSys without a parameter on the command line, it must open with our profile. Is it possible?
-

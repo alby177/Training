@@ -1,2 +1,0 @@
-Hello,  I AM USING SERIAL MODBUS MODULES. THE CONTROL IS PERFORMED BY FLANK UP.  MY QUESTION IS IF THERE IS SOME SYSTEM VARIABLE THAT INDICATES THAT THE PORT IS FREE TO BE ABLE TO RE-APPLY THE FOLLOWING   REQUEST and thus be able to optimize the process.I found the one that tells me that all the slaves communicate, but that does not suit me.best regards¡
-

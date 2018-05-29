@@ -1,8 +1,0 @@
-Hello there,I wish and help to pass data from third party application into Test Manager for example, values for comparison in Test Manager.Please advice and Thanks.
-
-Hi, Labview,labview wrote:I wish and help to pass data from third party application into Test Manager for example, values for comparison in Test Manager.Please advice and Thanks.I'm sad that you did not get any answer for your questions yet.I don't want to sound impolite, but I think the main reason for this is that your question lacks some important context information which allows others to clearly understand your problem and your goals.Eric S. Raymond, the famous and well-known author and software engineer, has written How To Ask Questions The Smart Way.Specifically, you did not describe your problem detailed and clearly enough to give a clear picture of what you want to achieve.Thanks for your patience.
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbH Inspiring Automation Solutions
-
-Hi M.Schaber,Sorry for not explaining clearly.
-

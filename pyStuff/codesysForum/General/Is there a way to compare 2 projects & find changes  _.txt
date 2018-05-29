@@ -1,8 +1,0 @@
-Hi,is there a way to compare 2 .pro files (Codesys v2.3) and find all the differences between them ?
-
-Hi,yes there is, but not as a part of CoDeSys.Make export files of both of entire projects (Project ==> export). This will create plain text files, which can be compared by several tools (e.g. Total Commander, WinMerge ...).
-
-Hi pnn,         Go to project menu and you can find compare in that.You can compare two .pro projects with that.Have a good day
-
-Hi pnn!You can also make a 'Merge' between two projects. It's in the same menu./Torbjörn
-

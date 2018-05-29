@@ -1,2 +1,0 @@
-Hello,I would like to blink a output (GPIO23) of Raspberry model A.Connect with RPi okHow declare this output.thanks for your help.
-

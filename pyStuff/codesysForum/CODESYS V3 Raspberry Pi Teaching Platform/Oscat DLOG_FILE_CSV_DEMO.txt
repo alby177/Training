@@ -1,2 +1,0 @@
-Hi, I'm trying to get the DLOG_FILE_CSV_DEMO to work in codesys 3 on a raspberry PI.If I compare the running program with a Beckhoff CX, i notice that the timestamp does not change on the PI.Also the filename stays the same and the file is not written on the SD card. There are no errors.- What is wrong with the timestamp in the real time view, it stays like '#A-#D-#H-#N:#R:#T'- What is the format to write to the sd card of a raspberry Pi on linux?
-

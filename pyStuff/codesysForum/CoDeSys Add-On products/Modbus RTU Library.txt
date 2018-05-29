@@ -1,6 +1,0 @@
-I want to communicate with an equipment using modbus RTU. But I can not see any modbus RTU library on V2.3 Codesys.Anybody can help me regarding this issue ? you are welcome.Regards,Eka
-
-look for oscat.de they have a nice network lib.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

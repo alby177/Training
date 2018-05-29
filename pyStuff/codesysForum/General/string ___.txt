@@ -1,6 +1,0 @@
-Hi            Is there any chance in string processing '???' can occur.eg:sUnitID:string(24);sUnitID:='CD1234568908' is the actualagain passing it to another stringsData:string(24);sData:=sUnitID;sData:='CD1234568???'Any string overflow problem???ThanksSarath
-
-are you forgetting the newline and return?
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

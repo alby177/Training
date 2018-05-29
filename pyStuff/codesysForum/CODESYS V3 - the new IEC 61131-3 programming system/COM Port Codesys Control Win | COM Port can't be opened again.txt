@@ -1,4 +1,0 @@
-Dear Community,I've following problem:I use the SysCom Library to open a defined COM port and I use the Library to close the COM port, which also works well. But If I want to open the COM port again, then it fails. The curious thing on this is, that this only happens with the codesys control win. It works well with the BBB and Pi.The only current workaround I have, is to restart the Codesys Control win runtime. Is there an solution for this problem?Thank you in advance!
-
-_________________Building & Process Automation with HVAC Library for CODESYS© - www.hvac-automation.com
-

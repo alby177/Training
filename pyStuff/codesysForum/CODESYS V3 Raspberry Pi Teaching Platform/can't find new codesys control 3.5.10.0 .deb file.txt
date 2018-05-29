@@ -1,6 +1,0 @@
-Hello,I've updated Codesys from 3.5.9.40 to 3.5.10.0, and downloaded + installed the codesyscontrol for raspberry pi package again.When i try to connect to my raspberry now, codesys refuses because the pi doesn't have the correct and new version of codesyscontrol installed.If i go to "update Raspberry Pi", there is no .deb file selectable. i searched for *.deb in all directories on my computer, and have found none. how can i get the new .deb file?
-
-Hi,should be here after installing/updating the package:"c:\Users\<YourWindowsUserName>\CODESYS Control for Raspberry PI\codesyscontrol_arm_raspberry_V3.5.10.0.deb" BREdwin
-
-Thanks for the email with the file. This seems to be a bug. There was no .deb file on C:\. i also checked this directory. although, there isn't a "users" directory on my C:\ drive, it's named "Benutzer" here.
-

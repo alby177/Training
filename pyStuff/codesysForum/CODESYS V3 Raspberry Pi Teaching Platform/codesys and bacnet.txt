@@ -1,2 +1,0 @@
-Hello:there is some library or how to read or publish bacnet points without using the codesys store package, I need to read and publish 1 bacnet point and clear for that I do not realize the price of the package.Best regards,
-

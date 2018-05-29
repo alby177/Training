@@ -1,2 +1,0 @@
-When I installed the codesys, why I could not select the path of installation? It always choose the  path c:/winnt.
-

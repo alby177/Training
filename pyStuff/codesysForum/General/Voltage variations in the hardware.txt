@@ -1,5 +1,0 @@
-Hi, I've got a system which has an input voltage which can vary between 12 and 36V dc, is there any way I can get one of my can nodes to output  at a steady 10V dc
-
-many thanks
-Keith
-

@@ -1,2 +1,0 @@
-I'm working on a serial communication RS232 between an Ivu BCR Banner and a HMI VT250 Turck I hesitate between COM.SysComRead and COM.Read ??  
-

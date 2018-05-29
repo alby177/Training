@@ -1,4 +1,0 @@
-I would like to save my trend file so when the PLC boot up I then can load the old trend file, is there any way to do this?I can give the file a name (I use "/home/pi/tend.txt"), but I have some problems to make a bool variable (that goes true at boot and power off) that I can use to trig the load/save.The help write about some system events called "PrepareStart" and "PrepareStop", but I get no chance to use these as triggers for an event.
-
-You can use fb_init and fb_exit of a funtion block
-

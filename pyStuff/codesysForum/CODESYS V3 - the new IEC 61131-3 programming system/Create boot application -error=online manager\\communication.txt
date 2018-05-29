@@ -1,4 +1,0 @@
-Hello, I  use a Codesys v3.5 SP1 Hotfix from Turck. I  try to generate an .app file for runtime in CodesysHMI. The result is the following error :Attachment:CreateBootApp.png
-
-I have found some settings about this error in Codesys Manual.How can I apply this to the software ?Attachment:Comm buffer size.png
-

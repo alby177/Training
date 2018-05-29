@@ -1,2 +1,0 @@
-Hi,I am looking for some library with pipes, pumps and so on for Codesys 3.5. Does exist any library? It would be nice if could be connected with OSCAT.Thanks,
-

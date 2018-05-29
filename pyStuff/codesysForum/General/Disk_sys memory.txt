@@ -1,2 +1,0 @@
-I would like to know how can I check, from my CLP program not command Browser, the avaialable free memory in disk_sys. Is there some library or command for that?
-

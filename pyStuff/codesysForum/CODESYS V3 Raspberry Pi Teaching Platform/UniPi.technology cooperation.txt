@@ -1,6 +1,0 @@
-Hello Codesys users,my name is Adam Skorpik, I am part of UniPi.technology team. We are still looking for someone who will help us to create drivers for UniPi.We could offer all hardware for development.Please let me know, if You are interested in.Best regardsAdam Skorpikskorpik@unipi.technology
-
-I have one of your cards as well as running codesys from time to time so this would be interesting.I don't have the card with me but aren't you using some kind of MCP chip for the IO?
-
-I have just release a package of drivers for the UniPi board. See http://store.codesys.com/codesys-for-unipi.html
-

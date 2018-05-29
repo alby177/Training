@@ -1,6 +1,0 @@
-Hello everybody,I am new to Codesys and I need to know, if there is a possibility to export a project to another environment like TwinCat. I could not find anything on the Internet so far. (For example I use Codesys with "CODESYS Control RTE SL" for Beckhoff and I made a program. Is there a way I can export this program, so another person can work with it in TwinCat?)Greetings from Germany!
-
-The project or portions therof can be imported/exported via PlcOpen format.  Libraries can be used directly in TC.  Both systems will need to have the same libraries installed of course.
-
-Thank you!
-

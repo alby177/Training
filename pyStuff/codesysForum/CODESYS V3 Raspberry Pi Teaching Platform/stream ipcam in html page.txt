@@ -1,2 +1,0 @@
-good morning,Would it be possible to include a frame in a html code page that contains the flow of a network ipcam?If so, which file should I put it in?Thank you, Alberto
-

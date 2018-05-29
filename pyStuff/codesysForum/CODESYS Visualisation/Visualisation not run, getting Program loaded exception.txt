@@ -1,8 +1,0 @@
-Codesys plc , we able run in simulation mode and tested logic.But visualisation  unable keep in run mode, getting error " Program loaded exception- License file invalid" Please give solution on this.
-
-probably you copied, too much, save your program using export. Then reinstall the program or run the licencemanager.or start a new project with a free device. like softplcHowever this will also stop after time expired.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
-Hi,guess you are using CODESYS V3 and this could be workarounded by:VISU_NO_EXCEPTION_HANDLINGBREdwin
-

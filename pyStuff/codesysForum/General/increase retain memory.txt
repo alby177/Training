@@ -1,4 +1,0 @@
-hello..i make a program that contain numerous number of retain memory. is there any way to increase this memory? my plc doesn't have a memory slot.thank you..mrh
-
-mrhendrik wrote:hello..i make a program that contain numerous number of retain memory. is there any way to increase this memory? my plc doesn't have a memory slot.thank you..mrhHi,How many Bytes do u want to retain ?Regaurds,Kiran
-

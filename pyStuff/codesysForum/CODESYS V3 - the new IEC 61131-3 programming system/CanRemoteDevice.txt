@@ -1,2 +1,0 @@
-Is there an easy way to access the Node ID, Network ID and more of a CANRemoteDevice available as an Device in the CANopen manager?.CANopenState is nice but..Can I find more info about the type CANRemoteDevice?
-

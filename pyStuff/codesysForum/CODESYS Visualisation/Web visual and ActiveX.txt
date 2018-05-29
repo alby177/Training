@@ -1,9 +1,0 @@
-I have found many limitations with the Alarm tables so I have been thinking of a better control to retrieve and display events to users among other things. I have read through the web visualization manual but it is not clear how if at all an ActiveX object can be displayed. I am using a windows CE box running CoDeSys and I want to extend some of the functionality of CoDeSys through better visualizations using the .net enviroment but I am not sure if there is any compatibility with the web service. What are the limitations on Active X and the web server? One thing I am trying to do is remove the dependency of strings from with in the PLC code. Decoding event codes and translating them into human readable string/sentences is best performed by windows software not PLC software.
-
-Is it possible or is there a manual for calling windows dll's from within CoDeSys or do I need to create FB that perform the task?
-
-If I can't have an ActiveX displayed via the web I can still use the CoDeSys table control to display my custom data.
-
-_________________Thanks,
-Steve Pfeifenroth
-

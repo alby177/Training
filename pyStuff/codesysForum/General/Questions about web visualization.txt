@@ -1,9 +1,0 @@
-Hello, I participate to the CoDeSys user conference in Grenoble and I was really interested by the conference. Thanks again for all.
-
-I would like more details about the web visualisation:
-
-Is it possible to use another web server like Apache or IIS?
-Do you provide the 3S web server for porting to a specific platform like you do for the CoDeSys SP?
-
-Best
-

@@ -1,6 +1,0 @@
-Hello,I've the g-codes of a 2d shape in x-y plane.but i also have a set of functions in x-z plane {f(x) = z}so, is that solution suitable for softmotion control?ReadNC ---> interpolator     --(x,y)---->(1)(1)--(x,y)----> checkvelocities --(x,y)---->(2)(2)--(x,y)----> smoothpath   --(x,y)---->(3)(3)----(x,y)--> controlaxis_bypos  --> axis_x, axis_yup to here, x and y axis are controlled. below, z to be controlled.(3)----(x)----> f function  ---(z)--->  control_axis_by_pos ----> z axisSo with this solution, no z coordinate velocity is controlled... Is that a problem?Regards
-
-the real speed is not controlled anyway, so if max x and maxy then speed is 1.4 times higher.I would control speed by adding all speeds and then divide by max speed, then each speed will be 0.x times its setting speed.this way the speed in any direction will be always max.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

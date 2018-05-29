@@ -1,4 +1,0 @@
-Hello, i'm working with Codesys V3 and the PLC Handler configured for ARTI3. In my research, i see that the PLC Handler works only when a Symbol Configuration is loaded on target, in all other cases fails in execution/ commanding. Also if an empty Symbol Configuration is loaded to the target the result is negative. In detail for fails, they are in relation to GetPlcStatus or SetPlcStatus always resulting error code 1. In case if configure the omit of loading Symbol Configuration on connect, all interaction with the interface results error code 5.Is there any possibility to get it working without a Symbol Configuration on device?
-
-Hi,no this is not possible, symbolconfiguraton is mandatory for using plchandler/opcuaBBEdwin
-

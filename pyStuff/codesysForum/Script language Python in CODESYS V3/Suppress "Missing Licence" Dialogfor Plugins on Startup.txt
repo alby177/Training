@@ -1,6 +1,0 @@
-Hi support Team,is it possible to suppress the Dialog-Box which requests for Plugin-Licences that are not available at CODESYS Startup-Time?CODESYS should startup by script and execute a python script without loading the Plugins.Can the startup behaviour be adjusted?Thanks in advance.
-
-Hi DBaur.DBaur wrote:Hi support Team,is it possible to suppress the Dialog-Box which requests for Plugin-Licences that are not available at CODESYS Startup-Time?CODESYS should startup by script and execute a python script without loading the Plugins.In the Online Help you can find the CLI parameter --skipunlicensedplugins which should solve your problem.BRMartin
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
-

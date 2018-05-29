@@ -1,2 +1,0 @@
-Hello,i have a list of couple thousand global variables saved in excel and i want to transfer them into Codesys Is there a way to transfer those variables faster and more effectively?
-

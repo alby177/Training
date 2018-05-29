@@ -1,6 +1,0 @@
-Hi,I am using two PM591V2 CPU redundant systems one for RO and One for DEMIN system with ABB Digiviz SCADA through OPC server. Is it possible to connect these four ABB PLCs to DIGIVIZ without using hardware that is in simulation mode? if yes please provide me more information. Thanks in advance.Ashish
-
-yes it is possible however it will use so much processor power that nothing will happen as the timing will be terrible, like minutes instead of milliseconds so unworkable.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

@@ -1,6 +1,0 @@
-Hi, I'm developing a functional block that has a fixed number of inputs. I just need to know internally what these inputs are being used, because the user can configure a smaller number of inputs and leave the other inactive.
-
-The easiest way is to define the parameter to have an invalid initial value and then test for that the first time the block is executed.A little more involved method is to define the parameter as REFERENCE TO {type} and then on the first execution use the __ISVALIDREF() macro (not certain about spelling as I'm away from my codesys workstation) to determine if the input is connected to anything.
-
-_________________Rick
-

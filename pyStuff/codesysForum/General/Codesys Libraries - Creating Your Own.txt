@@ -1,6 +1,0 @@
-I have created my own standard libraries, but have run in to an issue I hadn't expected.Inside my library file, I have imported other libraries, manufacturer libraries for the PLC I am using. Now, I thought that if I'd imported a library in to another library file, I'd only need to import that one library file to have access to the function blocks of all libraries inside the one loaded.Sadly, that doesn't seem to be the case and I simply get a ton of errors saying "Function [XXX] doesn't exist" (or something like that). If I import the libraries that are already imported in to the master library, all works fine.Is there something I am doing wrong here, or is this just a limitation of Codesys / to stop license issues ect.
-
-copying will work in ST , inserting complete libs will give problems, also have a look on oscat.de for a big lib.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

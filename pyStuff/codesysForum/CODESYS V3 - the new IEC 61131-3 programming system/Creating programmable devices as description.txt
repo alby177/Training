@@ -1,6 +1,0 @@
-There is one thing in wondering about. If i generate a device via .devdesc.xml file then it always appears as a parametrable device. I can never select it as programmable device (right below the project node). Is it possible to generate custom programmable devices using .devdesc files and if so what do i have to do to generate one?
-
-Buy the CODESYS Runtime Toolkit.The programmable device should have a runtime on it to execute the code.If it is your own hardware, then contact 3S-Smart Software Solutions, or your local distributor.
-
-If you have a look at beck-ipc, they have an SDK for one of their development boards.That downloadable SDK has a device with sourcecode that you might be able to use and modify to your needs.It does not give much help but you could probably start and play around with it as long as you are happy writing your device code in IEC.Go to http://www.beck-ipc.com/en/download/index.asp and search for DK241. What you want to download is"CODESYSV3@CHIP-SDK V1.0" and "CODESYS v3.4 programming system for IPC@CHIP® version 3.4 SP3 Patch1"
-

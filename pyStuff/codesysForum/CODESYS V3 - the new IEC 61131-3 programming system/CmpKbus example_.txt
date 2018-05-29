@@ -1,6 +1,0 @@
-Hello,Are there any examples regarding the CmpKbus library? Or at least from where to start?Thank you!
-
-Hi,This is not needed to do manually...Just add the kbus in the configuration (device tree) then download the project and rightclick and scan the devices... add them to your config , download with the new configuration ...map variables etc.I see no reason to use the lib manually in the application maybe i'm wrong.BREdwin
-
-Thank you Edwin for the answer.The idea was, after working with eCockpit, to read the values of the IO modules without declaring the modules on the bus. But i guess that this is hard to implement by a common user.
-

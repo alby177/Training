@@ -1,6 +1,0 @@
-Hi there  ,Is there a way to install visualization styles through python script?
-
-Hi chenhe.chenhe wrote:Is there a way to install visualization styles through python script?There is no Scripting API for the Visualization repository at the moment.We have the entry CDS-53377 in our database to create a Scripting API for the Visualization repository but it is not on the roadmap at the moment.BRMartin
-
-_________________Check out the CODESYS store: http://store.codesys.com/CODESYS® a trademark of 3S-Smart Software Solutions GmbHInspiring Automation Solutions
-

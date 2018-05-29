@@ -1,2 +1,0 @@
-Hallo , ich habe ein problem mit raspi und Codesys. manchmal funktioniert mein Webvisu, nach einem reboot nicht mehr . Da steht immer logging buffer overflow, log message dissmissed. Wenn ich aber nach einem reboot ein Test projekt lade und danch mein Projekt klappt es nur bios zum nächsten reboot. Bitte helfendankeGrußTabu
-

@@ -1,2 +1,0 @@
-Is it posible in IEC program to detect that it is running in IDE in simulation mode?
-

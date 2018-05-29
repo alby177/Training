@@ -1,6 +1,0 @@
-HiI'n new to codesys, I'd like to know how can I port some codesys v2.3 library with *.lib extension to Codesys v3.0? Thanks.
-
-Just choose File -> Open Project and change the pulldown in the lower right form "All supported files" to "CoDeSys library files before V3.0".
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-

@@ -1,7 +1,0 @@
-wether it is possible to implement 'C' Code in Codesys V 2.3 programing. If yes let me know where to do and how to do. 
-
-
-Thanks and Regards
-
- Tagore
-

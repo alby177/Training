@@ -1,6 +1,0 @@
-I'm having an issue with saving data to an SD card on my ac500.  I'm saving to an SD card and my code is set to append the file but in reality it overwrites the first line over and over again.  Apparently the project file is too large to attach so here is the link to it, https://drive.google.com/open?id=0B7EhQ ... lBpM2lJcXM
-
-Please check with the ABB documentation to verify they actually implemented the append mode. Some brands only implement read and write modes and append is not supported (uses write mode).
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-

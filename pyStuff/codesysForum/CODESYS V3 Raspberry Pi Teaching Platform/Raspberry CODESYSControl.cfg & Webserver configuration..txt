@@ -1,8 +1,0 @@
-Hi again.Where we can find info's for the parameters that accepted from CODESYSControl.cfg?Where we can find info's for the parameters of Webserver like port number max client number...?Regards
-
-Hi,in /etc/CODESYSControl.cfg[CmpWebServer]WebServerPortNr=8080 the max num of Client you need to setup in CODESYS on the VisualisationManager 'Extended settings'client settingsMaxiumum number of Visualisation ClientsBREdwin
-
-Is there any guide for the CodesysControl.cfg?
-
-Hi,not really, this is covered by the manual which you get if you use a runtime toolkit which is not free of charge.Maybe we need to extract the config file part from that documentation if that is possible.BREdwin
-

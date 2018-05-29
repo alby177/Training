@@ -1,8 +1,0 @@
-Hi,I'm trying to read the Serial number of the PLC using the SysTarget library function, "SysTargetGetSerialNumber" function.I get a result of 12, when I'm expecting a value of 2341920805002900322006146049 for the Serial number.What am I missing?I have included the screenshot of the running program.
-
-Hi,which plc are you using,this does not work at the moment... will be implemented to the 3.5SP13 - (June) release.BREdwin
-
-Hi Edwin,Thank you for your reply. I'm trying this on a Festo PLC (CECC-LK).Is there another way to read any unique ID of the PLC? Say Mac ID or Serial number as an example.Edwin Schwellinger wrote:Hi,which plc are you using,this does not work at the moment... will be implemented to the 3.5SP13 - (June) release.BREdwin
-
-Hi,see attached Project...Code:PROGRAM PLC_PRGVAR   diNumber: DINT;   iAdapter: DINT;   stName: STRING(255);   stDescription: STRING(255);   aby_address:ARRAY[1..6]OF BYTE;END_VARCode:getnumberofadapters(ADR(diNumber));FOR iAdapter := 0 TO diNumber DO   getadapterinfo(   iAdapterNum := iAdapter,    pbName := ADR(stName),    pbDescrition := ADR(stDescription),    iBuffersize := SIZEOF(stName),    iMacLength := 6,    sMacAdress := ADR(aby_address));END_FORBREdwin
-

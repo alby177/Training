@@ -1,6 +1,0 @@
-Hi,Does anyone have experience with Baumer MSAA servo drives ideally in Wago eCockpit?When the nodes start up they go in pre op mode, but then when I set the CAN manager to auto start or send an NMT to start the node, the drive seems to reset after a very short period (few seconds). Any idea why a CAN drive would do that?Kind RegardsHeinzSent from my SM-G935F using Tapatalk
-
-Hello,I'm not sure which options are available on eCockbit but I would playwith These Settings here:(screenshot)BREdwin
-
-Same setting is available, I can now write and read SDOs and I receive the TPDOs.Unfortunately the drive doesn't accept a new setpoint. It returns OK but when I read the target position back it stays on a certain value. Hit another brick wall.Sent from my SM-G935F using Tapatalk
-

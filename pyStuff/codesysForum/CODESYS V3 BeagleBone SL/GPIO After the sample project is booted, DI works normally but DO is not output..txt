@@ -1,4 +1,0 @@
-Hi,GPIO After the sample project is booted, DI works normally but DO is not output.1. It works normally at boot time. (LED On / Off)2. Upon completion of booting, DI and AI will be normally input. DO (LED) will not react after being turned off.3. When I connect, the variables change normally, but not the actual LED.4. Downloading the program again is the same.5. After adding or deleting variables, download and build the program. (LED blinking)6. After downloading to the boot project and resetting the power, the same phenomenon is repeated.7. Even if I test it with EtherCAT, it normally boots. Only DO operates abnormally.8. Please check the attached project file.9. The board was BBG(wired) and used version 3.5.10.Best Regards,Sam.
-
-This is presumed to be a licensing problem.This problem has been fixed after changing the board to a BBG with a license and updating to 3.5.10.20.
-

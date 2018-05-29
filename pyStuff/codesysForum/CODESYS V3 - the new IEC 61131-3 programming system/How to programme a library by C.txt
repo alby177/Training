@@ -1,4 +1,0 @@
-hi enginners    I want to programme a library by C. And then this library need to be load into CoDeSys. Can I realize it.
-
-Only if you are an OEM and have purchased the runtime toolkit.Then you can link your external library (written in IEC, C or C++) to the runtime system.
-

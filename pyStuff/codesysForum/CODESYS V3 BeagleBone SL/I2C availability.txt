@@ -1,2 +1,0 @@
-Although it is more expensive then the Raspberry runtime, the BeagleBone runtime does not include the i2c protocol. (I'm not able to find it..).Are there plans for its implementation?
-

@@ -1,8 +1,0 @@
-hi,it is possible to exchange data between 2 rpi or more like ethernet IP or modbus but not using IP address of Rpi: using ID of raspberry, MAC address or other ?
-
-Hi,do not understand exactly the problem.Could you explain more in detail. Is the problem that you do not know the ip address of the PI (because of DHCP served?)BREdwin
-
-Yes, it's that. IP could be change but ID ou MAC adress never change.CODESYS software is able to detect all raspberry without know IP.
-
-You could use network variables and set up as broadcast but this is very bad practice for programming.  Best option is to set static IP ( ssh into RPi >> sudo nano /etc/dhcpcd.conf >> append the following to this file with your desired ip settingsinterface eth0static ip_address=192.168.1.XXXstatic routers=192.168.1.XXXstatic domain_name_servers=192.168.1.XXX
-

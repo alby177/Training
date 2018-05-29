@@ -1,2 +1,0 @@
-hello :I am communicating raspberry with a modbus slave. The communication is correct but I would like to know if there is any variable that tells me that the slave stops working.From the application I see it because the green symbol disappears but there is some variable that can show it to me. I am communicating with parity none.best regards
-

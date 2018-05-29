@@ -1,6 +1,0 @@
-Is it possible to Cast or type convert and Enumeration to a BYTE, as the ECU I am working on is 16-bit so I would assume the default type is WORD.
-
-The reason behind this is to simplify the reading of my application to others as the BYTE in question has fixed constant values.
-
-Just use WORD_TO_BYTE(enum)
-

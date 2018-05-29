@@ -1,8 +1,0 @@
-What is the method to trigger the transmission of J1939 PGNs from the application when using 'Transmission Mode' = "Application Triggered"?  Is there a global variable that is used?  A library function call, etc...?  Please advise.
-
-I think bvanbata may have moved on from this problem, but I have found the answer, in case anyone else is looking for it.If you have a device called J1939_ECU, then you call the function J1939_ECU.TriggerPGByIdx().  It takes an integer as its input - this is the index of the PGN you want to trigger in the list of PGNs for the device.
-
-Related topic:  need to find how determine j1939 message has been lost? In other words message has timed out and exceeded expected PRT.  Like the receive Blocks in v2.3.
-
-Ha!  Yeah, I've been asking that question, too.  Apparently, this will be supported in the J1939 stack as of V3.5 SP5.  In the meantime, you have some options to do it manually using the CAN-API found in the CANbus example available for free at the CODESYS store.
-

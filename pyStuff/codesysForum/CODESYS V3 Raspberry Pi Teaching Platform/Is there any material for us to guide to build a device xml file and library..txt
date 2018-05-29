@@ -1,4 +1,0 @@
-Is there any material for us to guide to build a device xml file and library ?I'd like to share my devices & libraries & applications, if I can know how to write it first.                                                     Thank you.
-
-Hi,this:"c:\Users\<YourWIndowsUserName>\CODESYS Control for Raspberry PI\3.5.10.20\Documentation\RaspberryPI_CodesysV3_FirstSteps_EN.pdf" and maybe the faq how to work with libraries:viewtopic.php?f=22&t=5641&p=10677#p10677If you update your device description XML you need to install it again to the device repository and do not forget to update the Version in the projectby rightclick -> update deviceBREdwin
-

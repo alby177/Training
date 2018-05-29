@@ -1,2 +1,0 @@
-The installer "configuring" about 30 minutes. With previous versions it was happening too (3.5.11.x). Why so?OS: Windows 10 LTSB x64Hard drive: SSDRAM: 16 GBInstalled Codesys: 3.5.10.40, 3.5.11.10 x64, 3.5.11.20 x64
-

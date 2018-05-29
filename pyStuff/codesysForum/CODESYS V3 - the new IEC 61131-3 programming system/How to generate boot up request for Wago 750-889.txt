@@ -1,2 +1,0 @@
-Hi allI'm trying to implement Network Variables protocol for communication between my application and Wago controller.Generally it works fine for me, I was using this doc: Network_Functionality_V23.pdfHowever, there is one question: How should I generate "boot up request" which I need to send to controller after my aplication start?This doc does not explain how this packet should be constructed ?Is there come more detailed doc or an example ?Best RegardsMarek
-

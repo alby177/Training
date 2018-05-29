@@ -1,6 +1,0 @@
-Hello evrybody.there is many post about the SysProcess library and particulary about the "Execute Command".I 've follow some exemple read in this forum and it works fine on my Raspberry pi, but only the command which doesn't need to be execute in the graphic interface.I explain :First i adjust the CODESYSControl.cfg toCode:[SysProcess]Command=AllowAllIf i try to excute :Code:command1 := 'reboot';"SysProcess SysProcess Execute Command2(pszCommand:=command1 ...)it works fineand if i try to excute : Code:command1 := 'leafpad'; "SysProcess SysProcess Execute Command2(pszCommand:=command1 ...)nothing appendif run the command 'leafpad' in the rasbperry command terminal, it works.So is it possible to execute command or program with graphic interface.Thank you.
-
-Hi,if this is >=3.5SP11 there is the section for doing this in /etc/CODESYSControl_User.cfgso move your setting/section from /etc/CODESYSControl.cfg to /etc/CODESYSControl_User.cfgBREdwin
-
-Hi Edwin.I use the last one so : 3.5.12.20I tried to move the setting  Code:[SysProcess]Command=AllowAllfrom /etc/CODESYSControl.cfg to /etc/CODESYSControl_User.cfg.but same result.it seems that the runtime process does not have the rights to execute graphical applicaton
-

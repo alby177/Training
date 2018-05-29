@@ -1,8 +1,0 @@
-Hi
-
-What kind of encryption method's is used in CoDeSys, when saving as Encrypted CoDeSys project ?
-
-Regards
-
-Steen
-

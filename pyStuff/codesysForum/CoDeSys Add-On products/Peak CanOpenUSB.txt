@@ -1,4 +1,0 @@
-I want to use a USB To CanOpen card from Peak to use as a CanOpenMaster in CoDeSys SP Win V3. I activated "CmpPUSBCanDrv" from the CoDeSysSP.cfg and it works for a while then the PLC stops and I get "Program loaded - EXEPTION" in the message window. Does anybody know this error?
-
-this works meanwhile, pretty stable, but use the actual versions. See this post is from 2009
-

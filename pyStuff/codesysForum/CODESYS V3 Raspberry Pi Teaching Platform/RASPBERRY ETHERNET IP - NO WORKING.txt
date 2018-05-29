@@ -1,4 +1,0 @@
-H i,I´m trying of make an ETHERNET/IP comunication, but i have a problem "The bus no working..." message appears. The brown triangles appears for the Ethernet_IP_Adapter and modules.  I can´t find the mistake   .
-
-Hi,Try to scan the slave...BREdwin
-

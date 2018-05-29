@@ -1,2 +1,0 @@
-He everyone,I am just new user in CodeSys V3.5.When I try to run my project in simulation mode I have the message "The Device description for the simulation is not installed"Can anyone Help?
-

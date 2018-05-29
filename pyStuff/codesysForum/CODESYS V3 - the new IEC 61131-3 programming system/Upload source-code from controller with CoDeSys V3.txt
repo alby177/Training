@@ -1,4 +1,0 @@
-Is it possible to use the same functionnality we had with V2.3 to upload a programm?I do not find any information on the new V3 for this. 
-
-Yes, this is possible. Through the menu "file" you can do an upload and download of the source.Through the menu "Project" => "Project settings" you can choose which additional files can be downloaded and when the source files should be (automatically) downloaded.
-

@@ -1,5 +1,0 @@
-hai every body,
-        Iam ramu from India.I have MESSUNG made NEXZEN-5000 Series controller.But my pc does not have seriel port.
-
-        IS THERE ANY WIRELESS COMMUNICATION METHOD FOR COMMUNICATING BETWEET PC & PLC.
-

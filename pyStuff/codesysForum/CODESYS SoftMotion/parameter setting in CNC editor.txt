@@ -1,6 +1,0 @@
-i hav been run my machine by using "FUNCTION BLOCKS" (i.e Moveabsolute, Move relative...... ).  
-
-Now i am moving towards a step forward. I have managed to run my machine ( x & y direction )using CNC editor.  But by using CNC editor there is kind of very bad vibration in my machine which were not the case when i was using Fuction blocks.  
-
-What should i do to stop this vibration??? 
-

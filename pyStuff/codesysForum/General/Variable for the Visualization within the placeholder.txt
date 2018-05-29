@@ -1,8 +1,0 @@
-Hello!
- This is a request!
-Is it possible for 3S to release the variable for the Visualization within a placeholder concept, then it will be possible to change the visu within the placeholder.
-
-Almost every variable is there execpt this one.
-
-/Torbjörn
-

@@ -1,2 +1,0 @@
-runs on Codesys V3.5sp9patch1 on the raspberry pi ...Attachment:robo.PNGAttachment:RoboDemo.zip
-

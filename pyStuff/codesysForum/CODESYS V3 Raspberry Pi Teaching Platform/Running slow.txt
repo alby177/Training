@@ -1,4 +1,0 @@
-Hello.I have a problem with my raspberry, if i do not have the onewire connected, all other gpio activates and deactivates fine through the codesys program i made, but once i insert a onewire temperature sensor, i takes 5-10 seconds to reactif i connect the temperatur sensor, it displays the temperatur and adress of the sensor fineany thoughts?
-
-Hi,you need to use the onewire devicesin an own task.See attched example application.BREdwin
-

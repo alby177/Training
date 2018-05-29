@@ -1,6 +1,0 @@
-Welcome,I work on CoDeSys 3.5 SP3 Patch5.I have got two visualizations (not two bitmaps into one vizualization) and one variable of BOOL type.I want to change these two visualizations by the state of my variable.Varaible = FALSE --> visu1Variable = TRUE --> visu2.Any sugestions, please?
-
-In the visualisation manager enable the option "Use CurrentVisu Variable".Now in your code you can write to this variable, depending on the state of your bit. The string value is the name of your visualisation.Code:IF xBit1 THEN   VisuElems.CurrentVisu := 'Visu1';ELSE   VisuElems.CurrentVisu := 'Visu2';END_IF
-
-Fast and perfect advice.Thanks.
-

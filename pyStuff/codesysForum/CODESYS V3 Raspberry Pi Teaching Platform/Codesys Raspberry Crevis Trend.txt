@@ -1,2 +1,0 @@
-Hi! Im new here and amateur in codesys trend things. can somebody teach me?I have Raspberry for plc, crevis for analog inputs. and those are ok and running.Example: If need to get printable temperature data out in exelboard form how the trend post to do?Do i have to do Visualization at all because all i need is to print if needed?In codesys is it possible to put path for data what it saves? and folder? and what form is it?Big thanks for answers alreadyJarmo
-

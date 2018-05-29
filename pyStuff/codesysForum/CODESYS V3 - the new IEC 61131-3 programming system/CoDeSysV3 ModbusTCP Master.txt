@@ -1,4 +1,0 @@
-Is there anyway to do the following to a ModbusTCP Slave object in run-time:1.  Change IP2.  Stop Node from Scanning3.  Disable Channel from scanning4.  Modify Parameters of Channel5.  Do Transaction Based Request without adding a channel
-
-_________________The Original SoMachine Ninja
-

@@ -1,8 +1,0 @@
-i am trying a pi model 3 b+ with the same program than the model 3, with a mcp3008.on the model b+, the spi is enable, works with a python program, but not with Codesys.The wiring is the same, the parameters too (/dev/spidev0.0), it work on the model 3, but not the model 3 b+.Someone have an idea ?thanks
-
-Hi,guess this might solve your Problem(reduce SPI speed):viewtopic.php?f=21&t=8658BREdwin
-
-HIMany thanks Edwin, it works for me, great!Thierry
-
-Hi i have a last problem witrh mcp3008:i wired 2 mcp 3008 the first with chip select on pin 26, the second with chip select on pin 24.I set 2 spi master , the first on /dev/spidev0.0, the second on /dev/spidev0.1.It works, but when the two are wired, it seems adding the 2 values on the same input mcp3008.auiValue[0], with the mcp3008_1.auiValue[0].Have i proceed in the wrong way ?Thanks Thierry
-

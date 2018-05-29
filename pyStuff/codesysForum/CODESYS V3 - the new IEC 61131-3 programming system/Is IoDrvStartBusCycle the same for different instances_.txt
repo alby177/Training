@@ -1,2 +1,0 @@
-I'm wondering if a new task is created for each IoDrvStartBusCycle if I add a new instance for the driver? It seems that there is only one task for all driver instances. Am I right?I want to use one driver for parallel operation with different serial ports. Is it possible to do this with a single driver?
-

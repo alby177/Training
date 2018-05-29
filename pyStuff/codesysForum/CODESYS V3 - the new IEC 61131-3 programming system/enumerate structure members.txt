@@ -1,2 +1,0 @@
-Hi all,Is there a function that enumerates a structures members?I need to enumerate then iterate over it and get each member's value.Thanks.
-

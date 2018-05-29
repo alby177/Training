@@ -1,6 +1,0 @@
-Hi.Following suggestion on viewtopic.php?f=11&t=8536 I have been able to connect my PC running Codesys Win x64 and an Arduino Modbus Slave. Devices exchange data correctly. I faced a critical result when I tried to download a new firmware on Arduino (because Arduino stops to execute code and goes in programming mode) or disconnect and reconnect Ethernet cable: the partners did not establish again the data exchange loosing the link at logical level, I think. Is there a way to diagnose in a POU the Modbus status? A way to force a reconnection in case of error?Thanks.
-
-Into the setting screen for the master, there is a checkbox called "auto-restart communication".If it is checked : After a communication error, CODESYS automatically confirms the error and attempts to continue executing the Modbus command.BR
-
-thank you
-

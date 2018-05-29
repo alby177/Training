@@ -1,4 +1,0 @@
-Hi,Consider an example where <inst1>, <inst2>, .....<instN> are declared instances of function block FUBFUNCTION_BLOCK FUB{.......}VAR GLOBALinst1, inst2, inst3 : FUBEND_VARIs it possible that a POU executing under PLC_PRG (main task) can detect and deliver all the names (STRING) of instances of Type "FUB" ?Is there some method like __isinstance() or anything similar?Regards,Rahul.
-
-Anyone guys?I would appreciate some help.
-

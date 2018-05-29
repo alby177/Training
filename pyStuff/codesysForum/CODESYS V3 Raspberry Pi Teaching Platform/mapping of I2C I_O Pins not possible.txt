@@ -1,2 +1,0 @@
-Hello I can´t map the Bits of my the I2C modules which I add.may there be an issue with the devdesc.xml? I´m not sure whether I added it correctly.
-

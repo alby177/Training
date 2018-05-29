@@ -1,2 +1,0 @@
-Hello,I am in the process of realizing an industrial robot and I found that you had realized a library Opencv codesys.Ay already a little worked with opencv.I am very curious to implement it with codesys.Auriez you an example to provide ? because I did not find anything in the Opencv Codesys library.Thank you in advance.
-

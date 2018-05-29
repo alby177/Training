@@ -1,2 +1,0 @@
-Hi,Is it possible to add alarms into alarm table programmatically? If yes...how? Or at least an indication how to implement it...if it is possible.Thank you!
-

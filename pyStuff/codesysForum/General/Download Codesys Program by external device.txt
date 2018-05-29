@@ -1,6 +1,0 @@
-Does exist a device able to download a compiled Codesys project via serial port, without to use a PC with Codesys 2.3 installed?Best regards
-
-guess not...!But depends on which plc you are using.BREdwin
-
-I'm using a IFM plc ( CR0232 )
-

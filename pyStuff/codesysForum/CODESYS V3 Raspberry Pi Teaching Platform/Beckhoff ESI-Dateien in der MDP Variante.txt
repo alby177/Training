@@ -1,6 +1,0 @@
-Hallo,bei der Inbetriebnahme eines Steuerungssystems hab ich ein Problem das ich trotz intensiver Recherche nicht gelöst bekomme.Mein System:Raspberry Pi mit Beckhoff Buskoppler BK1120 und IO-Module KL2702-0020, KL2702-0002, KL3208, KL1704 und Codesys V3.5 SP8.Das BK1120 sowie das KL3208 hab ich am Laufen. Die restlichen Module bisher nicht. Grund sind die fehlenden ESI Dateien in der MDP Variante. Für die Module BK1120 und KL3208 habe ich die Dateien hier im Forum gefunden https://forum.codesys.com/viewtopic.php?t=7587#p17210.Vom Beckhoff-Support bekomme ich auf die Anfrage nach den ESI Dateien in der MDP Variante leider keine Antwort. Jetzt ist meine Hoffnung, dass mir jemand aus dem Forum weiterhelfen kann. Hat jemand eine Idee wie ich an die MDP Variante der ESI Dateien ran komme oder könnte mir jemand die Dateien für die oben genannten Module zur Verfügung stellen?Besten Dank für jegliche Unterstützung!Grüße
-
-Hi,ich hatte das im deutschen Forum beantwortet,https://forum-de.codesys.com/viewtopic. ... 541#p17687hat das funktioniert?GrüßeEdwin
-
-Hi,for everyone interested in using the Raspberry Pi in combination with the BKxxxx coupler the soultion for my problem is discussed in the german forum.https://forum-de.codesys.com/viewtopic.php?f=18&t=5541&p=17725#p17725RegardsPkolb
-

@@ -1,6 +1,0 @@
-Hello!Codesys V3.5,Anyone knows how to make bar graphs vertical, I'm clicking on this option like crazy but no other option than horizontal. But I've seen vertical graphs before, so there must be an option...Anyone knows?regards alex
-
-Hi,It is automatically changed when the proportion height/width is changed.When the width is (very) wide it is horizontal, when you make it (very) small, but higher it will change in vertical.
-
-Hey,tnx TimvH, forgot to thank you!
-

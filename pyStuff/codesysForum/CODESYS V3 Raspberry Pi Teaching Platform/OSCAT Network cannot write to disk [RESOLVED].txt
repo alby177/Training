@@ -1,4 +1,0 @@
-Hello,I try to use the OSCAT Network library to write CSV log to disk. Unfortunately it gives no error and didn't write to disk. I already created a file /root/csv.log wth 777 permissions but without any success.
-
-I have find the problem. It writes to disk after 4096 bytes get to buffer. So you will find anything on the disk after some time. In my case this time is very long.
-

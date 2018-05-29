@@ -1,2 +1,0 @@
-I am using CoDeSys V3.5 SP1 Patch 4 to program a Beijer T4B SoftController. Distributed I/O is based on Beckhoff EtherCAT modules.I have no issues installing the XML device descriptions for most of my Beckhoff modules (e.g. the Beckhoff EL1814 and EL1xxx), but for some reason I get an XML error when I attempt to install the Beckhoff EL2xxx and EL30xx describtions.I am using the lastest describtions that have been made available for download at the Beckhoff website.Why am I getting these errors and what can I do about them?Best regardsjasedk
-

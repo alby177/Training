@@ -1,5 +1,0 @@
-i discover that CoDeSys Ver 3.2 or 3.3 cannot generate SDB file
-cannot generate SDB file.
-
-_________________zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-

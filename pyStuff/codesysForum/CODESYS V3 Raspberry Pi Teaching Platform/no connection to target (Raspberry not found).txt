@@ -1,6 +1,0 @@
-Hi everyone,With Linux/Jessie on the Raspberry, I can without problem "scan network" and "connect" the Pi  to Codesys...But I'm trying now a new kernel 4.4.9-rt17-v7 (patch Preempt_rt) and I face difficulties.Via wifi the Pi is well connected to the router (I've got a IP and internet) andwith Tools / Update Raspberry Pi I got the right  System info of the Pi's connection:wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST> mtu1500I can even reboot the Pi with "reboot target"but I can't connect the Raspberry to Codesys !  Raspberry not foundDo someone knows why ? What has changed with the new kernel ?Thank you in advance.
-
-Hi,could you give us results of (Login by ssh / putty)cat /tmp/codesyscontrol.logor try:sudo /etc/init.d/codesyscontrol stopsudo /etc/init.d/codesyscontrol startBREdwin
-
-Thanks Edwin,I did and sudo replied: unknown commandsudo: /etc/init.d/codesyscontrol : commande introuvableruntime was obviously not correctly installed. Now it's fixed and I'll try to get the servo in motion ...Best Regards
-

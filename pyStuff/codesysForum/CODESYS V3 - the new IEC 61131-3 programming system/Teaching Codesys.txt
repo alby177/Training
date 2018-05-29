@@ -1,4 +1,0 @@
-I have been working with CODESYS for many years.What is necessary to become a Codesys teacher?What are the best books to start writing a course description?
-
-Just go to PLCOPEN website there is all you need 
-

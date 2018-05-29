@@ -1,6 +1,0 @@
-Typically in ladder logic you would want to have one place where a global is activated/deactivated to avoid any logic complications.  But since in SFC you can only have 1 step active at a time (excluding the IEC actions that are SET and continuously running) would it be OK programming practice to reuse these globals in different steps as long as you know they won't conflict with the same variable in the steps above?  Hopefully I made this question clear.
-
-why reuse globals, why not use locals?it is bad practice as the references will go crazy.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

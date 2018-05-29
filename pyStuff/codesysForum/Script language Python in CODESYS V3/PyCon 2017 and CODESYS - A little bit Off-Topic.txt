@@ -1,2 +1,0 @@
-PyCon.DE 2017This year's Python Conference will take place in Germany in Karlsuhe in October (in English language). I'll be there - Maybe we can organize a CODESYS-Python Meeting during the PyCon 2017 in Karlsruhe?Quote:PyCon.DE is where Pythonistas in Germany can meet to learn about new and upcoming Python libraries, tools, software and data science. We welcome Python enthusiasts, programmers and data scientists from around the world to join us in Karlsruhe this year.Conference-URL: https://de.pycon.org/Greetings,Matthias
-

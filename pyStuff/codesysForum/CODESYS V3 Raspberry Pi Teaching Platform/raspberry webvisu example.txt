@@ -1,4 +1,0 @@
-Your example on youtube is very clear and simply to follow https://www.youtube.com/watch?v=6FPf3RHWyeU , but then I have some problem in two different pc as you can see on the attached image.After installing codesys V3 last version, I installed raspberry package and try to open webvisu example I see the attached image.Where I fail?.
-
-Hi,Image is not attached,guess your Problem could be solved by 'UpdateDevice' see screenshotcheck compilerversion and Visuprofile too. (set it to 3.5.8.0) ->Project settingsBREdwin
-

@@ -1,2 +1,0 @@
-Hello to everyone!I'm using a Raspberry Pi B+ as a Modbus master device running Codesys runtime, the RS485 is provided by a Raspicomm over the Pi.Everything works fine in a configuration with the parity control (8E1) but if i use a configuration without parity control the master does not recognize the response from the slave and give a timeout error.Sniffing the comunication between two devices with an RS485 to USB adapter on PC, the message sent from the master and the response from the slave seems to be correct:Could anyone help me?Thanks in advanceAlberto
-

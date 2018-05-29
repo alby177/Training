@@ -1,6 +1,0 @@
-Hi everybody,I've recently dl the new version of Codesys V3.5 sp12. I looking for changes and I don't found the VisuDialogs.library to edit the project.So, it's possible to get the project or 3S have change her politic about this library ?!!
-
-Hi,no, same as before no changes:"c:\Program Files\3S CODESYS\CODESYS\Projects\Visu\Dialogs\VisuDialogs.library" BREdwin
-
-Ok, to update my own VisuDialogs/VisuUserMgmt library I must increment the version number from 3.5.11 to 3.5.12 into the project information window!Thx!
-

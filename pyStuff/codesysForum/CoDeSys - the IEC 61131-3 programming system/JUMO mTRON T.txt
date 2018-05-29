@@ -1,6 +1,0 @@
-Just about getting started with JUMO mTRON T system. I’m well familiar with programming in general and an expert in PLC programming. But I'm new to both CoDeSys and the mTRON T. I have (tried to) made a small PLC application with CoDeSys, just to observe if digital inputs can be read and outputs set by a PLC application. But I'm not getting anywhere. Anyone with experience with the JUMO mTRON T CPU and it's PLC functionality?
-
-first attempt is to make a very simple program to make an output to truevarout1 at %QX0.0:bool:=false;end_varthis is above the linebelow writeout1:=true;try above and revert with comment.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

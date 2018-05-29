@@ -1,4 +1,0 @@
-I am new to CodeSys and I am working on a project using a Wachendorff display communicating to several microcontrollers on a CAN network.  I am writing the software for the controllers as well, so I don't want to use a formal protocol like CANOpen since I am controller the sending and receiviing.  When I add a TXPDO or a RXPDO is there any reason I can't just map the 8 bytes of data any way I want and not set up a standard CANOpen message frame with the command byte, index and subindex, etc.   If any one know where I can find a good sample program using CAN in CodeSys please let me know where i can find it.  ThanksScott
-
-hello,check the CAN bus example in the CODESYS store.. this should be the right startpoint to do that.http://store.codesys.com/can-bus-example.htmlcheersEdwin
-

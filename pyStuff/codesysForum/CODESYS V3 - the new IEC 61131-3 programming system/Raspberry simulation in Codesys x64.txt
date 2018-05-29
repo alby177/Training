@@ -1,4 +1,0 @@
-I'm writing a program for Raspberry and when I try to work in "simulation" mode an error is showed:Attachment:error_.pngThe library "cmperrors interfaces" is not supported.Is there any 64bits version for this library? How can I solve this problem?
-
-Hi,this is a bug, which will be solved in one of the next versions.If you need a workaround:- Use the CODESYS development system 32Bit- Use a different plc for example Control Win (update device in your project to this plc or even log in to the Control Win which is installedwith the development System - means do not use the Simulation Login to the real plc on your plcBREdwin
-

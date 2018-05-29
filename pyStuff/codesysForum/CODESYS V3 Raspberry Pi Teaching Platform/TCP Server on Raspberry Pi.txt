@@ -1,6 +1,0 @@
-Hello together,I have a program for satellite tracking. The program is communicating with the hamlib protocol (rotctld http://hamlib.sourceforge.net/pdf/rotctld.8.pdf). How can i create a TCP server in Codesys, running on my Raspberry Pi, where the client (satellite tracking program) can connect and sent the two calculated angles to the server. At the server, i should have the two angles as variables for further programming.Best regards,Samuel OE9SBV
-
-Hi,check the two following store examples:PLC Chathttp://store.codesys.com/mixedsearch/mi ... duct_area=Halconhttp://store.codesys.com/mixedsearch/mi ... duct_area=BREdwin
-
-Hi Edwin,Thank you very much for your answer!This is exactly what i need. I've programmed my server according to the HALCON server but i could't try it so far because i have to setup my Raspberry Pi first. I will post it here when it works.Best regards,Samuel OE9SBV
-

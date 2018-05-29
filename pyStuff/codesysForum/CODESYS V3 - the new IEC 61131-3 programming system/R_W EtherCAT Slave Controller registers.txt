@@ -1,2 +1,0 @@
-Is it possible to read/write the ESC (EtherCAT Slave Controller) registers using CoDeSys?I, for instance, need to reset the "PDI Error Counter" (0x030D), which can only be done by the EtherCAT Master.I would greatly appreciate any hints.Best regards, Rudi
-

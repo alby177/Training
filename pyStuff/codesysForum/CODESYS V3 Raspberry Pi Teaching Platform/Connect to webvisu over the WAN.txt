@@ -1,4 +1,0 @@
-HelloI find the codesys  very niceI have static ipmy router port is openand i can connect to the pi apache web server over the WANHow can I connect webvisu.htm from anywhere, not just on the internal network?many thankss
-
-Hi,you need to forward port 8080 (this is defult for the pi)If needed you could Change the port by adding the following section to /etc(CODESYSControl.cfg [CmpWebServer]WebServerPortNr=8080Keep in mind that also SSL encrypted protocoll is available, I would recommend to use this insteadif you plan to make it available by Internet access.How to do Webvisu SSL?viewtopic.php?f=21&t=5835&hilit=SSL#p10731BREdwin
-

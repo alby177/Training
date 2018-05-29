@@ -1,5 +1,0 @@
-Although all IXXAT products support the VCI driver we can't seem to get CoDeSys to connect with the PC104 "PC103" CAN card. Is CoDeSys compatible with this card? I can connect to the CAN bus using IXXATs' MINmon but not CoDeSys. Also if I am using a dual CAN card there is no setting via the CoDeSys communications parameters to select which port to use. I would assume if it is compatible it will default to port 1 only.
-
-_________________Thanks,
-Steve Pfeifenroth
-

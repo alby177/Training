@@ -1,6 +1,0 @@
-Hi all,I'm tring to use the Codesys CANbus device: I added a Canbus Device in my Codesys project but when I run the application the message "Driver not found" appears.I have to add the CANbus Driver component in the configuration file.I haven't this component and I'm asking if I can download some example from somewhere (using it as base to write my own drivers) or I have to purchase the CAN stack from codesys.Thank you all.Luca.
-
-check www.oscat.de for a nice bundle of libraries.including canbus.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

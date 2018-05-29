@@ -1,8 +1,0 @@
-Hello:   I met a problem, I want change the property (m_SubRange.iEndIndex) of a comboBoxInteger when the PLC is running based on deferent condition but not at design time. But I do not know how to reference the comboBoxInteger element in the program. Can anyone help me?
-
-anyone can help me？
-
-This doesn't seem possible. You cannot select a variable, only a fixed value.Maybe you can send a request for this new feature to the support of 3S-Smart Software Solutions.
-
-I think it should be。Every element on a visu is just an instance of a control class. There must be a way to access the instance at runtime，but I just do not know how。
-

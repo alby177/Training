@@ -1,6 +1,0 @@
-Hi together,A motor is meant to turn into one direction when a button is pushed. The motor is mean to turn into the other direction when another button is pushed.Here is my CODE:VAR_INPUTbutton_left: BOOL;button_right: BOOL;END_VARVARturn_left: R_TRIG;turn_right: R_TRIG;signal: REAL;position_left: REAL;position_right: REAL;END_VARturn_left.Q(CLK:=button_left)IF turn_left.Q THEN signal:= position_left;END_IF;turn_right.Q(CLK:=button_right)If turn_right.Q THENsignal:= position_right;END_IF;I hope the code is understandable. If not, please write it, I will then further explain it. Thanx
-
-yes your code is goodhowever i am missing a set command as now the signal will be on only one cycle. and this way you will not see it on.and i am missing the reset when motor is on a side.i am also missing a stop signal when the other direction is pressed.and a stop button would be nice too.work on it.have also a look at the oscat library at www.oscat.de you will learn a lot from it.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

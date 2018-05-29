@@ -1,2 +1,0 @@
-Hi to all of you,I have a question regarding the Test Manager Report. I use the TM for my automatic test and i would like to know if there is a way to set a testscript = failed, if one test Action failed in the testscript. My Report should look like this:Code: TestScript1 - Succeeded     Testcase1 - Succeeded          TestAction1 - SucceededTestScript2 - Failed     Testcase2 - Succeeded          TestAction2 - Succeeded     Testcase3 - Failed          TestAction1 - FailedIf there is a way please let me know.And i use the TM Version 4.1.0.0.Best RegardsSebastian
-

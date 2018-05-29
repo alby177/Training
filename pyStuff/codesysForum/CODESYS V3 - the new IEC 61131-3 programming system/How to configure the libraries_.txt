@@ -1,4 +1,0 @@
-I have the problem with configuring the libraries.It looks like this:I added the library IoDrvModus 3.5.1.0.It pulls a lot of other libraries with different version numbers, that are not in the installed repository.When I try change version by placeholder function , it could give a lot of errors.Question is: What is right way for solving this problem?If I have to use only the specified version number, how can it be to find?
-
-Hi,usually the goal should be only add either modbus tcp or modbus com in the configuration (modbus tcp master under Ethernet Interface, modbus rtu under modbus com port), then all libraries should be addeded by the system.No need to do that manually in the library manager.Additional you need to specify which function codes you will use to read/write (Add Channels under the slave an then add the mapped variables)BR Edwin
-

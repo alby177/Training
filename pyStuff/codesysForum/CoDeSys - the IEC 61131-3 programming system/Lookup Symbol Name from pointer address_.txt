@@ -1,2 +1,0 @@
-From within a FB/Object I would like to get the instance name as a string from the THIS pointer.   Is this possible in either or both versions?  If so how.  Thanks.
-

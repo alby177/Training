@@ -1,2 +1,0 @@
-Hi..Using dynamic text method, we tried to language for Russian and French.It won't happen. But Translation occur for Spanish, Portuguese using attached .xml file(Display.xml).Can you please guide me to resolve and add additional language using dynamic text method.
-

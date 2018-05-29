@@ -1,9 +1,0 @@
-Hello Every Body 
-
-                           This is Tagore working on CoDeSys programming for a project. My question is whether we can access an external file(any file .txt,.mon,.xls) from codesys programming. If yes how can we do it. Please let me know
-
-
-
-
- Fast response is appretiated.
-

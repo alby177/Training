@@ -1,2 +1,0 @@
-Using either the J1939 or the CANopen stack, I need to be able to verify that I am getting fresh data off the CAN bus.  I have not been able to figure out how to do this with either stack.Does anyone know how to determine the time since a message with a particular ID was last received?  Or even whether a given message ID (or PGN or PDO) was received since the last execution loop?
-

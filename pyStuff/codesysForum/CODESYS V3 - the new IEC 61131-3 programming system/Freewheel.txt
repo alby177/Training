@@ -1,2 +1,0 @@
-Dears.In codesys exist the freewheel task.Anybody knows if it is possible to achieve something similar in Twincat?ThanksSent from my Moto G (5S) Plus using Tapatalk
-

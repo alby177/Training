@@ -1,2 +1,0 @@
-Hello,here I have noticed that on CoDeSys 3 , it is possible to do several webvisu in the preview handler. so I made two different webvisu but hen I run my project that runs on multiple dashboard , it is the same web firsthand that appears on all my dashboard . would it be possible to assign a firsthand by web dashboard ??sorry for my English google traduction thank you in advance.
-

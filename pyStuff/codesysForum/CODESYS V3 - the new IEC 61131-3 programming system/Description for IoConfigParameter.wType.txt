@@ -1,4 +1,0 @@
-Hi, is anythere any description of values can be stored in IoConfigParameter.wType (from IoStandard)? Experimentally I found out that std:BOOL 0 std:BYTE 2std:WORD 3std:DWORD 4std:LWORD 5std:INT 7std:DINT 8std:LINT 9std:UINT 11std:REAL 14std:LREAL 15std:STRING 16std:ARRAY [] OF BYTE 26user type 28 Is somewhere official enumeration from 3S?
-
-AndreyS wrote:Is somewhere official enumeration from 3S? Ok. I think the enumeration is defined in CODESYS IDE in system library "Bases Interfaces", see TypeClass enumeration.
-

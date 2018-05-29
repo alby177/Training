@@ -1,2 +1,0 @@
-Dear Sir,         How can i crete new users with different access rights in codesys Project. Is it possible to restrict access to programs (POU's) with different access rights to users.If possible  how can this be done?regards,Praveena
-

@@ -1,6 +1,0 @@
-Hello.I have just generate ST code from Simulink PLC coder. The ST code are in a .xml file. How do i include it into my project ?
-
-Hi,Project-ImportPLCopenXMLBREdwin
-
-Edwin Schwellinger wrote:Hi,Project-ImportPLCopenXMLBREdwinThank you, sir.
-

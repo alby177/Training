@@ -1,6 +1,0 @@
-Good morning,in the display I would need a button that shows also the state of an input.Practically it should be a button with two variablesIn the set of the buttons does not exist, you have any advice for me to make it happen?Thank you very much, Alberto
-
-Under the visualisation, instead of using a button use an object and then on that objects properties there is an option for saying what happens on mouse click. You can then choose to write lines of ST code. In that code set a routine to set both inputs true of false. Alternatively if you want to use a button you will need to create another variable which is linked to the button and in turn sets the two other variables true or false. Sent from my SM-N9005 using Tapatalk
-
-chris.beard wrote:Under the visualisation, instead of using a button use an object and then on that objects properties there is an option for saying what happens on mouse click. You can then choose to write lines of ST code. In that code set a routine to set both inputs true of false. Alternatively if you want to use a button you will need to create another variable which is linked to the button and in turn sets the two other variables true or false. Sent from my SM-N9005 using TapatalkThanks, but I have resolved with hidden input over the lamp  
-

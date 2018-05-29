@@ -1,4 +1,0 @@
-When I triggered  "Modbus Slave Channel" ( Trigger = RISING_EDGE ), I would like to know when exchange    is completed. How I can get something like "Done flag" for separate "Modbus Slave Channel"?
-
-I use the basic timing of the messages. And assume the message is transmitted sucsesfully. Of course I check the error bits.Regards,Edwin.
-

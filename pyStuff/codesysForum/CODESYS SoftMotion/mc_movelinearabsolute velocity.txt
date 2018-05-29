@@ -1,6 +1,0 @@
-Dears.I am doing some tests with group movings.The question is that the group don t achieve the speed passed to the mc_movelinear absolute, It moves around at 20% of the speed. But if I passed an dummy dyn_coordinatedtransform the group moves at the speed passed to the mc_movelinearabsolute.Anybody knows what I am doing wrong.
-
-Hi,I did not get it what do you mean with 'if I passed an dummy dyn_coordinatedtransform' In general there are the following posibilities:1)	MC_GroupOverride is active2)	The inputs VelFactor/AccFactor/JerkFactor of MC_MoveLinearAbsolute are < 13)	The maximum velocity/acceleration/jerk of one of the axes is the limiting factor4)	In rare cases, the performance of the PLC may be limiting. You can try if this is the case by doubling the task interval of the motion bus task. If the effect stays the same, then performance of the PLC is not the cause.BREdwin
-
-Hi Edwin.If I change the task interval, the speed changes too. You are right.But if I pass to the group an dyntcoordansformation via smc_setdyncoordtransformEx wich only sets in the outputs without modifications the system goes at the programed speed.The system performance is not the best.
-

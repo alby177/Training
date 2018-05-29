@@ -1,8 +1,0 @@
-Hello all,I've bought a couple of Quad HD monitors and therefore I've scaled them at 150% to endure I can read texts.I'm using TwinCAT 3 and I can see the editors (codesys embedded inside Visual Studio) show bad scaled fonts.Is there something I can do to improve the fonts?PS: please avoid recommending putting back the monitor at 100% and using glasses...   Thank you all!
-
-_________________http://www.robotecnik.com - robots, CNC and PLC programming.
-
-I don't think there is anything you can do.  It is a know issue on the dot net platform.  The developers of TwinCat need to make some changes for supporting 125% and 150% scaling.  Until those behind the scenes changes are made, you will have text not fitting in boxes, etc.  on our platform, the developers optimized 125% and are about to release 150% optimization. I miss the old days where screen resolution could actually be adjusted for this exact reason... I don't know anyone who can read a 1920 x whatever screen when it is only 15 inches like on my notebook.
-
-_________________Scott CunninghamKEB America, Inc.www.kebblog.comwww.kebamerica.com
-

@@ -1,6 +1,0 @@
-Hi!Updating from CODESYS V3.5 SP12 to CODESYS V3.5 SP12Patch1 brought surprise in reducing of maximum number of nodes in a single call of ReadRequest from 1000 to 100. I guess MaxNodesPerRead or MaxNodesPerRegisterNodes has been changed.I am using “fast” OPCUA datalogger and OPCUA client for HMI (different applications). I observed, that rejection of data logging read requests by Server, has affected HMI connectivity.Is this a bug or applied intentionally?
-
-Hi,This change was intended because of security issues!However, reading 1000 values in a cyclic way using the read service is not the intention of that service. There are subscriptions and monitored items to handle cyclic read operations. These services are intended to be used to monitor for value changes on certain variables. Please consider using these services. These services are much more efficient on the resources side too.Monitored Items can be added in 100er steps to the SubscriptionBREdwin
-
-Edwin, thanks for elucidation.While creating HMI application, at certain point I have met the limitation in number of items in Subscription, which is again ~1000 items. Then for datalogger it seemed to be easier to iterate through readrequests rather than through subscriptions. I will reconsider logger design if performance issues will arise.
-

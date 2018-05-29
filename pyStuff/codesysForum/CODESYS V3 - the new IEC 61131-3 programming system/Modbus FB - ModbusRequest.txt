@@ -1,6 +1,0 @@
-I'd like to use the ModbusRequest FB. One of the inputs is the RTS_IEC_HANDLE.Which function/method will return this handle for me?thanks
-
-I had to open the COM port first using the SysCom library - this returns the  RTS_IEC_HANDLE for the port to pass into the ModbusRequest block.There is very, very little documentation on this...Code:VAR   modbusRequestSerial: IoDrvModbus.ModbusRequest2;   modbusCommandSerial : IoDrvModbus.ModbusCommand;   comm : IoDrvModbus.RTS_IEC_HANDLE;   commSettings : SysCom.COM_Settings;   pntResult : POINTER TO SysCom.RTS_IEC_RESULT;END_VAR                  comm := SysCom.SysComOpen2(pSettings := ADR(commSettings),0, pResult:=pntResult);                  modbusRequestSerial(                     xExecute:= xExecute,                      xAbort:= ,                      hComPort:= comm,                      usiSlaveAddr:= 32,                      modbusCommand:= modbusCommandSerial,                      tResponseTimeout:= ,                      uiSendTimeout:= ,                      pSendData:= ADR(servoOpcode),                      pRecvData:= ,                      transmission:= ,                      xDone=> xDone,                      xBusy=> ,                      xError=> xError,                      xAborted=> ,                      uiDataLength=> ,                      byModbusError=> );
-
- thank you
-

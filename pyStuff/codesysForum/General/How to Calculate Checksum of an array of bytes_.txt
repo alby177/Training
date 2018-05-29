@@ -1,8 +1,0 @@
-Hi All,I am using CoDeSys V2.3 version. I want to make a code for Checksum of on array of bytes for NMEA protocol. I am new to create this type of code. I tried with OSCAT, but lib is available for CoDeSys version 3.0 onwards  . Is there any library Please suggest ?
-
-Hi,then OSCAT  libs are available for CODESYS V2.3 too.http://www.oscat.de/index.php?option=com_jdownloadsBREdwin
-
-and when you download also get the PDF file and the TXT version.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-

@@ -1,6 +1,0 @@
-Hi,I want to store the Trace and recall it from SD card. Is there any option available for this.I can able to read and write the trace from internal memory. Now I want to know how to read and write trace in SD Card on my device.
-
-Hi,which plc/Controller and in which Version are you using?BREdwin
-
-I am using V3.5 SP9 Patch 2The device is my company(Brainchild)  vPLC which is not released yet to the market.I am doing the functional testing for the device. It is a Linux based device Codesys V3.5 runtime
-

@@ -1,2 +1,0 @@
-HiI use opc ua server on raspberry pi and I have one question: is there possibility to implement user authorization or any other way to limit user's acess to some data/features?
-

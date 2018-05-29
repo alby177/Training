@@ -1,4 +1,0 @@
-I exported the Visualization Manager that includes a Target Visualization and Web Visualization using the native export.When importing it back under the Application parent, I get the following error below.The files still are imported even with changes (if I ignore the error). It doesn't appear on the surface that anything is wrong.Worth noting that I imported it into a fresh project, and this didn't occur.
-
-Hi,please add a bugreport in the CODESYS store -> 'my question'including projectarchive / Version Information.BREdwin
-

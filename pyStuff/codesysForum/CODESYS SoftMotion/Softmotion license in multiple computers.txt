@@ -1,4 +1,0 @@
-Hi, I wanted to know if it is possible to use the "Softmotion CNC + Robotics" software on multiple computers without acquiring more than one license.Thank you in advance.
-
-Hi,the CODESYS Development System part is free of charge you could use CNC/Robotics on all your computers which have CODESYS installed.You need to license the plc side-> One license per plc is needed.BREdwin
-

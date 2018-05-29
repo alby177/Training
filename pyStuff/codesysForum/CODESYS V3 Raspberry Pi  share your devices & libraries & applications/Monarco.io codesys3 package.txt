@@ -1,4 +1,0 @@
-Hi there,I developped a Codesys 3-IO driver for the Monarco Hat by Monarco.io. Its an SPI based Hat device for the raspberry Pi.The Monarco Hat an ideal crossing between industrial grade specs and home automation!Because the driver too big to post (it's a .package), I decided to post a link to my github page, where you will find all technical related details.Current version is v2.0.0.0 breaks compatibilty because it's now IO parameter based, the previous versions were Function block based.However, v2.0.0.0 improves greatly on ease of use;https://github.com/Aliazzzz/Monarco-HAT-library-for-CODESYS-V3With kind regards,Aliazzz
-
-https://github.com/Aliazzzz/Monarco-HAT-library-for-CODESYS-V3/
-

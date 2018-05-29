@@ -1,8 +1,0 @@
-Hello.I have a PLC with one CAN interface wich is setup as a CanOpen Manager and it runs ok.Now I also need to send and recieve some RawCan Data.The PLC manufacturer states in the manual that supported libraries for CAN is:CAA CiA 405, 3.5.8.0In this library I cannot find any raw can function blocks.But as CanOpen is a protocol on top of CAN there must be a way to send raw messages?So can I use raw can?How do I do this?
-
-I'm not sure if this what you are looking for but in the past I have used "CAA Can Low Level Extern" (CL2) to send and read messages without using a manager. There is also the CAN API library in the store you can reference that I believe is built off CL2.
-
-Quote:I'm not sure if this what you are looking for but in the past I have used "CAA Can Low Level Extern" (CL2) to send and read messages without using a manager.I need the CanOpen manager for all my CanOpen nodes. But I also need to send and recieve some raw can messages on the same interface.Is it possible to have a CanOpen Manager and to send raw CAN messages simultaneously?As i said my PLC manufacturer states in the manual that only the library CAA CiA 405, 3.5.8.0 is supported for CAN and I dont see any RAW CAN FBs in that library. So I dont know if I can use the CAA Can Low Level Extern?
-
-Yes you can still have the CANopen manager and any devices you add to it.I understand what your manual says but it doesn't mean you can't try it. Both CL2 and/or CAN API. Possible solution > no solution.
-

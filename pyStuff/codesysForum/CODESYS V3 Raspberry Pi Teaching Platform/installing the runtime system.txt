@@ -1,6 +1,0 @@
-Hello,I have a problem when installing the new 3.5.12 raspberry pi codesys control via the package manager to the development environment. I click the install and select the package.manifest file but during installation I get an error and installation stops. in previous versions there were  files with .package extensions but now there is only the zip files for download in the store.
-
-Hi,I would recommend to do it here:BREdwin
-
-Strange but it worked. I have two versions of development platform on my pc which are v3.5.10 and 3.5.12. And I have runtime for raspberry installed for both versions. Do they use the same folders (C:\Users\lenovo\CODESYS Control for Raspberry PI\3.5.12.0) for installation on my pc? Any possibility of overwriting of the folders during installation process?Thanks
-

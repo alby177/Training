@@ -1,4 +1,0 @@
-Hello,I did create the project in the CoDeSys V3.5 workbench, I did add the Symbol Configuration and login to the target.My problem is the symbol file that I create is not download to the target, also in the target application did not have symbol file.It shown only Application name (only one).Note. My pc has both OPC v2.3 & OPC V3.5 installed.         Also I using the Matikon OPC Explorer to test it. The OPC V2.3 is working fine, But could not succeed on OPC V3.5Any suppestion are very appreciate.Wisut.
-
-It is normal that you don't see a specific symbol file on your device with V3 runtimes. It is part of your application. If you don't see any variables in the Matrikon OPC explorer, I think you haven't configured the OPC server correctly.
-

@@ -1,6 +1,0 @@
-Hi,I use a licensed BBB. When i execute the Scan Network, Codesys can detect my BBB but, suddenly, when i try to LogIn, Codesys throws this error:"No connection to device. Please Rescan your network!"From now on, if i rescan my network, Codesys cannot find any device.At the contrary i can login without any problems using PUTTY.It's very annoying! I am not able to go on with my work!Any help would be appreciated!Thanks!
-
-Hi,first i would recommend to do a cat /tmp/codesyscontrol.logby your ssh connection.This should show you where the problem is.If the problem is caused by a bootproject which crash on startup of the application(usually this might be the problem)you could delete it by:rm /var/opt/codesys/PlcLogic/Application/Application.appthen a restart or the runtime/etc/init.d/codesyscontrol stop/etc/init.d/codesyscontrol startBREdwin
-
-Hi Edwin,That was the problem.Now it is working fine.Thank you.
-

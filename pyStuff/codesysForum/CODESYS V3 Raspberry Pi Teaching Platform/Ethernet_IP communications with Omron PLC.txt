@@ -1,2 +1,0 @@
-Hi all. We want to thank you all your support in this forum. We are newbies in Codesys and thanks to this forum we communicated succesfully the RaspberryPi and a CJ2 Omron PLC, between Ethernet/IP. Pi as adapter.If someone have troubles configurating the Ethernet/IP we can help you. We are going to stay tuned in this forum in order to learn things and help others! We want to show you a little video controlling the Omron PLC with the webserver:https://www.youtube.com/watch?v=6xMiTJFmTH0
-

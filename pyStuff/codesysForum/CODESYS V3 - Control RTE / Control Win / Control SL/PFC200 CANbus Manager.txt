@@ -1,8 +1,0 @@
-Hi,I have a PFC200 with the codesys V3.5 runtime installed, I am trying to add a CANopen slave to the PLC with the PLC as a master,  I have added the CANbus device -> CANopen Manager -> My Device.  But the CANopen Manager will not start, it always has the Orange warning triangle with status "Not Running".The CANbus device shows "Running" but every so often (30s or so) it will briefly change to "Bus Failure" then back to "Running".  I do not see the CAN light on the PFC200 light up at all.Thanks,Raymond.
-
-Hi, which version are you using exactly?There is a bug in SP11 version... will be solved with 3.5SP11patch1.BREdwin
-
-Hi Edwin,Yeah i'm using SP11,  do you know when patch 1 will be released? Thanks,Raymond.
-
-It is available now..BREdwin
-

@@ -1,8 +1,0 @@
-My question about download softwareThere is PCAN-PCI card in my computer.But Why couldn't I download software to PLC with PCAN-PCI?But I can downloading software in PLC with PCAN-USB. 
-
-The USB is connected to a special connector inside the PLC which is the default.on some machines you can tell the communications to download to another type of interface like ethernet.look under windows, communication.and you need to tell the PLC to be able to download via the BUS (that is done via the USB port with a communication program specific for the PLC.
-
-_________________shooter@home.nlcomputer shooterpaul deelenjacob van wassenaerstraat 29NL 5224 GG 's-Hertogenboschskype shooter paul.deelenphone +31736139136
-
-Thank you sir,But I din't understand much and Could you hepl to me step by step?
-

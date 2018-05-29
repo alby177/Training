@@ -1,5 +1,0 @@
-Hello,
-I created some pages with Codesys. Theese pages are stored on a WAGO web server (mod. 750-841 with last firmware installed). On PC with Windows XP Pro installed I can see over the internet theese pages. Is the same possible over my PDA MioMitacA701 with Windows Mobile 5 installed? At the moment I can see only white pages.
-
-Many thanks
-
