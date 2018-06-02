@@ -1,0 +1,32 @@
+# The layout is based now on rows and columns as a table
+<GridLayout>:
+
+    # Define the amount of rows and columns
+    cols: 2
+    rows: 2
+
+    # Spacing between the widget
+    spacing: 10
+
+    # Spacing between the widget and the outside of the window
+    padding: 10
+
+    # Create a button
+    Button:
+        text: "1st"
+
+        # This is the amount of space in percentage occupied with respect of the father object (in this case the window)
+        # It is set as None, so it occupies the space set as width
+        size_hint_x: None
+        width: 200
+
+    Button:
+        text: "2nd"
+        # Specifing no width means that the button occupies all the remaining space in the row
+    Button:
+        text: "3rd"
+        size_hint_x: None
+        width: 200
+
+    Button:
+        text: "4th"

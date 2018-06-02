@@ -1,0 +1,72 @@
+# Here the custom button is create
+<CustomButton@Button>:
+
+    # Font size inside the button
+    font_size: 32
+
+    # Color of the button expressed in RGB and then an alfa indicating the transparency
+    # Colors are set as 0 minimum value and 1 maximum value
+    color: 0, 0, 0, 1
+    size: 150,50
+
+    # When not pressed the color will be white ( It is done through '')
+    background_normal: ''
+
+    # Set the background when the button is pressed through an image
+    background_down: 'Background-Color-539.jpg'
+
+    # Set the background color, but this will be applied only on the normal state
+    # because the down state background is done with an image
+    background_color: .88, .88, .88, 1
+
+    # Now let's indicate the size of the button as percentage of the total weight and height of the window
+    size_hint: .4, .3,
+
+# Now the custom layout is built using the float layout setting, so the botton are placed where we want inside
+# the screen according to the position specified in the pos_hint dictionary
+<FloatLayout>:
+
+    # Set the custom button inside the Widget
+    CustomButton:
+
+        # Set the button text
+        text: "Top Left"
+
+        # Now we set the position according always to the percentage of the window space
+        pos_hint: {"x" : 0, "top" : 1}
+
+    # Set the custom button inside the Widget
+    CustomButton:
+
+        # Set the button text
+        text: "Bottom Left"
+
+        # Now we set the position according always to the percentage of the window space
+        pos_hint: {"left" : 1, "y" : 0}
+
+    # Set the custom button inside the Widget
+    CustomButton:
+
+        # Set the button text
+        text: "Top right"
+
+        # Now we set the position according always to the percentage of the window space
+        pos_hint: {"right" : 1, "top" : 1}
+
+    # Set the custom button inside the Widget
+    CustomButton:
+
+        # Set the button text
+        text: "Bottom Right"
+
+        # Now we set the position according always to the percentage of the window space
+        pos_hint: {"right" : 1, "bottom" : 1}
+
+    # Set the custom button inside the Widget
+    CustomButton:
+
+        # Set the button text
+        text: "Center"
+
+        # Now we set the position according always to the percentage of the window space
+        pos_hint: {"center_x" : 0.5, "center_y" : 0.5}

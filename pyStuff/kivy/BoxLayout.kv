@@ -1,0 +1,24 @@
+# The layout is arranged as horizontal or vertical boxes, which occupies all the window dividing
+# among them the available space
+<BoxLayout>:
+
+    #Specify orientation
+    orientation: "vertical"
+    spacing: 10
+    padding: 10
+
+
+    # Create a button
+    Button:
+        text: "1st"
+
+        # This is the amount of space in percentage occupied with respect of the father object (in this case the window)
+        # Width and height
+        size_hint: .7, .5
+
+    Button:
+        text: "2nd"
+        # Specifing no width means that the button occupies all the remaining space in the row
+
+    Button:
+        text: "3rd"
