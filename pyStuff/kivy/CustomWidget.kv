@@ -1,0 +1,53 @@
+# Here the custom button is create
+<CustomButton@Button>:
+
+    # Font size inside the button
+    font_size: 32
+
+    # Color of the button expressed in RGB and then an alfa indicating the transparency
+    # Colors are set as 0 minimum value and 1 maximum value
+    color: 0, 0, 0, 1
+    size: 150,50
+
+    # When not pressed the color will be white ( It is done through '')
+    background_normal: ''
+
+    # Set the background when the button is pressed through an image
+    background_down: 'Background-Color-539.jpg'
+
+    # Set the background color, but this will be applied only on the normal state
+    # because the down state background is done with an image
+    background_color: .88, .88, .88, 1
+
+# Now the custom widget is built
+<CustomWidget>:
+
+    # Set the custom button inside the Widget
+    CustomButton:
+
+        # Set the button text
+        text: "Random"
+
+        # Set the absolute position in the screen area through x,y coordinates
+        # Consider that the position (0,0) is considered as bottom left of the screen
+        pos: root.x, 200 # root.x means as close to the left border possible
+
+    # Set the custom button inside the Widget
+    CustomButton:
+
+        # Set the button text
+        text: "Buttons"
+
+        # Set the position in the screen area through x,y coordinates
+        # Consider that the position (0,0) is considered as bottom left of the screen
+        pos: 200, root.y # root.y means as close as possible to the bottom
+
+    # Set the custom button inside the Widget
+    CustomButton:
+
+        # Set the button text
+        text: "Buttons 2"
+
+        # Set the position in the screen area through x,y coordinates
+        # Consider that the position (0,0) is considered as bottom left of the screen
+        pos: 200, 400
