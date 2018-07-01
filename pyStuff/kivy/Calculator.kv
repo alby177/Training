@@ -1,0 +1,90 @@
+# Create a button with customized size
+<CustButton@Button>:
+    font_size: 32
+
+# Create the grid layout
+<CalcGridLayout>:
+
+    # Call it calculator
+    id: calculator
+
+    # Set to display the the text of the boxlayout suddendly created as entry
+    display: entry
+    rows: 5
+    padding: 10
+    spacing: 10
+
+    # Text box where the pressed buttons text is written
+    BoxLayout:
+        TextInput:
+
+            # Name of the text inut box
+            id: entry
+            font_size: 32
+            multiline: False
+
+    BoxLayout:
+        spacing: 10
+        CustButton:
+
+            # Set the text written on the button and the one that will be displayed
+            text: "7"
+
+            # When pressed, the text on the screen is set as the text of this CustButton
+            on_press: entry.text += self.text
+        CustButton:
+            text: "8"
+            on_press: entry.text += self.text
+        CustButton:
+            text: "9"
+            on_press: entry.text += self.text
+        CustButton:
+            text: "+"
+            on_press: entry.text += self.text
+    BoxLayout:
+        spacing: 10
+        CustButton:
+            text: "4"
+            on_press: entry.text += self.text
+        CustButton:
+            text: "5"
+            on_press: entry.text += self.text
+        CustButton:
+            text: "6"
+            on_press: entry.text += self.text
+        CustButton:
+            text: "-"
+            on_press: entry.text += self.text
+    BoxLayout:
+        spacing: 10
+        CustButton:
+            text: "1"
+            on_press: entry.text += self.text
+        CustButton:
+            text: "2"
+            on_press: entry.text += self.text
+        CustButton:
+            text: "3"
+            on_press: entry.text += self.text
+        CustButton:
+            text: "*"
+            on_press: entry.text += self.text
+    BoxLayout:
+        spacing: 10
+        CustButton:
+            text: "AC"
+
+            # When AC is pressed, the screen content is deleted
+            on_press: entry.text = ""
+        CustButton:
+            text: "0"
+            on_press: entry.text += self.text
+        CustButton:
+            text: "="
+
+            # When pressed, execute the Calculate function of the calculator class
+            # Pass as evaluated parameter the text of the text box
+            on_press: calculator.Calculate(entry.text)
+        CustButton:
+            text: "/"
+            on_press: entry.text += self.text
